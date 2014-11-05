@@ -1,0 +1,25 @@
+{
+   "build_list":[
+      {
+         "name":"Naval Attack Platoon",
+         "to_build":"Naval_Attack",
+         "instance_count":-1,
+         "priority":100,
+         "build_conditions":[
+            [
+               {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"(Naval & Mobile) - Fabber",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
+                  "test_type":"CanAttackWithPoolUnits",
+                  "boolean":true
+               }
+            ]
+         ],
+         "task_type":"NavalAttack"
+      }
+   ]
+}
