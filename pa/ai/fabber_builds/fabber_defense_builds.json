@@ -18,12 +18,12 @@
                {
                   "test_type":"DistFromMainBase",
                   "compare0":">=",
-                  "value0":350
+                  "value0":200
                },
 			   {
                   "test_type":"PlanetThreatRatio",
                   "string0":"Air",
-                  "string1":"AntiSurface",
+                  "string1":"Air",
                   "compare0":">",
                   "value0":2.0
                },
@@ -72,14 +72,14 @@
                {
                   "test_type":"DistFromMainBase",
                   "compare0":">=",
-                  "value0":350
+                  "value0":200
                },
 			   {
                   "test_type":"PlanetThreatRatio",
                   "string0":"Land",
-                  "string1":"AntiSurface",
+                  "string1":"Land",
                   "compare0":">",
-                  "value0":2.0
+                  "value0":1.5
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -127,7 +127,7 @@
                {
                   "test_type":"PlanetThreatRatio",
                   "string0":"Air",
-                  "string1":"AntiSurface",
+                  "string1":"AntiAir",
                   "compare0":">",
                   "value0":3.0
                },
@@ -177,12 +177,12 @@
                   "test_type":"UnitCountInBase",
                   "unit_type_string0":"Structure & Basic & SurfaceDefense",
                   "compare0":"<",
-                  "value0":4
+                  "value0":1
                },
                {
                   "test_type":"PlanetThreatRatio",
                   "string0":"Land",
-                  "string1":"AntiSurface",
+                  "string1":"Land",
                   "compare0":">",
                   "value0":2.0
                },
@@ -241,15 +241,15 @@
                {
                   "test_type":"PlanetThreatRatio",
                   "string0":"Land",
-                  "string1":"AntiSurface",
+                  "string1":"Land",
                   "compare0":">",
-                  "value0":3.0
+                  "value0":2.0
                },
                {
                   "test_type":"UnitCountInBase",
                   "unit_type_string0":"Structure & (EnergyProduction | Factory)",
                   "compare0":">=",
-                  "value0":5
+                  "value0":10
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -277,69 +277,7 @@
                }
             ]
          }
-      },
-      {
-         "name":"Basic Artillery - Near Enemy",
-         "to_build":"BasicArtillery",
-         "instance_count":1,
-         "min_num_assisters":2,
-         "max_num_assisters":5,
-         "priority":245,
-         "builders":[
-            "AnyBasicFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & Basic & Artillery",
-                  "compare0":"<",
-                  "value0":2
-               },
-               {
-                  "test_type":"UnitCountAroundBase",
-                  "unit_type_string0":"Structure",
-                  "string0":"Enemy",
-                  "value0":350,
-                  "compare0":">=",
-                  "value1":3
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicArtillery"
-               }
-            ]
-         ],
-         "placement_rules":{
-            "buffer":2,
-            "placement_type":"FromMainBasePerimeter",
-            "unit_count_rules":[
-               {
-                  "unit_type_string":"Structure",
-                  "alliance":"Enemy",
-                  "compare_type":">=",
-                  "range":260,
-                  "count":3
-               },
-               {
-                  "unit_type_string":"Structure & Basic & Artillery",
-                  "alliance":"Ally",
-                  "compare_type":"<",
-                  "range":75,
-                  "count":2
-               }
-            ],
-            "threat":{
-               "influence_type":"AntiSurface",
-               "compare_type":"<",
-               "radius":10,
-               "value":50
-            }
-         }
-      },
+      },      
       {
          "name":"Advanced Air Defense - Threat",
          "to_build":"AdvancedAirDefense",
@@ -365,7 +303,7 @@
                   "string0":"Air",
                   "string1":"AntiAir",
                   "compare0":">",
-                  "value0":3.0
+                  "value0":2.0
                },
                {
                   "test_type":"UnitCountInBase",
@@ -428,9 +366,9 @@
                {
                   "test_type":"PlanetThreatRatio",
                   "string0":"Land",
-                  "string1":"AntiSurface",
+                  "string1":"Land",
                   "compare0":">",
-                  "value0":3.0
+                  "value0":2.0
                },
                {
                   "test_type":"UnitCountInBase",
@@ -474,7 +412,7 @@
          "name":"Wall",
          "to_build":"Wall",
          "instance_count":1,
-         "priority":0,
+         "priority":251,
          "base_sort":"FromPerimeter",
          "builders":[
             "AnyBasicFabber",

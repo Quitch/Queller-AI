@@ -209,8 +209,9 @@
       {
          "name":"Energy Storage - cdr",
          "to_build":"EnergyStorage",
+		 "shared_instance_count":"EnergyStorage",
          "instance_count":1,
-         "priority":10,
+         "priority":1,
          "builders":[
             "Commander"
          ],
@@ -244,8 +245,9 @@
       {
          "name":"Metal Storage - cdr",
          "to_build":"MetalStorage",
+		 "shared_instance_count":"MetalStorage",
          "instance_count":1,
-         "priority":9,
+         "priority":1,
          "builders":[
             "Commander"
          ],

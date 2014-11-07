@@ -24,7 +24,7 @@
                {
                   "test_type":"PotentialMetalEfficiency",
                   "compare0":"<",
-                  "value0":1.0
+                  "value0":1.1
                },
                {
                   "test_type":"CanFindMetalSpotToBuildBasic",
@@ -461,7 +461,8 @@
          "name":"Energy Storage",
          "to_build":"EnergyStorage",
          "instance_count":1,
-         "priority":10,
+		 "shared_instance_count":"EnergyStorage",
+         "priority":1,
          "builders":[
             "AnyBasicFabber",
             "AnyAdvancedFabber"
@@ -471,7 +472,7 @@
                {
                   "test_type":"EnergyStorageToProductionRatio",
                   "compare0":"<",
-                  "value0":5
+                  "value0":10
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -497,7 +498,8 @@
          "name":"Metal Storage",
          "to_build":"MetalStorage",
          "instance_count":1,
-         "priority":9,
+		 "shared_instance_count":"MetalStorage",
+         "priority":1,
          "builders":[
             "AnyBasicFabber",
             "AnyAdvancedFabber"
@@ -507,7 +509,7 @@
                {
                   "test_type":"MetalStorageToProductionRatio",
                   "compare0":"<",
-                  "value0":6
+                  "value0":10
                },
                {
                   "test_type":"CanAffordBuildDemand"

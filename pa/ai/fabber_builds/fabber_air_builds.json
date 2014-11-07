@@ -6,158 +6,94 @@
          "instance_count":1,
          "shared_instance_count":"BasicFactory",
          "priority":376,
-         "max_num_assisters":0,
+         "max_num_assisters":1,
          "builders":[
             "Commander"
          ],
          "build_conditions":[
             [
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicAirFactory"
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicAirFactory"
-               }
-            ]
-         ],
-         "placement_rules":{
-            "buffer":15,
-            "threat":{
-               "influence_type":"AntiSurface",
-               "compare_type":"<",
-               "radius":10,
-               "value":50
-            }
-         }
-      },
-      {
-         "name":"Basic Air Factory - Mid-Game",
-         "to_build":"BasicAirFactory",
-         "instance_count":1,
-         "shared_instance_count":"BasicFactory",
-         "priority":376,
-		 "min_num_assisters":2,
-         "max_num_assisters":3,
-         "builders":[
-            "BasicFabber"
-         ],
-         "build_conditions":[
-            [
 			   {
-			      "test_type":"AloneOnPlanet",
-				  "boolean":true
+                  "test_type":"UnitCountPerPlanetRadius",
+                  "unit_type_string0":"Commander",
+                  "compare0":"<=",
+                  "value0":800
                },
 			   {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Fabber",
-                  "compare0":">",
-                  "value0":5
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicAirFactory"
-               },
-               {
+				  "unit_type_string0":"Factory",
+				  "compare0":"<",
+				  "value0":1
+               },			   
+			   {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirFactory"
                }
-            ],
+			],
 			[
 			   {
-			      "test_type":"AloneOnPlanet",
-				  "boolean":false
+                  "test_type":"CanAffordBuildDemand"
+               },
+			   {
+                  "test_type":"HaveSeenEnemyUnits",
+                  "unit_type_string0":"Air",
+                  "boolean":true
                },
 			   {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Fabber",
-                  "compare0":">",
-                  "value0":5
+				  "unit_type_string0":"Air & Factory",
+				  "compare0":"<",
+				  "value0":1
                },
-               {
-                  "test_type":"NeedBasicAirFactory",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicAirFactory"
-               },
-               {
+			   {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirFactory"
                }
-            ],
-            [
-               {
-			      "test_type":"AloneOnPlanet",
-				  "boolean":false
+			],
+			[
+			   {
+                  "test_type":"CanAffordBuildDemand"
                },
+			   {
+                  "test_type":"PlanetThreatRatio",
+                  "string0":"Air",
+                  "string1":"Air",
+                  "compare0":">",
+                  "value0":1.2
+               },			   
+			   {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicAirFactory"
+               }
+			],
+			[
+			   {
+                  "test_type":"CanAffordBuildDemand"
+               },
+			   {
+                  "test_type":"UnitCountPerPlanetRadius",
+                  "unit_type_string0":"Commander",
+                  "compare0":"<=",
+                  "value0":800
+               }
+			],
+			[
+			   {
+                  "test_type":"CanAffordBuildDemand"
+               },
+			   {
+			      "test_type":"NeedBasicAirFactory"  
+			   },
 			   {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Fabber & Basic",
-                  "compare0":">",
-                  "value0":5
-               },
+				  "unit_type_string0":"Factory",
+				  "compare0":">=",
+				  "value0":1
+               },			   
 			   {
-                  "test_type":"HaveEcoForAdvanced",
-                  "boolean":true
-               },
-               {
-                  "test_type":"NeedBasicAirFactory",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicAirFactory"
-               },
-               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirFactory"
                }
-            ]
-         ],
-         "placement_rules":{
-            "buffer":15,
-            "threat":{
-               "influence_type":"AntiSurface",
-               "compare_type":"<",
-               "radius":10,
-               "value":50
-            }
-         }
-      },
-	  {
-         "name":"Advanced Air Factory",
-         "to_build":"AdvancedAirFactory",
-         "instance_count":1,
-         "shared_instance_count":"AdvancedFactory",
-         "priority":0,
-         "min_num_assisters":3,
-         "max_num_assisters":5,
-         "builders":[
-            "BasicAirFabber",
-            "AdvancedAirFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HaveEcoForAdvanced",
-                  "boolean":true
-               },
-               {
-                  "test_type":"NeedAdvancedAirFactory",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"AdvancedAirFactory"
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"AdvancedAirFactory"
-               }
-            ]
+			]
          ],
          "placement_rules":{
             "buffer":15,
