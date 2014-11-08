@@ -3,6 +3,8 @@ Queller-AI
 
 Improved AI for Planetary Annihilation
 
+Any feedback is greatly appreciated. If possible, please provide a PA Stats link, and failing that the name of the system you were playing on. Please direct all feedback to the forum thread - https://forums.uberent.com/threads/rel-server-queller-ai-alpha-v0-2.65795/
+
 I love AI. To put my old person comfy jumper on for a moment, back in the day I modded Total Annihilation's AI and ran a site called AI Central (WARNING: very 90's site design) for AI mods, and I ran an AI league for Kohan II to identify the best. I've been an enthusiast in AI for as long as I've been gaming. This Queller AI will be a continuation of my Queller AI for TA.
 
 This mod is a total overhaul of the AI (as much as can be done with the exposed files) designed to leverage the systems @sorian has created, while playing a game better suited to the meta. It will definitely be designed with 1v1 in mind, but will hopefully prove to be an improvement in other modes too.
