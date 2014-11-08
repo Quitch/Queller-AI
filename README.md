@@ -9,18 +9,32 @@ This mod is a total overhaul of the AI (as much as can be done with the exposed 
 
 I am currently focused on the AI's 1v1 game on single planets.
 
-Things I want to do:
+THINGS I WANT TO ACHIEVE
+
 Opening builds aligned with real players
+
 Unit mixes suited to current balance
+
 More aggressive early play
+
 Platoon and squad sizes better suited to the units contained within them
+
 Faster expansion on empty planets
+
 Much greater use of teleporters to move around
+
 Scouting units which can also punish lone fabbers
+
 Avoiding losing games through premature orbital
+
 Overhaul of naval play
+
 Targeting lone fabbers more aggressively
+
 Using bombers more appropriately
+
 Changing of strategies according to planet size
+
 Changing of strategies according to player density
+
 Some of these might prove impossible given the tooling available, only time will tell.
