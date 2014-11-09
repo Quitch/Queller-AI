@@ -3,7 +3,7 @@ Queller-AI
 
 Improved AI for Planetary Annihilation
 
-The AI will work with difficulty/personality, but it has only being tested with Absurd.
+The AI will work with any difficulty/personality, but it has only being tested with Absurd.
 
 Any feedback is greatly appreciated. If possible, please provide a PA Stats link, and failing that the name of the system you were playing on. Please direct all feedback to the forum thread - https://forums.uberent.com/threads/rel-server-queller-ai-alpha-v0-2.65795/
 
