@@ -23,7 +23,7 @@
             {
                "unit_types":"((Tank | Bot) & Mobile) & Heavy",
                "min_count":0,
-			   "percent":0.1,
+			   "percent":0.05,
                "squad":"Close"
             },
             {
@@ -57,7 +57,7 @@
             {
                "unit_types":"((Tank | Bot) & Mobile) & Heavy",
                "min_count":0,
-			   "percent":0.1,
+			   "percent":0.05,
                "squad":"Close"
             },
             {
@@ -91,7 +91,7 @@
             {
                "unit_types":"((Tank | Bot) & Mobile) & Heavy",
                "min_count":0,
-			   "percent":0.1,
+			   "percent":0.05,
                "squad":"Close"
             },
             {
@@ -125,7 +125,7 @@
             {
                "unit_types":"((Tank | Bot) & Mobile) & Heavy",
                "min_count":0,
-			   "percent":0.1,
+			   "percent":0.05,
                "squad":"Close"
             },
             {
@@ -159,7 +159,7 @@
             {
                "unit_types":"((Tank | Bot) & Mobile) & Heavy",
                "min_count":0,
-			   "percent":0.1,
+			   "percent":0.05,
                "squad":"Close"
             },
             {
@@ -181,9 +181,9 @@
       "Land_Scout":{
          "units":[
             {
-               "unit_types":"(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy",
-			   "min_count":1,
-               "max_count":3
+               "unit_types":"((Bot & Mobile) | (Land & Scout)) - Fabber - AirDefense - Construction - Artillery - Heavy",
+			   "max_count":1,
+               "squad":"Fast"
             }
          ]
       },
@@ -192,12 +192,12 @@
             {
                "unit_types":"Air & (Bomber | Gunship)",
                "min_count":1,
-               "max_count":2
+			   "max_count":2
             },
             {
                "unit_types":"Air & Fighter",
                "min_count":0,
-               "percent":0.75,
+			   "percent":1.0,
                "squad":"Escort"
             }
          ]
@@ -207,12 +207,12 @@
             {
                "unit_types":"Air & (Bomber | Gunship)",
                "min_count":3,
-               "max_count":6
+			   "max_count":9
             },
             {
                "unit_types":"Air & Fighter",
                "min_count":1,
-               "percent":0.75,
+			   "percent":1.0,
                "squad":"Escort"
             }
          ]
@@ -221,13 +221,13 @@
          "units":[
             {
                "unit_types":"Air & (Bomber | Gunship)",
-               "min_count":7,
-               "max_count":14
+               "min_count":6,
+			   "max_count":18
             },
             {
                "unit_types":"Air & Fighter",
-               "min_count":2,
-               "percent":0.75,
+               "min_count":3,
+			   "percent":1.0,
                "squad":"Escort"
             }
          ]
@@ -236,13 +236,13 @@
          "units":[
             {
                "unit_types":"Air & (Bomber | Gunship)",
-               "min_count":15,
-               "max_count":30
+               "min_count":12,
+			   "max_count":36
             },
             {
                "unit_types":"Air & Fighter",
-               "min_count":4,
-               "percent":0.75,
+               "min_count":6,
+			   "percent":1.0,
                "squad":"Escort"
             }
          ]
@@ -251,14 +251,14 @@
          "units":[
             {
                "unit_types":"Air & (Bomber | Gunship)",
-               "min_count":31,
-               "max_count":-1
+               "min_count":24,
+			   "max_count":-1
             },
             {
                "unit_types":"Air & Fighter",
-               "min_count":6,
-               "percent":0.75,
-               "squad":"Escort"
+               "min_count":12,
+			   "percent":1.0,
+			   "squad":"Escort"
             }
          ]
       },
@@ -275,26 +275,26 @@
          "units":[
             {
                "unit_types":"Naval & Mobile & Scout",
-               "min_count":1,
+               "min_count":0,
                "max_count":-1,
 			   "squad":"General"
             },
 			{
                "unit_types":"(Naval & Mobile) - Artillery - AirDefense - Tactical",
-               "min_count":1,
+               "min_count":0,
                "max_count":-1,
 			   "squad":"Close"
             },
 			{
                "unit_types":"Naval & Artillery & Mobile",
                "min_count":0,
-			   "percent":-1,
+               "max_count":-1,
                "squad":"Artillery"
             },
 			{
                "unit_types":"Naval & (AirDefense | Tactical) & Mobile",
                "min_count":0,
-			   "percent":-1,
+               "max_count":-1,
                "squad":"Defense"
             }
          ]

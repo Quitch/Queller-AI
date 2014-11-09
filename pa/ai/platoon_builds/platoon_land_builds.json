@@ -13,9 +13,9 @@
                },
                {
                   "test_type":"UnitCountPerPlanetRadius",
-                  "unit_type_string0":"((Bot & Mobile) | Scout) - Fabber - AirDefense - Construction - Artillery - Heavy",
+                  "unit_type_string0":"((Bot & Mobile) | (Land & Scout)) - Fabber - AirDefense - Construction - Artillery - Heavy",
                   "compare0":"<",
-                  "value0":100
+                  "value0":200
                },
                {
                   "test_type":"HaveFullPlanetIntel",
@@ -96,8 +96,8 @@
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
                   "compare0":">=",
-                  "value0":1
-               },
+                  "value0":3
+			   },
                {
                   "test_type":"FocusTargetThreat",
                   "string0":"AntiSurface",
@@ -125,7 +125,7 @@
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
                   "compare0":">=",
-                  "value0":4
+                  "value0":10
                },
                {
                   "test_type":"FocusTargetThreat",
@@ -154,7 +154,7 @@
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
                   "compare0":">=",
-                  "value0":10
+                  "value0":20
                },
                {
                   "test_type":"FocusTargetThreat",
@@ -183,7 +183,7 @@
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
                   "compare0":">=",
-                  "value0":20
+                  "value0":40
                },
                {
                   "test_type":"FocusTargetThreat",
@@ -212,7 +212,7 @@
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
                   "compare0":">=",
-                  "value0":40
+                  "value0":60
                },
                {
                   "test_type":"CanAttackWithPoolUnitsLand",

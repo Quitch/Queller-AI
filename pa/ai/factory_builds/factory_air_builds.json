@@ -4,7 +4,6 @@
          "name":"Basic Air Fabber",
          "to_build":"BasicAirFabber",
          "instance_count":1,
-		 "min_num_assisters":0,
          "max_num_assisters":1,
          "priority":100,
          "builders":[
@@ -48,7 +47,6 @@
          "name":"Basic Air Fighter",
          "to_build":"BasicFighter",
          "instance_count":-1,
-         "max_num_assisters":0,
          "priority":97,
          "builders":[
             "BasicAirFactory"
@@ -82,10 +80,11 @@
                   "test_type":"CanAffordBuildDemand"
                },
 			   {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Air & Fighter",
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Air & (Bomber | Gunship)",
+                  "unit_type_string1":"Air & Fighter",
                   "compare0":"<",
-                  "value0":6
+                  "value0":1
                }
 			]
          ]
@@ -94,7 +93,6 @@
          "name":"Basic Air Bomber",
          "to_build":"BasicBomber",
          "instance_count":-1,
-         "max_num_assisters":0,
          "priority":97,
          "builders":[
             "BasicAirFactory"

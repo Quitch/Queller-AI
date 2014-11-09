@@ -50,6 +50,8 @@
          "name":"Anti Nuke Missile",
          "to_build":"AntiNukeMissile",
          "instance_count":-1,
+         "min_num_assisters":3,
+         "max_num_assisters":8,
          "priority":151,
          "builders":[
             "AntiNukeSilo"

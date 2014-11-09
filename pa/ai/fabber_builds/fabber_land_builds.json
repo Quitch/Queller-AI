@@ -13,10 +13,19 @@
          "build_conditions":[
             [
                {
+                  "test_type":"CanAffordBuildDemand"
+               },
+			   {
                   "test_type":"UnitCountOnPlanet",
-				  "unit_type_string0":"Factory",
+				  "unit_type_string0":"Tank & Factory",
 				  "compare0":"<",
 				  "value0":1
+               },
+			   {
+                  "test_type":"UnitCountOnPlanet",
+				  "unit_type_string0":"Bot & Factory",
+				  "compare0":"<",
+				  "value0":2
                },
 			   {
                   "test_type":"UnitCountPerPlanetRadius",
@@ -40,10 +49,165 @@
 				  "value0":1
                },
 			   {
+                  "test_type":"UnitCountOnPlanet",
+				  "unit_type_string0":"Bot & Factory",
+				  "compare0":"<",
+				  "value0":3
+               },
+			   {
+                  "test_type":"UnitCountPerPlanetRadius",
+                  "unit_type_string0":"Commander",
+                  "compare0":"<=",
+                  "value0":500
+               },
+			   {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicBotFactory"
+               }
+			],
+			[
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+			   {
+                  "test_type":"UnitCountOnPlanet",
+				  "unit_type_string0":"Tank & Factory",
+				  "compare0":"<",
+				  "value0":1
+               },
+			   {
+                  "test_type":"UnitCountOnPlanet",
+				  "unit_type_string0":"Bot & Factory",
+				  "compare0":"<",
+				  "value0":5
+               },
+			   {
+                  "test_type":"UnitCountPerPlanetRadius",
+                  "unit_type_string0":"Commander",
+                  "compare0":"<=",
+                  "value0":800
+               },
+			   {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicBotFactory"
+               }
+			]
+         ],
+         "placement_rules":{
+            "buffer":15,
+            "threat":{
+               "influence_type":"AntiSurface",
+               "compare_type":"<",
+               "radius":10,
+               "value":50
+            }
+         }
+      },
+      {
+         "name":"Basic Bot Factory - Mid Game",
+         "to_build":"BasicBotFactory",
+         "instance_count":1,
+         "shared_instance_count":"BasicFactory",
+         "priority":376,
+         "min_num_assisters":2,
+         "max_num_assisters":4,
+         "builders":[
+            "AnyBasicFabber"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+			   {
+                  "test_type":"UnitCountOnPlanet",
+				  "unit_type_string0":"Tank & Factory",
+				  "compare0":"<",
+				  "value0":1
+               },
+			   {
+                  "test_type":"UnitCountOnPlanet",
+				  "unit_type_string0":"Bot & Factory",
+				  "compare0":"<",
+				  "value0":2
+               },
+			   {
                   "test_type":"UnitCountPerPlanetRadius",
                   "unit_type_string0":"Commander",
                   "compare0":"<=",
                   "value0":400
+               },
+			   {
+                  "test_type":"UnitCountOnPlanet",
+				  "unit_type_string0":"Fabber & Construction",
+				  "compare0":">",
+				  "value0":3
+               },
+			   {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicBotFactory"
+               }
+			],
+			[
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+			   {
+                  "test_type":"UnitCountOnPlanet",
+				  "unit_type_string0":"Tank & Factory",
+				  "compare0":"<",
+				  "value0":1
+               },
+			   {
+                  "test_type":"UnitCountOnPlanet",
+				  "unit_type_string0":"Bot & Factory",
+				  "compare0":"<",
+				  "value0":3
+               },
+			   {
+                  "test_type":"UnitCountPerPlanetRadius",
+                  "unit_type_string0":"Commander",
+                  "compare0":"<=",
+                  "value0":500
+               },			   
+			   {
+                  "test_type":"UnitCountOnPlanet",
+				  "unit_type_string0":"Fabber & Construction",
+				  "compare0":">",
+				  "value0":3
+               },
+			   {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicBotFactory"
+               }
+			],
+			[
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+			   {
+                  "test_type":"UnitCountOnPlanet",
+				  "unit_type_string0":"Tank & Factory",
+				  "compare0":"<",
+				  "value0":1
+               },
+			   {
+                  "test_type":"UnitCountOnPlanet",
+				  "unit_type_string0":"Bot & Factory",
+				  "compare0":"<",
+				  "value0":5
+               },
+			   {
+                  "test_type":"UnitCountPerPlanetRadius",
+                  "unit_type_string0":"Commander",
+                  "compare0":"<=",
+                  "value0":800
+               },			   
+			   {
+                  "test_type":"UnitCountOnPlanet",
+				  "unit_type_string0":"Fabber & Construction",
+				  "compare0":">",
+				  "value0":3
                },
 			   {
                   "test_type":"CanFindPlaceToBuild",
@@ -74,24 +238,44 @@
          "build_conditions":[
             [               
 			   {
-                  "test_type":"UnitCountOnPlanet",
-				  "unit_type_string0":"Factory",
-				  "compare0":"<",
-				  "value0":1
+                  "test_type":"CanAffordBuildDemand"
                },
 			   {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicVehicleFactory"
                }
-            ],
-			[
-               {
+            ]
+         ],
+         "placement_rules":{
+            "buffer":15,
+            "threat":{
+               "influence_type":"AntiSurface",
+               "compare_type":"<",
+               "radius":10,
+               "value":50
+            }
+         }
+      },
+	  {
+         "name":"Basic Vehicle Factory - Mid Game",
+         "to_build":"BasicVehicleFactory",
+         "instance_count":1,
+         "shared_instance_count":"BasicFactory",
+         "priority":376,
+         "min_num_assisters":2,
+         "max_num_assisters":4,
+         "builders":[
+            "AnyBasicFabber"
+         ],
+         "build_conditions":[
+            [               
+			   {
                   "test_type":"CanAffordBuildDemand"
-               },
+               },			   			   
 			   {
                   "test_type":"UnitCountOnPlanet",
-				  "unit_type_string0":"Bot & Factory",
-				  "compare0":"<",
+				  "unit_type_string0":"Fabber & Construction",
+				  "compare0":">",
 				  "value0":3
                },
 			   {
@@ -145,7 +329,7 @@
                   "string0":"Land",
 				  "string1":"Land",
                   "compare0":"<",
-                  "value0":0.7
+                  "value0":0.5
                }
             ]
          ],

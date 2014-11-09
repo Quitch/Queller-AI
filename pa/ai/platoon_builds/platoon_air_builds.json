@@ -34,7 +34,7 @@
             [
                {
                   "test_type":"UnitPoolCount",
-                  "unit_type_string0":"Air & (Bomber | Gunship)",
+                  "unit_type_string0":"Air & ((Bomber | Gunship)",
                   "compare0":">=",
                   "value0":1
                },
@@ -62,12 +62,6 @@
          "build_conditions":[
             [
                {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"Air & (Bomber | Gunship)",
-                  "compare0":">=",
-                  "value0":3
-               },
-               {
                   "test_type":"FocusTargetThreat",
                   "string0":"AntiAir",
                   "compare0":"<",
@@ -90,12 +84,6 @@
          "priority":102,
          "build_conditions":[
             [
-               {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"Air & (Bomber | Gunship)",
-                  "compare0":">=",
-                  "value0":7
-               },
                {
                   "test_type":"FocusTargetThreat",
                   "string0":"AntiAir",
@@ -120,12 +108,6 @@
          "build_conditions":[
             [
                {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"Air & (Bomber | Gunship)",
-                  "compare0":">=",
-                  "value0":15
-               },
-               {
                   "test_type":"FocusTargetThreat",
                   "string0":"AntiAir",
                   "compare0":"<",
@@ -147,12 +129,12 @@
          "instance_count":-1,
          "priority":100,
          "build_conditions":[
-            [
+            [               
                {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"Air & (Bomber | Gunship)",
+                  "test_type":"FocusTargetThreat",
+                  "string0":"AntiAir",
                   "compare0":">=",
-                  "value0":31
+                  "value0":5600
                },
                {
                   "test_type":"CanAttackWithPoolUnitsBomber",

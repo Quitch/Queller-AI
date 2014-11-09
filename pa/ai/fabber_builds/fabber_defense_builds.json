@@ -5,7 +5,7 @@
          "to_build":"BasicAirDefense",
          "instance_count":1,
          "shared_instance_count":"BasicAirDefense",
-         "priority":250,
+         "priority":252,
          "base_sort":"FromPerimeter",
          "builders":[
             "AnyBasicFabber"
@@ -25,7 +25,7 @@
                   "string0":"Air",
                   "string1":"Air",
                   "compare0":">",
-                  "value0":2.0
+                  "value0":1.0
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -59,7 +59,7 @@
          "to_build":"BasicLandDefenseSingle",
          "instance_count":1,
          "shared_instance_count":"BasicLandDefense",
-         "priority":250,
+         "priority":252,
          "base_sort":"FromPerimeter",
          "builders":[
             "AnyBasicFabber"
@@ -79,7 +79,61 @@
                   "string0":"Land",
                   "string1":"Land",
                   "compare0":">",
-                  "value0":1.5
+                  "value0":1.0
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicLandDefenseSingle"
+               }
+            ]
+         ],
+         "placement_rules":{
+            "buffer":2,
+            "placement_type":"FromMainBasePerimeter",
+            "unit_count_rules":[
+               {
+                  "unit_type_string":"Structure & MetalProduction",
+                  "alliance":"Ally",
+                  "compare_type":">=",
+                  "range":50,
+                  "count":1
+               },
+               {
+                  "unit_type_string":"Structure & Basic & SurfaceDefense",
+                  "alliance":"Ally",
+                  "compare_type":"<",
+                  "range":100,
+                  "count":1
+               }
+            ]
+         }
+      },
+	  {
+         "name":"Basic Land Defense - Mex",
+         "to_build":"BasicLandDefense",
+         "instance_count":1,
+         "shared_instance_count":"BasicLandDefense",
+         "priority":253,
+         "base_sort":"FromPerimeter",
+         "builders":[
+            "AnyBasicFabber"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"DistFromMainBase",
+                  "compare0":">=",
+                  "value0":200
+               },
+			   {
+                  "test_type":"PlanetThreatRatio",
+                  "string0":"Land",
+                  "string1":"Land",
+                  "compare0":">",
+                  "value0":1.0
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -112,6 +166,7 @@
          "name":"Basic Air Defense - Threat",
          "to_build":"BasicAirDefense",
          "instance_count":1,
+         "max_num_assisters":1,
          "shared_instance_count":"BasicAirDefense",
          "priority":251,
          "base_sort":"FromPerimeter",
@@ -129,7 +184,7 @@
                   "string0":"Air",
                   "string1":"AntiAir",
                   "compare0":">",
-                  "value0":3.0
+                  "value0":2.0
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -162,6 +217,7 @@
          "name":"Basic Land Defense Single - Threat",
          "to_build":"BasicLandDefenseSingle",
          "instance_count":1,
+         "max_num_assisters":1,
          "shared_instance_count":"BasicLandDefense",
          "priority":251,
          "base_sort":"FromPerimeter",
@@ -222,6 +278,7 @@
          "name":"Basic Land Defense - Threat",
          "to_build":"BasicLandDefense",
          "instance_count":1,
+         "max_num_assisters":1,
          "priority":251,
          "base_sort":"FromPerimeter",
          "builders":[
@@ -282,6 +339,8 @@
          "name":"Advanced Air Defense - Threat",
          "to_build":"AdvancedAirDefense",
          "instance_count":1,
+         "min_num_assisters":1,
+         "max_num_assisters":3,
          "priority":379,
          "base_sort":"FromPerimeter",
          "builders":[
@@ -348,6 +407,8 @@
          "to_build":"AdvancedLandDefense",
          "instance_count":1,
          "priority":379,
+         "min_num_assisters":1,
+         "max_num_assisters":3,
          "base_sort":"FromPerimeter",
          "builders":[
             "AnyAdvancedFabber"
@@ -409,57 +470,12 @@
          }
       },
       {
-         "name":"Wall",
-         "to_build":"Wall",
-         "instance_count":1,
-         "priority":251,
-         "base_sort":"FromPerimeter",
-         "builders":[
-            "AnyBasicFabber",
-            "AnyAdvancedFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & Defense",
-                  "compare0":">=",
-                  "value0":1
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"Wall"
-               }
-            ]
-         ],
-         "placement_rules":{
-            "placement_type":"FromMainBasePerimeter",
-            "unit_count_rules":[
-               {
-                  "unit_type_string":"Structure & Defense - AirDefense",
-                  "alliance":"Ally",
-                  "compare_type":">=",
-                  "range":8,
-                  "count":1
-               },
-               {
-                  "unit_type_string":"Structure & Wall",
-                  "alliance":"Ally",
-                  "compare_type":"<",
-                  "range":20,
-                  "count":4
-               }
-            ]
-         }
-      },
-      {
          "name":"Umbrella",
          "to_build":"Umbrella",
          "instance_count":1,
          "priority":377,
+         "min_num_assisters":1,
+         "max_num_assisters":3,
          "builders":[
             "AnyBasicFabber"
          ],
@@ -520,6 +536,8 @@
          "instance_count":1,
          "shared_instance_count":"AntiNukeSilo",
          "priority":380,
+         "min_num_assisters":3,
+         "max_num_assisters":12,
          "builders":[
             "AnyAdvancedFabber"
          ],
