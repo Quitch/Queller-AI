@@ -96,8 +96,8 @@
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
                   "compare0":">=",
-                  "value0":3
-			   },
+                  "value0":1
+               },
                {
                   "test_type":"FocusTargetThreat",
                   "string0":"AntiSurface",
@@ -108,7 +108,7 @@
                   "test_type":"CanAttackWithPoolUnitsLand",
                   "string0":"WL_AnySurface",
                   "string1":"WL_AnySurface",
-                  "unit_type_string0":"Mobile"
+                  "unit_type_string0":"Mobile | Structure"
                }
             ]
          ],
@@ -125,7 +125,7 @@
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
                   "compare0":">=",
-                  "value0":10
+                  "value0":4
                },
                {
                   "test_type":"FocusTargetThreat",
@@ -154,7 +154,7 @@
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
                   "compare0":">=",
-                  "value0":20
+                  "value0":10
                },
                {
                   "test_type":"FocusTargetThreat",
@@ -183,7 +183,7 @@
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
                   "compare0":">=",
-                  "value0":40
+                  "value0":20
                },
                {
                   "test_type":"FocusTargetThreat",
@@ -212,34 +212,13 @@
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
                   "compare0":">=",
-                  "value0":60
+                  "value0":40
                },
                {
                   "test_type":"CanAttackWithPoolUnitsLand",
                   "string0":"WL_AnySurface",
                   "string1":"WL_AnySurface",
                   "unit_type_string0":"Mobile | Structure"
-               }
-            ]
-         ],
-         "task_type":"LandAttack"
-      },
-	  {
-         "name":"gg",
-         "to_build":"Last_Hope_gg",
-         "instance_count":-1,
-         "priority":100,
-         "build_conditions":[
-            [
-               {
-                  "test_type":"NoWhereToRun",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAttackWithPoolUnitsLand",
-                  "string0":"WL_AnySurface",
-                  "string1":"WL_AnySurface",
-                  "unit_type_string0":"Commander"
                }
             ]
          ],
