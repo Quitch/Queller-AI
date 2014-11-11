@@ -93,7 +93,7 @@
                {
                   "test_type":"PotentialEnergyEfficiency",
                   "compare0":"<",
-                  "value0":0.9
+                  "value0":1.0
                },
                {
                   "test_type":"UnitCount",
@@ -119,7 +119,7 @@
          }
       },
       {
-         "name":"Basic Energy Generator - late Desire cdr",
+         "name":"Basic Energy Generator - Desire Cdr",
          "to_build":"BasicEnergyGenerator",
          "instance_count":1,
          "max_num_assisters":1,
@@ -135,12 +135,6 @@
                },
                {
                   "test_type":"UnitCount",
-                  "unit_type_string0":"EnergyProduction & Basic",
-                  "compare0":">=",
-                  "value0":10
-               },
-               {
-                  "test_type":"UnitCount",
                   "unit_type_string0":"EnergyProduction & Advanced",
                   "compare0":"<",
                   "value0":1
@@ -153,122 +147,6 @@
          ],
          "placement_rules":{
             "buffer":6,
-            "placement_type":"FromBaseCenter",
-            "threat":{
-               "influence_type":"AntiSurface",
-               "compare_type":"<",
-               "radius":10,
-               "value":50
-            }
-         }
-      },
-      {
-         "name":"Basic Energy Generator - early Desire Cdr",
-         "to_build":"BasicEnergyGenerator",
-         "instance_count":1,
-         "max_num_assisters":1,
-         "shared_instance_count":"BasicEnergy",
-         "priority":500,
-         "builders":[
-            "Commander"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"DesireEnergy"
-               },
-               {
-                  "test_type":"UnitCount",
-                  "unit_type_string0":"EnergyProduction & Basic",
-                  "compare0":"<",
-                  "value0":10
-               },
-               {
-                  "test_type":"UnitCount",
-                  "unit_type_string0":"EnergyProduction & Advanced",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicEnergyGenerator"
-               }
-            ]
-         ],
-         "placement_rules":{
-            "buffer":6,
-            "placement_type":"FromBaseCenter",
-            "threat":{
-               "influence_type":"AntiSurface",
-               "compare_type":"<",
-               "radius":10,
-               "value":50
-            }
-         }
-      },
-      {
-         "name":"Energy Storage - cdr",
-         "to_build":"EnergyStorage",
-		 "shared_instance_count":"EnergyStorage",
-         "instance_count":1,
-         "priority":1,
-         "builders":[
-            "Commander"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"EnergyStorageToProductionRatio",
-                  "compare0":"<",
-                  "value0":5
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"EnergyStorage"
-               }
-            ]
-         ],
-         "placement_rules":{
-            "buffer":10,
-            "placement_type":"FromBaseCenter",
-            "threat":{
-               "influence_type":"AntiSurface",
-               "compare_type":"<",
-               "radius":10,
-               "value":50
-            }
-         }
-      },
-      {
-         "name":"Metal Storage - cdr",
-         "to_build":"MetalStorage",
-		 "shared_instance_count":"MetalStorage",
-         "instance_count":1,
-         "priority":1,
-         "builders":[
-            "Commander"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"MetalStorageToProductionRatio",
-                  "compare0":"<",
-                  "value0":6
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"MetalStorage"
-               }
-            ]
-         ],
-         "placement_rules":{
-            "buffer":10,
             "placement_type":"FromBaseCenter",
             "threat":{
                "influence_type":"AntiSurface",

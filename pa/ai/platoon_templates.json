@@ -39,13 +39,13 @@
             {
                "unit_types":"(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy",
                "min_count":0,
-               "max_count":30,
+               "max_count":45,
                "squad":"Fast"
             },
             {
                "unit_types":"(Tank & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - Scout",
                "min_count":0,
-               "max_count":10,
+               "max_count":15,
                "squad":"General"
             },
             {
@@ -73,13 +73,13 @@
             {
                "unit_types":"(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy",
                "min_count":0,
-               "max_count":60,
+               "max_count":90,
                "squad":"Fast"
             },
             {
                "unit_types":"(Tank & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - Scout",
                "min_count":0,
-               "max_count":20,
+               "max_count":30,
                "squad":"General"
             },
             {
@@ -107,13 +107,13 @@
             {
                "unit_types":"(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy",
                "min_count":0,
-               "max_count":120,
+               "max_count":180,
                "squad":"Fast"
             },
             {
                "unit_types":"(Tank & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - Scout",
                "min_count":0,
-               "max_count":40,
+               "max_count":60,
                "squad":"General"
             },
             {
@@ -170,10 +170,44 @@
             }
          ]
       },
+	  "Last_Hope_gg":{
+         "units":[
+            {
+               "unit_types":"(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy",
+               "min_count":0,
+               "max_count":-1,
+               "squad":"Fast"
+            },
+            {
+               "unit_types":"(Tank & Mobile) - Fabber - AirDefense - Artillery - Heavy - Scout",
+               "min_count":0,
+               "max_count":-1,
+               "squad":"General"
+            },
+            {
+               "unit_types":"((Tank | Bot) & Mobile) & Artillery",
+               "min_count":0,
+               "max_count":-1,
+               "squad":"Artillery"
+            },
+            {
+               "unit_types":"((Tank | Bot) & Mobile) & Heavy",
+               "min_count":0,
+               "max_count":-1,
+               "squad":"Close"
+            },
+            {
+               "unit_types":"(((Tank | Bot) & Mobile) & (AirDefense | Construction)) | Commander",
+               "min_count":0,
+               "max_count":-1,
+               "squad":"Defense"
+            }
+         ]
+      },
       "Air_Scout":{
          "units":[
             {
-               "unit_types":"Air & Fighter",
+               "unit_types":"Air & Scout",
                "max_count":1
             }
          ]
@@ -196,7 +230,6 @@
             },
             {
                "unit_types":"Air & Fighter",
-               "min_count":0,
 			   "percent":1.0,
                "squad":"Escort"
             }
@@ -211,7 +244,6 @@
             },
             {
                "unit_types":"Air & Fighter",
-               "min_count":1,
 			   "percent":1.0,
                "squad":"Escort"
             }
@@ -226,7 +258,6 @@
             },
             {
                "unit_types":"Air & Fighter",
-               "min_count":3,
 			   "percent":1.0,
                "squad":"Escort"
             }
@@ -241,7 +272,6 @@
             },
             {
                "unit_types":"Air & Fighter",
-               "min_count":6,
 			   "percent":1.0,
                "squad":"Escort"
             }
@@ -256,7 +286,6 @@
             },
             {
                "unit_types":"Air & Fighter",
-               "min_count":12,
 			   "percent":1.0,
 			   "squad":"Escort"
             }

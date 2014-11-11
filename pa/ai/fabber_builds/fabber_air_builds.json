@@ -3,35 +3,17 @@
       {
          "name":"Basic Air Factory - Early Game",
          "to_build":"BasicAirFactory",
-         "instance_count":1,
-         "shared_instance_count":"BasicFactory",
+         "instance_count":-1,
          "priority":376,
          "max_num_assisters":1,
          "builders":[
             "Commander"
          ],
          "build_conditions":[
-            [
+            [			   
 			   {
-                  "test_type":"UnitCountPerPlanetRadius",
-                  "unit_type_string0":"Commander",
-                  "compare0":"<=",
-                  "value0":800
-               },
-			   {
-                  "test_type":"UnitCountOnPlanet",
-				  "unit_type_string0":"Factory",
-				  "compare0":"<",
-				  "value0":1
-               },			   
-			   {
-                  "test_type":"CanFindPlaceToBuild",
+                  "test_type":"CanAffordPotentialDrain",
                   "string0":"BasicAirFactory"
-               }
-			],
-			[
-			   {
-                  "test_type":"CanAffordBuildDemand"
                },
 			   {
                   "test_type":"HaveSeenEnemyUnits",
@@ -49,14 +31,15 @@
                   "string0":"BasicAirFactory"
                }
 			],
-			[
+			[			   
 			   {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicAirFactory"
                },
 			   {
                   "test_type":"PlanetThreatRatio",
                   "string0":"Air",
-                  "string1":"Air",
+                  "string1":"AntiAir",
                   "compare0":">",
                   "value0":1.2
                },			   
@@ -67,27 +50,17 @@
 			],
 			[
 			   {
-                  "test_type":"CanAffordBuildDemand"
-               },
-			   {
-                  "test_type":"UnitCountPerPlanetRadius",
-                  "unit_type_string0":"Commander",
-                  "compare0":"<=",
-                  "value0":800
-               }
-			],
-			[
-			   {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicAirFactory"
                },
 			   {
 			      "test_type":"NeedBasicAirFactory"  
 			   },
 			   {
                   "test_type":"UnitCountOnPlanet",
-				  "unit_type_string0":"Factory",
+				  "unit_type_string0":"Factory - Air",
 				  "compare0":">=",
-				  "value0":1
+				  "value0":2
                },			   
 			   {
                   "test_type":"CanFindPlaceToBuild",
@@ -111,114 +84,69 @@
          "instance_count":1,
          "shared_instance_count":"BasicFactory",
          "priority":376,
-         "min_num_assisters":2,
-         "max_num_assisters":4,
+         "min_num_assisters":1,
+         "max_num_assisters":3,
          "builders":[
             "AnyBasicFabber"
          ],
          "build_conditions":[
             [
 			   {
-                  "test_type":"UnitCountPerPlanetRadius",
-                  "unit_type_string0":"Commander",
-                  "compare0":"<=",
-                  "value0":800
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicAirFactory"
                },
 			   {
-                  "test_type":"UnitCountOnPlanet",
-				  "unit_type_string0":"Factory",
-				  "compare0":"<",
-				  "value0":1
-               },
-			   {
-                  "test_type":"UnitCountOnPlanet",
-				  "unit_type_string0":"Fabber & Construction",
+                  "test_type":"UnitCount",
+				  "unit_type_string0":"(Fabber & Construction) - Orbital",
 				  "compare0":">",
 				  "value0":3
-               },		   
-			   {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicAirFactory"
-               }
-			],
-			[
-			   {
-                  "test_type":"CanAffordBuildDemand"
-               },
-			   {
-                  "test_type":"HaveSeenEnemyUnits",
-                  "unit_type_string0":"Air",
-                  "boolean":true
-               },
-			   {
-                  "test_type":"UnitCountOnPlanet",
-				  "unit_type_string0":"Air & Factory",
-				  "compare0":"<",
-				  "value0":1
-               },			   			   
-			   {
-                  "test_type":"UnitCountOnPlanet",
-				  "unit_type_string0":"Fabber & Construction",
-				  "compare0":">",
-				  "value0":3
-               },
-			   {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicAirFactory"
-               }
-			],
-			[
-			   {
-                  "test_type":"CanAffordBuildDemand"
-               },
-			   {
-                  "test_type":"PlanetThreatRatio",
-                  "string0":"Air",
-                  "string1":"Air",
-                  "compare0":">",
-                  "value0":1.2
-               },			   			   
-			   {
-                  "test_type":"UnitCountOnPlanet",
-				  "unit_type_string0":"Fabber & Construction",
-				  "compare0":">",
-				  "value0":3
-               },			   
-			   {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicAirFactory"
-               }
-			],
-			[
-			   {
-                  "test_type":"CanAffordBuildDemand"
-               },
-			   {
-                  "test_type":"UnitCountPerPlanetRadius",
-                  "unit_type_string0":"Commander",
-                  "compare0":"<=",
-                  "value0":800
-               }
-			],
-			[
-			   {
-                  "test_type":"CanAffordBuildDemand"
                },
 			   {
 			      "test_type":"NeedBasicAirFactory"  
 			   },
 			   {
-                  "test_type":"UnitCountOnPlanet",
-				  "unit_type_string0":"Factory",
-				  "compare0":">=",
-				  "value0":1
-               },			   			   
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicAirFactory"
+               }
+			],
+			[
+			   {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicAirFactory"
+               },
+			   {
+                  "test_type":"PlanetThreatRatio",
+                  "string0":"Air",
+                  "string1":"AntiAir",
+                  "compare0":">",
+                  "value0":1.2
+               },
 			   {
                   "test_type":"UnitCountOnPlanet",
-				  "unit_type_string0":"Fabber & Construction",
-				  "compare0":">",
-				  "value0":3
-               },			   
+				  "unit_type_string0":"Commander",
+				  "compare0":"<",
+				  "value0":1
+               },
+			   {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicAirFactory"
+               }
+			],
+			[
+			   
+			   {
+                  "test_type":"CanAffordPotentialDrain",
+				  "string0":"BasicAirFactory"
+               },
+			   {
+                  "test_type":"UnitCountOnPlanet",
+				  "unit_type_string0":"Commander",
+				  "compare0":"<",
+				  "value0":1
+               },
+			   {
+			      "test_type":"NeedBasicAirFactory"  
+			   },
 			   {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirFactory"

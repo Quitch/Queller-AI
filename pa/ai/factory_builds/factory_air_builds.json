@@ -4,7 +4,7 @@
          "name":"Basic Air Fabber",
          "to_build":"BasicAirFabber",
          "instance_count":1,
-         "max_num_assisters":1,
+         "max_num_assisters":10,
          "priority":100,
          "builders":[
             "BasicAirFactory"
@@ -43,10 +43,38 @@
             ]
          ]
       },
+	  {
+         "name":"Firefly",
+         "to_build":"AirScout",
+         "instance_count":1,
+         "max_num_assisters":10,
+         "priority":98,
+         "builders":[
+            "BasicAirFactory"
+         ],
+         "build_conditions":[
+            [
+			   {
+                  "test_type":"BaseThreatened",
+                  "boolean":false
+               },
+			   {
+                  "test_type":"CanAffordBuildDemand"
+               },
+			   {
+                  "test_type":"UnitCountPerPlanetRadius",
+                  "unit_type_string0":"Air & Scout",
+                  "compare0":"<",
+                  "value0":200
+               }
+			]
+         ]
+      },
       {
-         "name":"Basic Air Fighter",
+         "name":"Hummingbird",
          "to_build":"BasicFighter",
          "instance_count":-1,
+         "max_num_assisters":10,
          "priority":97,
          "builders":[
             "BasicAirFactory"
@@ -90,9 +118,10 @@
          ]
       },
       {
-         "name":"Basic Air Bomber",
+         "name":"Bumblebee",
          "to_build":"BasicBomber",
          "instance_count":-1,
+         "max_num_assisters":10,
          "priority":97,
          "builders":[
             "BasicAirFactory"

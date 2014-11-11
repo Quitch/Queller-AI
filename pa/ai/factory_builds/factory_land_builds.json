@@ -4,7 +4,7 @@
          "name":"Basic Bot Fabber",
          "to_build":"BasicBotFabber",
          "instance_count":1,
-         "max_num_assisters":1,
+         "max_num_assisters":10,
          "priority":100,
          "builders":[
             "BasicBotFactory"
@@ -27,6 +27,10 @@
                }
             ],
 			[
+               {
+                  "test_type":"BaseThreatened",
+                  "boolean":false
+               },               
 			   {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -43,7 +47,7 @@
          "name":"Basic Vehicle Fabber",
          "to_build":"BasicVehicleFabber",
          "instance_count":1,
-         "max_num_assisters":1,
+         "max_num_assisters":10,
          "priority":100,
          "builders":[
             "BasicVehicleFactory"
@@ -66,6 +70,10 @@
                }
             ],
 			[
+               {
+                  "test_type":"BaseThreatened",
+                  "boolean":false
+               },               
 			   {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -75,42 +83,14 @@
                   "compare0":"<",
                   "value0":1
                }
-			],
-			[
-			   {
-                  "test_type":"CanAffordBuildDemand"
-               },
-			   {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Tank & Factory",
-                  "compare0":">=",
-                  "value0":1
-               },
-			   {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Bot & Factory",
-                  "compare0":"<",
-                  "value0":1
-               },
-			   {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Air & Factory",
-                  "compare0":"<",
-                  "value0":1
-               },
-			   {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Basic & Fabber",
-                  "compare0":"<",
-                  "value0":3
-               }
 			]
          ]
       },
       {
-         "name":"Basic Assault Bot",
+         "name":"Dox",
          "to_build":"BasicAssaultBot",
          "instance_count":-1,
+         "max_num_assisters":10,
          "priority":97,
          "builders":[
             "BasicBotFactory"
@@ -124,17 +104,17 @@
          ]
       },
       {
-         "name":"Land Scout - Intel",
+         "name":"Land Scout",
          "to_build":"LandScout",
          "instance_count":1,
+         "max_num_assisters":10,
          "shared_instance_count":"LandScout",
-         "priority":97,
+         "priority":98,
          "builders":[
             "BasicVehicleFactory"
          ],
          "build_conditions":[
-            [
-               
+            [               
 			   {
                   "test_type":"BaseThreatened",
                   "boolean":false
@@ -144,7 +124,7 @@
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"(Air & Factory) & (Bot & Factory)",
+                  "unit_type_string0":"Air & Factory",
                   "compare0":"<",
                   "value0":1
                },
@@ -152,7 +132,7 @@
                   "test_type":"UnitCountPerPlanetRadius",
                   "unit_type_string0":"((Bot & Mobile) | (Land & Scout)) - Fabber - AirDefense - Construction - Artillery - Heavy",
                   "compare0":"<",
-                  "value0":200
+                  "value0":100
                },
                {
                   "test_type":"HaveFullPlanetIntel",
@@ -162,9 +142,10 @@
          ]
       },
       {
-         "name":"Light Laser Tank",
+         "name":"Bolo",
          "to_build":"LightLaserTank",
          "instance_count":-1,
+         "max_num_assisters":10,
          "priority":97,
          "builders":[
             "BasicVehicleFactory"
@@ -178,10 +159,10 @@
          ]
       },
       {
-         "name":"Basic Armor Tank",
+         "name":"Inferno",
          "to_build":"BasicArmorTank",
          "instance_count":-1,
-         "max_num_assisters":0,
+         "max_num_assisters":10,
          "priority":97,
          "builders":[
             "BasicVehicleFactory"
@@ -224,9 +205,10 @@
          ]
       },
       {
-         "name":"Basic AA Vehicle",
+         "name":"Spinner",
          "to_build":"BasicAAVehicle",
          "instance_count":1,
+         "max_num_assisters":10,
          "priority":97,
          "builders":[
             "BasicVehicleFactory"
@@ -266,14 +248,31 @@
                   "compare0":">",
                   "value0":2.0
                }
-            ]
+            ],
+			[
+			   
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"(Tank | Bot) & AirDefense",
+                  "unit_type_string1":"(Tank | Bot) - Fabber",
+                  "compare0":"<",
+                  "value0":0.1
+               }
+			]
          ]
       },
       {
          "name":"Advanced Bot Fabber",
          "to_build":"AdvancedBotFabber",
          "instance_count":1,
-         "max_num_assisters":1,
+         "max_num_assisters":10,
          "priority":200,
          "builders":[
             "AdvancedBotFactory"
@@ -316,7 +315,7 @@
          "name":"Advanced Vehicle Fabber",
          "to_build":"AdvancedVehicleFabber",
          "instance_count":1,
-         "max_num_assisters":1,
+         "max_num_assisters":10,
          "priority":200,
          "builders":[
             "AdvancedVehicleFactory"
@@ -360,9 +359,10 @@
          ]
       },
       {
-         "name":"Advanced Assault Bot",
+         "name":"Slammer",
          "to_build":"AdvancedAssaultBot",
          "instance_count":-1,
+         "max_num_assisters":10,
          "priority":199,
          "builders":[
             "AdvancedBotFactory"
@@ -385,9 +385,10 @@
          ]
       },
       {
-         "name":"Advanced Artillery Bot",
+         "name":"GIL-E",
          "to_build":"AdvancedArtilleryBot",
          "instance_count":-1,
+         "max_num_assisters":10,
          "priority":199,
          "builders":[
             "AdvancedBotFactory"
@@ -401,9 +402,10 @@
          ]
       },
       {
-         "name":"Advanced Armor Tank",
+         "name":"Vanguard",
          "to_build":"AdvancedArmorTank",
          "instance_count":-1,
+         "max_num_assisters":10,
          "priority":199,
          "builders":[
             "AdvancedVehicleFactory"
@@ -424,9 +426,10 @@
          ]
       },
       {
-         "name":"Advanced Artillery Vehicle",
+         "name":"Sheller",
          "to_build":"AdvancedArtilleryVehicle",
          "instance_count":-1,
+         "max_num_assisters":10,
          "priority":199,
          "builders":[
             "AdvancedVehicleFactory"

@@ -7,15 +7,11 @@
          "priority":99,
          "build_conditions":[
             [
-               {
-                  "test_type":"BaseThreatened",
-                  "boolean":false
-               },			   
-               {
+			   {
                   "test_type":"UnitCountPerPlanetRadius",
-                  "unit_type_string0":"Air & Fighter",
+                  "unit_type_string0":"Air & Scout",
                   "compare0":"<",
-                  "value0":200
+                  "value0":100
                },
                {
                   "test_type":"HaveFullPlanetIntel",
@@ -48,7 +44,7 @@
                   "test_type":"CanAttackWithPoolUnitsBomber",
                   "string0":"WL_AnySurface",
                   "string1":"WL_Air",
-                  "unit_type_string0":"Mobile | Structure"
+                  "unit_type_string0":"Mobile | Teleporter"
                }
             ]
          ],
@@ -71,7 +67,7 @@
                   "test_type":"CanAttackWithPoolUnitsBomber",
                   "string0":"WL_AnySurface",
                   "string1":"WL_Air",
-                  "unit_type_string0":"Mobile | Structure"
+                  "unit_type_string0":"Mobile | Teleporter"
                }
             ]
          ],
@@ -94,7 +90,7 @@
                   "test_type":"CanAttackWithPoolUnitsBomber",
                   "string0":"WL_AnySurface",
                   "string1":"WL_Air",
-                  "unit_type_string0":"Mobile | Structure"
+                  "unit_type_string0":"Mobile | Teleporter"
                }
             ]
          ],
@@ -117,7 +113,7 @@
                   "test_type":"CanAttackWithPoolUnitsBomber",
                   "string0":"WL_AnySurface",
                   "string1":"WL_Air",
-                  "unit_type_string0":"Mobile | Structure"
+                  "unit_type_string0":"Mobile | Teleporter"
                }
             ]
          ],
@@ -129,7 +125,7 @@
          "instance_count":-1,
          "priority":100,
          "build_conditions":[
-            [               
+            [
                {
                   "test_type":"FocusTargetThreat",
                   "string0":"AntiAir",
@@ -140,7 +136,7 @@
                   "test_type":"CanAttackWithPoolUnitsBomber",
                   "string0":"WL_AnySurface",
                   "string1":"WL_Air",
-                  "unit_type_string0":"Mobile | Structure"
+                  "unit_type_string0":"Mobile | Teleporter"
                }
             ]
          ],
