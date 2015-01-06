@@ -1,21 +1,278 @@
 {
    "build_list":[
       {
-         "name":"Naval Attack Platoon",
-         "to_build":"Naval_Attack",
+         "name":"Naval Raid Platoon Small",
+         "to_build":"Naval_Raid_Small",
+         "instance_count":1,
+         "priority":105,
+         "build_conditions":[
+            [
+               {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"Naval & Mobile & Scout",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
+                  "test_type":"FocusTargetThreat",
+                  "string0":"AntiSurface",
+                  "compare0":"<",
+                  "value0":840
+               },
+               {
+                  "test_type":"CanAttackWithPoolUnits",
+                  "string0":"WL_AnySurface",
+                  "string1":"WL_AnySurface",
+                  "unit_type_string0":"Mobile | Structure"
+               }
+            ]
+         ],
+         "task_type":"NavalAttack"
+      },
+      {
+         "name":"Naval Raid Platoon Medium",
+         "to_build":"Naval_Raid_Medium",
+         "instance_count":1,
+         "priority":104,
+         "build_conditions":[
+            [
+               {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"Naval & Mobile & Scout",
+                  "compare0":">=",
+                  "value0":4
+               },
+               {
+                  "test_type":"FocusTargetThreat",
+                  "string0":"AntiSurface",
+                  "compare0":"<",
+                  "value0":2800
+               },
+               {
+                  "test_type":"CanAttackWithPoolUnits",
+                  "string0":"WL_AnySurface",
+                  "string1":"WL_AnySurface",
+                  "unit_type_string0":"Mobile | Structure"
+               }
+            ]
+         ],
+         "task_type":"NavalAttack"
+      },
+      {
+         "name":"Naval Raid Platoon Large",
+         "to_build":"Naval_Raid_Large",
+         "instance_count":1,
+         "priority":103,
+         "build_conditions":[
+            [
+               {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"Naval & Mobile & Scout",
+                  "compare0":">=",
+                  "value0":10
+               },
+               {
+                  "test_type":"FocusTargetThreat",
+                  "string0":"AntiSurface",
+                  "compare0":"<",
+                  "value0":5600
+               },
+               {
+                  "test_type":"CanAttackWithPoolUnits",
+                  "string0":"WL_AnySurface",
+                  "string1":"WL_AnySurface",
+                  "unit_type_string0":"Mobile | Structure"
+               }
+            ]
+         ],
+         "task_type":"NavalAttack"
+      },
+      {
+         "name":"Naval Raid Platoon XLarge",
+         "to_build":"Naval_Raid_XLarge",
+         "instance_count":1,
+         "priority":102,
+         "build_conditions":[
+            [
+               {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"Naval & Mobile & Scout",
+                  "compare0":">=",
+                  "value0":20
+               },
+               {
+                  "test_type":"FocusTargetThreat",
+                  "string0":"AntiSurface",
+                  "compare0":"<",
+                  "value0":11200
+               },
+               {
+                  "test_type":"CanAttackWithPoolUnits",
+                  "string0":"WL_AnySurface",
+                  "string1":"WL_AnySurface",
+                  "unit_type_string0":"Mobile | Structure"
+               }
+            ]
+         ],
+         "task_type":"NavalAttack"
+      },
+      {
+         "name":"Naval Raid Platoon Max",
+         "to_build":"Naval_Raid_Max",
+         "instance_count":1,
+         "priority":101,
+         "build_conditions":[
+            [
+               {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"Naval & Mobile & Scout",
+                  "compare0":">=",
+                  "value0":40
+               },
+               {
+                  "test_type":"CanAttackWithPoolUnits",
+                  "string0":"WL_AnySurface",
+                  "string1":"WL_AnySurface",
+                  "unit_type_string0":"Mobile | Structure"
+               }
+            ]
+         ],
+         "task_type":"NavalAttack"
+      },
+      {
+         "name":"Naval Attack Platoon Small",
+         "to_build":"Naval_Attack_Small",
+         "instance_count":-1,
+         "priority":104,
+         "build_conditions":[
+            [
+               {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"(Naval & Mobile) - Fabber - Construction - Scout",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
+                  "test_type":"FocusTargetThreat",
+                  "string0":"AntiSurface",
+                  "compare0":"<",
+                  "value0":840
+               },
+               {
+                  "test_type":"CanAttackWithPoolUnits",
+                  "string0":"WL_AnySurface",
+                  "string1":"WL_AnySurface",
+                  "unit_type_string0":"Mobile | Structure"
+               }
+            ]
+         ],
+         "task_type":"NavalAttack"
+      },
+      {
+         "name":"Naval Attack Platoon Medium",
+         "to_build":"Naval_Attack_Medium",
+         "instance_count":-1,
+         "priority":103,
+         "build_conditions":[
+            [
+               {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"(Naval & Mobile) - Fabber - Construction - Scout - AirDefense",
+                  "compare0":">=",
+                  "value0":3
+               },
+               {
+                  "test_type":"FocusTargetThreat",
+                  "string0":"AntiSurface",
+                  "compare0":"<",
+                  "value0":2800
+               },
+               {
+                  "test_type":"CanAttackWithPoolUnits",
+                  "string0":"WL_AnySurface",
+                  "string1":"WL_AnySurface",
+                  "unit_type_string0":"Mobile | Structure"
+               }
+            ]
+         ],
+         "task_type":"NavalAttack"
+      },
+      {
+         "name":"Naval Attack Platoon Large",
+         "to_build":"Naval_Attack_Large",
+         "instance_count":-1,
+         "priority":102,
+         "build_conditions":[
+            [
+               {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"(Naval & Mobile) - Fabber - Construction - Scout - AirDefense",
+                  "compare0":">=",
+                  "value0":6
+               },
+               {
+                  "test_type":"FocusTargetThreat",
+                  "string0":"AntiSurface",
+                  "compare0":"<",
+                  "value0":5600
+               },
+               {
+                  "test_type":"CanAttackWithPoolUnits",
+                  "string0":"WL_AnySurface",
+                  "string1":"WL_AnySurface",
+                  "unit_type_string0":"Mobile | Structure"
+               }
+            ]
+         ],
+         "task_type":"NavalAttack"
+      },
+      {
+         "name":"Naval Attack Platoon XLarge",
+         "to_build":"Naval_Attack_XLarge",
+         "instance_count":-1,
+         "priority":101,
+         "build_conditions":[
+            [
+               {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"(Naval & Mobile) - Fabber - Construction - Scout - AirDefense",
+                  "compare0":">=",
+                  "value0":13
+               },
+               {
+                  "test_type":"FocusTargetThreat",
+                  "string0":"AntiSurface",
+                  "compare0":"<",
+                  "value0":11200
+               },
+               {
+                  "test_type":"CanAttackWithPoolUnits",
+                  "string0":"WL_AnySurface",
+                  "string1":"WL_AnySurface",
+                  "unit_type_string0":"Mobile | Structure"
+               }
+            ]
+         ],
+         "task_type":"NavalAttack"
+      },
+      {
+         "name":"Naval Attack Platoon Max",
+         "to_build":"Naval_Attack_Max",
          "instance_count":-1,
          "priority":100,
          "build_conditions":[
             [
                {
                   "test_type":"UnitPoolCount",
-                  "unit_type_string0":"(Naval & Mobile) - Fabber",
+                  "unit_type_string0":"(Naval & Mobile) - Fabber - Construction - Scout - AirDefense",
                   "compare0":">=",
-                  "value0":1
+                  "value0":25
                },
                {
                   "test_type":"CanAttackWithPoolUnits",
-                  "boolean":true
+                  "string0":"WL_AnySurface",
+                  "string1":"WL_AnySurface",
+                  "unit_type_string0":"Mobile | Structure"
                }
             ]
          ],

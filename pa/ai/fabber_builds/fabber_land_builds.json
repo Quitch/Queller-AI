@@ -21,6 +21,12 @@
                   "value0":200
                },
 			   {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Tank & Factory & Basic",
+                  "compare0":"<",
+                  "value0":1
+               },
+			   {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicBotFactory"
                }
@@ -62,6 +68,12 @@
                   "value0":200
                },
 			   {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Tank & Factory & Basic",
+                  "compare0":"<",
+                  "value0":1
+               },
+			   {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"BasicBotFactory"
                },
@@ -82,6 +94,12 @@
                   "unit_type_string0":"Bot & Factory & Basic",
                   "compare0":"<=",
                   "value0":200
+               },
+			   {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Tank & Factory & Basic",
+                  "compare0":"<",
+                  "value0":1
                },
 			   {
                   "test_type":"CanAffordPotentialDrain",
@@ -117,12 +135,6 @@
 			   {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"BasicVehicleFactory"
-               },
-			   {
-                  "test_type":"UnitCountPerPlanetRadius",
-                  "unit_type_string0":"Bot & Factory & Basic",
-                  "compare0":">",
-                  "value0":200
                },
 			   {
                   "test_type":"CanFindPlaceToBuild",

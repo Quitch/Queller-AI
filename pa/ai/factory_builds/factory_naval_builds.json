@@ -18,15 +18,64 @@
                {
                   "test_type":"CanAffordBuildDemand"
                },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Naval & Fabber & Basic",
+			   {
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Basic & Fabber",
+                  "unit_type_string1":"Badic & Factory",
                   "compare0":"<",
-                  "value0":2
+                  "value0":0.5
+               },
+			   {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Advanced & Naval & Factory",
+                  "compare0":"<",
+                  "value0":1
+               }
+            ],
+            [
+               {
+                  "test_type":"BaseThreatened",
+                  "boolean":false
                },
                {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicNavalFabber"
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Fabber & Basic",
+                  "compare0":"<",
+                  "value0":3
+               },
+			   {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Advanced & Naval & Factory",
+                  "compare0":"<",
+                  "value0":1
+               }
+            ]
+         ]
+      },
+	  {
+         "name":"Piranha",
+         "to_build":"Sea_Scout",
+         "instance_count":-1,
+         "max_num_assisters":10,
+         "priority":97,
+         "builders":[
+            "BasicNavalFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Naval & Scout",
+                  "unit_type_string1":"(Naval & Offense) - Fabber",
+                  "compare0":"<",
+                  "value0":0.05
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ]
@@ -69,6 +118,13 @@
                },
                {
                   "test_type":"CanAffordBuildDemand"
+               },			   
+			   {
+                  "test_type":"PlanetThreatRatio",
+                  "string0":"Air",
+                  "string1":"AntiAir",
+                  "compare0":">",
+                  "value0":1.0
                }
             ]
          ]
@@ -89,17 +145,25 @@
                   "boolean":false
                },
                {
+                  "test_type":"NeedAdvancedNavalFabber"
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ],
+            [
+               {
+                  "test_type":"BaseThreatened",
+                  "boolean":false
+               },
+			   {
                   "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Naval & Fabber & Advanced",
+                  "unit_type_string0":"Fabber & Advanced",
                   "compare0":"<",
-                  "value0":2
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"AdvancedAirFabber"
+                  "value0":3
                }
             ]
          ]
@@ -140,8 +204,27 @@
                   "test_type":"AloneOnPlanet",
                   "boolean":false
                },
+			   {
+                  "test_type":"PlanetThreatRatio",
+                  "string0":"Air",
+                  "string1":"AntiAir",
+                  "compare0":">",
+                  "value0":1.0
+               },
                {
                   "test_type":"CanAffordBuildDemand"
+               }
+            ],
+            [
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+			   {
+                  "test_type":"BaseThreatRatio",
+                  "string0":"Air",
+                  "string1":"AntiAir",
+                  "compare0":">",
+                  "value0":1.5
                }
             ]
          ]

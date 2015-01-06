@@ -1,16 +1,14 @@
 {
    "build_list":[
       {
-         "name":"Basic Naval Factory",
+         "name":"Basic Naval Factory - Early Game",
          "to_build":"BasicNavalFactory",
          "instance_count":1,
          "shared_instance_count":"BasicFactory",
          "priority":376,
          "max_num_assisters":3,
          "builders":[
-            "Commander",
-            "BasicAirFabber",
-            "BasicNavalFabber"
+            "Commander"
          ],
          "build_conditions":[
             [
@@ -19,168 +17,7 @@
                   "boolean":false
                },
                {
-                  "test_type":"NeedBasicNavalFactory"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicNavalFactory"
-               },
-               {
-                  "test_type":"HaveEcoForAdvanced",
-                  "boolean":false
-               },
-               {
-                  "test_type":"UnitRatioOnPlanet",
-                  "unit_type_string0":"Factory & Basic - Orbital - NukeDefense - Nuke",
-                  "unit_type_string1":"Fabber & Basic",
-                  "compare0":"<",
-                  "value0":0.4
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicNavalFactory"
-               }
-            ],
-            [
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":false
-               },
-               {
-                  "test_type":"NeedBasicNavalFactory"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicNavalFactory"
-               },
-               {
-                  "test_type":"HaveEcoForAdvanced",
-                  "boolean":false
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Fabber & Basic",
-                  "compare0":">=",
-                  "value0":5
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicNavalFactory"
-               }
-            ],
-            [
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":false
-               },
-               {
-                  "test_type":"NeedBasicNavalFactory"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicNavalFactory"
-               },
-               {
-                  "test_type":"HaveEcoForAdvanced",
-                  "boolean":true
-               },
-               {
-                  "test_type":"UnitRatioOnPlanet",
-                  "unit_type_string0":"Factory & Basic - Orbital - NukeDefense - Nuke",
-                  "unit_type_string1":"Factory & Advanced - Orbital - NukeDefense - Nuke",
-                  "compare0":"<",
-                  "value0":5
-               },
-               {
-                  "test_type":"UnitRatioOnPlanet",
-                  "unit_type_string0":"Factory & Basic - Orbital - NukeDefense - Nuke",
-                  "unit_type_string1":"Fabber & Basic",
-                  "compare0":"<",
-                  "value0":0.4
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicNavalFactory"
-               }
-            ],
-            [
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":false
-               },
-               {
-                  "test_type":"NeedBasicNavalFactory"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicNavalFactory"
-               },
-               {
-                  "test_type":"HaveEcoForAdvanced",
-                  "boolean":true
-               },
-               {
-                  "test_type":"UnitRatioOnPlanet",
-                  "unit_type_string0":"Factory & Basic - Orbital - NukeDefense - Nuke",
-                  "unit_type_string1":"Factory & Advanced - Orbital - NukeDefense - Nuke",
-                  "compare0":"<",
-                  "value0":5
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Fabber & Basic",
-                  "compare0":">=",
-                  "value0":5
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicNavalFactory"
-               }
-            ],
-            [
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":true
-               },
-               {
-                  "test_type":"NeedBasicNavalFactory"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicNavalFactory"
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Factory & Basic - Orbital - NukeDefense - Nuke",
-                  "compare0":"<",
-                  "value0":3
-               },
-               {
-                  "test_type":"HaveEcoForAdvanced",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicNavalFactory"
-               }
-            ],
-            [
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":true
-               },
-               {
-                  "test_type":"NeedBasicNavalFactory"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicNavalFactory"
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Factory & Basic - Orbital - NukeDefense - Nuke",
-                  "compare0":"<",
-                  "value0":1
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -198,6 +35,53 @@
             }
          }
       },
+	  {
+         "name":"Basic Naval Factory - Mid-Game",
+         "to_build":"BasicNavalFactory",
+         "instance_count":1,
+         "shared_instance_count":"BasicFactory",
+         "priority":259,
+         "min_num_assisters":1,
+         "max_num_assisters":3,
+         "builders":[
+            "BasicAirFabber",
+            "BasicNavalFabber"
+         ],
+         "build_conditions":[
+            [               
+			   {
+                  "test_type":"UnitCountOnPlanet",
+				  "unit_type_string0":"(Fabber & Construction) - Orbital",
+				  "compare0":">",
+				  "value0":3
+               },
+			   {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicNavalFactory"
+               },
+			   {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicNavalFactory"
+               }
+			],
+			[
+			   {
+                  "test_type":"UnitCountOnPlanet",
+				  "unit_type_string0":"Commander",
+				  "compare0":"<",
+				  "value0":1
+               },
+			   {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicNavalFactory"
+               },
+			   {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicNavalFactory"
+               }
+			]
+         ]
+	  },
       {
          "name":"Advanced Naval Factory",
          "to_build":"AdvancedNavalFactory",
@@ -215,9 +99,6 @@
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
-               },
-               {
-                  "test_type":"NeedAdvancedNavalFactory"
                },
                {
                   "test_type":"CanAffordPotentialDrain",

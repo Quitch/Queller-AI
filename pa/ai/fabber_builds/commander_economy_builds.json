@@ -25,7 +25,32 @@
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Fabber - Orbital",
                   "compare0":"<",
-                  "value0":1,
+                  "value0":2,
+                  "boolean":true
+               }
+            ],
+			[
+               {
+                  "test_type":"PotentialMetalEfficiency",
+                  "compare0":"<",
+                  "value0":1.0
+               },
+               {
+                  "test_type":"CanFindMetalSpotToBuildBasic",
+                  "boolean":true
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Factory",
+                  "compare0":">",
+                  "value0":0,
+                  "boolean":true
+               },			   
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"MetalProduction",
+                  "compare0":"<",
+                  "value0":2,
                   "boolean":true
                }
             ]
@@ -63,7 +88,7 @@
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Fabber - Orbital",
                   "compare0":"<",
-                  "value0":1,
+                  "value0":2,
                   "boolean":true
                }
             ]

@@ -1,7 +1,7 @@
 {
    "build_list":[
       {
-         "name":"Basic Air Defense - Mex",
+         "name":"Galata Turret - Mex Few",
          "to_build":"BasicAirDefense",
          "instance_count":1,
          "shared_instance_count":"BasicAirDefense",
@@ -23,7 +23,7 @@
 			   {
                   "test_type":"PlanetThreatRatio",
                   "string0":"Air",
-                  "string1":"Air",
+                  "string1":"AntiAir",
                   "compare0":">",
                   "value0":1.0
                },
@@ -42,10 +42,10 @@
                   "alliance":"Ally",
                   "compare_type":">=",
                   "range":50,
-                  "count":1
+                  "count":2
                },
                {
-                  "unit_type_string":"Structure & Basic & AirDefense",
+                  "unit_type_string":"Structure & AirDefense",
                   "alliance":"Ally",
                   "compare_type":"<",
                   "range":100,
@@ -54,8 +54,62 @@
             ]
          }
       },
+	  {
+         "name":"Galata Turret - Mex Many+",
+         "to_build":"BasicAirDefense",
+         "instance_count":1,
+         "shared_instance_count":"BasicAirDefense",
+         "priority":252,
+         "base_sort":"FromPerimeter",
+         "builders":[
+            "AnyBasicFabber"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"DistFromMainBase",
+                  "compare0":">=",
+                  "value0":200
+               },
+			   {
+                  "test_type":"PlanetThreatRatio",
+                  "string0":"Air",
+                  "string1":"AntiAir",
+                  "compare0":">",
+                  "value0":1.0
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicAirDefense"
+               }
+            ]
+         ],
+         "placement_rules":{
+            "buffer":2,
+            "placement_type":"FromMainBasePerimeter",
+            "unit_count_rules":[
+               {
+                  "unit_type_string":"Structure & MetalProduction",
+                  "alliance":"Ally",
+                  "compare_type":">=",
+                  "range":50,
+                  "count":5
+               },
+               {
+                  "unit_type_string":"Structure & AirDefense",
+                  "alliance":"Ally",
+                  "compare_type":"<",
+                  "range":100,
+                  "count":2
+               }
+            ]
+         }
+      },
       {
-         "name":"Basic Land Defense Single - Mex",
+         "name":"Single Laser Defense Tower - Mex",
          "to_build":"BasicLandDefenseSingle",
          "instance_count":1,
          "shared_instance_count":"BasicLandDefense",
@@ -99,7 +153,7 @@
                   "count":1
                },
                {
-                  "unit_type_string":"Structure & Basic & SurfaceDefense",
+                  "unit_type_string":"Structure & SurfaceDefense",
                   "alliance":"Ally",
                   "compare_type":"<",
                   "range":100,
@@ -109,7 +163,7 @@
          }
       },
 	  {
-         "name":"Basic Land Defense - Mex",
+         "name":"Laser Defense Tower - Mex Few",
          "to_build":"BasicLandDefense",
          "instance_count":1,
          "shared_instance_count":"BasicLandDefense",
@@ -150,10 +204,10 @@
                   "alliance":"Ally",
                   "compare_type":">=",
                   "range":50,
-                  "count":1
+                  "count":2
                },
                {
-                  "unit_type_string":"Structure & Basic & SurfaceDefense",
+                  "unit_type_string":"Structure & SurfaceDefense",
                   "alliance":"Ally",
                   "compare_type":"<",
                   "range":100,
@@ -162,8 +216,172 @@
             ]
          }
       },
+	  {
+         "name":"Laser Defense Tower - Mex Many",
+         "to_build":"BasicLandDefense",
+         "instance_count":1,
+         "shared_instance_count":"BasicLandDefense",
+         "priority":253,
+         "base_sort":"FromPerimeter",
+         "builders":[
+            "AnyBasicFabber"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"DistFromMainBase",
+                  "compare0":">=",
+                  "value0":200
+               },
+			   {
+                  "test_type":"PlanetThreatRatio",
+                  "string0":"Land",
+                  "string1":"Land",
+                  "compare0":">",
+                  "value0":1.0
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicLandDefenseSingle"
+               }
+            ]
+         ],
+         "placement_rules":{
+            "buffer":2,
+            "placement_type":"FromMainBasePerimeter",
+            "unit_count_rules":[
+               {
+                  "unit_type_string":"Structure & MetalProduction",
+                  "alliance":"Ally",
+                  "compare_type":">=",
+                  "range":50,
+                  "count":5
+               },
+               {
+                  "unit_type_string":"Structure & SurfaceDefense",
+                  "alliance":"Ally",
+                  "compare_type":"<",
+                  "range":100,
+                  "count":2
+               }
+            ]
+         }
+      },
+	  {
+         "name":"Torpedo Launcher - Mex Few",
+         "to_build":"BasicNavalDefense",
+         "instance_count":1,
+         "shared_instance_count":"BasicNavalDefense",
+         "priority":255,
+         "base_sort":"FromPerimeter",
+         "builders":[
+            "BasicAirFabber",
+			"BasicNavalFabber"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"DistFromMainBase",
+                  "compare0":">=",
+                  "value0":200
+               },
+			   {
+                  "test_type":"PlanetThreatRatio",
+                  "string0":"Naval",
+                  "string1":"Naval",
+                  "compare0":">",
+                  "value0":1.0
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicNavalDefense"
+               }
+            ]
+         ],
+         "placement_rules":{
+            "buffer":2,
+            "placement_type":"FromMainBasePerimeter",
+            "unit_count_rules":[
+               {
+                  "unit_type_string":"Structure & MetalProduction",
+                  "alliance":"Ally",
+                  "compare_type":">=",
+                  "range":50,
+                  "count":2
+               },
+               {
+                  "unit_type_string":"Structure & Naval & Defense",
+                  "alliance":"Ally",
+                  "compare_type":"<",
+                  "range":100,
+                  "count":1
+               }
+            ]
+         }
+      },
+	  {
+         "name":"Torpedo Launcher - Mex Many",
+         "to_build":"BasicNavalDefense",
+         "instance_count":1,
+         "shared_instance_count":"BasicNavalDefense",
+         "priority":255,
+         "base_sort":"FromPerimeter",
+         "builders":[
+            "BasicAirFabber",
+			"BasicNavalFabber"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"DistFromMainBase",
+                  "compare0":">=",
+                  "value0":200
+               },
+			   {
+                  "test_type":"PlanetThreatRatio",
+                  "string0":"Naval",
+                  "string1":"Naval",
+                  "compare0":">",
+                  "value0":1.0
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicNavalDefense"
+               }
+            ]
+         ],
+         "placement_rules":{
+            "buffer":2,
+            "placement_type":"FromMainBasePerimeter",
+            "unit_count_rules":[
+               {
+                  "unit_type_string":"Structure & MetalProduction",
+                  "alliance":"Ally",
+                  "compare_type":">=",
+                  "range":50,
+                  "count":5
+               },
+               {
+                  "unit_type_string":"Structure & Naval & Defense",
+                  "alliance":"Ally",
+                  "compare_type":"<",
+                  "range":100,
+                  "count":2
+               }
+            ]
+         }
+      },
       {
-         "name":"Basic Air Defense - Threat",
+         "name":"Galata Turret - Base",
          "to_build":"BasicAirDefense",
          "instance_count":1,
          "max_num_assisters":1,
@@ -184,7 +402,7 @@
                   "string0":"Air",
                   "string1":"AntiAir",
                   "compare0":">",
-                  "value0":2.0
+                  "value0":1.5
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -201,20 +419,20 @@
                   "alliance":"Ally",
                   "compare_type":">=",
                   "range":50,
-                  "count":1
+                  "count":2
                },
                {
-                  "unit_type_string":"Structure & Basic & AirDefense",
+                  "unit_type_string":"Structure & AirDefense",
                   "alliance":"Ally",
                   "compare_type":"<",
                   "range":75,
-                  "count":2
+                  "count":1
                }
             ]
          }
       },
       {
-         "name":"Basic Land Defense Single - Threat",
+         "name":"Single Laser Defense Tower - Base",
          "to_build":"BasicLandDefenseSingle",
          "instance_count":1,
          "max_num_assisters":1,
@@ -222,6 +440,7 @@
          "priority":251,
          "base_sort":"FromPerimeter",
          "builders":[
+			"Commander",
             "AnyBasicFabber"
          ],
          "build_conditions":[
@@ -231,7 +450,7 @@
                },
                {
                   "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & Basic & SurfaceDefense",
+                  "unit_type_string0":"Structure & SurfaceDefense",
                   "compare0":"<",
                   "value0":1
                },
@@ -240,7 +459,7 @@
                   "string0":"Land",
                   "string1":"Land",
                   "compare0":">",
-                  "value0":2.0
+                  "value0":1.5
                },
                {
                   "test_type":"HaveSeenEnemyUnits",
@@ -265,17 +484,17 @@
                   "count":1
                },
                {
-                  "unit_type_string":"Structure & Basic & SurfaceDefense",
+                  "unit_type_string":"Structure & SurfaceDefense",
                   "alliance":"Ally",
                   "compare_type":"<",
                   "range":75,
-                  "count":2
+                  "count":1
                }
             ]
          }
       },
       {
-         "name":"Basic Land Defense - Threat",
+         "name":"Laser Defense Tower - Base",
          "to_build":"BasicLandDefense",
          "instance_count":1,
          "max_num_assisters":1,
@@ -291,16 +510,16 @@
                },
                {
                   "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & Basic & SurfaceDefense",
+                  "unit_type_string0":"Structure & SurfaceDefense",
                   "compare0":"<",
-                  "value0":4
+                  "value0":3
                },
                {
                   "test_type":"PlanetThreatRatio",
                   "string0":"Land",
                   "string1":"Land",
                   "compare0":">",
-                  "value0":2.0
+                  "value0":1.5
                },
                {
                   "test_type":"UnitCountInBase",
@@ -326,17 +545,79 @@
                   "count":1
                },
                {
-                  "unit_type_string":"Structure & Basic & SurfaceDefense",
+                  "unit_type_string":"Structure & SurfaceDefense",
                   "alliance":"Ally",
                   "compare_type":"<",
                   "range":75,
-                  "count":2
+                  "count":1
+               }
+            ]
+         }
+      },
+	  {
+         "name":"Torpedo Launcher - Base",
+         "to_build":"BasicNavalDefense",
+         "instance_count":1,
+         "max_num_assisters":1,
+         "priority":254,
+         "base_sort":"FromPerimeter",
+         "builders":[
+            "BasicAirFabber",
+			"BasicNavalFabber"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"UnitCountInBase",
+                  "unit_type_string0":"Structure & Naval & Defense",
+                  "compare0":"<",
+                  "value0":3
+               },
+               {
+                  "test_type":"PlanetThreatRatio",
+                  "string0":"Naval",
+                  "string1":"Naval",
+                  "compare0":">",
+                  "value0":1.5
+               },
+               {
+                  "test_type":"UnitCountInBase",
+                  "unit_type_string0":"Structure & (EnergyProduction | Factory)",
+                  "compare0":">=",
+                  "value0":10
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicNavalDefense"
+               }
+            ]
+         ],
+         "placement_rules":{
+            "buffer":2,
+            "placement_type":"FromMainBaseCenter",
+            "unit_count_rules":[
+               {
+                  "unit_type_string":"Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+                  "alliance":"Ally",
+                  "compare_type":">=",
+                  "range":50,
+                  "count":1
+               },
+               {
+                  "unit_type_string":"Structure & Naval & Defense",
+                  "alliance":"Ally",
+                  "compare_type":"<",
+                  "range":75,
+                  "count":1
                }
             ]
          }
       },      
       {
-         "name":"Advanced Air Defense - Threat",
+         "name":"Advanced Air Defense - Base",
          "to_build":"AdvancedAirDefense",
          "instance_count":1,
          "min_num_assisters":1,
@@ -397,13 +678,13 @@
                   "alliance":"Ally",
                   "compare_type":"<",
                   "range":75,
-                  "count":2
+                  "count":5
                }
             ]
          }
       },
       {
-         "name":"Advanced Land Defense - Threat",
+         "name":"Advanced Land Defense - Base",
          "to_build":"AdvancedLandDefense",
          "instance_count":1,
          "priority":379,
@@ -460,11 +741,11 @@
                   "count":1
                },
                {
-                  "unit_type_string":"Structure & Advanced & SurfaceDefense",
+                  "unit_type_string":"Structure & SurfaceDefense",
                   "alliance":"Ally",
                   "compare_type":"<",
                   "range":75,
-                  "count":2
+                  "count":5
                }
             ]
          }
@@ -482,8 +763,7 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"Umbrella"
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"SystemThreat",

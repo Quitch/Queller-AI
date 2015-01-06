@@ -8,10 +8,10 @@
          "build_conditions":[
             [
 			   {
-                  "test_type":"UnitCountPerPlanetRadius",
+                  "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Air & Scout",
-                  "compare0":"<",
-                  "value0":100
+                  "compare0":">=",
+                  "value0":1
                },
                {
                   "test_type":"HaveFullPlanetIntel",

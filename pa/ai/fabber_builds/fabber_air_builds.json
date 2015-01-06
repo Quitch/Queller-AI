@@ -10,10 +10,9 @@
             "Commander"
          ],
          "build_conditions":[
-            [			   
+            [
 			   {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicAirFactory"
+                  "test_type":"CanAffordBuildDemand"
                },
 			   {
                   "test_type":"HaveSeenEnemyUnits",
@@ -31,17 +30,36 @@
                   "string0":"BasicAirFactory"
                }
 			],
-			[			   
+			[
 			   {
-                  "test_type":"CanAffordPotentialDrain",
+                  "test_type":"CanAffordBuildDemand"
+               },
+			   {
+                  "test_type":"HaveSeenEnemyUnits",
+                  "unit_type_string0":"Bot",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"UnitCountOnPlanet",
+				  "unit_type_string0":"(Air | Bot) & Factory",
+				  "compare0":"<",
+				  "value0":1
+               },
+			   {
+                  "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirFactory"
+               }
+			],
+			[
+			   {
+                  "test_type":"CanAffordBuildDemand"
                },
 			   {
                   "test_type":"PlanetThreatRatio",
                   "string0":"Air",
                   "string1":"AntiAir",
                   "compare0":">",
-                  "value0":1.2
+                  "value0":1.0
                },			   
 			   {
                   "test_type":"CanFindPlaceToBuild",
@@ -50,17 +68,42 @@
 			],
 			[
 			   {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicAirFactory"
+                  "test_type":"CanAffordBuildDemand"
                },
-			   {
-			      "test_type":"NeedBasicAirFactory"  
-			   },
 			   {
                   "test_type":"UnitCountOnPlanet",
 				  "unit_type_string0":"Factory - Air",
 				  "compare0":">=",
-				  "value0":2
+				  "value0":1
+               },
+               {
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Factory & Air",
+                  "unit_type_string1":"Factory - Air",
+                  "compare0":"<",
+                  "value0":0.2
+               },			   
+			   {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicAirFactory"
+               }
+			],
+			[
+			   {
+                  "test_type":"CanAffordBuildDemand"
+               },
+			   {
+                  "test_type":"UnitCountOnPlanet",
+				  "unit_type_string0":"Factory - Air",
+				  "compare0":">=",
+				  "value0":1
+               },
+               {
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Factory & Air",
+                  "unit_type_string1":"Factory & Naval",
+                  "compare0":"<",
+                  "value0":0.3
                },			   
 			   {
                   "test_type":"CanFindPlaceToBuild",
