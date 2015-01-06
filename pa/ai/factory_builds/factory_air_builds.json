@@ -168,7 +168,7 @@
          "to_build":"BasicBomber",
          "instance_count":-1,
          "max_num_assisters":10,
-         "priority":97,
+         "priority":96,
          "builders":[
             "BasicAirFactory"
          ],
@@ -182,13 +182,6 @@
                   "unit_type_string0":"Air & Bomber",
                   "compare0":"<",
                   "value0":10
-               },
-			   {
-                  "test_type":"PlanetThreatRatio",
-                  "string0":"Air",
-                  "string1":"Air",
-                  "compare0":"<",
-                  "value0":1.0
                }
 			],
 			[
@@ -200,13 +193,6 @@
                   "unit_type_string0":"Air & Bomber",
                   "compare0":"<",
                   "value0":40
-               },
-			   {
-                  "test_type":"PlanetThreatRatio",
-                  "string0":"Air",
-                  "string1":"Air",
-                  "compare0":"<",
-                  "value0":1.0
                }
             ]
          ]

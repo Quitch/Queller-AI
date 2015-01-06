@@ -1,7 +1,7 @@
 {
    "build_list":[	  
 	  {
-         "name":"Basic Bot Factory - Early Game",
+         "name":"Basic Bot Factory - Commander",
          "to_build":"BasicBotFactory",
          "instance_count":-1,
          "priority":376,
@@ -122,7 +122,7 @@
          }
       },	  
       {
-         "name":"Basic Vehicle Factory - Early Game",
+         "name":"Basic Vehicle Factory - Commander",
          "to_build":"BasicVehicleFactory",
          "instance_count":-1,
          "priority":376,
@@ -133,8 +133,7 @@
          "build_conditions":[
             [
 			   {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicVehicleFactory"
+                  "test_type":"CanAffordBuildDemand"
                },
 			   {
                   "test_type":"CanFindPlaceToBuild",
