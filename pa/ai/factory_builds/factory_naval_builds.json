@@ -1,7 +1,7 @@
 {
    "build_list":[
       {
-         "name":"Basic Naval Fabber",
+         "name":"Basic Naval Fabber - Opening",
          "to_build":"BasicNavalFabber",
          "instance_count":1,
          "max_num_assisters":10,
@@ -16,14 +16,10 @@
                   "boolean":false
                },
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-			   {
-                  "test_type":"UnitRatioOnPlanet",
-                  "unit_type_string0":"Basic & Fabber",
-                  "unit_type_string1":"Badic & Factory",
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Fabber & Basic",
                   "compare0":"<",
-                  "value0":0.5
+                  "value0":3
                },
 			   {
                   "test_type":"UnitCountOnPlanet",
@@ -31,17 +27,33 @@
                   "compare0":"<",
                   "value0":1
                }
-            ],
+            ]
+         ]
+      },
+	  {
+         "name":"Basic Naval Fabber - Ratio Requirements",
+         "to_build":"BasicNavalFabber",
+         "instance_count":1,
+         "max_num_assisters":10,
+         "priority":97,
+         "builders":[
+            "BasicNavalFactory"
+         ],
+         "build_conditions":[
             [
                {
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Fabber & Basic",
-                  "compare0":"<",
-                  "value0":3
+                  "test_type":"CanAffordBuildDemand"
+               },			   
+			   {
+                  "test_type":"CanAffordPotentialDrain",
+				  "string0":"BasicNavalFabber"
+               },
+			   {
+                  "test_type":"NeedBasicNavalFabber"
                },
 			   {
                   "test_type":"UnitCountOnPlanet",
