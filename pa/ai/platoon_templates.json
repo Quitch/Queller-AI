@@ -81,12 +81,6 @@
 				   "min_count":0,
 				   "percent":0.1,
 				   "squad":"Defense"
-				},
-				{
-				   "unit_types":"Land & Scout",
-				   "min_count":0,
-				   "percent":0.05,
-				   "squad":"Defense"
 				}
 			 ]
 		  },
@@ -120,12 +114,6 @@
 				   "unit_types":"((Tank | Bot) & Mobile) & (AirDefense | Construction)",
 				   "min_count":0,
 				   "percent":0.1,
-				   "squad":"Defense"
-				},
-				{
-				   "unit_types":"Land & Scout",
-				   "min_count":0,
-				   "percent":0.05,
 				   "squad":"Defense"
 				}
 			 ]
@@ -165,7 +153,7 @@
 				{
 				   "unit_types":"Land & Scout",
 				   "min_count":0,
-				   "percent":0.05,
+				   "max_count":2,
 				   "squad":"Defense"
 				}
 			 ]
@@ -205,7 +193,7 @@
 				{
 				   "unit_types":"Land & Scout",
 				   "min_count":0,
-				   "percent":0.05,
+				   "max_count":2,
 				   "squad":"Defense"
 				}
 			 ]
@@ -245,7 +233,7 @@
 				{
 				   "unit_types":"Land & Scout",
 				   "min_count":0,
-				   "percent":0.05,
+				   "max_count":2,
 				   "squad":"Defense"
 				}
 			 ]

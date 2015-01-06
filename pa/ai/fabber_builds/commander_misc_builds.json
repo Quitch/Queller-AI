@@ -45,41 +45,6 @@
             ]
          ],
          "task_type":"TeleportFabberToPlanet"
-      },
-      {
-         "name":"Commander Give Up",
-         "instance_count":1,
-         "priority":0,
-         "builders":[
-            "Commander"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"NoWhereToRun",
-                  "boolean":true
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Orbital & Factory",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"Orbital & Transport",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Structure & Teleporter",
-                  "compare0":"<",
-                  "value0":1
-               }
-            ]
-         ],
-         "task_type":"GiveUp"
       }
    ]
 }
