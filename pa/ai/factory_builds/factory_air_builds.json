@@ -146,36 +146,6 @@
          ],
          "build_conditions":[
             [
-			   {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":false
-               },
-			   {
-                  "test_type":"CanAffordBuildDemand"
-               },
-			   {
-                  "test_type":"UnitCountPerPlanetRadius",
-                  "unit_type_string0":"Air & Fighter",
-                  "compare0":"<",
-                  "value0":100
-               }
-			],
-			[
-			   {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":false
-               },
-			   {
-                  "test_type":"CanAffordBuildDemand"
-               },
-			   {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Air & Fighter",
-                  "compare0":"<",
-                  "value0":10
-               }
-			],
-            [
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -184,7 +154,7 @@
                   "string0":"Air",
                   "string1":"Air",
                   "compare0":">",
-                  "value0":0.9
+                  "value0":0.8
                }
             ]
          ]
