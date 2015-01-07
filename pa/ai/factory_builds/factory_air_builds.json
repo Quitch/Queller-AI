@@ -1,7 +1,7 @@
 {
    "build_list":[
       {
-         "name":"Basic Air Fabber - Opening",
+         "name":"Basic Air Fabber",
          "to_build":"BasicAirFabber",
          "instance_count":1,
          "max_num_assisters":10,
@@ -34,44 +34,8 @@
                   "boolean":false
                },
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Naval & Factory",
-                  "compare0":">",
-                  "value0":0
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Fabber & Basic",
-                  "compare0":"<",
-                  "value0":3
-               },
-			   {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Advanced & Air & Factory",
-                  "compare0":"<",
-                  "value0":1
-               }
-            ]
-         ]
-      },
-	  {
-         "name":"Basic Air Fabber - Three Fabber Opening/Ratio Requirement",
-         "to_build":"BasicAirFabber",
-         "instance_count":1,
-         "max_num_assisters":10,
-         "priority":97,
-         "builders":[
-            "BasicAirFactory"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"BaseThreatened",
-                  "boolean":false
-               },
-               {
                   "test_type":"CanAffordBuildDemand"
-               },			   
+               },
 			   {
                   "test_type":"CanAffordPotentialDrain",
 				  "string0":"BasicAirFabber"
@@ -85,31 +49,7 @@
                   "compare0":"<",
                   "value0":1
                }
-            ],
-			[
-               {
-                  "test_type":"BaseThreatened",
-                  "boolean":false
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Fabber & Basic",
-                  "compare0":"<",
-                  "value0":3
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"(Tank | Bot) & Offense",
-                  "compare0":"<",
-                  "value0":1
-               },
-			   {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Advanced & Air & Factory",
-                  "compare0":"<",
-                  "value0":1
-               }
-			]
+            ]
          ]
       },
 	  {

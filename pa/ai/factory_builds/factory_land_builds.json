@@ -1,7 +1,7 @@
 {
    "build_list":[
       {
-         "name":"Basic Bot Fabber - Opening",
+         "name":"Basic Bot Fabber",
          "to_build":"BasicBotFabber",
          "instance_count":1,
          "max_num_assisters":10,
@@ -20,6 +20,28 @@
                   "unit_type_string0":"Fabber & Basic",
                   "compare0":"<",
                   "value0":2
+               },
+			   {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Advanced & Bot & Factory",
+                  "compare0":"<",
+                  "value0":1
+               }
+            ],
+			[
+               {
+                  "test_type":"BaseThreatened",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+			   {
+                  "test_type":"CanAffordPotentialDrain",
+				  "string0":"BasicBotFabber"
+               },
+			   {
+                  "test_type":"NeedBasicBotFabber"
                },
 			   {
                   "test_type":"UnitCountOnPlanet",
@@ -57,40 +79,6 @@
                   "compare0":"<",
                   "value0":1
                }
-            ]
-         ]
-      },
-	  {
-         "name":"Basic Bot Fabber - Three Fabber Opening/Ratio Requirement",
-         "to_build":"BasicBotFabber",
-         "instance_count":1,
-         "max_num_assisters":10,
-         "priority":97,
-         "builders":[
-            "BasicBotFactory"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"BaseThreatened",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },			   
-			   {
-                  "test_type":"CanAffordPotentialDrain",
-				  "string0":"BasicBotFabber"
-               },
-			   {
-                  "test_type":"NeedBasicBotFabber"
-               },
-			   {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Advanced & Bot & Factory",
-                  "compare0":"<",
-                  "value0":1
-               }
             ],
 			[
                {
@@ -98,44 +86,8 @@
                   "boolean":false
                },
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Fabber & Basic",
-                  "compare0":"<",
-                  "value0":3
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"(Tank | Bot) & Offense",
-                  "compare0":"<",
-                  "value0":1
-               },
-			   {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Advanced & Bot & Factory",
-                  "compare0":"<",
-                  "value0":1
-               }
-            ]
-         ]
-      },
-      {
-         "name":"Basic Vehicle Fabber - Three Fabber Opening/Ratio Requirement",
-         "to_build":"BasicVehicleFabber",
-         "instance_count":1,
-         "max_num_assisters":10,
-         "priority":97,
-         "builders":[
-            "BasicVehicleFactory"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"BaseThreatened",
-                  "boolean":false
-               },
-               {
                   "test_type":"CanAffordBuildDemand"
-               },			   
+               },
 			   {
                   "test_type":"CanAffordPotentialDrain",
 				  "string0":"BasicVehicleFabber"
@@ -149,34 +101,10 @@
                   "compare0":"<",
                   "value0":1
                }
-            ],
-			[
-               {
-                  "test_type":"BaseThreatened",
-                  "boolean":false
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Fabber & Basic",
-                  "compare0":"<",
-                  "value0":3
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"(Tank | Bot) & Offense",
-                  "compare0":"<",
-                  "value0":1
-               },
-			   {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Advanced & Tank & Factory",
-                  "compare0":"<",
-                  "value0":1
-               }
             ]
          ]
       },
-      {
+	  {
          "name":"Dox",
          "to_build":"BasicAssaultBot",
          "instance_count":-1,
