@@ -3,11 +3,12 @@
       {
          "name":"Galata Turret - Mex Few",
          "to_build":"BasicAirDefense",
-         "instance_count":1,
-         "shared_instance_count":"BasicAirDefense",
+		 "instance_count":1,
+         "shared_instance_count":"BasicAirDefenseMex",
          "priority":252,
          "base_sort":"FromPerimeter",
          "builders":[
+		    "Commander",
             "AnyBasicFabber"
          ],
          "build_conditions":[
@@ -34,7 +35,6 @@
             ]
          ],
          "placement_rules":{
-            "buffer":2,
             "placement_type":"FromMainBasePerimeter",
             "unit_count_rules":[
                {
@@ -55,13 +55,14 @@
          }
       },
 	  {
-         "name":"Galata Turret - Mex Many+",
+         "name":"Galata Turret - Mex Many",
          "to_build":"BasicAirDefense",
-         "instance_count":1,
-         "shared_instance_count":"BasicAirDefense",
+		 "instance_count":1,
+         "shared_instance_count":"BasicAirDefenseMex",
          "priority":252,
          "base_sort":"FromPerimeter",
          "builders":[
+		    "Commander",
             "AnyBasicFabber"
          ],
          "build_conditions":[
@@ -79,7 +80,7 @@
                   "string0":"Air",
                   "string1":"AntiAir",
                   "compare0":">",
-                  "value0":1.0
+                  "value0":0.9
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -88,7 +89,6 @@
             ]
          ],
          "placement_rules":{
-            "buffer":2,
             "placement_type":"FromMainBasePerimeter",
             "unit_count_rules":[
                {
@@ -109,14 +109,17 @@
          }
       },
       {
-         "name":"Single Laser Defense Tower - Mex",
+         "name":"Single Laser Defense Tower - Mex Few",
          "to_build":"BasicLandDefenseSingle",
-         "instance_count":1,
-         "shared_instance_count":"BasicLandDefense",
+		 "instance_count":1,
+         "shared_instance_count":"BasicLandDefenseMex",
          "priority":252,
          "base_sort":"FromPerimeter",
          "builders":[
-            "AnyBasicFabber"
+		    "Commander",
+            "BasicBotFabber",
+			"BasicVehicleFabber",
+			"BasicAirFabber"
          ],
          "build_conditions":[
             [
@@ -142,7 +145,6 @@
             ]
          ],
          "placement_rules":{
-            "buffer":2,
             "placement_type":"FromMainBasePerimeter",
             "unit_count_rules":[
                {
@@ -165,12 +167,15 @@
 	  {
          "name":"Laser Defense Tower - Mex Few",
          "to_build":"BasicLandDefense",
-         "instance_count":1,
-         "shared_instance_count":"BasicLandDefense",
+		 "instance_count":1,
+         "shared_instance_count":"BasicLandDefenseMex",
          "priority":253,
          "base_sort":"FromPerimeter",
          "builders":[
-            "AnyBasicFabber"
+		    "Commander",
+            "BasicBotFabber",
+			"BasicVehicleFabber",
+			"BasicAirFabber"
          ],
          "build_conditions":[
             [
@@ -196,7 +201,6 @@
             ]
          ],
          "placement_rules":{
-            "buffer":2,
             "placement_type":"FromMainBasePerimeter",
             "unit_count_rules":[
                {
@@ -219,12 +223,15 @@
 	  {
          "name":"Laser Defense Tower - Mex Many",
          "to_build":"BasicLandDefense",
-         "instance_count":1,
-         "shared_instance_count":"BasicLandDefense",
+		 "instance_count":1,
+         "shared_instance_count":"BasicLandDefenseMex",
          "priority":253,
          "base_sort":"FromPerimeter",
          "builders":[
-            "AnyBasicFabber"
+		    "Commander",
+            "BasicBotFabber",
+			"BasicVehicleFabber",
+			"BasicAirFabber"
          ],
          "build_conditions":[
             [
@@ -241,7 +248,7 @@
                   "string0":"Land",
                   "string1":"Land",
                   "compare0":">",
-                  "value0":1.0
+                  "value0":0.9
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -250,7 +257,6 @@
             ]
          ],
          "placement_rules":{
-            "buffer":2,
             "placement_type":"FromMainBasePerimeter",
             "unit_count_rules":[
                {
@@ -273,11 +279,12 @@
 	  {
          "name":"Torpedo Launcher - Mex Few",
          "to_build":"BasicNavalDefense",
-         "instance_count":1,
-         "shared_instance_count":"BasicNavalDefense",
+		 "instance_count":1,
+         "shared_instance_count":"BasicNavalDefenseMex",
          "priority":255,
          "base_sort":"FromPerimeter",
          "builders":[
+		    "Commander",
             "BasicAirFabber",
 			"BasicNavalFabber"
          ],
@@ -305,7 +312,6 @@
             ]
          ],
          "placement_rules":{
-            "buffer":2,
             "placement_type":"FromMainBasePerimeter",
             "unit_count_rules":[
                {
@@ -328,11 +334,12 @@
 	  {
          "name":"Torpedo Launcher - Mex Many",
          "to_build":"BasicNavalDefense",
-         "instance_count":1,
-         "shared_instance_count":"BasicNavalDefense",
+		 "instance_count":1,
+         "shared_instance_count":"BasicNavalDefenseMex",
          "priority":255,
          "base_sort":"FromPerimeter",
          "builders":[
+		    "Commander",
             "BasicAirFabber",
 			"BasicNavalFabber"
          ],
@@ -351,7 +358,7 @@
                   "string0":"Naval",
                   "string1":"Naval",
                   "compare0":">",
-                  "value0":1.0
+                  "value0":0.9
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -360,7 +367,6 @@
             ]
          ],
          "placement_rules":{
-            "buffer":2,
             "placement_type":"FromMainBasePerimeter",
             "unit_count_rules":[
                {
@@ -385,12 +391,13 @@
          "to_build":"BasicAirDefense",
          "instance_count":1,
          "max_num_assisters":1,
-         "shared_instance_count":"BasicAirDefense",
          "priority":251,
          "base_sort":"FromPerimeter",
          "builders":[
 		    "Commander",
-            "AnyBasicFabber"
+            "BasicBotFabber",
+			"BasicVehicleFabber",
+			"BasicAirFabber"
          ],
          "build_conditions":[
             [
@@ -402,7 +409,7 @@
                   "string0":"Air",
                   "string1":"AntiAir",
                   "compare0":">",
-                  "value0":1.5
+                  "value0":1.0
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -411,7 +418,6 @@
             ]
          ],
          "placement_rules":{
-            "buffer":2,
             "placement_type":"FromMainBaseCenter",
             "unit_count_rules":[
                {
@@ -435,13 +441,15 @@
          "name":"Single Laser Defense Tower - Base",
          "to_build":"BasicLandDefenseSingle",
          "instance_count":1,
-         "max_num_assisters":1,
          "shared_instance_count":"BasicLandDefense",
+         "max_num_assisters":1,
          "priority":251,
          "base_sort":"FromPerimeter",
          "builders":[
 			"Commander",
-            "AnyBasicFabber"
+            "BasicBotFabber",
+			"BasicVehicleFabber",
+			"BasicAirFabber"
          ],
          "build_conditions":[
             [
@@ -459,11 +467,11 @@
                   "string0":"Land",
                   "string1":"Land",
                   "compare0":">",
-                  "value0":1.5
+                  "value0":1.0
                },
                {
                   "test_type":"HaveSeenEnemyUnits",
-                  "unit_type_string0":"Mobile & Land & Advanced",
+                  "unit_type_string0":"(Land & Mobile) & Advanced",
                   "boolean":false
                },
                {
@@ -473,7 +481,6 @@
             ]
          ],
          "placement_rules":{
-            "buffer":2,
             "placement_type":"FromMainBaseCenter",
             "unit_count_rules":[
                {
@@ -497,11 +504,14 @@
          "name":"Laser Defense Tower - Base",
          "to_build":"BasicLandDefense",
          "instance_count":1,
+         "shared_instance_count":"BasicLandDefense",
          "max_num_assisters":1,
          "priority":251,
          "base_sort":"FromPerimeter",
          "builders":[
-            "AnyBasicFabber"
+            "BasicBotFabber",
+			"BasicVehicleFabber",
+			"BasicAirFabber"
          ],
          "build_conditions":[
             [
@@ -519,7 +529,7 @@
                   "string0":"Land",
                   "string1":"Land",
                   "compare0":">",
-                  "value0":1.5
+                  "value0":1.0
                },
                {
                   "test_type":"UnitCountInBase",
@@ -534,7 +544,6 @@
             ]
          ],
          "placement_rules":{
-            "buffer":2,
             "placement_type":"FromMainBaseCenter",
             "unit_count_rules":[
                {
@@ -562,6 +571,7 @@
          "priority":254,
          "base_sort":"FromPerimeter",
          "builders":[
+		    "Commander",
             "BasicAirFabber",
 			"BasicNavalFabber"
          ],
@@ -581,7 +591,7 @@
                   "string0":"Naval",
                   "string1":"Naval",
                   "compare0":">",
-                  "value0":1.5
+                  "value0":1.0
                },
                {
                   "test_type":"UnitCountInBase",
@@ -596,7 +606,6 @@
             ]
          ],
          "placement_rules":{
-            "buffer":2,
             "placement_type":"FromMainBaseCenter",
             "unit_count_rules":[
                {
@@ -643,7 +652,7 @@
                   "string0":"Air",
                   "string1":"AntiAir",
                   "compare0":">",
-                  "value0":2.0
+                  "value0":1.0
                },
                {
                   "test_type":"UnitCountInBase",
@@ -653,7 +662,7 @@
                },
                {
                   "test_type":"HaveSeenEnemyUnits",
-                  "unit_type_string0":"Mobile & Air & Advanced",
+                  "unit_type_string0":"(Air & Mobile) & Advanced",
                   "boolean":true
                },
                {
@@ -663,7 +672,6 @@
             ]
          ],
          "placement_rules":{
-            "buffer":2,
             "placement_type":"FromMainBaseCenter",
             "unit_count_rules":[
                {
@@ -688,7 +696,6 @@
          "to_build":"AdvancedLandDefense",
          "instance_count":1,
          "priority":379,
-         "min_num_assisters":1,
          "max_num_assisters":3,
          "base_sort":"FromPerimeter",
          "builders":[
@@ -710,7 +717,7 @@
                   "string0":"Land",
                   "string1":"Land",
                   "compare0":">",
-                  "value0":2.0
+                  "value0":1.0
                },
                {
                   "test_type":"UnitCountInBase",
@@ -720,7 +727,7 @@
                },
                {
                   "test_type":"HaveSeenEnemyUnits",
-                  "unit_type_string0":"Mobile & Land & Advanced",
+                  "unit_type_string0":"(Land & Mobile) & Advanced",
                   "boolean":true
                },
                {
@@ -730,7 +737,6 @@
             ]
          ],
          "placement_rules":{
-            "buffer":2,
             "placement_type":"FromMainBaseCenter",
             "unit_count_rules":[
                {
@@ -790,7 +796,6 @@
             ]
          ],
          "placement_rules":{
-            "buffer":2,
             "placement_type":"FromMainBaseCenter",
             "unit_count_rules":[
                {
@@ -847,7 +852,6 @@
             ]
          ],
          "placement_rules":{
-            "buffer":2,
             "placement_type":"FromMainBaseCenter",
             "unit_count_rules":[
                {
@@ -936,7 +940,6 @@
             ]
          ],
          "placement_rules":{
-            "buffer":2,
             "placement_type":"FromMainBaseCenter",
             "unit_count_rules":[
                {

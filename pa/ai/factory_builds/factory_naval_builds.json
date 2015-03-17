@@ -17,15 +17,15 @@
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Fabber & Basic",
+                  "unit_type_string0":"(Fabber & Basic) & Naval",
                   "compare0":"<",
                   "value0":2
                },
-			   {
+               {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Advanced & Naval & Factory",
+                  "unit_type_string0":"Fabber & Basic",
                   "compare0":"<",
-                  "value0":1
+                  "value0":4
                }
             ],
 			[
@@ -34,30 +34,49 @@
                   "boolean":false
                },
                {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"(Fabber & Basic) & Naval",
+                  "compare0":"<",
+                  "value0":2
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
-			   {
+               {
                   "test_type":"CanAffordPotentialDrain",
-				  "string0":"BasicNavalFabber"
+                  "string0":"BasicNavalFabber"
+               }
+            ],
+            [
+               {
+                  "test_type":"BaseThreatened",
+                  "boolean":false
                },
-			   {
+               {
                   "test_type":"NeedBasicNavalFabber"
                },
-			   {
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicNavalFabber"
+               },
+               {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Advanced & Naval & Factory",
+                  "unit_type_string0":"(Naval & Factory) & Advanced",
                   "compare0":"<",
                   "value0":1
                }
             ]
          ]
       },
-	  {
+      {
          "name":"Piranha",
-         "to_build":"Sea_Scout",
-         "instance_count":-1,
+         "to_build":"SeaScout",
+         "instance_count":1,
          "max_num_assisters":10,
-         "priority":0,
+         "priority":98,
          "builders":[
             "BasicNavalFactory"
          ],
@@ -69,6 +88,18 @@
                },
                {
                   "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"UnitCountPerPlanetRadius",
+                  "unit_type_string0":"Air & Scout",
+                  "compare0":"<",
+                  "value0":300
+               },
+               {
+                  "test_type":"UnitCountPerPlanetRadius",
+                  "unit_type_string0":"Naval & Scout",
+                  "compare0":"<",
+                  "value0":300
                }
             ]
          ]
@@ -111,13 +142,38 @@
                },
                {
                   "test_type":"CanAffordBuildDemand"
-               },			   
-			   {
+               }
+            ]
+         ]
+      },
+      {
+         "name":"Barracuda",
+         "to_build":"Sub",
+         "instance_count":-1,
+         "max_num_assisters":10,
+         "priority":97,
+         "builders":[
+            "BasicNavalFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":true
+               },
+               {
                   "test_type":"PlanetThreatRatio",
-                  "string0":"Air",
-                  "string1":"AntiAir",
+                  "string0":"Naval",
+                  "string1":"Naval",
                   "compare0":">",
                   "value0":1.0
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ]
@@ -149,7 +205,7 @@
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
-			   {
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -194,10 +250,13 @@
          "build_conditions":[
             [
                {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
                },
-			   {
+               {
                   "test_type":"PlanetThreatRatio",
                   "string0":"Air",
                   "string1":"AntiAir",
@@ -205,19 +264,43 @@
                   "value0":1.0
                },
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Naval & (AirDefense | Tactical) & Mobile",
+                  "unit_type_string1":"(Naval & Mobile) - Artillery - AirDefense - Tactical - Scout - Fabber",
+                  "compare0":"<",
+                  "value0":0.1
                }
-            ],
+            ]
+         ]
+      },
+      {
+         "name":"Kraken",
+         "to_build":"MissileSub",
+         "instance_count":-1,
+         "max_num_assisters":15,
+         "priority":199,
+         "builders":[
+            "AdvancedNavalFactory"
+         ],
+         "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
                },
-			   {
-                  "test_type":"BaseThreatRatio",
-                  "string0":"Air",
-                  "string1":"AntiAir",
+               {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"PlanetThreatRatio",
+                  "string0":"Naval",
+                  "string1":"Naval",
                   "compare0":">",
-                  "value0":1.5
+                  "value0":1.0
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ]

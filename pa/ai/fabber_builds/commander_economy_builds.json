@@ -3,9 +3,8 @@
       {
          "name":"Basic Metal Extractor - cdr",
          "to_build":"BasicMetalExtractor",
-         "instance_count":2,
-         "shared_instance_count":"BasicMetal",
-         "priority":261,
+         "instance_count":1,
+         "priority":260,
          "base_sort":"FromBuilder",
          "builders":[
             "Commander"
@@ -23,34 +22,9 @@
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Fabber - Orbital",
-                  "compare0":"<",
-                  "value0":2,
-                  "boolean":true
-               }
-            ],
-			[
-               {
-                  "test_type":"PotentialMetalEfficiency",
-                  "compare0":"<",
-                  "value0":1.0
-               },
-               {
-                  "test_type":"CanFindMetalSpotToBuildBasic",
-                  "boolean":true
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Factory",
-                  "compare0":">",
-                  "value0":0,
-                  "boolean":true
-               },			   
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"MetalProduction",
-                  "compare0":"<",
-                  "value0":2,
+                  "unit_type_string0":"Factory - Orbital",
+                  "compare0":">=",
+                  "value0":1,
                   "boolean":true
                }
             ]
@@ -68,9 +42,9 @@
       {
          "name":"Basic Metal Extractor - cdr Desire",
          "to_build":"BasicMetalExtractor",
-         "instance_count":2,
+         "instance_count":1,
          "shared_instance_count":"BasicMetal",
-         "priority":501,
+         "priority":500,
          "base_sort":"FromBuilder",
          "builders":[
             "Commander"
@@ -81,14 +55,37 @@
                   "test_type":"DesireMetal"
                },
                {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Factory - Orbital",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
+                  "test_type":"CanFindMetalSpotToBuildBasic",
+                  "boolean":true
+               }
+            ],
+			[
+               {
+                  "test_type":"PotentialMetalEfficiency",
+                  "compare0":"<",
+                  "value0":1.0
+               },
+               {
+                  "test_type":"UnitCount",
+                  "unit_type_string0":"MetalProduction & Basic",
+                  "compare0":"<",
+                  "value0":1
+               },
+               {
                   "test_type":"CanFindMetalSpotToBuildBasic",
                   "boolean":true
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Fabber - Orbital",
-                  "compare0":"<",
-                  "value0":2,
+                  "unit_type_string0":"Factory - Orbital",
+                  "compare0":">=",
+                  "value0":1,
                   "boolean":true
                }
             ]
@@ -109,7 +106,7 @@
          "instance_count":1,
          "max_num_assisters":1,
          "shared_instance_count":"BasicEnergy",
-         "priority":260,
+         "priority":261,
          "builders":[
             "Commander"
          ],
@@ -124,6 +121,12 @@
                   "test_type":"UnitCount",
                   "unit_type_string0":"EnergyProduction & Advanced",
                   "compare0":"<",
+                  "value0":1
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Factory - Orbital",
+                  "compare0":">=",
                   "value0":1
                },
                {
@@ -146,10 +149,10 @@
       {
          "name":"Basic Energy Generator - Desire Cdr",
          "to_build":"BasicEnergyGenerator",
-         "instance_count":1,
+         "instance_count":2,
          "max_num_assisters":1,
          "shared_instance_count":"BasicEnergy",
-         "priority":500,
+         "priority":501,
          "builders":[
             "Commander"
          ],
@@ -162,6 +165,41 @@
                   "test_type":"UnitCount",
                   "unit_type_string0":"EnergyProduction & Advanced",
                   "compare0":"<",
+                  "value0":1
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Factory - Orbital",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicEnergyGenerator"
+               }
+            ],
+			[
+               {
+                  "test_type":"PotentialEnergyEfficiency",
+                  "compare0":"<",
+                  "value0":1.0
+               },
+               {
+                  "test_type":"UnitCount",
+                  "unit_type_string0":"EnergyProduction & Basic",
+                  "compare0":"<",
+                  "value0":3
+               },
+               {
+                  "test_type":"UnitCount",
+                  "unit_type_string0":"EnergyProduction & Advanced",
+                  "compare0":"<",
+                  "value0":1
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Factory - Orbital",
+                  "compare0":">=",
                   "value0":1
                },
                {

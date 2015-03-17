@@ -44,8 +44,8 @@
          "instance_count":1,
          "shared_instance_count":"OrbitalLauncher",
          "priority":260,
-		 "min_num_assisters":1,
-         "max_num_assisters":3,
+		 "min_num_assisters":3,
+         "max_num_assisters":5,
          "builders":[
             "AnyBasicFabber",
             "AnyAdvancedFabber"
@@ -98,8 +98,8 @@
          "to_build":"OrbitalFactory",
          "instance_count":1,
          "priority":479,
-         "max_num_assisters":1,
          "max_num_assisters":3,
+         "max_num_assisters":5,
          "builders":[
             "OrbitalFabber"
          ],
@@ -236,10 +236,6 @@
                {
                   "test_type":"PlanetWithoutPresence",
                   "boolean":true
-               },
-               {
-                  "test_type":"WantCommanderOffPlanet",
-                  "boolean":false
                },
                {
                   "test_type":"UnitCountOnPlanet",

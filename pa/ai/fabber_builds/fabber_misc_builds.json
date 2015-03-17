@@ -26,7 +26,7 @@
          "to_build":"Teleporter",
          "instance_count":1,
          "shared_instance_count":"Teleporter",
-         "priority":506,
+         "priority":600,
          "min_num_assisters":3,
          "max_num_assisters":5,
          "builders":[
@@ -39,15 +39,13 @@
             [
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Structure",
+                  "unit_type_string0":"Structure & Teleporter",
                   "compare0":"<",
                   "value0":1
-               },
-			   {
-                  "test_type":"UnitCount",
-                  "unit_type_string0":"Mobile",
-                  "compare0":">",
-                  "value0":1
+               },		   
+               {
+                  "test_type":"PresenceOnOtherPlanet",
+                  "boolean":true
                }
             ],
 			[

@@ -3,9 +3,9 @@
       {
          "name":"Basic Metal Extractor - Area",
          "to_build":"BasicMetalExtractor",
-         "instance_count":2,
-         "shared_instance_count":"BasicMetal",
+         "instance_count":4,
          "max_num_assisters":1,
+         "shared_instance_count":"BasicMetal",
          "priority":261,
          "base_sort":"FromBuilder",
          "builders":[
@@ -21,12 +21,6 @@
                {
                   "test_type":"CanFindMetalSpotToBuildBasic",
                   "boolean":true
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Structure & Factory & Construction - Orbital",
-                  "compare0":">",
-                  "value0":0
                }
             ]
          ],
@@ -44,9 +38,9 @@
       {
          "name":"Basic Metal Extractor - Desire - Area",
          "to_build":"BasicMetalExtractor",
-         "instance_count":2,
-         "shared_instance_count":"BasicMetal",
+         "instance_count":4,
          "max_num_assisters":1,
+         "shared_instance_count":"BasicMetal",
          "priority":501,
          "base_sort":"FromBuilder",
          "builders":[
@@ -63,9 +57,9 @@
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Structure & Factory & Construction - Orbital",
-                  "compare0":">",
-                  "value0":0
+                  "unit_type_string0":"Factory - Orbital",
+                  "compare0":">=",
+                  "value0":1
                }
             ]
          ],
@@ -81,12 +75,12 @@
          "task_type":"AreaBuild"
       },
       {
-         "name":"Basic Metal Extractor - Expand - Area",
+         "name":"Basic Metal Extractor - Expand - Area 1",
          "to_build":"BasicMetalExtractor",
          "instance_count":2,
-         "shared_instance_count":"BasicMetal",
          "max_num_assisters":1,
-         "priority":260,
+         "shared_instance_count":"BasicMetal",
+         "priority":499,
          "base_sort":"FromBuilder",
          "builders":[
             "AnyBasicFabber"
@@ -102,9 +96,42 @@
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Structure & Factory & Construction - Orbital",
-                  "compare0":">",
-                  "value0":0
+                  "unit_type_string0":"Factory - Orbital",
+                  "compare0":">=",
+                  "value0":1
+               }
+            ]
+         ],
+         "placement_rules":{
+            "placement_type":"FromMainBaseCenter",
+            "threat":{
+               "influence_type":"AntiSurface",
+               "compare_type":"<",
+               "radius":10,
+               "value":50
+            }
+         },
+         "task_type":"AreaBuild"
+      },
+      {
+         "name":"Basic Metal Extractor - Expand - Area 2",
+         "to_build":"BasicMetalExtractor",
+         "instance_count":3,
+         "max_num_assisters":1,
+         "shared_instance_count":"BasicMetal",
+         "priority":260,
+         "base_sort":"FromBuilder",
+         "builders":[
+            "AnyBasicFabber"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanFindMetalSpotToBuildBasic",
+                  "boolean":true
                }
             ]
          ],
@@ -122,8 +149,7 @@
       {
          "name":"Basic Metal Extractor - Expand 2 - Area",
          "to_build":"BasicMetalExtractor",
-         "instance_count":4,
-         "shared_instance_count":"BasicMetal",
+         "instance_count":-1,
          "max_num_assisters":1,
          "priority":2,
          "base_sort":"FromBuilder",
@@ -138,12 +164,6 @@
                {
                   "test_type":"CanFindMetalSpotToBuildBasic",
                   "boolean":true
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Structure & Factory & Construction - Orbital",
-                  "compare0":">",
-                  "value0":0
                }
             ]
          ],
@@ -161,9 +181,9 @@
       {
          "name":"Basic Metal Extractor",
          "to_build":"BasicMetalExtractor",
-         "instance_count":2,
-         "shared_instance_count":"BasicMetal",
+         "instance_count":3,
          "max_num_assisters":1,
+         "shared_instance_count":"BasicMetal",
          "priority":261,
          "base_sort":"FromBuilder",
          "builders":[
@@ -195,9 +215,9 @@
       {
          "name":"Basic Metal Extractor - Desire",
          "to_build":"BasicMetalExtractor",
-         "instance_count":2,
-         "shared_instance_count":"BasicMetal",
+         "instance_count":3,
          "max_num_assisters":1,
+         "shared_instance_count":"BasicMetal",
          "priority":501,
          "base_sort":"FromBuilder",
          "builders":[
@@ -211,6 +231,12 @@
                {
                   "test_type":"CanFindMetalSpotToBuildBasic",
                   "boolean":true
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Factory - Orbital",
+                  "compare0":">=",
+                  "value0":1
                }
             ]
          ],
@@ -225,11 +251,49 @@
          }
       },
       {
-         "name":"Basic Metal Extractor - Expand",
+         "name":"Basic Metal Extractor - Expand 1",
          "to_build":"BasicMetalExtractor",
          "instance_count":2,
-         "shared_instance_count":"BasicMetal",
          "max_num_assisters":1,
+         "shared_instance_count":"BasicMetal",
+         "priority":499,
+         "base_sort":"FromBuilder",
+         "builders":[
+            "AnyBasicFabber"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanFindMetalSpotToBuildBasic",
+                  "boolean":true
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Factory - Orbital",
+                  "compare0":">=",
+                  "value0":1
+               }
+            ]
+         ],
+         "placement_rules":{
+            "placement_type":"FromMainBaseCenter",
+            "threat":{
+               "influence_type":"AntiSurface",
+               "compare_type":"<",
+               "radius":10,
+               "value":50
+            }
+         }
+      },
+      {
+         "name":"Basic Metal Extractor - Expand 2",
+         "to_build":"BasicMetalExtractor",
+         "instance_count":3,
+         "max_num_assisters":1,
+         "shared_instance_count":"BasicMetal",
          "priority":260,
          "base_sort":"FromBuilder",
          "builders":[
@@ -257,11 +321,11 @@
          }
       },
       {
-         "name":"Basic Metal Extractor - Expand 2",
+         "name":"Basic Metal Extractor - Expand 3",
          "to_build":"BasicMetalExtractor",
-         "instance_count":4,
-         "shared_instance_count":"BasicMetal",
+         "instance_count":6,
          "max_num_assisters":1,
+         "shared_instance_count":"BasicMetal",
          "priority":2,
          "base_sort":"FromBuilder",
          "builders":[
@@ -288,13 +352,13 @@
             }
          }
       },
-      {
+	  {
          "name":"Basic Energy Generator",
          "to_build":"BasicEnergyGenerator",
          "instance_count":1,
-         "max_num_assisters":2,
+         "max_num_assisters":1,
          "shared_instance_count":"BasicEnergy",
-         "priority":260,
+         "priority":259,
          "builders":[
             "AnyBasicFabber"
          ],
@@ -306,7 +370,7 @@
                   "value0":1.0
                },
                {
-                  "test_type":"UnitCountOnPlanet",
+                  "test_type":"UnitCount",
                   "unit_type_string0":"Fabber & Basic",
                   "compare0":">",
                   "value0":2
@@ -338,7 +402,7 @@
          "name":"Basic Energy Generator - Desire",
          "to_build":"BasicEnergyGenerator",
          "instance_count":1,
-         "max_num_assisters":2,
+         "max_num_assisters":1,
          "shared_instance_count":"BasicEnergy",
          "priority":500,
          "builders":[
@@ -350,7 +414,30 @@
                   "test_type":"DesireEnergy"
                },
                {
-                  "test_type":"UnitCountOnPlanet",
+                  "test_type":"UnitCount",
+                  "unit_type_string0":"Fabber & Basic",
+                  "compare0":">",
+                  "value0":2
+               },
+               {
+                  "test_type":"UnitCount",
+                  "unit_type_string0":"EnergyProduction & Advanced",
+                  "compare0":"<",
+                  "value0":1
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicEnergyGenerator"
+               }
+            ],
+            [
+               {
+                  "test_type":"PotentialEnergyEfficiency",
+                  "compare0":"<",
+                  "value0":1.0
+               },
+               {
+                  "test_type":"UnitCount",
                   "unit_type_string0":"Fabber & Basic",
                   "compare0":">",
                   "value0":2
@@ -381,7 +468,7 @@
       {
          "name":"Advanced Metal Extractor - Area",
          "to_build":"AdvancedMetalExtractor",
-         "instance_count":2,
+         "instance_count":3,
          "min_num_assisters":1,
          "max_num_assisters":3,
          "shared_instance_count":"AdvancedMetal",
@@ -417,9 +504,9 @@
       {
          "name":"Advanced Metal Extractor - Desire - Area",
          "to_build":"AdvancedMetalExtractor",
-         "instance_count":2,
-         "min_num_assisters":2,
-         "max_num_assisters":5,
+         "instance_count":3,
+         "min_num_assisters":1,
+         "max_num_assisters":3,
          "shared_instance_count":"AdvancedMetal",
          "priority":510,
          "base_sort":"FromBuilder",
@@ -455,7 +542,7 @@
          "min_num_assisters":1,
          "max_num_assisters":3,
          "shared_instance_count":"AdvancedMetal",
-         "priority":270,
+         "priority":509,
          "base_sort":"FromBuilder",
          "builders":[
             "AnyAdvancedFabber"
@@ -520,7 +607,7 @@
       {
          "name":"Advanced Metal Extractor - Desire",
          "to_build":"AdvancedMetalExtractor",
-         "instance_count":2,
+         "instance_count":3,
          "min_num_assisters":2,
          "max_num_assisters":5,
          "shared_instance_count":"AdvancedMetal",
@@ -557,7 +644,7 @@
          "min_num_assisters":1,
          "max_num_assisters":3,
          "shared_instance_count":"AdvancedMetal",
-         "priority":270,
+         "priority":509,
          "base_sort":"FromBuilder",
          "builders":[
             "AnyAdvancedFabber"
@@ -586,10 +673,7 @@
       {
          "name":"Advanced Metal Extractor - Expand 2",
          "to_build":"AdvancedMetalExtractor",
-         "instance_count":2,
-         "min_num_assisters":1,
-         "max_num_assisters":3,
-         "shared_instance_count":"AdvancedMetal",
+         "instance_count":-1,
          "priority":2,
          "base_sort":"FromBuilder",
          "builders":[
@@ -617,17 +701,26 @@
          }
       },
       {
-         "name":"Advanced Energy Generator",
+         "name":"Advanced Energy Generator - Desire",
          "to_build":"AdvancedEnergyGenerator",
          "instance_count":1,
-         "min_num_assisters":1,
-         "max_num_assisters":3,
+         "min_num_assisters":2,
+         "max_num_assisters":5,
          "shared_instance_count":"AdvancedEnergy",
-         "priority":271,
+         "priority":511,
          "builders":[
             "AnyAdvancedFabber"
          ],
          "build_conditions":[
+            [
+               {
+                  "test_type":"DesireEnergy"
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"AdvancedEnergyGenerator"
+               }
+            ],
             [
                {
                   "test_type":"PotentialEnergyEfficiency",
@@ -652,24 +745,63 @@
          }
       },
       {
-         "name":"Advanced Energy Generator - Desire",
-         "to_build":"AdvancedEnergyGenerator",
+         "name":"Energy Storage",
+         "to_build":"EnergyStorage",
          "instance_count":1,
-         "min_num_assisters":2,
-         "max_num_assisters":5,
-         "shared_instance_count":"AdvancedEnergy",
-         "priority":511,
+         "priority":140,
          "builders":[
+            "AnyBasicFabber",
             "AnyAdvancedFabber"
          ],
          "build_conditions":[
             [
                {
-                  "test_type":"DesireEnergy"
+                  "test_type":"EnergyStorageToProductionRatio",
+                  "compare0":"<",
+                  "value0":5
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"CanFindPlaceToBuild",
-                  "string0":"AdvancedEnergyGenerator"
+                  "string0":"EnergyStorage"
+               }
+            ]
+         ],
+         "placement_rules":{
+            "buffer":10,
+            "placement_type":"FromBaseCenter",
+            "threat":{
+               "influence_type":"AntiSurface",
+               "compare_type":"<",
+               "radius":10,
+               "value":50
+            }
+         }
+      },
+      {
+         "name":"Metal Storage",
+         "to_build":"MetalStorage",
+         "instance_count":1,
+         "priority":140,
+         "builders":[
+            "AnyBasicFabber",
+            "AnyAdvancedFabber"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"MetalStorageToProductionRatio",
+                  "compare0":"<",
+                  "value0":6
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"MetalStorage"
                }
             ]
          ],

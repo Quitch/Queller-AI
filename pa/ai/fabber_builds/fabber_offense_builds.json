@@ -22,18 +22,6 @@
                   "string0":"NukeSilo"
                },
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Structure & Nuke",
-                  "compare0":"<",
-                  "value0":5
-               },
-               {
-                  "test_type":"SystemThreat",
-                  "string0":"Economy",
-                  "compare0":">",
-                  "value0":0
-               },
-               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"NukeSilo"
                }
@@ -61,22 +49,8 @@
                   "boolean":true
                },
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Structure & Nuke",
-                  "compare0":"<",
-                  "value0":10
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Factory & Construction - Orbital - NukeDefense - Nuke",
-                  "compare0":">",
-                  "value0":0
-               },
-               {
-                  "test_type":"SystemThreat",
-                  "string0":"Economy",
-                  "compare0":">",
-                  "value0":0
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"NukeSilo"
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -108,20 +82,8 @@
                   "value0":1
                },
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Factory & Construction & Advanced",
-                  "compare0":">=",
-                  "value0":3
-               },
-               {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"NukeSilo"
-               },
-               {
-                  "test_type":"SystemThreat",
-                  "string0":"Economy",
-                  "compare0":">",
-                  "value0":0
                },
                {
                   "test_type":"PlanetThreat",

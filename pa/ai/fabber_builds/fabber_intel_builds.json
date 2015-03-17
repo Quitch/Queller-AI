@@ -55,66 +55,6 @@
          }
       },
       {
-         "name":"Basic Radar - Need for Ranged",
-         "to_build":"BasicRadar",
-         "instance_count":1,
-         "shared_instance_count":"BasicRadar",
-         "priority":246,
-         "builders":[
-            "AnyBasicFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"(Recon & Advanced - Orbital) | (Recon & Orbital - Structure)",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
-                  "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Land & Structure & Recon & Basic",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
-                  "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & (Artillery | Tactical)",
-                  "compare0":">",
-                  "value0":0
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicRadar"
-               },
-               {
-                  "test_type":"UnitCountAroundBase",
-                  "unit_type_string0":"Land & Structure & Recon & Basic",
-                  "string0":"Ally",
-                  "value0":300,
-                  "compare0":"<",
-                  "value1":1
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicRadar"
-               }
-            ]
-         ],
-         "placement_rules":{
-            "buffer":2,
-            "threat":{
-               "influence_type":"AntiSurface",
-               "compare_type":"<",
-               "radius":10,
-               "value":50
-            }
-         }
-      },
-      {
          "name":"Basic Radar - Have none",
          "to_build":"BasicRadar",
          "instance_count":1,
@@ -340,6 +280,25 @@
                   "unit_type_string0":"Orbital & Factory",
                   "compare0":">",
                   "value0":0
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"DeepSpaceRadar"
+               }
+            ],
+            [
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+				  "boolean":true
+               },
+               {
+                  "test_type":"UnitCount",
+                  "unit_type_string0":"Structure & Recon & Orbital",
+                  "compare0":"<",
+                  "value0":1
                },
                {
                   "test_type":"CanFindPlaceToBuild",

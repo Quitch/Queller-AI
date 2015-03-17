@@ -7,18 +7,22 @@
          "shared_instance_count":"Scout",
          "priority":106,
          "build_conditions":[
-            [
+            [               
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Air & Factory",
+                  "test_type":"UnitCountPerPlanetRadius",
+                  "unit_type_string0":"Air & Scout",
                   "compare0":"<",
-                  "value0":1
+                  "value0":300
                },
                {
                   "test_type":"UnitPoolCount",
-                  "unit_type_string0":"Tank & Scout",
+                  "unit_type_string0":"Land & Scout",
                   "compare0":">=",
                   "value0":1
+               },
+               {
+                  "test_type":"HaveFullPlanetIntel",
+                  "boolean":false
                }
             ]
          ],
@@ -36,11 +40,11 @@
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
-			   {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Air & Factory",
+               {
+                  "test_type":"UnitCountPerPlanetRadius",
+                  "unit_type_string0":"Air & Scout",
                   "compare0":"<",
-                  "value0":1
+                  "value0":300
                },
                {
                   "test_type":"UnitCountPerPlanetRadius",
