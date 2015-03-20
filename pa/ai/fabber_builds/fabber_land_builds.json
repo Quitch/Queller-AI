@@ -57,6 +57,12 @@
                   "value0":500
                },
 			   {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"(Naval & Factory) & Basic",
+                  "compare0":">=",
+                  "value0":1
+               },
+			   {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicBotFactory"
                }
@@ -209,25 +215,6 @@
          ],
          "build_conditions":[
             [
-			   {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"UnitCount",
-                  "unit_type_string0":"Factory & Basic",
-                  "compare0":"<",
-                  "value0":2
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-			   {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicVehicleFactory"
-               }
-            ],
-			[
 			   {
                   "test_type":"CanAffordBuildDemand"
                },

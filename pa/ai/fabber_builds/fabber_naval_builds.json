@@ -19,31 +19,7 @@
                },
                {
                   "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicBotFactory"
-               },
-               {
-                  "test_type":"CanDeployNavalFromBase",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicNavalFactory"
-               }
-            ],
-			[
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":false
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Factory & Naval",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":false
                },
                {
                   "test_type":"CanDeployNavalFromBase",
@@ -97,31 +73,7 @@
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicNavalFactory"
                }
-			],
-			[
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":false
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Factory & Naval",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanDeployNavalFromBase",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicNavalFactory"
-               }
-            ]
+			]
          ],
          "placement_rules":{
 			"buffer":5,

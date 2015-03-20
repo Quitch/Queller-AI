@@ -31,6 +31,36 @@
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":false
+               },
+			   {
+                  "test_type":"NeedBasicBotFabber"
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+			   {
+                  "test_type":"CanAffordPotentialDrain",
+				  "string0":"BasicBotFabber"
+               },
+			   {
+                  "test_type":"UnableToExpand",
+				  "boolean":false
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"(Fabber & Basic) - Naval - Air",
+                  "compare0":"<",
+                  "value0":1
+               }
+            ],
+			[
+               {
+                  "test_type":"BaseThreatened",
+                  "boolean":false
+               },
 			   {
                   "test_type":"NeedBasicBotFabber"
                },

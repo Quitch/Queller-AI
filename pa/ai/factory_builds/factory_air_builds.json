@@ -76,31 +76,9 @@
                   "test_type":"CanDeployLandFromBase",
                   "boolean":false
                },
-			   {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"(Air & Factory) & Advanced",
-                  "compare0":"<",
-                  "value0":1
-               }
-            ],
-            [
                {
-                  "test_type":"BaseThreatened",
+                  "test_type":"CanDeployNavalFromBase",
                   "boolean":false
-               },
-               {
-                  "test_type":"NeedBasicAirFabber"
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-			   {
-                  "test_type":"CanAffordPotentialDrain",
-				  "string0":"BasicAirFabber"
-               },
-               {
-                  "test_type":"UnableToExpand",
-                  "boolean":true
                },
 			   {
                   "test_type":"UnitCountOnPlanet",

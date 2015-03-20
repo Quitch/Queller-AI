@@ -338,10 +338,16 @@
 		  "Naval_Attack_Small":{
 			 "units":[
 				{
-				   "unit_types":"(Naval & Mobile) - Artillery - Scout - Fabber - Tactical",
-				   "min_count":1,
+				   "unit_types":"(Naval & Mobile) - Artillery - Scout - Fabber - Tactical - Sub",
+				   "min_count":0,
 				   "max_count":1,
 				   "squad":"General"
+				},
+				{
+				   "unit_types":"(Naval & Mobile) & Sub",
+				   "min_count":0,
+				   "max_count":1,
+				   "squad":"Fast"
 				},
 				{
 				   "unit_types":"(Naval & Mobile) & Artillery",
@@ -354,10 +360,16 @@
 		  "Naval_Attack_Medium":{
 			 "units":[
 				{
-				   "unit_types":"(Naval & Mobile) - Artillery - Scout - Fabber",
-				   "min_count":2,
+				   "unit_types":"(Naval & Mobile) - Artillery - Scout - Fabber - Sub",
+				   "min_count":0,
 				   "max_count":3,
 				   "squad":"General"
+				},
+				{
+				   "unit_types":"(Naval & Mobile) & Sub",
+				   "min_count":0,
+				   "max_count":3,
+				   "squad":"Fast"
 				},
 				{
 				   "unit_types":"(Naval & Mobile) & Artillery",
@@ -376,10 +388,16 @@
 		  "Naval_Attack_Large":{
 			 "units":[
 				{
-				   "unit_types":"(Naval & Mobile) - Artillery - Scout - Fabber",
-				   "min_count":4,
+				   "unit_types":"(Naval & Mobile) - Artillery - Scout - Fabber - Sub",
+				   "min_count":0,
 				   "max_count":7,
 				   "squad":"General"
+				},
+				{
+				   "unit_types":"(Naval & Mobile) & Sub",
+				   "min_count":0,
+				   "max_count":7,
+				   "squad":"Fast"
 				},
 				{
 				   "unit_types":"(Naval & Mobile) & Artillery",
@@ -398,10 +416,16 @@
 		  "Naval_Attack_XLarge":{
 			 "units":[
 				{
-				   "unit_types":"(Naval & Mobile) - Artillery - Scout - Fabber",
-				   "min_count":8,
+				   "unit_types":"(Naval & Mobile) - Artillery - Scout - Fabber - Sub",
+				   "min_count":0,
 				   "max_count":15,
 				   "squad":"General"
+				},
+				{
+				   "unit_types":"(Naval & Mobile) & Sub",
+				   "min_count":0,
+				   "max_count":15,
+				   "squad":"Fast"
 				},
 				{
 				   "unit_types":"(Naval & Mobile) & Artillery",
@@ -420,10 +444,16 @@
 		  "Naval_Attack_Max":{
 			 "units":[
 				{
-				   "unit_types":"(Naval & Mobile) - Artillery - Scout - Fabber",
-				   "min_count":16,
+				   "unit_types":"(Naval & Mobile) - Artillery - Scout - Fabber - Sub",
+				   "min_count":0,
 				   "max_count":-1,
 				   "squad":"General"
+				},
+				{
+				   "unit_types":"(Naval & Mobile) & Sub",
+				   "min_count":0,
+				   "max_count":-1,
+				   "squad":"Fast"
 				},
 				{
 				   "unit_types":"(Naval & Mobile) & Artillery",
