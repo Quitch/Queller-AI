@@ -11,9 +11,32 @@
          "build_conditions":[
             [
                {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":false
+                  "test_type":"CanAffordBuildDemand"
                },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicNavalFactory"
+               },
+               {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":true
+               },			   
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },			   
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"(Factory) - Naval - Air",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicNavalFactory"
+               }
+            ],
+			[
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -24,6 +47,10 @@
                {
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":true
+               },			   
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":false
                },
                {
                   "test_type":"CanFindPlaceToBuild",
