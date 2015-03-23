@@ -240,6 +240,7 @@
          "name":"Deep Space Radar - Need one",
          "to_build":"DeepSpaceRadar",
          "instance_count":1,
+         "shared_instance_count":"DeepSpaceRadar",
          "priority":260,
          "builders":[
             "AnyBasicFabber"
@@ -307,6 +308,7 @@
          "name":"Deep Space Radar",
          "to_build":"DeepSpaceRadar",
          "instance_count":1,
+         "shared_instance_count":"DeepSpaceRadar",
          "priority":90,
          "builders":[
             "AnyBasicFabber"
