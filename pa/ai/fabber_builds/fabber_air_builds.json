@@ -24,7 +24,7 @@
 			   {
                   "test_type":"UnitCountOnPlanet",
 				  "unit_type_string0":"Factory - Air - Orbital",
-				  "compare0":">=",
+				  "compare0":"=",
 				  "value0":1
                },
 			   {
@@ -49,6 +49,10 @@
                   "boolean":false
                },
 			   {
+                  "test_type":"AloneOnPlanet",
+				  "boolean":false
+               },
+			   {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirFactory"
                }
@@ -67,7 +71,7 @@
                   "string1":"AntiAir",
                   "compare0":">",
                   "value0":1.0
-               },			   
+               },
 			   {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirFactory"
@@ -80,6 +84,10 @@
                {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"BasicAirFactory"
+               },
+			   {
+                  "test_type":"AloneOnPlanet",
+				  "boolean":false
                },
 			   {
                   "test_type":"UnitCountOnPlanet",
@@ -142,7 +150,8 @@
          "min_num_assisters":1,
          "max_num_assisters":3,
          "builders":[
-            "AnyBasicFabber"
+            "AnyBasicFabber",
+			"AnyAdvancedFabber"
          ],
          "build_conditions":[
             [
@@ -153,9 +162,9 @@
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"BasicAirFactory"
                },
-               {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
+			   {
+                  "test_type":"AloneOnPlanet",
+				  "boolean":false
                },
                {
                   "test_type":"UnitRatioOnPlanet",
@@ -163,6 +172,31 @@
                   "unit_type_string1":"Factory - Air - Orbital",
                   "compare0":"<",
                   "value0":0.2
+               },
+			   {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicAirFactory"
+               }
+			],
+			[
+			   {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicAirFactory"
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":false
+               },
+			   {
+                  "test_type":"AloneOnPlanet",
+				  "boolean":false
                },
 			   {
                   "test_type":"CanFindPlaceToBuild",

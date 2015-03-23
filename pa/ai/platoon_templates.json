@@ -232,6 +232,46 @@
 				}
 			 ]
 		  },
+		  "Teleporter_Attack":{
+			 "units":[
+				{
+				   "unit_types":"(Bot & Mobile) - Fabber - Construction - Artillery - Heavy",
+				   "min_count":0,
+				   "max_count":-1,
+				   "squad":"Fast"
+				},
+				{
+				   "unit_types":"(Tank & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - Scout",
+				   "min_count":0,
+				   "max_count":-1,
+				   "squad":"General"
+				},
+				{
+				   "unit_types":"((Tank | Bot) & Mobile) & Artillery",
+				   "min_count":0,
+				   "percent":0.35,
+				   "squad":"Artillery"
+				},
+				{
+				   "unit_types":"((Tank | Bot) & Mobile) & Heavy",
+				   "min_count":0,
+				   "percent":0.1,
+				   "squad":"Close"
+				},
+				{
+				   "unit_types":"(Tank & Mobile) & AirDefense",
+				   "min_count":0,
+				   "percent":0.2,
+				   "squad":"Defense"
+				},
+				{
+				   "unit_types":"Land & Scout",
+				   "min_count":0,
+				   "max_count":3,
+				   "squad":"Defense"
+				}
+			 ]
+		  },
 		  "Air_Scout":{
 			 "units":[
 				{
@@ -240,10 +280,18 @@
 				}
 			 ]
 		  },
-		  "Land_Scout":{
+		  "Vehicle_Scout":{
 			 "units":[
 				{
-				   "unit_types":"((Bot & Mobile) | (Land & Scout)) - Fabber - AirDefense - Construction - Artillery - Heavy",
+				   "unit_types":"Land & Scout",
+				   "max_count":1
+				}
+			 ]
+		  },	
+		  "Bot_Scout":{
+			 "units":[
+				{
+				   "unit_types":"((Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy",
 				   "max_count":1
 				}
 			 ]
@@ -484,12 +532,6 @@
 				   "unit_types":"Orbital & LaserPlatform",
 				   "min_count":1,
 				   "max_count":-1
-				},
-				{
-				   "unit_types":"Orbital & Fighter",
-				   "min_count":0,
-				   "max_count":-1,
-				   "squad":"Escort"
 				}
 			 ]
 		  },

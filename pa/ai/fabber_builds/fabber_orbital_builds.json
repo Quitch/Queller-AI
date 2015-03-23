@@ -26,7 +26,14 @@
                   "boolean":true
                },
                {
-                  "test_type":"NeedOrbitalLauncher"
+                  "test_type":"PlanetWithoutPresence",
+                  "boolean":true
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"(Factory & Orbital) & Basic",
+                  "compare0":"<",
+                  "value0":1
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -206,6 +213,10 @@
                   "boolean":true
                },
                {
+                  "test_type":"PlanetHasUseablePlanetWeapon",
+                  "boolean":false
+               },
+               {
                   "test_type":"HaveThrustToMovePlanet",
                   "boolean":false
                },
@@ -220,16 +231,58 @@
          }
       },
       {
+         "name":"Jig",
+         "to_build":"OrbitalExtractor",
+         "instance_count":1,
+         "min_num_assisters":3,
+         "max_num_assisters":5,
+         "priority":360,
+         "builders":[
+            "OrbitalFabber"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"PotentialMetalEfficiency",
+                  "compare0":"<",
+                  "value0":1.0
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"OrbitalExtractor"
+               }
+            ],
+			[
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"PotentialEnergyEfficiency",
+                  "compare0":"<",
+                  "value0":1.0
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"OrbitalExtractor"
+               }
+            ]
+         ],
+         "placement_rules":{
+            "buffer":30
+         }
+      },
+      {
          "name":"Move Fabber To Planet",
          "instance_count":1,
          "priority":800,
          "builders":[
             "BasicBotFabber",
             "BasicVehicleFabber",
-            "BasicAirFabber",
             "AdvancedBotFabber",
-            "AdvancedVehicleFabber",
-            "AdvancedAirFabber"
+            "AdvancedVehicleFabber"
          ],
          "build_conditions":[
             [
@@ -252,6 +305,23 @@
             ]
          ],
          "task_type":"TransportToPlanet"
+      },
+      {
+         "name":"Move Orbital Fabber To Planet",
+         "instance_count":1,
+         "priority":800,
+         "builders":[
+            "OrbitalFabber"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"PlanetOrGasGiantWithoutPresence",
+                  "boolean":true
+               }
+            ]
+         ],
+         "task_type":"OrbitalFabberMoveToPlanet"
       }
    ]
 }

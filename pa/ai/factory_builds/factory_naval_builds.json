@@ -124,6 +124,10 @@
                   "boolean":false
                },
                {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                }
             ]
@@ -143,6 +147,10 @@
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
+               },
+               {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":true
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -201,6 +209,10 @@
                   "test_type":"NeedAdvancedNavalFabber"
                },
                {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"AdvancedNavalFabber"
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                }
             ],
@@ -211,6 +223,10 @@
                },
                {
                   "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"AdvancedNavalFabber"
                },
                {
                   "test_type":"UnitCountOnPlanet",
@@ -237,6 +253,10 @@
                   "boolean":false
                },
                {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                }
             ]
@@ -254,11 +274,15 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
+               },
+               {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"PlanetThreatRatio",
@@ -295,13 +319,6 @@
                {
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":true
-               },
-               {
-                  "test_type":"PlanetThreatRatio",
-                  "string0":"Naval",
-                  "string1":"Naval",
-                  "compare0":">",
-                  "value0":1.0
                },
                {
                   "test_type":"CanAffordBuildDemand"

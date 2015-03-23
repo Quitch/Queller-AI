@@ -30,7 +30,7 @@
       },
 	  {
          "name":"Bot Scout Platoon",
-         "to_build":"Land_Scout",
+         "to_build":"Bot_Scout",
          "instance_count":5,
 		 "shared_instance_count":"Scout",
          "priority":100,
@@ -61,60 +61,20 @@
          "task_type":"Scout"
       },
       {
-         "name":"Land Transfer To Planet - Alone",
-         "to_build":"Land_Attack_Max",
+         "name":"Land Transfer To Planet",
+         "to_build":"Teleporter_Attack",
          "instance_count":1,
          "shared_instance_count":"LandTransferToPlanet",
          "priority":108,
          "build_conditions":[
             [
                {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":true
-               },
-               {
                   "test_type":"OtherPlanetNeedsLandUnitAssistance",
                   "boolean":true
                },
                {
                   "test_type":"CanProvideLandUnitAssistance",
                   "boolean":true
-               },
-               {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
-                  "compare0":">=",
-                  "value0":5
-               }
-            ]
-         ],
-         "task_type":"TeleportLandToPlanet"
-      },
-      {
-         "name":"Land Transfer To Planet",
-         "to_build":"Land_Attack_XLarge",
-         "instance_count":1,
-         "shared_instance_count":"LandTransferToPlanet",
-         "priority":107,
-         "build_conditions":[
-            [
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":false
-               },
-               {
-                  "test_type":"OtherPlanetNeedsLandUnitAssistance",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanProvideLandUnitAssistance",
-                  "boolean":true
-               },
-               {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
-                  "compare0":">=",
-                  "value0":5
                }
             ]
          ],

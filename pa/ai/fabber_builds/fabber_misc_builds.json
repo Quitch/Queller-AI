@@ -47,50 +47,6 @@
                   "test_type":"PresenceOnOtherPlanet",
                   "boolean":true
                }
-            ],
-			[
-               {
-                  "test_type":"ThisPlanetNeedsLandUnitAssistance",
-                  "boolean":true
-               },
-               {
-                  "test_type":"OtherPlanetCanProvideLandUnitAssistance",
-                  "boolean":true
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Structure & Teleporter",
-                  "compare0":"<",
-                  "value0":1
-               }
-            ],
-            [
-               {
-                  "test_type":"OtherPlanetNeedsLandUnitAssistance",
-                  "boolean":true
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Structure & Teleporter",
-                  "compare0":"<",
-                  "value0":1
-               }
-            ],
-            [
-               {
-                  "test_type":"WantCommanderOffPlanet",
-                  "boolean":true
-               },
-               {
-                  "test_type":"PresenceOnOtherPlanet",
-                  "boolean":true
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Structure & Teleporter",
-                  "compare0":"<",
-                  "value0":1
-               }
             ]
          ],
          "placement_rules":{

@@ -122,7 +122,7 @@
                   "test_type":"UnitCountAroundBase",
                   "unit_type_string0":"Land & Structure & Recon & Advanced",
                   "string0":"Ally",
-                  "value0":1200,
+                  "value0":1000,
                   "compare0":"<",
                   "value1":1
                },
@@ -236,11 +236,11 @@
             }
          }
       },
-      {
-         "name":"Deep Space Radar",
+	  {
+         "name":"Deep Space Radar - Need one",
          "to_build":"DeepSpaceRadar",
          "instance_count":1,
-         "priority":90,
+         "priority":260,
          "builders":[
             "AnyBasicFabber"
          ],
@@ -248,6 +248,33 @@
             [
                {
                   "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"DeepSpaceRadar"
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+				  "boolean":true
+               },
+               {
+                  "test_type":"UnitCount",
+                  "unit_type_string0":"Structure & Recon & Orbital",
+                  "compare0":"<",
+                  "value0":1
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"DeepSpaceRadar"
+               }
+            ],
+			[
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"DeepSpaceRadar"
                },
                {
                   "test_type":"UnitCount",
@@ -264,10 +291,34 @@
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"DeepSpaceRadar"
                }
-            ],
+            ]
+         ],
+         "placement_rules":{
+            "buffer":2,
+            "threat":{
+               "influence_type":"AntiSurface",
+               "compare_type":"<",
+               "radius":10,
+               "value":50
+            }
+         }
+      },
+      {
+         "name":"Deep Space Radar",
+         "to_build":"DeepSpaceRadar",
+         "instance_count":1,
+         "priority":90,
+         "builders":[
+            "AnyBasicFabber"
+         ],
+         "build_conditions":[
             [
                {
                   "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"DeepSpaceRadar"
                },
                {
                   "test_type":"UnitCount",
@@ -280,25 +331,6 @@
                   "unit_type_string0":"Orbital & Factory",
                   "compare0":">",
                   "value0":0
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"DeepSpaceRadar"
-               }
-            ],
-            [
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"AloneOnPlanet",
-				  "boolean":true
-               },
-               {
-                  "test_type":"UnitCount",
-                  "unit_type_string0":"Structure & Recon & Orbital",
-                  "compare0":"<",
-                  "value0":1
                },
                {
                   "test_type":"CanFindPlaceToBuild",
