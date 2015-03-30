@@ -12,6 +12,12 @@
                   "unit_type_string0":"Orbital & Recon - Structure",
                   "compare0":">=",
                   "value0":1
+               },
+			   {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Orbital & Structure & Economy",
+                  "compare0":"<",
+                  "value0":1
                }
             ]
          ],
@@ -44,7 +50,29 @@
                   "test_type":"HaveFullPlanetIntel",
                   "boolean":true
                }
-            ]
+            ],
+            [
+               {
+                  "test_type":"OtherPlanetNeedsReconAssistance",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               }
+            ],
+			[
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Orbital & Recon - Structure",
+                  "compare0":">",
+                  "value0":1
+               },
+			   {
+                  "test_type":"PlanetWithoutPresence",
+                  "boolean":true
+               }
+            ]			
          ],
          "task_type":"TransferReconToPlanet"
       },

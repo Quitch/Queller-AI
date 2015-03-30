@@ -1,10 +1,9 @@
 {
    "build_list":[
       {
-         "name":"Galata Turret - Mex Few",
+         "name":"Galata Turret - Mex",
          "to_build":"BasicAirDefense",
 		 "instance_count":1,
-         "shared_instance_count":"BasicAirDefenseMex",
          "priority":252,
          "base_sort":"FromPerimeter",
          "builders":[
@@ -54,62 +53,8 @@
             ]
          }
       },
-	  {
-         "name":"Galata Turret - Mex Many",
-         "to_build":"BasicAirDefense",
-		 "instance_count":1,
-         "shared_instance_count":"BasicAirDefenseMex",
-         "priority":252,
-         "base_sort":"FromPerimeter",
-         "builders":[
-		    "Commander",
-            "AnyBasicFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"DistFromMainBase",
-                  "compare0":">=",
-                  "value0":200
-               },
-			   {
-                  "test_type":"PlanetThreatRatio",
-                  "string0":"Air",
-                  "string1":"AntiAir",
-                  "compare0":">",
-                  "value0":0.9
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicAirDefense"
-               }
-            ]
-         ],
-         "placement_rules":{
-            "placement_type":"FromMainBasePerimeter",
-            "unit_count_rules":[
-               {
-                  "unit_type_string":"Structure & MetalProduction",
-                  "alliance":"Ally",
-                  "compare_type":">=",
-                  "range":50,
-                  "count":5
-               },
-               {
-                  "unit_type_string":"Structure & AirDefense",
-                  "alliance":"Ally",
-                  "compare_type":"<",
-                  "range":100,
-                  "count":2
-               }
-            ]
-         }
-      },
       {
-         "name":"Single Laser Defense Tower - Mex Few",
+         "name":"Single Laser Defense Tower - Mex",
          "to_build":"BasicLandDefenseSingle",
 		 "instance_count":1,
          "shared_instance_count":"BasicLandDefenseMex",
@@ -152,7 +97,7 @@
                   "alliance":"Ally",
                   "compare_type":">=",
                   "range":50,
-                  "count":1
+                  "count":2
                },
                {
                   "unit_type_string":"Structure & SurfaceDefense",
@@ -165,7 +110,7 @@
          }
       },
 	  {
-         "name":"Laser Defense Tower - Mex Few",
+         "name":"Laser Defense Tower - Mex",
          "to_build":"BasicLandDefense",
 		 "instance_count":1,
          "shared_instance_count":"BasicLandDefenseMex",
@@ -221,193 +166,9 @@
          }
       },
 	  {
-         "name":"Laser Defense Tower - Mex Many",
-         "to_build":"BasicLandDefense",
-		 "instance_count":1,
-         "shared_instance_count":"BasicLandDefenseMex",
-         "priority":253,
-         "base_sort":"FromPerimeter",
-         "builders":[
-		    "Commander",
-            "BasicBotFabber",
-			"BasicVehicleFabber",
-			"BasicAirFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"DistFromMainBase",
-                  "compare0":">=",
-                  "value0":200
-               },
-			   {
-                  "test_type":"PlanetThreatRatio",
-                  "string0":"Land",
-                  "string1":"Land",
-                  "compare0":">",
-                  "value0":0.9
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicLandDefense"
-               }
-            ]
-         ],
-         "placement_rules":{
-            "placement_type":"FromMainBasePerimeter",
-            "unit_count_rules":[
-               {
-                  "unit_type_string":"Structure & MetalProduction",
-                  "alliance":"Ally",
-                  "compare_type":">=",
-                  "range":50,
-                  "count":5
-               },
-               {
-                  "unit_type_string":"Structure & SurfaceDefense",
-                  "alliance":"Ally",
-                  "compare_type":"<",
-                  "range":100,
-                  "count":2
-               }
-            ]
-         }
-      },
-	  {
-         "name":"Galata Turret - Teleporter",
-         "to_build":"BasicAirDefense",
-		 "instance_count":-1,
-         "priority":254,
-         "base_sort":"FromPerimeter",
-         "builders":[
-		    "Commander",
-            "AnyBasicFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"AloneOnPlanet",
-				  "boolean":false
-               },
-			   {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & AirDefense",
-                  "compare0":"<",
-                  "value0":4
-               },
-               {
-                  "test_type":"PlanetThreatRatio",
-                  "string0":"Air",
-                  "string1":"AntiAir",
-                  "compare0":">",
-                  "value0":1.0
-               },
-               {
-                  "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & (EnergyProduction | Factory)",
-                  "compare0":"<",
-                  "value0":10
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicAirDefense"
-               }
-            ]
-         ],
-         "placement_rules":{
-            "placement_type":"FromMainBasePerimeter",
-            "unit_count_rules":[
-               {
-                  "unit_type_string":"Structure & Teleporter",
-                  "alliance":"Ally",
-                  "compare_type":">=",
-                  "range":50,
-                  "count":1
-               },
-               {
-                  "unit_type_string":"Structure & AirDefense",
-                  "alliance":"Ally",
-                  "compare_type":"<",
-                  "range":100,
-                  "count":2
-               }
-            ]
-         }
-      },
-	  {
-         "name":"Laser Defense Tower - Teleporter",
-         "to_build":"BasicLandDefense",
-		 "instance_count":-1,
-         "shared_instance_count":"BasicLandDefenseMex",
-         "priority":253,
-         "base_sort":"FromPerimeter",
-         "builders":[
-		    "Commander",
-            "BasicBotFabber",
-			"BasicVehicleFabber",
-			"BasicAirFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & SurfaceDefense",
-                  "compare0":"<",
-                  "value0":2
-               },
-               {
-                  "test_type":"PlanetThreatRatio",
-                  "string0":"Land",
-                  "string1":"Land",
-                  "compare0":">",
-                  "value0":1.0
-               },
-               {
-                  "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & (EnergyProduction | Factory)",
-                  "compare0":"<",
-                  "value0":10
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicLandDefense"
-               }
-            ]
-         ],
-         "placement_rules":{
-            "placement_type":"FromMainBasePerimeter",
-            "unit_count_rules":[
-               {
-                  "unit_type_string":"Structure & Teleporter",
-                  "alliance":"Ally",
-                  "compare_type":">=",
-                  "range":50,
-                  "count":1
-               },
-               {
-                  "unit_type_string":"Structure & SurfaceDefense",
-                  "alliance":"Ally",
-                  "compare_type":"<",
-                  "range":100,
-                  "count":2
-               }
-            ]
-         }
-      },
-	  {
-         "name":"Torpedo Launcher - Mex Few",
+         "name":"Torpedo Launcher - Mex",
          "to_build":"BasicNavalDefense",
 		 "instance_count":1,
-         "shared_instance_count":"BasicNavalDefenseMex",
          "priority":255,
          "base_sort":"FromPerimeter",
          "builders":[
@@ -454,61 +215,6 @@
                   "compare_type":"<",
                   "range":100,
                   "count":1
-               }
-            ]
-         }
-      },
-	  {
-         "name":"Torpedo Launcher - Mex Many",
-         "to_build":"BasicNavalDefense",
-		 "instance_count":1,
-         "shared_instance_count":"BasicNavalDefenseMex",
-         "priority":255,
-         "base_sort":"FromPerimeter",
-         "builders":[
-		    "Commander",
-            "BasicAirFabber",
-			"BasicNavalFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"DistFromMainBase",
-                  "compare0":">=",
-                  "value0":200
-               },
-			   {
-                  "test_type":"PlanetThreatRatio",
-                  "string0":"Naval",
-                  "string1":"Naval",
-                  "compare0":">",
-                  "value0":0.9
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicNavalDefense"
-               }
-            ]
-         ],
-         "placement_rules":{
-            "placement_type":"FromMainBasePerimeter",
-            "unit_count_rules":[
-               {
-                  "unit_type_string":"Structure & MetalProduction",
-                  "alliance":"Ally",
-                  "compare_type":">=",
-                  "range":50,
-                  "count":5
-               },
-               {
-                  "unit_type_string":"Structure & Naval & Defense",
-                  "alliance":"Ally",
-                  "compare_type":"<",
-                  "range":100,
-                  "count":2
                }
             ]
          }
@@ -537,6 +243,12 @@
                   "string1":"AntiAir",
                   "compare0":">",
                   "value0":1.0
+               },
+               {
+                  "test_type":"UnitCountInBase",
+                  "unit_type_string0":"Structure & (EnergyProduction | Factory)",
+                  "compare0":">=",
+                  "value0":10
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -595,6 +307,12 @@
                   "string1":"Land",
                   "compare0":">",
                   "value0":1.0
+               },
+               {
+                  "test_type":"UnitCountInBase",
+                  "unit_type_string0":"Structure & (EnergyProduction | Factory)",
+                  "compare0":">=",
+                  "value0":5
                },
                {
                   "test_type":"HaveSeenEnemyUnits",
@@ -751,140 +469,6 @@
                }
             ]
          }
-      },	       
-      {
-         "name":"Advanced Air Defense - Teleporter",
-         "to_build":"AdvancedAirDefense",
-         "instance_count":1,
-         "min_num_assisters":1,
-         "max_num_assisters":3,
-         "priority":380,
-         "base_sort":"FromPerimeter",
-         "builders":[
-            "AnyAdvancedFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & Advanced & AirDefense",
-                  "compare0":"<",
-                  "value0":2
-               },
-               {
-                  "test_type":"PlanetThreatRatio",
-                  "string0":"Air",
-                  "string1":"AntiAir",
-                  "compare0":">",
-                  "value0":1.0
-               },
-               {
-                  "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & (EnergyProduction | Factory)",
-                  "compare0":"<",
-                  "value0":5
-               },
-               {
-                  "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & Teleporter",
-                  "compare0":">=",
-                  "value0":1
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"AdvancedAirDefense"
-               }
-            ]
-         ],
-         "placement_rules":{
-            "placement_type":"FromMainBaseCenter",
-            "unit_count_rules":[
-               {
-                  "unit_type_string":"Structure & Teleporter",
-                  "alliance":"Ally",
-                  "compare_type":">=",
-                  "range":50,
-                  "count":1
-               },
-               {
-                  "unit_type_string":"Structure & Advanced & AirDefense",
-                  "alliance":"Ally",
-                  "compare_type":"<",
-                  "range":75,
-                  "count":1
-               }
-            ]
-         }
-      },
-      {
-         "name":"Advanced Land Defense - Teleporter",
-         "to_build":"AdvancedLandDefense",
-         "instance_count":1,
-         "priority":379,
-         "min_num_assisters":1,
-         "max_num_assisters":3,
-         "base_sort":"FromPerimeter",
-         "builders":[
-            "AnyAdvancedFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & Advanced & SurfaceDefense",
-                  "compare0":"<",
-                  "value0":2
-               },
-               {
-                  "test_type":"PlanetThreatRatio",
-                  "string0":"Land",
-                  "string1":"Land",
-                  "compare0":">",
-                  "value0":1.0
-               },
-               {
-                  "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & (EnergyProduction | Factory)",
-                  "compare0":"<",
-                  "value0":5
-               },
-               {
-                  "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & Teleporter",
-                  "compare0":">=",
-                  "value0":1
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"AdvancedLandDefense"
-               }
-            ]
-         ],
-         "placement_rules":{
-            "placement_type":"FromMainBaseCenter",
-            "unit_count_rules":[
-               {
-                  "unit_type_string":"Structure & Teleporter",
-                  "alliance":"Ally",
-                  "compare_type":">=",
-                  "range":50,
-                  "count":1
-               },
-               {
-                  "unit_type_string":"Structure & SurfaceDefense",
-                  "alliance":"Ally",
-                  "compare_type":"<",
-                  "range":75,
-                  "count":2
-               }
-            ]
-         }
       },
       {
          "name":"Advanced Air Defense - Base",
@@ -919,7 +503,7 @@
                   "test_type":"UnitCountInBase",
                   "unit_type_string0":"Structure & (EnergyProduction | Factory)",
                   "compare0":">=",
-                  "value0":5
+                  "value0":10
                },
                {
                   "test_type":"HaveSeenEnemyUnits",
@@ -984,7 +568,7 @@
                   "test_type":"UnitCountInBase",
                   "unit_type_string0":"Structure & (EnergyProduction | Factory)",
                   "compare0":">=",
-                  "value0":5
+                  "value0":10
                },
                {
                   "test_type":"HaveSeenEnemyUnits",
@@ -1088,8 +672,11 @@
             "AnyAdvancedFabber"
          ],
          "build_conditions":[
-            [
+            [               
                {
+                  "test_type":"CanAffordBuildDemand"
+               },
+			   {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"AntiNukeSilo"
                },
@@ -1098,7 +685,7 @@
                   "string0":"Nuke",
                   "string1":"AntiNuke",
                   "compare0":">",
-                  "value0":1.75
+                  "value0":1
                },
                {
                   "test_type":"UnitCountInBase",
@@ -1137,7 +724,7 @@
          "to_build":"AntiNukeSilo",
          "instance_count":1,
          "shared_instance_count":"AntiNukeSilo",
-         "priority":386,
+         "priority":509,
          "min_num_assisters":5,
          "max_num_assisters":12,
          "builders":[
@@ -1146,6 +733,9 @@
          "build_conditions":[
             [
                {
+                  "test_type":"CanAffordBuildDemand"
+               },
+			   {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"AntiNukeSilo"
                },
@@ -1154,7 +744,7 @@
                   "string0":"Nuke",
                   "string1":"AntiNuke",
                   "compare0":">",
-                  "value0":1.75
+                  "value0":1
                },
                {
                   "test_type":"UnitCountInBase",
@@ -1163,18 +753,15 @@
                   "value0":3
                },
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Structure & NukeDefense",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"AntiNukeSilo"
                }
             ],
             [
                {
+                  "test_type":"CanAffordBuildDemand"
+               },
+			   {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"AntiNukeSilo"
                },

@@ -28,13 +28,39 @@
                   "value0":1
                }
             ],
+			[
+               {
+                  "test_type":"BaseThreatened",
+                  "boolean":false
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Fabber & Air",
+                  "compare0":"<",
+                  "value0":1
+               },
+			   {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"(Air & Factory) & Advanced",
+                  "compare0":"<",
+                  "value0":1
+               },
+			   {
+                  "test_type":"PlanetThreatRatio",
+                  "string0":"Air",
+                  "string1":"AntiAir",
+                  "compare0":"<",
+                  "value0":0.9
+               }
+            ],
             [
                {
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
                {
-                  "test_type":"NeedBasicAirFabber"
+                  "test_type":"NeedBasicAirFabber",
+                  "boolean":true
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -54,7 +80,7 @@
                   "string0":"Air",
                   "string1":"AntiAir",
                   "compare0":"<",
-                  "value0":1.0
+                  "value0":0.9
                }
             ],
             [
@@ -63,7 +89,11 @@
                   "boolean":false
                },
                {
-                  "test_type":"NeedBasicAirFabber"
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Fabber & Basic",
+                  "unit_type_string1":"Factory & Basic",
+                  "compare0":"<",
+                  "value0":1
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -111,7 +141,7 @@
                   "test_type":"UnitCountPerPlanetRadius",
                   "unit_type_string0":"Air & Scout",
                   "compare0":"<",
-                  "value0":300
+                  "value0":250
                },
                {
                   "test_type":"HaveFullPlanetIntel",
@@ -135,11 +165,22 @@
                   "test_type":"CanAffordBuildDemand"
                },
 			   {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Air & Fighter",
+                  "compare0":"<",
+                  "value0":1
+               }
+            ],
+			[
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+			   {
                   "test_type":"PlanetThreatRatio",
                   "string0":"Air",
                   "string1":"AntiAir",
                   "compare0":">",
-                  "value0":1.0
+                  "value0":0.9
                }
             ],
 			[
@@ -151,7 +192,7 @@
                   "string0":"Air",
                   "string1":"Air",
                   "compare0":">",
-                  "value0":1.0
+                  "value0":0.9
                }
             ],
 			[
@@ -162,11 +203,11 @@
                   "test_type":"AloneOnPlanet",
                   "boolean":true
                },
-			   {
-                  "test_type":"UnitCountOnPlanet",
+               {
+                  "test_type":"UnitCountPerPlanetRadius",
                   "unit_type_string0":"Air & Fighter",
                   "compare0":"<",
-                  "value0":5
+                  "value0":100
                }
             ]
          ]
@@ -204,6 +245,21 @@
                   "compare0":"<",
                   "value0":40
                }
+            ],
+			[
+			   {
+                  "test_type":"CanAffordBuildDemand"
+               },
+			   {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+               {
+                  "test_type":"UnitCountPerPlanetRadius",
+                  "unit_type_string0":"Air & Bomber",
+                  "compare0":"<",
+                  "value0":10
+               }
             ]
          ]
       },
@@ -223,6 +279,9 @@
                   "boolean":false
                },
 			   {
+                  "test_type":"CanAffordBuildDemand"
+               },
+			   {
                   "test_type":"CanAffordPotentialDrain",
 				  "string0":"AdvancedAirFabber"
                },
@@ -232,8 +291,9 @@
                   "compare0":"<",
                   "value0":50
                },
-			   {
-                  "test_type":"CanAffordBuildDemand"
+               {
+                  "test_type":"PlanetHasUseablePlanetWeapon",
+                  "boolean":true
                }
             ]
 		 ]

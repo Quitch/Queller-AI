@@ -1,7 +1,7 @@
 {
    "build_list":[
       {
-         "name":"Orbital Launcher - Alone",
+         "name":"Orbital Launcher - Alone/Rush",
          "to_build":"OrbitalLauncher",
          "instance_count":1,
          "shared_instance_count":"OrbitalLauncher",
@@ -39,10 +39,34 @@
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"OrbitalLauncher"
                }
+            ],
+			[               
+			   {
+                  "test_type":"WantCommanderOffPlanet",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"NoWhereToRun",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"PresenceOnOtherPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"(Factory & Orbital) & Basic",
+                  "compare0":"<",
+                  "value0":1
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"OrbitalLauncher"
+               }
             ]
          ],
          "placement_rules":{
-            "buffer":5
+            "buffer":15
          }
       },
 	  {
@@ -97,7 +121,7 @@
             ]
          ],
          "placement_rules":{
-            "buffer":5
+            "buffer":15
          }
       },
 	  {
@@ -111,6 +135,31 @@
             "OrbitalFabber"
          ],
          "build_conditions":[
+            [
+			   {
+                  "test_type":"CanAffordBuildDemand"
+               },
+			   {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"OrbitalFactory"
+               },
+			   {
+                  "test_type":"UnitCountOnPlanet",
+                  "string0":"Orbital & Structure & Economy",
+                  "compare0":">=",
+                  "value0":1
+               },
+			   {
+                  "test_type":"UnitCountOnPlanet",
+                  "string0":"Orbital & Factory & Advanced",
+                  "compare0":"<",
+                  "value0":1
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"OrbitalFactory"
+               }
+            ],
             [
 			   {
                   "test_type":"CanAffordBuildDemand"
@@ -233,18 +282,33 @@
       {
          "name":"Jig",
          "to_build":"OrbitalExtractor",
-         "instance_count":1,
+         "instance_count":2,
          "min_num_assisters":3,
          "max_num_assisters":5,
-         "priority":360,
+         "priority":478,
          "builders":[
             "OrbitalFabber"
          ],
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"DesireEnergy"
                },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"OrbitalExtractor"
+               }
+            ],
+			[
+               {
+                  "test_type":"DesireMetal"
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"OrbitalExtractor"
+               }
+            ],
+			[
                {
                   "test_type":"PotentialMetalEfficiency",
                   "compare0":"<",
@@ -256,9 +320,6 @@
                }
             ],
 			[
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
                {
                   "test_type":"PotentialEnergyEfficiency",
                   "compare0":"<",
@@ -318,6 +379,24 @@
                {
                   "test_type":"PlanetOrGasGiantWithoutPresence",
                   "boolean":true
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Fabber & Orbital",
+                  "compare0":">=",
+                  "value0":2
+               }
+            ],
+			[
+               {
+                  "test_type":"PlanetOrGasGiantWithoutPresence",
+                  "boolean":true
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Structure & (Teleporter | Factory)",
+                  "compare0":">=",
+                  "value0":1
                }
             ]
          ],

@@ -3,7 +3,7 @@
       {
          "name":"Basic Metal Extractor - cdr",
          "to_build":"BasicMetalExtractor",
-         "instance_count":2,
+         "instance_count":1,
          "shared_instance_count":"BasicMetal",
          "priority":260,
          "base_sort":"FromBuilder",
@@ -19,13 +19,6 @@
                },
                {
                   "test_type":"CanFindMetalSpotToBuildBasic",
-                  "boolean":true
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Factory - Orbital",
-                  "compare0":">=",
-                  "value0":1,
                   "boolean":true
                }
             ]
@@ -56,12 +49,6 @@
                   "test_type":"DesireMetal"
                },
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Factory - Orbital",
-                  "compare0":">=",
-                  "value0":1
-               },
-               {
                   "test_type":"CanFindMetalSpotToBuildBasic",
                   "boolean":true
                }
@@ -78,15 +65,14 @@
                   "compare0":"<",
                   "value0":1
                },
-               {
-                  "test_type":"CanFindMetalSpotToBuildBasic",
-                  "boolean":true
+			   {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Factory",
+                  "compare0":">=",
+                  "value0":1
                },
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Factory - Orbital",
-                  "compare0":">=",
-                  "value0":1,
+                  "test_type":"CanFindMetalSpotToBuildBasic",
                   "boolean":true
                }
             ]
@@ -104,7 +90,7 @@
       {
          "name":"Basic Energy Generator - Cdr",
          "to_build":"BasicEnergyGenerator",
-         "instance_count":2,
+         "instance_count":1,
          "max_num_assisters":1,
          "shared_instance_count":"BasicEnergy",
          "priority":261,
@@ -120,14 +106,8 @@
                },
                {
                   "test_type":"UnitCount",
-                  "unit_type_string0":"EnergyProduction & Advanced",
+                  "unit_type_string0":"(Fabber & Advanced) | (EnergyProduction & Advanced)",
                   "compare0":"<",
-                  "value0":1
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Factory - Orbital",
-                  "compare0":">=",
                   "value0":1
                },
                {
@@ -150,7 +130,7 @@
       {
          "name":"Basic Energy Generator - Desire Cdr",
          "to_build":"BasicEnergyGenerator",
-         "instance_count":3,
+         "instance_count":2,
          "max_num_assisters":1,
          "shared_instance_count":"BasicEnergy",
          "priority":501,
@@ -164,14 +144,8 @@
                },
                {
                   "test_type":"UnitCount",
-                  "unit_type_string0":"EnergyProduction & Advanced",
+                  "unit_type_string0":"Fabber & Advanced",
                   "compare0":"<",
-                  "value0":1
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Factory - Orbital",
-                  "compare0":">=",
                   "value0":1
                },
                {
@@ -189,18 +163,12 @@
                   "test_type":"UnitCount",
                   "unit_type_string0":"EnergyProduction & Basic",
                   "compare0":"<",
-                  "value0":3
+                  "value0":2
                },
                {
                   "test_type":"UnitCount",
-                  "unit_type_string0":"EnergyProduction & Advanced",
+                  "unit_type_string0":"(Fabber & Advanced) | (EnergyProduction & Advanced)",
                   "compare0":"<",
-                  "value0":1
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Factory - Orbital",
-                  "compare0":">=",
                   "value0":1
                },
                {

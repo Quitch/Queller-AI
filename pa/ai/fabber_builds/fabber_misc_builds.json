@@ -42,7 +42,7 @@
                   "unit_type_string0":"Structure & Teleporter",
                   "compare0":"<",
                   "value0":1
-               },		   
+               },
                {
                   "test_type":"PresenceOnOtherPlanet",
                   "boolean":true
@@ -79,8 +79,36 @@
                {
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Structure & Teleporter",
-                  "compare0":">",
-                  "value0":0
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Fabber - Air",
+                  "compare0":">=",
+                  "value0":2
+               }
+            ]
+         ],
+         "task_type":"TeleportFabberToPlanet"
+      },	  
+      {
+         "name":"Teleport Fabber To Planet - Nothing to do here",
+         "instance_count":-1,
+         "priority":1,
+         "builders":[		 
+            "BasicBotFabber",
+            "BasicVehicleFabber",
+            "AdvancedBotFabber",
+            "AdvancedVehicleFabber"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Structure & Teleporter",
+                  "compare0":">=",
+                  "value0":1
                },
                {
                   "test_type":"UnitCountOnPlanet",

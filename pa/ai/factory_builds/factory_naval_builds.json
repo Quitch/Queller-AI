@@ -34,17 +34,17 @@
                   "boolean":false
                },
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"(Fabber & Basic) & Naval",
-                  "compare0":"<",
-                  "value0":2
-               },
-               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"BasicNavalFabber"
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"(Fabber & Basic) & Naval",
+                  "compare0":"<",
+                  "value0":2
                }
             ],
             [
@@ -52,8 +52,9 @@
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
-               {
-                  "test_type":"NeedBasicNavalFabber"
+			   {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -61,6 +62,51 @@
                {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"BasicNavalFabber"
+               },
+               {
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Fabber & Naval & Basic",
+                  "unit_type_string1":"Factory & Naval & Basic",
+                  "compare0":"<",
+                  "value0":1
+               },
+			   {
+                  "test_type":"UnableToExpand",
+				  "boolean":false
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"(Naval & Factory) & Advanced",
+                  "compare0":"<",
+                  "value0":1
+               }
+            ],
+            [
+               {
+                  "test_type":"BaseThreatened",
+                  "boolean":false
+               },
+			   {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicNavalFabber"
+               },
+               {
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Fabber & Naval & Basic",
+                  "unit_type_string1":"Factory & Naval & Basic",
+                  "compare0":"<",
+                  "value0":3
+               },
+			   {
+                  "test_type":"UnableToExpand",
+				  "boolean":false
                },
                {
                   "test_type":"UnitCountOnPlanet",
@@ -89,7 +135,7 @@
 			   {
                   "test_type":"BaseThreatened",
                   "boolean":false
-               },			   
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -124,10 +170,6 @@
                   "boolean":false
                },
                {
-                  "test_type":"CanDeployNavalFromBase",
-                  "boolean":true
-               },
-               {
                   "test_type":"CanAffordBuildDemand"
                }
             ]
@@ -147,10 +189,6 @@
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
-               },
-               {
-                  "test_type":"CanDeployNavalFromBase",
-                  "boolean":true
                },
                {
                   "test_type":"CanAffordBuildDemand"

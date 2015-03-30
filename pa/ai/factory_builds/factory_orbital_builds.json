@@ -5,9 +5,10 @@
          "to_build":"OrbitalFabber",
          "instance_count":1,
          "max_num_assisters":10,
-         "priority":200,
+         "priority":100,
          "builders":[
-            "OrbitalLauncher"
+            "OrbitalLauncher",
+            "OrbitalFactory"
          ],
          "build_conditions":[
             [
@@ -15,7 +16,34 @@
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Orbital & Fabber",
                   "compare0":"<",
-                  "value0":4
+                  "value0":1
+               },
+			   {
+                  "test_type":"BaseThreat",
+                  "string0":"Orbital",
+                  "compare0":"<=",
+                  "value0":0
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"OrbitalFabber"
+               }
+            ],
+			[
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Orbital & Fabber",
+                  "compare0":"<",
+                  "value0":5
+               },
+			   {
+                  "test_type":"UnitCountOnPlanet",
+                  "string0":"Orbital & EnergyProduction & MetalProduction",
+                  "compare0":">=",
+                  "value0":1
                },
 			   {
                   "test_type":"BaseThreat",
@@ -54,10 +82,10 @@
       },
       {
          "name":"ARKYD",
-         "to_build":"BasicRadarSattelite",
+         "to_build":"BasicRadarSatellite",
          "instance_count":1,
          "max_num_assisters":10,
-         "priority":100,
+         "priority":97,
          "builders":[
             "OrbitalLauncher"
          ],
@@ -74,7 +102,7 @@
                },
                {
                   "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicRadarSattelite"
+                  "string0":"BasicRadarSatellite"
                },
                {
                   "test_type":"UnitCountPerPlanetRadius",
@@ -83,10 +111,10 @@
                   "value0":150
                },
                {
-                  "test_type":"UnitCountOnPlanet",
+                  "test_type":"UnitCountPerPlanetRadius",
                   "unit_type_string0":"Orbital & Recon & Advanced - Structure",
                   "compare0":"<",
-                  "value0":1
+                  "value0":250
                }
             ],
 			[
@@ -101,7 +129,7 @@
                },
                {
                   "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicRadarSattelite"
+                  "string0":"BasicRadarSatellite"
                },
                {
                   "test_type":"UnitCountPerPlanetRadius",
@@ -110,25 +138,13 @@
                   "value0":150
                },
                {
-                  "test_type":"UnitCountOnPlanet",
+                  "test_type":"UnitCountPerPlanetRadius",
                   "unit_type_string0":"Orbital & Recon & Advanced - Structure",
                   "compare0":"<",
-                  "value0":1
+                  "value0":250
                }
-            ]
-         ]
-      },
-      {
-         "name":"ARKYD - Other planet",
-         "to_build":"BasicRadarSattelite",
-         "instance_count":1,
-         "max_num_assisters":10,
-         "priority":199,
-         "builders":[
-            "OrbitalLauncher"
-         ],
-         "build_conditions":[
-            [
+            ],
+			[
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -140,7 +156,13 @@
                },
                {
                   "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicRadarSattelite"
+                  "string0":"BasicRadarSatellite"
+               },
+               {
+                  "test_type":"UnitCount",
+                  "unit_type_string0":"Orbital & Factory & Advanced",
+                  "compare0":"<",
+                  "value0":1
                },
                {
                   "test_type":"OtherPlanetNeedsReconAssistance",
@@ -154,9 +176,10 @@
          "to_build":"OrbitalFighter",
          "instance_count":1,
          "max_num_assisters":1,
-         "priority":100,
+         "priority":97,
          "builders":[
-            "OrbitalLauncher"
+            "OrbitalLauncher",
+            "OrbitalFactory"
          ],
          "build_conditions":[
             [
@@ -173,53 +196,17 @@
          ]
       },
       {
-         "name":"Astraeus",
-         "to_build":"OrbitalLander",
-         "instance_count":1,
-         "max_num_assisters":10,
-         "priority":0,
-         "builders":[
-            "OrbitalLauncher"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-			   {
-                  "test_type":"BaseThreat",
-                  "string0":"Orbital",
-                  "compare0":"<=",
-                  "value0":0
-               },
-               {
-                  "test_type":"PlanetWithoutPresence",
-                  "boolean":true
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Orbital & Transport",
-                  "compare0":"<",
-                  "value0":1
-               }
-            ]
-         ]
-      },
-      {
          "name":"Astraeus - Commander Evac",
          "to_build":"OrbitalLander",
          "instance_count":1,
          "min_num_assisters":8,
          "max_num_assisters":20,
-         "priority":600,
+         "priority":101,
          "builders":[
             "OrbitalLauncher"
          ],
          "build_conditions":[
             [
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
                {
                   "test_type":"WantCommanderOffPlanet",
                   "boolean":true
@@ -248,7 +235,7 @@
          "to_build":"SolarArray",
          "instance_count":1,
          "max_num_assisters":15,
-         "priority":195,
+         "priority":97,
          "builders":[
             "OrbitalFactory"
          ],
@@ -265,6 +252,13 @@
                   "compare0":"<=",
                   "value0":0
                },
+			   {
+                  "test_type":"PlanetThreatRatio",
+                  "string0":"Orbital",
+                  "string1":"AntiOrbital",
+                  "compare0":"<",
+                  "value0":1.0
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                }
@@ -279,6 +273,13 @@
                   "compare0":"<=",
                   "value0":0
                },
+			   {
+                  "test_type":"PlanetThreatRatio",
+                  "string0":"Orbital",
+                  "string1":"AntiOrbital",
+                  "compare0":"<",
+                  "value0":1.0
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                }
@@ -290,7 +291,7 @@
          "to_build":"OrbitalDeathLaser",
          "instance_count":1,
          "max_num_assisters":15,
-         "priority":195,
+         "priority":97,
          "builders":[
             "OrbitalFactory"
          ],
@@ -304,16 +305,30 @@
                   "string0":"Orbital",
                   "compare0":"<=",
                   "value0":0
+               },
+			   {
+                  "test_type":"PlanetThreatRatio",
+                  "string0":"Orbital",
+                  "string1":"AntiOrbital",
+                  "compare0":"<",
+                  "value0":1.0
+               },
+			   {
+                  "test_type":"PlanetThreatRatio",
+                  "string0":"Land",
+                  "string1":"Land",
+                  "compare0":">",
+                  "value0":0
                }
             ]
          ]
       },
       {
-         "name":"Advanced Radar Sattelite",
-         "to_build":"AdvancedRadarSattelite",
+         "name":"Advanced Radar Satellite",
+         "to_build":"AdvancedRadarSatellite",
          "instance_count":1,
          "max_num_assisters":15,
-         "priority":196,
+         "priority":97,
          "builders":[
             "OrbitalFactory"
          ],
@@ -330,7 +345,20 @@
                },
                {
                   "test_type":"CanAffordPotentialDrain",
-                  "string0":"AdvancedRadarSattelite"
+                  "string0":"AdvancedRadarSatellite"
+               },
+			   {
+                  "test_type":"UnitCountOnPlanet",
+                  "string0":"Orbital & Structure & Economy",
+                  "compare0":"<",
+                  "value0":1
+               },
+			   {
+                  "test_type":"PlanetThreatRatio",
+                  "string0":"Orbital",
+                  "string1":"AntiOrbital",
+                  "compare0":"<",
+                  "value0":1.0
                },
                {
                   "test_type":"UnitCountPerPlanetRadius",
@@ -349,9 +377,22 @@
                   "compare0":"<=",
                   "value0":0
                },
+			   {
+                  "test_type":"UnitCountOnPlanet",
+                  "string0":"Orbital & Structure & Economy",
+                  "compare0":"<",
+                  "value0":1
+               },
+			   {
+                  "test_type":"PlanetThreatRatio",
+                  "string0":"Orbital",
+                  "string1":"AntiOrbital",
+                  "compare0":"<",
+                  "value0":1.0
+               },
                {
                   "test_type":"CanAffordPotentialDrain",
-                  "string0":"AdvancedRadarSattelite"
+                  "string0":"AdvancedRadarSatellite"
                },
                {
                   "test_type":"OtherPlanetNeedsReconAssistance",
