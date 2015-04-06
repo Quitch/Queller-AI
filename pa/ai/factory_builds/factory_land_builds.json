@@ -136,7 +136,7 @@
          ]
       },
       {
-         "name":"Land Scout",
+         "name":"Land Scout - Intel",
          "to_build":"LandScout",
          "instance_count":1,
          "max_num_assisters":10,
@@ -155,14 +155,10 @@
                   "test_type":"CanAffordBuildDemand"
                },
                {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
-                  "test_type":"UnitCountPerPlanetRadius",
+                  "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Air & Scout",
                   "compare0":"<",
-                  "value0":250
+                  "value0":1
                },
                {
                   "test_type":"UnitCountPerPlanetRadius",
@@ -173,6 +169,81 @@
                {
                   "test_type":"HaveFullPlanetIntel",
                   "boolean":false
+               }
+            ],
+			[               
+			   {
+                  "test_type":"BaseThreatened",
+                  "boolean":false
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Structure & Teleporter",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
+                  "test_type":"OtherPlanetNeedsReconAssistance",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"OtherPlanetNeedsLandUnitAssistance",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanProvideLandUnitAssistance",
+                  "boolean":true
+               },	
+			   {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Land & Scout",
+                  "unit_type_string1":"Mobile & Offense",
+                  "compare0":"<",
+                  "value0":0.05
+               }
+            ]
+         ]
+      },	  
+      {
+         "name":"Land Scout - Mines",
+         "to_build":"LandScout",
+         "instance_count":1,
+         "max_num_assisters":10,
+         "priority":97,
+         "builders":[
+            "BasicVehicleFactory"
+         ],
+         "build_conditions":[
+            [               
+			   {
+                  "test_type":"BaseThreatened",
+                  "boolean":false
+               },
+               {
+                  "test_type":"HaveSeenEnemyUnits",
+                  "unit_type_string0":"Bot & Construction & Offense",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Land & Scout",
+                  "unit_type_string1":"Mobile & Offense",
+                  "compare0":"<",
+                  "value0":0.05
                }
             ]
          ]
@@ -319,6 +390,10 @@
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
+			   {
+                  "test_type":"UnableToExpand",
+				  "boolean":false
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -335,18 +410,11 @@
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
-			   {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"AdvancedBotFabber"
-               },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Fabber & Advanced",
+                  "unit_type_string0":"Fabber & Advanced & Land",
                   "compare0":"<",
-                  "value0":3
+                  "value0":2
                }
             ]
          ]
@@ -363,12 +431,12 @@
          "build_conditions":[
             [
                {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":false
-               },
-               {
                   "test_type":"BaseThreatened",
                   "boolean":false
+               },
+			   {
+                  "test_type":"UnableToExpand",
+				  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -386,40 +454,11 @@
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
-			   {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"AdvancedVehicleFabber"
-               },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Fabber & Advanced",
+                  "unit_type_string0":"Fabber & Advanced & Land",
                   "compare0":"<",
-                  "value0":3
-               }
-            ]
-         ]
-      },
-      {
-         "name":"Slammer",
-         "to_build":"AdvancedAssaultBot",
-         "instance_count":-1,
-         "max_num_assisters":10,
-         "priority":199,
-         "builders":[
-            "AdvancedBotFactory"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HaveSeenEnemyUnits",
-                  "unit_type_string0":"Naval",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
+                  "value0":2
                }
             ]
          ]
@@ -436,6 +475,35 @@
          "build_conditions":[
             [
                {
+                  "test_type":"SystemThreat",
+                  "string0":"Orbital",
+                  "compare0":"<=",
+                  "value0":0
+			   },
+			   {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
+      {
+         "name":"Bluehawk",
+         "to_build":"TMLBot",
+         "instance_count":-1,
+         "max_num_assisters":10,
+         "priority":199,
+         "builders":[
+            "AdvancedBotFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"SystemThreat",
+                  "string0":"Orbital",
+                  "compare0":">",
+                  "value0":0
+			   },
+			   {
                   "test_type":"CanAffordBuildDemand"
                }
             ]
@@ -456,15 +524,11 @@
                   "test_type":"CanAffordBuildDemand"
                },
                {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Tank & Heavy",
-                  "unit_type_string1":"((Tank & Mobile) | (Bot & Mobile & Advanced)) - Fabber - AirDefense - Construction - Artillery - Heavy - Scout",
+                  "unit_type_string1":"Tank & Artillery",
                   "compare0":"<",
-                  "value0":0.05
+                  "value0":0.1
                }
             ]
          ]
@@ -482,10 +546,6 @@
             [               
                {
                   "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
                }
             ]
          ]

@@ -4,15 +4,14 @@
          "name":"Vehicle Scout Platoon",
          "to_build":"Vehicle_Scout",
          "instance_count":2,
-         "shared_instance_count":"Scout",
          "priority":106,
          "build_conditions":[
             [               
                {
-                  "test_type":"UnitCountPerPlanetRadius",
+                  "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Air & Scout",
                   "compare0":"<",
-                  "value0":250
+                  "value0":1
                },
                {
                   "test_type":"UnitPoolCount",
@@ -32,7 +31,6 @@
          "name":"Bot Scout Platoon",
          "to_build":"Bot_Scout",
          "instance_count":5,
-		 "shared_instance_count":"Scout",
          "priority":106,
          "build_conditions":[
 			[
@@ -63,8 +61,7 @@
       {
          "name":"Land Transfer To Planet",
          "to_build":"Teleporter_Attack",
-         "instance_count":1,
-         "shared_instance_count":"LandTransferToPlanet",
+         "instance_count":-1,
          "priority":108,
          "build_conditions":[
             [
@@ -75,6 +72,19 @@
                {
                   "test_type":"CanProvideLandUnitAssistance",
                   "boolean":true
+               },			   
+               {
+                  "test_type":"PlanetThreatRatio",
+                  "string0":"Land",
+                  "string1":"Land",
+                  "compare0":"<",
+                  "value0":0.8
+               },
+               {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"(Tank | Bot) & Mobile & Offense",
+                  "compare0":">=",
+                  "value0":20
                }
             ]
          ],
@@ -83,7 +93,7 @@
       {
          "name":"Land Raid Platoon Small",
          "to_build":"Land_Raid_Small",
-         "instance_count":1,
+         "instance_count":-1,
          "priority":105,
          "build_conditions":[
             [
@@ -112,7 +122,7 @@
       {
          "name":"Land Raid Platoon Medium",
          "to_build":"Land_Raid_Medium",
-         "instance_count":1,
+         "instance_count":-1,
          "priority":104,
          "build_conditions":[
             [
@@ -141,7 +151,7 @@
       {
          "name":"Land Raid Platoon Large",
          "to_build":"Land_Raid_Large",
-         "instance_count":1,
+         "instance_count":-1,
          "priority":103,
          "build_conditions":[
             [
@@ -170,7 +180,7 @@
       {
          "name":"Land Raid Platoon XLarge",
          "to_build":"Land_Raid_XLarge",
-         "instance_count":1,
+         "instance_count":-1,
          "priority":102,
          "build_conditions":[
             [
@@ -199,7 +209,7 @@
       {
          "name":"Land Raid Platoon Max",
          "to_build":"Land_Raid_Max",
-         "instance_count":1,
+         "instance_count":-1,
          "priority":101,
          "build_conditions":[
             [

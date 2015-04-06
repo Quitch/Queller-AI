@@ -22,10 +22,9 @@
          "task_type":"BuilderAssist"
       },
       {
-         "name":"Teleporter - Need Land",
+         "name":"Teleporter",
          "to_build":"Teleporter",
          "instance_count":1,
-         "shared_instance_count":"Teleporter",
          "priority":600,
          "min_num_assisters":3,
          "max_num_assisters":5,
@@ -61,12 +60,11 @@
          }
       },
       {
-         "name":"Teleport Fabber To Planet",
+         "name":"Teleport Advanced Fabber To Planet",
          "instance_count":1,
-         "priority":801,
+         "shared_instance_count":"TeleportFabber",
+         "priority":802,
          "builders":[
-            "BasicBotFabber",
-            "BasicVehicleFabber",
             "AdvancedBotFabber",
             "AdvancedVehicleFabber"
          ],
@@ -84,7 +82,7 @@
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Fabber - Air",
+                  "unit_type_string0":"Fabber - Air - Orbital",
                   "compare0":">=",
                   "value0":2
                }
@@ -93,17 +91,20 @@
          "task_type":"TeleportFabberToPlanet"
       },	  
       {
-         "name":"Teleport Fabber To Planet - Nothing to do here",
-         "instance_count":-1,
-         "priority":1,
-         "builders":[		 
+         "name":"Teleport Basic Fabber To Planet",
+         "instance_count":1,
+         "shared_instance_count":"TeleportFabber",
+         "priority":801,
+         "builders":[
             "BasicBotFabber",
-            "BasicVehicleFabber",
-            "AdvancedBotFabber",
-            "AdvancedVehicleFabber"
+            "BasicVehicleFabber"
          ],
          "build_conditions":[
             [
+               {
+                  "test_type":"PlanetWithoutFabberWithTeleporter",
+                  "boolean":true
+               },
                {
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Structure & Teleporter",
@@ -112,7 +113,7 @@
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Fabber - Air",
+                  "unit_type_string0":"Fabber - Air - Orbital",
                   "compare0":">=",
                   "value0":2
                }

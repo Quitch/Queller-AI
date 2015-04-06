@@ -44,7 +44,7 @@
                   "test_type":"CanAttackWithPoolUnitsBomber",
                   "string0":"WL_AnySurface",
                   "string1":"WL_Air",
-                  "unit_type_string0":"Mobile | Teleporter"
+                  "unit_type_string0":"Mobile | Structure"
                }
             ]
          ],
@@ -58,6 +58,12 @@
          "build_conditions":[
             [
                {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"Air & ((Bomber | Gunship)",
+                  "compare0":">=",
+                  "value0":4
+               },
+               {
                   "test_type":"FocusTargetThreat",
                   "string0":"AntiAir",
                   "compare0":"<",
@@ -67,7 +73,7 @@
                   "test_type":"CanAttackWithPoolUnitsBomber",
                   "string0":"WL_AnySurface",
                   "string1":"WL_Air",
-                  "unit_type_string0":"Mobile | Teleporter"
+                  "unit_type_string0":"Mobile | Structure"
                }
             ]
          ],
@@ -81,6 +87,12 @@
          "build_conditions":[
             [
                {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"Air & ((Bomber | Gunship)",
+                  "compare0":">=",
+                  "value0":9
+               },
+               {
                   "test_type":"FocusTargetThreat",
                   "string0":"AntiAir",
                   "compare0":"<",
@@ -90,7 +102,7 @@
                   "test_type":"CanAttackWithPoolUnitsBomber",
                   "string0":"WL_AnySurface",
                   "string1":"WL_Air",
-                  "unit_type_string0":"Mobile | Teleporter"
+                  "unit_type_string0":"Mobile | Structure"
                }
             ]
          ],
@@ -104,6 +116,12 @@
          "build_conditions":[
             [
                {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"Air & ((Bomber | Gunship)",
+                  "compare0":">=",
+                  "value0":18
+               },
+               {
                   "test_type":"FocusTargetThreat",
                   "string0":"AntiAir",
                   "compare0":"<",
@@ -113,7 +131,7 @@
                   "test_type":"CanAttackWithPoolUnitsBomber",
                   "string0":"WL_AnySurface",
                   "string1":"WL_Air",
-                  "unit_type_string0":"Mobile | Teleporter"
+                  "unit_type_string0":"Mobile | Structure"
                }
             ]
          ],
@@ -127,6 +145,12 @@
          "build_conditions":[
             [
                {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"Air & ((Bomber | Gunship)",
+                  "compare0":">=",
+                  "value0":36
+               },
+               {
                   "test_type":"FocusTargetThreat",
                   "string0":"AntiAir",
                   "compare0":">=",
@@ -136,7 +160,7 @@
                   "test_type":"CanAttackWithPoolUnitsBomber",
                   "string0":"WL_AnySurface",
                   "string1":"WL_Air",
-                  "unit_type_string0":"Mobile | Teleporter"
+                  "unit_type_string0":"Mobile | Structure"
                }
             ]
          ],

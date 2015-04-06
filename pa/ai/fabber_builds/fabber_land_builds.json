@@ -110,6 +110,31 @@
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicBotFactory"
                }
+			],
+			[
+			   {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicBotFactory"
+               },
+			   {
+                  "test_type":"SystemThreat",
+                  "string0":"Orbital",
+                  "compare0":">",
+                  "value0":0
+			   },
+			   {
+                  "test_type":"UnitCount",
+                  "unit_type_string0":"Factory & Bot & Basic",
+                  "compare0":"<",
+                  "value0":1
+               },
+			   {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicBotFactory"
+               }
 			]
          ],
          "placement_rules":{
@@ -232,6 +257,31 @@
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicBotFactory"
                }
+			],
+			[
+			   {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicBotFactory"
+               },
+			   {
+                  "test_type":"SystemThreat",
+                  "string0":"Orbital",
+                  "compare0":">",
+                  "value0":0
+			   },
+			   {
+                  "test_type":"UnitCount",
+                  "unit_type_string0":"Factory & Bot & Basic",
+                  "compare0":"<",
+                  "value0":1
+               },
+			   {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicBotFactory"
+               }
 			]
          ],
          "placement_rules":{
@@ -329,6 +379,12 @@
                   "value0":1
                },
 			   {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Structure & Teleporter",
+                  "compare0":"<",
+                  "value0":1
+               },
+			   {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicVehicleFactory"
                }
@@ -408,7 +464,7 @@
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Basic & Fabber - Orbital",
                   "compare0":">=",
-                  "value0":3
+                  "value0":5
                },
 			   {
                   "test_type":"PlanetThreatRatio",
@@ -492,7 +548,7 @@
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Basic & Fabber - Orbital",
                   "compare0":">=",
-                  "value0":3
+                  "value0":5
                },
 			   {
                   "test_type":"PlanetThreatRatio",

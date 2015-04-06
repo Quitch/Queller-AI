@@ -260,17 +260,10 @@
                   "boolean":false
                },
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"AdvancedNavalFabber"
-               },
-               {
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Fabber & Advanced",
                   "compare0":"<",
-                  "value0":3
+                  "value0":2
                }
             ]
          ]
@@ -329,6 +322,32 @@
                   "compare0":">",
                   "value0":1.0
                },
+               {
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Naval & (AirDefense | Tactical) & Mobile",
+                  "unit_type_string1":"(Naval & Mobile) - Artillery - AirDefense - Tactical - Scout - Fabber",
+                  "compare0":"<",
+                  "value0":0.1
+               }
+            ],
+			[
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"CanAffordBuildDemand"
+               },
+			   {
+                  "test_type":"SystemThreat",
+                  "string0":"Orbital",
+                  "compare0":">",
+                  "value0":0
+			   },
                {
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Naval & (AirDefense | Tactical) & Mobile",

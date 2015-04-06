@@ -72,7 +72,15 @@
                   "test_type":"PlanetWithoutPresence",
                   "boolean":true
                }
-            ]			
+            ],
+			[
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Orbital & Structure & Economy",
+                  "compare0":">=",
+                  "value0":1
+               }
+            ]
          ],
          "task_type":"TransferReconToPlanet"
       },

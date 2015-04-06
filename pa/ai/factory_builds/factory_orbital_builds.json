@@ -16,7 +16,7 @@
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Orbital & Fabber",
                   "compare0":"<",
-                  "value0":1
+                  "value0":2
                },
 			   {
                   "test_type":"BaseThreat",
@@ -41,7 +41,7 @@
                },
 			   {
                   "test_type":"UnitCountOnPlanet",
-                  "string0":"Orbital & EnergyProduction & MetalProduction",
+                  "string0":"Orbital & Structure & Economy",
                   "compare0":">=",
                   "value0":1
                },
@@ -208,10 +208,6 @@
          "build_conditions":[
             [
                {
-                  "test_type":"WantCommanderOffPlanet",
-                  "boolean":true
-               },
-			   {
                   "test_type":"NoWhereToRun",
                   "boolean":true
                },
@@ -376,12 +372,6 @@
                   "string0":"Orbital",
                   "compare0":"<=",
                   "value0":0
-               },
-			   {
-                  "test_type":"UnitCountOnPlanet",
-                  "string0":"Orbital & Structure & Economy",
-                  "compare0":"<",
-                  "value0":1
                },
 			   {
                   "test_type":"PlanetThreatRatio",
