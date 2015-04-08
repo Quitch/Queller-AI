@@ -95,24 +95,6 @@
 			],
 			[
 			   {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Factory - Orbital",
-                  "compare0":"<",
-                  "value0":1
-               },
-			   {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Structure & Teleporter",
-                  "compare0":">=",
-                  "value0":1
-               },
-			   {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicBotFactory"
-               }
-			],
-			[
-			   {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -242,24 +224,6 @@
 			],
 			[
 			   {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Factory - Orbital",
-                  "compare0":"<",
-                  "value0":1
-               },
-			   {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Structure & Teleporter",
-                  "compare0":">=",
-                  "value0":1
-               },
-			   {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicBotFactory"
-               }
-			],
-			[
-			   {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -321,25 +285,7 @@
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicVehicleFactory"
                }
-            ],
-			[
-			   {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Factory - Orbital",
-                  "compare0":"<",
-                  "value0":1
-               },
-			   {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Structure & Teleporter",
-                  "compare0":">=",
-                  "value0":1
-               },
-			   {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicVehicleFactory"
-               }
-			]
+            ]
          ],
          "placement_rules":{
 			"buffer":5,
@@ -364,32 +310,7 @@
 			"AnyAdvancedFabber"
          ],
          "build_conditions":[
-            [
-			   {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-			   {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Factory",
-                  "compare0":"<",
-                  "value0":1
-               },
-			   {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Structure & Teleporter",
-                  "compare0":"<",
-                  "value0":1
-               },
-			   {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicVehicleFactory"
-               }
-            ],
-			[			   
+            [			   
 			   {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -405,25 +326,7 @@
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicVehicleFactory"
                }
-            ],
-			[
-			   {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Factory - Orbital",
-                  "compare0":"<",
-                  "value0":1
-               },
-			   {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Structure & Teleporter",
-                  "compare0":">=",
-                  "value0":1
-               },
-			   {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicVehicleFactory"
-               }
-			]
+            ]
          ],
          "placement_rules":{
 			"buffer":5,
@@ -488,6 +391,10 @@
                },
                {
                   "test_type":"AllMetalSpotsFull",
+                  "boolean":true
+               },
+               {
+                  "test_type":"UnableToExpand",
                   "boolean":true
                },
                {
@@ -572,6 +479,10 @@
                },
                {
                   "test_type":"AllMetalSpotsFull",
+                  "boolean":true
+               },
+               {
+                  "test_type":"UnableToExpand",
                   "boolean":true
                },
                {

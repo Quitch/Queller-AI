@@ -58,7 +58,7 @@
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"(Factory & Orbital) & Basic",
+                  "unit_type_string0":"Factory & Orbital & Basic",
                   "compare0":"<",
                   "value0":1
                },
@@ -77,8 +77,13 @@
                   "boolean":false
                },
                {
+                  "test_type":"PlanetCount",
+                  "compare0":">",
+                  "value0":1
+               },
+               {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"(Factory & Orbital) & Basic",
+                  "unit_type_string0":"Factory & Orbital & Basic",
                   "compare0":"<",
                   "value0":1
                },
@@ -89,7 +94,7 @@
             ]
          ],
          "placement_rules":{
-            "buffer":15
+            "buffer":5
          }
       },
 	  {
@@ -124,6 +129,10 @@
 			   {
                   "test_type":"NeedOrbitalLauncher"
                },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
 			   {
                   "test_type":"PlanetThreatRatio",
                   "string0":"Land",
@@ -135,7 +144,48 @@
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"(Fabber & Construction) - Orbital",
                   "compare0":">=",
-                  "value0":3
+                  "value0":5
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"OrbitalLauncher"
+               }
+            ],
+			[
+               {
+                  "test_type":"BaseThreatened",
+                  "boolean":false
+               },
+			   {
+                  "test_type":"CanAffordBuildDemand"
+               },
+			   {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"OrbitalLauncher"
+               },
+               {
+                  "test_type":"PlanetWithoutPresence",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"NeedOrbitalLauncher"
+               },
+               {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"PlanetThreatRatio",
+                  "string0":"Naval",
+                  "string1":"Naval",
+                  "compare0":"<",
+                  "value0":0.8
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"(Fabber & Construction) - Orbital",
+                  "compare0":">=",
+                  "value0":5
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -144,7 +194,7 @@
             ]
          ],
          "placement_rules":{
-            "buffer":15
+            "buffer":5
          }
       },
 	  {
@@ -204,12 +254,64 @@
             "buffer":5
          }
       },
+	  {
+         "name":"Anchor - Mex",
+         "to_build":"DefenseSatellite",
+		 "instance_count":1,
+         "max_num_assisters":1,
+         "priority":379,
+         "base_sort":"FromPerimeter",
+         "builders":[
+            "OrbitalFabber"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"DistFromMainBase",
+                  "compare0":">=",
+                  "value0":200
+               },
+               {
+                  "test_type":"SystemThreat",
+                  "string0":"Orbital",
+                  "compare0":">",
+                  "value0":0
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"DefenseSatellite"
+               }
+            ]
+         ],
+         "placement_rules":{
+            "placement_type":"FromMainBasePerimeter",
+            "unit_count_rules":[
+               {
+                  "unit_type_string":"Structure & MetalProduction",
+                  "alliance":"Ally",
+                  "compare_type":">=",
+                  "range":50,
+                  "count":2
+               },
+               {
+                  "unit_type_string":"Structure & OrbitalDefense",
+                  "alliance":"Ally",
+                  "compare_type":"<",
+                  "range":100,
+                  "count":1
+               }
+            ]
+         }
+      },
       {
          "name":"Anchor",
          "to_build":"DefenseSatellite",
          "instance_count":1,
          "max_num_assisters":1,
-         "priority":379,
+         "priority":378,
          "builders":[
             "OrbitalFabber"
          ],
@@ -246,7 +348,7 @@
             "placement_type":"FromMainBaseCenter",
             "unit_count_rules":[
                {
-                  "unit_type_string":"Orbital & OrbitalDefense",
+                  "unit_type_string":"Structure & OrbitalDefense",
                   "alliance":"Ally",
                   "compare_type":"<",
                   "range":50,
@@ -408,6 +510,18 @@
                   "unit_type_string0":"Fabber & Orbital",
                   "compare0":">=",
                   "value0":2
+               }
+            ],
+			[
+               {
+                  "test_type":"PlanetOrGasGiantWithoutPresence",
+                  "boolean":true
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Factory & Orbital",
+                  "compare0":">=",
+                  "value0":1
                },
                {
                   "test_type":"UnitCountOnPlanet",
@@ -426,23 +540,6 @@
                   "unit_type_string0":"Structure & Teleporter",
                   "compare0":">=",
                   "value0":1
-               }
-            ]
-         ],
-         "task_type":"OrbitalFabberMoveToPlanet"
-      },
-      {
-         "name":"Move Orbital Fabber To Planet - Nothing to do here",
-         "instance_count":1,
-         "priority":1,
-         "builders":[
-            "OrbitalFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"PlanetOrGasGiantWithoutPresence",
-                  "boolean":true
                }
             ]
          ],

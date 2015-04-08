@@ -159,7 +159,7 @@
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Basic & Fabber - Orbital",
                   "compare0":">=",
-                  "value0":3
+                  "value0":5
                },
 			   {
                   "test_type":"PlanetThreatRatio",
@@ -171,6 +171,40 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"AdvancedNavalFactory"
+               }
+            ],			
+			[
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"AdvancedVehicleFactory"
+               },
+               {
+                  "test_type":"AllMetalSpotsFull",
+                  "boolean":true
+               },
+               {
+                  "test_type":"UnableToExpand",
+                  "boolean":true
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Advanced & Factory",
+                  "compare0":"<",
+                  "value0":1
+               },
+			   {
+                  "test_type":"PlanetThreatRatio",
+                  "string0":"Naval",
+				  "string1":"Naval",
+                  "compare0":"<",
+                  "value0":1.0
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"AdvancedVehicleFactory"
                }
             ]
          ],

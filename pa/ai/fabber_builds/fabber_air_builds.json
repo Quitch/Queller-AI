@@ -120,6 +120,24 @@
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirFactory"
                }
+			],
+			[
+			   {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Factory - Orbital",
+                  "compare0":"<",
+                  "value0":1
+               },
+			   {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Structure & Teleporter",
+                  "compare0":">=",
+                  "value0":1
+               },
+			   {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicVehicleFactory"
+               }
 			]
          ],
          "placement_rules":{
@@ -235,6 +253,24 @@
 			   {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirFactory"
+               }
+			],
+			[
+			   {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Factory - Orbital",
+                  "compare0":"<",
+                  "value0":1
+               },
+			   {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Structure & Teleporter",
+                  "compare0":">=",
+                  "value0":1
+               },
+			   {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicVehicleFactory"
                }
 			]
          ],
