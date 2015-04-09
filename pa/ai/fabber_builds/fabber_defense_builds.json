@@ -660,6 +660,108 @@
             ]
          }
       },
+	  {
+         "name":"Umbrella - Lock Down The Planet",
+         "to_build":"Umbrella",
+         "instance_count":1,
+         "priority":377,
+         "min_num_assisters":1,
+         "max_num_assisters":3,
+         "builders":[
+            "AnyBasicFabber"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+			   {
+                  "test_type":"AloneOnPlanet",
+				  "boolean":true
+               },
+               {
+                  "test_type":"SystemThreat",
+                  "string0":"Orbital",
+                  "compare0":">",
+                  "value0":0
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"Umbrella"
+               }
+            ]
+         ],
+         "placement_rules":{
+            "placement_type":"FromMainBaseCenter",
+            "unit_count_rules":[
+               {
+                  "unit_type_string":"Structure & OrbitalDefense",
+                  "alliance":"Ally",
+                  "compare_type":"<",
+                  "range":150,
+                  "count":1
+               }
+            ]
+         }
+      },
+	  
+	  {
+         "name":"Umbrella - Protect the Commander",
+         "to_build":"Umbrella",
+         "instance_count":1,
+         "priority":378,
+         "min_num_assisters":1,
+         "max_num_assisters":3,
+         "builders":[
+            "AnyBasicFabber"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+			   {
+                  "test_type":"AloneOnPlanet",
+				  "boolean":true
+               },
+               {
+                  "test_type":"SystemThreat",
+                  "string0":"Orbital",
+                  "compare0":">",
+                  "value0":0
+               },
+               {
+                  "test_type":"UnitCountInBase",
+                  "unit_type_string0":"Commander",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"Umbrella"
+               }
+            ]
+         ],
+         "placement_rules":{
+            "placement_type":"FromMainBaseCenter",
+            "unit_count_rules":[
+               {
+                  "unit_type_string":"Commander",
+                  "alliance":"Ally",
+                  "compare_type":">=",
+                  "range":150,
+                  "count":1
+               },
+			   {
+                  "unit_type_string":"Structure & OrbitalDefense",
+                  "alliance":"Ally",
+                  "compare_type":"<",
+                  "range":150,
+                  "count":1
+               }
+            ]
+         }
+      },
       {
          "name":"Anti Nuke Silo",
          "to_build":"AntiNukeSilo",
