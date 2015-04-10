@@ -609,7 +609,8 @@
          "min_num_assisters":1,
          "max_num_assisters":3,
          "builders":[
-            "AnyBasicFabber"
+            "AnyBasicFabber",
+            "AnyAdvancedFabber"
          ],
          "build_conditions":[
             [
@@ -668,7 +669,8 @@
          "min_num_assisters":1,
          "max_num_assisters":3,
          "builders":[
-            "AnyBasicFabber"
+            "AnyBasicFabber",
+            "AnyAdvancedFabber"
          ],
          "build_conditions":[
             [
@@ -713,7 +715,8 @@
          "min_num_assisters":1,
          "max_num_assisters":3,
          "builders":[
-            "AnyBasicFabber"
+            "AnyBasicFabber",
+            "AnyAdvancedFabber"
          ],
          "build_conditions":[
             [
@@ -749,7 +752,7 @@
                   "unit_type_string":"Commander",
                   "alliance":"Ally",
                   "compare_type":">=",
-                  "range":150,
+                  "range":100,
                   "count":1
                },
 			   {
