@@ -192,7 +192,7 @@
 			   {
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Land & Scout",
-                  "unit_type_string1":"Mobile & Offense",
+                  "unit_type_string1":"Land & Mobile & Offense",
                   "compare0":"<",
                   "value0":0.05
                }
@@ -229,7 +229,7 @@
 			   {
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Land & Scout",
-                  "unit_type_string1":"Mobile & Offense",
+                  "unit_type_string1":"Land & Mobile & Offense",
                   "compare0":"<",
                   "value0":0.05
                }
@@ -293,7 +293,7 @@
 			   {
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Tank & Heavy",
-                  "unit_type_string1":"((Tank & Mobile) | (Bot & Mobile & Advanced)) - Fabber - AirDefense - Construction - Artillery - Heavy - Scout",
+                  "unit_type_string1":"Tank & Offense - Heavy",
                   "compare0":"<",
                   "value0":0.1
                },
@@ -338,8 +338,8 @@
                },
                {
                   "test_type":"UnitRatioOnPlanet",
-                  "unit_type_string0":"(Tank | Bot) & AirDefense",
-                  "unit_type_string1":"(Tank | Bot) - AirDefense - Fabber",
+                  "unit_type_string0":"Tank & AirDefense",
+                  "unit_type_string1":"Tank & Offense - AirDefense",
                   "compare0":"<",
                   "value0":0.2
                }
@@ -355,8 +355,8 @@
                },
                {
                   "test_type":"UnitRatioOnPlanet",
-                  "unit_type_string0":"(Tank | Bot) & AirDefense",
-                  "unit_type_string1":"(Tank | Bot) - AirDefense - Fabber",
+                  "unit_type_string0":"Tank & AirDefense",
+                  "unit_type_string1":"Tank & Offense - AirDefense",
                   "compare0":"<",
                   "value0":0.2
                }
