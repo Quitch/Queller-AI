@@ -17,15 +17,9 @@
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"(Fabber & Basic) - Naval",
+                  "unit_type_string0":"Fabber & Basic",
                   "compare0":"<",
                   "value0":2
-               },
-			   {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"(Air & Factory) & Advanced",
-                  "compare0":"<",
-                  "value0":1
                }
             ],
 			[
@@ -40,15 +34,16 @@
                   "value0":1
                },
 			   {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"(Air & Factory) & Advanced",
+                  "test_type":"PlanetThreatRatio",
+                  "string0":"Air",
+                  "string1":"AntiAir",
                   "compare0":"<",
-                  "value0":1
+                  "value0":0.9
                },
 			   {
                   "test_type":"PlanetThreatRatio",
                   "string0":"Air",
-                  "string1":"AntiAir",
+                  "string1":"Air",
                   "compare0":"<",
                   "value0":0.9
                }
@@ -70,15 +65,16 @@
 				  "string0":"BasicAirFabber"
                },
 			   {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"(Air & Factory) & Advanced",
+                  "test_type":"PlanetThreatRatio",
+                  "string0":"Air",
+                  "string1":"AntiAir",
                   "compare0":"<",
-                  "value0":1
+                  "value0":0.9
                },
 			   {
                   "test_type":"PlanetThreatRatio",
                   "string0":"Air",
-                  "string1":"AntiAir",
+                  "string1":"Air",
                   "compare0":"<",
                   "value0":0.9
                }
@@ -162,7 +158,7 @@
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Air & Fighter",
                   "compare0":"<",
-                  "value0":1
+                  "value0":5
                }
             ],
 			[
@@ -210,7 +206,18 @@
             "BasicAirFactory"
          ],
          "build_conditions":[
-            [               
+            [
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+			   {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Air & Bomber",
+                  "compare0":"<",
+                  "value0":1
+               }
+            ],
+			[               
 			   {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -222,6 +229,13 @@
                   "test_type":"PlanetThreatRatio",
                   "string0":"Air",
                   "string1":"AntiAir",
+                  "compare0":"<",
+                  "value0":0.9
+               },
+			   {
+                  "test_type":"PlanetThreatRatio",
+                  "string0":"Air",
+                  "string1":"Air",
                   "compare0":"<",
                   "value0":0.9
                }
