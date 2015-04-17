@@ -1,0 +1,256 @@
+v1.2.4
+
+When unable to expand it now checks its need for an advanced factory against the number of advanced factories not fabbers
+Inferno, Spinner and Skitter ratios are now calculated only against units which are relevant to their potential platoon makeup
+Added support for Pelters and Holkins
+Will always get at least one orbital fabber out
+Corrected error allowing the AI to build Bumblebees and air fabbers when it's losing the air war
+Less air fabber spammy during the opening on naval maps
+Maintains a higher Hummingbird minimum force
+
+v1.2.3
+
+No longer prevented from building basic fabbers when advanced ones exist
+Advanced fabbers can now build Umbrellas
+Removed any meaningful cap on the number of fabbers used
+
+v1.2.2
+
+No longer builds Skitters in reaction to scouting a Commander (herp derp!)
+Will spam Umbrellas over planets it owns (this is going to need some work)
+Will attempt to protect the commander from orbital snipes using Umbrellas (might be a bit spammy right now)
+
+v1.2.1
+
+Now builds Skitters when it has seen mines or advanced combat fabbers
+Will now only build an orbital launcher to run away to another planet if there's another planet to run away to
+Checks ability to expand in addition to availability of metal before trying to tech during dangerous times
+Corrected minor error in Piranha build checks
+Will favour an air factory first on planets it's invading
+No longer sends orbital fabbers to planets only to immediately send them elsewhere after doing nothing
+Can now redeploy orbital fabbers from gas giants
+
+v1.2
+
+Removed platoon minimum requirements for frontline units to allow Queller to form land attacks faster
+Will build Bluehawks and Stingrays when there's an orbital threat
+Doesn't seem to be building Slammers in response to naval threats so updated how it checks this
+Will try and go orbital when it has no local expansion options, even if it's not winning the battle on the planet
+If a game has gone orbital then the AI can go bots late to allow it access to Bluehawks for invasion support
+Corrected major whoopsie where AI wouldn't build advanced vehicle fabbers when it had a planet to itself
+Now builds Vanguards in relation to the number of Shellers it has
+Removed Slammers for the time being as AI needs dedicated anti-naval Slammer platoons to use them effectively
+Forced some advanced fabbers regardless of eco to get AI out of the trap of never being able to afford them
+Will keep building Hummingbirds even on empty planets so as to counter Phoenix attacks
+Stingray now correctly used as a defensive unit in all naval platoon sizes
+Will spam air fabbers faster to facilitate planet takeover
+Added support for the Phoenix (but it doesn't build it yet)
+Higher priority given to advanced radar
+Increased bomber platoon sizes by 50%
+Will build Skitters in reaction to sighting combat fabbers
+Will no longer build orbital factories and advanced factories at the same time
+Will build Skitters on multiplanet maps to use as advance scouts to avoid invasion forces sitting on their hands
+Even more aggressive producing antinukes
+
+v1.1
+
+This release provides a massive overhaul in how Queller tackles the orbital layer. It also brings Queller's game up-to-speed with the latest balance changes.
+
+No longer builds Piranhas when its base is threatened
+Will build a small contingent of Hummingbirds when alone to shoot down air fabber invaders
+Fixed AI building the Astraeus for a Commander evac that would never happen
+Added support for moving orbital fabbers between planets
+Higher priority given to Deep Space Radar when alone
+Higher priority given to Deep Space Radar when orbital has been sighted and the AI hasn't built one yet
+Properly checks that it can afford to run the Deep Space Radar before building it
+Fixed a bug with Skitters not being assigned to the correct platoon
+Added support for Jigs
+Will no longer smash with annihilaser planets
+Higher priority for orbital fabbers
+Can send bots through teleporters again
+Correctly uses a laser tower blueprint when checking possible placement for laser tower instead of using a laser tower single
+Normal, Hard and Relentless difficulties work again (thanks to MCXplode for the report)
+Much greater use of naval fabbers on naval maps
+No longer starts air
+Stopped the Commander spamming air factories
+More aggressive about building Hummingbirds to own the skies
+Builds orbital fabbers and Avengers from the orbital factory
+Will try to avoid building the SXX at gas giants as it can't send them off-planet and it has no use for them there
+Won't use ARKYDs for remote scouting when it has the ability to produce Advanced Radar Satellites
+AI will build antinukes sooner in response to a nuclear threat
+AI will now use Slammers in armies not raiding forces
+Fixed error where AI wasn't checking it could afford to run advanced fabbers before building them and thus tanking its economy after teching
+Corrected errors in checking how many Spinners it can build
+Added Boom Bot support (though the AI doesn't use them yet)
+More likely to build advanced radar
+
+v1.0.1
+
+Fixed issue with Piranha scouting
+Fixed commander factory drain checks to use the correct factory
+Somehow broke my naval attack fix before releasing version 1. Fixed for reals this time.
+Corrected bug where commander wasn't checking drain on its first two vehicle factories
+
+v1.0
+
+Won't move commander by Astraeus except as a last resort
+Reduced buffer spaces from many buildings to allow tighter base packing
+More aggressive about getting an air presence
+Will ensure it has air if it's alone on a planet
+Builds orbital radar if it's alone on a planet and doesn't have any
+Fixed bug when checking if an advanced naval factory is needed
+Updated for new AI features
+Will build advanced air fabbers when alone
+Added sub support
+Commander has more flexibility in building eco structures
+Uses more fabbers
+More aggressive in using fabbers for building factories
+Only use air fabbers when the skies are somewhat safe
+Now uses Piranhas as scouts when it doesn't have full air scouting yet
+Shadowed ai_unit_map file as official version is missing the Piranha
+Can now open with air on naval maps
+Can now build a bot factory on naval maps regardless of other factory choices
+Overhauled naval platoons
+Fixed issue preventing AI attacking with naval forces
+Resolved all known issues of idle fabbers
+Will try to be aggressive about getting in the water when no land attack route exists
+Removed beta tag
+
+v0.5.1
+
+All fabbers can build naval again
+Removed three fabber opening
+
+v0.5.0.1
+
+Updated for new meta
+Wider variety of openings now possible, more responsive to what opponent is doing
+Added bot raid platoons per the updated default AI
+SXX lasers can now be accompanied by Avenger escorts
+Don't build basic fabbers if you can build advanced ones
+First pass at some proper naval play
+AI builds naval platoons at sizes relevant to the threat (will need tuning)
+Naval platoons broken down into squads
+Torpedo defences used in identical fashion to laser turrets
+Higher ratio of advanced fabbers to factories
+Bot sightings can now cause the AI to go air if it hasn't already
+Much greater spacing between radars
+At this point ignores almost all AI personality settings not relating to the economy
+Allowed to drop more defences at heavy MEX concentrations
+Tries to ensure it has advanced radar for advanced naval
+Added support for catalysts
+Updated now obsolete Need[Basic/Advanced]LandFabber to use the new Bot/Vehicle test
+Take the skies before building bombers
+
+v0.4.2
+
+After reverting platoons I forgot to revert the squad percentage makeup to my own. Now fixed.
+
+v0.4.1
+
+Reverted AI land platoon sizes to vanilla settings as it seems the AI is better with large numbers of small platoons than small numbers of large platoons
+
+v0.4
+
+Corrected bug where AI only used half as many Dox scouts as it was supposed to
+Updated basic factory builds to work properly in a multi-planet scenario
+Increased maximum land platoon sizes
+Removed fighter requirement from bomber platoons
+Small land platoons are now only formed for mobile targets
+Bomber platoons are now only formed for mobile targets (and teleporters)
+First pass on orbital
+Return to mandatory bot factories, but the number is based on the size of the planet
+Reverted to Firefly scouts because the AI seems severely limited when it has poor scouting
+AI shouldn't prematurely tech unless it has really bad intel
+A teleporter should always be the first thing the AI constructs on landing somewhere
+Assistance allowed on combat units again so a fabber has something to do when it has nothing to build
+Disabled storage for the time being as I just can't stop it building the things at stupid timings
+
+v0.3
+
+Skitter can be used to scout if AI plays a three vehicle opening (this is now actually true)
+AI will no longer go all bots
+Increased chances of MEX defence
+AI will now prefer dual lasers in place of single lasers
+Increased distance between radar installations
+Increased platoon minimum size requirements
+Further reduced use of infernos
+Slammers now used where naval has been sighted
+AI will continue to produce units regardless of whether a teleporter exists yet
+Removed advanced to basic factory ratio requirement
+Greater ratio of fighters to bombers
+Less bombers required for the AI to roll out an air attack
+Reverted to economy building rules more aligned with the default AI (this is now actually true)
+Fabbers will now construct basic factories in the "mid game"
+Higher number of advanced fabbers "required"
+AI no longer uses Catapults or Holkins
+More assistance allowed and required on various defence/offence structures
+
+Version 0.2
+
+Total overhaul of AI's opening builds
+AI now has bot, tank and air openings
+Openings are influenced by planet size
+Number of fabbers determined by opening factory choices
+Further refinements to the AI's building of defences
+Changes to air platoon sizes
+Allowed assistance on factory building to prevent opening fabber assisting troop building and then going into immediate radar
+Skitter can be used to scout if AI plays a three vehicle opening
+Reverted to economy building rules more aligned with the default AI (for now)
+AI will no longer build offensive Pelters
+
+Version 0.1
+
+Alpha release
+AI uses larger platoons
+AI produces more factories
+Unit mix completely overhauled
+Commander given responsibility for all basic factory production
+Scouting now done by Dox and Hummingbirds in place of Fireflies and Skitters
+AI builds far less turrets
+Much higher percentage of fighters to bombers in air squadrons
+Naval platoon updated to use squads - untested
+AI opens with troops immediately after its first fabber
+Drastically lowered the basic fabber to factory ratio
+Raised the fabber ratio for empty planets
+The AI will now only build the Orbital Launcher in emergencies or when it's winning on its planet
+
+KNOWN ISSUES
+
+TOFIX
+
+Builds too many orbital factories on gas giants
+Doesn't close out orbital games well even when it has an overwhelming economic advantage
+Takes too long transition from a naval start to a land game on mixed maps
+Often floats its eco on higher eco boosts
+Doesn't take over empty planets fast enough
+
+MAYBEFIX
+
+Doesn't handle enemy walls well
+Won't use more than one teleporter at a time
+Stops sending orbital radars to enemy worlds in the late game
+Will build a late bot factory on land maps when it shouldn't
+Will use fabbers to construct factories when the commander is on planet
+
+WONTFIX
+
+AI personalities will have little impact on the unit composition
+
+CANTFIX
+
+First fabber always assists as its first action
+Will sometimes take much longer than necessary routes to attack
+Fabbers don't always take the closest metal spot when building MEX
+Doesn't defend its fabbers
+Attempts to attack with Dox underwater
+Will queue buildings on the other side of obstacles despite closer locations (pathfinding wise) being available
+Won't move orbital units (except fabbers and radar) between planets
+Will send orbital radar to gas giants
+Won't send Phoenixes between planets
+Will assign fabbers to a assist on a project that they could start earlier than the fabber they're assisting
+Will send air fabbers to follow much slower ground fabbers
+Will only determine where to build with an orbital fabber after it has arrived in orbit leading to unnecessary delays in construction
+Will sometimes send fabbers which arrive through a teleporter on unnecessarily long journeys to construct things
+Will count orbital fabber as a fabber presence when looking to send fabbers through teleporters to planets without fabbers
+Won't attack anything on a gas giant with Avengers
