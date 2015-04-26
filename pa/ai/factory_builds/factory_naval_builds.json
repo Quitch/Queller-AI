@@ -34,6 +34,10 @@
                   "boolean":false
                },
                {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -55,6 +59,10 @@
 			   {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
+               },
+               {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":true
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -85,6 +93,10 @@
                   "boolean":true
                },
                {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -96,7 +108,7 @@
                   "unit_type_string0":"Fabber & Naval & Basic",
                   "unit_type_string1":"Factory & Naval & Basic",
                   "compare0":"<",
-                  "value0":3
+                  "value0":4
                },
 			   {
                   "test_type":"UnableToExpand",
@@ -122,6 +134,10 @@
                },
 			   {
                   "test_type":"BaseThreatened",
+                  "boolean":false
+               },
+			   {
+                  "test_type":"HaveFullPlanetIntel",
                   "boolean":false
                },
                {
@@ -158,6 +174,29 @@
                   "boolean":false
                },
                {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Naval & Mobile & Offense",
+                  "compare0":"<",
+                  "value0":5
+               }
+            ],
+			[
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                }
             ]
@@ -177,6 +216,29 @@
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
+               },
+               {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Naval & Mobile & Offense",
+                  "compare0":"<",
+                  "value0":5
+               }
+            ],
+			[
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":true
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -249,7 +311,7 @@
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Fabber & Advanced",
+                  "unit_type_string0":"Fabber & Advanced & Naval",
                   "compare0":"<",
                   "value0":2
                }

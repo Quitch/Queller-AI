@@ -201,7 +201,7 @@
          "name":"Orbital Factory",
          "to_build":"OrbitalFactory",
          "instance_count":1,
-         "priority":479,
+         "priority":477,
          "max_num_assisters":3,
          "max_num_assisters":5,
          "builders":[
@@ -259,7 +259,7 @@
          "to_build":"DefenseSatellite",
 		 "instance_count":1,
          "max_num_assisters":1,
-         "priority":379,
+         "priority":252,
          "base_sort":"FromPerimeter",
          "builders":[
             "OrbitalFabber"
@@ -311,7 +311,7 @@
          "to_build":"DefenseSatellite",
          "instance_count":1,
          "max_num_assisters":1,
-         "priority":378,
+         "priority":251,
          "builders":[
             "OrbitalFabber"
          ],
@@ -363,7 +363,7 @@
          "instance_count":1,
          "min_num_assisters":8,
          "max_num_assisters":45,
-         "priority":509,
+         "priority":1000,
          "builders":[
             "AnyAdvancedFabber"
          ],
@@ -405,12 +405,12 @@
          }
       },
       {
-         "name":"Jig",
+         "name":"Jig - Desire",
          "to_build":"OrbitalExtractor",
          "instance_count":1,
          "min_num_assisters":3,
          "max_num_assisters":5,
-         "priority":478,
+         "priority":509,
          "builders":[
             "OrbitalFabber"
          ],
@@ -432,8 +432,24 @@
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"OrbitalExtractor"
                }
-            ],
-			[
+            ]
+         ],
+         "placement_rules":{
+            "buffer":30
+         }
+      },
+	  {
+         "name":"Jig",
+         "to_build":"OrbitalExtractor",
+         "instance_count":1,
+         "min_num_assisters":3,
+         "max_num_assisters":5,
+         "priority":260,
+         "builders":[
+            "OrbitalFabber"
+         ],
+         "build_conditions":[
+            [
                {
                   "test_type":"PotentialMetalEfficiency",
                   "compare0":"<",

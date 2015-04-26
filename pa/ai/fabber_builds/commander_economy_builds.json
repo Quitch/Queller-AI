@@ -36,7 +36,7 @@
       {
          "name":"Basic Metal Extractor - cdr Desire",
          "to_build":"BasicMetalExtractor",
-         "instance_count":2,
+         "instance_count":1,
          "shared_instance_count":"BasicMetal",
          "priority":500,
          "base_sort":"FromBuilder",
@@ -130,7 +130,7 @@
       {
          "name":"Basic Energy Generator - Desire Cdr",
          "to_build":"BasicEnergyGenerator",
-         "instance_count":2,
+         "instance_count":1,
          "max_num_assisters":1,
          "shared_instance_count":"BasicEnergy",
          "priority":501,
@@ -144,7 +144,7 @@
                },
                {
                   "test_type":"UnitCount",
-                  "unit_type_string0":"Fabber & Advanced",
+                  "unit_type_string0":"(Fabber & Advanced) | (EnergyProduction & Advanced)",
                   "compare0":"<",
                   "value0":1
                },

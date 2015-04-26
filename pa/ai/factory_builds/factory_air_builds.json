@@ -128,8 +128,14 @@
                   "test_type":"CanAffordBuildDemand"
                },
                {
-                  "test_type":"UnitCountPerPlanetRadius",
+                  "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Air & Scout",
+                  "compare0":"<",
+                  "value0":1
+               },
+               {
+                  "test_type":"UnitCountPerPlanetRadius",
+                  "unit_type_string0":"(Air | Land | Naval) & Scout",
                   "compare0":"<",
                   "value0":250
                },
@@ -170,7 +176,7 @@
                   "string0":"Air",
                   "string1":"AntiAir",
                   "compare0":">=",
-                  "value0":0.9
+                  "value0":0.5
                }
             ],
 			[
@@ -182,7 +188,7 @@
                   "string0":"Air",
                   "string1":"Air",
                   "compare0":">=",
-                  "value0":0.9
+                  "value0":0.5
                }
             ],
 			[

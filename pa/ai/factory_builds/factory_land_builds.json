@@ -26,7 +26,7 @@
                   "value0":2
                }
             ],
-			[
+            [
                {
                   "test_type":"BaseThreatened",
                   "boolean":false
@@ -38,13 +38,13 @@
                {
                   "test_type":"CanAffordBuildDemand"
                },
-			   {
+               {
                   "test_type":"CanAffordPotentialDrain",
-				  "string0":"BasicBotFabber"
+                  "string0":"BasicBotFabber"
                },
-			   {
+               {
                   "test_type":"UnableToExpand",
-				  "boolean":false
+                  "boolean":false
                },
                {
                   "test_type":"CanDeployLandFromBase",
@@ -79,7 +79,7 @@
                   "value0":2
                }
             ],
-			[
+            [
                {
                   "test_type":"BaseThreatened",
                   "boolean":false
@@ -91,13 +91,13 @@
                {
                   "test_type":"CanAffordBuildDemand"
                },
-			   {
+               {
                   "test_type":"CanAffordPotentialDrain",
-				  "string0":"BasicVehicleFabber"
+                  "string0":"BasicVehicleFabber"
                },
-			   {
+               {
                   "test_type":"UnableToExpand",
-				  "boolean":false
+                  "boolean":false
                },
                {
                   "test_type":"CanDeployLandFromBase",
@@ -106,7 +106,7 @@
             ]
          ]
       },
-	  {
+      {
          "name":"Dox",
          "to_build":"BasicAssaultBot",
          "instance_count":-1,
@@ -118,6 +118,23 @@
          "build_conditions":[
             [
                {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+			   {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ],
+			[
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
+                  "boolean":true
+               },
+			   {
                   "test_type":"CanAffordBuildDemand"
                }
             ]
@@ -134,13 +151,17 @@
             "BasicVehicleFactory"
          ],
          "build_conditions":[
-            [               
-			   {
+            [
+               {
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
-			   {
+               {
                   "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
                },
                {
                   "test_type":"UnitCountOnPlanet",
@@ -150,7 +171,7 @@
                },
                {
                   "test_type":"UnitCountPerPlanetRadius",
-                  "unit_type_string0":"Land & Scout",
+                  "unit_type_string0":"(Land | Air) & Scout",
                   "compare0":"<",
                   "value0":250
                },
@@ -159,8 +180,8 @@
                   "boolean":false
                }
             ],
-			[               
-			   {
+            [
+               {
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
@@ -174,22 +195,22 @@
                   "test_type":"OtherPlanetNeedsReconAssistance",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"OtherPlanetNeedsLandUnitAssistance",
                   "boolean":true
                },
                {
                   "test_type":"CanProvideLandUnitAssistance",
                   "boolean":true
-               },	
-			   {
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Land & Scout",
                   "unit_type_string1":"Land & Mobile & Offense",
@@ -198,7 +219,7 @@
                }
             ]
          ]
-      },	  
+      },
       {
          "name":"Land Scout - Mines",
          "to_build":"LandScout",
@@ -209,8 +230,8 @@
             "BasicVehicleFactory"
          ],
          "build_conditions":[
-            [               
-			   {
+            [
+               {
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
@@ -219,14 +240,14 @@
                   "unit_type_string0":"((Construction & Mobile) - Fabber - Commander) | (CombatFabBuild & Defense)",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Land & Scout",
                   "unit_type_string1":"Land & Mobile & Offense",
@@ -246,7 +267,11 @@
             "BasicVehicleFactory"
          ],
          "build_conditions":[
-            [               
+            [
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -254,7 +279,24 @@
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
                }
-            ]            
+            ],
+			[
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               }
+            ]
          ]
       },
       {
@@ -272,39 +314,39 @@
                   "test_type":"AloneOnPlanet",
                   "boolean":false
                },
-			   {
+               {
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
-			   {
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"PlanetThreatRatio",
                   "string0":"Land",
                   "string1":"Land",
                   "compare0":"<",
                   "value0":0.9
                },
-			   {
+               {
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Tank & Heavy",
                   "unit_type_string1":"Tank & Offense - Heavy",
                   "compare0":"<",
                   "value0":0.1
                },
-			   {
+               {
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"((Tank & Mobile) | (Bot & Mobile & Advanced)) - Fabber - AirDefense - Construction - Artillery - Heavy - Scout",
                   "compare0":">",
                   "value0":40,
                   "boolean":true
                }
-            ]            
+            ]
          ]
       },
       {
@@ -329,12 +371,12 @@
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"PlanetThreatRatio",
                   "string0":"Air",
                   "string1":"AntiAir",
                   "compare0":">",
-                  "value0":1.0
+                  "value0":0.9
                },
                {
                   "test_type":"UnitRatioOnPlanet",
@@ -344,10 +386,40 @@
                   "value0":0.2
                }
             ],
-			[
-			   
+            [
                {
                   "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"PlanetThreatRatio",
+                  "string0":"Air",
+                  "string1":"Air",
+                  "compare0":">",
+                  "value0":0.9
+               },
+               {
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Tank & AirDefense",
+                  "unit_type_string1":"Tank & Offense - AirDefense",
+                  "compare0":"<",
+                  "value0":0.2
+               }
+            ],
+            [
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
                   "boolean":true
                },
                {
@@ -360,7 +432,7 @@
                   "compare0":"<",
                   "value0":0.2
                }
-			]
+            ]
          ]
       },
       {
@@ -378,9 +450,9 @@
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
-			   {
+               {
                   "test_type":"UnableToExpand",
-				  "boolean":false
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -422,9 +494,9 @@
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
-			   {
+               {
                   "test_type":"UnableToExpand",
-				  "boolean":false
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -463,12 +535,35 @@
          "build_conditions":[
             [
                {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
                   "test_type":"SystemThreat",
                   "string0":"Orbital",
                   "compare0":"<=",
                   "value0":0
-			   },
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ],
+			[
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
 			   {
+                  "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
+                  "boolean":true
+               },
+               {
+                  "test_type":"SystemThreat",
+                  "string0":"Orbital",
+                  "compare0":"<=",
+                  "value0":0
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                }
             ]
@@ -486,12 +581,35 @@
          "build_conditions":[
             [
                {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
                   "test_type":"SystemThreat",
                   "string0":"Orbital",
                   "compare0":">",
                   "value0":0
-			   },
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ],
+			[
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
 			   {
+                  "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
+                  "boolean":true
+               },
+               {
+                  "test_type":"SystemThreat",
+                  "string0":"Orbital",
+                  "compare0":">",
+                  "value0":0
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                }
             ]
@@ -508,6 +626,30 @@
          ],
          "build_conditions":[
             [
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Tank & Heavy",
+                  "unit_type_string1":"Tank & Artillery",
+                  "compare0":"<",
+                  "value0":0.1
+               }
+            ],
+			[
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+			   {
+                  "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
+                  "boolean":true
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -531,7 +673,24 @@
             "AdvancedVehicleFactory"
          ],
          "build_conditions":[
-            [               
+            [
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ],
+			[               
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
+                  "boolean":true
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                }
