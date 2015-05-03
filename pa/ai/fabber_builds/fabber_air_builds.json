@@ -151,6 +151,55 @@
          }
       },
 	  {
+         "name":"Basic Air Factory - Commander - air is the only option",
+         "to_build":"BasicAirFactory",
+         "instance_count":1,
+         "shared_instance_count":"BasicFactory",
+         "max_num_assisters":2,
+         "priority":375,
+         "builders":[
+            "Commander"
+         ],
+         "build_conditions":[
+            [
+			   {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicAirFactory"
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":false
+               },
+			   {
+                  "test_type":"UnitCountOnPlanet",
+				  "unit_type_string0":"Factory & (Land | Naval)",
+				  "compare0":"<",
+				  "value0":1
+               },
+			   {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicAirFactory"
+               }
+			]
+         ],
+         "placement_rules":{
+			"buffer":5,
+            "threat":{
+               "influence_type":"AntiSurface",
+               "compare_type":"<",
+               "radius":10,
+               "value":50
+            }
+         }
+      },
+	  {
          "name":"Basic Air Factory - Fabber",
          "to_build":"BasicAirFactory",
          "instance_count":1,

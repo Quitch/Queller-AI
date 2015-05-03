@@ -1,3 +1,11 @@
+v1.3.1
+
+Now works on air only maps
+Removed dependency on ai_config (except for unit cap, but 3000 will do)
+Now checks for Commander as a means to determine whether this is a military or eco planet
+Fixed an error that allowed proxy air bases to spam air fabbers
+Dropped custom ai_unit_map file until such time as I actually use it
+
 v1.3
 
 More aggressive about building MEX defences
@@ -241,6 +249,7 @@ Doesn't close out orbital games well even when it has an overwhelming economic a
 Takes too long transition from a naval start to a land game on mixed maps
 Often floats its eco on higher eco boosts
 Doesn't take over empty planets fast enough
+Playstyle not well suited to multi-planet FFAs with single planet starts
 
 MAYBEFIX
 

@@ -31,9 +31,17 @@
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
+			   {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
                {
-                  "test_type":"NeedBasicBotFabber",
+                  "test_type":"CanDeployLandFromBase",
                   "boolean":true
+               },
+			   {
+                  "test_type":"UnableToExpand",
+				  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -43,12 +51,66 @@
                   "string0":"BasicBotFabber"
                },
                {
-                  "test_type":"UnableToExpand",
-                  "boolean":false
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Fabber & Basic & Land",
+                  "unit_type_string1":"Factory & Basic & Land",
+                  "compare0":"<",
+                  "value0":1
+               }
+            ],
+            [
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
                },
                {
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
+               },
+			   {
+                  "test_type":"UnableToExpand",
+				  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicBotFabber"
+               },
+               {
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Fabber & Basic & Land",
+                  "unit_type_string1":"Factory & Basic & Land",
+                  "compare0":"<",
+                  "value0":3
+               }
+            ],
+            [
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"UnableToExpand",
+				  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicBotFabber"
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Commander",
+                  "compare0":"<",
+                  "value0":1
                }
             ]
          ]
@@ -84,9 +146,17 @@
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
+			   {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
                {
-                  "test_type":"NeedBasicVehicleFabber",
+                  "test_type":"CanDeployLandFromBase",
                   "boolean":true
+               },
+			   {
+                  "test_type":"UnableToExpand",
+				  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -96,12 +166,66 @@
                   "string0":"BasicVehicleFabber"
                },
                {
-                  "test_type":"UnableToExpand",
-                  "boolean":false
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Fabber & Basic & Land",
+                  "unit_type_string1":"Factory & Basic & Land",
+                  "compare0":"<",
+                  "value0":1
+               }
+            ],
+            [
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
                },
                {
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
+               },
+			   {
+                  "test_type":"UnableToExpand",
+				  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicVehicleFabber"
+               },
+               {
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Fabber & Basic & Land",
+                  "unit_type_string1":"Factory & Basic & Land",
+                  "compare0":"<",
+                  "value0":2
+               }
+            ],
+            [
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"UnableToExpand",
+				  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicVehicleFabber"
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Commander",
+                  "compare0":"<",
+                  "value0":1
                }
             ]
          ]
@@ -451,8 +575,28 @@
                   "boolean":false
                },
                {
-                  "test_type":"UnableToExpand",
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Fabber & Advanced",
+                  "compare0":"<",
+                  "value0":2
+               }
+            ],
+            [
+               {
+                  "test_type":"BaseThreatened",
                   "boolean":false
+               },
+			   {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"UnableToExpand",
+				  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -462,19 +606,66 @@
                   "string0":"AdvancedBotFabber"
                },
                {
-                  "test_type":"NeedAdvancedBotFabber"
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Fabber & Advanced & Land",
+                  "unit_type_string1":"Factory & Advanced & Land",
+                  "compare0":"<",
+                  "value0":3
                }
             ],
             [
                {
-                  "test_type":"BaseThreatened",
-                  "boolean":false
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"UnableToExpand",
+				  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"AdvancedBotFabber"
+               },
+               {
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Fabber & Advanced & Land",
+                  "unit_type_string1":"Factory & Advanced & Land",
+                  "compare0":"<",
+                  "value0":9
+               }
+            ],
+            [
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"UnableToExpand",
+				  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"AdvancedBotFabber"
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Fabber & Advanced & Land",
+                  "unit_type_string0":"Commander",
                   "compare0":"<",
-                  "value0":2
+                  "value0":1
                }
             ]
          ]
@@ -495,18 +686,10 @@
                   "boolean":false
                },
                {
-                  "test_type":"UnableToExpand",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"NeedAdvancedVehicleFabber"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"AdvancedVehicleFabber"
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Fabber & Advanced",
+                  "compare0":"<",
+                  "value0":2
                }
             ],
             [
@@ -514,11 +697,86 @@
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
+			   {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"UnableToExpand",
+				  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"AdvancedVehicleFabber"
+               },
+               {
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Fabber & Advanced & Land",
+                  "unit_type_string1":"Factory & Advanced & Land",
+                  "compare0":"<",
+                  "value0":5
+               }
+            ],
+            [
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"UnableToExpand",
+				  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"AdvancedVehicleFabber"
+               },
+               {
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Fabber & Advanced & Land",
+                  "unit_type_string1":"Factory & Advanced & Land",
+                  "compare0":"<",
+                  "value0":9
+               }
+            ],
+            [
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"UnableToExpand",
+				  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"AdvancedVehicleFabber"
+               },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Fabber & Advanced & Land",
+                  "unit_type_string0":"Commander",
                   "compare0":"<",
-                  "value0":2
+                  "value0":1
                }
             ]
          ]

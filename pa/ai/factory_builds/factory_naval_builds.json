@@ -17,7 +17,7 @@
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"(Fabber & Basic) & Naval",
+                  "unit_type_string0":"Fabber & Basic & Naval",
                   "compare0":"<",
                   "value0":2
                },
@@ -46,7 +46,7 @@
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"(Fabber & Basic) & Naval",
+                  "unit_type_string0":"Fabber & Basic & Naval",
                   "compare0":"<",
                   "value0":2
                }
@@ -64,6 +64,10 @@
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":true
                },
+			   {
+                  "test_type":"UnableToExpand",
+				  "boolean":false
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -73,22 +77,14 @@
                },
                {
                   "test_type":"UnitRatioOnPlanet",
-                  "unit_type_string0":"Fabber & Naval & Basic",
-                  "unit_type_string1":"Factory & Naval & Basic",
+                  "unit_type_string0":"Fabber & Basic & Naval",
+                  "unit_type_string1":"Factory & Basic & Naval",
                   "compare0":"<",
                   "value0":1
-               },
-			   {
-                  "test_type":"UnableToExpand",
-				  "boolean":false
                }
             ],
             [
                {
-                  "test_type":"BaseThreatened",
-                  "boolean":false
-               },
-			   {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
                },
@@ -96,6 +92,10 @@
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":true
                },
+			   {
+                  "test_type":"UnableToExpand",
+				  "boolean":false
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -105,14 +105,37 @@
                },
                {
                   "test_type":"UnitRatioOnPlanet",
-                  "unit_type_string0":"Fabber & Naval & Basic",
-                  "unit_type_string1":"Factory & Naval & Basic",
+                  "unit_type_string0":"Fabber & Basic & Naval",
+                  "unit_type_string1":"Factory & Basic & Naval",
                   "compare0":"<",
-                  "value0":4
+                  "value0":3
+               }
+            ],
+            [
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":true
                },
 			   {
                   "test_type":"UnableToExpand",
 				  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicNavalFabber"
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Commander",
+                  "compare0":"<",
+                  "value0":1
                }
             ]
          ]
@@ -294,14 +317,10 @@
                   "boolean":false
                },
                {
-                  "test_type":"NeedAdvancedNavalFabber"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"AdvancedNavalFabber"
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Fabber & Advanced & Naval",
+                  "compare0":"<",
+                  "value0":2
                }
             ],
             [
@@ -309,11 +328,86 @@
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
+			   {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"UnableToExpand",
+				  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"AdvancedNavalFabber"
+               },
+               {
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Fabber & Advanced & Naval",
+                  "unit_type_string1":"Factory & Advanced & Naval",
+                  "compare0":"<",
+                  "value0":3
+               }
+            ],
+            [
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"UnableToExpand",
+				  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"AdvancedNavalFabber"
+               },
+               {
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Fabber & Advanced & Naval",
+                  "unit_type_string1":"Factory & Advanced & Naval",
+                  "compare0":"<",
+                  "value0":9
+               }
+            ],
+            [
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"UnableToExpand",
+				  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"AdvancedNavalFabber"
+               },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Fabber & Advanced & Naval",
+                  "unit_type_string0":"Commander",
                   "compare0":"<",
-                  "value0":2
+                  "value0":1
                }
             ]
          ]
