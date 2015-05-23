@@ -1,3 +1,9 @@
+dev
+
+More aggressive about teching when it can't expand
+Fixed bug in checking placement of advanced naval factory
+Updated for new AI folder structure
+
 v1.3.2
 
 Put the ai_unit_map file back because I need it for the Piranha. Derp!
@@ -63,7 +69,6 @@ v1.2
 
 Removed platoon minimum requirements for frontline units to allow Queller to form land attacks faster
 Will build Bluehawks and Stingrays when there's an orbital threat
-Doesn't seem to be building Slammers in response to naval threats so updated how it checks this
 Will try and go orbital when it has no local expansion options, even if it's not winning the battle on the planet
 If a game has gone orbital then the AI can go bots late to allow it access to Bluehawks for invasion support
 Corrected major whoopsie where AI wouldn't build advanced vehicle fabbers when it had a planet to itself
