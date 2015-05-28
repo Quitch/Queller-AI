@@ -383,10 +383,6 @@
             ],
 			[
                {
-                  "test_type":"HaveEcoForAdvanced",
-                  "boolean":true
-			   },
-			   {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -394,32 +390,25 @@
                   "string0":"AdvancedBotFactory"
                },
                {
-                  "test_type":"CanDeployLandFromBase",
+                  "test_type":"AllMetalSpotsFull",
                   "boolean":true
                },
                {
                   "test_type":"UnableToExpand",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"AdvancedBotFactory"
-               }
-            ],
-			[
-               {
-                  "test_type":"UnableToExpand",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"(Advanced & Factory) - NukeDefense - Nuke",
+                  "unit_type_string0":"Advanced & Factory",
                   "compare0":"<",
                   "value0":1
+               },
+			   {
+                  "test_type":"PlanetThreatRatio",
+                  "string0":"Land",
+				  "string1":"Land",
+                  "compare0":"<",
+                  "value0":1.0
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -486,10 +475,6 @@
             ],
 			[
                {
-                  "test_type":"HaveEcoForAdvanced",
-                  "boolean":true
-			   },
-			   {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -497,32 +482,25 @@
                   "string0":"AdvancedVehicleFactory"
                },
                {
-                  "test_type":"CanDeployLandFromBase",
+                  "test_type":"AllMetalSpotsFull",
                   "boolean":true
                },
                {
                   "test_type":"UnableToExpand",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"AdvancedVehicleFactory"
-               }
-            ],
-			[
-               {
-                  "test_type":"UnableToExpand",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"(Advanced & Factory) - NukeDefense - Nuke",
+                  "unit_type_string0":"Advanced & Factory",
                   "compare0":"<",
                   "value0":1
+               },
+			   {
+                  "test_type":"PlanetThreatRatio",
+                  "string0":"Land",
+				  "string1":"Land",
+                  "compare0":"<",
+                  "value0":1.0
                },
                {
                   "test_type":"CanFindPlaceToBuild",

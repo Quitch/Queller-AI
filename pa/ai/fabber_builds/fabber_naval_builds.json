@@ -173,12 +173,8 @@
                   "string0":"AdvancedNavalFactory"
                }
             ],
-			[               
+			[
                {
-                  "test_type":"HaveEcoForAdvanced",
-                  "boolean":true
-               },
-			   {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -186,24 +182,29 @@
                   "string0":"AdvancedNavalFactory"
                },
                {
-                  "test_type":"UnableToExpand",
+                  "test_type":"CanDeployNavalFromBase",
                   "boolean":true
                },
                {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"AdvancedNavalFactory"
-               }
-            ],
-			[
+                  "test_type":"AllMetalSpotsFull",
+                  "boolean":true
+               },
                {
                   "test_type":"UnableToExpand",
                   "boolean":true
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"(Advanced & Factory) - NukeDefense - Nuke",
+                  "unit_type_string0":"Advanced & Factory",
                   "compare0":"<",
                   "value0":1
+               },
+			   {
+                  "test_type":"PlanetThreatRatio",
+                  "string0":"Naval",
+				  "string1":"Naval",
+                  "compare0":"<",
+                  "value0":1.0
                },
                {
                   "test_type":"CanFindPlaceToBuild",
