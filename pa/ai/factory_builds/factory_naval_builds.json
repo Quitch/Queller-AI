@@ -28,7 +28,7 @@
                   "value0":4
                }
             ],
-			[
+            [
                {
                   "test_type":"BaseThreatened",
                   "boolean":false
@@ -56,7 +56,7 @@
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
-			   {
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
                },
@@ -64,9 +64,9 @@
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"UnableToExpand",
-				  "boolean":false
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -92,9 +92,9 @@
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"UnableToExpand",
-				  "boolean":false
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -120,9 +120,9 @@
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"UnableToExpand",
-				  "boolean":false
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -155,11 +155,11 @@
                   "test_type":"AloneOnPlanet",
                   "boolean":false
                },
-			   {
+               {
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
-			   {
+               {
                   "test_type":"HaveFullPlanetIntel",
                   "boolean":false
                },
@@ -197,10 +197,6 @@
                   "boolean":false
                },
                {
-                  "test_type":"CanDeployNavalFromBase",
-                  "boolean":false
-               },
-               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -210,7 +206,7 @@
                   "value0":5
                }
             ],
-			[
+            [
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
@@ -218,6 +214,13 @@
                {
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":true
+               },
+               {
+                  "test_type":"FocusTargetThreatRatio",
+                  "string0":"Sub",
+                  "string1":"AntiSub",
+                  "compare0":"<=",
+                  "value0":1.0
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -241,10 +244,6 @@
                   "boolean":false
                },
                {
-                  "test_type":"CanDeployNavalFromBase",
-                  "boolean":false
-               },
-               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -254,7 +253,7 @@
                   "value0":5
                }
             ],
-			[
+            [
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
@@ -262,6 +261,53 @@
                {
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":true
+               },
+               {
+                  "test_type":"FocusTargetThreatRatio",
+                  "string0":"Air",
+                  "string1":"AntiAir",
+                  "compare0":">",
+                  "value0":0.75
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ],
+            [
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"FocusTargetThreatRatio",
+                  "string0":"Sub",
+                  "string1":"AntiSub",
+                  "compare0":">",
+                  "value0":0.75
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ],
+            [
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Naval & AirDefense",
+                  "unit_type_string1":"(Naval & Offense) - AirDefense",
+                  "compare0":"<",
+                  "value0":0.2
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -289,11 +335,37 @@
                   "boolean":true
                },
                {
-                  "test_type":"PlanetThreatRatio",
+                  "test_type":"FocusTargetThreatRatio",
                   "string0":"Naval",
                   "string1":"Naval",
                   "compare0":">",
                   "value0":1.0
+               },
+               {
+                  "test_type":"FocusTargetThreatRatio",
+                  "string0":"Air",
+                  "string1":"AntiAir",
+                  "compare0":"<",
+                  "value0":1.0
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ],
+			[
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"FocusTargetThreat",
+                  "string0":"AntiSub",
+                  "compare0":"<",
+                  "value0":1650
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -328,17 +400,13 @@
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
-			   {
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
                },
                {
-                  "test_type":"CanDeployNavalFromBase",
-                  "boolean":true
-               },
-			   {
                   "test_type":"UnableToExpand",
-				  "boolean":false
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -361,12 +429,8 @@
                   "boolean":true
                },
                {
-                  "test_type":"CanDeployNavalFromBase",
-                  "boolean":true
-               },
-			   {
                   "test_type":"UnableToExpand",
-				  "boolean":false
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -389,12 +453,8 @@
                   "boolean":true
                },
                {
-                  "test_type":"CanDeployNavalFromBase",
-                  "boolean":true
-               },
-			   {
                   "test_type":"UnableToExpand",
-				  "boolean":false
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -408,6 +468,29 @@
                   "unit_type_string0":"Commander",
                   "compare0":"<",
                   "value0":1
+               }
+            ],
+            [
+               {
+                  "test_type":"BaseThreatened",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"AdvancedNavalFabber"
+               },
+               {
+                  "test_type":"CurrentMetalEfficiency",
+                  "compare0":">",
+                  "value0":1.1
+               },
+               {
+                  "test_type":"CurrentEnergyEfficiency",
+                  "compare0":">",
+                  "value0":1.1
                }
             ]
          ]
@@ -456,11 +539,11 @@
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
-                  "test_type":"PlanetThreatRatio",
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Air",
                   "string1":"AntiAir",
                   "compare0":">",
@@ -474,7 +557,7 @@
                   "value0":0.1
                }
             ],
-			[
+            [
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
@@ -483,15 +566,15 @@
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"CanAffordBuildDemand"
                },
-			   {
+               {
                   "test_type":"SystemThreat",
                   "string0":"Orbital",
                   "compare0":">",
                   "value0":0
-			   },
+               },
                {
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Naval & (AirDefense | Tactical) & Mobile",
@@ -520,6 +603,12 @@
                {
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":true
+               },
+               {
+                  "test_type":"UnitCountPerPlanetRadius",
+                  "unit_type_string0":"Naval & Advanced & Sub",
+                  "compare0":"<",
+                  "value0":250
                },
                {
                   "test_type":"CanAffordBuildDemand"

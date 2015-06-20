@@ -3,7 +3,7 @@
       {
          "name":"Air Scout Platoon",
          "to_build":"Air_Scout",
-         "instance_count":3,
+         "instance_count":-1,
          "priority":105,
          "build_conditions":[
             [
@@ -12,6 +12,39 @@
                   "unit_type_string0":"Air & Scout",
                   "compare0":">=",
                   "value0":1
+               },
+               {
+                  "test_type":"HaveFullPlanetIntel",
+                  "boolean":false
+               }
+            ]
+         ],
+         "task_type":"Scout"
+      },
+	  {
+         "name":"Fighter Scout Platoon",
+         "to_build":"Fighter_Scout",
+         "instance_count":-1,
+         "priority":105,
+         "build_conditions":[
+            [
+			   {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Air & Fighter & Basic",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
+                  "test_type":"UnitCountPerPlanetRadius",
+                  "unit_type_string0":"Air & Fighter & Basic",
+                  "compare0":"<",
+                  "value0":250
+               },
+			   {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Air",
+                  "compare0":">",
+                  "value0":0
                },
                {
                   "test_type":"HaveFullPlanetIntel",
@@ -35,7 +68,7 @@
                   "value0":1
                },
                {
-                  "test_type":"FocusTargetThreat",
+                  "test_type":"PlanetHighestEnemyArmyThreat",
                   "string0":"AntiAir",
                   "compare0":"<",
                   "value0":420
@@ -64,7 +97,7 @@
                   "value0":4
                },
                {
-                  "test_type":"FocusTargetThreat",
+                  "test_type":"PlanetHighestEnemyArmyThreat",
                   "string0":"AntiAir",
                   "compare0":"<",
                   "value0":1260
@@ -93,7 +126,7 @@
                   "value0":9
                },
                {
-                  "test_type":"FocusTargetThreat",
+                  "test_type":"PlanetHighestEnemyArmyThreat",
                   "string0":"AntiAir",
                   "compare0":"<",
                   "value0":2800
@@ -122,7 +155,7 @@
                   "value0":18
                },
                {
-                  "test_type":"FocusTargetThreat",
+                  "test_type":"PlanetHighestEnemyArmyThreat",
                   "string0":"AntiAir",
                   "compare0":"<",
                   "value0":5600

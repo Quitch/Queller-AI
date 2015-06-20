@@ -27,7 +27,7 @@
                   "test_type":"UnitCountPerPlanetRadius",
                   "unit_type_string0":"(Bot & Factory) & Basic",
                   "compare0":"<=",
-                  "value0":100
+                  "value0":250
                },
 			   {
                   "test_type":"UnitCountOnPlanet",
@@ -77,10 +77,11 @@
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"BasicBotFactory"
                },
-               {
-                  "test_type":"HaveSeenEnemyUnits",
-                  "unit_type_string0":"Naval",
-                  "boolean":true
+			   {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Naval",
+                  "compare0":">",
+                  "value0":0
                },
 			   {
                   "test_type":"UnitCountPerPlanetRadius",
@@ -120,7 +121,7 @@
 			]
          ],
          "placement_rules":{
-			"buffer":5,
+			"buffer":15,
             "threat":{
                "influence_type":"AntiSurface",
                "compare_type":"<",
@@ -158,7 +159,7 @@
                   "test_type":"UnitCountPerPlanetRadius",
                   "unit_type_string0":"(Bot & Factory) & Basic",
                   "compare0":"<=",
-                  "value0":100
+                  "value0":250
                },
 			   {
                   "test_type":"UnitCountOnPlanet",
@@ -206,10 +207,11 @@
                   "test_type":"CanDeployLandFromBase",
                   "boolean":false
                },
-               {
-                  "test_type":"HaveSeenEnemyUnits",
-                  "unit_type_string0":"Naval",
-                  "boolean":true
+			   {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Naval",
+                  "compare0":">",
+                  "value0":0
                },
 			   {
                   "test_type":"UnitCountPerPlanetRadius",
@@ -249,11 +251,227 @@
 			]
          ],
          "placement_rules":{
-			"buffer":5,
+			"buffer":15,
             "threat":{
                "influence_type":"AntiSurface",
                "compare_type":"<",
                "radius":10,
+               "value":50
+            }
+         }
+      },
+	  {
+         "name":"Basic Bot Factory - Excess Eco",
+         "to_build":"BasicBotFactory",
+         "instance_count":-1,
+         "shared_instance_count":"BasicFactory",
+         "min_num_assisters":3,
+		 "max_num_assisters":5,
+         "priority":374,
+         "builders":[
+            "Commander",
+			"AnyBasicFabber",
+			"AnyAdvancedFabber"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicBotFactory"
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"UnitCountPerPlanetRadius",
+                  "unit_type_string0":"(Bot & Factory) & Basic",
+                  "compare0":"<=",
+                  "value0":100
+               },
+			   {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"(Tank & Factory) & Basic",
+                  "compare0":"<",
+                  "value0":1
+               },
+			   {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicBotFactory"
+               },
+               {
+                  "test_type":"CurrentMetalEfficiency",
+                  "compare0":">",
+                  "value0":1
+               },
+               {
+                  "test_type":"CurrentEnergyEfficiency",
+                  "compare0":">",
+                  "value0":1
+               }
+			],
+			[
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicBotFactory"
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":false
+               },
+			   {
+                  "test_type":"UnitCountPerPlanetRadius",
+                  "unit_type_string0":"(Bot & Factory) & Basic",
+                  "compare0":"<=",
+                  "value0":500
+               },
+			   {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"(Naval & Factory) & Basic",
+                  "compare0":">=",
+                  "value0":1
+               },
+			   {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicBotFactory"
+               },
+               {
+                  "test_type":"CurrentMetalEfficiency",
+                  "compare0":">",
+                  "value0":1
+               },
+               {
+                  "test_type":"CurrentEnergyEfficiency",
+                  "compare0":">",
+                  "value0":1
+               }
+			],
+			[
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicBotFactory"
+               },
+			   {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Naval",
+                  "compare0":">",
+                  "value0":0
+               },
+			   {
+                  "test_type":"UnitCountPerPlanetRadius",
+                  "unit_type_string0":"(Bot & Factory) & Basic",
+                  "compare0":"<=",
+                  "value0":500
+               },
+			   {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicBotFactory"
+               },
+               {
+                  "test_type":"CurrentMetalEfficiency",
+                  "compare0":">",
+                  "value0":1
+               },
+               {
+                  "test_type":"CurrentEnergyEfficiency",
+                  "compare0":">",
+                  "value0":1
+               }
+			],
+			[
+			   {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicBotFactory"
+               },
+			   {
+                  "test_type":"SystemThreat",
+                  "string0":"Orbital",
+                  "compare0":">",
+                  "value0":0
+			   },
+			   {
+                  "test_type":"UnitCount",
+                  "unit_type_string0":"Factory & Bot & Basic",
+                  "compare0":"<",
+                  "value0":1
+               },
+			   {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicBotFactory"
+               },
+               {
+                  "test_type":"CurrentMetalEfficiency",
+                  "compare0":">",
+                  "value0":1.1
+               },
+               {
+                  "test_type":"CurrentEnergyEfficiency",
+                  "compare0":">",
+                  "value0":1.1
+               }
+			]
+         ],
+         "placement_rules":{
+			"buffer":15,
+            "threat":{
+               "influence_type":"AntiSurface",
+               "compare_type":"<",
+               "radius":10,
+               "value":50
+            }
+         }
+      },
+	  {
+         "name":"Basic Bot Factory - Arrived on a new world",
+         "to_build":"BasicBotFactory",
+         "instance_count":1,
+         "priority":601,
+         "builders":[
+            "Commander",
+			"AnyBasicFabber"
+         ],
+         "build_conditions":[
+            [
+			   {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Factory - Orbital",
+                  "compare0":"<",
+                  "value0":1
+               },
+			   {
+                  "test_type":"UnitCount",
+                  "unit_type_string0":"Mobile - Commander",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
+                  "test_type":"PresenceOnOtherPlanet",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicBotFactory"
+               }
+			]
+         ],
+         "placement_rules":{
+			"buffer":15,
+            "threat":{
+               "influence_type":"AntiSurface",
+               "compare_type":"<",
+               "radius":100,
                "value":50
             }
          }
@@ -288,7 +506,7 @@
             ]
          ],
          "placement_rules":{
-			"buffer":5,
+			"buffer":15,
             "threat":{
                "influence_type":"AntiSurface",
                "compare_type":"<",
@@ -329,11 +547,106 @@
             ]
          ],
          "placement_rules":{
-			"buffer":5,
+			"buffer":15,
             "threat":{
                "influence_type":"AntiSurface",
                "compare_type":"<",
                "radius":10,
+               "value":50
+            }
+         }
+      },
+	  {
+         "name":"Basic Vehicle Factory - Excess eco",
+         "to_build":"BasicVehicleFactory",
+         "instance_count":-1,
+         "shared_instance_count":"BasicFactory",
+         "priority":374,
+         "min_num_assisters":3,
+         "max_num_assisters":5,
+         "builders":[
+		    "Commander",
+            "AnyBasicFabber",
+			"AnyAdvancedFabber"
+         ],
+         "build_conditions":[
+            [			   
+			   {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicVehicleFactory"
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicVehicleFactory"
+               },
+               {
+                  "test_type":"CurrentMetalEfficiency",
+                  "compare0":">",
+                  "value0":1.1
+               },
+               {
+                  "test_type":"CurrentEnergyEfficiency",
+                  "compare0":">",
+                  "value0":1.1
+               }
+            ]
+         ],
+         "placement_rules":{
+			"buffer":15,
+            "threat":{
+               "influence_type":"AntiSurface",
+               "compare_type":"<",
+               "radius":10,
+               "value":50
+            }
+         }
+      },
+	  {
+         "name":"Basic Vehicle Factory - Arrived on a new world",
+         "to_build":"BasicVehicleFactory",
+         "instance_count":1,
+         "priority":601,
+         "builders":[
+            "Commander",
+			"AnyBasicFabber"
+         ],
+         "build_conditions":[
+            [
+			   {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Factory - Orbital",
+                  "compare0":"<",
+                  "value0":1
+               },
+			   {
+                  "test_type":"UnitCount",
+                  "unit_type_string0":"Mobile - Commander",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
+                  "test_type":"PresenceOnOtherPlanet",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicVehicleFactory"
+               }
+			]
+         ],
+         "placement_rules":{
+			"buffer":15,
+            "threat":{
+               "influence_type":"AntiSurface",
+               "compare_type":"<",
+               "radius":100,
                "value":50
             }
          }
@@ -344,8 +657,8 @@
          "instance_count":1,
          "shared_instance_count":"AdvancedFactory",
          "priority":477,
-         "min_num_assisters":3,
-         "max_num_assisters":5,
+         "min_num_assisters":5,
+         "max_num_assisters":8,
          "builders":[
             "BasicBotFabber",
             "AdvancedBotFabber"
@@ -370,7 +683,7 @@
                   "value0":5
                },
 			   {
-                  "test_type":"PlanetThreatRatio",
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Land",
 				  "string1":"Land",
                   "compare0":"<",
@@ -403,13 +716,6 @@
                   "compare0":"<",
                   "value0":1
                },
-			   {
-                  "test_type":"PlanetThreatRatio",
-                  "string0":"Land",
-				  "string1":"Land",
-                  "compare0":"<",
-                  "value0":1.0
-               },
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"AdvancedBotFactory"
@@ -417,7 +723,7 @@
             ]
          ],
          "placement_rules":{
-			"buffer":5,
+			"buffer":15,
             "threat":{
                "influence_type":"AntiSurface",
                "compare_type":"<",
@@ -432,8 +738,8 @@
          "instance_count":1,
          "shared_instance_count":"AdvancedFactory",
          "priority":477,
-         "min_num_assisters":3,
-         "max_num_assisters":5,
+         "min_num_assisters":5,
+         "max_num_assisters":8,
          "builders":[
             "BasicVehicleFabber",
             "AdvancedVehicleFabber"
@@ -462,7 +768,7 @@
                   "value0":5
                },
 			   {
-                  "test_type":"PlanetThreatRatio",
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Land",
 				  "string1":"Land",
                   "compare0":"<",
@@ -495,13 +801,6 @@
                   "compare0":"<",
                   "value0":1
                },
-			   {
-                  "test_type":"PlanetThreatRatio",
-                  "string0":"Land",
-				  "string1":"Land",
-                  "compare0":"<",
-                  "value0":1.0
-               },
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"AdvancedVehicleFactory"
@@ -509,7 +808,7 @@
             ]
          ],
          "placement_rules":{
-			"buffer":5,
+			"buffer":15,
             "threat":{
                "influence_type":"AntiSurface",
                "compare_type":"<",

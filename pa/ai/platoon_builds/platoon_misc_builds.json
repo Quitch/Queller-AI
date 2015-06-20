@@ -18,6 +18,23 @@
          "task_type":"Nuke"
       },
       {
+         "name":"Unit Cannon Platoon",
+         "to_build":"UnitCannon",
+         "instance_count":-1,
+         "priority":100,
+         "build_conditions":[
+            [
+               {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"Structure & Artillery & Factory",
+                  "compare0":">=",
+                  "value0":1
+               }
+            ]
+         ],
+         "task_type":"UnitCannon"
+      },
+      {
          "name":"Artillery Platoon",
          "to_build":"Artillery",
          "instance_count":-1,
@@ -26,7 +43,7 @@
             [
                {
                   "test_type":"UnitPoolCount",
-                  "unit_type_string0":"Structure & (Artillery | Tactical)",
+                  "unit_type_string0":"(Structure & (Artillery | Tactical)) - Factory",
                   "compare0":">=",
                   "value0":1
                }

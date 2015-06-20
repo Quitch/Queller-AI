@@ -13,6 +13,26 @@
          "build_conditions":[
             [
                {
+                  "test_type":"CanAffordBuildDemand"
+               },
+			   {
+                  "test_type":"OnTaskType",
+                  "string0":"BuilderAssist",
+                  "boolean":false
+               }
+            ],
+            [
+               {
+                  "test_type":"CurrentMetalEfficiency",
+                  "compare0":">",
+                  "value0":1
+               },
+               {
+                  "test_type":"CurrentEnergyEfficiency",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
                   "test_type":"OnTaskType",
                   "string0":"BuilderAssist",
                   "boolean":false
@@ -54,8 +74,8 @@
             "threat":{
                "influence_type":"AntiSurface",
                "compare_type":"<",
-               "radius":10,
-               "value":50
+               "radius":150,
+               "value":1
             }
          }
       },
@@ -120,6 +140,40 @@
             ]
          ],
          "task_type":"TeleportFabberToPlanet"
+      },
+	  {
+         "name":"Move Fabber To Planet",
+         "instance_count":1,
+         "priority":800,
+         "builders":[
+            "BasicBotFabber",
+            "BasicVehicleFabber",
+            "BasicAirFabber",
+            "AdvancedBotFabber",
+            "AdvancedVehicleFabber",
+            "AdvancedAirFabber"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"PlanetWithoutPresence",
+                  "boolean":true
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Fabber",
+                  "compare0":">=",
+                  "value0":2
+               },
+               {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"Orbital & Transport",
+                  "compare0":">=",
+                  "value0":1
+               }
+            ]
+         ],
+         "task_type":"TransportToPlanet"
       }
    ]
 }

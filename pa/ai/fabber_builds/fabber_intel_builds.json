@@ -283,10 +283,11 @@
                   "compare0":"<",
                   "value0":1
                },
-               {
-                  "test_type":"HaveSeenEnemyUnits",
-                  "unit_type_string0":"Orbital - (Structure & Recon)",
-                  "boolean":true
+			   {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Orbital",
+                  "compare0":">",
+                  "value0":0
                },
                {
                   "test_type":"CanFindPlaceToBuild",

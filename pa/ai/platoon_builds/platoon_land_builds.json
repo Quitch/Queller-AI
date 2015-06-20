@@ -3,7 +3,7 @@
       {
          "name":"Vehicle Scout Platoon",
          "to_build":"Vehicle_Scout",
-         "instance_count":2,
+         "instance_count":-1,
          "priority":106,
          "build_conditions":[
             [               
@@ -66,32 +66,29 @@
          "build_conditions":[
             [
                {
+                  "test_type":"BaseThreatened",
+                  "boolean":false
+               },
+			   {
                   "test_type":"OtherPlanetNeedsLandUnitAssistance",
                   "boolean":true
                },
                {
                   "test_type":"CanProvideLandUnitAssistance",
                   "boolean":true
-               },			   
-               {
-                  "test_type":"PlanetThreatRatio",
-                  "string0":"Land",
-                  "string1":"Land",
-                  "compare0":"<",
-                  "value0":0.8
                },
                {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"(Tank | Bot) & Mobile & Offense",
                   "compare0":">=",
-                  "value0":20
+                  "value0":10
                }
             ]
          ],
          "task_type":"TeleportLandToPlanet"
       },
       {
-         "name":"Land Raid Platoon Small",
+         "name":"Land Raid Platoon Small - No Naval",
          "to_build":"Land_Raid_Small",
          "instance_count":-1,
          "priority":105,
@@ -99,15 +96,21 @@
             [
                {
                   "test_type":"UnitPoolCount",
-                  "unit_type_string0":"(Bot & Mobile) - Advanced - Fabber - Construction - Artillery - Heavy",
+                  "unit_type_string0":"(Bot & Mobile) - Advanced - Fabber - Construction - Artillery - Heavy - SelfDestruct",
                   "compare0":">=",
                   "value0":1
                },
                {
-                  "test_type":"FocusTargetThreat",
+                  "test_type":"PlanetHighestEnemyArmyThreat",
                   "string0":"AntiSurface",
                   "compare0":"<",
                   "value0":840
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Naval",
+                  "compare0":"==",
+                  "value0":0
                },
                {
                   "test_type":"CanAttackWithPoolUnitsLand",
@@ -120,7 +123,7 @@
          "task_type":"LandAttack"
       },
       {
-         "name":"Land Raid Platoon Medium",
+         "name":"Land Raid Platoon Medium - No Naval",
          "to_build":"Land_Raid_Medium",
          "instance_count":-1,
          "priority":104,
@@ -128,15 +131,21 @@
             [
                {
                   "test_type":"UnitPoolCount",
-                  "unit_type_string0":"(Bot & Mobile) - Advanced - Fabber - Construction - Artillery - Heavy",
+                  "unit_type_string0":"(Bot & Mobile) - Advanced - Fabber - Construction - Artillery - Heavy - SelfDestruct",
                   "compare0":">=",
                   "value0":4
                },
                {
-                  "test_type":"FocusTargetThreat",
+                  "test_type":"PlanetHighestEnemyArmyThreat",
                   "string0":"AntiSurface",
                   "compare0":"<",
                   "value0":2800
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Naval",
+                  "compare0":"==",
+                  "value0":0
                },
                {
                   "test_type":"CanAttackWithPoolUnitsLand",
@@ -149,7 +158,7 @@
          "task_type":"LandAttack"
       },
       {
-         "name":"Land Raid Platoon Large",
+         "name":"Land Raid Platoon Large - No Naval",
          "to_build":"Land_Raid_Large",
          "instance_count":-1,
          "priority":103,
@@ -157,15 +166,21 @@
             [
                {
                   "test_type":"UnitPoolCount",
-                  "unit_type_string0":"(Bot & Mobile) - Advanced - Fabber - Construction - Artillery - Heavy",
+                  "unit_type_string0":"(Bot & Mobile) - Advanced - Fabber - Construction - Artillery - Heavy - SelfDestruct",
                   "compare0":">=",
                   "value0":10
                },
                {
-                  "test_type":"FocusTargetThreat",
+                  "test_type":"PlanetHighestEnemyArmyThreat",
                   "string0":"AntiSurface",
                   "compare0":"<",
                   "value0":5600
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Naval",
+                  "compare0":"==",
+                  "value0":0
                },
                {
                   "test_type":"CanAttackWithPoolUnitsLand",
@@ -178,7 +193,7 @@
          "task_type":"LandAttack"
       },
       {
-         "name":"Land Raid Platoon XLarge",
+         "name":"Land Raid Platoon XLarge - No Naval",
          "to_build":"Land_Raid_XLarge",
          "instance_count":-1,
          "priority":102,
@@ -186,15 +201,21 @@
             [
                {
                   "test_type":"UnitPoolCount",
-                  "unit_type_string0":"(Bot & Mobile) - Advanced - Fabber - Construction - Artillery - Heavy",
+                  "unit_type_string0":"(Bot & Mobile) - Advanced - Fabber - Construction - Artillery - Heavy - SelfDestruct",
                   "compare0":">=",
                   "value0":20
                },
                {
-                  "test_type":"FocusTargetThreat",
+                  "test_type":"PlanetHighestEnemyArmyThreat",
                   "string0":"AntiSurface",
                   "compare0":"<",
                   "value0":11200
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Naval",
+                  "compare0":"==",
+                  "value0":0
                },
                {
                   "test_type":"CanAttackWithPoolUnitsLand",
@@ -207,7 +228,7 @@
          "task_type":"LandAttack"
       },
       {
-         "name":"Land Raid Platoon Max",
+         "name":"Land Raid Platoon Max - No Naval",
          "to_build":"Land_Raid_Max",
          "instance_count":-1,
          "priority":101,
@@ -215,7 +236,7 @@
             [
                {
                   "test_type":"UnitPoolCount",
-                  "unit_type_string0":"(Bot & Mobile) - Advanced - Fabber - Construction - Artillery - Heavy",
+                  "unit_type_string0":"(Bot & Mobile) - Advanced - Fabber - Construction - Artillery - Heavy - SelfDestruct",
                   "compare0":">=",
                   "value0":40
                },
@@ -230,7 +251,30 @@
          "task_type":"LandAttack"
       },
       {
-         "name":"Land Attack Platoon Small",
+         "name":"Boom Snipe",
+         "to_build":"Boom_Attack",
+         "instance_count":1,
+         "priority":101,
+         "build_conditions":[
+            [
+               {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"Bot & SelfDestruct",
+                  "compare0":">=",
+                  "value0":25
+               },
+               {
+                  "test_type":"CanAttackWithPoolUnitsLand",
+                  "string0":"WL_AnySurface",
+                  "string1":"WL_AnySurface",
+                  "unit_type_string0":"Commander"
+               }
+            ]
+         ],
+         "task_type":"LandAttack"
+      },
+      {
+         "name":"Land Attack Platoon Small - No Naval",
          "to_build":"Land_Attack_Small",
          "instance_count":-1,
          "priority":104,
@@ -243,10 +287,16 @@
                   "value0":1
                },
                {
-                  "test_type":"FocusTargetThreat",
+                  "test_type":"PlanetHighestEnemyArmyThreat",
                   "string0":"AntiSurface",
                   "compare0":"<",
                   "value0":840
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Naval",
+                  "compare0":"==",
+                  "value0":0
                },
                {
                   "test_type":"CanAttackWithPoolUnitsLand",
@@ -259,7 +309,7 @@
          "task_type":"LandAttack"
       },
       {
-         "name":"Land Attack Platoon Medium",
+         "name":"Land Attack Platoon Medium - No Naval",
          "to_build":"Land_Attack_Medium",
          "instance_count":-1,
          "priority":103,
@@ -272,10 +322,16 @@
                   "value0":4
                },
                {
-                  "test_type":"FocusTargetThreat",
+                  "test_type":"PlanetHighestEnemyArmyThreat",
                   "string0":"AntiSurface",
                   "compare0":"<",
                   "value0":2800
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Naval",
+                  "compare0":"==",
+                  "value0":0
                },
                {
                   "test_type":"CanAttackWithPoolUnitsLand",
@@ -288,7 +344,7 @@
          "task_type":"LandAttack"
       },
       {
-         "name":"Land Attack Platoon Large",
+         "name":"Land Attack Platoon Large - No Naval",
          "to_build":"Land_Attack_Large",
          "instance_count":-1,
          "priority":102,
@@ -301,10 +357,16 @@
                   "value0":10
                },
                {
-                  "test_type":"FocusTargetThreat",
+                  "test_type":"PlanetHighestEnemyArmyThreat",
                   "string0":"AntiSurface",
                   "compare0":"<",
                   "value0":5600
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Naval",
+                  "compare0":"==",
+                  "value0":0
                },
                {
                   "test_type":"CanAttackWithPoolUnitsLand",
@@ -317,7 +379,7 @@
          "task_type":"LandAttack"
       },
       {
-         "name":"Land Attack Platoon XLarge",
+         "name":"Land Attack Platoon XLarge - No Naval",
          "to_build":"Land_Attack_XLarge",
          "instance_count":-1,
          "priority":101,
@@ -330,10 +392,16 @@
                   "value0":20
                },
                {
-                  "test_type":"FocusTargetThreat",
+                  "test_type":"PlanetHighestEnemyArmyThreat",
                   "string0":"AntiSurface",
                   "compare0":"<",
                   "value0":11200
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Naval",
+                  "compare0":"==",
+                  "value0":0
                },
                {
                   "test_type":"CanAttackWithPoolUnitsLand",
@@ -346,7 +414,7 @@
          "task_type":"LandAttack"
       },
       {
-         "name":"Land Attack Platoon Max",
+         "name":"Land Attack Platoon Max - No Naval",
          "to_build":"Land_Attack_Max",
          "instance_count":-1,
          "priority":100,

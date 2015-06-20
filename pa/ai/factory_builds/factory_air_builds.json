@@ -39,14 +39,14 @@
                   "string0":"BasicAirFabber"
                },
 			   {
-                  "test_type":"PlanetThreatRatio",
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Air",
                   "string1":"AntiAir",
                   "compare0":"<",
                   "value0":0.9
                },
 			   {
-                  "test_type":"PlanetThreatRatio",
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Air",
                   "string1":"Air",
                   "compare0":"<",
@@ -176,7 +176,7 @@
                   "test_type":"CanAffordBuildDemand"
                },
 			   {
-                  "test_type":"PlanetThreatRatio",
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Air",
                   "string1":"AntiAir",
                   "compare0":">=",
@@ -188,7 +188,7 @@
                   "test_type":"CanAffordBuildDemand"
                },
 			   {
-                  "test_type":"PlanetThreatRatio",
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Air",
                   "string1":"Air",
                   "compare0":">=",
@@ -236,14 +236,14 @@
                   "boolean":false
                },
 			   {
-                  "test_type":"PlanetThreatRatio",
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Air",
                   "string1":"AntiAir",
                   "compare0":"<",
                   "value0":0.9
                },
 			   {
-                  "test_type":"PlanetThreatRatio",
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Air",
                   "string1":"Air",
                   "compare0":"<",
@@ -321,14 +321,14 @@
                   "string0":"AdvancedAirFabber"
                },
 			   {
-                  "test_type":"PlanetThreatRatio",
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Air",
                   "string1":"AntiAir",
                   "compare0":"<",
                   "value0":0.9
                },
 			   {
-                  "test_type":"PlanetThreatRatio",
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Air",
                   "string1":"Air",
                   "compare0":"<",
@@ -391,6 +391,33 @@
                   "unit_type_string0":"Commander",
                   "compare0":"<",
                   "value0":1
+               }
+            ],
+			[
+               {
+                  "test_type":"BaseThreatened",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicBotFabber"
+               },
+               {
+                  "test_type":"CurrentMetalEfficiency",
+                  "compare0":">",
+                  "value0":1.1
+               },
+               {
+                  "test_type":"CurrentEnergyEfficiency",
+                  "compare0":">",
+                  "value0":1.1
                }
             ]
 		 ]

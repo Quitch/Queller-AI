@@ -211,7 +211,7 @@
          "instance_count":1,
          "min_num_assisters":8,
          "max_num_assisters":20,
-         "priority":101,
+         "priority":102,
          "builders":[
             "OrbitalLauncher"
          ],
@@ -230,6 +230,60 @@
                {
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Structure & Teleporter",
+                  "compare0":"<",
+                  "value0":1
+               }
+            ],
+			[
+               {
+                  "test_type":"NoWhereToRun",
+                  "boolean":true
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Orbital & Transport",
+                  "compare0":"<",
+                  "value0":1
+               },
+               {
+                  "test_type":"CurrentEnergyEfficiency",
+                  "compare0":"<",
+                  "value0":1
+               }
+            ]
+         ]
+      },
+      {
+         "name":"Astraeus",
+         "to_build":"OrbitalLander",
+         "instance_count":1,
+         "max_num_assisters":5,
+         "priority":101,
+         "builders":[
+            "OrbitalLauncher"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"PlanetWithoutPresence",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Structure & Teleporter",
+                  "compare0":"<",
+                  "value0":1
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Orbital & Transport",
                   "compare0":"<",
                   "value0":1
                }
@@ -259,7 +313,7 @@
                   "value0":0
                },
 			   {
-                  "test_type":"PlanetThreatRatio",
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Orbital",
                   "string1":"AntiOrbital",
                   "compare0":"<",
@@ -280,7 +334,7 @@
                   "value0":0
                },
 			   {
-                  "test_type":"PlanetThreatRatio",
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Orbital",
                   "string1":"AntiOrbital",
                   "compare0":"<",
@@ -313,18 +367,21 @@
                   "value0":0
                },
 			   {
-                  "test_type":"PlanetThreatRatio",
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Orbital",
                   "string1":"AntiOrbital",
                   "compare0":"<",
                   "value0":1.0
                },
 			   {
-                  "test_type":"PlanetThreatRatio",
+                  "test_type":"PlanetHighestEnemyArmyThreat",
                   "string0":"Land",
-                  "string1":"Land",
                   "compare0":">",
                   "value0":0
+               },
+			   {
+                  "test_type":"PlanetIsGasGiant",
+                  "boolean":false
                }
             ]
          ]
@@ -360,7 +417,7 @@
                   "value0":1
                },
 			   {
-                  "test_type":"PlanetThreatRatio",
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Orbital",
                   "string1":"AntiOrbital",
                   "compare0":"<",
@@ -382,13 +439,6 @@
                   "string0":"Orbital",
                   "compare0":"<=",
                   "value0":0
-               },
-			   {
-                  "test_type":"PlanetThreatRatio",
-                  "string0":"Orbital",
-                  "string1":"AntiOrbital",
-                  "compare0":"<",
-                  "value0":1.0
                },
                {
                   "test_type":"CanAffordPotentialDrain",

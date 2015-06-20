@@ -20,10 +20,11 @@
                   "compare0":">=",
                   "value0":200
                },
-               {
-                  "test_type":"HaveSeenEnemyUnits",
-                  "unit_type_string0":"Air",
-                  "boolean":true
+			   {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Air",
+                  "compare0":">",
+                  "value0":0
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -68,6 +69,10 @@
             [
                {
                   "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":false
                },
                {
                   "test_type":"DistFromMainBase",
@@ -123,14 +128,19 @@
                   "test_type":"CanAffordBuildDemand"
                },
                {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":false
+               },
+               {
                   "test_type":"DistFromMainBase",
                   "compare0":">=",
                   "value0":200
                },
-               {
-                  "test_type":"HaveSeenEnemyUnits",
-                  "unit_type_string0":"Tank",
-                  "boolean":true
+			   {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Land",
+                  "compare0":">",
+                  "value0":0
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -157,8 +167,7 @@
                }
             ]
          }
-      },
-	  
+      },	  
       {
          "name":"Single Laser Defense Tower - Enemy Mex",
          "to_build":"BasicLandDefenseSingle",
@@ -192,7 +201,7 @@
             "threat":{
                "influence_type":"AntiSurface",
                "compare_type":"<",
-               "radius":200,
+               "radius":10,
                "value":50
 			},
             "unit_count_rules":[
@@ -245,7 +254,7 @@
             "threat":{
                "influence_type":"AntiSurface",
                "compare_type":"<",
-               "radius":200,
+               "radius":10,
                "value":50
 			},
             "unit_count_rules":[
@@ -287,10 +296,11 @@
                   "compare0":">=",
                   "value0":200
                },
-               {
-                  "test_type":"HaveSeenEnemyUnits",
-                  "unit_type_string0":"Naval",
-                  "boolean":true
+			   {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Naval",
+                  "compare0":">",
+                  "value0":0
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -336,7 +346,7 @@
                   "test_type":"CanAffordBuildDemand"
                },
                {
-                  "test_type":"PlanetThreatRatio",
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Air",
                   "string1":"AntiAir",
                   "compare0":">",
@@ -393,13 +403,17 @@
                   "test_type":"CanAffordBuildDemand"
                },
                {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":false
+               },
+               {
                   "test_type":"UnitCountInBase",
                   "unit_type_string0":"Structure & SurfaceDefense",
                   "compare0":"<",
                   "value0":1
                },
                {
-                  "test_type":"PlanetThreatRatio",
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Land",
                   "string1":"Land",
                   "compare0":">",
@@ -413,7 +427,7 @@
                },
                {
                   "test_type":"HaveSeenEnemyUnits",
-                  "unit_type_string0":"(Land & Mobile) & Advanced",
+                  "unit_type_string0":"Tank | Advanced",
                   "boolean":false
                },
                {
@@ -460,13 +474,17 @@
                   "test_type":"CanAffordBuildDemand"
                },
                {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":false
+               },
+               {
                   "test_type":"UnitCountInBase",
                   "unit_type_string0":"Structure & SurfaceDefense",
                   "compare0":"<",
                   "value0":3
                },
                {
-                  "test_type":"PlanetThreatRatio",
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Land",
                   "string1":"Land",
                   "compare0":">",
@@ -521,13 +539,17 @@
                   "test_type":"CanAffordBuildDemand"
                },
                {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":true
+               },
+               {
                   "test_type":"UnitCountInBase",
                   "unit_type_string0":"Structure & Naval & Defense",
                   "compare0":"<",
                   "value0":3
                },
                {
-                  "test_type":"PlanetThreatRatio",
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Naval",
                   "string1":"Naval",
                   "compare0":">",
@@ -588,7 +610,7 @@
                   "value0":4
                },
                {
-                  "test_type":"PlanetThreatRatio",
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Air",
                   "string1":"AntiAir",
                   "compare0":">",
@@ -600,10 +622,11 @@
                   "compare0":">=",
                   "value0":10
                },
-               {
-                  "test_type":"HaveSeenEnemyUnits",
-                  "unit_type_string0":"(Air & Mobile) & Advanced",
-                  "boolean":true
+			   {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Air",
+                  "compare0":">",
+                  "value0":5600
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -647,13 +670,17 @@
                   "test_type":"CanAffordBuildDemand"
                },
                {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
                   "test_type":"UnitCountInBase",
                   "unit_type_string0":"Structure & Advanced & SurfaceDefense",
                   "compare0":"<",
                   "value0":4
                },
                {
-                  "test_type":"PlanetThreatRatio",
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Land",
                   "string1":"Land",
                   "compare0":">",
@@ -664,11 +691,6 @@
                   "unit_type_string0":"Structure & (EnergyProduction | Factory)",
                   "compare0":">=",
                   "value0":10
-               },
-               {
-                  "test_type":"HaveSeenEnemyUnits",
-                  "unit_type_string0":"(Land & Mobile) & Advanced",
-                  "boolean":true
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -952,7 +974,7 @@
          "to_build":"AntiNukeSilo",
          "instance_count":1,
          "shared_instance_count":"AntiNukeSilo",
-         "priority":509,
+         "priority":510,
          "min_num_assisters":5,
          "max_num_assisters":12,
          "builders":[

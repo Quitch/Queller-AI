@@ -98,6 +98,10 @@
 			   {
                   "test_type":"UnableToExpand",
 				  "boolean":false
+               },			   
+			   {
+                  "test_type":"AllMetalSpotsFull",
+				  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -230,6 +234,35 @@
             ]
          ]
       },
+	  {
+         "name":"Boom",
+         "to_build":"BoomBot",
+         "instance_count":-1,
+         "max_num_assisters":10,
+         "priority":98,
+         "builders":[
+            "BasicBotFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"UnitCountAroundBase",
+                  "unit_type_string0":"Commander",
+                  "string0":"Enemy",
+                  "value0":400,
+                  "compare0":">=",
+                  "value1":1
+               },
+			   {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
       {
          "name":"Dox",
          "to_build":"BasicAssaultBot",
@@ -289,7 +322,7 @@
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Air & Scout",
+                  "unit_type_string0":"Air & Factory",
                   "compare0":"<",
                   "value0":1
                },
@@ -450,7 +483,7 @@
                   "boolean":true
                },
                {
-                  "test_type":"PlanetThreatRatio",
+                  "test_type":"FocusTargetThreatRatio",
                   "string0":"Land",
                   "string1":"Land",
                   "compare0":"<",
@@ -496,7 +529,7 @@
                   "boolean":true
                },
                {
-                  "test_type":"PlanetThreatRatio",
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Air",
                   "string1":"AntiAir",
                   "compare0":">",
@@ -505,7 +538,7 @@
                {
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Tank & AirDefense",
-                  "unit_type_string1":"Tank & Offense - AirDefense",
+                  "unit_type_string1":"(Tank & Offense) - AirDefense",
                   "compare0":"<",
                   "value0":0.2
                }
@@ -523,7 +556,7 @@
                   "boolean":true
                },
                {
-                  "test_type":"PlanetThreatRatio",
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Air",
                   "string1":"Air",
                   "compare0":">",
@@ -532,7 +565,7 @@
                {
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Tank & AirDefense",
-                  "unit_type_string1":"Tank & Offense - AirDefense",
+                  "unit_type_string1":"(Tank & Offense) - AirDefense",
                   "compare0":"<",
                   "value0":0.2
                }
@@ -552,7 +585,7 @@
                {
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Tank & AirDefense",
-                  "unit_type_string1":"Tank & Offense - AirDefense",
+                  "unit_type_string1":"(Tank & Offense) - AirDefense",
                   "compare0":"<",
                   "value0":0.2
                }
@@ -667,6 +700,33 @@
                   "compare0":"<",
                   "value0":1
                }
+            ],
+			[
+               {
+                  "test_type":"BaseThreatened",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"AdvancedBotFabber"
+               },
+               {
+                  "test_type":"CurrentMetalEfficiency",
+                  "compare0":">",
+                  "value0":1.1
+               },
+               {
+                  "test_type":"CurrentEnergyEfficiency",
+                  "compare0":">",
+                  "value0":1.1
+               }
             ]
          ]
       },
@@ -777,6 +837,50 @@
                   "unit_type_string0":"Commander",
                   "compare0":"<",
                   "value0":1
+               }
+            ],
+			[
+               {
+                  "test_type":"BaseThreatened",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"AdvancedVehicleFabber"
+               },
+               {
+                  "test_type":"CurrentMetalEfficiency",
+                  "compare0":">",
+                  "value0":1.1
+               },
+               {
+                  "test_type":"CurrentEnergyEfficiency",
+                  "compare0":">",
+                  "value0":1.1
+               }
+            ]
+         ]
+      },
+	  {
+         "name":"Slammer",
+         "to_build":"AdvancedAssaultBot",
+         "instance_count":-1,
+         "max_num_assisters":15,
+         "priority":199,
+         "builders":[
+            "UnitCannon"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ]

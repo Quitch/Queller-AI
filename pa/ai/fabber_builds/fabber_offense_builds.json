@@ -93,9 +93,53 @@
             "threat":{
                "influence_type":"AntiSurface",
                "compare_type":"<",
-               "radius":10,
+               "radius":30,
                "value":50
             }
+         }
+      },
+      {
+         "name":"Unit Cannon",
+         "to_build":"UnitCannon",
+         "instance_count":1,
+         "shared_instance_count":"UnitCannon",
+         "min_num_assisters":3,
+         "max_num_assisters":12,
+         "priority":507,
+         "builders":[
+            "AnyAdvancedFabber"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+               {
+                  "test_type":"PlanetWithoutPresence",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"UnitCannon"
+               },
+               {
+                  "test_type":"SystemThreat",
+                  "string0":"Economy",
+                  "compare0":">",
+                  "value0":0
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"UnitCannon"
+               }
+            ]
+         ],
+         "placement_rules":{
+            "buffer":2
          }
       },
       {
@@ -191,7 +235,7 @@
             "threat":{
                "influence_type":"AntiSurface",
                "compare_type":"<",
-               "radius":10,
+               "radius":30,
                "value":50
             }
          }
@@ -237,7 +281,7 @@
          "shared_instance_count":"NukeSilo",
          "min_num_assisters":3,
          "max_num_assisters":12,
-         "priority":508,
+         "priority":507,
          "builders":[
             "AnyAdvancedFabber"
          ],
@@ -292,6 +336,31 @@
                },
                {
                   "test_type":"PlanetThreat",
+                  "string0":"AntiNuke",
+                  "compare0":"<=",
+                  "value0":0
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"NukeSilo"
+               }
+            ],
+			[
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Structure & Nuke",
+                  "compare0":"<",
+                  "value0":1
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+			   {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"NukeSilo"
+               },
+               {
+                  "test_type":"SystemThreat",
                   "string0":"AntiNuke",
                   "compare0":"<=",
                   "value0":0

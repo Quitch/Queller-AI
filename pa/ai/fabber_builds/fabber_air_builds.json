@@ -51,10 +51,36 @@
 				  "value0":1
                },
 			   {
-                  "test_type":"PlanetThreatRatio",
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Air",
                   "string1":"AntiAir",
-                  "compare0":">",
+                  "compare0":">=",
+                  "value0":1.0
+               },
+			   {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicAirFactory"
+               }
+			],			
+			[
+			   {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicAirFactory"
+               },
+			   {
+                  "test_type":"UnitCountOnPlanet",
+				  "unit_type_string0":"Factory - Orbital",
+				  "compare0":">=",
+				  "value0":1
+               },
+			   {
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
+                  "string0":"Air",
+                  "string1":"Air",
+                  "compare0":">=",
                   "value0":1.0
                },
 			   {
@@ -83,7 +109,7 @@
                {
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Factory & Air",
-                  "unit_type_string1":"Factory - Air - Orbital",
+                  "unit_type_string1":"Factory & (Land | Naval)",
                   "compare0":"<",
                   "value0":0.2
                },
@@ -120,28 +146,10 @@
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirFactory"
                }
-			],
-			[
-			   {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Factory - Orbital",
-                  "compare0":"<",
-                  "value0":1
-               },
-			   {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Structure & Teleporter",
-                  "compare0":">=",
-                  "value0":1
-               },
-			   {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicVehicleFactory"
-               }
 			]
          ],
          "placement_rules":{
-			"buffer":5,
+			"buffer":3,
             "threat":{
                "influence_type":"AntiSurface",
                "compare_type":"<",
@@ -151,12 +159,12 @@
          }
       },
 	  {
-         "name":"Basic Air Factory - Commander - air is the only option",
+         "name":"Basic Air Factory - Commander - No later than third factory",
          "to_build":"BasicAirFactory",
          "instance_count":1,
          "shared_instance_count":"BasicFactory",
          "max_num_assisters":2,
-         "priority":375,
+         "priority":377,
          "builders":[
             "Commander"
          ],
@@ -169,17 +177,15 @@
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"BasicAirFactory"
                },
-               {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanDeployNavalFromBase",
-                  "boolean":false
+			   {
+                  "test_type":"UnitCount",
+				  "unit_type_string0":"Factory - Orbital",
+				  "compare0":"==",
+				  "value0":2
                },
 			   {
-                  "test_type":"UnitCountOnPlanet",
-				  "unit_type_string0":"Factory & (Land | Naval)",
+                  "test_type":"UnitCount",
+				  "unit_type_string0":"Factory & Air",
 				  "compare0":"<",
 				  "value0":1
                },
@@ -190,7 +196,7 @@
 			]
          ],
          "placement_rules":{
-			"buffer":5,
+			"buffer":3,
             "threat":{
                "influence_type":"AntiSurface",
                "compare_type":"<",
@@ -227,7 +233,7 @@
                {
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Factory & Air",
-                  "unit_type_string1":"Factory - Air - Orbital",
+                  "unit_type_string1":"Factory & (Land | Naval)",
                   "compare0":"<",
                   "value0":0.2
                },
@@ -270,10 +276,30 @@
                   "string0":"BasicAirFactory"
                },
 			   {
-                  "test_type":"PlanetThreatRatio",
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Air",
                   "string1":"AntiAir",
-                  "compare0":">",
+                  "compare0":">=",
+                  "value0":1.0
+               },
+			   {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicAirFactory"
+               }
+			],			
+			[
+			   {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicAirFactory"
+               },
+			   {
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
+                  "string0":"Air",
+                  "string1":"Air",
+                  "compare0":">=",
                   "value0":1.0
                },
 			   {
@@ -303,8 +329,266 @@
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirFactory"
                }
+			]
+         ],
+         "placement_rules":{
+			"buffer":3,
+            "threat":{
+               "influence_type":"AntiSurface",
+               "compare_type":"<",
+               "radius":10,
+               "value":50
+            }
+         }
+      },
+	  {
+         "name":"Basic Air Factory - Fabber - No later than third factory",
+         "to_build":"BasicAirFactory",
+         "instance_count":1,
+         "shared_instance_count":"BasicFactory",
+         "min_num_assisters":1,
+		 "max_num_assisters":3,
+         "priority":377,
+         "builders":[
+            "AnyBasicFabber"
+         ],
+         "build_conditions":[
+            [
+			   {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicAirFactory"
+               },
+			   {
+                  "test_type":"UnitCount",
+				  "unit_type_string0":"Factory - Orbital",
+				  "compare0":"==",
+				  "value0":2
+               },
+			   {
+                  "test_type":"UnitCount",
+				  "unit_type_string0":"Factory & Air",
+				  "compare0":"<",
+				  "value0":1
+               },
+			   {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicAirFactory"
+               }
+			]
+         ],
+         "placement_rules":{
+			"buffer":3,
+            "threat":{
+               "influence_type":"AntiSurface",
+               "compare_type":"<",
+               "radius":10,
+               "value":50
+            }
+         }
+      },
+	  {
+         "name":"Basic Air Factory - Excess eco",
+         "to_build":"BasicAirFactory",
+         "instance_count":-1,
+         "shared_instance_count":"BasicFactory",
+         "priority":374,
+         "min_num_assisters":3,
+         "max_num_assisters":5,
+         "builders":[
+		    "Commander",
+            "AnyBasicFabber",
+			"AnyAdvancedFabber"
+         ],
+         "build_conditions":[
+            [
+			   {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicAirFactory"
+               },
+			   {
+                  "test_type":"AloneOnPlanet",
+				  "boolean":false
+               },
+               {
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Factory & Air",
+                  "unit_type_string1":"Factory & (Land | Naval)",
+                  "compare0":"<",
+                  "value0":0.2
+               },
+			   {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicAirFactory"
+               },
+               {
+                  "test_type":"CurrentMetalEfficiency",
+                  "compare0":">",
+                  "value0":1.1
+               },
+               {
+                  "test_type":"CurrentEnergyEfficiency",
+                  "compare0":">",
+                  "value0":1.1
+               }
 			],
 			[
+			   {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicAirFactory"
+               },
+			   {
+                  "test_type":"AloneOnPlanet",
+				  "boolean":false
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":false
+               },
+			   {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicAirFactory"
+               },
+               {
+                  "test_type":"CurrentMetalEfficiency",
+                  "compare0":">",
+                  "value0":1.1
+               },
+               {
+                  "test_type":"CurrentEnergyEfficiency",
+                  "compare0":">",
+                  "value0":1.1
+               }
+			],
+			[
+			   {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicAirFactory"
+               },
+			   {
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
+                  "string0":"Air",
+                  "string1":"AntiAir",
+                  "compare0":">=",
+                  "value0":1.0
+               },
+			   {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicAirFactory"
+               },
+               {
+                  "test_type":"CurrentMetalEfficiency",
+                  "compare0":">",
+                  "value0":1.1
+               },
+               {
+                  "test_type":"CurrentEnergyEfficiency",
+                  "compare0":">",
+                  "value0":1.1
+               }
+			],
+			[
+			   {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicAirFactory"
+               },
+			   {
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
+                  "string0":"Air",
+                  "string1":"Air",
+                  "compare0":">=",
+                  "value0":1.0
+               },
+			   {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicAirFactory"
+               },
+               {
+                  "test_type":"CurrentMetalEfficiency",
+                  "compare0":">",
+                  "value0":1.1
+               },
+               {
+                  "test_type":"CurrentEnergyEfficiency",
+                  "compare0":">",
+                  "value0":1.1
+               }
+			],
+			[
+			   {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicAirFactory"
+               },
+			   {
+                  "test_type":"AloneOnPlanet",
+				  "boolean":true
+               },
+               {
+                  "test_type":"UnitCountPerPlanetRadius",
+                  "unit_type_string0":"Air & Factory",
+                  "compare0":"<",
+                  "value0":200
+               },
+			   {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicAirFactory"
+               },
+               {
+                  "test_type":"CurrentMetalEfficiency",
+                  "compare0":">",
+                  "value0":1.1
+               },
+               {
+                  "test_type":"CurrentEnergyEfficiency",
+                  "compare0":">",
+                  "value0":1.1
+               }
+			]
+         ],
+         "placement_rules":{
+			"buffer":3,
+            "threat":{
+               "influence_type":"AntiSurface",
+               "compare_type":"<",
+               "radius":10,
+               "value":50
+            }
+         }
+      },
+	  {
+         "name":"Basic Air Factory - Arrived on a new world",
+         "to_build":"BasicAirFactory",
+         "instance_count":1,
+         "shared_instance_count":"BasicFactory",
+         "max_num_assisters":2,
+         "priority":601,
+         "builders":[
+            "Commander",
+			"AnyBasicFabber"
+         ],
+         "build_conditions":[
+            [
 			   {
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Factory - Orbital",
@@ -312,23 +596,27 @@
                   "value0":1
                },
 			   {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Structure & Teleporter",
+                  "test_type":"UnitCount",
+                  "unit_type_string0":"Mobile - Commander",
                   "compare0":">=",
                   "value0":1
                },
+               {
+                  "test_type":"PresenceOnOtherPlanet",
+                  "boolean":true
+               },
 			   {
                   "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicVehicleFactory"
+                  "string0":"BasicAirFactory"
                }
 			]
          ],
          "placement_rules":{
-			"buffer":5,
+			"buffer":3,
             "threat":{
                "influence_type":"AntiSurface",
                "compare_type":"<",
-               "radius":10,
+               "radius":100,
                "value":50
             }
          }
@@ -339,8 +627,8 @@
          "instance_count":1,
          "shared_instance_count":"AdvancedFactory",
          "priority":477,
-         "min_num_assisters":3,
-         "max_num_assisters":5,
+         "min_num_assisters":5,
+         "max_num_assisters":8,
          "builders":[
             "BasicAirFabber",
             "AdvancedAirFabber"
@@ -372,7 +660,7 @@
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Factory & Air & Advanced",
                   "compare0":"<",
-                  "value0":1
+                  "value0":2
                },
                {
                   "test_type":"PlanetHasUseablePlanetWeapon",
@@ -385,7 +673,7 @@
             ]
          ],
          "placement_rules":{
-            "buffer":5,
+            "buffer":3,
             "threat":{
                "influence_type":"AntiSurface",
                "compare_type":"<",

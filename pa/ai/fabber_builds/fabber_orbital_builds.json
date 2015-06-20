@@ -30,8 +30,8 @@
                   "boolean":true
                },
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"(Factory & Orbital) & Basic",
+                  "test_type":"UnitCount",
+                  "unit_type_string0":"Factory & Orbital",
                   "compare0":"<",
                   "value0":1
                },
@@ -57,8 +57,36 @@
                   "boolean":true
                },
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Factory & Orbital & Basic",
+                  "test_type":"UnitCount",
+                  "unit_type_string0":"Factory & Orbital",
+                  "compare0":"<",
+                  "value0":1
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"OrbitalLauncher"
+               }
+            ],
+			[
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+			   {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"OrbitalLauncher"
+               },
+               {
+                  "test_type":"PlanetWithoutPresence",
+                  "boolean":true
+               },
+               {
+                  "test_type":"SpawnablePlanetCount",
+                  "compare0":"==",
+                  "value0":1
+               },
+               {
+                  "test_type":"UnitCount",
+                  "unit_type_string0":"Factory & Orbital",
                   "compare0":"<",
                   "value0":1
                },
@@ -82,8 +110,34 @@
                   "value0":1
                },
                {
+                  "test_type":"UnitCount",
+                  "unit_type_string0":"Factory & Orbital",
+                  "compare0":"<",
+                  "value0":1
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"OrbitalLauncher"
+               }
+            ],
+			[               
+			   {
+                  "test_type":"NoWhereToRun",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CurrentEnergyEfficiency",
+                  "compare0":"<",
+                  "value0":1
+               },
+               {
+                  "test_type":"PlanetCount",
+                  "compare0":">",
+                  "value0":1
+               },
+               {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Factory & Orbital & Basic",
+                  "unit_type_string0":"Factory & Orbital",
                   "compare0":"<",
                   "value0":1
                },
@@ -94,7 +148,7 @@
             ]
          ],
          "placement_rules":{
-            "buffer":5
+            "buffer":3
          }
       },
 	  {
@@ -112,10 +166,6 @@
          "build_conditions":[
             [
                {
-                  "test_type":"BaseThreatened",
-                  "boolean":false
-               },
-			   {
                   "test_type":"CanAffordBuildDemand"
                },
 			   {
@@ -123,28 +173,16 @@
                   "string0":"OrbitalLauncher"
                },
                {
-                  "test_type":"PlanetWithoutPresence",
-                  "boolean":true
-               },
-			   {
-                  "test_type":"NeedOrbitalLauncher"
+                  "test_type":"PlanetCount",
+                  "compare0":">",
+                  "value0":1
                },
                {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-			   {
-                  "test_type":"PlanetThreatRatio",
-                  "string0":"Land",
-                  "string1":"Land",
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Factory & Orbital",
+                  "unit_type_string1":"Factory - Orbital",
                   "compare0":"<",
-                  "value0":0.8
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"(Fabber & Construction) - Orbital",
-                  "compare0":">=",
-                  "value0":5
+                  "value0":0.05
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -153,10 +191,6 @@
             ],
 			[
                {
-                  "test_type":"BaseThreatened",
-                  "boolean":false
-               },
-			   {
                   "test_type":"CanAffordBuildDemand"
                },
 			   {
@@ -167,25 +201,31 @@
                   "test_type":"PlanetWithoutPresence",
                   "boolean":true
                },
-			   {
-                  "test_type":"NeedOrbitalLauncher"
+               {
+                  "test_type":"UnitCount",
+                  "unit_type_string0":"Factory & Orbital",
+                  "compare0":"<",
+                  "value0":1
                },
                {
-                  "test_type":"CanDeployNavalFromBase",
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"OrbitalLauncher"
+               }
+            ],
+			[
+               {
+                  "test_type":"PlanetWithoutPresence",
                   "boolean":true
                },
-			   {
-                  "test_type":"PlanetThreatRatio",
-                  "string0":"Naval",
-                  "string1":"Naval",
-                  "compare0":"<",
-                  "value0":0.8
+               {
+                  "test_type":"UnableToExpand",
+                  "boolean":true
                },
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"(Fabber & Construction) - Orbital",
-                  "compare0":">=",
-                  "value0":5
+                  "test_type":"UnitCount",
+                  "unit_type_string0":"Orbital & Factory",
+                  "compare0":"<",
+                  "value0":1
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -194,7 +234,7 @@
             ]
          ],
          "placement_rules":{
-            "buffer":5
+            "buffer":3
          }
       },
 	  {
@@ -217,10 +257,8 @@
                   "string0":"OrbitalFactory"
                },
 			   {
-                  "test_type":"UnitCountOnPlanet",
-                  "string0":"Orbital & Structure & Economy",
-                  "compare0":">=",
-                  "value0":1
+                  "test_type":"PlanetIsGasGiant",
+                  "boolean":true
                },
 			   {
                   "test_type":"UnitCountOnPlanet",
@@ -251,7 +289,7 @@
             ]
          ],
          "placement_rules":{
-            "buffer":5
+            "buffer":3
          }
       },
 	  {
@@ -383,7 +421,11 @@
                   "value0":1
                },
                {
-                  "test_type":"PlanetCanBeUsedAsWeapon",
+                  "test_type":"PlanetIsMainEcoBase",
+                  "boolean":false
+               },
+               {
+                  "test_type":"PlanetCanBeUsedAsKineticWeapon",
                   "boolean":true
                },
                {
@@ -401,7 +443,7 @@
             ]
          ],
          "placement_rules":{
-            "buffer":5
+            "buffer":3
          }
       },
       {
@@ -417,6 +459,10 @@
          "build_conditions":[
             [
                {
+                  "test_type":"PlanetIsGasGiant",
+                  "boolean":true
+               },
+			   {
                   "test_type":"DesireEnergy"
                },
                {
@@ -426,6 +472,10 @@
             ],
 			[
                {
+                  "test_type":"PlanetIsGasGiant",
+                  "boolean":true
+               },
+			   {
                   "test_type":"DesireMetal"
                },
                {
@@ -449,8 +499,12 @@
             "OrbitalFabber"
          ],
          "build_conditions":[
-            [
+            [               
                {
+                  "test_type":"PlanetIsGasGiant",
+                  "boolean":true
+               },
+			   {
                   "test_type":"PotentialMetalEfficiency",
                   "compare0":"<",
                   "value0":1.0
@@ -462,6 +516,10 @@
             ],
 			[
                {
+                  "test_type":"PlanetIsGasGiant",
+                  "boolean":true
+               },
+			   {
                   "test_type":"PotentialEnergyEfficiency",
                   "compare0":"<",
                   "value0":1.0
@@ -475,38 +533,6 @@
          "placement_rules":{
             "buffer":30
          }
-      },
-      {
-         "name":"Move Fabber To Planet",
-         "instance_count":1,
-         "priority":800,
-         "builders":[
-            "BasicBotFabber",
-            "BasicVehicleFabber",
-            "AdvancedBotFabber",
-            "AdvancedVehicleFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"PlanetWithoutPresence",
-                  "boolean":true
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Fabber",
-                  "compare0":">=",
-                  "value0":2
-               },
-               {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"Orbital & Transport",
-                  "compare0":">=",
-                  "value0":1
-               }
-            ]
-         ],
-         "task_type":"TransportToPlanet"
       },
       {
          "name":"Move Orbital Fabber To Planet",

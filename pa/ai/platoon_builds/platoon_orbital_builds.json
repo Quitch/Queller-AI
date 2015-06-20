@@ -41,6 +41,16 @@
                   "boolean":true
                }
             ],
+			[
+               {
+                  "test_type":"PlanetIsGasGiant",
+                  "boolean":true
+               },
+               {
+                  "test_type":"OtherPlanetNeedsReconAssistance",
+                  "boolean":true
+               }
+            ],
             [
                {
                   "test_type":"OtherPlanetNeedsReconAssistance",
@@ -75,10 +85,12 @@
             ],
 			[
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Orbital & Structure & Economy",
-                  "compare0":">=",
-                  "value0":1
+                  "test_type":"PlanetIsGasGiant",
+                  "boolean":true
+               },
+               {
+                  "test_type":"PlanetWithoutPresence",
+                  "boolean":true
                }
             ]
          ],

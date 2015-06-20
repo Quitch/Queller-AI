@@ -20,34 +20,13 @@
                   "string0":"BasicNavalFactory"
                },
                {
-                  "test_type":"CanDeployNavalFromBase",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicNavalFactory"
-               }
-            ],
-			[
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicNavalFactory"
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":false
-               },
-               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicNavalFactory"
                }
             ]
          ],
          "placement_rules":{
-			"buffer":5,
+			"buffer":3,
             "threat":{
                "influence_type":"AntiSurface",
                "compare_type":"<",
@@ -61,11 +40,12 @@
          "to_build":"BasicNavalFactory",
          "instance_count":1,
          "shared_instance_count":"BasicNavalFactory",
-         "priority":376,
+         "priority":377,
          "min_num_assisters":2,
          "max_num_assisters":4,
          "builders":[
-            "AnyBasicFabber",
+            "BasicAirFabber",
+			"BasicNavalFabber",
             "AdvancedNavalFabber"
          ],
          "build_conditions":[
@@ -89,8 +69,34 @@
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicNavalFactory"
                }
-            ],
-			[
+            ]
+         ],
+         "placement_rules":{
+			"buffer":3,
+            "threat":{
+               "influence_type":"AntiSurface",
+               "compare_type":"<",
+               "radius":10,
+               "value":50
+            }
+         }
+	  },
+	  {
+         "name":"Basic Naval Factory - Excess eco",
+         "to_build":"BasicNavalFactory",
+         "instance_count":-1,
+         "shared_instance_count":"BasicNavalFactory",
+         "priority":374,
+         "min_num_assisters":3,
+         "max_num_assisters":5,
+         "builders":[
+		    "Commander",
+            "BasicAirFabber",
+			"BasicNavalFabber",
+            "AdvancedNavalFabber"
+         ],
+         "build_conditions":[
+            [
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
@@ -103,17 +109,27 @@
                   "string0":"BasicNavalFactory"
                },
                {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":false
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":true
                },
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicNavalFactory"
+               },
+               {
+                  "test_type":"CurrentMetalEfficiency",
+                  "compare0":">",
+                  "value0":1.1
+               },
+               {
+                  "test_type":"CurrentEnergyEfficiency",
+                  "compare0":">",
+                  "value0":1.1
                }
             ]
          ],
          "placement_rules":{
-			"buffer":5,
+			"buffer":3,
             "threat":{
                "influence_type":"AntiSurface",
                "compare_type":"<",
@@ -128,8 +144,8 @@
          "instance_count":1,
          "shared_instance_count":"AdvancedFactory",
          "priority":477,
-         "min_num_assisters":3,
-         "max_num_assisters":5,
+         "min_num_assisters":5,
+         "max_num_assisters":8,
          "builders":[
             "BasicNavalFabber",
             "AdvancedNavalFabber"
@@ -162,7 +178,7 @@
                   "value0":5
                },
 			   {
-                  "test_type":"PlanetThreatRatio",
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Naval",
 				  "string1":"Naval",
                   "compare0":"<",
@@ -200,7 +216,7 @@
                   "value0":1
                },
 			   {
-                  "test_type":"PlanetThreatRatio",
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Naval",
 				  "string1":"Naval",
                   "compare0":"<",
@@ -213,7 +229,7 @@
             ]
          ],
          "placement_rules":{
-			"buffer":5,
+			"buffer":3,
             "threat":{
                "influence_type":"AntiSurface",
                "compare_type":"<",
