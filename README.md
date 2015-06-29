@@ -11,7 +11,9 @@ The AI should work with any difficulty/personality, but it is only being tested 
 
 Any feedback is greatly appreciated. For issues please include a link to the game on [PA Stats](http://www.pastats.com/) or the replay ID. Failing that, please provide the system name, the number of AIs, their difficulty setting, and which slot(s) the players occupied.
 
-### THINGS I WANT TO ACHIEVE
+## GOALS
+
+Some of these might prove impossible given the tooling available, only time will tell.
 
 - Opening builds aligned with real players
 - Unit mixes suited to current balance
@@ -26,4 +28,32 @@ Any feedback is greatly appreciated. For issues please include a link to the gam
 - Using bombers more appropriately
 - Changing of strategies according to planet size
 - Changing of strategies according to player density
-- Some of these might prove impossible given the tooling available, only time will tell.
+
+## MAP NOTES
+
+#### Forge
+
+The AI plays far worse in the northern spawn
+
+#### Pacific
+
+The AI will generally play better in the southern spawn
+
+## THINGS I AM THINKING ABOUT
+
+- Compare enemy mobile presence to static defence and adjust army ratio accordingly
+- Get the Commander to build walls around itself when under threat
+- Can the Commander be assigned to a platoon?
+- How can I detect the AI is in a FFA and adjust decisions accordingly?
+- Only tech on land when alone or unable to expand and ditch the whole idea of teching while winning? Perhaps don't tech when winning if no one else is teching?
+- Better optimise the opening factory to eco builds
+- Needs to be think about when to stop building at sea/land on mixed maps
+
+## THANKS TO
+
+- Sorian of Uber Entertainment, for
+ - making his AI moddable
+ - answering my questions
+ - taking on suggestions
+ - fixing bugs as they come up
+ - adding cool new features which make the AI increasingly smart

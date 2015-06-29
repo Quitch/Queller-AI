@@ -4,14 +4,13 @@ Integrated new AI checks to replace hacky workarounds
 Builds its factories tighter
 More cautious about artillery placement
 Won't Halley if the planet is its eco centre
-Added support for the Unit Cannon
 Won't transfer troops to another planet when its base is threatened
 Uses the new threat considerations when making fabber and army decisions so as to behave smarter in games with more than two players/teams
 Requires a safe zone around teleporter builds
 Added support for the Unit Cannon
 Added Slammer support for use by the Unit Cannon
 Will use an Astraeus rather than a Teleporter to get off planet when its base is in water
-Will rush build orbital if far enough away from enemies, especially in multiplanet systems with only one spawnable planet
+Will pursue orbital more aggressively when on multiplanet systems with only one spawnable planet
 Prioritise a factory above all else on arrival at a new world
 Will evac Commander by Astraeus if it doesn't have the energy to run its teleporters
 Use new eco checks to be more aggressive about avoiding eco floating
@@ -23,13 +22,23 @@ Less likely to build laser towers on water
 Added Boom support
 Looks at the air situation as a whole rather than just anti-air when considering building more air factories
 Will sometimes send Krakkens off by themselves to take advantage of their stealth
-Better about getting into the water on Meso
+Better about getting into the water on maps like Meso
 Will scout with fighters again as a means to find and kill sneaky air fabbers
 Reduced the ratio of bot factories to planet size
-Replaced most HaveSeenEnemyUnit checks with threat assessments to avoid responding to threats which no longer exist
+Replaced HaveSeenEnemyUnit checks with threat assessments where possible to avoid responding to threats which no longer exist
 More reactive with its naval fleet compositions
-Complete overhaul of Naval fleet platoons
+Complete overhaul of Naval fleet platoons to make them more appropriate in size and avoid huge fleet in base syndrome
 Forced an air presence within the first three factories
+Introduced Queller personalities to allow for a range of difficulties - bronze is easier than normal and uber is harder than absurd
+Will no longer spam defence structures within a small area
+Will no longer loop the Commander through a teleporter
+Checks it has the radar necessary for ground anti-orbital defences
+Defends Halleys and Catalysts with ground anti-orbital
+PUT BACK PLACEMENT RULES IN BRONZE AND SILVER FABBER LAND ONCE UBER HAS FIXED
+Scales platoon sizes better in the late game
+Techs when there's no other way to grow the economy
+Tighter grip on economy
+Won't let nuke launchers sit idle for minutes at a time
 
 v1.3.3
 
@@ -296,13 +305,13 @@ Doesn't take over empty planets fast enough
 MAYBEFIX
 
 Doesn't handle enemy walls well
-Won't use more than one teleporter at a time
-Will use fabbers to construct factories when the commander is on planet
 
 WONTFIX
 
 Ignores the unit preferences of AI personalities
 Will build a late bot factory on land maps when it shouldn't
+Will use fabbers to construct factories when the commander is on planet
+Lower levels send out scouts which is a little unrealistic but necessary to set the flags which stop the AI building tanks on islands or navies in ponds
 
 CANTFIX
 
@@ -317,3 +326,4 @@ Will send orbital radar to gas giants
 Won't send Phoenixes between planets
 Will assign fabbers to a assist on a project that they could start earlier than the fabber they're assisting
 Will count orbital fabber as a fabber presence when looking to send fabbers through teleporters to planets without fabbers
+Won't use more than one teleporter at a time

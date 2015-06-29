@@ -1,0 +1,30 @@
+{
+   "build_list":[
+      {
+         "name":"Naval Attack Platoon Max",
+         "to_build":"Naval_Attack_Max",
+         "instance_count":1,
+         "priority":100,
+         "build_conditions":[
+            [
+               {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"(Naval & Mobile & Offense) - Scout",
+                  "compare0":">=",
+                  "value0":16
+               },
+               {
+                  "test_type":"CanAttackWithPoolUnits",
+                  "boolean":true
+               },
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+				  "boolean":true
+               }
+            ]
+         ],
+         "task_type":"NavalAttack"
+      }
+   ]
+}
