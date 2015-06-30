@@ -13,15 +13,12 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
                },
                {
                   "test_type":"FactoryHasOpenSlot"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ]
          ]
@@ -39,15 +36,12 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
                },
                {
                   "test_type":"FactoryHasOpenSlot"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ]
          ]

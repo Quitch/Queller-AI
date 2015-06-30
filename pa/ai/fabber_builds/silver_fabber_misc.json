@@ -13,17 +13,14 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
                },
-			   {
+               {
                   "test_type":"OnTaskType",
                   "string0":"BuilderAssist",
                   "boolean":false
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ],
@@ -44,19 +41,23 @@
          "build_conditions":[
             [
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Structure & Teleporter",
-                  "compare0":"<",
-                  "value0":1
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
                },
                {
                   "test_type":"PresenceOnOtherPlanet",
                   "boolean":true
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Structure & Teleporter",
+                  "compare0":"<",
+                  "value0":1
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"AdvancedVehicleFactory"
                }
             ]
          ],
@@ -79,11 +80,16 @@
          "builders":[
             "BasicBotFabber",
             "BasicVehicleFabber",
-			"AdvancedBotFabber",
+            "AdvancedBotFabber",
             "AdvancedVehicleFabber"
          ],
          "build_conditions":[
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
                {
                   "test_type":"PlanetWithoutFabberWithTeleporter",
                   "boolean":true
@@ -99,17 +105,12 @@
                   "unit_type_string0":"Fabber - Air - Orbital",
                   "compare0":">=",
                   "value0":2
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ],
          "task_type":"TeleportFabberToPlanet"
       },
-	  {
+      {
          "name":"Move Fabber To Planet",
          "instance_count":1,
          "priority":2,
@@ -124,14 +125,13 @@
          "build_conditions":[
             [
                {
-                  "test_type":"PlanetWithoutPresence",
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
                   "boolean":true
                },
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Fabber",
-                  "compare0":">=",
-                  "value0":2
+                  "test_type":"PlanetWithoutPresence",
+                  "boolean":true
                },
                {
                   "test_type":"UnitPoolCount",
@@ -140,9 +140,10 @@
                   "value0":1
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Fabber",
+                  "compare0":">=",
+                  "value0":2
                }
             ]
          ],
@@ -158,6 +159,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
+               {
                   "test_type":"PlanetOrGasGiantWithoutPresence",
                   "boolean":true
                },
@@ -166,11 +172,6 @@
                   "unit_type_string0":"Fabber & Orbital",
                   "compare0":">=",
                   "value0":2
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ],

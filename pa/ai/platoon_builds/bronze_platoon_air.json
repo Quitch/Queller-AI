@@ -8,6 +8,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
+               {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Air & (Bomber | Gunship)",
                   "compare0":">=",
@@ -18,11 +23,6 @@
                   "string0":"WL_AnySurface",
                   "string1":"WL_Air",
                   "unit_type_string0":"Mobile | Structure"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ]
          ],
@@ -36,6 +36,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
+               {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Air & Fighter",
                   "compare0":">=",
@@ -46,14 +51,14 @@
                   "string0":"WL_Air",
                   "string1":"WL_Air",
                   "unit_type_string0":"Mobile"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
                {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Air & Fighter",
@@ -66,11 +71,6 @@
                   "string1":"WL_Air",
                   "string2":"WL_Air",
                   "unit_type_string0":"Mobile | Structure"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ]
          ],

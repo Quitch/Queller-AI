@@ -8,6 +8,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Naval & Scout",
                   "compare0":">=",
@@ -16,11 +21,6 @@
                {
                   "test_type":"HaveFullPlanetIntel",
                   "boolean":false
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ],
@@ -29,16 +29,15 @@
       {
          "name":"Naval Attack Platoon Small",
          "to_build":"Naval_Attack_Small",
-         "instance_count":4,
+         "instance_count":5,
          "shared_instance_count":"Multitask",
          "priority":104,
          "build_conditions":[
             [
                {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"(Naval & Mobile & Offense) - Scout",
-                  "compare0":">=",
-                  "value0":1
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
@@ -47,13 +46,14 @@
                   "value0":1500
                },
                {
-                  "test_type":"CanAttackWithPoolUnits",
-                  "boolean":true
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"(Naval & Mobile & Offense) - Scout",
+                  "compare0":">=",
+                  "value0":1
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
+                  "test_type":"CanAttackWithPoolUnits",
+                  "boolean":true
                }
             ]
          ],
@@ -62,16 +62,15 @@
       {
          "name":"Naval Attack Platoon Medium",
          "to_build":"Naval_Attack_Medium",
-         "instance_count":4,
+         "instance_count":5,
          "shared_instance_count":"Multitask",
          "priority":103,
          "build_conditions":[
             [
                {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"(Naval & Mobile & Offense) - Scout",
-                  "compare0":">=",
-                  "value0":2
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
@@ -80,13 +79,14 @@
                   "value0":4995
                },
                {
-                  "test_type":"CanAttackWithPoolUnits",
-                  "boolean":true
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"(Naval & Mobile & Offense) - Scout",
+                  "compare0":">=",
+                  "value0":2
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
+                  "test_type":"CanAttackWithPoolUnits",
+                  "boolean":true
                }
             ]
          ],
@@ -95,16 +95,15 @@
       {
          "name":"Naval Attack Platoon Large",
          "to_build":"Naval_Attack_Large",
-         "instance_count":4,
+         "instance_count":5,
          "shared_instance_count":"Multitask",
          "priority":102,
          "build_conditions":[
             [
                {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"(Naval & Mobile & Offense) - Scout",
-                  "compare0":">=",
-                  "value0":4
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
@@ -113,13 +112,14 @@
                   "value0":9990
                },
                {
-                  "test_type":"CanAttackWithPoolUnits",
-                  "boolean":true
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"(Naval & Mobile & Offense) - Scout",
+                  "compare0":">=",
+                  "value0":4
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
+                  "test_type":"CanAttackWithPoolUnits",
+                  "boolean":true
                }
             ]
          ],
@@ -128,16 +128,15 @@
       {
          "name":"Naval Attack Platoon XLarge",
          "to_build":"Naval_Attack_XLarge",
-         "instance_count":4,
+         "instance_count":5,
          "shared_instance_count":"Multitask",
          "priority":101,
          "build_conditions":[
             [
                {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"(Naval & Mobile & Offense) - Scout",
-                  "compare0":">=",
-                  "value0":8
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
@@ -146,13 +145,14 @@
                   "value0":19980
                },
                {
-                  "test_type":"CanAttackWithPoolUnits",
-                  "boolean":true
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"(Naval & Mobile & Offense) - Scout",
+                  "compare0":">=",
+                  "value0":8
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
+                  "test_type":"CanAttackWithPoolUnits",
+                  "boolean":true
                }
             ]
          ],
@@ -161,11 +161,16 @@
       {
          "name":"Naval Attack Platoon Max",
          "to_build":"Naval_Attack_Max",
-         "instance_count":4,
+         "instance_count":5,
          "shared_instance_count":"Multitask",
          "priority":100,
          "build_conditions":[
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
                {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"(Naval & Mobile & Offense) - Scout",
@@ -175,11 +180,6 @@
                {
                   "test_type":"CanAttackWithPoolUnits",
                   "boolean":true
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ],
@@ -193,6 +193,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Naval & Advanced & Sub",
                   "compare0":">=",
@@ -201,11 +206,6 @@
                {
                   "test_type":"CanAttackWithPoolUnits",
                   "boolean":true
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ],

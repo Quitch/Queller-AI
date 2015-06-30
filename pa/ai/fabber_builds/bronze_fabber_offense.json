@@ -14,6 +14,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -25,11 +30,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicArtillery"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ]
          ],
@@ -72,16 +72,16 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"UnitCannon"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ]
          ],
@@ -102,6 +102,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -115,11 +120,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"LongRangeArtillery"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ]
          ],
@@ -156,16 +156,16 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"NukeSilo"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ]
          ],
@@ -186,7 +186,9 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
                },
                {
                   "test_type":"PlanetCanBeUsedAsKineticWeapon",
@@ -197,13 +199,11 @@
                   "boolean":false
                },
                {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"PlanetEngine"
+                  "test_type":"CanAffordBuildDemand"
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"PlanetEngine"
                }
             ]
          ],
@@ -224,6 +224,15 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
+               {
+                  "test_type":"PlanetHasUseablePlanetWeapon",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -232,17 +241,8 @@
                   "value0":1
                },
                {
-                  "test_type":"PlanetHasUseablePlanetWeapon",
-                  "boolean":true
-               },
-               {
                   "test_type":"CanFindControlPointToBuild",
                   "boolean":true
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ]
          ]

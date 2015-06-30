@@ -13,35 +13,28 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
+                  "test_type":"BaseThreat",
+                  "string0":"Orbital",
+                  "compare0":"<=",
+                  "value0":0
+               },
+               {
                   "test_type":"UnitCount",
                   "unit_type_string0":"Orbital & Fabber",
                   "compare0":"<",
                   "value0":1
-               },
-			   {
-                  "test_type":"BaseThreat",
-                  "string0":"Orbital",
-                  "compare0":"<=",
-                  "value0":0
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"platinum",
-				  "boolean":true
-               }
-            ],
-			[
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Orbital & Fabber",
-                  "compare0":"<",
-                  "value0":2
-               },
-			   {
-                  "test_type":"BaseThreat",
-                  "string0":"Orbital",
-                  "compare0":"<=",
-                  "value0":0
+                  "boolean":true
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -51,50 +44,55 @@
                   "string0":"OrbitalFabber"
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
+                  "test_type":"BaseThreat",
+                  "string0":"Orbital",
+                  "compare0":"<=",
+                  "value0":0
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Orbital & Fabber",
+                  "compare0":"<",
+                  "value0":2
                }
             ],
-			[
-               
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"OrbitalFabber"
+               },
+               {
+                  "test_type":"BaseThreat",
+                  "string0":"Orbital",
+                  "compare0":"<=",
+                  "value0":0
+               },
                {
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Fabber & Orbital",
                   "unit_type_string1":"Factory & Orbital",
                   "compare0":"<",
                   "value0":1
-               },
-			   {
-                  "test_type":"BaseThreat",
-                  "string0":"Orbital",
-                  "compare0":"<=",
-                  "value0":0
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"OrbitalFabber"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"platinum",
-				  "boolean":true
-               }
-            ],
-			[
+                  "boolean":true
+               },
                {
                   "test_type":"PlanetOrGasGiantWithoutPresence",
                   "boolean":true
                },
-			   {
-                  "test_type":"BaseThreat",
-                  "string0":"Orbital",
-                  "compare0":"<=",
-                  "value0":0
-               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -103,9 +101,10 @@
                   "string0":"OrbitalFabber"
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
+                  "test_type":"BaseThreat",
+                  "string0":"Orbital",
+                  "compare0":"<=",
+                  "value0":0
                }
             ]
          ]
@@ -122,17 +121,22 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
                },
-			   {
-                  "test_type":"BaseThreat",
-                  "string0":"Orbital",
-                  "compare0":"<=",
-                  "value0":0
+               {
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"BasicRadarSatellite"
+               },
+               {
+                  "test_type":"BaseThreat",
+                  "string0":"Orbital",
+                  "compare0":"<=",
+                  "value0":0
                },
                {
                   "test_type":"UnitCountPerPlanetRadius",
@@ -145,26 +149,26 @@
                   "unit_type_string0":"Orbital & Recon & Advanced - Structure",
                   "compare0":"<",
                   "value0":250
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"platinum",
-				  "boolean":true
-               }
-            ],
-			[
+                  "boolean":true
+               },
                {
                   "test_type":"CanAffordBuildDemand"
-               },
-			   {
-                  "test_type":"BaseThreat",
-                  "string0":"Orbital",
-                  "compare0":"<=",
-                  "value0":0
                },
                {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"BasicRadarSatellite"
+               },
+               {
+                  "test_type":"BaseThreat",
+                  "string0":"Orbital",
+                  "compare0":"<=",
+                  "value0":0
                },
                {
                   "test_type":"UnitCountPerPlanetRadius",
@@ -177,41 +181,36 @@
                   "unit_type_string0":"Orbital & Recon & Advanced - Structure",
                   "compare0":"<",
                   "value0":250
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"platinum",
-				  "boolean":true
-               }
-            ],
-			[
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-			   {
-                  "test_type":"BaseThreat",
-                  "string0":"Orbital",
-                  "compare0":"<=",
-                  "value0":0
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicRadarSatellite"
-               },
-               {
-                  "test_type":"UnitCount",
-                  "unit_type_string0":"Orbital & Factory & Advanced",
-                  "compare0":"<",
-                  "value0":1
+                  "boolean":true
                },
                {
                   "test_type":"OtherPlanetNeedsReconAssistance",
                   "boolean":true
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicRadarSatellite"
+               },
+               {
+                  "test_type":"BaseThreat",
+                  "string0":"Orbital",
+                  "compare0":"<=",
+                  "value0":0
+               },
+               {
+                  "test_type":"UnitCount",
+                  "unit_type_string0":"Orbital & Factory & Advanced",
+                  "compare0":"<",
+                  "value0":1
                }
             ]
          ]
@@ -229,6 +228,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -236,11 +240,6 @@
                   "string0":"Orbital",
                   "compare0":">",
                   "value0":0
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ]
          ]
@@ -258,6 +257,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
                   "test_type":"NoWhereToRun",
                   "boolean":true
                },
@@ -272,23 +276,17 @@
                   "unit_type_string0":"Structure & Teleporter",
                   "compare0":"<",
                   "value0":1
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"platinum",
-				  "boolean":true
-               }
-            ],
-			[
-               {
-                  "test_type":"NoWhereToRun",
                   "boolean":true
                },
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Orbital & Transport",
-                  "compare0":"<",
-                  "value0":1
+                  "test_type":"NoWhereToRun",
+                  "boolean":true
                },
                {
                   "test_type":"CurrentEnergyEfficiency",
@@ -296,9 +294,10 @@
                   "value0":1
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Orbital & Transport",
+                  "compare0":"<",
+                  "value0":1
                }
             ]
          ]
@@ -315,7 +314,9 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
                },
                {
                   "test_type":"PlanetWithoutPresence",
@@ -324,6 +325,9 @@
                {
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"UnitCountOnPlanet",
@@ -336,11 +340,6 @@
                   "unit_type_string0":"Orbital & Transport",
                   "compare0":"<",
                   "value0":1
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ]
          ]
@@ -357,56 +356,56 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
                   "test_type":"PotentialEnergyEfficiency",
                   "compare0":"<",
-                  "value0":1.0
-               },
-			   {
-                  "test_type":"BaseThreat",
-                  "string0":"Orbital",
-                  "compare0":"<=",
-                  "value0":0
-               },
-			   {
-                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
-                  "string0":"Orbital",
-                  "string1":"AntiOrbital",
-                  "compare0":"<",
-                  "value0":1.0
+                  "value0":1
                },
                {
                   "test_type":"CanAffordBuildDemand"
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
+                  "test_type":"BaseThreat",
+                  "string0":"Orbital",
+                  "compare0":"<=",
+                  "value0":0
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
+                  "string0":"Orbital",
+                  "string1":"AntiOrbital",
+                  "compare0":"<",
+                  "value0":1
                }
             ],
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
                   "test_type":"DesireEnergy"
-               },
-			   {
-                  "test_type":"BaseThreat",
-                  "string0":"Orbital",
-                  "compare0":"<=",
-                  "value0":0
-               },
-			   {
-                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
-                  "string0":"Orbital",
-                  "string1":"AntiOrbital",
-                  "compare0":"<",
-                  "value0":1.0
                },
                {
                   "test_type":"CanAffordBuildDemand"
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
+                  "test_type":"BaseThreat",
+                  "string0":"Orbital",
+                  "compare0":"<=",
+                  "value0":0
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
+                  "string0":"Orbital",
+                  "string1":"AntiOrbital",
+                  "compare0":"<",
+                  "value0":1
                }
             ]
          ]
@@ -423,35 +422,35 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
+                  "test_type":"PlanetIsGasGiant",
+                  "boolean":false
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
-			   {
+               {
                   "test_type":"BaseThreat",
                   "string0":"Orbital",
                   "compare0":"<=",
                   "value0":0
                },
-			   {
+               {
                   "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Orbital",
                   "string1":"AntiOrbital",
                   "compare0":"<",
-                  "value0":1.0
+                  "value0":1
                },
-			   {
+               {
                   "test_type":"PlanetHighestEnemyArmyThreat",
                   "string0":"Land",
                   "compare0":">",
                   "value0":0
-               },
-			   {
-                  "test_type":"PlanetIsGasGiant",
-                  "boolean":false
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ]
          ]
@@ -468,65 +467,65 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
-			   {
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"AdvancedRadarSatellite"
+               },
+               {
                   "test_type":"BaseThreat",
                   "string0":"Orbital",
                   "compare0":"<=",
                   "value0":0
                },
                {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"AdvancedRadarSatellite"
-               },
-			   {
-                  "test_type":"UnitCountOnPlanet",
-                  "string0":"Orbital & Structure & Economy",
-                  "compare0":"<",
-                  "value0":1
-               },
-			   {
                   "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Orbital",
                   "string1":"AntiOrbital",
                   "compare0":"<",
-                  "value0":1.0
+                  "value0":1
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "string0":"Orbital & Structure & Economy",
+                  "compare0":"<",
+                  "value0":1
                },
                {
                   "test_type":"UnitCountPerPlanetRadius",
                   "unit_type_string0":"Orbital & Recon & Advanced - Structure",
                   "compare0":"<",
                   "value0":250
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ],
             [
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-			   {
-                  "test_type":"BaseThreat",
-                  "string0":"Orbital",
-                  "compare0":"<=",
-                  "value0":0
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"AdvancedRadarSatellite"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
                },
                {
                   "test_type":"OtherPlanetNeedsReconAssistance",
                   "boolean":true
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"AdvancedRadarSatellite"
+               },
+               {
+                  "test_type":"BaseThreat",
+                  "string0":"Orbital",
+                  "compare0":"<=",
+                  "value0":0
                }
             ]
          ]

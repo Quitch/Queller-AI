@@ -12,6 +12,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
@@ -26,14 +31,14 @@
                   "unit_type_string0":"Fabber & Basic",
                   "compare0":"<",
                   "value0":3
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
                {
                   "test_type":"BaseThreatened",
                   "boolean":false
@@ -54,14 +59,14 @@
                   "unit_type_string0":"Fabber & Basic & Naval",
                   "compare0":"<",
                   "value0":2
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
                {
                   "test_type":"BaseThreatened",
                   "boolean":false
@@ -91,14 +96,14 @@
                   "unit_type_string1":"Factory & Basic & Naval",
                   "compare0":"<",
                   "value0":1
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
@@ -124,14 +129,14 @@
                   "unit_type_string1":"Factory & Basic & Naval",
                   "compare0":"<",
                   "value0":3
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
@@ -156,11 +161,6 @@
                   "unit_type_string0":"Commander",
                   "compare0":"<",
                   "value0":1
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ]
          ]
@@ -176,6 +176,11 @@
          ],
          "build_conditions":[
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
@@ -202,14 +207,14 @@
                   "unit_type_string0":"Naval & Scout",
                   "compare0":"<",
                   "value0":250
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"platinum",
-				  "boolean":true
-               }
-            ],
-			[
+                  "boolean":true
+               },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
@@ -234,11 +239,6 @@
                   "unit_type_string0":"Naval & Scout",
                   "compare0":"<",
                   "value0":1
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ]
          ]
@@ -255,6 +255,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
                },
@@ -266,14 +271,14 @@
                   "unit_type_string0":"Naval & Mobile & Offense",
                   "compare0":"<",
                   "value0":5
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
@@ -283,19 +288,14 @@
                   "boolean":true
                },
                {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
                   "test_type":"FocusTargetThreatRatio",
                   "string0":"Sub",
                   "string1":"AntiSub",
                   "compare0":"<",
-                  "value0":1.0
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
+                  "value0":1
                }
             ]
          ]
@@ -312,6 +312,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
                },
@@ -323,14 +328,14 @@
                   "unit_type_string0":"Naval & Mobile & Offense",
                   "compare0":"<",
                   "value0":5
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
@@ -338,6 +343,9 @@
                {
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"FocusTargetThreatRatio",
@@ -345,17 +353,14 @@
                   "string1":"AntiAir",
                   "compare0":">",
                   "value0":0.75
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
@@ -363,6 +368,9 @@
                {
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"FocusTargetThreatRatio",
@@ -370,17 +378,14 @@
                   "string1":"AntiSub",
                   "compare0":">",
                   "value0":0.75
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
@@ -390,19 +395,14 @@
                   "boolean":true
                },
                {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Naval & AirDefense",
                   "unit_type_string1":"(Naval & Offense) - AirDefense",
                   "compare0":"<",
                   "value0":0.2
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ]
          ]
@@ -419,37 +419,42 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
                },
                {
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"FocusTargetThreatRatio",
                   "string0":"Naval",
                   "string1":"Naval",
                   "compare0":">",
-                  "value0":1.0
+                  "value0":1
                },
                {
                   "test_type":"FocusTargetThreatRatio",
                   "string0":"Air",
                   "string1":"AntiAir",
                   "compare0":"<",
-                  "value0":1.0
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
+                  "value0":1
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"platinum",
-				  "boolean":true
-               }
-            ],
-			[
+                  "boolean":true
+               },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
@@ -459,18 +464,13 @@
                   "boolean":true
                },
                {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
                   "test_type":"FocusTargetThreat",
                   "string0":"AntiSub",
                   "compare0":"<",
                   "value0":1650
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ]
          ]
@@ -487,6 +487,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
@@ -495,14 +500,14 @@
                   "unit_type_string0":"Fabber & Advanced & Naval",
                   "compare0":"<",
                   "value0":2
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
                {
                   "test_type":"BaseThreatened",
                   "boolean":false
@@ -528,14 +533,14 @@
                   "unit_type_string1":"Factory & Advanced & Naval",
                   "compare0":"<",
                   "value0":3
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
@@ -557,14 +562,14 @@
                   "unit_type_string1":"Factory & Advanced & Naval",
                   "compare0":"<",
                   "value0":9
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
@@ -585,24 +590,17 @@
                   "unit_type_string0":"Commander",
                   "compare0":"<",
                   "value0":1
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ],
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
                   "test_type":"BaseThreatened",
                   "boolean":false
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"AdvancedNavalFabber"
                },
                {
                   "test_type":"CurrentMetalEfficiency",
@@ -615,9 +613,11 @@
                   "value0":1
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"AdvancedNavalFabber"
                }
             ]
          ]
@@ -634,6 +634,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
                },
@@ -643,11 +648,6 @@
                },
                {
                   "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ]
          ]
@@ -664,6 +664,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
                },
@@ -679,7 +684,7 @@
                   "string0":"Air",
                   "string1":"AntiAir",
                   "compare0":">",
-                  "value0":1.0
+                  "value0":1
                },
                {
                   "test_type":"UnitRatioOnPlanet",
@@ -687,14 +692,14 @@
                   "unit_type_string1":"(Naval & Mobile) - Artillery - AirDefense - Tactical - Scout - Fabber",
                   "compare0":"<",
                   "value0":0.1
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
@@ -718,11 +723,6 @@
                   "unit_type_string1":"(Naval & Mobile) - Artillery - AirDefense - Tactical - Scout - Fabber",
                   "compare0":"<",
                   "value0":0.1
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ]
          ]
@@ -739,6 +739,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
                },
@@ -747,18 +752,13 @@
                   "boolean":true
                },
                {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
                   "test_type":"UnitCountPerPlanetRadius",
                   "unit_type_string0":"Naval & Advanced & Sub",
                   "compare0":"<",
                   "value0":250
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ]
          ]

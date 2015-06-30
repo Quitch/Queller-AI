@@ -3,17 +3,28 @@
       {
          "name":"Galata Turret - Mex",
          "to_build":"BasicAirDefense",
-		 "instance_count":1,
+         "instance_count":1,
          "priority":252,
          "base_sort":"FromPerimeter",
          "builders":[
-		    "Commander",
+            "Commander",
             "AnyBasicFabber"
          ],
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Air",
+                  "compare0":">",
+                  "value0":0
                },
                {
                   "test_type":"DistFromMainBase",
@@ -32,25 +43,25 @@
                   "compare0":">=",
                   "value0":1
                },
-			   {
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicAirDefense"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
                   "test_type":"PlanetHighestEnemyArmyThreat",
                   "string0":"Air",
                   "compare0":">",
                   "value0":0
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicAirDefense"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
-               }
-            ],
-			[
-               {
-                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"DistFromMainBase",
@@ -69,20 +80,9 @@
                   "compare0":">=",
                   "value0":3
                },
-			   {
-                  "test_type":"PlanetHighestEnemyArmyThreat",
-                  "string0":"Air",
-                  "compare0":">",
-                  "value0":0
-               },
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirDefense"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
@@ -109,24 +109,34 @@
       {
          "name":"Single Laser Defense Tower - Mex",
          "to_build":"BasicLandDefenseSingle",
-		 "instance_count":1,
+         "instance_count":1,
          "shared_instance_count":"BasicLandDefenseMex",
          "priority":252,
          "base_sort":"FromPerimeter",
          "builders":[
-		    "Commander",
+            "Commander",
             "BasicBotFabber",
-			"BasicVehicleFabber",
-			"BasicAirFabber"
+            "BasicVehicleFabber",
+            "BasicAirFabber"
          ],
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
                },
                {
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":false
+               },
+               {
+                  "test_type":"HaveSeenEnemyUnits",
+                  "unit_type_string0":"Bot",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"DistFromMainBase",
@@ -152,18 +162,8 @@
                   "value0":1
                },
                {
-                  "test_type":"HaveSeenEnemyUnits",
-                  "unit_type_string0":"Bot",
-                  "boolean":true
-               },
-               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicLandDefenseSingle"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
@@ -187,26 +187,37 @@
             ]
          }
       },
-	  {
+      {
          "name":"Laser Defense Tower - Mex",
          "to_build":"BasicLandDefense",
-		 "instance_count":1,
+         "instance_count":1,
          "shared_instance_count":"BasicLandDefenseMex",
          "priority":253,
          "base_sort":"FromPerimeter",
          "builders":[
             "BasicBotFabber",
-			"BasicVehicleFabber",
-			"BasicAirFabber"
+            "BasicVehicleFabber",
+            "BasicAirFabber"
          ],
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
                },
                {
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Land",
+                  "compare0":">",
+                  "value0":0
                },
                {
                   "test_type":"DistFromMainBase",
@@ -231,29 +242,29 @@
                   "compare0":">=",
                   "value0":1
                },
-			   {
-                  "test_type":"PlanetHighestEnemyArmyThreat",
-                  "string0":"Land",
-                  "compare0":">",
-                  "value0":0
-               },
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicLandDefense"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
-				  "boolean":true
-               }
-            ],
-			[
-               {
-                  "test_type":"CanAffordBuildDemand"
+                  "boolean":true
                },
                {
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Land",
+                  "compare0":">",
+                  "value0":0
                },
                {
                   "test_type":"DistFromMainBase",
@@ -278,20 +289,9 @@
                   "compare0":">=",
                   "value0":4
                },
-			   {
-                  "test_type":"PlanetHighestEnemyArmyThreat",
-                  "string0":"Land",
-                  "compare0":">",
-                  "value0":0
-               },
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicLandDefense"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
@@ -315,10 +315,10 @@
             ]
          }
       },
-	  {
+      {
          "name":"Anchor - Mex",
          "to_build":"DefenseSatellite",
-		 "instance_count":1,
+         "instance_count":1,
          "max_num_assisters":1,
          "priority":252,
          "base_sort":"FromPerimeter",
@@ -328,7 +328,18 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"SystemThreat",
+                  "string0":"Orbital",
+                  "compare0":">",
+                  "value0":0
                },
                {
                   "test_type":"DistFromMainBase",
@@ -348,24 +359,24 @@
                   "value0":2
                },
                {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"DefenseSatellite"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
                   "test_type":"SystemThreat",
                   "string0":"Orbital",
                   "compare0":">",
                   "value0":0
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"DefenseSatellite"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
-               }
-            ],
-			[
-               {
-                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"DistFromMainBase",
@@ -385,19 +396,8 @@
                   "value0":4
                },
                {
-                  "test_type":"SystemThreat",
-                  "string0":"Orbital",
-                  "compare0":">",
-                  "value0":0
-               },
-               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"DefenseSatellite"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
@@ -421,21 +421,32 @@
             ]
          }
       },
-	  {
+      {
          "name":"Torpedo Launcher - Mex",
          "to_build":"BasicNavalDefense",
-		 "instance_count":1,
+         "instance_count":1,
          "priority":254,
          "base_sort":"FromPerimeter",
          "builders":[
-		    "Commander",
+            "Commander",
             "BasicAirFabber",
-			"BasicNavalFabber"
+            "BasicNavalFabber"
          ],
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Naval",
+                  "compare0":">",
+                  "value0":0
                },
                {
                   "test_type":"DistFromMainBase",
@@ -454,25 +465,25 @@
                   "compare0":">=",
                   "value0":2
                },
-			   {
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicNavalDefense"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
                   "test_type":"PlanetHighestEnemyArmyThreat",
                   "string0":"Naval",
                   "compare0":">",
                   "value0":0
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicNavalDefense"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
-               }
-            ],
-			[
-               {
-                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"DistFromMainBase",
@@ -491,20 +502,9 @@
                   "compare0":">=",
                   "value0":4
                },
-			   {
-                  "test_type":"PlanetHighestEnemyArmyThreat",
-                  "string0":"Naval",
-                  "compare0":">",
-                  "value0":0
-               },
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicNavalDefense"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
@@ -528,10 +528,10 @@
             ]
          }
       },
-	  {
+      {
          "name":"Anchor - Beachead",
          "to_build":"DefenseSatellite",
-		 "instance_count":1,
+         "instance_count":1,
          "max_num_assisters":1,
          "priority":253,
          "base_sort":"FromPerimeter",
@@ -541,24 +541,12 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"DistFromMainBase",
-                  "compare0":">=",
-                  "value0":200
-               },
-               {
-                  "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & Basic & OrbitalDefense",
-                  "compare0":"<",
-                  "value0":4
-               },
-               {
-                  "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & Teleporter",
-                  "compare0":">=",
-                  "value0":1
                },
                {
                   "test_type":"SystemThreat",
@@ -567,18 +555,41 @@
                   "value0":0
                },
                {
+                  "test_type":"DistFromMainBase",
+                  "compare0":">=",
+                  "value0":200
+               },
+               {
+                  "test_type":"UnitCountInBase",
+                  "unit_type_string0":"Structure & Basic & OrbitalDefense",
+                  "compare0":"<",
+                  "value0":4
+               },
+               {
+                  "test_type":"UnitCountInBase",
+                  "unit_type_string0":"Structure & Teleporter",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"DefenseSatellite"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
-				  "boolean":true
-               }
-            ],
-			[
+                  "boolean":true
+               },
                {
                   "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"PlanetThreat",
+                  "string0":"Land",
+                  "compare0":">",
+                  "value0":0
                },
                {
                   "test_type":"DistFromMainBase",
@@ -598,19 +609,8 @@
                   "value0":1
                },
                {
-                  "test_type":"PlanetThreat",
-                  "string0":"Land",
-                  "compare0":">",
-                  "value0":0
-               },
-               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"DefenseSatellite"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
@@ -642,12 +642,17 @@
          "priority":251,
          "base_sort":"FromPerimeter",
          "builders":[
-		    "Commander",
+            "Commander",
             "BasicBotFabber",
-			"BasicVehicleFabber"
+            "BasicVehicleFabber"
          ],
          "build_conditions":[
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -656,7 +661,7 @@
                   "string0":"Air",
                   "string1":"AntiAir",
                   "compare0":">",
-                  "value0":1.0
+                  "value0":1
                },
                {
                   "test_type":"UnitCountInBase",
@@ -667,11 +672,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirDefense"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
@@ -704,18 +704,35 @@
          "priority":251,
          "base_sort":"FromPerimeter",
          "builders":[
-			"Commander",
+            "Commander",
             "BasicBotFabber",
-			"BasicVehicleFabber"
+            "BasicVehicleFabber"
          ],
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
                },
                {
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":false
+               },
+               {
+                  "test_type":"HaveSeenEnemyUnits",
+                  "unit_type_string0":"Tank | Advanced",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
+                  "string0":"Land",
+                  "string1":"Land",
+                  "compare0":">",
+                  "value0":1
                },
                {
                   "test_type":"UnitCountInBase",
@@ -724,31 +741,14 @@
                   "value0":1
                },
                {
-                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
-                  "string0":"Land",
-                  "string1":"Land",
-                  "compare0":">",
-                  "value0":1.0
-               },
-               {
                   "test_type":"UnitCountInBase",
                   "unit_type_string0":"Structure & (EnergyProduction | Factory)",
                   "compare0":">=",
                   "value0":5
                },
                {
-                  "test_type":"HaveSeenEnemyUnits",
-                  "unit_type_string0":"Tank | Advanced",
-                  "boolean":false
-               },
-               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicLandDefenseSingle"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
@@ -782,29 +782,34 @@
          "base_sort":"FromPerimeter",
          "builders":[
             "BasicBotFabber",
-			"BasicVehicleFabber"
+            "BasicVehicleFabber"
          ],
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
                },
                {
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":false
                },
                {
-                  "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & SurfaceDefense",
-                  "compare0":"<",
-                  "value0":3
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Land",
                   "string1":"Land",
                   "compare0":">",
-                  "value0":1.0
+                  "value0":1
+               },
+               {
+                  "test_type":"UnitCountInBase",
+                  "unit_type_string0":"Structure & SurfaceDefense",
+                  "compare0":"<",
+                  "value0":3
                },
                {
                   "test_type":"UnitCountInBase",
@@ -815,11 +820,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicLandDefense"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
@@ -843,7 +843,7 @@
             ]
          }
       },
-	  {
+      {
          "name":"Torpedo Launcher - Base",
          "to_build":"BasicNavalDefense",
          "instance_count":1,
@@ -851,30 +851,35 @@
          "priority":254,
          "base_sort":"FromPerimeter",
          "builders":[
-		    "Commander",
-			"BasicNavalFabber"
+            "Commander",
+            "BasicNavalFabber"
          ],
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
                },
                {
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":true
                },
                {
-                  "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & Naval & Defense",
-                  "compare0":"<",
-                  "value0":3
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Naval",
                   "string1":"Naval",
                   "compare0":">",
-                  "value0":1.0
+                  "value0":1
+               },
+               {
+                  "test_type":"UnitCountInBase",
+                  "unit_type_string0":"Structure & Naval & Defense",
+                  "compare0":"<",
+                  "value0":3
                },
                {
                   "test_type":"UnitCountInBase",
@@ -885,11 +890,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicNavalDefense"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
@@ -927,7 +927,25 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Air",
+                  "compare0":">",
+                  "value0":5600
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
+                  "string0":"Air",
+                  "string1":"AntiAir",
+                  "compare0":">",
+                  "value0":1
                },
                {
                   "test_type":"UnitCountInBase",
@@ -936,32 +954,14 @@
                   "value0":4
                },
                {
-                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
-                  "string0":"Air",
-                  "string1":"AntiAir",
-                  "compare0":">",
-                  "value0":1.0
-               },
-               {
                   "test_type":"UnitCountInBase",
                   "unit_type_string0":"Structure & (EnergyProduction | Factory)",
                   "compare0":">=",
                   "value0":10
                },
-			   {
-                  "test_type":"PlanetHighestEnemyArmyThreat",
-                  "string0":"Air",
-                  "compare0":">",
-                  "value0":5600
-               },
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"AdvancedAirDefense"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
@@ -998,24 +998,29 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
                },
                {
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
                {
-                  "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & Advanced & SurfaceDefense",
-                  "compare0":"<",
-                  "value0":4
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Land",
                   "string1":"Land",
                   "compare0":">",
-                  "value0":1.0
+                  "value0":1
+               },
+               {
+                  "test_type":"UnitCountInBase",
+                  "unit_type_string0":"Structure & Advanced & SurfaceDefense",
+                  "compare0":"<",
+                  "value0":4
                },
                {
                   "test_type":"UnitCountInBase",
@@ -1026,11 +1031,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"AdvancedLandDefense"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
@@ -1054,6 +1054,76 @@
             ]
          }
       },
+	  {
+         "name":"Advanced Torpedo Launcher - Base",
+         "to_build":"AdvancedNavalDefense",
+         "instance_count":1,
+         "priority":379,
+         "max_num_assisters":3,
+         "base_sort":"FromPerimeter",
+         "builders":[
+            "AdvancedNavalFabber",
+			"AdvancedAirFabber"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
+                  "string0":"Naval",
+                  "string1":"Naval",
+                  "compare0":">",
+                  "value0":1
+               },
+               {
+                  "test_type":"UnitCountInBase",
+                  "unit_type_string0":"Structure & Naval & Defense",
+                  "compare0":"<",
+                  "value0":4
+               },
+               {
+                  "test_type":"UnitCountInBase",
+                  "unit_type_string0":"Structure & (EnergyProduction | Factory)",
+                  "compare0":">=",
+                  "value0":10
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicNavalDefense"
+               }
+            ]
+         ],
+         "placement_rules":{
+            "placement_type":"FromMainBaseCenter",
+            "unit_count_rules":[
+               {
+                  "unit_type_string":"Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+                  "alliance":"Ally",
+                  "compare_type":">=",
+                  "range":50,
+                  "count":1
+               },
+               {
+                  "unit_type_string":"Structure & Naval & Defense",
+                  "alliance":"Ally",
+                  "compare_type":"<",
+                  "range":75,
+                  "count":1
+               }
+            ]
+         }
+      },
       {
          "name":"Anchor - Base",
          "to_build":"DefenseSatellite",
@@ -1065,6 +1135,11 @@
          ],
          "build_conditions":[
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -1089,11 +1164,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"DefenseSatellite"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
@@ -1124,6 +1194,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -1153,14 +1228,14 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"Umbrella"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
-				  "boolean":true
-               }
-            ],
-			[
+                  "boolean":true
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -1169,12 +1244,6 @@
                   "string0":"Orbital",
                   "compare0":">",
                   "value0":0
-               },
-               {
-                  "test_type":"UnitCount",
-                  "unit_type_string0":"Structure & Recon & Orbital",
-                  "compare0":">=",
-                  "value0":1
                },
                {
                   "test_type":"UnitCountInBase",
@@ -1189,16 +1258,22 @@
                   "value0":3
                },
                {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"Umbrella"
+                  "test_type":"UnitCount",
+                  "unit_type_string0":"Structure & Recon & Orbital",
+                  "compare0":">=",
+                  "value0":1
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"Umbrella"
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -1223,11 +1298,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"Umbrella"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
@@ -1251,7 +1321,7 @@
             ]
          }
       },
-	  {
+      {
          "name":"Umbrella - Lock Down The Planet",
          "to_build":"Umbrella",
          "instance_count":1,
@@ -1265,11 +1335,16 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
                },
-			   {
+               {
                   "test_type":"AloneOnPlanet",
-				  "boolean":true
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"SystemThreat",
@@ -1278,25 +1353,20 @@
                   "value0":0
                },
                {
-                  "test_type":"UnitCount",
-                  "unit_type_string0":"Structure & Recon & Orbital",
-                  "compare0":">=",
-                  "value0":1
-               },
-               {
                   "test_type":"UnitCountInBase",
                   "unit_type_string0":"Structure & OrbitalDefense",
                   "compare0":"<",
                   "value0":1
                },
                {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"Umbrella"
+                  "test_type":"UnitCount",
+                  "unit_type_string0":"Structure & Recon & Orbital",
+                  "compare0":">=",
+                  "value0":1
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"Umbrella"
                }
             ]
          ],
@@ -1312,8 +1382,8 @@
                }
             ]
          }
-      },	  
-	  {
+      },
+      {
          "name":"Umbrella - Protect the Commander",
          "to_build":"Umbrella",
          "instance_count":1,
@@ -1327,23 +1397,22 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
                },
-			   {
+               {
                   "test_type":"AloneOnPlanet",
-				  "boolean":true
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"SystemThreat",
                   "string0":"Orbital",
                   "compare0":">",
                   "value0":0
-               },
-               {
-                  "test_type":"UnitCount",
-                  "unit_type_string0":"Structure & Recon & Orbital",
-                  "compare0":">=",
-                  "value0":1
                },
                {
                   "test_type":"UnitCountInBase",
@@ -1358,22 +1427,28 @@
                   "value0":3
                },
                {
+                  "test_type":"UnitCount",
+                  "unit_type_string0":"Structure & Recon & Orbital",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"Umbrella"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
-				  "boolean":true
-               }
-            ],
-			[
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
                {
                   "test_type":"CanAffordBuildDemand"
-               },
-			   {
-                  "test_type":"AloneOnPlanet",
-				  "boolean":true
                },
                {
                   "test_type":"SystemThreat",
@@ -1402,11 +1477,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"Umbrella"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
@@ -1420,7 +1490,7 @@
                   "range":100,
                   "count":1
                },
-			   {
+               {
                   "unit_type_string":"Structure & OrbitalDefense",
                   "alliance":"Ally",
                   "compare_type":"<",
@@ -1444,9 +1514,14 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
-			   {
+               {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"AntiNukeSilo"
                },
@@ -1466,29 +1541,24 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"AntiNukeSilo"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
-				  "boolean":true
-               }
-            ],
-			[
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-			   {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"AntiNukeSilo"
-               },
-               {
-                  "test_type":"PlanetCount",
-                  "compare0":">",
-                  "value0":1
+                  "boolean":true
                },
                {
                   "test_type":"PlanetWithoutPresence",
                   "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"AntiNukeSilo"
                },
                {
                   "test_type":"UnitCountInBase",
@@ -1499,11 +1569,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"AntiNukeSilo"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
@@ -1541,9 +1606,14 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
-			   {
+               {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"AntiNukeSilo"
                },
@@ -1555,32 +1625,32 @@
                   "value0":0
                },
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Structure & NukeDefense",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
                   "test_type":"UnitCountInBase",
                   "unit_type_string0":"Structure & (EnergyProduction & Advanced | Factory)",
                   "compare0":">=",
                   "value0":3
                },
                {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Structure & NukeDefense",
+                  "compare0":"<",
+                  "value0":1
+               },
+               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"AntiNukeSilo"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
-				  "boolean":true
-               }
-            ],
-			[
+                  "boolean":true
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
-			   {
+               {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"AntiNukeSilo"
                },
@@ -1600,24 +1670,24 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"AntiNukeSilo"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ],
             [
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-			   {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"AntiNukeSilo"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
                },
                {
                   "test_type":"HaveHadANukeEvent",
                   "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"AntiNukeSilo"
                },
                {
                   "test_type":"UnitCountInBase",
@@ -1634,11 +1704,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"AntiNukeSilo"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],

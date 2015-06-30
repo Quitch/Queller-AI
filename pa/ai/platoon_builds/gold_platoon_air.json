@@ -7,33 +7,48 @@
          "priority":105,
          "build_conditions":[
             [
-			   {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Air & Scout",
-                  "compare0":">=",
-                  "value0":1
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
                },
                {
                   "test_type":"HaveFullPlanetIntel",
                   "boolean":false
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Air & Scout",
+                  "compare0":">=",
+                  "value0":1
                }
             ]
          ],
          "task_type":"Scout"
       },
-	  {
+      {
          "name":"Fighter Scout Platoon",
          "to_build":"Fighter_Scout",
          "instance_count":1,
          "priority":105,
          "build_conditions":[
             [
-			   {
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"HaveFullPlanetIntel",
+                  "boolean":false
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Air",
+                  "compare0":">",
+                  "value0":0
+               },
+               {
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Air & Fighter & Basic",
                   "compare0":">=",
@@ -44,21 +59,6 @@
                   "unit_type_string0":"Air & Fighter & Basic",
                   "compare0":"<",
                   "value0":250
-               },
-			   {
-                  "test_type":"PlanetHighestEnemyArmyThreat",
-                  "string0":"Air",
-                  "compare0":">",
-                  "value0":0
-               },
-               {
-                  "test_type":"HaveFullPlanetIntel",
-                  "boolean":false
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ],
@@ -67,16 +67,15 @@
       {
          "name":"Bomber-Gunship Attack Platoon Small",
          "to_build":"BomberGunship_Attack_Small",
-         "instance_count":4,
+         "instance_count":5,
          "shared_instance_count":"Multitask",
          "priority":104,
          "build_conditions":[
             [
                {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"Air & (Bomber | Gunship)",
-                  "compare0":">=",
-                  "value0":1
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
@@ -85,15 +84,16 @@
                   "value0":420
                },
                {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"Air & (Bomber | Gunship)",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
                   "test_type":"CanAttackWithPoolUnitsBomber",
                   "string0":"WL_AnySurface",
                   "string1":"WL_Air",
                   "unit_type_string0":"Mobile | Structure"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ],
@@ -102,16 +102,15 @@
       {
          "name":"Bomber-Gunship Attack Platoon Medium",
          "to_build":"BomberGunship_Attack_Medium",
-         "instance_count":4,
+         "instance_count":5,
          "shared_instance_count":"Multitask",
          "priority":103,
          "build_conditions":[
             [
                {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"Air & (Bomber | Gunship)",
-                  "compare0":">=",
-                  "value0":4
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
@@ -120,15 +119,16 @@
                   "value0":1260
                },
                {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"Air & (Bomber | Gunship)",
+                  "compare0":">=",
+                  "value0":4
+               },
+               {
                   "test_type":"CanAttackWithPoolUnitsBomber",
                   "string0":"WL_AnySurface",
                   "string1":"WL_Air",
                   "unit_type_string0":"Mobile | Structure"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ],
@@ -137,16 +137,15 @@
       {
          "name":"Bomber-Gunship Attack Platoon Large",
          "to_build":"BomberGunship_Attack_Large",
-         "instance_count":4,
+         "instance_count":5,
          "shared_instance_count":"Multitask",
          "priority":102,
          "build_conditions":[
             [
                {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"Air & (Bomber | Gunship)",
-                  "compare0":">=",
-                  "value0":9
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
@@ -155,15 +154,16 @@
                   "value0":2800
                },
                {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"Air & (Bomber | Gunship)",
+                  "compare0":">=",
+                  "value0":9
+               },
+               {
                   "test_type":"CanAttackWithPoolUnitsBomber",
                   "string0":"WL_AnySurface",
                   "string1":"WL_Air",
                   "unit_type_string0":"Mobile | Structure"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ],
@@ -172,16 +172,15 @@
       {
          "name":"Bomber-Gunship Attack Platoon XLarge",
          "to_build":"BomberGunship_Attack_XLarge",
-         "instance_count":4,
+         "instance_count":5,
          "shared_instance_count":"Multitask",
          "priority":101,
          "build_conditions":[
             [
                {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"Air & (Bomber | Gunship)",
-                  "compare0":">=",
-                  "value0":18
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
@@ -190,28 +189,34 @@
                   "value0":5600
                },
                {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"Air & (Bomber | Gunship)",
+                  "compare0":">=",
+                  "value0":18
+               },
+               {
                   "test_type":"CanAttackWithPoolUnitsBomber",
                   "string0":"WL_AnySurface",
                   "string1":"WL_Air",
                   "unit_type_string0":"Mobile | Structure"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ],
          "task_type":"BomberAttack"
       },
-	  {
+      {
          "name":"Bomber-Gunship Attack Platoon Max",
          "to_build":"BomberGunship_Attack_Max",
-         "instance_count":4,
+         "instance_count":5,
          "shared_instance_count":"Multitask",
          "priority":100,
          "build_conditions":[
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
                {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Air & (Bomber | Gunship)",
@@ -223,24 +228,24 @@
                   "string0":"WL_AnySurface",
                   "string1":"WL_Air",
                   "unit_type_string0":"Mobile | Structure"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ],
          "task_type":"BomberAttack"
       },
-	  {
+      {
          "name":"Fighter Attack Platoon",
          "to_build":"Fighter_Attack",
-         "instance_count":4,
+         "instance_count":5,
          "shared_instance_count":"Multitask",
          "priority":100,
          "build_conditions":[
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
                {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Air & Fighter",
@@ -252,14 +257,14 @@
                   "string0":"WL_Air",
                   "string1":"WL_Air",
                   "unit_type_string0":"Mobile"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
                {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Air & Fighter",
@@ -272,11 +277,6 @@
                   "string1":"WL_Air",
                   "string2":"WL_Air",
                   "unit_type_string0":"Mobile | Structure"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ],

@@ -13,21 +13,20 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicBotFactory"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
                },
                {
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
                {
-                  "test_type":"UnitCountPerPlanetRadius",
-                  "unit_type_string0":"(Bot & Factory) & Basic",
-                  "compare0":"<=",
-                  "value0":250
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicBotFactory"
                },
                {
                   "test_type":"UnitCountOnPlanet",
@@ -36,16 +35,26 @@
                   "value0":1
                },
                {
+                  "test_type":"UnitCountPerPlanetRadius",
+                  "unit_type_string0":"Bot & Factory & Basic",
+                  "compare0":"<=",
+                  "value0":250
+               },
+               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicBotFactory"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
                   "boolean":true
-               }
-            ],
-            [
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":false
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -54,32 +63,28 @@
                   "string0":"BasicBotFactory"
                },
                {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":false
-               },
-               {
-                  "test_type":"UnitCountPerPlanetRadius",
-                  "unit_type_string0":"(Bot & Factory) & Basic",
-                  "compare0":"<=",
-                  "value0":500
-               },
-               {
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"(Naval & Factory) & Basic",
                   "compare0":">=",
                   "value0":1
                },
                {
+                  "test_type":"UnitCountPerPlanetRadius",
+                  "unit_type_string0":"Bot & Factory & Basic",
+                  "compare0":"<=",
+                  "value0":500
+               },
+               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicBotFactory"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
                   "boolean":true
-               }
-            ],
-            [
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -95,21 +100,21 @@
                },
                {
                   "test_type":"UnitCountPerPlanetRadius",
-                  "unit_type_string0":"(Bot & Factory) & Basic",
+                  "unit_type_string0":"Bot & Factory & Basic",
                   "compare0":"<=",
                   "value0":500
                },
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicBotFactory"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
                   "boolean":true
-               }
-            ],
-            [
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -132,11 +137,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicBotFactory"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
                }
             ]
          ],
@@ -165,21 +165,20 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicBotFactory"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
                },
                {
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
                {
-                  "test_type":"UnitCountPerPlanetRadius",
-                  "unit_type_string0":"(Bot & Factory) & Basic",
-                  "compare0":"<=",
-                  "value0":250
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicBotFactory"
                },
                {
                   "test_type":"UnitCountOnPlanet",
@@ -188,16 +187,26 @@
                   "value0":1
                },
                {
+                  "test_type":"UnitCountPerPlanetRadius",
+                  "unit_type_string0":"Bot & Factory & Basic",
+                  "compare0":"<=",
+                  "value0":250
+               },
+               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicBotFactory"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
                   "boolean":true
-               }
-            ],
-            [
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":false
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -206,36 +215,32 @@
                   "string0":"BasicBotFactory"
                },
                {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":false
-               },
-               {
                   "test_type":"UnitCountPerPlanetRadius",
-                  "unit_type_string0":"(Bot & Factory) & Basic",
+                  "unit_type_string0":"Bot & Factory & Basic",
                   "compare0":"<=",
                   "value0":500
                },
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicBotFactory"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
                   "boolean":true
-               }
-            ],
-            [
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":false
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"BasicBotFactory"
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":false
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
@@ -245,21 +250,21 @@
                },
                {
                   "test_type":"UnitCountPerPlanetRadius",
-                  "unit_type_string0":"(Bot & Factory) & Basic",
+                  "unit_type_string0":"Bot & Factory & Basic",
                   "compare0":"<=",
                   "value0":500
                },
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicBotFactory"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
                   "boolean":true
-               }
-            ],
-            [
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -275,18 +280,13 @@
                },
                {
                   "test_type":"UnitCount",
-                  "unit_type_string0":"Factory & Bot & Basic",
+                  "unit_type_string0":"Factory & Bot",
                   "compare0":"<",
                   "value0":1
                },
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicBotFactory"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
                }
             ]
          ],
@@ -316,21 +316,30 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicBotFactory"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
                },
                {
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
                {
-                  "test_type":"UnitCountPerPlanetRadius",
-                  "unit_type_string0":"(Bot & Factory) & Basic",
-                  "compare0":"<=",
-                  "value0":100
+                  "test_type":"CurrentMetalEfficiency",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
+                  "test_type":"CurrentEnergyEfficiency",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicBotFactory"
                },
                {
                   "test_type":"UnitCountOnPlanet",
@@ -339,8 +348,25 @@
                   "value0":1
                },
                {
+                  "test_type":"UnitCountPerPlanetRadius",
+                  "unit_type_string0":"Bot & Factory & Basic",
+                  "compare0":"<=",
+                  "value0":100
+               },
+               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicBotFactory"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":false
                },
                {
                   "test_type":"CurrentMetalEfficiency",
@@ -352,13 +378,6 @@
                   "compare0":">=",
                   "value0":1
                },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               }
-            ],
-            [
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -367,24 +386,27 @@
                   "string0":"BasicBotFactory"
                },
                {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":false
-               },
-               {
-                  "test_type":"UnitCountPerPlanetRadius",
-                  "unit_type_string0":"(Bot & Factory) & Basic",
-                  "compare0":"<=",
-                  "value0":500
-               },
-               {
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"(Naval & Factory) & Basic",
                   "compare0":">=",
                   "value0":1
                },
                {
+                  "test_type":"UnitCountPerPlanetRadius",
+                  "unit_type_string0":"Bot & Factory & Basic",
+                  "compare0":"<=",
+                  "value0":500
+               },
+               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicBotFactory"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
                },
                {
                   "test_type":"CurrentMetalEfficiency",
@@ -396,13 +418,6 @@
                   "compare0":">=",
                   "value0":1
                },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               }
-            ],
-            [
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -418,13 +433,20 @@
                },
                {
                   "test_type":"UnitCountPerPlanetRadius",
-                  "unit_type_string0":"(Bot & Factory) & Basic",
+                  "unit_type_string0":"Bot & Factory & Basic",
                   "compare0":"<=",
                   "value0":500
                },
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicBotFactory"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
                },
                {
                   "test_type":"CurrentMetalEfficiency",
@@ -436,13 +458,6 @@
                   "compare0":">=",
                   "value0":1
                },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               }
-            ],
-            [
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -465,21 +480,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicBotFactory"
-               },
-               {
-                  "test_type":"CurrentMetalEfficiency",
-                  "compare0":">=",
-                  "value0":1
-               },
-               {
-                  "test_type":"CurrentEnergyEfficiency",
-                  "compare0":">=",
-                  "value0":1
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
                }
             ]
          ],
@@ -505,6 +505,15 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"PresenceOnOtherPlanet",
+                  "boolean":true
+               },
+               {
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Factory - Orbital",
                   "compare0":"<",
@@ -517,17 +526,8 @@
                   "value0":1
                },
                {
-                  "test_type":"PresenceOnOtherPlanet",
-                  "boolean":true
-               },
-               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicBotFactory"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
                }
             ]
          ],
@@ -554,6 +554,15 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -561,17 +570,8 @@
                   "string0":"BasicVehicleFactory"
                },
                {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicVehicleFactory"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
                }
             ]
          ],
@@ -600,6 +600,15 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -607,17 +616,8 @@
                   "string0":"BasicVehicleFactory"
                },
                {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicVehicleFactory"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
                }
             ]
          ],
@@ -647,19 +647,13 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicVehicleFactory"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
                },
                {
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicVehicleFactory"
                },
                {
                   "test_type":"CurrentMetalEfficiency",
@@ -672,9 +666,15 @@
                   "value0":1
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicVehicleFactory"
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicVehicleFactory"
                }
             ]
          ],
@@ -700,6 +700,15 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"PresenceOnOtherPlanet",
+                  "boolean":true
+               },
+               {
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Factory - Orbital",
                   "compare0":"<",
@@ -712,17 +721,8 @@
                   "value0":1
                },
                {
-                  "test_type":"PresenceOnOtherPlanet",
-                  "boolean":true
-               },
-               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicVehicleFactory"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
                }
             ]
          ],
@@ -751,6 +751,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"HaveEcoForAdvanced",
                   "boolean":true
                },
@@ -762,12 +767,6 @@
                   "string0":"AdvancedBotFactory"
                },
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Basic & Fabber - Orbital",
-                  "compare0":">=",
-                  "value0":5
-               },
-               {
                   "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Land",
                   "string1":"Land",
@@ -775,22 +774,21 @@
                   "value0":0.5
                },
                {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"AdvancedBotFactory"
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Basic & Fabber - Orbital",
+                  "compare0":">=",
+                  "value0":5
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"AdvancedBotFactory"
                }
             ],
             [
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"AdvancedBotFactory"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
                },
                {
                   "test_type":"AllMetalSpotsFull",
@@ -801,6 +799,13 @@
                   "boolean":true
                },
                {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"AdvancedBotFactory"
+               },
+               {
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Advanced & Factory",
                   "compare0":"<",
@@ -809,11 +814,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"AdvancedBotFactory"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
                }
             ]
          ],
@@ -842,6 +842,15 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
                   "test_type":"HaveEcoForAdvanced",
                   "boolean":true
                },
@@ -853,8 +862,11 @@
                   "string0":"AdvancedVehicleFactory"
                },
                {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
+                  "string0":"Land",
+                  "string1":"Land",
+                  "compare0":"<",
+                  "value0":0.5
                },
                {
                   "test_type":"UnitCountOnPlanet",
@@ -863,29 +875,15 @@
                   "value0":5
                },
                {
-                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
-                  "string0":"Land",
-                  "string1":"Land",
-                  "compare0":"<",
-                  "value0":0.5
-               },
-               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"AdvancedVehicleFactory"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
                }
             ],
             [
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"AdvancedVehicleFactory"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
                },
                {
                   "test_type":"AllMetalSpotsFull",
@@ -896,6 +894,13 @@
                   "boolean":true
                },
                {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"AdvancedVehicleFactory"
+               },
+               {
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Advanced & Factory",
                   "compare0":"<",
@@ -904,11 +909,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"AdvancedVehicleFactory"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
                }
             ]
          ],

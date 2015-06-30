@@ -15,6 +15,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+				  "boolean":true
+               },
+			   {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -30,24 +35,24 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicNavalFactory"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ],
 			[
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+				  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":true
+               },
+			   {
                   "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"BasicNavalFactory"
-               },
-               {
-                  "test_type":"CanDeployNavalFromBase",
-                  "boolean":true
                },
                {
                   "test_type":"UnitCountInBase",
@@ -64,11 +69,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicNavalFactory"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ]
          ],
@@ -94,13 +94,18 @@
             "AdvancedNavalFabber"
          ],
          "build_conditions":[
-            [
+            [               
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+				  "boolean":true
                },
                {
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":true
+               },
+			   {
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -111,11 +116,6 @@
                   "unit_type_string0":"Advanced & Factory & Naval",
                   "compare0":"<",
                   "value0":1
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ]
          ],

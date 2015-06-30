@@ -15,6 +15,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+				  "boolean":true
+               },
+               {
                   "test_type":"UnitCount",
                   "unit_type_string0":"Factory & Basic",
                   "compare0":"<",
@@ -23,14 +28,14 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicBotFactory"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-                  "boolean":true
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+				  "boolean":true
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -47,11 +52,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicBotFactory"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-                  "boolean":true
                }
             ]
          ]
@@ -71,36 +71,41 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+				  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
                   "test_type":"UnitCount",
                   "unit_type_string0":"Factory & Basic",
                   "compare0":"<",
                   "value0":1
                },
                {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicVehicleFactory"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-                  "boolean":true
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+				  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"BasicVehicleFactory"
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
                },
                {
                   "test_type":"UnitCountPerPlanetRadius",
@@ -111,11 +116,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicVehicleFactory"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-                  "boolean":true
                }
             ]
          ],
@@ -143,15 +143,16 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+				  "boolean":true
                },
                {
                   "test_type":"HaveEcoForAdvanced",
                   "boolean":true
                },
                {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"AdvancedBotFactory"
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"UnitCountOnPlanet",
@@ -160,9 +161,8 @@
                   "value0":1
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-                  "boolean":true
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"AdvancedBotFactory"
                }
             ]
          ],
@@ -190,15 +190,16 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+				  "boolean":true
                },
                {
                   "test_type":"HaveEcoForAdvanced",
                   "boolean":true
                },
                {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"AdvancedVehicleFactory"
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"UnitCountOnPlanet",
@@ -207,9 +208,8 @@
                   "value0":1
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-                  "boolean":true
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"AdvancedVehicleFactory"
                }
             ]
          ],

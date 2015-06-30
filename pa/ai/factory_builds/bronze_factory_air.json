@@ -12,6 +12,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -20,11 +25,6 @@
                   "unit_type_string1":"Factory & Air & Basic",
                   "compare0":"<",
                   "value0":10
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ]
          ]
@@ -41,12 +41,12 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
                   "test_type":"HasPersonalityTag",
                   "string0":"bronze",
-				  "boolean":true
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ]
@@ -63,17 +63,17 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
                   "test_type":"HasPersonalityTag",
                   "string0":"bronze",
-				  "boolean":true
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ]
       },
-	  {
+      {
          "name":"Advanced Air Fabber",
          "to_build":"AdvancedAirFabber",
          "instance_count":1,
@@ -85,6 +85,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -93,16 +98,11 @@
                   "unit_type_string1":"Factory & Air & Advanced",
                   "compare0":"<",
                   "value0":1
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ]
-		 ]
-	  },
-	  {
+         ]
+      },
+      {
          "name":"Phoenix",
          "to_build":"AdvancedFighter",
          "instance_count":1,
@@ -114,16 +114,16 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
                   "test_type":"HasPersonalityTag",
                   "string0":"bronze",
-				  "boolean":true
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
-		 ]
-	  },
+         ]
+      },
       {
          "name":"Hornet",
          "to_build":"AdvancedBomber",
@@ -136,12 +136,12 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
                   "test_type":"HasPersonalityTag",
                   "string0":"bronze",
-				  "boolean":true
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ]
@@ -158,12 +158,12 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
                   "test_type":"HasPersonalityTag",
                   "string0":"bronze",
-				  "boolean":true
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ]

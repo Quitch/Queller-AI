@@ -14,11 +14,16 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
                },
                {
                   "test_type":"HaveEcoForAdvanced",
                   "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"UnitCountOnPlanet",
@@ -29,11 +34,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"OrbitalLauncher"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ],
@@ -41,7 +41,7 @@
             "buffer":3
          }
       },
-	  {
+      {
          "name":"Orbital Factory",
          "to_build":"OrbitalFactory",
          "instance_count":1,
@@ -53,16 +53,17 @@
          ],
          "build_conditions":[
             [
-			   {
-                  "test_type":"CanAffordBuildDemand"
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
                },
                {
                   "test_type":"HaveEcoForAdvanced",
                   "boolean":true
                },
                {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"OrbitalFactory"
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"UnitCountOnPlanet",
@@ -71,9 +72,8 @@
                   "value0":1
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"OrbitalFactory"
                }
             ]
          ],

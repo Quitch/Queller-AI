@@ -13,32 +13,32 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"PotentialMetalEfficiency",
                   "compare0":"<",
-                  "value0":1.0
+                  "value0":1
                },
                {
                   "test_type":"CanFindMetalSpotToBuildBasic",
                   "boolean":true
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
-				  "boolean":true
-               }
-            ],
-			[
+                  "boolean":true
+               },
                {
                   "test_type":"DesireMetal"
                },
                {
                   "test_type":"CanFindMetalSpotToBuildBasic",
                   "boolean":true
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ],
@@ -65,9 +65,14 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"PotentialEnergyEfficiency",
                   "compare0":"<",
-                  "value0":1.0
+                  "value0":1
                },
                {
                   "test_type":"UnitCount",
@@ -78,14 +83,14 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicEnergyGenerator"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
-				  "boolean":true
-               }
-            ],
-			[
+                  "boolean":true
+               },
                {
                   "test_type":"DesireEnergy"
                },
@@ -98,11 +103,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicEnergyGenerator"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ],

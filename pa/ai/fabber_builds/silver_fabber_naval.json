@@ -8,12 +8,17 @@
          "priority":377,
          "max_num_assisters":5,
          "builders":[
-		    "Commander",
+            "Commander",
             "AnyBasicFabber",
             "AdvancedNavalFabber"
          ],
          "build_conditions":[
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
                {
                   "test_type":"UnitCount",
                   "unit_type_string0":"Factory & Basic",
@@ -23,14 +28,14 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirFactory"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"silver",
                   "boolean":true
-               }
-            ],
-			[
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -47,24 +52,24 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicNavalFactory"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"silver",
-				  "boolean":true
-               }
-            ],
-			[
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":true
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"BasicNavalFactory"
-               },
-               {
-                  "test_type":"CanDeployNavalFromBase",
-                  "boolean":true
                },
                {
                   "test_type":"UnitCountInBase",
@@ -81,16 +86,11 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicNavalFactory"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ],
          "placement_rules":{
-			"buffer":3,
+            "buffer":3,
             "threat":{
                "influence_type":"AntiSurface",
                "compare_type":"<",
@@ -98,7 +98,7 @@
                "value":50
             }
          }
-	  },
+      },
       {
          "name":"Advanced Naval Factory",
          "to_build":"AdvancedNavalFactory",
@@ -113,10 +113,8 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"HaveEcoForAdvanced",
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
                   "boolean":true
                },
                {
@@ -124,18 +122,20 @@
                   "boolean":true
                },
                {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"AdvancedNavalFactory"
+                  "test_type":"HaveEcoForAdvanced",
+                  "boolean":true
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"AdvancedNavalFactory"
                }
             ]
          ],
          "placement_rules":{
-			"buffer":3,
+            "buffer":3,
             "threat":{
                "influence_type":"AntiSurface",
                "compare_type":"<",

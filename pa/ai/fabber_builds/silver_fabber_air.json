@@ -8,12 +8,17 @@
          "priority":376,
          "max_num_assisters":10,
          "builders":[
-		    "Commander",
+            "Commander",
             "AnyBasicFabber",
-			"AnyAdvancedFabber"
+            "AnyAdvancedFabber"
          ],
          "build_conditions":[
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
                {
                   "test_type":"UnitCount",
                   "unit_type_string0":"Factory & Basic",
@@ -23,15 +28,15 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirFactory"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"silver",
                   "boolean":true
-               }
-            ],
-			[
-			   {
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -44,19 +49,14 @@
                   "compare0":"<=",
                   "value0":100
                },
-			   {
+               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirFactory"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
-			]
+            ]
          ],
          "placement_rules":{
-			"buffer":3,
+            "buffer":3,
             "threat":{
                "influence_type":"AntiSurface",
                "compare_type":"<",
@@ -65,7 +65,7 @@
             }
          }
       },
-	  {
+      {
          "name":"Advanced Air Factory",
          "to_build":"AdvancedAirFactory",
          "instance_count":1,
@@ -79,15 +79,16 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
                },
                {
                   "test_type":"HaveEcoForAdvanced",
                   "boolean":true
                },
                {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"AdvancedAirFactory"
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"UnitCountOnPlanet",
@@ -96,9 +97,8 @@
                   "value0":1
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"AdvancedAirFactory"
                }
             ]
          ],

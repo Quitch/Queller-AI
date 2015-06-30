@@ -8,6 +8,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
+               {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"(Naval & Mobile & Offense) - Scout",
                   "compare0":">=",
@@ -16,11 +21,6 @@
                {
                   "test_type":"CanAttackWithPoolUnits",
                   "boolean":true
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ]
          ],

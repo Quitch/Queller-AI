@@ -8,6 +8,15 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
+                  "test_type":"HaveFullPlanetIntel",
+                  "boolean":false
+               },
+               {
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Air & Scout",
                   "compare0":"<",
@@ -18,29 +27,29 @@
                   "unit_type_string0":"Land & Scout",
                   "compare0":">=",
                   "value0":1
-               },
-               {
-                  "test_type":"HaveFullPlanetIntel",
-                  "boolean":false
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
          "task_type":"Scout"
       },
-	  {
+      {
          "name":"Bot Scout Platoon",
          "to_build":"Bot_Scout",
          "instance_count":5,
          "priority":200,
          "build_conditions":[
-			[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
                {
                   "test_type":"BaseThreatened",
+                  "boolean":false
+               },
+               {
+                  "test_type":"HaveFullPlanetIntel",
                   "boolean":false
                },
                {
@@ -54,15 +63,6 @@
                   "unit_type_string0":"(Bot & Mobile) - Advanced - Fabber - Construction - Artillery - Heavy",
                   "compare0":"<",
                   "value0":100
-               },
-               {
-                  "test_type":"HaveFullPlanetIntel",
-                  "boolean":false
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
@@ -76,10 +76,15 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
-			   {
+               {
                   "test_type":"OtherPlanetNeedsLandUnitAssistance",
                   "boolean":true
                },
@@ -92,11 +97,6 @@
                   "unit_type_string0":"(Tank | Bot) & Mobile & Offense",
                   "compare0":">=",
                   "value0":10
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
@@ -110,10 +110,9 @@
          "build_conditions":[
             [
                {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"(Bot & Mobile) - Advanced - Fabber - Construction - Artillery - Heavy - SelfDestruct",
-                  "compare0":">=",
-                  "value0":4
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
@@ -122,15 +121,16 @@
                   "value0":2800
                },
                {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"(Bot & Mobile) - Advanced - Fabber - Construction - Artillery - Heavy - SelfDestruct",
+                  "compare0":">=",
+                  "value0":4
+               },
+               {
                   "test_type":"CanAttackWithPoolUnitsLand",
                   "string0":"WL_AnySurface",
                   "string1":"WL_AnySurface",
                   "unit_type_string0":"Mobile | Structure"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
@@ -144,10 +144,9 @@
          "build_conditions":[
             [
                {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"(Bot & Mobile) - Advanced - Fabber - Construction - Artillery - Heavy - SelfDestruct",
-                  "compare0":">=",
-                  "value0":10
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
@@ -156,15 +155,16 @@
                   "value0":5600
                },
                {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"(Bot & Mobile) - Advanced - Fabber - Construction - Artillery - Heavy - SelfDestruct",
+                  "compare0":">=",
+                  "value0":10
+               },
+               {
                   "test_type":"CanAttackWithPoolUnitsLand",
                   "string0":"WL_AnySurface",
                   "string1":"WL_AnySurface",
                   "unit_type_string0":"Mobile | Structure"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
@@ -178,10 +178,9 @@
          "build_conditions":[
             [
                {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"(Bot & Mobile) - Advanced - Fabber - Construction - Artillery - Heavy - SelfDestruct",
-                  "compare0":">=",
-                  "value0":20
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
@@ -190,20 +189,21 @@
                   "value0":11200
                },
                {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"(Bot & Mobile) - Advanced - Fabber - Construction - Artillery - Heavy - SelfDestruct",
+                  "compare0":">=",
+                  "value0":20
+               },
+               {
                   "test_type":"CanAttackWithPoolUnitsLand",
                   "string0":"WL_AnySurface",
                   "string1":"WL_AnySurface",
                   "unit_type_string0":"Mobile | Structure"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
          "task_type":"LandAttack"
-      },	  
+      },
       {
          "name":"Land Raid Platoon 30",
          "to_build":"Land_Raid_Max",
@@ -212,10 +212,9 @@
          "build_conditions":[
             [
                {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"(Bot & Mobile) - Advanced - Fabber - Construction - Artillery - Heavy - SelfDestruct",
-                  "compare0":">=",
-                  "value0":30
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
@@ -224,21 +223,21 @@
                   "value0":16800
                },
                {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"(Bot & Mobile) - Advanced - Fabber - Construction - Artillery - Heavy - SelfDestruct",
+                  "compare0":">=",
+                  "value0":30
+               },
+               {
                   "test_type":"CanAttackWithPoolUnitsLand",
                   "string0":"WL_AnySurface",
                   "string1":"WL_AnySurface",
                   "unit_type_string0":"Mobile | Structure"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
          "task_type":"LandAttack"
       },
-	  
       {
          "name":"Land Raid Platoon 40",
          "to_build":"Land_Raid_Max",
@@ -247,10 +246,9 @@
          "build_conditions":[
             [
                {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"(Bot & Mobile) - Advanced - Fabber - Construction - Artillery - Heavy - SelfDestruct",
-                  "compare0":">=",
-                  "value0":40
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
@@ -259,20 +257,21 @@
                   "value0":22400
                },
                {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"(Bot & Mobile) - Advanced - Fabber - Construction - Artillery - Heavy - SelfDestruct",
+                  "compare0":">=",
+                  "value0":40
+               },
+               {
                   "test_type":"CanAttackWithPoolUnitsLand",
                   "string0":"WL_AnySurface",
                   "string1":"WL_AnySurface",
                   "unit_type_string0":"Mobile | Structure"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
          "task_type":"LandAttack"
-      },	  
+      },
       {
          "name":"Land Raid Platoon 50",
          "to_build":"Land_Raid_Max",
@@ -281,10 +280,9 @@
          "build_conditions":[
             [
                {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"(Bot & Mobile) - Advanced - Fabber - Construction - Artillery - Heavy - SelfDestruct",
-                  "compare0":">=",
-                  "value0":50
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
@@ -293,20 +291,21 @@
                   "value0":28000
                },
                {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"(Bot & Mobile) - Advanced - Fabber - Construction - Artillery - Heavy - SelfDestruct",
+                  "compare0":">=",
+                  "value0":50
+               },
+               {
                   "test_type":"CanAttackWithPoolUnitsLand",
                   "string0":"WL_AnySurface",
                   "string1":"WL_AnySurface",
                   "unit_type_string0":"Mobile | Structure"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
          "task_type":"LandAttack"
-      },	  
+      },
       {
          "name":"Land Raid Platoon 60",
          "to_build":"Land_Raid_Max",
@@ -315,10 +314,9 @@
          "build_conditions":[
             [
                {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"(Bot & Mobile) - Advanced - Fabber - Construction - Artillery - Heavy - SelfDestruct",
-                  "compare0":">=",
-                  "value0":60
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
@@ -327,20 +325,21 @@
                   "value0":33600
                },
                {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"(Bot & Mobile) - Advanced - Fabber - Construction - Artillery - Heavy - SelfDestruct",
+                  "compare0":">=",
+                  "value0":60
+               },
+               {
                   "test_type":"CanAttackWithPoolUnitsLand",
                   "string0":"WL_AnySurface",
                   "string1":"WL_AnySurface",
                   "unit_type_string0":"Mobile | Structure"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
          "task_type":"LandAttack"
-      },	  
+      },
       {
          "name":"Land Raid Platoon 70",
          "to_build":"Land_Raid_Max",
@@ -349,10 +348,9 @@
          "build_conditions":[
             [
                {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"(Bot & Mobile) - Advanced - Fabber - Construction - Artillery - Heavy - SelfDestruct",
-                  "compare0":">=",
-                  "value0":70
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
@@ -361,15 +359,16 @@
                   "value0":39200
                },
                {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"(Bot & Mobile) - Advanced - Fabber - Construction - Artillery - Heavy - SelfDestruct",
+                  "compare0":">=",
+                  "value0":70
+               },
+               {
                   "test_type":"CanAttackWithPoolUnitsLand",
                   "string0":"WL_AnySurface",
                   "string1":"WL_AnySurface",
                   "unit_type_string0":"Mobile | Structure"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
@@ -383,6 +382,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"(Bot & Mobile) - Advanced - Fabber - Construction - Artillery - Heavy - SelfDestruct",
                   "compare0":">=",
@@ -393,11 +397,6 @@
                   "string0":"WL_AnySurface",
                   "string1":"WL_AnySurface",
                   "unit_type_string0":"Mobile | Structure"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
@@ -411,6 +410,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Bot & SelfDestruct",
                   "compare0":">=",
@@ -421,17 +425,12 @@
                   "string0":"WL_AnySurface",
                   "string1":"WL_AnySurface",
                   "unit_type_string0":"Commander"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
          "task_type":"LandAttack"
       },
-	  {
+      {
          "name":"Land Attack Platoon 4",
          "to_build":"Land_Attack_Max",
          "instance_count":-1,
@@ -439,10 +438,9 @@
          "build_conditions":[
             [
                {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"((Tank | (Bot & Advanced)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout",
-                  "compare0":">=",
-                  "value0":4
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
@@ -451,15 +449,16 @@
                   "value0":2800
                },
                {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"((Tank | (Bot & Advanced)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout",
+                  "compare0":">=",
+                  "value0":4
+               },
+               {
                   "test_type":"CanAttackWithPoolUnitsLand",
                   "string0":"WL_AnySurface",
                   "string1":"WL_AnySurface",
                   "unit_type_string0":"Mobile | Structure"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
@@ -473,10 +472,9 @@
          "build_conditions":[
             [
                {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"((Tank | (Bot & Advanced)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout",
-                  "compare0":">=",
-                  "value0":10
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
@@ -485,15 +483,16 @@
                   "value0":5600
                },
                {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"((Tank | (Bot & Advanced)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout",
+                  "compare0":">=",
+                  "value0":10
+               },
+               {
                   "test_type":"CanAttackWithPoolUnitsLand",
                   "string0":"WL_AnySurface",
                   "string1":"WL_AnySurface",
                   "unit_type_string0":"Mobile | Structure"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
@@ -507,10 +506,9 @@
          "build_conditions":[
             [
                {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"((Tank | (Bot & Advanced)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout",
-                  "compare0":">=",
-                  "value0":20
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
@@ -519,20 +517,21 @@
                   "value0":11200
                },
                {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"((Tank | (Bot & Advanced)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout",
+                  "compare0":">=",
+                  "value0":20
+               },
+               {
                   "test_type":"CanAttackWithPoolUnitsLand",
                   "string0":"WL_AnySurface",
                   "string1":"WL_AnySurface",
                   "unit_type_string0":"Mobile | Structure"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
          "task_type":"LandAttack"
-      },	  
+      },
       {
          "name":"Land Attack Platoon 30",
          "to_build":"Land_Attack_Max",
@@ -541,10 +540,9 @@
          "build_conditions":[
             [
                {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"((Tank | (Bot & Advanced)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout",
-                  "compare0":">=",
-                  "value0":30
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
@@ -553,21 +551,21 @@
                   "value0":16800
                },
                {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"((Tank | (Bot & Advanced)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout",
+                  "compare0":">=",
+                  "value0":30
+               },
+               {
                   "test_type":"CanAttackWithPoolUnitsLand",
                   "string0":"WL_AnySurface",
                   "string1":"WL_AnySurface",
                   "unit_type_string0":"Mobile | Structure"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
          "task_type":"LandAttack"
       },
-	  
       {
          "name":"Land Attack Platoon 40",
          "to_build":"Land_Attack_Max",
@@ -576,10 +574,9 @@
          "build_conditions":[
             [
                {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"((Tank | (Bot & Advanced)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout",
-                  "compare0":">=",
-                  "value0":40
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
@@ -588,20 +585,21 @@
                   "value0":22400
                },
                {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"((Tank | (Bot & Advanced)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout",
+                  "compare0":">=",
+                  "value0":40
+               },
+               {
                   "test_type":"CanAttackWithPoolUnitsLand",
                   "string0":"WL_AnySurface",
                   "string1":"WL_AnySurface",
                   "unit_type_string0":"Mobile | Structure"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
          "task_type":"LandAttack"
-      },	  
+      },
       {
          "name":"Land Attack Platoon 50",
          "to_build":"Land_Attack_Max",
@@ -610,10 +608,9 @@
          "build_conditions":[
             [
                {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"((Tank | (Bot & Advanced)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout",
-                  "compare0":">=",
-                  "value0":50
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
@@ -622,20 +619,21 @@
                   "value0":28000
                },
                {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"((Tank | (Bot & Advanced)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout",
+                  "compare0":">=",
+                  "value0":50
+               },
+               {
                   "test_type":"CanAttackWithPoolUnitsLand",
                   "string0":"WL_AnySurface",
                   "string1":"WL_AnySurface",
                   "unit_type_string0":"Mobile | Structure"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
          "task_type":"LandAttack"
-      },	  
+      },
       {
          "name":"Land Attack Platoon 60",
          "to_build":"Land_Attack_Max",
@@ -644,10 +642,9 @@
          "build_conditions":[
             [
                {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"((Tank | (Bot & Advanced)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout",
-                  "compare0":">=",
-                  "value0":60
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
@@ -656,20 +653,21 @@
                   "value0":33600
                },
                {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"((Tank | (Bot & Advanced)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout",
+                  "compare0":">=",
+                  "value0":60
+               },
+               {
                   "test_type":"CanAttackWithPoolUnitsLand",
                   "string0":"WL_AnySurface",
                   "string1":"WL_AnySurface",
                   "unit_type_string0":"Mobile | Structure"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
          "task_type":"LandAttack"
-      },	  
+      },
       {
          "name":"Land Attack Platoon 70",
          "to_build":"Land_Attack_Max",
@@ -678,10 +676,9 @@
          "build_conditions":[
             [
                {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"((Tank | (Bot & Advanced)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout",
-                  "compare0":">=",
-                  "value0":70
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
@@ -690,15 +687,16 @@
                   "value0":39200
                },
                {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"((Tank | (Bot & Advanced)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout",
+                  "compare0":">=",
+                  "value0":70
+               },
+               {
                   "test_type":"CanAttackWithPoolUnitsLand",
                   "string0":"WL_AnySurface",
                   "string1":"WL_AnySurface",
                   "unit_type_string0":"Mobile | Structure"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
@@ -712,6 +710,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"((Tank | (Bot & Advanced)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout",
                   "compare0":">=",
@@ -722,11 +725,6 @@
                   "string0":"WL_AnySurface",
                   "string1":"WL_AnySurface",
                   "unit_type_string0":"Mobile | Structure"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],

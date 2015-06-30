@@ -7,9 +7,18 @@
          "shared_instance_count":"Scout",
          "priority":106,
          "build_conditions":[
-			[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
                {
                   "test_type":"BaseThreatened",
+                  "boolean":false
+               },
+               {
+                  "test_type":"HaveFullPlanetIntel",
                   "boolean":false
                },
                {
@@ -17,48 +26,39 @@
                   "unit_type_string0":"(Bot & Mobile & Offense) - Artillery",
                   "compare0":">=",
                   "value0":4
-               },
-               {
-                  "test_type":"HaveFullPlanetIntel",
-                  "boolean":false
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ],
          "task_type":"Scout"
       },
-	  {
+      {
          "name":"Tank Scout Platoon",
          "to_build":"Land_Attack_Medium",
          "instance_count":1,
          "shared_instance_count":"Scout",
          "priority":106,
          "build_conditions":[
-            [               
+            [
                {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"(Tank & Mobile & Offense) - Artillery - Heavy",
-                  "compare0":">=",
-                  "value0":4
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
                },
                {
                   "test_type":"HaveFullPlanetIntel",
                   "boolean":false
                },
-			   {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
+               {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"(Tank & Mobile & Offense) - Artillery - Heavy",
+                  "compare0":">=",
+                  "value0":4
                }
             ]
          ],
          "task_type":"Scout"
       },
-	  {
+      {
          "name":"Land Transfer To Planet",
          "to_build":"Teleporter_Attack",
          "instance_count":1,
@@ -66,10 +66,15 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
+               {
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
-			   {
+               {
                   "test_type":"OtherPlanetNeedsLandUnitAssistance",
                   "boolean":true
                },
@@ -82,11 +87,6 @@
                   "unit_type_string0":"(Tank | Bot) & Mobile & Offense",
                   "compare0":">=",
                   "value0":1
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ],
@@ -101,10 +101,9 @@
          "build_conditions":[
             [
                {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"((Tank | (Bot & Advanced)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout",
-                  "compare0":">=",
-                  "value0":10
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
@@ -113,15 +112,16 @@
                   "value0":9990
                },
                {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"(((Tank - Artillery) | (Bot & (Advanced | Artillery))) & Mobile) - Fabber - AirDefense - Construction - Tactical - Heavy - Scout",
+                  "compare0":">=",
+                  "value0":10
+               },
+               {
                   "test_type":"CanAttackWithPoolUnitsLand",
                   "string0":"WL_AnySurface",
                   "string1":"WL_AnySurface",
                   "unit_type_string0":"Mobile | Structure"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ],
@@ -136,21 +136,21 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
+               {
                   "test_type":"UnitPoolCount",
-                  "unit_type_string0":"((Tank | (Bot & (Advanced | Artillery))) & Mobile) - Fabber - AirDefense - Construction - Tactical - Heavy - Scout",
+                  "unit_type_string0":"(((Tank - Artillery) | (Bot & (Advanced | Artillery))) & Mobile) - Fabber - AirDefense - Construction - Tactical - Heavy - Scout",
                   "compare0":">=",
-                  "value0":50
+                  "value0":40
                },
                {
                   "test_type":"CanAttackWithPoolUnitsLand",
                   "string0":"WL_AnySurface",
                   "string1":"WL_AnySurface",
                   "unit_type_string0":"Mobile | Structure"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ],

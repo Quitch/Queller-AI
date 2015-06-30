@@ -8,8 +8,13 @@
             "Commander"
          ],
          "build_conditions":[
-            [
+            [               
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+				  "boolean":true
+               },
+			   {
                   "test_type":"WantCommanderOffPlanetByTeleporter",
                   "boolean":true
                },
@@ -18,14 +23,14 @@
                   "unit_type_string0":"Structure & Teleporter",
                   "compare0":">=",
                   "value0":1
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
 				  "boolean":true
-               }
-            ],
-            [
+               },
                {
                   "test_type":"WantCommanderOffPlanet",
                   "boolean":true
@@ -35,11 +40,6 @@
                   "unit_type_string0":"Structure & Teleporter",
                   "compare0":">=",
                   "value0":1
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ],

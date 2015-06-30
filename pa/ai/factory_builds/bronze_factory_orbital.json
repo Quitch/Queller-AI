@@ -13,6 +13,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -21,11 +26,6 @@
                   "unit_type_string1":"Factory & Orbital",
                   "compare0":"<",
                   "value0":2
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ]
          ]
@@ -42,6 +42,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -49,11 +54,6 @@
                   "unit_type_string0":"(Orbital & Recon & Basic) - Structure",
                   "compare0":"<",
                   "value0":1
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ]
          ]
@@ -71,12 +71,12 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
                   "test_type":"HasPersonalityTag",
                   "string0":"bronze",
-				  "boolean":true
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ]
@@ -94,6 +94,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
+               {
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Orbital & Transport",
                   "compare0":"<",
@@ -102,11 +107,6 @@
                {
                   "test_type":"PlanetWithoutPresence",
                   "boolean":true
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ]
          ]
@@ -123,30 +123,30 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
+               {
                   "test_type":"PotentialEnergyEfficiency",
                   "compare0":"<",
-                  "value0":1.0
+                  "value0":1
                },
                {
                   "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
                {
                   "test_type":"DesireEnergy"
                },
                {
                   "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ]
          ]
@@ -163,16 +163,16 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
                },
-			   {
+               {
                   "test_type":"PlanetIsGasGiant",
                   "boolean":false
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ]
@@ -189,6 +189,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -196,11 +201,6 @@
                   "unit_type_string0":"(Orbital & Record & Advanced) - Structure",
                   "compare0":"<",
                   "value0":1
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ]
          ]

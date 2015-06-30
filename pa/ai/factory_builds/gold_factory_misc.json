@@ -13,15 +13,12 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
                },
                {
                   "test_type":"FactoryHasOpenSlot"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ]
@@ -39,6 +36,14 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"FactoryHasOpenSlot"
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -46,14 +51,6 @@
                   "string0":"AntiNuke",
                   "compare0":"<=",
                   "value0":0
-               },
-               {
-                  "test_type":"FactoryHasOpenSlot"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ]
@@ -71,15 +68,15 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
                },
                {
                   "test_type":"FactoryHasOpenSlot"
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ]
@@ -97,6 +94,15 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"FactorySlotsEmpty",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -104,20 +110,13 @@
                   "string0":"Nuke",
                   "compare0":">",
                   "value0":0
-               },
-               {
-                  "test_type":"FactorySlotsEmpty",
-                  "boolean":true
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
-				  "boolean":true
-               }
-            ],
-			[
-               {
-                  "test_type":"CanAffordBuildDemand"
+                  "boolean":true
                },
                {
                   "test_type":"FactorySlotsEmpty",
@@ -128,9 +127,7 @@
                   "boolean":true
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ]

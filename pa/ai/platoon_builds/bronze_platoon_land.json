@@ -8,10 +8,15 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
+               {
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
-			   {
+               {
                   "test_type":"OtherPlanetNeedsLandUnitAssistance",
                   "boolean":true
                },
@@ -24,11 +29,6 @@
                   "unit_type_string0":"(Tank | Bot) & Mobile & Offense",
                   "compare0":">=",
                   "value0":1
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ]
          ],
@@ -42,21 +42,21 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
+               {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"(Mobile & Offense & Land) - Fabber - AirDefense - Construction - Tactical - Heavy - Scout",
                   "compare0":">=",
-                  "value0":80
+                  "value0":40
                },
                {
                   "test_type":"CanAttackWithPoolUnitsLand",
                   "string0":"WL_AnySurface",
                   "string1":"WL_AnySurface",
                   "unit_type_string0":"Mobile | Structure"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ]
          ],

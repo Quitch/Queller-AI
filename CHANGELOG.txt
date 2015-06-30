@@ -1,4 +1,4 @@
-DEV
+v2.0
 
 Integrated new AI checks to replace hacky workarounds
 Builds its factories tighter
@@ -17,9 +17,9 @@ Use new eco checks to be more aggressive about avoiding eco floating
 Added support for the Phoenix to be built
 Throws more fabbers at advanced factory projects
 No longer rushes orbital when it has orbital elsewhere in the system
-Will consider more than just its own planet when looking to rush nukes
-Less likely to build laser towers on water
-Added Boom support
+Will consider more than just its own planet when considering whether to rush nukes
+Won't build laser towers on water any more
+Added some very beta Boom support
 Looks at the air situation as a whole rather than just anti-air when considering building more air factories
 Will sometimes send Krakkens off by themselves to take advantage of their stealth
 Better about getting into the water on maps like Meso
@@ -27,18 +27,20 @@ Will scout with fighters again as a means to find and kill sneaky air fabbers
 Reduced the ratio of bot factories to planet size
 Replaced HaveSeenEnemyUnit checks with threat assessments where possible to avoid responding to threats which no longer exist
 More reactive with its naval fleet compositions
-Complete overhaul of Naval fleet platoons to make them more appropriate in size and avoid huge fleet in base syndrome
+Complete overhaul of Naval fleet platoons to make them more appropriate in size and better avoid huge fleet in base syndrome
 Forced an air presence within the first three factories
 Introduced Queller personalities to allow for a range of difficulties - bronze is easier than normal and uber is harder than absurd
 Will no longer spam defence structures within a small area
 Will no longer loop the Commander through a teleporter
 Checks it has the radar necessary for ground anti-orbital defences
 Defends Halleys and Catalysts with ground anti-orbital
-PUT BACK PLACEMENT RULES IN BRONZE AND SILVER FABBER LAND ONCE UBER HAS FIXED
 Scales platoon sizes better in the late game
 Techs when there's no other way to grow the economy
 Tighter grip on economy
 Won't let nuke launchers sit idle for minutes at a time
+Reordered all checks to optimise AI performance
+Added missing placement check for teleporters
+Now builds Advanced Torpedo Launchers
 
 v1.3.3
 

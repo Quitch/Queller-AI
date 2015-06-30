@@ -8,13 +8,18 @@
          "priority":376,
          "max_num_assisters":10,
          "builders":[
-		    "Commander",
+            "Commander",
             "AnyBasicFabber",
-			"AnyAdvancedFabber"
+            "AnyAdvancedFabber"
          ],
          "build_conditions":[
             [
-			   {
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -27,19 +32,14 @@
                   "compare0":"<=",
                   "value0":200
                },
-			   {
+               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirFactory"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
-			]
+            ]
          ],
          "placement_rules":{
-			"buffer":3,
+            "buffer":3,
             "threat":{
                "influence_type":"AntiSurface",
                "compare_type":"<",
@@ -48,7 +48,7 @@
             }
          }
       },
-	  {
+      {
          "name":"Advanced Air Factory",
          "to_build":"AdvancedAirFactory",
          "instance_count":1,
@@ -62,6 +62,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -73,11 +78,6 @@
                   "unit_type_string0":"(Advanced & Factory) - Orbital - Naval",
                   "compare0":"<",
                   "value0":1
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ]
          ],

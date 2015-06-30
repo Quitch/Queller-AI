@@ -9,19 +9,19 @@
          "build_conditions":[
             [
                {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"(Naval & Mobile & Offense) - Scout",
-                  "compare0":">=",
-                  "value0":4
-               },             
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
                {
                   "test_type":"HaveFullPlanetIntel",
                   "boolean":false
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"(Naval & Mobile & Offense) - Scout",
+                  "compare0":">=",
+                  "value0":4
                }
             ]
          ],
@@ -30,16 +30,15 @@
       {
          "name":"Naval Attack Platoon Large",
          "to_build":"Naval_Attack_Large",
-         "instance_count":2,
+         "instance_count":3,
          "shared_instance_count":"Multitask",
          "priority":102,
          "build_conditions":[
             [
                {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"(Naval & Mobile & Offense) - Scout",
-                  "compare0":">=",
-                  "value0":4
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
@@ -48,26 +47,32 @@
                   "value0":19980
                },
                {
-                  "test_type":"CanAttackWithPoolUnits",
-                  "boolean":true
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"(Naval & Mobile & Offense) - Scout",
+                  "compare0":">=",
+                  "value0":4
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
+                  "test_type":"CanAttackWithPoolUnits",
+                  "boolean":true
                }
             ]
          ],
          "task_type":"NavalAttack"
       },
-	  {
+      {
          "name":"Naval Attack Platoon Max",
          "to_build":"Naval_Attack_Max",
-         "instance_count":2,
+         "instance_count":3,
          "shared_instance_count":"Multitask",
          "priority":100,
          "build_conditions":[
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
                {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"(Naval & Mobile & Offense) - Scout",
@@ -77,11 +82,6 @@
                {
                   "test_type":"CanAttackWithPoolUnits",
                   "boolean":true
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ],

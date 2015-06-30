@@ -10,18 +10,17 @@
          "build_conditions":[
             [
                {
-                  "test_type":"WantCommanderOffPlanet",
-                  "boolean":true
-               },
-			   {
-                  "test_type":"NoWhereToRun",
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
                   "boolean":true
                },
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Structure & Teleporter",
-                  "compare0":"<",
-                  "value0":1
+                  "test_type":"WantCommanderOffPlanet",
+                  "boolean":true
+               },
+               {
+                  "test_type":"NoWhereToRun",
+                  "boolean":true
                },
                {
                   "test_type":"UnitPoolCount",
@@ -30,9 +29,10 @@
                   "value0":1
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Structure & Teleporter",
+                  "compare0":"<",
+                  "value0":1
                }
             ]
          ],
@@ -48,6 +48,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
                   "test_type":"WantCommanderOffPlanetByTeleporter",
                   "boolean":true
                },
@@ -56,14 +61,14 @@
                   "unit_type_string0":"Structure & Teleporter",
                   "compare0":">=",
                   "value0":1
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
                {
                   "test_type":"WantCommanderOffPlanet",
                   "boolean":true
@@ -73,11 +78,6 @@
                   "unit_type_string0":"Structure & Teleporter",
                   "compare0":">=",
                   "value0":1
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],

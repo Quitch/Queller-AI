@@ -13,20 +13,25 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
-			   {
+               {
                   "test_type":"OnTaskType",
                   "string0":"BuilderAssist",
                   "boolean":false
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
                {
                   "test_type":"CurrentMetalEfficiency",
                   "compare0":">=",
@@ -41,11 +46,6 @@
                   "test_type":"OnTaskType",
                   "string0":"BuilderAssist",
                   "boolean":false
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ],
@@ -67,19 +67,23 @@
          "build_conditions":[
             [
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Structure & Teleporter",
-                  "compare0":"<",
-                  "value0":1
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
                },
                {
                   "test_type":"PresenceOnOtherPlanet",
                   "boolean":true
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Structure & Teleporter",
+                  "compare0":"<",
+                  "value0":1
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"AdvancedVehicleFactory"
                }
             ]
          ],
@@ -106,6 +110,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"PlanetWithoutFabberWithTeleporter",
                   "boolean":true
                },
@@ -120,11 +129,6 @@
                   "unit_type_string0":"Fabber - Air - Orbital",
                   "compare0":">=",
                   "value0":2
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ],
@@ -142,6 +146,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"PlanetWithoutFabberWithTeleporter",
                   "boolean":true
                },
@@ -156,17 +165,12 @@
                   "unit_type_string0":"Fabber - Air - Orbital",
                   "compare0":">=",
                   "value0":2
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ],
          "task_type":"TeleportFabberToPlanet"
       },
-	  {
+      {
          "name":"Move Fabber To Planet",
          "instance_count":1,
          "priority":800,
@@ -181,14 +185,13 @@
          "build_conditions":[
             [
                {
-                  "test_type":"PlanetWithoutPresence",
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
                   "boolean":true
                },
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Fabber",
-                  "compare0":">=",
-                  "value0":2
+                  "test_type":"PlanetWithoutPresence",
+                  "boolean":true
                },
                {
                   "test_type":"UnitPoolCount",
@@ -197,9 +200,10 @@
                   "value0":1
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Fabber",
+                  "compare0":">=",
+                  "value0":2
                }
             ]
          ],
@@ -215,6 +219,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"PlanetOrGasGiantWithoutPresence",
                   "boolean":true
                },
@@ -223,14 +232,14 @@
                   "unit_type_string0":"Fabber & Orbital",
                   "compare0":">=",
                   "value0":2
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
-				  "boolean":true
-               }
-            ],
-			[
+                  "boolean":true
+               },
                {
                   "test_type":"PlanetOrGasGiantWithoutPresence",
                   "boolean":true
@@ -246,14 +255,14 @@
                   "unit_type_string0":"Structure & Orbital & Economy",
                   "compare0":"<",
                   "value0":1
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
-				  "boolean":true
-               }
-            ],
-			[
+                  "boolean":true
+               },
                {
                   "test_type":"PlanetOrGasGiantWithoutPresence",
                   "boolean":true
@@ -263,11 +272,6 @@
                   "unit_type_string0":"Structure & Teleporter",
                   "compare0":">=",
                   "value0":1
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ],

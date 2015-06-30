@@ -9,10 +9,9 @@
          "build_conditions":[
             [
                {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"Air & (Bomber | Gunship)",
-                  "compare0":">=",
-                  "value0":9
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
@@ -21,21 +20,22 @@
                   "value0":5600
                },
                {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"Air & (Bomber | Gunship)",
+                  "compare0":">=",
+                  "value0":9
+               },
+               {
                   "test_type":"CanAttackWithPoolUnitsBomber",
                   "string0":"WL_AnySurface",
                   "string1":"WL_Air",
                   "unit_type_string0":"Mobile | Structure"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ],
          "task_type":"BomberAttack"
       },
-	  {
+      {
          "name":"Bomber-Gunship Attack Platoon Max",
          "to_build":"BomberGunship_Attack_Max",
          "instance_count":2,
@@ -43,6 +43,11 @@
          "priority":100,
          "build_conditions":[
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
                {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Air & (Bomber | Gunship)",
@@ -54,11 +59,6 @@
                   "string0":"WL_AnySurface",
                   "string1":"WL_Air",
                   "unit_type_string0":"Mobile | Structure"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ],
@@ -72,6 +72,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
+               {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Air & Fighter",
                   "compare0":">=",
@@ -82,14 +87,14 @@
                   "string0":"WL_Air",
                   "string1":"WL_Air",
                   "unit_type_string0":"Mobile"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
                {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Air & Fighter",
@@ -102,11 +107,6 @@
                   "string1":"WL_Air",
                   "string2":"WL_Air",
                   "unit_type_string0":"Mobile | Structure"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ],

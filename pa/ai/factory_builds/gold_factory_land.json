@@ -12,6 +12,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
@@ -24,19 +29,19 @@
                   "unit_type_string0":"Fabber & Basic & Land",
                   "compare0":"<",
                   "value0":2
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ],
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
-			   {
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
                },
@@ -44,9 +49,9 @@
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"UnableToExpand",
-				  "boolean":false
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -61,14 +66,14 @@
                   "unit_type_string1":"Factory & Basic & Land",
                   "compare0":"<",
                   "value0":0.5
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
@@ -77,9 +82,9 @@
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"UnableToExpand",
-				  "boolean":false
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -94,14 +99,14 @@
                   "unit_type_string1":"Factory & Basic & Land",
                   "compare0":"<",
                   "value0":2
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
@@ -110,13 +115,13 @@
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"UnableToExpand",
-				  "boolean":false
+                  "boolean":false
                },
-			   {
+               {
                   "test_type":"AllMetalSpotsFull",
-				  "boolean":false
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -130,11 +135,6 @@
                   "unit_type_string0":"Commander",
                   "compare0":"<",
                   "value0":1
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ]
@@ -151,6 +151,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
@@ -163,19 +168,19 @@
                   "unit_type_string0":"Fabber & Basic & Land",
                   "compare0":"<",
                   "value0":0.5
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ],
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
-			   {
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
                },
@@ -183,9 +188,9 @@
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"UnableToExpand",
-				  "boolean":false
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -200,14 +205,14 @@
                   "unit_type_string1":"Factory & Basic & Land",
                   "compare0":"<",
                   "value0":0.5
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
@@ -216,9 +221,9 @@
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"UnableToExpand",
-				  "boolean":false
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -233,14 +238,14 @@
                   "unit_type_string1":"Factory & Basic & Land",
                   "compare0":"<",
                   "value0":2
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
@@ -249,9 +254,9 @@
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"UnableToExpand",
-				  "boolean":false
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -265,16 +270,11 @@
                   "unit_type_string0":"Commander",
                   "compare0":"<",
                   "value0":1
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ]
       },
-	  {
+      {
          "name":"Boom",
          "to_build":"BoomBot",
          "instance_count":-1,
@@ -286,8 +286,16 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"UnitCountAroundBase",
@@ -296,14 +304,6 @@
                   "value0":400,
                   "compare0":">=",
                   "value1":1
-               },
-			   {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ]
@@ -320,34 +320,34 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
                },
-			   {
+               {
                   "test_type":"CanAffordBuildDemand"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
-				  "boolean":true
-               }
-            ],
-			[
+                  "boolean":true
+               },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
                   "boolean":true
                },
-			   {
-                  "test_type":"CanAffordBuildDemand"
-               },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ]
@@ -365,15 +365,24 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
+               },
+               {
+                  "test_type":"HaveFullPlanetIntel",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"UnitCountOnPlanet",
@@ -386,27 +395,17 @@
                   "unit_type_string0":"(Land | Air) & Scout",
                   "compare0":"<",
                   "value0":250
-               },
-               {
-                  "test_type":"HaveFullPlanetIntel",
-                  "boolean":false
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ],
             [
                {
-                  "test_type":"BaseThreatened",
-                  "boolean":false
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
                },
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Structure & Teleporter",
-                  "compare0":">=",
-                  "value0":1
+                  "test_type":"BaseThreatened",
+                  "boolean":false
                },
                {
                   "test_type":"OtherPlanetNeedsReconAssistance",
@@ -421,11 +420,17 @@
                   "boolean":true
                },
                {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Structure & Teleporter",
+                  "compare0":">=",
+                  "value0":1
                },
                {
                   "test_type":"UnitRatioOnPlanet",
@@ -433,11 +438,6 @@
                   "unit_type_string1":"Land & Mobile & Offense",
                   "compare0":"<",
                   "value0":0.05
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ]
@@ -454,8 +454,17 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"BaseThreatened",
                   "boolean":false
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
                },
                {
                   "test_type":"HaveSeenEnemyUnits",
@@ -466,20 +475,11 @@
                   "test_type":"CanAffordBuildDemand"
                },
                {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Land & Scout",
                   "unit_type_string1":"Land & Mobile & Offense",
                   "compare0":"<",
                   "value0":0.05
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ]
@@ -496,42 +496,42 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
                },
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
+                  "test_type":"CanAffordBuildDemand"
                }
             ],
-			[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
                   "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ]
@@ -548,6 +548,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
                },
@@ -556,11 +561,11 @@
                   "boolean":false
                },
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"FocusTargetThreatRatio",
@@ -570,13 +575,6 @@
                   "value0":0.9
                },
                {
-                  "test_type":"UnitRatioOnPlanet",
-                  "unit_type_string0":"Tank & Heavy",
-                  "unit_type_string1":"Tank & Offense - Heavy",
-                  "compare0":"<",
-                  "value0":0.1
-               },
-               {
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"((Tank & Mobile) | (Bot & Mobile & Advanced)) - Fabber - AirDefense - Construction - Artillery - Heavy - Scout",
                   "compare0":">",
@@ -584,9 +582,11 @@
                   "boolean":true
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Tank & Heavy",
+                  "unit_type_string1":"Tank & Offense - Heavy",
+                  "compare0":"<",
+                  "value0":0.1
                }
             ]
          ]
@@ -603,15 +603,20 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
                },
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreatRatio",
@@ -626,24 +631,24 @@
                   "unit_type_string1":"(Tank & Offense) - AirDefense",
                   "compare0":"<",
                   "value0":0.2
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
                },
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreatRatio",
@@ -658,19 +663,19 @@
                   "unit_type_string1":"(Tank & Offense) - AirDefense",
                   "compare0":"<",
                   "value0":0.2
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ],
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
                   "boolean":true
                },
@@ -683,11 +688,6 @@
                   "unit_type_string1":"(Tank & Offense) - AirDefense",
                   "compare0":"<",
                   "value0":0.2
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ]
@@ -704,6 +704,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
@@ -712,19 +717,19 @@
                   "unit_type_string0":"Fabber & Advanced",
                   "compare0":"<",
                   "value0":2
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ],
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
-			   {
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
                },
@@ -732,9 +737,9 @@
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"UnableToExpand",
-				  "boolean":false
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -749,14 +754,14 @@
                   "unit_type_string1":"Factory & Advanced & Land",
                   "compare0":"<",
                   "value0":2
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
@@ -765,9 +770,9 @@
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"UnableToExpand",
-				  "boolean":false
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -782,14 +787,14 @@
                   "unit_type_string1":"Factory & Advanced & Land",
                   "compare0":"<",
                   "value0":4
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
@@ -798,9 +803,9 @@
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"UnableToExpand",
-				  "boolean":false
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -814,14 +819,14 @@
                   "unit_type_string0":"Commander",
                   "compare0":"<",
                   "value0":1
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
-				  "boolean":true
-               }
-            ],
-			[
+                  "boolean":true
+               },
                {
                   "test_type":"BaseThreatened",
                   "boolean":false
@@ -829,13 +834,6 @@
                {
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"AdvancedBotFabber"
                },
                {
                   "test_type":"CurrentMetalEfficiency",
@@ -848,9 +846,11 @@
                   "value0":1
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"AdvancedBotFabber"
                }
             ]
          ]
@@ -867,6 +867,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
@@ -875,19 +880,19 @@
                   "unit_type_string0":"Fabber & Advanced",
                   "compare0":"<",
                   "value0":0.5
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ],
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
-			   {
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
                },
@@ -895,9 +900,9 @@
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"UnableToExpand",
-				  "boolean":false
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -912,14 +917,14 @@
                   "unit_type_string1":"Factory & Advanced & Land",
                   "compare0":"<",
                   "value0":4
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
@@ -928,9 +933,9 @@
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"UnableToExpand",
-				  "boolean":false
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -945,14 +950,14 @@
                   "unit_type_string1":"Factory & Advanced & Land",
                   "compare0":"<",
                   "value0":9
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
@@ -961,9 +966,9 @@
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"UnableToExpand",
-				  "boolean":false
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -977,14 +982,14 @@
                   "unit_type_string0":"Commander",
                   "compare0":"<",
                   "value0":1
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
-				  "boolean":true
-               }
-            ],
-			[
+                  "boolean":true
+               },
                {
                   "test_type":"BaseThreatened",
                   "boolean":false
@@ -992,13 +997,6 @@
                {
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"AdvancedVehicleFabber"
                },
                {
                   "test_type":"CurrentMetalEfficiency",
@@ -1011,14 +1009,16 @@
                   "value0":1
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"AdvancedVehicleFabber"
                }
             ]
          ]
       },
-	  {
+      {
          "name":"Slammer",
          "to_build":"AdvancedAssaultBot",
          "instance_count":-1,
@@ -1030,12 +1030,12 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
-				  "boolean":true
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ]
@@ -1052,34 +1052,34 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
-				  "boolean":true
-               }
-            ],
-			[
+                  "boolean":true
+               },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
                   "boolean":true
                },
                {
                   "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ]
@@ -1096,46 +1096,46 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
                },
                {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
                   "test_type":"SystemThreat",
                   "string0":"Orbital",
                   "compare0":">",
                   "value0":0
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
-				  "boolean":true
-               }
-            ],
-			[
+                  "boolean":true
+               },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
                   "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"SystemThreat",
                   "string0":"Orbital",
                   "compare0":">",
                   "value0":0
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ]
@@ -1152,6 +1152,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
                },
@@ -1164,19 +1169,19 @@
                   "unit_type_string1":"Tank & Artillery",
                   "compare0":"<",
                   "value0":0.1
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
-				  "boolean":true
-               }
-            ],
-			[
+                  "boolean":true
+               },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
                },
-			   {
+               {
                   "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
                   "boolean":true
                },
@@ -1189,11 +1194,6 @@
                   "unit_type_string1":"Tank & Artillery",
                   "compare0":"<",
                   "value0":0.1
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ]
@@ -1210,34 +1210,34 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
-				  "boolean":true
-               }
-            ],
-			[
+                  "boolean":true
+               },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
                   "boolean":true
                },
                {
                   "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ]

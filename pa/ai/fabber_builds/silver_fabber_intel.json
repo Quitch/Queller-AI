@@ -11,8 +11,13 @@
             "AnyBasicFabber"
          ],
          "build_conditions":[
-            [
+            [               
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+				  "boolean":true
+               },
+			   {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -24,11 +29,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicRadar"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ],
@@ -53,8 +53,13 @@
             "AnyAdvancedFabber"
          ],
          "build_conditions":[
-            [
+            [               
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+				  "boolean":true
+               },
+			   {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -66,11 +71,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"AdvancedRadar"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ],
@@ -95,8 +95,13 @@
             "AnyBasicFabber"
          ],
          "build_conditions":[
-            [
+            [               
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+				  "boolean":true
+               },
+			   {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -108,11 +113,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"DeepSpaceRadar"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ],

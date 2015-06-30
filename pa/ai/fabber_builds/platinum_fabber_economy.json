@@ -15,18 +15,18 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
                   "test_type":"PotentialMetalEfficiency",
                   "compare0":"<",
-                  "value0":1.0
+                  "value0":1
                },
                {
                   "test_type":"CanFindMetalSpotToBuildBasic",
                   "boolean":true
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ]
          ],
@@ -56,16 +56,16 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
                   "test_type":"DesireMetal"
                },
                {
                   "test_type":"CanFindMetalSpotToBuildBasic",
                   "boolean":true
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ]
          ],
@@ -95,13 +95,13 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanFindMetalSpotToBuildBasic",
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
                   "boolean":true
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
+                  "test_type":"CanFindMetalSpotToBuildBasic",
+                  "boolean":true
                }
             ]
          ],
@@ -131,13 +131,13 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanFindMetalSpotToBuildBasic",
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
                   "boolean":true
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
+                  "test_type":"CanFindMetalSpotToBuildBasic",
+                  "boolean":true
                }
             ]
          ],
@@ -166,13 +166,13 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanFindMetalSpotToBuildBasic",
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
                   "boolean":true
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
+                  "test_type":"CanFindMetalSpotToBuildBasic",
+                  "boolean":true
                }
             ]
          ],
@@ -202,18 +202,18 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
                   "test_type":"PotentialMetalEfficiency",
                   "compare0":"<",
-                  "value0":1.0
+                  "value0":1
                },
                {
                   "test_type":"CanFindMetalSpotToBuildBasic",
                   "boolean":true
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ]
          ],
@@ -242,16 +242,16 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
                   "test_type":"DesireMetal"
                },
                {
                   "test_type":"CanFindMetalSpotToBuildBasic",
                   "boolean":true
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ]
          ],
@@ -280,13 +280,13 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanFindMetalSpotToBuildBasic",
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
                   "boolean":true
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
+                  "test_type":"CanFindMetalSpotToBuildBasic",
+                  "boolean":true
                }
             ]
          ],
@@ -315,13 +315,13 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanFindMetalSpotToBuildBasic",
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
                   "boolean":true
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
+                  "test_type":"CanFindMetalSpotToBuildBasic",
+                  "boolean":true
                }
             ]
          ],
@@ -350,13 +350,13 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanFindMetalSpotToBuildBasic",
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
                   "boolean":true
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
+                  "test_type":"CanFindMetalSpotToBuildBasic",
+                  "boolean":true
                }
             ]
          ],
@@ -370,7 +370,7 @@
             }
          }
       },
-	  {
+      {
          "name":"Basic Energy Generator",
          "to_build":"BasicEnergyGenerator",
          "instance_count":1,
@@ -383,10 +383,15 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
                   "test_type":"DesireEnergy"
                },
                {
-                  "test_type":"UnitCount",
+                  "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Fabber & Basic",
                   "compare0":">",
                   "value0":2
@@ -400,21 +405,21 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicEnergyGenerator"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"platinum",
-				  "boolean":true
-               }
-            ],
-			[
+                  "boolean":true
+               },
                {
                   "test_type":"PotentialEnergyEfficiency",
                   "compare0":"<",
-                  "value0":1.0
+                  "value0":1
                },
                {
-                  "test_type":"UnitCount",
+                  "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Fabber & Basic",
                   "compare0":">",
                   "value0":2
@@ -428,11 +433,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicEnergyGenerator"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ]
          ],
@@ -462,18 +462,18 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
                   "test_type":"PotentialMetalEfficiency",
                   "compare0":"<",
-                  "value0":1.0
+                  "value0":1
                },
                {
                   "test_type":"CanFindMetalSpotToBuildAdvanced",
                   "boolean":true
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ]
          ],
@@ -503,16 +503,16 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
                   "test_type":"DesireMetal"
                },
                {
                   "test_type":"CanFindMetalSpotToBuildAdvanced",
                   "boolean":true
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ]
          ],
@@ -542,13 +542,13 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanFindMetalSpotToBuildAdvanced",
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
                   "boolean":true
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
+                  "test_type":"CanFindMetalSpotToBuildAdvanced",
+                  "boolean":true
                }
             ]
          ],
@@ -563,7 +563,7 @@
          },
          "task_type":"AreaBuild"
       },
-	  {
+      {
          "name":"Advanced Metal Extractor - Expand - Area",
          "to_build":"AdvancedMetalExtractor",
          "instance_count":-1,
@@ -578,13 +578,13 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanFindMetalSpotToBuildAdvanced",
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
                   "boolean":true
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
+                  "test_type":"CanFindMetalSpotToBuildAdvanced",
+                  "boolean":true
                }
             ]
          ],
@@ -614,18 +614,18 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
                   "test_type":"PotentialMetalEfficiency",
                   "compare0":"<",
-                  "value0":1.0
+                  "value0":1
                },
                {
                   "test_type":"CanFindMetalSpotToBuildAdvanced",
                   "boolean":true
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ]
          ],
@@ -654,16 +654,16 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
                   "test_type":"DesireMetal"
                },
                {
                   "test_type":"CanFindMetalSpotToBuildAdvanced",
                   "boolean":true
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ]
          ],
@@ -692,13 +692,13 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanFindMetalSpotToBuildAdvanced",
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
                   "boolean":true
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
+                  "test_type":"CanFindMetalSpotToBuildAdvanced",
+                  "boolean":true
                }
             ]
          ],
@@ -726,13 +726,13 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanFindMetalSpotToBuildAdvanced",
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
                   "boolean":true
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
+                  "test_type":"CanFindMetalSpotToBuildAdvanced",
+                  "boolean":true
                }
             ]
          ],
@@ -760,18 +760,18 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
                   "test_type":"PotentialEnergyEfficiency",
                   "compare0":"<",
-                  "value0":1.0
+                  "value0":1
                },
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"AdvancedEnergyGenerator"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ]
          ],
@@ -800,16 +800,16 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
                   "test_type":"DesireEnergy"
                },
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"AdvancedEnergyGenerator"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ]
          ],
@@ -837,38 +837,38 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
                   "test_type":"PlanetIsGasGiant",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"DesireEnergy"
                },
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"OrbitalExtractor"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"platinum",
-				  "boolean":true
-               }
-            ],
-			[
+                  "boolean":true
+               },
                {
                   "test_type":"PlanetIsGasGiant",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"DesireMetal"
                },
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"OrbitalExtractor"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ]
          ],
@@ -876,7 +876,7 @@
             "buffer":30
          }
       },
-	  {
+      {
          "name":"Jig",
          "to_build":"OrbitalExtractor",
          "instance_count":1,
@@ -889,42 +889,42 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
                   "test_type":"PlanetIsGasGiant",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"PotentialMetalEfficiency",
                   "compare0":"<",
-                  "value0":1.0
+                  "value0":1
                },
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"OrbitalExtractor"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"platinum",
-				  "boolean":true
-               }
-            ],
-			[
+                  "boolean":true
+               },
                {
                   "test_type":"PlanetIsGasGiant",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"PotentialEnergyEfficiency",
                   "compare0":"<",
-                  "value0":1.0
+                  "value0":1
                },
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"OrbitalExtractor"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ]
          ],
@@ -944,6 +944,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
                   "test_type":"EnergyStorageToProductionRatio",
                   "compare0":"<",
                   "value0":5
@@ -954,11 +959,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"EnergyStorage"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ]
          ],
@@ -985,6 +985,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
                   "test_type":"MetalStorageToProductionRatio",
                   "compare0":"<",
                   "value0":6
@@ -995,11 +1000,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"MetalStorage"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-				  "boolean":true
                }
             ]
          ],

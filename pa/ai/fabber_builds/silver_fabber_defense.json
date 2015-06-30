@@ -3,16 +3,21 @@
       {
          "name":"Galata Turret - Mex",
          "to_build":"BasicAirDefense",
-		 "instance_count":1,
+         "instance_count":1,
          "shared_instance_count":"Defence",
          "max_num_assisters":2,
          "priority":278,
          "base_sort":"FromPerimeter",
          "builders":[
-		    "AnyBasicFabber"
+            "AnyBasicFabber"
          ],
          "build_conditions":[
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -30,17 +35,19 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirDefense"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ],
          "placement_rules":{
             "placement_type":"FromMainBasePerimeter",
             "unit_count_rules":[
+               {
+                  "unit_type_string":"Structure & MetalProduction",
+                  "alliance":"Ally",
+                  "compare_type":">=",
+                  "range":50,
+                  "count":1
+               },
                {
                   "unit_type_string":"Structure & AirDefense",
                   "alliance":"Ally",
@@ -54,7 +61,7 @@
       {
          "name":"Single Laser Defense Tower - Mex",
          "to_build":"BasicLandDefenseSingle",
-		 "instance_count":1,
+         "instance_count":1,
          "shared_instance_count":"Defence",
          "max_num_assisters":2,
          "priority":277,
@@ -64,6 +71,11 @@
          ],
          "build_conditions":[
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -81,62 +93,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicLandDefenseSingle"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
-               }
-            ]
-         ],
-         "placement_rules":{
-            "placement_type":"FromMainBasePerimeter",
-            "unit_count_rules":[
-               {
-                  "unit_type_string":"Structure & SurfaceDefense",
-                  "alliance":"Ally",
-                  "compare_type":"<",
-                  "range":100,
-                  "count":1
-               }
-            ]
-         }
-      },
-	  {
-         "name":"Laser Defense Tower - Mex",
-         "to_build":"BasicLandDefense",
-		 "instance_count":1,
-         "shared_instance_count":"Defence",
-         "max_num_assisters":2,
-         "priority":278,
-         "base_sort":"FromPerimeter",
-         "builders":[
-            "AnyBasicFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"DistFromMainBase",
-                  "compare0":">=",
-                  "value0":200
-               },
-               {
-                  "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & Basic & SurfaceDefense",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicLandDefense"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ],
@@ -159,21 +115,84 @@
                }
             ]
          }
-      },	
-	  {
-         "name":"Torpedo Launcher - Mex",
-         "to_build":"BasicNavalDefense",
-		 "instance_count":1,
+      },
+      {
+         "name":"Laser Defense Tower - Mex",
+         "to_build":"BasicLandDefense",
+         "instance_count":1,
          "shared_instance_count":"Defence",
          "max_num_assisters":2,
          "priority":278,
          "base_sort":"FromPerimeter",
          "builders":[
-		    "BasicAirFabber",
-			"BasicNavalFabber"
+            "AnyBasicFabber"
          ],
          "build_conditions":[
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"DistFromMainBase",
+                  "compare0":">=",
+                  "value0":200
+               },
+               {
+                  "test_type":"UnitCountInBase",
+                  "unit_type_string0":"Structure & Basic & SurfaceDefense",
+                  "compare0":"<",
+                  "value0":1
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicLandDefense"
+               }
+            ]
+         ],
+         "placement_rules":{
+            "placement_type":"FromMainBasePerimeter",
+            "unit_count_rules":[
+               {
+                  "unit_type_string":"Structure & MetalProduction",
+                  "alliance":"Ally",
+                  "compare_type":">=",
+                  "range":50,
+                  "count":1
+               },
+               {
+                  "unit_type_string":"Structure & SurfaceDefense",
+                  "alliance":"Ally",
+                  "compare_type":"<",
+                  "range":100,
+                  "count":1
+               }
+            ]
+         }
+      },
+      {
+         "name":"Torpedo Launcher - Mex",
+         "to_build":"BasicNavalDefense",
+         "instance_count":1,
+         "shared_instance_count":"Defence",
+         "max_num_assisters":2,
+         "priority":278,
+         "base_sort":"FromPerimeter",
+         "builders":[
+            "BasicAirFabber",
+            "BasicNavalFabber"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -191,17 +210,19 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicNavalDefense"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ],
          "placement_rules":{
             "placement_type":"FromMainBasePerimeter",
             "unit_count_rules":[
+               {
+                  "unit_type_string":"Structure & MetalProduction",
+                  "alliance":"Ally",
+                  "compare_type":">=",
+                  "range":50,
+                  "count":1
+               },
                {
                   "unit_type_string":"Structure & Naval & Defense",
                   "alliance":"Ally",
@@ -221,11 +242,16 @@
          "priority":250,
          "base_sort":"FromPerimeter",
          "builders":[
-		    "Commander",
+            "Commander",
             "AnyBasicFabber"
          ],
          "build_conditions":[
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -244,11 +270,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirDefense"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ],
@@ -260,7 +281,7 @@
                   "alliance":"Ally",
                   "compare_type":">=",
                   "range":50,
-                  "count":2
+                  "count":1
                },
                {
                   "unit_type_string":"Structure & AirDefense",
@@ -287,6 +308,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -310,11 +336,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicLandDefenseSingle"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ],
@@ -352,6 +373,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -369,11 +395,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicLandDefense"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ],
@@ -397,7 +418,7 @@
             ]
          }
       },
-	  {
+      {
          "name":"Torpedo Launcher - Base",
          "to_build":"BasicNavalDefense",
          "instance_count":1,
@@ -406,12 +427,17 @@
          "priority":250,
          "base_sort":"FromPerimeter",
          "builders":[
-		    "Commander",			
-			"BasicAirFabber",
-			"BasicNavalFabber"
+            "Commander",
+            "BasicAirFabber",
+            "BasicNavalFabber"
          ],
          "build_conditions":[
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -430,11 +456,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicNavalDefense"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ],
@@ -472,6 +493,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -489,11 +515,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"AdvancedAirDefense"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ],
@@ -512,7 +533,7 @@
                   "alliance":"Ally",
                   "compare_type":"<",
                   "range":75,
-                  "count":5
+                  "count":1
                }
             ]
          }
@@ -531,6 +552,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -548,11 +574,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"AdvancedLandDefense"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ],
@@ -571,7 +592,67 @@
                   "alliance":"Ally",
                   "compare_type":"<",
                   "range":75,
-                  "count":5
+                  "count":1
+               }
+            ]
+         }
+      },
+      {
+         "name":"Advanced Torpedo Launcher - Base",
+         "to_build":"AdvancedNavalDefense",
+         "instance_count":1,
+         "shared_instance_count":"Defence",
+         "priority":479,
+         "max_num_assisters":3,
+         "base_sort":"FromPerimeter",
+         "builders":[
+            "AdvancedNavalFabber",
+            "AdvancedAirFabber"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"UnitCountInBase",
+                  "unit_type_string0":"Structure & Advanced & Naval & Defense",
+                  "compare0":"<",
+                  "value0":6
+               },
+               {
+                  "test_type":"UnitCountInBase",
+                  "unit_type_string0":"Structure & (EnergyProduction | Factory)",
+                  "compare0":">=",
+                  "value0":3
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"AdvancedNavalDefense"
+               }
+            ]
+         ],
+         "placement_rules":{
+            "placement_type":"FromMainBaseCenter",
+            "unit_count_rules":[
+               {
+                  "unit_type_string":"Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+                  "alliance":"Ally",
+                  "compare_type":">=",
+                  "range":50,
+                  "count":1
+               },
+               {
+                  "unit_type_string":"Structure & SurfaceDefense",
+                  "alliance":"Ally",
+                  "compare_type":"<",
+                  "range":75,
+                  "count":1
                }
             ]
          }
@@ -588,6 +669,11 @@
          ],
          "build_conditions":[
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -606,11 +692,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"DefenseSatellite"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ],
@@ -641,6 +722,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -664,14 +750,14 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"Umbrella"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -696,11 +782,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"Umbrella"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ],
@@ -737,6 +818,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -748,11 +834,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"AntiNukeSilo"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ],

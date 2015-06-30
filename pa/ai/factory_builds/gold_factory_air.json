@@ -12,6 +12,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
@@ -20,21 +25,21 @@
                   "unit_type_string0":"Fabber & Basic",
                   "compare0":"<",
                   "value0":2
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ],
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
-			   {
+               {
                   "test_type":"UnableToExpand",
-				  "boolean":false
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -43,14 +48,14 @@
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"BasicAirFabber"
                },
-			   {
+               {
                   "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Air",
                   "string1":"AntiAir",
                   "compare0":"<",
                   "value0":0.9
                },
-			   {
+               {
                   "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Air",
                   "string1":"Air",
@@ -63,25 +68,25 @@
                   "unit_type_string1":"Factory & Basic & Air",
                   "compare0":"<",
                   "value0":1
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ],
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
-			   {
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"UnableToExpand",
-				  "boolean":false
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -96,21 +101,21 @@
                   "unit_type_string1":"Factory & Basic & Air",
                   "compare0":"<",
                   "value0":3
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ],
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"UnableToExpand",
-				  "boolean":false
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -124,16 +129,11 @@
                   "unit_type_string0":"Commander",
                   "compare0":"<",
                   "value0":1
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ]
       },
-	  {
+      {
          "name":"Firefly",
          "to_build":"AirScout",
          "instance_count":1,
@@ -144,11 +144,15 @@
          ],
          "build_conditions":[
             [
-			   {
+               {
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
-			   {
+               {
+                  "test_type":"HaveFullPlanetIntel",
+                  "boolean":false
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -162,17 +166,8 @@
                   "unit_type_string0":"(Air | Land | Naval) & Scout",
                   "compare0":"<",
                   "value0":250
-               },
-               {
-                  "test_type":"HaveFullPlanetIntel",
-                  "boolean":false
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
-			]
+            ]
          ]
       },
       {
@@ -187,66 +182,66 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
-			   {
+               {
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Air & Fighter",
                   "compare0":"<",
                   "value0":5
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
-				  "boolean":true
-               }
-            ],
-			[
+                  "boolean":true
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
-			   {
+               {
                   "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Air",
                   "string1":"AntiAir",
                   "compare0":">=",
                   "value0":0.5
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
-				  "boolean":true
-               }
-            ],
-			[
+                  "boolean":true
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
-			   {
+               {
                   "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Air",
                   "string1":"Air",
                   "compare0":">=",
                   "value0":0.5
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
-				  "boolean":true
-               }
-            ],
-			[
-               {
-                  "test_type":"CanAffordBuildDemand"
+                  "boolean":true
                },
-			   {
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ]
@@ -263,91 +258,86 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
-			   {
+               {
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Air & Bomber",
                   "compare0":"<",
                   "value0":1
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
-				  "boolean":true
-               }
-            ],
-			[
-			   {
-                  "test_type":"CanAffordBuildDemand"
+                  "boolean":true
                },
-			   {
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
                },
-			   {
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
                   "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Air",
                   "string1":"AntiAir",
                   "compare0":"<",
                   "value0":0.9
                },
-			   {
+               {
                   "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Air",
                   "string1":"Air",
                   "compare0":"<",
                   "value0":0.9
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
-			],
-			[
-			   {
+            ],
+            [
+               {
                   "test_type":"CanAffordBuildDemand"
                },
-			   {
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Air & Bomber",
                   "compare0":"<",
                   "value0":40
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
-				  "boolean":true
-               }
-            ],
-			[
-			   {
-                  "test_type":"CanAffordBuildDemand"
+                  "boolean":true
                },
-			   {
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"UnitCountPerPlanetRadius",
                   "unit_type_string0":"Air & Bomber",
                   "compare0":"<",
                   "value0":10
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ]
       },
-	  {
+      {
          "name":"Advanced Air Fabber",
          "to_build":"AdvancedAirFabber",
          "instance_count":1,
@@ -359,6 +349,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
@@ -367,21 +362,21 @@
                   "unit_type_string0":"Fabber & Advanced",
                   "compare0":"<",
                   "value0":2
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ],
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
-			   {
+               {
                   "test_type":"UnableToExpand",
-				  "boolean":false
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -390,14 +385,14 @@
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"AdvancedAirFabber"
                },
-			   {
+               {
                   "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Air",
                   "string1":"AntiAir",
                   "compare0":"<",
                   "value0":0.9
                },
-			   {
+               {
                   "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Air",
                   "string1":"Air",
@@ -410,25 +405,25 @@
                   "unit_type_string1":"Factory & Advanced & Air",
                   "compare0":"<",
                   "value0":3
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ],
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"BaseThreatened",
                   "boolean":false
                },
-			   {
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"UnableToExpand",
-				  "boolean":false
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -443,21 +438,21 @@
                   "unit_type_string1":"Factory & Advanced & Air",
                   "compare0":"<",
                   "value0":9
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ],
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"UnableToExpand",
-				  "boolean":false
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -471,14 +466,14 @@
                   "unit_type_string0":"Commander",
                   "compare0":"<",
                   "value0":1
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
-				  "boolean":true
-               }
-            ],
-			[
+                  "boolean":true
+               },
                {
                   "test_type":"BaseThreatened",
                   "boolean":false
@@ -486,13 +481,6 @@
                {
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicBotFabber"
                },
                {
                   "test_type":"CurrentMetalEfficiency",
@@ -505,14 +493,16 @@
                   "value0":1
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicBotFabber"
                }
             ]
-		 ]
-	  },
-	  {
+         ]
+      },
+      {
          "name":"Phoenix",
          "to_build":"AdvancedFighter",
          "instance_count":1,
@@ -524,15 +514,15 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
-				  "boolean":true
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
-		 ]
-	  }
+         ]
+      }
    ]
 }

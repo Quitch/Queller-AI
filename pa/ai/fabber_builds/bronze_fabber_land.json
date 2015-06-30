@@ -15,6 +15,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -30,14 +35,18 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicBotFactory"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-                  "boolean":true
                }
             ]
-         ]
+         ],
+         "placement_rules":{
+            "buffer":3,
+            "threat":{
+               "influence_type":"AntiSurface",
+               "compare_type":"<",
+               "radius":10,
+               "value":50
+            }
+         }
       },
       {
          "name":"Basic Vehicle Factory - Non-land Fabbers",
@@ -56,15 +65,20 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"BasicVehicleFactory"
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
                },
                {
                   "test_type":"UnitCountPerPlanetRadius",
@@ -75,11 +89,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicVehicleFactory"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-                  "boolean":true
                }
             ]
          ],
@@ -109,6 +118,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -124,11 +138,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicVehicleFactory"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-                  "boolean":true
                }
             ]
          ],
@@ -156,11 +165,12 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
                },
                {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"AdvancedBotFactory"
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"UnitCountOnPlanet",
@@ -169,9 +179,8 @@
                   "value0":1
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-                  "boolean":true
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"AdvancedBotFactory"
                }
             ]
          ],
@@ -199,11 +208,12 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
                },
                {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"AdvancedVehicleFactory"
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"UnitCountOnPlanet",
@@ -212,9 +222,8 @@
                   "value0":1
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-                  "boolean":true
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"AdvancedVehicleFactory"
                }
             ]
          ],

@@ -13,6 +13,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -34,51 +39,27 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirFactory"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
                   "boolean":true
-               }
-            ],
-            [
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"BasicAirFactory"
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Factory - Orbital",
-                  "compare0":">=",
-                  "value0":1
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Air",
                   "string1":"AntiAir",
                   "compare0":">",
-                  "value0":1.0
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicAirFactory"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               }
-            ],
-            [
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicAirFactory"
+                  "value0":1
                },
                {
                   "test_type":"UnitCountOnPlanet",
@@ -87,23 +68,16 @@
                   "value0":1
                },
                {
-                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
-                  "string0":"Air",
-                  "string1":"Air",
-                  "compare0":">",
-                  "value0":1.0
-               },
-               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirFactory"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
                   "boolean":true
-               }
-            ],
-            [
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -112,8 +86,39 @@
                   "string0":"BasicAirFactory"
                },
                {
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
+                  "string0":"Air",
+                  "string1":"Air",
+                  "compare0":">",
+                  "value0":1
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Factory - Orbital",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicAirFactory"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicAirFactory"
                },
                {
                   "test_type":"UnitCountOnPlanet",
@@ -131,24 +136,24 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirFactory"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
                   "boolean":true
-               }
-            ],
-            [
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"BasicAirFactory"
-               },
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":true
                },
                {
                   "test_type":"UnitCountPerPlanetRadius",
@@ -159,11 +164,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirFactory"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
                }
             ]
          ],
@@ -190,6 +190,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -211,11 +216,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirFactory"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
                }
             ]
          ],
@@ -244,15 +244,20 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"BasicAirFactory"
-               },
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":false
                },
                {
                   "test_type":"UnitRatioOnPlanet",
@@ -264,20 +269,13 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirFactory"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
                }
             ],
             [
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicAirFactory"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
                },
                {
                   "test_type":"AloneOnPlanet",
@@ -292,16 +290,23 @@
                   "boolean":false
                },
                {
-                  "test_type":"CanFindPlaceToBuild",
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
                   "string0":"BasicAirFactory"
                },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicAirFactory"
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
                   "boolean":true
-               }
-            ],
-            [
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -314,19 +319,19 @@
                   "string0":"Air",
                   "string1":"AntiAir",
                   "compare0":">",
-                  "value0":1.0
+                  "value0":1
                },
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirFactory"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
                   "boolean":true
-               }
-            ],
-            [
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -339,29 +344,29 @@
                   "string0":"Air",
                   "string1":"Air",
                   "compare0":">",
-                  "value0":1.0
+                  "value0":1
                },
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirFactory"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
                   "boolean":true
-               }
-            ],
-            [
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"BasicAirFactory"
-               },
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":true
                },
                {
                   "test_type":"UnitCountPerPlanetRadius",
@@ -372,11 +377,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirFactory"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
                }
             ]
          ],
@@ -404,6 +404,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -425,11 +430,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirFactory"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
                }
             ]
          ],
@@ -459,26 +459,13 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicAirFactory"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
                },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
-               },
-               {
-                  "test_type":"UnitRatioOnPlanet",
-                  "unit_type_string0":"Factory & Air & Basic",
-                  "unit_type_string1":"(Factory & Basic) - Orbital - Air",
-                  "compare0":"<",
-                  "value0":0.2
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicAirFactory"
                },
                {
                   "test_type":"CurrentMetalEfficiency",
@@ -491,18 +478,29 @@
                   "value0":1
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               }
-            ],
-            [
-               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"BasicAirFactory"
+               },
+               {
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Factory & Air & Basic",
+                  "unit_type_string1":"(Factory & Basic) - Orbital - Air",
+                  "compare0":"<",
+                  "value0":0.2
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicAirFactory"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
                },
                {
                   "test_type":"AloneOnPlanet",
@@ -517,8 +515,32 @@
                   "boolean":false
                },
                {
+                  "test_type":"CurrentMetalEfficiency",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
+                  "test_type":"CurrentEnergyEfficiency",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicAirFactory"
+               },
+               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirFactory"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
                },
                {
                   "test_type":"CurrentMetalEfficiency",
@@ -530,13 +552,6 @@
                   "compare0":">=",
                   "value0":1
                },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               }
-            ],
-            [
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -549,11 +564,18 @@
                   "string0":"Air",
                   "string1":"AntiAir",
                   "compare0":">=",
-                  "value0":1.0
+                  "value0":1
                },
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirFactory"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
                },
                {
                   "test_type":"CurrentMetalEfficiency",
@@ -565,13 +587,6 @@
                   "compare0":">=",
                   "value0":1
                },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               }
-            ],
-            [
                {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -584,11 +599,22 @@
                   "string0":"Air",
                   "string1":"Air",
                   "compare0":">=",
-                  "value0":1.0
+                  "value0":1
                },
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirFactory"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
                },
                {
                   "test_type":"CurrentMetalEfficiency",
@@ -601,22 +627,11 @@
                   "value0":1
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               }
-            ],
-            [
-               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"BasicAirFactory"
-               },
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":true
                },
                {
                   "test_type":"UnitCountPerPlanetRadius",
@@ -627,21 +642,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirFactory"
-               },
-               {
-                  "test_type":"CurrentMetalEfficiency",
-                  "compare0":">=",
-                  "value0":1
-               },
-               {
-                  "test_type":"CurrentEnergyEfficiency",
-                  "compare0":">=",
-                  "value0":1
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
                }
             ]
          ],
@@ -669,6 +669,15 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"PresenceOnOtherPlanet",
+                  "boolean":true
+               },
+               {
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Factory - Orbital",
                   "compare0":"<",
@@ -681,17 +690,8 @@
                   "value0":1
                },
                {
-                  "test_type":"PresenceOnOtherPlanet",
-                  "boolean":true
-               },
-               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicAirFactory"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
                }
             ]
          ],
@@ -720,11 +720,20 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
                },
                {
                   "test_type":"HaveEcoForAdvanced",
+                  "boolean":true
+               },
+               {
+                  "test_type":"PlanetHasUseablePlanetWeapon",
                   "boolean":true
                },
                {
@@ -747,17 +756,8 @@
                   "value0":2
                },
                {
-                  "test_type":"PlanetHasUseablePlanetWeapon",
-                  "boolean":true
-               },
-               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"AdvancedAirFactory"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
                }
             ]
          ],

@@ -8,21 +8,21 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
+               {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Orbital & Recon - Structure",
                   "compare0":">=",
                   "value0":1
                },
-			   {
+               {
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Orbital & Structure & Economy",
                   "compare0":"<",
                   "value0":1
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ]
          ],
@@ -37,6 +37,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
+               {
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Orbital & Recon - Structure",
                   "compare0":">",
@@ -45,14 +50,14 @@
                {
                   "test_type":"OtherPlanetNeedsReconAssistance",
                   "boolean":true
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"bronze",
-				  "boolean":true
-               }
-            ],
-			[
+                  "boolean":true
+               },
                {
                   "test_type":"PlanetIsGasGiant",
                   "boolean":true
@@ -60,14 +65,14 @@
                {
                   "test_type":"OtherPlanetNeedsReconAssistance",
                   "boolean":true
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
                {
                   "test_type":"OtherPlanetNeedsReconAssistance",
                   "boolean":true
@@ -75,11 +80,6 @@
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ]
          ],
@@ -93,6 +93,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
+               {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Orbital & Fighter",
                   "compare0":">=",
@@ -100,11 +105,6 @@
                },
                {
                   "test_type":"CanAttackWithPoolUnits"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ]
          ],
@@ -118,6 +118,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
+               {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Orbital & LaserPlatform",
                   "compare0":">=",
@@ -125,11 +130,6 @@
                },
                {
                   "test_type":"CanAttackWithPoolUnits"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ]
          ],

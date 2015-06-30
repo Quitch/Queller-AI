@@ -12,6 +12,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -20,11 +25,6 @@
                   "unit_type_string1":"Factory & Land & Basic",
                   "compare0":"<",
                   "value0":10
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ]
          ]
@@ -41,6 +41,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -49,16 +54,11 @@
                   "unit_type_string1":"Factory & Land & Basic",
                   "compare0":"<",
                   "value0":10
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ]
          ]
       },
-	  {
+      {
          "name":"Basic Combat Fabber Bot",
          "to_build":"BasicBotCombatFabber",
          "instance_count":1,
@@ -69,16 +69,16 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
-			   {
-                  "test_type":"CanAffordBuildDemand"
-               },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ]
@@ -95,17 +95,17 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
                   "test_type":"HasPersonalityTag",
                   "string0":"bronze",
-				  "boolean":true
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ]
       },
-	  {
+      {
          "name":"Grenadier",
          "to_build":"BasicArtilleryBot",
          "instance_count":-1,
@@ -117,16 +117,16 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
-			   {
-                  "test_type":"CanAffordBuildDemand"
-               },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ]
@@ -143,12 +143,12 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
                   "test_type":"HasPersonalityTag",
                   "string0":"bronze",
-				  "boolean":true
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ]
@@ -165,12 +165,12 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
                   "test_type":"HasPersonalityTag",
                   "string0":"bronze",
-				  "boolean":true
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ]
@@ -187,12 +187,12 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
                   "test_type":"HasPersonalityTag",
                   "string0":"bronze",
-				  "boolean":true
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ]
@@ -209,6 +209,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -217,11 +222,6 @@
                   "unit_type_string1":"Factory & Land & Advanced",
                   "compare0":"<",
                   "value0":2
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ]
          ]
@@ -238,6 +238,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -246,34 +251,29 @@
                   "unit_type_string1":"Factory & Land & Advanced",
                   "compare0":"<",
                   "value0":2
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ]
          ]
       },
-	  {
+      {
          "name":"Slammer",
          "to_build":"AdvancedAssaultBot",
          "instance_count":-1,
          "max_num_assisters":15,
          "priority":199,
-         "builders":[		 
+         "builders":[
             "AdvancedBotFactory",
             "UnitCannon"
          ],
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
                   "test_type":"HasPersonalityTag",
                   "string0":"bronze",
-				  "boolean":true
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ]
@@ -290,12 +290,12 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
                   "test_type":"HasPersonalityTag",
                   "string0":"bronze",
-				  "boolean":true
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ]
@@ -312,12 +312,12 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
                   "test_type":"HasPersonalityTag",
                   "string0":"bronze",
-				  "boolean":true
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ]
@@ -334,12 +334,12 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
                   "test_type":"HasPersonalityTag",
                   "string0":"bronze",
-				  "boolean":true
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ]
@@ -356,12 +356,12 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
                   "test_type":"HasPersonalityTag",
                   "string0":"bronze",
-				  "boolean":true
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ]
@@ -378,12 +378,12 @@
          "build_conditions":[
             [
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
                   "test_type":"HasPersonalityTag",
                   "string0":"bronze",
-				  "boolean":true
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ]

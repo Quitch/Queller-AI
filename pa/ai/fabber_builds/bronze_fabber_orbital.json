@@ -12,8 +12,13 @@
             "AnyAdvancedFabber"
          ],
          "build_conditions":[
-            [
+            [               
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+				  "boolean":true
+               },
+			   {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -25,11 +30,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"OrbitalLauncher"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ]
          ],
@@ -48,7 +48,12 @@
             "OrbitalFabber"
          ],
          "build_conditions":[
-            [
+            [			   
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"bronze",
+				  "boolean":true
+               },
 			   {
                   "test_type":"CanAffordBuildDemand"
                },
@@ -61,11 +66,6 @@
                   "unit_type_string0":"Factory & Orbital & Advanced",
                   "compare0":"<",
                   "value0":1
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-				  "boolean":true
                }
             ]
          ],

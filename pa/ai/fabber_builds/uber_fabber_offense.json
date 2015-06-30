@@ -15,6 +15,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+				  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -27,7 +32,13 @@
                   "unit_type_string0":"Structure & Basic & SurfaceDefense",
                   "compare0":"<",
                   "value0":1
-               },		   
+               },	
+               {
+                  "test_type":"UnitCountInBase",
+                  "unit_type_string0":"Structure & MetalProduction",
+                  "compare0":">=",
+                  "value0":1
+               },	   
                {
                   "test_type":"UnitCountAroundBase",
                   "unit_type_string0":"Mobile & Offense",
@@ -45,19 +56,8 @@
                   "value1":1
                },
                {
-                  "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & MetalProduction",
-                  "compare0":">=",
-                  "value0":1
-               },
-               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicLandDefense"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
@@ -101,6 +101,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+				  "boolean":true
+               },
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
                },
@@ -130,14 +135,14 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicArtillery"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
 				  "boolean":true
-               }
-            ],
-            [
+               },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
@@ -168,11 +173,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicArtillery"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
@@ -209,6 +209,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+				  "boolean":true
+               },
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
                },
@@ -232,11 +237,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"UnitCannon"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
@@ -256,6 +256,11 @@
          ],
          "build_conditions":[
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+				  "boolean":true
+               },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
@@ -286,14 +291,14 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"LongRangeArtillery"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
 				  "boolean":true
-               }
-            ],
-            [
+               },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
@@ -324,11 +329,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"LongRangeArtillery"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
@@ -366,6 +366,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+				  "boolean":true
+               },
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
                },
@@ -379,11 +384,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"NukeSilo"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
@@ -405,6 +405,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+				  "boolean":true
+               },
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
                },
@@ -418,11 +423,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"NukeSilo"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
@@ -443,6 +443,11 @@
          ],
          "build_conditions":[
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+				  "boolean":true
+               },
                {
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Structure & Nuke",
@@ -465,14 +470,14 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"NukeSilo"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
 				  "boolean":true
-               }
-            ],
-            [
+               },
                {
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Structure & Nuke",
@@ -495,11 +500,6 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"NukeSilo"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ],
@@ -520,17 +520,13 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+				  "boolean":true
+               },
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Factory - Orbital",
-                  "compare0":">=",
-                  "value0":1
                },
                {
                   "test_type":"PlanetIsMainEcoBase",
@@ -549,13 +545,17 @@
                   "boolean":false
                },
                {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"PlanetEngine"
+                  "test_type":"CanAffordBuildDemand"
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Factory - Orbital",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"PlanetEngine"
                }
             ]
          ],
@@ -576,7 +576,16 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+				  "boolean":true
+               },
+               {
                   "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+               {
+                  "test_type":"PlanetHasUseablePlanetWeapon",
                   "boolean":true
                },
                {
@@ -588,10 +597,6 @@
                   "value0":1
                },
                {
-                  "test_type":"PlanetHasUseablePlanetWeapon",
-                  "boolean":true
-               },
-               {
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Fabber & Advanced",
                   "compare0":">=",
@@ -600,11 +605,6 @@
                {
                   "test_type":"CanFindControlPointToBuild",
                   "boolean":true
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-				  "boolean":true
                }
             ]
          ]

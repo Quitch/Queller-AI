@@ -13,10 +13,15 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
                },
-			   {
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -32,19 +37,19 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicNavalFactory"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
-				  "boolean":true
-               }
-            ],
-			[
+                  "boolean":true
+               },
                {
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -54,16 +59,11 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicNavalFactory"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ],
          "placement_rules":{
-			"buffer":3,
+            "buffer":3,
             "threat":{
                "influence_type":"AntiSurface",
                "compare_type":"<",
@@ -72,7 +72,7 @@
             }
          }
       },
-	  {
+      {
          "name":"Basic Naval Factory - Fabber",
          "to_build":"BasicNavalFactory",
          "instance_count":1,
@@ -82,16 +82,21 @@
          "max_num_assisters":4,
          "builders":[
             "BasicAirFabber",
-			"BasicNavalFabber",
+            "BasicNavalFabber",
             "AdvancedNavalFabber"
          ],
          "build_conditions":[
-           [
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
                },
-			   {
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -107,19 +112,19 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicNavalFactory"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
-				  "boolean":true
-               }
-            ],
-			[
+                  "boolean":true
+               },
                {
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":true
                },
-			   {
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -129,16 +134,11 @@
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicNavalFactory"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ],
          "placement_rules":{
-			"buffer":3,
+            "buffer":3,
             "threat":{
                "influence_type":"AntiSurface",
                "compare_type":"<",
@@ -146,8 +146,8 @@
                "value":50
             }
          }
-	  },
-	  {
+      },
+      {
          "name":"Basic Naval Factory - Excess eco",
          "to_build":"BasicNavalFactory",
          "instance_count":-1,
@@ -156,31 +156,25 @@
          "min_num_assisters":3,
          "max_num_assisters":5,
          "builders":[
-		    "Commander",
+            "Commander",
             "BasicAirFabber",
-			"BasicNavalFabber",
+            "BasicNavalFabber",
             "AdvancedNavalFabber"
          ],
          "build_conditions":[
             [
                {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":false
-               },
-			   {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
                },
                {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicNavalFactory"
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
                },
                {
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":true
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicNavalFactory"
                },
                {
                   "test_type":"CurrentMetalEfficiency",
@@ -193,14 +187,20 @@
                   "value0":1
                },
                {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicNavalFactory"
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicNavalFactory"
                }
             ]
          ],
          "placement_rules":{
-			"buffer":3,
+            "buffer":3,
             "threat":{
                "influence_type":"AntiSurface",
                "compare_type":"<",
@@ -208,7 +208,7 @@
                "value":50
             }
          }
-	  },
+      },
       {
          "name":"Advanced Naval Factory",
          "to_build":"AdvancedNavalFactory",
@@ -224,23 +224,35 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
                },
                {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":true
+               },
+               {
                   "test_type":"HaveEcoForAdvanced",
                   "boolean":true
-               },		   
+               },
                {
                   "test_type":"CanAffordBuildDemand"
                },
-			   {
+               {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"AdvancedNavalFactory"
                },
                {
-                  "test_type":"CanDeployNavalFromBase",
-                  "boolean":true
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
+                  "string0":"Naval",
+                  "string1":"Naval",
+                  "compare0":"<",
+                  "value0":1
                },
                {
                   "test_type":"UnitCountOnPlanet",
@@ -248,30 +260,16 @@
                   "compare0":">=",
                   "value0":5
                },
-			   {
-                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
-                  "string0":"Naval",
-				  "string1":"Naval",
-                  "compare0":"<",
-                  "value0":1.0
-               },
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"AdvancedNavalFactory"
-               },
+               }
+            ],
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
-				  "boolean":true
-               }
-            ],
-			[
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"AdvancedNavalFactory"
+                  "boolean":true
                },
                {
                   "test_type":"CanDeployNavalFromBase",
@@ -286,31 +284,33 @@
                   "boolean":true
                },
                {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"AdvancedNavalFactory"
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
+                  "string0":"Naval",
+                  "string1":"Naval",
+                  "compare0":"<",
+                  "value0":1
+               },
+               {
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Advanced & Factory",
                   "compare0":"<",
                   "value0":1
                },
-			   {
-                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
-                  "string0":"Naval",
-				  "string1":"Naval",
-                  "compare0":"<",
-                  "value0":1.0
-               },
                {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"AdvancedNavalFactory"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-				  "boolean":true
                }
             ]
          ],
          "placement_rules":{
-			"buffer":3,
+            "buffer":3,
             "threat":{
                "influence_type":"AntiSurface",
                "compare_type":"<",

@@ -12,30 +12,30 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Fabber & Naval & Basic",
                   "unit_type_string1":"Factory & Naval & Basic",
                   "compare0":"<",
-                  "value0":1
+                  "value0":2
                },
                {
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Fabber & Basic",
                   "unit_type_string1":"Factory & Basic",
                   "compare0":"<",
-                  "value0":1
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
+                  "value0":2
                }
             ]
          ]
@@ -52,16 +52,16 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":true
                },
                {
                   "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ]
@@ -78,16 +78,16 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":true
                },
                {
                   "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ]
@@ -104,16 +104,16 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":true
                },
                {
                   "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ]
@@ -130,8 +130,16 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"UnitRatioOnPlanet",
@@ -139,14 +147,6 @@
                   "unit_type_string1":"Factory & Naval & Advanced",
                   "compare0":"<",
                   "value0":2
-               },
-			   {
-                  "test_type":"CanAffordBuildDemand"
-               }, 
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ]
@@ -163,16 +163,16 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":true
                },
                {
                   "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ]
@@ -189,16 +189,16 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":true
                },
                {
                   "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ]
@@ -215,16 +215,16 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"silver",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":true
                },
                {
                   "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-				  "boolean":true
                }
             ]
          ]
