@@ -1,7 +1,7 @@
 {
    "build_list":[
       {
-         "name":"Basic Naval Fabber",
+         "name":"Platinum - Basic Naval Fabber",
          "to_build":"BasicNavalFabber",
          "instance_count":1,
          "max_num_assisters":10,
@@ -166,7 +166,7 @@
          ]
       },
       {
-         "name":"Piranha",
+         "name":"Platinum - Piranha",
          "to_build":"SeaScout",
          "instance_count":1,
          "max_num_assisters":10,
@@ -244,7 +244,7 @@
          ]
       },
       {
-         "name":"Orca",
+         "name":"Platinum - Orca",
          "to_build":"Destroyer",
          "instance_count":-1,
          "max_num_assisters":10,
@@ -301,7 +301,7 @@
          ]
       },
       {
-         "name":"Narwhal",
+         "name":"Platinum - Narwhal",
          "to_build":"Frigate",
          "instance_count":-1,
          "max_num_assisters":10,
@@ -408,7 +408,7 @@
          ]
       },
       {
-         "name":"Barracuda",
+         "name":"Platinum - Barracuda",
          "to_build":"Sub",
          "instance_count":-1,
          "max_num_assisters":10,
@@ -468,6 +468,12 @@
                },
                {
                   "test_type":"FocusTargetThreat",
+                  "string0":"Naval",
+                  "compare0":">",
+                  "value0":0
+               },
+               {
+                  "test_type":"FocusTargetThreat",
                   "string0":"AntiSub",
                   "compare0":"<",
                   "value0":1650
@@ -476,7 +482,7 @@
          ]
       },
       {
-         "name":"Advanced Naval Fabber",
+         "name":"Platinum - Advanced Naval Fabber",
          "to_build":"AdvancedNavalFabber",
          "instance_count":1,
          "max_num_assisters":15,
@@ -623,7 +629,7 @@
          ]
       },
       {
-         "name":"Leviathan",
+         "name":"Platinum - Leviathan",
          "to_build":"Battleship",
          "instance_count":-1,
          "max_num_assisters":15,
@@ -653,7 +659,7 @@
          ]
       },
       {
-         "name":"Stingray",
+         "name":"Platinum - Stingray",
          "to_build":"MissleShip",
          "instance_count":-1,
          "max_num_assisters":15,
@@ -728,7 +734,7 @@
          ]
       },
       {
-         "name":"Kraken",
+         "name":"Platinum - Kraken",
          "to_build":"MissileSub",
          "instance_count":-1,
          "max_num_assisters":15,

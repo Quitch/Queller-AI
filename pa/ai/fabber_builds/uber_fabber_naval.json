@@ -1,7 +1,7 @@
 {
    "build_list":[
       {
-         "name":"Basic Naval Factory - Commander",
+         "name":"Uber - Basic Naval Factory - Commander",
          "to_build":"BasicNavalFactory",
          "instance_count":1,
          "shared_instance_count":"BasicNavalFactory",
@@ -73,7 +73,7 @@
          }
       },
       {
-         "name":"Basic Naval Factory - Fabber",
+         "name":"Uber - Basic Naval Factory - Fabber",
          "to_build":"BasicNavalFactory",
          "instance_count":1,
          "shared_instance_count":"BasicNavalFactory",
@@ -148,7 +148,7 @@
          }
       },
       {
-         "name":"Basic Naval Factory - Excess eco",
+         "name":"Uber - Basic Naval Factory - Excess eco",
          "to_build":"BasicNavalFactory",
          "instance_count":-1,
          "shared_instance_count":"BasicNavalFactory",
@@ -210,7 +210,7 @@
          }
       },
       {
-         "name":"Advanced Naval Factory",
+         "name":"Uber - Advanced Naval Factory",
          "to_build":"AdvancedNavalFactory",
          "instance_count":1,
          "shared_instance_count":"AdvancedFactory",
@@ -233,11 +233,11 @@
                   "boolean":false
                },
                {
-                  "test_type":"HaveEcoForAdvanced",
+                  "test_type":"CanDeployNavalFromBase",
                   "boolean":true
                },
                {
-                  "test_type":"CanDeployNavalFromBase",
+                  "test_type":"HaveEcoForAdvanced",
                   "boolean":true
                },
                {
@@ -256,7 +256,7 @@
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Basic & Fabber - Orbital",
+                  "unit_type_string0":"(Basic & Fabber) - Orbital - Land",
                   "compare0":">=",
                   "value0":5
                },

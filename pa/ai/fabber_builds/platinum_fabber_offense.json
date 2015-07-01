@@ -1,7 +1,7 @@
 {
    "build_list":[
       {
-         "name":"Pelter",
+         "name":"Platinum - Pelter",
          "to_build":"BasicArtillery",
          "instance_count":1,
          "min_num_assisters":1,
@@ -26,14 +26,6 @@
                   "test_type":"CanAffordBuildDemand"
                },
                {
-                  "test_type":"UnitCountAroundBase",
-                  "unit_type_string0":"Structure - MetalProduction",
-                  "string0":"Enemy",
-                  "value0":260,
-                  "compare0":">=",
-                  "value1":1
-               },
-               {
                   "test_type":"UnitCountInBase",
                   "unit_type_string0":"Structure & Artillery & Basic",
                   "compare0":"<",
@@ -44,6 +36,14 @@
                   "unit_type_string0":"Structure & (EnergyProduction | Factory)",
                   "compare0":">=",
                   "value0":3
+               },
+               {
+                  "test_type":"UnitCountAroundBase",
+                  "unit_type_string0":"Structure - MetalProduction",
+                  "string0":"Enemy",
+                  "value0":260,
+                  "compare0":">=",
+                  "value1":1
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -109,7 +109,7 @@
          }
       },
       {
-         "name":"Unit Cannon",
+         "name":"Platinum - Unit Cannon",
          "to_build":"UnitCannon",
          "instance_count":1,
          "shared_instance_count":"UnitCannon",
@@ -158,7 +158,7 @@
          }
       },
       {
-         "name":"Holkins",
+         "name":"Platinum - Holkins",
          "to_build":"LongRangeArtillery",
          "instance_count":1,
          "min_num_assisters":3,
@@ -266,7 +266,7 @@
          }
       },
       {
-         "name":"Nuke Silo",
+         "name":"Platinum - Nuke Silo",
          "to_build":"NukeSilo",
          "instance_count":1,
          "shared_instance_count":"NukeSilo",
@@ -305,7 +305,7 @@
          }
       },
       {
-         "name":"Nuke Silo - Alone",
+         "name":"Platinum - Nuke Silo - Alone",
          "to_build":"NukeSilo",
          "instance_count":1,
          "shared_instance_count":"NukeSilo",
@@ -344,7 +344,7 @@
          }
       },
       {
-         "name":"Nuke Silo - No Antis",
+         "name":"Platinum - Nuke Silo - No Antis",
          "to_build":"NukeSilo",
          "instance_count":1,
          "shared_instance_count":"NukeSilo",
@@ -421,7 +421,7 @@
          }
       },
       {
-         "name":"Halley",
+         "name":"Platinum - Halley",
          "to_build":"PlanetEngine",
          "instance_count":1,
          "min_num_assisters":8,
@@ -477,7 +477,7 @@
          }
       },
       {
-         "name":"Catalyst",
+         "name":"Platinum - Catalyst",
          "to_build":"ControlModule",
          "instance_count":1,
          "min_num_assisters":8,

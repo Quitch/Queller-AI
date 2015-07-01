@@ -1,7 +1,7 @@
 {
    "build_list":[
       {
-         "name":"Basic Bot Factory - Commander",
+         "name":"Gold - Basic Bot Factory - Commander",
          "to_build":"BasicBotFactory",
          "instance_count":1,
          "shared_instance_count":"BasicFactory",
@@ -151,7 +151,7 @@
          }
       },
       {
-         "name":"Basic Bot Factory - Fabbers",
+         "name":"Gold - Basic Bot Factory - Fabbers",
          "to_build":"BasicBotFactory",
          "instance_count":1,
          "shared_instance_count":"BasicFactory",
@@ -301,7 +301,7 @@
          }
       },
       {
-         "name":"Basic Bot Factory - Excess Eco",
+         "name":"Gold - Basic Bot Factory - Excess Eco",
          "to_build":"BasicBotFactory",
          "instance_count":-1,
          "shared_instance_count":"BasicFactory",
@@ -494,7 +494,7 @@
          }
       },
       {
-         "name":"Basic Bot Factory - Arrived on a new world",
+         "name":"Gold - Basic Bot Factory - Arrived on a new world",
          "to_build":"BasicBotFactory",
          "instance_count":1,
          "priority":601,
@@ -536,13 +536,13 @@
             "threat":{
                "influence_type":"AntiSurface",
                "compare_type":"<",
-               "radius":100,
+               "radius":10,
                "value":50
             }
          }
       },
       {
-         "name":"Basic Vehicle Factory - Commander",
+         "name":"Gold - Basic Vehicle Factory - Commander",
          "to_build":"BasicVehicleFactory",
          "instance_count":1,
          "shared_instance_count":"BasicFactory",
@@ -586,7 +586,7 @@
          }
       },
       {
-         "name":"Basic Vehicle Factory - Fabber",
+         "name":"Gold - Basic Vehicle Factory - Fabber",
          "to_build":"BasicVehicleFactory",
          "instance_count":1,
          "shared_instance_count":"BasicFactory",
@@ -632,7 +632,7 @@
          }
       },
       {
-         "name":"Basic Vehicle Factory - Excess eco",
+         "name":"Gold - Basic Vehicle Factory - Excess eco",
          "to_build":"BasicVehicleFactory",
          "instance_count":-1,
          "shared_instance_count":"BasicFactory",
@@ -689,7 +689,7 @@
          }
       },
       {
-         "name":"Basic Vehicle Factory - Arrived on a new world",
+         "name":"Gold - Basic Vehicle Factory - Arrived on a new world",
          "to_build":"BasicVehicleFactory",
          "instance_count":1,
          "priority":601,
@@ -731,13 +731,13 @@
             "threat":{
                "influence_type":"AntiSurface",
                "compare_type":"<",
-               "radius":100,
+               "radius":10,
                "value":50
             }
          }
       },
       {
-         "name":"Advanced Bot Factory",
+         "name":"Gold - Advanced Bot Factory",
          "to_build":"AdvancedBotFactory",
          "instance_count":1,
          "shared_instance_count":"AdvancedFactory",
@@ -828,7 +828,7 @@
          }
       },
       {
-         "name":"Advanced Vehicle Factory",
+         "name":"Gold - Advanced Vehicle Factory",
          "to_build":"AdvancedVehicleFactory",
          "instance_count":1,
          "shared_instance_count":"AdvancedFactory",

@@ -1,7 +1,7 @@
 {
    "build_list":[
       {
-         "name":"Basic Bot Fabber",
+         "name":"Uber - Basic Bot Fabber",
          "to_build":"BasicBotFabber",
          "instance_count":1,
          "max_num_assisters":10,
@@ -50,10 +50,6 @@
                   "boolean":true
                },
                {
-                  "test_type":"UnableToExpand",
-                  "boolean":false
-               },
-               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -81,10 +77,6 @@
                {
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
-               },
-               {
-                  "test_type":"UnableToExpand",
-                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -140,7 +132,7 @@
          ]
       },
       {
-         "name":"Basic Vehicle Fabber",
+         "name":"Uber - Basic Vehicle Fabber",
          "to_build":"BasicVehicleFabber",
          "instance_count":1,
          "max_num_assisters":10,
@@ -189,10 +181,6 @@
                   "boolean":true
                },
                {
-                  "test_type":"UnableToExpand",
-                  "boolean":false
-               },
-               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -220,10 +208,6 @@
                {
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
-               },
-               {
-                  "test_type":"UnableToExpand",
-                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -259,6 +243,10 @@
                   "boolean":false
                },
                {
+                  "test_type":"AllMetalSpotsFull",
+                  "boolean":false
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -275,7 +263,7 @@
          ]
       },
       {
-         "name":"Boom",
+         "name":"Uber - Boom",
          "to_build":"BoomBot",
          "instance_count":-1,
          "max_num_assisters":10,
@@ -309,7 +297,7 @@
          ]
       },
       {
-         "name":"Dox",
+         "name":"Uber - Dox",
          "to_build":"BasicAssaultBot",
          "instance_count":-1,
          "max_num_assisters":10,
@@ -353,7 +341,7 @@
          ]
       },
       {
-         "name":"Land Scout - Intel",
+         "name":"Uber - Land Scout - Intel",
          "to_build":"LandScout",
          "instance_count":1,
          "max_num_assisters":10,
@@ -443,7 +431,7 @@
          ]
       },
       {
-         "name":"Land Scout - Mines",
+         "name":"Uber - Land Scout - Mines",
          "to_build":"LandScout",
          "instance_count":1,
          "max_num_assisters":10,
@@ -485,7 +473,7 @@
          ]
       },
       {
-         "name":"Bolo",
+         "name":"Uber - Bolo",
          "to_build":"LightLaserTank",
          "instance_count":-1,
          "max_num_assisters":10,
@@ -537,7 +525,7 @@
          ]
       },
       {
-         "name":"Inferno",
+         "name":"Uber - Inferno",
          "to_build":"BasicArmorTank",
          "instance_count":-1,
          "max_num_assisters":10,
@@ -575,24 +563,24 @@
                   "value0":0.9
                },
                {
-                  "test_type":"UnitRatioOnPlanet",
-                  "unit_type_string0":"Tank & Heavy",
-                  "unit_type_string1":"Tank & Offense - Heavy",
-                  "compare0":"<",
-                  "value0":0.1
-               },
-               {
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"((Tank & Mobile) | (Bot & Mobile & Advanced)) - Fabber - AirDefense - Construction - Artillery - Heavy - Scout",
                   "compare0":">",
                   "value0":40,
                   "boolean":true
+               },
+               {
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Tank & Heavy",
+                  "unit_type_string1":"Tank & Offense - Heavy",
+                  "compare0":"<",
+                  "value0":0.1
                }
             ]
          ]
       },
       {
-         "name":"Spinner",
+         "name":"Uber - Spinner",
          "to_build":"BasicAAVehicle",
          "instance_count":1,
          "max_num_assisters":10,
@@ -612,11 +600,12 @@
                   "boolean":false
                },
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
+
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreatRatio",
@@ -693,7 +682,7 @@
          ]
       },
       {
-         "name":"Advanced Bot Fabber",
+         "name":"Uber - Advanced Bot Fabber",
          "to_build":"AdvancedBotFabber",
          "instance_count":1,
          "max_num_assisters":10,
@@ -734,10 +723,6 @@
                   "boolean":false
                },
                {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
                   "test_type":"UnableToExpand",
                   "boolean":false
                },
@@ -764,10 +749,6 @@
                },
                {
                   "test_type":"AloneOnPlanet",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
                {
@@ -800,10 +781,6 @@
                   "boolean":true
                },
                {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
                   "test_type":"UnableToExpand",
                   "boolean":false
                },
@@ -828,11 +805,7 @@
                   "boolean":true
                },
                {
-                  "test_type":"BaseThreatened",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
+                  "test_type":"AloneOnPlanet",
                   "boolean":true
                },
                {
@@ -856,7 +829,7 @@
          ]
       },
       {
-         "name":"Advanced Vehicle Fabber",
+         "name":"Uber - Advanced Vehicle Fabber",
          "to_build":"AdvancedVehicleFabber",
          "instance_count":1,
          "max_num_assisters":10,
@@ -897,10 +870,6 @@
                   "boolean":false
                },
                {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
                   "test_type":"UnableToExpand",
                   "boolean":false
                },
@@ -927,10 +896,6 @@
                },
                {
                   "test_type":"AloneOnPlanet",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
                {
@@ -963,10 +928,6 @@
                   "boolean":true
                },
                {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
                   "test_type":"UnableToExpand",
                   "boolean":false
                },
@@ -991,11 +952,7 @@
                   "boolean":true
                },
                {
-                  "test_type":"BaseThreatened",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
+                  "test_type":"AloneOnPlanet",
                   "boolean":true
                },
                {
@@ -1019,7 +976,7 @@
          ]
       },
       {
-         "name":"Slammer",
+         "name":"Uber - Slammer",
          "to_build":"AdvancedAssaultBot",
          "instance_count":-1,
          "max_num_assisters":15,
@@ -1041,7 +998,7 @@
          ]
       },
       {
-         "name":"GIL-E",
+         "name":"Uber - GIL-E",
          "to_build":"AdvancedArtilleryBot",
          "instance_count":-1,
          "max_num_assisters":10,
@@ -1085,7 +1042,7 @@
          ]
       },
       {
-         "name":"Bluehawk",
+         "name":"Uber - Bluehawk",
          "to_build":"TMLBot",
          "instance_count":-1,
          "max_num_assisters":10,
@@ -1141,7 +1098,7 @@
          ]
       },
       {
-         "name":"Vanguard",
+         "name":"Uber - Vanguard",
          "to_build":"AdvancedArmorTank",
          "instance_count":-1,
          "max_num_assisters":10,
@@ -1199,7 +1156,7 @@
          ]
       },
       {
-         "name":"Sheller",
+         "name":"Uber - Sheller",
          "to_build":"AdvancedArtilleryVehicle",
          "instance_count":-1,
          "max_num_assisters":10,

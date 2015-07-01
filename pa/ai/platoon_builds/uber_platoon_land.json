@@ -1,7 +1,7 @@
 {
    "build_list":[
       {
-         "name":"Vehicle Scout Platoon",
+         "name":"Uber - Vehicle Scout Platoon",
          "to_build":"Vehicle_Scout",
          "instance_count":-1,
          "priority":200,
@@ -17,15 +17,15 @@
                   "boolean":false
                },
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Air & Scout",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Land & Scout",
                   "compare0":">=",
+                  "value0":1
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Air & Scout",
+                  "compare0":"<",
                   "value0":1
                }
             ]
@@ -33,7 +33,7 @@
          "task_type":"Scout"
       },
       {
-         "name":"Bot Scout Platoon",
+         "name":"Uber - Bot Scout Platoon",
          "to_build":"Bot_Scout",
          "instance_count":5,
          "priority":200,
@@ -69,7 +69,7 @@
          "task_type":"Scout"
       },
       {
-         "name":"Land Transfer To Planet",
+         "name":"Uber - Land Transfer To Planet",
          "to_build":"Teleporter_Attack",
          "instance_count":-1,
          "priority":210,
@@ -103,7 +103,7 @@
          "task_type":"TeleportLandToPlanet"
       },
       {
-         "name":"Land Raid Platoon 4",
+         "name":"Uber - Land Raid Platoon 4",
          "to_build":"Land_Raid_Max",
          "instance_count":-1,
          "priority":180,
@@ -137,7 +137,7 @@
          "task_type":"LandAttack"
       },
       {
-         "name":"Land Raid Platoon 10",
+         "name":"Uber - Land Raid Platoon 10",
          "to_build":"Land_Raid_Max",
          "instance_count":-1,
          "priority":170,
@@ -171,7 +171,7 @@
          "task_type":"LandAttack"
       },
       {
-         "name":"Land Raid Platoon 20",
+         "name":"Uber - Land Raid Platoon 20",
          "to_build":"Land_Raid_Max",
          "instance_count":-1,
          "priority":160,
@@ -205,7 +205,7 @@
          "task_type":"LandAttack"
       },
       {
-         "name":"Land Raid Platoon 30",
+         "name":"Uber - Land Raid Platoon 30",
          "to_build":"Land_Raid_Max",
          "instance_count":-1,
          "priority":150,
@@ -239,7 +239,7 @@
          "task_type":"LandAttack"
       },
       {
-         "name":"Land Raid Platoon 40",
+         "name":"Uber - Land Raid Platoon 40",
          "to_build":"Land_Raid_Max",
          "instance_count":-1,
          "priority":140,
@@ -273,7 +273,7 @@
          "task_type":"LandAttack"
       },
       {
-         "name":"Land Raid Platoon 50",
+         "name":"Uber - Land Raid Platoon 50",
          "to_build":"Land_Raid_Max",
          "instance_count":-1,
          "priority":130,
@@ -307,7 +307,7 @@
          "task_type":"LandAttack"
       },
       {
-         "name":"Land Raid Platoon 60",
+         "name":"Uber - Land Raid Platoon 60",
          "to_build":"Land_Raid_Max",
          "instance_count":-1,
          "priority":120,
@@ -341,7 +341,7 @@
          "task_type":"LandAttack"
       },
       {
-         "name":"Land Raid Platoon 70",
+         "name":"Uber - Land Raid Platoon 70",
          "to_build":"Land_Raid_Max",
          "instance_count":-1,
          "priority":110,
@@ -375,7 +375,7 @@
          "task_type":"LandAttack"
       },
       {
-         "name":"Land Raid Platoon Max",
+         "name":"Uber - Land Raid Platoon Max",
          "to_build":"Land_Raid_Max",
          "instance_count":-1,
          "priority":100,
@@ -403,7 +403,7 @@
          "task_type":"LandAttack"
       },
       {
-         "name":"Boom Snipe",
+         "name":"Uber - Boom Snipe",
          "to_build":"Boom_Attack",
          "instance_count":1,
          "priority":100,
@@ -431,7 +431,7 @@
          "task_type":"LandAttack"
       },
       {
-         "name":"Land Attack Platoon 4",
+         "name":"Uber - Land Attack Platoon 4",
          "to_build":"Land_Attack_Max",
          "instance_count":-1,
          "priority":180,
@@ -465,7 +465,7 @@
          "task_type":"LandAttack"
       },
       {
-         "name":"Land Attack Platoon 10",
+         "name":"Uber - Land Attack Platoon 10",
          "to_build":"Land_Attack_Max",
          "instance_count":-1,
          "priority":170,
@@ -499,7 +499,7 @@
          "task_type":"LandAttack"
       },
       {
-         "name":"Land Attack Platoon 20",
+         "name":"Uber - Land Attack Platoon 20",
          "to_build":"Land_Attack_Max",
          "instance_count":-1,
          "priority":160,
@@ -533,7 +533,7 @@
          "task_type":"LandAttack"
       },
       {
-         "name":"Land Attack Platoon 30",
+         "name":"Uber - Land Attack Platoon 30",
          "to_build":"Land_Attack_Max",
          "instance_count":-1,
          "priority":150,
@@ -567,7 +567,7 @@
          "task_type":"LandAttack"
       },
       {
-         "name":"Land Attack Platoon 40",
+         "name":"Uber - Land Attack Platoon 40",
          "to_build":"Land_Attack_Max",
          "instance_count":-1,
          "priority":140,
@@ -601,7 +601,7 @@
          "task_type":"LandAttack"
       },
       {
-         "name":"Land Attack Platoon 50",
+         "name":"Uber - Land Attack Platoon 50",
          "to_build":"Land_Attack_Max",
          "instance_count":-1,
          "priority":130,
@@ -635,7 +635,7 @@
          "task_type":"LandAttack"
       },
       {
-         "name":"Land Attack Platoon 60",
+         "name":"Uber - Land Attack Platoon 60",
          "to_build":"Land_Attack_Max",
          "instance_count":-1,
          "priority":120,
@@ -669,7 +669,7 @@
          "task_type":"LandAttack"
       },
       {
-         "name":"Land Attack Platoon 70",
+         "name":"Uber - Land Attack Platoon 70",
          "to_build":"Land_Attack_Max",
          "instance_count":-1,
          "priority":110,
@@ -703,7 +703,7 @@
          "task_type":"LandAttack"
       },
       {
-         "name":"Land Attack Platoon Max",
+         "name":"Uber - Land Attack Platoon Max",
          "to_build":"Land_Attack_Max",
          "instance_count":-1,
          "priority":100,

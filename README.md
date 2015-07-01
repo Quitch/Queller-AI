@@ -43,6 +43,7 @@ Some of these might prove impossible given the tooling available, only time will
  - Poor use of fabbers
  - Doesn't think about running costs
  - No micro
+ - Poor threat assessments
 
 - Silver
  - Factory first opening
@@ -55,7 +56,8 @@ Some of these might prove impossible given the tooling available, only time will
  - Doesn't react to what the enemy is doing
  - Likes fabbers
  - Floats economy
- - No micro
+ - Average micro
+ - OK threat assessments
 
 - Gold
  - Smart factory first opening
@@ -67,7 +69,8 @@ Some of these might prove impossible given the tooling available, only time will
  - Some reaction to opponent's play
  - Dislikes fabbers
  - Stalls economy
- - Average micro
+ - Best micro
+ - Good threat assessments
 
 - Platinum
  - Smart factory first opening
@@ -79,6 +82,7 @@ Some of these might prove impossible given the tooling available, only time will
  - Smartly reacts to opponent's play
  - Good economy handling
  - Best micro
+ - Great threat assessments
 
 - Uber
  - Smart factory first opening
@@ -90,16 +94,25 @@ Some of these might prove impossible given the tooling available, only time will
  - Smartly reacts to opponent's play
  - Great economy handling
  - Best micro
+ - Best threat assessments
 
 ## MAP NOTES
 
 #### Forge
 
-The AI plays far worse in the northern spawn
+Plays better in slot 1/2
 
 #### Pacific
 
-The AI will generally play better in the southern spawn
+Plays better in slot 2/2
+
+#### Duat
+
+Plays better in slot 2/2
+
+#### Berg
+
+Both spawns are about the same
 
 ## THINGS I AM THINKING ABOUT
 
@@ -112,6 +125,7 @@ The AI will generally play better in the southern spawn
 - Needs to be think about when to stop building at sea/land on mixed maps
 - Is Kestrel play a thing?
 - I really need to improve the use of Booms
+- Stops rapid basic factory expansion once advanced factories appear which is poor played on occupied worlds
 
 ## THANKS TO
 

@@ -1,7 +1,7 @@
 {
    "build_list":[
       {
-         "name":"Basic Bot Fabber",
+         "name":"Gold - Basic Bot Fabber",
          "to_build":"BasicBotFabber",
          "instance_count":1,
          "max_num_assisters":10,
@@ -140,7 +140,7 @@
          ]
       },
       {
-         "name":"Basic Vehicle Fabber",
+         "name":"Gold - Basic Vehicle Fabber",
          "to_build":"BasicVehicleFabber",
          "instance_count":1,
          "max_num_assisters":10,
@@ -275,7 +275,7 @@
          ]
       },
       {
-         "name":"Boom",
+         "name":"Gold - Boom",
          "to_build":"BoomBot",
          "instance_count":-1,
          "max_num_assisters":10,
@@ -309,7 +309,7 @@
          ]
       },
       {
-         "name":"Dox",
+         "name":"Gold - Dox",
          "to_build":"BasicAssaultBot",
          "instance_count":-1,
          "max_num_assisters":10,
@@ -353,7 +353,7 @@
          ]
       },
       {
-         "name":"Land Scout - Intel",
+         "name":"Gold - Land Scout - Intel",
          "to_build":"LandScout",
          "instance_count":1,
          "max_num_assisters":10,
@@ -443,7 +443,7 @@
          ]
       },
       {
-         "name":"Land Scout - Mines",
+         "name":"Gold - Land Scout - Mines",
          "to_build":"LandScout",
          "instance_count":1,
          "max_num_assisters":10,
@@ -485,7 +485,7 @@
          ]
       },
       {
-         "name":"Bolo",
+         "name":"Gold - Bolo",
          "to_build":"LightLaserTank",
          "instance_count":-1,
          "max_num_assisters":10,
@@ -537,7 +537,7 @@
          ]
       },
       {
-         "name":"Inferno",
+         "name":"Gold - Inferno",
          "to_build":"BasicArmorTank",
          "instance_count":-1,
          "max_num_assisters":10,
@@ -592,7 +592,7 @@
          ]
       },
       {
-         "name":"Spinner",
+         "name":"Gold - Spinner",
          "to_build":"BasicAAVehicle",
          "instance_count":1,
          "max_num_assisters":10,
@@ -693,7 +693,7 @@
          ]
       },
       {
-         "name":"Advanced Bot Fabber",
+         "name":"Gold - Advanced Bot Fabber",
          "to_build":"AdvancedBotFabber",
          "instance_count":1,
          "max_num_assisters":10,
@@ -856,7 +856,7 @@
          ]
       },
       {
-         "name":"Advanced Vehicle Fabber",
+         "name":"Gold - Advanced Vehicle Fabber",
          "to_build":"AdvancedVehicleFabber",
          "instance_count":1,
          "max_num_assisters":10,
@@ -1019,7 +1019,7 @@
          ]
       },
       {
-         "name":"Slammer",
+         "name":"Gold - Slammer",
          "to_build":"AdvancedAssaultBot",
          "instance_count":-1,
          "max_num_assisters":15,
@@ -1041,7 +1041,7 @@
          ]
       },
       {
-         "name":"GIL-E",
+         "name":"Gold - GIL-E",
          "to_build":"AdvancedArtilleryBot",
          "instance_count":-1,
          "max_num_assisters":10,
@@ -1085,7 +1085,7 @@
          ]
       },
       {
-         "name":"Bluehawk",
+         "name":"Gold - Bluehawk",
          "to_build":"TMLBot",
          "instance_count":-1,
          "max_num_assisters":10,
@@ -1106,12 +1106,6 @@
                },
                {
                   "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"SystemThreat",
-                  "string0":"Orbital",
-                  "compare0":">",
-                  "value0":0
                }
             ],
             [
@@ -1130,18 +1124,12 @@
                },
                {
                   "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"SystemThreat",
-                  "string0":"Orbital",
-                  "compare0":">",
-                  "value0":0
                }
             ]
          ]
       },
       {
-         "name":"Vanguard",
+         "name":"Gold - Vanguard",
          "to_build":"AdvancedArmorTank",
          "instance_count":-1,
          "max_num_assisters":10,
@@ -1199,7 +1187,7 @@
          ]
       },
       {
-         "name":"Sheller",
+         "name":"Gold - Sheller",
          "to_build":"AdvancedArtilleryVehicle",
          "instance_count":-1,
          "max_num_assisters":10,
