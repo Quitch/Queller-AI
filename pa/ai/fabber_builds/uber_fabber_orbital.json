@@ -246,6 +246,71 @@
             "buffer":3
          }
       },
+	  {
+         "name":"Uber - Orbital Factory - Rush",
+         "to_build":"OrbitalFactory",
+         "instance_count":1,
+         "priority":510,
+         "max_num_assisters":3,
+         "max_num_assisters":5,
+         "builders":[
+            "OrbitalFabber"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
+                  "test_type":"PlanetIsGasGiant",
+                  "boolean":true
+               },
+               {
+                  "test_type":"PlanetThreat",
+                  "string0":"Orbital",
+                  "compare0":">",
+                  "value0":0
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "string0":"Orbital & Factory & Advanced",
+                  "compare0":"<",
+                  "value0":1
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"OrbitalFactory"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
+                  "test_type":"PlanetIsGasGiant",
+                  "boolean":true
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
+                  "string0":"Orbital",
+                  "string1":"AntiOrbital",
+                  "compare0":">",
+                  "value0":1
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"OrbitalFactory"
+               }
+            ]
+         ],
+         "placement_rules":{
+            "buffer":30
+         }
+      },
       {
          "name":"Uber - Orbital Factory",
          "to_build":"OrbitalFactory",
@@ -308,7 +373,7 @@
             ]
          ],
          "placement_rules":{
-            "buffer":3
+            "buffer":30
          }
       }
    ]
