@@ -299,7 +299,7 @@
                "squad":"Close"
             },
             {
-               "unit_types":"(Tank & Mobile) & (AirDefense | Construction)",
+               "unit_types":"(Land & Mobile) & (AirDefense | Construction)",
                "min_count":0,
                "max_count":-1,
                "squad":"Defense"
@@ -641,8 +641,7 @@
          "units":[
             {
                "unit_types":"(Orbital & Recon) - Structure",
-               "min_count":1,
-               "max_count":-1
+               "max_count":1
             }
          ]
       },

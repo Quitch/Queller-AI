@@ -27,6 +27,29 @@
                   "value0":2
                }
             ],
+			[
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
+                  "test_type":"BaseThreatened",
+                  "boolean":false
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Orbital & Transport",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Fabber - Naval",
+                  "compare0":"<",
+                  "value0":1
+               }
+            ],
             [
                {
                   "test_type":"HasPersonalityTag",
@@ -157,16 +180,34 @@
                   "test_type":"CanAffordBuildDemand"
                },
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Air & Scout",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
                   "test_type":"UnitCountPerPlanetRadius",
                   "unit_type_string0":"(Air | Land | Naval) & Scout",
                   "compare0":"<",
                   "value0":250
+               }
+            ],
+			[
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
+                  "test_type":"BaseThreatened",
+                  "boolean":false
+               },
+               {
+                  "test_type":"HaveFullPlanetIntel",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Air & Scout",
+                  "compare0":"<",
+                  "value0":1
                }
             ]
          ]
@@ -486,20 +527,20 @@
                },
                {
                   "test_type":"CurrentMetalEfficiency",
-                  "compare0":">=",
-                  "value0":1.1
+                  "compare0":">",
+                  "value0":1
                },
                {
                   "test_type":"CurrentEnergyEfficiency",
-                  "compare0":">=",
-                  "value0":1.1
+                  "compare0":">",
+                  "value0":1
                },
                {
                   "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicBotFabber"
+                  "string0":"AdvancedAirFabber"
                }
             ]
          ]

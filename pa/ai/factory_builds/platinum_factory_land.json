@@ -275,40 +275,6 @@
          ]
       },
       {
-         "name":"Platinum - Boom",
-         "to_build":"BoomBot",
-         "instance_count":-1,
-         "max_num_assisters":10,
-         "priority":98,
-         "builders":[
-            "BasicBotFactory"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"UnitCountAroundBase",
-                  "unit_type_string0":"Commander",
-                  "string0":"Enemy",
-                  "value0":400,
-                  "compare0":">=",
-                  "value1":1
-               }
-            ]
-         ]
-      },
-      {
          "name":"Platinum - Dox",
          "to_build":"BasicAssaultBot",
          "instance_count":-1,

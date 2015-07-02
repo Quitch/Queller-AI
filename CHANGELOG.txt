@@ -40,6 +40,8 @@ Won't let nuke launchers sit idle for minutes at a time
 Reordered all checks to optimise AI performance
 Added missing placement check for teleporters
 Now builds Advanced Torpedo Launchers
+Much faster at taking over planets it completely owns
+Fixed error preventing the building of orbital radar
 
 v1.3.3
 
@@ -293,38 +295,3 @@ AI opens with troops immediately after its first fabber
 Drastically lowered the basic fabber to factory ratio
 Raised the fabber ratio for empty planets
 The AI will now only build the Orbital Launcher in emergencies or when it's winning on its planet
-
-KNOWN ISSUES
-
-TOFIX
-
-Builds too many orbital factories on gas giants
-Doesn't close out orbital games well even when it has an overwhelming economic advantage
-Takes too long transition from a naval start to a land game on mixed maps
-Doesn't take over empty planets fast enough
-
-MAYBEFIX
-
-Doesn't handle enemy walls well
-
-WONTFIX
-
-Ignores the unit preferences of AI personalities
-Will build a late bot factory on land maps when it shouldn't
-Will use fabbers to construct factories when the commander is on planet
-Lower levels send out scouts which is a little unrealistic but necessary to set the flags which stop the AI building tanks on islands or navies in ponds
-
-CANTFIX
-
-First fabber always assists as its first action
-Will sometimes take much longer than necessary routes to attack
-Fabbers don't always take the closest metal spot when building MEX
-Doesn't defend its fabbers
-Attempts to attack with Dox underwater
-Will queue buildings on the other side of obstacles despite closer locations (pathfinding wise) being available
-Won't move orbital units (except fabbers and radar) between planets
-Will send orbital radar to gas giants
-Won't send Phoenixes between planets
-Will assign fabbers to a assist on a project that they could start earlier than the fabber they're assisting
-Will count orbital fabber as a fabber presence when looking to send fabbers through teleporters to planets without fabbers
-Won't use more than one teleporter at a time

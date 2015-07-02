@@ -303,7 +303,7 @@
       {
          "name":"Platinum - Basic Bot Factory - Excess Eco",
          "to_build":"BasicBotFactory",
-         "instance_count":-1,
+         "instance_count":2,
          "shared_instance_count":"BasicFactory",
          "min_num_assisters":3,
          "max_num_assisters":5,
@@ -500,7 +500,8 @@
          "priority":601,
          "builders":[
             "Commander",
-            "AnyBasicFabber"
+            "AnyBasicFabber",
+            "AnyAdvancedFabber"
          ],
          "build_conditions":[
             [
@@ -634,7 +635,7 @@
       {
          "name":"Platinum - Basic Vehicle Factory - Excess eco",
          "to_build":"BasicVehicleFactory",
-         "instance_count":-1,
+         "instance_count":2,
          "shared_instance_count":"BasicFactory",
          "priority":374,
          "min_num_assisters":3,
@@ -695,7 +696,8 @@
          "priority":601,
          "builders":[
             "Commander",
-            "AnyBasicFabber"
+            "AnyBasicFabber",
+            "AnyAdvancedFabber"
          ],
          "build_conditions":[
             [

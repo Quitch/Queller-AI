@@ -94,7 +94,7 @@
                },
                {
                   "test_type":"UnitPoolCount",
-                  "unit_type_string0":"(Tank | Bot) & Mobile & Offense",
+                  "unit_type_string0":"Land & Mobile & Offense",
                   "compare0":">=",
                   "value0":10
                }
@@ -424,7 +424,7 @@
                   "test_type":"CanAttackWithPoolUnitsLand",
                   "string0":"WL_AnySurface",
                   "string1":"WL_AnySurface",
-                  "unit_type_string0":"Commander"
+                  "unit_type_string0":"Mobile"
                }
             ]
          ],

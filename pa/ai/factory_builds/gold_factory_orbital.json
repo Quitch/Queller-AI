@@ -111,7 +111,7 @@
       },
       {
          "name":"Gold - ARKYD",
-         "to_build":"BasicRadarSatellite",
+         "to_build":"BasicRadarSattelite",
          "instance_count":1,
          "max_num_assisters":10,
          "priority":97,
@@ -130,7 +130,7 @@
                },
                {
                   "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicRadarSatellite"
+                  "string0":"BasicRadarSattelite"
                },
                {
                   "test_type":"BaseThreat",
@@ -162,7 +162,7 @@
                },
                {
                   "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicRadarSatellite"
+                  "string0":"BasicRadarSattelite"
                },
                {
                   "test_type":"BaseThreat",
@@ -198,7 +198,7 @@
                },
                {
                   "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicRadarSatellite"
+                  "string0":"BasicRadarSattelite"
                },
                {
                   "test_type":"BaseThreat",
@@ -325,6 +325,10 @@
                {
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -456,8 +460,8 @@
          ]
       },
       {
-         "name":"Gold - Advanced Radar Satellite",
-         "to_build":"AdvancedRadarSatellite",
+         "name":"Gold - Advanced Radar Sattelite",
+         "to_build":"AdvancedRadarSattelite",
          "instance_count":1,
          "max_num_assisters":15,
          "priority":97,
@@ -482,7 +486,7 @@
                },
                {
                   "test_type":"CanAffordPotentialDrain",
-                  "string0":"AdvancedRadarSatellite"
+                  "string0":"AdvancedRadarSattelite"
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreatRatio",
@@ -519,7 +523,7 @@
                },
                {
                   "test_type":"CanAffordPotentialDrain",
-                  "string0":"AdvancedRadarSatellite"
+                  "string0":"AdvancedRadarSattelite"
                },
                {
                   "test_type":"BaseThreat",

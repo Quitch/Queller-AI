@@ -446,7 +446,7 @@
       {
          "name":"Platinum - Basic Air Factory - Excess eco",
          "to_build":"BasicAirFactory",
-         "instance_count":-1,
+         "instance_count":2,
          "shared_instance_count":"BasicFactory",
          "priority":374,
          "min_num_assisters":3,
@@ -664,7 +664,8 @@
          "priority":601,
          "builders":[
             "Commander",
-            "AnyBasicFabber"
+            "AnyBasicFabber",
+            "AnyAdvancedFabber"
          ],
          "build_conditions":[
             [

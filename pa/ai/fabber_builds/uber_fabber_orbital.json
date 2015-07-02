@@ -139,37 +139,6 @@
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"OrbitalLauncher"
                }
-            ],
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-                  "boolean":true
-               },
-               {
-                  "test_type":"NoWhereToRun",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CurrentEnergyEfficiency",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
-                  "test_type":"PlanetCount",
-                  "compare0":">",
-                  "value0":1
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Factory & Orbital",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"OrbitalLauncher"
-               }
             ]
          ],
          "placement_rules":{

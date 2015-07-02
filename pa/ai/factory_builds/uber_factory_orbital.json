@@ -37,29 +37,7 @@
                   "boolean":true
                },
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"OrbitalFabber"
-               },
-               {
-                  "test_type":"BaseThreat",
-                  "string0":"Orbital",
-                  "compare0":"<=",
-                  "value0":0
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Orbital & Fabber",
-                  "compare0":"<",
-                  "value0":2
-               }
-            ],
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "test_type":"PlanetIsGasGiant",
                   "boolean":true
                },
                {
@@ -111,10 +89,10 @@
       },
       {
          "name":"Uber - ARKYD",
-         "to_build":"BasicRadarSatellite",
+         "to_build":"BasicRadarSattelite",
          "instance_count":1,
          "max_num_assisters":10,
-         "priority":97,
+         "priority":98,
          "builders":[
             "OrbitalLauncher"
          ],
@@ -130,7 +108,7 @@
                },
                {
                   "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicRadarSatellite"
+                  "string0":"BasicRadarSattelite"
                },
                {
                   "test_type":"BaseThreat",
@@ -162,7 +140,7 @@
                },
                {
                   "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicRadarSatellite"
+                  "string0":"BasicRadarSattelite"
                },
                {
                   "test_type":"BaseThreat",
@@ -198,7 +176,7 @@
                },
                {
                   "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicRadarSatellite"
+                  "string0":"BasicRadarSattelite"
                },
                {
                   "test_type":"BaseThreat",
@@ -325,6 +303,10 @@
                {
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -457,11 +439,11 @@
          ]
       },
       {
-         "name":"Uber - Advanced Radar Satellite",
-         "to_build":"AdvancedRadarSatellite",
+         "name":"Uber - Advanced Radar Sattelite",
+         "to_build":"AdvancedRadarSattelite",
          "instance_count":1,
          "max_num_assisters":15,
-         "priority":97,
+         "priority":98,
          "builders":[
             "OrbitalFactory"
          ],
@@ -477,7 +459,7 @@
                },
                {
                   "test_type":"CanAffordPotentialDrain",
-                  "string0":"AdvancedRadarSatellite"
+                  "string0":"AdvancedRadarSattelite"
                },
                {
                   "test_type":"BaseThreat",
@@ -520,7 +502,7 @@
                },
                {
                   "test_type":"CanAffordPotentialDrain",
-                  "string0":"AdvancedRadarSatellite"
+                  "string0":"AdvancedRadarSattelite"
                },
                {
                   "test_type":"BaseThreat",
