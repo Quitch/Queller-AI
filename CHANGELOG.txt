@@ -2,8 +2,8 @@ v2.0
 
 Integrated new AI checks to replace hacky workarounds
 Builds its factories tighter
-More cautious about artillery placement
-Won't Halley if the planet is its eco centre
+Slightly more cautious about artillery placement
+Won't build Halleys if the planet is its eco centre
 Won't transfer troops to another planet when its base is threatened
 Uses the new threat considerations when making fabber and army decisions so as to behave smarter in games with more than two players/teams
 Added support for the Unit Cannon
@@ -16,9 +16,9 @@ Use new eco checks to be more aggressive about avoiding eco floating
 Added support for the Phoenix to be built
 Throws more fabbers at advanced factory projects
 No longer rushes orbital when it has orbital elsewhere in the system
-Will consider more than just its own planet when considering whether to rush nukes
+Will consider more than just the local planet when considering whether to rush nukes
 Won't build laser towers on water any more
-Added some very beta Boom support
+Added some very beta level Boom support to counter aggressive Commander play which might be rubbish
 Looks at the air situation as a whole rather than just anti-air when considering building more air factories
 Will sometimes send Krakkens off by themselves to take advantage of their stealth
 Better about getting into the water on maps like Meso
@@ -28,10 +28,11 @@ Replaced HaveSeenEnemyUnit checks with threat assessments where possible to avoi
 More reactive with its naval fleet compositions
 Complete overhaul of Naval fleet platoons to make them more appropriate in size and better avoid huge fleet in base syndrome
 Forced an air presence within the first three factories
-Introduced Queller personalities to allow for a range of difficulties - bronze is easier than normal and uber is harder than absurd
+Introduced Queller personalities to allow for a range of difficulties - bronze is easier than normal and uber is harder than absurd - see the readme for more details
 Will no longer spam defence structures within a small area
 Will no longer loop the Commander through a teleporter
 Checks it has the radar necessary for ground anti-orbital defences
+Higher priority given to getting orbital radar when orbital has come into play
 Defends Halleys and Catalysts with ground anti-orbital
 Scales platoon sizes better in the late game
 Techs when there's no other way to grow the economy
@@ -41,8 +42,10 @@ Reordered all checks to optimise AI performance
 Added missing placement check for teleporters
 Now builds Advanced Torpedo Launchers
 Much faster at taking over planets it completely owns
-Fixed error preventing the building of orbital radar
+Fixed error introduced in 1.3.3 preventing the building of orbital radar
 Does more to protect its gas giant investments
+Tries to control the orbital space before flying expensive and vulnerable radar around the local planet
+Builds SXX to destroy naval threats in addition to land ones
 
 v1.3.3
 

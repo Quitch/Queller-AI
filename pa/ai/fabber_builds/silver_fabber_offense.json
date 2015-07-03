@@ -65,7 +65,7 @@
          "instance_count":1,
          "min_num_assisters":2,
          "max_num_assisters":5,
-         "priority":350,
+         "priority":379,
          "builders":[
             "AnyAdvancedFabber"
          ],
@@ -150,6 +150,10 @@
                   "test_type":"CanAffordBuildDemand"
                },
                {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"UnitCannon"
+               },
+               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"UnitCannon"
                }
@@ -219,7 +223,7 @@
          "instance_count":1,
          "shared_instance_count":"SuperWeapon",
          "max_num_assisters":10,
-         "priority":480,
+         "priority":481,
          "builders":[
             "AnyAdvancedFabber"
          ],
@@ -232,6 +236,10 @@
                },
                {
                   "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"NukeSilo"
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -265,6 +273,10 @@
                   "boolean":true
                },
                {
+                  "test_type":"PlanetHasUseablePlanetWeapon",
+                  "boolean":false
+               },
+               {
                   "test_type":"HaveThrustToMovePlanet",
                   "boolean":false
                },
@@ -287,7 +299,7 @@
          "instance_count":1,
          "shared_instance_count":"SuperWeapon",
          "max_num_assisters":45,
-         "priority":509,
+         "priority":510,
          "builders":[
             "AnyAdvancedFabber"
          ],

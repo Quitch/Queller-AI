@@ -2,9 +2,8 @@
    "build_list":[
       {
          "name":"Silver - Bomber-Gunship Attack Platoon Large",
-         "to_build":"BomberGunship_Attack_Large",
+         "to_build":"BomberGunship_Attack_9",
          "instance_count":2,
-         "shared_instance_count":"Multitask",
          "priority":102,
          "build_conditions":[
             [
@@ -37,9 +36,8 @@
       },
       {
          "name":"Silver - Bomber-Gunship Attack Platoon Max",
-         "to_build":"BomberGunship_Attack_Max",
+         "to_build":"BomberGunship_Attack_36",
          "instance_count":2,
-         "shared_instance_count":"Multitask",
          "priority":100,
          "build_conditions":[
             [
@@ -52,7 +50,7 @@
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Air & (Bomber | Gunship)",
                   "compare0":">=",
-                  "value0":40
+                  "value0":36
                },
                {
                   "test_type":"CanAttackWithPoolUnitsBomber",
@@ -80,7 +78,7 @@
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Air & Fighter",
                   "compare0":">=",
-                  "value0":10
+                  "value0":5
                },
                {
                   "test_type":"CanAttackWithPoolUnitsFighter",
@@ -99,7 +97,7 @@
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Air & Fighter",
                   "compare0":">=",
-                  "value0":10
+                  "value0":5
                },
                {
                   "test_type":"CanProvideAirSupportWithPoolUnits",

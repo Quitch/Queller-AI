@@ -145,6 +145,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
                   "test_type":"BaseThreatened",
                   "boolean":false
                },

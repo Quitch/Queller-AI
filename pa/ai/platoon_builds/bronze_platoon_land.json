@@ -36,7 +36,7 @@
       },
       {
          "name":"Bronze - Land Attack Maximum Power",
-         "to_build":"Teleporter_Attack",
+         "to_build":"Basic_Land_Attack_40",
          "instance_count":1,
          "priority":100,
          "build_conditions":[
@@ -48,7 +48,7 @@
                },
                {
                   "test_type":"UnitPoolCount",
-                  "unit_type_string0":"(Mobile & Offense & Land) - Fabber - AirDefense - Construction - Tactical - Heavy - Scout",
+                  "unit_type_string0":"((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
                   "compare0":">=",
                   "value0":40
                },

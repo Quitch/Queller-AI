@@ -2,7 +2,7 @@
    "build_list":[
       {
          "name":"Bronze - Bomber-Gunship Attack Platoon Max",
-         "to_build":"BomberGunship_Attack_Max",
+         "to_build":"BomberGunship_Attack_36",
          "instance_count":1,
          "priority":100,
          "build_conditions":[
@@ -44,7 +44,7 @@
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Air & Fighter",
                   "compare0":">=",
-                  "value0":20
+                  "value0":10
                },
                {
                   "test_type":"CanAttackWithPoolUnitsFighter",
@@ -63,7 +63,7 @@
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Air & Fighter",
                   "compare0":">=",
-                  "value0":20
+                  "value0":10
                },
                {
                   "test_type":"CanProvideAirSupportWithPoolUnits",

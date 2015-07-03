@@ -3,11 +3,13 @@ Queller-AI
 
 Improved AI for [Planetary Annihilation](http://www.uberent.com/pa)
 
-I love AI. To put my old person comfy jumper on for a moment, back in the day I modded Total Annihilation's AI and ran a site called [AI Central](http://aicentral.tauniverse.com) (WARNING: very 90's site design) for AI mods, and I ran an AI league for Kohan II to identify the best. I've been an enthusiast in AI for as long as I've been gaming. This Queller AI will be a continuation of my Queller AI for TA.
+I love AI. To put my old person comfy jumper on for a moment, back in the day I modded Total Annihilation's AI and ran a site called [AI Central](http://aicentral.tauniverse.com) (WARNING: very 90's site design) for AI mods, and I ran an AI league for Kohan II to identify the best. I've been an enthusiast in AI for as long as I've been gaming. This Queller AI will be a continuation of my Queller AI for Total Annihilation & Core Contingency.
 
-This mod is a total overhaul of the AI (as much as can be done with the exposed files) designed to leverage the systems sorian has created, while playing a game better suited to the meta. It will definitely be designed with 1v1 in mind, but will hopefully prove to be an improvement in other modes too.
+This mod is a total overhaul of the AI (as much as can be done with the exposed files) designed to leverage the systems Sorian has created, while playing a game better suited to the meta. It is primarily designed with 1v1 in mind, but should prove to be an improvement in other modes too. It covers a wider range of difficulties than vanilla, from easier to harder, all of which play in a more humanlike fashion than their vanilla counterparts.
 
-Any feedback is greatly appreciated. For issues please include a link to the game on [PA Stats](http://www.pastats.com/) or the replay ID. Failing that, please provide the system name, the number of AIs, their difficulty setting, and which slot(s) the players occupied.
+Any feedback based on playing the AI is greatly appreciated. Please include a link to the game on [PA Stats](http://www.pastats.com/) or the replay ID. Failing that, please provide the system name, the number of AIs, their difficulty setting, and which slot(s) the players occupied. Remember to set Local Server to OFF in settings otherwise you won't get an entry in PA Stats or a replay ID.
+
+Be aware that Queller will produce more units and fabbers than the vanilla AI, especially on multi-planet systems. I have optimised the AI as best as I can, but it is a bigger performance hog than vanilla. If you are encountering performance issues try setting Local Server to OFF.
 
 ## GOALS
 
@@ -29,7 +31,7 @@ Some of these might prove impossible given the tooling available, only time will
 
 ## DIFFICULTY
 
-Queller offers a range of difficulties designed to try and mimic the style of human players at particular levels of play. Bronze is easier than the vanilla normal difficulty while Uber is harder than absurd. The next section offers recommendations on which difficulty you should try first.
+Queller offers a range of difficulties designed to try and mimic the style of human players at particular levels of play. Bronze is easier than the vanilla normal difficulty while uber is harder than absurd. Later in this readme you can find recommendations on which difficulty you should try.
 
 - Bronze
  - Economy first opening
@@ -43,21 +45,22 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
  - Loves fabbers
  - Loves static defence/offence
  - Poor use of fabbers
- - Doesn't think about running costs
+ - Terrible economy handling
  - No micro
  - Poor threat assessments
 
 - Silver
  - Factory first opening
  - Few armies
- - Techs early
- - Goes orbital early
+ - Will tech if it can
+ - Will go orbital if it can
  - Expands slowly
  - Poor troop selection
  - Barely scouts
  - Doesn't react to what the enemy is doing
  - Likes fabbers
- - Floats economy
+ - Likes static defence/offence
+ - Poor economy handling
  - Average micro
  - OK threat assessments
 
@@ -71,7 +74,8 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
  - OK scouting
  - Some reaction to opponent's play
  - Dislikes fabbers
- - Stalls economy
+ - Appropriate use of static defence/offence
+ - Average economy handling
  - Average micro
  - Good threat assessments
 
@@ -83,6 +87,8 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
  - Expands quickly
  - Best troop selection
  - Smartly reacts to opponent's play
+ - Good fabber to troop balance
+ - Appropriate use of static defence/offence
  - Good economy handling
  - Best micro
  - Great threat assessments
@@ -94,10 +100,36 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
  - Goes orbital smartly
  - Expands quickly
  - Best troop selection
- - Smartly reacts to opponent's play
+ - Smartly reacts to oponent's play
+ - Good fabber to troop balance
+ - Appropriate use of static defence/offence
  - Best economy handling
  - Best micro
  - Best threat assessments
+ - Will use eco bonuses better than other levels
+
+## RECOMMENDED DIFFICULTY
+
+Below are recommendations for the difficulty and eco modifiers you should use.
+
+| Vanilla    | Queller | Eco |
+| ---------- | ------- | --- |
+| Normal     | Silver  | 0.9 |
+| Hard       | Silver  | 1.1 |
+| Relentless | Gold    | 0.8 |
+| Absurd     | Gold    | 0.8 |
+
+| League   | Placement | Difficulty | Eco |
+| -------- | --------- | ---------- | --- |
+| Bronze   | Low       | Bronze     | 1.0 |
+| Bronze   | High      | Silver     | 1.0 |
+| Silver   | Low       | Gold       | 1.0 |
+| Silver   | Mid       | Platinum   | 1.0 |
+| Silver   | High      | Uber       | 1.0 |
+| Gold     | Low       | Uber       | 1.2 |
+| Gold     | High      | Uber       | 1.4 |
+| Platinum | Any       | Uber       | 1.6 |
+| Uber     | Any       | Uber       | 2.0 |
 
 ## MAP NOTES
 
@@ -107,10 +139,6 @@ The spawn the AI starts in can make a big difference, even for symmetrical 1v1s.
 
 Plays better in slot 1/2
 
-#### Pacific
-
-Plays better in slot 2/2
-
 #### Duat
 
 Plays better in slot 2/2
@@ -119,38 +147,22 @@ Plays better in slot 2/2
 
 Both spawns are about the same
 
-## RECOMMENDED DIFFICULTY
+#### Pacific
 
-| Vanilla Difficulty | Queller Difficulty |
-| ------------------ | ------------------ |
-| Normal | |
-| Hard | |
-| Relentless | |
-| Absurd | 
-
-| League | Placement | Queller Difficulty | AI Resource Modifier |
-| ------------------- | ------------------- | ------------------- | ------------------- |
-| Bronze | Low | Bronze | 1.0 |
-| Bronze | High | Silver | 1.0 |
-| Silver | Low | Gold | 1.0 |
-| Silver | High | Platinum | 1.0 |
-| Gold | Low | Uber | 1.2 |
-| Gold | High | Uber | 1.4 |
-| Platinum | Any | Uber | 1.6 |
-| Uber | Any | Uber | 2.0 |
+Slot 2/2 is riskier but leads to a stronger late game
 
 ## THINGS I AM THINKING ABOUT
 
-- Compare enemy mobile presence to static defence and adjust army ratio accordingly
+- Compare enemy mobile presence to static defence and adjust army ratio accordingly. Is this even possible?
 - Get the Commander to build walls around itself when under threat
 - Can the Commander be assigned to a platoon?
 - How can I detect the AI is in a FFA and adjust decisions accordingly?
-- Only tech on land when alone or unable to expand and ditch the whole idea of teching while winning? Perhaps don't tech when winning if no one else is teching?
+- Only tech on land when alone or unable to expand and ditch the whole idea of teching while winning? Perhaps don't tech when winning if no one else is teching? Move to AntiSurface comparisons?
 - Better optimise the opening builds according to the map size and number of players
 - Needs to be think about when to stop building at sea/land on mixed maps
 - Is Kestrel play a thing?
-- I really need to improve the use of Booms
-- Stops rapid basic factory expansion once advanced factories appear which is poor played on occupied worlds
+- Boom usage is terrible and needs a lot of work
+- Stops rapid basic factory expansion once advanced factories appear which is poor play on occupied worlds
 
 ## KNOWN ISSUES
 
@@ -191,9 +203,10 @@ Both spawns are about the same
 
 ## THANKS TO
 
-- Sorian of Uber Entertainment, for
+- Sorian of Uber Entertainment for
  - making his AI moddable
  - answering my questions
  - taking on suggestions
  - fixing bugs as they come up
  - adding cool new features which make the AI increasingly smart
+- wondible for his creation of the [AI Showdown](https://github.com/JustinLove/ai_showdown/) tool which allows easy setup of matches between different AIs
