@@ -100,7 +100,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
  - Goes orbital smartly
  - Expands quickly
  - Best troop selection
- - Smartly reacts to oponent's play
+ - Smartly reacts to opponent's play
  - Good fabber to troop balance
  - Appropriate use of static defence/offence
  - Best economy handling
