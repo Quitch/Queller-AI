@@ -198,7 +198,6 @@ Slot 2/2 is riskier but leads to a stronger late game
 - Will send orbital radar to gas giants
 - Won't send Phoenixes between planets
 - Will assign fabbers to a assist on a project that they could start earlier than the fabber they're assisting
-- Won't send a land fabber to a planet with an orbital fabber
 - Won't use more than one teleporter at a time
 
 ## THANKS TO
