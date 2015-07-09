@@ -13,7 +13,7 @@ Any feedback based on playing the AI is greatly appreciated. Please include a li
 
 Be aware that Queller will produce more units and fabbers than the vanilla AI, especially on multi-planet systems. I have optimised the AI as best as I can, but it is a bigger performance hog than vanilla. If you are encountering performance issues try setting Local Server to OFF.
 
-## GOALS
+## GOALS
 
 Some of these might prove impossible given the tooling available, only time will tell.
 
