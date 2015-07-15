@@ -933,7 +933,7 @@
          }
       },
       {
-         "name":"Legion - Platinum - Energy Storage",
+         "name":"Legion - Platinum - Storage",
          "to_build":"LegionBasicStorage",
          "instance_count":1,
          "priority":140,
@@ -960,30 +960,8 @@
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"EnergyStorage"
                }
-            ]
-         ],
-         "placement_rules":{
-            "buffer":10,
-            "placement_type":"FromBaseCenter",
-            "threat":{
-               "influence_type":"AntiSurface",
-               "compare_type":"<",
-               "radius":10,
-               "value":50
-            }
-         }
-      },
-      {
-         "name":"Legion - Platinum - Metal Storage",
-         "to_build":"LegionBasicStorage",
-         "instance_count":1,
-         "priority":140,
-         "builders":[
-            "AnyBasicFabber",
-            "AnyAdvancedFabber"
-         ],
-         "build_conditions":[
-            [
+            ],
+			[
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"legion_platinum",

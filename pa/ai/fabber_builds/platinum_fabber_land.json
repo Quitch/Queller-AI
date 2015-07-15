@@ -215,6 +215,12 @@
                   "string0":"BasicBotFactory"
                },
                {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"(Naval & Factory) & Basic",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
                   "test_type":"UnitCountPerPlanetRadius",
                   "unit_type_string0":"Bot & Factory & Basic",
                   "compare0":"<=",

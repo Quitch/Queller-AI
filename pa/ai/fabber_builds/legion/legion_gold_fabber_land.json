@@ -29,18 +29,6 @@
                   "string0":"LegionBasicBotFactory"
                },
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Tank & Factory & Basic",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
-                  "test_type":"UnitCountPerPlanetRadius",
-                  "unit_type_string0":"Bot & Factory & Basic",
-                  "compare0":"<=",
-                  "value0":250
-               },
-               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"LegionBasicBotFactory"
                }
@@ -64,7 +52,7 @@
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"(Naval & Factory) & Basic",
+                  "unit_type_string0":"Naval & Factory & Basic",
                   "compare0":">=",
                   "value0":1
                },
@@ -103,36 +91,6 @@
                   "unit_type_string0":"Bot & Factory & Basic",
                   "compare0":"<=",
                   "value0":500
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"LegionBasicBotFactory"
-               }
-            ],
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"legion_gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"LegionBasicBotFactory"
-               },
-               {
-                  "test_type":"SystemThreat",
-                  "string0":"Orbital",
-                  "compare0":">",
-                  "value0":0
-               },
-               {
-                  "test_type":"UnitCount",
-                  "unit_type_string0":"Factory & Bot & Basic",
-                  "compare0":"<",
-                  "value0":1
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -181,18 +139,6 @@
                   "string0":"LegionBasicBotFactory"
                },
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Tank & Factory & Basic",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
-                  "test_type":"UnitCountPerPlanetRadius",
-                  "unit_type_string0":"Bot & Factory & Basic",
-                  "compare0":"<=",
-                  "value0":250
-               },
-               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"LegionBasicBotFactory"
                }
@@ -213,6 +159,12 @@
                {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"LegionBasicBotFactory"
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Naval & Factory & Basic",
+                  "compare0":">=",
+                  "value0":1
                },
                {
                   "test_type":"UnitCountPerPlanetRadius",
@@ -253,36 +205,6 @@
                   "unit_type_string0":"Bot & Factory & Basic",
                   "compare0":"<=",
                   "value0":500
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"LegionBasicBotFactory"
-               }
-            ],
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"legion_gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"LegionBasicBotFactory"
-               },
-               {
-                  "test_type":"SystemThreat",
-                  "string0":"Orbital",
-                  "compare0":">",
-                  "value0":0
-               },
-               {
-                  "test_type":"UnitCount",
-                  "unit_type_string0":"Factory & Bot",
-                  "compare0":"<",
-                  "value0":1
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -381,6 +303,70 @@
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"LegionBasicVehicleFactory"
                }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"LegionBasicVehicleFactory"
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Naval & Factory & Basic",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
+                  "test_type":"UnitCountPerPlanetRadius",
+                  "unit_type_string0":"Land & Factory & Basic",
+                  "compare0":"<=",
+                  "value0":500
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"LegionBasicVehicleFactory"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"LegionBasicVehicleFactory"
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Naval",
+                  "compare0":">",
+                  "value0":0
+               },
+               {
+                  "test_type":"UnitCountPerPlanetRadius",
+                  "unit_type_string0":"Land & Factory & Basic",
+                  "compare0":"<=",
+                  "value0":500
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"LegionBasicVehicleFactory"
+               }
             ]
          ],
          "placement_rules":{
@@ -422,6 +408,70 @@
                {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"LegionBasicVehicleFactory"
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"LegionBasicVehicleFactory"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"LegionBasicVehicleFactory"
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Naval & Factory & Basic",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
+                  "test_type":"UnitCountPerPlanetRadius",
+                  "unit_type_string0":"Land & Factory & Basic",
+                  "compare0":"<=",
+                  "value0":500
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"LegionBasicVehicleFactory"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"LegionBasicVehicleFactory"
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Naval",
+                  "compare0":">",
+                  "value0":0
+               },
+               {
+                  "test_type":"UnitCountPerPlanetRadius",
+                  "unit_type_string0":"Land & Factory & Basic",
+                  "compare0":"<=",
+                  "value0":500
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -508,6 +558,10 @@
                   "boolean":true
                },
                {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
                   "test_type":"HaveEcoForAdvanced",
                   "boolean":true
                },
@@ -540,6 +594,10 @@
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"legion_gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
                {
@@ -635,6 +693,82 @@
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"legion_gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":false
+               },
+               {
+                  "test_type":"HaveEcoForAdvanced",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"LegionAdvancedVehicleFactory"
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Naval & Factory & Basic",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
+                  "test_type":"UnitCountPerPlanetRadius",
+                  "unit_type_string0":"Tank & Factory & Advanced",
+                  "compare0":"<=",
+                  "value0":500
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"LegionBasicVehicleFactory"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"LegionBasicVehicleFactory"
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Naval",
+                  "compare0":">",
+                  "value0":0
+               },
+               {
+                  "test_type":"UnitCountPerPlanetRadius",
+                  "unit_type_string0":"Tank & Factory & Advanced",
+                  "compare0":"<=",
+                  "value0":500
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"LegionAdvancedVehicleFactory"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
                {

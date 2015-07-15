@@ -184,8 +184,6 @@ The development branch has the beginnings of support for the upcoming [Imperial 
 - Takes too long transition from a naval start to a land game on mixed maps
 - Will not send all its troops through a teleporter even when there's no reason not to
 - Will overbuild on land/sea when it should be dealing with a threat in the other arena
-- Too aggressive in spending excess eco when it has a lot of fabbers
-- If an Advanced Fabber is sent to another planet the building of a factory can be delayed
 - Doesn't understand when it needs to build units in preparation for an attack versus when it should shutdown factories so it can build super weapons
 
 #### MAYBEFIX
@@ -196,7 +194,6 @@ The development branch has the beginnings of support for the upcoming [Imperial 
 #### WONTFIX
 
 - Ignores the unit preferences of AI personalities
-- Will build a late bot factory on land maps when it shouldn't
 - Will use fabbers to construct factories when the commander should really do it
 
 #### CANTFIX

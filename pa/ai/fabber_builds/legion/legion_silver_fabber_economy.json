@@ -415,7 +415,7 @@
          }
       },
       {
-         "name":"Legion - Silver - Energy Storage",
+         "name":"Legion - Silver - Storage",
          "to_build":"LegionBasicStorage",
          "instance_count":2,
          "max_num_assisters":3,
@@ -443,31 +443,8 @@
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"EnergyStorage"
                }
-            ]
-         ],
-         "placement_rules":{
-            "buffer":10,
-            "placement_type":"FromBaseCenter",
-            "threat":{
-               "influence_type":"AntiSurface",
-               "compare_type":"<",
-               "radius":10,
-               "value":50
-            }
-         }
-      },
-      {
-         "name":"Legion - Silver - Metal Storage",
-         "to_build":"LegionBasicStorage",
-         "instance_count":2,
-         "max_num_assisters":3,
-         "priority":260,
-         "builders":[
-            "AnyBasicFabber",
-            "AnyAdvancedFabber"
-         ],
-         "build_conditions":[
-            [
+            ],
+			[
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"legion_silver",

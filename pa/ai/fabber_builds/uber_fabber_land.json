@@ -215,6 +215,12 @@
                   "string0":"BasicBotFactory"
                },
                {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"(Naval & Factory) & Basic",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
                   "test_type":"UnitCountPerPlanetRadius",
                   "unit_type_string0":"Bot & Factory & Basic",
                   "compare0":"<=",
@@ -458,58 +464,6 @@
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
-                  "boolean":true
-               },
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CurrentMetalEfficiency",
-                  "compare0":">",
-                  "value0":1
-               },
-               {
-                  "test_type":"CurrentEnergyEfficiency",
-                  "compare0":">",
-                  "value0":1
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicBotFactory"
-               },
-               {
-                  "test_type":"SystemThreat",
-                  "string0":"Orbital",
-                  "compare0":">",
-                  "value0":0
-               },
-               {
-                  "test_type":"UnitCount",
-                  "unit_type_string0":"Factory & Bot & Basic",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicBotFactory"
-               }
-            ],
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-                  "boolean":true
-               },
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":true
-               },
-               {
-                  "test_type":"OtherPlanetNeedsLandUnitAssistance",
                   "boolean":true
                },
                {
@@ -776,11 +730,6 @@
                {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"BasicVehicleFactory"
-               },
-               {
-                  "test_type":"PlanetCount",
-                  "compare0":">",
-                  "value0":1
                },
                {
                   "test_type":"CanFindPlaceToBuild",
