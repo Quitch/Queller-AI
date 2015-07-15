@@ -7,8 +7,8 @@
          "priority":252,
          "base_sort":"FromPerimeter",
          "builders":[
-            "Commander",
-            "AnyBasicFabber"
+            "LegionCommander",
+            "AnyLegionBasicFabber"
          ],
          "build_conditions":[
             [
@@ -114,7 +114,7 @@
          "priority":252,
          "base_sort":"FromPerimeter",
          "builders":[
-            "Commander",
+            "LegionCommander",
             "LegionBasicFabricationBot",
             "LegionBasicFabricationVehicle",
             "BasicAirFabber"
@@ -428,7 +428,7 @@
          "priority":254,
          "base_sort":"FromPerimeter",
          "builders":[
-            "Commander",
+            "LegionCommander",
             "BasicAirFabber",
             "BasicNavalFabber"
          ],
@@ -642,7 +642,7 @@
          "priority":251,
          "base_sort":"FromPerimeter",
          "builders":[
-            "Commander",
+            "LegionCommander",
             "LegionBasicFabricationBot",
             "LegionBasicFabricationVehicle"
          ],
@@ -704,7 +704,7 @@
          "priority":251,
          "base_sort":"FromPerimeter",
          "builders":[
-            "Commander",
+            "LegionCommander",
             "LegionBasicFabricationBot",
             "LegionBasicFabricationVehicle"
          ],
@@ -851,7 +851,7 @@
          "priority":254,
          "base_sort":"FromPerimeter",
          "builders":[
-            "Commander",
+            "LegionCommander",
             "BasicNavalFabber"
          ],
          "build_conditions":[
@@ -922,7 +922,7 @@
          "priority":379,
          "base_sort":"FromPerimeter",
          "builders":[
-            "AnyAdvancedFabber"
+            "AnyLegionAdvancedFabber"
          ],
          "build_conditions":[
             [
@@ -993,7 +993,7 @@
          "max_num_assisters":3,
          "base_sort":"FromPerimeter",
          "builders":[
-            "AnyAdvancedFabber"
+            "AnyLegionAdvancedFabber"
          ],
          "build_conditions":[
             [
@@ -1188,8 +1188,8 @@
          "min_num_assisters":1,
          "max_num_assisters":3,
          "builders":[
-            "AnyBasicFabber",
-            "AnyAdvancedFabber"
+            "AnyLegionBasicFabber",
+            "AnyLegionAdvancedFabber"
          ],
          "build_conditions":[
             [
@@ -1329,8 +1329,8 @@
          "min_num_assisters":1,
          "max_num_assisters":3,
          "builders":[
-            "AnyBasicFabber",
-            "AnyAdvancedFabber"
+            "AnyLegionBasicFabber",
+            "AnyLegionAdvancedFabber"
          ],
          "build_conditions":[
             [
@@ -1391,8 +1391,8 @@
          "min_num_assisters":1,
          "max_num_assisters":3,
          "builders":[
-            "AnyBasicFabber",
-            "AnyAdvancedFabber"
+            "AnyLegionBasicFabber",
+            "AnyLegionAdvancedFabber"
          ],
          "build_conditions":[
             [
@@ -1416,7 +1416,7 @@
                },
                {
                   "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Commander",
+                  "unit_type_string0":"LegionCommander",
                   "compare0":">=",
                   "value0":1
                },
@@ -1464,7 +1464,7 @@
                },
                {
                   "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Commander",
+                  "unit_type_string0":"LegionCommander",
                   "compare0":">=",
                   "value0":1
                },
@@ -1484,7 +1484,7 @@
             "placement_type":"FromMainBaseCenter",
             "unit_count_rules":[
                {
-                  "unit_type_string":"Commander",
+                  "unit_type_string":"LegionCommander",
                   "alliance":"Ally",
                   "compare_type":">=",
                   "range":100,
@@ -1509,7 +1509,7 @@
          "min_num_assisters":3,
          "max_num_assisters":12,
          "builders":[
-            "AnyAdvancedFabber"
+            "AnyLegionAdvancedFabber"
          ],
          "build_conditions":[
             [
@@ -1601,7 +1601,7 @@
          "min_num_assisters":5,
          "max_num_assisters":12,
          "builders":[
-            "AnyAdvancedFabber"
+            "AnyLegionAdvancedFabber"
          ],
          "build_conditions":[
             [

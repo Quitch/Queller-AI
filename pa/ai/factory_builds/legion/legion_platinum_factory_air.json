@@ -5,7 +5,7 @@
          "to_build":"BasicAirFabber",
          "instance_count":1,
          "max_num_assisters":10,
-         "priority":100,
+         "priority":0,
          "builders":[
             "LegionBasicAirFactory"
          ],
@@ -126,7 +126,7 @@
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Commander",
+                  "unit_type_string0":"LegionCommander",
                   "compare0":"<",
                   "value0":1
                }
@@ -138,7 +138,7 @@
          "to_build":"AirScout",
          "instance_count":1,
          "max_num_assisters":10,
-         "priority":98,
+         "priority":0,
          "builders":[
             "LegionBasicAirFactory"
          ],
@@ -473,7 +473,7 @@
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Commander",
+                  "unit_type_string0":"LegionCommander",
                   "compare0":"<",
                   "value0":1
                }

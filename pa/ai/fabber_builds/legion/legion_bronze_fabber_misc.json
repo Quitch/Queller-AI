@@ -5,9 +5,9 @@
          "instance_count":-1,
          "priority":1,
          "builders":[
-            "Commander",
-            "AnyBasicFabber",
-            "AnyAdvancedFabber",
+            "LegionCommander",
+            "AnyLegionBasicFabber",
+            "AnyLegionAdvancedFabber",
             "OrbitalFabber"
          ],
          "build_conditions":[
@@ -36,9 +36,8 @@
          "priority":1,
          "max_num_assisters":10,
          "builders":[
-            "Commander",
-            "AnyBasicFabber",
-            "AnyAdvancedFabber",
+            "AnyLegionBasicFabber",
+            "AnyLegionAdvancedFabber",
             "OrbitalFabber"
          ],
          "build_conditions":[
