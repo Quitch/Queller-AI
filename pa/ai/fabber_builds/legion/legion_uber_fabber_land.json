@@ -52,13 +52,13 @@
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"(Naval & Factory) & Basic",
+                  "unit_type_string0":"Naval & Factory & Basic",
                   "compare0":">=",
                   "value0":1
                },
                {
                   "test_type":"UnitCountPerPlanetRadius",
-                  "unit_type_string0":"Bot & Factory & Basic",
+                  "unit_type_string0":"Land & Factory & Basic",
                   "compare0":"<=",
                   "value0":500
                },
@@ -88,7 +88,7 @@
                },
                {
                   "test_type":"UnitCountPerPlanetRadius",
-                  "unit_type_string0":"Bot & Factory & Basic",
+                  "unit_type_string0":"Land & Factory & Basic",
                   "compare0":"<=",
                   "value0":500
                },
@@ -161,8 +161,14 @@
                   "string0":"LegionBasicBotFactory"
                },
                {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Naval & Factory & Basic",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
                   "test_type":"UnitCountPerPlanetRadius",
-                  "unit_type_string0":"Bot & Factory & Basic",
+                  "unit_type_string0":"Land & Factory & Basic",
                   "compare0":"<=",
                   "value0":500
                },
@@ -196,7 +202,7 @@
                },
                {
                   "test_type":"UnitCountPerPlanetRadius",
-                  "unit_type_string0":"Bot & Factory & Basic",
+                  "unit_type_string0":"Land & Factory & Basic",
                   "compare0":"<=",
                   "value0":500
                },
@@ -299,13 +305,13 @@
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"(Naval & Factory) & Basic",
+                  "unit_type_string0":"Naval & Factory & Basic",
                   "compare0":">=",
                   "value0":1
                },
                {
                   "test_type":"UnitCountPerPlanetRadius",
-                  "unit_type_string0":"Bot & Factory & Basic",
+                  "unit_type_string0":"Land & Factory & Basic",
                   "compare0":"<=",
                   "value0":500
                },
@@ -349,7 +355,7 @@
                },
                {
                   "test_type":"UnitCountPerPlanetRadius",
-                  "unit_type_string0":"Bot & Factory & Basic",
+                  "unit_type_string0":"Land & Factory & Basic",
                   "compare0":"<=",
                   "value0":500
                },
