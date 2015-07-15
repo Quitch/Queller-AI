@@ -1,0 +1,49 @@
+{
+   "build_list":[
+      {
+         "name":"Legion - Gold - Teleport Commander To Planet",
+         "instance_count":1,
+         "priority":1001,
+         "builders":[
+            "Commander"
+         ],
+         "build_conditions":[
+            [               
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_gold",
+				  "boolean":true
+               },
+			   {
+                  "test_type":"WantCommanderOffPlanetByTeleporter",
+                  "boolean":true
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Structure & Teleporter",
+                  "compare0":">=",
+                  "value0":1
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_gold",
+				  "boolean":true
+               },
+               {
+                  "test_type":"WantCommanderOffPlanet",
+                  "boolean":true
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Structure & Teleporter",
+                  "compare0":">=",
+                  "value0":1
+               }
+            ]
+         ],
+         "task_type":"TeleportFabberToPlanet"
+      }
+   ]
+}

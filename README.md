@@ -7,6 +7,10 @@ I love AI. To put my old person comfy jumper on for a moment, back in the day I 
 
 This mod is a total overhaul of the AI (as much as can be done with the exposed files) designed to leverage the systems Sorian has created, while playing a game better suited to the meta. It is primarily designed with 1v1 in mind, but should prove to be an improvement in other modes too. It covers a wider range of difficulties than vanilla, from easier to harder, all of which play in a more humanlike fashion than their vanilla counterparts.
 
+## INSTALLATION
+
+You should download and install this mod via the [PA Mod Manager (PAMM)](https://forums.uberent.com/threads/pa-mod-manager-pamm-cross-platform.59992/)
+
 ## FEEDBACK
 
 Any feedback based on playing the AI is greatly appreciated. Please include a link to the game on [PA Stats](http://www.pastats.com/) or the replay ID and any time codes of interest. Failing that, please provide the system name, the number of AIs, their difficulty setting, and which slot(s) the players occupied. Remember to set Local Server to OFF in settings otherwise you won't get an entry in PA Stats or a replay ID.
@@ -88,6 +92,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
  - Goes orbital smartly
  - Expands quickly
  - Best troop selection
+ - Good scouting
  - Smartly reacts to opponent's play
  - Good fabber to troop balance
  - Appropriate use of static defence/offence
@@ -102,6 +107,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
  - Goes orbital smartly
  - Expands quickly
  - Best troop selection
+ - Best scouting
  - Smartly reacts to opponent's play
  - Good fabber to troop balance
  - Appropriate use of static defence/offence
@@ -165,6 +171,24 @@ Slot 2/2 is riskier but leads to a stronger late game
 - Is Kestrel play a thing?
 - Boom usage is terrible and needs a lot of work
 - Stops rapid basic factory expansion once advanced factories appear which is poor play on occupied worlds
+
+## IMPERIAL LEGION
+
+The development branch has the beginnings of support for the upcoming [Imperial Legion](https://forums.uberent.com/threads/wip-server-imperial-legion-faction.69165/) faction.
+
+Currently doesn't utilise the following units:
+
+- LegionBasicAmphibiousBot
+- LegionBasicAABot
+- LegionAdvancedArtilleryBot
+- LegionAdvancedCombatFabberBot
+- LegionBasicMortarVehicle
+- LegionBasicRiotBot
+- LegionAdvancedSniperVehicle
+- LegionAdvancedAmphibiousVehicle
+- LegionAdvancedMortarVehicle
+- LegionBasicShotgunVehicle
+- LegionBasicHoverVehicle
 
 ## KNOWN ISSUES
 

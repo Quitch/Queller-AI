@@ -1,0 +1,66 @@
+{
+   "build_list":[
+      {
+         "name":"Legion - Bronze - Land Transfer To Planet",
+         "to_build":"Teleporter_Attack",
+         "instance_count":1,
+         "priority":2,
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_bronze",
+                  "boolean":true
+               },
+               {
+                  "test_type":"BaseThreatened",
+                  "boolean":false
+               },
+               {
+                  "test_type":"OtherPlanetNeedsLandUnitAssistance",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanProvideLandUnitAssistance",
+                  "boolean":true
+               },
+               {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"Land & Mobile & Offense",
+                  "compare0":">=",
+                  "value0":1
+               }
+            ]
+         ],
+         "task_type":"TeleportLandToPlanet"
+      },
+      {
+         "name":"Legion - Bronze - Land Attack Maximum Power",
+         "to_build":"Basic_Land_Attack_40",
+         "instance_count":1,
+         "priority":100,
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_bronze",
+                  "boolean":true
+               },
+               {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
+                  "compare0":">=",
+                  "value0":40
+               },
+               {
+                  "test_type":"CanAttackWithPoolUnitsLand",
+                  "string0":"WL_AnySurface",
+                  "string1":"WL_AnySurface",
+                  "unit_type_string0":"Mobile | Structure"
+               }
+            ]
+         ],
+         "task_type":"LandAttack"
+      }
+   ]
+}
