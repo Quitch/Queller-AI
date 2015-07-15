@@ -176,20 +176,6 @@ Slot 2/2 is riskier but leads to a stronger late game
 
 The development branch has the beginnings of support for the upcoming [Imperial Legion](https://forums.uberent.com/threads/wip-server-imperial-legion-faction.69165/) faction.
 
-Currently doesn't utilise the following units:
-
-- LegionBasicAmphibiousBot
-- LegionBasicAABot
-- LegionAdvancedArtilleryBot
-- LegionAdvancedCombatFabberBot
-- LegionBasicMortarVehicle
-- LegionBasicRiotBot
-- LegionAdvancedSniperVehicle
-- LegionAdvancedAmphibiousVehicle
-- LegionAdvancedMortarVehicle
-- LegionBasicShotgunVehicle
-- LegionBasicHoverVehicle
-
 ## KNOWN ISSUES
 
 #### TOFIX

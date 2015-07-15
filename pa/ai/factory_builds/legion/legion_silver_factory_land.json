@@ -138,6 +138,81 @@
             ]
          ]
       },
+	  {
+         "name":"Legion - Silver - Amphibious",
+         "to_build":"LegionBasicAmphibiousBot",
+         "instance_count":-1,
+         "max_num_assisters":10,
+         "priority":97,
+         "builders":[
+            "LegionBasicBotFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_silver",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
+      {
+         "name":"Legion - Silver - AA",
+         "to_build":"LegionBasicAABot",
+         "instance_count":1,
+         "max_num_assisters":10,
+         "priority":97,
+         "builders":[
+            "LegionBasicBotFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_silver",
+                  "boolean":true
+               },
+               {
+
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
+      {
+         "name":"Legion - Silver - Riot",
+         "to_build":"LegionBasicRiotBot",
+         "instance_count":-1,
+         "max_num_assisters":10,
+         "priority":97,
+         "builders":[
+            "LegionBasicBotFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_silver",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
       {
          "name":"Legion - Silver - Bolo",
          "to_build":"LegionBasicShankVehicle",
@@ -194,6 +269,84 @@
          "name":"Legion - Silver - Spinner",
          "to_build":"LegionBasicAAVehicle",
          "instance_count":1,
+         "max_num_assisters":10,
+         "priority":97,
+         "builders":[
+            "LegionBasicVehicleFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_silver",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
+	  {
+         "name":"Legion - Silver - Vehicle Mortar",
+         "to_build":"LegionBasicMortarVehicle",
+         "instance_count":-1,
+         "max_num_assisters":10,
+         "priority":97,
+         "builders":[
+            "LegionBasicVehicleFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_silver",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
+      {
+         "name":"Legion - Silver - Shotgun",
+         "to_build":"LegionBasicShotgunVehicle",
+         "instance_count":-1,
+         "max_num_assisters":10,
+         "priority":97,
+         "builders":[
+            "LegionBasicVehicleFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_silver",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
+      {
+         "name":"Legion - Silver - Hover",
+         "to_build":"LegionBasicHoverVehicle",
+         "instance_count":-1,
          "max_num_assisters":10,
          "priority":97,
          "builders":[
@@ -349,6 +502,32 @@
             ]
          ]
       },
+	  {
+         "name":"Legion - Silver - Bot Artillery",
+         "to_build":"LegionAdvancedArtilleryBot",
+         "instance_count":-1,
+         "max_num_assisters":10,
+         "priority":199,
+         "builders":[
+            "LegionAdvancedBotFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_silver",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
       {
          "name":"Legion - Silver - Leveller",
          "to_build":"LegionAdvancedLaserVehicle",
@@ -404,6 +583,80 @@
       {
          "name":"Legion - Silver - Sheller",
          "to_build":"LegionAdvancedArtilleryVehicle",
+         "instance_count":-1,
+         "max_num_assisters":10,
+         "priority":199,
+         "builders":[
+            "LegionAdvancedVehicleFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_silver",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
+      {
+         "name":"Legion - Silver - Sniper",
+         "to_build":"LegionAdvancedSniperVehicle",
+         "instance_count":-1,
+         "max_num_assisters":10,
+         "priority":199,
+         "builders":[
+            "LegionAdvancedVehicleFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_silver",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
+      {
+         "name":"Legion - Silver - Amphibious",
+         "to_build":"LegionAdvancedAmphibiousVehicle",
+         "instance_count":-1,
+         "max_num_assisters":10,
+         "priority":199,
+         "builders":[
+            "LegionAdvancedVehicleFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_silver",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
+      {
+         "name":"Legion - Silver - Advanced Mortar",
+         "to_build":"LegionAdvancedMortarVehicle",
          "instance_count":-1,
          "max_num_assisters":10,
          "priority":199,

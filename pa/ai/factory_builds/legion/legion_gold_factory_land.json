@@ -318,6 +318,192 @@
             ]
          ]
       },
+	  {
+         "name":"Legion - Gold - Amphibious",
+         "to_build":"LegionBasicAmphibiousBot",
+         "instance_count":-1,
+         "max_num_assisters":10,
+         "priority":97,
+         "builders":[
+            "LegionBasicBotFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"PlanetThreat",
+                  "string0":"Naval",
+                  "compare0":">",
+                  "value0":0
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
+      {
+         "name":"Legion - Gold - AA",
+         "to_build":"LegionBasicAABot",
+         "instance_count":1,
+         "max_num_assisters":10,
+         "priority":97,
+         "builders":[
+            "LegionBasicBotFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
+                  "string0":"Air",
+                  "string1":"AntiAir",
+                  "compare0":">",
+                  "value0":0.9
+               },
+               {
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Land & AirDefense & Mobile",
+                  "unit_type_string1":"(Land & Offense & Mobile) - AirDefense",
+                  "compare0":"<",
+                  "value0":0.2
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
+                  "string0":"Air",
+                  "string1":"Air",
+                  "compare0":">",
+                  "value0":0.9
+               },
+               {
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Land & AirDefense & Mobile",
+                  "unit_type_string1":"(Land & Offense & Mobile) - AirDefense",
+                  "compare0":"<",
+                  "value0":0.2
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+               {
+                  "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Land & AirDefense & Mobile",
+                  "unit_type_string1":"(Land & Offense & Mobile) - AirDefense",
+                  "compare0":"<",
+                  "value0":0.2
+               }
+            ]
+         ]
+      },
+      {
+         "name":"Legion - Gold - Riot",
+         "to_build":"LegionBasicRiotBot",
+         "instance_count":-1,
+         "max_num_assisters":10,
+         "priority":97,
+         "builders":[
+            "LegionBasicBotFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+               {
+                  "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
       {
          "name":"Legion - Gold - Land Scout - Intel",
          "to_build":"LegionScoutVehicle",
@@ -593,8 +779,8 @@
                },
                {
                   "test_type":"UnitRatioOnPlanet",
-                  "unit_type_string0":"Tank & AirDefense",
-                  "unit_type_string1":"(Tank & Offense) - AirDefense",
+                  "unit_type_string0":"Land & AirDefense & Mobile",
+                  "unit_type_string1":"(Land & Offense & Mobile) - AirDefense",
                   "compare0":"<",
                   "value0":0.2
                }
@@ -625,8 +811,8 @@
                },
                {
                   "test_type":"UnitRatioOnPlanet",
-                  "unit_type_string0":"Tank & AirDefense",
-                  "unit_type_string1":"(Tank & Offense) - AirDefense",
+                  "unit_type_string0":"Land & AirDefense & Mobile",
+                  "unit_type_string1":"(Land & Offense & Mobile) - AirDefense",
                   "compare0":"<",
                   "value0":0.2
                }
@@ -650,10 +836,145 @@
                },
                {
                   "test_type":"UnitRatioOnPlanet",
-                  "unit_type_string0":"Tank & AirDefense",
-                  "unit_type_string1":"(Tank & Offense) - AirDefense",
+                  "unit_type_string0":"Land & AirDefense & Mobile",
+                  "unit_type_string1":"(Land & Offense & Mobile) - AirDefense",
                   "compare0":"<",
                   "value0":0.2
+               }
+            ]
+         ]
+      },{
+         "name":"Legion - Gold - Vehicle Mortar",
+         "to_build":"LegionBasicMortarVehicle",
+         "instance_count":-1,
+         "max_num_assisters":10,
+         "priority":97,
+         "builders":[
+            "LegionBasicVehicleFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+               {
+                  "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
+      {
+         "name":"Legion - Gold - Shotgun",
+         "to_build":"LegionBasicShotgunVehicle",
+         "instance_count":-1,
+         "max_num_assisters":10,
+         "priority":97,
+         "builders":[
+            "LegionBasicVehicleFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+               {
+                  "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
+      {
+         "name":"Legion - Gold - Hover",
+         "to_build":"LegionBasicHoverVehicle",
+         "instance_count":-1,
+         "max_num_assisters":10,
+         "priority":97,
+         "builders":[
+            "LegionBasicVehicleFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"PlanetThreat",
+                  "string0":"Naval",
+                  "compare0":">",
+                  "value0":0
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ]
@@ -1094,6 +1415,50 @@
             ]
          ]
       },
+	  {
+         "name":"Legion - Gold - Bot Artillery",
+         "to_build":"LegionAdvancedArtilleryBot",
+         "instance_count":-1,
+         "max_num_assisters":10,
+         "priority":199,
+         "builders":[
+            "LegionAdvancedBotFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+               {
+                  "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
       {
          "name":"Legion - Gold - Vanguard",
          "to_build":"LegionAdvancedArmorVehicle",
@@ -1155,6 +1520,126 @@
       {
          "name":"Legion - Gold - Sheller",
          "to_build":"LegionAdvancedArtilleryVehicle",
+         "instance_count":-1,
+         "max_num_assisters":10,
+         "priority":199,
+         "builders":[
+            "LegionAdvancedVehicleFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+               {
+                  "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
+      {
+         "name":"Legion - Gold - Sniper",
+         "to_build":"LegionAdvancedSniperVehicle",
+         "instance_count":-1,
+         "max_num_assisters":10,
+         "priority":199,
+         "builders":[
+            "LegionAdvancedVehicleFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+               {
+                  "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
+      {
+         "name":"Legion - Gold - Amphibious",
+         "to_build":"LegionAdvancedAmphibiousVehicle",
+         "instance_count":-1,
+         "max_num_assisters":10,
+         "priority":199,
+         "builders":[
+            "LegionAdvancedVehicleFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"PlanetThreat",
+                  "string0":"Naval",
+                  "compare0":">",
+                  "value0":0
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
+      {
+         "name":"Legion - Gold - Advanced Mortar",
+         "to_build":"LegionAdvancedMortarVehicle",
          "instance_count":-1,
          "max_num_assisters":10,
          "priority":199,
