@@ -3,6 +3,10 @@ dev
 Added "support" for the Imperial Legion faction
 Gold, Platinum and Uber no longer build bot factories when they shouldn't
 Gold will build the Leveller
+Uber will check there's some metal in storage in addition to looking at eco efficiency before assuming float and building more stuff
+Silver correctly checks whether it can afford to have fabbers to assist on a project
+Correctly excludes the orbital fabber from all checks it should be excluded from
+Uber will send ARKYD offworld even if it's the only one if it doesn't need it on that planet
 
 v2.0.1
 
