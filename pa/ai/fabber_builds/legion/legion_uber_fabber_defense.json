@@ -1,7 +1,7 @@
 {
    "build_list":[
       {
-         "name":"Legion - Uber - Galata Turret - Mex",
+         "name":"Legion - Uber - Bofors II - Mex",
          "to_build":"LegionBasicAirDefense",
          "instance_count":1,
          "priority":252,
@@ -107,7 +107,7 @@
          }
       },
       {
-         "name":"Legion - Uber - Single Laser Defense Tower - Mex",
+         "name":"Legion - Uber - Laser Turret - Mex",
          "to_build":"LegionBasicT1LaserDefense",
          "instance_count":1,
          "shared_instance_count":"BasicLandDefenseMex",
@@ -188,7 +188,7 @@
          }
       },
       {
-         "name":"Legion - Uber - Laser Defense Tower - Mex",
+         "name":"Legion - Uber - Dual Laser Turret - Mex",
          "to_build":"LegionAdvancedT1LaserDefense",
          "instance_count":1,
          "shared_instance_count":"BasicLandDefenseMex",
@@ -316,7 +316,7 @@
          }
       },
       {
-         "name":"Legion - Uber - Anchor - Mex",
+         "name":"Legion - Uber - Deadweight - Mex",
          "to_build":"DefenseSatellite",
          "instance_count":1,
          "max_num_assisters":1,
@@ -529,7 +529,7 @@
          }
       },
       {
-         "name":"Legion - Uber - Anchor - Beachead",
+         "name":"Legion - Uber - Deadweight - Beachead",
          "to_build":"DefenseSatellite",
          "instance_count":1,
          "max_num_assisters":1,
@@ -567,7 +567,7 @@
                },
                {
                   "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & Teleporter",
+                  "unit_type_string0":"Structure & Space Bridge",
                   "compare0":">=",
                   "value0":1
                },
@@ -604,7 +604,7 @@
                },
                {
                   "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & Teleporter",
+                  "unit_type_string0":"Structure & Space Bridge",
                   "compare0":">=",
                   "value0":1
                },
@@ -618,7 +618,7 @@
             "placement_type":"FromMainBasePerimeter",
             "unit_count_rules":[
                {
-                  "unit_type_string":"Structure & Teleporter",
+                  "unit_type_string":"Structure & Space Bridge",
                   "alliance":"Ally",
                   "compare_type":">=",
                   "range":100,
@@ -635,7 +635,7 @@
          }
       },
       {
-         "name":"Legion - Uber - Galata Turret - Base",
+         "name":"Legion - Uber - Bofors II - Base",
          "to_build":"LegionBasicAirDefense",
          "instance_count":1,
          "max_num_assisters":1,
@@ -696,7 +696,7 @@
          }
       },
       {
-         "name":"Legion - Uber - Single Laser Defense Tower - Base",
+         "name":"Legion - Uber - Laser Turret - Base",
          "to_build":"LegionBasicT1LaserDefense",
          "instance_count":1,
          "shared_instance_count":"BasicLandDefense",
@@ -773,7 +773,7 @@
          }
       },
       {
-         "name":"Legion - Uber - Laser Defense Tower - Base",
+         "name":"Legion - Uber - Dual Laser Turret - Base",
          "to_build":"LegionAdvancedT1LaserDefense",
          "instance_count":1,
          "shared_instance_count":"BasicLandDefense",
@@ -914,7 +914,7 @@
          }
       },
       {
-         "name":"Legion - Uber - Advanced Air Defense - Base",
+         "name":"Legion - Uber - Flakturm-G - Base",
          "to_build":"LegionAdvancedAirDefense",
          "instance_count":1,
          "min_num_assisters":1,
@@ -986,7 +986,7 @@
          }
       },
       {
-         "name":"Legion - Uber - Advanced Land Defense - Base",
+         "name":"Legion - Uber - Grey Wizard - Base",
          "to_build":"LegionAdvancedLaserDefense",
          "instance_count":1,
          "priority":379,
@@ -1125,7 +1125,7 @@
          }
       },
       {
-         "name":"Legion - Uber - Anchor - Base",
+         "name":"Legion - Uber - Deadweight - Base",
          "to_build":"DefenseSatellite",
          "instance_count":1,
          "max_num_assisters":1,
@@ -1181,8 +1181,8 @@
          }
       },
       {
-         "name":"Legion - Uber - Umbrella - Base",
-         "to_build":"Umbrella",
+         "name":"Legion - Uber - Tola - Base",
+         "to_build":"LegionBasicOrbitalDefense",
          "instance_count":1,
          "priority":255,
          "min_num_assisters":1,
@@ -1227,7 +1227,7 @@
                },
                {
                   "test_type":"CanFindPlaceToBuild",
-                  "string0":"Umbrella"
+                  "string0":"LegionBasicOrbitalDefense"
                }
             ],
             [
@@ -1265,7 +1265,7 @@
                },
                {
                   "test_type":"CanFindPlaceToBuild",
-                  "string0":"Umbrella"
+                  "string0":"LegionBasicOrbitalDefense"
                }
             ],
             [
@@ -1297,7 +1297,7 @@
                },
                {
                   "test_type":"CanFindPlaceToBuild",
-                  "string0":"Umbrella"
+                  "string0":"LegionBasicOrbitalDefense"
                }
             ]
          ],
@@ -1322,8 +1322,8 @@
          }
       },
       {
-         "name":"Legion - Uber - Umbrella - Lock Down The Planet",
-         "to_build":"Umbrella",
+         "name":"Legion - Uber - Tola - Lock Down The Planet",
+         "to_build":"LegionBasicOrbitalDefense",
          "instance_count":1,
          "priority":256,
          "min_num_assisters":1,
@@ -1366,7 +1366,7 @@
                },
                {
                   "test_type":"CanFindPlaceToBuild",
-                  "string0":"Umbrella"
+                  "string0":"LegionBasicOrbitalDefense"
                }
             ]
          ],
@@ -1384,8 +1384,8 @@
          }
       },
       {
-         "name":"Legion - Uber - Umbrella - Protect the Commander",
-         "to_build":"Umbrella",
+         "name":"Legion - Uber - Tola - Protect the Commander",
+         "to_build":"LegionBasicOrbitalDefense",
          "instance_count":1,
          "priority":257,
          "min_num_assisters":1,
@@ -1434,7 +1434,7 @@
                },
                {
                   "test_type":"CanFindPlaceToBuild",
-                  "string0":"Umbrella"
+                  "string0":"LegionBasicOrbitalDefense"
                }
             ],
             [
@@ -1476,7 +1476,7 @@
                },
                {
                   "test_type":"CanFindPlaceToBuild",
-                  "string0":"Umbrella"
+                  "string0":"LegionBasicOrbitalDefense"
                }
             ]
          ],
@@ -1501,7 +1501,7 @@
          }
       },
       {
-         "name":"Legion - Uber - Anti Nuke Silo",
+         "name":"Legion - Uber - Iron Dome",
          "to_build":"LegionAntiNukeSilo",
          "instance_count":1,
          "shared_instance_count":"AntiNukeSilo",
@@ -1593,7 +1593,7 @@
          }
       },
       {
-         "name":"Legion - Uber - Anti Nuke Silo - Rush",
+         "name":"Legion - Uber - Iron Dome - Rush",
          "to_build":"LegionAntiNukeSilo",
          "instance_count":1,
          "shared_instance_count":"AntiNukeSilo",

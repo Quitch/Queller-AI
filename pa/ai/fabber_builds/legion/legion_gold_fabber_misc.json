@@ -52,8 +52,8 @@
          "task_type":"BuilderAssist"
       },
       {
-         "name":"Legion - Gold - Teleporter",
-         "to_build":"LegionTeleporter",
+         "name":"Legion - Gold - Space Bridge",
+         "to_build":"LegionSpace Bridge",
          "instance_count":1,
          "priority":600,
          "min_num_assisters":3,
@@ -76,7 +76,7 @@
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Structure & Teleporter",
+                  "unit_type_string0":"Structure & Space Bridge",
                   "compare0":"<",
                   "value0":1
                },
@@ -119,7 +119,7 @@
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Structure & Teleporter",
+                  "unit_type_string0":"Structure & Space Bridge",
                   "compare0":">=",
                   "value0":1
                },
@@ -155,7 +155,7 @@
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Structure & Teleporter",
+                  "unit_type_string0":"Structure & Space Bridge",
                   "compare0":">=",
                   "value0":1
                },
@@ -268,7 +268,7 @@
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Structure & Teleporter",
+                  "unit_type_string0":"Structure & Space Bridge",
                   "compare0":">=",
                   "value0":1
                }

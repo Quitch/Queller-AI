@@ -132,7 +132,7 @@
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"UberCommander",
+                  "unit_type_string0":"Commander",
                   "compare0":"<",
                   "value0":1
                }
@@ -267,7 +267,7 @@
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"UberCommander",
+                  "unit_type_string0":"Commander",
                   "compare0":"<",
                   "value0":1
                }
@@ -782,7 +782,7 @@
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"UberCommander",
+                  "unit_type_string0":"Commander",
                   "compare0":"<",
                   "value0":1
                }
@@ -945,7 +945,7 @@
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"UberCommander",
+                  "unit_type_string0":"Commander",
                   "compare0":"<",
                   "value0":1
                }
@@ -1078,6 +1078,50 @@
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+               {
+                  "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
+	  {
+         "name":"Legion - Gold - Leveller",
+         "to_build":"LegionAdvancedLaserVehicle",
+         "instance_count":-1,
+         "max_num_assisters":15,
+         "priority":199,
+         "builders":[
+            "LegionAdvancedVehicleFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_gold",
                   "boolean":true
                },
                {

@@ -1,7 +1,7 @@
 {
    "build_list":[
       {
-         "name":"Legion - Gold - Galata Turret - Mex",
+         "name":"Legion - Gold - Bofors II - Mex",
          "to_build":"LegionBasicAirDefense",
          "instance_count":1,
          "priority":252,
@@ -107,7 +107,7 @@
          }
       },
       {
-         "name":"Legion - Gold - Single Laser Defense Tower - Mex",
+         "name":"Legion - Gold - Laser Turret - Mex",
          "to_build":"LegionBasicT1LaserDefense",
          "instance_count":1,
          "shared_instance_count":"BasicLandDefenseMex",
@@ -188,7 +188,7 @@
          }
       },
       {
-         "name":"Legion - Gold - Laser Defense Tower - Mex",
+         "name":"Legion - Gold - Dual Laser Turret - Mex",
          "to_build":"LegionAdvancedT1LaserDefense",
          "instance_count":1,
          "shared_instance_count":"BasicLandDefenseMex",
@@ -316,7 +316,7 @@
          }
       },
       {
-         "name":"Legion - Gold - Anchor - Mex",
+         "name":"Legion - Gold - Deadweight - Mex",
          "to_build":"DefenseSatellite",
          "instance_count":1,
          "max_num_assisters":1,
@@ -529,7 +529,7 @@
          }
       },
       {
-         "name":"Legion - Gold - Anchor - Beachead",
+         "name":"Legion - Gold - Deadweight - Beachead",
          "to_build":"DefenseSatellite",
          "instance_count":1,
          "max_num_assisters":1,
@@ -567,7 +567,7 @@
                },
                {
                   "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & Teleporter",
+                  "unit_type_string0":"Structure & Space Bridge",
                   "compare0":">=",
                   "value0":1
                },
@@ -604,7 +604,7 @@
                },
                {
                   "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & Teleporter",
+                  "unit_type_string0":"Structure & Space Bridge",
                   "compare0":">=",
                   "value0":1
                },
@@ -618,7 +618,7 @@
             "placement_type":"FromMainBasePerimeter",
             "unit_count_rules":[
                {
-                  "unit_type_string":"Structure & Teleporter",
+                  "unit_type_string":"Structure & Space Bridge",
                   "alliance":"Ally",
                   "compare_type":">=",
                   "range":100,
@@ -635,7 +635,7 @@
          }
       },
       {
-         "name":"Legion - Gold - Galata Turret - Base",
+         "name":"Legion - Gold - Bofors II - Base",
          "to_build":"LegionBasicAirDefense",
          "instance_count":1,
          "max_num_assisters":1,
@@ -695,7 +695,7 @@
          }
       },
       {
-         "name":"Legion - Gold - Single Laser Defense Tower - Base",
+         "name":"Legion - Gold - Laser Turret - Base",
          "to_build":"LegionBasicT1LaserDefense",
          "instance_count":1,
          "shared_instance_count":"BasicLandDefense",
@@ -771,7 +771,7 @@
          }
       },
       {
-         "name":"Legion - Gold - Laser Defense Tower - Base",
+         "name":"Legion - Gold - Dual Laser Turret - Base",
          "to_build":"LegionAdvancedT1LaserDefense",
          "instance_count":1,
          "shared_instance_count":"BasicLandDefense",
@@ -911,7 +911,7 @@
          }
       },
       {
-         "name":"Legion - Gold - Advanced Air Defense - Base",
+         "name":"Legion - Gold - Flakturm-G - Base",
          "to_build":"LegionAdvancedAirDefense",
          "instance_count":1,
          "min_num_assisters":1,
@@ -983,7 +983,7 @@
          }
       },
       {
-         "name":"Legion - Gold - Advanced Land Defense - Base",
+         "name":"Legion - Gold - Grey Wizard - Base",
          "to_build":"LegionAdvancedLaserDefense",
          "instance_count":1,
          "priority":379,
@@ -1122,7 +1122,7 @@
          }
       },
       {
-         "name":"Legion - Gold - Anchor - Base",
+         "name":"Legion - Gold - Deadweight - Base",
          "to_build":"DefenseSatellite",
          "instance_count":1,
          "max_num_assisters":1,
@@ -1178,8 +1178,8 @@
          }
       },
       {
-         "name":"Legion - Gold - Umbrella - Base",
-         "to_build":"Umbrella",
+         "name":"Legion - Gold - Tola - Base",
+         "to_build":"LegionBasicOrbitalDefense",
          "instance_count":1,
          "priority":377,
          "min_num_assisters":1,
@@ -1218,7 +1218,7 @@
                },
                {
                   "test_type":"CanFindPlaceToBuild",
-                  "string0":"Umbrella"
+                  "string0":"LegionBasicOrbitalDefense"
                }
             ],
             [
@@ -1250,7 +1250,7 @@
                },
                {
                   "test_type":"CanFindPlaceToBuild",
-                  "string0":"Umbrella"
+                  "string0":"LegionBasicOrbitalDefense"
                }
             ]
          ],
@@ -1275,8 +1275,8 @@
          }
       },
       {
-         "name":"Legion - Gold - Umbrella - Lock Down The Planet",
-         "to_build":"Umbrella",
+         "name":"Legion - Gold - Tola - Lock Down The Planet",
+         "to_build":"LegionBasicOrbitalDefense",
          "instance_count":1,
          "priority":377,
          "min_num_assisters":1,
@@ -1313,7 +1313,7 @@
                },
                {
                   "test_type":"CanFindPlaceToBuild",
-                  "string0":"Umbrella"
+                  "string0":"LegionBasicOrbitalDefense"
                }
             ]
          ],
@@ -1331,7 +1331,7 @@
          }
       },
       {
-         "name":"Legion - Gold - Anti Nuke Silo",
+         "name":"Legion - Gold - Iron Dome",
          "to_build":"LegionAntiNukeSilo",
          "instance_count":1,
          "shared_instance_count":"AntiNukeSilo",
@@ -1428,7 +1428,7 @@
          }
       },
       {
-         "name":"Legion - Gold - Anti Nuke Silo - Rush",
+         "name":"Legion - Gold - Iron Dome - Rush",
          "to_build":"LegionAntiNukeSilo",
          "instance_count":1,
          "shared_instance_count":"AntiNukeSilo",

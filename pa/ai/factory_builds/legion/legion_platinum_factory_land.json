@@ -275,7 +275,7 @@
          ]
       },
       {
-         "name":"Legion - Platinum - Dox",
+         "name":"Legion - Platinum - Peacekeeper",
          "to_build":"LegionBasicAssaultBot",
          "instance_count":-1,
          "max_num_assisters":10,
@@ -351,7 +351,7 @@
          ]
       },
       {
-         "name":"Legion - Platinum - AA",
+         "name":"Legion - Platinum - Patriot",
          "to_build":"LegionBasicAABot",
          "instance_count":1,
          "max_num_assisters":10,
@@ -505,7 +505,7 @@
          ]
       },
       {
-         "name":"Legion - Platinum - Land Scout - Intel",
+         "name":"Legion - Platinum - Jiffy - Intel",
          "to_build":"LegionScoutVehicle",
          "instance_count":1,
          "max_num_assisters":10,
@@ -580,7 +580,7 @@
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Structure & Teleporter",
+                  "unit_type_string0":"Structure & Space Bridge",
                   "compare0":">=",
                   "value0":1
                },
@@ -595,7 +595,7 @@
          ]
       },
       {
-         "name":"Legion - Platinum - Land Scout - Mines",
+         "name":"Legion - Platinum - Jiffy - Mines",
          "to_build":"LegionScoutVehicle",
          "instance_count":1,
          "max_num_assisters":10,
@@ -637,7 +637,7 @@
          ]
       },
       {
-         "name":"Legion - Platinum - Bolo",
+         "name":"Legion - Platinum - Shank",
          "to_build":"LegionBasicShankVehicle",
          "instance_count":-1,
          "max_num_assisters":10,
@@ -1313,13 +1313,35 @@
          "max_num_assisters":15,
          "priority":199,
          "builders":[
-            "UnitCannon"
+            "LegionAdvancedBotFactory"
          ],
          "build_conditions":[
             [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"legion_platinum",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_platinum",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+               {
+                  "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
                   "boolean":true
                },
                {
@@ -1436,6 +1458,50 @@
          "priority":199,
          "builders":[
             "LegionAdvancedBotFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_platinum",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_platinum",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+               {
+                  "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
+	  {
+         "name":"Legion - Platinum - BroadSword",
+         "to_build":"LegionAdvancedLaserVehicle",
+         "instance_count":-1,
+         "max_num_assisters":15,
+         "priority":199,
+         "builders":[
+            "LegionAdvancedVehicleFactory"
          ],
          "build_conditions":[
             [

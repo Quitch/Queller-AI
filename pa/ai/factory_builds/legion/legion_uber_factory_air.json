@@ -153,7 +153,7 @@
          ]
       },
       {
-         "name":"Legion - Uber - Firefly",
+         "name":"Legion - Uber - Cub",
          "to_build":"AirScout",
          "instance_count":1,
          "max_num_assisters":10,
@@ -213,7 +213,7 @@
          ]
       },
       {
-         "name":"Legion - Uber - Hummingbird",
+         "name":"Legion - Uber - Beamer",
          "to_build":"LegionBasicFighter",
          "instance_count":-1,
          "max_num_assisters":10,
@@ -289,7 +289,7 @@
          ]
       },
       {
-         "name":"Legion - Uber - Bumblebee",
+         "name":"Legion - Uber - Dauntless",
          "to_build":"LegionBasicBomber",
          "instance_count":-1,
          "max_num_assisters":10,
@@ -546,11 +546,55 @@
          ]
       },
       {
-         "name":"Legion - Uber - Phoenix",
+         "name":"Legion - Uber - Firebird",
          "to_build":"AdvancedFighter",
          "instance_count":1,
          "max_num_assisters":10,
          "priority":199,
+         "builders":[
+            "LegionAdvancedAirFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_uber",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
+      {
+         "name":"Legion - Uber - Sky Castle",
+         "to_build":"AdvancedBomber",
+         "instance_count":-1,
+         "max_num_assisters":15,
+         "priority":199,
+         "builders":[
+            "LegionAdvancedAirFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_uber",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
+      {
+         "name":"Legion - Uber - Lockheed",
+         "to_build":"AdvancedGunship",
+         "instance_count":-1,
+         "max_num_assisters":15,
+         "priority":198,
          "builders":[
             "LegionAdvancedAirFactory"
          ],

@@ -1,7 +1,7 @@
 {
    "build_list":[
       {
-         "name":"Legion - Bronze - Galata Turret - Mex",
+         "name":"Legion - Bronze - Bofors II - Mex",
          "to_build":"LegionBasicAirDefense",
          "instance_count":1,
          "shared_instance_count":"AirDefence",
@@ -65,7 +65,7 @@
          }
       },
       {
-         "name":"Legion - Bronze - Single Laser Defense Tower - Mex",
+         "name":"Legion - Bronze - Laser Turret - Mex",
          "to_build":"LegionBasicT1LaserDefense",
          "instance_count":1,
          "shared_instance_count":"LandDefence",
@@ -129,7 +129,7 @@
          }
       },
       {
-         "name":"Legion - Bronze - Laser Defense Tower - Mex",
+         "name":"Legion - Bronze - Dual Laser Turret - Mex",
          "to_build":"LegionAdvancedT1LaserDefense",
          "instance_count":1,
          "shared_instance_count":"LandDefence",
@@ -258,7 +258,7 @@
          }
       },
       {
-         "name":"Legion - Bronze - Galata Turret - Base",
+         "name":"Legion - Bronze - Bofors II - Base",
          "to_build":"LegionBasicAirDefense",
          "instance_count":1,
          "shared_instance_count":"AirDefence",
@@ -317,7 +317,7 @@
          }
       },
       {
-         "name":"Legion - Bronze - Single Laser Defense Tower - Base",
+         "name":"Legion - Bronze - Laser Turret - Base",
          "to_build":"LegionBasicT1LaserDefense",
          "instance_count":1,
          "shared_instance_count":"LandDefence",
@@ -382,7 +382,7 @@
          }
       },
       {
-         "name":"Legion - Bronze - Laser Defense Tower - Base",
+         "name":"Legion - Bronze - Dual Laser Turret - Base",
          "to_build":"LegionAdvancedT1LaserDefense",
          "instance_count":1,
          "shared_instance_count":"LandDefence",
@@ -501,7 +501,7 @@
          }
       },
       {
-         "name":"Legion - Bronze - Advanced Air Defense - Base",
+         "name":"Legion - Bronze - Flakturm-G - Base",
          "to_build":"LegionAdvancedAirDefense",
          "instance_count":1,
          "shared_instance_count":"AirDefence",
@@ -560,7 +560,7 @@
          }
       },
       {
-         "name":"Legion - Bronze - Advanced Land Defense - Base",
+         "name":"Legion - Bronze - Grey Wizard - Base",
          "to_build":"LegionAdvancedLaserDefense",
          "instance_count":1,
          "shared_instance_count":"LandDefence",
@@ -679,7 +679,7 @@
          }
       },
       {
-         "name":"Legion - Bronze - Anchor - Base",
+         "name":"Legion - Bronze - Deadweight - Base",
          "to_build":"DefenseSatellite",
          "instance_count":1,
          "shared_instance_count":"OrbitalDefence",
@@ -730,8 +730,8 @@
          }
       },
       {
-         "name":"Legion - Bronze - Umbrella - Base",
-         "to_build":"Umbrella",
+         "name":"Legion - Bronze - Tola - Base",
+         "to_build":"LegionBasicOrbitalDefense",
          "instance_count":1,
          "shared_instance_count":"OrbitalDefence",
          "priority":478,
@@ -770,7 +770,7 @@
                },
                {
                   "test_type":"CanFindPlaceToBuild",
-                  "string0":"Umbrella"
+                  "string0":"LegionBasicOrbitalDefense"
                }
             ],
             [
@@ -802,7 +802,7 @@
                },
                {
                   "test_type":"CanFindPlaceToBuild",
-                  "string0":"Umbrella"
+                  "string0":"LegionBasicOrbitalDefense"
                }
             ]
          ],
@@ -827,7 +827,7 @@
          }
       },
       {
-         "name":"Legion - Bronze - Anti Nuke Silo",
+         "name":"Legion - Bronze - Iron Dome",
          "to_build":"LegionAntiNukeSilo",
          "instance_count":1,
          "shared_instance_count":"SuperWeapon",

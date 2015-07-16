@@ -275,7 +275,7 @@
          ]
       },
       {
-         "name":"Legion - Gold - Dox",
+         "name":"Legion - Gold - Peacekeeper",
          "to_build":"LegionBasicAssaultBot",
          "instance_count":-1,
          "max_num_assisters":10,
@@ -351,7 +351,7 @@
          ]
       },
       {
-         "name":"Legion - Gold - AA",
+         "name":"Legion - Gold - Patriot",
          "to_build":"LegionBasicAABot",
          "instance_count":1,
          "max_num_assisters":10,
@@ -505,7 +505,7 @@
          ]
       },
       {
-         "name":"Legion - Gold - Land Scout - Intel",
+         "name":"Legion - Gold - Jiffy - Intel",
          "to_build":"LegionScoutVehicle",
          "instance_count":1,
          "max_num_assisters":10,
@@ -580,7 +580,7 @@
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Structure & Teleporter",
+                  "unit_type_string0":"Structure & Space Bridge",
                   "compare0":">=",
                   "value0":1
                },
@@ -595,7 +595,7 @@
          ]
       },
       {
-         "name":"Legion - Gold - Land Scout - Mines",
+         "name":"Legion - Gold - Jiffy - Mines",
          "to_build":"LegionScoutVehicle",
          "instance_count":1,
          "max_num_assisters":10,
@@ -637,7 +637,7 @@
          ]
       },
       {
-         "name":"Legion - Gold - Bolo",
+         "name":"Legion - Gold - Shank",
          "to_build":"LegionBasicShankVehicle",
          "instance_count":-1,
          "max_num_assisters":10,
@@ -1312,13 +1312,35 @@
          "max_num_assisters":15,
          "priority":199,
          "builders":[
-            "UnitCannon"
+            "LegionAdvancedBotFactory"
          ],
          "build_conditions":[
             [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"legion_gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+               {
+                  "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
                   "boolean":true
                },
                {
@@ -1423,6 +1445,50 @@
          "priority":199,
          "builders":[
             "LegionAdvancedBotFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+               {
+                  "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
+	  {
+         "name":"Legion - Gold - BroadSword",
+         "to_build":"LegionAdvancedLaserVehicle",
+         "instance_count":-1,
+         "max_num_assisters":15,
+         "priority":199,
+         "builders":[
+            "LegionAdvancedVehicleFactory"
          ],
          "build_conditions":[
             [

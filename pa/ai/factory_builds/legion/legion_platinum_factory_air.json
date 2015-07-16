@@ -134,7 +134,7 @@
          ]
       },
       {
-         "name":"Legion - Platinum - Firefly",
+         "name":"Legion - Platinum - Cub",
          "to_build":"AirScout",
          "instance_count":1,
          "max_num_assisters":10,
@@ -176,7 +176,7 @@
          ]
       },
       {
-         "name":"Legion - Platinum - Hummingbird",
+         "name":"Legion - Platinum - Beamer",
          "to_build":"LegionBasicFighter",
          "instance_count":-1,
          "max_num_assisters":10,
@@ -252,7 +252,7 @@
          ]
       },
       {
-         "name":"Legion - Platinum - Bumblebee",
+         "name":"Legion - Platinum - Dauntless",
          "to_build":"LegionBasicBomber",
          "instance_count":-1,
          "max_num_assisters":10,
@@ -513,11 +513,55 @@
          ]
       },
       {
-         "name":"Legion - Platinum - Phoenix",
+         "name":"Legion - Platinum - Firebird",
          "to_build":"AdvancedFighter",
          "instance_count":1,
          "max_num_assisters":10,
          "priority":199,
+         "builders":[
+            "LegionAdvancedAirFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_platinum",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
+      {
+         "name":"Legion - Platinum - Sky Castle",
+         "to_build":"AdvancedBomber",
+         "instance_count":-1,
+         "max_num_assisters":15,
+         "priority":199,
+         "builders":[
+            "LegionAdvancedAirFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"legion_platinum",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
+      {
+         "name":"Legion - Platinum - Lockheed",
+         "to_build":"AdvancedGunship",
+         "instance_count":-1,
+         "max_num_assisters":15,
+         "priority":198,
          "builders":[
             "LegionAdvancedAirFactory"
          ],
