@@ -278,8 +278,14 @@
                "max_count":9,
                "squad":"Fast"
             },
+			{
+               "unit_types":"Bot & Artillery",
+               "min_count":0,
+               "percent":0.5,
+               "squad":"Fast"
+            },
             {
-               "unit_types":"(Land & Mobile) & (Artillery | Tactical)",
+               "unit_types":"(Artillery | Tactical) - (Bot & Basic)",
                "min_count":0,
                "percent":0.5,
                "squad":"Artillery"
@@ -312,8 +318,14 @@
                "max_count":19,
                "squad":"Fast"
             },
+			{
+               "unit_types":"Bot & Artillery",
+               "min_count":0,
+               "percent":0.5,
+               "squad":"Fast"
+            },
             {
-               "unit_types":"(Land & Mobile) & (Artillery | Tactical)",
+               "unit_types":"(Artillery | Tactical) - (Bot & Basic)",
                "min_count":0,
                "percent":0.5,
                "squad":"Artillery"
@@ -352,8 +364,14 @@
                "max_count":29,
                "squad":"Fast"
             },
+			{
+               "unit_types":"Bot & Artillery",
+               "min_count":0,
+               "percent":0.5,
+               "squad":"Fast"
+            },
             {
-               "unit_types":"(Land & Mobile) & (Artillery | Tactical)",
+               "unit_types":"(Artillery | Tactical) - (Bot & Basic)",
                "min_count":0,
                "percent":0.5,
                "squad":"Artillery"
@@ -392,8 +410,14 @@
                "max_count":39,
                "squad":"Fast"
             },
+			{
+               "unit_types":"Bot & Artillery",
+               "min_count":0,
+               "percent":0.5,
+               "squad":"Fast"
+            },
             {
-               "unit_types":"(Land & Mobile) & (Artillery | Tactical)",
+               "unit_types":"(Artillery | Tactical) - (Bot & Basic)",
                "min_count":0,
                "percent":0.5,
                "squad":"Artillery"
@@ -432,8 +456,14 @@
                "max_count":49,
                "squad":"Fast"
             },
+			{
+               "unit_types":"Bot & Artillery",
+               "min_count":0,
+               "percent":0.5,
+               "squad":"Fast"
+            },
             {
-               "unit_types":"(Land & Mobile) & (Artillery | Tactical)",
+               "unit_types":"(Artillery | Tactical) - (Bot & Basic)",
                "min_count":0,
                "percent":0.5,
                "squad":"Artillery"
@@ -472,8 +502,14 @@
                "max_count":59,
                "squad":"Fast"
             },
+			{
+               "unit_types":"Bot & Artillery",
+               "min_count":0,
+               "percent":0.5,
+               "squad":"Fast"
+            },
             {
-               "unit_types":"(Land & Mobile) & (Artillery | Tactical)",
+               "unit_types":"(Artillery | Tactical) - (Bot & Basic)",
                "min_count":0,
                "percent":0.5,
                "squad":"Artillery"
@@ -512,8 +548,14 @@
                "max_count":69,
                "squad":"Fast"
             },
+			{
+               "unit_types":"Bot & Artillery",
+               "min_count":0,
+               "percent":0.5,
+               "squad":"Fast"
+            },
             {
-               "unit_types":"(Land & Mobile) & (Artillery | Tactical)",
+               "unit_types":"(Artillery | Tactical) - (Bot & Basic)",
                "min_count":0,
                "percent":0.5,
                "squad":"Artillery"
@@ -552,8 +594,14 @@
                "max_count":79,
                "squad":"Fast"
             },
+			{
+               "unit_types":"Bot & Artillery",
+               "min_count":0,
+               "percent":0.5,
+               "squad":"Fast"
+            },
             {
-               "unit_types":"(Land & Mobile) & (Artillery | Tactical)",
+               "unit_types":"(Artillery | Tactical) - (Bot & Basic)",
                "min_count":0,
                "percent":0.5,
                "squad":"Artillery"
@@ -592,8 +640,14 @@
                "max_count":-1,
                "squad":"Fast"
             },
+			{
+               "unit_types":"Bot & Artillery",
+               "min_count":0,
+               "percent":0.5,
+               "squad":"Fast"
+            },
             {
-               "unit_types":"(Land & Mobile) & (Artillery | Tactical)",
+               "unit_types":"(Artillery | Tactical) - (Bot & Basic)",
                "min_count":0,
                "percent":0.5,
                "squad":"Artillery"
@@ -638,8 +692,14 @@
                "max_count":-1,
                "squad":"Fast"
             },
+			{
+               "unit_types":"Bot & Artillery",
+               "min_count":0,
+               "max_count":-1,
+               "squad":"Fast"
+            },
             {
-               "unit_types":"(Land & Mobile) & (Artillery | Tactical)",
+               "unit_types":"(Artillery | Tactical) - (Bot & Basic)",
                "min_count":0,
                "max_count":-1,
                "squad":"Artillery"
@@ -804,7 +864,7 @@
                "squad":"General"
             },
             {
-               "unit_types":"(Naval & Mobile) & (Artillery | (Sub & Advanced))",
+               "unit_types":"Naval & Mobile & Artillery",
                "min_count":0,
                "percent":0.35,
                "squad":"Artillery"
@@ -820,19 +880,13 @@
                "squad":"Fast"
             },
 			{
-               "unit_types":"(Naval & Mobile) - Artillery - Scout - Fabber - Construction - Tactical - Sub",
+               "unit_types":"(Naval & Mobile) - Artillery - Scout - Fabber - Construction - Tactical",
                "min_count":0,
                "max_count":3,
                "squad":"General"
             },
             {
-               "unit_types":"Sub & Basic",
-               "min_count":0,
-               "max_count":3,
-               "squad":"General"
-            },
-            {
-               "unit_types":"(Naval & Mobile) & (Artillery | (Sub & Advanced))",
+               "unit_types":"Naval & Mobile & Artillery",
                "min_count":0,
                "percent":0.35,
                "squad":"Artillery"
@@ -854,19 +908,13 @@
                "squad":"Fast"
             },
 			{
-               "unit_types":"(Naval & Mobile) - Artillery - Scout - Fabber - Construction - Tactical - Sub",
+               "unit_types":"(Naval & Mobile) - Artillery - Scout - Fabber - Construction - Tactical",
                "min_count":0,
                "max_count":7,
                "squad":"General"
             },
             {
-               "unit_types":"Sub & Basic",
-               "min_count":0,
-               "max_count":7,
-               "squad":"General"
-            },
-            {
-               "unit_types":"(Naval & Mobile) & (Artillery | (Sub & Advanced))",
+               "unit_types":"Naval & Mobile & Artillery",
                "min_count":0,
                "percent":0.35,
                "squad":"Artillery"
@@ -888,19 +936,13 @@
                "squad":"Fast"
             },
 			{
-               "unit_types":"(Naval & Mobile) - Artillery - Scout - Fabber - Construction - Tactical - Sub",
+               "unit_types":"(Naval & Mobile) - Artillery - Scout - Fabber - Construction - Tactical",
                "min_count":0,
                "max_count":15,
                "squad":"General"
             },
             {
-               "unit_types":"Sub & Basic",
-               "min_count":0,
-               "max_count":15,
-               "squad":"General"
-            },
-            {
-               "unit_types":"(Naval & Mobile) & (Artillery | (Sub & Advanced))",
+               "unit_types":"Naval & Mobile & Artillery",
                "min_count":0,
                "percent":0.35,
                "squad":"Artillery"
@@ -922,19 +964,13 @@
                "squad":"Fast"
             },
 			{
-               "unit_types":"(Naval & Mobile) - Artillery - Scout - Fabber - Construction - Tactical - Sub",
+               "unit_types":"(Naval & Mobile) - Artillery - Scout - Fabber - Construction - Tactical",
                "min_count":0,
                "max_count":-1,
                "squad":"General"
             },
             {
-               "unit_types":"Sub & Basic",
-               "min_count":0,
-               "max_count":-1,
-               "squad":"General"
-            },
-            {
-               "unit_types":"(Naval & Mobile) & (Artillery | (Sub & Advanced))",
+               "unit_types":"Naval & Mobile & Artillery",
                "min_count":0,
                "percent":0.35,
                "squad":"Artillery"
@@ -985,7 +1021,8 @@
             {
                "unit_types":"Orbital & Fighter",
                "min_count":0,
-			   "max_count":-1
+			   "max_count":-1,
+               "squad":"Escort"
             }
          ]
       },
