@@ -422,10 +422,6 @@
                   "boolean":false
                },
                {
-                  "test_type":"UnableToExpand",
-                  "boolean":false
-               },
-               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -469,10 +465,6 @@
                   "boolean":true
                },
                {
-                  "test_type":"UnableToExpand",
-                  "boolean":false
-               },
-               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -496,10 +488,6 @@
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
-               },
-               {
-                  "test_type":"UnableToExpand",
-                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -529,6 +517,11 @@
                   "test_type":"CurrentMetalEfficiency",
                   "compare0":">",
                   "value0":1
+               },
+               {
+                  "test_type":"MetalStorageFrac",
+                  "compare0":">",
+                  "value0":0.05
                },
                {
                   "test_type":"CurrentEnergyEfficiency",

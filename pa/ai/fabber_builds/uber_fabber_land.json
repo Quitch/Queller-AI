@@ -29,16 +29,34 @@
                   "string0":"BasicBotFactory"
                },
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Tank & Factory & Basic",
-                  "compare0":"<",
-                  "value0":1
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicBotFactory"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicBotFactory"
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Naval",
+                  "compare0":">",
+                  "value0":0
                },
                {
                   "test_type":"UnitCountPerPlanetRadius",
                   "unit_type_string0":"Bot & Factory & Basic",
                   "compare0":"<=",
-                  "value0":250
+                  "value0":500
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -67,36 +85,6 @@
                   "unit_type_string0":"(Naval & Factory) & Basic",
                   "compare0":">=",
                   "value0":1
-               },
-               {
-                  "test_type":"UnitCountPerPlanetRadius",
-                  "unit_type_string0":"Bot & Factory & Basic",
-                  "compare0":"<=",
-                  "value0":500
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicBotFactory"
-               }
-            ],
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicBotFactory"
-               },
-               {
-                  "test_type":"PlanetHighestEnemyArmyThreat",
-                  "string0":"Naval",
-                  "compare0":">",
-                  "value0":0
                },
                {
                   "test_type":"UnitCountPerPlanetRadius",
@@ -181,18 +169,6 @@
                   "string0":"BasicBotFactory"
                },
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Tank & Factory & Basic",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
-                  "test_type":"UnitCountPerPlanetRadius",
-                  "unit_type_string0":"Bot & Factory & Basic",
-                  "compare0":"<=",
-                  "value0":250
-               },
-               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"BasicBotFactory"
                }
@@ -215,10 +191,10 @@
                   "string0":"BasicBotFactory"
                },
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"(Naval & Factory) & Basic",
-                  "compare0":">=",
-                  "value0":1
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Naval",
+                  "compare0":">",
+                  "value0":0
                },
                {
                   "test_type":"UnitCountPerPlanetRadius",
@@ -249,10 +225,10 @@
                   "string0":"BasicBotFactory"
                },
                {
-                  "test_type":"PlanetHighestEnemyArmyThreat",
-                  "string0":"Naval",
-                  "compare0":">",
-                  "value0":0
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"(Naval & Factory) & Basic",
+                  "compare0":">=",
+                  "value0":1
                },
                {
                   "test_type":"UnitCountPerPlanetRadius",
@@ -393,6 +369,11 @@
                   "value0":1
                },
                {
+                  "test_type":"MetalStorageFrac",
+                  "compare0":">",
+                  "value0":0.05
+               },
+               {
                   "test_type":"CurrentEnergyEfficiency",
                   "compare0":">",
                   "value0":1
@@ -437,6 +418,11 @@
                   "value0":1
                },
                {
+                  "test_type":"MetalStorageFrac",
+                  "compare0":">",
+                  "value0":0.05
+               },
+               {
                   "test_type":"CurrentEnergyEfficiency",
                   "compare0":">",
                   "value0":1
@@ -475,6 +461,11 @@
                   "test_type":"CurrentMetalEfficiency",
                   "compare0":">",
                   "value0":1
+               },
+               {
+                  "test_type":"MetalStorageFrac",
+                  "compare0":">",
+                  "value0":0.05
                },
                {
                   "test_type":"CurrentEnergyEfficiency",
@@ -728,6 +719,11 @@
                   "test_type":"CurrentMetalEfficiency",
                   "compare0":">",
                   "value0":1
+               },
+               {
+                  "test_type":"MetalStorageFrac",
+                  "compare0":">",
+                  "value0":0.05
                },
                {
                   "test_type":"CurrentEnergyEfficiency",
