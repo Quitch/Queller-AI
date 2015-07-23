@@ -152,85 +152,14 @@
          "units":[
             {
                "unit_types":"Bot & SelfDestruct",
-               "min_count":25,
+               "min_count":1,
                "max_count":-1,
                "squad":"Close"
             }
          ]
       },
-      "Basic_Land_Attack_10":{
-         "units":[
-            {
-               "unit_types":"(((Tank - Artillery) | Bot) & Mobile) - Fabber - AirDefense - Construction - Heavy",
-               "min_count":0,
-               "max_count":19
-            },
-            {
-               "unit_types":"((Tank & Artillery) | (Bot & Tactical)) & Mobile",
-               "min_count":0,
-               "percent":0.5
-            },
-            {
-               "unit_types":"Land & Mobile & Heavy",
-               "min_count":0,
-               "percent":0.1
-            },
-            {
-               "unit_types":"(Land & Mobile) & (AirDefense | Construction)",
-               "min_count":0,
-               "percent":0.2
-            }
-         ]
-      },
-      "Basic_Land_Attack_20":{
-         "units":[
-            {
-               "unit_types":"(((Tank - Artillery) | Bot) & Mobile) - Fabber - AirDefense - Construction - Heavy",
-               "min_count":0,
-               "max_count":39
-            },
-            {
-               "unit_types":"((Tank & Artillery) | (Bot & Tactical)) & Mobile",
-               "min_count":0,
-               "percent":0.5
-            },
-            {
-               "unit_types":"Land & Mobile & Heavy",
-               "min_count":0,
-               "percent":0.1
-            },
-            {
-               "unit_types":"(Land & Mobile) & (AirDefense | Construction)",
-               "min_count":0,
-               "percent":0.2
-            }
-         ]
-      },
-      "Basic_Land_Attack_40":{
-         "units":[
-            {
-               "unit_types":"(((Tank - Artillery) | Bot) & Mobile) - Fabber - AirDefense - Construction - Heavy",
-               "min_count":0,
-               "max_count":-1
-            },
-            {
-               "unit_types":"((Tank & Artillery) | (Bot & Tactical)) & Mobile",
-               "min_count":0,
-               "percent":0.5
-            },
-            {
-               "unit_types":"Land & Mobile & Heavy",
-               "min_count":0,
-               "percent":0.1
-            },
-            {
-               "unit_types":"(Land & Mobile) & (AirDefense | Construction)",
-               "min_count":0,
-               "percent":0.2
-            }
-         ]
-      },
-      "Land_Attack_1":{
+	  
+	  "Land_Attack_B_1":{
          "units":[
             {
                "unit_types":"(Tank & Mobile & Offense) - AirDefense - Construction - Artillery - Tactical - Heavy",
@@ -244,8 +173,462 @@
                "max_count":3,
                "squad":"Fast"
             },
+			{
+               "unit_types":"Bot & Artillery",
+               "min_count":0,
+               "max_count":3,
+               "squad":"Fast"
+            },
             {
-               "unit_types":"(Land & Mobile) & (Artillery | Tactical)",
+               "unit_types":"Advanced & Land & Mobile & (Artillery | Tactical)",
+               "min_count":0,
+               "percent":0.5,
+               "squad":"Artillery"
+            },
+            {
+               "unit_types":"Land & Mobile & Heavy",
+               "min_count":0,
+               "percent":0.1,
+               "squad":"Close"
+            },
+            {
+               "unit_types":"(Land & Mobile) & (AirDefense | Construction)",
+               "min_count":0,
+               "percent":0.2,
+               "squad":"Defense"
+            }
+         ]
+      },
+      "Land_Attack_B_4":{
+         "units":[
+            {
+               "unit_types":"(Tank & Mobile & Offense) - AirDefense - Construction - Artillery - Tactical - Heavy",
+               "min_count":0,
+               "max_count":9,
+               "squad":"General"
+            },
+			{
+               "unit_types":"(Bot & Advanced & Mobile & Offense) - Construction - Artillery - Tactical",
+               "min_count":0,
+               "max_count":9,
+               "squad":"Fast"
+            },
+			{
+               "unit_types":"Bot & Artillery",
+               "min_count":0,
+               "max_count":9,
+               "squad":"Fast"
+            },
+            {
+               "unit_types":"Advanced & Land & Mobile & (Artillery | Tactical)",
+               "min_count":0,
+               "percent":0.5,
+               "squad":"Artillery"
+            },
+            {
+               "unit_types":"Land & Mobile & Heavy",
+               "min_count":0,
+               "percent":0.1,
+               "squad":"Close"
+            },
+            {
+               "unit_types":"(Land & Mobile) & (AirDefense | Construction)",
+               "min_count":0,
+               "percent":0.2,
+               "squad":"Defense"
+            }
+         ]
+      },
+      "Land_Attack_B_10":{
+         "units":[
+            {
+               "unit_types":"(Tank & Mobile & Offense) - AirDefense - Construction - Artillery - Tactical - Heavy",
+               "min_count":0,
+               "max_count":19,
+               "squad":"General"
+            },
+			{
+               "unit_types":"(Bot & Advanced & Mobile & Offense) - Construction - Artillery - Tactical",
+               "min_count":0,
+               "max_count":19,
+               "squad":"Fast"
+            },
+			{
+               "unit_types":"Bot & Artillery",
+               "min_count":0,
+               "max_count":19,
+               "squad":"Fast"
+            },
+            {
+               "unit_types":"Advanced & Land & Mobile & (Artillery | Tactical)",
+               "min_count":0,
+               "percent":0.5,
+               "squad":"Artillery"
+            },
+            {
+               "unit_types":"Land & Mobile & Heavy",
+               "min_count":0,
+               "percent":0.1,
+               "squad":"Close"
+            },
+            {
+               "unit_types":"(Land & Mobile) & (AirDefense | Construction)",
+               "min_count":0,
+               "percent":0.2,
+               "squad":"Defense"
+            },
+            {
+               "unit_types":"Land & Scout",
+               "min_count":0,
+               "percent":0.05,
+               "squad":"Defense"
+            }
+         ]
+      },
+      "Land_Attack_B_20":{
+         "units":[
+            {
+               "unit_types":"(Tank & Mobile & Offense) - AirDefense - Construction - Artillery - Tactical - Heavy",
+               "min_count":0,
+               "max_count":29,
+               "squad":"General"
+            },
+			{
+               "unit_types":"(Bot & Advanced & Mobile & Offense) - Construction - Artillery - Tactical",
+               "min_count":0,
+               "max_count":29,
+               "squad":"Fast"
+            },
+			{
+               "unit_types":"Bot & Artillery",
+               "min_count":0,
+               "max_count":29,
+               "squad":"Fast"
+            },
+            {
+               "unit_types":"Advanced & Land & Mobile & (Artillery | Tactical)",
+               "min_count":0,
+               "percent":0.5,
+               "squad":"Artillery"
+            },
+            {
+               "unit_types":"Land & Mobile & Heavy",
+               "min_count":0,
+               "percent":0.1,
+               "squad":"Close"
+            },
+            {
+               "unit_types":"(Land & Mobile) & (AirDefense | Construction)",
+               "min_count":0,
+               "percent":0.2,
+               "squad":"Defense"
+            },
+            {
+               "unit_types":"Land & Scout",
+               "min_count":0,
+               "percent":0.05,
+               "squad":"Defense"
+            }
+         ]
+      },
+      "Land_Attack_B_30":{
+         "units":[
+            {
+               "unit_types":"(Tank & Mobile & Offense) - AirDefense - Construction - Artillery - Tactical - Heavy",
+               "min_count":0,
+               "max_count":39,
+               "squad":"General"
+            },
+			{
+               "unit_types":"(Bot & Advanced & Mobile & Offense) - Construction - Artillery - Tactical",
+               "min_count":0,
+               "max_count":39,
+               "squad":"Fast"
+            },
+			{
+               "unit_types":"Bot & Artillery",
+               "min_count":0,
+               "max_count":39,
+               "squad":"Fast"
+            },
+            {
+               "unit_types":"Advanced & Land & Mobile & (Artillery | Tactical)",
+               "min_count":0,
+               "percent":0.5,
+               "squad":"Artillery"
+            },
+            {
+               "unit_types":"Land & Mobile & Heavy",
+               "min_count":0,
+               "percent":0.1,
+               "squad":"Close"
+            },
+            {
+               "unit_types":"(Land & Mobile) & (AirDefense | Construction)",
+               "min_count":0,
+               "percent":0.2,
+               "squad":"Defense"
+            },
+            {
+               "unit_types":"Land & Scout",
+               "min_count":0,
+               "percent":0.05,
+               "squad":"Defense"
+            }
+         ]
+      },
+      "Land_Attack_B_40":{
+         "units":[
+            {
+               "unit_types":"(Tank & Mobile & Offense) - AirDefense - Construction - Artillery - Tactical - Heavy",
+               "min_count":0,
+               "max_count":49,
+               "squad":"General"
+            },
+			{
+               "unit_types":"(Bot & Advanced & Mobile & Offense) - Construction - Artillery - Tactical",
+               "min_count":0,
+               "max_count":49,
+               "squad":"Fast"
+            },
+			{
+               "unit_types":"Bot & Artillery",
+               "min_count":0,
+               "max_count":49,
+               "squad":"Fast"
+            },
+            {
+               "unit_types":"Advanced & Land & Mobile & (Artillery | Tactical)",
+               "min_count":0,
+               "percent":0.5,
+               "squad":"Artillery"
+            },
+            {
+               "unit_types":"Land & Mobile & Heavy",
+               "min_count":0,
+               "percent":0.1,
+               "squad":"Close"
+            },
+            {
+               "unit_types":"(Land & Mobile) & (AirDefense | Construction)",
+               "min_count":0,
+               "percent":0.2,
+               "squad":"Defense"
+            },
+            {
+               "unit_types":"Land & Scout",
+               "min_count":0,
+               "percent":0.05,
+               "squad":"Defense"
+            }
+         ]
+      },
+      "Land_Attack_B_50":{
+         "units":[
+            {
+               "unit_types":"(Tank & Mobile & Offense) - AirDefense - Construction - Artillery - Tactical - Heavy",
+               "min_count":0,
+               "max_count":59,
+               "squad":"General"
+            },
+			{
+               "unit_types":"(Bot & Advanced & Mobile & Offense) - Construction - Artillery - Tactical",
+               "min_count":0,
+               "max_count":59,
+               "squad":"Fast"
+            },
+			{
+               "unit_types":"Bot & Artillery",
+               "min_count":0,
+               "max_count":59,
+               "squad":"Fast"
+            },
+            {
+               "unit_types":"Advanced & Land & Mobile & (Artillery | Tactical)",
+               "min_count":0,
+               "percent":0.5,
+               "squad":"Artillery"
+            },
+            {
+               "unit_types":"Land & Mobile & Heavy",
+               "min_count":0,
+               "percent":0.1,
+               "squad":"Close"
+            },
+            {
+               "unit_types":"(Land & Mobile) & (AirDefense | Construction)",
+               "min_count":0,
+               "percent":0.2,
+               "squad":"Defense"
+            },
+            {
+               "unit_types":"Land & Scout",
+               "min_count":0,
+               "percent":0.05,
+               "squad":"Defense"
+            }
+         ]
+      },
+      "Land_Attack_B_60":{
+         "units":[
+            {
+               "unit_types":"(Tank & Mobile & Offense) - AirDefense - Construction - Artillery - Tactical - Heavy",
+               "min_count":0,
+               "max_count":69,
+               "squad":"General"
+            },
+			{
+               "unit_types":"(Bot & Advanced & Mobile & Offense) - Construction - Artillery - Tactical",
+               "min_count":0,
+               "max_count":69,
+               "squad":"Fast"
+            },
+			{
+               "unit_types":"Bot & Artillery",
+               "min_count":0,
+               "max_count":69,
+               "squad":"Fast"
+            },
+            {
+               "unit_types":"Advanced & Land & Mobile & (Artillery | Tactical)",
+               "min_count":0,
+               "percent":0.5,
+               "squad":"Artillery"
+            },
+            {
+               "unit_types":"Land & Mobile & Heavy",
+               "min_count":0,
+               "percent":0.1,
+               "squad":"Close"
+            },
+            {
+               "unit_types":"(Land & Mobile) & (AirDefense | Construction)",
+               "min_count":0,
+               "percent":0.2,
+               "squad":"Defense"
+            },
+            {
+               "unit_types":"Land & Scout",
+               "min_count":0,
+               "percent":0.05,
+               "squad":"Defense"
+            }
+         ]
+      },
+      "Land_Attack_B_70":{
+         "units":[
+            {
+               "unit_types":"(Tank & Mobile & Offense) - AirDefense - Construction - Artillery - Tactical - Heavy",
+               "min_count":0,
+               "max_count":79,
+               "squad":"General"
+            },
+			{
+               "unit_types":"(Bot & Advanced & Mobile & Offense) - Construction - Artillery - Tactical",
+               "min_count":0,
+               "max_count":79,
+               "squad":"Fast"
+            },
+			{
+               "unit_types":"Bot & Artillery",
+               "min_count":0,
+               "max_count":79,
+               "squad":"Fast"
+            },
+            {
+               "unit_types":"Advanced & Land & Mobile & (Artillery | Tactical)",
+               "min_count":0,
+               "percent":0.5,
+               "squad":"Artillery"
+            },
+            {
+               "unit_types":"Land & Mobile & Heavy",
+               "min_count":0,
+               "percent":0.1,
+               "squad":"Close"
+            },
+            {
+               "unit_types":"(Land & Mobile) & (AirDefense | Construction)",
+               "min_count":0,
+               "percent":0.2,
+               "squad":"Defense"
+            },
+            {
+               "unit_types":"Land & Scout",
+               "min_count":0,
+               "percent":0.05,
+               "squad":"Defense"
+            }
+         ]
+      },
+      "Land_Attack_B_80":{
+         "units":[
+            {
+               "unit_types":"(Tank & Mobile & Offense) - AirDefense - Construction - Artillery - Tactical - Heavy",
+               "min_count":0,
+               "max_count":-1,
+               "squad":"General"
+            },
+			{
+               "unit_types":"(Bot & Advanced & Mobile & Offense) - Construction - Artillery - Tactical",
+               "min_count":0,
+               "max_count":-1,
+               "squad":"Fast"
+            },
+			{
+               "unit_types":"Bot & Artillery",
+               "min_count":0,
+               "max_count":-1,
+               "squad":"Fast"
+            },
+            {
+               "unit_types":"Advanced & Land & Mobile & (Artillery | Tactical)",
+               "min_count":0,
+               "percent":0.5,
+               "squad":"Artillery"
+            },
+            {
+               "unit_types":"Land & Mobile & Heavy",
+               "min_count":0,
+               "percent":0.1,
+               "squad":"Close"
+            },
+            {
+               "unit_types":"(Land & Mobile) & (AirDefense | Construction)",
+               "min_count":0,
+               "percent":0.2,
+               "squad":"Defense"
+            },
+            {
+               "unit_types":"Land & Scout",
+               "min_count":0,
+               "percent":0.05,
+               "squad":"Defense"
+            }
+         ]
+      },
+	  "Land_Attack_1":{
+         "units":[
+            {
+               "unit_types":"(Tank & Mobile & Offense) - AirDefense - Construction - Artillery - Tactical - Heavy",
+               "min_count":0,
+               "max_count":3,
+               "squad":"General"
+            },
+			{
+               "unit_types":"(Bot & Advanced & Mobile & Offense) - Construction - Artillery - Tactical",
+               "min_count":0,
+               "max_count":3,
+               "squad":"Fast"
+            },
+			{
+               "unit_types":"Bot & Artillery",
+               "min_count":0,
+               "max_count":3,
+               "squad":"Artillery"
+            },
+            {
+               "unit_types":"Advanced & Land & Mobile & (Artillery | Tactical)",
                "min_count":0,
                "percent":0.5,
                "squad":"Artillery"
@@ -281,11 +664,11 @@
 			{
                "unit_types":"Bot & Artillery",
                "min_count":0,
-               "percent":0.5,
-               "squad":"Fast"
+               "max_count":9,
+               "squad":"Artillery"
             },
             {
-               "unit_types":"((Artillery | Tactical) & Mobile) - (Bot & Basic)",
+               "unit_types":"Advanced & Land & Mobile & (Artillery | Tactical)",
                "min_count":0,
                "percent":0.5,
                "squad":"Artillery"
@@ -321,11 +704,11 @@
 			{
                "unit_types":"Bot & Artillery",
                "min_count":0,
-               "percent":0.5,
-               "squad":"Fast"
+               "max_count":19,
+               "squad":"Artillery"
             },
             {
-               "unit_types":"((Artillery | Tactical) & Mobile) - (Bot & Basic)",
+               "unit_types":"Advanced & Land & Mobile & (Artillery | Tactical)",
                "min_count":0,
                "percent":0.5,
                "squad":"Artillery"
@@ -367,11 +750,11 @@
 			{
                "unit_types":"Bot & Artillery",
                "min_count":0,
-               "percent":0.5,
-               "squad":"Fast"
+               "max_count":29,
+               "squad":"Artillery"
             },
             {
-               "unit_types":"((Artillery | Tactical) & Mobile) - (Bot & Basic)",
+               "unit_types":"Advanced & Land & Mobile & (Artillery | Tactical)",
                "min_count":0,
                "percent":0.5,
                "squad":"Artillery"
@@ -413,11 +796,11 @@
 			{
                "unit_types":"Bot & Artillery",
                "min_count":0,
-               "percent":0.5,
-               "squad":"Fast"
+               "max_count":39,
+               "squad":"Artillery"
             },
             {
-               "unit_types":"((Artillery | Tactical) & Mobile) - (Bot & Basic)",
+               "unit_types":"Advanced & Land & Mobile & (Artillery | Tactical)",
                "min_count":0,
                "percent":0.5,
                "squad":"Artillery"
@@ -459,11 +842,11 @@
 			{
                "unit_types":"Bot & Artillery",
                "min_count":0,
-               "percent":0.5,
-               "squad":"Fast"
+               "max_count":49,
+               "squad":"Artillery"
             },
             {
-               "unit_types":"((Artillery | Tactical) & Mobile) - (Bot & Basic)",
+               "unit_types":"Advanced & Land & Mobile & (Artillery | Tactical)",
                "min_count":0,
                "percent":0.5,
                "squad":"Artillery"
@@ -505,11 +888,11 @@
 			{
                "unit_types":"Bot & Artillery",
                "min_count":0,
-               "percent":0.5,
-               "squad":"Fast"
+               "max_count":59,
+               "squad":"Artillery"
             },
             {
-               "unit_types":"((Artillery | Tactical) & Mobile) - (Bot & Basic)",
+               "unit_types":"Advanced & Land & Mobile & (Artillery | Tactical)",
                "min_count":0,
                "percent":0.5,
                "squad":"Artillery"
@@ -551,11 +934,11 @@
 			{
                "unit_types":"Bot & Artillery",
                "min_count":0,
-               "percent":0.5,
-               "squad":"Fast"
+               "max_count":69,
+               "squad":"Artillery"
             },
             {
-               "unit_types":"((Artillery | Tactical) & Mobile) - (Bot & Basic)",
+               "unit_types":"Advanced & Land & Mobile & (Artillery | Tactical)",
                "min_count":0,
                "percent":0.5,
                "squad":"Artillery"
@@ -597,11 +980,11 @@
 			{
                "unit_types":"Bot & Artillery",
                "min_count":0,
-               "percent":0.5,
-               "squad":"Fast"
+               "max_count":79,
+               "squad":"Artillery"
             },
             {
-               "unit_types":"((Artillery | Tactical) & Mobile) - (Bot & Basic)",
+               "unit_types":"Advanced & Land & Mobile & (Artillery | Tactical)",
                "min_count":0,
                "percent":0.5,
                "squad":"Artillery"
@@ -643,11 +1026,11 @@
 			{
                "unit_types":"Bot & Artillery",
                "min_count":0,
-               "percent":0.5,
-               "squad":"Fast"
+               "max_count":-1,
+               "squad":"Artillery"
             },
             {
-               "unit_types":"((Artillery | Tactical) & Mobile) - (Bot & Basic)",
+               "unit_types":"Advanced & Land & Mobile & (Artillery | Tactical)",
                "min_count":0,
                "percent":0.5,
                "squad":"Artillery"
@@ -681,25 +1064,13 @@
                "squad":"Fast"
             },
             {
-               "unit_types":"(Tank & Mobile & Offense) - AirDefense - Construction - Artillery - Tactical - Heavy",
+               "unit_types":"(Tank & Mobile) - AirDefense - Construction - Artillery - Tactical - Heavy",
                "min_count":0,
                "max_count":-1,
                "squad":"General"
             },
-			{
-               "unit_types":"(Bot & Advanced & Mobile & Offense) - Construction - Artillery - Tactical",
-               "min_count":0,
-               "max_count":-1,
-               "squad":"Fast"
-            },
-			{
-               "unit_types":"Bot & Artillery",
-               "min_count":0,
-               "max_count":-1,
-               "squad":"Fast"
-            },
             {
-               "unit_types":"((Artillery | Tactical) & Mobile) - (Bot & Basic)",
+               "unit_types":"Land & Mobile & (Artillery | Tactical)",
                "min_count":0,
                "max_count":-1,
                "squad":"Artillery"
@@ -852,13 +1223,7 @@
                "squad":"Fast"
             },
 			{
-               "unit_types":"(Naval & Mobile) - Artillery - Scout - Fabber - Construction - Tactical - Sub",
-               "min_count":0,
-               "max_count":1,
-               "squad":"General"
-            },
-            {
-               "unit_types":"Sub & Basic",
+               "unit_types":"(Naval & Mobile) - Artillery - Scout - Fabber - Construction - Tactical",
                "min_count":0,
                "max_count":1,
                "squad":"General"

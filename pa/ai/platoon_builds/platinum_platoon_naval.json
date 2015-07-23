@@ -27,6 +27,32 @@
          "task_type":"Scout"
       },
       {
+         "name":"Platinum - Krakken Sneak Attack",
+         "to_build":"Naval_Attack_Sneak",
+         "instance_count":1,
+         "priority":105,
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"Naval & Advanced & Sub",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
+                  "test_type":"CanAttackWithPoolUnits",
+                  "boolean":true
+               }
+            ]
+         ],
+         "task_type":"NavalAttack"
+      },
+      {
          "name":"Platinum - Naval Attack Platoon 1",
          "to_build":"Naval_Attack_1",
          "instance_count":7,
@@ -171,32 +197,6 @@
                   "unit_type_string0":"(Naval & Mobile & Offense) - Scout",
                   "compare0":">=",
                   "value0":16
-               },
-               {
-                  "test_type":"CanAttackWithPoolUnits",
-                  "boolean":true
-               }
-            ]
-         ],
-         "task_type":"NavalAttack"
-      },
-      {
-         "name":"Platinum - Krakken Sneak Attack",
-         "to_build":"Naval_Attack_Sneak",
-         "instance_count":2,
-         "priority":105,
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-                  "boolean":true
-               },
-               {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"Naval & Advanced & Sub",
-                  "compare0":">=",
-                  "value0":1
                },
                {
                   "test_type":"CanAttackWithPoolUnits",

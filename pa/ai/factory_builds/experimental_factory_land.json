@@ -1,7 +1,7 @@
 {
    "build_list":[
       {
-         "name":"Uber - Basic Bot Fabber",
+         "name":"Experimental - Basic Bot Fabber",
          "to_build":"BasicBotFabber",
          "instance_count":1,
          "max_num_assisters":10,
@@ -13,7 +13,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -34,7 +34,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -67,7 +67,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -96,7 +96,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -132,7 +132,7 @@
          ]
       },
       {
-         "name":"Uber - Basic Vehicle Fabber",
+         "name":"Experimental - Basic Vehicle Fabber",
          "to_build":"BasicVehicleFabber",
          "instance_count":1,
          "max_num_assisters":10,
@@ -144,7 +144,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -165,7 +165,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -198,7 +198,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -227,7 +227,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -263,7 +263,7 @@
          ]
       },
       {
-         "name":"Uber - Boom",
+         "name":"Experimental - Boom",
          "to_build":"BoomBot",
          "instance_count":-1,
          "max_num_assisters":10,
@@ -275,7 +275,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -297,7 +297,7 @@
          ]
       },
       {
-         "name":"Uber - Dox",
+         "name":"Experimental - Dox",
          "to_build":"BasicAssaultBot",
          "instance_count":-1,
          "max_num_assisters":10,
@@ -309,7 +309,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -323,7 +323,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -341,7 +341,65 @@
          ]
       },
       {
-         "name":"Uber - Land Scout - Intel",
+         "name":"Experimental - Grenadier",
+         "to_build":"BasicArtilleryBot",
+         "instance_count":-1,
+         "max_num_assisters":10,
+         "priority":97,
+         "builders":[
+            "BasicBotFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"experimental",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"AntiSurface",
+                  "compare0":">",
+                  "value0":2000
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"experimental",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+               {
+                  "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
+      {
+         "name":"Experimental - Land Scout - Intel",
          "to_build":"LandScout",
          "instance_count":1,
          "max_num_assisters":10,
@@ -354,7 +412,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -388,7 +446,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -431,7 +489,7 @@
          ]
       },
       {
-         "name":"Uber - Land Scout - Mines",
+         "name":"Experimental - Land Scout - Mines",
          "to_build":"LandScout",
          "instance_count":1,
          "max_num_assisters":10,
@@ -443,7 +501,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -473,7 +531,7 @@
          ]
       },
       {
-         "name":"Uber - Bolo",
+         "name":"Experimental - Bolo",
          "to_build":"LightLaserTank",
          "instance_count":-1,
          "max_num_assisters":10,
@@ -485,7 +543,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -503,7 +561,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -525,7 +583,7 @@
          ]
       },
       {
-         "name":"Uber - Inferno",
+         "name":"Experimental - Inferno",
          "to_build":"BasicArmorTank",
          "instance_count":-1,
          "max_num_assisters":10,
@@ -537,7 +595,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -564,7 +622,7 @@
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"((Tank & Mobile) | (Bot & Mobile & Advanced)) - Fabber - AirDefense - Construction - Artillery - Heavy - Scout",
+                  "unit_type_string0":"((Tank - Artillery) | (Bot & (Advanced | Artillery)) & Mobile) - Fabber - AirDefense - Construction - Tactical - Heavy - Scout",
                   "compare0":">",
                   "value0":40,
                   "boolean":true
@@ -572,7 +630,7 @@
                {
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Tank & Heavy",
-                  "unit_type_string1":"Tank & Offense - Heavy",
+                  "unit_type_string1":"((Tank - Artillery) | (Bot & (Advanced | Artillery)) & Mobile) - Fabber - AirDefense - Construction - Tactical - Heavy - Scout",
                   "compare0":"<",
                   "value0":0.1
                }
@@ -580,7 +638,7 @@
          ]
       },
       {
-         "name":"Uber - Spinner",
+         "name":"Experimental - Spinner",
          "to_build":"BasicAAVehicle",
          "instance_count":1,
          "max_num_assisters":10,
@@ -592,7 +650,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -600,7 +658,6 @@
                   "boolean":false
                },
                {
-
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
@@ -625,7 +682,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -649,7 +706,7 @@
                {
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Tank & AirDefense",
-                  "unit_type_string1":"(Tank & Offense) - AirDefense",
+                  "unit_type_string1":"((Tank - Artillery) | (Bot & (Advanced | Artillery)) & Mobile) - Fabber - AirDefense - Construction - Tactical - Heavy - Scout",
                   "compare0":"<",
                   "value0":0.2
                }
@@ -657,7 +714,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -669,12 +726,16 @@
                   "boolean":true
                },
                {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Tank & AirDefense",
-                  "unit_type_string1":"(Tank & Offense) - AirDefense",
+                  "unit_type_string1":"((Tank - Artillery) | (Bot & (Advanced | Artillery)) & Mobile) - Fabber - AirDefense - Construction - Tactical - Heavy - Scout",
                   "compare0":"<",
                   "value0":0.2
                }
@@ -682,7 +743,7 @@
          ]
       },
       {
-         "name":"Uber - Advanced Bot Fabber",
+         "name":"Experimental - Advanced Bot Fabber",
          "to_build":"AdvancedBotFabber",
          "instance_count":1,
          "max_num_assisters":10,
@@ -694,7 +755,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -711,7 +772,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -740,7 +801,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -765,7 +826,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -789,7 +850,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -822,7 +883,7 @@
          ]
       },
       {
-         "name":"Uber - Advanced Vehicle Fabber",
+         "name":"Experimental - Advanced Vehicle Fabber",
          "to_build":"AdvancedVehicleFabber",
          "instance_count":1,
          "max_num_assisters":10,
@@ -834,7 +895,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -851,7 +912,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -880,7 +941,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -905,7 +966,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -938,7 +999,7 @@
          ]
       },
       {
-         "name":"Uber - Slammer",
+         "name":"Experimental - Slammer",
          "to_build":"AdvancedAssaultBot",
          "instance_count":-1,
          "max_num_assisters":15,
@@ -950,7 +1011,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -960,7 +1021,7 @@
          ]
       },
       {
-         "name":"Uber - GIL-E",
+         "name":"Experimental - GIL-E",
          "to_build":"AdvancedArtilleryBot",
          "instance_count":-1,
          "max_num_assisters":10,
@@ -972,12 +1033,16 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -986,7 +1051,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -998,13 +1063,17 @@
                   "boolean":true
                },
                {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                }
             ]
          ]
       },
       {
-         "name":"Uber - Bluehawk",
+         "name":"Experimental - Bluehawk",
          "to_build":"TMLBot",
          "instance_count":-1,
          "max_num_assisters":10,
@@ -1016,12 +1085,16 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -1036,7 +1109,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -1045,6 +1118,10 @@
                },
                {
                   "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
                {
@@ -1060,7 +1137,7 @@
          ]
       },
       {
-         "name":"Uber - Vanguard",
+         "name":"Experimental - Vanguard",
          "to_build":"AdvancedArmorTank",
          "instance_count":-1,
          "max_num_assisters":10,
@@ -1072,12 +1149,16 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -1093,7 +1174,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -1102,6 +1183,10 @@
                },
                {
                   "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
                {
@@ -1118,7 +1203,7 @@
          ]
       },
       {
-         "name":"Uber - Sheller",
+         "name":"Experimental - Sheller",
          "to_build":"AdvancedArtilleryVehicle",
          "instance_count":-1,
          "max_num_assisters":10,
@@ -1130,12 +1215,16 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -1144,7 +1233,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -1153,6 +1242,10 @@
                },
                {
                   "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
                {
