@@ -319,6 +319,60 @@
          ]
       },
       {
+         "name":"Platinum - Grenadier",
+         "to_build":"BasicArtilleryBot",
+         "instance_count":-1,
+         "max_num_assisters":10,
+         "priority":0,
+         "builders":[
+            "BasicBotFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"AntiSurface",
+                  "compare0":">",
+                  "value0":2600
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+               {
+                  "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
+      {
          "name":"Platinum - Land Scout - Intel",
          "to_build":"LandScout",
          "instance_count":1,
@@ -643,6 +697,10 @@
                },
                {
                   "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
                {
@@ -1027,6 +1085,10 @@
                   "boolean":false
                },
                {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                }
             ],
@@ -1042,6 +1104,10 @@
                },
                {
                   "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
                {
@@ -1071,6 +1137,10 @@
                   "boolean":false
                },
                {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -1092,6 +1162,10 @@
                },
                {
                   "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
                {
@@ -1127,6 +1201,10 @@
                   "boolean":false
                },
                {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -1149,6 +1227,10 @@
                },
                {
                   "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
                {
@@ -1185,6 +1267,10 @@
                   "boolean":false
                },
                {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                }
             ],
@@ -1200,6 +1286,10 @@
                },
                {
                   "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
                {

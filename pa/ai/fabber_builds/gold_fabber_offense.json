@@ -104,7 +104,7 @@
                "influence_type":"AntiSurface",
                "compare_type":"<",
                "radius":30,
-               "value":50
+               "value":10
             }
          }
       },
@@ -131,10 +131,6 @@
                   "boolean":true
                },
                {
-                  "test_type":"PlanetWithoutPresence",
-                  "boolean":true
-               },
-               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -146,6 +142,11 @@
                   "string0":"Economy",
                   "compare0":">",
                   "value0":0
+               },
+               {
+                  "test_type":"PlanetCount",
+                  "compare0":">",
+                  "value0":1
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -459,6 +460,11 @@
                },
                {
                   "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"PlanetCount",
+                  "compare0":">",
+                  "value0":1
                },
                {
                   "test_type":"UnitCountOnPlanet",

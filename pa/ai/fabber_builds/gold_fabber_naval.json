@@ -214,6 +214,10 @@
                   "boolean":true
                },
                {
+                  "test_type":"AllMetalSpotsFull",
+                  "boolean":true
+               },
+               {
                   "test_type":"UnableToExpand",
                   "boolean":true
                },
@@ -223,13 +227,6 @@
                {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"AdvancedNavalFactory"
-               },
-               {
-                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
-                  "string0":"Naval",
-                  "string1":"Naval",
-                  "compare0":"<",
-                  "value0":1
                },
                {
                   "test_type":"UnitCountOnPlanet",

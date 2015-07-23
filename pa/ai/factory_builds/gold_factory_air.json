@@ -307,12 +307,18 @@
             ],
             [
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
                },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
                },
+			   {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               
                {
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Air & Bomber",
@@ -366,7 +372,7 @@
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Fabber & Advanced",
                   "compare0":"<",
-                  "value0":2
+                  "value0":1
                }
             ],
             [
@@ -484,10 +490,6 @@
                   "boolean":false
                },
                {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
                   "test_type":"CurrentMetalEfficiency",
                   "compare0":">=",
                   "value0":1
@@ -513,6 +515,28 @@
          "instance_count":1,
          "max_num_assisters":10,
          "priority":199,
+         "builders":[
+            "AdvancedAirFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
+      {
+         "name":"Gold - Kestrel",
+         "to_build":"AdvancedGunship",
+         "instance_count":-1,
+         "max_num_assisters":15,
+         "priority":198,
          "builders":[
             "AdvancedAirFactory"
          ],

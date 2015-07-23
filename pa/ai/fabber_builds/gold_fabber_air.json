@@ -514,14 +514,6 @@
                   "boolean":true
                },
                {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":true
-               },
-               {
-                  "test_type":"PlanetHasUseablePlanetWeapon",
-                  "boolean":true
-               },
-               {
                   "test_type":"HaveEcoForAdvanced",
                   "boolean":true
                },
@@ -533,16 +525,49 @@
                   "string0":"AdvancedAirFactory"
                },
                {
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
+                  "string0":"Land",
+                  "string1":"Land",
+                  "compare0":"<",
+                  "value0":0.5
+               },
+               {
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Basic & Fabber - Orbital",
                   "compare0":">=",
                   "value0":5
                },
                {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"AdvancedAirFactory"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AllMetalSpotsFull",
+                  "boolean":true
+               },
+               {
+                  "test_type":"UnableToExpand",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"AdvancedAirFactory"
+               },
+               {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Factory & Air & Advanced",
+                  "unit_type_string0":"Advanced & Factory",
                   "compare0":"<",
-                  "value0":2
+                  "value0":1
                },
                {
                   "test_type":"CanFindPlaceToBuild",

@@ -328,6 +328,36 @@
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"DeepSpaceRadar"
                }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"DeepSpaceRadar"
+               },
+               {
+                  "test_type":"UnitCount",
+                  "unit_type_string0":"Structure & Orbital",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
+                  "test_type":"UnitCount",
+                  "unit_type_string0":"Structure & Recon & Orbital",
+                  "compare0":"<",
+                  "value0":1
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"DeepSpaceRadar"
+               }
             ]
          ],
          "placement_rules":{

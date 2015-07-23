@@ -1368,6 +1368,38 @@
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"Umbrella"
                }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"SystemThreat",
+                  "string0":"Orbital",
+                  "compare0":">",
+                  "value0":0
+               },
+               {
+                  "test_type":"UnitCountInBase",
+                  "unit_type_string0":"Structure & OrbitalDefense & Basic",
+                  "compare0":"<",
+                  "value0":1
+               },
+               {
+                  "test_type":"UnitCountInBase",
+                  "unit_type_string0":"Structure & Recon",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"Umbrella"
+               }
             ]
          ],
          "placement_rules":{
@@ -1399,10 +1431,6 @@
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
-                  "boolean":true
-               },
-               {
-                  "test_type":"AloneOnPlanet",
                   "boolean":true
                },
                {
@@ -1444,10 +1472,6 @@
                   "boolean":true
                },
                {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":true
-               },
-               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -1455,12 +1479,6 @@
                   "string0":"Orbital",
                   "compare0":">",
                   "value0":0
-               },
-               {
-                  "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & Recon",
-                  "compare0":">=",
-                  "value0":1
                },
                {
                   "test_type":"UnitCountInBase",
@@ -1473,6 +1491,12 @@
                   "unit_type_string0":"Structure & OrbitalDefense & Basic",
                   "compare0":"<",
                   "value0":3
+               },
+               {
+                  "test_type":"UnitCountInBase",
+                  "unit_type_string0":"Structure & Recon",
+                  "compare0":">=",
+                  "value0":1
                },
                {
                   "test_type":"CanFindPlaceToBuild",

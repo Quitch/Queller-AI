@@ -38,6 +38,10 @@
                   "boolean":false
                },
                {
+                  "test_type":"NoWhereToRun",
+                  "boolean":false
+               },
+			   {
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Orbital & Transport",
                   "compare0":">=",
@@ -422,6 +426,10 @@
                   "boolean":false
                },
                {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -555,7 +563,53 @@
                   "boolean":true
                },
                {
+                  "test_type":"SystemThreat",
+                  "string0":"Air",
+                  "compare0":">",
+                  "value0":0
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
+      {
+         "name":"Uber - Kestrel",
+         "to_build":"AdvancedGunship",
+         "instance_count":-1,
+         "max_num_assisters":15,
+         "priority":198,
+         "builders":[
+            "AdvancedAirFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
+                  "string0":"Air",
+                  "string1":"AntiAir",
+                  "compare0":"<",
+                  "value0":0.9
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
+                  "string0":"Air",
+                  "string1":"Air",
+                  "compare0":"<",
+                  "value0":0.9
                }
             ]
          ]

@@ -565,42 +565,6 @@
          "task_type":"AreaBuild"
       },
       {
-         "name":"Uber - Advanced Metal Extractor - Expand - Area",
-         "to_build":"AdvancedMetalExtractor",
-         "instance_count":-1,
-         "min_num_assisters":1,
-         "max_num_assisters":3,
-         "shared_instance_count":"AdvancedMetal",
-         "priority":2,
-         "base_sort":"FromBuilder",
-         "builders":[
-            "AnyUberAdvancedFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanFindMetalSpotToBuildAdvanced",
-                  "boolean":true
-               }
-            ]
-         ],
-         "placement_rules":{
-            "placement_type":"FromMainBaseCenter",
-            "threat":{
-               "influence_type":"AntiSurface",
-               "compare_type":"<",
-               "radius":10,
-               "value":50
-            }
-         },
-         "task_type":"AreaBuild"
-      },
-      {
          "name":"Uber - Advanced Metal Extractor",
          "to_build":"AdvancedMetalExtractor",
          "instance_count":2,
@@ -643,9 +607,9 @@
       {
          "name":"Uber - Advanced Metal Extractor - Desire",
          "to_build":"AdvancedMetalExtractor",
-         "instance_count":3,
-         "min_num_assisters":2,
-         "max_num_assisters":5,
+         "instance_count":2,
+         "min_num_assisters":1,
+         "max_num_assisters":3,
          "shared_instance_count":"AdvancedMetal",
          "priority":510,
          "base_sort":"FromBuilder",
@@ -686,40 +650,6 @@
          "max_num_assisters":3,
          "shared_instance_count":"AdvancedMetal",
          "priority":509,
-         "base_sort":"FromBuilder",
-         "builders":[
-            "AnyUberAdvancedFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanFindMetalSpotToBuildAdvanced",
-                  "boolean":true
-               }
-            ]
-         ],
-         "placement_rules":{
-            "placement_type":"FromMainBaseCenter",
-            "threat":{
-               "influence_type":"AntiSurface",
-               "compare_type":"<",
-               "radius":10,
-               "value":50
-            }
-         }
-      },
-      {
-         "name":"Uber - Advanced Metal Extractor - Expand 2",
-         "to_build":"AdvancedMetalExtractor",
-         "instance_count":-1,
-         "min_num_assisters":1,
-         "max_num_assisters":3,
-         "priority":2,
          "base_sort":"FromBuilder",
          "builders":[
             "AnyUberAdvancedFabber"
@@ -876,7 +806,7 @@
             ]
          ],
          "placement_rules":{
-            "buffer":30
+            "buffer":50
          }
       },
       {
@@ -932,13 +862,15 @@
             ]
          ],
          "placement_rules":{
-            "buffer":30
+            "buffer":50
          }
       },
       {
          "name":"Uber - Energy Storage",
          "to_build":"EnergyStorage",
          "instance_count":1,
+         "shared_instance_count":"EnergyStorage",
+		 "cross_planet_shared_count":true,
          "priority":140,
          "builders":[
             "AnyUberBasicFabber",
@@ -952,9 +884,14 @@
                   "boolean":true
                },
                {
-                  "test_type":"EnergyStorageToProductionRatio",
-                  "compare0":"<",
-                  "value0":5
+                  "test_type":"CurrentEnergyEfficiency",
+                  "compare0":">",
+                  "value0":1
+               },
+               {
+                  "test_type":"PotentialEnergyEfficiency",
+                  "compare0":">",
+                  "value0":1
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -980,6 +917,8 @@
          "name":"Uber - Metal Storage",
          "to_build":"MetalStorage",
          "instance_count":1,
+         "shared_instance_count":"MetalStorage",
+		 "cross_planet_shared_count":true,
          "priority":140,
          "builders":[
             "AnyUberBasicFabber",
@@ -993,9 +932,14 @@
                   "boolean":true
                },
                {
-                  "test_type":"MetalStorageToProductionRatio",
-                  "compare0":"<",
-                  "value0":6
+                  "test_type":"CurrentMetalEfficiency",
+                  "compare0":">",
+                  "value0":1
+               },
+               {
+                  "test_type":"PotentialMetalEfficiency",
+                  "compare0":">",
+                  "value0":1
                },
                {
                   "test_type":"CanAffordBuildDemand"

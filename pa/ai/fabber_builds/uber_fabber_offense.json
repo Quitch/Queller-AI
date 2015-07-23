@@ -461,6 +461,11 @@
                   "test_type":"CanAffordBuildDemand"
                },
                {
+                  "test_type":"PlanetCount",
+                  "compare0":">",
+                  "value0":1
+               },
+               {
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Factory - Orbital",
                   "compare0":">=",
@@ -513,7 +518,7 @@
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Fabber & Advanced",
                   "compare0":">=",
-                  "value0":9
+                  "value0":20
                },
                {
                   "test_type":"CanFindControlPointToBuild",

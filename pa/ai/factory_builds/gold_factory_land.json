@@ -319,6 +319,58 @@
          ]
       },
       {
+         "name":"Gold - Grenadier",
+         "to_build":"BasicArtilleryBot",
+         "instance_count":-1,
+         "max_num_assisters":10,
+         "priority":97,
+         "builders":[
+            "BasicBotFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+               {
+                  "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
+      {
          "name":"Gold - Land Scout - Intel",
          "to_build":"LandScout",
          "instance_count":1,
@@ -646,6 +698,10 @@
                   "boolean":true
                },
                {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -682,7 +738,7 @@
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Fabber & Advanced",
                   "compare0":"<",
-                  "value0":2
+                  "value0":1
                }
             ],
             [
@@ -845,7 +901,7 @@
                   "test_type":"UnitCountOnPlanet",
                   "unit_type_string0":"Fabber & Advanced",
                   "compare0":"<",
-                  "value0":0.5
+                  "value0":1
                }
             ],
             [
@@ -1094,7 +1150,7 @@
             ]
          ]
       },
-	  {
+      {
          "name":"Legion - Gold - Leveller",
          "to_build":"LegionAdvancedLaserVehicle",
          "instance_count":-1,

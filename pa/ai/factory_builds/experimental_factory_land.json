@@ -263,40 +263,6 @@
          ]
       },
       {
-         "name":"Experimental - Boom",
-         "to_build":"BoomBot",
-         "instance_count":-1,
-         "max_num_assisters":10,
-         "priority":98,
-         "builders":[
-            "BasicBotFactory"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"experimental",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"UnitCountAroundBase",
-                  "unit_type_string0":"Commander",
-                  "string0":"Enemy",
-                  "value0":400,
-                  "compare0":">=",
-                  "value1":1
-               }
-            ]
-         ]
-      },
-      {
          "name":"Experimental - Dox",
          "to_build":"BasicAssaultBot",
          "instance_count":-1,
@@ -368,7 +334,7 @@
                   "test_type":"PlanetHighestEnemyArmyThreat",
                   "string0":"AntiSurface",
                   "compare0":">",
-                  "value0":2000
+                  "value0":2100
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -999,7 +965,7 @@
          ]
       },
       {
-         "name":"Experimental - Slammer",
+         "name":"Experimental - Slammer - Cannon",
          "to_build":"AdvancedAssaultBot",
          "instance_count":-1,
          "max_num_assisters":15,
@@ -1013,6 +979,32 @@
                   "test_type":"HasPersonalityTag",
                   "string0":"experimental",
                   "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
+      {
+         "name":"Experimental - Slammer - Factory",
+         "to_build":"AdvancedAssaultBot",
+         "instance_count":-1,
+         "max_num_assisters":15,
+         "priority":199,
+         "builders":[
+            "AdvancedBotFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"experimental",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"

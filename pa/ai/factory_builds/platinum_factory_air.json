@@ -489,10 +489,6 @@
                   "boolean":false
                },
                {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
                   "test_type":"CurrentMetalEfficiency",
                   "compare0":">",
                   "value0":1
@@ -530,6 +526,29 @@
                },
                {
                   "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
+      {
+         "name":"Platinum - Kestrel",
+         "to_build":"AdvancedGunship",
+         "instance_count":-1,
+         "max_num_assisters":15,
+         "priority":198,
+         "builders":[
+            "AdvancedAirFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"platinum",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
                }
             ]
          ]

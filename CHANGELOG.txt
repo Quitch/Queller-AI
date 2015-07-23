@@ -1,19 +1,28 @@
-dev
+v2.1-dev
 
-Gold, Platinum and Uber no longer build bot factories when they shouldn't
 Gold will build the Leveller
 Uber will check there's some metal in storage in addition to looking at eco efficiency before assuming float and building more stuff
 Silver correctly checks whether it can afford to have fabbers to assist on a project
-Correctly excludes the orbital fabber from all checks it should be excluded from
+Correctly exclude the orbital fabber from all checks it should be excluded from
 Uber will send ARKYD offworld even if it's the only one if it doesn't need it on that planet
-Optimised assignment of units to squads within platoons to maximise effect AI handling of its units
+Optimised assignment of units to squads within platoons to maximise effective AI handling of its units
 No longer builds an Astraeus for an evacuation it doesn't perform
 Corrected errors in the advanced fabber ratios
 Uber less reluctant to build advanced fabbers
 Uber less likely to float energy on multiplanet systems
-Now builds Grenadiers at the higher levels
-Removed bot factory limits at the higher levels
+Gold through Uber have been updated for the Grenadier meta
 Uber is better at building storage when it can't immediately counter an eco float
+Uber prioritises Deep Space Radar after going orbital
+Removed the building of Booms for now
+Gold is more likely to build the Unit Cannon on a multiplanet system
+Uber spaces its Jigs out more
+Uber won't assign as many fabbers to grab metal while it's floating
+Platinum more likely to tech up when it's out of expansion options
+Gold less likely to tech up when it's out of expansion options
+Uber and Platinum want more fabbers before trying for a Catalyst
+Fixed error prevent Gold and Platinum building Advanced Air Fabbers in certain situations
+Gold will sometimes go for T2 air
+Gold, Platinum and Uber will build Kestrels
 
 v2.0.1
 
