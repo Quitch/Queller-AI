@@ -115,6 +115,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
  - Best micro
  - Best threat assessments
  - Will use eco bonuses better than other levels
+ - Selectable subpersonality
 
 ## RECOMMENDED DIFFICULTY
 
@@ -158,19 +159,6 @@ Both spawns are about the same
 #### Pacific
 
 Slot 2/2 is riskier but leads to a stronger late game
-
-## THINGS I AM THINKING ABOUT
-
-- Compare enemy mobile presence to static defence and adjust army ratio accordingly. Is this even possible?
-- Get the Commander to build walls around itself when under threat
-- Can the Commander be assigned to a platoon?
-- How can I detect the AI is in a FFA and adjust decisions accordingly?
-- Only tech on land when alone or unable to expand and ditch the whole idea of teching while winning? Perhaps don't tech when winning if no one else is teching? Move to AntiSurface comparisons?
-- Better optimise the opening builds according to the map size and number of players
-- Needs to be think about when to stop building at sea/land on mixed maps
-- Is Kestrel play a thing?
-- Boom usage is terrible and needs a lot of work
-- Stops rapid basic factory expansion once advanced factories appear which is poor play on occupied worlds
 
 ## IMPERIAL LEGION
 
