@@ -3,7 +3,7 @@
       {
          "name":"Gold - Basic Metal Extractor - Area",
          "to_build":"BasicMetalExtractor",
-         "instance_count":4,
+         "instance_count":2,
          "max_num_assisters":1,
          "shared_instance_count":"BasicMetal",
          "priority":261,
@@ -44,7 +44,7 @@
       {
          "name":"Gold - Basic Metal Extractor - Desire - Area",
          "to_build":"BasicMetalExtractor",
-         "instance_count":4,
+         "instance_count":2,
          "max_num_assisters":1,
          "shared_instance_count":"BasicMetal",
          "priority":501,
@@ -83,7 +83,7 @@
       {
          "name":"Gold - Basic Metal Extractor",
          "to_build":"BasicMetalExtractor",
-         "instance_count":3,
+         "instance_count":2,
          "max_num_assisters":1,
          "shared_instance_count":"BasicMetal",
          "priority":261,
@@ -123,7 +123,7 @@
       {
          "name":"Gold - Basic Metal Extractor - Desire",
          "to_build":"BasicMetalExtractor",
-         "instance_count":3,
+         "instance_count":2,
          "max_num_assisters":1,
          "shared_instance_count":"BasicMetal",
          "priority":501,
@@ -233,7 +233,7 @@
       {
          "name":"Gold - Advanced Metal Extractor - Area",
          "to_build":"AdvancedMetalExtractor",
-         "instance_count":3,
+         "instance_count":1,
          "min_num_assisters":1,
          "max_num_assisters":3,
          "shared_instance_count":"AdvancedMetal",
@@ -292,42 +292,6 @@
                },
                {
                   "test_type":"DesireMetal"
-               },
-               {
-                  "test_type":"CanFindMetalSpotToBuildAdvanced",
-                  "boolean":true
-               }
-            ]
-         ],
-         "placement_rules":{
-            "placement_type":"FromMainBaseCenter",
-            "threat":{
-               "influence_type":"AntiSurface",
-               "compare_type":"<",
-               "radius":10,
-               "value":50
-            }
-         },
-         "task_type":"AreaBuild"
-      },
-      {
-         "name":"Gold - Advanced Metal Extractor - Expand - Area",
-         "to_build":"AdvancedMetalExtractor",
-         "instance_count":1,
-         "min_num_assisters":1,
-         "max_num_assisters":3,
-         "shared_instance_count":"AdvancedMetal",
-         "priority":509,
-         "base_sort":"FromBuilder",
-         "builders":[
-            "AnyUberAdvancedFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
                },
                {
                   "test_type":"CanFindMetalSpotToBuildAdvanced",
@@ -407,41 +371,6 @@
                },
                {
                   "test_type":"DesireMetal"
-               },
-               {
-                  "test_type":"CanFindMetalSpotToBuildAdvanced",
-                  "boolean":true
-               }
-            ]
-         ],
-         "placement_rules":{
-            "placement_type":"FromMainBaseCenter",
-            "threat":{
-               "influence_type":"AntiSurface",
-               "compare_type":"<",
-               "radius":10,
-               "value":50
-            }
-         }
-      },
-      {
-         "name":"Gold - Advanced Metal Extractor - Expand",
-         "to_build":"AdvancedMetalExtractor",
-         "instance_count":1,
-         "min_num_assisters":1,
-         "max_num_assisters":3,
-         "shared_instance_count":"AdvancedMetal",
-         "priority":509,
-         "base_sort":"FromBuilder",
-         "builders":[
-            "AnyUberAdvancedFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
                },
                {
                   "test_type":"CanFindMetalSpotToBuildAdvanced",

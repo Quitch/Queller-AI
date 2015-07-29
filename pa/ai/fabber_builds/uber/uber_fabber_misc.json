@@ -227,27 +227,10 @@
                   "unit_type_string0":"Fabber & Orbital",
                   "compare0":">=",
                   "value0":2
-               }
-            ],
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-                  "boolean":true
                },
                {
-                  "test_type":"PlanetOrGasGiantWithoutPresence",
-                  "boolean":true
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Factory & Orbital",
-                  "compare0":">=",
-                  "value0":1
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Structure & Orbital & Economy",
+                  "test_type":"UnitCountInCelestialTransit",
+                  "unit_type_string0":"Fabber & Orbital",
                   "compare0":"<",
                   "value0":1
                }
@@ -263,14 +246,47 @@
                   "boolean":true
                },
                {
+                  "test_type":"PlanetIsGasGiant",
+                  "boolean":false
+               },
+               {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Structure & Teleporter",
+                  "unit_type_string0":"Factory & Orbital",
                   "compare0":">=",
+                  "value0":1
+               },
+               {
+                  "test_type":"UnitCountInCelestialTransit",
+                  "unit_type_string0":"Fabber & Orbital",
+                  "compare0":"<",
                   "value0":1
                }
             ]
          ],
          "task_type":"OrbitalFabberMoveToPlanet"
+      },
+      {
+         "name":"Move Orbital Fabber To Safe Planet",
+         "instance_count":1,
+         "priority":801,
+         "builders":[
+            "OrbitalFabber"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"SafePlanetOrGasGiantWithoutPresence",
+                  "boolean":true
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Orbital & Factory",
+                  "compare0":">=",
+                  "value0":1
+               }
+            ]
+         ],
+         "task_type":"OrbitalFabberMoveToSafePlanet"
       }
    ]
 }

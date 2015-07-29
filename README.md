@@ -116,6 +116,38 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
  - Best threat assessments
  - Will use eco bonuses better than other levels
  - Selectable subpersonality
+ 
+### Subpersonalities
+
+By default, Queller at Uber level will adapt its play to try and suit the system and the opposition it faces. You can use subpersonalities to customise Queller's game to your liking, or help it play better where it's making poor strategy choices.
+
+- Air
+ - Much greater use of air units
+ - Still builds ground units
+ - May work well on really large planets
+
+- Dox
+ - Won't use any offensive T1 unit other than Dox
+ - Will focus on Slammers at T2 but not exclusively
+
+- Eco
+ - Heavier emphasis on economic growth
+ - Best used where there's a large space between the AI and its nearest opponent
+
+- Infernodier
+ - Starts out normally
+ - Switches to an Inferno/Grenadier mix as the game progresses
+
+- Mix
+ - No preference between bot and tank
+ - Unit choices weighted by which route it ends up pursuing more heavily
+
+- Tech
+ - Much less cautious about teching
+
+- Turtle
+ - Emphasis on fabbers over combat units
+ - Will build mines
 
 ## RECOMMENDED DIFFICULTY
 

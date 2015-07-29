@@ -365,6 +365,11 @@
                   "boolean":true
                },
                {
+                  "test_type":"HaveSeenEnemyUnits",
+                  "unit_type_string0":"Tank",
+                  "boolean":true
+               },
+               {
                   "test_type":"PlanetHighestEnemyArmyThreat",
                   "string0":"AntiSurface",
                   "compare0":">",
@@ -647,7 +652,7 @@
       {
          "name":"Uber - Spinner",
          "to_build":"BasicAAVehicle",
-         "instance_count":1,
+         "instance_count":-1,
          "max_num_assisters":10,
          "priority":97,
          "builders":[
@@ -681,7 +686,7 @@
                {
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Tank & AirDefense",
-                  "unit_type_string1":"(Tank & Offense) - AirDefense",
+                  "unit_type_string1":"((Tank | (Bot (Artillery | Advanced)) & Offense & Mobile) - Construction - Fabber - AirDefense",
                   "compare0":"<",
                   "value0":0.2
                }
@@ -713,7 +718,7 @@
                {
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Tank & AirDefense",
-                  "unit_type_string1":"(((Tank - Artillery) | (Bot & (Advanced | Artillery))) & Mobile) - Fabber - AirDefense - Construction - Tactical - Heavy - Scout",
+                  "unit_type_string1":"((Tank | (Bot (Artillery | Advanced)) & Offense & Mobile) - Construction - Fabber - AirDefense",
                   "compare0":"<",
                   "value0":0.2
                }

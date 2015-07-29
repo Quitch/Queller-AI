@@ -1189,7 +1189,7 @@
          "name":"Uber - Umbrella - Base",
          "to_build":"Umbrella",
          "instance_count":1,
-         "priority":255,
+         "priority":256,
          "min_num_assisters":1,
          "max_num_assisters":3,
          "builders":[
@@ -1330,7 +1330,7 @@
          "name":"Uber - Umbrella - Lock Down The Planet",
          "to_build":"Umbrella",
          "instance_count":1,
-         "priority":256,
+         "priority":255,
          "min_num_assisters":1,
          "max_num_assisters":3,
          "builders":[
@@ -1370,6 +1370,12 @@
                   "value0":1
                },
                {
+                  "test_type":"UnitCountInBase",
+                  "unit_type_string0":"Structure - Recon",
+                  "compare0":">=",
+                  "value0":0
+               },
+               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"Umbrella"
                }
@@ -1400,6 +1406,12 @@
                   "unit_type_string0":"Structure & Recon",
                   "compare0":">=",
                   "value0":1
+               },
+               {
+                  "test_type":"UnitCountInBase",
+                  "unit_type_string0":"Structure - Recon",
+                  "compare0":">=",
+                  "value0":0
                },
                {
                   "test_type":"CanFindPlaceToBuild",

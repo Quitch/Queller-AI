@@ -1,4 +1,106 @@
 {
-   "build_list":[
-   ]
+  "build_list": [
+    {
+      "name": "Vanilla - Orbital Radar",
+      "to_build": "Orbital_Radar",
+      "instance_count": -1,
+      "priority": 100,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+			"string0": "Vanilla",
+			"boolean": true            
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & Recon - Structure",
+            "compare0": ">=",
+            "value0": 1
+          }
+        ]
+      ],
+      "task_type": "OrbitalRecon"
+    },
+    {
+      "name": "Vanilla - Orbital Radar Transfer To Planet",
+      "to_build": "Orbital_Radar",
+      "instance_count": -1,
+      "priority": 101,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+			"string0": "Vanilla",
+			"boolean": true            
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Recon - Structure",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "ThisPlanetNeedsReconAssistance",
+            "boolean": false
+          },
+          {
+            "test_type": "OtherPlanetNeedsReconAssistance",
+            "boolean": true
+          }
+        ]
+      ],
+      "task_type": "TransferReconToPlanet"
+    },
+    {
+      "name": "Vanilla - Orbital Fighter Attack Platoon",
+      "to_build": "Orbital_Fighter_Attack",
+      "instance_count": -1,
+      "priority": 100,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+			"string0": "Vanilla",
+			"boolean": true            
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & Fighter",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits"
+          }
+        ]
+      ],
+      "task_type": "OrbitalFighterAttack"
+    },
+    {
+      "name": "Vanilla - Orbital Death Laser Attack Platoon",
+      "to_build": "Orbital_Laser_Attack",
+      "instance_count": -1,
+      "priority": 100,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+			"string0": "Vanilla",
+			"boolean": true            
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & LaserPlatform",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits"
+          }
+        ]
+      ],
+      "task_type": "OrbitalLaserAttack"
+    }
+  ]
 }

@@ -235,15 +235,13 @@
                   "boolean":true
                },
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Factory & Orbital",
-                  "compare0":">=",
-                  "value0":1
+                  "test_type":"PlanetIsGasGiant",
+                  "boolean":false
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Structure & Orbital & Economy",
-                  "compare0":"<",
+                  "unit_type_string0":"Factory & Orbital",
+                  "compare0":">=",
                   "value0":1
                }
             ],

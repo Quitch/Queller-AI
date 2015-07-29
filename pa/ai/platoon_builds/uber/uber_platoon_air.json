@@ -2,7 +2,7 @@
    "build_list":[
       {
          "name":"Uber - Air Scout Platoon",
-         "to_build":"Air_Scout",
+         "to_build":"Air_Scout_1",
          "instance_count":-1,
          "priority":105,
          "build_conditions":[
@@ -28,7 +28,7 @@
       },
       {
          "name":"Uber - Fighter Scout Platoon",
-         "to_build":"Fighter_Scout",
+         "to_build":"Fighter_Scout_1",
          "instance_count":-1,
          "priority":105,
          "build_conditions":[
@@ -65,15 +65,15 @@
          "task_type":"Scout"
       },
       {
-         "name":"Uber - Bomber-Gunship Attack Platoon 1",
+         "name":"Experimental - Bomber-Gunship Attack Platoon 1",
          "to_build":"BomberGunship_Attack_1",
          "instance_count":-1,
-         "priority":140,
+         "priority":150,
          "build_conditions":[
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -99,15 +99,15 @@
          "task_type":"BomberAttack"
       },
       {
-         "name":"Uber - Bomber-Gunship Attack Platoon 4",
+         "name":"Experimental - Bomber-Gunship Attack Platoon 4",
          "to_build":"BomberGunship_Attack_4",
          "instance_count":-1,
-         "priority":130,
+         "priority":140,
          "build_conditions":[
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -133,15 +133,15 @@
          "task_type":"BomberAttack"
       },
       {
-         "name":"Uber - Bomber-Gunship Attack Platoon 9",
-         "to_build":"BomberGunship_Attack_9",
+         "name":"Experimental - Bomber-Gunship Attack Platoon 10",
+         "to_build":"BomberGunship_Attack_10",
          "instance_count":-1,
-         "priority":120,
+         "priority":130,
          "build_conditions":[
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -154,7 +154,7 @@
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Air & (Bomber | Gunship)",
                   "compare0":">=",
-                  "value0":9
+                  "value0":10
                },
                {
                   "test_type":"CanAttackWithPoolUnitsBomber",
@@ -167,15 +167,15 @@
          "task_type":"BomberAttack"
       },
       {
-         "name":"Uber - Bomber-Gunship Attack Platoon 18",
-         "to_build":"BomberGunship_Attack_18",
+         "name":"Experimental - Bomber-Gunship Attack Platoon 20",
+         "to_build":"BomberGunship_Attack_20",
          "instance_count":-1,
-         "priority":110,
+         "priority":120,
          "build_conditions":[
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
@@ -188,7 +188,7 @@
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Air & (Bomber | Gunship)",
                   "compare0":">=",
-                  "value0":18
+                  "value0":20
                },
                {
                   "test_type":"CanAttackWithPoolUnitsBomber",
@@ -201,22 +201,56 @@
          "task_type":"BomberAttack"
       },
       {
-         "name":"Uber - Bomber-Gunship Attack Platoon 36",
-         "to_build":"BomberGunship_Attack_36",
+         "name":"Experimental - Bomber-Gunship Attack Platoon 30",
+         "to_build":"BomberGunship_Attack_30",
          "instance_count":-1,
          "priority":100,
          "build_conditions":[
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"uber",
+                  "string0":"experimental",
+                  "boolean":true
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"AntiAir",
+                  "compare0":"<",
+                  "value0":8400
+               },
+               {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"Air & (Bomber | Gunship)",
+                  "compare0":">=",
+                  "value0":30
+               },
+               {
+                  "test_type":"CanAttackWithPoolUnitsBomber",
+                  "string0":"WL_AnySurface",
+                  "string1":"WL_Air",
+                  "unit_type_string0":"Mobile | Structure"
+               }
+            ]
+         ],
+         "task_type":"BomberAttack"
+      },
+      {
+         "name":"Experimental - Bomber-Gunship Attack Platoon 40",
+         "to_build":"BomberGunship_Attack_40",
+         "instance_count":-1,
+         "priority":100,
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"experimental",
                   "boolean":true
                },
                {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Air & (Bomber | Gunship)",
                   "compare0":">=",
-                  "value0":36
+                  "value0":40
                },
                {
                   "test_type":"CanAttackWithPoolUnitsBomber",
@@ -229,17 +263,12 @@
          "task_type":"BomberAttack"
       },
       {
-         "name":"Uber - Fighter Attack Platoon",
-         "to_build":"Fighter_Attack",
-         "instance_count":-1,
-         "priority":100,
+         "name":"Fighter Attack Platoon 1",
+         "to_build":"Fighter_Attack_1",
+         "instance_count":1,
+         "priority":150,
          "build_conditions":[
             [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-                  "boolean":true
-               },
                {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Air & Fighter",
@@ -250,20 +279,205 @@
                   "test_type":"CanAttackWithPoolUnitsFighter",
                   "string0":"WL_Air",
                   "string1":"WL_Air",
-                  "unit_type_string0":"Mobile"
+                  "unit_type_string0":"Mobile | Structure"
                }
             ],
             [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-                  "boolean":true
-               },
                {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Air & Fighter",
                   "compare0":">=",
                   "value0":1
+               },
+               {
+                  "test_type":"CanProvideAirSupportWithPoolUnits",
+                  "string0":"fighter_attack",
+                  "string1":"WL_Air",
+                  "string2":"WL_Air",
+                  "unit_type_string0":"Mobile | Structure"
+               }
+            ]
+         ],
+         "task_type":"FighterAttack"
+      },
+      {
+         "name":"Fighter Attack Platoon 4",
+         "to_build":"Fighter_Attack_4",
+         "instance_count":1,
+         "priority":140,
+         "build_conditions":[
+            [
+               {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"Air & Fighter",
+                  "compare0":">=",
+                  "value0":4
+               },
+               {
+                  "test_type":"CanAttackWithPoolUnitsFighter",
+                  "string0":"WL_Air",
+                  "string1":"WL_Air",
+                  "unit_type_string0":"Mobile | Structure"
+               }
+            ],
+            [
+               {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"Air & Fighter",
+                  "compare0":">=",
+                  "value0":4
+               },
+               {
+                  "test_type":"CanProvideAirSupportWithPoolUnits",
+                  "string0":"fighter_attack",
+                  "string1":"WL_Air",
+                  "string2":"WL_Air",
+                  "unit_type_string0":"Mobile | Structure"
+               }
+            ]
+         ],
+         "task_type":"FighterAttack"
+      },
+      {
+         "name":"Fighter Attack Platoon 10",
+         "to_build":"Fighter_Attack_10",
+         "instance_count":1,
+         "priority":130,
+         "build_conditions":[
+            [
+               {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"Air & Fighter",
+                  "compare0":">=",
+                  "value0":10
+               },
+               {
+                  "test_type":"CanAttackWithPoolUnitsFighter",
+                  "string0":"WL_Air",
+                  "string1":"WL_Air",
+                  "unit_type_string0":"Mobile | Structure"
+               }
+            ],
+            [
+               {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"Air & Fighter",
+                  "compare0":">=",
+                  "value0":10
+               },
+               {
+                  "test_type":"CanProvideAirSupportWithPoolUnits",
+                  "string0":"fighter_attack",
+                  "string1":"WL_Air",
+                  "string2":"WL_Air",
+                  "unit_type_string0":"Mobile | Structure"
+               }
+            ]
+         ],
+         "task_type":"FighterAttack"
+      },
+      {
+         "name":"Fighter Attack Platoon 20",
+         "to_build":"Fighter_Attack_20",
+         "instance_count":1,
+         "priority":120,
+         "build_conditions":[
+            [
+               {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"Air & Fighter",
+                  "compare0":">=",
+                  "value0":20
+               },
+               {
+                  "test_type":"CanAttackWithPoolUnitsFighter",
+                  "string0":"WL_Air",
+                  "string1":"WL_Air",
+                  "unit_type_string0":"Mobile | Structure"
+               }
+            ],
+            [
+               {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"Air & Fighter",
+                  "compare0":">=",
+                  "value0":20
+               },
+               {
+                  "test_type":"CanProvideAirSupportWithPoolUnits",
+                  "string0":"fighter_attack",
+                  "string1":"WL_Air",
+                  "string2":"WL_Air",
+                  "unit_type_string0":"Mobile | Structure"
+               }
+            ]
+         ],
+         "task_type":"FighterAttack"
+      },
+      {
+         "name":"Fighter Attack Platoon 30",
+         "to_build":"Fighter_Attack_30",
+         "instance_count":1,
+         "priority":110,
+         "build_conditions":[
+            [
+               {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"Air & Fighter",
+                  "compare0":">=",
+                  "value0":30
+               },
+               {
+                  "test_type":"CanAttackWithPoolUnitsFighter",
+                  "string0":"WL_Air",
+                  "string1":"WL_Air",
+                  "unit_type_string0":"Mobile | Structure"
+               }
+            ],
+            [
+               {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"Air & Fighter",
+                  "compare0":">=",
+                  "value0":30
+               },
+               {
+                  "test_type":"CanProvideAirSupportWithPoolUnits",
+                  "string0":"fighter_attack",
+                  "string1":"WL_Air",
+                  "string2":"WL_Air",
+                  "unit_type_string0":"Mobile | Structure"
+               }
+            ]
+         ],
+         "task_type":"FighterAttack"
+      },
+      {
+         "name":"Fighter Attack Platoon 40",
+         "to_build":"Fighter_Attack_40",
+         "instance_count":1,
+         "priority":100,
+         "build_conditions":[
+            [
+               {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"Air & Fighter",
+                  "compare0":">=",
+                  "value0":40
+               },
+               {
+                  "test_type":"CanAttackWithPoolUnitsFighter",
+                  "string0":"WL_Air",
+                  "string1":"WL_Air",
+                  "unit_type_string0":"Mobile | Structure"
+               }
+            ],
+            [
+               {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"Air & Fighter",
+                  "compare0":">=",
+                  "value0":40
                },
                {
                   "test_type":"CanProvideAirSupportWithPoolUnits",
