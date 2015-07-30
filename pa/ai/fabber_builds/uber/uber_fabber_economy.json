@@ -190,7 +190,7 @@
       {
          "name":"Uber - Basic Metal Extractor",
          "to_build":"BasicMetalExtractor",
-         "instance_count":3,
+         "instance_count":4,
          "max_num_assisters":1,
          "shared_instance_count":"BasicMetal",
          "priority":261,
@@ -230,7 +230,7 @@
       {
          "name":"Uber - Basic Metal Extractor - Desire",
          "to_build":"BasicMetalExtractor",
-         "instance_count":3,
+         "instance_count":4,
          "max_num_assisters":1,
          "shared_instance_count":"BasicMetal",
          "priority":501,
@@ -763,6 +763,7 @@
          "instance_count":1,
          "min_num_assisters":3,
          "max_num_assisters":5,
+         "shared_instance_count":"Jig",
          "priority":509,
          "builders":[
             "OrbitalFabber"
@@ -815,6 +816,7 @@
          "instance_count":1,
          "min_num_assisters":3,
          "max_num_assisters":5,
+         "shared_instance_count":"Jig",
          "priority":260,
          "builders":[
             "OrbitalFabber"
@@ -871,7 +873,7 @@
          "instance_count":1,
          "shared_instance_count":"EnergyStorage",
 		 "cross_planet_shared_count":true,
-         "priority":140,
+         "priority":89,
          "builders":[
             "AnyUberBasicFabber",
             "AnyUberAdvancedFabber"
@@ -919,7 +921,7 @@
          "instance_count":1,
          "shared_instance_count":"MetalStorage",
 		 "cross_planet_shared_count":true,
-         "priority":140,
+         "priority":89,
          "builders":[
             "AnyUberBasicFabber",
             "AnyUberAdvancedFabber"

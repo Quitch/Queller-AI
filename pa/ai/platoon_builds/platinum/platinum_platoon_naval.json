@@ -27,35 +27,10 @@
          "task_type":"Scout"
       },
       {
-         "name":"Platinum - Krakken Sneak Attack",
-         "to_build":"Naval_Attack_Sneak",
-         "instance_count":1,
-         "priority":105,
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-                  "boolean":true
-               },
-               {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"Naval & Advanced & Sub",
-                  "compare0":">=",
-                  "value0":1
-               },
-               {
-                  "test_type":"CanAttackWithPoolUnits",
-                  "boolean":true
-               }
-            ]
-         ],
-         "task_type":"NavalAttack"
-      },
-      {
          "name":"Platinum - Naval Attack Platoon 1",
          "to_build":"Naval_Attack_1",
-         "instance_count":7,
+         "instance_count":6,
+         "shared_instance_count":"NavalPlatoon",
          "priority":104,
          "build_conditions":[
             [
@@ -87,7 +62,8 @@
       {
          "name":"Platinum - Naval Attack Platoon 2",
          "to_build":"Naval_Attack_2",
-         "instance_count":7,
+         "instance_count":6,
+         "shared_instance_count":"NavalPlatoon",
          "priority":103,
          "build_conditions":[
             [
@@ -119,7 +95,8 @@
       {
          "name":"Platinum - Naval Attack Platoon 4",
          "to_build":"Naval_Attack_4",
-         "instance_count":7,
+         "instance_count":6,
+         "shared_instance_count":"NavalPlatoon",
          "priority":102,
          "build_conditions":[
             [
@@ -151,7 +128,8 @@
       {
          "name":"Platinum - Naval Attack Platoon 8",
          "to_build":"Naval_Attack_8",
-         "instance_count":7,
+         "instance_count":6,
+         "shared_instance_count":"NavalPlatoon",
          "priority":101,
          "build_conditions":[
             [
@@ -183,7 +161,8 @@
       {
          "name":"Platinum - Naval Attack Platoon 16",
          "to_build":"Naval_Attack_16",
-         "instance_count":7,
+         "instance_count":6,
+         "shared_instance_count":"NavalPlatoon",
          "priority":100,
          "build_conditions":[
             [

@@ -338,7 +338,7 @@
       {
          "name":"Platinum - Basic Metal Extractor - Expand 3",
          "to_build":"BasicMetalExtractor",
-         "instance_count":-1,
+         "instance_count":4,
          "max_num_assisters":1,
          "shared_instance_count":"BasicMetal",
          "priority":2,
@@ -715,7 +715,7 @@
       {
          "name":"Platinum - Advanced Metal Extractor - Expand 2",
          "to_build":"AdvancedMetalExtractor",
-         "instance_count":-1,
+         "instance_count":3,
          "min_num_assisters":1,
          "max_num_assisters":3,
          "priority":2,
@@ -830,6 +830,7 @@
          "instance_count":1,
          "min_num_assisters":3,
          "max_num_assisters":5,
+         "shared_instance_count":"Jig",
          "priority":509,
          "builders":[
             "OrbitalFabber"
@@ -882,6 +883,7 @@
          "instance_count":1,
          "min_num_assisters":3,
          "max_num_assisters":5,
+         "shared_instance_count":"Jig",
          "priority":260,
          "builders":[
             "OrbitalFabber"

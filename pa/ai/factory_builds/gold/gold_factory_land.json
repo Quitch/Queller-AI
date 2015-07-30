@@ -65,7 +65,7 @@
                   "unit_type_string0":"Fabber & Basic & Land",
                   "unit_type_string1":"Factory & Basic & Land",
                   "compare0":"<",
-                  "value0":1
+                  "value0":0.5
                }
             ],
             [
@@ -98,43 +98,7 @@
                   "unit_type_string0":"Fabber & Basic & Land",
                   "unit_type_string1":"Factory & Basic & Land",
                   "compare0":"<",
-                  "value0":2
-               }
-            ],
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
-                  "test_type":"UnableToExpand",
-                  "boolean":false
-               },
-               {
-                  "test_type":"AllMetalSpotsFull",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicBotFabber"
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Commander",
-                  "compare0":"<",
-                  "value0":1
+                  "value0":1.5
                }
             ]
          ]
@@ -204,7 +168,7 @@
                   "unit_type_string0":"Fabber & Basic & Land",
                   "unit_type_string1":"Factory & Basic & Land",
                   "compare0":"<",
-                  "value0":1
+                  "value0":0.5
                }
             ],
             [
@@ -237,39 +201,7 @@
                   "unit_type_string0":"Fabber & Basic & Land",
                   "unit_type_string1":"Factory & Basic & Land",
                   "compare0":"<",
-                  "value0":2
-               }
-            ],
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
-                  "test_type":"UnableToExpand",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicVehicleFabber"
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Commander",
-                  "compare0":"<",
-                  "value0":1
+                  "value0":1.5
                }
             ]
          ]
@@ -465,7 +397,7 @@
          "to_build":"LandScout",
          "instance_count":1,
          "max_num_assisters":10,
-         "priority":97,
+         "priority":96,
          "builders":[
             "BasicVehicleFactory"
          ],
@@ -590,7 +522,7 @@
                   "string0":"Land",
                   "string1":"Land",
                   "compare0":"<",
-                  "value0":0.9
+                  "value0":1
                },
                {
                   "test_type":"UnitCountOnPlanet",
@@ -640,38 +572,6 @@
                   "test_type":"PlanetHighestEnemyArmyThreatRatio",
                   "string0":"Air",
                   "string1":"AntiAir",
-                  "compare0":">",
-                  "value0":0.9
-               },
-               {
-                  "test_type":"UnitRatioOnPlanet",
-                  "unit_type_string0":"Tank & AirDefense",
-                  "unit_type_string1":"((Tank | (Bot (Artillery | Advanced)) & Offense & Mobile) - Construction - Fabber - AirDefense",
-                  "compare0":"<",
-                  "value0":0.2
-               }
-            ],
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
-                  "string0":"Air",
-                  "string1":"Air",
                   "compare0":">",
                   "value0":0.9
                },
@@ -775,7 +675,7 @@
                   "unit_type_string0":"Fabber & Advanced & Land",
                   "unit_type_string1":"Factory & Advanced & Land",
                   "compare0":"<",
-                  "value0":2
+                  "value0":1
                }
             ],
             [
@@ -808,71 +708,7 @@
                   "unit_type_string0":"Fabber & Advanced & Land",
                   "unit_type_string1":"Factory & Advanced & Land",
                   "compare0":"<",
-                  "value0":4
-               }
-            ],
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
-                  "test_type":"UnableToExpand",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"AdvancedBotFabber"
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Commander",
-                  "compare0":"<",
-                  "value0":1
-               }
-            ],
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"BaseThreatened",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CurrentMetalEfficiency",
-                  "compare0":">=",
-                  "value0":1
-               },
-               {
-                  "test_type":"CurrentEnergyEfficiency",
-                  "compare0":">=",
-                  "value0":1
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"AdvancedBotFabber"
+                  "value0":3
                }
             ]
          ]
@@ -938,7 +774,7 @@
                   "unit_type_string0":"Fabber & Advanced & Land",
                   "unit_type_string1":"Factory & Advanced & Land",
                   "compare0":"<",
-                  "value0":2
+                  "value0":1
                }
             ],
             [
@@ -971,7 +807,55 @@
                   "unit_type_string0":"Fabber & Advanced & Land",
                   "unit_type_string1":"Factory & Advanced & Land",
                   "compare0":"<",
-                  "value0":4
+                  "value0":3
+               }
+            ]
+         ]
+      },
+      {
+         "name":"Gold - Slammer - Cannon",
+         "to_build":"AdvancedAssaultBot",
+         "instance_count":-1,
+         "max_num_assisters":15,
+         "priority":199,
+         "builders":[
+            "UnitCannon"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
+	  {
+         "name":"Gold - Slammer - Factory",
+         "to_build":"AdvancedAssaultBot",
+         "instance_count":-1,
+         "max_num_assisters":15,
+         "priority":199,
+         "builders":[
+            "AdvancedBotFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                }
             ],
             [
@@ -985,75 +869,7 @@
                   "boolean":true
                },
                {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
-                  "test_type":"UnableToExpand",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"AdvancedVehicleFabber"
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Commander",
-                  "compare0":"<",
-                  "value0":1
-               }
-            ],
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"BaseThreatened",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CurrentMetalEfficiency",
-                  "compare0":">=",
-                  "value0":1
-               },
-               {
-                  "test_type":"CurrentEnergyEfficiency",
-                  "compare0":">=",
-                  "value0":1
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"AdvancedVehicleFabber"
-               }
-            ]
-         ]
-      },
-      {
-         "name":"Gold - Slammer",
-         "to_build":"AdvancedAssaultBot",
-         "instance_count":-1,
-         "max_num_assisters":15,
-         "priority":199,
-         "builders":[
-            "UnitCannon"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
+                  "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
                   "boolean":true
                },
                {

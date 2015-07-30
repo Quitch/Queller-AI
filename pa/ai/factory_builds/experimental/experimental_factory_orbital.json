@@ -68,7 +68,7 @@
                   "boolean":true
                },
                {
-                  "test_type":"PlanetOrGasGiantWithoutPresence",
+                  "test_type":"SafePlanetOrGasGiantWithoutPresence",
                   "boolean":true
                },
                {
@@ -83,6 +83,12 @@
                   "string0":"Orbital",
                   "compare0":"<=",
                   "value0":0
+               },
+               {
+                  "test_type":"UnitCountInCelestialTransit",
+                  "unit_type_string0":"Fabber & Orbital",
+                  "compare0":"<",
+                  "value0":1
                }
             ]
          ]
@@ -416,7 +422,6 @@
                   "boolean":true
                },
                {
-
                   "test_type":"PlanetIsGasGiant",
                   "boolean":false
                },
@@ -443,14 +448,13 @@
                   "value0":0
                }
             ],
-			[
+            [
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"experimental",
                   "boolean":true
                },
                {
-
                   "test_type":"PlanetIsGasGiant",
                   "boolean":false
                },

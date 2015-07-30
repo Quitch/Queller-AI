@@ -178,6 +178,58 @@
          }
       },
       {
+         "name":"Experimental - Basic Air Factory - Commander - Increase change of second air",
+         "to_build":"BasicAirFactory",
+         "instance_count":1,
+         "shared_instance_count":"BasicFactory",
+         "max_num_assisters":2,
+         "priority":376,
+         "builders":[
+            "UberCommander"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"experimental",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicAirFactory"
+               },
+               {
+                  "test_type":"UnitCount",
+                  "unit_type_string0":"Factory - Orbital",
+                  "compare0":">",
+                  "value0":0
+               },
+               {
+                  "test_type":"UnitCount",
+                  "unit_type_string0":"Factory & Air & Basic",
+                  "compare0":"<",
+                  "value0":1
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicAirFactory"
+               }
+            ]
+         ],
+         "placement_rules":{
+            "buffer":3,
+            "threat":{
+               "influence_type":"AntiSurface",
+               "compare_type":"<",
+               "radius":10,
+               "value":50
+            }
+         }
+      },
+      {
          "name":"Experimental - Basic Air Factory - Commander - No later than third factory",
          "to_build":"BasicAirFactory",
          "instance_count":1,
@@ -373,6 +425,59 @@
                   "unit_type_string0":"Air & Factory",
                   "compare0":"<",
                   "value0":200
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicAirFactory"
+               }
+            ]
+         ],
+         "placement_rules":{
+            "buffer":3,
+            "threat":{
+               "influence_type":"AntiSurface",
+               "compare_type":"<",
+               "radius":10,
+               "value":50
+            }
+         }
+      },
+      {
+         "name":"Experimental - Basic Air Factory - Fabber - Increase change of second air",
+         "to_build":"BasicAirFactory",
+         "instance_count":1,
+         "shared_instance_count":"BasicFactory",
+         "priority":376,
+         "min_num_assisters":1,
+         "max_num_assisters":3,
+         "builders":[
+            "AnyUberBasicFabber"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"experimental",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicAirFactory"
+               },
+               {
+                  "test_type":"UnitCount",
+                  "unit_type_string0":"Factory - Orbital",
+                  "compare0":">",
+                  "value0":0
+               },
+               {
+                  "test_type":"UnitCount",
+                  "unit_type_string0":"Factory & Air & Basic",
+                  "compare0":"<",
+                  "value0":1
                },
                {
                   "test_type":"CanFindPlaceToBuild",

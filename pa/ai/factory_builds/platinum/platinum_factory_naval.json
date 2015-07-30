@@ -95,7 +95,7 @@
                   "unit_type_string0":"Fabber & Basic & Naval",
                   "unit_type_string1":"Factory & Basic & Naval",
                   "compare0":"<",
-                  "value0":1
+                  "value0":1.5
                }
             ],
             [
@@ -129,38 +129,6 @@
                   "unit_type_string1":"Factory & Basic & Naval",
                   "compare0":"<",
                   "value0":3
-               }
-            ],
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-                  "boolean":true
-               },
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanDeployNavalFromBase",
-                  "boolean":true
-               },
-               {
-                  "test_type":"UnableToExpand",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicNavalFabber"
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Commander",
-                  "compare0":"<",
-                  "value0":1
                }
             ]
          ]

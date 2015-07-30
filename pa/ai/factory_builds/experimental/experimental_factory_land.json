@@ -4,6 +4,7 @@
          "name":"Experimental - Basic Bot Fabber",
          "to_build":"BasicBotFabber",
          "instance_count":1,
+         "shared_instance_count":"BasicBotFabber",
          "max_num_assisters":10,
          "priority":100,
          "builders":[
@@ -16,6 +17,11 @@
                   "string0":"experimental",
                   "boolean":true
                },
+			   {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"doxrush",
+                  "boolean":false
+               },               
                {
                   "test_type":"BaseThreatened",
                   "boolean":false
@@ -61,7 +67,7 @@
                   "unit_type_string0":"Fabber & Basic & Land",
                   "unit_type_string1":"Factory & Basic & Land",
                   "compare0":"<",
-                  "value0":1
+                  "value0":1.5
                }
             ],
             [
@@ -135,6 +141,7 @@
          "name":"Experimental - Basic Vehicle Fabber",
          "to_build":"BasicVehicleFabber",
          "instance_count":1,
+         "shared_instance_count":"BasicVehicleFabber",
          "max_num_assisters":10,
          "priority":100,
          "builders":[
@@ -192,7 +199,7 @@
                   "unit_type_string0":"Fabber & Basic & Land",
                   "unit_type_string1":"Factory & Basic & Land",
                   "compare0":"<",
-                  "value0":1
+                  "value0":1.5
                }
             ],
             [
@@ -283,25 +290,6 @@
                   "boolean":false
                },
                {
-                  "test_type":"HaveSeenEnemyUnits",
-                  "unit_type_string0":"Tank",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               }
-            ],
-			[
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"experimental",
-                  "boolean":true
-               },
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":false
-               },
-               {
                   "test_type":"PlanetHighestEnemyArmyThreat",
                   "string0":"AntiSurface",
                   "compare0":"<=",
@@ -322,56 +310,14 @@
                   "boolean":false
                },
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Tank & Factory & Basic",
-                  "compare0":"<",
-                  "value0":1
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Bot & Factory & Basic",
+                  "unit_type_string1":"Tank & Factory & Basic",
+                  "compare0":">=",
+                  "value0":0.65
                },
                {
                   "test_type":"CanAffordBuildDemand"
-               }
-            ]
-         ]
-      },
-      {
-         "name":"Experimental - Dox - Infernodier",
-         "to_build":"BasicAssaultBot",
-         "instance_count":1,
-         "max_num_assisters":10,
-         "priority":97,
-         "builders":[
-            "BasicBotFactory"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"experimental",
-                  "boolean":true
-               },
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":false
-               },
-               {
-                  "test_type":"HaveSeenEnemyUnits",
-                  "unit_type_string0":"Tank",
-                  "boolean":true
-               },
-               {
-                  "test_type":"PlanetHighestEnemyArmyThreat",
-                  "string0":"AntiSurface",
-                  "compare0":">",
-                  "value0":2100
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Tank & Factory & Basic",
-                  "compare0":">",
-                  "value0":0
                }
             ],
             [
@@ -430,13 +376,14 @@
                   "value0":2100
                },
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Bot & Factory & Basic",
+                  "unit_type_string1":"Tank & Factory & Basic",
+                  "compare0":"<",
+                  "value0":0.65
                },
                {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Tank & Factory & Basic",
-                  "compare0":">",
-                  "value0":0
+                  "test_type":"CanAffordBuildDemand"
                }
             ],
             [
@@ -469,7 +416,7 @@
          "instance_count":1,
          "max_num_assisters":10,
          "shared_instance_count":"LandScout",
-         "priority":99,
+         "priority":98,
          "builders":[
             "BasicVehicleFactory"
          ],
@@ -620,60 +567,7 @@
                   "boolean":true
                },
                {
-                  "test_type":"HaveSeenEnemyUnits",
-                  "unit_type_string0":"Tank",
-                  "boolean":false
-               },
-               {
                   "test_type":"CanAffordBuildDemand"
-               }
-            ],
-			[
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"experimental",
-                  "boolean":true
-               },
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
-                  "test_type":"PlanetHighestEnemyArmyThreat",
-                  "string0":"AntiSurface",
-                  "compare0":"<=",
-                  "value0":2100
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               }
-            ],
-			[
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"experimental",
-                  "boolean":true
-               },
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Bot & Factory & Basic",
-                  "compare0":"<",
-                  "value0":1
                }
             ],
             [
@@ -696,53 +590,6 @@
                },
                {
                   "test_type":"CanAffordBuildDemand"
-               }
-            ]
-         ]
-      },	  
-      {
-         "name":"Experimental - Bolo - Infernodier",
-         "to_build":"LightLaserTank",
-         "instance_count":1,
-         "max_num_assisters":10,
-         "priority":97,
-         "builders":[
-            "BasicVehicleFactory"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"experimental",
-                  "boolean":true
-               },
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
-                  "test_type":"HaveSeenEnemyUnits",
-                  "unit_type_string0":"Tank",
-                  "boolean":true
-               },
-               {
-                  "test_type":"PlanetHighestEnemyArmyThreat",
-                  "string0":"AntiSurface",
-                  "compare0":">",
-                  "value0":2100
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Bot & Factory & Basic",
-                  "compare0":">",
-                  "value0":0
                }
             ]
          ]
@@ -781,13 +628,13 @@
                {
                   "test_type":"FocusTargetThreatRatio",
                   "string0":"Land",
-                  "string1":"Land",
+                  "string1":"AntiSurface",
                   "compare0":"<",
-                  "value0":1
+                  "value0":0.9
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Tank & Mobile & Offense - Fabber - AirDefense - Construction - Tactical - Heavy - Scout",
+                  "unit_type_string0":"(((Tank - Artillery) | (Bot & (Advanced | Artillery))) & Mobile) - Fabber - AirDefense - Construction - Tactical - Heavy - Scout",
                   "compare0":">",
                   "value0":40,
                   "boolean":true
@@ -795,44 +642,9 @@
                {
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Tank & Heavy",
-                  "unit_type_string1":"Tank & Mobile & Offense - Fabber - AirDefense - Construction - Tactical - Heavy - Scout",
+                  "unit_type_string1":"(((Tank - Artillery) | (Bot & (Advanced | Artillery))) & Mobile) - Fabber - AirDefense - Construction - Tactical - Heavy - Scout",
                   "compare0":"<",
                   "value0":0.1
-               }
-            ],
-			[
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"experimental",
-                  "boolean":true
-               },
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
-                  "test_type":"HaveSeenEnemyUnits",
-                  "unit_type_string0":"Tank",
-                  "boolean":true
-               },
-               {
-                  "test_type":"PlanetHighestEnemyArmyThreat",
-                  "string0":"AntiSurface",
-                  "compare0":">",
-                  "value0":2100
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Bot & Factory & Basic",
-                  "compare0":">",
-                  "value0":0
                }
             ]
          ]
@@ -840,7 +652,7 @@
       {
          "name":"Experimental - Spinner",
          "to_build":"BasicAAVehicle",
-         "instance_count":1,
+         "instance_count":-1,
          "max_num_assisters":10,
          "priority":97,
          "builders":[
@@ -874,7 +686,7 @@
                {
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Tank & AirDefense",
-                  "unit_type_string1":"Land & Offense & Mobile - Construction - Fabber",
+                  "unit_type_string1":"((Tank | (Bot (Artillery | Advanced)) & Offense & Mobile) - Construction - Fabber - AirDefense",
                   "compare0":"<",
                   "value0":0.2
                }
@@ -906,7 +718,7 @@
                {
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Tank & AirDefense",
-                  "unit_type_string1":"Land & Offense & Mobile - Construction - Fabber",
+                  "unit_type_string1":"((Tank | (Bot (Artillery | Advanced)) & Offense & Mobile) - Construction - Fabber - AirDefense",
                   "compare0":"<",
                   "value0":0.2
                }
@@ -935,7 +747,7 @@
                {
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Tank & AirDefense",
-                  "unit_type_string1":"Land & Offense & Mobile - Construction - Fabber",
+                  "unit_type_string1":"(((Tank - Artillery) | (Bot & (Advanced | Artillery))) & Mobile) - Fabber - AirDefense - Construction - Tactical - Heavy - Scout",
                   "compare0":"<",
                   "value0":0.2
                }
