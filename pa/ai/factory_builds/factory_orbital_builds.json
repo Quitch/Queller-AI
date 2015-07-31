@@ -14,8 +14,8 @@
         [
           {
             "test_type": "HasPersonalityTag",
-			"string0": "Vanilla",
-			"boolean": true            
+            "string0": "Vanilla",
+            "boolean": true
           },
           {
             "test_type": "BaseThreat",
@@ -52,8 +52,8 @@
         [
           {
             "test_type": "HasPersonalityTag",
-			"string0": "Vanilla",
-			"boolean": true            
+            "string0": "Vanilla",
+            "boolean": true
           },
           {
             "test_type": "BaseThreat",
@@ -83,8 +83,8 @@
         [
           {
             "test_type": "HasPersonalityTag",
-			"string0": "Vanilla",
-			"boolean": true            
+            "string0": "Vanilla",
+            "boolean": true
           },
           {
             "test_type": "BaseThreat",
@@ -136,8 +136,8 @@
         [
           {
             "test_type": "HasPersonalityTag",
-			"string0": "Vanilla",
-			"boolean": true            
+            "string0": "Vanilla",
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -174,8 +174,8 @@
         [
           {
             "test_type": "HasPersonalityTag",
-			"string0": "Vanilla",
-			"boolean": true            
+            "string0": "Vanilla",
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -197,6 +197,8 @@
       "name": "Vanilla - Basic Radar Sattelite - Other planet",
       "to_build": "BasicRadarSattelite",
       "instance_count": 1,
+      "shared_instance_count": "ReconAssistance",
+      "cross_planet_shared_count": true,
       "priority": 199,
       "builders": [
         "OrbitalLauncher",
@@ -206,8 +208,8 @@
         [
           {
             "test_type": "HasPersonalityTag",
-			"string0": "Vanilla",
-			"boolean": true            
+            "string0": "Vanilla",
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -243,8 +245,8 @@
         [
           {
             "test_type": "HasPersonalityTag",
-			"string0": "Vanilla",
-			"boolean": true            
+            "string0": "Vanilla",
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -279,8 +281,8 @@
         [
           {
             "test_type": "HasPersonalityTag",
-			"string0": "Vanilla",
-			"boolean": true            
+            "string0": "Vanilla",
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -301,8 +303,8 @@
         [
           {
             "test_type": "HasPersonalityTag",
-			"string0": "Vanilla",
-			"boolean": true            
+            "string0": "Vanilla",
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -323,8 +325,8 @@
         [
           {
             "test_type": "HasPersonalityTag",
-			"string0": "Vanilla",
-			"boolean": true            
+            "string0": "Vanilla",
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -352,8 +354,8 @@
         [
           {
             "test_type": "HasPersonalityTag",
-			"string0": "Vanilla",
-			"boolean": true            
+            "string0": "Vanilla",
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -383,8 +385,8 @@
         [
           {
             "test_type": "HasPersonalityTag",
-			"string0": "Vanilla",
-			"boolean": true            
+            "string0": "Vanilla",
+            "boolean": true
           },
           {
             "test_type": "PotentialEnergyEfficiency",
@@ -398,8 +400,8 @@
         [
           {
             "test_type": "HasPersonalityTag",
-			"string0": "Vanilla",
-			"boolean": true            
+            "string0": "Vanilla",
+            "boolean": true
           },
           {
             "test_type": "DesireEnergy"
@@ -422,8 +424,8 @@
         [
           {
             "test_type": "HasPersonalityTag",
-			"string0": "Vanilla",
-			"boolean": true            
+            "string0": "Vanilla",
+            "boolean": true
           },
           {
             "test_type": "AloneOnPlanet",
@@ -449,6 +451,8 @@
       "name": "Vanilla - Advanced Radar Sattelite",
       "to_build": "AdvancedRadarSattelite",
       "instance_count": 1,
+      "shared_instance_count": "ReconAssistance",
+      "cross_planet_shared_count": true,
       "priority": 196,
       "builders": [
         "OrbitalFactory"
@@ -457,8 +461,8 @@
         [
           {
             "test_type": "HasPersonalityTag",
-			"string0": "Vanilla",
-			"boolean": true            
+            "string0": "Vanilla",
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -477,8 +481,8 @@
         [
           {
             "test_type": "HasPersonalityTag",
-			"string0": "Vanilla",
-			"boolean": true            
+            "string0": "Vanilla",
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"

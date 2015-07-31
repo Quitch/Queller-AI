@@ -9,7 +9,7 @@ Optimised assignment of units to squads within platoons to maximise effective AI
 No longer builds an Astraeus for an evacuation it doesn't perform
 Corrected errors in the advanced fabber ratios
 Uber less reluctant to build advanced fabbers
-Uber less likely to float energy on multiplanet systems
+Uber floats less energy on multiplanet systems thanks to new game AI checks
 Gold through Uber have been updated for the Grenadier meta
 Uber is better at building storage when it can't immediately counter an eco float
 Uber prioritises Deep Space Radar after going orbital
@@ -28,19 +28,21 @@ Uber will form squads smaller than four units again
 Uber no longer prioritises dual laser defenses over others
 Uber is smarter about when to wait until it can afford a nuke missile and when to just get building
 Corrected placement check for Teleporter
-Gold expands slower
+Gold expands a little slower
 Integrated vanilla AI so that it is selectable alongside Queller by choosing normal, hard, relentless or absurd
-Platinum expands a little slower
 Fixed error in Gold vehicle fabber opening
-Gold uses more fabbers
 Bronze no longer area builds MEXs
 Fixed discrepencies between area and standard MEX building for Uber
 Uber prioritises building Umbrellas in important bases first before locking down everywhere else
-Uber is smarter about how it moves its orbital fabbers about
+Uber is smarter about how it moves its orbital fabbers about thanks to new game AI checks
 Gold is less sophisticated in its troop choices
 Gold is slower to react to mines
 Gold will build the Slammer
 Gold through Uber use less Dox scouts on smaller planets
+Platinum over expands
+Uber will tech if there's no one near its base and it thinks it can afford to rush it
+Uber will produce more fabbers if it can't shake its eco float
+Uber will use the Slammer when it's dealing with bots not tanks
 
 v2.0.1
 

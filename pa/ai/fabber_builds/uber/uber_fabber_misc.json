@@ -275,6 +275,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
                   "test_type":"SafePlanetOrGasGiantWithoutPresence",
                   "boolean":true
                },

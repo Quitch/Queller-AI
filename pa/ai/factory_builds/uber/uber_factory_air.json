@@ -16,6 +16,11 @@
                   "string0":"uber",
                   "boolean":true
                },
+			   {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"ecoboom",
+                  "boolean":false
+               },
                {
                   "test_type":"BaseThreatened",
                   "boolean":false
@@ -60,6 +65,11 @@
                   "string0":"uber",
                   "boolean":true
                },
+			   {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"ecoboom",
+                  "boolean":false
+               },
                {
                   "test_type":"BaseThreatened",
                   "boolean":false
@@ -84,6 +94,11 @@
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
                   "boolean":true
+               },
+			   {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"ecoboom",
+                  "boolean":false
                },
                {
                   "test_type":"BaseThreatened",
@@ -138,6 +153,55 @@
                   "unit_type_string0":"Commander",
                   "compare0":"<",
                   "value0":1
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CurrentMetalEfficiency",
+                  "compare0":">",
+                  "value0":1
+               },
+               {
+                  "test_type":"CurrentEnergyEfficiency",
+                  "compare0":">",
+                  "value0":1
+               },
+               {
+                  "test_type":"PotentialMetalEfficiency",
+                  "compare0":">",
+                  "value0":1
+               },
+               {
+                  "test_type":"PotentialEnergyEfficiency",
+                  "compare0":">",
+                  "value0":1
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicAirFabber"
+               },
+               {
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Fabber & Basic & Air",
+                  "unit_type_string1":"Factory & Basic & Air",
+                  "compare0":"<",
+                  "value0":2
                }
             ]
          ]
@@ -390,6 +454,11 @@
                   "string0":"uber",
                   "boolean":true
                },
+			   {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"ecoboom",
+                  "boolean":false
+               },
                {
                   "test_type":"BaseThreatened",
                   "boolean":false
@@ -407,6 +476,11 @@
                   "string0":"uber",
                   "boolean":true
                },
+			   {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"ecoboom",
+                  "boolean":false
+               },
                {
                   "test_type":"BaseThreatened",
                   "boolean":false
@@ -423,20 +497,6 @@
                   "string0":"AdvancedAirFabber"
                },
                {
-                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
-                  "string0":"Air",
-                  "string1":"AntiAir",
-                  "compare0":"<",
-                  "value0":0.9
-               },
-               {
-                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
-                  "string0":"Air",
-                  "string1":"Air",
-                  "compare0":"<",
-                  "value0":0.9
-               },
-               {
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Fabber & Advanced & Air",
                   "unit_type_string1":"Factory & Advanced & Air",
@@ -449,6 +509,11 @@
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
                   "boolean":true
+               },
+			   {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"ecoboom",
+                  "boolean":false
                },
                {
                   "test_type":"BaseThreatened",

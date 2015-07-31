@@ -1,9 +1,9 @@
 {
-   "build_list":[
+   "build_list":[   
       {
-         "name":"Gold - Basic Air Factory - Commander",
+         "name":"Eco Boom - Basic Air Factory - Commander",
          "to_build":"BasicAirFactory",
-         "instance_count":1,
+         "instance_count":-1,
          "shared_instance_count":"BasicFactory",
          "max_num_assisters":2,
          "priority":376,
@@ -14,7 +14,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"gold",
+                  "string0":"ecoboom",
                   "boolean":true
                },
                {
@@ -44,7 +44,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"gold",
+                  "string0":"ecoboom",
                   "boolean":true
                },
                {
@@ -75,7 +75,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"gold",
+                  "string0":"ecoboom",
                   "boolean":true
                },
                {
@@ -106,7 +106,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"gold",
+                  "string0":"ecoboom",
                   "boolean":true
                },
                {
@@ -141,260 +141,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicAirFactory"
-               },
-               {
-                  "test_type":"UnitCountPerPlanetRadius",
-                  "unit_type_string0":"Air & Factory",
-                  "compare0":"<",
-                  "value0":200
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicAirFactory"
-               }
-            ],
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-                  "boolean":true
-               },
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanDeployNavalFromBase",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CurrentMetalEfficiency",
-                  "compare0":">",
-                  "value0":1
-               },
-               {
-                  "test_type":"CurrentEnergyEfficiency",
-                  "compare0":">",
-                  "value0":1
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicAirFactory"
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicAirFactory"
-               }
-            ]
-         ],
-         "placement_rules":{
-            "buffer":3,
-            "threat":{
-               "influence_type":"AntiSurface",
-               "compare_type":"<",
-               "radius":10,
-               "value":50
-            }
-         }
-      },
-      {
-         "name":"Gold - Basic Air Factory - Commander - No later than third factory",
-         "to_build":"BasicAirFactory",
-         "instance_count":1,
-         "shared_instance_count":"BasicFactory",
-         "max_num_assisters":2,
-         "priority":378,
-         "builders":[
-            "UberCommander"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicAirFactory"
-               },
-               {
-                  "test_type":"UnitCount",
-                  "unit_type_string0":"Factory - Orbital",
-                  "compare0":"==",
-                  "value0":2
-               },
-               {
-                  "test_type":"UnitCount",
-                  "unit_type_string0":"Factory & Air & Basic",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicAirFactory"
-               }
-            ]
-         ],
-         "placement_rules":{
-            "buffer":3,
-            "threat":{
-               "influence_type":"AntiSurface",
-               "compare_type":"<",
-               "radius":10,
-               "value":50
-            }
-         }
-      },
-      {
-         "name":"Gold - Basic Air Factory - Fabber",
-         "to_build":"BasicAirFactory",
-         "instance_count":1,
-         "shared_instance_count":"BasicFactory",
-         "priority":376,
-         "min_num_assisters":1,
-         "max_num_assisters":3,
-         "builders":[
-            "AnyUberBasicFabber",
-            "AnyUberAdvancedFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicAirFactory"
-               },
-               {
-                  "test_type":"UnitRatioOnPlanet",
-                  "unit_type_string0":"Factory & Air & Basic",
-                  "unit_type_string1":"(Factory & Basic) - Orbital - Air",
-                  "compare0":"<",
-                  "value0":0.2
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicAirFactory"
-               }
-            ],
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanDeployNavalFromBase",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicAirFactory"
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicAirFactory"
-               }
-            ],
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicAirFactory"
-               },
-               {
-                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
-                  "string0":"Air",
-                  "string1":"AntiAir",
-                  "compare0":">",
-                  "value0":1
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicAirFactory"
-               }
-            ],
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicAirFactory"
-               },
-               {
-                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
-                  "string0":"Air",
-                  "string1":"Air",
-                  "compare0":">",
-                  "value0":1
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicAirFactory"
-               }
-            ],
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
+                  "string0":"ecoboom",
                   "boolean":true
                },
                {
@@ -430,22 +177,25 @@
             }
          }
       },
-      {
-         "name":"Gold - Basic Air Factory - Fabber - No later than third factory",
-         "to_build":"BasicAirFactory",
-         "instance_count":1,
+	  {
+         "name":"Eco Boom - Basic Bot Factory - Commander",
+         "to_build":"BasicBotFactory",
+         "instance_count":-1,
          "shared_instance_count":"BasicFactory",
-         "min_num_assisters":1,
-         "max_num_assisters":3,
-         "priority":378,
+         "max_num_assisters":2,
+         "priority":376,
          "builders":[
-            "AnyUberBasicFabber"
+            "UberCommander"
          ],
          "build_conditions":[
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"gold",
+                  "string0":"ecoboom",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
                {
@@ -453,23 +203,79 @@
                },
                {
                   "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicAirFactory"
-               },
-               {
-                  "test_type":"UnitCount",
-                  "unit_type_string0":"Factory - Orbital",
-                  "compare0":"==",
-                  "value0":2
-               },
-               {
-                  "test_type":"UnitCount",
-                  "unit_type_string0":"Factory & Air & Basic",
-                  "compare0":"<",
-                  "value0":1
+                  "string0":"BasicBotFactory"
                },
                {
                   "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicAirFactory"
+                  "string0":"BasicBotFactory"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"ecoboom",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicBotFactory"
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Naval",
+                  "compare0":">",
+                  "value0":0
+               },
+               {
+                  "test_type":"UnitCountPerPlanetRadius",
+                  "unit_type_string0":"Bot & Factory & Basic",
+                  "compare0":"<=",
+                  "value0":500
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicBotFactory"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"ecoboom",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicBotFactory"
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Naval & Factory & Basic",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
+                  "test_type":"UnitCountPerPlanetRadius",
+                  "unit_type_string0":"Bot & Factory & Basic",
+                  "compare0":"<=",
+                  "value0":500
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicBotFactory"
                }
             ]
          ],
@@ -484,14 +290,130 @@
          }
       },
       {
-         "name":"Gold - Basic Air Factory - Arrived on a new world",
-         "to_build":"BasicAirFactory",
-         "instance_count":1,
+         "name":"Eco Boom - Basic Vehicle Factory - Commander",
+         "to_build":"BasicVehicleFactory",
+         "instance_count":-1,
          "shared_instance_count":"BasicFactory",
          "max_num_assisters":2,
-         "priority":601,
+         "priority":376,
          "builders":[
-            "UberCommander",
+            "UberCommander"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"ecoboom",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicVehicleFactory"
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicVehicleFactory"
+               }
+            ]
+         ],
+         "placement_rules":{
+            "buffer":3,
+            "threat":{
+               "influence_type":"AntiSurface",
+               "compare_type":"<",
+               "radius":10,
+               "value":50
+            }
+         }
+      },
+	  {
+         "name":"Eco Boom - Basic Naval Factory - Commander",
+         "to_build":"BasicNavalFactory",
+         "instance_count":-1,
+         "shared_instance_count":"BasicNavalFactory",
+         "max_num_assisters":2,
+         "priority":376,
+         "builders":[
+            "UberCommander"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"ecoboom",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicNavalFactory"
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Factory & Naval & Basic",
+                  "compare0":"<",
+                  "value0":1
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicNavalFactory"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"ecoboom",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicNavalFactory"
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicNavalFactory"
+               }
+            ]
+         ],
+         "placement_rules":{
+            "buffer":3,
+            "threat":{
+               "influence_type":"AntiSurface",
+               "compare_type":"<",
+               "radius":10,
+               "value":50
+            }
+         }
+      },
+	  {
+         "name":"Eco Boom - Basic Metal Extractor - Expand 1 - Area",
+         "to_build":"BasicMetalExtractor",
+         "instance_count":-1,
+         "max_num_assisters":1,
+         "shared_instance_count":"BasicMetal",
+         "priority":373,
+         "base_sort":"FromBuilder",
+         "builders":[
             "AnyUberBasicFabber",
             "AnyUberAdvancedFabber"
          ],
@@ -499,33 +421,53 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"gold",
+                  "string0":"ecoboom",
                   "boolean":true
                },
                {
-                  "test_type":"PresenceOnOtherPlanet",
+                  "test_type":"CanFindMetalSpotToBuildBasic",
                   "boolean":true
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Factory - Orbital",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
-                  "test_type":"UnitCount",
-                  "unit_type_string0":"Mobile - Commander",
-                  "compare0":">=",
-                  "value0":1
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicAirFactory"
                }
             ]
          ],
          "placement_rules":{
-            "buffer":3,
+            "placement_type":"FromMainBaseCenter",
+            "threat":{
+               "influence_type":"AntiSurface",
+               "compare_type":"<",
+               "radius":10,
+               "value":50
+            }
+         },
+         "task_type":"AreaBuild"
+      },
+	  {
+         "name":"Eco Boom - Basic Metal Extractor - Expand 1",
+         "to_build":"BasicMetalExtractor",
+         "instance_count":-1,
+         "max_num_assisters":1,
+         "shared_instance_count":"BasicMetal",
+         "priority":373,
+         "base_sort":"FromBuilder",
+         "builders":[
+            "AnyUberBasicFabber",
+            "AnyUberAdvancedFabber"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"ecoboom",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanFindMetalSpotToBuildBasic",
+                  "boolean":true
+               }
+            ]
+         ],
+         "placement_rules":{
+            "placement_type":"FromMainBaseCenter",
             "threat":{
                "influence_type":"AntiSurface",
                "compare_type":"<",
@@ -535,88 +477,68 @@
          }
       },
       {
-         "name":"Gold - Advanced Air Factory",
-         "to_build":"AdvancedAirFactory",
-         "instance_count":1,
-         "shared_instance_count":"AdvancedFactory",
-         "priority":477,
-         "min_num_assisters":5,
-         "max_num_assisters":8,
+         "name":"Eco Boom - Advanced Metal Extractor - Expand - Area",
+         "to_build":"AdvancedMetalExtractor",
+         "instance_count":-1,
+         "min_num_assisters":1,
+         "max_num_assisters":3,
+         "shared_instance_count":"AdvancedMetal",
+         "priority":475,
+         "base_sort":"FromBuilder",
          "builders":[
-            "BasicAirFabber",
-            "AdvancedAirFabber"
+            "AnyUberAdvancedFabber"
          ],
          "build_conditions":[
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"gold",
+                  "string0":"ecoboom",
                   "boolean":true
                },
                {
-                  "test_type":"HaveEcoForAdvanced",
+                  "test_type":"CanFindMetalSpotToBuildAdvanced",
                   "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"AdvancedAirFactory"
-               },
-               {
-                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
-                  "string0":"Land",
-                  "string1":"Land",
-                  "compare0":"<",
-                  "value0":0.5
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Basic & Fabber - Orbital",
-                  "compare0":">=",
-                  "value0":5
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"AdvancedAirFactory"
-               }
-            ],
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"AllMetalSpotsFull",
-                  "boolean":true
-               },
-               {
-                  "test_type":"UnableToExpand",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"AdvancedAirFactory"
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Advanced & Factory",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"AdvancedAirFactory"
                }
             ]
          ],
          "placement_rules":{
-            "buffer":3,
+            "placement_type":"FromMainBaseCenter",
+            "threat":{
+               "influence_type":"AntiSurface",
+               "compare_type":"<",
+               "radius":10,
+               "value":50
+            }
+         },
+         "task_type":"AreaBuild"
+      },
+      {
+         "name":"Eco Boom - Advanced Metal Extractor - Expand - Area",
+         "to_build":"AdvancedMetalExtractor",
+         "instance_count":-1,
+         "min_num_assisters":1,
+         "max_num_assisters":3,
+         "shared_instance_count":"AdvancedMetal",
+         "priority":475,
+         "base_sort":"FromBuilder",
+         "builders":[
+            "AnyUberAdvancedFabber"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"ecoboom",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanFindMetalSpotToBuildAdvanced",
+                  "boolean":true
+               }
+            ]
+         ],
+         "placement_rules":{
+            "placement_type":"FromMainBaseCenter",
             "threat":{
                "influence_type":"AntiSurface",
                "compare_type":"<",

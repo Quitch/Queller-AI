@@ -1,40 +1,6 @@
 {
    "build_list":[
       {
-         "name":"Dox Rush - Basic Bot Fabber",
-         "to_build":"BasicBotFabber",
-         "instance_count":1,
-         "shared_instance_count":"BasicBotFabber",
-         "max_num_assisters":10,
-         "priority":100,
-         "builders":[
-            "BasicBotFactory"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"doxrush",
-                  "boolean":true
-               },
-               {
-                  "test_type":"BaseThreatened",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Fabber & Basic & Land",
-                  "compare0":"<",
-                  "value0":1
-               }
-            ]
-         ]
-      },
-      {
          "name":"Dox Rush - Dox",
          "to_build":"BasicAssaultBot",
          "instance_count":-1,
@@ -70,6 +36,28 @@
                },
                {
                   "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
+      {
+         "name":"Dox Rush - Slammer - Factory",
+         "to_build":"AdvancedAssaultBot",
+         "instance_count":-1,
+         "max_num_assisters":15,
+         "priority":199,
+         "builders":[
+            "AdvancedBotFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"doxrush",
                   "boolean":true
                },
                {
