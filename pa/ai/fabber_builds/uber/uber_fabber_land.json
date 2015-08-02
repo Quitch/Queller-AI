@@ -848,26 +848,6 @@
                   "boolean":true
                },
                {
-                  "test_type":"CurrentMetalEfficiency",
-                  "compare0":">",
-                  "value0":1
-               },
-               {
-                  "test_type":"CurrentEnergyEfficiency",
-                  "compare0":">",
-                  "value0":1
-               },
-               {
-                  "test_type":"PotentialMetalEfficiency",
-                  "compare0":">",
-                  "value0":1
-               },
-               {
-                  "test_type":"PotentialEnergyEfficiency",
-                  "compare0":">",
-                  "value0":1
-               },
-               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -887,12 +867,6 @@
                   "unit_type_string0":"(Basic & Fabber) - Orbital - Naval",
                   "compare0":">=",
                   "value0":10
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Advanced & Factory",
-                  "compare0":"<",
-                  "value0":1
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -1022,26 +996,6 @@
                {
                   "test_type":"HaveEcoForAdvanced",
                   "boolean":true
-               },
-               {
-                  "test_type":"CurrentMetalEfficiency",
-                  "compare0":">",
-                  "value0":1
-               },
-               {
-                  "test_type":"CurrentEnergyEfficiency",
-                  "compare0":">",
-                  "value0":1
-               },
-               {
-                  "test_type":"PotentialMetalEfficiency",
-                  "compare0":">",
-                  "value0":1
-               },
-               {
-                  "test_type":"PotentialEnergyEfficiency",
-                  "compare0":">",
-                  "value0":1
                },
                {
                   "test_type":"CanAffordBuildDemand"
