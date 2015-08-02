@@ -4,7 +4,7 @@
          "name":"Uber - Air Scout Platoon",
          "to_build":"Air_Scout_1",
          "instance_count":-1,
-         "priority":105,
+         "priority":160,
          "build_conditions":[
             [
                {
@@ -30,7 +30,7 @@
          "name":"Uber - Fighter Scout Platoon",
          "to_build":"Fighter_Scout_1",
          "instance_count":-1,
-         "priority":105,
+         "priority":160,
          "build_conditions":[
             [
                {
@@ -65,7 +65,7 @@
          "task_type":"Scout"
       },
       {
-         "name":"Experimental - Bomber-Gunship Attack Platoon 1",
+         "name":"Uber - Bomber-Gunship Attack Platoon 1",
          "to_build":"BomberGunship_Attack_1",
          "instance_count":-1,
          "priority":150,
@@ -73,7 +73,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"experimental",
+                  "string0":"uber",
                   "boolean":true
                },
                {
@@ -99,7 +99,7 @@
          "task_type":"BomberAttack"
       },
       {
-         "name":"Experimental - Bomber-Gunship Attack Platoon 4",
+         "name":"Uber - Bomber-Gunship Attack Platoon 4",
          "to_build":"BomberGunship_Attack_4",
          "instance_count":-1,
          "priority":140,
@@ -107,7 +107,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"experimental",
+                  "string0":"uber",
                   "boolean":true
                },
                {
@@ -133,7 +133,7 @@
          "task_type":"BomberAttack"
       },
       {
-         "name":"Experimental - Bomber-Gunship Attack Platoon 10",
+         "name":"Uber - Bomber-Gunship Attack Platoon 10",
          "to_build":"BomberGunship_Attack_10",
          "instance_count":-1,
          "priority":130,
@@ -141,7 +141,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"experimental",
+                  "string0":"uber",
                   "boolean":true
                },
                {
@@ -167,7 +167,7 @@
          "task_type":"BomberAttack"
       },
       {
-         "name":"Experimental - Bomber-Gunship Attack Platoon 20",
+         "name":"Uber - Bomber-Gunship Attack Platoon 20",
          "to_build":"BomberGunship_Attack_20",
          "instance_count":-1,
          "priority":120,
@@ -175,7 +175,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"experimental",
+                  "string0":"uber",
                   "boolean":true
                },
                {
@@ -201,7 +201,7 @@
          "task_type":"BomberAttack"
       },
       {
-         "name":"Experimental - Bomber-Gunship Attack Platoon 30",
+         "name":"Uber - Bomber-Gunship Attack Platoon 30",
          "to_build":"BomberGunship_Attack_30",
          "instance_count":-1,
          "priority":100,
@@ -209,7 +209,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"experimental",
+                  "string0":"uber",
                   "boolean":true
                },
                {
@@ -235,7 +235,7 @@
          "task_type":"BomberAttack"
       },
       {
-         "name":"Experimental - Bomber-Gunship Attack Platoon 40",
+         "name":"Uber - Bomber-Gunship Attack Platoon 40",
          "to_build":"BomberGunship_Attack_40",
          "instance_count":-1,
          "priority":100,
@@ -243,7 +243,7 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-                  "string0":"experimental",
+                  "string0":"uber",
                   "boolean":true
                },
                {
@@ -270,6 +270,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Air & Fighter",
                   "compare0":">=",
@@ -283,6 +288,11 @@
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
                {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Air & Fighter",
@@ -308,6 +318,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Air & Fighter",
                   "compare0":">=",
@@ -321,6 +336,11 @@
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
                {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Air & Fighter",
@@ -346,6 +366,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Air & Fighter",
                   "compare0":">=",
@@ -359,6 +384,11 @@
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
                {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Air & Fighter",
@@ -384,6 +414,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Air & Fighter",
                   "compare0":">=",
@@ -397,6 +432,11 @@
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
                {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Air & Fighter",
@@ -422,6 +462,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Air & Fighter",
                   "compare0":">=",
@@ -435,6 +480,11 @@
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
                {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Air & Fighter",
@@ -460,6 +510,11 @@
          "build_conditions":[
             [
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Air & Fighter",
                   "compare0":">=",
@@ -473,6 +528,11 @@
                }
             ],
             [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
                {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"Air & Fighter",

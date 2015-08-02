@@ -139,6 +139,12 @@
                   "test_type":"CanAffordBuildDemand"
                },
                {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Land",
+                  "compare0":">",
+                  "value0":0
+               },
+               {
                   "test_type":"DistFromMainBase",
                   "compare0":">=",
                   "value0":200
@@ -316,6 +322,121 @@
          }
       },
       {
+         "name":"Gold - Torpedo Launcher - Mex",
+         "to_build":"BasicNavalDefense",
+         "instance_count":1,
+         "priority":254,
+         "base_sort":"FromPerimeter",
+         "builders":[
+            "UberCommander",
+            "BasicAirFabber",
+            "BasicNavalFabber"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Naval",
+                  "compare0":">",
+                  "value0":0
+               },
+               {
+                  "test_type":"DistFromMainBase",
+                  "compare0":">=",
+                  "value0":200
+               },
+               {
+                  "test_type":"UnitCountInBase",
+                  "unit_type_string0":"Structure & Basic & Naval & Defense",
+                  "compare0":"<",
+                  "value0":1
+               },
+               {
+                  "test_type":"UnitCountInBase",
+                  "unit_type_string0":"Structure & MetalProduction",
+                  "compare0":">=",
+                  "value0":2
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicNavalDefense"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"gold",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployNavalFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Naval",
+                  "compare0":">",
+                  "value0":0
+               },
+               {
+                  "test_type":"DistFromMainBase",
+                  "compare0":">=",
+                  "value0":200
+               },
+               {
+                  "test_type":"UnitCountInBase",
+                  "unit_type_string0":"Structure & Basic & Naval & Defense",
+                  "compare0":"<",
+                  "value0":2
+               },
+               {
+                  "test_type":"UnitCountInBase",
+                  "unit_type_string0":"Structure & MetalProduction",
+                  "compare0":">=",
+                  "value0":4
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicNavalDefense"
+               }
+            ]
+         ],
+         "placement_rules":{
+            "placement_type":"FromMainBasePerimeter",
+            "unit_count_rules":[
+               {
+                  "unit_type_string":"Structure & MetalProduction",
+                  "alliance":"Ally",
+                  "compare_type":">=",
+                  "range":50,
+                  "count":2
+               },
+               {
+                  "unit_type_string":"Structure & Naval & Defense",
+                  "alliance":"Ally",
+                  "compare_type":"<",
+                  "range":100,
+                  "count":1
+               }
+            ]
+         }
+      },
+      {
          "name":"Gold - Anchor - Mex",
          "to_build":"DefenseSatellite",
          "instance_count":1,
@@ -413,113 +534,6 @@
                },
                {
                   "unit_type_string":"Structure & OrbitalDefense",
-                  "alliance":"Ally",
-                  "compare_type":"<",
-                  "range":100,
-                  "count":1
-               }
-            ]
-         }
-      },
-      {
-         "name":"Gold - Torpedo Launcher - Mex",
-         "to_build":"BasicNavalDefense",
-         "instance_count":1,
-         "priority":254,
-         "base_sort":"FromPerimeter",
-         "builders":[
-            "UberCommander",
-            "BasicAirFabber",
-            "BasicNavalFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"PlanetHighestEnemyArmyThreat",
-                  "string0":"Naval",
-                  "compare0":">",
-                  "value0":0
-               },
-               {
-                  "test_type":"DistFromMainBase",
-                  "compare0":">=",
-                  "value0":200
-               },
-               {
-                  "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & Basic & Naval & Defense",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
-                  "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & MetalProduction",
-                  "compare0":">=",
-                  "value0":2
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicNavalDefense"
-               }
-            ],
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"PlanetHighestEnemyArmyThreat",
-                  "string0":"Naval",
-                  "compare0":">",
-                  "value0":0
-               },
-               {
-                  "test_type":"DistFromMainBase",
-                  "compare0":">=",
-                  "value0":200
-               },
-               {
-                  "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & Basic & Naval & Defense",
-                  "compare0":"<",
-                  "value0":2
-               },
-               {
-                  "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & MetalProduction",
-                  "compare0":">=",
-                  "value0":4
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicNavalDefense"
-               }
-            ]
-         ],
-         "placement_rules":{
-            "placement_type":"FromMainBasePerimeter",
-            "unit_count_rules":[
-               {
-                  "unit_type_string":"Structure & MetalProduction",
-                  "alliance":"Ally",
-                  "compare_type":">=",
-                  "range":50,
-                  "count":2
-               },
-               {
-                  "unit_type_string":"Structure & Naval & Defense",
                   "alliance":"Ally",
                   "compare_type":"<",
                   "range":100,
@@ -977,7 +991,7 @@
                   "alliance":"Ally",
                   "compare_type":"<",
                   "range":75,
-                  "count":5
+                  "count":1
                }
             ]
          }
@@ -1046,7 +1060,7 @@
                   "alliance":"Ally",
                   "compare_type":"<",
                   "range":75,
-                  "count":5
+                  "count":1
                }
             ]
          }

@@ -123,7 +123,8 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 
 - Air
  - Much greater use of air units
- - Still builds ground units
+ - Maintains a small ground and naval force
+ - Best on large maps or medium maps with high metal spreads
 
 - Dox
  - Won't use any offensive T1 unit other than Dox
@@ -133,10 +134,12 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 - Eco
  - Heavier emphasis on economic growth
  - Works best on really large (900+ radius) planets with lots of metal
+ - Techs if it has a buffer space to do so
  - Requires sizable distance between Queller and its opponent
 
 - Infernodier
- - Attacks with Infernos and Grenadiers
+ - Starts out with some Dox
+ - Quickly switches to an Infernos and Grenadiers composition
 
 - Mix
  - No preference between bot and tank
@@ -148,7 +151,8 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 
 - Turtle
  - Emphasis on fabbers over combat units
- - Will build mines
+ - Emphasis on static weapons over factories
+ - Very performance heavy
 
 ## RECOMMENDED DIFFICULTY
 
@@ -193,10 +197,6 @@ Both spawns are about the same
 
 Slot 2/2 is riskier but leads to a stronger late game
 
-## IMPERIAL LEGION
-
-The development branch has the beginnings of support for the upcoming [Imperial Legion](https://forums.uberent.com/threads/wip-server-imperial-legion-faction.69165/) faction.
-
 ## KNOWN ISSUES
 
 #### TOFIX
@@ -210,11 +210,10 @@ The development branch has the beginnings of support for the upcoming [Imperial 
 #### MAYBEFIX
 
 - Doesn't handle enemy walls well
-- Late game performance issues on planets where it has produced a lot of fabbers - might be fixed by upcoming performance improvements to AI fabber tests
 
 #### WONTFIX
 
-- Ignores the unit preferences of AI personalities
+- Ignores the unit preferences of client/UI AI personality mods
 - Will use fabbers to construct factories when the commander should really do it
 
 #### CANTFIX
@@ -229,6 +228,8 @@ The development branch has the beginnings of support for the upcoming [Imperial 
 - Won't send Phoenixes between planets
 - Will assign fabbers to a assist on a project that they could start earlier than the fabber they're assisting
 - Won't use more than one teleporter at a time
+- Won't use telepoters to move around a single planet
+- Combat Fabbers can't be used to build mines and repair troops even across entirely different AI personalities
 
 ## THANKS TO
 

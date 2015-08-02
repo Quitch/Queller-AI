@@ -886,6 +886,11 @@
                   "boolean":true
                },
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"turtle",
+                  "boolean":false
+               },
+               {
                   "test_type":"CurrentEnergyEfficiency",
                   "compare0":">",
                   "value0":1
@@ -932,6 +937,11 @@
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
                   "boolean":true
+               },
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"turtle",
+                  "boolean":false
                },
                {
                   "test_type":"CurrentMetalEfficiency",

@@ -18,6 +18,11 @@
                   "boolean":true
                },
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"turtle",
+                  "boolean":false
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -53,6 +58,11 @@
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
                   "boolean":true
+               },
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"turtle",
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -127,6 +137,11 @@
                   "boolean":true
                },
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"turtle",
+                  "boolean":false
+               },
+               {
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":false
                },
@@ -142,6 +157,12 @@
                },
                {
                   "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Land",
+                  "compare0":">",
+                  "value0":0
                },
                {
                   "test_type":"DistFromMainBase",
@@ -212,6 +233,11 @@
                   "boolean":true
                },
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"turtle",
+                  "boolean":false
+               },
+               {
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":false
                },
@@ -257,6 +283,11 @@
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
                   "boolean":true
+               },
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"turtle",
+                  "boolean":false
                },
                {
                   "test_type":"CanDeployNavalFromBase",
@@ -321,116 +352,10 @@
          }
       },
       {
-         "name":"Uber - Anchor - Mex",
-         "to_build":"DefenseSatellite",
-         "instance_count":1,
-         "max_num_assisters":1,
-         "priority":252,
-         "base_sort":"FromPerimeter",
-         "builders":[
-            "OrbitalFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"SystemThreat",
-                  "string0":"Orbital",
-                  "compare0":">",
-                  "value0":0
-               },
-               {
-                  "test_type":"DistFromMainBase",
-                  "compare0":">=",
-                  "value0":200
-               },
-               {
-                  "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & Basic & OrbitalDefense",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
-                  "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & MetalProduction",
-                  "compare0":">=",
-                  "value0":2
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"DefenseSatellite"
-               }
-            ],
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"SystemThreat",
-                  "string0":"Orbital",
-                  "compare0":">",
-                  "value0":0
-               },
-               {
-                  "test_type":"DistFromMainBase",
-                  "compare0":">=",
-                  "value0":200
-               },
-               {
-                  "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & Basic & OrbitalDefense",
-                  "compare0":"<",
-                  "value0":2
-               },
-               {
-                  "test_type":"UnitCountInBase",
-                  "unit_type_string0":"Structure & MetalProduction",
-                  "compare0":">=",
-                  "value0":4
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"DefenseSatellite"
-               }
-            ]
-         ],
-         "placement_rules":{
-            "placement_type":"FromMainBasePerimeter",
-            "unit_count_rules":[
-               {
-                  "unit_type_string":"Structure & MetalProduction",
-                  "alliance":"Ally",
-                  "compare_type":">=",
-                  "range":50,
-                  "count":2
-               },
-               {
-                  "unit_type_string":"Structure & OrbitalDefense",
-                  "alliance":"Ally",
-                  "compare_type":"<",
-                  "range":100,
-                  "count":1
-               }
-            ]
-         }
-      },
-      {
          "name":"Uber - Torpedo Launcher - Mex",
          "to_build":"BasicNavalDefense",
          "instance_count":1,
-         "priority":254,
+         "priority":252,
          "base_sort":"FromPerimeter",
          "builders":[
             "UberCommander",
@@ -442,6 +367,15 @@
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
+                  "boolean":true
+               },
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"turtle",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanDeployNavalFromBase",
                   "boolean":true
                },
                {
@@ -479,6 +413,15 @@
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
+                  "boolean":true
+               },
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"turtle",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanDeployNavalFromBase",
                   "boolean":true
                },
                {
@@ -534,6 +477,122 @@
          }
       },
       {
+         "name":"Uber - Anchor - Mex",
+         "to_build":"DefenseSatellite",
+         "instance_count":1,
+         "max_num_assisters":1,
+         "priority":252,
+         "base_sort":"FromPerimeter",
+         "builders":[
+            "OrbitalFabber"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"turtle",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"SystemThreat",
+                  "string0":"Orbital",
+                  "compare0":">",
+                  "value0":0
+               },
+               {
+                  "test_type":"DistFromMainBase",
+                  "compare0":">=",
+                  "value0":200
+               },
+               {
+                  "test_type":"UnitCountInBase",
+                  "unit_type_string0":"Structure & Basic & OrbitalDefense",
+                  "compare0":"<",
+                  "value0":1
+               },
+               {
+                  "test_type":"UnitCountInBase",
+                  "unit_type_string0":"Structure & MetalProduction",
+                  "compare0":">=",
+                  "value0":2
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"DefenseSatellite"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"turtle",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"SystemThreat",
+                  "string0":"Orbital",
+                  "compare0":">",
+                  "value0":0
+               },
+               {
+                  "test_type":"DistFromMainBase",
+                  "compare0":">=",
+                  "value0":200
+               },
+               {
+                  "test_type":"UnitCountInBase",
+                  "unit_type_string0":"Structure & Basic & OrbitalDefense",
+                  "compare0":"<",
+                  "value0":2
+               },
+               {
+                  "test_type":"UnitCountInBase",
+                  "unit_type_string0":"Structure & MetalProduction",
+                  "compare0":">=",
+                  "value0":4
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"DefenseSatellite"
+               }
+            ]
+         ],
+         "placement_rules":{
+            "placement_type":"FromMainBasePerimeter",
+            "unit_count_rules":[
+               {
+                  "unit_type_string":"Structure & MetalProduction",
+                  "alliance":"Ally",
+                  "compare_type":">=",
+                  "range":50,
+                  "count":2
+               },
+               {
+                  "unit_type_string":"Structure & OrbitalDefense",
+                  "alliance":"Ally",
+                  "compare_type":"<",
+                  "range":100,
+                  "count":1
+               }
+            ]
+         }
+      },
+      {
          "name":"Uber - Anchor - Beachead",
          "to_build":"DefenseSatellite",
          "instance_count":1,
@@ -549,6 +608,11 @@
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
                   "boolean":true
+               },
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"turtle",
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -586,6 +650,11 @@
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
                   "boolean":true
+               },
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"turtle",
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -659,6 +728,11 @@
                   "boolean":true
                },
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"turtle",
+                  "boolean":false
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -719,6 +793,11 @@
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
                   "boolean":true
+               },
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"turtle",
+                  "boolean":false
                },
                {
                   "test_type":"CanDeployNavalFromBase",
@@ -797,6 +876,11 @@
                   "boolean":true
                },
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"turtle",
+                  "boolean":false
+               },
+               {
                   "test_type":"CanDeployNavalFromBase",
                   "boolean":false
                },
@@ -865,6 +949,11 @@
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
                   "boolean":true
+               },
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"turtle",
+                  "boolean":false
                },
                {
                   "test_type":"CanDeployNavalFromBase",
@@ -937,13 +1026,12 @@
                   "boolean":true
                },
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"HasPersonalityTag",
+                  "string0":"turtle",
+                  "boolean":false
                },
                {
-                  "test_type":"PlanetHighestEnemyArmyThreat",
-                  "string0":"Air",
-                  "compare0":">",
-                  "value0":5600
+                  "test_type":"CanAffordBuildDemand"
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreatRatio",
@@ -985,7 +1073,7 @@
                   "alliance":"Ally",
                   "compare_type":"<",
                   "range":75,
-                  "count":5
+                  "count":1
                }
             ]
          }
@@ -1006,6 +1094,11 @@
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
                   "boolean":true
+               },
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"turtle",
+                  "boolean":false
                },
                {
                   "test_type":"CanDeployLandFromBase",
@@ -1054,7 +1147,7 @@
                   "alliance":"Ally",
                   "compare_type":"<",
                   "range":75,
-                  "count":5
+                  "count":1
                }
             ]
          }
@@ -1076,6 +1169,11 @@
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
                   "boolean":true
+               },
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"turtle",
+                  "boolean":false
                },
                {
                   "test_type":"CanDeployNavalFromBase",
@@ -1146,6 +1244,11 @@
                   "boolean":true
                },
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"turtle",
+                  "boolean":false
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -1204,6 +1307,11 @@
                   "boolean":true
                },
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"turtle",
+                  "boolean":false
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -1242,6 +1350,11 @@
                   "boolean":true
                },
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"turtle",
+                  "boolean":false
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -1278,6 +1391,11 @@
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
                   "boolean":true
+               },
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"turtle",
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -1345,6 +1463,11 @@
                   "boolean":true
                },
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"turtle",
+                  "boolean":false
+               },
+               {
                   "test_type":"AloneOnPlanet",
                   "boolean":true
                },
@@ -1385,6 +1508,11 @@
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
                   "boolean":true
+               },
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"turtle",
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -1451,6 +1579,11 @@
                   "boolean":true
                },
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"turtle",
+                  "boolean":false
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -1487,6 +1620,11 @@
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
                   "boolean":true
+               },
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"turtle",
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -1560,6 +1698,11 @@
                   "boolean":true
                },
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"turtle",
+                  "boolean":false
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -1589,6 +1732,11 @@
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
                   "boolean":true
+               },
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"turtle",
+                  "boolean":false
                },
                {
                   "test_type":"PlanetWithoutPresence",
@@ -1652,6 +1800,11 @@
                   "boolean":true
                },
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"turtle",
+                  "boolean":false
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -1689,6 +1842,11 @@
                   "boolean":true
                },
                {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"turtle",
+                  "boolean":false
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                },
                {
@@ -1718,6 +1876,11 @@
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
                   "boolean":true
+               },
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"turtle",
+                  "boolean":false
                },
                {
                   "test_type":"HaveHadANukeEvent",

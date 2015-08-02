@@ -8,11 +8,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Vanilla",
-            "boolean": true
-          },
-          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Structure & Nuke",
             "compare0": ">=",
@@ -30,11 +25,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Vanilla",
-            "boolean": true
-          },
-          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Structure & Artillery & Factory",
             "compare0": ">=",
@@ -51,11 +41,6 @@
       "priority": 100,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Vanilla",
-            "boolean": true
-          },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Structure & (Artillery | Tactical) - Factory",

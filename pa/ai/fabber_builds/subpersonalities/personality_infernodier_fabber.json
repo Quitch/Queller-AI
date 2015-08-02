@@ -32,7 +32,7 @@
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Factory & Bot & Basic",
                   "unit_type_string1":"Factory & Tank & Basic",
-                  "compare0":"<",
+                  "compare0":"<=",
                   "value0":3
                },
                {
@@ -85,7 +85,7 @@
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Factory & Bot & Basic",
                   "unit_type_string1":"Factory & Tank & Basic",
-                  "compare0":"<",
+                  "compare0":"<=",
                   "value0":3
                },
                {
@@ -158,7 +158,7 @@
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Factory & Bot & Basic",
                   "unit_type_string1":"Factory & Tank & Basic",
-                  "compare0":"<",
+                  "compare0":"<=",
                   "value0":3
                },
                {
@@ -206,7 +206,7 @@
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Factory & Bot & Basic",
                   "unit_type_string1":"Factory & Tank & Basic",
-                  "compare0":"<",
+                  "compare0":"<=",
                   "value0":3
                },
                {
@@ -261,8 +261,47 @@
                   "value0":0.33
                },
                {
-                  "test_type":"CanFindPlaceToBuild",
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"AntiSurface",
+                  "compare0":">",
+                  "value0":2000
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ],
+			[
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"infernodier",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
                   "string0":"BasicVehicleFactory"
+               },
+               {
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Factory & Tank & Basic",
+                  "unit_type_string1":"Factory & Bot & Basic",
+                  "compare0":"<",
+                  "value0":0.33
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Bot & Artillery & Basic",
+                  "compare0":">",
+                  "value0":0
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ],
@@ -314,8 +353,47 @@
                   "value0":0.33
                },
                {
-                  "test_type":"CanFindPlaceToBuild",
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"AntiSurface",
+                  "compare0":">",
+                  "value0":2000
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ],
+			[
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"infernodier",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
                   "string0":"BasicVehicleFactory"
+               },
+               {
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Factory & Tank & Basic",
+                  "unit_type_string1":"Factory & Bot & Basic",
+                  "compare0":"<",
+                  "value0":0.33
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Bot & Artillery & Basic",
+                  "compare0":">",
+                  "value0":0
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ],
@@ -385,6 +463,66 @@
                   "unit_type_string1":"Factory & Bot & Basic",
                   "compare0":"<",
                   "value0":0.33
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"AntiSurface",
+                  "compare0":">",
+                  "value0":2000
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"BasicVehicleFactory"
+               }
+            ],
+			[
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"infernodier",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CurrentMetalEfficiency",
+                  "compare0":">",
+                  "value0":1
+               },
+               {
+                  "test_type":"MetalStorageFrac",
+                  "compare0":">",
+                  "value0":0.05
+               },
+               {
+                  "test_type":"CurrentEnergyEfficiency",
+                  "compare0":">",
+                  "value0":1
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"BasicVehicleFactory"
+               },
+               {
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Factory & Tank & Basic",
+                  "unit_type_string1":"Factory & Bot & Basic",
+                  "compare0":"<",
+                  "value0":0.33
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Bot & Artillery & Basic",
+                  "compare0":">",
+                  "value0":0
                },
                {
                   "test_type":"CanFindPlaceToBuild",
