@@ -1,6 +1,45 @@
 {
-   "build_list":[
+   "build_list":[      
       {
+         "name":"Uber - Wall",
+         "to_build":"Wall",
+         "instance_count":1,
+         "priority":0,
+         "builders":[
+            "UberCommander"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
+                  "test_type":"UnitCountAroundBase",
+                  "unit_type_string0":"Land & Mobile & Offense",
+                  "string0":"Enemy",
+                  "value0":10,
+                  "compare0":"<",
+                  "value1":10
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"Wall"
+               }
+            ]
+         ],
+         "placement_rules":{
+            "buffer":3,
+            "threat":{
+               "influence_type":"AntiSurface",
+               "compare_type":"<",
+               "radius":10,
+               "value":50
+            }
+         }
+      },
+	  {
          "name":"Uber - Move Commander To Planet",
          "instance_count":1,
          "priority":1000,

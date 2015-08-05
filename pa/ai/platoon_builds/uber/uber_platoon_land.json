@@ -113,12 +113,7 @@
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
                   "boolean":true
-               },
-			   {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"doxrush",
-                  "boolean":false
-               },               
+               },           
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
                   "string0":"AntiSurface",
@@ -153,11 +148,6 @@
                   "string0":"uber",
                   "boolean":true
                },
-			   {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"doxrush",
-                  "boolean":false
-               },    
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
                   "string0":"AntiSurface",
@@ -192,11 +182,6 @@
                   "string0":"uber",
                   "boolean":true
                },
-			   {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"doxrush",
-                  "boolean":false
-               },    
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
                   "string0":"AntiSurface",
@@ -231,11 +216,6 @@
                   "string0":"uber",
                   "boolean":true
                },
-			   {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"doxrush",
-                  "boolean":false
-               },    
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
                   "string0":"AntiSurface",
@@ -270,11 +250,6 @@
                   "string0":"uber",
                   "boolean":true
                },
-			   {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"doxrush",
-                  "boolean":false
-               },    
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
                   "string0":"AntiSurface",
@@ -309,11 +284,6 @@
                   "string0":"uber",
                   "boolean":true
                },
-			   {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"doxrush",
-                  "boolean":false
-               },    
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
                   "string0":"AntiSurface",
@@ -348,11 +318,6 @@
                   "string0":"uber",
                   "boolean":true
                },
-			   {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"doxrush",
-                  "boolean":false
-               },    
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
                   "string0":"AntiSurface",
@@ -387,11 +352,6 @@
                   "string0":"uber",
                   "boolean":true
                },
-			   {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"doxrush",
-                  "boolean":false
-               },    
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
                   "string0":"AntiSurface",
@@ -426,11 +386,6 @@
                   "string0":"uber",
                   "boolean":true
                },
-			   {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"doxrush",
-                  "boolean":false
-               },    
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
                   "string0":"AntiSurface",
@@ -465,11 +420,6 @@
                   "string0":"uber",
                   "boolean":true
                },
-			   {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"doxrush",
-                  "boolean":false
-               },    
                {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"(Bot & Mobile & Basic) - Fabber - Construction - Artillery - Heavy - SelfDestruct",
@@ -506,7 +456,7 @@
                },
                {
                   "test_type":"UnitPoolCount",
-                  "unit_type_string0":"(((Tank - Artillery) | (Bot & (Advanced | Artillery))) & Mobile) - Fabber - AirDefense - Construction - Tactical - Heavy - Scout",
+                  "unit_type_string0":"((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
                   "compare0":">=",
                   "value0":1
                },
@@ -540,7 +490,7 @@
                },
                {
                   "test_type":"UnitPoolCount",
-                  "unit_type_string0":"(((Tank - Artillery) | (Bot & (Advanced | Artillery))) & Mobile) - Fabber - AirDefense - Construction - Tactical - Heavy - Scout",
+                  "unit_type_string0":"((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
                   "compare0":">=",
                   "value0":4
                },
@@ -574,7 +524,7 @@
                },
                {
                   "test_type":"UnitPoolCount",
-                  "unit_type_string0":"(((Tank - Artillery) | (Bot & (Advanced | Artillery))) & Mobile) - Fabber - AirDefense - Construction - Tactical - Heavy - Scout",
+                  "unit_type_string0":"((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
                   "compare0":">=",
                   "value0":10
                },
@@ -608,7 +558,7 @@
                },
                {
                   "test_type":"UnitPoolCount",
-                  "unit_type_string0":"(((Tank - Artillery) | (Bot & (Advanced | Artillery))) & Mobile) - Fabber - AirDefense - Construction - Tactical - Heavy - Scout",
+                  "unit_type_string0":"((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
                   "compare0":">=",
                   "value0":20
                },
@@ -642,7 +592,7 @@
                },
                {
                   "test_type":"UnitPoolCount",
-                  "unit_type_string0":"(((Tank - Artillery) | (Bot & (Advanced | Artillery))) & Mobile) - Fabber - AirDefense - Construction - Tactical - Heavy - Scout",
+                  "unit_type_string0":"((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
                   "compare0":">=",
                   "value0":30
                },
@@ -676,7 +626,7 @@
                },
                {
                   "test_type":"UnitPoolCount",
-                  "unit_type_string0":"(((Tank - Artillery) | (Bot & (Advanced | Artillery))) & Mobile) - Fabber - AirDefense - Construction - Tactical - Heavy - Scout",
+                  "unit_type_string0":"((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
                   "compare0":">=",
                   "value0":40
                },
@@ -710,7 +660,7 @@
                },
                {
                   "test_type":"UnitPoolCount",
-                  "unit_type_string0":"(((Tank - Artillery) | (Bot & (Advanced | Artillery))) & Mobile) - Fabber - AirDefense - Construction - Tactical - Heavy - Scout",
+                  "unit_type_string0":"((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
                   "compare0":">=",
                   "value0":50
                },
@@ -744,7 +694,7 @@
                },
                {
                   "test_type":"UnitPoolCount",
-                  "unit_type_string0":"(((Tank - Artillery) | (Bot & (Advanced | Artillery))) & Mobile) - Fabber - AirDefense - Construction - Tactical - Heavy - Scout",
+                  "unit_type_string0":"((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
                   "compare0":">=",
                   "value0":60
                },
@@ -778,7 +728,7 @@
                },
                {
                   "test_type":"UnitPoolCount",
-                  "unit_type_string0":"(((Tank - Artillery) | (Bot & (Advanced | Artillery))) & Mobile) - Fabber - AirDefense - Construction - Tactical - Heavy - Scout",
+                  "unit_type_string0":"((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
                   "compare0":">=",
                   "value0":70
                },
@@ -806,7 +756,7 @@
                },
                {
                   "test_type":"UnitPoolCount",
-                  "unit_type_string0":"(((Tank - Artillery) | (Bot & (Advanced | Artillery))) & Mobile) - Fabber - AirDefense - Construction - Tactical - Heavy - Scout",
+                  "unit_type_string0":"((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
                   "compare0":">=",
                   "value0":80
                },

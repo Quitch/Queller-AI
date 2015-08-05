@@ -43,53 +43,11 @@
                   "string0":"uber",
                   "boolean":true
                },
-			   {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":true
-               },
                {
                   "test_type":"FactoryHasOpenSlot"
                },
                {
-                  "test_type":"SystemThreat",
-                  "string0":"AntiNuke",
-                  "compare0":"<=",
-                  "value0":0
-               }
-            ],
-			[
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-                  "boolean":true
-               },
-               {
-                  "test_type":"FactoryHasOpenSlot"
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"SystemThreat",
-                  "string0":"AntiNuke",
-                  "compare0":"<=",
-                  "value0":0
-               }
-            ],
-			[
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-                  "boolean":true
-               },
-               {
-                  "test_type":"FactoryHasOpenSlot"
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"PlanetThreat",
+                  "test_type":"FocusTargetThreat",
                   "string0":"AntiNuke",
                   "compare0":"<=",
                   "value0":0

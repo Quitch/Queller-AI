@@ -106,6 +106,55 @@
                   "value0":1
                },
                {
+                  "test_type":"UnitCountAroundBase",
+                  "unit_type_string0":"Commander",
+                  "string0":"Enemy",
+                  "value0":600,
+                  "compare0":">",
+                  "value1":1
+               },
+               {
+                  "test_type":"CanFindPlaceToBuild",
+                  "string0":"OrbitalLauncher"
+               }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
+                  "test_type":"PlanetWithoutPresence",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"CanAffordPotentialDrain",
+                  "string0":"OrbitalLauncher"
+               },
+               {
+                  "test_type":"SpawnablePlanetCount",
+                  "compare0":"==",
+                  "value0":1
+               },
+               {
+                  "test_type":"UnitCount",
+                  "unit_type_string0":"Factory & Orbital",
+                  "compare0":"<",
+                  "value0":1
+               },
+               {
+                  "test_type":"UnitCountAroundBase",
+                  "unit_type_string0":"Land & Mobile & Offense",
+                  "string0":"Enemy",
+                  "value0":600,
+                  "compare0":"<",
+                  "value1":10
+               },
+               {
                   "test_type":"CanFindPlaceToBuild",
                   "string0":"OrbitalLauncher"
                }
@@ -364,7 +413,11 @@
                   "string0":"OrbitalFactory"
                },
                {
-                  "test_type":"NeedOrbitalFactory"
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Factory & Orbital",
+                  "unit_type_string1":"Factory - Orbital",
+                  "compare0":"<",
+                  "value0":0.05
                },
                {
                   "test_type":"CanFindPlaceToBuild",

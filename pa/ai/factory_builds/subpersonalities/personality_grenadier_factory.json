@@ -1,0 +1,56 @@
+{
+   "build_list":[
+      {
+         "name":"Pure Grenadier - Dox",
+         "to_build":"BasicAssaultBot",
+         "instance_count":-1,
+         "max_num_assisters":10,
+         "priority":97,
+         "builders":[
+            "BasicBotFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"puregrenadier",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },
+      {
+         "name":"Uber - Grenadier",
+         "to_build":"BasicArtilleryBot",
+         "instance_count":-1,
+         "max_num_assisters":10,
+         "priority":97,
+         "builders":[
+            "BasicBotFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"puregrenadier",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      }
+   ]
+}

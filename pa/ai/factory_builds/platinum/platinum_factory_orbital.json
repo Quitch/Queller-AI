@@ -158,38 +158,6 @@
                   "boolean":true
                },
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicRadarSattelite"
-               },
-               {
-                  "test_type":"BaseThreat",
-                  "string0":"Orbital",
-                  "compare0":"<=",
-                  "value0":0
-               },
-               {
-                  "test_type":"UnitCountPerPlanetRadius",
-                  "unit_type_string0":"Orbital & Recon - Structure",
-                  "compare0":"<",
-                  "value0":150
-               },
-               {
-                  "test_type":"UnitCountPerPlanetRadius",
-                  "unit_type_string0":"Orbital & Recon & Advanced - Structure",
-                  "compare0":"<",
-                  "value0":250
-               }
-            ],
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"platinum",
-                  "boolean":true
-               },
-               {
                   "test_type":"OtherPlanetNeedsReconAssistance",
                   "boolean":true
                },
@@ -460,7 +428,7 @@
          ]
       },
       {
-         "name":"Platinum - Advanced Radar Sattelite",
+         "name":"Platinum - Advanced Radar Satellite",
          "to_build":"AdvancedRadarSattelite",
          "instance_count":1,
          "max_num_assisters":15,

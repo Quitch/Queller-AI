@@ -4,7 +4,7 @@
          "name":"Uber - Naval Scout Platoon",
          "to_build":"Naval_Scout_1",
          "instance_count":3,
-         "priority":106,
+         "priority":160,
          "build_conditions":[
             [
                {
@@ -30,7 +30,7 @@
          "name":"Uber - Krakken Sneak Attack",
          "to_build":"Naval_Attack_Sneak",
          "instance_count":1,
-         "priority":105,
+         "priority":150,
          "build_conditions":[
             [
                {
@@ -56,7 +56,7 @@
          "name":"Uber - Naval Attack Platoon 1",
          "to_build":"Naval_Attack_1",
          "instance_count":-1,
-         "priority":104,
+         "priority":140,
          "build_conditions":[
             [
                {
@@ -66,9 +66,9 @@
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
-                  "string0":"AntiSurface",
+                  "string0":"Naval",
                   "compare0":"<",
-                  "value0":1500
+                  "value0":4500
                },
                {
                   "test_type":"UnitPoolCount",
@@ -88,7 +88,7 @@
          "name":"Uber - Naval Attack Platoon 2",
          "to_build":"Naval_Attack_2",
          "instance_count":-1,
-         "priority":103,
+         "priority":130,
          "build_conditions":[
             [
                {
@@ -98,9 +98,9 @@
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
-                  "string0":"AntiSurface",
+                  "string0":"Naval",
                   "compare0":"<",
-                  "value0":4995
+                  "value0":14985
                },
                {
                   "test_type":"UnitPoolCount",
@@ -120,7 +120,7 @@
          "name":"Uber - Naval Attack Platoon 4",
          "to_build":"Naval_Attack_4",
          "instance_count":-1,
-         "priority":102,
+         "priority":120,
          "build_conditions":[
             [
                {
@@ -130,9 +130,9 @@
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
-                  "string0":"AntiSurface",
+                  "string0":"Naval",
                   "compare0":"<",
-                  "value0":9990
+                  "value0":29970
                },
                {
                   "test_type":"UnitPoolCount",
@@ -152,7 +152,7 @@
          "name":"Uber - Naval Attack Platoon 8",
          "to_build":"Naval_Attack_8",
          "instance_count":-1,
-         "priority":101,
+         "priority":110,
          "build_conditions":[
             [
                {
@@ -162,15 +162,47 @@
                },
                {
                   "test_type":"PlanetHighestEnemyArmyThreat",
-                  "string0":"AntiSurface",
+                  "string0":"Naval",
                   "compare0":"<",
-                  "value0":19980
+                  "value0":59940
                },
                {
                   "test_type":"UnitPoolCount",
                   "unit_type_string0":"(Naval & Mobile & Offense) - Scout",
                   "compare0":">=",
                   "value0":8
+               },
+               {
+                  "test_type":"CanAttackWithPoolUnits",
+                  "boolean":true
+               }
+            ]
+         ],
+         "task_type":"NavalAttack"
+      },
+      {
+         "name":"Uber - Naval Attack Platoon 12",
+         "to_build":"Naval_Attack_8",
+         "instance_count":-1,
+         "priority":105,
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"Naval",
+                  "compare0":"<",
+                  "value0":89910
+               },
+               {
+                  "test_type":"UnitPoolCount",
+                  "unit_type_string0":"(Naval & Mobile & Offense) - Scout",
+                  "compare0":">=",
+                  "value0":12
                },
                {
                   "test_type":"CanAttackWithPoolUnits",

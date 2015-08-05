@@ -122,37 +122,45 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 By default, Queller at Uber level will adapt its play to try and suit the system and the opposition it faces. You can use subpersonalities to customise Queller's game to your liking, or help it play better where it's making poor strategy choices.
 
 - Air
- - Much greater use of air units
+ - Near total focus on air units
  - Maintains a small ground and naval force
- - Best on large maps or medium maps with high metal spreads
 
 - Dox
- - Won't use any offensive T1 unit other than Dox
+ - Won't use any offensive T1 land unit other than the Dox
  - Will focus on Slammers at T2 but not exclusively
+ - Will build a vehicle factory for Skitters if it detects the possibility of mines
  - Best used on small maps like Blitz
 
 - Eco
  - Heavier emphasis on economic growth
  - Works best on really large (900+ radius) planets with lots of metal
  - Techs if it has a buffer space to do so
- - Requires sizable distance between Queller and its opponent
+ - Requires sizable distance from its opponent
+ 
+- Grenadier
+ - Won't use any offensive T1 unit other than the Grenadier
+ - Will use Dox if there's no land route from its base
+ - Will build a vehicle factory for Skitters if it detects the possibility of mines
 
 - Infernodier
  - Starts out with some Dox
  - Quickly switches to an Infernos and Grenadiers composition
-
-- Mix
- - No preference between bot and tank
- - Unit choices weighted by which route it ends up pursuing more heavily
+ 
+- Tank
+ - Almost identical to Queller's fighting style prior to v2.1
+ - Will fight primarily using the Bolo
+ - May open with a small Dox presence
 
 - Tech
  - Goes T2 as soon as it can afford to
- - More willing to expand its T2 presence
+ - Will get orbital as soon as possible on multi planet systems
+ - May perform better on some multi planet systems
 
 - Turtle
  - Emphasis on fabbers over combat units
  - Emphasis on static weapons over factories
  - Very performance heavy
+ - Is always the wrong choice if you want a challenge
 
 ## RECOMMENDED DIFFICULTY
 

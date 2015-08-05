@@ -68,7 +68,7 @@
                   "boolean":true
                },
                {
-                  "test_type":"SafePlanetOrGasGiantWithoutPresence",
+                  "test_type":"PlanetOrGasGiantWithoutPresence",
                   "boolean":true
                },
                {
@@ -83,18 +83,12 @@
                   "string0":"Orbital",
                   "compare0":"<=",
                   "value0":0
-               },
-               {
-                  "test_type":"UnitCountInCelestialTransit",
-                  "unit_type_string0":"Fabber & Orbital",
-                  "compare0":"<",
-                  "value0":1
                }
             ]
          ]
       },
       {
-         "name":"Uber - ARKYD",
+         "name":"Uber - ARKYD - This Planet",
          "to_build":"BasicRadarSattelite",
          "instance_count":1,
          "max_num_assisters":10,
@@ -123,13 +117,6 @@
                   "value0":0
                },
                {
-                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
-                  "string0":"Orbital",
-                  "string1":"AntiOrbital",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
                   "test_type":"UnitCountPerPlanetRadius",
                   "unit_type_string0":"Orbital & Recon - Structure",
                   "compare0":"<",
@@ -141,39 +128,21 @@
                   "compare0":"<",
                   "value0":250
                }
-            ],
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicRadarSattelite"
-               },
-               {
-                  "test_type":"BaseThreat",
-                  "string0":"Orbital",
-                  "compare0":"<=",
-                  "value0":0
-               },
-               {
-                  "test_type":"UnitCountPerPlanetRadius",
-                  "unit_type_string0":"Orbital & Recon - Structure",
-                  "compare0":"<",
-                  "value0":150
-               },
-               {
-                  "test_type":"UnitCountPerPlanetRadius",
-                  "unit_type_string0":"Orbital & Recon & Advanced - Structure",
-                  "compare0":"<",
-                  "value0":250
-               }
-            ],
+            ]
+         ]
+      },
+      {
+         "name":"Uber - ARKYD - Other Planet",
+         "to_build":"BasicRadarSattelite",
+         "instance_count":1,
+         "shared_instance_count": "ReconAssistance",
+         "cross_planet_shared_count": true,
+         "max_num_assisters":10,
+         "priority":98,
+         "builders":[
+            "OrbitalLauncher"
+         ],
+         "build_conditions":[
             [
                {
                   "test_type":"HasPersonalityTag",
@@ -484,7 +453,7 @@
          ]
       },
       {
-         "name":"Uber - Advanced Radar Sattelite",
+         "name":"Uber - Advanced Radar Satellite - This Planet",
          "to_build":"AdvancedRadarSattelite",
          "instance_count":1,
          "max_num_assisters":15,
@@ -513,13 +482,6 @@
                   "value0":0
                },
                {
-                  "test_type":"PlanetHighestEnemyArmyThreatRatio",
-                  "string0":"Orbital",
-                  "string1":"AntiOrbital",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
                   "test_type":"UnitCountOnPlanet",
                   "string0":"Orbital & Structure & Economy",
                   "compare0":"<",
@@ -531,7 +493,21 @@
                   "compare0":"<",
                   "value0":250
                }
-            ],
+            ]
+         ]
+      },
+      {
+         "name":"Uber - Advanced Radar Satellite - Other Planet",
+         "to_build":"AdvancedRadarSattelite",
+         "instance_count":1,
+         "shared_instance_count": "ReconAssistance",
+         "cross_planet_shared_count": true,
+         "max_num_assisters":15,
+         "priority":98,
+         "builders":[
+            "OrbitalFactory"
+         ],
+         "build_conditions":[
             [
                {
                   "test_type":"HasPersonalityTag",

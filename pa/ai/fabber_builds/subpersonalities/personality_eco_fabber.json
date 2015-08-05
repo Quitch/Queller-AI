@@ -3,8 +3,7 @@
       {
          "name":"Eco Boom - Basic Air Factory - Commander",
          "to_build":"BasicAirFactory",
-         "instance_count":-1,
-         "shared_instance_count":"BasicFactory",
+         "instance_count":1,
          "max_num_assisters":2,
          "priority":376,
          "builders":[
@@ -180,8 +179,7 @@
 	  {
          "name":"Eco Boom - Basic Bot Factory - Commander",
          "to_build":"BasicBotFactory",
-         "instance_count":-1,
-         "shared_instance_count":"BasicFactory",
+         "instance_count":1,
          "max_num_assisters":2,
          "priority":376,
          "builders":[
@@ -292,8 +290,7 @@
       {
          "name":"Eco Boom - Basic Vehicle Factory - Commander",
          "to_build":"BasicVehicleFactory",
-         "instance_count":-1,
-         "shared_instance_count":"BasicFactory",
+         "instance_count":1,
          "max_num_assisters":2,
          "priority":376,
          "builders":[
@@ -336,8 +333,7 @@
 	  {
          "name":"Eco Boom - Basic Naval Factory - Commander",
          "to_build":"BasicNavalFactory",
-         "instance_count":-1,
-         "shared_instance_count":"BasicNavalFactory",
+         "instance_count":1,
          "max_num_assisters":2,
          "priority":376,
          "builders":[
@@ -408,10 +404,10 @@
 	  {
          "name":"Eco Boom - Basic Metal Extractor - Expand 1 - Area",
          "to_build":"BasicMetalExtractor",
-         "instance_count":-1,
+         "instance_count":6,
          "max_num_assisters":1,
          "shared_instance_count":"BasicMetal",
-         "priority":373,
+         "priority":368,
          "base_sort":"FromBuilder",
          "builders":[
             "AnyUberBasicFabber",
@@ -444,10 +440,10 @@
 	  {
          "name":"Eco Boom - Basic Metal Extractor - Expand 1",
          "to_build":"BasicMetalExtractor",
-         "instance_count":-1,
+         "instance_count":6,
          "max_num_assisters":1,
          "shared_instance_count":"BasicMetal",
-         "priority":373,
+         "priority":368,
          "base_sort":"FromBuilder",
          "builders":[
             "AnyUberBasicFabber",
@@ -479,11 +475,11 @@
       {
          "name":"Eco Boom - Advanced Metal Extractor - Expand - Area",
          "to_build":"AdvancedMetalExtractor",
-         "instance_count":-1,
+         "instance_count":2,
          "min_num_assisters":1,
          "max_num_assisters":3,
          "shared_instance_count":"AdvancedMetal",
-         "priority":475,
+         "priority":369,
          "base_sort":"FromBuilder",
          "builders":[
             "AnyUberAdvancedFabber"
@@ -515,11 +511,11 @@
       {
          "name":"Eco Boom - Advanced Metal Extractor - Expand - Area",
          "to_build":"AdvancedMetalExtractor",
-         "instance_count":-1,
+         "instance_count":2,
          "min_num_assisters":1,
          "max_num_assisters":3,
          "shared_instance_count":"AdvancedMetal",
-         "priority":475,
+         "priority":369,
          "base_sort":"FromBuilder",
          "builders":[
             "AnyUberAdvancedFabber"

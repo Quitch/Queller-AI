@@ -109,42 +109,6 @@
                   "boolean":true
                },
                {
-                  "test_type":"UnableToExpand",
-                  "boolean":false
-               },
-               {
-                  "test_type":"AllMetalSpotsFull",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicBotFabber"
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Commander",
-                  "compare0":"<",
-                  "value0":1
-               }
-            ],
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-                  "boolean":true
-               },
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
                   "test_type":"CurrentMetalEfficiency",
                   "compare0":">",
                   "value0":1
@@ -170,13 +134,6 @@
                {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"BasicBotFabber"
-               },
-               {
-                  "test_type":"UnitRatioOnPlanet",
-                  "unit_type_string0":"Fabber & Basic & Land",
-                  "unit_type_string1":"Factory & Basic & Land",
-                  "compare0":"<",
-                  "value0":2
                }
             ]
          ]
@@ -290,42 +247,6 @@
                   "boolean":true
                },
                {
-                  "test_type":"UnableToExpand",
-                  "boolean":false
-               },
-               {
-                  "test_type":"AllMetalSpotsFull",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicVehicleFabber"
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Commander",
-                  "compare0":"<",
-                  "value0":1
-               }
-            ],
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-                  "boolean":true
-               },
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
                   "test_type":"CurrentMetalEfficiency",
                   "compare0":">",
                   "value0":1
@@ -351,13 +272,6 @@
                {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"BasicVehicleFabber"
-               },
-               {
-                  "test_type":"UnitRatioOnPlanet",
-                  "unit_type_string0":"Fabber & Basic & Land",
-                  "unit_type_string1":"Factory & Basic & Land",
-                  "compare0":"<",
-                  "value0":2
                }
             ]
          ]
@@ -380,7 +294,12 @@
                },
 			   {
                   "test_type":"HasPersonalityTag",
-                  "string0":"infernodier",
+                  "string0":"doxrush",
+                  "boolean":false
+               },
+			   {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"oldschool",
                   "boolean":false
                },
                {
@@ -394,6 +313,12 @@
                   "value0":2100
                },
                {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Bot & Artillery & Basic",
+                  "compare0":"<",
+                  "value0":1
+               },
+               {
                   "test_type":"CanAffordBuildDemand"
                }
             ],
@@ -405,19 +330,23 @@
                },
 			   {
                   "test_type":"HasPersonalityTag",
+                  "string0":"doxrush",
+                  "boolean":false
+               },
+			   {
+                  "test_type":"HasPersonalityTag",
                   "string0":"infernodier",
                   "boolean":false
-               },
-               {
-                  "test_type":"AloneOnPlanet",
+               },               
+			   {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"oldschool",
                   "boolean":false
                },
                {
-                  "test_type":"UnitRatioOnPlanet",
-                  "unit_type_string0":"Bot & Factory & Basic",
-                  "unit_type_string1":"Tank & Factory & Basic",
-                  "compare0":">=",
-                  "value0":0.65
+                  "test_type":"HaveSeenEnemyUnits",
+                  "unit_type_string0":"Tank",
+                  "boolean":false
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -429,8 +358,9 @@
                   "string0":"uber",
                   "boolean":true
                },
-               {
-                  "test_type":"AloneOnPlanet",
+			   {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"oldschool",
                   "boolean":false
                },
                {
@@ -440,7 +370,19 @@
                {
                   "test_type":"CanAffordBuildDemand"
                }
-            ],
+            ]
+         ]
+      },
+      {
+         "name":"Uber - Dox - Grenadier Support",
+         "to_build":"BasicAssaultBot",
+         "instance_count":1,
+         "max_num_assisters":10,
+         "priority":97,
+         "builders":[
+            "BasicBotFactory"
+         ],
+         "build_conditions":[
             [
                {
                   "test_type":"HasPersonalityTag",
@@ -449,15 +391,21 @@
                },
 			   {
                   "test_type":"HasPersonalityTag",
+                  "string0":"doxrush",
+                  "boolean":false
+               },
+			   {
+                  "test_type":"HasPersonalityTag",
                   "string0":"infernodier",
+                  "boolean":false
+               },
+			   {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"oldschool",
                   "boolean":false
                },
                {
                   "test_type":"AloneOnPlanet",
-                  "boolean":true
-               },
-               {
-                  "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
                   "boolean":true
                },
                {
@@ -484,7 +432,17 @@
                },
 			   {
                   "test_type":"HasPersonalityTag",
+                  "string0":"doxrush",
+                  "boolean":false
+               },
+			   {
+                  "test_type":"HasPersonalityTag",
                   "string0":"infernodier",
+                  "boolean":false
+               },   
+			   {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"oldschool",
                   "boolean":false
                },
                {
@@ -507,11 +465,48 @@
                   "value0":2100
                },
                {
-                  "test_type":"UnitRatioOnPlanet",
-                  "unit_type_string0":"Bot & Factory & Basic",
-                  "unit_type_string1":"Tank & Factory & Basic",
-                  "compare0":"<",
-                  "value0":0.65
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ],
+			[
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"doxrush",
+                  "boolean":false
+               },
+			   {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"infernodier",
+                  "boolean":false
+               },   
+			   {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"oldschool",
+                  "boolean":false
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"HaveSeenEnemyUnits",
+                  "unit_type_string0":"Tank",
+                  "boolean":true
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Bot & Artillery & Basic",
+                  "compare0":">=",
+                  "value0":1
                },
                {
                   "test_type":"CanAffordBuildDemand"
@@ -525,15 +520,16 @@
                },
 			   {
                   "test_type":"HasPersonalityTag",
-                  "string0":"infernodier",
+                  "string0":"doxrush",
+                  "boolean":false
+               },
+			   {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"oldschool",
                   "boolean":false
                },
                {
                   "test_type":"AloneOnPlanet",
-                  "boolean":true
-               },
-               {
-                  "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
                   "boolean":true
                },
                {
@@ -633,6 +629,37 @@
                   "compare0":"<",
                   "value0":0.05
                }
+            ],
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
+                  "test_type":"BaseThreatened",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Artillery & Advanced & Mobile",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Land & Scout",
+                  "unit_type_string1":"Land & Mobile & Offense",
+                  "compare0":"<",
+                  "value0":0.05
+               }
             ]
          ]
       },
@@ -699,36 +726,10 @@
                   "string0":"infernodier",
                   "boolean":false
                },
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               }
-            ],
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-                  "boolean":true
-               },
 			   {
                   "test_type":"HasPersonalityTag",
-                  "string0":"infernodier",
+                  "string0":"oldschool",
                   "boolean":false
-               },
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":true
-               },
-               {
-                  "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
-                  "boolean":true
                },
                {
                   "test_type":"CanDeployLandFromBase",
@@ -761,6 +762,46 @@
                   "string0":"infernodier",
                   "boolean":false
                },
+			   {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"oldschool",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"HaveSeenEnemyUnits",
+                  "unit_type_string0":"Tank",
+                  "boolean":true
+               },
+               {
+                  "test_type":"UnitCountOnPlanet",
+                  "unit_type_string0":"Bot & Artillery & Basic",
+                  "compare0":">=",
+                  "value0":1
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ],
+			[
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"infernodier",
+                  "boolean":false
+               },
+			   {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"oldschool",
+                  "boolean":false
+               },
                {
                   "test_type":"AloneOnPlanet",
                   "boolean":false
@@ -785,7 +826,7 @@
                },
                {
                   "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"(((Tank - Artillery) | (Bot & (Advanced | Artillery))) & Mobile) - Fabber - AirDefense - Construction - Tactical - Heavy - Scout",
+                  "unit_type_string0":"((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction - Heavy",
                   "compare0":">",
                   "value0":40,
                   "boolean":true
@@ -793,7 +834,7 @@
                {
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Tank & Heavy",
-                  "unit_type_string1":"(((Tank - Artillery) | (Bot & (Advanced | Artillery))) & Mobile) - Fabber - AirDefense - Construction - Tactical - Heavy - Scout",
+                  "unit_type_string1":"((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction - Heavy",
                   "compare0":"<",
                   "value0":0.1
                }
@@ -837,7 +878,7 @@
                {
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Tank & AirDefense",
-                  "unit_type_string1":"((Tank | (Bot (Artillery | Advanced)) & Offense & Mobile) - Construction - Fabber - AirDefense",
+                  "unit_type_string1":"((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
                   "compare0":"<",
                   "value0":0.2
                }
@@ -869,7 +910,7 @@
                {
                   "test_type":"UnitRatioOnPlanet",
                   "unit_type_string0":"Tank & AirDefense",
-                  "unit_type_string1":"((Tank | (Bot (Artillery | Advanced)) & Offense & Mobile) - Construction - Fabber - AirDefense",
+                  "unit_type_string1":"((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
                   "compare0":"<",
                   "value0":0.2
                }
@@ -885,7 +926,33 @@
                   "boolean":true
                },
                {
-                  "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ]
+         ]
+      },	  
+      {
+         "name":"Uber - Spinner - Invasion",
+         "to_build":"BasicAAVehicle",
+         "instance_count":1,
+         "max_num_assisters":10,
+         "priority":97,
+         "builders":[
+            "BasicVehicleFactory"
+         ],
+         "build_conditions":[
+            [
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
+                  "test_type":"AloneOnPlanet",
                   "boolean":true
                },
                {
@@ -894,13 +961,6 @@
                },
                {
                   "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"UnitRatioOnPlanet",
-                  "unit_type_string0":"Tank & AirDefense",
-                  "unit_type_string1":"(((Tank - Artillery) | (Bot & (Advanced | Artillery))) & Mobile) - Fabber - AirDefense - Construction - Tactical - Heavy - Scout",
-                  "compare0":"<",
-                  "value0":0.2
                }
             ]
          ]
@@ -984,30 +1044,6 @@
                   "unit_type_string1":"Factory & Advanced & Land",
                   "compare0":"<",
                   "value0":9
-               }
-            ],
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-                  "boolean":true
-               },
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"AdvancedBotFabber"
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Commander",
-                  "compare0":"<",
-                  "value0":1
                }
             ],
             [
@@ -1137,30 +1173,6 @@
                   "boolean":true
                },
                {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"AdvancedBotFabber"
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Commander",
-                  "compare0":"<",
-                  "value0":1
-               }
-            ],
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-                  "boolean":true
-               },
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":true
-               },
-               {
                   "test_type":"CurrentMetalEfficiency",
                   "compare0":">",
                   "value0":1
@@ -1204,6 +1216,28 @@
                {
                   "test_type":"CanAffordBuildDemand"
                }
+            ],
+			[
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CurrentMetalEfficiency",
+                  "compare0":">",
+                  "value0":1
+               },
+               {
+                  "test_type":"CurrentEnergyEfficiency",
+                  "compare0":">",
+                  "value0":1
+               },
+               {
+                  "test_type":"MetalStorageFrac",
+                  "compare0":">",
+                  "value0":0.50
+               }
             ]
          ]
       },
@@ -1244,6 +1278,59 @@
                },
                {
                   "test_type":"CanAffordBuildDemand"
+               }
+            ],
+			[
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CurrentMetalEfficiency",
+                  "compare0":">",
+                  "value0":1
+               },
+               {
+                  "test_type":"CurrentEnergyEfficiency",
+                  "compare0":">",
+                  "value0":1
+               },
+               {
+                  "test_type":"MetalStorageFrac",
+                  "compare0":">",
+                  "value0":0.50
+               }
+            ],
+			[
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+               {
+                  "test_type":"HaveSeenEnemyUnits",
+                  "unit_type_string0":"Tank",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CurrentMetalEfficiency",
+                  "compare0":">",
+                  "value0":1
+               },
+               {
+                  "test_type":"CurrentEnergyEfficiency",
+                  "compare0":">",
+                  "value0":1
+               },
+               {
+                  "test_type":"MetalStorageFrac",
+                  "compare0":">",
+                  "value0":0.50
                }
             ]
          ]
@@ -1286,7 +1373,7 @@
                   "test_type":"CanAffordBuildDemand"
                }
             ],
-            [
+			[
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
@@ -1302,7 +1389,61 @@
                   "boolean":true
                },
                {
-                  "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
+               }
+            ],
+			[
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"doxrush",
+                  "boolean":false
+               },
+               {
+                  "test_type":"AloneOnPlanet",
+                  "boolean":false
+               },
+               {
+                  "test_type":"CanDeployLandFromBase",
+                  "boolean":true
+               },
+               {
+                  "test_type":"CurrentMetalEfficiency",
+                  "compare0":">",
+                  "value0":1
+               },
+			   {
+                  "test_type":"CurrentEnergyEfficiency",
+                  "compare0":">",
+                  "value0":1
+               },
+               {
+                  "test_type":"MetalStorageFrac",
+                  "compare0":">",
+                  "value0":0.50
+               }
+            ],
+			[
+               {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"uber",
+                  "boolean":true
+               },
+			   {
+                  "test_type":"HasPersonalityTag",
+                  "string0":"doxrush",
+                  "boolean":false
+               },
+               {
+                  "test_type":"AloneOnPlanet",
                   "boolean":true
                },
                {
@@ -1310,12 +1451,19 @@
                   "boolean":true
                },
                {
-                  "test_type":"HaveSeenEnemyUnits",
-                  "unit_type_string0":"Tank",
-                  "boolean":true
+                  "test_type":"CurrentMetalEfficiency",
+                  "compare0":">",
+                  "value0":1
                },
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"CurrentEnergyEfficiency",
+                  "compare0":">",
+                  "value0":1
+               },
+               {
+                  "test_type":"MetalStorageFrac",
+                  "compare0":">",
+                  "value0":0.50
                }
             ]
          ]
@@ -1337,10 +1485,6 @@
                   "boolean":true
                },
                {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":false
-               },
-               {
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
@@ -1354,18 +1498,10 @@
                   "value0":0
                }
             ],
-            [
+			[
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
-                  "boolean":true
-               },
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":true
-               },
-               {
-                  "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
                   "boolean":true
                },
                {
@@ -1373,7 +1509,19 @@
                   "boolean":true
                },
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"CurrentMetalEfficiency",
+                  "compare0":">",
+                  "value0":1
+               },
+               {
+                  "test_type":"CurrentEnergyEfficiency",
+                  "compare0":">",
+                  "value0":1
+               },
+               {
+                  "test_type":"MetalStorageFrac",
+                  "compare0":">",
+                  "value0":0.50
                },
                {
                   "test_type":"SystemThreat",
@@ -1401,10 +1549,6 @@
                   "boolean":true
                },
                {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":false
-               },
-               {
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
@@ -1419,18 +1563,10 @@
                   "value0":0.1
                }
             ],
-            [
+			[
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
-                  "boolean":true
-               },
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":false
-               },
-               {
-                  "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
                   "boolean":true
                },
                {
@@ -1438,7 +1574,19 @@
                   "boolean":true
                },
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"CurrentMetalEfficiency",
+                  "compare0":">",
+                  "value0":1
+               },
+               {
+                  "test_type":"CurrentEnergyEfficiency",
+                  "compare0":">",
+                  "value0":1
+               },
+               {
+                  "test_type":"MetalStorageFrac",
+                  "compare0":">",
+                  "value0":0.50
                },
                {
                   "test_type":"UnitRatioOnPlanet",
@@ -1467,10 +1615,6 @@
                   "boolean":true
                },
                {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":false
-               },
-               {
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
                },
@@ -1478,18 +1622,10 @@
                   "test_type":"CanAffordBuildDemand"
                }
             ],
-            [
+			[
                {
                   "test_type":"HasPersonalityTag",
                   "string0":"uber",
-                  "boolean":true
-               },
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":true
-               },
-               {
-                  "test_type":"OtherPlanetCanReceiveLandUnitAssistance",
                   "boolean":true
                },
                {
@@ -1497,7 +1633,19 @@
                   "boolean":true
                },
                {
-                  "test_type":"CanAffordBuildDemand"
+                  "test_type":"CurrentMetalEfficiency",
+                  "compare0":">",
+                  "value0":1
+               },
+               {
+                  "test_type":"CurrentEnergyEfficiency",
+                  "compare0":">",
+                  "value0":1
+               },
+               {
+                  "test_type":"MetalStorageFrac",
+                  "compare0":">",
+                  "value0":0.50
                }
             ]
          ]

@@ -19,7 +19,7 @@
                },
 			   {
                   "test_type":"HasPersonalityTag",
-                  "string0":"infernodier",
+                  "string0":"oldschool",
                   "boolean":false
                },
                {
@@ -32,6 +32,13 @@
                {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"BasicBotFactory"
+               },
+               {
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Factory & Bot & Basic",
+                  "unit_type_string1":"Factory & Tank & Basic",
+                  "compare0":"<=",
+                  "value0":3
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -138,7 +145,7 @@
                },
 			   {
                   "test_type":"HasPersonalityTag",
-                  "string0":"infernodier",
+                  "string0":"oldschool",
                   "boolean":false
                },
                {
@@ -151,6 +158,13 @@
                {
                   "test_type":"CanAffordPotentialDrain",
                   "string0":"BasicBotFactory"
+               },
+               {
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Factory & Bot & Basic",
+                  "unit_type_string1":"Factory & Tank & Basic",
+                  "compare0":"<=",
+                  "value0":3
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -258,16 +272,12 @@
                },
 			   {
                   "test_type":"HasPersonalityTag",
-                  "string0":"infernodier",
+                  "string0":"oldschool",
                   "boolean":false
                },
                {
                   "test_type":"CanDeployLandFromBase",
                   "boolean":true
-               },
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":false
                },
                {
                   "test_type":"CurrentMetalEfficiency",
@@ -292,50 +302,11 @@
                   "string0":"BasicBotFactory"
                },
                {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicBotFactory"
-               }
-            ],
-			[
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-                  "boolean":true
-               },
-			   {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"infernodier",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
-                  "test_type":"OtherPlanetNeedsLandUnitAssistance",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CurrentMetalEfficiency",
-                  "compare0":">",
-                  "value0":1
-               },
-               {
-                  "test_type":"MetalStorageFrac",
-                  "compare0":">",
-                  "value0":0.05
-               },
-               {
-                  "test_type":"CurrentEnergyEfficiency",
-                  "compare0":">",
-                  "value0":1
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicBotFactory"
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Factory & Bot & Basic",
+                  "unit_type_string1":"Factory & Tank & Basic",
+                  "compare0":"<=",
+                  "value0":3
                },
                {
                   "test_type":"CanFindPlaceToBuild",
@@ -345,7 +316,6 @@
             [
                {
                   "test_type":"HasPersonalityTag",
-
                   "string0":"uber",
                   "boolean":true
                },
@@ -528,12 +498,12 @@
                },
 			   {
                   "test_type":"HasPersonalityTag",
-                  "string0":"doxrush",
+                  "string0":"botonly",
                   "boolean":false
                },
 			   {
                   "test_type":"HasPersonalityTag",
-                  "string0":"infernodier",
+                  "string0":"oldschool",
                   "boolean":false
                },
                {
@@ -548,8 +518,20 @@
                   "string0":"BasicVehicleFactory"
                },
                {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicVehicleFactory"
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Factory & Tank & Basic",
+                  "unit_type_string1":"Factory & Bot & Basic",
+                  "compare0":"<",
+                  "value0":0.33
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"AntiSurface",
+                  "compare0":">",
+                  "value0":2000
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ],
@@ -584,12 +566,12 @@
                },
 			   {
                   "test_type":"HasPersonalityTag",
-                  "string0":"doxrush",
+                  "string0":"botonly",
                   "boolean":false
                },
 			   {
                   "test_type":"HasPersonalityTag",
-                  "string0":"infernodier",
+                  "string0":"oldschool",
                   "boolean":false
                },
                {
@@ -604,8 +586,20 @@
                   "string0":"BasicVehicleFactory"
                },
                {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicVehicleFactory"
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Factory & Tank & Basic",
+                  "unit_type_string1":"Factory & Bot & Basic",
+                  "compare0":"<",
+                  "value0":0.33
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"AntiSurface",
+                  "compare0":">",
+                  "value0":2000
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ],
@@ -641,71 +635,16 @@
                },
 			   {
                   "test_type":"HasPersonalityTag",
-                  "string0":"doxrush",
+                  "string0":"botonly",
                   "boolean":false
                },
 			   {
                   "test_type":"HasPersonalityTag",
-                  "string0":"infernodier",
+                  "string0":"oldschool",
                   "boolean":false
                },
                {
                   "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CurrentMetalEfficiency",
-                  "compare0":">",
-                  "value0":1
-               },
-               {
-                  "test_type":"MetalStorageFrac",
-                  "compare0":">",
-                  "value0":0.05
-               },
-               {
-                  "test_type":"CurrentEnergyEfficiency",
-                  "compare0":">",
-                  "value0":1
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"CanAffordPotentialDrain",
-                  "string0":"BasicVehicleFactory"
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicVehicleFactory"
-               }
-            ],
-			[
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"uber",
-                  "boolean":true
-               },
-			   {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"doxrush",
-                  "boolean":false
-               },
-			   {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"infernodier",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
-                  "test_type":"OtherPlanetNeedsLandUnitAssistance",
                   "boolean":true
                },
                {
@@ -731,8 +670,20 @@
                   "string0":"BasicVehicleFactory"
                },
                {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicVehicleFactory"
+                  "test_type":"UnitRatioOnPlanet",
+                  "unit_type_string0":"Factory & Tank & Basic",
+                  "unit_type_string1":"Factory & Bot & Basic",
+                  "compare0":"<",
+                  "value0":0.33
+               },
+               {
+                  "test_type":"PlanetHighestEnemyArmyThreat",
+                  "string0":"AntiSurface",
+                  "compare0":">",
+                  "value0":2000
+               },
+               {
+                  "test_type":"CanAffordBuildDemand"
                }
             ]
          ],
@@ -765,7 +716,7 @@
                },
 			   {
                   "test_type":"HasPersonalityTag",
-                  "string0":"doxrush",
+                  "string0":"botonly",
                   "boolean":false
                },
                {
@@ -887,6 +838,10 @@
                   "boolean":true
                },
                {
+                  "test_type":"BaseThreatened",
+                  "boolean":false
+               },
+               {
                   "test_type":"HaveEcoForAdvanced",
                   "boolean":true
                },
@@ -948,7 +903,7 @@
                },
 			   {
                   "test_type":"HasPersonalityTag",
-                  "string0":"doxrush",
+                  "string0":"botonly",
                   "boolean":false
                },
                {
@@ -996,7 +951,11 @@
                },
 			   {
                   "test_type":"HasPersonalityTag",
-                  "string0":"doxrush",
+                  "string0":"botonly",
+                  "boolean":false
+               },
+               {
+                  "test_type":"BaseThreatened",
                   "boolean":false
                },
                {
@@ -1033,7 +992,11 @@
                },
 			   {
                   "test_type":"HasPersonalityTag",
-                  "string0":"doxrush",
+                  "string0":"botonly",
+                  "boolean":false
+               },
+               {
+                  "test_type":"BaseThreatened",
                   "boolean":false
                },
                {
