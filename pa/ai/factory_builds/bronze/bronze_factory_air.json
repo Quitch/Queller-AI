@@ -1,172 +1,172 @@
 {
-   "build_list":[
-      {
-         "name":"Bronze - Basic Air Fabber",
-         "to_build":"BasicAirFabber",
-         "instance_count":1,
-         "max_num_assisters":10,
-         "priority":100,
-         "builders":[
-            "BasicAirFactory"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"UnitRatioOnPlanet",
-                  "unit_type_string0":"Fabber & Air & Basic",
-                  "unit_type_string1":"Factory & Air & Basic",
-                  "compare0":"<",
-                  "value0":10
-               }
-            ]
-         ]
-      },
-      {
-         "name":"Bronze - Hummingbird",
-         "to_build":"BasicFighter",
-         "instance_count":-1,
-         "max_num_assisters":10,
-         "priority":97,
-         "builders":[
-            "BasicAirFactory"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               }
-            ]
-         ]
-      },
-      {
-         "name":"Bronze - Bumblebee",
-         "to_build":"BasicBomber",
-         "instance_count":-1,
-         "max_num_assisters":10,
-         "priority":97,
-         "builders":[
-            "BasicAirFactory"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               }
-            ]
-         ]
-      },
-      {
-         "name":"Bronze - Advanced Air Fabber",
-         "to_build":"AdvancedAirFabber",
-         "instance_count":1,
-         "max_num_assisters":10,
-         "priority":200,
-         "builders":[
-            "AdvancedAirFactory"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"UnitRatioOnPlanet",
-                  "unit_type_string0":"Fabber & Air & Advanced",
-                  "unit_type_string1":"Factory & Air & Advanced",
-                  "compare0":"<",
-                  "value0":1
-               }
-            ]
-         ]
-      },
-      {
-         "name":"Bronze - Phoenix",
-         "to_build":"AdvancedFighter",
-         "instance_count":1,
-         "max_num_assisters":10,
-         "priority":198,
-         "builders":[
-            "AdvancedAirFactory"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               }
-            ]
-         ]
-      },
-      {
-         "name":"Bronze - Hornet",
-         "to_build":"AdvancedBomber",
-         "instance_count":-1,
-         "max_num_assisters":15,
-         "priority":199,
-         "builders":[
-            "AdvancedAirFactory"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               }
-            ]
-         ]
-      },
-      {
-         "name":"Bronze - Kestrel",
-         "to_build":"AdvancedGunship",
-         "instance_count":-1,
-         "max_num_assisters":15,
-         "priority":198,
-         "builders":[
-            "AdvancedAirFactory"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"bronze",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               }
-            ]
-         ]
-      }
-   ]
+  "build_list": [
+    {
+      "name": "Bronze - Basic Air Fabber",
+      "to_build": "BasicAirFabber",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 100,
+      "builders": [
+        "BasicAirFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Air & Basic",
+            "unit_type_string1": "Factory & Air & Basic",
+            "compare0": "<",
+            "value0": 10
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bronze - Hummingbird",
+      "to_build": "BasicFighter",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "BasicAirFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bronze - Bumblebee",
+      "to_build": "BasicBomber",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "BasicAirFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bronze - Advanced Air Fabber",
+      "to_build": "AdvancedAirFabber",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 200,
+      "builders": [
+        "AdvancedAirFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Air & Advanced",
+            "unit_type_string1": "Factory & Air & Advanced",
+            "compare0": "<",
+            "value0": 1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bronze - Phoenix",
+      "to_build": "AdvancedFighter",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 198,
+      "builders": [
+        "AdvancedAirFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bronze - Hornet",
+      "to_build": "AdvancedBomber",
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "priority": 199,
+      "builders": [
+        "AdvancedAirFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bronze - Kestrel",
+      "to_build": "AdvancedGunship",
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "priority": 198,
+      "builders": [
+        "AdvancedAirFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    }
+  ]
 }

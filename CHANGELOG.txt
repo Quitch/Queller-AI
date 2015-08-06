@@ -1,17 +1,16 @@
 # CHANGELOG
 
-#### v2.1-dev
+#### v2.1
 
 - Gold will build the Leveller
 - Uber will check there's some metal in storage in addition to looking at eco efficiency before assuming float and building more stuff
 - Silver correctly checks whether it can afford to have fabbers to assist on a project
 - Correctly exclude the orbital fabber from all checks it should be excluded from
 - Uber will send ARKYD offworld even if it's the only one if it doesn't need it on that planet
-- Optimised assignment of units to squads within platoons to maximise effective AI handling of its units
 - No longer builds an Astraeus for an evacuation it doesn't perform
 - Corrected errors in the advanced fabber ratios
 - Uber less reluctant to build advanced fabbers
-- Uber floats less energy on multiplanet systems thanks to new game AI checks
+- Uber floats less energy on multiplanet systems
 - Gold through Uber have been updated for the Grenadier meta
 - Uber is better at building storage when it can't immediately counter an eco float
 - Uber prioritises Deep Space Radar after going orbital
@@ -32,11 +31,12 @@
 - Corrected placement check for Teleporter
 - Gold expands a little slower
 - Integrated vanilla AI so that it is selectable alongside Queller by choosing normal, hard, relentless or absurd
+ - Do not use this version to report bugs to Sorian as it might be my fault
 - Fixed error in Gold vehicle fabber opening
 - Bronze no longer area builds MEXs
 - Fixed discrepencies between area and standard MEX building for Uber
 - Uber prioritises building Umbrellas in important bases first before locking down everywhere else
-- Uber is smarter about how it moves its orbital fabbers about thanks to new game AI checks
+- Uber is smarter about how it moves its orbital fabbers
 - Gold is less sophisticated in its troop choices
 - Gold is slower to react to mines
 - Gold will build the Slammer
@@ -58,6 +58,16 @@
 - Uber produces more Spinners when preparing an invasion
 - Further work done to prevent overwhelming land threats stopping the AI from using its ships
 - Uber now has subpersonalities allowing you to customise how it plays
+ - Air
+ - Dox
+ - Eco
+ - Grenadier
+ - Infernodier
+ - Tank
+ - Tech
+ - Turtle
+- Uber sets up an Anchor defence around teleporters in response to air threat in addition to land and orbital
+- Uber is smarter about transitioning in and out of the water depending on how it's doing in the relevant theatre
 
 #### v2.0.1 - 2015/07/09
 

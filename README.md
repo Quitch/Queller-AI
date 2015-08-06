@@ -39,6 +39,8 @@ Some of these might prove impossible given the tooling available, only time will
 
 Queller offers a range of difficulties designed to try and mimic the style of human players at particular levels of play. Bronze is easier than the vanilla normal difficulty while uber is harder than absurd. Later in this readme you can find recommendations on which difficulty you should try.
 
+Normal through Absurd are the standard difficulties and will use the vanilla AI rather than Queller.
+
 - Bronze
  - Economy first opening
  - One army
@@ -123,29 +125,28 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 
 - Air
  - Near total focus on air units
- - Maintains a small ground and naval force
+ - Will develop naval as normal
+ - Only uses bots on the ground
 
 - Dox
  - Won't use any offensive T1 land unit other than the Dox
  - Will focus on Slammers at T2 but not exclusively
  - Will build a vehicle factory for Skitters if it detects the possibility of mines
- - Best used on small maps like Blitz
 
 - Eco
  - Heavier emphasis on economic growth
  - Works best on really large (900+ radius) planets with lots of metal
- - Techs if it has a buffer space to do so
+ - Aggressively techs so it can eco boom
  - Requires sizable distance from its opponent
  
 - Grenadier
- - Won't use any offensive T1 unit other than the Grenadier
- - Will use Dox if there's no land route from its base
+ - Uses the Grenadier alongside Dox
  - Will build a vehicle factory for Skitters if it detects the possibility of mines
 
 - Infernodier
- - Starts out with some Dox
+ - Starts out with Dox
  - Quickly switches to an Infernos and Grenadiers composition
- 
+
 - Tank
  - Almost identical to Queller's fighting style prior to v2.1
  - Will fight primarily using the Bolo
@@ -154,13 +155,11 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 - Tech
  - Goes T2 as soon as it can afford to
  - Will get orbital as soon as possible on multi planet systems
- - May perform better on some multi planet systems
+ - Works best on multi planet systems where it spawns alone
 
 - Turtle
  - Emphasis on fabbers over combat units
  - Emphasis on static weapons over factories
- - Very performance heavy
- - Is always the wrong choice if you want a challenge
 
 ## RECOMMENDED DIFFICULTY
 

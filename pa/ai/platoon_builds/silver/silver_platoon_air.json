@@ -1,114 +1,114 @@
 {
-   "build_list":[
-      {
-         "name":"Silver - Bomber-Gunship Attack Platoon 10",
-         "to_build":"BomberGunship_Attack_10",
-         "instance_count":2,
-         "priority":102,
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-                  "boolean":true
-               },
-               {
-                  "test_type":"PlanetHighestEnemyArmyThreat",
-                  "string0":"AntiAir",
-                  "compare0":"<",
-                  "value0":5600
-               },
-               {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"Air & (Bomber | Gunship)",
-                  "compare0":">=",
-                  "value0":9
-               },
-               {
-                  "test_type":"CanAttackWithPoolUnitsBomber",
-                  "string0":"WL_AnySurface",
-                  "string1":"WL_Air",
-                  "unit_type_string0":"Mobile | Structure"
-               }
-            ]
-         ],
-         "task_type":"BomberAttack"
-      },
-      {
-         "name":"Silver - Bomber-Gunship Attack Platoon 40",
-         "to_build":"BomberGunship_Attack_40",
-         "instance_count":2,
-         "priority":100,
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-                  "boolean":true
-               },
-               {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"Air & (Bomber | Gunship)",
-                  "compare0":">=",
-                  "value0":36
-               },
-               {
-                  "test_type":"CanAttackWithPoolUnitsBomber",
-                  "string0":"WL_AnySurface",
-                  "string1":"WL_Air",
-                  "unit_type_string0":"Mobile | Structure"
-               }
-            ]
-         ],
-         "task_type":"BomberAttack"
-      },
-      {
-         "name":"Silver - Fighter Attack Platoon",
-         "to_build":"Fighter_Attack",
-         "instance_count":1,
-         "priority":100,
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-                  "boolean":true
-               },
-               {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"Air & Fighter",
-                  "compare0":">=",
-                  "value0":5
-               },
-               {
-                  "test_type":"CanAttackWithPoolUnitsFighter",
-                  "string0":"WL_Air",
-                  "string1":"WL_Air",
-                  "unit_type_string0":"Mobile"
-               }
-            ],
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"silver",
-                  "boolean":true
-               },
-               {
-                  "test_type":"UnitPoolCount",
-                  "unit_type_string0":"Air & Fighter",
-                  "compare0":">=",
-                  "value0":5
-               },
-               {
-                  "test_type":"CanProvideAirSupportWithPoolUnits",
-                  "string0":"fighter_attack",
-                  "string1":"WL_Air",
-                  "string2":"WL_Air",
-                  "unit_type_string0":"Mobile | Structure"
-               }
-            ]
-         ],
-         "task_type":"FighterAttack"
-      }
-   ]
+  "build_list": [
+    {
+      "name": "Silver - Bomber-Gunship Attack Platoon 10",
+      "to_build": "BomberGunship_Attack_10",
+      "instance_count": 2,
+      "priority": 102,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<",
+            "value0": 5600
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & (Bomber | Gunship)",
+            "compare0": ">=",
+            "value0": 9
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsBomber",
+            "string0": "WL_AnySurface",
+            "string1": "WL_Air",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "BomberAttack"
+    },
+    {
+      "name": "Silver - Bomber-Gunship Attack Platoon 40",
+      "to_build": "BomberGunship_Attack_40",
+      "instance_count": 2,
+      "priority": 100,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & (Bomber | Gunship)",
+            "compare0": ">=",
+            "value0": 36
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsBomber",
+            "string0": "WL_AnySurface",
+            "string1": "WL_Air",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "BomberAttack"
+    },
+    {
+      "name": "Silver - Fighter Attack Platoon",
+      "to_build": "Fighter_Attack",
+      "instance_count": 1,
+      "priority": 100,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Fighter",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsFighter",
+            "string0": "WL_Air",
+            "string1": "WL_Air",
+            "unit_type_string0": "Mobile"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Fighter",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "CanProvideAirSupportWithPoolUnits",
+            "string0": "fighter_attack",
+            "string1": "WL_Air",
+            "string2": "WL_Air",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "FighterAttack"
+    }
+  ]
 }

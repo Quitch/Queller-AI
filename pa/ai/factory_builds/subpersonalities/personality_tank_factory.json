@@ -1,107 +1,107 @@
 {
-   "build_list":[
-      {
-         "name":"Old School - Dox",
-         "to_build":"BasicAssaultBot",
-         "instance_count":-1,
-         "max_num_assisters":10,
-         "priority":97,
-         "builders":[
-            "BasicBotFactory"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"oldschool",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               }
-            ]
-         ]
-      },
-      {
-         "name":"Old School - Bolo",
-         "to_build":"LightLaserTank",
-         "instance_count":-1,
-         "max_num_assisters":10,
-         "priority":97,
-         "builders":[
-            "BasicVehicleFactory"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"oldschool",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               }
-            ]
-         ]
-      },
-      {
-         "name":"Old School - Inferno",
-         "to_build":"BasicArmorTank",
-         "instance_count":-1,
-         "max_num_assisters":10,
-         "priority":97,
-         "builders":[
-            "BasicVehicleFactory"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"oldschool",
-                  "boolean":true
-               },
-               {
-                  "test_type":"AloneOnPlanet",
-                  "boolean":false
-               },
-               {
-                  "test_type":"BaseThreatened",
-                  "boolean":false
-               },
-               {
-                  "test_type":"CanDeployLandFromBase",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"FocusTargetThreatRatio",
-                  "string0":"Land",
-                  "string1":"AntiSurface",
-                  "compare0":"<",
-                  "value0":0.9
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction - Heavy",
-                  "compare0":">",
-                  "value0":40,
-                  "boolean":true
-               },
-               {
-                  "test_type":"UnitRatioOnPlanet",
-                  "unit_type_string0":"Tank & Heavy",
-                  "unit_type_string1":"((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction - Heavy",
-                  "compare0":"<",
-                  "value0":0.1
-               }
-            ]
-         ]
-      }
-   ]
+  "build_list": [
+    {
+      "name": "Old School - Dox",
+      "to_build": "BasicAssaultBot",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "BasicBotFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "oldschool",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Old School - Bolo",
+      "to_build": "LightLaserTank",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "BasicVehicleFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "oldschool",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Old School - Inferno",
+      "to_build": "BasicArmorTank",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "BasicVehicleFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "oldschool",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "FocusTargetThreatRatio",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "compare0": "<",
+            "value0": 0.9
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction - Heavy",
+            "compare0": ">",
+            "value0": 40,
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Tank & Heavy",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction - Heavy",
+            "compare0": "<",
+            "value0": 0.1
+          }
+        ]
+      ]
+    }
+  ]
 }

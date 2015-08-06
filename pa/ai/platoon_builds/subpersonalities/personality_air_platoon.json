@@ -1,76 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Uber - Air Scout Platoon",
-      "to_build": "Air_Scout_1",
-      "instance_count": -1,
-      "priority": 160,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & Scout",
-            "compare0": ">=",
-            "value0": 1
-          }
-        ]
-      ],
-      "task_type": "Scout"
-    },
-    {
-      "name": "Uber - Fighter Scout Platoon",
-      "to_build": "Fighter_Scout_1",
-      "instance_count": -1,
-      "priority": 160,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "airswarm",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Air",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & Fighter & Basic",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Air & Fighter & Basic",
-            "compare0": "<",
-            "value0": 250
-          }
-        ]
-      ],
-      "task_type": "Scout"
-    },
-    {
-      "name": "Uber - Bomber-Gunship Attack Platoon 1",
+      "name": "Air Swarm - Bomber-Gunship Attack Platoon 1",
       "to_build": "BomberGunship_Attack_1",
       "instance_count": -1,
       "priority": 150,
@@ -78,19 +9,14 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "airswarm",
-            "boolean": false
+            "boolean": true
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiAir",
             "compare0": "<",
-            "value0": 420
+            "value0": 260
           },
           {
             "test_type": "UnitPoolCount",
@@ -109,7 +35,7 @@
       "task_type": "BomberAttack"
     },
     {
-      "name": "Uber - Bomber-Gunship Attack Platoon 4",
+      "name": "Air Swarm - Bomber-Gunship Attack Platoon 4",
       "to_build": "BomberGunship_Attack_4",
       "instance_count": -1,
       "priority": 140,
@@ -117,19 +43,14 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "airswarm",
-            "boolean": false
+            "boolean": true
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiAir",
             "compare0": "<",
-            "value0": 1260
+            "value0": 680
           },
           {
             "test_type": "UnitPoolCount",
@@ -148,7 +69,7 @@
       "task_type": "BomberAttack"
     },
     {
-      "name": "Uber - Bomber-Gunship Attack Platoon 10",
+      "name": "Air Swarm - Bomber-Gunship Attack Platoon 10",
       "to_build": "BomberGunship_Attack_10",
       "instance_count": -1,
       "priority": 130,
@@ -156,19 +77,14 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "airswarm",
-            "boolean": false
+            "boolean": true
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiAir",
             "compare0": "<",
-            "value0": 2800
+            "value0": 1400
           },
           {
             "test_type": "UnitPoolCount",
@@ -187,7 +103,7 @@
       "task_type": "BomberAttack"
     },
     {
-      "name": "Uber - Bomber-Gunship Attack Platoon 20",
+      "name": "Air Swarm - Bomber-Gunship Attack Platoon 20",
       "to_build": "BomberGunship_Attack_20",
       "instance_count": -1,
       "priority": 120,
@@ -195,19 +111,14 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "airswarm",
-            "boolean": false
+            "boolean": true
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiAir",
             "compare0": "<",
-            "value0": 5600
+            "value0": 2800
           },
           {
             "test_type": "UnitPoolCount",
@@ -226,7 +137,7 @@
       "task_type": "BomberAttack"
     },
     {
-      "name": "Uber - Bomber-Gunship Attack Platoon 30",
+      "name": "Air Swarm - Bomber-Gunship Attack Platoon 30",
       "to_build": "BomberGunship_Attack_30",
       "instance_count": -1,
       "priority": 100,
@@ -234,19 +145,14 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "airswarm",
-            "boolean": false
+            "boolean": true
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiAir",
             "compare0": "<",
-            "value0": 8400
+            "value0": 4200
           },
           {
             "test_type": "UnitPoolCount",
@@ -265,7 +171,7 @@
       "task_type": "BomberAttack"
     },
     {
-      "name": "Uber - Bomber-Gunship Attack Platoon 40",
+      "name": "Air Swarm - Bomber-Gunship Attack Platoon 40",
       "to_build": "BomberGunship_Attack_40",
       "instance_count": -1,
       "priority": 100,
@@ -273,13 +179,8 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "airswarm",
-            "boolean": false
+            "boolean": true
           },
           {
             "test_type": "UnitPoolCount",
@@ -306,19 +207,20 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "airswarm",
-            "boolean": false
+            "boolean": true
           },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
             "value0": 1
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<",
+            "value0": 260
           },
           {
             "test_type": "CanAttackWithPoolUnitsFighter",
@@ -330,19 +232,20 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "airswarm",
-            "boolean": false
+            "boolean": true
           },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
             "value0": 1
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<",
+            "value0": 260
           },
           {
             "test_type": "CanProvideAirSupportWithPoolUnits",
@@ -364,19 +267,20 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "airswarm",
-            "boolean": false
+            "boolean": true
           },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
             "value0": 4
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<",
+            "value0": 680
           },
           {
             "test_type": "CanAttackWithPoolUnitsFighter",
@@ -388,19 +292,20 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "airswarm",
-            "boolean": false
+            "boolean": true
           },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
             "value0": 4
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<",
+            "value0": 680
           },
           {
             "test_type": "CanProvideAirSupportWithPoolUnits",
@@ -422,19 +327,20 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "airswarm",
-            "boolean": false
+            "boolean": true
           },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
             "value0": 10
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<",
+            "value0": 1400
           },
           {
             "test_type": "CanAttackWithPoolUnitsFighter",
@@ -446,19 +352,20 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "airswarm",
-            "boolean": false
+            "boolean": true
           },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
             "value0": 10
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<",
+            "value0": 1400
           },
           {
             "test_type": "CanProvideAirSupportWithPoolUnits",
@@ -480,19 +387,20 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "airswarm",
-            "boolean": false
+            "boolean": true
           },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
             "value0": 20
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<",
+            "value0": 2800
           },
           {
             "test_type": "CanAttackWithPoolUnitsFighter",
@@ -504,19 +412,20 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "airswarm",
-            "boolean": false
+            "boolean": true
           },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
             "value0": 20
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<",
+            "value0": 2800
           },
           {
             "test_type": "CanProvideAirSupportWithPoolUnits",
@@ -538,19 +447,20 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "airswarm",
-            "boolean": false
+            "boolean": true
           },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
             "value0": 30
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<",
+            "value0": 4200
           },
           {
             "test_type": "CanAttackWithPoolUnitsFighter",
@@ -562,19 +472,20 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "airswarm",
-            "boolean": false
+            "boolean": true
           },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
             "value0": 30
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<",
+            "value0": 4200
           },
           {
             "test_type": "CanProvideAirSupportWithPoolUnits",
@@ -596,13 +507,8 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "airswarm",
-            "boolean": false
+            "boolean": true
           },
           {
             "test_type": "UnitPoolCount",
@@ -620,13 +526,8 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "airswarm",
-            "boolean": false
+            "boolean": true
           },
           {
             "test_type": "UnitPoolCount",

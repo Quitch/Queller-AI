@@ -1,662 +1,662 @@
 {
-   "build_list":[
-      {
-         "name":"Gold - Basic Metal Extractor - Area",
-         "to_build":"BasicMetalExtractor",
-         "instance_count":2,
-         "max_num_assisters":1,
-         "shared_instance_count":"BasicMetal",
-         "priority":261,
-         "base_sort":"FromBuilder",
-         "builders":[
-            "AnyUberBasicFabber",
-            "AnyUberAdvancedFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"PotentialMetalEfficiency",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
-                  "test_type":"CanFindMetalSpotToBuildBasic",
-                  "boolean":true
-               }
-            ]
-         ],
-         "placement_rules":{
-            "placement_type":"FromMainBaseCenter",
-            "threat":{
-               "influence_type":"AntiSurface",
-               "compare_type":"<",
-               "radius":10,
-               "value":50
-            }
-         },
-         "task_type":"AreaBuild"
+  "build_list": [
+    {
+      "name": "Gold - Basic Metal Extractor - Area",
+      "to_build": "BasicMetalExtractor",
+      "instance_count": 2,
+      "max_num_assisters": 1,
+      "shared_instance_count": "BasicMetal",
+      "priority": 261,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "PotentialMetalEfficiency",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildBasic",
+            "boolean": true
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
       },
-      {
-         "name":"Gold - Basic Metal Extractor - Desire - Area",
-         "to_build":"BasicMetalExtractor",
-         "instance_count":2,
-         "max_num_assisters":1,
-         "shared_instance_count":"BasicMetal",
-         "priority":501,
-         "base_sort":"FromBuilder",
-         "builders":[
-            "AnyUberBasicFabber",
-            "AnyUberAdvancedFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"DesireMetal"
-               },
-               {
-                  "test_type":"CanFindMetalSpotToBuildBasic",
-                  "boolean":true
-               }
-            ]
-         ],
-         "placement_rules":{
-            "placement_type":"FromMainBaseCenter",
-            "threat":{
-               "influence_type":"AntiSurface",
-               "compare_type":"<",
-               "radius":10,
-               "value":50
-            }
-         },
-         "task_type":"AreaBuild"
+      "task_type": "AreaBuild"
+    },
+    {
+      "name": "Gold - Basic Metal Extractor - Desire - Area",
+      "to_build": "BasicMetalExtractor",
+      "instance_count": 2,
+      "max_num_assisters": 1,
+      "shared_instance_count": "BasicMetal",
+      "priority": 501,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "DesireMetal"
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildBasic",
+            "boolean": true
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
       },
-      {
-         "name":"Gold - Basic Metal Extractor",
-         "to_build":"BasicMetalExtractor",
-         "instance_count":2,
-         "max_num_assisters":1,
-         "shared_instance_count":"BasicMetal",
-         "priority":261,
-         "base_sort":"FromBuilder",
-         "builders":[
-            "AnyUberBasicFabber",
-            "AnyUberAdvancedFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"PotentialMetalEfficiency",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
-                  "test_type":"CanFindMetalSpotToBuildBasic",
-                  "boolean":true
-               }
-            ]
-         ],
-         "placement_rules":{
-            "placement_type":"FromMainBaseCenter",
-            "threat":{
-               "influence_type":"AntiSurface",
-               "compare_type":"<",
-               "radius":10,
-               "value":50
-            }
-         }
-      },
-      {
-         "name":"Gold - Basic Metal Extractor - Desire",
-         "to_build":"BasicMetalExtractor",
-         "instance_count":2,
-         "max_num_assisters":1,
-         "shared_instance_count":"BasicMetal",
-         "priority":501,
-         "base_sort":"FromBuilder",
-         "builders":[
-            "AnyUberBasicFabber",
-            "AnyUberAdvancedFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"DesireMetal"
-               },
-               {
-                  "test_type":"CanFindMetalSpotToBuildBasic",
-                  "boolean":true
-               }
-            ]
-         ],
-         "placement_rules":{
-            "placement_type":"FromMainBaseCenter",
-            "threat":{
-               "influence_type":"AntiSurface",
-               "compare_type":"<",
-               "radius":10,
-               "value":50
-            }
-         }
-      },
-      {
-         "name":"Gold - Basic Energy Generator",
-         "to_build":"BasicEnergyGenerator",
-         "instance_count":1,
-         "max_num_assisters":2,
-         "shared_instance_count":"BasicEnergy",
-         "priority":500,
-         "builders":[
-            "AnyUberBasicFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"DesireEnergy"
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Fabber & Basic - Orbital",
-                  "compare0":">",
-                  "value0":2
-               },
-               {
-                  "test_type":"UnitCount",
-                  "unit_type_string0":"(Fabber & Advanced) | (EnergyProduction & Advanced)",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicEnergyGenerator"
-               }
-            ],
-            [
-               {
-                  "test_type":"PotentialEnergyEfficiency",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
-                  "test_type":"UnitCountOnPlanet",
-                  "unit_type_string0":"Fabber & Basic - Orbital",
-                  "compare0":">",
-                  "value0":2
-               },
-               {
-                  "test_type":"UnitCount",
-                  "unit_type_string0":"(Fabber & Advanced) | (EnergyProduction & Advanced)",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"BasicEnergyGenerator"
-               }
-            ]
-         ],
-         "placement_rules":{
-            "buffer":6,
-            "placement_type":"FromBaseCenter",
-            "threat":{
-               "influence_type":"AntiSurface",
-               "compare_type":"<",
-               "radius":10,
-               "value":50
-            }
-         }
-      },
-      {
-         "name":"Gold - Advanced Metal Extractor - Area",
-         "to_build":"AdvancedMetalExtractor",
-         "instance_count":1,
-         "min_num_assisters":1,
-         "max_num_assisters":3,
-         "shared_instance_count":"AdvancedMetal",
-         "priority":270,
-         "base_sort":"FromBuilder",
-         "builders":[
-            "AnyUberAdvancedFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"PotentialMetalEfficiency",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
-                  "test_type":"CanFindMetalSpotToBuildAdvanced",
-                  "boolean":true
-               }
-            ]
-         ],
-         "placement_rules":{
-            "placement_type":"FromMainBaseCenter",
-            "threat":{
-               "influence_type":"AntiSurface",
-               "compare_type":"<",
-               "radius":10,
-               "value":50
-            }
-         },
-         "task_type":"AreaBuild"
-      },
-      {
-         "name":"Gold - Advanced Metal Extractor - Desire - Area",
-         "to_build":"AdvancedMetalExtractor",
-         "instance_count":1,
-         "min_num_assisters":1,
-         "max_num_assisters":3,
-         "shared_instance_count":"AdvancedMetal",
-         "priority":510,
-         "base_sort":"FromBuilder",
-         "builders":[
-            "AnyUberAdvancedFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"DesireMetal"
-               },
-               {
-                  "test_type":"CanFindMetalSpotToBuildAdvanced",
-                  "boolean":true
-               }
-            ]
-         ],
-         "placement_rules":{
-            "placement_type":"FromMainBaseCenter",
-            "threat":{
-               "influence_type":"AntiSurface",
-               "compare_type":"<",
-               "radius":10,
-               "value":50
-            }
-         },
-         "task_type":"AreaBuild"
-      },
-      {
-         "name":"Gold - Advanced Metal Extractor",
-         "to_build":"AdvancedMetalExtractor",
-         "instance_count":1,
-         "min_num_assisters":1,
-         "max_num_assisters":3,
-         "shared_instance_count":"AdvancedMetal",
-         "priority":270,
-         "base_sort":"FromBuilder",
-         "builders":[
-            "AnyUberAdvancedFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"PotentialMetalEfficiency",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
-                  "test_type":"CanFindMetalSpotToBuildAdvanced",
-                  "boolean":true
-               }
-            ]
-         ],
-         "placement_rules":{
-            "placement_type":"FromMainBaseCenter",
-            "threat":{
-               "influence_type":"AntiSurface",
-               "compare_type":"<",
-               "radius":10,
-               "value":50
-            }
-         }
-      },
-      {
-         "name":"Gold - Advanced Metal Extractor - Desire",
-         "to_build":"AdvancedMetalExtractor",
-         "instance_count":1,
-         "min_num_assisters":2,
-         "max_num_assisters":5,
-         "shared_instance_count":"AdvancedMetal",
-         "priority":510,
-         "base_sort":"FromBuilder",
-         "builders":[
-            "AnyUberAdvancedFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"DesireMetal"
-               },
-               {
-                  "test_type":"CanFindMetalSpotToBuildAdvanced",
-                  "boolean":true
-               }
-            ]
-         ],
-         "placement_rules":{
-            "placement_type":"FromMainBaseCenter",
-            "threat":{
-               "influence_type":"AntiSurface",
-               "compare_type":"<",
-               "radius":10,
-               "value":50
-            }
-         }
-      },
-      {
-         "name":"Gold - Advanced Energy Generator",
-         "to_build":"AdvancedEnergyGenerator",
-         "instance_count":1,
-         "min_num_assisters":3,
-         "max_num_assisters":5,
-         "shared_instance_count":"AdvancedEnergy",
-         "priority":269,
-         "builders":[
-            "AnyUberAdvancedFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"PotentialEnergyEfficiency",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"AdvancedEnergyGenerator"
-               }
-            ]
-         ],
-         "placement_rules":{
-            "buffer":10,
-            "placement_type":"FromBaseCenter",
-            "threat":{
-               "influence_type":"AntiSurface",
-               "compare_type":"<",
-               "radius":10,
-               "value":50
-            }
-         }
-      },
-      {
-         "name":"Gold - Advanced Energy Generator - Desire",
-         "to_build":"AdvancedEnergyGenerator",
-         "instance_count":1,
-         "min_num_assisters":3,
-         "max_num_assisters":5,
-         "shared_instance_count":"AdvancedEnergy",
-         "priority":508,
-         "builders":[
-            "AnyUberAdvancedFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"DesireEnergy"
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"AdvancedEnergyGenerator"
-               }
-            ]
-         ],
-         "placement_rules":{
-            "buffer":10,
-            "placement_type":"FromBaseCenter",
-            "threat":{
-               "influence_type":"AntiSurface",
-               "compare_type":"<",
-               "radius":10,
-               "value":50
-            }
-         }
-      },
-      {
-         "name":"Gold - Jig - Desire",
-         "to_build":"OrbitalExtractor",
-         "instance_count":1,
-         "min_num_assisters":3,
-         "max_num_assisters":5,
-         "shared_instance_count":"Jig",
-         "priority":509,
-         "builders":[
-            "OrbitalFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"PlanetIsGasGiant",
-                  "boolean":true
-               },
-               {
-                  "test_type":"DesireEnergy"
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"OrbitalExtractor"
-               }
-            ],
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"PlanetIsGasGiant",
-                  "boolean":true
-               },
-               {
-                  "test_type":"DesireMetal"
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"OrbitalExtractor"
-               }
-            ]
-         ],
-         "placement_rules":{
-            "buffer":30
-         }
-      },
-      {
-         "name":"Gold - Jig",
-         "to_build":"OrbitalExtractor",
-         "instance_count":1,
-         "min_num_assisters":3,
-         "max_num_assisters":5,
-         "shared_instance_count":"Jig",
-         "priority":260,
-         "builders":[
-            "OrbitalFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"PlanetIsGasGiant",
-                  "boolean":true
-               },
-               {
-                  "test_type":"PotentialMetalEfficiency",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"OrbitalExtractor"
-               }
-            ],
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"PlanetIsGasGiant",
-                  "boolean":true
-               },
-               {
-                  "test_type":"PotentialEnergyEfficiency",
-                  "compare0":"<",
-                  "value0":1
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"OrbitalExtractor"
-               }
-            ]
-         ],
-         "placement_rules":{
-            "buffer":30
-         }
-      },
-      {
-         "name":"Gold - Energy Storage",
-         "to_build":"EnergyStorage",
-         "instance_count":1,
-         "priority":140,
-         "builders":[
-            "AnyUberBasicFabber",
-            "AnyUberAdvancedFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"EnergyStorageToProductionRatio",
-                  "compare0":"<",
-                  "value0":3
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"EnergyStorage"
-               }
-            ]
-         ],
-         "placement_rules":{
-            "buffer":10,
-            "placement_type":"FromBaseCenter",
-            "threat":{
-               "influence_type":"AntiSurface",
-               "compare_type":"<",
-               "radius":10,
-               "value":50
-            }
-         }
-      },
-      {
-         "name":"Gold - Metal Storage",
-         "to_build":"MetalStorage",
-         "instance_count":1,
-         "priority":140,
-         "builders":[
-            "AnyUberBasicFabber",
-            "AnyUberAdvancedFabber"
-         ],
-         "build_conditions":[
-            [
-               {
-                  "test_type":"HasPersonalityTag",
-                  "string0":"gold",
-                  "boolean":true
-               },
-               {
-                  "test_type":"CanAffordBuildDemand"
-               },
-               {
-                  "test_type":"MetalStorageToProductionRatio",
-                  "compare0":"<",
-                  "value0":4
-               },
-               {
-                  "test_type":"CanFindPlaceToBuild",
-                  "string0":"MetalStorage"
-               }
-            ]
-         ],
-         "placement_rules":{
-            "buffer":10,
-            "placement_type":"FromBaseCenter",
-            "threat":{
-               "influence_type":"AntiSurface",
-               "compare_type":"<",
-               "radius":10,
-               "value":50
-            }
-         }
+      "task_type": "AreaBuild"
+    },
+    {
+      "name": "Gold - Basic Metal Extractor",
+      "to_build": "BasicMetalExtractor",
+      "instance_count": 2,
+      "max_num_assisters": 1,
+      "shared_instance_count": "BasicMetal",
+      "priority": 261,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "PotentialMetalEfficiency",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildBasic",
+            "boolean": true
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
       }
-   ]
+    },
+    {
+      "name": "Gold - Basic Metal Extractor - Desire",
+      "to_build": "BasicMetalExtractor",
+      "instance_count": 2,
+      "max_num_assisters": 1,
+      "shared_instance_count": "BasicMetal",
+      "priority": 501,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "DesireMetal"
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildBasic",
+            "boolean": true
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Gold - Basic Energy Generator",
+      "to_build": "BasicEnergyGenerator",
+      "instance_count": 1,
+      "max_num_assisters": 2,
+      "shared_instance_count": "BasicEnergy",
+      "priority": 500,
+      "builders": [
+        "AnyUberBasicFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "DesireEnergy"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Basic - Orbital",
+            "compare0": ">",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Fabber & Advanced) | (EnergyProduction & Advanced)",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicEnergyGenerator"
+          }
+        ],
+        [
+          {
+            "test_type": "PotentialEnergyEfficiency",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Basic - Orbital",
+            "compare0": ">",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "(Fabber & Advanced) | (EnergyProduction & Advanced)",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicEnergyGenerator"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 6,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Gold - Advanced Metal Extractor - Area",
+      "to_build": "AdvancedMetalExtractor",
+      "instance_count": 1,
+      "min_num_assisters": 1,
+      "max_num_assisters": 3,
+      "shared_instance_count": "AdvancedMetal",
+      "priority": 270,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "PotentialMetalEfficiency",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildAdvanced",
+            "boolean": true
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "task_type": "AreaBuild"
+    },
+    {
+      "name": "Gold - Advanced Metal Extractor - Desire - Area",
+      "to_build": "AdvancedMetalExtractor",
+      "instance_count": 1,
+      "min_num_assisters": 1,
+      "max_num_assisters": 3,
+      "shared_instance_count": "AdvancedMetal",
+      "priority": 510,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "DesireMetal"
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildAdvanced",
+            "boolean": true
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "task_type": "AreaBuild"
+    },
+    {
+      "name": "Gold - Advanced Metal Extractor",
+      "to_build": "AdvancedMetalExtractor",
+      "instance_count": 1,
+      "min_num_assisters": 1,
+      "max_num_assisters": 3,
+      "shared_instance_count": "AdvancedMetal",
+      "priority": 270,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "PotentialMetalEfficiency",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildAdvanced",
+            "boolean": true
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Gold - Advanced Metal Extractor - Desire",
+      "to_build": "AdvancedMetalExtractor",
+      "instance_count": 1,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "shared_instance_count": "AdvancedMetal",
+      "priority": 510,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "DesireMetal"
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildAdvanced",
+            "boolean": true
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Gold - Advanced Energy Generator",
+      "to_build": "AdvancedEnergyGenerator",
+      "instance_count": 1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "shared_instance_count": "AdvancedEnergy",
+      "priority": 269,
+      "builders": [
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "PotentialEnergyEfficiency",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedEnergyGenerator"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 10,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Gold - Advanced Energy Generator - Desire",
+      "to_build": "AdvancedEnergyGenerator",
+      "instance_count": 1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "shared_instance_count": "AdvancedEnergy",
+      "priority": 508,
+      "builders": [
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "DesireEnergy"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedEnergyGenerator"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 10,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Gold - Jig - Desire",
+      "to_build": "OrbitalExtractor",
+      "instance_count": 1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "shared_instance_count": "Jig",
+      "priority": 509,
+      "builders": [
+        "OrbitalFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
+          {
+            "test_type": "DesireEnergy"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "OrbitalExtractor"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
+          {
+            "test_type": "DesireMetal"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "OrbitalExtractor"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 30
+      }
+    },
+    {
+      "name": "Gold - Jig",
+      "to_build": "OrbitalExtractor",
+      "instance_count": 1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "shared_instance_count": "Jig",
+      "priority": 260,
+      "builders": [
+        "OrbitalFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
+          {
+            "test_type": "PotentialMetalEfficiency",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "OrbitalExtractor"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
+          {
+            "test_type": "PotentialEnergyEfficiency",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "OrbitalExtractor"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 30
+      }
+    },
+    {
+      "name": "Gold - Energy Storage",
+      "to_build": "EnergyStorage",
+      "instance_count": 1,
+      "priority": 140,
+      "builders": [
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "EnergyStorageToProductionRatio",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "EnergyStorage"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 10,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Gold - Metal Storage",
+      "to_build": "MetalStorage",
+      "instance_count": 1,
+      "priority": 140,
+      "builders": [
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "MetalStorageToProductionRatio",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "MetalStorage"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 10,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    }
+  ]
 }
