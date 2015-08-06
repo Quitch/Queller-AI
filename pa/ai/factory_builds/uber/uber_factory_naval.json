@@ -659,6 +659,39 @@
           {
             "test_type": "CanAffordBuildDemand"
           }
+        ],
+		[
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "MetalStorageFrac",
+            "compare0": ">",
+            "value0": 0.5
+          }
         ]
       ]
     },
@@ -698,8 +731,8 @@
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Naval & (AirDefense | Tactical) & Mobile",
-            "unit_type_string1": "(Naval & Mobile) - Artillery - AirDefense - Tactical - Scout - Fabber",
+            "unit_type_string0": "Naval & Tactical & Mobile",
+            "unit_type_string1": "(Naval & Mobile) - Tactical - Scout - Fabber",
             "compare0": "<",
             "value0": 0.1
           }
@@ -729,8 +762,101 @@
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Naval & (AirDefense | Tactical) & Mobile",
-            "unit_type_string1": "(Naval & Mobile) - Artillery - AirDefense - Tactical - Scout - Fabber",
+            "unit_type_string0": "Naval & Tactical & Mobile",
+            "unit_type_string1": "(Naval & Mobile) - Tactical - Scout - Fabber",
+            "compare0": "<",
+            "value0": 0.1
+          }
+        ],
+		[
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "MetalStorageFrac",
+            "compare0": ">",
+            "value0": 0.5
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Naval & Tactical & Mobile",
+            "unit_type_string1": "(Naval & Mobile) - Tactical - Scout - Fabber",
+            "compare0": "<",
+            "value0": 0.1
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "MetalStorageFrac",
+            "compare0": ">",
+            "value0": 0.5
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Naval & Tactical & Mobile",
+            "unit_type_string1": "(Naval & Mobile) - Tactical - Scout - Fabber",
             "compare0": "<",
             "value0": 0.1
           }
@@ -769,6 +895,45 @@
             "unit_type_string0": "Naval & Advanced & Sub",
             "compare0": "<",
             "value0": 250
+          }
+        ],
+		[
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Naval & Advanced & Sub",
+            "compare0": "<",
+            "value0": 250
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "MetalStorageFrac",
+            "compare0": ">",
+            "value0": 0.5
           }
         ]
       ]
