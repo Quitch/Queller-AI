@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Uber - Basic Naval Factory - Commander",
+      "name": "Uber - Basic Naval Factory - Commander - Initial",
       "to_build": "BasicNavalFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicNavalFactory",
@@ -38,12 +38,38 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "BasicNavalFactory"
           }
-        ],
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Uber - Basic Naval Factory - Commander - Expansion",
+      "to_build": "BasicNavalFactory",
+      "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "max_num_assisters": 2,
+      "priority": 376,
+      "builders": [
+        "UberCommander"
+      ],
+      "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "CanDeployNavalFromBase",
@@ -61,12 +87,6 @@
             "unit_type_string0": "Factory & Naval & Basic",
             "compare0": "<",
             "value0": 4
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Naval",
-            "compare0": "<=",
-            "value0": 2000
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -109,6 +129,10 @@
             "boolean": true
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
           },
@@ -122,9 +146,9 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Land",
-            "string1": "AntiSurface",
+            "string1": "Land",
             "compare0": "<=",
-            "value0": 0.6
+            "value0": 0.5
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -143,7 +167,7 @@
       }
     },
     {
-      "name": "Uber - Basic Naval Factory - Fabber",
+      "name": "Uber - Basic Naval Factory - Fabber - Initial",
       "to_build": "BasicNavalFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicNavalFactory",
@@ -183,9 +207,20 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "BasicNavalFactory"
           }
-        ],
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
     {
-      "name": "Uber - Basic Naval Factory - Fabber",
+      "name": "Uber - Basic Naval Factory - Fabber - Expansion",
       "to_build": "BasicNavalFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -205,6 +240,10 @@
             "boolean": true
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
           },
@@ -220,12 +259,6 @@
             "unit_type_string0": "Factory & Naval & Basic",
             "compare0": "<",
             "value0": 4
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Naval",
-            "compare0": "<=",
-            "value0": 2000
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -268,6 +301,10 @@
             "boolean": true
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
           },
@@ -281,9 +318,9 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Land",
-            "string1": "AntiSurface",
+            "string1": "Land",
             "compare0": "<",
-            "value0": 0.6
+            "value0": 0.5
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -366,6 +403,10 @@
             "boolean": true
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
           },
@@ -396,12 +437,6 @@
             "unit_type_string0": "Factory & Naval & Basic",
             "compare0": "<",
             "value0": 4
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Naval",
-            "compare0": "<=",
-            "value0": 2000
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -459,6 +494,10 @@
             "boolean": true
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
           },
@@ -487,9 +526,9 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Land",
-            "string1": "AntiSurface",
+            "string1": "Land",
             "compare0": "<",
-            "value0": 0.6
+            "value0": 0.5
           },
           {
             "test_type": "CanFindPlaceToBuild",
