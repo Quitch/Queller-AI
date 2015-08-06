@@ -312,6 +312,42 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Naval",
+            "string1": "Naval",
+            "compare0": "<=",
+            "value0": 0.5
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicVehicleFactory"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicVehicleFactory"
+          }
+        ],
+		[
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "oldschool",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Land",
+            "string1": "Land",
+            "compare0": ">=",
+            "value0": 0.5
+          },
+          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicVehicleFactory"
           },
@@ -356,6 +392,42 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Naval",
+            "string1": "Naval",
+            "compare0": "<=",
+            "value0": 0.5
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicVehicleFactory"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicVehicleFactory"
+          }
+        ],
+		[
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "oldschool",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Land",
+            "string1": "Land",
+            "compare0": ">=",
+            "value0": 0.5
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -417,6 +489,52 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicVehicleFactory"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Naval",
+            "string1": "Naval",
+            "compare0": "<=",
+            "value0": 0.5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicVehicleFactory"
+          }
+        ],
+		[
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "oldschool",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicVehicleFactory"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Land",
+            "string1": "Land",
+            "compare0": ">=",
+            "value0": 0.5
           },
           {
             "test_type": "CanFindPlaceToBuild",

@@ -6,7 +6,7 @@
       "instance_count": 1,
       "shared_instance_count": "BasicLandFactory",
       "max_num_assisters": 2,
-      "priority": 376,
+      "priority": 373,
       "builders": [
         "UberCommander"
       ],
@@ -28,12 +28,8 @@
             "boolean": false
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory & Basic",
+            "unit_type_string0": "Factory & Land & Basic",
             "compare0": "<",
             "value0": 1
           },
@@ -80,7 +76,7 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Naval",
             "string1": "Naval",
             "compare0": "<=",
@@ -114,7 +110,7 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Land",
             "string1": "Land",
             "compare0": ">=",
@@ -215,8 +211,8 @@
       "name": "Uber - Basic Bot Factory - Fabbers - Initial",
       "to_build": "BasicBotFactory",
       "instance_count": 1,
-      "shared_instance_count": "BasicFactory",
-      "priority": 376,
+      "shared_instance_count": "BasicLandFactory",
+      "priority": 373,
       "min_num_assisters": 2,
       "max_num_assisters": 4,
       "builders": [
@@ -236,15 +232,10 @@
             "boolean": false
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicBotFactory"
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Land & Basic",
+            "compare0": "<",
+            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -291,7 +282,7 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Naval",
             "string1": "Naval",
             "compare0": "<=",
@@ -325,7 +316,7 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Land",
             "string1": "Land",
             "compare0": ">=",
@@ -426,7 +417,7 @@
       "name": "Uber - Basic Bot Factory - Excess Eco - Initial",
       "to_build": "BasicBotFactory",
       "instance_count": -1,
-      "shared_instance_count": "BasicFactory",
+      "shared_instance_count": "BasicLandFactory",
       "min_num_assisters": 3,
       "max_num_assisters": 5,
       "priority": 374,
@@ -453,10 +444,6 @@
             "boolean": false
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
             "test_type": "CurrentMetalEfficiency",
             "compare0": ">",
             "value0": 1
@@ -473,7 +460,7 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory & Basic",
+            "unit_type_string0": "Factory & Land & Basic",
             "compare0": "<",
             "value0": 1
           },
@@ -538,7 +525,7 @@
             "value0": 1
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Naval",
             "string1": "Naval",
             "compare0": "<=",
@@ -587,7 +574,7 @@
             "value0": 1
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Land",
             "string1": "Land",
             "compare0": ">=",
@@ -804,6 +791,10 @@
             "boolean": false
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
@@ -826,6 +817,53 @@
             "string0": "AntiSurface",
             "compare0": ">",
             "value0": 2000
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ],
+		[
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "airswarm",
+            "boolean": false
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "botonly",
+            "boolean": false
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "oldschool",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicVehicleFactory"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Factory & Tank & Basic",
+            "unit_type_string1": "Factory & Bot & Basic",
+            "compare0": "<",
+            "value0": 0.35
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -877,6 +915,10 @@
             "boolean": false
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
@@ -899,6 +941,53 @@
             "string0": "AntiSurface",
             "compare0": ">",
             "value0": 2000
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ],
+		[
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "airswarm",
+            "boolean": false
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "botonly",
+            "boolean": false
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "oldschool",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicVehicleFactory"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Factory & Tank & Basic",
+            "unit_type_string1": "Factory & Bot & Basic",
+            "compare0": "<",
+            "value0": 0.35
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -951,6 +1040,10 @@
             "boolean": false
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
@@ -988,6 +1081,68 @@
             "string0": "AntiSurface",
             "compare0": ">",
             "value0": 2000
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ],
+		[
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "airswarm",
+            "boolean": false
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "botonly",
+            "boolean": false
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "oldschool",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "MetalStorageFrac",
+            "compare0": ">",
+            "value0": 0.1
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicVehicleFactory"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Factory & Tank & Basic",
+            "unit_type_string1": "Factory & Bot & Basic",
+            "compare0": "<",
+            "value0": 0.35
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -1108,7 +1263,7 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "(Basic & Fabber) - Orbital - Naval",
             "compare0": ">=",
-            "value0": 10
+            "value0": 5
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -1176,7 +1331,7 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "(Basic & Fabber) - Orbital - Naval",
             "compare0": ">=",
-            "value0": 10
+            "value0": 5
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -1248,7 +1403,7 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "(Basic & Fabber) - Orbital - Naval",
             "compare0": ">=",
-            "value0": 10
+            "value0": 5
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -1338,7 +1493,7 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "(Basic & Fabber) - Orbital - Naval",
             "compare0": ">=",
-            "value0": 10
+            "value0": 5
           },
           {
             "test_type": "UnitCountOnPlanet",

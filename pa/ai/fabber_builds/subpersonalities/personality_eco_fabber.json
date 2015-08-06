@@ -197,6 +197,42 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Naval",
+            "string1": "Naval",
+            "compare0": "<=",
+            "value0": 0.5
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicBotFactory"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicBotFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "ecoboom",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Land",
+            "string1": "Land",
+            "compare0": ">=",
+            "value0": 0.5
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -315,6 +351,19 @@
             "string0": "BasicVehicleFactory"
           },
           {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Factory & Tank & Basic",
+            "unit_type_string1": "Factory & Bot & Basic",
+            "compare0": "<",
+            "value0": 0.35
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": ">",
+            "value0": 2000
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "BasicVehicleFactory"
           }
@@ -373,6 +422,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "ecoboom",
             "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "CanDeployNavalFromBase",
