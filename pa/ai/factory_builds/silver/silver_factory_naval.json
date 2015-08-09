@@ -1,1 +1,233 @@
-{"build_list":[{"name":"Silver - Basic Naval Fabber","to_build":"BasicNavalFabber","instance_count":1,"max_num_assisters":10,"priority":100,"builders":["BasicNavalFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"silver","boolean":true},{"test_type":"CanDeployNavalFromBase","boolean":true},{"test_type":"CanAffordBuildDemand"},{"test_type":"UnitRatioOnPlanet","unit_type_string0":"Fabber & Naval & Basic","unit_type_string1":"Factory & Naval & Basic","compare0":"<","value0":2},{"test_type":"UnitRatioOnPlanet","unit_type_string0":"Fabber & Basic - Orbital","unit_type_string1":"Factory & Basic","compare0":"<","value0":2}]]},{"name":"Silver - Orca","to_build":"Destroyer","instance_count":-1,"max_num_assisters":10,"priority":97,"builders":["BasicNavalFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"silver","boolean":true},{"test_type":"CanDeployNavalFromBase","boolean":true},{"test_type":"CanAffordBuildDemand"}]]},{"name":"Silver - Narwhal","to_build":"Frigate","instance_count":-1,"max_num_assisters":10,"priority":97,"builders":["BasicNavalFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"silver","boolean":true},{"test_type":"CanDeployNavalFromBase","boolean":true},{"test_type":"CanAffordBuildDemand"}]]},{"name":"Silver - Barracuda","to_build":"Sub","instance_count":-1,"max_num_assisters":10,"priority":97,"builders":["BasicNavalFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"silver","boolean":true},{"test_type":"CanDeployNavalFromBase","boolean":true},{"test_type":"CanAffordBuildDemand"}]]},{"name":"Silver - Advanced Naval Fabber","to_build":"AdvancedNavalFabber","instance_count":1,"max_num_assisters":15,"priority":200,"builders":["AdvancedNavalFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"silver","boolean":true},{"test_type":"CanDeployNavalFromBase","boolean":true},{"test_type":"CanAffordBuildDemand"},{"test_type":"UnitRatioOnPlanet","unit_type_string0":"Fabber & Naval & Advanced","unit_type_string1":"Factory & Naval & Advanced","compare0":"<","value0":2}]]},{"name":"Silver - Leviathan","to_build":"Battleship","instance_count":-1,"max_num_assisters":15,"priority":199,"builders":["AdvancedNavalFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"silver","boolean":true},{"test_type":"CanDeployNavalFromBase","boolean":true},{"test_type":"CanAffordBuildDemand"}]]},{"name":"Silver - Stingray","to_build":"MissleShip","instance_count":-1,"max_num_assisters":15,"priority":199,"builders":["AdvancedNavalFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"silver","boolean":true},{"test_type":"CanDeployNavalFromBase","boolean":true},{"test_type":"CanAffordBuildDemand"}]]},{"name":"Silver - Kraken","to_build":"MissileSub","instance_count":-1,"max_num_assisters":15,"priority":199,"builders":["AdvancedNavalFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"silver","boolean":true},{"test_type":"CanDeployNavalFromBase","boolean":true},{"test_type":"CanAffordBuildDemand"}]]}]}
+{
+  "build_list": [
+    {
+      "name": "Silver - Basic Naval Fabber",
+      "to_build": "BasicNavalFabber",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 100,
+      "builders": [
+        "BasicNavalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Naval & Basic",
+            "unit_type_string1": "Factory & Naval & Basic",
+            "compare0": "<",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Basic - Orbital",
+            "unit_type_string1": "Factory & Basic",
+            "compare0": "<",
+            "value0": 2
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Silver - Orca",
+      "to_build": "Destroyer",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "BasicNavalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Silver - Narwhal",
+      "to_build": "Frigate",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "BasicNavalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Silver - Barracuda",
+      "to_build": "Sub",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "BasicNavalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Silver - Advanced Naval Fabber",
+      "to_build": "AdvancedNavalFabber",
+      "instance_count": 1,
+      "max_num_assisters": 15,
+      "priority": 200,
+      "builders": [
+        "AdvancedNavalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Naval & Advanced",
+            "unit_type_string1": "Factory & Naval & Advanced",
+            "compare0": "<",
+            "value0": 2
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Silver - Leviathan",
+      "to_build": "Battleship",
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "priority": 199,
+      "builders": [
+        "AdvancedNavalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Silver - Stingray",
+      "to_build": "MissleShip",
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "priority": 199,
+      "builders": [
+        "AdvancedNavalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Silver - Kraken",
+      "to_build": "MissileSub",
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "priority": 199,
+      "builders": [
+        "AdvancedNavalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    }
+  ]
+}

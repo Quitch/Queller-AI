@@ -1,1 +1,241 @@
-{"build_list":[{"name":"Bronze - Basic Bot Factory","to_build":"BasicBotFactory","instance_count":1,"shared_instance_count":"Factory","priority":376,"max_num_assisters":5,"builders":["UberCommander","AnyUberBasicFabber","AnyUberAdvancedFabber"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"bronze","boolean":true},{"test_type":"CanAffordBuildDemand"},{"test_type":"CanAffordPotentialDrain","string0":"BasicBotFactory"},{"test_type":"UnitCountPerPlanetRadius","unit_type_string0":"Factory & Basic","compare0":"<=","value0":200},{"test_type":"CanFindPlaceToBuild","string0":"BasicBotFactory"}]],"placement_rules":{"buffer":3,"threat":{"influence_type":"AntiSurface","compare_type":"<","radius":10,"value":50}}},{"name":"Bronze - Basic Vehicle Factory - Non-land Fabbers","to_build":"BasicVehicleFactory","instance_count":1,"shared_instance_count":"Factory","priority":376,"max_num_assisters":5,"builders":["UberCommander","BasicAirFabber","BasicNavalFabber","AdvancedAirFabber","AdvancedNavalFabber"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"bronze","boolean":true},{"test_type":"CanDeployLandFromBase","boolean":true},{"test_type":"CanAffordBuildDemand"},{"test_type":"CanAffordPotentialDrain","string0":"BasicVehicleFactory"},{"test_type":"UnitCountPerPlanetRadius","unit_type_string0":"Factory & Basic","compare0":"<=","value0":200},{"test_type":"CanFindPlaceToBuild","string0":"BasicVehicleFactory"}]],"placement_rules":{"buffer":3,"threat":{"influence_type":"AntiSurface","compare_type":"<","radius":10,"value":50}}},{"name":"Bronze - Basic Vehicle Factory - Land Fabbers","to_build":"BasicVehicleFactory","instance_count":1,"shared_instance_count":"Factory","priority":376,"max_num_assisters":5,"builders":["BasicBotFabber","BasicVehicleFabber","AdvancedBotFabber","AdvancedVehicleFabber"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"bronze","boolean":true},{"test_type":"CanAffordBuildDemand"},{"test_type":"CanAffordPotentialDrain","string0":"BasicVehicleFactory"},{"test_type":"UnitCountPerPlanetRadius","unit_type_string0":"Factory & Basic","compare0":"<=","value0":200},{"test_type":"CanFindPlaceToBuild","string0":"BasicVehicleFactory"}]],"placement_rules":{"buffer":3,"threat":{"influence_type":"AntiSurface","compare_type":"<","radius":10,"value":50}}},{"name":"Bronze - Advanced Bot Factory","to_build":"AdvancedBotFactory","instance_count":1,"shared_instance_count":"Factory","priority":477,"max_num_assisters":10,"builders":["BasicBotFabber","AdvancedBotFabber"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"bronze","boolean":true},{"test_type":"CanAffordBuildDemand"},{"test_type":"UnitCountOnPlanet","unit_type_string0":"(Advanced & Factory) - Orbital - Naval","compare0":"<","value0":1},{"test_type":"CanFindPlaceToBuild","string0":"AdvancedBotFactory"}]],"placement_rules":{"buffer":3,"threat":{"influence_type":"AntiSurface","compare_type":"<","radius":10,"value":50}}},{"name":"Bronze - Advanced Vehicle Factory","to_build":"AdvancedVehicleFactory","instance_count":1,"shared_instance_count":"Factory","priority":477,"max_num_assisters":10,"builders":["BasicVehicleFabber","AdvancedVehicleFabber"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"bronze","boolean":true},{"test_type":"CanAffordBuildDemand"},{"test_type":"UnitCountOnPlanet","unit_type_string0":"(Advanced & Factory) - Orbital - Naval","compare0":"<","value0":1},{"test_type":"CanFindPlaceToBuild","string0":"AdvancedVehicleFactory"}]],"placement_rules":{"buffer":3,"threat":{"influence_type":"AntiSurface","compare_type":"<","radius":10,"value":50}}}]}
+{
+  "build_list": [
+    {
+      "name": "Bronze - Basic Bot Factory",
+      "to_build": "BasicBotFactory",
+      "instance_count": 1,
+      "shared_instance_count": "Factory",
+      "priority": 376,
+      "max_num_assisters": 5,
+      "builders": [
+        "UberCommander",
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicBotFactory"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Factory & Basic",
+            "compare0": "<=",
+            "value0": 200
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicBotFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Bronze - Basic Vehicle Factory - Non-land Fabbers",
+      "to_build": "BasicVehicleFactory",
+      "instance_count": 1,
+      "shared_instance_count": "Factory",
+      "priority": 376,
+      "max_num_assisters": 5,
+      "builders": [
+        "UberCommander",
+        "BasicAirFabber",
+        "BasicNavalFabber",
+        "AdvancedAirFabber",
+        "AdvancedNavalFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicVehicleFactory"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Factory & Basic",
+            "compare0": "<=",
+            "value0": 200
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicVehicleFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Bronze - Basic Vehicle Factory - Land Fabbers",
+      "to_build": "BasicVehicleFactory",
+      "instance_count": 1,
+      "shared_instance_count": "Factory",
+      "priority": 376,
+      "max_num_assisters": 5,
+      "builders": [
+        "BasicBotFabber",
+        "BasicVehicleFabber",
+        "AdvancedBotFabber",
+        "AdvancedVehicleFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicVehicleFactory"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Factory & Basic",
+            "compare0": "<=",
+            "value0": 200
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicVehicleFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Bronze - Advanced Bot Factory",
+      "to_build": "AdvancedBotFactory",
+      "instance_count": 1,
+      "shared_instance_count": "Factory",
+      "priority": 477,
+      "max_num_assisters": 10,
+      "builders": [
+        "BasicBotFabber",
+        "AdvancedBotFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Advanced & Factory) - Orbital - Naval",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedBotFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Bronze - Advanced Vehicle Factory",
+      "to_build": "AdvancedVehicleFactory",
+      "instance_count": 1,
+      "shared_instance_count": "Factory",
+      "priority": 477,
+      "max_num_assisters": 10,
+      "builders": [
+        "BasicVehicleFabber",
+        "AdvancedVehicleFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Advanced & Factory) - Orbital - Naval",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedVehicleFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    }
+  ]
+}

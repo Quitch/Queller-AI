@@ -1,1 +1,741 @@
-{"build_list":[{"name":"Platinum - Basic Naval Fabber","to_build":"BasicNavalFabber","instance_count":1,"max_num_assisters":10,"priority":100,"builders":["BasicNavalFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"platinum","boolean":true},{"test_type":"BaseThreatened","boolean":false},{"test_type":"UnitCountOnPlanet","unit_type_string0":"Fabber & Basic & Naval","compare0":"<","value0":2},{"test_type":"UnitCountOnPlanet","unit_type_string0":"Fabber & Basic - Orbital","compare0":"<","value0":3}],[{"test_type":"HasPersonalityTag","string0":"platinum","boolean":true},{"test_type":"BaseThreatened","boolean":false},{"test_type":"CanDeployNavalFromBase","boolean":true},{"test_type":"CanAffordBuildDemand"},{"test_type":"CanAffordPotentialDrain","string0":"BasicNavalFabber"},{"test_type":"UnitCountOnPlanet","unit_type_string0":"Fabber & Basic & Naval","compare0":"<","value0":2}],[{"test_type":"HasPersonalityTag","string0":"platinum","boolean":true},{"test_type":"BaseThreatened","boolean":false},{"test_type":"AloneOnPlanet","boolean":false},{"test_type":"CanDeployNavalFromBase","boolean":true},{"test_type":"UnableToExpand","boolean":false},{"test_type":"CanAffordBuildDemand"},{"test_type":"CanAffordPotentialDrain","string0":"BasicNavalFabber"},{"test_type":"UnitRatioOnPlanet","unit_type_string0":"Fabber & Basic & Naval","unit_type_string1":"Factory & Basic & Naval","compare0":"<","value0":1.5}],[{"test_type":"HasPersonalityTag","string0":"platinum","boolean":true},{"test_type":"AloneOnPlanet","boolean":true},{"test_type":"CanDeployNavalFromBase","boolean":true},{"test_type":"UnableToExpand","boolean":false},{"test_type":"CanAffordBuildDemand"},{"test_type":"CanAffordPotentialDrain","string0":"BasicNavalFabber"},{"test_type":"UnitRatioOnPlanet","unit_type_string0":"Fabber & Basic & Naval","unit_type_string1":"Factory & Basic & Naval","compare0":"<","value0":3}]]},{"name":"Platinum - Piranha","to_build":"SeaScout","instance_count":1,"max_num_assisters":10,"priority":98,"builders":["BasicNavalFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"platinum","boolean":true},{"test_type":"AloneOnPlanet","boolean":false},{"test_type":"BaseThreatened","boolean":false},{"test_type":"HaveFullPlanetIntel","boolean":false},{"test_type":"CanAffordBuildDemand"},{"test_type":"UnitCountPerPlanetRadius","unit_type_string0":"Air & Scout","compare0":"<","value0":250},{"test_type":"UnitCountPerPlanetRadius","unit_type_string0":"Naval & Scout","compare0":"<","value0":250}],[{"test_type":"HasPersonalityTag","string0":"platinum","boolean":true},{"test_type":"AloneOnPlanet","boolean":false},{"test_type":"BaseThreatened","boolean":false},{"test_type":"HaveFullPlanetIntel","boolean":false},{"test_type":"CanDeployNavalFromBase","boolean":false},{"test_type":"CanAffordBuildDemand"},{"test_type":"UnitCountOnPlanet","unit_type_string0":"Naval & Scout","compare0":"<","value0":1}]]},{"name":"Platinum - Orca","to_build":"Destroyer","instance_count":-1,"max_num_assisters":10,"priority":97,"builders":["BasicNavalFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"platinum","boolean":true},{"test_type":"AloneOnPlanet","boolean":false},{"test_type":"CanAffordBuildDemand"},{"test_type":"UnitCountOnPlanet","unit_type_string0":"Naval & Mobile & Offense","compare0":"<","value0":5}],[{"test_type":"HasPersonalityTag","string0":"platinum","boolean":true},{"test_type":"AloneOnPlanet","boolean":false},{"test_type":"CanDeployNavalFromBase","boolean":true},{"test_type":"CanAffordBuildDemand"},{"test_type":"FocusTargetThreatRatio","string0":"Sub","string1":"AntiSub","compare0":"<","value0":1}]]},{"name":"Platinum - Narwhal","to_build":"Frigate","instance_count":-1,"max_num_assisters":10,"priority":97,"builders":["BasicNavalFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"platinum","boolean":true},{"test_type":"AloneOnPlanet","boolean":false},{"test_type":"CanAffordBuildDemand"},{"test_type":"UnitCountOnPlanet","unit_type_string0":"Naval & Mobile & Offense","compare0":"<","value0":5}],[{"test_type":"HasPersonalityTag","string0":"platinum","boolean":true},{"test_type":"AloneOnPlanet","boolean":false},{"test_type":"CanDeployNavalFromBase","boolean":true},{"test_type":"CanAffordBuildDemand"},{"test_type":"FocusTargetThreatRatio","string0":"Air","string1":"AntiAir","compare0":">","value0":0.75}],[{"test_type":"HasPersonalityTag","string0":"platinum","boolean":true},{"test_type":"AloneOnPlanet","boolean":false},{"test_type":"CanDeployNavalFromBase","boolean":true},{"test_type":"CanAffordBuildDemand"},{"test_type":"FocusTargetThreatRatio","string0":"Sub","string1":"AntiSub","compare0":">","value0":0.75}],[{"test_type":"HasPersonalityTag","string0":"platinum","boolean":true},{"test_type":"AloneOnPlanet","boolean":false},{"test_type":"CanDeployNavalFromBase","boolean":true},{"test_type":"CanAffordBuildDemand"},{"test_type":"UnitRatioOnPlanet","unit_type_string0":"Naval & AirDefense","unit_type_string1":"(Naval & Offense) - AirDefense","compare0":"<","value0":0.2}]]},{"name":"Platinum - Barracuda","to_build":"Sub","instance_count":-1,"max_num_assisters":10,"priority":97,"builders":["BasicNavalFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"platinum","boolean":true},{"test_type":"AloneOnPlanet","boolean":false},{"test_type":"CanDeployNavalFromBase","boolean":true},{"test_type":"CanAffordBuildDemand"},{"test_type":"FocusTargetThreatRatio","string0":"Naval","string1":"Naval","compare0":">","value0":1},{"test_type":"FocusTargetThreatRatio","string0":"Air","string1":"AntiAir","compare0":"<","value0":1}],[{"test_type":"HasPersonalityTag","string0":"platinum","boolean":true},{"test_type":"AloneOnPlanet","boolean":false},{"test_type":"CanDeployNavalFromBase","boolean":true},{"test_type":"CanAffordBuildDemand"},{"test_type":"FocusTargetThreat","string0":"Naval","compare0":">","value0":0},{"test_type":"FocusTargetThreat","string0":"AntiSub","compare0":"<","value0":1650}]]},{"name":"Platinum - Advanced Naval Fabber","to_build":"AdvancedNavalFabber","instance_count":1,"max_num_assisters":15,"priority":200,"builders":["AdvancedNavalFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"platinum","boolean":true},{"test_type":"BaseThreatened","boolean":false},{"test_type":"UnitCountOnPlanet","unit_type_string0":"Fabber & Advanced & Naval","compare0":"<","value0":2}],[{"test_type":"HasPersonalityTag","string0":"platinum","boolean":true},{"test_type":"BaseThreatened","boolean":false},{"test_type":"AloneOnPlanet","boolean":false},{"test_type":"UnableToExpand","boolean":false},{"test_type":"CanAffordBuildDemand"},{"test_type":"CanAffordPotentialDrain","string0":"AdvancedNavalFabber"},{"test_type":"UnitRatioOnPlanet","unit_type_string0":"Fabber & Advanced & Naval","unit_type_string1":"Factory & Advanced & Naval","compare0":"<","value0":3}],[{"test_type":"HasPersonalityTag","string0":"platinum","boolean":true},{"test_type":"AloneOnPlanet","boolean":true},{"test_type":"UnableToExpand","boolean":false},{"test_type":"CanAffordBuildDemand"},{"test_type":"CanAffordPotentialDrain","string0":"AdvancedNavalFabber"},{"test_type":"UnitRatioOnPlanet","unit_type_string0":"Fabber & Advanced & Naval","unit_type_string1":"Factory & Advanced & Naval","compare0":"<","value0":9}],[{"test_type":"HasPersonalityTag","string0":"platinum","boolean":true},{"test_type":"AloneOnPlanet","boolean":true},{"test_type":"UnableToExpand","boolean":false},{"test_type":"CanAffordBuildDemand"},{"test_type":"CanAffordPotentialDrain","string0":"AdvancedNavalFabber"},{"test_type":"UnitCountOnPlanet","unit_type_string0":"Commander","compare0":"<","value0":1}],[{"test_type":"HasPersonalityTag","string0":"platinum","boolean":true},{"test_type":"BaseThreatened","boolean":false},{"test_type":"CurrentMetalEfficiency","compare0":">","value0":1},{"test_type":"CurrentEnergyEfficiency","compare0":">","value0":1},{"test_type":"CanAffordBuildDemand"},{"test_type":"CanAffordPotentialDrain","string0":"AdvancedNavalFabber"}]]},{"name":"Platinum - Leviathan","to_build":"Battleship","instance_count":-1,"max_num_assisters":15,"priority":199,"builders":["AdvancedNavalFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"platinum","boolean":true},{"test_type":"AloneOnPlanet","boolean":false},{"test_type":"CanDeployNavalFromBase","boolean":true},{"test_type":"CanAffordBuildDemand"}]]},{"name":"Platinum - Stingray","to_build":"MissleShip","instance_count":-1,"max_num_assisters":15,"priority":199,"builders":["AdvancedNavalFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"platinum","boolean":true},{"test_type":"AloneOnPlanet","boolean":false},{"test_type":"CanDeployNavalFromBase","boolean":true},{"test_type":"CanAffordBuildDemand"},{"test_type":"PlanetHighestEnemyArmyThreatRatio","string0":"Air","string1":"AntiAir","compare0":">","value0":1},{"test_type":"UnitRatioOnPlanet","unit_type_string0":"Naval & (AirDefense | Tactical) & Mobile","unit_type_string1":"(Naval & Mobile) - Artillery - AirDefense - Tactical - Scout - Fabber","compare0":"<","value0":0.1}],[{"test_type":"HasPersonalityTag","string0":"platinum","boolean":true},{"test_type":"AloneOnPlanet","boolean":false},{"test_type":"CanDeployNavalFromBase","boolean":true},{"test_type":"CanAffordBuildDemand"},{"test_type":"SystemThreat","string0":"Orbital","compare0":">","value0":0},{"test_type":"UnitRatioOnPlanet","unit_type_string0":"Naval & (AirDefense | Tactical) & Mobile","unit_type_string1":"(Naval & Mobile) - Artillery - AirDefense - Tactical - Scout - Fabber","compare0":"<","value0":0.1}]]},{"name":"Platinum - Kraken","to_build":"MissileSub","instance_count":-1,"max_num_assisters":15,"priority":199,"builders":["AdvancedNavalFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"platinum","boolean":true},{"test_type":"AloneOnPlanet","boolean":false},{"test_type":"CanDeployNavalFromBase","boolean":true},{"test_type":"CanAffordBuildDemand"},{"test_type":"UnitCountPerPlanetRadius","unit_type_string0":"Naval & Advanced & Sub","compare0":"<","value0":250}]]}]}
+{
+  "build_list": [
+    {
+      "name": "Platinum - Basic Naval Fabber",
+      "to_build": "BasicNavalFabber",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 100,
+      "builders": [
+        "BasicNavalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Basic & Naval",
+            "compare0": "<",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Basic - Orbital",
+            "compare0": "<",
+            "value0": 3
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicNavalFabber"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Basic & Naval",
+            "compare0": "<",
+            "value0": 2
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnableToExpand",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicNavalFabber"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Basic & Naval",
+            "unit_type_string1": "Factory & Basic & Naval",
+            "compare0": "<",
+            "value0": 1.5
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnableToExpand",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicNavalFabber"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Basic & Naval",
+            "unit_type_string1": "Factory & Basic & Naval",
+            "compare0": "<",
+            "value0": 3
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Platinum - Piranha",
+      "to_build": "SeaScout",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 98,
+      "builders": [
+        "BasicNavalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Air & Scout",
+            "compare0": "<",
+            "value0": 250
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Naval & Scout",
+            "compare0": "<",
+            "value0": 250
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Naval & Scout",
+            "compare0": "<",
+            "value0": 1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Platinum - Orca",
+      "to_build": "Destroyer",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "BasicNavalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Naval & Mobile & Offense",
+            "compare0": "<",
+            "value0": 5
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "FocusTargetThreatRatio",
+            "string0": "Sub",
+            "string1": "AntiSub",
+            "compare0": "<",
+            "value0": 1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Platinum - Narwhal",
+      "to_build": "Frigate",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "BasicNavalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Naval & Mobile & Offense",
+            "compare0": "<",
+            "value0": 5
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "FocusTargetThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 0.75
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "FocusTargetThreatRatio",
+            "string0": "Sub",
+            "string1": "AntiSub",
+            "compare0": ">",
+            "value0": 0.75
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Naval & AirDefense",
+            "unit_type_string1": "(Naval & Offense) - AirDefense",
+            "compare0": "<",
+            "value0": 0.2
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Platinum - Barracuda",
+      "to_build": "Sub",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "BasicNavalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "FocusTargetThreatRatio",
+            "string0": "Naval",
+            "string1": "Naval",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "FocusTargetThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": "<",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "FocusTargetThreat",
+            "string0": "Naval",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "FocusTargetThreat",
+            "string0": "AntiSub",
+            "compare0": "<",
+            "value0": 1650
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Platinum - Advanced Naval Fabber",
+      "to_build": "AdvancedNavalFabber",
+      "instance_count": 1,
+      "max_num_assisters": 15,
+      "priority": 200,
+      "builders": [
+        "AdvancedNavalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Advanced & Naval",
+            "compare0": "<",
+            "value0": 2
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "UnableToExpand",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedNavalFabber"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Advanced & Naval",
+            "unit_type_string1": "Factory & Advanced & Naval",
+            "compare0": "<",
+            "value0": 3
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnableToExpand",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedNavalFabber"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Advanced & Naval",
+            "unit_type_string1": "Factory & Advanced & Naval",
+            "compare0": "<",
+            "value0": 9
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnableToExpand",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedNavalFabber"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Commander",
+            "compare0": "<",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedNavalFabber"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Platinum - Leviathan",
+      "to_build": "Battleship",
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "priority": 199,
+      "builders": [
+        "AdvancedNavalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Platinum - Stingray",
+      "to_build": "MissleShip",
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "priority": 199,
+      "builders": [
+        "AdvancedNavalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Naval & (AirDefense | Tactical) & Mobile",
+            "unit_type_string1": "(Naval & Mobile) - Artillery - AirDefense - Tactical - Scout - Fabber",
+            "compare0": "<",
+            "value0": 0.1
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Naval & (AirDefense | Tactical) & Mobile",
+            "unit_type_string1": "(Naval & Mobile) - Artillery - AirDefense - Tactical - Scout - Fabber",
+            "compare0": "<",
+            "value0": 0.1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Platinum - Kraken",
+      "to_build": "MissileSub",
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "priority": 199,
+      "builders": [
+        "AdvancedNavalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Naval & Advanced & Sub",
+            "compare0": "<",
+            "value0": 250
+          }
+        ]
+      ]
+    }
+  ]
+}
