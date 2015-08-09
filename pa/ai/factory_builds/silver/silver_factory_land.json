@@ -1,1 +1,431 @@
-{"build_list":[{"name":"Silver - Basic Bot Fabber","to_build":"BasicBotFabber","instance_count":1,"max_num_assisters":10,"priority":100,"builders":["BasicBotFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"silver","boolean":true},{"test_type":"CanAffordBuildDemand"},{"test_type":"UnitRatioOnPlanet","unit_type_string0":"Fabber & Basic - Orbital","unit_type_string1":"Factory & Basic","compare0":"<","value0":2}]]},{"name":"Silver - Basic Vehicle Fabber","to_build":"BasicVehicleFabber","instance_count":1,"max_num_assisters":10,"priority":100,"builders":["BasicVehicleFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"silver","boolean":true},{"test_type":"CanAffordBuildDemand"},{"test_type":"UnitRatioOnPlanet","unit_type_string0":"Fabber & Basic - Orbital","unit_type_string1":"Factory & Basic","compare0":"<","value0":2}]]},{"name":"Silver - Basic Combat Fabber Bot","to_build":"BasicBotCombatFabber","instance_count":1,"priority":97,"builders":["BasicBotFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"silver","boolean":true},{"test_type":"CanDeployLandFromBase","boolean":true},{"test_type":"CanAffordBuildDemand"},{"test_type":"UnitRatioOnPlanet","unit_type_string0":"Fabber & Construction","unit_type_string1":"Land & Heavy","compare0":"<","value0":0.1}]]},{"name":"Silver - Dox","to_build":"BasicAssaultBot","instance_count":-1,"max_num_assisters":10,"priority":97,"builders":["BasicBotFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"silver","boolean":true},{"test_type":"CanAffordBuildDemand"}]]},{"name":"Silver - Grenadier","to_build":"BasicArtilleryBot","instance_count":-1,"max_num_assisters":10,"priority":97,"builders":["BasicBotFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"silver","boolean":true},{"test_type":"CanDeployLandFromBase","boolean":true},{"test_type":"CanAffordBuildDemand"}]]},{"name":"Silver - Bolo","to_build":"LightLaserTank","instance_count":-1,"max_num_assisters":10,"priority":97,"builders":["BasicVehicleFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"silver","boolean":true},{"test_type":"CanDeployLandFromBase","boolean":true},{"test_type":"CanAffordBuildDemand"}]]},{"name":"Silver - Inferno","to_build":"BasicArmorTank","instance_count":-1,"max_num_assisters":10,"priority":97,"builders":["BasicVehicleFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"silver","boolean":true},{"test_type":"CanDeployLandFromBase","boolean":true},{"test_type":"CanAffordBuildDemand"}]]},{"name":"Silver - Spinner","to_build":"BasicAAVehicle","instance_count":1,"max_num_assisters":10,"priority":97,"builders":["BasicVehicleFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"silver","boolean":true},{"test_type":"CanDeployLandFromBase","boolean":true},{"test_type":"CanAffordBuildDemand"}]]},{"name":"Silver - Advanced Bot Fabber","to_build":"AdvancedBotFabber","instance_count":1,"max_num_assisters":10,"priority":200,"builders":["AdvancedBotFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"silver","boolean":true},{"test_type":"CanAffordBuildDemand"},{"test_type":"UnitRatioOnPlanet","unit_type_string0":"Fabber & Land & Advanced","unit_type_string1":"Factory & Land & Advanced","compare0":"<","value0":2}]]},{"name":"Silver - Advanced Vehicle Fabber","to_build":"AdvancedVehicleFabber","instance_count":1,"max_num_assisters":10,"priority":200,"builders":["AdvancedVehicleFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"silver","boolean":true},{"test_type":"CanAffordBuildDemand"},{"test_type":"UnitRatioOnPlanet","unit_type_string0":"Fabber & Land & Advanced","unit_type_string1":"Factory & Land & Advanced","compare0":"<","value0":2}]]},{"name":"Silver - Slammer","to_build":"AdvancedAssaultBot","instance_count":-1,"max_num_assisters":15,"priority":199,"builders":["AdvancedBotFactory","UnitCannon"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"silver","boolean":true},{"test_type":"CanAffordBuildDemand"}]]},{"name":"Silver - GIL-E","to_build":"AdvancedArtilleryBot","instance_count":-1,"max_num_assisters":10,"priority":199,"builders":["AdvancedBotFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"silver","boolean":true},{"test_type":"CanDeployLandFromBase","boolean":true},{"test_type":"CanAffordBuildDemand"}]]},{"name":"Silver - Bluehawk","to_build":"TMLBot","instance_count":-1,"max_num_assisters":10,"priority":199,"builders":["AdvancedBotFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"silver","boolean":true},{"test_type":"CanDeployLandFromBase","boolean":true},{"test_type":"CanAffordBuildDemand"}]]},{"name":"Silver - Leveller","to_build":"AdvancedLaserTank","instance_count":-1,"max_num_assisters":15,"priority":199,"builders":["AdvancedVehicleFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"silver","boolean":true},{"test_type":"CanDeployLandFromBase","boolean":true},{"test_type":"CanAffordBuildDemand"}]]},{"name":"Silver - Vanguard","to_build":"AdvancedArmorTank","instance_count":-1,"max_num_assisters":10,"priority":199,"builders":["AdvancedVehicleFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"silver","boolean":true},{"test_type":"CanDeployLandFromBase","boolean":true},{"test_type":"CanAffordBuildDemand"}]]},{"name":"Silver - Sheller","to_build":"AdvancedArtilleryVehicle","instance_count":-1,"max_num_assisters":10,"priority":199,"builders":["AdvancedVehicleFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"silver","boolean":true},{"test_type":"CanDeployLandFromBase","boolean":true},{"test_type":"CanAffordBuildDemand"}]]}]}
+{
+  "build_list": [
+    {
+      "name": "Silver - Basic Bot Fabber",
+      "to_build": "BasicBotFabber",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 100,
+      "builders": [
+        "BasicBotFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Basic - Orbital",
+            "unit_type_string1": "Factory & Basic",
+            "compare0": "<",
+            "value0": 2
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Silver - Basic Vehicle Fabber",
+      "to_build": "BasicVehicleFabber",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 100,
+      "builders": [
+        "BasicVehicleFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Basic - Orbital",
+            "unit_type_string1": "Factory & Basic",
+            "compare0": "<",
+            "value0": 2
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Silver - Basic Combat Fabber Bot",
+      "to_build": "BasicBotCombatFabber",
+      "instance_count": 1,
+      "priority": 97,
+      "builders": [
+        "BasicBotFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Construction",
+            "unit_type_string1": "Land & Heavy",
+            "compare0": "<",
+            "value0": 0.1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Silver - Dox",
+      "to_build": "BasicAssaultBot",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "BasicBotFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Silver - Grenadier",
+      "to_build": "BasicArtilleryBot",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "BasicBotFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Silver - Bolo",
+      "to_build": "LightLaserTank",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "BasicVehicleFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Silver - Inferno",
+      "to_build": "BasicArmorTank",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "BasicVehicleFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Silver - Spinner",
+      "to_build": "BasicAAVehicle",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "BasicVehicleFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Silver - Advanced Bot Fabber",
+      "to_build": "AdvancedBotFabber",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 200,
+      "builders": [
+        "AdvancedBotFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Land & Advanced",
+            "unit_type_string1": "Factory & Land & Advanced",
+            "compare0": "<",
+            "value0": 2
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Silver - Advanced Vehicle Fabber",
+      "to_build": "AdvancedVehicleFabber",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 200,
+      "builders": [
+        "AdvancedVehicleFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Land & Advanced",
+            "unit_type_string1": "Factory & Land & Advanced",
+            "compare0": "<",
+            "value0": 2
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Silver - Slammer",
+      "to_build": "AdvancedAssaultBot",
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "priority": 199,
+      "builders": [
+        "AdvancedBotFactory",
+        "UnitCannon"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Silver - GIL-E",
+      "to_build": "AdvancedArtilleryBot",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": [
+        "AdvancedBotFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Silver - Bluehawk",
+      "to_build": "TMLBot",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": [
+        "AdvancedBotFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Silver - Leveller",
+      "to_build": "AdvancedLaserTank",
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "priority": 199,
+      "builders": [
+        "AdvancedVehicleFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Silver - Vanguard",
+      "to_build": "AdvancedArmorTank",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": [
+        "AdvancedVehicleFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Silver - Sheller",
+      "to_build": "AdvancedArtilleryVehicle",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": [
+        "AdvancedVehicleFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    }
+  ]
+}
