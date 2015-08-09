@@ -123,6 +123,11 @@ Normal through Absurd are the standard difficulties and will use the vanilla AI 
 
 By default, Queller at Uber level will adapt its play to try and suit the system and the opposition it faces. You can use subpersonalities to customise Queller's game to your liking, or help it play better where it's making poor strategy choices.
 
+- Adaptive
+ - Primary bot focus
+ - Will make decisions based on map size and enemy forces
+ - Planned to become the default personality once the AI platoon attack bug is fixed
+
 - Air
  - Near total focus on air units
  - Will develop naval as normal
@@ -148,6 +153,7 @@ By default, Queller at Uber level will adapt its play to try and suit the system
  - Quickly switches to an Infernos and Grenadiers composition
 
 - Tank
+ - Currently the default Uber personality
  - Almost identical to Queller's fighting style prior to v2.1
  - Will fight primarily using the Bolo
  - May open with a small Dox presence
@@ -211,7 +217,6 @@ Slot 2/2 is riskier but leads to a stronger late game
 - Doesn't close out orbital games well even when it has an overwhelming economic advantage
 - Takes too long transition from a naval start to a land game on mixed maps
 - Will not send all its troops through a teleporter even when there's no reason not to
-- Will overbuild on land/sea when it should be dealing with a threat in the other arena
 - Doesn't understand when it needs to build units in preparation for an attack versus when it should shutdown factories so it can build super weapons
 
 #### MAYBEFIX
