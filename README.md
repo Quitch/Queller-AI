@@ -7,13 +7,17 @@ I love AI. To put my old person comfy jumper on for a moment, back in the day I 
 
 This mod is a total overhaul of the AI (as much as can be done with the exposed files) designed to leverage the systems Sorian has created, while playing a game better suited to the meta. It is primarily designed with 1v1 in mind, but should prove to be an improvement in other modes too. It covers a wider range of difficulties than vanilla, from easier to harder, all of which play in a more humanlike fashion than their vanilla counterparts.
 
+## INSTALLATION
+
+You should download and install this mod via the [PA Mod Manager (PAMM)](https://forums.uberent.com/threads/pa-mod-manager-pamm-cross-platform.59992/)
+
 ## FEEDBACK
 
 Any feedback based on playing the AI is greatly appreciated. Please include a link to the game on [PA Stats](http://www.pastats.com/) or the replay ID and any time codes of interest. Failing that, please provide the system name, the number of AIs, their difficulty setting, and which slot(s) the players occupied. Remember to set Local Server to OFF in settings otherwise you won't get an entry in PA Stats or a replay ID.
 
 Be aware that Queller will produce more units and fabbers than the vanilla AI, especially on multi-planet systems. I have optimised the AI as best as I can, but it is a bigger performance hog than vanilla. If you are encountering performance issues try setting Local Server to OFF.
 
-## GOALS
+## GOALS
 
 Some of these might prove impossible given the tooling available, only time will tell.
 
@@ -34,6 +38,8 @@ Some of these might prove impossible given the tooling available, only time will
 ## DIFFICULTY
 
 Queller offers a range of difficulties designed to try and mimic the style of human players at particular levels of play. Bronze is easier than the vanilla normal difficulty while uber is harder than absurd. Later in this readme you can find recommendations on which difficulty you should try.
+
+Normal through Absurd are the standard difficulties and will use the vanilla AI rather than Queller.
 
 - Bronze
  - Economy first opening
@@ -88,6 +94,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
  - Goes orbital smartly
  - Expands quickly
  - Best troop selection
+ - Good scouting
  - Smartly reacts to opponent's play
  - Good fabber to troop balance
  - Appropriate use of static defence/offence
@@ -102,6 +109,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
  - Goes orbital smartly
  - Expands quickly
  - Best troop selection
+ - Best scouting
  - Smartly reacts to opponent's play
  - Good fabber to troop balance
  - Appropriate use of static defence/offence
@@ -109,6 +117,55 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
  - Best micro
  - Best threat assessments
  - Will use eco bonuses better than other levels
+ - Selectable subpersonality
+ 
+### Subpersonalities
+
+By default, Queller at Uber level will adapt its play to try and suit the system and the opposition it faces. You can use subpersonalities to customise Queller's game to your liking, or help it play better where it's making poor strategy choices.
+
+- Adaptive
+ - Primary bot focus
+ - Will make decisions based on map size and enemy forces
+ - Planned to become the default personality once the AI platoon attack bug is fixed
+
+- Air
+ - Near total focus on air units
+ - Will develop naval as normal
+ - Only uses bots on the ground
+
+- Dox
+ - Won't use any offensive T1 land unit other than the Dox
+ - Will focus on Slammers at T2 but not exclusively
+ - Will build a vehicle factory for Skitters if it detects the possibility of mines
+
+- Eco
+ - Heavier emphasis on economic growth
+ - Works best on really large (900+ radius) planets with lots of metal
+ - Aggressively techs so it can eco boom
+ - Requires sizable distance from its opponent
+ 
+- Grenadier
+ - Uses the Grenadier alongside Dox
+ - Will build a vehicle factory for Skitters if it detects the possibility of mines
+
+- Infernodier
+ - Starts out with Dox
+ - Quickly switches to an Infernos and Grenadiers composition
+
+- Tank
+ - Currently the default Uber personality
+ - Almost identical to Queller's fighting style prior to v2.1
+ - Will fight primarily using the Bolo
+ - May open with a small Dox presence
+
+- Tech
+ - Goes T2 as soon as it can afford to
+ - Will get orbital as soon as possible on multi planet systems
+ - Works best on multi planet systems where it spawns alone
+
+- Turtle
+ - Emphasis on fabbers over combat units
+ - Emphasis on static weapons over factories
 
 ## RECOMMENDED DIFFICULTY
 
@@ -153,19 +210,6 @@ Both spawns are about the same
 
 Slot 2/2 is riskier but leads to a stronger late game
 
-## THINGS I AM THINKING ABOUT
-
-- Compare enemy mobile presence to static defence and adjust army ratio accordingly. Is this even possible?
-- Get the Commander to build walls around itself when under threat
-- Can the Commander be assigned to a platoon?
-- How can I detect the AI is in a FFA and adjust decisions accordingly?
-- Only tech on land when alone or unable to expand and ditch the whole idea of teching while winning? Perhaps don't tech when winning if no one else is teching? Move to AntiSurface comparisons?
-- Better optimise the opening builds according to the map size and number of players
-- Needs to be think about when to stop building at sea/land on mixed maps
-- Is Kestrel play a thing?
-- Boom usage is terrible and needs a lot of work
-- Stops rapid basic factory expansion once advanced factories appear which is poor play on occupied worlds
-
 ## KNOWN ISSUES
 
 #### TOFIX
@@ -173,20 +217,15 @@ Slot 2/2 is riskier but leads to a stronger late game
 - Doesn't close out orbital games well even when it has an overwhelming economic advantage
 - Takes too long transition from a naval start to a land game on mixed maps
 - Will not send all its troops through a teleporter even when there's no reason not to
-- Will overbuild on land/sea when it should be dealing with a threat in the other arena
-- Too aggressive in spending excess eco when it has a lot of fabbers
-- If an Advanced Fabber is sent to another planet the building of a factory can be delayed
 - Doesn't understand when it needs to build units in preparation for an attack versus when it should shutdown factories so it can build super weapons
 
 #### MAYBEFIX
 
 - Doesn't handle enemy walls well
-- Late game performance issues on planets where it has produced a lot of fabbers - might be fixed by upcoming performance improvements to AI fabber tests
 
 #### WONTFIX
 
-- Ignores the unit preferences of AI personalities
-- Will build a late bot factory on land maps when it shouldn't
+- Ignores the unit preferences of client/UI AI personality mods
 - Will use fabbers to construct factories when the commander should really do it
 
 #### CANTFIX
@@ -201,6 +240,8 @@ Slot 2/2 is riskier but leads to a stronger late game
 - Won't send Phoenixes between planets
 - Will assign fabbers to a assist on a project that they could start earlier than the fabber they're assisting
 - Won't use more than one teleporter at a time
+- Won't use telepoters to move around a single planet
+- Combat Fabbers can't be used to build mines and repair troops even across entirely different AI personalities
 
 ## THANKS TO
 
