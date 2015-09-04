@@ -155,6 +155,12 @@
           },
           {
             "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Land",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (EnergyProduction | Factory)",
             "compare0": ">=",
             "value0": 10
@@ -222,6 +228,12 @@
             "unit_type_string0": "Structure & Naval & Defense",
             "compare0": "<",
             "value0": 4
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Land",
+            "compare0": "<",
+            "value0": 1
           },
           {
             "test_type": "UnitCountInBase",
