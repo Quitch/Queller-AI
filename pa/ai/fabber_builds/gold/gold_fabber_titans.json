@@ -164,7 +164,7 @@
       }
     },
     {
-      "name": "Gold - Raggarok",
+      "name": "Gold - Ragnarok",
       "to_build": "PlanetSplitter",
       "instance_count": 1,
       "min_num_assisters": 8,
@@ -190,6 +190,10 @@
             "boolean": false
           },
           {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -212,7 +216,7 @@
             "string0": "Land",
             "string1": "AntiSurface",
             "compare0": ">",
-            "value0": 1.0
+            "value0": 1
           },
           {
             "test_type": "UnitCountOnPlanet",

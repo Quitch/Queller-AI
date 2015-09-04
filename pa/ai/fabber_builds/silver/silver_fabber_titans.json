@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Uber - Atlas",
+      "name": "Silver - Atlas",
       "to_build": "SeismicBot",
       "instance_count": 1,
       "min_num_assisters": 3,
@@ -17,7 +17,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
+            "string0": "silver",
             "boolean": true
           },
           {
@@ -25,19 +25,11 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": ">",
-            "value0": 2800
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory - Orbital",
-            "compare0": ">=",
-            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -56,7 +48,7 @@
       }
     },
     {
-      "name": "Uber - Ares",
+      "name": "Silver - Ares",
       "to_build": "FortressVehicle",
       "instance_count": 1,
       "min_num_assisters": 3,
@@ -71,7 +63,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
+            "string0": "silver",
             "boolean": true
           },
           {
@@ -79,19 +71,11 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": ">",
-            "value0": 2800
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory - Orbital",
-            "compare0": ">=",
-            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -110,7 +94,7 @@
       }
     },
     {
-      "name": "Uber - Zeus",
+      "name": "Silver - Zeus",
       "to_build": "TeslaGunship",
       "instance_count": 1,
       "min_num_assisters": 3,
@@ -125,7 +109,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
+            "string0": "silver",
             "boolean": true
           },
           {
@@ -133,19 +117,11 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": ">",
-            "value0": 2800
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory - Orbital",
-            "compare0": ">=",
-            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -164,7 +140,7 @@
       }
     },
     {
-      "name": "Uber - Ragnarok",
+      "name": "Silver - Ragnarok",
       "to_build": "PlanetSplitter",
       "instance_count": 1,
       "min_num_assisters": 8,
@@ -178,7 +154,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
+            "string0": "silver",
             "boolean": true
           },
           {
@@ -209,7 +185,7 @@
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiSurface",
             "compare0": ">",
-            "value0": 22400
+            "value0": 11200
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
