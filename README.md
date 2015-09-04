@@ -41,7 +41,7 @@ Some of these might prove impossible given the tooling available, only time will
 
 ## DIFFICULTY
 
-Queller offers a range of difficulties designed to try and mimic the style of human players at particular levels of play. Bronze is easier than the vanilla normal difficulty while uber is harder than absurd. Later in this readme you can find recommendations on which difficulty you should try.
+Queller offers a range of difficulties designed to try and mimic the style of human players at particular levels of play. Later in this readme you can find recommendations on which difficulty you should try.
 
 Normal through Absurd are the standard difficulties and will use the vanilla AI rather than Queller.
 
