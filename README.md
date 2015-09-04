@@ -198,6 +198,7 @@ The spawn the AI starts in and the profile used can make a big difference, even 
 - Will not send all its troops through a teleporter even when there's no reason not to
 - Doesn't understand when it needs to build units in preparation for an attack versus when it should shutdown factories so it can build super weapons
 - Spikes in AI fabber performance
+- Will sometimes build torpedo launcher defences in the starting base on non-symmetrical maps without water
 
 #### MAYBEFIX
 
