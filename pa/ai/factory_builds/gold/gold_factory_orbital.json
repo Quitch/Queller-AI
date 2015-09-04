@@ -5,10 +5,9 @@
       "to_build": "OrbitalFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
-      "priority": 100,
+      "priority": 199,
       "builders": [
-        "OrbitalLauncher",
-        "OrbitalFactory"
+        "OrbitalLauncher"
       ],
       "build_conditions": [
         [
@@ -35,35 +34,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "gold",
             "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "OrbitalFabber"
-          },
-          {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Orbital & Fabber",
-            "compare0": "<",
-            "value0": 2
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -94,9 +64,6 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "OrbitalFabber"
           },
@@ -110,11 +77,11 @@
       ]
     },
     {
-      "name": "Gold - ARKYD",
+      "name": "Gold - ARKYD - This Planet",
       "to_build": "BasicRadarSattelite",
       "instance_count": 1,
       "max_num_assisters": 10,
-      "priority": 97,
+      "priority": 99,
       "builders": [
         "OrbitalLauncher"
       ],
@@ -126,7 +93,8 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "ThisPlanetNeedsReconAssistance",
+            "boolean": true
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -137,20 +105,22 @@
             "string0": "Orbital",
             "compare0": "<=",
             "value0": 0
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Orbital & Recon - Structure",
-            "compare0": "<",
-            "value0": 150
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Orbital & Recon & Advanced - Structure",
-            "compare0": "<",
-            "value0": 250
           }
-        ],
+        ]
+      ]
+    },
+    {
+      "name": "Gold - ARKYD - Other Planet",
+      "to_build": "BasicRadarSattelite",
+      "instance_count": 1,
+      "shared_instance_count": "ReconAssistance",
+      "cross_planet_shared_count": true,
+      "max_num_assisters": 10,
+      "priority": 99,
+      "builders": [
+        "OrbitalLauncher"
+      ],
+      "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
@@ -162,9 +132,6 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicRadarSattelite"
           },
@@ -173,25 +140,17 @@
             "string0": "Orbital",
             "compare0": "<=",
             "value0": 0
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Orbital & Factory & Advanced",
-            "compare0": "<",
-            "value0": 1
           }
         ]
       ]
     },
     {
-      "name": "Gold - Avenger",
-      "to_build": "OrbitalFighter",
+      "name": "Gold - Hermes - This Planet",
+      "to_build": "OrbitalProbe",
       "instance_count": 1,
-      "max_num_assisters": 1,
-      "priority": 97,
+      "priority": 99,
       "builders": [
-        "OrbitalLauncher",
-        "OrbitalFactory"
+        "OrbitalLauncher"
       ],
       "build_conditions": [
         [
@@ -201,7 +160,92 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "ThisPlanetNeedsReconAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Gold - Hermes - Other Planet",
+      "to_build": "OrbitalProbe",
+      "instance_count": 1,
+      "shared_instance_count": "ReconAssistance",
+      "cross_planet_shared_count": true,
+      "priority": 99,
+      "builders": [
+        "OrbitalLauncher"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsReconAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "OrbitalProbe"
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Gold - Avenger - Local Threat",
+      "to_build": "OrbitalFighter",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 100,
+      "builders": [
+        "OrbitalLauncher"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Gold - Avenger - System Threat",
+      "to_build": "OrbitalFighter",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "OrbitalLauncher"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
           },
           {
             "test_type": "SystemThreat",
@@ -220,7 +264,7 @@
       "max_num_assisters": 20,
       "priority": 102,
       "builders": [
-        "OrbitalLauncher"
+        "AnyUberOrbitalFactory"
       ],
       "build_conditions": [
         [
@@ -274,10 +318,10 @@
       "name": "Gold - Astraeus",
       "to_build": "OrbitalLander",
       "instance_count": 1,
-      "max_num_assisters": 5,
+      "max_num_assisters": 10,
       "priority": 101,
       "builders": [
-        "OrbitalLauncher"
+        "AnyUberOrbitalFactory"
       ],
       "build_conditions": [
         [
@@ -299,7 +343,10 @@
             "boolean": false
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -321,7 +368,7 @@
       "to_build": "SolarArray",
       "instance_count": 1,
       "max_num_assisters": 15,
-      "priority": 97,
+      "priority": 195,
       "builders": [
         "OrbitalFactory"
       ],
@@ -331,9 +378,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "gold",
             "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "PotentialEnergyEfficiency",
@@ -361,9 +405,6 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
             "test_type": "DesireEnergy"
           },
           {
@@ -385,9 +426,9 @@
     {
       "name": "Gold - SXX-1304 Laser Platform",
       "to_build": "OrbitalDeathLaser",
-      "instance_count": 1,
+      "instance_count": -1,
       "max_num_assisters": 15,
-      "priority": 97,
+      "priority": 195,
       "builders": [
         "OrbitalFactory"
       ],
@@ -403,9 +444,6 @@
             "boolean": false
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
             "test_type": "BaseThreat",
             "string0": "Orbital",
             "compare0": "<=",
@@ -416,23 +454,39 @@
             "string0": "Land",
             "compare0": ">",
             "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreat",
             "string0": "Orbital",
-            "string1": "AntiOrbital",
-            "compare0": "<",
-            "value0": 1
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Naval",
+            "compare0": ">",
+            "value0": 0
           }
         ]
       ]
     },
     {
-      "name": "Gold - Advanced Radar Satellite",
+      "name": "Gold - Advanced Radar Satellite - This Planet",
       "to_build": "AdvancedRadarSattelite",
       "instance_count": 1,
       "max_num_assisters": 15,
-      "priority": 97,
+      "priority": 198,
       "builders": [
         "OrbitalFactory"
       ],
@@ -444,7 +498,8 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "ThisPlanetNeedsReconAssistance",
+            "boolean": true
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -455,27 +510,22 @@
             "string0": "Orbital",
             "compare0": "<=",
             "value0": 0
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Orbital",
-            "string1": "AntiOrbital",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "string0": "Orbital & Structure & Economy",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Orbital & Recon & Advanced - Structure",
-            "compare0": "<",
-            "value0": 250
           }
-        ],
+        ]
+      ]
+    },
+    {
+      "name": "Gold - Advanced Radar Satellite - Other Planet",
+      "to_build": "AdvancedRadarSattelite",
+      "instance_count": 1,
+      "shared_instance_count": "ReconAssistance",
+      "cross_planet_shared_count": true,
+      "max_num_assisters": 15,
+      "priority": 198,
+      "builders": [
+        "OrbitalFactory"
+      ],
+      "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
@@ -487,9 +537,6 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "AdvancedRadarSattelite"
           },
@@ -498,6 +545,63 @@
             "string0": "Orbital",
             "compare0": "<=",
             "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Gold - Artemis",
+      "to_build": "OrbitalRailgun",
+      "instance_count": -1,
+      "max_num_assisters": 5,
+      "priority": 195,
+      "builders": [
+        "OrbitalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Gold - Omega",
+      "to_build": "OrbitalBattleShip",
+      "instance_count": -1,
+      "max_num_assisters": 5,
+      "priority": 195,
+      "builders": [
+        "OrbitalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Orbital & Fighter & Heavy",
+            "unit_type_string1": "Orbital & Fighter",
+            "compare0": "<",
+            "value0": 0.2
           }
         ]
       ]

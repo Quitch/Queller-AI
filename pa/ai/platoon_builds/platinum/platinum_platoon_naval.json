@@ -3,18 +3,14 @@
     {
       "name": "Platinum - Naval Scout Platoon",
       "to_build": "Naval_Scout_1",
-      "instance_count": 3,
-      "priority": 106,
+      "instance_count": 2,
+      "priority": 160,
       "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
             "string0": "platinum",
             "boolean": true
-          },
-          {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
           },
           {
             "test_type": "UnitPoolCount",
@@ -29,9 +25,8 @@
     {
       "name": "Platinum - Naval Attack Platoon 1",
       "to_build": "Naval_Attack_1",
-      "instance_count": 6,
-      "shared_instance_count": "NavalPlatoon",
-      "priority": 104,
+      "instance_count": -1,
+      "priority": 130,
       "build_conditions": [
         [
           {
@@ -41,51 +36,19 @@
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
+            "string0": "Naval",
             "compare0": "<",
-            "value0": 1500
+            "value0": 6750
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Naval & Mobile & Offense) - Scout",
+            "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover",
             "compare0": ">=",
             "value0": 1
           },
           {
             "test_type": "CanAttackWithPoolUnits",
-            "boolean": true
-          }
-        ]
-      ],
-      "task_type": "NavalAttack"
-    },
-    {
-      "name": "Platinum - Naval Attack Platoon 2",
-      "to_build": "Naval_Attack_2",
-      "instance_count": 6,
-      "shared_instance_count": "NavalPlatoon",
-      "priority": 103,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": "<",
-            "value0": 4995
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Naval & Mobile & Offense) - Scout",
-            "compare0": ">=",
-            "value0": 2
-          },
-          {
-            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface",
             "boolean": true
           }
         ]
@@ -95,9 +58,8 @@
     {
       "name": "Platinum - Naval Attack Platoon 4",
       "to_build": "Naval_Attack_4",
-      "instance_count": 6,
-      "shared_instance_count": "NavalPlatoon",
-      "priority": 102,
+      "instance_count": -1,
+      "priority": 120,
       "build_conditions": [
         [
           {
@@ -107,18 +69,19 @@
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
+            "string0": "Naval",
             "compare0": "<",
-            "value0": 9990
+            "value0": 22477
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Naval & Mobile & Offense) - Scout",
+            "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover",
             "compare0": ">=",
             "value0": 4
           },
           {
             "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface",
             "boolean": true
           }
         ]
@@ -128,9 +91,8 @@
     {
       "name": "Platinum - Naval Attack Platoon 8",
       "to_build": "Naval_Attack_8",
-      "instance_count": 6,
-      "shared_instance_count": "NavalPlatoon",
-      "priority": 101,
+      "instance_count": -1,
+      "priority": 110,
       "build_conditions": [
         [
           {
@@ -140,18 +102,19 @@
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
+            "string0": "Naval",
             "compare0": "<",
-            "value0": 19980
+            "value0": 44955
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Naval & Mobile & Offense) - Scout",
+            "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover",
             "compare0": ">=",
             "value0": 8
           },
           {
             "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface",
             "boolean": true
           }
         ]
@@ -159,11 +122,10 @@
       "task_type": "NavalAttack"
     },
     {
-      "name": "Platinum - Naval Attack Platoon 16",
-      "to_build": "Naval_Attack_16",
-      "instance_count": 6,
-      "shared_instance_count": "NavalPlatoon",
-      "priority": 100,
+      "name": "Platinum - Naval Attack Platoon 12",
+      "to_build": "Naval_Attack_12",
+      "instance_count": -1,
+      "priority": 105,
       "build_conditions": [
         [
           {
@@ -172,13 +134,20 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Naval",
+            "compare0": "<",
+            "value0": 67432
+          },
+          {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Naval & Mobile & Offense) - Scout",
+            "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover",
             "compare0": ">=",
-            "value0": 16
+            "value0": 12
           },
           {
             "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface",
             "boolean": true
           }
         ]

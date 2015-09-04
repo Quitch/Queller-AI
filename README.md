@@ -55,7 +55,7 @@ Normal through Absurd are the standard difficulties and will use the vanilla AI 
  - Poor use of fabbers
  - Terrible economy handling
  - No micro
- - Poor threat assessments
+ - Cautious threat assessments
 
 - Silver
  - Factory first opening
@@ -68,15 +68,15 @@ Normal through Absurd are the standard difficulties and will use the vanilla AI 
  - Doesn't react to what the enemy is doing
  - Likes fabbers
  - Likes static defence/offence
- - Poor economy handling
+ - Average economy handling
  - Average micro
- - OK threat assessments
+ - Poor threat assessments
 
 - Gold
  - Smart factory first opening
- - Some armies
- - Prefers T1
- - Slow to go orbital
+ - Many armies
+ - Will tech if it can
+ - Will go orbital if it can
  - Expands OK
  - Good troop selection
  - OK scouting
@@ -85,11 +85,11 @@ Normal through Absurd are the standard difficulties and will use the vanilla AI 
  - Appropriate use of static defence/offence
  - Average economy handling
  - Average micro
- - Good threat assessments
+ - OK threat assessments
 
 - Platinum
  - Smart factory first opening
- - Numerous armies
+ - Unlimited armies
  - Techs smartly
  - Goes orbital smartly
  - Expands quickly
@@ -123,15 +123,9 @@ Normal through Absurd are the standard difficulties and will use the vanilla AI 
 
 By default, Queller at Uber level will adapt its play to try and suit the system and the opposition it faces. You can use subpersonalities to customise Queller's game to your liking, or help it play better where it's making poor strategy choices.
 
-- Adaptive
- - Primary bot focus
- - Will make decisions based on map size and enemy forces
- - Planned to become the default personality once the AI platoon attack bug is fixed
-
 - Air
- - Near total focus on air units
- - Will develop naval as normal
- - Only uses bots on the ground
+ - Heavier use of air
+ - Works best on larger maps with spread out metal
 
 - Dox
  - Won't use any offensive T1 land unit other than the Dox
@@ -143,20 +137,6 @@ By default, Queller at Uber level will adapt its play to try and suit the system
  - Works best on really large (900+ radius) planets with lots of metal
  - Aggressively techs so it can eco boom
  - Requires sizable distance from its opponent
- 
-- Grenadier
- - Uses the Grenadier alongside Dox
- - Will build a vehicle factory for Skitters if it detects the possibility of mines
-
-- Infernodier
- - Starts out with Dox
- - Quickly switches to an Infernos and Grenadiers composition
-
-- Tank
- - Currently the default Uber personality
- - Almost identical to Queller's fighting style prior to v2.1
- - Will fight primarily using the Bolo
- - May open with a small Dox presence
 
 - Tech
  - Goes T2 as soon as it can afford to
@@ -166,6 +146,7 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 - Turtle
  - Emphasis on fabbers over combat units
  - Emphasis on static weapons over factories
+ - May perform better in FFAs with its cautious approach
 
 ## RECOMMENDED DIFFICULTY
 
@@ -173,7 +154,7 @@ Below are recommendations for the difficulty and eco modifiers you should use.
 
 | Vanilla    | Queller | Eco |
 | ---------- | ------- | --- |
-| Normal     | Silver  | 0.9 |
+| Normal     | Bronze  | 1.0 |
 | Hard       | Silver  | 1.1 |
 | Relentless | Gold    | 0.8 |
 | Absurd     | Gold    | 0.8 |
@@ -192,23 +173,18 @@ Below are recommendations for the difficulty and eco modifiers you should use.
 
 ## MAP NOTES
 
-The spawn the AI starts in can make a big difference, even for symmetrical 1v1s. Below are some recommendations.
+The spawn the AI starts in and the profile used can make a big difference, even for symmetrical 1v1s. Below are some recommendations for 1v1s, but feel free to experiment as your playstyle may be challenged differently.
 
-#### Forge
-
-Plays better in slot 1/2
-
-#### Duat
-
-Plays better in slot 2/2
-
-#### Berg
-
-Both spawns are about the same
-
-#### Pacific
-
-Slot 2/2 is riskier but leads to a stronger late game
+| Map     | Slot |
+| ------- |:----:|
+| Berg    | 1/2  |
+| Blitz   | 1/2  |
+| Clutch  | 2    |
+| Crag    | 2    |
+| Duat    | 2    |
+| Forge   | 1    |
+| Lock    | 1    |
+| Pacific | 1/2  |
 
 ## KNOWN ISSUES
 
@@ -218,6 +194,7 @@ Slot 2/2 is riskier but leads to a stronger late game
 - Takes too long transition from a naval start to a land game on mixed maps
 - Will not send all its troops through a teleporter even when there's no reason not to
 - Doesn't understand when it needs to build units in preparation for an attack versus when it should shutdown factories so it can build super weapons
+- Spikes in AI fabber performance drain
 
 #### MAYBEFIX
 
@@ -225,7 +202,7 @@ Slot 2/2 is riskier but leads to a stronger late game
 
 #### WONTFIX
 
-- Ignores the unit preferences of client/UI AI personality mods
+- Ignores the factory and fabber preferences of client/UI AI personality mods
 - Will use fabbers to construct factories when the commander should really do it
 
 #### CANTFIX
@@ -242,6 +219,7 @@ Slot 2/2 is riskier but leads to a stronger late game
 - Won't use more than one teleporter at a time
 - Won't use telepoters to move around a single planet
 - Combat Fabbers can't be used to build mines and repair troops even across entirely different AI personalities
+- Cannot reclaim
 
 ## THANKS TO
 

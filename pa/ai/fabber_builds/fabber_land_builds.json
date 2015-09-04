@@ -11,7 +11,8 @@
       "builders": [
         "Commander",
         "AnyBasicFabber",
-        "AnyAdvancedFabber"
+        "AnyAdvancedFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [
@@ -136,7 +137,8 @@
       "builders": [
         "Commander",
         "AnyBasicFabber",
-        "AnyAdvancedFabber"
+        "AnyAdvancedFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [
@@ -273,7 +275,8 @@
       "builders": [
         "Commander",
         "AnyBasicFabber",
-        "AnyAdvancedFabber"
+        "AnyAdvancedFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [
@@ -384,7 +387,8 @@
       "builders": [
         "Commander",
         "AnyBasicFabber",
-        "AnyAdvancedFabber"
+        "AnyAdvancedFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [
@@ -502,7 +506,8 @@
       "max_num_assisters": 5,
       "builders": [
         "BasicBotFabber",
-        "AdvancedBotFabber"
+        "AdvancedBotFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [
@@ -514,6 +519,11 @@
           {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -545,6 +555,11 @@
             "boolean": true
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
+          },
+          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "(Factory & Construction & Basic) - Orbital",
             "compare0": ">",
@@ -556,7 +571,7 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Factory & Advanced) - NukeDefense - Nuke",
+            "unit_type_string0": "(Factory & Advanced) - NukeDefense - Nuke - SelfDestruct",
             "compare0": "<",
             "value0": 1
           },
@@ -606,6 +621,11 @@
             "value0": 0
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
+          },
+          {
             "test_type": "NeedAdvancedVehicleFactory",
             "boolean": true
           },
@@ -633,6 +653,11 @@
             "boolean": true
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
+          },
+          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "(Factory & Construction & Basic) - Orbital",
             "compare0": ">",
@@ -644,7 +669,7 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Factory & Advanced) - NukeDefense - Nuke",
+            "unit_type_string0": "(Factory & Advanced) - NukeDefense - Nuke - SelfDestruct",
             "compare0": "<",
             "value0": 1
           },
@@ -678,7 +703,8 @@
       "max_num_assisters": 5,
       "builders": [
         "BasicBotFabber",
-        "AdvancedBotFabber"
+        "AdvancedBotFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [
@@ -695,6 +721,11 @@
             "test_type": "HasPersonalityTag",
             "string0": "PreventsWaste",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
           },
           {
             "test_type": "CurrentMetalEfficiency",
@@ -768,6 +799,11 @@
             "test_type": "HasPersonalityTag",
             "string0": "PreventsWaste",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
           },
           {
             "test_type": "CurrentMetalEfficiency",

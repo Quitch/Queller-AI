@@ -1,11 +1,11 @@
 {
   "build_list": [
     {
-      "name": "Gold - Orbital Launcher - Alone/Rush",
+      "name": "Gold - Orbital Launcher",
       "to_build": "OrbitalLauncher",
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
-      "priority": 479,
+      "priority": 477,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
       "builders": [
@@ -52,150 +52,6 @@
             "boolean": true
           },
           {
-            "test_type": "UnableToExpand",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetWithoutPresence",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "OrbitalLauncher"
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Factory & Orbital",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "OrbitalLauncher"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetWithoutPresence",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "OrbitalLauncher"
-          },
-          {
-            "test_type": "SpawnablePlanetCount",
-            "compare0": "==",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Factory & Orbital",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "OrbitalLauncher"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "NoWhereToRun",
-            "boolean": true
-          },
-          {
-            "test_type": "PresenceOnOtherPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "PlanetCount",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Factory & Orbital",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "OrbitalLauncher"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "NoWhereToRun",
-            "boolean": true
-          },
-          {
-            "test_type": "CurrentEnergyEfficiency",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "PlanetCount",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory & Orbital",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "OrbitalLauncher"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 3
-      }
-    },
-    {
-      "name": "Gold - Orbital Launcher",
-      "to_build": "OrbitalLauncher",
-      "instance_count": 1,
-      "shared_instance_count": "AdvancedFactory",
-      "priority": 260,
-      "min_num_assisters": 3,
-      "max_num_assisters": 5,
-      "builders": [
-        "AnyUberBasicFabber",
-        "AnyUberAdvancedFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -226,8 +82,12 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetWithoutPresence",
-            "boolean": true
+            "test_type": "CanDeployLandFromBase",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -237,10 +97,11 @@
             "string0": "OrbitalLauncher"
           },
           {
-            "test_type": "UnitCount",
+            "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Factory & Orbital",
+            "unit_type_string1": "Factory - Orbital",
             "compare0": "<",
-            "value0": 1
+            "value0": 0.05
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -254,15 +115,20 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetWithoutPresence",
-            "boolean": true
+            "test_type": "CanAffordBuildDemand"
           },
           {
-            "test_type": "UnableToExpand",
-            "boolean": true
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "OrbitalLauncher"
           },
           {
-            "test_type": "UnitCount",
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Orbital & Factory",
             "compare0": "<",
             "value0": 1
@@ -294,42 +160,11 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetIsGasGiant",
-            "boolean": true
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "OrbitalFactory"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "string0": "Orbital & Factory & Advanced",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "OrbitalFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "OrbitalFactory"
-          },
-          {
-            "test_type": "NeedOrbitalFactory"
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -338,7 +173,7 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 3
+        "buffer": 50
       }
     }
   ]

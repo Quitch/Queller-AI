@@ -27,12 +27,6 @@
             "string0": "BasicAirFactory"
           },
           {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Factory & Basic",
-            "compare0": "<=",
-            "value0": 200
-          },
-          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "BasicAirFactory"
           }
@@ -70,14 +64,36 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Advanced",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedAirFactory"
+          }
+        ],
+		[
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
             "string0": "AdvancedAirFactory"
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Advanced & Factory) - Orbital - Naval",
-            "compare0": "<",
-            "value0": 1
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedAirFactory"
           }
         ]
       ],

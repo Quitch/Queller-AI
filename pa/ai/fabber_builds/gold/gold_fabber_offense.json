@@ -49,44 +49,6 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "BasicArtillery"
           }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Artillery & Basic",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
-            "compare0": ">=",
-            "value0": 5
-          },
-          {
-            "test_type": "UnitCountAroundBase",
-            "unit_type_string0": "Commander",
-            "string0": "Enemy",
-            "value0": 260,
-            "compare0": ">=",
-            "value1": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicArtillery"
-          }
         ]
       ],
       "placement_rules": {
@@ -127,10 +89,6 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -142,11 +100,6 @@
             "string0": "Economy",
             "compare0": ">",
             "value0": 0
-          },
-          {
-            "test_type": "PlanetCount",
-            "compare0": ">",
-            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -189,12 +142,6 @@
             "value0": 5
           },
           {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Artillery & Advanced",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
             "test_type": "UnitCountAroundBase",
             "unit_type_string0": "Structure - MetalProduction",
             "string0": "Enemy",
@@ -225,12 +172,6 @@
             "unit_type_string0": "Structure & (EnergyProduction | Factory)",
             "compare0": ">=",
             "value0": 5
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Artillery & Advanced",
-            "compare0": "<",
-            "value0": 1
           },
           {
             "test_type": "UnitCountAroundBase",
@@ -306,13 +247,13 @@
       }
     },
     {
-      "name": "Gold - Nuke Silo - Alone",
+      "name": "Gold - Nuke Silo - Rush",
       "to_build": "NukeSilo",
       "instance_count": 1,
       "shared_instance_count": "NukeSilo",
       "min_num_assisters": 3,
       "max_num_assisters": 12,
-      "priority": 507,
+      "priority": 508,
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -338,53 +279,6 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "NukeSilo"
           }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 2
-      }
-    },
-    {
-      "name": "Gold - Nuke Silo - No Antis",
-      "to_build": "NukeSilo",
-      "instance_count": 1,
-      "shared_instance_count": "NukeSilo",
-      "min_num_assisters": 5,
-      "max_num_assisters": 12,
-      "priority": 508,
-      "builders": [
-        "AnyUberAdvancedFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "NukeSilo"
-          },
-          {
-            "test_type": "PlanetThreat",
-            "string0": "AntiNuke",
-            "compare0": "<=",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Nuke",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "NukeSilo"
-          }
         ],
         [
           {
@@ -400,16 +294,10 @@
             "string0": "NukeSilo"
           },
           {
-            "test_type": "SystemThreat",
+            "test_type": "FocusTargetThreat",
             "string0": "AntiNuke",
             "compare0": "<=",
             "value0": 0
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Nuke",
-            "compare0": "<",
-            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -464,7 +352,7 @@
           {
             "test_type": "PlanetCount",
             "compare0": ">",
-            "value0": 1
+            "value0": 2
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -486,8 +374,8 @@
       "name": "Gold - Catalyst",
       "to_build": "ControlModule",
       "instance_count": 1,
-      "min_num_assisters": 8,
-      "max_num_assisters": 45,
+      "min_num_assisters": 20,
+      "max_num_assisters": 100,
       "priority": 509,
       "builders": [
         "AnyUberAdvancedFabber"
@@ -517,9 +405,9 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber & Advanced",
+            "unit_type_string0": "Fabber",
             "compare0": ">=",
-            "value0": 9
+            "value0": 7
           },
           {
             "test_type": "CanFindControlPointToBuild",

@@ -87,7 +87,7 @@
     {
       "name": "Bronze - Orbital Fighter Attack Platoon",
       "to_build": "Orbital_Fighter_Attack",
-      "instance_count": 1,
+      "instance_count": -1,
       "priority": 100,
       "build_conditions": [
         [
@@ -100,10 +100,11 @@
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Orbital & Fighter",
             "compare0": ">=",
-            "value0": 20
+            "value0": 1
           },
           {
-            "test_type": "CanAttackWithPoolUnits"
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_Orbital"
           }
         ]
       ],
@@ -128,7 +129,8 @@
             "value0": 1
           },
           {
-            "test_type": "CanAttackWithPoolUnits"
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface"
           }
         ]
       ],

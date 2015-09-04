@@ -89,49 +89,16 @@
       }
     },
     {
-      "name": "Platinum - Teleport Advanced Fabber To Planet",
-      "instance_count": 1,
-      "shared_instance_count": "TeleportFabber",
-      "priority": 802,
-      "builders": [
-        "AdvancedBotFabber",
-        "AdvancedVehicleFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetWithoutFabberWithTeleporter",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber - Air - Orbital",
-            "compare0": ">=",
-            "value0": 2
-          }
-        ]
-      ],
-      "task_type": "TeleportFabberToPlanet"
-    },
-    {
-      "name": "Platinum - Teleport Basic Fabber To Planet",
+      "name": "Platinum - Teleport Fabber To Planet",
       "instance_count": 1,
       "shared_instance_count": "TeleportFabber",
       "priority": 801,
       "builders": [
         "BasicBotFabber",
-        "BasicVehicleFabber"
+        "BasicVehicleFabber",
+        "AdvancedBotFabber",
+        "AdvancedVehicleFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [
@@ -170,7 +137,8 @@
         "BasicAirFabber",
         "AdvancedBotFabber",
         "AdvancedVehicleFabber",
-        "AdvancedAirFabber"
+        "AdvancedAirFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [

@@ -1,21 +1,22 @@
 {
   "context": "server",
-  "identifier": "com.pa.quitch.qQuellerAIDev",
-  "display_name": "Queller AI DEV",
-  "description": "A more humanlike AI offering a wider range of difficulties than vanilla. Doesn't affect Galactic War. Works alongside the vanilla AI",
+  "identifier": "com.pa.quitch.qQuellerAI",
+  "display_name": "Queller AI",
+  "description": "A more humanlike AI offering a wide range of difficulties. Doesn't affect Galactic War. Works alongside the vanilla AI",
   "author": "Quitch",
-  "version": "dev",
-  "build": "85423",
-  "date": "2015/08/09",
+  "version": "3.0",
+  "build": "86765",
+  "date": "2015/09/04",
   "signature": "not yet implemented",
   "forum": "https://forums.uberent.com/threads/rel-server-queller-ai-beta-v0-5.65795/",
   "category": [
-    "ai"
+    "ai",
+	"titans"
   ],
-  "id": "qQuellerAIDev",
+  "id": "qQuellerAI",
   "icon": "http://i.imgur.com/cFJeCgf.gif",
   "dependencies": [
-    "com.pa.quitch.qQuellerAIPersonalitiesDev"
+    "com.pa.quitch.qQuellerAIPersonalities"
   ],
   "priority": 100
 }

@@ -14,14 +14,8 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Orbital & Recon - Structure",
+            "unit_type_string0": "Orbital & (Recon | Scout)",
             "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Orbital & Structure & Economy",
-            "compare0": "<",
             "value0": 1
           }
         ]
@@ -45,25 +39,8 @@
             "boolean": true
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Orbital & Recon - Structure",
-            "compare0": ">",
-            "value0": 1
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsGasGiant",
-            "boolean": true
-          },
-          {
-            "test_type": "OtherPlanetNeedsReconAssistance",
-            "boolean": true
+            "test_type": "ThisPlanetNeedsReconAssistance",
+            "boolean": false
           }
         ],
         [
@@ -107,25 +84,8 @@
             "boolean": true
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Orbital & Recon - Structure",
-            "compare0": ">",
-            "value0": 1
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsGasGiant",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetWithoutPresence",
-            "boolean": true
+            "test_type": "ThisPlanetNeedsReconAssistance",
+            "boolean": false
           }
         ]
       ],
@@ -134,8 +94,8 @@
     {
       "name": "Platinum - Orbital Fighter Attack Platoon",
       "to_build": "Orbital_Fighter_Attack",
-      "instance_count": 5,
-      "priority": 100,
+      "instance_count": -1,
+      "priority": 110,
       "build_conditions": [
         [
           {
@@ -150,7 +110,8 @@
             "value0": 1
           },
           {
-            "test_type": "CanAttackWithPoolUnits"
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_Orbital"
           }
         ]
       ],
@@ -175,11 +136,42 @@
             "value0": 1
           },
           {
-            "test_type": "CanAttackWithPoolUnits"
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface"
           }
         ]
       ],
       "task_type": "OrbitalLaserAttack"
+    },
+    {
+      "name": "Platinum - Orbital Transfer To Planet",
+      "to_build": "Orbital_Offense_Transfer",
+      "instance_count": -1,
+      "priority": 99,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "ThisPlanetNeedsOrbitalUnitAssistance",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & (Fighter | LaserPlatform)",
+            "compare0": ">=",
+            "value0": 1
+          }
+        ]
+      ],
+      "task_type": "TransferOrbitalToPlanet"
     }
   ]
 }

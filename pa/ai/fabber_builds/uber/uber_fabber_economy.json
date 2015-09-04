@@ -371,15 +371,16 @@
       }
     },
     {
-      "name": "Uber - Basic Energy Generator",
+      "name": "Uber - Basic Energy Generator - Fast Builders",
       "to_build": "BasicEnergyGenerator",
       "instance_count": 1,
       "max_num_assisters": 1,
       "shared_instance_count": "BasicEnergy",
       "cross_planet_shared_count": true,
-      "priority": 260,
+      "priority": 262,
       "builders": [
-        "AnyUberBasicFabber"
+        "BasicVehicleFabber",
+        "BasicNavalFabber"
       ],
       "build_conditions": [
         [
@@ -399,9 +400,9 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "(Fabber & Advanced) | (EnergyProduction & Advanced)",
+            "unit_type_string0": "Fabber & Advanced",
             "compare0": "<",
-            "value0": 1
+            "value0": 2
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -427,9 +428,88 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "(Fabber & Advanced) | (EnergyProduction & Advanced)",
+            "unit_type_string0": "Fabber & Advanced",
+            "compare0": "<",
+            "value0": 2
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicEnergyGenerator"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 6,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Uber - Basic Energy Generator - Slow Builders",
+      "to_build": "BasicEnergyGenerator",
+      "instance_count": 1,
+      "max_num_assisters": 1,
+      "shared_instance_count": "BasicEnergy",
+      "cross_planet_shared_count": true,
+      "priority": 260,
+      "builders": [
+        "BasicAirFabber",
+        "BasicBotFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "DesireEnergy"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Basic - Orbital",
+            "compare0": ">",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Fabber & Advanced",
+            "compare0": "<",
+            "value0": 2
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicEnergyGenerator"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "PotentialEnergyEfficiency",
             "compare0": "<",
             "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Basic - Orbital",
+            "compare0": ">",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Fabber & Advanced",
+            "compare0": "<",
+            "value0": 2
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -678,16 +758,18 @@
       }
     },
     {
-      "name": "Uber - Advanced Energy Generator",
+      "name": "Uber - Advanced Energy Generator - Fast Builders",
       "to_build": "AdvancedEnergyGenerator",
       "instance_count": 2,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
       "shared_instance_count": "AdvancedEnergy",
       "cross_planet_shared_count": true,
-      "priority": 269,
+      "priority": 271,
       "builders": [
-        "AnyUberAdvancedFabber"
+        "AdvancedNavalFabber",
+        "AdvancedVehicleFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [
@@ -697,9 +779,46 @@
             "boolean": true
           },
           {
+            "test_type": "PotentialEnergyEfficiency",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedEnergyGenerator"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 10,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Uber - Advanced Energy Generator - Slow Builders",
+      "to_build": "AdvancedEnergyGenerator",
+      "instance_count": 2,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "shared_instance_count": "AdvancedEnergy",
+      "cross_planet_shared_count": true,
+      "priority": 269,
+      "builders": [
+        "AdvancedAirFabber",
+        "AdvancedBotFabber"
+      ],
+      "build_conditions": [
+        [
+          {
             "test_type": "HasPersonalityTag",
-            "string0": "techrush",
-            "boolean": false
+            "string0": "uber",
+            "boolean": true
           },
           {
             "test_type": "PotentialEnergyEfficiency",
@@ -731,9 +850,11 @@
       "max_num_assisters": 5,
       "shared_instance_count": "AdvancedEnergy",
       "cross_planet_shared_count": true,
-      "priority": 509,
+      "priority": 511,
       "builders": [
-        "AnyUberAdvancedFabber"
+        "AdvancedNavalFabber",
+        "AdvancedVehicleFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [
@@ -743,9 +864,44 @@
             "boolean": true
           },
           {
+            "test_type": "DesireEnergy"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedEnergyGenerator"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 10,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Uber - Advanced Energy Generator - Desire - Slow Builders",
+      "to_build": "AdvancedEnergyGenerator",
+      "instance_count": 2,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "shared_instance_count": "AdvancedEnergy",
+      "cross_planet_shared_count": true,
+      "priority": 509,
+      "builders": [
+        "AdvancedAirFabber",
+        "AdvancedBotFabber"
+      ],
+      "build_conditions": [
+        [
+          {
             "test_type": "HasPersonalityTag",
-            "string0": "techrush",
-            "boolean": false
+            "string0": "uber",
+            "boolean": true
           },
           {
             "test_type": "DesireEnergy"
