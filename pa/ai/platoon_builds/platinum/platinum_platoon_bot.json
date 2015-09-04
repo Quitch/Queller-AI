@@ -42,7 +42,12 @@
       "instance_count": -1,
       "priority": 109,
       "build_conditions": [
-        [          
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -77,6 +82,11 @@
       "build_conditions": [
         [
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
@@ -109,6 +119,11 @@
       "priority": 10,
       "build_conditions": [
         [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -143,6 +158,11 @@
       "build_conditions": [
         [
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
@@ -175,6 +195,11 @@
       "priority": 106,
       "build_conditions": [
         [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -209,6 +234,11 @@
       "build_conditions": [
         [
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
@@ -236,14 +266,14 @@
       "build_conditions": [
         [
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
             "test_type": "HasPersonalityTag",
             "string0": "platinum",
             "boolean": true
           },
+		  {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },          
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiSurface",
@@ -274,14 +304,14 @@
       "build_conditions": [
         [
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
             "test_type": "HasPersonalityTag",
             "string0": "platinum",
             "boolean": true
           },
+		  {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },          
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiSurface",
@@ -312,14 +342,14 @@
       "build_conditions": [
         [
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
             "test_type": "HasPersonalityTag",
             "string0": "platinum",
             "boolean": true
           },
+		  {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },          
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiSurface",
@@ -350,12 +380,12 @@
       "build_conditions": [
         [
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
             "test_type": "HasPersonalityTag",
             "string0": "platinum",
+            "boolean": true
+          },
+		  {
+            "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
           {
@@ -388,12 +418,12 @@
       "build_conditions": [
         [
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
             "test_type": "HasPersonalityTag",
             "string0": "platinum",
+            "boolean": true
+          },
+		  {
+            "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
           {
@@ -426,12 +456,12 @@
       "build_conditions": [
         [
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
             "test_type": "HasPersonalityTag",
             "string0": "platinum",
+            "boolean": true
+          },
+		  {
+            "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
           {
