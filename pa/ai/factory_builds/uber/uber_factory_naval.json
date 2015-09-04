@@ -7,7 +7,7 @@
       "max_num_assisters": 10,
       "priority": 100,
       "builders": [
-        "BasicNavalFactory"
+        "AnyUberNavalFactory"
       ],
       "build_conditions": [
         [
@@ -46,9 +46,6 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicNavalFabber"
           },
@@ -73,9 +70,6 @@
           {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -88,91 +82,6 @@
             "compare0": "<",
             "value0": 3
           }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "UnableToExpand",
-            "boolean": false
-          },
-          {
-            "test_type": "AllMetalSpotsFull",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicNavalFabber"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Commander",
-            "compare0": "<",
-            "value0": 1
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "CurrentMetalEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "CurrentEnergyEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "PotentialMetalEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "PotentialEnergyEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicNavalFabber"
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Fabber & Basic & Naval",
-            "unit_type_string1": "Factory & Basic & Naval",
-            "compare0": "<",
-            "value0": 2
-          }
         ]
       ]
     },
@@ -183,7 +92,7 @@
       "max_num_assisters": 10,
       "priority": 98,
       "builders": [
-        "BasicNavalFactory"
+        "AnyUberNavalFactory"
       ],
       "build_conditions": [
         [
@@ -203,9 +112,6 @@
           {
             "test_type": "HaveFullPlanetIntel",
             "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "UnitCountPerPlanetRadius",
@@ -243,9 +149,6 @@
             "boolean": false
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Naval & Scout",
             "compare0": "<",
@@ -261,7 +164,7 @@
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "BasicNavalFactory"
+        "AnyUberNavalFactory"
       ],
       "build_conditions": [
         [
@@ -275,7 +178,16 @@
             "boolean": false
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "PlanetThreat",
+            "string0": "Economy",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "Naval",
+            "compare0": "==",
+            "value0": 0
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -299,27 +211,17 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetThreat",
-            "string0": "Naval",
+            "test_type": "FocusTargetThreat",
+            "string0": "Economy",
             "compare0": ">",
             "value0": 0
           },
           {
-            "test_type": "PlanetThreat",
-            "string0": "Sub",
-            "string1": "AntiSub",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Naval",
+            "string1": "Naval",
             "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "FocusTargetThreatRatio",
-            "string0": "Sub",
-            "string1": "AntiSub",
-            "compare0": "<",
-            "value0": 1
+            "value0": 0.6
           }
         ]
       ]
@@ -331,7 +233,7 @@
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "BasicNavalFactory"
+        "AnyUberNavalFactory"
       ],
       "build_conditions": [
         [
@@ -345,7 +247,16 @@
             "boolean": false
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "PlanetThreat",
+            "string0": "Air",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "Naval",
+            "compare0": "==",
+            "value0": 0
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -369,94 +280,23 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetThreat",
-            "string0": "Naval",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "FocusTargetThreatRatio",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Air",
             "string1": "AntiAir",
             "compare0": ">",
-            "value0": 0.75
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetThreat",
-            "string0": "Naval",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "FocusTargetThreatRatio",
-            "string0": "Sub",
-            "string1": "AntiSub",
-            "compare0": ">",
-            "value0": 0.75
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetThreat",
-            "string0": "Naval",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Naval & AirDefense",
-            "unit_type_string1": "(Naval & Offense) - AirDefense",
-            "compare0": "<",
-            "value0": 0.2
+            "value0": 1
           }
         ]
       ]
     },
     {
-      "name": "Uber - Barracuda",
-      "to_build": "Sub",
-      "instance_count": -1,
+      "name": "Uber - Narwhal - Support",
+      "to_build": "Frigate",
+      "instance_count": 1,
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "BasicNavalFactory"
+        "AnyUberNavalFactory"
       ],
       "build_conditions": [
         [
@@ -474,7 +314,33 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Air",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Uber - Barracuda",
+      "to_build": "Sub",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "AnyUberNavalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "PlanetThreat",
@@ -483,18 +349,10 @@
             "value0": 0
           },
           {
-            "test_type": "FocusTargetThreatRatio",
-            "string0": "Naval",
-            "string1": "Naval",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "FocusTargetThreatRatio",
-            "string0": "Air",
-            "string1": "AntiAir",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Naval & Mobile & Offense",
             "compare0": "<",
-            "value0": 1
+            "value0": 5
           }
         ],
         [
@@ -512,19 +370,10 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
             "test_type": "PlanetThreat",
             "string0": "Naval",
             "compare0": ">",
             "value0": 0
-          },
-          {
-            "test_type": "FocusTargetThreat",
-            "string0": "AntiSub",
-            "compare0": "<",
-            "value0": 1650
           }
         ]
       ]
@@ -571,9 +420,6 @@
             "boolean": false
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "AdvancedNavalFabber"
           },
@@ -596,9 +442,6 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "AdvancedNavalFabber"
           },
@@ -608,63 +451,6 @@
             "unit_type_string1": "Factory & Advanced & Naval",
             "compare0": "<",
             "value0": 9
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedNavalFabber"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Commander",
-            "compare0": "<",
-            "value0": 1
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CurrentMetalEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "MetalStorageFrac",
-            "compare0": ">",
-            "value0": 0.05
-          },
-          {
-            "test_type": "CurrentEnergyEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedNavalFabber"
           }
         ]
       ]
@@ -694,52 +480,11 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetThreat",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Naval",
+            "string1": "Naval",
             "compare0": ">",
-            "value0": 0
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CurrentMetalEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "CurrentEnergyEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "MetalStorageFrac",
-            "compare0": ">",
-            "value0": 0.5
-          },
-          {
-            "test_type": "PlanetThreat",
-            "string0": "Naval",
-            "compare0": ">",
-            "value0": 0
+            "value0": 0.6
           }
         ]
       ]
@@ -747,7 +492,7 @@
     {
       "name": "Uber - Stingray",
       "to_build": "MissleShip",
-      "instance_count": -1,
+      "instance_count": 1,
       "max_num_assisters": 15,
       "priority": 199,
       "builders": [
@@ -769,167 +514,22 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Naval",
+            "string1": "Naval",
+            "compare0": ">",
+            "value0": 0.6
           },
           {
             "test_type": "PlanetThreat",
-            "string0": "Naval",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Air",
-            "string1": "AntiAir",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Naval & Tactical & Mobile",
-            "unit_type_string1": "(Naval & Mobile) - Tactical - Scout - Fabber",
-            "compare0": "<",
-            "value0": 0.1
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "SystemThreat",
             "string0": "Orbital",
             "compare0": ">",
             "value0": 0
           },
           {
-            "test_type": "PlanetThreat",
-            "string0": "Naval",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Naval & Tactical & Mobile",
-            "unit_type_string1": "(Naval & Mobile) - Tactical - Scout - Fabber",
-            "compare0": "<",
-            "value0": 0.1
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Air",
-            "string1": "AntiAir",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "CurrentMetalEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "CurrentEnergyEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "MetalStorageFrac",
-            "compare0": ">",
-            "value0": 0.5
-          },
-          {
-            "test_type": "PlanetThreat",
-            "string0": "Naval",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Naval & Tactical & Mobile",
-            "unit_type_string1": "(Naval & Mobile) - Tactical - Scout - Fabber",
-            "compare0": "<",
-            "value0": 0.1
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "SystemThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "CurrentMetalEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "CurrentEnergyEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "MetalStorageFrac",
-            "compare0": ">",
-            "value0": 0.5
-          },
-          {
-            "test_type": "PlanetThreat",
-            "string0": "Naval",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Naval & Tactical & Mobile",
-            "unit_type_string1": "(Naval & Mobile) - Tactical - Scout - Fabber",
+            "unit_type_string0": "Naval & Mobile & Tactical",
+            "unit_type_string1": "(Naval & Mobile) - Fabber",
             "compare0": "<",
             "value0": 0.1
           }
@@ -939,6 +539,91 @@
     {
       "name": "Uber - Kraken",
       "to_build": "MissileSub",
+      "instance_count": 1,
+      "max_num_assisters": 15,
+      "priority": 199,
+      "builders": [
+        "AdvancedNavalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Naval",
+            "string1": "Naval",
+            "compare0": ">",
+            "value0": 0.6
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Naval & Advanced & Sub",
+            "compare0": "<",
+            "value0": 250
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Uber - Kaiju",
+      "to_build": "HoverShip",
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "priority": 199,
+      "builders": [
+        "AdvancedNavalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Naval",
+            "string1": "Naval",
+            "compare0": "<=",
+            "value0": 0.6
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": false
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Uber - Typhoon",
+      "to_build": "DroneCarrier",
       "instance_count": -1,
       "max_num_assisters": 15,
       "priority": 199,
@@ -961,64 +646,11 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetThreat",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Naval",
+            "string1": "Naval",
             "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Naval & Advanced & Sub",
-            "compare0": "<",
-            "value0": 250
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CurrentMetalEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "CurrentEnergyEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "MetalStorageFrac",
-            "compare0": ">",
-            "value0": 0.5
-          },
-          {
-            "test_type": "PlanetThreat",
-            "string0": "Naval",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Naval & Advanced & Sub",
-            "compare0": "<",
-            "value0": 250
+            "value0": 0.6
           }
         ]
       ]

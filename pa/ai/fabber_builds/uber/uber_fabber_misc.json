@@ -35,7 +35,7 @@
           {
             "test_type": "MetalStorageFrac",
             "compare0": ">",
-            "value0": 0.05
+            "value0": 0.1
           },
           {
             "test_type": "CurrentEnergyEfficiency",
@@ -101,7 +101,8 @@
         "BasicBotFabber",
         "BasicVehicleFabber",
         "AdvancedBotFabber",
-        "AdvancedVehicleFabber"
+        "AdvancedVehicleFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [
@@ -140,7 +141,8 @@
         "BasicAirFabber",
         "AdvancedBotFabber",
         "AdvancedVehicleFabber",
-        "AdvancedAirFabber"
+        "AdvancedAirFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [

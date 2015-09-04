@@ -4,8 +4,7 @@
       "name": "Bronze - Basic Naval Factory",
       "to_build": "BasicNavalFactory",
       "instance_count": 1,
-      "shared_instance_count": "Factory",
-      "priority": 377,
+      "priority": 376,
       "max_num_assisters": 5,
       "builders": [
         "UberCommander",
@@ -13,30 +12,6 @@
         "AdvancedNavalFabber"
       ],
       "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicNavalFactory"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory & Naval",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicNavalFactory"
-          }
-        ],
         [
           {
             "test_type": "HasPersonalityTag",
@@ -53,18 +28,6 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicNavalFactory"
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Factory & Naval",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Factory & Basic",
-            "compare0": "<=",
-            "value0": 200
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -101,21 +64,39 @@
             "boolean": true
           },
           {
-            "test_type": "CanDeployNavalFromBase",
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Advanced",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedNavalFactory"
+          }
+        ],
+		[
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
             "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "test_type": "CanFindPlaceToBuild",
+            "test_type": "CanAffordPotentialDrain",
             "string0": "AdvancedNavalFactory"
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Advanced & Factory & Naval",
-            "compare0": "<",
-            "value0": 1
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedNavalFactory"
           }
         ]
       ],

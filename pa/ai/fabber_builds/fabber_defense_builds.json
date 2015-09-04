@@ -127,6 +127,11 @@
             "value0": 200
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
+          },
+          {
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Basic & SurfaceDefense",
             "compare0": "<",
@@ -156,6 +161,11 @@
             "test_type": "DistFromNearestEnemyThreat",
             "compare0": "<=",
             "value0": 200
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
           },
           {
             "test_type": "UnitCountInBase",
@@ -315,6 +325,11 @@
             "value0": 4
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
+          },
+          {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Air",
             "string1": "AntiAir",
@@ -375,6 +390,11 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
+          },
+          {
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Basic & SurfaceDefense",
             "compare0": "<",
@@ -404,6 +424,11 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
           },
           {
             "test_type": "UnitCountInBase",
@@ -476,6 +501,11 @@
             "value0": 4
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
+          },
+          {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Land",
             "string1": "AntiSurface",
@@ -546,6 +576,11 @@
             "value0": 1
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
+          },
+          {
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (EnergyProduction | Factory)",
             "compare0": ">=",
@@ -564,6 +599,11 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
           },
           {
             "test_type": "UnitCountInBase",
@@ -630,6 +670,11 @@
             "value0": 4
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
+          },
+          {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Land",
             "string1": "AntiSurface",
@@ -688,6 +733,11 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
           },
           {
             "test_type": "UnitCountInBase",
@@ -749,7 +799,8 @@
       "priority": 255,
       "base_sort": "FromPerimeter",
       "builders": [
-        "AnyAdvancedFabber"
+        "AnyAdvancedFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [
@@ -760,6 +811,11 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
           },
           {
             "test_type": "UnitCountInBase",
@@ -843,7 +899,8 @@
       "priority": 379,
       "base_sort": "FromPerimeter",
       "builders": [
-        "AnyAdvancedFabber"
+        "AnyAdvancedFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [
@@ -860,6 +917,11 @@
             "unit_type_string0": "Structure & Advanced & AirDefense",
             "compare0": "<",
             "value0": 4
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
@@ -913,7 +975,8 @@
       "priority": 255,
       "base_sort": "FromPerimeter",
       "builders": [
-        "AnyAdvancedFabber"
+        "AnyAdvancedFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [
@@ -1007,7 +1070,8 @@
       "priority": 379,
       "base_sort": "FromPerimeter",
       "builders": [
-        "AnyAdvancedFabber"
+        "AnyAdvancedFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [
@@ -1126,7 +1190,7 @@
       "name": "Vanilla - Umbrella",
       "to_build": "Umbrella",
       "instance_count": 1,
-      "priority": 377,
+      "priority": 378,
       "builders": [
         "AnyBasicFabber",
         "AnyAdvancedFabber"
@@ -1195,6 +1259,159 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "Umbrella"
           }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Commander",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "Umbrella"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "(Structure & OrbitalDefense) - Orbital",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 150,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Vanilla - Umbrella - Rush",
+      "to_build": "Umbrella",
+      "instance_count": 1,
+      "priority": 386,
+      "builders": [
+        "AnyBasicFabber",
+        "AnyAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "Umbrella"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "Umbrella"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Commander",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "Umbrella"
+          }
         ]
       ],
       "placement_rules": {
@@ -1218,7 +1435,8 @@
       "shared_instance_count": "AntiNukeSilo",
       "priority": 380,
       "builders": [
-        "AnyAdvancedFabber"
+        "AnyAdvancedFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [
@@ -1308,7 +1526,8 @@
       "min_num_assisters": 5,
       "max_num_assisters": 12,
       "builders": [
-        "AnyAdvancedFabber"
+        "AnyAdvancedFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [

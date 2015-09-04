@@ -88,11 +88,6 @@
             "string0": "OrbitalLauncher"
           },
           {
-            "test_type": "SpawnablePlanetCount",
-            "compare0": "==",
-            "value0": 1
-          },
-          {
             "test_type": "UnitCount",
             "unit_type_string0": "Factory & Orbital",
             "compare0": "<",
@@ -102,9 +97,9 @@
             "test_type": "UnitCountAroundBase",
             "unit_type_string0": "Land & Mobile & Offense",
             "string0": "Enemy",
-            "value0": 600,
+            "value0": 700,
             "compare0": "<",
-            "value1": 10
+            "value1": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -188,64 +183,6 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "OrbitalLauncher"
           }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetWithoutPresence",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "OrbitalLauncher"
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Factory & Orbital",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "OrbitalLauncher"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "OrbitalLauncher"
-          },
-          {
-            "test_type": "SystemThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Orbital & Factory",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "OrbitalLauncher"
-          }
         ]
       ],
       "placement_rules": {
@@ -253,10 +190,11 @@
       }
     },
     {
-      "name": "Uber - Orbital Factory - Rush",
+      "name": "Uber - Orbital Factory",
       "to_build": "OrbitalFactory",
       "instance_count": 1,
-      "priority": 510,
+      "priority": 477,
+      "min_num_assisters": 2,
       "max_num_assisters": 5,
       "builders": [
         "OrbitalFabber"
@@ -269,110 +207,17 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetIsGasGiant",
-            "boolean": true
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "OrbitalFactory"
           },
           {
             "test_type": "SystemThreat",
             "string0": "Orbital",
             "compare0": ">",
             "value0": 0
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "string0": "Orbital & Factory",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "OrbitalFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsGasGiant",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Orbital",
-            "string1": "AntiOrbital",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "OrbitalFactory"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 50
-      }
-    },
-    {
-      "name": "Uber - Orbital Factory",
-      "to_build": "OrbitalFactory",
-      "instance_count": 1,
-      "priority": 477,
-      "max_num_assisters": 5,
-      "builders": [
-        "OrbitalFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsGasGiant",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "OrbitalFactory"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "string0": "Orbital & Factory",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "OrbitalFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "OrbitalFactory"
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Factory & Orbital",
-            "unit_type_string1": "Factory - Orbital",
-            "compare0": "<",
-            "value0": 0.05
           },
           {
             "test_type": "CanFindPlaceToBuild",

@@ -1,5 +1,44 @@
 # CHANGELOG
 
+#### v3.0 - 2015/04/09
+
+NOW DESIGNED SOLELY FOR TITANS
+
+- Updated vanilla AI
+- Removed Deep Space Radar references
+- Umbrellas no longer require any kind of radar
+- Focus is back on Bolos over Grenadiers at all levels
+- Uber builds Grenadiers in response to spotting Walls
+- Uber will build the GIL-E as a response to spotting Bluehawks
+- Added support for TITANS units
+- Fixed Gold so it will build Levellers as intended
+- Uber properly checks placement of vehicle factories
+- Updated openings for TITANS
+- Updated naval ship choices for TITANS
+- Uber Air has been transformed to be a more standard personality with an earlier and heavier emphasis on air
+- Sends out single ship platoons at higher levels
+- Uber chooses its first factory on a new planet based on whether there's an enemy presence or not
+- Uber more likely to assign vehicle and naval fabbers to energy production than other types of fabber
+- Capped the number of fighters produced on planets where Queller is alone
+- Uber will use T2 air outside of metal planets
+- Lower difficulties more likely to more poor decisions about when to commit their armies
+- Fixed bug preventing Uber Tech from building advanced energy
+- Uber Tech is much more aggressive about teching
+- Much more sensible about which planet to pull reinforcements from via Teleporter
+- Fixed bracket errors leading to improper filtering
+- Uber and Platinum more aggressive about getting up anti-orbital measures where none exist but an orbital threat does
+- Updated all difficulties in accordance with the latest playstyles in each league
+- Naval platoon 12 now maps to the correct template
+- Platinum and Uber now build Levellers
+- Uber brings out Infernos even when not winning the land war to help in base attacks or raids
+- Gold's micro is a little worse
+- Removed naval platoon 16
+- No longer shuts down factories to bring the eco back in line
+ - Eco is going to need more work as this exposes some issues that were previously hidden
+- Bronze and Silver favour the Astraeus for getting off planet
+- Builds either Kestrels or Hornets but never both
+- Bronze no longer artifically restricted on the number of factories it can build
+
 #### v2.1 - 2015/08/09
 
 - Gold will build the Leveller

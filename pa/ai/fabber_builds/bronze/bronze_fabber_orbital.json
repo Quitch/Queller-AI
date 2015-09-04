@@ -5,7 +5,7 @@
       "to_build": "OrbitalLauncher",
       "instance_count": 1,
       "shared_instance_count": "Factory",
-      "priority": 377,
+      "priority": 477,
       "max_num_assisters": 10,
       "builders": [
         "AnyUberBasicFabber",
@@ -26,6 +26,33 @@
             "unit_type_string0": "Factory & Orbital & Basic",
             "compare0": "<",
             "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "OrbitalLauncher"
+          }
+        ],
+		[
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetCount",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "OrbitalLauncher"
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -66,6 +93,33 @@
             "unit_type_string0": "Factory & Orbital & Advanced",
             "compare0": "<",
             "value0": 1
+          }
+        ],
+		[
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetCount",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "OrbitalFactory"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "OrbitalFactory"
           }
         ]
       ],

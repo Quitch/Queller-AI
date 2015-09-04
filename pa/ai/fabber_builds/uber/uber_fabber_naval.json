@@ -114,7 +114,7 @@
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Naval",
             "string1": "Naval",
-            "compare0": ">=",
+            "compare0": ">",
             "value0": 0.5
           },
           {
@@ -147,7 +147,7 @@
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Land",
             "string1": "Land",
-            "compare0": "<=",
+            "compare0": "<",
             "value0": 0.5
           },
           {
@@ -574,10 +574,6 @@
             "boolean": false
           },
           {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": true
-          },
-          {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
           },
@@ -617,10 +613,6 @@
             "boolean": false
           },
           {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": true
-          },
-          {
             "test_type": "UnableToExpand",
             "boolean": true
           },
@@ -657,10 +649,6 @@
             "boolean": false
           },
           {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": true
-          },
-          {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
           },
@@ -677,7 +665,7 @@
             "string0": "Enemy",
             "value0": 600,
             "compare0": "<",
-            "value1": 10
+            "value1": 1
           },
           {
             "test_type": "UnitCountOnPlanet",

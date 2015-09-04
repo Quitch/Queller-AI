@@ -3,7 +3,7 @@
     {
       "name": "Silver - Bomber-Gunship Attack Platoon 10",
       "to_build": "BomberGunship_Attack_10",
-      "instance_count": 2,
+      "instance_count": -1,
       "priority": 102,
       "build_conditions": [
         [
@@ -37,7 +37,7 @@
     {
       "name": "Silver - Bomber-Gunship Attack Platoon 40",
       "to_build": "BomberGunship_Attack_40",
-      "instance_count": 2,
+      "instance_count": -1,
       "priority": 100,
       "build_conditions": [
         [
@@ -65,7 +65,7 @@
     {
       "name": "Silver - Fighter Attack Platoon",
       "to_build": "Fighter_Attack",
-      "instance_count": 1,
+      "instance_count": -1,
       "priority": 100,
       "build_conditions": [
         [
@@ -84,7 +84,7 @@
             "test_type": "CanAttackWithPoolUnitsFighter",
             "string0": "WL_Air",
             "string1": "WL_Air",
-            "unit_type_string0": "Mobile"
+            "unit_type_string0": "Mobile | Structure"
           }
         ],
         [

@@ -3,8 +3,8 @@
     {
       "name": "Platinum - Vehicle Scout Platoon",
       "to_build": "Vehicle_Scout_1",
-      "instance_count": -1,
-      "priority": 106,
+      "instance_count": 2,
+      "priority": 200,
       "build_conditions": [
         [
           {
@@ -33,55 +33,45 @@
       "task_type": "Scout"
     },
     {
-      "name": "Platinum - Bot Scout Platoon",
-      "to_build": "Bot_Scout_1",
-      "instance_count": 4,
-      "priority": 106,
+      "name": "Platinum - Land Transfer To Planet",
+      "to_build": "Teleporter_Attack_40",
+      "instance_count": -1,
+      "shared_instance_count": "LandTransferToPlanet",
+      "priority": 210,
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
+            "test_type": "EnemyPresenceOnPlanet",
             "boolean": true
           },
           {
-            "test_type": "BaseThreatened",
-            "boolean": false
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": true
           },
           {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
+            "test_type": "CanProvideLandUnitAssistance",
+            "boolean": true
           },
           {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Air & Scout",
-            "compare0": "<",
-            "value0": 250
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "(Bot & Mobile) - Advanced - Fabber - Construction - Artillery - Heavy",
-            "compare0": "<",
-            "value0": 150
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "((Tank | (Bot & Artillery)) & Mobile) - Fabber - AirDefense - Construction - Titan",
+            "compare0": ">=",
+            "value0": 20
           }
         ]
       ],
-      "task_type": "Scout"
+      "task_type": "TeleportLandToPlanet"
     },
     {
-      "name": "Platinum - Land Transfer To Planet",
-      "to_build": "Land_Attack_80",
+      "name": "Platinum - Land Transfer To Planet - Alone",
+      "to_build": "Teleporter_Attack_80",
       "instance_count": -1,
-      "priority": 108,
+      "shared_instance_count": "LandTransferToPlanet",
+      "priority": 211,
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "BaseThreatened",
+            "test_type": "EnemyPresenceOnPlanet",
             "boolean": false
           },
           {
@@ -94,183 +84,19 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Land & Mobile & Offense",
+            "unit_type_string0": "((Tank | (Bot & Artillery)) & Mobile) - Fabber - AirDefense - Construction - Titan",
             "compare0": ">=",
-            "value0": 10
+            "value0": 20
           }
         ]
       ],
       "task_type": "TeleportLandToPlanet"
     },
     {
-      "name": "Platinum - Land Raid Platoon 1",
-      "to_build": "Land_Raid_1",
-      "instance_count": 7,
-      "priority": 105,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": "<",
-            "value0": 840
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Bot & Mobile & Basic) - Fabber - Construction - Artillery - Heavy - SelfDestruct",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
-          }
-        ]
-      ],
-      "task_type": "LandAttack"
-    },
-    {
-      "name": "Platinum - Land Raid Platoon 4",
-      "to_build": "Land_Raid_4",
-      "instance_count": 7,
-      "priority": 104,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": "<",
-            "value0": 2800
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Bot & Mobile & Basic) - Fabber - Construction - Artillery - Heavy - SelfDestruct",
-            "compare0": ">=",
-            "value0": 4
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
-          }
-        ]
-      ],
-      "task_type": "LandAttack"
-    },
-    {
-      "name": "Platinum - Land Raid Platoon 10",
-      "to_build": "Land_Raid_10",
-      "instance_count": 7,
-      "priority": 103,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": "<",
-            "value0": 5600
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Bot & Mobile & Basic) - Fabber - Construction - Artillery - Heavy - SelfDestruct",
-            "compare0": ">=",
-            "value0": 10
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
-          }
-        ]
-      ],
-      "task_type": "LandAttack"
-    },
-    {
-      "name": "Platinum - Land Raid Platoon 20",
-      "to_build": "Land_Raid_20",
-      "instance_count": 7,
-      "priority": 102,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": "<",
-            "value0": 11200
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Bot & Mobile & Basic) - Fabber - Construction - Artillery - Heavy - SelfDestruct",
-            "compare0": ">=",
-            "value0": 20
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
-          }
-        ]
-      ],
-      "task_type": "LandAttack"
-    },
-    {
-      "name": "Platinum - Land Raid Platoon 40",
-      "to_build": "Land_Raid_40",
-      "instance_count": 7,
-      "priority": 101,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Bot & Mobile & Basic) - Fabber - Construction - Artillery - Heavy - SelfDestruct",
-            "compare0": ">=",
-            "value0": 40
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
-          }
-        ]
-      ],
-      "task_type": "LandAttack"
-    },
-    {
       "name": "Platinum - Land Attack Platoon 1",
       "to_build": "Land_Attack_1",
-      "instance_count": 7,
-      "priority": 104,
+      "instance_count": -1,
+      "priority": 190,
       "build_conditions": [
         [
           {
@@ -286,7 +112,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
+            "unit_type_string0": "((Tank | (Bot & Artillery)) & Mobile) - Fabber - AirDefense - Construction - Titan",
             "compare0": ">=",
             "value0": 1
           },
@@ -303,8 +129,8 @@
     {
       "name": "Platinum - Land Attack Platoon 4",
       "to_build": "Land_Attack_4",
-      "instance_count": 7,
-      "priority": 103,
+      "instance_count": -1,
+      "priority": 180,
       "build_conditions": [
         [
           {
@@ -320,7 +146,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
+            "unit_type_string0": "((Tank | (Bot & Artillery)) & Mobile) - Fabber - AirDefense - Construction - Titan",
             "compare0": ">=",
             "value0": 4
           },
@@ -337,8 +163,8 @@
     {
       "name": "Platinum - Land Attack Platoon 10",
       "to_build": "Land_Attack_10",
-      "instance_count": 7,
-      "priority": 102,
+      "instance_count": -1,
+      "priority": 170,
       "build_conditions": [
         [
           {
@@ -354,7 +180,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
+            "unit_type_string0": "((Tank | (Bot & Artillery)) & Mobile) - Fabber - AirDefense - Construction - Titan",
             "compare0": ">=",
             "value0": 10
           },
@@ -371,8 +197,8 @@
     {
       "name": "Platinum - Land Attack Platoon 20",
       "to_build": "Land_Attack_20",
-      "instance_count": 7,
-      "priority": 101,
+      "instance_count": -1,
+      "priority": 160,
       "build_conditions": [
         [
           {
@@ -388,7 +214,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
+            "unit_type_string0": "((Tank | (Bot & Artillery)) & Mobile) - Fabber - AirDefense - Construction - Titan",
             "compare0": ">=",
             "value0": 20
           },
@@ -403,10 +229,44 @@
       "task_type": "LandAttack"
     },
     {
+      "name": "Platinum - Land Attack Platoon 30",
+      "to_build": "Land_Attack_30",
+      "instance_count": -1,
+      "priority": 150,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": "<",
+            "value0": 16800
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "((Tank | (Bot & Artillery)) & Mobile) - Fabber - AirDefense - Construction - Titan",
+            "compare0": ">=",
+            "value0": 30
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
       "name": "Platinum - Land Attack Platoon 40",
       "to_build": "Land_Attack_40",
-      "instance_count": 7,
-      "priority": 100,
+      "instance_count": -1,
+      "priority": 140,
       "build_conditions": [
         [
           {
@@ -416,7 +276,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
+            "unit_type_string0": "((Tank | (Bot & Artillery)) & Mobile) - Fabber - AirDefense - Construction - Titan",
             "compare0": ">=",
             "value0": 40
           },

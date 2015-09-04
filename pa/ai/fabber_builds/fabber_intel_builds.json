@@ -145,7 +145,7 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Factory & Construction) - Orbital - NukeDefense - Nuke",
+            "unit_type_string0": "(Factory & Construction) - Orbital - NukeDefense - Nuke - SelfDestruct",
             "compare0": ">",
             "value0": 1
           },
@@ -182,7 +182,8 @@
       "shared_instance_count": "AdvancedRadar",
       "priority": 91,
       "builders": [
-        "AnyAdvancedFabber"
+        "AnyAdvancedFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [
@@ -235,7 +236,8 @@
       "shared_instance_count": "AdvancedRadar",
       "priority": 247,
       "builders": [
-        "AnyAdvancedFabber"
+        "AnyAdvancedFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [
@@ -294,7 +296,8 @@
       "shared_instance_count": "AdvancedRadar",
       "priority": 265,
       "builders": [
-        "AnyAdvancedFabber"
+        "AnyAdvancedFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [
@@ -319,128 +322,6 @@
           {
             "test_type": "CanFindPlaceToBuild",
             "string0": "AdvancedRadar"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 2,
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
-      "name": "Vanilla - Deep Space Radar",
-      "to_build": "DeepSpaceRadar",
-      "instance_count": 1,
-      "shared_instance_count": "DeepSpaceRadar",
-      "priority": 92,
-      "builders": [
-        "AnyBasicFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Vanilla",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Structure & Recon & Orbital",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Orbital - (Structure & Recon)",
-            "boolean": true
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "DeepSpaceRadar"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Vanilla",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Structure & Recon & Orbital",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Orbital & Factory",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "DeepSpaceRadar"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 2,
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
-      "name": "Vanilla - Deep Space Radar - Alone",
-      "to_build": "DeepSpaceRadar",
-      "instance_count": 1,
-      "shared_instance_count": "DeepSpaceRadar",
-      "priority": 266,
-      "builders": [
-        "AnyBasicFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Vanilla",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Structure & Recon & Orbital",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "PlanetCount",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "DeepSpaceRadar"
           }
         ]
       ],

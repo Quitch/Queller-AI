@@ -20,20 +20,7 @@
             "boolean": true
           },
           {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Factory & Basic",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicBotFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
+            "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
           {
@@ -42,12 +29,6 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicBotFactory"
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Factory & Basic",
-            "compare0": "<=",
-            "value0": 100
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -89,38 +70,11 @@
             "boolean": true
           },
           {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Factory & Basic",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicVehicleFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicVehicleFactory"
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Factory & Basic",
-            "compare0": "<=",
-            "value0": 200
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -147,13 +101,18 @@
       "max_num_assisters": 10,
       "builders": [
         "BasicBotFabber",
-        "AdvancedBotFabber"
+        "AdvancedBotFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
             "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
           {
@@ -165,9 +124,35 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Advanced & Factory) - Orbital - Naval",
+            "unit_type_string0": "Factory & Advanced",
             "compare0": "<",
             "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedBotFactory"
+          }
+        ],
+		[
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicBotFactory"
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -204,6 +189,10 @@
             "boolean": true
           },
           {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
           },
@@ -212,9 +201,35 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Advanced & Factory) - Orbital - Naval",
+            "unit_type_string0": "Factory & Advanced",
             "compare0": "<",
             "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedVehicleFactory"
+          }
+        ],
+		[
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicVehicleFactory"
           },
           {
             "test_type": "CanFindPlaceToBuild",

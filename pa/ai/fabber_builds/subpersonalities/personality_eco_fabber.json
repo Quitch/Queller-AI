@@ -4,6 +4,7 @@
       "name": "Eco Boom - Basic Air Factory - Commander",
       "to_build": "BasicAirFactory",
       "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
       "max_num_assisters": 2,
       "priority": 376,
       "builders": [
@@ -17,34 +18,9 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicAirFactory"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory - Orbital",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory & Air & Basic",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicAirFactory"
-          }
-        ],
-        [
-          {
             "test_type": "HasPersonalityTag",
-            "string0": "ecoboom",
-            "boolean": true
+            "string0": "airswarm",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -61,12 +37,6 @@
             "value0": 1
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory - Orbital",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "BasicAirFactory"
           }
@@ -76,6 +46,11 @@
             "test_type": "HasPersonalityTag",
             "string0": "ecoboom",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "airswarm",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -92,12 +67,6 @@
             "value0": 1
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory - Orbital",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "BasicAirFactory"
           }
@@ -107,6 +76,11 @@
             "test_type": "HasPersonalityTag",
             "string0": "ecoboom",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "airswarm",
+            "boolean": false
           },
           {
             "test_type": "AloneOnPlanet",
@@ -120,17 +94,17 @@
             "string0": "BasicAirFactory"
           },
           {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Factory & Air & Basic",
+            "unit_type_string1": "(Factory & Basic) - Orbital - Air",
+            "compare0": "<=",
+            "value0": 0.2
+          },
+          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory - Orbital",
             "compare0": ">=",
             "value0": 1
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Factory & Air & Basic",
-            "unit_type_string1": "(Factory & Basic) - Orbital - Air",
-            "compare0": "<",
-            "value0": 0.2
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -142,6 +116,11 @@
             "test_type": "HasPersonalityTag",
             "string0": "ecoboom",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "airswarm",
+            "boolean": false
           },
           {
             "test_type": "AloneOnPlanet",
@@ -177,6 +156,120 @@
       }
     },
     {
+      "name": "Eco Boom - Basic Air Factory - Commander - Increase chance of second air",
+      "to_build": "BasicAirFactory",
+      "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "max_num_assisters": 2,
+      "priority": 376,
+      "builders": [
+        "UberCommander"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "ecoboom",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "airswarm",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicAirFactory"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Factory & Air & Basic",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicAirFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Eco Boom - Basic Air Factory - Commander - No later than third factory",
+      "to_build": "BasicAirFactory",
+      "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "max_num_assisters": 2,
+      "priority": 378,
+      "builders": [
+        "UberCommander"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "ecoboom",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "airswarm",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicAirFactory"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Factory & Air & Basic",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicAirFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
       "name": "Eco Boom - Basic Bot Factory - Commander",
       "to_build": "BasicBotFactory",
       "instance_count": 1,
@@ -193,15 +286,13 @@
             "boolean": true
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
+            "test_type": "HasPersonalityTag",
+            "string0": "botonly",
+            "boolean": false
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Naval",
-            "string1": "Naval",
-            "compare0": "<=",
-            "value0": 0.5
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -209,6 +300,12 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicBotFactory"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Bot & Factory & Basic",
+            "compare0": "<",
+            "value0": 250
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -222,33 +319,8 @@
             "boolean": true
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Land",
-            "string1": "Land",
-            "compare0": ">=",
-            "value0": 0.5
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicBotFactory"
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicBotFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "ecoboom",
-            "boolean": true
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -259,7 +331,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicBotFactory"
+            "string0": "BasicVehicleFactory"
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
@@ -269,19 +341,53 @@
           },
           {
             "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Bot & Factory & Basic",
+            "unit_type_string0": "Land & Factory & Basic",
             "compare0": "<=",
             "value0": 500
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicBotFactory"
           }
         ],
         [
           {
             "test_type": "HasPersonalityTag",
             "string0": "ecoboom",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicVehicleFactory"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Naval & Factory & Basic",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Land & Factory & Basic",
+            "compare0": "<=",
+            "value0": 500
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "ecoboom",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
             "boolean": true
           },
           {
@@ -293,22 +399,6 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicBotFactory"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Naval & Factory & Basic",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Bot & Factory & Basic",
-            "compare0": "<=",
-            "value0": 500
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
             "string0": "BasicBotFactory"
           }
         ]
@@ -327,6 +417,7 @@
       "name": "Eco Boom - Basic Vehicle Factory - Commander",
       "to_build": "BasicVehicleFactory",
       "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
       "max_num_assisters": 2,
       "priority": 376,
       "builders": [
@@ -340,6 +431,15 @@
             "boolean": true
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "botonly",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
@@ -351,17 +451,127 @@
             "string0": "BasicVehicleFactory"
           },
           {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Factory & Tank & Basic",
-            "unit_type_string1": "Factory & Bot & Basic",
-            "compare0": "<",
-            "value0": 0.35
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Bot & Factory & Basic",
+            "compare0": ">=",
+            "value0": 250
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicVehicleFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "ecoboom",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "botonly",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicVehicleFactory"
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
+            "string0": "Naval",
             "compare0": ">",
-            "value0": 2000
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Land & Factory & Basic",
+            "compare0": "<=",
+            "value0": 500
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicVehicleFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "ecoboom",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "botonly",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicVehicleFactory"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Naval & Factory & Basic",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Land & Factory & Basic",
+            "compare0": "<=",
+            "value0": 500
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicVehicleFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "ecoboom",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "botonly",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicVehicleFactory"
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -380,9 +590,10 @@
       }
     },
     {
-      "name": "Eco Boom - Basic Naval Factory - Commander",
+      "name": "Eco Boom - Basic Naval Factory - Commander - Expansion",
       "to_build": "BasicNavalFactory",
       "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
       "max_num_assisters": 2,
       "priority": 376,
       "builders": [
@@ -400,6 +611,10 @@
             "boolean": false
           },
           {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -410,7 +625,36 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory & Naval & Basic",
             "compare0": "<",
-            "value0": 1
+            "value0": 4
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "ecoboom",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicNavalFactory"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Naval",
+            "string1": "Naval",
+            "compare0": ">=",
+            "value0": 0.5
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -437,6 +681,13 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicNavalFactory"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Land",
+            "string1": "Land",
+            "compare0": "<=",
+            "value0": 0.5
           },
           {
             "test_type": "CanFindPlaceToBuild",

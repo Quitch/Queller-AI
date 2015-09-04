@@ -38,11 +38,31 @@
             "boolean": false
           },
           {
-            "test_type": "UnableToExpand",
+            "test_type": "NoWhereToRun",
             "boolean": false
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Transport",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Naval",
+            "compare0": "<",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -71,13 +91,6 @@
             "boolean": true
           },
           {
-            "test_type": "UnableToExpand",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicAirFabber"
           },
@@ -87,34 +100,6 @@
             "unit_type_string1": "Factory & Basic & Air",
             "compare0": "<",
             "value0": 1.5
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnableToExpand",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicAirFabber"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Commander",
-            "compare0": "<",
-            "value0": 1
           }
         ]
       ]
@@ -136,6 +121,10 @@
             "boolean": true
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "BaseThreatened",
             "boolean": false
           },
@@ -144,19 +133,16 @@
             "boolean": false
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Scout",
+            "compare0": "<",
+            "value0": 400
           },
           {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Air & Scout",
             "compare0": "<",
             "value0": 1
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "(Air | Land | Naval) & Scout",
-            "compare0": "<",
-            "value0": 250
           }
         ]
       ]
@@ -178,46 +164,14 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": "<",
-            "value0": 5
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Air",
             "string1": "AntiAir",
-            "compare0": ">=",
-            "value0": 0.5
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Air",
-            "string1": "Air",
-            "compare0": ">=",
+            "compare0": ">",
             "value0": 0.5
           }
         ],
@@ -229,10 +183,14 @@
           },
           {
             "test_type": "AloneOnPlanet",
-            "boolean": true
+            "boolean": false
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "Air",
+            "compare0": ">",
+            "value0": 0.5
           }
         ]
       ]
@@ -254,27 +212,8 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & Bomber",
-            "compare0": "<",
-            "value0": 1
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
@@ -289,46 +228,6 @@
             "string1": "Air",
             "compare0": "<",
             "value0": 0.9
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & Bomber",
-            "compare0": "<",
-            "value0": 40
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Air & Bomber",
-            "compare0": "<",
-            "value0": 10
           }
         ]
       ]
@@ -371,11 +270,8 @@
             "boolean": false
           },
           {
-            "test_type": "UnableToExpand",
+            "test_type": "AloneOnPlanet",
             "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -404,13 +300,6 @@
             "boolean": true
           },
           {
-            "test_type": "UnableToExpand",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "AdvancedAirFabber"
           },
@@ -419,7 +308,7 @@
             "unit_type_string0": "Fabber & Advanced & Air",
             "unit_type_string1": "Factory & Advanced & Air",
             "compare0": "<",
-            "value0": 3
+            "value0": 2
           }
         ]
       ]
@@ -441,7 +330,76 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 0.5
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "Air",
+            "compare0": ">",
+            "value0": 0.5
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Gold - Hornet",
+      "to_build": "AdvancedBomber",
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "priority": 199,
+      "builders": [
+        "AdvancedAirFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": "<",
+            "value0": 0.9
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "Air",
+            "compare0": "<",
+            "value0": 0.9
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Gunship",
+            "compare0": "==",
+            "value0": 0
           }
         ]
       ]
@@ -463,7 +421,81 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": "<",
+            "value0": 0.9
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "Air",
+            "compare0": "<",
+            "value0": 0.9
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Bomber & Advanced",
+            "compare0": "==",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Gold - Wyrm",
+      "to_build": "HeavyBomber",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": [
+        "AdvancedAirFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Gold - Angel",
+      "to_build": "SupportPlatform",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": [
+        "AdvancedAirFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Air & MissileDefense",
+            "unit_type_string1": "((Air & (Bomber | Gunship)) | Titan) - Orbital",
+            "compare0": "<",
+            "value0": 0.05
           }
         ]
       ]

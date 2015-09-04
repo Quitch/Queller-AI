@@ -5,8 +5,8 @@
       "to_build": "BasicMetalExtractor",
       "instance_count": 1,
       "shared_instance_count": "BasicMetal",
-      "max_num_assisters": 3,
-      "priority": 260,
+      "max_num_assisters": 1,
+      "priority": 360,
       "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber",
@@ -60,8 +60,8 @@
       "to_build": "BasicMetalExtractor",
       "instance_count": 1,
       "shared_instance_count": "BasicMetal",
-      "max_num_assisters": 3,
-      "priority": 260,
+      "max_num_assisters": 1,
+      "priority": 360,
       "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber",
@@ -115,7 +115,7 @@
       "instance_count": 1,
       "shared_instance_count": "BasicEnergy",
       "max_num_assisters": 3,
-      "priority": 261,
+      "priority": 361,
       "builders": [
         "AnyUberBasicFabber"
       ],
@@ -168,7 +168,7 @@
       "instance_count": 1,
       "shared_instance_count": "AdvancedMetal",
       "max_num_assisters": 3,
-      "priority": 2,
+      "priority": 360,
       "base_sort": "FromBuilder",
       "builders": [
         "AnyUberAdvancedFabber"
@@ -222,7 +222,7 @@
       "instance_count": 1,
       "shared_instance_count": "AdvancedMetal",
       "max_num_assisters": 3,
-      "priority": 2,
+      "priority": 360,
       "base_sort": "FromBuilder",
       "builders": [
         "AnyUberAdvancedFabber"
@@ -275,7 +275,7 @@
       "instance_count": 1,
       "shared_instance_count": "AdvancedEnergy",
       "max_num_assisters": 3,
-      "priority": 270,
+      "priority": 370,
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -417,7 +417,7 @@
     {
       "name": "Silver - Energy Storage",
       "to_build": "EnergyStorage",
-      "instance_count": 2,
+      "instance_count": 1,
       "max_num_assisters": 3,
       "priority": 260,
       "builders": [
@@ -459,7 +459,7 @@
     {
       "name": "Silver - Metal Storage",
       "to_build": "MetalStorage",
-      "instance_count": 2,
+      "instance_count": 1,
       "max_num_assisters": 3,
       "priority": 260,
       "builders": [

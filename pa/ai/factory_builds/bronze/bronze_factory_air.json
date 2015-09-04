@@ -17,12 +17,26 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Basic - Orbital",
+            "compare0": "<",
+            "value0": 5
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicAirFabber"
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Fabber & Air & Basic",
-            "unit_type_string1": "Factory & Air & Basic",
+            "unit_type_string0": "Fabber & Basic & Air",
+            "unit_type_string1": "Factory & Basic & Air",
             "compare0": "<",
             "value0": 10
           }
@@ -34,7 +48,7 @@
       "to_build": "BasicFighter",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 97,
+      "priority": 96,
       "builders": [
         "BasicAirFactory"
       ],
@@ -46,7 +60,8 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           }
         ]
       ]
@@ -56,7 +71,7 @@
       "to_build": "BasicBomber",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 97,
+      "priority": 96,
       "builders": [
         "BasicAirFactory"
       ],
@@ -68,7 +83,8 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           }
         ]
       ]
@@ -90,14 +106,28 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Basic - Orbital",
+            "compare0": "<",
+            "value0": 2
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedAirFabber"
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Fabber & Air & Advanced",
-            "unit_type_string1": "Factory & Air & Advanced",
+            "unit_type_string0": "Fabber & Advanced & Air",
+            "unit_type_string1": "Factory & Advanced & Air",
             "compare0": "<",
-            "value0": 1
+            "value0": 5
           }
         ]
       ]
@@ -107,7 +137,7 @@
       "to_build": "AdvancedFighter",
       "instance_count": 1,
       "max_num_assisters": 10,
-      "priority": 198,
+      "priority": 199,
       "builders": [
         "AdvancedAirFactory"
       ],
@@ -119,7 +149,8 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           }
         ]
       ]
@@ -141,7 +172,14 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Gunship",
+            "compare0": "==",
+            "value0": 0
           }
         ]
       ]
@@ -151,7 +189,7 @@
       "to_build": "AdvancedGunship",
       "instance_count": -1,
       "max_num_assisters": 15,
-      "priority": 198,
+      "priority": 199,
       "builders": [
         "AdvancedAirFactory"
       ],
@@ -163,7 +201,73 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Bomber & Advanced",
+            "compare0": "==",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bronze - Wyrm",
+      "to_build": "HeavyBomber",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": [
+        "AdvancedAirFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": ">",
+            "value0": 8400
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bronze - Angel",
+      "to_build": "SupportPlatform",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": [
+        "AdvancedAirFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Air & MissileDefense",
+            "unit_type_string1": "((Air & (Bomber | Gunship)) | Titan) - Orbital",
+            "compare0": "<",
+            "value0": 0.05
           }
         ]
       ]

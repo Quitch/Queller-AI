@@ -14,14 +14,8 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Orbital & Recon - Structure",
+            "unit_type_string0": "Orbital & (Recon | Scout)",
             "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Orbital & Structure & Economy",
-            "compare0": "<",
             "value0": 1
           }
         ]
@@ -47,21 +41,6 @@
           {
             "test_type": "ThisPlanetNeedsReconAssistance",
             "boolean": false
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsGasGiant",
-            "boolean": true
-          },
-          {
-            "test_type": "OtherPlanetNeedsReconAssistance",
-            "boolean": true
           }
         ],
         [
@@ -108,21 +87,6 @@
             "test_type": "ThisPlanetNeedsReconAssistance",
             "boolean": false
           }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsGasGiant",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetWithoutPresence",
-            "boolean": true
-          }
         ]
       ],
       "task_type": "TransferReconToPlanet"
@@ -140,44 +104,14 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Orbital",
-            "compare0": "<",
-            "value0": 3000
-          },
-          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Orbital & Fighter",
             "compare0": ">=",
             "value0": 1
           },
           {
-            "test_type": "CanAttackWithPoolUnits"
-          }
-        ]
-      ],
-      "task_type": "OrbitalFighterAttack"
-    },
-    {
-      "name": "Uber - Orbital Fighter Attack Platoon",
-      "to_build": "Orbital_Fighter_Attack",
-      "instance_count": -1,
-      "priority": 100,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Orbital & Fighter",
-            "compare0": ">=",
-            "value0": 14
-          },
-          {
-            "test_type": "CanAttackWithPoolUnits"
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_Orbital"
           }
         ]
       ],
@@ -208,7 +142,8 @@
             "value0": 1
           },
           {
-            "test_type": "CanAttackWithPoolUnits"
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface"
           }
         ]
       ],
@@ -233,11 +168,59 @@
             "value0": 1
           },
           {
-            "test_type": "CanAttackWithPoolUnits"
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface"
           }
         ]
       ],
       "task_type": "OrbitalLaserAttack"
+    },
+    {
+      "name": "Uber - Orbital Transfer To Planet",
+      "to_build": "Orbital_Offense_Transfer",
+      "instance_count": -1,
+      "priority": 99,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "ThisPlanetNeedsOrbitalUnitAssistance",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & Fighter",
+            "compare0": ">=",
+            "value0": 10
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & LaserPlatform",
+            "compare0": ">=",
+            "value0": 1
+          }
+        ]
+      ],
+      "task_type": "TransferOrbitalToPlanet"
     }
   ]
 }

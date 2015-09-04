@@ -1,51 +1,6 @@
 {
   "build_list": [
     {
-      "name": "Vanilla - Basic Metal Extractor - Area",
-      "to_build": "BasicMetalExtractor",
-      "instance_count": 2,
-      "shared_instance_count": "BasicMetal",
-      "priority": 264,
-      "base_sort": "FromBuilder",
-      "builders": [
-        "AnyBasicFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Vanilla",
-            "boolean": true
-          },
-          {
-            "test_type": "PotentialMetalEfficiency",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindMetalSpotToBuildBasic",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Factory & Construction - Orbital",
-            "compare0": ">",
-            "value0": 0
-          }
-        ]
-      ],
-      "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      },
-      "task_type": "AreaBuild"
-    },
-    {
       "name": "Vanilla - Basic Metal Extractor - Desire - Area",
       "to_build": "BasicMetalExtractor",
       "instance_count": 2,
@@ -106,6 +61,11 @@
             "boolean": true
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "SlowerExpansion",
+            "boolean": false
+          },
+          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -131,6 +91,11 @@
             "test_type": "HasPersonalityTag",
             "string0": "Vanilla",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "SlowerExpansion",
+            "boolean": false
           },
           {
             "test_type": "AloneOnPlanet",
@@ -183,6 +148,11 @@
             "boolean": true
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "SlowerExpansion",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -211,6 +181,11 @@
             "test_type": "HasPersonalityTag",
             "string0": "Vanilla",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "SlowerExpansion",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -266,6 +241,11 @@
             "boolean": true
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "SlowerExpansion",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -290,44 +270,6 @@
         }
       },
       "task_type": "AreaBuild"
-    },
-    {
-      "name": "Vanilla - Basic Metal Extractor",
-      "to_build": "BasicMetalExtractor",
-      "instance_count": 2,
-      "shared_instance_count": "BasicMetal",
-      "priority": 264,
-      "base_sort": "FromBuilder",
-      "builders": [
-        "AnyBasicFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Vanilla",
-            "boolean": true
-          },
-          {
-            "test_type": "PotentialMetalEfficiency",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindMetalSpotToBuildBasic",
-            "boolean": true
-          }
-        ]
-      ],
-      "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
     },
     {
       "name": "Vanilla - Basic Metal Extractor - Desire",
@@ -383,6 +325,11 @@
             "boolean": true
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "SlowerExpansion",
+            "boolean": false
+          },
+          {
             "test_type": "CanFindMetalSpotToBuildBasic",
             "boolean": true
           },
@@ -404,6 +351,11 @@
             "test_type": "HasPersonalityTag",
             "string0": "Vanilla",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "SlowerExpansion",
+            "boolean": false
           },
           {
             "test_type": "CanFindMetalSpotToBuildBasic",
@@ -451,6 +403,11 @@
             "boolean": true
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "SlowerExpansion",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -461,92 +418,6 @@
       ],
       "placement_rules": {
         "placement_type": "FromMainBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
-      "name": "Vanilla - Basic Energy Generator",
-      "to_build": "BasicEnergyGenerator",
-      "instance_count": 1,
-      "max_num_assisters": 1,
-      "shared_instance_count": "BasicEnergy",
-      "cross_planet_shared_count": true,
-      "priority": 263,
-      "builders": [
-        "AnyBasicFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Vanilla",
-            "boolean": true
-          },
-          {
-            "test_type": "PotentialEnergyEfficiency",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Commander",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "EnergyProduction & Basic",
-            "compare0": ">=",
-            "value0": 4
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "EnergyProduction & Advanced",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicEnergyGenerator"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Vanilla",
-            "boolean": true
-          },
-          {
-            "test_type": "PotentialEnergyEfficiency",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Commander",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "EnergyProduction & Advanced",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicEnergyGenerator"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 6,
-        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -638,51 +509,6 @@
       }
     },
     {
-      "name": "Vanilla - Advanced Metal Extractor - Area",
-      "to_build": "AdvancedMetalExtractor",
-      "instance_count": 1,
-      "shared_instance_count": "AdvancedMetal",
-      "priority": 270,
-      "base_sort": "FromBuilder",
-      "builders": [
-        "AnyAdvancedFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Vanilla",
-            "boolean": true
-          },
-          {
-            "test_type": "PotentialMetalEfficiency",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Factory & Construction - Orbital",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "CanFindMetalSpotToBuildAdvanced",
-            "boolean": true
-          }
-        ]
-      ],
-      "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      },
-      "task_type": "AreaBuild"
-    },
-    {
       "name": "Vanilla - Advanced Metal Extractor - Desire - Area",
       "to_build": "AdvancedMetalExtractor",
       "instance_count": 1,
@@ -692,7 +518,8 @@
       "priority": 610,
       "base_sort": "FromBuilder",
       "builders": [
-        "AnyAdvancedFabber"
+        "AnyAdvancedFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [
@@ -735,7 +562,8 @@
       "priority": 609,
       "base_sort": "FromBuilder",
       "builders": [
-        "AnyAdvancedFabber"
+        "AnyAdvancedFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [
@@ -743,6 +571,11 @@
             "test_type": "HasPersonalityTag",
             "string0": "Vanilla",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "SlowerExpansion",
+            "boolean": false
           },
           {
             "test_type": "AloneOnPlanet",
@@ -782,7 +615,8 @@
       "priority": 609,
       "base_sort": "FromBuilder",
       "builders": [
-        "AnyAdvancedFabber"
+        "AnyAdvancedFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [
@@ -790,6 +624,11 @@
             "test_type": "HasPersonalityTag",
             "string0": "Vanilla",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "SlowerExpansion",
+            "boolean": false
           },
           {
             "test_type": "AloneOnPlanet",
@@ -822,44 +661,6 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Vanilla - Advanced Metal Extractor",
-      "to_build": "AdvancedMetalExtractor",
-      "instance_count": 1,
-      "shared_instance_count": "AdvancedMetal",
-      "priority": 270,
-      "base_sort": "FromBuilder",
-      "builders": [
-        "AnyAdvancedFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Vanilla",
-            "boolean": true
-          },
-          {
-            "test_type": "PotentialMetalEfficiency",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindMetalSpotToBuildAdvanced",
-            "boolean": true
-          }
-        ]
-      ],
-      "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
       "name": "Vanilla - Advanced Metal Extractor - Desire",
       "to_build": "AdvancedMetalExtractor",
       "instance_count": 1,
@@ -869,7 +670,8 @@
       "priority": 612,
       "base_sort": "FromBuilder",
       "builders": [
-        "AnyAdvancedFabber"
+        "AnyAdvancedFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [
@@ -905,7 +707,8 @@
       "priority": 609,
       "base_sort": "FromBuilder",
       "builders": [
-        "AnyAdvancedFabber"
+        "AnyAdvancedFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [
@@ -913,6 +716,11 @@
             "test_type": "HasPersonalityTag",
             "string0": "Vanilla",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "SlowerExpansion",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -941,7 +749,8 @@
       "priority": 2,
       "base_sort": "FromBuilder",
       "builders": [
-        "AnyAdvancedFabber"
+        "AnyAdvancedFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [
@@ -949,6 +758,11 @@
             "test_type": "HasPersonalityTag",
             "string0": "Vanilla",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "SlowerExpansion",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -970,45 +784,6 @@
       }
     },
     {
-      "name": "Vanilla - Advanced Energy Generator",
-      "to_build": "AdvancedEnergyGenerator",
-      "instance_count": 1,
-      "shared_instance_count": "AdvancedEnergy",
-      "cross_planet_shared_count": true,
-      "priority": 271,
-      "builders": [
-        "AnyAdvancedFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Vanilla",
-            "boolean": true
-          },
-          {
-            "test_type": "PotentialEnergyEfficiency",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedEnergyGenerator"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 10,
-        "placement_type": "FromBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
       "name": "Vanilla - Advanced Energy Generator - Desire",
       "to_build": "AdvancedEnergyGenerator",
       "instance_count": 1,
@@ -1018,7 +793,8 @@
       "cross_planet_shared_count": true,
       "priority": 613,
       "builders": [
-        "AnyAdvancedFabber"
+        "AnyAdvancedFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [
@@ -1054,7 +830,8 @@
       "priority": 140,
       "builders": [
         "AnyBasicFabber",
-        "AnyAdvancedFabber"
+        "AnyAdvancedFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [
@@ -1095,7 +872,8 @@
       "priority": 140,
       "builders": [
         "AnyBasicFabber",
-        "AnyAdvancedFabber"
+        "AnyAdvancedFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [

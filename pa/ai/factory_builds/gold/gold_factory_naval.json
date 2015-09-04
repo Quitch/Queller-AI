@@ -46,13 +46,6 @@
             "boolean": true
           },
           {
-            "test_type": "UnableToExpand",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicNavalFabber"
           },
@@ -79,13 +72,6 @@
             "boolean": true
           },
           {
-            "test_type": "UnableToExpand",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicNavalFabber"
           },
@@ -104,7 +90,7 @@
       "to_build": "SeaScout",
       "instance_count": 1,
       "max_num_assisters": 10,
-      "priority": 98,
+      "priority": 97,
       "builders": [
         "BasicNavalFactory"
       ],
@@ -128,19 +114,16 @@
             "boolean": false
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
             "test_type": "UnitCountPerPlanetRadius",
             "unit_type_string0": "Air & Scout",
             "compare0": "<",
-            "value0": 250
+            "value0": 400
           },
           {
             "test_type": "UnitCountPerPlanetRadius",
             "unit_type_string0": "Naval & Scout",
             "compare0": "<",
-            "value0": 250
+            "value0": 400
           }
         ],
         [
@@ -154,25 +137,25 @@
             "boolean": false
           },
           {
-            "test_type": "BaseThreatened",
-            "boolean": false
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Naval & Mobile & Offense",
+            "compare0": "<",
+            "value0": 5
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
           },
           {
-            "test_type": "HaveFullPlanetIntel",
+            "test_type": "AloneOnPlanet",
             "boolean": false
           },
           {
             "test_type": "CanDeployNavalFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Naval & Scout",
-            "compare0": "<",
-            "value0": 1
+            "boolean": true
           }
         ]
       ]
@@ -198,9 +181,6 @@
             "boolean": false
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Naval & Mobile & Offense",
             "compare0": "<",
@@ -222,7 +202,10 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "PlanetThreat",
+            "string0": "Naval",
+            "compare0": ">",
+            "value0": 0
           }
         ]
       ]
@@ -248,31 +231,15 @@
             "boolean": false
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Naval & Mobile & Offense",
-            "compare0": "<",
-            "value0": 5
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1
           }
         ]
       ]
@@ -298,17 +265,38 @@
             "boolean": false
           },
           {
+            "test_type": "PlanetThreat",
+            "string0": "Naval",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Naval & Mobile & Offense",
+            "compare0": "<",
+            "value0": 5
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "FocusTargetThreat",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Naval",
+            "string1": "Naval",
             "compare0": ">",
-            "value0": 0
+            "value0": 1
           }
         ]
       ]
@@ -335,7 +323,7 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber & Advanced & (Naval | Air)",
+            "unit_type_string0": "Fabber & Advanced & Naval",
             "compare0": "<",
             "value0": 1
           }
@@ -355,13 +343,6 @@
             "boolean": false
           },
           {
-            "test_type": "UnableToExpand",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "AdvancedNavalFabber"
           },
@@ -370,7 +351,7 @@
             "unit_type_string0": "Fabber & Advanced & Naval",
             "unit_type_string1": "Factory & Advanced & Naval",
             "compare0": "<",
-            "value0": 3
+            "value0": 1
           }
         ],
         [
@@ -384,13 +365,6 @@
             "boolean": true
           },
           {
-            "test_type": "UnableToExpand",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "AdvancedNavalFabber"
           },
@@ -399,7 +373,7 @@
             "unit_type_string0": "Fabber & Advanced & Naval",
             "unit_type_string1": "Factory & Advanced & Naval",
             "compare0": "<",
-            "value0": 4
+            "value0": 2
           }
         ]
       ]
@@ -427,9 +401,6 @@
           {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
           }
         ]
       ]
@@ -439,7 +410,7 @@
       "to_build": "MissleShip",
       "instance_count": -1,
       "max_num_assisters": 15,
-      "priority": 198,
+      "priority": 199,
       "builders": [
         "AdvancedNavalFactory"
       ],
@@ -459,7 +430,23 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "PlanetThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "Naval",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Naval & Mobile & Tactical",
+            "unit_type_string1": "(Naval & Mobile) - Fabber",
+            "compare0": "<",
+            "value0": 0.1
           }
         ]
       ]
@@ -469,7 +456,7 @@
       "to_build": "MissileSub",
       "instance_count": -1,
       "max_num_assisters": 15,
-      "priority": 198,
+      "priority": 199,
       "builders": [
         "AdvancedNavalFactory"
       ],
@@ -489,7 +476,87 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "PlanetThreat",
+            "string0": "Naval",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Gold - Kaiju",
+      "to_build": "HoverShip",
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "priority": 199,
+      "builders": [
+        "AdvancedNavalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "Naval",
+            "compare0": "==",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": false
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Gold - Typhoon",
+      "to_build": "DroneCarrier",
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "priority": 199,
+      "builders": [
+        "AdvancedNavalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "Naval",
+            "compare0": ">",
+            "value0": 0
           }
         ]
       ]

@@ -5,10 +5,9 @@
       "to_build": "OrbitalFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
-      "priority": 100,
+      "priority": 199,
       "builders": [
-        "OrbitalLauncher",
-        "OrbitalFactory"
+        "OrbitalLauncher"
       ],
       "build_conditions": [
         [
@@ -18,14 +17,28 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "UnitCount",
+            "unit_type_string0": "Orbital & Fabber",
+            "compare0": "<",
+            "value0": 2
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "OrbitalFabber"
           },
           {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Fabber & Orbital",
             "unit_type_string1": "Factory & Orbital",
             "compare0": "<",
-            "value0": 2
+            "value0": 5
           }
         ]
       ]
@@ -47,46 +60,27 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Orbital & Recon & Basic) - Structure",
-            "compare0": "<",
-            "value0": 1
+            "test_type": "ThisPlanetNeedsReconAssistance",
+            "boolean": true
           }
-        ]
-      ]
-    },
-    {
-      "name": "Bronze - Avenger",
-      "to_build": "OrbitalFighter",
-      "instance_count": 1,
-      "max_num_assisters": 1,
-      "priority": 97,
-      "builders": [
-        "OrbitalLauncher",
-        "OrbitalFactory"
-      ],
-      "build_conditions": [
-        [
+        ],
+		[
           {
             "test_type": "HasPersonalityTag",
             "string0": "bronze",
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "OtherPlanetNeedsReconAssistance",
+            "boolean": true
           }
         ]
       ]
     },
     {
-      "name": "Bronze - Astraeus",
-      "to_build": "OrbitalLander",
+      "name": "Bronze - Hermes",
+      "to_build": "OrbitalProbe",
       "instance_count": 1,
-      "min_num_assisters": 8,
-      "max_num_assisters": 20,
       "priority": 97,
       "builders": [
         "OrbitalLauncher"
@@ -99,26 +93,50 @@
             "boolean": true
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Orbital & Transport",
-            "compare0": "<",
-            "value0": 1
+            "test_type": "ThisPlanetNeedsReconAssistance",
+            "boolean": true
+          }
+        ],
+		[
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
           },
           {
-            "test_type": "PlanetWithoutPresence",
+            "test_type": "OtherPlanetNeedsReconAssistance",
             "boolean": true
           }
         ]
       ]
     },
     {
-      "name": "Bronze - Solar Array",
-      "to_build": "SolarArray",
-      "instance_count": 1,
-      "max_num_assisters": 15,
+      "name": "Bronze - Avenger",
+      "to_build": "OrbitalFighter",
+      "instance_count": -1,
+      "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "OrbitalFactory"
+        "OrbitalLauncher"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bronze - Astraeus",
+      "to_build": "OrbitalLander",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 200,
+      "builders": [
+        "AnyUberOrbitalFactory"
       ],
       "build_conditions": [
         [
@@ -128,7 +146,33 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "PlanetWithoutPresence",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Transport",
+            "compare0": "<",
+            "value0": 1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bronze - Solar Array",
+      "to_build": "SolarArray",
+      "instance_count": 1,
+      "max_num_assisters": 15,
+      "priority": 195,
+      "builders": [
+        "OrbitalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
           },
           {
             "test_type": "PotentialEnergyEfficiency",
@@ -144,9 +188,6 @@
           },
           {
             "test_type": "DesireEnergy"
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
           }
         ]
       ]
@@ -154,9 +195,9 @@
     {
       "name": "Bronze - SXX-1304 Laser Platform",
       "to_build": "OrbitalDeathLaser",
-      "instance_count": 1,
+      "instance_count": -1,
       "max_num_assisters": 15,
-      "priority": 97,
+      "priority": 195,
       "builders": [
         "OrbitalFactory"
       ],
@@ -170,19 +211,16 @@
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
           }
         ]
       ]
     },
     {
-      "name": "Bronze - Advanced Radar Satellite",
+      "name": "Bronze - Advanced Radar Satellite - This Planet",
       "to_build": "AdvancedRadarSattelite",
       "instance_count": 1,
       "max_num_assisters": 15,
-      "priority": 97,
+      "priority": 195,
       "builders": [
         "OrbitalFactory"
       ],
@@ -194,13 +232,57 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "ThisPlanetNeedsReconAssistance",
+            "boolean": true
+          }
+        ],
+		[
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Orbital & Record & Advanced) - Structure",
-            "compare0": "<",
-            "value0": 1
+            "test_type": "OtherPlanetNeedsReconAssistance",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bronze - Artemis",
+      "to_build": "OrbitalRailgun",
+      "instance_count": -1,
+      "max_num_assisters": 5,
+      "priority": 195,
+      "builders": [
+        "OrbitalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bronze - Omega",
+      "to_build": "OrbitalBattleShip",
+      "instance_count": -1,
+      "max_num_assisters": 5,
+      "priority": 195,
+      "builders": [
+        "OrbitalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
           }
         ]
       ]

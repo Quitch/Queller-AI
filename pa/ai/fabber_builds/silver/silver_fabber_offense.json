@@ -284,6 +284,11 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "test_type": "PlanetCount",
+            "compare0": ">",
+            "value0": 2
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "PlanetEngine"
           }

@@ -5,11 +5,12 @@
       "to_build": "OrbitalLauncher",
       "instance_count": 1,
       "shared_instance_count": "OrbitalLauncher",
-      "priority": 479,
+      "priority": 485,
       "max_num_assisters": 3,
       "builders": [
         "AnyBasicFabber",
-        "AnyAdvancedFabber"
+        "AnyAdvancedFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [
@@ -26,6 +27,11 @@
             "string0": "OrbitalLauncher"
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
+          },
+          {
             "test_type": "WantCommanderOffPlanet",
             "boolean": false
           },
@@ -34,7 +40,7 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Factory & Advanced) - Orbital - Nuke - NukeDefense",
+            "unit_type_string0": "(Factory & Advanced) - Orbital - Nuke - NukeDefense - SelfDestruct",
             "compare0": ">=",
             "value0": 1
           },
@@ -55,6 +61,11 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "OrbitalLauncher"
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
           },
           {
             "test_type": "PlanetWithoutPresence",
@@ -86,10 +97,11 @@
       "shared_instance_count": "OrbitalLauncher",
       "min_num_assisters": 3,
       "max_num_assisters": 5,
-      "priority": 480,
+      "priority": 486,
       "builders": [
         "AnyBasicFabber",
-        "AnyAdvancedFabber"
+        "AnyAdvancedFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [
@@ -104,6 +116,11 @@
           },
           {
             "test_type": "NeedOrbitalLauncher"
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -137,6 +154,11 @@
           {
             "test_type": "UnableToExpand",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
           },
           {
             "test_type": "PlanetWithoutPresence",
@@ -179,6 +201,11 @@
             "boolean": true
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
+          },
+          {
             "test_type": "PlanetWithoutPresence",
             "boolean": true
           },
@@ -217,7 +244,7 @@
       "name": "Vanilla - Orbital Factory",
       "to_build": "OrbitalFactory",
       "instance_count": 1,
-      "priority": 479,
+      "priority": 485,
       "max_num_assisters": 3,
       "builders": [
         "OrbitalFabber"
@@ -231,6 +258,11 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -274,6 +306,11 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
+          },
+          {
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Orbital & OrbitalDefense",
             "compare0": "<",
@@ -299,6 +336,11 @@
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -328,6 +370,11 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
           },
           {
             "test_type": "UnitCountInBase",
@@ -369,7 +416,8 @@
       "max_num_assisters": 45,
       "priority": 614,
       "builders": [
-        "AnyAdvancedFabber"
+        "AnyAdvancedFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [
@@ -384,6 +432,11 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
           },
           {
             "test_type": "PlanetCount",
@@ -507,6 +560,7 @@
         "BasicVehicleFabber",
         "BasicAirFabber",
         "AdvancedBotFabber",
+        "SupportCommander",
         "AdvancedVehicleFabber",
         "AdvancedAirFabber"
       ],

@@ -318,7 +318,7 @@
       "to_build": "DefenseSatellite",
       "instance_count": 1,
       "max_num_assisters": 1,
-      "priority": 452,
+      "priority": 451,
       "base_sort": "FromPerimeter",
       "builders": [
         "OrbitalFabber"
@@ -1367,7 +1367,7 @@
       "to_build": "DefenseSatellite",
       "instance_count": 1,
       "max_num_assisters": 1,
-      "priority": 451,
+      "priority": 452,
       "builders": [
         "OrbitalFabber"
       ],
@@ -1447,12 +1447,6 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Recon",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & OrbitalDefense",
             "compare0": "<",
             "value0": 4
@@ -1486,44 +1480,6 @@
           {
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & OrbitalDefense",
-            "compare0": "<",
-            "value0": 4
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
-            "compare0": ">=",
-            "value0": 3
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Structure & Recon & Orbital",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "Umbrella"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "turtle",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "SystemThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
             "compare0": "<",
             "value0": 4
           },
@@ -1597,50 +1553,6 @@
             "value0": 1
           },
           {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Structure & Recon & Orbital",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure - Recon",
-            "compare0": ">=",
-            "value0": 0
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "Umbrella"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "turtle",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "SystemThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & OrbitalDefense & Basic",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Recon",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure - Recon",
             "compare0": ">=",
@@ -1703,50 +1615,6 @@
             "unit_type_string0": "Structure & OrbitalDefense & Basic",
             "compare0": "<",
             "value0": 3
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Structure & Recon & Orbital",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "Umbrella"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "turtle",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "SystemThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Commander",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & OrbitalDefense & Basic",
-            "compare0": "<",
-            "value0": 3
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Recon",
-            "compare0": ">=",
-            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -2331,12 +2199,6 @@
             "string0": "AntiNuke",
             "compare0": "<=",
             "value0": 0
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Nuke",
-            "compare0": "<",
-            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",

@@ -64,7 +64,7 @@
     },
     {
       "name": "Silver - Land Transfer To Planet",
-      "to_build": "Land_Attack_80",
+      "to_build": "Teleporter_Attack_40",
       "instance_count": 1,
       "priority": 100,
       "build_conditions": [
@@ -90,7 +90,7 @@
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Land & Mobile & Offense",
             "compare0": ">=",
-            "value0": 1
+            "value0": 10
           }
         ]
       ],
@@ -99,7 +99,7 @@
     {
       "name": "Silver - Land Attack Platoon 20",
       "to_build": "Land_Attack_20",
-      "instance_count": 3,
+      "instance_count": -1,
       "priority": 101,
       "build_conditions": [
         [
@@ -133,7 +133,7 @@
     {
       "name": "Silver - Land Attack Maximum Power",
       "to_build": "Land_Attack_40",
-      "instance_count": 3,
+      "instance_count": -1,
       "priority": 100,
       "build_conditions": [
         [

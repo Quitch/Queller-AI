@@ -25,46 +25,10 @@
             "string0": "BasicAirFactory"
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory - Orbital",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory & Air & Basic",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicAirFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicAirFactory"
-          },
-          {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Air",
             "string1": "AntiAir",
             "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory - Orbital",
-            "compare0": ">=",
             "value0": 1
           },
           {
@@ -93,12 +57,6 @@
             "value0": 1
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory - Orbital",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "BasicAirFactory"
           }
@@ -121,17 +79,17 @@
             "string0": "BasicAirFactory"
           },
           {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Factory & Air & Basic",
+            "unit_type_string1": "(Factory & Basic) - Orbital - Air",
+            "compare0": "<=",
+            "value0": 0.2
+          },
+          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory - Orbital",
             "compare0": ">=",
             "value0": 1
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Factory & Air & Basic",
-            "unit_type_string1": "(Factory & Basic) - Orbital - Air",
-            "compare0": "<",
-            "value0": 0.2
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -203,14 +161,14 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "Factory - Orbital",
-            "compare0": "==",
-            "value0": 2
+            "unit_type_string0": "Factory & Air & Basic",
+            "compare0": "<",
+            "value0": 1
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "Factory & Air & Basic",
-            "compare0": "<",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">",
             "value0": 1
           },
           {
@@ -263,38 +221,14 @@
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Factory & Air & Basic",
             "unit_type_string1": "(Factory & Basic) - Orbital - Air",
-            "compare0": "<",
+            "compare0": "<=",
             "value0": 0.2
           },
           {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicAirFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicAirFactory"
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">=",
+            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -418,8 +352,8 @@
           {
             "test_type": "UnitCount",
             "unit_type_string0": "Factory - Orbital",
-            "compare0": "==",
-            "value0": 2
+            "compare0": ">",
+            "value0": 1
           },
           {
             "test_type": "UnitCount",
@@ -446,7 +380,7 @@
     {
       "name": "Platinum - Basic Air Factory - Excess eco",
       "to_build": "BasicAirFactory",
-      "instance_count": 2,
+      "instance_count": 1,
       "shared_instance_count": "BasicFactory",
       "priority": 374,
       "min_num_assisters": 3,
@@ -488,48 +422,14 @@
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Factory & Air & Basic",
             "unit_type_string1": "(Factory & Basic) - Orbital - Air",
-            "compare0": "<",
+            "compare0": "<=",
             "value0": 0.2
           },
           {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicAirFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "CurrentMetalEfficiency",
-            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">=",
             "value0": 1
-          },
-          {
-            "test_type": "CurrentEnergyEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicAirFactory"
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -685,12 +585,6 @@
             "value0": 1
           },
           {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Mobile - Commander",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "BasicAirFactory"
           }
@@ -719,6 +613,97 @@
         "AdvancedAirFabber"
       ],
       "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedBotFactory"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "compare0": "<",
+            "value0": 0.6
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Advanced - Orbital",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedBotFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedBotFactory"
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Land & Mobile & Offense",
+            "string0": "Enemy",
+            "value0": 800,
+            "compare0": "<",
+            "value1": 10
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital - Naval",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Advanced - Orbital",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedBotFactory"
+          }
+        ],
         [
           {
             "test_type": "HasPersonalityTag",

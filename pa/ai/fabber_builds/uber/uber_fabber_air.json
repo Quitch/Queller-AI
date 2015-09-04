@@ -18,6 +18,11 @@
             "boolean": true
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "airswarm",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -41,6 +46,11 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "airswarm",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -106,6 +116,11 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "airswarm",
+            "boolean": false
           },
           {
             "test_type": "AloneOnPlanet",
@@ -319,36 +334,6 @@
             "boolean": false
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicAirFactory"
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicAirFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -374,6 +359,11 @@
             "boolean": true
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "airswarm",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -397,6 +387,11 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "airswarm",
+            "boolean": false
           },
           {
             "test_type": "AloneOnPlanet",
@@ -628,51 +623,6 @@
             "boolean": false
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "CurrentMetalEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "MetalStorageFrac",
-            "compare0": ">",
-            "value0": 0.1
-          },
-          {
-            "test_type": "CurrentEnergyEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicAirFactory"
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicAirFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "CurrentMetalEfficiency",
             "compare0": ">",
             "value0": 1
@@ -713,6 +663,11 @@
             "boolean": true
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "airswarm",
+            "boolean": false
+          },
+          {
             "test_type": "CurrentMetalEfficiency",
             "compare0": ">",
             "value0": 1
@@ -751,6 +706,11 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "airswarm",
+            "boolean": false
           },
           {
             "test_type": "AloneOnPlanet",
@@ -824,6 +784,10 @@
             "boolean": true
           },
           {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory - Orbital",
             "compare0": "<",
@@ -865,12 +829,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHasUseablePlanetWeapon",
-            "boolean": true
+            "test_type": "BaseThreatened",
+            "boolean": false
           },
           {
             "test_type": "HaveEcoForAdvanced",
@@ -881,23 +841,76 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedAirFactory"
+            "string0": "AdvancedBotFactory"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "compare0": "<",
+            "value0": 0.6
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Basic & Fabber - Orbital",
+            "unit_type_string0": "Fabber - Orbital",
             "compare0": ">=",
             "value0": 5
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory & Air & Advanced",
-            "compare0": "<",
+            "unit_type_string0": "Factory & Advanced - Orbital",
+            "compare0": ">=",
             "value0": 2
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedAirFactory"
+            "string0": "AdvancedBotFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedBotFactory"
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Land & Mobile & Offense",
+            "string0": "Enemy",
+            "value0": 700,
+            "compare0": "<",
+            "value1": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital - Naval",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Advanced - Orbital",
+            "compare0": ">=",
+            "value0": 2
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedBotFactory"
           }
         ],
         [
