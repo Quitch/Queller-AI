@@ -327,10 +327,6 @@
             "boolean": true
           },
           {
-            "test_type": "CanFindControlPointToBuild",
-            "boolean": true
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -344,6 +340,10 @@
             "compare0": "<",
             "boolean": true,
             "value0": 1
+          },
+          {
+            "test_type": "CanFindControlPointToBuild",
+            "boolean": true
           }
         ]
       ]
