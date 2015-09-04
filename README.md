@@ -17,6 +17,10 @@ Any feedback based on playing the AI is greatly appreciated. Please include a li
 
 Be aware that Queller will produce more units and fabbers than the vanilla AI, especially on multi-planet systems. I have optimised the AI as best as I can, but it is a bigger performance hog than vanilla. If you are encountering performance issues try setting Local Server to OFF.
 
+The difficulty levels are designed to reflect the dominant playstyle of each league. I'm always eager to garner feedback on any improvements that can be made here.
+
+The only feedback which isn't useful is AI vs. AI feedback. Believe me, I see a million of these games. I want feedback from AI vs human games.
+
 ## GOALS
 
 Some of these might prove impossible given the tooling available, only time will tell.
