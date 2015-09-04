@@ -12,7 +12,7 @@
     "Orbital_Laser_Attack": {
       "units": [
         {
-          "unit_types": "Orbital & LaserPlatform",
+          "unit_types": "(LaserPlatform | (Fighter & Heavy))",
           "min_count": 1,
           "max_count": -1
         }
@@ -21,7 +21,7 @@
     "Orbital_Laser_Attack_Escorted": {
       "units": [
         {
-          "unit_types": "Orbital & LaserPlatform",
+          "unit_types": "(LaserPlatform | (Fighter & Heavy))",
           "min_count": 1,
           "max_count": -1
         },
