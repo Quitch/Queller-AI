@@ -377,6 +377,13 @@
             "value0": 2
           },
           {
+            "test_type": "AlliedUnitCountOnPlanet",
+            "unit_type_string0": "PlanetEngine",
+            "compare0": "<",
+            "boolean": true,
+            "value0": 1
+          },
+          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory - Orbital",
             "compare0": ">=",
@@ -430,6 +437,13 @@
             "unit_type_string0": "Fabber",
             "compare0": ">=",
             "value0": 14
+          },
+          {
+            "test_type": "AlliedUnitCountOnPlanet",
+            "unit_type_string0": "ControlModule",
+            "compare0": "<",
+            "boolean": true,
+            "value0": 1
           },
           {
             "test_type": "CanFindControlPointToBuild",

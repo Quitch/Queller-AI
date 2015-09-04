@@ -104,6 +104,10 @@
             "boolean": true
           },
           {
+            "test_type": "EnemyOrbitalPresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Orbital & Fighter",
             "compare0": ">=",
@@ -127,6 +131,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
           {

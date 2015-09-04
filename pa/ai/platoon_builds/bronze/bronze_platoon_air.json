@@ -13,6 +13,10 @@
             "boolean": true
           },
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & (Bomber | Gunship)",
             "compare0": ">=",
@@ -41,6 +45,10 @@
             "boolean": true
           },
           {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
@@ -57,6 +65,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
           {

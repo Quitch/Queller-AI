@@ -278,6 +278,13 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "test_type": "AlliedUnitCountOnPlanet",
+            "unit_type_string0": "PlanetEngine",
+            "compare0": "<",
+            "boolean": true,
+            "value0": 1
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "PlanetEngine"
           }
@@ -314,6 +321,13 @@
           {
             "test_type": "PlanetCount",
             "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "AlliedUnitCountOnPlanet",
+            "unit_type_string0": "ControlModule",
+            "compare0": "<",
+            "boolean": true,
             "value0": 1
           },
           {

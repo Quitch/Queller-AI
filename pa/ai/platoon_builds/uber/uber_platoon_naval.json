@@ -35,6 +35,10 @@
             "boolean": true
           },
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Naval & Advanced & Sub",
             "compare0": ">=",
@@ -59,6 +63,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
           {
@@ -95,6 +103,10 @@
             "boolean": true
           },
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Naval",
             "compare0": "<",
@@ -128,6 +140,10 @@
             "boolean": true
           },
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Naval",
             "compare0": "<",
@@ -158,6 +174,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
           {

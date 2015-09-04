@@ -109,6 +109,10 @@
             "boolean": true
           },
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiSurface",
             "compare0": "<",
@@ -140,6 +144,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
           {

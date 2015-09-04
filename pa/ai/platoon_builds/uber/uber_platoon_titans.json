@@ -13,6 +13,10 @@
             "boolean": true
           },
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "(Tank | Bot) & Mobile & Titan",
             "compare0": ">",
@@ -38,6 +42,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
           {
