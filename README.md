@@ -1,7 +1,7 @@
 Queller-AI
 ==========
 
-Improved AI for [Planetary Annihilation](http://www.uberent.com/pa)
+Improved AI for [Planetary Annihilation: TITANS](http://www.uberent.com/pa)
 
 I love AI. To put my old person comfy jumper on for a moment, back in the day I modded Total Annihilation's AI and ran a site called [AI Central](http://aicentral.tauniverse.com) (WARNING: very 90's site design) for AI mods, and I ran an AI league for Kohan II to identify the best. I've been an enthusiast in AI for as long as I've been gaming. This Queller AI will be a continuation of my Queller AI for Total Annihilation & Core Contingency.
 
@@ -55,7 +55,7 @@ Normal through Absurd are the standard difficulties and will use the vanilla AI 
  - Poor use of fabbers
  - Terrible economy handling
  - No micro
- - Cautious threat assessments
+ - Terrible threat assessments
 
 - Silver
  - Factory first opening
@@ -190,11 +190,10 @@ The spawn the AI starts in and the profile used can make a big difference, even 
 
 #### TOFIX
 
-- Doesn't close out orbital games well even when it has an overwhelming economic advantage
 - Takes too long transition from a naval start to a land game on mixed maps
 - Will not send all its troops through a teleporter even when there's no reason not to
 - Doesn't understand when it needs to build units in preparation for an attack versus when it should shutdown factories so it can build super weapons
-- Spikes in AI fabber performance drain
+- Spikes in AI fabber performance
 
 #### MAYBEFIX
 
