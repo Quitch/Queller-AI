@@ -190,6 +190,12 @@
             "value0": 0
           },
           {
+            "test_type": "PlanetThreat",
+            "string0": "Sub",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Naval & Mobile & Offense",
             "compare0": "<",
@@ -218,8 +224,8 @@
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Naval",
-            "string1": "Naval",
+            "string0": "Sub",
+            "string1": "Sub",
             "compare0": "<",
             "value0": 0.6
           }
@@ -255,6 +261,12 @@
           {
             "test_type": "PlanetThreat",
             "string0": "Naval",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "Sub",
             "compare0": "==",
             "value0": 0
           },
@@ -355,6 +367,29 @@
             "value0": 5
           }
         ],
+		[
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "Sub",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Naval & Mobile & Offense",
+            "compare0": "<",
+            "value0": 5
+          }
+        ],
         [
           {
             "test_type": "HasPersonalityTag",
@@ -372,6 +407,27 @@
           {
             "test_type": "PlanetThreat",
             "string0": "Naval",
+            "compare0": ">",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "Sub",
             "compare0": ">",
             "value0": 0
           }
@@ -480,11 +536,10 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "test_type": "PlanetThreat",
             "string0": "Naval",
-            "string1": "Naval",
             "compare0": ">",
-            "value0": 0.6
+            "value0": 0
           }
         ]
       ]
