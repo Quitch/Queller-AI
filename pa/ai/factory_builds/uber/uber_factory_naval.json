@@ -378,6 +378,27 @@
             "boolean": false
           },
           {
+            "test_type": "EnemyPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Naval & Mobile & Offense",
+            "compare0": "<",
+            "value0": 5
+          }
+        ],
+		[
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "PlanetThreat",
             "string0": "Sub",
             "compare0": ">",
