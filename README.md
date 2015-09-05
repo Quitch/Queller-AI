@@ -188,7 +188,7 @@ The spawn the AI starts in and the profile used can make a big difference, even 
 | Duat    | 2    |
 | Forge   | 1    |
 | Lock    | 1    |
-| Pacific | 1/2  |
+| Pacific | 2    |
 
 ## KNOWN ISSUES
 
