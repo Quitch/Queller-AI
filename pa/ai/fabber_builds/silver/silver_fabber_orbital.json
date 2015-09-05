@@ -35,6 +35,12 @@
             "value0": 1
           },
           {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Factory & Orbital & Basic",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "OrbitalLauncher"
           }
@@ -74,10 +80,11 @@
             "string0": "OrbitalLauncher"
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory & Orbital & Basic",
-            "compare0": "<",
-            "value0": 1
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Factory & Orbital",
+            "unit_type_string1": "Factory - Orbital",
+            "compare0": "<=",
+            "value0": 0.1
           },
           {
             "test_type": "CanFindPlaceToBuild",
