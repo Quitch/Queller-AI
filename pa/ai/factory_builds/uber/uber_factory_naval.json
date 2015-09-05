@@ -514,13 +514,6 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Naval",
-            "string1": "Naval",
-            "compare0": ">",
-            "value0": 0.6
-          },
-          {
             "test_type": "PlanetThreat",
             "string0": "Orbital",
             "compare0": ">",
@@ -529,7 +522,7 @@
           {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Naval & Mobile & Tactical",
-            "unit_type_string1": "(Naval & Mobile) - Fabber",
+            "unit_type_string1": "(Naval & Mobile) - Fabber - Hover",
             "compare0": "<",
             "value0": 0.1
           }
