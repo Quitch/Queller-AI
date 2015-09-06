@@ -36,6 +36,10 @@
             "boolean": true
           },
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & ((Bomber & Basic) | Gunship) - Titan",
             "compare0": ">=",
@@ -67,6 +71,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
           {
@@ -104,6 +112,10 @@
             "boolean": true
           },
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & ((Bomber & Basic) | Gunship) - Titan",
             "compare0": ">=",
@@ -135,6 +147,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
           {
@@ -172,6 +188,10 @@
             "boolean": true
           },
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & ((Bomber & Basic) | Gunship) - Titan",
             "compare0": ">=",
@@ -197,6 +217,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
           {
@@ -234,6 +258,10 @@
             "boolean": true
           },
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Bomber & Advanced - Titan",
             "compare0": ">=",
@@ -265,6 +293,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
           {
@@ -302,6 +334,10 @@
             "boolean": true
           },
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Bomber & Advanced - Titan",
             "compare0": ">=",
@@ -336,6 +372,10 @@
             "boolean": true
           },
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Bomber & Advanced - Titan",
             "compare0": ">=",
@@ -361,6 +401,33 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Titan",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsBomber",
+            "string0": "WL_AnySurface",
+            "string1": "WL_Air",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
           {
@@ -392,6 +459,10 @@
             "boolean": true
           },
           {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
@@ -408,6 +479,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
           {
@@ -440,6 +515,10 @@
             "boolean": true
           },
           {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
@@ -456,6 +535,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
           {
@@ -488,6 +571,10 @@
             "boolean": true
           },
           {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
@@ -504,6 +591,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
           {
@@ -536,6 +627,10 @@
             "boolean": true
           },
           {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
@@ -552,6 +647,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
           {
@@ -584,6 +683,10 @@
             "boolean": true
           },
           {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
@@ -600,6 +703,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
           {

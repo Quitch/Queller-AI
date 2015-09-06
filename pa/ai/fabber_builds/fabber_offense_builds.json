@@ -133,7 +133,7 @@
       "shared_instance_count": "NukeSilo",
       "min_num_assisters": 3,
       "max_num_assisters": 12,
-      "priority": 608,
+      "priority": 505,
       "builders": [
         "AnyAdvancedFabber",
         "SupportCommander"
@@ -316,7 +316,7 @@
       "shared_instance_count": "UnitCannon",
       "min_num_assisters": 3,
       "max_num_assisters": 12,
-      "priority": 608,
+      "priority": 505,
       "builders": [
         "AnyAdvancedFabber",
         "SupportCommander"
@@ -454,7 +454,7 @@
       "instance_count": 1,
       "min_num_assisters": 8,
       "max_num_assisters": 45,
-      "priority": 614,
+      "priority": 612,
       "builders": [
         "AnyAdvancedFabber",
         "SupportCommander"
@@ -497,6 +497,13 @@
             "unit_type_string0": "Factory - Orbital",
             "compare0": ">=",
             "value0": 1
+          },
+          {
+            "test_type": "AlliedUnitCountOnPlanet",
+            "unit_type_string0": "ControlModule",
+            "compare0": "<=",
+            "boolean": true,
+            "value0": 0
           },
           {
             "test_type": "CanFindControlPointToBuild",
