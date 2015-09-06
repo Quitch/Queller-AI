@@ -213,6 +213,27 @@
             "compare0": ">=",
             "value0": 1
           }
+        ],
+		[
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & LaserPlatform",
+            "compare0": ">=",
+            "value0": 1
+          }
         ]
       ],
       "task_type": "TransferOrbitalToPlanet"
