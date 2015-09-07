@@ -7,7 +7,7 @@
       "min_num_assisters": 3,
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
-      "priority": 0,
+      "priority": 480,
       "builders": [
         "AdvancedBotFabber",
         "SupportCommander",
@@ -38,6 +38,7 @@
         ]
       ],
       "placement_rules": {
+        "buffer": 10,
         "placement_type": "FromMainBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
@@ -54,7 +55,7 @@
       "min_num_assisters": 3,
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
-      "priority": 0,
+      "priority": 480,
       "builders": [
         "AdvancedVehicleFabber",
         "OrbitalFabber"
@@ -84,6 +85,7 @@
         ]
       ],
       "placement_rules": {
+        "buffer": 10,
         "placement_type": "FromMainBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
