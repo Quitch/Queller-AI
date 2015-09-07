@@ -45,6 +45,12 @@
             "value0": 6750
           },
           {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSub",
+            "compare0": "<",
+            "value0": 1680
+          },
+          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover - Sub",
             "compare0": ">=",
@@ -80,63 +86,7 @@
           },
           {
             "test_type": "CanAttackWithPoolUnits",
-            "string0": "WL_WaterSurface",
-            "boolean": true
-          }
-        ],
-		[
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSub",
-            "compare0": "<",
-            "value0": 1680
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover - AirDefense",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "CanAttackWithPoolUnits",
-            "string0": "WL_Underwater",
-            "boolean": true
-          }
-        ],
-		[
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSub",
-            "compare0": "<",
-            "value0": 1680
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover - AirDefense",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "CanAttackWithPoolUnits",
-            "string0": "WL_Seafloor",
+            "string0": "WL_AnySurface",
             "boolean": true
           }
         ]
@@ -166,6 +116,12 @@
             "value0": 22477
           },
           {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSub",
+            "compare0": "<",
+            "value0": 6720
+          },
+          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover - Sub",
             "compare0": ">=",
@@ -201,63 +157,7 @@
           },
           {
             "test_type": "CanAttackWithPoolUnits",
-            "string0": "WL_WaterSurface",
-            "boolean": true
-          }
-        ],
-		[
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSub",
-            "compare0": "<",
-            "value0": 6720
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover - AirDefense",
-            "compare0": ">=",
-            "value0": 4
-          },
-          {
-            "test_type": "CanAttackWithPoolUnits",
-            "string0": "WL_Underwater",
-            "boolean": true
-          }
-        ],
-		[
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSub",
-            "compare0": "<",
-            "value0": 6720
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover - AirDefense",
-            "compare0": ">=",
-            "value0": 4
-          },
-          {
-            "test_type": "CanAttackWithPoolUnits",
-            "string0": "WL_Seafloor",
+            "string0": "WL_AnySurface",
             "boolean": true
           }
         ]
@@ -287,6 +187,12 @@
             "value0": 44955
           },
           {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSub",
+            "compare0": "<",
+            "value0": 13440
+          },
+          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover - Sub",
             "compare0": ">=",
@@ -298,7 +204,7 @@
             "boolean": true
           }
         ],
-		[
+		  [
           {
             "test_type": "HasPersonalityTag",
             "string0": "platinum",
@@ -322,63 +228,7 @@
           },
           {
             "test_type": "CanAttackWithPoolUnits",
-            "string0": "WL_WaterSurface",
-            "boolean": true
-          }
-        ],
-		[
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSub",
-            "compare0": "<",
-            "value0": 13440
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover - AirDefense",
-            "compare0": ">=",
-            "value0": 8
-          },
-          {
-            "test_type": "CanAttackWithPoolUnits",
-            "string0": "WL_Underwater",
-            "boolean": true
-          }
-        ],
-		[
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSub",
-            "compare0": "<",
-            "value0": 13440
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover - AirDefense",
-            "compare0": ">=",
-            "value0": 8
-          },
-          {
-            "test_type": "CanAttackWithPoolUnits",
-            "string0": "WL_Seafloor",
+            "string0": "WL_AnySurface",
             "boolean": true
           }
         ]
@@ -403,79 +253,13 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover - Sub",
+            "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover",
             "compare0": ">=",
             "value0": 12
           },
           {
             "test_type": "CanAttackWithPoolUnits",
             "string0": "WL_AnySurface",
-            "boolean": true
-          }
-        ],
-		[
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover - AirDefense",
-            "compare0": ">=",
-            "value0": 12
-          },
-          {
-            "test_type": "CanAttackWithPoolUnits",
-            "string0": "WL_WaterSurface",
-            "boolean": true
-          }
-        ],
-		[
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover - AirDefense",
-            "compare0": ">=",
-            "value0": 12
-          },
-          {
-            "test_type": "CanAttackWithPoolUnits",
-            "string0": "WL_Underwater",
-            "boolean": true
-          }
-        ],
-		[
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover - AirDefense",
-            "compare0": ">=",
-            "value0": 12
-          },
-          {
-            "test_type": "CanAttackWithPoolUnits",
-            "string0": "WL_Seafloor",
             "boolean": true
           }
         ]
