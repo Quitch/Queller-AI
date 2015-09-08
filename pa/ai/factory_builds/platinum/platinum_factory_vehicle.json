@@ -587,6 +587,11 @@
       "build_conditions": [
         [
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -599,31 +604,7 @@
             "string0": "Air",
             "string1": "AntiAir",
             "compare0": ">",
-            "value0": 0.9
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | (Bot & (Artillery | Advanced)) & Mobile) & AirDefense",
-            "unit_type_string1": "(Tank | (Bot & (Artillery | Advanced)) & Mobile) - Fabber - Deconstruction - Titan",
-            "compare0": "<",
-            "value0": 0.2
-          }
-        ],
-        [
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Air",
-            "string1": "Air",
-            "compare0": ">",
-            "value0": 0.9
+            "value0": 1
           },
           {
             "test_type": "UnitRatioOnPlanet",

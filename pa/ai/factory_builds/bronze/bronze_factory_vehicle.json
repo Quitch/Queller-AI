@@ -279,6 +279,11 @@
       "build_conditions": [
         [
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
