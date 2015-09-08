@@ -41,6 +41,11 @@
       "build_conditions": [
         [
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
             "test_type": "EnemyPresenceOnPlanet",
             "boolean": true
           },
@@ -70,6 +75,11 @@
       "priority": 211,
       "build_conditions": [
         [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
           {
             "test_type": "EnemyPresenceOnPlanet",
             "boolean": false
