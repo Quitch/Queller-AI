@@ -131,6 +131,10 @@ By default, Queller at Uber level will adapt its play to try and suit the system
  - Heavier use of air
  - Works best on larger maps with spread out metal
 
+- Bot
+ - Will only use bots
+ - Will build a vehicle factory for Skitters if it detects the possibility of mines
+ 
 - Dox
  - Won't use any offensive T1 land unit other than the Dox
  - Will focus on Slammers at T2 but not exclusively
