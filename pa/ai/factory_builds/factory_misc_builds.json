@@ -1,1 +1,117 @@
-{"build_list":[{"name":"Vanilla - Nuke Missile","to_build":"NukeMissile","instance_count":-1,"priority":151,"builders":["NukeSilo"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"Vanilla","boolean":true},{"test_type":"CanAffordBuildDemand"},{"test_type":"FactoryHasOpenSlot"}]]},{"name":"Vanilla - Nuke Missile - No Antis","to_build":"NukeMissile","instance_count":2,"min_num_assisters":3,"max_num_assisters":12,"priority":387,"builders":["NukeSilo"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"Vanilla","boolean":true},{"test_type":"CanAffordBuildDemand"},{"test_type":"PlanetThreat","string0":"AntiNuke","compare0":"<=","value0":0},{"test_type":"FactoryHasOpenSlot"}]]},{"name":"Vanilla - Anti Nuke Missile","to_build":"AntiNukeMissile","instance_count":-1,"priority":151,"builders":["AntiNukeSilo"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"Vanilla","boolean":true},{"test_type":"CanAffordBuildDemand"},{"test_type":"FactoryHasOpenSlot"}]]},{"name":"Vanilla - Anti Nuke Missile - Rush","to_build":"AntiNukeMissile","instance_count":-1,"min_num_assisters":5,"max_num_assisters":12,"priority":388,"builders":["AntiNukeSilo"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"Vanilla","boolean":true},{"test_type":"CanAffordBuildDemand"},{"test_type":"PlanetThreat","string0":"Nuke","compare0":">","value0":0},{"test_type":"FactorySlotsEmpty","boolean":true}]]}]}
+{
+  "build_list": [
+    {
+      "name": "Vanilla - Nuke Missile",
+      "to_build": "NukeMissile",
+      "instance_count": -1,
+      "priority": 151,
+      "builders": [
+        "NukeSilo"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "FactoryHasOpenSlot"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Vanilla - Nuke Missile - No Antis",
+      "to_build": "NukeMissile",
+      "instance_count": 2,
+      "min_num_assisters": 3,
+      "max_num_assisters": 12,
+      "priority": 387,
+      "builders": [
+        "NukeSilo"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "AntiNuke",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "FactoryHasOpenSlot"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Vanilla - Anti Nuke Missile",
+      "to_build": "AntiNukeMissile",
+      "instance_count": -1,
+      "priority": 151,
+      "builders": [
+        "AntiNukeSilo"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "FactoryHasOpenSlot"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Vanilla - Anti Nuke Missile - Rush",
+      "to_build": "AntiNukeMissile",
+      "instance_count": -1,
+      "min_num_assisters": 5,
+      "max_num_assisters": 12,
+      "priority": 388,
+      "builders": [
+        "AntiNukeSilo"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Vanilla",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "Nuke",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "FactorySlotsEmpty",
+            "boolean": true
+          }
+        ]
+      ]
+    }
+  ]
+}
