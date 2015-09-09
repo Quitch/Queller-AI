@@ -346,6 +346,70 @@
       ]
     },
     {
+      "name": "Uber - Icarus",
+      "to_build": "SolarDrone",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 101,
+      "builders": [
+        "BasicAirFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "MetalStorageFrac",
+            "compare0": ">",
+            "value0": 0.1
+          },
+          {
+            "test_type": "PotentialEnergyEfficiency",
+            "compare0": "<",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "MetalStorageFrac",
+            "compare0": ">",
+            "value0": 0.1
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": "<",
+            "value0": 1
+          }
+        ]
+      ]
+    },
+    {
       "name": "Uber - Advanced Air Fabber",
       "to_build": "AdvancedAirFabber",
       "instance_count": 1,

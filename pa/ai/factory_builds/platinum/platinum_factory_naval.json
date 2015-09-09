@@ -178,6 +178,10 @@
             "boolean": false
           },
           {
+            "test_type": "EnemyPresenceOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Naval & Mobile & Offense",
             "compare0": "<",
@@ -191,8 +195,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "CanDeployNavalFromBase",
@@ -231,11 +235,11 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
-            "test_type": "PlanetThreat",
+            "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Economy",
             "compare0": ">",
             "value0": 0
@@ -264,7 +268,11 @@
             "boolean": false
           },
           {
-            "test_type": "PlanetThreat",
+            "test_type": "EnemyPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Air",
             "compare0": ">",
             "value0": 0
@@ -283,8 +291,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "CanDeployNavalFromBase",
@@ -317,8 +325,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "CanDeployNavalFromBase",
@@ -354,7 +362,11 @@
             "boolean": false
           },
           {
-            "test_type": "PlanetThreat",
+            "test_type": "EnemyPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Naval",
             "compare0": ">",
             "value0": 0
@@ -373,11 +385,11 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
-            "test_type": "PlanetThreat",
+            "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Sub",
             "compare0": ">",
             "value0": 0
@@ -396,15 +408,15 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
           },
           {
-            "test_type": "PlanetThreat",
+            "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Naval",
             "compare0": ">",
             "value0": 0
@@ -417,15 +429,15 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
           },
           {
-            "test_type": "PlanetThreat",
+            "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Sub",
             "compare0": ">",
             "value0": 0
@@ -527,15 +539,15 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
           },
           {
-            "test_type": "PlanetThreat",
+            "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Naval",
             "compare0": ">",
             "value0": 0
@@ -560,15 +572,15 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
           },
           {
-            "test_type": "PlanetThreat",
+            "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Orbital",
             "compare0": ">",
             "value0": 0
@@ -600,15 +612,15 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
           },
           {
-            "test_type": "PlanetThreat",
+            "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Naval",
             "compare0": ">",
             "value0": 0
@@ -639,11 +651,11 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
-            "test_type": "PlanetThreat",
+            "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Naval",
             "compare0": "==",
             "value0": 0
@@ -656,45 +668,12 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "CanDeployNavalFromBase",
             "boolean": false
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Platinum - Typhoon",
-      "to_build": "DroneCarrier",
-      "instance_count": -1,
-      "max_num_assisters": 15,
-      "priority": 0,
-      "builders": [
-        "AdvancedNavalFactory"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetThreat",
-            "string0": "Naval",
-            "compare0": ">",
-            "value0": 0
           }
         ]
       ]

@@ -68,6 +68,10 @@
             "boolean": false
           },
           {
+            "test_type": "EnemyPresenceOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Naval & Mobile & Offense",
             "compare0": "<",
@@ -81,8 +85,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "CanDeployNavalFromBase",
@@ -112,6 +116,10 @@
             "boolean": false
           },
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Naval & Mobile & Offense",
             "compare0": "<",
@@ -125,8 +133,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "CanDeployNavalFromBase",
@@ -152,8 +160,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "CanDeployNavalFromBase",
@@ -222,8 +230,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "CanDeployNavalFromBase",
@@ -249,8 +257,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "CanDeployNavalFromBase",
@@ -276,8 +284,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "CanDeployNavalFromBase",
@@ -303,34 +311,7 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Bronze - Typhoon",
-      "to_build": "DroneCarrier",
-      "instance_count": -1,
-      "max_num_assisters": 15,
-      "priority": 0,
-      "builders": [
-        "AdvancedNavalFactory"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
+            "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           }
         ]

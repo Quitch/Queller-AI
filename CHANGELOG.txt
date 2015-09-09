@@ -14,7 +14,7 @@
 - Will build SXXs at gas giants
 - No longer tries to (unsuccessfully) put the Zeus in bomber platoons
 - Ignores Kaiju when looking at fleet composition
-- Fixed errors in Gold, Platinum and Uber causing them to only look at surface water threats when making build choices and forming platoons
+- Fixed errors in Gold, Platinum and Uber causing them to only look at surface water threats when making naval build and platoon choices
 - Fixed Platinum and Uber not building ships early on in certain situations
 - Turned off Typhoon at all levels due to issues in the AI's handling of the unit
 - Increase in threat required for Gold, Platinum and Uber to build Titans
@@ -32,6 +32,10 @@
 - Fixed all instances of missing personality checks
 - Added a new subpersonality - Uber Bot
 - Three fabber personality trait now correctly covers naval as well
+- Uber will use the Icarus to correct energy issues when it's alone and metal is plentiful
+- Uber will produce more Stingrays when facing a large air threat
+- Uber better limits its Narwhal production
+- Smarter at judging whether ships should be produced from its factories on multi planet systems
 
 #### v3.0 - 2015/09/04
 
