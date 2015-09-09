@@ -1,6 +1,43 @@
 # CHANGELOG
 
-#### v3.0 - 2015/04/09
+#### v3.1 - 2015/09/09
+
+- Silver gives higher priority to Orbital Launcher on multi planet maps
+- Added support for new platoon performance savers
+- Added support for tests designed to stop interference with ally Halleys, Catalysts and Ragnaroks
+- Added missing personality checks for Locust platoons
+- Titan support added to Bronze and Silver
+- Won't try to destroy asteroids with Ragnaroks
+- Won't build torpedo launchers in land bases on non-symmetrical planets
+- Omegas can be used to form orbital to ground attack platoons in the same way an SXX can
+- Will no longer idle Orbital Factories if there's no orbital threat and alone on the planet
+- Will build SXXs at gas giants
+- No longer tries to (unsuccessfully) put the Zeus in bomber platoons
+- Ignores Kaiju when looking at fleet composition
+- Fixed errors in Gold, Platinum and Uber causing them to only look at surface water threats when making naval build and platoon choices
+- Fixed Platinum and Uber not building ships early on in certain situations
+- Turned off Typhoon at all levels due to issues in the AI's handling of the unit
+- Increase in threat required for Gold, Platinum and Uber to build Titans
+- Uber will build a Zeus when it's alone on a planet
+- Bronze and Silver avoid spamming Orbital Launchers and don't make it their first factory on a new world
+- Updated vanilla AI
+- Uber no longer sends orbital units offworld when they're still needed on the planet
+- Bronze can now send orbital units between worlds
+- Only Bronze will build Titans on asteroids
+- Enabled land Titans for all AI levels
+- Lowered the priority for Titans at Uber and Platinum
+- Titans can now be included in other hover and land platoons
+- Fixed an error which led to higher levels building too many Storms
+- Higher air threat required for Platinum and Uber to build Storms
+- Fixed all instances of missing personality checks
+- Added a new subpersonality - Uber Bot
+- Three fabber personality trait now correctly covers naval as well
+- Uber will use the Icarus to correct energy issues when it's alone and metal is plentiful
+- Uber will produce more Stingrays when facing a large air threat
+- Uber better limits its Narwhal production
+- Smarter at judging whether ships should be produced from its factories on multi planet systems
+
+#### v3.0 - 2015/09/04
 
 NOW DESIGNED SOLELY FOR TITANS
 
@@ -29,7 +66,7 @@ NOW DESIGNED SOLELY FOR TITANS
 - Uber and Platinum more aggressive about getting up anti-orbital measures where none exist but an orbital threat does
 - Updated all difficulties in accordance with the latest playstyles in each league
 - Naval platoon 12 now maps to the correct template
-- Platinum and Uber now build Levellers
+- Platinum now builds Levellers
 - Uber brings out Infernos even when not winning the land war to help in base attacks or raids
 - Gold's micro is a little worse
 - Removed naval platoon 16
@@ -37,7 +74,7 @@ NOW DESIGNED SOLELY FOR TITANS
  - Eco is going to need more work as this exposes some issues that were previously hidden
 - Bronze and Silver favour the Astraeus for getting off planet
 - Builds either Kestrels or Hornets but never both
-- Bronze no longer artifically restricted on the number of factories it can build
+- Bronze no longer artificially restricted on the number of factories it can build
 
 #### v2.1 - 2015/08/09
 

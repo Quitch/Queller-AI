@@ -1,7 +1,7 @@
 Queller-AI
 ==========
 
-Improved AI for [Planetary Annihilation](http://www.uberent.com/pa)
+Improved AI for [Planetary Annihilation: TITANS](http://www.uberent.com/pa)
 
 I love AI. To put my old person comfy jumper on for a moment, back in the day I modded Total Annihilation's AI and ran a site called [AI Central](http://aicentral.tauniverse.com) (WARNING: very 90's site design) for AI mods, and I ran an AI league for Kohan II to identify the best. I've been an enthusiast in AI for as long as I've been gaming. This Queller AI will be a continuation of my Queller AI for Total Annihilation & Core Contingency.
 
@@ -16,6 +16,10 @@ You should download and install this mod via the [PA Mod Manager (PAMM)](https:/
 Any feedback based on playing the AI is greatly appreciated. Please include a link to the game on [PA Stats](http://www.pastats.com/) or the replay ID and any time codes of interest. Failing that, please provide the system name, the number of AIs, their difficulty setting, and which slot(s) the players occupied. Remember to set Local Server to OFF in settings otherwise you won't get an entry in PA Stats or a replay ID.
 
 Be aware that Queller will produce more units and fabbers than the vanilla AI, especially on multi-planet systems. I have optimised the AI as best as I can, but it is a bigger performance hog than vanilla. If you are encountering performance issues try setting Local Server to OFF.
+
+The difficulty levels are designed to reflect the dominant playstyle of each league. I'm always eager to garner feedback on any improvements that can be made here.
+
+The only feedback which isn't useful is AI vs. AI feedback. Believe me, I see a million of these games. I want feedback from AI vs human games.
 
 ## GOALS
 
@@ -37,7 +41,7 @@ Some of these might prove impossible given the tooling available, only time will
 
 ## DIFFICULTY
 
-Queller offers a range of difficulties designed to try and mimic the style of human players at particular levels of play. Bronze is easier than the vanilla normal difficulty while uber is harder than absurd. Later in this readme you can find recommendations on which difficulty you should try.
+Queller offers a range of difficulties designed to try and mimic the style of human players at particular levels of play. Later in this readme you can find recommendations on which difficulty you should try.
 
 Normal through Absurd are the standard difficulties and will use the vanilla AI rather than Queller.
 
@@ -55,7 +59,7 @@ Normal through Absurd are the standard difficulties and will use the vanilla AI 
  - Poor use of fabbers
  - Terrible economy handling
  - No micro
- - Cautious threat assessments
+ - Terrible threat assessments
 
 - Silver
  - Factory first opening
@@ -127,6 +131,10 @@ By default, Queller at Uber level will adapt its play to try and suit the system
  - Heavier use of air
  - Works best on larger maps with spread out metal
 
+- Bot
+ - Will only use bots
+ - Will build a vehicle factory for Skitters if it detects the possibility of mines
+ 
 - Dox
  - Won't use any offensive T1 land unit other than the Dox
  - Will focus on Slammers at T2 but not exclusively
@@ -182,19 +190,19 @@ The spawn the AI starts in and the profile used can make a big difference, even 
 | Clutch  | 2    |
 | Crag    | 2    |
 | Duat    | 2    |
-| Forge   | 1    |
+| Forge   | 2    |
 | Lock    | 1    |
-| Pacific | 1/2  |
+| Pacific | 2    |
 
 ## KNOWN ISSUES
 
 #### TOFIX
 
-- Doesn't close out orbital games well even when it has an overwhelming economic advantage
 - Takes too long transition from a naval start to a land game on mixed maps
 - Will not send all its troops through a teleporter even when there's no reason not to
 - Doesn't understand when it needs to build units in preparation for an attack versus when it should shutdown factories so it can build super weapons
-- Spikes in AI fabber performance drain
+- Spikes in AI fabber performance
+- Will sometimes build torpedo launcher defences in the starting base on non-symmetrical maps without water
 
 #### MAYBEFIX
 
@@ -220,6 +228,7 @@ The spawn the AI starts in and the profile used can make a big difference, even 
 - Won't use telepoters to move around a single planet
 - Combat Fabbers can't be used to build mines and repair troops even across entirely different AI personalities
 - Cannot reclaim
+- Treats Sparks as artillery
 
 ## THANKS TO
 
