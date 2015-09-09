@@ -190,7 +190,7 @@ The spawn the AI starts in and the profile used can make a big difference, even 
 | Clutch  | 2    |
 | Crag    | 2    |
 | Duat    | 2    |
-| Forge   | 1    |
+| Forge   | 2    |
 | Lock    | 1    |
 | Pacific | 2    |
 
