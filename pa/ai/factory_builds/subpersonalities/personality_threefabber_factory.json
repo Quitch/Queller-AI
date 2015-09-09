@@ -96,6 +96,35 @@
           }
         ]
       ]
+    },
+    {
+      "name": "Three Fabber - Basic Naval Fabber",
+      "to_build": "BasicNavalFabber",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 100,
+      "builders": [
+        "AnyUberNavalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "threefabber",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Basic & (Naval | Air)",
+            "compare0": "<",
+            "value0": 3
+          }
+        ]
+      ]
     }
   ]
 }
