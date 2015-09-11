@@ -136,6 +136,10 @@
             "boolean": true
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "BaseThreatened",
             "boolean": false
           },
@@ -223,6 +227,10 @@
             "boolean": true
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Air & Fighter",
             "compare0": "<",
@@ -236,7 +244,11 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetThreat",
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Air",
             "compare0": ">",
             "value0": 0
@@ -278,6 +290,10 @@
             "boolean": true
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Air & Bomber",
             "compare0": "<",
@@ -291,8 +307,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
@@ -522,6 +538,10 @@
             "boolean": true
           },
           {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Air",
             "string1": "AntiAir",
@@ -533,6 +553,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
           {
@@ -585,8 +609,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
@@ -639,13 +663,20 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "HaveSeenEnemyUnits",
             "unit_type_string0": "Structure & AirDefense & Advanced",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">=",
+            "value0": 1
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",

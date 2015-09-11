@@ -60,8 +60,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
           }
         ]
       ]
@@ -83,8 +83,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           }
         ]
       ]
@@ -149,8 +149,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
           }
         ]
       ]
@@ -172,8 +172,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -201,12 +201,12 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & Bomber & Advanced",
+            "unit_type_string0": "Air & Tactical & Advanced",
             "compare0": "==",
             "value0": 0
           }
@@ -230,8 +230,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreat",

@@ -24,8 +24,8 @@
             "boolean": false
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -62,8 +62,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -190,8 +190,8 @@
             "boolean": false
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -265,8 +265,8 @@
             "boolean": false
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -302,7 +302,7 @@
         "placement_type": "FromMainBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "(Structure - MetalProduction) | Commander",
+            "unit_type_string": "Commander",
             "alliance": "Enemy",
             "compare_type": ">=",
             "range": 500,

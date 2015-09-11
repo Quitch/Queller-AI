@@ -137,6 +137,10 @@
             "boolean": false
           },
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Naval & Mobile & Offense",
             "compare0": "<",
@@ -150,8 +154,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "CanDeployNavalFromBase",
@@ -178,6 +182,10 @@
           },
           {
             "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": false
           },
           {
@@ -246,10 +254,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "gold",
             "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
           },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
@@ -405,11 +409,11 @@
             "boolean": true
           },
           {
-            "test_type": "BaseThreatened",
+            "test_type": "AloneOnPlanet",
             "boolean": false
           },
           {
-            "test_type": "AloneOnPlanet",
+            "test_type": "BaseThreatened",
             "boolean": false
           },
           {

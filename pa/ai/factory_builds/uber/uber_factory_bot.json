@@ -388,8 +388,8 @@
             "boolean": false
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "HaveSeenEnemyUnits",
@@ -426,8 +426,8 @@
             "boolean": false
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -451,8 +451,8 @@
             "boolean": false
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -516,31 +516,13 @@
       ]
     },
     {
-      "name": "Uber - Locusts - Cannon",
+      "name": "Uber - Locusts",
       "to_build": "NanoSwarm",
       "instance_count": -1,
       "max_num_assisters": 15,
       "priority": 199,
       "builders": [
-        "UnitCannon"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Locusts",
-      "to_build": "NanoSwarm",
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 199,
-      "builders": [
+        "UnitCannon",
         "AdvancedBotFactory"
       ],
       "build_conditions": [
@@ -549,10 +531,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
           }
         ]
       ]

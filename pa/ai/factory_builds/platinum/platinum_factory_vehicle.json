@@ -252,6 +252,10 @@
             "boolean": true
           },
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "BaseThreatened",
             "boolean": false
           },
@@ -292,6 +296,10 @@
             "boolean": false
           },
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "BaseThreatened",
             "boolean": false
           },
@@ -302,6 +310,28 @@
           {
             "test_type": "HaveSeenEnemyUnits",
             "unit_type_string0": "Mobile & SelfDestruct",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | (Bot & (Artillery | Advanced)) & Mobile) & Heavy",
+            "unit_type_string1": "(Tank | (Bot & (Artillery | Advanced)) & Mobile) - Fabber - Deconstruction - Titan",
+            "compare0": "<",
+            "value0": 0.15
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
           {
@@ -331,8 +361,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -360,8 +390,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -592,8 +622,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -605,6 +635,28 @@
             "string1": "AntiAir",
             "compare0": ">",
             "value0": 1
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | (Bot & (Artillery | Advanced)) & Mobile) & AirDefense",
+            "unit_type_string1": "(Tank | (Bot & (Artillery | Advanced)) & Mobile) - Fabber - Deconstruction - Titan",
+            "compare0": "<",
+            "value0": 0.2
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
           },
           {
             "test_type": "UnitRatioOnPlanet",

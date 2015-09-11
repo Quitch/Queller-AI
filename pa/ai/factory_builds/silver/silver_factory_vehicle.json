@@ -112,7 +112,7 @@
             "unit_type_string0": "(Tank | (Bot & (Artillery | Advanced)) & Mobile) & Heavy",
             "unit_type_string1": "(Tank | (Bot & (Artillery | Advanced)) & Mobile) - Fabber - Deconstruction - Titan",
             "compare0": "<",
-            "value0": 0.15
+            "value0": 0.4
           }
         ]
       ]
@@ -269,7 +269,7 @@
             "unit_type_string0": "(Tank | (Bot & (Artillery | Advanced)) & Mobile) & Heavy",
             "unit_type_string1": "(Tank | (Bot & (Artillery | Advanced)) & Mobile) - Fabber - Deconstruction - Titan",
             "compare0": "<",
-            "value0": 0.15
+            "value0": 0.4
           }
         ]
       ]
@@ -312,10 +312,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "silver",
             "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
           },
           {
             "test_type": "CanDeployLandFromBase",
