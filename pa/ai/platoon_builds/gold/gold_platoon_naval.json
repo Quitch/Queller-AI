@@ -68,6 +68,34 @@
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Naval",
+            "compare0": "<",
+            "value0": 22477
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Naval & Mobile & Offense) - Hover - Sub",
+            "compare0": ">=",
+            "value0": 12
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiSub",
             "compare0": "<",
             "value0": 6720
@@ -133,6 +161,34 @@
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Naval",
+            "compare0": "<",
+            "value0": 44955
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Naval & Mobile & Offense) - Hover - Sub",
+            "compare0": ">=",
+            "value0": 24
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiSub",
             "compare0": "<",
             "value0": 13440
@@ -173,6 +229,28 @@
             "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover",
             "compare0": ">=",
             "value0": 12
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Naval & Mobile & Offense) - Hover",
+            "compare0": ">=",
+            "value0": 36
           },
           {
             "test_type": "CanAttackWithPoolUnits",
