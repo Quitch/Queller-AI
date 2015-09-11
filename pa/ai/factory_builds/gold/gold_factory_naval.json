@@ -160,6 +160,12 @@
           {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Naval",
+            "compare0": ">",
+            "value0": 0
           }
         ]
       ]
