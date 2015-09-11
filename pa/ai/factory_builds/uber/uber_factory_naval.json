@@ -376,6 +376,10 @@
             "boolean": true
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": false
           },
@@ -619,6 +623,10 @@
             "boolean": true
           },
           {
+            "test_type": "EnemyOrbitalPresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
           },
@@ -649,12 +657,6 @@
           {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 0
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",

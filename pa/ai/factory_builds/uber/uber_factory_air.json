@@ -227,23 +227,6 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": "<",
-            "value0": 5
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
@@ -261,8 +244,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "UnitCountPerPlanetRadius",
@@ -283,23 +266,6 @@
         "BasicAirFactory"
       ],
       "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & Bomber",
-            "compare0": "<",
-            "value0": 1
-          }
-        ],
         [
           {
             "test_type": "HasPersonalityTag",
@@ -332,8 +298,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -349,8 +315,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "UnitCountPerPlanetRadius",
@@ -574,8 +540,12 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "SystemThreat",
@@ -634,8 +604,12 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": false
+          },          
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "UnitCountPerPlanetRadius",
