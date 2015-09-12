@@ -1,1 +1,265 @@
-{"build_list":[{"name":"Uber - Basic Radar","to_build":"BasicRadar","instance_count":1,"shared_instance_count":"BasicRadar","priority":90,"builders":["AnyUberBasicFabber"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"uber","boolean":true},{"test_type":"CanAffordBuildDemand"},{"test_type":"CanAffordPotentialDrain","string0":"BasicRadar"},{"test_type":"UnitCountInBase","unit_type_string0":"Land & Structure & Recon & Basic","compare0":"<","value0":1},{"test_type":"UnitCountAroundBase","unit_type_string0":"Land & Structure & Recon & Basic","string0":"Ally","value0":600,"compare0":"<","value1":1},{"test_type":"UnitCountOnPlanet","unit_type_string0":"(Recon & Advanced - Orbital) | (Recon & Orbital - Structure)","compare0":"<","value0":1},{"test_type":"CanFindPlaceToBuild","string0":"BasicRadar"}]],"placement_rules":{"buffer":2,"threat":{"influence_type":"AntiSurface","compare_type":"<","radius":10,"value":50}}},{"name":"Uber - Basic Radar - Have none","to_build":"BasicRadar","instance_count":1,"shared_instance_count":"BasicRadar","priority":260,"builders":["AnyUberBasicFabber"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"uber","boolean":true},{"test_type":"CanAffordBuildDemand"},{"test_type":"CanAffordPotentialDrain","string0":"BasicRadar"},{"test_type":"UnitCountOnPlanet","unit_type_string0":"(Recon & Structure - Orbital) | (Recon & Orbital - Structure)","compare0":"<","value0":1},{"test_type":"CanFindPlaceToBuild","string0":"BasicRadar"}]],"placement_rules":{"buffer":2,"threat":{"influence_type":"AntiSurface","compare_type":"<","radius":10,"value":50}}},{"name":"Uber - Advanced Radar","to_build":"AdvancedRadar","instance_count":1,"shared_instance_count":"AdvancedRadar","priority":91,"builders":["AnyUberAdvancedFabber"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"uber","boolean":true},{"test_type":"CanAffordBuildDemand"},{"test_type":"CanAffordPotentialDrain","string0":"AdvancedRadar"},{"test_type":"UnitCountInBase","unit_type_string0":"Land & Structure & Recon & Advanced","compare0":"<","value0":1},{"test_type":"UnitCountAroundBase","unit_type_string0":"Land & Structure & Recon & Advanced","string0":"Ally","value0":1000,"compare0":"<","value1":1},{"test_type":"CanFindPlaceToBuild","string0":"AdvancedRadar"}]],"placement_rules":{"buffer":2,"threat":{"influence_type":"AntiSurface","compare_type":"<","radius":10,"value":50}}},{"name":"Uber - Advanced Radar - Need for Ranged","to_build":"AdvancedRadar","instance_count":1,"shared_instance_count":"AdvancedRadar","priority":247,"builders":["AnyUberAdvancedFabber"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"uber","boolean":true},{"test_type":"CanAffordBuildDemand"},{"test_type":"CanAffordPotentialDrain","string0":"AdvancedRadar"},{"test_type":"UnitCountInBase","unit_type_string0":"Land & Structure & Recon & Advanced","compare0":"<","value0":1},{"test_type":"UnitCountInBase","unit_type_string0":"(Structure | Naval) & (Artillery | Tactical)","compare0":">","value0":0},{"test_type":"UnitCountAroundBase","unit_type_string0":"Land & Structure & Recon & Advanced","string0":"Ally","value0":500,"compare0":"<","value1":1},{"test_type":"CanFindPlaceToBuild","string0":"AdvancedRadar"}]],"placement_rules":{"buffer":2,"threat":{"influence_type":"AntiSurface","compare_type":"<","radius":10,"value":50}}},{"name":"Uber - Advanced Radar - Have none","to_build":"AdvancedRadar","instance_count":1,"shared_instance_count":"AdvancedRadar","priority":500,"builders":["AnyUberAdvancedFabber"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"uber","boolean":true},{"test_type":"CanAffordBuildDemand"},{"test_type":"CanAffordPotentialDrain","string0":"AdvancedRadar"},{"test_type":"UnitCountOnPlanet","unit_type_string0":"((Recon & Structure) - Basic - Orbital) | (Recon & Orbital - Structure)","compare0":"<","value0":1},{"test_type":"CanFindPlaceToBuild","string0":"AdvancedRadar"}]],"placement_rules":{"buffer":2,"threat":{"influence_type":"AntiSurface","compare_type":"<","radius":10,"value":50}}}]}
+{
+  "build_list": [
+    {
+      "name": "Uber - Basic Radar",
+      "to_build": "BasicRadar",
+      "instance_count": 1,
+      "shared_instance_count": "BasicRadar",
+      "priority": 90,
+      "builders": [
+        "AnyUberBasicFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicRadar"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Land & Structure & Recon & Basic",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Land & Structure & Recon & Basic",
+            "string0": "Ally",
+            "value0": 600,
+            "compare0": "<",
+            "value1": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Recon & Advanced - Orbital) | (Recon & Orbital - Structure)",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicRadar"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Uber - Basic Radar - Have none",
+      "to_build": "BasicRadar",
+      "instance_count": 1,
+      "shared_instance_count": "BasicRadar",
+      "priority": 260,
+      "builders": [
+        "AnyUberBasicFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicRadar"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Recon & Structure - Orbital) | (Recon & Orbital - Structure)",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicRadar"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Uber - Advanced Radar",
+      "to_build": "AdvancedRadar",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedRadar",
+      "priority": 91,
+      "builders": [
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedRadar"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Land & Structure & Recon & Advanced",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Land & Structure & Recon & Advanced",
+            "string0": "Ally",
+            "value0": 1000,
+            "compare0": "<",
+            "value1": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedRadar"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Uber - Advanced Radar - Need for Ranged",
+      "to_build": "AdvancedRadar",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedRadar",
+      "priority": 247,
+      "builders": [
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedRadar"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Land & Structure & Recon & Advanced",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "(Structure | Naval) & (Artillery | Tactical)",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Land & Structure & Recon & Advanced",
+            "string0": "Ally",
+            "value0": 500,
+            "compare0": "<",
+            "value1": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedRadar"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Uber - Advanced Radar - Have none",
+      "to_build": "AdvancedRadar",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedRadar",
+      "priority": 500,
+      "builders": [
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedRadar"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "((Recon & Structure) - Basic - Orbital) | (Recon & Orbital - Structure)",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedRadar"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    }
+  ]
+}
