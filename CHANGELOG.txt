@@ -1,5 +1,24 @@
 # CHANGELOG
 
+#### v3.0.1 - 2015/09/12
+
+- Made some very minor performance optimisations
+- Silver now deploys the Catapult as a defensive measure rather than an offensive one
+- Silver will build the Catapult in response to orbital threats
+- Platinum and Uber only build the Wyrm if they control the skies but there's a lot of AA
+- Corrected a bug that could lead to Bronze and Silver stopping advanced air production
+- Storms will now be correctly included in invasion forces
+- Silver will use more Infernos and Vanguards
+- An enemy with an orbital only presence on a planet will no longer cause inappropriate changes to build orders and unit compositions
+- Fixed an error where Uber would only build the Stingray for AA where an orbital threat existed
+- Silver will use the Stingray even when there's no orbital threat
+- Gold will now correctly form platoons when it has enough Piranhas
+- Gold won't build Piranhas unless there's an enemy surface naval presence
+- Gold no longer produces more Piranhas for scouting than it can use
+- Gold will no longer inappropriately go orbital on naval maps
+- Fixed a bug for Gold, Platinum and Uber where T2 would never be achieved on an all naval multi planet system
+- Fixed some checks preventing a factory being the first building on a new world under certain circumstances
+
 #### v3.1 - 2015/09/09
 
 - Silver gives higher priority to Orbital Launcher on multi planet maps
@@ -30,7 +49,7 @@
 - Fixed an error which led to higher levels building too many Storms
 - Higher air threat required for Platinum and Uber to build Storms
 - Fixed all instances of missing personality checks
-- Added a new subpersonality - Uber Bot
+- Added a new subpersonality - Bot
 - Three fabber personality trait now correctly covers naval as well
 - Uber will use the Icarus to correct energy issues when it's alone and metal is plentiful
 - Uber will produce more Stingrays when facing a large air threat
