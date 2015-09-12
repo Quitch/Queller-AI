@@ -267,6 +267,44 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "AdvancedBotFactory"
           }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedAirFactory"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Basic & Fabber) - Orbital - Land",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Land) - Orbital",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedAirFactory"
+          }
         ]
       ],
       "placement_rules": {

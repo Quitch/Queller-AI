@@ -767,6 +767,44 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "AdvancedNavalFactory"
           }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedNavalFactory"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Basic & Fabber) - Orbital - Land",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Land) - Orbital",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedNavalFactory"
+          }
         ]
       ],
       "placement_rules": {
