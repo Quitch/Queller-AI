@@ -63,18 +63,13 @@
       "to_build": "Land_Attack_Max",
       "instance_count": -1,
       "shared_instance_count": "LandTransferToPlanet",
-      "priority": 117,
+      "priority": 107,
       "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
             "string0": "Vanilla",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
           },
           {
             "test_type": "EnemyPresenceOnPlanet",
@@ -103,18 +98,13 @@
       "to_build": "Land_Attack_XLarge",
       "instance_count": 1,
       "shared_instance_count": "LandTransferToPlanet",
-      "priority": 116,
+      "priority": 106,
       "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
             "string0": "Vanilla",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
           },
           {
             "test_type": "EnemyPresenceOnPlanet",
@@ -193,11 +183,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - SelfDestruct",
             "compare0": ">=",
@@ -234,11 +219,6 @@
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
           },
           {
             "test_type": "UnitPoolCount",
@@ -279,11 +259,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - SelfDestruct",
             "compare0": ">=",
@@ -322,222 +297,8 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - SelfDestruct",
-            "compare0": ">=",
-            "value0": 40
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
-          }
-        ]
-      ],
-      "task_type": "LandAttack"
-    },
-    {
-      "name": "Vanilla - Swarm Raid Platoon Small",
-      "to_build": "Swarm_Raid_Small",
-      "instance_count": 1,
-      "priority": 109,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Vanilla",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Bot & Deconstruction",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": "<",
-            "value0": 840
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
-          }
-        ]
-      ],
-      "task_type": "LandAttack"
-    },
-    {
-      "name": "Vanilla - Swarm Raid Platoon Medium",
-      "to_build": "Swarm_Raid_Medium",
-      "instance_count": 1,
-      "priority": 108,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Vanilla",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Bot & Deconstruction",
-            "compare0": ">=",
-            "value0": 4
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": "<",
-            "value0": 2800
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
-          }
-        ]
-      ],
-      "task_type": "LandAttack"
-    },
-    {
-      "name": "Vanilla - Swarm Raid Platoon Large",
-      "to_build": "Swarm_Raid_Large",
-      "instance_count": 1,
-      "priority": 107,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Vanilla",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Bot & Deconstruction",
-            "compare0": ">=",
-            "value0": 10
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": "<",
-            "value0": 5600
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
-          }
-        ]
-      ],
-      "task_type": "LandAttack"
-    },
-    {
-      "name": "Vanilla - Swarm Raid Platoon XLarge",
-      "to_build": "Swarm_Raid_XLarge",
-      "instance_count": 1,
-      "priority": 106,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Vanilla",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Bot & Deconstruction",
-            "compare0": ">=",
-            "value0": 20
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": "<",
-            "value0": 11200
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
-          }
-        ]
-      ],
-      "task_type": "LandAttack"
-    },
-    {
-      "name": "Vanilla - Swarm Raid Platoon Max",
-      "to_build": "Swarm_Raid_Max",
-      "instance_count": 1,
-      "priority": 105,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Vanilla",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Bot & Deconstruction",
             "compare0": ">=",
             "value0": 40
           },
@@ -566,11 +327,6 @@
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
           },
           {
             "test_type": "UnitPoolCount",
@@ -611,11 +367,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Bot & SelfDestruct",
             "compare0": ">=",
@@ -652,11 +403,6 @@
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
           },
           {
             "test_type": "UnitPoolCount",
@@ -697,11 +443,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Bot & SelfDestruct",
             "compare0": ">=",
@@ -740,11 +481,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Bot & SelfDestruct",
             "compare0": ">=",
@@ -778,7 +514,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction - Deconstruction - Titan",
+            "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
             "compare0": ">=",
             "value0": 1
           },
@@ -815,13 +551,8 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction - Deconstruction - Titan",
+            "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
             "compare0": ">=",
             "value0": 4
           },
@@ -858,13 +589,8 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction - Deconstruction - Titan",
+            "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
             "compare0": ">=",
             "value0": 10
           },
@@ -901,13 +627,8 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction - Deconstruction - Titan",
+            "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
             "compare0": ">=",
             "value0": 20
           },
@@ -944,52 +665,10 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction - Deconstruction - Titan",
+            "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
             "compare0": ">=",
             "value0": 40
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
-          }
-        ]
-      ],
-      "task_type": "LandAttack"
-    },
-    {
-      "name": "Vanilla - Land Attack Titan",
-      "to_build": "Land_Attack_Titan",
-      "instance_count": -1,
-      "priority": 110,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Vanilla",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Tank | Bot) & Mobile & Titan",
-            "compare0": ">",
-            "value0": 0
           },
           {
             "test_type": "CanAttackWithPoolUnitsLand",

@@ -41,7 +41,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & ((Bomber & Basic) | Gunship) - Titan",
+            "unit_type_string0": "Air & (Bomber | Gunship)",
             "compare0": ">=",
             "value0": 1
           },
@@ -79,7 +79,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & ((Bomber & Basic) | Gunship) - Titan",
+            "unit_type_string0": "Air & (Bomber | Gunship)",
             "compare0": ">=",
             "value0": 4
           },
@@ -117,7 +117,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & ((Bomber & Basic) | Gunship) - Titan",
+            "unit_type_string0": "Air & (Bomber | Gunship)",
             "compare0": ">=",
             "value0": 10
           },
@@ -155,7 +155,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & ((Bomber & Basic) | Gunship) - Titan",
+            "unit_type_string0": "Air & (Bomber | Gunship)",
             "compare0": ">=",
             "value0": 20
           },
@@ -193,248 +193,9 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & ((Bomber & Basic) | Gunship) - Titan",
+            "unit_type_string0": "Air & (Bomber | Gunship)",
             "compare0": ">=",
             "value0": 40
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsBomber",
-            "string0": "WL_AnySurface",
-            "string1": "WL_Air",
-            "unit_type_string0": "Mobile | Structure"
-          }
-        ]
-      ],
-      "task_type": "BomberAttack"
-    },
-    {
-      "name": "Vanilla - Heavy Bomber Attack Platoon Small",
-      "to_build": "BomberGunship_Attack_Small",
-      "instance_count": -1,
-      "priority": 104,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Vanilla",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Bomber & Advanced - Titan",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 420
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsBomber",
-            "string0": "WL_AnySurface",
-            "string1": "WL_Air",
-            "unit_type_string0": "Mobile | Structure"
-          }
-        ]
-      ],
-      "task_type": "BomberAttack"
-    },
-    {
-      "name": "Vanilla - Heavy Bomber Attack Platoon Medium",
-      "to_build": "BomberGunship_Attack_Medium",
-      "instance_count": -1,
-      "priority": 103,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Vanilla",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Bomber & Advanced - Titan",
-            "compare0": ">=",
-            "value0": 4
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 1260
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsBomber",
-            "string0": "WL_AnySurface",
-            "string1": "WL_Air",
-            "unit_type_string0": "Mobile | Structure"
-          }
-        ]
-      ],
-      "task_type": "BomberAttack"
-    },
-    {
-      "name": "Vanilla - Heavy Bomber Attack Platoon Large",
-      "to_build": "BomberGunship_Attack_Large",
-      "instance_count": -1,
-      "priority": 102,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Vanilla",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Bomber & Advanced - Titan",
-            "compare0": ">=",
-            "value0": 10
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 2800
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsBomber",
-            "string0": "WL_AnySurface",
-            "string1": "WL_Air",
-            "unit_type_string0": "Mobile | Structure"
-          }
-        ]
-      ],
-      "task_type": "BomberAttack"
-    },
-    {
-      "name": "Vanilla - Heavy Bomber Attack Platoon XLarge",
-      "to_build": "BomberGunship_Attack_XLarge",
-      "instance_count": -1,
-      "priority": 101,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Vanilla",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Bomber & Advanced - Titan",
-            "compare0": ">=",
-            "value0": 20
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 5600
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsBomber",
-            "string0": "WL_AnySurface",
-            "string1": "WL_Air",
-            "unit_type_string0": "Mobile | Structure"
-          }
-        ]
-      ],
-      "task_type": "BomberAttack"
-    },
-    {
-      "name": "Vanilla - Heavy Bomber Attack Platoon Max",
-      "to_build": "BomberGunship_Attack_Max",
-      "instance_count": -1,
-      "priority": 100,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Vanilla",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Bomber & Advanced - Titan",
-            "compare0": ">=",
-            "value0": 40
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsBomber",
-            "string0": "WL_AnySurface",
-            "string1": "WL_Air",
-            "unit_type_string0": "Mobile | Structure"
-          }
-        ]
-      ],
-      "task_type": "BomberAttack"
-    },
-    {
-      "name": "Vanilla - Air Titan Attack",
-      "to_build": "Air_Attack_Titan",
-      "instance_count": -1,
-      "priority": 105,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Vanilla",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Titan",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsBomber",
-            "string0": "WL_AnySurface",
-            "string1": "WL_Air",
-            "unit_type_string0": "Mobile | Structure"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Vanilla",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Titan",
-            "compare0": ">=",
-            "value0": 1
           },
           {
             "test_type": "CanAttackWithPoolUnitsBomber",
@@ -479,10 +240,6 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "Vanilla",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
           {
@@ -538,10 +295,6 @@
             "boolean": true
           },
           {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
@@ -591,10 +344,6 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "Vanilla",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
           {
@@ -650,10 +399,6 @@
             "boolean": true
           },
           {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
@@ -703,10 +448,6 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "Vanilla",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
           {

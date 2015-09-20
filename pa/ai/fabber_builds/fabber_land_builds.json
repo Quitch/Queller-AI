@@ -11,8 +11,7 @@
       "builders": [
         "Commander",
         "AnyBasicFabber",
-        "AnyAdvancedFabber",
-        "SupportCommander"
+        "AnyAdvancedFabber"
       ],
       "build_conditions": [
         [
@@ -137,8 +136,7 @@
       "builders": [
         "Commander",
         "AnyBasicFabber",
-        "AnyAdvancedFabber",
-        "SupportCommander"
+        "AnyAdvancedFabber"
       ],
       "build_conditions": [
         [
@@ -275,8 +273,7 @@
       "builders": [
         "Commander",
         "AnyBasicFabber",
-        "AnyAdvancedFabber",
-        "SupportCommander"
+        "AnyAdvancedFabber"
       ],
       "build_conditions": [
         [
@@ -387,8 +384,7 @@
       "builders": [
         "Commander",
         "AnyBasicFabber",
-        "AnyAdvancedFabber",
-        "SupportCommander"
+        "AnyAdvancedFabber"
       ],
       "build_conditions": [
         [
@@ -506,8 +502,7 @@
       "max_num_assisters": 5,
       "builders": [
         "BasicBotFabber",
-        "AdvancedBotFabber",
-        "SupportCommander"
+        "AdvancedBotFabber"
       ],
       "build_conditions": [
         [
@@ -519,11 +514,6 @@
           {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -553,11 +543,6 @@
           {
             "test_type": "UnableToExpand",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -621,11 +606,6 @@
             "value0": 0
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
             "test_type": "NeedAdvancedVehicleFactory",
             "boolean": true
           },
@@ -651,11 +631,6 @@
           {
             "test_type": "UnableToExpand",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -703,8 +678,7 @@
       "max_num_assisters": 5,
       "builders": [
         "BasicBotFabber",
-        "AdvancedBotFabber",
-        "SupportCommander"
+        "AdvancedBotFabber"
       ],
       "build_conditions": [
         [
@@ -721,11 +695,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "PreventsWaste",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
           },
           {
             "test_type": "CurrentMetalEfficiency",
@@ -799,11 +768,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "PreventsWaste",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
           },
           {
             "test_type": "CurrentMetalEfficiency",

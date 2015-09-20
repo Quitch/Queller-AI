@@ -26,6 +26,11 @@
             "value0": 150
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
+          },
+          {
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Basic & AirDefense",
             "compare0": "<",
@@ -55,6 +60,11 @@
             "test_type": "DistFromNearestEnemyThreat",
             "compare0": "<=",
             "value0": 200
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
           },
           {
             "test_type": "UnitCountInBase",
@@ -233,6 +243,11 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
+          },
+          {
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Basic & AirDefense",
             "compare0": "<",
@@ -263,6 +278,11 @@
             "unit_type_string0": "Structure & Basic & AirDefense",
             "compare0": "<",
             "value0": 2
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
           },
           {
             "test_type": "UnitCountInBase",
@@ -799,8 +819,7 @@
       "priority": 255,
       "base_sort": "FromPerimeter",
       "builders": [
-        "AnyAdvancedFabber",
-        "SupportCommander"
+        "AnyAdvancedFabber"
       ],
       "build_conditions": [
         [
@@ -811,11 +830,6 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
           },
           {
             "test_type": "UnitCountInBase",
@@ -899,8 +913,7 @@
       "priority": 379,
       "base_sort": "FromPerimeter",
       "builders": [
-        "AnyAdvancedFabber",
-        "SupportCommander"
+        "AnyAdvancedFabber"
       ],
       "build_conditions": [
         [
@@ -917,11 +930,6 @@
             "unit_type_string0": "Structure & Advanced & AirDefense",
             "compare0": "<",
             "value0": 4
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
@@ -975,8 +983,7 @@
       "priority": 255,
       "base_sort": "FromPerimeter",
       "builders": [
-        "AnyAdvancedFabber",
-        "SupportCommander"
+        "AnyAdvancedFabber"
       ],
       "build_conditions": [
         [
@@ -1070,8 +1077,7 @@
       "priority": 379,
       "base_sort": "FromPerimeter",
       "builders": [
-        "AnyAdvancedFabber",
-        "SupportCommander"
+        "AnyAdvancedFabber"
       ],
       "build_conditions": [
         [
@@ -1190,7 +1196,7 @@
       "name": "Vanilla - Umbrella",
       "to_build": "Umbrella",
       "instance_count": 1,
-      "priority": 378,
+      "priority": 377,
       "builders": [
         "AnyBasicFabber",
         "AnyAdvancedFabber"
@@ -1435,8 +1441,7 @@
       "shared_instance_count": "AntiNukeSilo",
       "priority": 380,
       "builders": [
-        "AnyAdvancedFabber",
-        "SupportCommander"
+        "AnyAdvancedFabber"
       ],
       "build_conditions": [
         [
@@ -1526,8 +1531,7 @@
       "min_num_assisters": 5,
       "max_num_assisters": 12,
       "builders": [
-        "AnyAdvancedFabber",
-        "SupportCommander"
+        "AnyAdvancedFabber"
       ],
       "build_conditions": [
         [

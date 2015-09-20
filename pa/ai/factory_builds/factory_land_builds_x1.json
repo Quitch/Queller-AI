@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Vanilla - Basic Sniper Bot",
+      "name": "Vanilla - Tesla Bot",
       "to_build": "TeslaBot",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -32,13 +32,6 @@
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & Artillery",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
-            "compare0": "<",
-            "value0": 0.35
           }
         ],
         [
@@ -58,13 +51,6 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & Artillery",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
-            "compare0": "<",
-            "value0": 0.35
           },
           {
             "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
