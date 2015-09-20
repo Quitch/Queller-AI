@@ -11,7 +11,8 @@
       "builders": [
         "Commander",
         "AnyBasicFabber",
-        "AnyAdvancedFabber"
+        "AnyAdvancedFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [
@@ -25,6 +26,11 @@
             "boolean": false
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
+          },
+          {
             "test_type": "NeedBasicAirFactory",
             "boolean": false
           },
@@ -48,6 +54,11 @@
             "boolean": true
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
+          },
+          {
             "test_type": "NeedBasicAirFactory",
             "boolean": true
           },
@@ -69,6 +80,11 @@
           {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
           },
           {
             "test_type": "NeedAdvancedAirFactory",
@@ -100,12 +116,17 @@
             "boolean": true
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
+          },
+          {
             "test_type": "NeedBasicAirFactory",
             "boolean": true
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Factory & Construction) - Orbital",
+            "unit_type_string0": "(Factory & Construction) - Orbital - SelfDestruct",
             "compare0": "<=",
             "value0": 0
           },
@@ -123,6 +144,11 @@
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -161,7 +187,8 @@
       "builders": [
         "Commander",
         "AnyBasicFabber",
-        "AnyAdvancedFabber"
+        "AnyAdvancedFabber",
+        "SupportCommander"
       ],
       "build_conditions": [
         [
@@ -178,6 +205,11 @@
             "test_type": "HasPersonalityTag",
             "string0": "PreventsWaste",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
           },
           {
             "test_type": "CurrentMetalEfficiency",
@@ -216,6 +248,11 @@
           {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
           },
           {
             "test_type": "CurrentMetalEfficiency",
