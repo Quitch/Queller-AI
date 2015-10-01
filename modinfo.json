@@ -1,12 +1,12 @@
 {
   "context": "server",
-  "identifier": "com.pa.quitch.qQuellerAIDev",
-  "display_name": "Queller AI DEV",
+  "identifier": "com.pa.quitch.qQuellerAI",
+  "display_name": "Queller AI v3.1.3",
   "description": "A more humanlike AI offering a wide range of difficulties. Doesn't affect Galactic War. Works alongside the vanilla AI",
   "author": "Quitch",
-  "version": "dev",
+  "version": "3.1.3",
   "build": "88163",
-  "date": "2015/09/21",
+  "date": "2015/10/01",
   "signature": "not yet implemented",
   "forum": "https://forums.uberent.com/threads/rel-server-queller-ai-v3-0.65795/",
   "category": [
@@ -14,10 +14,11 @@
     "titans"
   ],
   "product": ["Titans"],
-  "id": "qQuellerAIDev",
+  "id": "qQuellerAI",
   "icon": "http://i.imgur.com/cFJeCgf.gif",
   "dependencies": [
-    "com.pa.quitch.qQuellerAIPersonalitiesDev"
+    "com.pa.quitch.qQuellerAIPersonalities",
+    "com.pa.quitch.qAIModCompatibilityPatch"
   ],
   "priority": 100
 }
