@@ -1,6 +1,9 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 
+# Explicitly declare text files you want to always be normalized and converted to native line endings on checkout.
+*.json text eol=crlf
+
 # Custom for Visual Studio
 *.cs     diff=csharp
 *.sln    merge=union
