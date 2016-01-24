@@ -8,7 +8,8 @@
       "max_num_assisters": 10,
       "priority": 100,
       "builders": [
-        "AnyLegionVehicleFactory"
+        "LegionFactoryBasicVehicle",
+        "LegionFactoryAdvancedVehicle"
       ],
       "build_conditions": [
         [
@@ -98,7 +99,8 @@
       "shared_instance_count": "LandScout",
       "priority": 98,
       "builders": [
-        "AnyLegionVehicleFactory"
+        "LegionFactoryBasicVehicle",
+        "LegionFactoryAdvancedVehicle"
       ],
       "build_conditions": [
         [
@@ -180,7 +182,8 @@
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "AnyLegionVehicleFactory"
+        "LegionFactoryBasicVehicle",
+        "LegionFactoryAdvancedVehicle"
       ],
       "build_conditions": [
         [
@@ -248,7 +251,8 @@
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "AnyLegionVehicleFactory"
+        "LegionFactoryBasicVehicle",
+        "LegionFactoryAdvancedVehicle"
       ],
       "build_conditions": [
         [
@@ -271,7 +275,8 @@
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "AnyLegionVehicleFactory"
+        "LegionFactoryBasicVehicle",
+        "LegionFactoryAdvancedVehicle"
       ],
       "build_conditions": [
         [
@@ -312,7 +317,8 @@
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "AnyLegionVehicleFactory"
+        "LegionFactoryBasicVehicle",
+        "LegionFactoryAdvancedVehicle"
       ],
       "build_conditions": [
         [
@@ -397,7 +403,8 @@
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "AnyLegionVehicleFactory"
+        "LegionFactoryBasicVehicle",
+        "LegionFactoryAdvancedVehicle"
       ],
       "build_conditions": [
         [
@@ -650,7 +657,7 @@
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "AnyLegionVehicleFactory"
+        "LegionFactoryAdvancedVehicle"
       ],
       "build_conditions": [
         [
