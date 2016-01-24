@@ -2,9 +2,9 @@
   "build_list": [
     {
       "name": "Legion - Uber - Basic Radar",
-      "to_build": "BasicRadar",
+      "to_build": "LegionIntelBasicRadar",
       "instance_count": 1,
-      "shared_instance_count": "BasicRadar",
+      "shared_instance_count": "LegionIntelBasicRadar",
       "priority": 90,
       "builders": [
         "AnyLegionFabberBasic"
@@ -21,7 +21,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicRadar"
+            "string0": "LegionIntelBasicRadar"
           },
           {
             "test_type": "UnitCountInBase",
@@ -45,7 +45,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicRadar"
+            "string0": "LegionIntelBasicRadar"
           }
         ]
       ],
@@ -61,9 +61,9 @@
     },
     {
       "name": "Legion - Uber - Basic Radar - Have none",
-      "to_build": "BasicRadar",
+      "to_build": "LegionIntelBasicRadar",
       "instance_count": 1,
-      "shared_instance_count": "BasicRadar",
+      "shared_instance_count": "LegionIntelBasicRadar",
       "priority": 260,
       "builders": [
         "AnyLegionFabberBasic"
@@ -80,7 +80,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicRadar"
+            "string0": "LegionIntelBasicRadar"
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -90,7 +90,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicRadar"
+            "string0": "LegionIntelBasicRadar"
           }
         ]
       ],
@@ -106,9 +106,9 @@
     },
     {
       "name": "Legion - Uber - Advanced Radar",
-      "to_build": "AdvancedRadar",
+      "to_build": "LegionIntelAdvancedRadar",
       "instance_count": 1,
-      "shared_instance_count": "AdvancedRadar",
+      "shared_instance_count": "LegionIntelAdvancedRadar",
       "priority": 91,
       "builders": [
         "AnyLegionFabberAdvanced"
@@ -125,7 +125,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedRadar"
+            "string0": "LegionIntelAdvancedRadar"
           },
           {
             "test_type": "UnitCountInBase",
@@ -143,7 +143,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedRadar"
+            "string0": "LegionIntelAdvancedRadar"
           }
         ]
       ],
@@ -159,9 +159,9 @@
     },
     {
       "name": "Legion - Uber - Advanced Radar - Need for Ranged",
-      "to_build": "AdvancedRadar",
+      "to_build": "LegionIntelAdvancedRadar",
       "instance_count": 1,
-      "shared_instance_count": "AdvancedRadar",
+      "shared_instance_count": "LegionIntelAdvancedRadar",
       "priority": 247,
       "builders": [
         "AnyLegionFabberAdvanced"
@@ -178,7 +178,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedRadar"
+            "string0": "LegionIntelAdvancedRadar"
           },
           {
             "test_type": "UnitCountInBase",
@@ -202,7 +202,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedRadar"
+            "string0": "LegionIntelAdvancedRadar"
           }
         ]
       ],
@@ -218,9 +218,9 @@
     },
     {
       "name": "Legion - Uber - Advanced Radar - Have none",
-      "to_build": "AdvancedRadar",
+      "to_build": "LegionIntelAdvancedRadar",
       "instance_count": 1,
-      "shared_instance_count": "AdvancedRadar",
+      "shared_instance_count": "LegionIntelAdvancedRadar",
       "priority": 500,
       "builders": [
         "AnyLegionFabberAdvanced"
@@ -237,7 +237,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedRadar"
+            "string0": "LegionIntelAdvancedRadar"
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -247,7 +247,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedRadar"
+            "string0": "LegionIntelAdvancedRadar"
           }
         ]
       ],

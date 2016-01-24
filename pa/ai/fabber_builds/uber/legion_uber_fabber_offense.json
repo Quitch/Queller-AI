@@ -265,9 +265,9 @@
     },
     {
       "name": "Legion - Uber - Nuke Silo",
-      "to_build": "NukeSilo",
+      "to_build": "LegionDefenseAdvancedNukeSilo",
       "instance_count": 1,
-      "shared_instance_count": "NukeSilo",
+      "shared_instance_count": "LegionDefenseAdvancedNukeSilo",
       "min_num_assisters": 3,
       "max_num_assisters": 12,
       "priority": 360,
@@ -295,11 +295,11 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "NukeSilo"
+            "string0": "LegionDefenseAdvancedNukeSilo"
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "NukeSilo"
+            "string0": "LegionDefenseAdvancedNukeSilo"
           }
         ]
       ],
@@ -309,9 +309,9 @@
     },
     {
       "name": "Legion - Uber - Nuke Silo - Rush",
-      "to_build": "NukeSilo",
+      "to_build": "LegionDefenseAdvancedNukeSilo",
       "instance_count": 1,
-      "shared_instance_count": "NukeSilo",
+      "shared_instance_count": "LegionDefenseAdvancedNukeSilo",
       "min_num_assisters": 3,
       "max_num_assisters": 12,
       "priority": 508,
@@ -339,11 +339,11 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "NukeSilo"
+            "string0": "LegionDefenseAdvancedNukeSilo"
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "NukeSilo"
+            "string0": "LegionDefenseAdvancedNukeSilo"
           }
         ],
         [
@@ -357,7 +357,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "NukeSilo"
+            "string0": "LegionDefenseAdvancedNukeSilo"
           },
           {
             "test_type": "FocusTargetThreat",
@@ -373,134 +373,13 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "NukeSilo"
+            "string0": "LegionDefenseAdvancedNukeSilo"
           }
         ]
       ],
       "placement_rules": {
         "buffer": 2
       }
-    },
-    {
-      "name": "Legion - Uber - Halley",
-      "to_build": "PlanetEngine",
-      "instance_count": 1,
-      "min_num_assisters": 8,
-      "max_num_assisters": 45,
-      "priority": 509,
-      "builders": [
-        "AnyLegionFabberAdvanced"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsMainEcoBase",
-            "boolean": false
-          },
-          {
-            "test_type": "PlanetCanBeUsedAsKineticWeapon",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHasUseablePlanetWeapon",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveThrustToMovePlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetCount",
-            "compare0": ">",
-            "value0": 2
-          },
-          {
-            "test_type": "AlliedUnitCountOnPlanet",
-            "unit_type_string0": "PlanetEngine",
-            "compare0": "<",
-            "boolean": true,
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory - Orbital",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "PlanetEngine"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 3
-      }
-    },
-    {
-      "name": "Legion - Uber - Catalyst",
-      "to_build": "ControlModule",
-      "instance_count": 1,
-      "min_num_assisters": 20,
-      "max_num_assisters": 100,
-      "priority": 509,
-      "builders": [
-        "AnyLegionFabberAdvanced"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHasUseablePlanetWeapon",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetCount",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "AlliedUnitCountOnPlanet",
-            "unit_type_string0": "ControlModule",
-            "compare0": "<",
-            "boolean": true,
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber",
-            "compare0": ">=",
-            "value0": 21
-          },
-          {
-            "test_type": "CanFindControlPointToBuild",
-            "boolean": true
-          }
-        ]
-      ]
     }
   ]
 }

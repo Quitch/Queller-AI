@@ -48,7 +48,7 @@
     },
     {
       "name": "Legion - Uber - Teleporter",
-      "to_build": "Teleporter",
+      "to_build": "LegionStructureBasicTeleporter",
       "instance_count": 1,
       "priority": 602,
       "min_num_assisters": 3,
@@ -78,7 +78,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "Teleporter"
+            "string0": "LegionStructureBasicTeleporter"
           }
         ]
       ],
@@ -101,8 +101,7 @@
         "LegionBotBasicFabber",
         "LegionVehicleBasicFabber",
         "LegionBotAdvancedFabber",
-        "LegionVehicleAdvancedFabber",
-        "SupportCommander"
+        "LegionVehicleAdvancedFabber"
       ],
       "build_conditions": [
         [
@@ -141,8 +140,7 @@
         "LegionAirBasicFabber",
         "LegionBotAdvancedFabber",
         "LegionVehicleAdvancedFabber",
-        "LegionAirAdvancedFabber",
-        "SupportCommander"
+        "LegionAirAdvancedFabber"
       ],
       "build_conditions": [
         [
