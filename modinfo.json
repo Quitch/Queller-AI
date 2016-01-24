@@ -1,10 +1,10 @@
 {
   "context": "server",
-  "identifier": "com.pa.quitch.qQuellerAIDev",
-  "display_name": "Queller AI DEV",
+  "identifier": "com.pa.quitch.qQuellerAIDevLegion",
+  "display_name": "Queller AI DEV LEGION",
   "description": "A more humanlike AI offering a wide range of difficulties. Doesn't affect Galactic War. Works alongside the vanilla AI",
   "author": "Quitch",
-  "version": "dev",
+  "version": "alpha-4.0",
   "build": "89528",
   "date": "2016/01/22",
   "signature": "not yet implemented",
@@ -14,11 +14,13 @@
     "titans"
   ],
   "product": ["Titans"],
-  "id": "qQuellerAIDev",
+  "id": "qQuellerAIDevLegion",
   "icon": "http://i.imgur.com/cFJeCgf.gif",
   "dependencies": [
-    "com.pa.quitch.qQuellerAIPersonalitiesDev",
-	"com.pa.quitch.qAIModCompatibilityPatchDev"
+    "com.pa.quitch.qQuellerAIPersonalities",
+		"com.pa.quitch.qAIModCompatibilityPatch",
+		"com.pa.legion-expansion.server"
+		
   ],
   "priority": 100
 }
