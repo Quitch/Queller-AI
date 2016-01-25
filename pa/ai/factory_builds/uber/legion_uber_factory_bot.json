@@ -308,6 +308,35 @@
       ]
     },
     {
+      "name": "Legion - Uber - Lancer",
+      "to_build": "LegionBotBasicSniper",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "LegionFactoryBasicBot",
+        "LegionFactoryAdvancedBot"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "doxrush",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
       "name": "Legion - Uber - Patriot",
       "to_build": "LegionBotBasicAA",
       "instance_count": -1,
@@ -389,41 +418,6 @@
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Legion - Uber - Lancer",
-      "to_build": "LegionBotBasicSniper",
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 97,
-      "builders": [
-        "LegionFactoryBasicBot",
-        "LegionFactoryAdvancedBot"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "doxrush",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": ">",
-            "value0": 2100
           }
         ]
       ]
