@@ -34,12 +34,6 @@
             "string0": "LegionFactoryBasicBot"
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Bot & Factory & Basic",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionFactoryBasicBot"
           }
@@ -124,7 +118,7 @@
           },
           {
             "test_type": "CanDeployLandFromBase",
-            "boolean": false
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -181,12 +175,6 @@
             "string0": "LegionFactoryBasicBot"
           },
           {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Bot & Factory & Basic",
-            "compare0": "<",
-            "value0": 400
-          },
-          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionFactoryBasicBot"
           }
@@ -271,7 +259,7 @@
           },
           {
             "test_type": "CanDeployLandFromBase",
-            "boolean": false
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -344,12 +332,6 @@
             "string0": "LegionFactoryBasicBot"
           },
           {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Bot & Factory & Basic",
-            "compare0": "<",
-            "value0": 400
-          },
-          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionFactoryBasicBot"
           }
@@ -464,7 +446,7 @@
           },
           {
             "test_type": "CanDeployLandFromBase",
-            "boolean": false
+            "boolean": true
           },
           {
             "test_type": "CurrentMetalEfficiency",
@@ -587,12 +569,6 @@
             "string1": "AntiSurface",
             "compare0": "<",
             "value0": 0.6
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Bot & Factory & Advanced",
-            "compare0": "<",
-            "value0": 1
           },
           {
             "test_type": "UnitCountOnPlanet",
