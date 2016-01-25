@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Uber - Basic Bot Fabber",
+      "name": "Legion - Uber - Fabrication Walker",
       "to_build": "LegionBotBasicFabber",
       "instance_count": 1,
       "shared_instance_count": "LegionBotBasicFabber",
@@ -425,7 +425,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Advanced Bot Fabber",
+      "name": "Legion - Uber - Advanced Fabrication Walker",
       "to_build": "LegionBotAdvancedFabber",
       "instance_count": 1,
       "shared_instance_count": "LegionBotAdvancedFabber",
@@ -524,8 +524,32 @@
             "boolean": false
           },
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "doxrush",
             "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
           }
         ]
       ]
@@ -557,11 +581,6 @@
           },
           {
             "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Tank",
             "boolean": true
           }
         ],
@@ -604,6 +623,35 @@
             "boolean": true
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "doxrush",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "doxrush",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           }
@@ -611,7 +659,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - T2 AA",
+      "name": "Legion - Uber - Orbweaver",
       "to_build": "LegionBotAdvancedAA",
       "instance_count": -1,
       "max_num_assisters": 10,
