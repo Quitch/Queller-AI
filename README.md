@@ -212,7 +212,6 @@ The spawn the AI starts in and the profile used can make a big difference, even 
 
 - Ignores the factory and fabber preferences of client/UI AI personality mods
 - Will use fabbers to construct factories when the commander should really do it
-- Combat Fabbers can't be used to build mines and repair troops even across entirely different AI personalities
 
 #### CANTFIX
 
@@ -226,6 +225,7 @@ The spawn the AI starts in and the profile used can make a big difference, even 
 - Won't use more than one teleporter at a time
 - Won't use telepoters to move around a single planet
 - Cannot reclaim
+- Combat Fabbers can't be used to build mines and repair troops even across entirely different AI personalities
 
 ## THANKS TO
 
