@@ -212,6 +212,7 @@ The spawn the AI starts in and the profile used can make a big difference, even 
 
 - Ignores the factory and fabber preferences of client/UI AI personality mods
 - Will use fabbers to construct factories when the commander should really do it
+- Combat Fabbers can't be used to build mines and repair troops even across entirely different AI personalities
 
 #### CANTFIX
 
@@ -220,13 +221,10 @@ The spawn the AI starts in and the profile used can make a big difference, even 
 - Doesn't defend its fabbers
 - Attempts to attack with Dox underwater
 - Will queue buildings on the other side of obstacles despite closer locations (pathfinding wise) being available
-- Won't move orbital units (except fabbers and radar) between planets
-- Will send orbital radar to gas giants
 - Won't send Phoenixes between planets
 - Will assign fabbers to a assist on a project that they could start earlier than the fabber they're assisting
 - Won't use more than one teleporter at a time
 - Won't use telepoters to move around a single planet
-- Combat Fabbers can't be used to build mines and repair troops even across entirely different AI personalities
 - Cannot reclaim
 
 ## THANKS TO
