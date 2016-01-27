@@ -239,7 +239,31 @@
       ]
     },
     {
-      "name": "Legion - Uber - Peacekeeper",
+      "name": "Legion - Uber - Peacekeeper - Land",
+      "to_build": "LegionBotBasicAssault",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "LegionFactoryBasicBot",
+        "LegionFactoryAdvancedBot"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Uber - Peacekeeper - Naval",
       "to_build": "LegionBotBasicAssault",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -254,6 +278,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": false
           }
         ]
       ]
