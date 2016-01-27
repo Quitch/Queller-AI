@@ -908,10 +908,6 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetHasUseablePlanetWeapon",
-            "boolean": true
-          },
-          {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
           },
@@ -933,44 +929,6 @@
             "unit_type_string0": "Factory & Air & Advanced",
             "compare0": "<",
             "value0": 2
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionFactoryAdvancedAir"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "HaveEcoForAdvanced",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionFactoryAdvancedAir"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Basic & Fabber) - Orbital - Land",
-            "compare0": ">=",
-            "value0": 5
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Factory & Land) - Orbital",
-            "compare0": "<",
-            "value0": 3
           },
           {
             "test_type": "CanFindPlaceToBuild",
