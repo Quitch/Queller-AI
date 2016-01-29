@@ -228,7 +228,6 @@ The spawn the AI starts in and the profile used can make a big difference, even 
 - Won't use telepoters to move around a single planet
 - Combat Fabbers can't be used to build mines and repair troops even across entirely different AI personalities
 - Cannot reclaim
-- Treats Sparks as artillery
 
 ## THANKS TO
 
