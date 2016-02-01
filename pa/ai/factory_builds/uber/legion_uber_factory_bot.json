@@ -289,7 +289,7 @@
     {
       "name": "Legion - Uber - Purger",
       "to_build": "LegionBotBasicBomb",
-      "instance_count": -1,
+      "instance_count": 1,
       "priority": 97,
       "builders": [
         "LegionFactoryBasicBot",
@@ -305,11 +305,6 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "doxrush",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "(Tank & Heavy) | (Bot)",
             "boolean": false
           },
           {
