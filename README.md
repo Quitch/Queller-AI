@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/Quitch/Queller-AI.png?label=ready&title=Ready)](https://waffle.io/Quitch/Queller-AI)
 Queller-AI
 ==========
 
