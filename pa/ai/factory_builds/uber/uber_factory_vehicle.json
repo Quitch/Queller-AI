@@ -491,10 +491,10 @@
       ]
     },
     {
-      "name": "Uber - Vanguard",
-      "to_build": "AdvancedArmorTank",
+      "name": "Uber - Leveller",
+      "to_build": "AdvancedLaserTank",
       "instance_count": -1,
-      "max_num_assisters": 10,
+      "max_num_assisters": 15,
       "priority": 199,
       "builders": [
         "AdvancedVehicleFactory"
@@ -509,43 +509,6 @@
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Tank & Heavy & Advanced",
-            "unit_type_string1": "Tank & Artillery & Advanced",
-            "compare0": "<",
-            "value0": 0.1
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Uber - Sheller",
-      "to_build": "AdvancedArtilleryVehicle",
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 199,
-      "builders": [
-        "AdvancedVehicleFactory"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "BaseThreatRatio",
-            "string0": "Land",
-            "string1": "AntiSurface",
-            "compare0": "<=",
-            "value0": 1
           }
         ]
       ]

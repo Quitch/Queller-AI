@@ -442,7 +442,7 @@
     {
       "name": "Uber - Leviathan",
       "to_build": "Battleship",
-      "instance_count": -1,
+      "instance_count": 1,
       "max_num_assisters": 15,
       "priority": 199,
       "builders": [
@@ -464,10 +464,11 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Naval",
+            "string1": "Naval",
             "compare0": ">",
-            "value0": 0
+            "value0": 0.8
           }
         ]
       ]
@@ -477,7 +478,7 @@
       "to_build": "MissleShip",
       "instance_count": 1,
       "max_num_assisters": 15,
-      "priority": 199,
+      "priority": 198,
       "builders": [
         "AdvancedNavalFactory"
       ],
@@ -541,7 +542,7 @@
     {
       "name": "Uber - Kraken",
       "to_build": "MissileSub",
-      "instance_count": 1,
+      "instance_count": -1,
       "max_num_assisters": 15,
       "priority": 199,
       "builders": [
@@ -567,13 +568,7 @@
             "string0": "Naval",
             "string1": "Naval",
             "compare0": ">",
-            "value0": 0.6
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Naval & Advanced & Sub",
-            "compare0": "<",
-            "value0": 250
+            "value0": 0.8
           }
         ]
       ]
@@ -583,7 +578,7 @@
       "to_build": "HoverShip",
       "instance_count": -1,
       "max_num_assisters": 15,
-      "priority": 199,
+      "priority": 198,
       "builders": [
         "AdvancedNavalFactory"
       ],
@@ -597,28 +592,6 @@
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Naval",
-            "string1": "Naval",
-            "compare0": "<=",
-            "value0": 0.6
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": false
           }
         ]
       ]
