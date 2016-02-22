@@ -252,6 +252,40 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Naval",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover",
+            "compare0": ">=",
+            "value0": 12
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Sub",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover",
             "compare0": ">=",
@@ -265,6 +299,37 @@
         ]
       ],
       "task_type": "NavalAttack"
+    },
+    {
+      "name": "Uber - Naval Attack Platoon Shore",
+      "to_build": "Naval_Attack_Shore",
+      "instance_count": -1,
+      "priority": 90,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover - Sub",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface",
+            "boolean": true
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
     }
   ]
 }
