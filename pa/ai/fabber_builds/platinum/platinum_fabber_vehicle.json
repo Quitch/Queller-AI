@@ -59,10 +59,9 @@
             "string0": "BasicVehicleFactory"
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Naval",
-            "compare0": ">",
-            "value0": 0
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "(Mobile & Offense) - Air - Fabber - Construction",
+            "boolean": true
           },
           {
             "test_type": "UnitCountPerPlanetRadius",
@@ -211,10 +210,9 @@
             "string0": "BasicVehicleFactory"
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Naval",
-            "compare0": ">",
-            "value0": 0
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "(Mobile & Offense) - Air - Fabber - Construction",
+            "boolean": true
           },
           {
             "test_type": "UnitCountPerPlanetRadius",
@@ -384,10 +382,9 @@
             "string0": "BasicVehicleFactory"
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Naval",
-            "compare0": ">",
-            "value0": 0
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "(Mobile & Offense) - Air - Fabber - Construction",
+            "boolean": true
           },
           {
             "test_type": "UnitCountPerPlanetRadius",
