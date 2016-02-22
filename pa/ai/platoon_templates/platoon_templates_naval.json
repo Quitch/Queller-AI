@@ -129,6 +129,34 @@
           "squad": "Defense"
         }
       ]
+    },
+    "Naval_Attack_Shore": {
+      "units": [
+        {
+          "unit_types": "(Naval & Mobile) - Artillery - Scout - Fabber - Construction - Tactical - Hover - Sub",
+          "min_count": 0,
+          "max_count": -1,
+          "squad": "General"
+        },
+        {
+          "unit_types": "Naval & Mobile & Scout",
+          "min_count": 0,
+          "max_count": -1,
+          "squad": "Fast"
+        },
+        {
+          "unit_types": "Naval & Mobile & Artillery",
+          "min_count": 0,
+          "percent": 0.5,
+          "squad": "Artillery"
+        },
+        {
+          "unit_types": "(Naval & Mobile) & Tactical",
+          "min_count": 0,
+          "percent": 0.1,
+          "squad": "Defense"
+        }
+      ]
     }
   }
 }
