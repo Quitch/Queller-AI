@@ -284,47 +284,6 @@
       ]
     },
     {
-      "name": "Legion - Uber - Talos - Support",
-      "to_build": "LegionNavalBasicAA",
-      "instance_count": 1,
-      "max_num_assisters": 10,
-      "priority": 97,
-      "builders": [
-        "LegionFactoryBasicNaval",
-        "LegionFactoryAdvancedNaval"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Air",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Naval & Mobile & AirDefense",
-            "unit_type_string1": "(Naval & Mobile) - Fabber - Hover",
-            "compare0": "<",
-            "value0": 0.2
-          }
-        ]
-      ]
-    },
-    {
       "name": "Legion - Uber - Akula",
       "to_build": "LegionNavalBasicSub",
       "instance_count": -1,
