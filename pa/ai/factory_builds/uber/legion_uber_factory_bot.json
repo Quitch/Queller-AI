@@ -239,7 +239,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Peacekeeper - Land",
+      "name": "Legion - Uber - Peacekeeper - Land Post-early-game",
       "to_build": "LegionBotBasicAssault",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -258,12 +258,18 @@
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": ">",
+            "value0": 2100
           }
         ]
       ]
     },
     {
-      "name": "Legion - Uber - Peacekeeper - Naval",
+      "name": "Legion - Uber - Peacekeeper - Spam",
       "to_build": "LegionBotBasicAssault",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -273,6 +279,23 @@
         "LegionFactoryAdvancedBot"
       ],
       "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": "<=",
+            "value0": 2100
+          }
+        ],
         [
           {
             "test_type": "HasPersonalityTag",
@@ -345,6 +368,12 @@
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": ">",
+            "value0": 2100
           }
         ]
       ]
