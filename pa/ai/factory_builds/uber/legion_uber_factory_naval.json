@@ -156,6 +156,47 @@
             "compare0": "<",
             "value0": 1
           }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemyOrbitalPresenceOnPlanet",
+            "boolean": false
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Sub",
+            "string1": "AntiSub",
+            "compare0": ">",
+            "value0": 0.8
+          }
         ]
       ]
     },
@@ -192,17 +233,10 @@
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Naval",
-            "string1": "Naval",
-            "compare0": "<",
-            "value0": 0.6
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Sub",
-            "string1": "Sub",
-            "compare0": "<",
-            "value0": 0.6
+            "string1": "AntiSub",
+            "compare0": "<=",
+            "value0": 0.8
           }
         ]
       ]
@@ -291,7 +325,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Nymph",
+      "name": "Legion - Uber - Akula",
       "to_build": "LegionNavalBasicSub",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -341,27 +375,6 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Naval",
-            "compare0": ">",
-            "value0": 0
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Sub",
             "compare0": ">",
             "value0": 0
           }
