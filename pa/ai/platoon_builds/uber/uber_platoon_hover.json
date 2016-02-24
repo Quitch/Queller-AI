@@ -52,20 +52,8 @@
             "value0": 840
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Naval",
-            "compare0": "==",
-            "value0": 0
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Sub",
-            "compare0": "==",
-            "value0": 0
-          },
-          {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Hover - Custom1) | (Hover & Custom1 & Artillery)) & Land",
+            "unit_type_string0": "Hover  & Land",
             "compare0": ">=",
             "value0": 1
           },
