@@ -1,6 +1,6 @@
 {
   "platoon_templates": {
-    "Hover_Attack_1": {
+    "Hover_Attack_Lava_1": {
       "units": [
         {
           "unit_types": "Hover & Naval",
@@ -16,7 +16,7 @@
         }
       ]
     },
-    "Hover_Attack_4": {
+    "Hover_Attack_Lava_4": {
       "units": [
         {
           "unit_types": "Hover & Naval",
@@ -44,7 +44,7 @@
         }
       ]
     },
-    "Hover_Attack_8": {
+    "Hover_Attack_Lava_8": {
       "units": [
         {
           "unit_types": "Hover & Naval",
@@ -72,7 +72,7 @@
         }
       ]
     },
-    "Hover_Attack_12": {
+    "Hover_Attack_Lava_12": {
       "units": [
         {
           "unit_types": "Hover & Naval",
@@ -82,6 +82,106 @@
         },
         {
           "unit_types": "(Hover & Land) - Titan",
+          "min_count": 0,
+          "max_count": -1,
+          "squad": "General"
+        },
+        {
+          "unit_types": "Bot & Titan",
+          "min_count": 0,
+          "max_count": -1,
+          "squad": "Close"
+        },
+        {
+          "unit_types": "Tank & Titan",
+          "min_count": 0,
+          "max_count": -1,
+          "squad": "Artillery"
+        }
+      ]
+    },
+    "Hover_Attack_Water_1": {
+      "units": [
+        {
+          "unit_types": "Hover & Naval",
+          "min_count": 0,
+          "max_count": 3,
+          "squad": "Artillery"
+        },
+        {
+          "unit_types": "((Hover | Sub) & Land) - Titan",
+          "min_count": 0,
+          "max_count": 9,
+          "squad": "General"
+        }
+      ]
+    },
+    "Hover_Attack_Water_4": {
+      "units": [
+        {
+          "unit_types": "Hover & Naval",
+          "min_count": 0,
+          "max_count": 7,
+          "squad": "Artillery"
+        },
+        {
+          "unit_types": "((Hover | Sub) & Land) - Titan",
+          "min_count": 0,
+          "max_count": 21,
+          "squad": "General"
+        },
+        {
+          "unit_types": "Bot & Titan",
+          "min_count": 0,
+          "max_count": 1,
+          "squad": "Close"
+        },
+        {
+          "unit_types": "Tank & Titan",
+          "min_count": 0,
+          "max_count": 1,
+          "squad": "Artillery"
+        }
+      ]
+    },
+    "Hover_Attack_Water_8": {
+      "units": [
+        {
+          "unit_types": "Hover & Naval",
+          "min_count": 0,
+          "max_count": 11,
+          "squad": "Artillery"
+        },
+        {
+          "unit_types": "((Hover | Sub) & Land) - Titan",
+          "min_count": 0,
+          "max_count": 33,
+          "squad": "General"
+        },
+        {
+          "unit_types": "Bot & Titan",
+          "min_count": 0,
+          "max_count": 1,
+          "squad": "Close"
+        },
+        {
+          "unit_types": "Tank & Titan",
+          "min_count": 0,
+          "max_count": 1,
+          "squad": "Artillery"
+        }
+      ]
+    },
+    "Hover_Attack_Water_12": {
+      "units": [
+        {
+          "unit_types": "Hover & Naval",
+          "min_count": 0,
+          "max_count": -1,
+          "squad": "Artillery"
+        },
+        {
+          "unit_types": "((Hover | Sub) & Land) - Titan",
           "min_count": 0,
           "max_count": -1,
           "squad": "General"

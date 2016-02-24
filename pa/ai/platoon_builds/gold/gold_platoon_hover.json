@@ -1,8 +1,146 @@
 {
   "build_list": [
     {
-      "name": "Gold - Hover Attack Platoon 4 - Land",
-      "to_build": "Hover_Attack_4",
+      "name": "Gold - Hover Attack Platoon 4  - Lava",
+      "to_build": "Hover_Attack_Lava_4",
+      "instance_count": -1,
+      "priority": 160,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Naval",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Sub",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": "<",
+            "value0": 5600
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Hover & Land",
+            "compare0": ">=",
+            "value0": 12
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Gold - Hover Attack Platoon 8  - Lava",
+      "to_build": "Hover_Attack_Lava_8",
+      "instance_count": -1,
+      "priority": 150,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Naval",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Sub",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": "<",
+            "value0": 11200
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Hover & Land",
+            "compare0": ">=",
+            "value0": 24
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Gold - Hover Attack Platoon 12  - Lava",
+      "to_build": "Hover_Attack_Lava_12",
+      "instance_count": -1,
+      "priority": 140,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Naval",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Sub",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Hover & Land",
+            "compare0": ">=",
+            "value0": 36
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Gold - Hover Attack Platoon 4  - Land",
+      "to_build": "Hover_Attack_Water_4",
       "instance_count": -1,
       "priority": 120,
       "build_conditions": [
@@ -53,7 +191,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Hover & Land",
+            "unit_type_string0": "(Hover | Sub) & Land",
             "compare0": ">=",
             "value0": 12
           },
@@ -68,8 +206,8 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Gold - Hover Attack Platoon 8 - Land",
-      "to_build": "Hover_Attack_8",
+      "name": "Gold - Hover Attack Platoon 8  - Land",
+      "to_build": "Hover_Attack_Water_8",
       "instance_count": -1,
       "priority": 110,
       "build_conditions": [
@@ -120,7 +258,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Hover & Land",
+            "unit_type_string0": "(Hover | Sub) & Land",
             "compare0": ">=",
             "value0": 24
           },
@@ -135,8 +273,8 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Gold - Hover Attack Platoon 12 - Land",
-      "to_build": "Hover_Attack_12",
+      "name": "Gold - Hover Attack Platoon 12  - Land",
+      "to_build": "Hover_Attack_Water_12",
       "instance_count": -1,
       "priority": 105,
       "build_conditions": [
@@ -175,7 +313,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Hover & Land",
+            "unit_type_string0": "(Hover | Sub) & Land",
             "compare0": ">=",
             "value0": 36
           },
@@ -191,7 +329,7 @@
     },
     {
       "name": "Gold - Hover Attack Platoon 4 - Naval",
-      "to_build": "Hover_Attack_4",
+      "to_build": "Hover_Attack_Water_4",
       "instance_count": -1,
       "priority": 90,
       "build_conditions": [
@@ -241,7 +379,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Hover & Land",
+            "unit_type_string0": "(Hover | Sub) & Land",
             "compare0": ">=",
             "value0": 12
           },
@@ -256,7 +394,7 @@
     },
     {
       "name": "Gold - Hover Attack Platoon 8 - Naval",
-      "to_build": "Hover_Attack_8",
+      "to_build": "Hover_Attack_Water_8",
       "instance_count": -1,
       "priority": 80,
       "build_conditions": [
@@ -306,7 +444,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Hover & Land",
+            "unit_type_string0": "(Hover | Sub) & Land",
             "compare0": ">=",
             "value0": 24
           },
@@ -321,7 +459,7 @@
     },
     {
       "name": "Gold - Hover Attack Platoon 12 - Naval",
-      "to_build": "Hover_Attack_12",
+      "to_build": "Hover_Attack_Water_12",
       "instance_count": -1,
       "priority": 70,
       "build_conditions": [
@@ -359,7 +497,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Hover & Land",
+            "unit_type_string0": "(Hover | Sub) & Land",
             "compare0": ">=",
             "value0": 36
           },
