@@ -312,10 +312,9 @@
             "boolean": false
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Naval",
-            "compare0": ">",
-            "value0": 0
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Naval",
+            "boolean": true
           }
         ],
         [
@@ -329,10 +328,9 @@
             "boolean": false
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Sub",
-            "compare0": ">",
-            "value0": 0
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Sub",
+            "boolean": true
           }
         ],
         [
