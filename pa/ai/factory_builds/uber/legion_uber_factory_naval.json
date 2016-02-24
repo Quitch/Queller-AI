@@ -195,9 +195,33 @@
             "string0": "Sub",
             "string1": "AntiSub",
             "compare0": ">",
-            "value0": 0.8
+            "value0": 0.6
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemyOrbitalPresenceOnPlanet",
+            "boolean": false
           }
         ]
+
       ]
     },
     {
@@ -236,7 +260,7 @@
             "string0": "Sub",
             "string1": "AntiSub",
             "compare0": "<=",
-            "value0": 0.8
+            "value0": 0.6
           }
         ]
       ]
@@ -294,29 +318,6 @@
         "LegionFactoryAdvancedNaval"
       ],
       "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyOrbitalPresenceOnPlanet",
-            "boolean": false
-          }
-        ],
         [
           {
             "test_type": "HasPersonalityTag",
