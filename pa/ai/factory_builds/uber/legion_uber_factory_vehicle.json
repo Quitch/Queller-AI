@@ -182,6 +182,11 @@
             "boolean": true
           },
           {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Tank",
+            "boolean": true
+          },
+          {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiSurface",
             "compare0": ">",
@@ -341,6 +346,18 @@
             "string0": "AntiSurface",
             "compare0": "<=",
             "value0": 2100
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Tank",
+            "boolean": false
           }
         ]
       ]
