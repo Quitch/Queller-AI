@@ -404,7 +404,7 @@
       "name": "Legion - Uber - Arsonist - Base",
       "to_build": "LegionDefenseAdvancedLandII",
       "instance_count": 1,
-      "priority": 379,
+      "priority": 0,
       "max_num_assisters": 3,
       "base_sort": "FromPerimeter",
       "builders": [
@@ -440,7 +440,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Advanced & SurfaceDefense",
             "compare0": "<",
-            "value0": 4
+            "value0": 2
           },
           {
             "test_type": "UnitCountInBase",
@@ -520,7 +520,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Advanced & SurfaceDefense",
             "compare0": "<",
-            "value0": 4
+            "value0": 2
           },
           {
             "test_type": "UnitCountInBase",
@@ -564,7 +564,7 @@
       "name": "Legion - Uber - Shield Defense - Base",
       "to_build": "LegionDefenseAdvancedShield",
       "instance_count": 1,
-      "priority": 379,
+      "priority": 0,
       "max_num_assisters": 3,
       "base_sort": "FromPerimeter",
       "builders": [
