@@ -245,6 +245,18 @@
             "boolean": true
           },
           {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "SurfaceDefense | Wall",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Land",
+            "string1": "Land",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "(Land & Mobile) - Fabber - AirDefense - Construction - Heavy - Deconstruction",
             "compare0": ">",
