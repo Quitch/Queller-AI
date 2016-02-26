@@ -114,10 +114,6 @@
             "boolean": false
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
             "test_type": "HaveFullPlanetIntel",
             "boolean": false
           },
@@ -191,10 +187,6 @@
             "boolean": false
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
             "test_type": "HaveSeenEnemyUnits",
             "unit_type_string0": "((Construction & Mobile) - Fabber - Commander) | (CombatFabBuild & Defense)",
             "boolean": true
@@ -216,10 +208,6 @@
           {
             "test_type": "BaseThreatened",
             "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
           },
           {
             "test_type": "UnitCountOnPlanet",
