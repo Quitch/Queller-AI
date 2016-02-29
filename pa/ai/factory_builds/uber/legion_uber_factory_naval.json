@@ -259,7 +259,7 @@
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Sub",
             "string1": "AntiSub",
-            "compare0": "<=",
+            "compare0": "<",
             "value0": 0.6
           }
         ]
@@ -342,7 +342,7 @@
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Sub",
             "string1": "AntiSub",
-            "compare0": "<=",
+            "compare0": "<",
             "value0": 0.8
           }
         ]
@@ -531,12 +531,19 @@
             "string0": "Naval",
             "compare0": ">",
             "value0": 0
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Sub",
+            "string1": "AntiSub",
+            "compare0": "<=",
+            "value0": 0.8
           }
         ]
       ]
     },
     {
-      "name": "Legion - Uber - Manta Ray",
+      "name": "Legion - Uber - Crossbow",
       "to_build": "LegionNavalAdvancedTactical",
       "instance_count": 1,
       "max_num_assisters": 15,
@@ -554,11 +561,7 @@
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
-          },
-          {
-            "test_type": "EnemyOrbitalPresenceOnPlanet",
-            "boolean": true
-          },
+          }
           {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
@@ -597,13 +600,20 @@
             "string1": "AntiAir",
             "compare0": ">",
             "value0": 1
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Naval & Mobile & AirDefense",
+            "unit_type_string1": "(Naval & Mobile) - Fabber - Hover",
+            "compare0": "<",
+            "value0": 0.2
           }
         ]
       ]
     },
     {
-      "name": "Legion - Uber - Siren",
-      "to_build": "LegionNavalAdvancedSub",
+      "name": "Legion - Uber - Turtle",
+      "to_build": "LegionNavalAdvancedDestroyer",
       "instance_count": 1,
       "max_num_assisters": 15,
       "priority": 199,
@@ -626,17 +636,17 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Naval",
-            "string1": "Naval",
             "compare0": ">",
-            "value0": 0.6
+            "value0": 0
           },
           {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Naval & Advanced & Sub",
-            "compare0": "<",
-            "value0": 250
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Sub",
+            "string1": "AntiSub",
+            "compare0": ">",
+            "value0": 0.6
           }
         ]
       ]
