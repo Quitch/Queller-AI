@@ -416,6 +416,49 @@
       ]
     },
     {
+      "name": "Legion - Uber - Shredder",
+      "to_build": "LegionBotAdvancedSupportCommander",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedBotFabber",
+      "max_num_assisters": 15,
+      "priority": 201,
+      "builders": [
+        "LegionFactoryAdvancedBot"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "UnableToExpand",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionBotAdvancedSupportCommander"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Advanced & Land",
+            "unit_type_string1": "Factory & Advanced & Land",
+            "compare0": "<",
+            "value0": 3
+          }
+        ]
+      ]
+    },
+    {
       "name": "Legion - Uber - Advanced Fabrication Walker",
       "to_build": "LegionBotAdvancedFabber",
       "instance_count": 1,
@@ -598,7 +641,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - BFG",
+      "name": "Legion - Uber - Monstrosity",
       "to_build": "LegionBotAdvancedTactical",
       "instance_count": 1,
       "max_num_assisters": 10,
