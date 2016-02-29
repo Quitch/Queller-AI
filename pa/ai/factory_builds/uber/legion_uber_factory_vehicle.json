@@ -193,7 +193,7 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Land & Mobile) - Fabber - AirDefense - Construction - Heavy - Deconstruction",
+            "unit_type_string0": "(Tank & Mobile) - Fabber - AirDefense - Construction - Heavy - Deconstruction - Artillery",
             "compare0": ">",
             "value0": 30,
             "boolean": true
@@ -201,7 +201,7 @@
           {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Land & Mobile & Heavy",
-            "unit_type_string1": "(Land & Mobile) - Scout - Fabber - Deconstruction - Titan",
+            "unit_type_string1": "((Tank | (Bot & Advanced)) & Mobile) - Scout - Fabber - Deconstruction - Titan",
             "compare0": "<",
             "value0": 0.1
           }
@@ -258,7 +258,7 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Land & Mobile) - Fabber - AirDefense - Construction - Heavy - Deconstruction",
+            "unit_type_string0": "(Tank & Mobile) - Fabber - AirDefense - Construction - Heavy - Deconstruction - Artillery",
             "compare0": ">",
             "value0": 30,
             "boolean": true
@@ -266,7 +266,7 @@
           {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Land & Mobile & Artillery",
-            "unit_type_string1": "(Land & Mobile) - Scout - Fabber - Deconstruction - Titan",
+            "unit_type_string1": "((Tank | (Bot & Advanced)) & Mobile) - Scout - Fabber - Deconstruction - Titan",
             "compare0": "<",
             "value0": 0.2
           }
@@ -441,11 +441,18 @@
             "boolean": true
           },
           {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Tank & Mobile) - Fabber - AirDefense - Construction - Heavy - Deconstruction - Artillery",
+            "compare0": ">",
+            "value0": 30,
+            "boolean": true
+          },
+          {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Tank & Heavy & Advanced",
-            "unit_type_string1": "(Land & Mobile) - Scout - Fabber - Deconstruction - Titan",
+            "unit_type_string1": "((Tank | (Bot & Advanced)) & Mobile) - Scout - Fabber - Deconstruction - Titan",
             "compare0": "<",
-            "value0": 0.05
+            "value0": 0.1
           }
         ]
       ]
@@ -492,6 +499,20 @@
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Tank & Mobile) - Fabber - AirDefense - Construction - Heavy - Deconstruction - Artillery",
+            "compare0": ">",
+            "value0": 30,
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & Artillery",
+            "unit_type_string1": "((Tank | (Bot & Advanced)) & Mobile) - Scout - Fabber - Deconstruction - Titan",
+            "compare0": "<",
+            "value0": 0.5
           }
         ]
       ]
@@ -530,7 +551,7 @@
           {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Land & Mobile & AirDefense",
-            "unit_type_string1": "(Land & Mobile) - Scout - Fabber - Deconstruction - Titan",
+            "unit_type_string1": "((Tank | (Bot & Advanced)) & Mobile) - Scout - Fabber - Deconstruction - Titan",
             "compare0": "<",
             "value0": 0.2
           }
@@ -552,7 +573,7 @@
           {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Land & Mobile & AirDefense",
-            "unit_type_string1": "(Land & Mobile) - Scout - Fabber - Deconstruction - Titan",
+            "unit_type_string1": "((Tank | (Bot & Advanced)) & Mobile) - Scout - Fabber - Deconstruction - Titan",
             "compare0": "<",
             "value0": 0.2
           }
@@ -574,6 +595,35 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Tank & Mobile) - Fabber - AirDefense - Construction - Heavy - Deconstruction - Artillery",
+            "compare0": ">",
+            "value0": 30,
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & Artillery",
+            "unit_type_string1": "((Tank | (Bot & Advanced)) & Mobile) - Scout - Fabber - Deconstruction - Titan",
+            "compare0": "<",
+            "value0": 0.5
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": false
           }
         ]
       ]
