@@ -286,7 +286,20 @@
             "boolean": false
           },
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & (Bomber | Gunship)",
+            "compare0": "<",
+            "value0": 40
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": false
           },
           {
@@ -538,10 +551,6 @@
             "boolean": true
           },
           {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": false
-          },
-          {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": false
           },
@@ -606,7 +615,20 @@
             "boolean": false
           },
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & (Bomber | Gunship)",
+            "compare0": "<",
+            "value0": 40
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": false
           },
           {
