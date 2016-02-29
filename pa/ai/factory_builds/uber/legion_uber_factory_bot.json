@@ -227,37 +227,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Peacekeeper - Land Post-early-game",
-      "to_build": "LegionBotBasicAssault",
-      "instance_count": 1,
-      "max_num_assisters": 10,
-      "priority": 97,
-      "builders": [
-        "LegionFactoryBasicBot",
-        "LegionFactoryAdvancedBot"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": ">",
-            "value0": 2100
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Legion - Uber - Peacekeeper - Spam",
+      "name": "Legion - Uber - Peacekeeper",
       "to_build": "LegionBotBasicAssault",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -272,27 +242,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": "<=",
-            "value0": 2100
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": false
           }
         ]
       ]
@@ -361,12 +310,6 @@
             "test_type": "HaveSeenEnemyUnits",
             "unit_type_string0": "Tank",
             "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": ">",
-            "value0": 2100
           }
         ],
         [
