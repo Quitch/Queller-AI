@@ -29,13 +29,13 @@
           "squad": "Suicide"
         },
         {
-          "unit_types": "Land & Mobile & (Artillery | Tactical)",
+          "unit_types": "(Land & Mobile & (Artillery | Tactical)) | (Titan & ((Bot & Custom1) | Tank))",
           "min_count": 0,
           "percent": 0.5,
           "squad": "Artillery"
         },
         {
-          "unit_types": "Land & Mobile & Heavy",
+          "unit_types": "(Land & Mobile & Heavy) | (Titan & (Bot - Custom1))",
           "min_count": 0,
           "percent": 0.4,
           "squad": "Close"
@@ -81,13 +81,13 @@
           "squad": "Artillery"
         },
         {
-          "unit_types": "Land & Mobile & (Artillery | Tactical)",
+          "unit_types": "(Land & Mobile & (Artillery | Tactical)) | (Titan & ((Bot & Custom1) | Tank))",
           "min_count": 0,
           "max_count": -1,
           "squad": "Artillery"
         },
         {
-          "unit_types": "Land & Mobile & Heavy",
+          "unit_types": "(Land & Mobile & Heavy) | (Titan & (Bot - Custom1))",
           "min_count": 0,
           "max_count": -1,
           "squad": "Close"
@@ -121,13 +121,13 @@
           "squad": "Fast"
         },
         {
-          "unit_types": "Land & Mobile & (Artillery | Tactical)",
+          "unit_types": "(Land & Mobile & (Artillery | Tactical)) | (Titan & ((Bot & Custom1) | Tank))",
           "min_count": 0,
           "percent": 0.5,
           "squad": "Artillery"
         },
         {
-          "unit_types": "Land & Mobile & Heavy",
+          "unit_types": "(Land & Mobile & Heavy) | (Titan & (Bot - Custom1))",
           "min_count": 0,
           "percent": 0.4,
           "squad": "Close"
@@ -155,13 +155,13 @@
           "squad": "Fast"
         },
         {
-          "unit_types": "Land & Mobile & (Artillery | Tactical)",
+          "unit_types": "(Land & Mobile & (Artillery | Tactical)) | (Titan & ((Bot & Custom1) | Tank))",
           "min_count": 0,
           "percent": 0.5,
           "squad": "Artillery"
         },
         {
-          "unit_types": "Land & Mobile & Heavy",
+          "unit_types": "(Land & Mobile & Heavy) | (Titan & (Bot - Custom1))",
           "min_count": 0,
           "percent": 0.4,
           "squad": "Close"
@@ -189,13 +189,13 @@
           "squad": "Fast"
         },
         {
-          "unit_types": "Land & Mobile & (Artillery | Tactical)",
+          "unit_types": "(Land & Mobile & (Artillery | Tactical)) | (Titan & ((Bot & Custom1) | Tank))",
           "min_count": 0,
           "percent": 0.5,
           "squad": "Artillery"
         },
         {
-          "unit_types": "Land & Mobile & Heavy",
+          "unit_types": "(Land & Mobile & Heavy) | (Titan & (Bot - Custom1))",
           "min_count": 0,
           "percent": 0.4,
           "squad": "Close"
@@ -229,13 +229,13 @@
           "squad": "Fast"
         },
         {
-          "unit_types": "Land & Mobile & (Artillery | Tactical)",
+          "unit_types": "(Land & Mobile & (Artillery | Tactical)) | (Titan & ((Bot & Custom1) | Tank))",
           "min_count": 0,
           "percent": 0.5,
           "squad": "Artillery"
         },
         {
-          "unit_types": "Land & Mobile & Heavy",
+          "unit_types": "(Land & Mobile & Heavy) | (Titan & (Bot - Custom1))",
           "min_count": 0,
           "percent": 0.4,
           "squad": "Close"
@@ -251,18 +251,6 @@
           "min_count": 0,
           "max_count": 1,
           "squad": "Defense"
-        },
-        {
-          "unit_types": "Bot & Titan",
-          "min_count": 0,
-          "max_count": 1,
-          "squad": "Close"
-        },
-        {
-          "unit_types": "Tank & Titan",
-          "min_count": 0,
-          "max_count": 1,
-          "squad": "Artillery"
         }
       ]
     },
@@ -281,13 +269,13 @@
           "squad": "Fast"
         },
         {
-          "unit_types": "Land & Mobile & (Artillery | Tactical)",
+          "unit_types": "(Land & Mobile & (Artillery | Tactical)) | (Titan & ((Bot & Custom1) | Tank))",
           "min_count": 0,
           "percent": 0.5,
           "squad": "Artillery"
         },
         {
-          "unit_types": "Land & Mobile & Heavy",
+          "unit_types": "(Land & Mobile & Heavy) | (Titan & (Bot - Custom1))",
           "min_count": 0,
           "percent": 0.4,
           "squad": "Close"
@@ -303,18 +291,6 @@
           "min_count": 0,
           "max_count": 1,
           "squad": "Defense"
-        },
-        {
-          "unit_types": "Bot & Titan",
-          "min_count": 0,
-          "max_count": 1,
-          "squad": "Close"
-        },
-        {
-          "unit_types": "Tank & Titan",
-          "min_count": 0,
-          "max_count": 1,
-          "squad": "Artillery"
         }
       ]
     },
@@ -333,13 +309,13 @@
           "squad": "Fast"
         },
         {
-          "unit_types": "Land & Mobile & (Artillery | Tactical)",
+          "unit_types": "(Land & Mobile & (Artillery | Tactical)) | (Titan & ((Bot & Custom1) | Tank))",
           "min_count": 0,
           "percent": 0.5,
           "squad": "Artillery"
         },
         {
-          "unit_types": "Land & Mobile & Heavy",
+          "unit_types": "(Land & Mobile & Heavy) | (Titan & (Bot - Custom1))",
           "min_count": 0,
           "percent": 0.4,
           "squad": "Close"
@@ -355,18 +331,6 @@
           "min_count": 0,
           "max_count": 2,
           "squad": "Defense"
-        },
-        {
-          "unit_types": "Bot & Titan",
-          "min_count": 0,
-          "max_count": -1,
-          "squad": "Close"
-        },
-        {
-          "unit_types": "Tank & Titan",
-          "min_count": 0,
-          "max_count": -1,
-          "squad": "Artillery"
         }
       ]
     }
