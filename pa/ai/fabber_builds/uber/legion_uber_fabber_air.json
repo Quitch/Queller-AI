@@ -96,7 +96,7 @@
           {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Factory & Air & Basic",
-            "unit_type_string1": "(Factory & Basic) - Orbital - Air",
+            "unit_type_string1": "(Factory & Basic) - Orbital",
             "compare0": "<=",
             "value0": 0.2
           },
@@ -307,7 +307,7 @@
           {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Factory & Air & Basic",
-            "unit_type_string1": "(Factory & Basic) - Orbital - Air",
+            "unit_type_string1": "(Factory & Basic) - Orbital",
             "compare0": "<=",
             "value0": 0.2
           },
@@ -596,7 +596,7 @@
           {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Factory & Air & Basic",
-            "unit_type_string1": "(Factory & Basic) - Orbital - Air",
+            "unit_type_string1": "(Factory & Basic) - Orbital",
             "compare0": "<=",
             "value0": 0.2
           },
@@ -825,6 +825,10 @@
             "boolean": true
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "BaseThreatened",
             "boolean": false
           },
@@ -837,7 +841,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionFactoryAdvancedBot"
+            "string0": "LegionFactoryAdvancedAir"
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
@@ -854,7 +858,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionFactoryAdvancedBot"
+            "string0": "LegionFactoryAdvancedAir"
           }
         ],
         [
@@ -862,6 +866,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "BaseThreatened",
@@ -876,7 +884,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionFactoryAdvancedBot"
+            "string0": "LegionFactoryAdvancedAir"
           },
           {
             "test_type": "UnitCountAroundBase",
@@ -893,8 +901,56 @@
             "value0": 5
           },
           {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Advanced & Factory",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionFactoryAdvancedBot"
+            "string0": "LegionFactoryAdvancedAir"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryAdvancedAir"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Advanced & Factory",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital - Naval",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryAdvancedAir"
           }
         ],
         [
@@ -920,15 +976,9 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Basic & Fabber - Orbital",
+            "unit_type_string0": "Fabber - Orbital - Naval",
             "compare0": ">=",
             "value0": 5
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory & Air & Advanced",
-            "compare0": "<",
-            "value0": 2
           },
           {
             "test_type": "CanFindPlaceToBuild",
