@@ -1,5 +1,20 @@
 # CHANGELOG
 
+#### v3.3 - 2016/03/01
+
+ - Booms will now use teleporters
+ - Tries to figure out whether the blockage to its land forces is water or lava
+ - Improved amphibious checks by looking at historial enemy forces not just current ones
+ - Fixed Uber still trying to use Krakens alone
+ - Improved use of naval forces against shore targets
+ - Largest land and bot platoons were incorrectly capped with a maximum size
+ - Removed platoons that are no longer used
+ - Completely removed all duplicate build condition names
+ - Fixed issues with some personalities not sending orbital units to other planets
+ - Fixed issue preventing Uber from rushing nukes when the enemy has no anti-nukes
+ - Titans better integrated into platoons
+ - Fixed issue preventing Support Commanders being built
+
 #### v3.2 - 2016/02/16
 
  - Uber now focuses on Levellers over other T2 vehicles
@@ -9,7 +24,7 @@
  - Uber now uses the Slammer as a primary T2 bot
  - Uber will use more T2 bots if it thinks it's being bot rushed
  - Corrected bug preventing Queller from building Levellers
- - Uber no longer uses Krakkens alone
+ - Uber no longer uses Krakens alone
  - Uber favours the Krakken for naval warfare
  - Where a land target cannot be found hover platoons will pursue naval targets
 
