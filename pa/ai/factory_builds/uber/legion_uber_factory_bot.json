@@ -610,32 +610,22 @@
             "boolean": false
           },
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
-          }
-        ],
-        [
+          },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Tank & Mobile) - Fabber - AirDefense - Construction - Heavy - Deconstruction - Artillery",
+            "compare0": ">",
+            "value0": 30,
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "doxrush",
-            "boolean": false
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & Artillery",
+            "unit_type_string1": "((Tank | (Bot & Advanced)) & Mobile) - Scout - Fabber - Deconstruction - Titan",
+            "compare0": "<",
+            "value0": 0.5
           }
         ]
       ]
@@ -660,30 +650,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "doxrush",
             "boolean": false
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "doxrush",
-            "boolean": false
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -738,8 +704,12 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "CanDeployLandFromBase",
