@@ -13,12 +13,25 @@
             "boolean": true
           },
           {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          },
+          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "(Naval & Scout) - Custom1",
             "compare0": ">=",
             "value0": 1
           }
-        ],
+        ]
+      ],
+      "task_type": "Scout"
+    },
+    {
+      "name": "Uber - Naval Scout Platoon - Legion",
+      "to_build": "Naval_Scout_1",
+      "instance_count": 2,
+      "priority": 160,
+      "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
@@ -26,16 +39,14 @@
             "boolean": true
           },
           {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          },
+          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Naval & Scout & Custom1",
             "compare0": ">=",
             "value0": 1
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Scout",
-            "compare0": "<",
-            "value0": 250
           }
         ]
       ],
