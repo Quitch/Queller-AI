@@ -229,12 +229,6 @@
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Air",
-            "compare0": ">",
-            "value0": 0
           }
         ],
         [
@@ -540,10 +534,6 @@
             "boolean": true
           },
           {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": false
-          },
-          {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": false
           },
@@ -605,10 +595,6 @@
           },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": false
           },
           {

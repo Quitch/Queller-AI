@@ -138,10 +138,6 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
             "test_type": "BaseThreatened",
             "boolean": false
           },
@@ -189,6 +185,12 @@
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": false
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Air",
+            "compare0": ">",
+            "value0": 0
           },
           {
             "test_type": "UnitCountPerPlanetRadius",
@@ -384,64 +386,6 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Scout",
-            "compare0": "<",
-            "value0": 250
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyPresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Scout",
-            "compare0": "<",
-            "value0": 250
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
             "test_type": "BaseThreatened",
             "boolean": false
           },
@@ -601,7 +545,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Sky Castle",
+      "name": "Legion - Uber - Purgatory",
       "to_build": "LegionAirAdvancedBomber",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -624,8 +568,8 @@
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Air",
             "string1": "AntiAir",
-            "compare0": ">=",
-            "value0": 1
+            "compare0": "<",
+            "value0": 0.6
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
@@ -633,6 +577,40 @@
             "string1": "Air",
             "compare0": "<",
             "value0": 0.6
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & (Bomber | Gunship)",
+            "compare0": "<",
+            "value0": 40
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Air & (Bomber | Gunship)",
+            "compare0": "<",
+            "value0": 10
           }
         ]
       ]
