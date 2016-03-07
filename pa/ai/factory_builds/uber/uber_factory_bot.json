@@ -93,7 +93,7 @@
     {
       "name": "Uber - Boom",
       "to_build": "BoomBot",
-      "instance_count": -1,
+      "instance_count": 1,
       "priority": 97,
       "builders": [
         "AnyUberBotFactory"
@@ -106,13 +106,8 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "doxrush",
-            "boolean": false
-          },
-          {
             "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "(Tank & Heavy) | (Bot)",
+            "unit_type_string0": "(Tank & Heavy) | Bot",
             "boolean": false
           },
           {
