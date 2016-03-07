@@ -199,8 +199,8 @@ function ai_types() {
             neural_data_mod: 1.5,
             adv_eco_mod: 0.85,
             adv_eco_mod_alone: 0.85,
-			factory_build_delay_min: 0,
-			factory_build_delay_max: 12,
+            factory_build_delay_min: 0,
+            factory_build_delay_max: 12,
             personality_tags:
             [
                 "bronze"
@@ -228,8 +228,8 @@ function ai_types() {
             neural_data_mod: 1.3,
             adv_eco_mod: 1.0,
             adv_eco_mod_alone: 1.0,
-			factory_build_delay_min: 0,
-			factory_build_delay_max: 3,
+            factory_build_delay_min: 0,
+            factory_build_delay_max: 3,
             personality_tags:
             [
                 "silver"
@@ -298,7 +298,7 @@ function ai_types() {
             min_advanced_fabbers: 3,
             max_advanced_fabbers: 100
         },
-		'Uber': {
+        'Uber': {
             display_name: 'Uber',
             metal_drain_check: 0.54,
             energy_drain_check: 0.57,
@@ -325,7 +325,7 @@ function ai_types() {
             min_advanced_fabbers: 3,
             max_advanced_fabbers: 100
         },
-		'Uber Air': {
+        'Uber Air': {
             display_name: 'Uber Air',
             metal_drain_check: 0.54,
             energy_drain_check: 0.65,
@@ -355,7 +355,7 @@ function ai_types() {
             min_advanced_fabbers: 3,
             max_advanced_fabbers: 100
         },
-		'Uber Bot': {
+        'Uber Bot': {
             display_name: 'Uber Bot',
             metal_drain_check: 0.54,
             energy_drain_check: 0.57,
@@ -383,8 +383,64 @@ function ai_types() {
             min_advanced_fabbers: 3,
             max_advanced_fabbers: 100
         },
-		'Uber Dox': {
-            display_name: 'Uber Dox',
+        'Uber Land': {
+            display_name: 'Uber Land',
+            metal_drain_check: 0.54,
+            energy_drain_check: 0.57,
+            metal_demand_check: 0.75,
+            energy_demand_check: 0.72,
+            micro_type: 2,
+            go_for_the_kill: true,
+            priority_scout_metal_spots: true,
+            enable_commander_danger_responses: true,
+            neural_data_mod: 0.5,
+            adv_eco_mod: 1.4,
+            adv_eco_mod_alone: 0.85,
+            personality_tags:
+            [
+                "uber",
+                "nonaval"
+            ],
+            fabber_to_factory_ratio_basic: 1.0,
+            fabber_to_factory_ratio_advanced: 3.0,
+            fabber_alone_on_planet_mod: 3.0,
+            basic_to_advanced_factory_ratio: 10,
+            factory_alone_on_planet_mod: 0.5,
+            min_basic_fabbers: 1,
+            max_basic_fabbers: 100,
+            min_advanced_fabbers: 3,
+            max_advanced_fabbers: 100
+        },
+        'Uber Naval': {
+            display_name: 'Uber Naval',
+            metal_drain_check: 0.54,
+            energy_drain_check: 0.57,
+            metal_demand_check: 0.75,
+            energy_demand_check: 0.72,
+            micro_type: 2,
+            go_for_the_kill: true,
+            priority_scout_metal_spots: true,
+            enable_commander_danger_responses: true,
+            neural_data_mod: 0.5,
+            adv_eco_mod: 1.4,
+            adv_eco_mod_alone: 0.85,
+            personality_tags:
+            [
+                "uber",
+                "navalstart"
+            ],
+            fabber_to_factory_ratio_basic: 1.0,
+            fabber_to_factory_ratio_advanced: 3.0,
+            fabber_alone_on_planet_mod: 3.0,
+            basic_to_advanced_factory_ratio: 10,
+            factory_alone_on_planet_mod: 0.5,
+            min_basic_fabbers: 1,
+            max_basic_fabbers: 100,
+            min_advanced_fabbers: 3,
+            max_advanced_fabbers: 100
+        },
+        'Uber Rush': {
+            display_name: 'Uber Rush',
             metal_drain_check: 0.54,
             energy_drain_check: 0.57,
             metal_demand_check: 0.75,
@@ -412,7 +468,35 @@ function ai_types() {
             min_advanced_fabbers: 3,
             max_advanced_fabbers: 100
         },
-		'Uber Tech': {
+        'Uber Tank': {
+            display_name: 'Uber Tank',
+            metal_drain_check: 0.54,
+            energy_drain_check: 0.57,
+            metal_demand_check: 0.75,
+            energy_demand_check: 0.72,
+            micro_type: 2,
+            go_for_the_kill: true,
+            priority_scout_metal_spots: true,
+            enable_commander_danger_responses: true,
+            neural_data_mod: 0.5,
+            adv_eco_mod: 1.4,
+            adv_eco_mod_alone: 0.85,
+            personality_tags:
+            [
+                "uber",
+                "tankonly"
+            ],
+            fabber_to_factory_ratio_basic: 1.0,
+            fabber_to_factory_ratio_advanced: 3.0,
+            fabber_alone_on_planet_mod: 3.0,
+            basic_to_advanced_factory_ratio: 10,
+            factory_alone_on_planet_mod: 0.5,
+            min_basic_fabbers: 1,
+            max_basic_fabbers: 100,
+            min_advanced_fabbers: 3,
+            max_advanced_fabbers: 100
+        },
+        'Uber Tech': {
             display_name: 'Uber Tech',
             metal_drain_check: 0.54,
             energy_drain_check: 0.57,
@@ -441,7 +525,7 @@ function ai_types() {
             min_advanced_fabbers: 3,
             max_advanced_fabbers: 100
         },
-		'Uber Turtle': {
+        'Uber Turtle': {
             display_name: 'Uber Turtle',
             metal_drain_check: 0.54,
             energy_drain_check: 0.57,
