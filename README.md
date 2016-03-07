@@ -122,39 +122,40 @@ Normal through Absurd are the standard difficulties and will use the vanilla AI 
  - Best threat assessments
  - Will use eco bonuses better than other levels
  - Selectable subpersonality
- 
+
 ### Subpersonalities
 
 By default, Queller at Uber level will adapt its play to try and suit the system and the opposition it faces. You can use subpersonalities to customise Queller's game to your liking, or help it play better where it's making poor strategy choices.
 
 - Air
  - Heavier use of air
- - Works best on larger maps with spread out metal
+ - Can go air first
 
 - Bot
- - Will only use bots
+ - Doesn't build vehicle factories
  - Will build a vehicle factory for Skitters if it detects the possibility of mines
 
-- Dox
+- Land
+ - Won't build naval factories
+
+- Naval
+ - Attempts to build a naval factory first
+
+- Rush
  - Won't use any offensive T1 land unit other than the Dox
  - Will focus on Slammers at T2 but not exclusively
  - Will build a vehicle factory for Skitters if it detects the possibility of mines
 
-- Eco
- - Heavier emphasis on economic growth
- - Works best on really large (900+ radius) planets with lots of metal
- - Aggressively techs so it can eco boom
- - Requires sizable distance from its opponent
+- Tank
+ - Doesn't build bot factories
 
 - Tech
  - Goes T2 as soon as it can afford to
  - Will get orbital as soon as possible on multi planet systems
- - Works best on multi planet systems where it spawns alone
 
 - Turtle
  - Emphasis on fabbers over combat units
  - Emphasis on static weapons over factories
- - May perform better in FFAs with its cautious approach
 
 ## RECOMMENDED DIFFICULTY
 
@@ -204,10 +205,6 @@ The spawn the AI starts in and the profile used can make a big difference, even 
 - Spikes in AI fabber performance
 - Will sometimes build torpedo launcher defences in the starting base on non-symmetrical maps without water
 
-#### MAYBEFIX
-
-- Doesn't handle enemy walls well
-
 #### WONTFIX
 
 - Ignores the factory and fabber preferences of client/UI AI personality mods
@@ -218,14 +215,16 @@ The spawn the AI starts in and the profile used can make a big difference, even 
 - Will sometimes take much longer than necessary routes to attack
 - Fabbers don't always take the closest metal spot when building MEX
 - Doesn't defend its fabbers
-- Attempts to attack with Dox underwater
+- Attempts to attack with amphibious units underwater even if they don't have an underwater weapon
 - Will queue buildings on the other side of obstacles despite closer locations (pathfinding wise) being available
-- Won't send Phoenixes between planets
+- Won't send interplanetary aircraft between planets
 - Will assign fabbers to a assist on a project that they could start earlier than the fabber they're assisting
 - Won't use more than one teleporter at a time
 - Won't use telepoters to move around a single planet
 - Cannot reclaim
-- Combat Fabbers can't be used to build mines and repair troops even across entirely different AI personalities
+- Combat Fabbers can only be used to build mines or repair troops, not both, even across entirely different AI personalities
+- Doesn't handle enemy walls well
+- Doesn't use mobile teleporters
 
 ## THANKS TO
 
