@@ -142,16 +142,14 @@ By default, Queller at Uber level will adapt its play to try and suit the system
  - Attempts to build a naval factory first
 
 - Rush
- - Won't use any offensive T1 land unit other than the Dox
- - Will focus on Slammers at T2 but not exclusively
- - Will build a vehicle factory for Skitters if it detects the possibility of mines
+ - Focus on T1 land rush
 
 - Tank
  - Doesn't build bot factories
 
 - Tech
  - Goes T2 as soon as it can afford to
- - Will get orbital as soon as possible on multi planet systems
+ - Will get orbital as soon as possible on multi-planet systems
 
 - Turtle
  - Emphasis on fabbers over combat units
