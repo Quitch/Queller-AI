@@ -184,7 +184,7 @@ The spawn the AI starts in and the profile used can make a big difference, even 
 
 | Map     | Slot |
 | ------- |:----:|
-| Berg    | 1/2  |
+| Berg    | 2    |
 | Blitz   | 1/2  |
 | Clutch  | 2    |
 | Crag    | 2    |
