@@ -30,7 +30,7 @@
           "max_count": 8
         },
         {
-          "unit_types": "Air - Fighter - Bomber - Gunship - Titan",
+          "unit_types": "(Air & Mobile) - Fighter - Bomber - Gunship - Titan",
           "percent": 0.05,
           "squad": "Defense"
         },
@@ -49,7 +49,7 @@
           "max_count": 19
         },
         {
-          "unit_types": "Air - Fighter - Bomber - Gunship - Titan",
+          "unit_types": "(Air & Mobile) - Fighter - Bomber - Gunship - Titan",
           "percent": 0.05,
           "squad": "Defense"
         },
@@ -68,7 +68,7 @@
           "max_count": 29
         },
         {
-          "unit_types": "Air - Fighter - Bomber - Gunship - Titan",
+          "unit_types": "(Air & Mobile) - Fighter - Bomber - Gunship - Titan",
           "percent": 0.05,
           "squad": "Defense"
         },
@@ -87,7 +87,7 @@
           "max_count": 39
         },
         {
-          "unit_types": "Air - Fighter - Bomber - Gunship - Titan",
+          "unit_types": "(Air & Mobile) - Fighter - Bomber - Gunship - Titan",
           "percent": 0.05,
           "squad": "Defense"
         },
@@ -106,7 +106,25 @@
           "max_count": -1
         },
         {
-          "unit_types": "Air - Fighter - Bomber - Gunship - Titan",
+          "unit_types": "(Air & Mobile) - Fighter - Bomber - Gunship - Titan",
+          "percent": 0.05,
+          "squad": "Defense"
+        },
+        {
+          "unit_types": "Air & Fighter",
+          "max_count": -1,
+          "squad": "Escort"
+        }
+      ]
+    },
+     "BomberGunship_Attack_Infinite": {
+      "units": [
+        {
+          "unit_types": "Air & (Bomber | Gunship)",
+          "max_count": -1
+        },
+        {
+          "unit_types": "(Air & Mobile) - Fighter - Bomber - Gunship - Titan",
           "percent": 0.05,
           "squad": "Defense"
         },
