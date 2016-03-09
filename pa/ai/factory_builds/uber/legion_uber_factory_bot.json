@@ -166,7 +166,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Creeper - Vision",
+      "name": "Legion - Uber - Creeper - Minesweeper",
       "to_build": "LegionBotBasicScout",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -189,31 +189,6 @@
           {
             "test_type": "HaveSeenEnemyUnits",
             "unit_type_string0": "((Construction & Mobile) - Fabber - Commander) | (CombatFabBuild & Defense)",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Land & Scout",
-            "unit_type_string1": "Land & Mobile & Offense",
-            "compare0": "<",
-            "value0": 0.05
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Tank & Artillery & Advanced",
-            "compare0": ">",
-            "value0": 1,
             "boolean": true
           },
           {
