@@ -894,6 +894,13 @@
             "string0": "LegionFactoryAdvancedAir"
           },
           {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": "<",
+            "value0": 0.6
+          },
+          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Advanced & Factory",
             "compare0": ">=",
@@ -904,56 +911,6 @@
             "unit_type_string0": "Fabber - Orbital - Naval",
             "compare0": ">=",
             "value0": 5
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionFactoryAdvancedAir"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveEcoForAdvanced",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionFactoryAdvancedAir"
-          },
-          {
-            "test_type": "UnitCountAroundBase",
-            "unit_type_string0": "Land & Mobile & Offense",
-            "string0": "Enemy",
-            "value0": 700,
-            "compare0": "<",
-            "value1": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber - Orbital - Naval",
-            "compare0": ">=",
-            "value0": 5
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Advanced & Factory",
-            "compare0": "<",
-            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
