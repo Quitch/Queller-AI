@@ -4,7 +4,7 @@
       "name": "Uber - Air Scout Platoon",
       "to_build": "Air_Scout_1",
       "instance_count": -1,
-      "priority": 200,
+      "priority": 220,
       "build_conditions": [
         [
           {
@@ -30,7 +30,7 @@
       "name": "Uber - Fighter Scout Platoon",
       "to_build": "Fighter_Scout_1",
       "instance_count": 2,
-      "priority": 200,
+      "priority": 220,
       "build_conditions": [
         [
           {
@@ -57,6 +57,402 @@
         ]
       ],
       "task_type": "Scout"
+    },
+    {
+      "name": "Uber - Fighter Attack Platoon 1",
+      "to_build": "Fighter_Attack_1",
+      "instance_count": -1,
+      "priority": 210,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<",
+            "value0": 504
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Fighter",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsFighter",
+            "string0": "WL_Air",
+            "string1": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<",
+            "value0": 504
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Fighter",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanProvideAirSupportWithPoolUnits",
+            "string0": "fighter_attack",
+            "string1": "WL_Air",
+            "string2": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "FighterAttack"
+    },
+    {
+      "name": "Uber - Fighter Attack Platoon 4",
+      "to_build": "Fighter_Attack_4",
+      "instance_count": -1,
+      "priority": 200,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<",
+            "value0": 2016
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Fighter",
+            "compare0": ">=",
+            "value0": 4
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsFighter",
+            "string0": "WL_Air",
+            "string1": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<",
+            "value0": 2016
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Fighter",
+            "compare0": ">=",
+            "value0": 4
+          },
+          {
+            "test_type": "CanProvideAirSupportWithPoolUnits",
+            "string0": "fighter_attack",
+            "string1": "WL_Air",
+            "string2": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "FighterAttack"
+    },
+    {
+      "name": "Uber - Fighter Attack Platoon 10",
+      "to_build": "Fighter_Attack_10",
+      "instance_count": -1,
+      "priority": 190,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<",
+            "value0": 5040
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Fighter",
+            "compare0": ">=",
+            "value0": 10
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsFighter",
+            "string0": "WL_Air",
+            "string1": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<",
+            "value0": 5040
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Fighter",
+            "compare0": ">=",
+            "value0": 10
+          },
+          {
+            "test_type": "CanProvideAirSupportWithPoolUnits",
+            "string0": "fighter_attack",
+            "string1": "WL_Air",
+            "string2": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "FighterAttack"
+    },
+    {
+      "name": "Uber - Fighter Attack Platoon 20",
+      "to_build": "Fighter_Attack_20",
+      "instance_count": -1,
+      "priority": 180,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<",
+            "value0": 7560
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Fighter",
+            "compare0": ">=",
+            "value0": 20
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsFighter",
+            "string0": "WL_Air",
+            "string1": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<",
+            "value0": 7560
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Fighter",
+            "compare0": ">=",
+            "value0": 20
+          },
+          {
+            "test_type": "CanProvideAirSupportWithPoolUnits",
+            "string0": "fighter_attack",
+            "string1": "WL_Air",
+            "string2": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "FighterAttack"
+    },
+    {
+      "name": "Uber - Fighter Attack Platoon 30",
+      "to_build": "Fighter_Attack_30",
+      "instance_count": -1,
+      "priority": 170,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<",
+            "value0": 10080
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Fighter",
+            "compare0": ">=",
+            "value0": 30
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsFighter",
+            "string0": "WL_Air",
+            "string1": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<",
+            "value0": 10080
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Fighter",
+            "compare0": ">=",
+            "value0": 30
+          },
+          {
+            "test_type": "CanProvideAirSupportWithPoolUnits",
+            "string0": "fighter_attack",
+            "string1": "WL_Air",
+            "string2": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "FighterAttack"
+    },
+    {
+      "name": "Uber - Fighter Attack Platoon 40",
+      "to_build": "Fighter_Attack_40",
+      "instance_count": -1,
+      "priority": 160,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Fighter",
+            "compare0": ">=",
+            "value0": 40
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsFighter",
+            "string0": "WL_Air",
+            "string1": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Fighter",
+            "compare0": ">=",
+            "value0": 40
+          },
+          {
+            "test_type": "CanProvideAirSupportWithPoolUnits",
+            "string0": "fighter_attack",
+            "string1": "WL_Air",
+            "string2": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "FighterAttack"
     },
     {
       "name": "Uber - Bomber-Gunship Attack Platoon 1",
@@ -279,402 +675,6 @@
         ]
       ],
       "task_type": "LandAttack"
-    },
-    {
-      "name": "Uber - Fighter Attack Platoon 1",
-      "to_build": "Fighter_Attack_1",
-      "instance_count": -1,
-      "priority": 150,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 504
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsFighter",
-            "string0": "WL_Air",
-            "string1": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 504
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "CanProvideAirSupportWithPoolUnits",
-            "string0": "fighter_attack",
-            "string1": "WL_Air",
-            "string2": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "FighterAttack"
-    },
-    {
-      "name": "Uber - Fighter Attack Platoon 4",
-      "to_build": "Fighter_Attack_4",
-      "instance_count": -1,
-      "priority": 140,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 2016
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 4
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsFighter",
-            "string0": "WL_Air",
-            "string1": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 2016
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 4
-          },
-          {
-            "test_type": "CanProvideAirSupportWithPoolUnits",
-            "string0": "fighter_attack",
-            "string1": "WL_Air",
-            "string2": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "FighterAttack"
-    },
-    {
-      "name": "Uber - Fighter Attack Platoon 10",
-      "to_build": "Fighter_Attack_10",
-      "instance_count": -1,
-      "priority": 130,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 5040
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 10
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsFighter",
-            "string0": "WL_Air",
-            "string1": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 5040
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 10
-          },
-          {
-            "test_type": "CanProvideAirSupportWithPoolUnits",
-            "string0": "fighter_attack",
-            "string1": "WL_Air",
-            "string2": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "FighterAttack"
-    },
-    {
-      "name": "Uber - Fighter Attack Platoon 20",
-      "to_build": "Fighter_Attack_20",
-      "instance_count": -1,
-      "priority": 120,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 7560
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 20
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsFighter",
-            "string0": "WL_Air",
-            "string1": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 7560
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 20
-          },
-          {
-            "test_type": "CanProvideAirSupportWithPoolUnits",
-            "string0": "fighter_attack",
-            "string1": "WL_Air",
-            "string2": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "FighterAttack"
-    },
-    {
-      "name": "Uber - Fighter Attack Platoon 30",
-      "to_build": "Fighter_Attack_30",
-      "instance_count": -1,
-      "priority": 110,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 10080
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 30
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsFighter",
-            "string0": "WL_Air",
-            "string1": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 10080
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 30
-          },
-          {
-            "test_type": "CanProvideAirSupportWithPoolUnits",
-            "string0": "fighter_attack",
-            "string1": "WL_Air",
-            "string2": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "FighterAttack"
-    },
-    {
-      "name": "Uber - Fighter Attack Platoon 40",
-      "to_build": "Fighter_Attack_40",
-      "instance_count": -1,
-      "priority": 100,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 40
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsFighter",
-            "string0": "WL_Air",
-            "string1": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 40
-          },
-          {
-            "test_type": "CanProvideAirSupportWithPoolUnits",
-            "string0": "fighter_attack",
-            "string1": "WL_Air",
-            "string2": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "FighterAttack"
     }
   ]
 }
