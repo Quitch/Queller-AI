@@ -43,6 +43,47 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionFactoryBasicBot"
           }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "botonly",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicBot"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 0.9
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & AirDefense",
+            "unit_type_string1": "(Land & Mobile) - Scout - Fabber - Deconstruction - Construction",
+            "compare0": "<",
+            "value0": 0.2
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicBot"
+          }
         ]
       ],
       "placement_rules": {
@@ -95,7 +136,14 @@
             "string0": "Air",
             "string1": "AntiAir",
             "compare0": ">",
-            "value0": 1
+            "value0": 0.9
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & AirDefense",
+            "unit_type_string1": "(Land & Mobile) - Scout - Fabber - Deconstruction - Construction",
+            "compare0": "<",
+            "value0": 0.2
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -187,7 +235,7 @@
             "string0": "Air",
             "string1": "AntiAir",
             "compare0": ">",
-            "value0": 1
+            "value0": 0.9
           },
           {
             "test_type": "CanFindPlaceToBuild",
