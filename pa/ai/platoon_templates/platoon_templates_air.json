@@ -17,6 +17,7 @@
         },
         {
           "unit_types": "Air & Fighter",
+          "min_count": 0,
           "max_count": -1,
           "squad": "Fast"
         }
@@ -31,11 +32,13 @@
         },
         {
           "unit_types": "(Air & Mobile) - Fighter - Bomber - Gunship - Titan",
+          "min_count": 0,
           "percent": 0.05,
           "squad": "Defense"
         },
         {
           "unit_types": "Air & Fighter",
+          "min_count": 0,
           "max_count": -1,
           "squad": "Fast"
         }
@@ -50,11 +53,13 @@
         },
         {
           "unit_types": "(Air & Mobile) - Fighter - Bomber - Gunship - Titan",
+          "min_count": 0,
           "percent": 0.05,
           "squad": "Defense"
         },
         {
           "unit_types": "Air & Fighter",
+          "min_count": 0,
           "max_count": -1,
           "squad": "Fast"
         }
@@ -69,11 +74,13 @@
         },
         {
           "unit_types": "(Air & Mobile) - Fighter - Bomber - Gunship - Titan",
+          "min_count": 0,
           "percent": 0.05,
           "squad": "Defense"
         },
         {
           "unit_types": "Air & Fighter",
+          "min_count": 0,
           "max_count": -1,
           "squad": "Fast"
         }
@@ -88,11 +95,13 @@
         },
         {
           "unit_types": "(Air & Mobile) - Fighter - Bomber - Gunship - Titan",
+          "min_count": 0,
           "percent": 0.05,
           "squad": "Defense"
         },
         {
           "unit_types": "Air & Fighter",
+          "min_count": 0,
           "max_count": -1,
           "squad": "Fast"
         }
@@ -112,24 +121,7 @@
         },
         {
           "unit_types": "Air & Fighter",
-          "max_count": -1,
-          "squad": "Fast"
-        }
-      ]
-    },
-    "BomberGunship_Attack_Infinite": {
-      "units": [
-        {
-          "unit_types": "Air & (Bomber | Gunship)",
-          "max_count": -1
-        },
-        {
-          "unit_types": "(Air & Mobile) - Fighter - Bomber - Gunship - Titan",
-          "percent": 0.05,
-          "squad": "Defense"
-        },
-        {
-          "unit_types": "Air & Fighter",
+          "min_count": 0,
           "max_count": -1,
           "squad": "Fast"
         }
