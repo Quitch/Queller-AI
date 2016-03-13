@@ -3,7 +3,7 @@
     "Orbital_Fighter_Attack_1": {
       "units": [
         {
-          "unit_types": "Orbital & Fighter",
+          "unit_types": "Orbital & Fighter & Mobile",
           "min_count": 1,
           "max_count": -1
         }
@@ -12,7 +12,7 @@
     "Orbital_Laser_Attack_1": {
       "units": [
         {
-          "unit_types": "(LaserPlatform | (Fighter & Heavy))",
+          "unit_types": "(LaserPlatform | (Fighter & Heavy)) & Mobile",
           "min_count": 1,
           "max_count": -1
         }
@@ -21,12 +21,12 @@
     "Orbital_Laser_Attack_1_Escorted": {
       "units": [
         {
-          "unit_types": "(LaserPlatform | (Fighter & Heavy))",
+          "unit_types": "(LaserPlatform | (Fighter & Heavy)) & Mobile",
           "min_count": 1,
           "max_count": -1
         },
         {
-          "unit_types": "Orbital & Fighter",
+          "unit_types": "Orbital & Fighter & Mobile",
           "min_count": 0,
           "max_count": -1,
           "squad": "Escort"
@@ -36,7 +36,7 @@
     "Orbital_Radar_1": {
       "units": [
         {
-          "unit_types": "Orbital & (Recon | Scout)",
+          "unit_types": "Orbital & (Recon | Scout) & Mobile",
           "max_count": 1
         }
       ]

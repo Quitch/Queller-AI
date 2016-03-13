@@ -3,19 +3,19 @@
     "Land_Titan_Attack_Queller": {
       "units": [
         {
-          "unit_types": "Bot & Titan",
+          "unit_types": "Bot & Titan & Mobile",
           "min_count": 0,
           "max_count": -1,
           "squad": "Close"
         },
         {
-          "unit_types": "Tank & Titan",
+          "unit_types": "Tank & Titan & Mobile",
           "min_count": 0,
           "max_count": -1,
           "squad": "Artillery"
         },
         {
-          "unit_types": "Air & MissileDefense",
+          "unit_types": "Air & MissileDefense & Mobile",
           "min_count": 0,
           "max_count": -1,
           "squad": "Defense"
@@ -25,12 +25,12 @@
     "Air_Titan_Attack_Queller": {
       "units": [
         {
-          "unit_types": "Air & Titan",
+          "unit_types": "Air & Titan & Mobile",
           "min_count": 1,
           "max_count": -1
         },
         {
-          "unit_types": "Air & MissileDefense",
+          "unit_types": "Air & MissileDefense & Mobile",
           "min_count": 0,
           "max_count": -1,
           "squad": "Defense"
@@ -40,7 +40,7 @@
     "Orbital_Titan_Attack_Queller": {
       "units": [
         {
-          "unit_types": "Orbital & Titan",
+          "unit_types": "Orbital & Titan & Mobile",
           "min_count": 1,
           "max_count": -1
         }

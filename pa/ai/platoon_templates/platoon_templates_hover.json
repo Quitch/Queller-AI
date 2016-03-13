@@ -3,13 +3,13 @@
     "Hover_Attack_Lava_1": {
       "units": [
         {
-          "unit_types": "Hover & Naval",
+          "unit_types": "Hover & Mobile & Naval",
           "min_count": 0,
           "max_count": 3,
           "squad": "Artillery"
         },
         {
-          "unit_types": "Hover & Land",
+          "unit_types": "Hover & Mobile & Land",
           "min_count": 0,
           "max_count": 9,
           "squad": "General"
@@ -19,25 +19,25 @@
     "Hover_Attack_Lava_4": {
       "units": [
         {
-          "unit_types": "Hover & Naval",
+          "unit_types": "Hover & Mobile & Naval",
           "min_count": 0,
           "max_count": 7,
           "squad": "Artillery"
         },
         {
-          "unit_types": "Hover & Land",
+          "unit_types": "Hover & Mobile & Land",
           "min_count": 0,
           "max_count": 21,
           "squad": "General"
         },
         {
-          "unit_types": "Bot & Titan - Custom1",
+          "unit_types": "Bot & Mobile & Titan - Custom1",
           "min_count": 0,
           "max_count": 1,
           "squad": "Close"
         },
         {
-          "unit_types": "Titan & (Tank | (Bot & Custom1))",
+          "unit_types": "Titan & Mobile & (Tank | (Bot & Custom1))",
           "min_count": 0,
           "max_count": 1,
           "squad": "Artillery"
@@ -47,25 +47,25 @@
     "Hover_Attack_Lava_8": {
       "units": [
         {
-          "unit_types": "Hover & Naval",
+          "unit_types": "Hover & Mobile & Naval",
           "min_count": 0,
           "max_count": 11,
           "squad": "Artillery"
         },
         {
-          "unit_types": "Hover & Land",
+          "unit_types": "Hover & Mobile & Land",
           "min_count": 0,
           "max_count": 33,
           "squad": "General"
         },
         {
-          "unit_types": "Bot & Titan - Custom1",
+          "unit_types": "Bot & Mobile & Titan - Custom1",
           "min_count": 0,
           "max_count": 1,
           "squad": "Close"
         },
         {
-          "unit_types": "Titan & (Tank | (Bot & Custom1))",
+          "unit_types": "Titan & Mobile & (Tank | (Bot & Custom1))",
           "min_count": 0,
           "max_count": 1,
           "squad": "Artillery"
@@ -75,25 +75,25 @@
     "Hover_Attack_Lava_12": {
       "units": [
         {
-          "unit_types": "Hover & Naval",
+          "unit_types": "Hover & Mobile & Naval",
           "min_count": 0,
           "max_count": -1,
           "squad": "Artillery"
         },
         {
-          "unit_types": "Hover & Land",
+          "unit_types": "Hover & Mobile & Land",
           "min_count": 0,
           "max_count": -1,
           "squad": "General"
         },
         {
-          "unit_types": "Bot & Titan - Custom1",
+          "unit_types": "Bot & Mobile & Titan - Custom1",
           "min_count": 0,
           "max_count": -1,
           "squad": "Close"
         },
         {
-          "unit_types": "Titan & (Tank | (Bot & Custom1))",
+          "unit_types": "Titan & Mobile & (Tank | (Bot & Custom1))",
           "min_count": 0,
           "max_count": -1,
           "squad": "Artillery"
@@ -103,13 +103,13 @@
     "Hover_Attack_Water_1": {
       "units": [
         {
-          "unit_types": "Hover & Naval",
+          "unit_types": "Hover & Mobile & Naval",
           "min_count": 0,
           "max_count": 3,
           "squad": "Artillery"
         },
         {
-          "unit_types": "((Hover | Sub) & Land) - Titan",
+          "unit_types": "(Hover | Sub) & Land & Mobile - Titan",
           "min_count": 0,
           "max_count": 9,
           "squad": "General"
@@ -119,25 +119,25 @@
     "Hover_Attack_Water_4": {
       "units": [
         {
-          "unit_types": "Hover & Naval",
+          "unit_types": "Hover & Mobile & Naval",
           "min_count": 0,
           "max_count": 7,
           "squad": "Artillery"
         },
         {
-          "unit_types": "((Hover | Sub) & Land) - Titan",
+          "unit_types": "(Hover | Sub) & Land & Mobile - Titan",
           "min_count": 0,
           "max_count": 21,
           "squad": "General"
         },
         {
-          "unit_types": "Bot & Titan",
+          "unit_types": "Bot & Mobile & Titan",
           "min_count": 0,
           "max_count": 1,
           "squad": "Close"
         },
         {
-          "unit_types": "Tank & Titan",
+          "unit_types": "Tank & Mobile & Titan",
           "min_count": 0,
           "max_count": 1,
           "squad": "Artillery"
@@ -147,25 +147,25 @@
     "Hover_Attack_Water_8": {
       "units": [
         {
-          "unit_types": "Hover & Naval",
+          "unit_types": "Hover & Mobile & Naval",
           "min_count": 0,
           "max_count": 11,
           "squad": "Artillery"
         },
         {
-          "unit_types": "((Hover | Sub) & Land) - Titan",
+          "unit_types": "(Hover | Sub) & Land & Mobile - Titan",
           "min_count": 0,
           "max_count": 33,
           "squad": "General"
         },
         {
-          "unit_types": "Bot & Titan",
+          "unit_types": "Bot & Mobile & Titan",
           "min_count": 0,
           "max_count": 1,
           "squad": "Close"
         },
         {
-          "unit_types": "Tank & Titan",
+          "unit_types": "Tank & Mobile & Titan",
           "min_count": 0,
           "max_count": 1,
           "squad": "Artillery"
@@ -175,25 +175,25 @@
     "Hover_Attack_Water_12": {
       "units": [
         {
-          "unit_types": "Hover & Naval",
+          "unit_types": "Hover & Mobile & Naval",
           "min_count": 0,
           "max_count": -1,
           "squad": "Artillery"
         },
         {
-          "unit_types": "((Hover | Sub) & Land) - Titan",
+          "unit_types": "(Hover | Sub) & Land & Mobile - Titan",
           "min_count": 0,
           "max_count": -1,
           "squad": "General"
         },
         {
-          "unit_types": "Bot & Titan",
+          "unit_types": "Bot & Mobile & Titan",
           "min_count": 0,
           "max_count": -1,
           "squad": "Close"
         },
         {
-          "unit_types": "Tank & Titan",
+          "unit_types": "Tank & Mobile & Titan",
           "min_count": 0,
           "max_count": -1,
           "squad": "Artillery"

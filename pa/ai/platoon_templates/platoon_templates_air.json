@@ -3,7 +3,7 @@
     "Air_Scout_1": {
       "units": [
         {
-          "unit_types": "Air & Scout",
+          "unit_types": "Air & Mobile & Scout",
           "max_count": 1
         }
       ]
@@ -11,12 +11,12 @@
     "BomberGunship_Attack_1": {
       "units": [
         {
-          "unit_types": "Air & (Bomber | Gunship)",
+          "unit_types": "Air & Mobile & (Bomber | Gunship)",
           "min_count": 1,
           "max_count": 3
         },
         {
-          "unit_types": "Air & Fighter",
+          "unit_types": "Air & Mobile & Fighter",
           "min_count": 0,
           "max_count": -1,
           "squad": "Fast"
@@ -26,7 +26,7 @@
     "BomberGunship_Attack_4": {
       "units": [
         {
-          "unit_types": "Air & (Bomber | Gunship)",
+          "unit_types": "Air & Mobile & (Bomber | Gunship)",
           "min_count": 4,
           "max_count": 8
         },
@@ -37,7 +37,7 @@
           "squad": "Defense"
         },
         {
-          "unit_types": "Air & Fighter",
+          "unit_types": "Air & Mobile & Fighter",
           "min_count": 0,
           "max_count": -1,
           "squad": "Fast"
@@ -47,7 +47,7 @@
     "BomberGunship_Attack_10": {
       "units": [
         {
-          "unit_types": "Air & (Bomber | Gunship)",
+          "unit_types": "Air & Mobile & (Bomber | Gunship)",
           "min_count": 10,
           "max_count": 19
         },
@@ -58,7 +58,7 @@
           "squad": "Defense"
         },
         {
-          "unit_types": "Air & Fighter",
+          "unit_types": "Air & Mobile & Fighter",
           "min_count": 0,
           "max_count": -1,
           "squad": "Fast"
@@ -68,7 +68,7 @@
     "BomberGunship_Attack_20": {
       "units": [
         {
-          "unit_types": "Air & (Bomber | Gunship)",
+          "unit_types": "Air & Mobile & (Bomber | Gunship)",
           "min_count": 20,
           "max_count": 29
         },
@@ -79,7 +79,7 @@
           "squad": "Defense"
         },
         {
-          "unit_types": "Air & Fighter",
+          "unit_types": "Air & Mobile & Fighter",
           "min_count": 0,
           "max_count": -1,
           "squad": "Fast"
@@ -89,7 +89,7 @@
     "BomberGunship_Attack_30": {
       "units": [
         {
-          "unit_types": "Air & (Bomber | Gunship)",
+          "unit_types": "Air & Mobile & (Bomber | Gunship)",
           "min_count": 30,
           "max_count": 39
         },
@@ -100,7 +100,7 @@
           "squad": "Defense"
         },
         {
-          "unit_types": "Air & Fighter",
+          "unit_types": "Air & Mobile & Fighter",
           "min_count": 0,
           "max_count": -1,
           "squad": "Fast"
@@ -110,7 +110,7 @@
     "BomberGunship_Attack_40": {
       "units": [
         {
-          "unit_types": "Air & (Bomber | Gunship)",
+          "unit_types": "Air & Mobile & (Bomber | Gunship)",
           "min_count": 40,
           "max_count": -1
         },
@@ -120,7 +120,7 @@
           "squad": "Defense"
         },
         {
-          "unit_types": "Air & Fighter",
+          "unit_types": "Air & Mobile & Fighter",
           "min_count": 0,
           "max_count": -1,
           "squad": "Fast"
@@ -130,7 +130,7 @@
     "Fighter_Attack_1": {
       "units": [
         {
-          "unit_types": "Air & Fighter",
+          "unit_types": "Air & Mobile & Fighter",
           "min_count": 1,
           "max_count": 3
         }
@@ -139,7 +139,7 @@
     "Fighter_Attack_4": {
       "units": [
         {
-          "unit_types": "Air & Fighter",
+          "unit_types": "Air & Mobile & Fighter",
           "min_count": 4,
           "max_count": 9
         }
@@ -148,7 +148,7 @@
     "Fighter_Attack_10": {
       "units": [
         {
-          "unit_types": "Air & Fighter",
+          "unit_types": "Air & Mobile & Fighter",
           "min_count": 10,
           "max_count": 19
         }
@@ -157,7 +157,7 @@
     "Fighter_Attack_20": {
       "units": [
         {
-          "unit_types": "Air & Fighter",
+          "unit_types": "Air & Mobile & Fighter",
           "min_count": 20,
           "max_count": 39
         }
@@ -166,7 +166,7 @@
     "Fighter_Attack_30": {
       "units": [
         {
-          "unit_types": "Air & Fighter",
+          "unit_types": "Air & Mobile & Fighter",
           "min_count": 30,
           "max_count": 39
         }
@@ -175,7 +175,7 @@
     "Fighter_Attack_40": {
       "units": [
         {
-          "unit_types": "Air & Fighter",
+          "unit_types": "Air & Mobile & Fighter",
           "min_count": 40,
           "max_count": -1
         }
