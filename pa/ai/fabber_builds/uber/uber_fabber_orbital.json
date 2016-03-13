@@ -193,6 +193,7 @@
       "name": "Uber - Orbital Factory",
       "to_build": "OrbitalFactory",
       "instance_count": 1,
+      "shared_instance_count": "OrbitalFactory",
       "priority": 477,
       "min_num_assisters": 2,
       "max_num_assisters": 5,
@@ -212,12 +213,6 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "OrbitalFactory"
-          },
-          {
-            "test_type": "SystemThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 0
           },
           {
             "test_type": "CanFindPlaceToBuild",
