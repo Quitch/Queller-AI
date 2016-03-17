@@ -56,6 +56,10 @@
             "boolean": false
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
@@ -181,6 +185,10 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "LegionFactoryBasicBot"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicBot"
           }
         ]
       ],
@@ -272,6 +280,10 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicBot"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
             "string0": "LegionFactoryBasicBot"
           }
         ]
