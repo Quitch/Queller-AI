@@ -900,14 +900,6 @@
             "string0": "LegionFactoryAdvancedAir"
           },
           {
-            "test_type": "UnitCountAroundBase",
-            "unit_type_string0": "Land & Mobile & Offense",
-            "string0": "Enemy",
-            "value0": 800,
-            "compare0": "<",
-            "value1": 10
-          },
-          {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Air",
             "string1": "AntiAir",
@@ -925,6 +917,14 @@
             "unit_type_string0": "Fabber - Orbital - Naval",
             "compare0": ">=",
             "value0": 5
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Land & Mobile & Offense",
+            "string0": "Enemy",
+            "value0": 800,
+            "compare0": "<",
+            "value1": 10
           },
           {
             "test_type": "CanFindPlaceToBuild",
