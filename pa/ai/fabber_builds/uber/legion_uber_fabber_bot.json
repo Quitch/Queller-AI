@@ -177,14 +177,14 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicBot"
+          },
+          {
             "test_type": "UnitCountPerPlanetRadius",
             "unit_type_string0": "Bot & Factory & Basic",
             "compare0": "<",
             "value0": 400
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionFactoryBasicBot"
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -209,7 +209,7 @@
       "shared_instance_count": "BasicFactory",
       "min_num_assisters": 3,
       "max_num_assisters": 5,
-      "priority": 0,
+      "priority": 374,
       "builders": [
         "LegionCommander",
         "AnyLegionFabberBasic",
@@ -230,6 +230,21 @@
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "MetalStorageFrac",
+            "compare0": ">",
+            "value0": 0.1
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">",
+            "value0": 1
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -270,17 +285,32 @@
             "boolean": true
           },
           {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "MetalStorageFrac",
+            "compare0": ">",
+            "value0": 0.1
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicBot"
           },
           {
             "test_type": "UnitCountPerPlanetRadius",
             "unit_type_string0": "Bot & Factory & Basic",
             "compare0": "<",
             "value0": 400
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionFactoryBasicBot"
           },
           {
             "test_type": "CanFindPlaceToBuild",
