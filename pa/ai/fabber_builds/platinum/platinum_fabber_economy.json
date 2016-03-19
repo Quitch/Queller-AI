@@ -564,42 +564,6 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Platinum - Advanced Metal Extractor - Expand 2 - Area",
-      "to_build": "AdvancedMetalExtractor",
-      "instance_count": -1,
-      "min_num_assisters": 1,
-      "max_num_assisters": 3,
-      "shared_instance_count": "AdvancedMetal",
-      "priority": 2,
-      "base_sort": "FromBuilder",
-      "builders": [
-        "AnyUberAdvancedFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "CanFindMetalSpotToBuildAdvanced",
-            "boolean": true
-          }
-        ]
-      ],
-      "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      },
-      "task_type": "AreaBuild"
-    },
-    {
       "name": "Platinum - Advanced Metal Extractor",
       "to_build": "AdvancedMetalExtractor",
       "instance_count": 2,
