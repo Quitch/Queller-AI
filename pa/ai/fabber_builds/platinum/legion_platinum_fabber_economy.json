@@ -3,7 +3,7 @@
     {
       "name": "Legion - Platinum - M-42B Mass Extractor - Area",
       "to_build": "LegionEcoBasicMetalExtractor",
-      "instance_count": 4,
+      "instance_count": 3,
       "max_num_assisters": 1,
       "shared_instance_count": "BasicMetal",
       "priority": 261,
@@ -44,7 +44,7 @@
     {
       "name": "Legion - Platinum - M-42B Mass Extractor - Desire - Area",
       "to_build": "LegionEcoBasicMetalExtractor",
-      "instance_count": 4,
+      "instance_count": 3,
       "max_num_assisters": 1,
       "shared_instance_count": "BasicMetal",
       "priority": 501,
@@ -83,7 +83,7 @@
     {
       "name": "Legion - Platinum - M-42B Mass Extractor - Expand 1 - Area",
       "to_build": "LegionEcoBasicMetalExtractor",
-      "instance_count": 2,
+      "instance_count": 1,
       "max_num_assisters": 1,
       "shared_instance_count": "BasicMetal",
       "priority": 499,
@@ -119,7 +119,7 @@
     {
       "name": "Legion - Platinum - M-42B Mass Extractor - Expand 2 - Area",
       "to_build": "LegionEcoBasicMetalExtractor",
-      "instance_count": 3,
+      "instance_count": 2,
       "max_num_assisters": 1,
       "shared_instance_count": "BasicMetal",
       "priority": 259,
@@ -155,7 +155,7 @@
     {
       "name": "Legion - Platinum - M-42B Mass Extractor - Expand 3 - Area",
       "to_build": "LegionEcoBasicMetalExtractor",
-      "instance_count": 6,
+      "instance_count": 4,
       "max_num_assisters": 1,
       "priority": 2,
       "base_sort": "FromBuilder",
@@ -190,7 +190,7 @@
     {
       "name": "Legion - Platinum - M-42B Mass Extractor",
       "to_build": "LegionEcoBasicMetalExtractor",
-      "instance_count": 4,
+      "instance_count": 3,
       "max_num_assisters": 1,
       "shared_instance_count": "BasicMetal",
       "priority": 261,
@@ -230,7 +230,7 @@
     {
       "name": "Legion - Platinum - M-42B Mass Extractor - Desire",
       "to_build": "LegionEcoBasicMetalExtractor",
-      "instance_count": 4,
+      "instance_count": 3,
       "max_num_assisters": 1,
       "shared_instance_count": "BasicMetal",
       "priority": 501,
@@ -268,7 +268,7 @@
     {
       "name": "Legion - Platinum - M-42B Mass Extractor - Expand 1",
       "to_build": "LegionEcoBasicMetalExtractor",
-      "instance_count": 2,
+      "instance_count": 1,
       "max_num_assisters": 1,
       "shared_instance_count": "BasicMetal",
       "priority": 499,
@@ -303,7 +303,7 @@
     {
       "name": "Legion - Platinum - M-42B Mass Extractor - Expand 2",
       "to_build": "LegionEcoBasicMetalExtractor",
-      "instance_count": 3,
+      "instance_count": 2,
       "max_num_assisters": 1,
       "shared_instance_count": "BasicMetal",
       "priority": 259,
@@ -338,7 +338,7 @@
     {
       "name": "Legion - Platinum - M-42B Mass Extractor - Expand 3",
       "to_build": "LegionEcoBasicMetalExtractor",
-      "instance_count": 6,
+      "instance_count": 4,
       "max_num_assisters": 1,
       "shared_instance_count": "BasicMetal",
       "priority": 2,
@@ -371,16 +371,14 @@
       }
     },
     {
-      "name": "Legion - Platinum - E-32B Power Catalyst - Fast Builders",
+      "name": "Legion - Platinum - E-32B Power Catalyst",
       "to_build": "LegionEcoBasicEnergyPlant",
       "instance_count": 1,
       "max_num_assisters": 1,
       "shared_instance_count": "BasicEnergy",
-      "cross_planet_shared_count": true,
-      "priority": 262,
+      "priority": 500,
       "builders": [
-        "LegionVehicleBasicFabber",
-        "LegionNavalBasicFabber"
+        "AnyLegionFabberBasic"
       ],
       "build_conditions": [
         [
@@ -400,9 +398,9 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "Fabber & Advanced",
+            "unit_type_string0": "(Fabber & Advanced) | (EnergyProduction & Advanced)",
             "compare0": "<",
-            "value0": 2
+            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -428,88 +426,9 @@
           },
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "Fabber & Advanced",
-            "compare0": "<",
-            "value0": 2
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionEcoBasicEnergyPlant"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 6,
-        "placement_type": "FromBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
-      "name": "Legion - Platinum - E-32B Power Catalyst - Slow Builders",
-      "to_build": "LegionEcoBasicEnergyPlant",
-      "instance_count": 1,
-      "max_num_assisters": 1,
-      "shared_instance_count": "BasicEnergy",
-      "cross_planet_shared_count": true,
-      "priority": 260,
-      "builders": [
-        "LegionAirBasicFabber",
-        "LegionBotBasicFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "DesireEnergy"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber & Basic - Orbital",
-            "compare0": ">",
-            "value0": 2
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Fabber & Advanced",
-            "compare0": "<",
-            "value0": 2
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionEcoBasicEnergyPlant"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "PotentialEnergyEfficiency",
+            "unit_type_string0": "(Fabber & Advanced) | (EnergyProduction & Advanced)",
             "compare0": "<",
             "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber & Basic - Orbital",
-            "compare0": ">",
-            "value0": 2
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Fabber & Advanced",
-            "compare0": "<",
-            "value0": 2
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -531,7 +450,7 @@
     {
       "name": "Legion - Platinum - M-48A Advanced Mass Extractor - Area",
       "to_build": "LegionEcoAdvancedMetalExtractor",
-      "instance_count": 3,
+      "instance_count": 2,
       "min_num_assisters": 1,
       "max_num_assisters": 3,
       "shared_instance_count": "AdvancedMetal",
@@ -615,7 +534,43 @@
       "min_num_assisters": 1,
       "max_num_assisters": 3,
       "shared_instance_count": "AdvancedMetal",
-      "priority": 508,
+      "priority": 509,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyLegionFabberAdvanced"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildAdvanced",
+            "boolean": true
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "task_type": "AreaBuild"
+    },
+    {
+      "name": "Legion - Platinum - M-48A Advanced Mass Extractor - Expand 2 - Area",
+      "to_build": "LegionEcoAdvancedMetalExtractor",
+      "instance_count": 3,
+      "min_num_assisters": 1,
+      "max_num_assisters": 3,
+      "shared_instance_count": "AdvancedMetal",
+      "priority": 2,
       "base_sort": "FromBuilder",
       "builders": [
         "AnyLegionFabberAdvanced"
@@ -688,8 +643,8 @@
       "name": "Legion - Platinum - M-48A Advanced Mass Extractor - Desire",
       "to_build": "LegionEcoAdvancedMetalExtractor",
       "instance_count": 2,
-      "min_num_assisters": 1,
-      "max_num_assisters": 3,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
       "shared_instance_count": "AdvancedMetal",
       "priority": 510,
       "base_sort": "FromBuilder",
@@ -729,7 +684,7 @@
       "min_num_assisters": 1,
       "max_num_assisters": 3,
       "shared_instance_count": "AdvancedMetal",
-      "priority": 508,
+      "priority": 509,
       "base_sort": "FromBuilder",
       "builders": [
         "AnyLegionFabberAdvanced"
@@ -758,17 +713,16 @@
       }
     },
     {
-      "name": "Legion - Platinum - Black Hole Generator - Fast Builders",
-      "to_build": "LegionEcoAdvancedEnergyPlant",
-      "instance_count": 2,
-      "min_num_assisters": 3,
-      "max_num_assisters": 5,
-      "shared_instance_count": "AdvancedEnergy",
-      "cross_planet_shared_count": true,
-      "priority": 271,
+      "name": "Legion - Platinum - M-48A Advanced Mass Extractor - Expand 2",
+      "to_build": "LegionEcoAdvancedMetalExtractor",
+      "instance_count": 3,
+      "min_num_assisters": 1,
+      "max_num_assisters": 3,
+      "shared_instance_count": "AdvancedMetal",
+      "priority": 2,
+      "base_sort": "FromBuilder",
       "builders": [
-        "LegionNavalAdvancedFabber",
-        "LegionVehicleAdvancedFabber"
+        "AnyLegionFabberAdvanced"
       ],
       "build_conditions": [
         [
@@ -778,19 +732,13 @@
             "boolean": true
           },
           {
-            "test_type": "PotentialEnergyEfficiency",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionEcoAdvancedEnergyPlant"
+            "test_type": "CanFindMetalSpotToBuildAdvanced",
+            "boolean": true
           }
         ]
       ],
       "placement_rules": {
-        "buffer": 30,
-        "placement_type": "FromBaseCenter",
+        "placement_type": "FromMainBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -800,17 +748,15 @@
       }
     },
     {
-      "name": "Legion - Platinum - Black Hole Generator - Slow Builders",
+      "name": "Legion - Platinum - Black Hole Generator",
       "to_build": "LegionEcoAdvancedEnergyPlant",
-      "instance_count": 2,
+      "instance_count": 1,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
       "shared_instance_count": "AdvancedEnergy",
-      "cross_planet_shared_count": true,
       "priority": 269,
       "builders": [
-        "LegionAirAdvancedFabber",
-        "LegionBotAdvancedFabber"
+        "AnyLegionFabberAdvanced"
       ],
       "build_conditions": [
         [
@@ -831,7 +777,7 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 30,
+        "buffer": 20,
         "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
@@ -844,15 +790,13 @@
     {
       "name": "Legion - Platinum - Black Hole Generator - Desire",
       "to_build": "LegionEcoAdvancedEnergyPlant",
-      "instance_count": 2,
+      "instance_count": 1,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
       "shared_instance_count": "AdvancedEnergy",
-      "cross_planet_shared_count": true,
-      "priority": 511,
+      "priority": 508,
       "builders": [
-        "LegionNavalAdvancedFabber",
-        "LegionVehicleAdvancedFabber"
+        "AnyLegionFabberAdvanced"
       ],
       "build_conditions": [
         [
@@ -871,47 +815,7 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 30,
-        "placement_type": "FromBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
-      "name": "Legion - Platinum - Black Hole Generator - Desire - Slow Builders",
-      "to_build": "LegionEcoAdvancedEnergyPlant",
-      "instance_count": 2,
-      "min_num_assisters": 3,
-      "max_num_assisters": 5,
-      "shared_instance_count": "AdvancedEnergy",
-      "cross_planet_shared_count": true,
-      "priority": 509,
-      "builders": [
-        "LegionAirAdvancedFabber",
-        "LegionBotAdvancedFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "DesireEnergy"
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionEcoAdvancedEnergyPlant"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 30,
+        "buffer": 20,
         "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
@@ -971,7 +875,7 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 50
+        "buffer": 30
       }
     },
     {
@@ -1028,15 +932,14 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 50
+        "buffer": 30
       }
     },
     {
       "name": "Legion - Platinum - Omni Silo",
       "to_build": "LegionEcoBasicStorage",
       "instance_count": 1,
-      "cross_planet_shared_count": true,
-      "priority": 89,
+      "priority": 140,
       "builders": [
         "AnyLegionFabberBasic",
         "AnyLegionFabberAdvanced"
@@ -1049,14 +952,9 @@
             "boolean": true
           },
           {
-            "test_type": "CurrentEnergyEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "PotentialEnergyEfficiency",
-            "compare0": ">",
-            "value0": 1
+            "test_type": "EnergyStorageToProductionRatio",
+            "compare0": "<",
+            "value0": 4
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -1073,14 +971,9 @@
             "boolean": true
           },
           {
-            "test_type": "CurrentMetalEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "PotentialMetalEfficiency",
-            "compare0": ">",
-            "value0": 1
+            "test_type": "MetalStorageToProductionRatio",
+            "compare0": "<",
+            "value0": 5
           },
           {
             "test_type": "CanAffordBuildDemand"
