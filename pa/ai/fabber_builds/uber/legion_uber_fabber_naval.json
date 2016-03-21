@@ -96,6 +96,72 @@
         [
           {
             "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicNavalFactory"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Naval",
+            "string1": "Naval",
+            "compare0": ">",
+            "value0": 0.5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicNavalFactory"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Sub",
+            "string1": "Naval",
+            "compare0": ">",
+            "value0": 0.5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
           },
@@ -117,7 +183,7 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "AntiSub",
-            "string1": "Sub",
+            "string1": "Naval",
             "compare0": ">",
             "value0": 0.5
           },
@@ -272,6 +338,72 @@
         [
           {
             "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicNavalFactory"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Naval",
+            "string1": "Naval",
+            "compare0": ">",
+            "value0": 0.5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicNavalFactory"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Sub",
+            "string1": "Naval",
+            "compare0": ">",
+            "value0": 0.5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
           },
@@ -293,7 +425,7 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "AntiSub",
-            "string1": "Sub",
+            "string1": "Naval",
             "compare0": ">",
             "value0": 0.5
           },
