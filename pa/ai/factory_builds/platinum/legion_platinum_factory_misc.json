@@ -6,31 +6,6 @@
       "instance_count": -1,
       "min_num_assisters": 3,
       "max_num_assisters": 12,
-      "priority": 152,
-      "builders": [
-        "LegionDefenseAdvancedNukeSilo"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "FactoryHasOpenSlot"
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Legion - Platinum - Supernova Strategic Warhead - Too Expensive",
-      "to_build": "LegionDefenseAdvancedNuke",
-      "instance_count": -1,
-      "max_num_assisters": 12,
       "priority": 151,
       "builders": [
         "LegionDefenseAdvancedNukeSilo"
@@ -51,7 +26,7 @@
     {
       "name": "Legion - Platinum - Supernova Strategic Warhead - No Antis",
       "to_build": "LegionDefenseAdvancedNuke",
-      "instance_count": -1,
+      "instance_count": 2,
       "min_num_assisters": 8,
       "max_num_assisters": 12,
       "priority": 478,
@@ -64,9 +39,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "platinum",
             "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "FactoryHasOpenSlot"
@@ -85,31 +57,6 @@
       "to_build": "LegionDefenseAdvancedAntiNuke",
       "instance_count": -1,
       "min_num_assisters": 3,
-      "max_num_assisters": 12,
-      "priority": 152,
-      "builders": [
-        "LegionDefenseAdvancedAntiNukeSilo"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "FactoryHasOpenSlot"
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Legion - Platinum - Interceptor - Too Expensive",
-      "to_build": "LegionDefenseAdvancedAntiNuke",
-      "instance_count": -1,
       "max_num_assisters": 12,
       "priority": 151,
       "builders": [
@@ -150,9 +97,6 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
             "test_type": "SystemThreat",
             "string0": "Nuke",
             "compare0": ">",
@@ -172,9 +116,6 @@
           {
             "test_type": "HaveHadANukeEvent",
             "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
           }
         ]
       ]

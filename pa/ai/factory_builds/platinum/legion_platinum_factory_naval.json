@@ -104,10 +104,6 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
             "test_type": "BaseThreatened",
             "boolean": false
           },
@@ -119,13 +115,13 @@
             "test_type": "UnitCountPerPlanetRadius",
             "unit_type_string0": "Air & Scout",
             "compare0": "<",
-            "value0": 250
+            "value0": 300
           },
           {
             "test_type": "UnitCountPerPlanetRadius",
             "unit_type_string0": "Naval & Scout",
             "compare0": "<",
-            "value0": 250
+            "value0": 300
           }
         ],
         [
@@ -164,38 +160,14 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyOrbitalPresenceOnPlanet",
-            "boolean": false
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Sub",
-            "string1": "AntiSub",
             "compare0": ">",
-            "value0": 0.6
+            "value0": 0
           }
         ],
         [
@@ -325,6 +297,29 @@
             "boolean": true
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemyOrbitalPresenceOnPlanet",
+            "boolean": false
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
@@ -337,13 +332,6 @@
             "string0": "Naval",
             "compare0": ">",
             "value0": 0
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Sub",
-            "string1": "AntiSub",
-            "compare0": "<",
-            "value0": 0.8
           }
         ]
       ]
@@ -352,7 +340,7 @@
       "name": "Legion - Platinum - Advanced Fabrication Barge",
       "to_build": "LegionNavalAdvancedFabber",
       "instance_count": 1,
-      "max_num_assisters": 15,
+      "max_num_assisters": 10,
       "priority": 200,
       "builders": [
         "LegionFactoryAdvancedNaval"
@@ -429,7 +417,7 @@
       "name": "Legion - Platinum - Epoch",
       "to_build": "LegionNavalAdvancedBattleship",
       "instance_count": -1,
-      "max_num_assisters": 15,
+      "max_num_assisters": 10,
       "priority": 199,
       "builders": [
         "LegionFactoryAdvancedNaval"
@@ -454,13 +442,6 @@
             "string0": "Naval",
             "compare0": ">",
             "value0": 0
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Sub",
-            "string1": "AntiSub",
-            "compare0": "<=",
-            "value0": 0.8
           }
         ]
       ]
@@ -469,7 +450,7 @@
       "name": "Legion - Platinum - Crossbow",
       "to_build": "LegionNavalAdvancedTactical",
       "instance_count": 1,
-      "max_num_assisters": 15,
+      "max_num_assisters": 10,
       "priority": 199,
       "builders": [
         "LegionFactoryAdvancedNaval"
@@ -502,35 +483,6 @@
             "compare0": "<",
             "value0": 0.1
           }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Air",
-            "string1": "AntiAir",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Naval & Mobile & AirDefense",
-            "unit_type_string1": "(Naval & Mobile) - Fabber - Hover",
-            "compare0": "<",
-            "value0": 0.2
-          }
         ]
       ]
     },
@@ -538,7 +490,7 @@
       "name": "Legion - Platinum - Turtle",
       "to_build": "LegionNavalAdvancedDestroyer",
       "instance_count": 1,
-      "max_num_assisters": 15,
+      "max_num_assisters": 10,
       "priority": 199,
       "builders": [
         "LegionFactoryAdvancedNaval"
@@ -565,11 +517,10 @@
             "value0": 0
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Sub",
-            "string1": "AntiSub",
             "compare0": ">",
-            "value0": 0.6
+            "value0": 0
           }
         ]
       ]

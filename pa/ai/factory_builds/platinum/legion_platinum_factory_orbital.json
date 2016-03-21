@@ -1,13 +1,13 @@
 {
   "build_list": [
     {
-      "name": "Uber - Orbital Fabber",
-      "to_build": "OrbitalFabber",
+      "name": "Legion - Platinum - Fabrication Starship",
+      "to_build": "LegionOrbitalBasicFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
       "priority": 199,
       "builders": [
-        "AnyUberOrbitalFactory"
+        "AnyLegionFactoryOrbital"
       ],
       "build_conditions": [
         [
@@ -36,8 +36,12 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
+          {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "OrbitalFabber"
+            "string0": "LegionOrbitalBasicFabber"
           },
           {
             "test_type": "BaseThreat",
@@ -65,7 +69,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "OrbitalFabber"
+            "string0": "LegionOrbitalBasicFabber"
           },
           {
             "test_type": "BaseThreat",
@@ -77,13 +81,13 @@
       ]
     },
     {
-      "name": "Uber - ARKYD - This Planet",
-      "to_build": "BasicRadarSattelite",
+      "name": "Legion - Platinum - Sputnik - This Planet",
+      "to_build": "LegionOrbitalBasicRadar",
       "instance_count": 1,
       "max_num_assisters": 10,
       "priority": 99,
       "builders": [
-        "AnyUberOrbitalFactory"
+        "AnyLegionFactoryOrbital"
       ],
       "build_conditions": [
         [
@@ -98,7 +102,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicRadarSattelite"
+            "string0": "LegionOrbitalBasicRadar"
           },
           {
             "test_type": "BaseThreat",
@@ -110,15 +114,15 @@
       ]
     },
     {
-      "name": "Uber - ARKYD - Other Planet",
-      "to_build": "BasicRadarSattelite",
+      "name": "Legion - Platinum - Sputnik - Other Planet",
+      "to_build": "LegionOrbitalBasicRadar",
       "instance_count": 1,
       "shared_instance_count": "ReconAssistance",
       "cross_planet_shared_count": true,
       "max_num_assisters": 10,
-      "priority": 100,
+      "priority": 99,
       "builders": [
-        "AnyUberOrbitalFactory"
+        "AnyLegionFactoryOrbital"
       ],
       "build_conditions": [
         [
@@ -133,7 +137,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicRadarSattelite"
+            "string0": "LegionOrbitalBasicRadar"
           },
           {
             "test_type": "BaseThreat",
@@ -145,12 +149,12 @@
       ]
     },
     {
-      "name": "Uber - Hermes - This Planet",
-      "to_build": "OrbitalProbe",
+      "name": "Legion - Platinum - Wraith - This Planet",
+      "to_build": "LegionOrbitalBasicScout",
       "instance_count": 1,
-      "priority": 98,
+      "priority": 99,
       "builders": [
-        "AnyUberOrbitalFactory"
+        "AnyLegionFactoryOrbital"
       ],
       "build_conditions": [
         [
@@ -173,14 +177,14 @@
       ]
     },
     {
-      "name": "Uber - Hermes - Other Planet",
-      "to_build": "OrbitalProbe",
+      "name": "Legion - Platinum - Wraith - Other Planet",
+      "to_build": "LegionOrbitalBasicScout",
       "instance_count": 1,
       "shared_instance_count": "ReconAssistance",
       "cross_planet_shared_count": true,
-      "priority": 98,
+      "priority": 99,
       "builders": [
-        "AnyUberOrbitalFactory"
+        "AnyLegionFactoryOrbital"
       ],
       "build_conditions": [
         [
@@ -195,7 +199,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "OrbitalProbe"
+            "string0": "LegionOrbitalBasicScout"
           },
           {
             "test_type": "BaseThreat",
@@ -207,13 +211,13 @@
       ]
     },
     {
-      "name": "Uber - Avenger - Local Threat",
-      "to_build": "OrbitalFighter",
+      "name": "Legion - Platinum - Aggressor - Local Threat",
+      "to_build": "LegionOrbitalBasicFighter",
       "instance_count": -1,
       "max_num_assisters": 10,
       "priority": 100,
       "builders": [
-        "AnyUberOrbitalFactory"
+        "AnyLegionFactoryOrbital"
       ],
       "build_conditions": [
         [
@@ -232,13 +236,13 @@
       ]
     },
     {
-      "name": "Uber - Avenger - System Threat",
-      "to_build": "OrbitalFighter",
+      "name": "Legion - Platinum - Aggressor - System Threat",
+      "to_build": "LegionOrbitalBasicFighter",
       "instance_count": -1,
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "AnyUberOrbitalFactory"
+        "AnyLegionFactoryOrbital"
       ],
       "build_conditions": [
         [
@@ -257,14 +261,14 @@
       ]
     },
     {
-      "name": "Uber - Astraeus - Commander Evac",
-      "to_build": "OrbitalLander",
+      "name": "Legion - Platinum - Chariot - Commander Evac",
+      "to_build": "LegionOrbitalBasicTransport",
       "instance_count": 1,
       "min_num_assisters": 8,
       "max_num_assisters": 20,
       "priority": 102,
       "builders": [
-        "AnyUberOrbitalFactory"
+        "AnyLegionFactoryOrbital"
       ],
       "build_conditions": [
         [
@@ -315,13 +319,13 @@
       ]
     },
     {
-      "name": "Uber - Astraeus",
-      "to_build": "OrbitalLander",
+      "name": "Legion - Platinum - Chariot",
+      "to_build": "LegionOrbitalBasicTransport",
       "instance_count": 1,
       "max_num_assisters": 10,
       "priority": 101,
       "builders": [
-        "AnyUberOrbitalFactory"
+        "AnyLegionFactoryOrbital"
       ],
       "build_conditions": [
         [
@@ -364,130 +368,15 @@
       ]
     },
     {
-      "name": "Uber - Astraeus - Unsafe",
-      "to_build": "OrbitalLander",
-      "instance_count": 1,
-      "max_num_assisters": 10,
-      "priority": 99,
-      "builders": [
-        "AnyUberOrbitalFactory"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetWithoutPresence",
-            "boolean": true
-          },
-          {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Orbital & Transport",
-            "compare0": "<",
-            "value0": 1
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Uber - Solar Array",
-      "to_build": "SolarArray",
-      "instance_count": 1,
-      "max_num_assisters": 15,
-      "priority": 196,
-      "builders": [
-        "OrbitalFactory"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "PotentialEnergyEfficiency",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Orbital",
-            "string1": "AntiOrbital",
-            "compare0": "<",
-            "value0": 1
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "DesireEnergy"
-          },
-          {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Orbital",
-            "string1": "AntiOrbital",
-            "compare0": "<",
-            "value0": 1
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Uber - SXX-1304 Laser Platform",
-      "to_build": "OrbitalDeathLaser",
+      "name": "Legion - Platinum - Black Knight",
+      "to_build": "LegionOrbitalAdvancedLaser",
       "instance_count": -1,
-      "max_num_assisters": 15,
+      "max_num_assisters": 10,
       "priority": 195,
       "builders": [
-        "OrbitalFactory"
+        "LegionFactoryAdvancedOrbital"
       ],
       "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Orbital",
-            "string1": "AntiOrbital",
-            "compare0": "<",
-            "value0": 1
-          }
-        ],
         [
           {
             "test_type": "HasPersonalityTag",
@@ -511,13 +400,13 @@
       ]
     },
     {
-      "name": "Uber - Advanced Radar Satellite - This Planet",
-      "to_build": "AdvancedRadarSattelite",
+      "name": "Legion - Platinum - Advanced Radar Satellite - This Planet",
+      "to_build": "LegionOrbitalAdvancedRadar",
       "instance_count": 1,
-      "max_num_assisters": 15,
+      "max_num_assisters": 10,
       "priority": 198,
       "builders": [
-        "OrbitalFactory"
+        "LegionFactoryAdvancedOrbital"
       ],
       "build_conditions": [
         [
@@ -532,7 +421,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedRadarSattelite"
+            "string0": "LegionOrbitalAdvancedRadar"
           },
           {
             "test_type": "BaseThreat",
@@ -544,15 +433,15 @@
       ]
     },
     {
-      "name": "Uber - Advanced Radar Satellite - Other Planet",
-      "to_build": "AdvancedRadarSattelite",
+      "name": "Legion - Platinum - Advanced Radar Satellite - Other Planet",
+      "to_build": "LegionOrbitalAdvancedRadar",
       "instance_count": 1,
       "shared_instance_count": "ReconAssistance",
       "cross_planet_shared_count": true,
-      "max_num_assisters": 15,
+      "max_num_assisters": 10,
       "priority": 198,
       "builders": [
-        "OrbitalFactory"
+        "LegionFactoryAdvancedOrbital"
       ],
       "build_conditions": [
         [
@@ -567,7 +456,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedRadarSattelite"
+            "string0": "LegionOrbitalAdvancedRadar"
           },
           {
             "test_type": "BaseThreat",
@@ -579,13 +468,13 @@
       ]
     },
     {
-      "name": "Uber - Artemis",
-      "to_build": "OrbitalRailgun",
+      "name": "Legion - Platinum - Excalibur",
+      "to_build": "LegionOrbitalAdvancedSniper",
       "instance_count": -1,
       "max_num_assisters": 5,
       "priority": 195,
       "builders": [
-        "OrbitalFactory"
+        "LegionFactoryAdvancedOrbital"
       ],
       "build_conditions": [
         [
@@ -604,13 +493,13 @@
       ]
     },
     {
-      "name": "Uber - Omega",
-      "to_build": "OrbitalBattleShip",
+      "name": "Legion - Platinum - Imperator",
+      "to_build": "LegionOrbitalAdvancedBattleship",
       "instance_count": -1,
       "max_num_assisters": 5,
       "priority": 195,
       "builders": [
-        "OrbitalFactory"
+        "LegionFactoryAdvancedOrbital"
       ],
       "build_conditions": [
         [
@@ -620,14 +509,12 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetThreat",
-            "string0": "Orbital",
-            "compare0": "==",
-            "value0": 0
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
           },
           {
             "test_type": "SystemThreat",
-            "string0": "AntiOrbital",
+            "string0": "Orbital",
             "compare0": ">",
             "value0": 0
           },
@@ -636,7 +523,7 @@
             "unit_type_string0": "Orbital & Fighter & Heavy",
             "unit_type_string1": "Orbital & Fighter",
             "compare0": "<",
-            "value0": 0.1
+            "value0": 0.2
           }
         ]
       ]
