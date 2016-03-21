@@ -7,9 +7,10 @@
       "min_num_assisters": 3,
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
-      "priority": 361,
+      "priority": 470,
       "builders": [
-        "LegionBotAdvancedFabber"
+        "LegionBotAdvancedFabber",
+        "LegionOrbitalBasicFabber"
       ],
       "build_conditions": [
         [
@@ -33,7 +34,7 @@
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiSurface",
             "compare0": ">",
-            "value0": 11200
+            "value0": 5600
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -65,9 +66,10 @@
       "min_num_assisters": 3,
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
-      "priority": 361,
+      "priority": 470,
       "builders": [
-        "LegionVehicleAdvancedFabber"
+        "LegionVehicleAdvancedFabber",
+        "LegionOrbitalBasicFabber"
       ],
       "build_conditions": [
         [
@@ -91,7 +93,7 @@
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiSurface",
             "compare0": ">",
-            "value0": 11200
+            "value0": 5600
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -123,9 +125,10 @@
       "min_num_assisters": 3,
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
-      "priority": 361,
+      "priority": 470,
       "builders": [
-        "LegionAirAdvancedFabber"
+        "LegionAirAdvancedFabber",
+        "LegionOrbitalBasicFabber"
       ],
       "build_conditions": [
         [
@@ -149,47 +152,13 @@
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiSurface",
             "compare0": ">",
-            "value0": 11200
+            "value0": 5600
           },
           {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory - Orbital",
             "compare0": ">=",
             "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionTitanAdvancedAir"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsRespawnable",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & Titan",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber",
-            "compare0": ">",
-            "value0": 5
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -213,7 +182,7 @@
       "min_num_assisters": 3,
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
-      "priority": 361,
+      "priority": 470,
       "builders": [
         "LegionOrbitalBasicFabber"
       ],
@@ -297,7 +266,7 @@
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiSurface",
             "compare0": ">",
-            "value0": 22400
+            "value0": 11200
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",

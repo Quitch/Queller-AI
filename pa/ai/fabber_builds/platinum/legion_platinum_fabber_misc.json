@@ -49,13 +49,14 @@
       "name": "Legion - Platinum - Teleporter",
       "to_build": "LegionStructureBasicTeleporter",
       "instance_count": 1,
-      "priority": 602,
+      "priority": 600,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
       "builders": [
         "LegionCommander",
         "AnyLegionFabberBasic",
-        "AnyLegionFabberAdvanced"
+        "AnyLegionFabberAdvanced",
+        "LegionOrbitalBasicFabber"
       ],
       "build_conditions": [
         [
@@ -99,7 +100,8 @@
         "LegionBotBasicFabber",
         "LegionVehicleBasicFabber",
         "LegionBotAdvancedFabber",
-        "LegionVehicleAdvancedFabber"
+        "LegionVehicleAdvancedFabber",
+        "LegionBotAdvancedSupportCommander"
       ],
       "build_conditions": [
         [
@@ -138,7 +140,8 @@
         "LegionAirBasicFabber",
         "LegionBotAdvancedFabber",
         "LegionVehicleAdvancedFabber",
-        "LegionAirAdvancedFabber"
+        "LegionAirAdvancedFabber",
+        "LegionBotAdvancedSupportCommander"
       ],
       "build_conditions": [
         [
@@ -203,33 +206,8 @@
             "boolean": true
           },
           {
-            "test_type": "PresenceOnOtherPlanet",
-            "boolean": false
-          },
-          {
             "test_type": "PlanetIsGasGiant",
             "boolean": false
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetOrGasGiantWithoutPresence",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsGasGiant",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter",
-            "compare0": ">=",
-            "value0": 1
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -249,129 +227,14 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetIsGasGiant",
-            "boolean": false
-          },
-          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Structure & Teleporter",
             "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInCelestialTransit",
-            "unit_type_string0": "Fabber & Orbital",
-            "compare0": "<",
             "value0": 1
           }
         ]
       ],
       "task_type": "OrbitalFabberMoveToPlanet"
-    },
-    {
-      "name": "Legion - Platinum - Move Orbital Fabber To Safe Planet",
-      "instance_count": 1,
-      "priority": 801,
-      "builders": [
-        "LegionOrbitalBasicFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "SafePlanetOrGasGiantWithoutPresence",
-            "boolean": true
-          },
-          {
-            "test_type": "PresenceOnOtherPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "PlanetIsGasGiant",
-            "boolean": false
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "SafePlanetOrGasGiantWithoutPresence",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsGasGiant",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Orbital & Factory",
-            "compare0": ">=",
-            "value0": 1
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "SafePlanetOrGasGiantWithoutPresence",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsGasGiant",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Orbital & Factory",
-            "compare0": ">=",
-            "value0": 1
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "SafePlanetOrGasGiantWithoutPresence",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsGasGiant",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInCelestialTransit",
-            "unit_type_string0": "Fabber & Orbital",
-            "compare0": "<",
-            "value0": 1
-          }
-        ]
-      ],
-      "task_type": "OrbitalFabberMoveToSafePlanet"
     }
   ]
 }

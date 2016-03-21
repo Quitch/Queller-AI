@@ -6,7 +6,7 @@
       "instance_count": 1,
       "shared_instance_count": "LegionFactoryBasicNaval",
       "max_num_assisters": 2,
-      "priority": 377,
+      "priority": 376,
       "builders": [
         "LegionCommander"
       ],
@@ -91,6 +91,39 @@
           {
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionFactoryBasicNaval"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicNavalFactory"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Naval",
+            "string1": "Naval",
+            "compare0": ">",
+            "value0": 0.5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalFactory"
           }
         ],
         [
@@ -288,6 +321,39 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicNavalFactory"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Naval",
+            "string1": "Naval",
+            "compare0": ">",
+            "value0": 0.5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
             "string0": "LegionFactoryBasicNaval"
           },
           {
@@ -349,7 +415,7 @@
     {
       "name": "Legion - Platinum - Ship Foundry - Excess eco",
       "to_build": "LegionFactoryBasicNaval",
-      "instance_count": -1,
+      "instance_count": 1,
       "shared_instance_count": "BasicFactory",
       "priority": 374,
       "min_num_assisters": 3,
@@ -375,11 +441,6 @@
             "test_type": "CurrentMetalEfficiency",
             "compare0": ">",
             "value0": 1
-          },
-          {
-            "test_type": "MetalStorageFrac",
-            "compare0": ">",
-            "value0": 0.2
           },
           {
             "test_type": "CurrentEnergyEfficiency",
@@ -422,11 +483,6 @@
             "test_type": "CurrentMetalEfficiency",
             "compare0": ">",
             "value0": 1
-          },
-          {
-            "test_type": "MetalStorageFrac",
-            "compare0": ">",
-            "value0": 0.2
           },
           {
             "test_type": "CurrentEnergyEfficiency",
@@ -471,9 +527,47 @@
             "value0": 1
           },
           {
-            "test_type": "MetalStorageFrac",
+            "test_type": "CurrentEnergyEfficiency",
             "compare0": ">",
-            "value0": 0.2
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicNavalFactory"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Naval",
+            "string1": "Naval",
+            "compare0": ">",
+            "value0": 0.5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
           },
           {
             "test_type": "CurrentEnergyEfficiency",
@@ -517,11 +611,6 @@
             "test_type": "CurrentMetalEfficiency",
             "compare0": ">",
             "value0": 1
-          },
-          {
-            "test_type": "MetalStorageFrac",
-            "compare0": ">",
-            "value0": 0.2
           },
           {
             "test_type": "CurrentEnergyEfficiency",
@@ -602,8 +691,15 @@
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Naval",
+            "string1": "Naval",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "AntiSub",
-            "string1": "Sub",
+            "string1": "Naval",
             "compare0": "<",
             "value0": 1
           },
@@ -687,7 +783,7 @@
             "test_type": "UnitCountAroundBase",
             "unit_type_string0": "Naval & Mobile & Offense",
             "string0": "Enemy",
-            "value0": 600,
+            "value0": 700,
             "compare0": "<",
             "value1": 1
           },

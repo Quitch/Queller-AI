@@ -19,11 +19,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "turtle",
-            "boolean": false
-          },
-          {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
@@ -54,51 +49,13 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionDefenseBasicArtillery"
           }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Artillery & Basic",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
-            "compare0": ">=",
-            "value0": 5
-          },
-          {
-            "test_type": "UnitCountAroundBase",
-            "unit_type_string0": "Commander",
-            "string0": "Enemy",
-            "value0": 260,
-            "compare0": ">=",
-            "value1": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionDefenseBasicArtillery"
-          }
         ]
       ],
       "placement_rules": {
         "placement_type": "FromMainBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "(Structure - MetalProduction) | Commander",
+            "unit_type_string": "Structure - MetalProduction",
             "alliance": "Enemy",
             "compare_type": ">=",
             "range": 200,
@@ -131,11 +88,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "turtle",
-            "boolean": false
-          },
-          {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
@@ -166,49 +118,12 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionDefenseAdvancedArtillery"
           }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromMainBaseCenter",
-        "unit_count_rules": [
-          {
-            "unit_type_string": "(Structure - MetalProduction) | Commander",
-            "alliance": "Enemy",
-            "compare_type": ">=",
-            "range": 600,
-            "count": 10
-          }
         ],
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 30,
-          "value": 50
-        }
-      }
-    },
-    {
-      "name": "Legion - Platinum - Gustav - Comm Snipe",
-      "to_build": "LegionDefenseAdvancedArtillery",
-      "instance_count": 1,
-      "min_num_assisters": 3,
-      "max_num_assisters": 6,
-      "priority": 360,
-      "builders": [
-        "AnyLegionFabberAdvanced"
-      ],
-      "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
             "string0": "platinum",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "turtle",
-            "boolean": false
           },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
@@ -233,7 +148,7 @@
             "test_type": "UnitCountAroundBase",
             "unit_type_string0": "Commander",
             "string0": "Enemy",
-            "value0": 500,
+            "value0": 600,
             "compare0": ">=",
             "value1": 1
           },
@@ -248,11 +163,11 @@
         "placement_type": "FromMainBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "Commander",
+            "unit_type_string": "(Structure - MetalProduction) | Commander",
             "alliance": "Enemy",
             "compare_type": ">=",
             "range": 500,
-            "count": 1
+            "count": 10
           }
         ],
         "threat": {
@@ -282,11 +197,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "turtle",
-            "boolean": false
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -314,7 +224,7 @@
       "shared_instance_count": "LegionDefenseAdvancedNukeSilo",
       "min_num_assisters": 3,
       "max_num_assisters": 12,
-      "priority": 0,
+      "priority": 508,
       "builders": [
         "AnyLegionFabberAdvanced"
       ],
@@ -324,11 +234,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "platinum",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "turtle",
-            "boolean": false
           },
           {
             "test_type": "AloneOnPlanet",
@@ -380,6 +285,127 @@
       "placement_rules": {
         "buffer": 2
       }
+    },
+    {
+      "name": "Legion - Platinum - Goku",
+      "to_build": "LegionDefenseAdvancedEngine",
+      "instance_count": 1,
+      "min_num_assisters": 8,
+      "max_num_assisters": 45,
+      "priority": 509,
+      "builders": [
+        "AnyLegionFabberAdvanced"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsMainEcoBase",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetCanBeUsedAsKineticWeapon",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHasUseablePlanetWeapon",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveThrustToMovePlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetCount",
+            "compare0": ">",
+            "value0": 2
+          },
+          {
+            "test_type": "AlliedUnitCountOnPlanet",
+            "unit_type_string0": "LegionDefenseAdvancedEngine",
+            "compare0": "<",
+            "boolean": true,
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedEngine"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3
+      }
+    },
+    {
+      "name": "Legion - Platinum - Catalyst",
+      "to_build": "LegionDefenseAdvancedModule",
+      "instance_count": 1,
+      "min_num_assisters": 20,
+      "max_num_assisters": 100,
+      "priority": 509,
+      "builders": [
+        "AnyLegionFabberAdvanced"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHasUseablePlanetWeapon",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetCount",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber",
+            "compare0": ">=",
+            "value0": 14
+          },
+          {
+            "test_type": "AlliedUnitCountOnPlanet",
+            "unit_type_string0": "LegionDefenseAdvancedModule",
+            "compare0": "<",
+            "boolean": true,
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindControlPointToBuild",
+            "boolean": true
+          }
+        ]
+      ]
     }
   ]
 }
