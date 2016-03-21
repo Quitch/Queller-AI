@@ -401,7 +401,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Firefly",
+      "name": "Legion - Uber - Stalker",
       "to_build": "LegionAirAdvancedScout",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -427,6 +427,60 @@
           {
             "test_type": "UnitCountPerPlanetRadius",
             "unit_type_string0": "Scout",
+            "compare0": "<",
+            "value0": 250
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemyPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Air & Scout",
+            "compare0": "<",
+            "value0": 250
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Air & Scout",
             "compare0": "<",
             "value0": 250
           }
