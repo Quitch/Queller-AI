@@ -4,7 +4,7 @@
 
 DO NOT IGNORE! REMOVE THE UI FOLDER BEFORE PUBLICATION!
 
- - Added support for the Imperial Legion faction
+ - Added support for the Legion expansion
     - Big thanks to Alpha2546 for his extensive AI testing
  - Smarting spacing between defences for Uber
  - Uber looks to have a greater air presence before bringing out bombers and gunships
@@ -16,14 +16,15 @@ DO NOT IGNORE! REMOVE THE UI FOLDER BEFORE PUBLICATION!
     - Added Uber Tank
  - Uber Air now uses vehicles as well as bots
  - Uber Air uses standard platoon builds again
- - Uber Air builds more air
+ - Uber Air much more air focused
  - No more idle scouts in base
- - Implemented a nasty hack to work around the BomberAttack task being broken
+ - Implemented a nasty hack to work around the bomber_attack neural net being broken
  - Uber doesn't use scouts for artillery vision any more
  - Check if fighters are needed somewhere before attaching them to bombers
  - No longer sacrifices air defence for mine vision in its platoons
  - Uber doesn't wait for you to go orbital before building Orbital Factories
  - Errors in T1 bot and T2 vehicle factory placement fixed
+ - Resolved issue which prevented the building of vehicle factories when alone
 
 #### v3.3 - 2016/03/01
 

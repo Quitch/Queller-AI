@@ -18,10 +18,6 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
@@ -106,32 +102,6 @@
             "unit_type_string0": "Land & Factory & Basic",
             "compare0": "<=",
             "value0": 500
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicVehicleFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicVehicleFactory"
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -169,10 +139,6 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
@@ -257,32 +223,6 @@
             "unit_type_string0": "Land & Factory & Basic",
             "compare0": "<=",
             "value0": 500
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicVehicleFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicVehicleFactory"
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -321,10 +261,6 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
@@ -439,42 +375,6 @@
             "unit_type_string0": "Land & Factory & Basic",
             "compare0": "<=",
             "value0": 500
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicVehicleFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "CurrentMetalEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "CurrentEnergyEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicVehicleFactory"
           },
           {
             "test_type": "CanFindPlaceToBuild",
