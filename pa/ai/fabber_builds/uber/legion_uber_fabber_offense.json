@@ -380,6 +380,127 @@
       "placement_rules": {
         "buffer": 2
       }
+    },
+    {
+      "name": "Legion - Uber - Goku",
+      "to_build": "LegionDefenseAdvancedEngine",
+      "instance_count": 1,
+      "min_num_assisters": 8,
+      "max_num_assisters": 45,
+      "priority": 509,
+      "builders": [
+        "AnyLegionAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsMainEcoBase",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetCanBeUsedAsKineticWeapon",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHasUseablePlanetWeapon",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveThrustToMovePlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetCount",
+            "compare0": ">",
+            "value0": 2
+          },
+          {
+            "test_type": "AlliedUnitCountOnPlanet",
+            "unit_type_string0": "LegionDefenseAdvancedEngine",
+            "compare0": "<",
+            "boolean": true,
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedEngine"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3
+      }
+    },
+    {
+      "name": "Legion - Uber - Catalyst",
+      "to_build": "LegionDefenseAdvancedModule",
+      "instance_count": 1,
+      "min_num_assisters": 20,
+      "max_num_assisters": 100,
+      "priority": 509,
+      "builders": [
+        "AnyLegionAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHasUseablePlanetWeapon",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetCount",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber",
+            "compare0": ">=",
+            "value0": 21
+          },
+          {
+            "test_type": "AlliedUnitCountOnPlanet",
+            "unit_type_string0": "LegionDefenseAdvancedModule",
+            "compare0": "<",
+            "boolean": true,
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindControlPointToBuild",
+            "boolean": true
+          }
+        ]
+      ]
     }
   ]
 }
