@@ -106,6 +106,43 @@
       ]
     },
     {
+      "name": "Legion - Uber - Stinger",
+      "to_build": "LegionAirBasicBomb",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 99,
+      "builders": [
+        "LegionFactoryBasicAir",
+				"LegionFactoryAdvancedAir"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "Air",
+            "compare0": ">",
+            "value0": 1.5
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Offense - SelfDestruct",
+            "compare0": "==",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
       "name": "Legion - Uber - Raider",
       "to_build": "LegionAirBasicGunship",
       "instance_count": -1,
