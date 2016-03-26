@@ -450,10 +450,11 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Naval",
+            "string1": "Naval",
             "compare0": ">",
-            "value0": 0
+            "value0": 0.8
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
@@ -559,17 +560,34 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Naval",
+            "string1": "Naval",
             "compare0": ">",
-            "value0": 0
+            "value0": 0.8
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Uber - TODO",
+      "to_build": "LegionNavalAdvancedHover",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 198,
+      "builders": [
+        "LegionFactoryAdvancedNaval"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Sub",
-            "string1": "AntiSub",
-            "compare0": ">",
-            "value0": 0.6
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           }
         ]
       ]
