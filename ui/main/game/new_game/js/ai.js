@@ -410,7 +410,7 @@ function ai_types() {
             max_advanced_fabbers: 100
         },
         'Uber Naval': {
-            display_name: 'Uber Land',
+            display_name: 'Uber Naval',
             metal_drain_check: 0.54,
             energy_drain_check: 0.57,
             metal_demand_check: 0.75,
