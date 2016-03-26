@@ -140,6 +140,7 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 
 - Naval
  - Attempts to build a naval factory first
+ - Slightly more aggressive about getting into the water
 
 - Rush
  - Focus on T1 land rush
