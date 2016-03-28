@@ -28,9 +28,30 @@
           },
           {
             "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "(Bot & Mobile & Basic) - Fabber - AirDefense - Construction - Artillery - Heavy - Scout - SelfDestruct",
+            "unit_type_string0": "(Bot & Mobile & Basic) - Fabber - AirDefense - Construction - Artillery - Heavy - Scout - SelfDestruct - Custom1",
             "compare0": "<",
             "value0": 150
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & Scout",
+            "compare0": ">=",
+            "value0": 1
           }
         ]
       ],
