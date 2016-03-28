@@ -268,8 +268,8 @@
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | (Bot & (Artillery | Advanced)) & Mobile) & Heavy",
-            "unit_type_string1": "(Tank | (Bot & (Artillery | Advanced)) & Mobile) - Fabber - Deconstruction - Construction",
+            "unit_type_string0": "Land & Mobile & Heavy",
+            "unit_type_string1": "((Tank | (Bot & Advanced)) & Mobile) - Scout - Fabber - Deconstruction - Construction",
             "compare0": "<",
             "value0": 0.1
           }
