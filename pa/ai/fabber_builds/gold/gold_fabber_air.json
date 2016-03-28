@@ -223,7 +223,7 @@
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
       "priority": 477,
-      "min_num_assisters": 5,
+      "min_num_assisters": 3,
       "max_num_assisters": 8,
       "builders": [
         "BasicAirFabber",
@@ -235,6 +235,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "gold",
             "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "BaseThreatened",
@@ -250,12 +254,6 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "AdvancedBotFactory"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber - Orbital",
-            "compare0": ">=",
-            "value0": 5
           },
           {
             "test_type": "UnitCountOnPlanet",
