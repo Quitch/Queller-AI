@@ -87,7 +87,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Dogfish",
+      "name": "Legion - Uber - Dogfish - Scout",
       "to_build": "LegionNavalBasicScout",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -179,7 +179,20 @@
             "test_type": "EnemyOrbitalPresenceOnPlanet",
             "boolean": false
           }
-        ],
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Uber - Dogfish - Fight",
+      "to_build": "LegionNavalBasicScout",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "LegionFactoryBasicNaval",
+        "LegionFactoryAdvancedNaval"
+      ],
+      "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
@@ -197,31 +210,7 @@
             "compare0": ">",
             "value0": 0.6
           }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyOrbitalPresenceOnPlanet",
-            "boolean": false
-          }
         ]
-
       ]
     },
     {
