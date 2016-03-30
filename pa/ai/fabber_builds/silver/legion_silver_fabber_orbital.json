@@ -1,13 +1,12 @@
 {
   "build_list": [
     {
-      "name": "Legion - Silver - Starship Projector - Alone/Rush",
+      "name": "Legion - Silver - Starship Projector - Multi planet",
       "to_build": "LegionFactoryBasicOrbital",
       "instance_count": 1,
-      "shared_instance_count": "AdvancedFactory",
-      "priority": 477,
-      "min_num_assisters": 3,
-      "max_num_assisters": 5,
+      "shared_instance_count": "Factory",
+      "priority": 479,
+      "max_num_assisters": 10,
       "builders": [
         "AnyLegionFabberBasic",
         "AnyLegionFabberAdvanced"
@@ -20,35 +19,7 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetWithoutPresence",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionFactoryBasicOrbital"
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Factory & Orbital",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionFactoryBasicOrbital"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
+            "test_type": "HaveEcoForAdvanced",
             "boolean": true
           },
           {
@@ -64,17 +35,33 @@
             "value0": 1
           },
           {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Factory & Orbital",
-            "unit_type_string1": "Factory - Orbital",
+            "test_type": "UnitCount",
+            "unit_type_string0": "Factory & Orbital & Basic",
             "compare0": "<",
-            "value0": 0.05
+            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionFactoryBasicOrbital"
           }
-        ],
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3
+      }
+    },
+    {
+      "name": "Legion - Silver - Starship Projector",
+      "to_build": "LegionFactoryBasicOrbital",
+      "instance_count": 1,
+      "shared_instance_count": "Factory",
+      "priority": 376,
+      "max_num_assisters": 10,
+      "builders": [
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced"
+      ],
+      "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
@@ -82,27 +69,26 @@
             "boolean": true
           },
           {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "OrbitalLauncher"
+            "string0": "LegionFactoryBasicOrbital"
           },
           {
-            "test_type": "SystemThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Orbital & Factory",
-            "compare0": "<",
-            "value0": 1
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Factory & Orbital",
+            "unit_type_string1": "Factory - Orbital",
+            "compare0": "<=",
+            "value0": 0.1
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "OrbitalLauncher"
+            "string0": "LegionFactoryBasicOrbital"
           }
         ]
       ],
@@ -114,8 +100,9 @@
       "name": "Legion - Silver - Starship Foundry",
       "to_build": "LegionFactoryAdvancedOrbital",
       "instance_count": 1,
+      "shared_instance_count": "Factory",
       "priority": 477,
-      "max_num_assisters": 5,
+      "max_num_assisters": 10,
       "builders": [
         "LegionOrbitalBasicFabber"
       ],
@@ -124,6 +111,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
             "boolean": true
           },
           {
@@ -140,7 +131,7 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 50
+        "buffer": 3
       }
     }
   ]

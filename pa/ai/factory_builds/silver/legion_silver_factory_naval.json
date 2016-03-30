@@ -38,10 +38,6 @@
             "boolean": false
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
           },
@@ -54,33 +50,7 @@
             "unit_type_string0": "Fabber & Basic & Naval",
             "unit_type_string1": "Factory & Basic & Naval",
             "compare0": "<",
-            "value0": 0.5
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionNavalBasicFabber"
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Fabber & Basic & Naval",
-            "unit_type_string1": "Factory & Basic & Naval",
-            "compare0": "<",
-            "value0": 1.5
+            "value0": 2
           }
         ]
       ]
@@ -95,37 +65,6 @@
         "LegionFactoryBasicNaval"
       ],
       "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Air & Scout",
-            "compare0": "<",
-            "value0": 400
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Naval & Scout",
-            "compare0": "<",
-            "value0": 2
-          }
-        ],
         [
           {
             "test_type": "HasPersonalityTag",
@@ -162,12 +101,6 @@
           {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Naval",
-            "compare0": ">",
-            "value0": 0
           }
         ]
       ]
@@ -218,12 +151,6 @@
           {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Naval",
-            "compare0": ">",
-            "value0": 0
           }
         ]
       ]
@@ -251,13 +178,6 @@
           {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Air",
-            "string1": "AntiAir",
-            "compare0": ">",
-            "value0": 1
           }
         ]
       ]
@@ -285,13 +205,6 @@
           {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Naval",
-            "string1": "Naval",
-            "compare0": ">",
-            "value0": 1
           }
         ]
       ]
@@ -334,10 +247,6 @@
             "boolean": false
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "LegionNavalAdvancedFabber"
           },
@@ -347,28 +256,6 @@
             "unit_type_string1": "Factory & Advanced & Naval",
             "compare0": "<",
             "value0": 1
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionNavalAdvancedFabber"
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Fabber & Advanced & Naval",
-            "unit_type_string1": "Factory & Advanced & Naval",
-            "compare0": "<",
-            "value0": 2
           }
         ]
       ]
@@ -423,19 +310,6 @@
           {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Naval & Mobile & Tactical",
-            "unit_type_string1": "(Naval & Mobile) - Fabber - Hover",
-            "compare0": "<",
-            "value0": 0.1
           }
         ]
       ]
@@ -463,12 +337,6 @@
           {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Naval",
-            "compare0": ">",
-            "value0": 0
           }
         ]
       ]

@@ -10,7 +10,8 @@
       "priority": 480,
       "builders": [
         "LegionBotAdvancedFabber",
-        "LegionOrbitalBasicFabber"
+        "LegionOrbitalBasicFabber",
+        "LegionBotAdvancedSupportCommander"
       ],
       "build_conditions": [
         [
@@ -29,18 +30,6 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": ">",
-            "value0": 2800
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory - Orbital",
-            "compare0": ">=",
-            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -90,18 +79,6 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": ">",
-            "value0": 2800
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory - Orbital",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionTitanAdvancedVehicle"
           }
@@ -149,18 +126,6 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": ">",
-            "value0": 2800
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory - Orbital",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionTitanAdvancedAir"
           }
@@ -199,13 +164,6 @@
           {
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionTitanAdvancedOrbital"
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Orbital",
-            "string1": "AntiOrbital",
-            "compare0": "<",
-            "value0": 0.6
           }
         ]
       ],

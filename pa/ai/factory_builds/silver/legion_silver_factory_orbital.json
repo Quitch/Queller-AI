@@ -36,10 +36,6 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetIsGasGiant",
-            "boolean": true
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "LegionOrbitalBasicFabber"
           },
@@ -56,27 +52,6 @@
             "compare0": "<",
             "value0": 1
           }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetOrGasGiantWithoutPresence",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionOrbitalBasicFabber"
-          },
-          {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
-          }
         ]
       ]
     },
@@ -85,7 +60,7 @@
       "to_build": "LegionOrbitalBasicRadar",
       "instance_count": 1,
       "max_num_assisters": 10,
-      "priority": 99,
+      "priority": 97,
       "builders": [
         "OrbitalLauncher"
       ],
@@ -101,30 +76,12 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionOrbitalBasicRadar"
-          },
-          {
             "test_type": "BaseThreat",
             "string0": "Orbital",
             "compare0": "<=",
             "value0": 0
           }
-        ]
-      ]
-    },
-    {
-      "name": "Legion - Silver - Sputnik - Other Planet",
-      "to_build": "LegionOrbitalBasicRadar",
-      "instance_count": 1,
-      "shared_instance_count": "ReconAssistance",
-      "cross_planet_shared_count": true,
-      "max_num_assisters": 10,
-      "priority": 99,
-      "builders": [
-        "OrbitalLauncher"
-      ],
-      "build_conditions": [
+        ],
         [
           {
             "test_type": "HasPersonalityTag",
@@ -134,10 +91,6 @@
           {
             "test_type": "OtherPlanetNeedsReconAssistance",
             "boolean": true
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionOrbitalBasicRadar"
           },
           {
             "test_type": "BaseThreat",
@@ -152,7 +105,7 @@
       "name": "Legion - Silver - Wraith - This Planet",
       "to_build": "LegionOrbitalBasicScout",
       "instance_count": 1,
-      "priority": 99,
+      "priority": 97,
       "builders": [
         "OrbitalLauncher"
       ],
@@ -173,20 +126,7 @@
             "compare0": "<=",
             "value0": 0
           }
-        ]
-      ]
-    },
-    {
-      "name": "Legion - Silver - Wraith - Other Planet",
-      "to_build": "LegionOrbitalBasicScout",
-      "instance_count": 1,
-      "shared_instance_count": "ReconAssistance",
-      "cross_planet_shared_count": true,
-      "priority": 99,
-      "builders": [
-        "OrbitalLauncher"
-      ],
-      "build_conditions": [
+        ],
         [
           {
             "test_type": "HasPersonalityTag",
@@ -198,10 +138,6 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionOrbitalBasicScout"
-          },
-          {
             "test_type": "BaseThreat",
             "string0": "Orbital",
             "compare0": "<=",
@@ -211,32 +147,7 @@
       ]
     },
     {
-      "name": "Legion - Silver - Aggressor - Local Threat",
-      "to_build": "LegionOrbitalBasicFighter",
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 100,
-      "builders": [
-        "OrbitalLauncher"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 0
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Legion - Silver - Aggressor - System Threat",
+      "name": "Legion - Silver - Aggressor",
       "to_build": "LegionOrbitalBasicFighter",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -252,7 +163,7 @@
             "boolean": true
           },
           {
-            "test_type": "SystemThreat",
+            "test_type": "PlanetThreat",
             "string0": "Orbital",
             "compare0": ">",
             "value0": 0
@@ -339,24 +250,10 @@
             "boolean": true
           },
           {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": false
-          },
-          {
             "test_type": "BaseThreat",
             "string0": "Orbital",
             "compare0": "<=",
             "value0": 0
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter",
-            "compare0": "<",
-            "value0": 1
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -388,13 +285,6 @@
             "string0": "Orbital",
             "compare0": "<=",
             "value0": 0
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Orbital",
-            "string1": "AntiOrbital",
-            "compare0": "<",
-            "value0": 1
           }
         ]
       ]
@@ -404,7 +294,7 @@
       "to_build": "LegionOrbitalAdvancedRadar",
       "instance_count": 1,
       "max_num_assisters": 10,
-      "priority": 198,
+      "priority": 195,
       "builders": [
         "LegionFactoryAdvancedOrbital"
       ],
@@ -420,30 +310,12 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionOrbitalAdvancedRadar"
-          },
-          {
             "test_type": "BaseThreat",
             "string0": "Orbital",
             "compare0": "<=",
             "value0": 0
           }
-        ]
-      ]
-    },
-    {
-      "name": "Legion - Silver - Advanced Radar Satellite - Other Planet",
-      "to_build": "LegionOrbitalAdvancedRadar",
-      "instance_count": 1,
-      "shared_instance_count": "ReconAssistance",
-      "cross_planet_shared_count": true,
-      "max_num_assisters": 10,
-      "priority": 198,
-      "builders": [
-        "LegionFactoryAdvancedOrbital"
-      ],
-      "build_conditions": [
+        ],
         [
           {
             "test_type": "HasPersonalityTag",
@@ -453,10 +325,6 @@
           {
             "test_type": "OtherPlanetNeedsReconAssistance",
             "boolean": true
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionOrbitalAdvancedRadar"
           },
           {
             "test_type": "BaseThreat",
