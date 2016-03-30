@@ -20,23 +20,6 @@
           {
             "test_type": "CanAffordBuildDemand"
           }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
-          {
-            "test_type": "CurrentMetalEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "CurrentEnergyEfficiency",
-            "compare0": ">",
-            "value0": 1
-          }
         ]
       ],
       "task_type": "BuilderAssist"
@@ -45,9 +28,8 @@
       "name": "Legion - Silver - Teleporter",
       "to_build": "LegionStructureBasicTeleporter",
       "instance_count": 1,
-      "priority": 600,
-      "min_num_assisters": 3,
-      "max_num_assisters": 5,
+      "priority": 260,
+      "max_num_assisters": 10,
       "builders": [
         "LegionCommander",
         "AnyLegionFabberBasic",
@@ -91,7 +73,7 @@
     {
       "name": "Legion - Silver - Teleport Fabber To Planet",
       "instance_count": 1,
-      "priority": 801,
+      "priority": 2,
       "builders": [
         "LegionBotBasicFabber",
         "LegionVehicleBasicFabber",
@@ -129,7 +111,7 @@
     {
       "name": "Legion - Silver - Move Fabber To Planet",
       "instance_count": 1,
-      "priority": 800,
+      "priority": 2,
       "builders": [
         "LegionBotBasicFabber",
         "LegionVehicleBasicFabber",
@@ -189,44 +171,6 @@
             "unit_type_string0": "Fabber & Orbital",
             "compare0": ">=",
             "value0": 2
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetOrGasGiantWithoutPresence",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsGasGiant",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory & Orbital",
-            "compare0": ">=",
-            "value0": 1
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetOrGasGiantWithoutPresence",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter",
-            "compare0": ">=",
-            "value0": 1
           }
         ]
       ],
