@@ -196,7 +196,7 @@ function ai_types() {
             go_for_the_kill: false,
             priority_scout_metal_spots: true,
             enable_commander_danger_responses: true,
-            neural_data_mod: 1.5,
+            neural_data_mod: 0.5,
             adv_eco_mod: 0.85,
             adv_eco_mod_alone: 0.85,
             factory_build_delay_min: 0,
@@ -210,10 +210,10 @@ function ai_types() {
             fabber_alone_on_planet_mod: 1.0,
             basic_to_advanced_factory_ratio: 0,
             factory_alone_on_planet_mod: 0.5,
-            min_basic_fabbers: 5,
-            max_basic_fabbers: 100,
-            min_advanced_fabbers: 2,
-            max_advanced_fabbers: 100
+            min_basic_fabbers: 10,
+            max_basic_fabbers: 20,
+            min_advanced_fabbers: 10,
+            max_advanced_fabbers: 20
         },
         'Silver': {
             display_name: 'Silver',
@@ -225,7 +225,7 @@ function ai_types() {
             go_for_the_kill: false,
             priority_scout_metal_spots: true,
             enable_commander_danger_responses: true,
-            neural_data_mod: 1.3,
+            neural_data_mod: 1.5,
             adv_eco_mod: 1.0,
             adv_eco_mod_alone: 1.0,
             factory_build_delay_min: 0,
@@ -240,9 +240,9 @@ function ai_types() {
             basic_to_advanced_factory_ratio: 0,
             factory_alone_on_planet_mod: 0.5,
             min_basic_fabbers: 2,
-            max_basic_fabbers: 100,
-            min_advanced_fabbers: 3,
-            max_advanced_fabbers: 100
+            max_basic_fabbers: 30,
+            min_advanced_fabbers: 1,
+            max_advanced_fabbers: 30
         },
         'Gold': {
             display_name: 'Gold',
@@ -254,7 +254,7 @@ function ai_types() {
             go_for_the_kill: true,
             priority_scout_metal_spots: true,
             enable_commander_danger_responses: true,
-            neural_data_mod: 1.2,
+            neural_data_mod: 1.3,
             adv_eco_mod: 1.1,
             adv_eco_mod_alone: 0.75,
             personality_tags:
@@ -267,9 +267,9 @@ function ai_types() {
             basic_to_advanced_factory_ratio: 0,
             factory_alone_on_planet_mod: 0.5,
             min_basic_fabbers: 2,
-            max_basic_fabbers: 100,
+            max_basic_fabbers: 40,
             min_advanced_fabbers: 1,
-            max_advanced_fabbers: 100
+            max_advanced_fabbers: 40
         },
         'Platinum': {
             display_name: 'Platinum',
@@ -281,7 +281,7 @@ function ai_types() {
             go_for_the_kill: true,
             priority_scout_metal_spots: true,
             enable_commander_danger_responses: true,
-            neural_data_mod: 1.1,
+            neural_data_mod: 1.15,
             adv_eco_mod: 1.5,
             adv_eco_mod_alone: 0.95,
             personality_tags:
@@ -294,9 +294,9 @@ function ai_types() {
             basic_to_advanced_factory_ratio: 0,
             factory_alone_on_planet_mod: 0.5,
             min_basic_fabbers: 2,
-            max_basic_fabbers: 100,
+            max_basic_fabbers: 50,
             min_advanced_fabbers: 3,
-            max_advanced_fabbers: 100
+            max_advanced_fabbers: 50
         },
         'Uber': {
             display_name: 'Uber',
