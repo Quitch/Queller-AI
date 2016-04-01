@@ -58,36 +58,12 @@
             "unit_type_string0": "Bot & Scout",
             "compare0": ">=",
             "value0": 1
-          }
-        ]
-      ],
-      "task_type": "Scout"
-    },
-    {
-      "name": "Uber - Bot Scout Platoon - Legion",
-      "to_build": "Bot_Scout_1",
-      "instance_count": 2,
-      "priority": 200,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
           },
           {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Bot & Scout",
-            "compare0": ">=",
-            "value0": 1
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Scout",
+            "compare0": "<",
+            "value0": 250
           }
         ]
       ],

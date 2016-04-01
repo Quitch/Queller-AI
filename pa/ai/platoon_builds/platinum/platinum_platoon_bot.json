@@ -36,7 +36,43 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & Scout",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Scout",
+            "compare0": "<",
+            "value0": 250
+          }
+        ]
+      ],
+      "task_type": "Scout"
+    },
+    {
+      "name": "Platinum - Bot Scout Platoon - Legion",
+      "to_build": "Bot_Scout_Legion_1",
+      "instance_count": 2,
+      "priority": 200,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
             "boolean": true
           },
           {
