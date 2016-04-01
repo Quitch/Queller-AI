@@ -33,6 +33,42 @@
       "task_type": "Scout"
     },
     {
+      "name": "Uber - Tank Scout Platoon",
+      "to_build": "Tank_Scout_1",
+      "instance_count": 2,
+      "priority": 199,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Tank & Sub & Custom1",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Scout",
+            "compare0": "<",
+            "value0": 250
+          }
+        ]
+      ],
+      "task_type": "Scout"
+    },
+    {
       "name": "Uber - Land Transfer To Planet",
       "to_build": "Teleporter_Attack_40",
       "instance_count": -1,
