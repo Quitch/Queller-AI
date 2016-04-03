@@ -224,6 +224,9 @@ The spawn the AI starts in and the profile used can make a big difference, even 
 - Combat Fabbers can only be used to build mines or repair troops, not both, even across entirely different AI personalities
 - Doesn't handle enemy walls well
 - Doesn't use mobile teleporters
+- Bombers don't understand threat
+- Legion won't build a different tier of mass extractor on a metal spot that already has a mass extractor
+- Legion can't use orbital transports
 
 ## THANKS TO
 
