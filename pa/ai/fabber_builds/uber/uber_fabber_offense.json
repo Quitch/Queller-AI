@@ -363,7 +363,7 @@
       }
     },
     {
-      "name": "Uber - Nuke Silo - Rush",
+      "name": "Uber - Nuke Silo - Alone",
       "to_build": "NukeSilo",
       "instance_count": 1,
       "shared_instance_count": "NukeSilo",
@@ -400,27 +400,29 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "NukeSilo"
           }
-        ],
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2
+      }
+    },
+    {
+      "name": "Uber - Nuke Silo - Rush",
+      "to_build": "NukeSilo",
+      "instance_count": 1,
+      "shared_instance_count": "NukeSilo",
+      "min_num_assisters": 8,
+      "max_num_assisters": 12,
+      "priority": 361,
+      "builders": [
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
-          },
-          {
-            "test_type": "CurrentMetalEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "MetalStorageFrac",
-            "compare0": ">",
-            "value0": 0.1
-          },
-          {
-            "test_type": "CurrentEnergyEfficiency",
-            "compare0": ">",
-            "value0": 1
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -434,14 +436,6 @@
             "string0": "AntiNuke",
             "compare0": "<=",
             "value0": 0
-          },
-          {
-            "test_type": "UnitCountAroundBase",
-            "unit_type_string0": "Land & Mobile & Offense",
-            "string0": "Enemy",
-            "value0": 700,
-            "compare0": "<",
-            "value1": 1
           },
           {
             "test_type": "UnitCountOnPlanet",

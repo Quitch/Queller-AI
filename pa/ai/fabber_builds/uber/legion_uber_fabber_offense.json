@@ -309,13 +309,13 @@
       }
     },
     {
-      "name": "Legion - Uber - Glassmaker - Rush",
+      "name": "Legion - Uber - Glassmaker - Alone",
       "to_build": "LegionDefenseAdvancedNukeSilo",
       "instance_count": 1,
       "shared_instance_count": "LegionDefenseAdvancedNukeSilo",
       "min_num_assisters": 3,
       "max_num_assisters": 12,
-      "priority": 0,
+      "priority": 508,
       "builders": [
         "AnyLegionFabberAdvanced"
       ],
@@ -346,7 +346,24 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionDefenseAdvancedNukeSilo"
           }
-        ],
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2
+      }
+    },
+    {
+      "name": "Legion - Uber - Glassmaker - No Anti",
+      "to_build": "LegionDefenseAdvancedNukeSilo",
+      "instance_count": 1,
+      "shared_instance_count": "LegionDefenseAdvancedNukeSilo",
+      "min_num_assisters": 3,
+      "max_num_assisters": 12,
+      "priority": 361,
+      "builders": [
+        "AnyLegionFabberAdvanced"
+      ],
+      "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
