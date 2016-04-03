@@ -842,6 +842,73 @@
           }
         ]
       }
+    },
+    {
+      "name": "Legion - Uber - Shield Defense - Artillery",
+      "to_build": "LegionDefenseAdvancedShield",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedLandDefense",
+      "priority": 508,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyLegionFabberAdvanced"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "turtle",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Artillery & Structure",
+            "string0": "Enemy",
+            "value0": 600,
+            "compare0": ">=",
+            "value1": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedShield"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Artillery & Structure",
+            "alliance": "Enemy",
+            "compare_type": ">=",
+            "range": 700,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 105,
+            "count": 1
+          }
+        ]
+      }
     }
   ]
 }
