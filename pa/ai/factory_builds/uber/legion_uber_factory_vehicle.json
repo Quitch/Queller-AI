@@ -528,6 +528,13 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "(Tank & Mobile) - Fabber - AirDefense - Construction - Heavy - Deconstruction - Artillery",
             "compare0": ">",
@@ -586,6 +593,13 @@
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">=",
+            "value0": 1
           },
           {
             "test_type": "UnitCountOnPlanet",
