@@ -1,6 +1,6 @@
 {
   "context": "server",
-  "identifier": "com.pa.quitch.qQuellerAIDev",
+  "identifier": "com.pa.quitch.qQuellerAI-dev",
   "display_name": "Queller AI DEV LEGION",
   "description": "A smarter and more humanlike AI for Titans and Legion. Doesn't affect Galactic War. Works alongside the vanilla AI",
   "author": "Quitch",
@@ -13,12 +13,19 @@
     "ai",
     "titans"
   ],
-  "product": ["Titans"],
-  "id": "qQuellerAIDev",
+  "product": [
+    "Titans"
+  ],
+  "id": "qQuellerAI-dev",
   "icon": "http://i.imgur.com/cFJeCgf.gif",
+  "scenes": {
+    "new_game": [
+      "coui://ui/mods/com.pa.quitch.qquellerai/new_game.js"
+    ]
+  },
   "dependencies": [
-    "com.pa.quitch.qQuellerAIPersonalitiesDev",
-    "com.pa.quitch.qAIModCompatibilityPatchDev"
+    "com.pa.quitch.qQuellerAIPersonalities-dev",
+    "com.pa.quitch.qAIModCompatibilityPatch-dev"
   ],
   "priority": 100
 }
