@@ -421,6 +421,12 @@
             "value0": 0
           },
           {
+            "test_type": "SystemThreat",
+            "string0": "Land",
+            "compare0": ">",
+            "value0": 12500
+          },
+          {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Orbital",
             "string1": "AntiOrbital",
@@ -438,6 +444,12 @@
             "test_type": "BaseThreat",
             "string0": "Orbital",
             "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Naval",
+            "compare0": ">",
             "value0": 0
           },
           {
