@@ -35,7 +35,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Artillery & Basic",
             "compare0": "<",
-            "value0": 1
+            "value0": 3
           },
           {
             "test_type": "UnitCountInBase",
@@ -55,7 +55,40 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "BasicArtillery"
           }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "(Structure - MetalProduction) | Commander",
+            "alliance": "Enemy",
+            "compare_type": ">=",
+            "range": 200,
+            "count": 1
+          }
         ],
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 30,
+          "value": 10
+        }
+      }
+    },
+    {
+      "name": "Uber - Pelter - Commander",
+      "to_build": "BasicArtillery",
+      "instance_count": 1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "priority": 507,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
@@ -73,7 +106,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Artillery & Basic",
             "compare0": "<",
-            "value0": 1
+            "value0": 3
           },
           {
             "test_type": "UnitCountInBase",

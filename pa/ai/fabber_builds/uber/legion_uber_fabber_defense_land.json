@@ -468,6 +468,76 @@
       }
     },
     {
+      "name": "Legion - Uber - Scarab - Forward Base",
+      "to_build": "LegionDefenseBasicLandII",
+      "instance_count": 1,
+      "shared_instance_count": "BasicLandDefense",
+      "max_num_assisters": 1,
+      "priority": 506,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "LegionBotBasicFabber",
+        "LegionVehicleBasicFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "turtle",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Artillery & Basic",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Commander",
+            "string0": "Enemy",
+            "value0": 260,
+            "compare0": ">=",
+            "value1": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicLandDefense"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & Artillery",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 25,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
       "name": "Legion - Uber - Swarmer - Base",
       "to_build": "LegionDefenseBasicSwarm",
       "instance_count": 1,
@@ -874,6 +944,51 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild",
             "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Artillery & Structure",
+            "string0": "Enemy",
+            "value0": 600,
+            "compare0": ">=",
+            "value1": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedShield"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "turtle",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Commander",
+            "compare0": ">=",
             "value0": 1
           },
           {

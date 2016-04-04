@@ -401,6 +401,76 @@
       }
     },
     {
+      "name": "Uber - Laser Defense Tower - Forward Base",
+      "to_build": "BasicLandDefense",
+      "instance_count": 1,
+      "shared_instance_count": "BasicLandDefense",
+      "max_num_assisters": 1,
+      "priority": 506,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "BasicBotFabber",
+        "BasicVehicleFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "turtle",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Artillery & Basic",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Commander",
+            "string0": "Enemy",
+            "value0": 260,
+            "compare0": ">=",
+            "value1": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicLandDefense"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & Artillery",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 25,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
       "name": "Uber - Advanced Land Defense - Base",
       "to_build": "AdvancedLandDefense",
       "instance_count": 1,

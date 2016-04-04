@@ -6,7 +6,7 @@
       "instance_count": 1,
       "min_num_assisters": 1,
       "max_num_assisters": 3,
-      "priority": 255,
+      "priority": 359,
       "base_sort": "FromPerimeter",
       "builders": [
         "AnyLegionFabberBasic",
@@ -55,7 +55,40 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionDefenseBasicArtillery"
           }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "(Structure - MetalProduction) | Commander",
+            "alliance": "Enemy",
+            "compare_type": ">=",
+            "range": 200,
+            "count": 1
+          }
         ],
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 30,
+          "value": 10
+        }
+      }
+    },
+    {
+      "name": "Legion - Uber - Theodor - Commander",
+      "to_build": "LegionDefenseBasicArtillery",
+      "instance_count": 1,
+      "min_num_assisters": 1,
+      "max_num_assisters": 3,
+      "priority": 507,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced"
+      ],
+      "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
