@@ -426,7 +426,6 @@
     Object.keys(extensions).forEach(function(name) {
         extensions[name] = _.extend(JSON.parse(JSON.stringify(baseline)), extensions[name])
         extensions[name].name = name
-        extensions[name].display_name = name
     })
 
     _.extend(model.aiPersonalities, extensions)
