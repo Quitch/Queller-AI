@@ -254,7 +254,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Flakturm-G - Air Drops",
+      "name": "Legion - Uber - Flakturm-G - Air Snipes",
       "to_build": "LegionDefenseAdvancedAir",
       "instance_count": 1,
       "min_num_assisters": 1,
@@ -285,6 +285,37 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & AirDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedAirDefense"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "turtle",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Air",
             "string1": "AntiAir",
@@ -299,7 +330,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "unit_type_string0": "Commander",
             "compare0": ">=",
             "value0": 5
           },
