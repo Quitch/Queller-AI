@@ -386,6 +386,36 @@
       ]
     },
     {
+      "name": "Legion - Uber - Patriot - Dropper",
+      "to_build": "LegionBotBasicAA",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": [
+        "LegionOrbitalAdvancedCannon"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1
+          }
+        ]
+      ]
+    },
+    {
       "name": "Legion - Uber - Shredder",
       "to_build": "LegionBotAdvancedSupportCommander",
       "instance_count": 1,
@@ -529,6 +559,25 @@
           },
           {
             "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Uber - Janissary - Dropper",
+      "to_build": "LegionBotAdvancedAssault",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": [
+        "LegionOrbitalAdvancedCannon"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
             "boolean": true
           }
         ]
