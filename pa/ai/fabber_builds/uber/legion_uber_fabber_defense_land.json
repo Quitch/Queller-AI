@@ -938,6 +938,12 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "test_type": "BaseThreat",
+            "string0": "AntiSurface",
+            "compare0": ">",
+            "value0": 5600
+          },
+          {
             "test_type": "BaseThreatRatio",
             "string0": "Land",
             "string1": "AntiSurface",
