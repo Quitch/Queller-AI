@@ -554,7 +554,7 @@
       "to_build": "LegionDefenseAdvancedLand",
       "instance_count": 1,
       "shared_instance_count": "AdvancedLandDefense",
-      "priority": 378,
+      "priority": 278,
       "max_num_assisters": 3,
       "base_sort": "FromPerimeter",
       "builders": [
@@ -635,7 +635,7 @@
       "to_build": "LegionDefenseAdvancedTactical",
       "instance_count": 1,
       "shared_instance_count": "AdvancedLandDefense",
-      "priority": 379,
+      "priority": 279,
       "max_num_assisters": 3,
       "base_sort": "FromPerimeter",
       "builders": [
@@ -716,7 +716,7 @@
       "to_build": "LegionDefenseAdvancedShield",
       "instance_count": 1,
       "shared_instance_count": "AdvancedLandDefense",
-      "priority": 380,
+      "priority": 280,
       "max_num_assisters": 3,
       "base_sort": "FromPerimeter",
       "builders": [
@@ -830,7 +830,7 @@
             "unit_type_string": "Commander",
             "alliance": "Ally",
             "compare_type": ">=",
-            "range": 50,
+            "range": 75,
             "count": 1
           },
           {
@@ -900,6 +900,71 @@
             "range": 700,
             "count": 1
           },
+          {
+            "unit_type_string": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 105,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Legion - Uber - Shield Defense - Losing Battle",
+      "to_build": "LegionDefenseAdvancedShield",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedLandDefense",
+      "priority": 508,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyLegionFabberAdvanced"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "turtle",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "BaseThreatRatio",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedShield"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 100,
+          "value": 50
+        },
+        "unit_count_rules": [
           {
             "unit_type_string": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild",
             "alliance": "Ally",
