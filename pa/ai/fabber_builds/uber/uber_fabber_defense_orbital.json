@@ -155,7 +155,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Teleporter",
+            "unit_type_string0": "Teleporter - Mobile",
             "compare0": ">=",
             "value0": 1
           },
@@ -192,7 +192,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Teleporter",
+            "unit_type_string0": "Teleporter - Mobile",
             "compare0": ">=",
             "value0": 1
           },
@@ -229,7 +229,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Teleporter",
+            "unit_type_string0": "Teleporter - Mobile",
             "compare0": ">=",
             "value0": 1
           },
@@ -243,7 +243,7 @@
         "placement_type": "FromMainBasePerimeter",
         "unit_count_rules": [
           {
-            "unit_type_string": "Structure & Teleporter",
+            "unit_type_string": "Teleporter - Mobile",
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 100,
@@ -315,51 +315,6 @@
             "alliance": "Ally",
             "compare_type": "<",
             "range": 100,
-            "count": 1
-          }
-        ]
-      }
-    },
-    {
-      "name": "Uber - Umbrella - Overhead",
-      "to_build": "Umbrella",
-      "instance_count": 1,
-      "priority": 508,
-      "min_num_assisters": 3,
-      "max_num_assisters": 5,
-      "builders": [
-        "AnyUberBasicFabber",
-        "AnyUberAdvancedFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "turtle",
-            "boolean": false
-          },
-          {
-            "test_type": "BaseThreatRatio",
-            "string0": "Orbital",
-            "string1": "AntiOrbital",
-            "compare0": ">",
-            "value0": 1
-          }
-        ]
-      ],
-      "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
-        "unit_count_rules": [
-          {
-            "unit_type_string": "Structure & OrbitalDefense",
-            "alliance": "Ally",
-            "compare_type": "<",
-            "range": 50,
             "count": 1
           }
         ]
@@ -703,14 +658,14 @@
             "unit_type_string": "Commander",
             "alliance": "Ally",
             "compare_type": ">=",
-            "range": 100,
+            "range": 75,
             "count": 1
           },
           {
             "unit_type_string": "Structure & OrbitalDefense",
             "alliance": "Ally",
             "compare_type": "<",
-            "range": 100,
+            "range": 75,
             "count": 1
           }
         ]
