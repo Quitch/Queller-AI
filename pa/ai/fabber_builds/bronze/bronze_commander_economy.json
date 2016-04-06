@@ -19,7 +19,9 @@
             "boolean": true
           },
           {
-            "test_type": "DesireMetal"
+            "test_type": "PotentialMetalEfficiency",
+            "compare0": "<",
+            "value0": 1
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -39,9 +41,7 @@
             "boolean": true
           },
           {
-            "test_type": "PotentialMetalEfficiency",
-            "compare0": "<",
-            "value0": 1
+            "test_type": "DesireMetal"
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -83,7 +83,9 @@
             "boolean": true
           },
           {
-            "test_type": "DesireEnergy"
+            "test_type": "PotentialEnergyEfficiency",
+            "compare0": "<",
+            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -97,9 +99,7 @@
             "boolean": true
           },
           {
-            "test_type": "PotentialEnergyEfficiency",
-            "compare0": "<",
-            "value0": 1
+            "test_type": "DesireEnergy"
           },
           {
             "test_type": "CanFindPlaceToBuild",
