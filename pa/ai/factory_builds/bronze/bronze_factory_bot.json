@@ -21,10 +21,8 @@
             "boolean": true
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber & Basic & Land",
-            "compare0": "<",
-            "value0": 5
+            "test_type": "MetMinBasicFabberCount",
+            "boolean": false
           }
         ],
         [
@@ -230,7 +228,7 @@
       "to_build": "AdvancedAssaultBot",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 97,
+      "priority": 199,
       "builders": [
         "AdvancedBotFactory",
         "UnitCannon"
@@ -250,7 +248,7 @@
       "to_build": "AdvancedArtilleryBot",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 97,
+      "priority": 199,
       "builders": [
         "AdvancedBotFactory"
       ],
@@ -273,7 +271,7 @@
       "to_build": "TMLBot",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 97,
+      "priority": 199,
       "builders": [
         "AdvancedBotFactory"
       ],
