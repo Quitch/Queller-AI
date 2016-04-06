@@ -17,14 +17,8 @@
             "boolean": true
           },
           {
-            "test_type": "BaseThreatened",
+            "test_type": "MetMinBasicFabberCount",
             "boolean": false
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber & Basic - Orbital",
-            "compare0": "<",
-            "value0": 2
           }
         ],
         [
@@ -46,7 +40,7 @@
             "unit_type_string0": "Fabber & Basic & Air",
             "unit_type_string1": "Factory & Basic & Air",
             "compare0": "<",
-            "value0": 2
+            "value0": 10
           }
         ]
       ]
@@ -72,37 +66,8 @@
             "boolean": false
           },
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyOrbitalPresenceOnPlanet",
-            "boolean": false
-          },
-          {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & Bomber & Custom1 - Titan",
-            "compare0": "==",
-            "value0": 0
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & Bomber & Custom1 - Titan",
+            "unit_type_string0": "Air & (Bomber | (Tactical & Advanced)) - Titan",
             "compare0": "==",
             "value0": 0
           }
@@ -128,29 +93,6 @@
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyOrbitalPresenceOnPlanet",
-            "boolean": false
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
           }
         ]
       ]
@@ -174,29 +116,6 @@
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyOrbitalPresenceOnPlanet",
-            "boolean": false
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
           }
         ]
       ]
@@ -221,35 +140,6 @@
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyOrbitalPresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & Gunship & Custom1",
-            "compare0": "==",
-            "value0": 0
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -277,14 +167,10 @@
             "boolean": true
           },
           {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber & Advanced",
+            "unit_type_string0": "Fabber & Advanced - Orbital",
             "compare0": "<",
-            "value0": 1
+            "value0": 2
           }
         ],
         [
@@ -299,14 +185,14 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionAirAdvancedFabber"
+            "string0": "AdvancedAirFabber"
           },
           {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Fabber & Advanced & Air",
             "unit_type_string1": "Factory & Advanced & Air",
             "compare0": "<",
-            "value0": 1
+            "value0": 5
           }
         ]
       ]
@@ -328,8 +214,8 @@
             "boolean": true
           },
           {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           }
         ]
       ]
@@ -351,8 +237,8 @@
             "boolean": true
           },
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -368,7 +254,7 @@
       "to_build": "LegionAirAdvancedBomber",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 198,
+      "priority": 199,
       "builders": [
         "LegionFactoryAdvancedAir"
       ],
@@ -380,8 +266,8 @@
             "boolean": true
           },
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -397,7 +283,7 @@
       "to_build": "LegionAirAdvancedCarrier",
       "instance_count": 1,
       "max_num_assisters": 10,
-      "priority": 198,
+      "priority": 199,
       "builders": [
         "LegionFactoryAdvancedAir"
       ],
@@ -409,8 +295,8 @@
             "boolean": true
           },
           {
-            "test_type": "EnemyPresenceOnPlanet",
-            "boolean": true
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "UnitRatioOnPlanet",

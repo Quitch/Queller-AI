@@ -25,10 +25,6 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetIsRespawnable",
-            "boolean": false
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -72,10 +68,6 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetIsRespawnable",
-            "boolean": false
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -117,10 +109,6 @@
           {
             "test_type": "EnemyPresenceOnPlanet",
             "boolean": true
-          },
-          {
-            "test_type": "PlanetIsRespawnable",
-            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -219,12 +207,6 @@
             "test_type": "PlanetCount",
             "compare0": ">=",
             "value0": 2
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": ">",
-            "value0": 11200
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",

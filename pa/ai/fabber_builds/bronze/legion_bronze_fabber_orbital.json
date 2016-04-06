@@ -1,11 +1,11 @@
 {
   "build_list": [
     {
-      "name": "Legion - Bronze - Starship Projector - Multi planet",
+      "name": "Legion - Bronze - Starship Projector",
       "to_build": "LegionFactoryBasicOrbital",
       "instance_count": 1,
       "shared_instance_count": "Factory",
-      "priority": 479,
+      "priority": 477,
       "max_num_assisters": 10,
       "builders": [
         "AnyLegionFabberBasic",
@@ -19,20 +19,7 @@
             "boolean": true
           },
           {
-            "test_type": "HaveEcoForAdvanced",
-            "boolean": true
-          },
-          {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionFactoryBasicOrbital"
-          },
-          {
-            "test_type": "PlanetCount",
-            "compare0": ">",
-            "value0": 1
           },
           {
             "test_type": "UnitCount",
@@ -44,29 +31,17 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionFactoryBasicOrbital"
           }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 3
-      }
-    },
-    {
-      "name": "Legion - Bronze - Starship Projector",
-      "to_build": "LegionFactoryBasicOrbital",
-      "instance_count": 1,
-      "shared_instance_count": "Factory",
-      "priority": 376,
-      "max_num_assisters": 10,
-      "builders": [
-        "AnyLegionFabberBasic",
-        "AnyLegionFabberAdvanced"
-      ],
-      "build_conditions": [
+        ],
         [
           {
             "test_type": "HasPersonalityTag",
             "string0": "bronze",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetCount",
+            "compare0": ">",
+            "value0": 1
           },
           {
             "test_type": "HaveEcoForAdvanced",
@@ -78,13 +53,6 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "LegionFactoryBasicOrbital"
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Factory & Orbital",
-            "unit_type_string1": "Factory - Orbital",
-            "compare0": "<=",
-            "value0": 0.1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -112,6 +80,31 @@
             "test_type": "HasPersonalityTag",
             "string0": "bronze",
             "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryAdvancedOrbital"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Orbital & Advanced",
+            "compare0": "<",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetCount",
+            "compare0": ">",
+            "value0": 1
           },
           {
             "test_type": "HaveEcoForAdvanced",

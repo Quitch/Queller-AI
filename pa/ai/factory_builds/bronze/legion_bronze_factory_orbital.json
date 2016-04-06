@@ -245,12 +245,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "bronze",
             "boolean": true
-          },
-          {
-            "test_type": "SystemThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 0
           }
         ]
       ]
@@ -270,19 +264,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "bronze",
             "boolean": true
-          },
-          {
-            "test_type": "SystemThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Orbital & Fighter & Heavy",
-            "unit_type_string1": "Orbital & Fighter",
-            "compare0": "<",
-            "value0": 0.2
           }
         ]
       ]

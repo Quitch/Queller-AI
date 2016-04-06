@@ -20,10 +20,6 @@
             "boolean": true
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -65,10 +61,6 @@
             "boolean": true
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -96,8 +88,8 @@
       "to_build": "LegionFactoryAdvancedBot",
       "instance_count": 1,
       "shared_instance_count": "Factory",
-      "priority": 477,
       "max_num_assisters": 10,
+      "priority": 477,
       "builders": [
         "LegionBotBasicFabber",
         "LegionBotAdvancedFabber",
@@ -108,14 +100,6 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "bronze",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "HaveEcoForAdvanced",
             "boolean": true
           },
           {
@@ -136,10 +120,6 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "bronze",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
           {
@@ -174,8 +154,8 @@
       "to_build": "LegionFactoryAdvancedVehicle",
       "instance_count": 1,
       "shared_instance_count": "Factory",
-      "priority": 477,
       "max_num_assisters": 10,
+      "priority": 477,
       "builders": [
         "LegionVehicleBasicFabber",
         "LegionVehicleAdvancedFabber"
@@ -185,14 +165,6 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "bronze",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "HaveEcoForAdvanced",
             "boolean": true
           },
           {
@@ -213,10 +185,6 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "bronze",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
           {

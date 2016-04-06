@@ -17,18 +17,12 @@
             "boolean": true
           },
           {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber & Basic & Bot",
-            "compare0": "<",
-            "value0": 2
+            "test_type": "MetMinBasicFabberCount",
+            "boolean": false
           }
         ],
         [
@@ -36,10 +30,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "bronze",
             "boolean": true
-          },
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -51,10 +41,10 @@
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Fabber & Basic & Bot",
-            "unit_type_string1": "Factory & Basic & Bot",
+            "unit_type_string0": "Fabber & Basic & Land",
+            "unit_type_string1": "Factory & Basic & Land",
             "compare0": "<",
-            "value0": 2
+            "value0": 10
           }
         ]
       ]
@@ -161,7 +151,7 @@
             "unit_type_string0": "Fabber & Advanced & Land",
             "unit_type_string1": "Factory & Advanced & Land",
             "compare0": "<",
-            "value0": 1
+            "value0": 5
           }
         ]
       ]
@@ -170,7 +160,7 @@
       "name": "Legion - Bronze - Advanced Fabrication Walker",
       "to_build": "LegionBotAdvancedFabber",
       "instance_count": 1,
-      "shared_instance_count": "LegionBotAdvancedFabber",
+      "shared_instance_count": "AdvancedBotFabber",
       "max_num_assisters": 10,
       "priority": 200,
       "builders": [
@@ -184,14 +174,10 @@
             "boolean": true
           },
           {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Fabber & Advanced",
             "compare0": "<",
-            "value0": 1
+            "value0": 2
           }
         ],
         [
@@ -199,10 +185,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "bronze",
             "boolean": true
-          },
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -213,7 +195,7 @@
             "unit_type_string0": "Fabber & Advanced & Land",
             "unit_type_string1": "Factory & Advanced & Land",
             "compare0": "<",
-            "value0": 1
+            "value0": 5
           }
         ]
       ]
@@ -282,6 +264,25 @@
           },
           {
             "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Bronze - Necromancer",
+      "to_build": "LegionBotAdvancedBomb",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": [
+        "LegionFactoryAdvancedBot"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
             "boolean": true
           }
         ]
