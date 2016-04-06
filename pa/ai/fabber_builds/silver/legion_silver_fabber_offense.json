@@ -28,6 +28,12 @@
             "value0": 1
           },
           {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & Artillery",
+            "compare0": "<",
+            "value0": 6
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionDefenseBasicArtillery"
           }
@@ -54,8 +60,8 @@
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
-          "radius": 30,
-          "value": 10
+          "radius": 10,
+          "value": 50
         }
       }
     },
