@@ -288,6 +288,25 @@
       ]
     },
     {
+      "name": "Legion - Silver - Necromancer",
+      "to_build": "LegionBotAdvancedBomb",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": [
+        "LegionFactoryAdvancedBot"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
       "name": "Legion - Silver - Orbweaver",
       "to_build": "LegionBotAdvancedAA",
       "instance_count": -1,
