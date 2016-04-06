@@ -17,14 +17,8 @@
             "boolean": true
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber & Basic & Land",
-            "compare0": "<",
-            "value0": 5
+            "test_type": "MetMinBasicFabberCount",
+            "boolean": false
           }
         ],
         [
