@@ -5,8 +5,8 @@
       "to_build": "BasicBotFactory",
       "instance_count": 1,
       "shared_instance_count": "Factory",
-      "priority": 376,
       "max_num_assisters": 5,
+      "priority": 376,
       "builders": [
         "UberCommander",
         "AnyUberBasicFabber",
@@ -47,61 +47,12 @@
       "to_build": "BasicVehicleFactory",
       "instance_count": 1,
       "shared_instance_count": "Factory",
-      "priority": 376,
       "max_num_assisters": 5,
+      "priority": 376,
       "builders": [
         "UberCommander",
-        "BasicAirFabber",
-        "BasicNavalFabber",
-        "AdvancedAirFabber",
-        "AdvancedNavalFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicVehicleFactory"
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicVehicleFactory"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 3,
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
-      "name": "Bronze - Basic Vehicle Factory - Land Fabbers",
-      "to_build": "BasicVehicleFactory",
-      "instance_count": 1,
-      "shared_instance_count": "Factory",
-      "priority": 376,
-      "max_num_assisters": 5,
-      "builders": [
-        "BasicBotFabber",
-        "BasicVehicleFabber",
-        "AdvancedBotFabber",
-        "AdvancedVehicleFabber"
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber"
       ],
       "build_conditions": [
         [
@@ -138,8 +89,8 @@
       "to_build": "AdvancedBotFactory",
       "instance_count": 1,
       "shared_instance_count": "Factory",
-      "priority": 477,
       "max_num_assisters": 10,
+      "priority": 477,
       "builders": [
         "BasicBotFabber",
         "AdvancedBotFabber",
@@ -204,8 +155,8 @@
       "to_build": "AdvancedVehicleFactory",
       "instance_count": 1,
       "shared_instance_count": "Factory",
-      "priority": 477,
       "max_num_assisters": 10,
+      "priority": 477,
       "builders": [
         "BasicVehicleFabber",
         "AdvancedVehicleFabber"
@@ -215,6 +166,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
           {
@@ -239,6 +194,10 @@
           },
           {
             "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
           {
