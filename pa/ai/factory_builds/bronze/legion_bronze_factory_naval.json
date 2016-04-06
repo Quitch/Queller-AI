@@ -17,14 +17,8 @@
             "boolean": true
           },
           {
-            "test_type": "BaseThreatened",
+            "test_type": "MetMinBasicFabberCount",
             "boolean": false
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber & Basic & (Naval | Air)",
-            "compare0": "<",
-            "value0": 2
           }
         ],
         [
@@ -32,10 +26,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "bronze",
             "boolean": true
-          },
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
           },
           {
             "test_type": "CanDeployNavalFromBase",
@@ -50,7 +40,7 @@
             "unit_type_string0": "Fabber & Basic & Naval",
             "unit_type_string1": "Factory & Basic & Naval",
             "compare0": "<",
-            "value0": 2
+            "value0": 10
           }
         ]
       ]
@@ -226,14 +216,10 @@
             "boolean": true
           },
           {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Fabber & Advanced & Naval",
             "compare0": "<",
-            "value0": 1
+            "value0": 2
           }
         ],
         [
@@ -241,10 +227,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "bronze",
             "boolean": true
-          },
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -255,7 +237,7 @@
             "unit_type_string0": "Fabber & Advanced & Naval",
             "unit_type_string1": "Factory & Advanced & Naval",
             "compare0": "<",
-            "value0": 1
+            "value0": 5
           }
         ]
       ]
@@ -360,27 +342,6 @@
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Naval",
-            "compare0": "==",
-            "value0": 0
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": false
           }
         ]
       ]

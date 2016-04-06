@@ -17,16 +17,10 @@
             "boolean": true
           },
           {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
-          },
-          {
             "test_type": "UnitCount",
             "unit_type_string0": "Orbital & Fabber",
             "compare0": "<",
-            "value0": 1
+            "value0": 2
           }
         ],
         [
@@ -40,23 +34,17 @@
             "string0": "LegionOrbitalBasicFabber"
           },
           {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
-          },
-          {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Fabber & Orbital",
             "unit_type_string1": "Factory & Orbital",
             "compare0": "<",
-            "value0": 1
+            "value0": 5
           }
         ]
       ]
     },
     {
-      "name": "Legion - Bronze - Sputnik - This Planet",
+      "name": "Legion - Bronze - Sputnik",
       "to_build": "LegionOrbitalBasicRadar",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -74,12 +62,6 @@
           {
             "test_type": "ThisPlanetNeedsReconAssistance",
             "boolean": true
-          },
-          {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
           }
         ],
         [
@@ -91,18 +73,12 @@
           {
             "test_type": "OtherPlanetNeedsReconAssistance",
             "boolean": true
-          },
-          {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
           }
         ]
       ]
     },
     {
-      "name": "Legion - Bronze - Wraith - This Planet",
+      "name": "Legion - Bronze - Wraith",
       "to_build": "LegionOrbitalBasicScout",
       "instance_count": 1,
       "priority": 97,
@@ -119,12 +95,6 @@
           {
             "test_type": "ThisPlanetNeedsReconAssistance",
             "boolean": true
-          },
-          {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
           }
         ],
         [
@@ -136,12 +106,6 @@
           {
             "test_type": "OtherPlanetNeedsReconAssistance",
             "boolean": true
-          },
-          {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
           }
         ]
       ]
@@ -161,70 +125,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "bronze",
             "boolean": true
-          },
-          {
-            "test_type": "PlanetThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 0
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Legion - Bronze - Chariot - Commander Evac",
-      "to_build": "LegionOrbitalBasicTransport",
-      "instance_count": 1,
-      "min_num_assisters": 8,
-      "max_num_assisters": 20,
-      "priority": 0,
-      "builders": [
-        "AnyLegionFactoryOrbital"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
-            "test_type": "NoWhereToRun",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Orbital & Transport",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter",
-            "compare0": "<",
-            "value0": 1
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
-            "test_type": "NoWhereToRun",
-            "boolean": true
-          },
-          {
-            "test_type": "CurrentEnergyEfficiency",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Orbital & Transport",
-            "compare0": "<",
-            "value0": 1
           }
         ]
       ]
@@ -248,12 +148,6 @@
           {
             "test_type": "PlanetWithoutPresence",
             "boolean": true
-          },
-          {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -281,12 +175,6 @@
             "boolean": true
           },
           {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
-          },
-          {
             "test_type": "SystemThreat",
             "string0": "Land",
             "compare0": ">",
@@ -300,12 +188,6 @@
             "boolean": true
           },
           {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
-          },
-          {
             "test_type": "SystemThreat",
             "string0": "Naval",
             "compare0": ">",
@@ -315,7 +197,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Advanced Radar Satellite - This Planet",
+      "name": "Legion - Bronze - Advanced Radar Satellite",
       "to_build": "LegionOrbitalAdvancedRadar",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -333,12 +215,6 @@
           {
             "test_type": "ThisPlanetNeedsReconAssistance",
             "boolean": true
-          },
-          {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
           }
         ],
         [
@@ -350,12 +226,6 @@
           {
             "test_type": "OtherPlanetNeedsReconAssistance",
             "boolean": true
-          },
-          {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
           }
         ]
       ]
