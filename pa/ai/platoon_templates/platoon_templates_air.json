@@ -3,7 +3,7 @@
     "Air_Scout_1": {
       "units": [
         {
-          "unit_types": "Air & Mobile & Scout",
+          "unit_types": "Air & Mobile & Scout - Titan",
           "max_count": 1
         }
       ]
@@ -11,12 +11,12 @@
     "BomberGunship_Attack_1": {
       "units": [
         {
-          "unit_types": "Air & Mobile & (Bomber | Gunship)",
+          "unit_types": "Air & Mobile & (Bomber | Gunship) - Titan",
           "min_count": 1,
           "max_count": 3
         },
         {
-          "unit_types": "Air & Mobile & Fighter",
+          "unit_types": "Air & Mobile & Fighter - Titan",
           "min_count": 0,
           "max_count": -1,
           "squad": "Escort"
@@ -26,7 +26,7 @@
     "BomberGunship_Attack_4": {
       "units": [
         {
-          "unit_types": "Air & Mobile & (Bomber | Gunship)",
+          "unit_types": "Air & Mobile & (Bomber | Gunship) - Titan",
           "min_count": 4,
           "max_count": 8
         },
@@ -37,7 +37,7 @@
           "squad": "Defense"
         },
         {
-          "unit_types": "Air & Mobile & Fighter",
+          "unit_types": "Air & Mobile & Fighter - Titan",
           "min_count": 0,
           "max_count": -1,
           "squad": "Escort"
@@ -47,7 +47,7 @@
     "BomberGunship_Attack_10": {
       "units": [
         {
-          "unit_types": "Air & Mobile & (Bomber | Gunship)",
+          "unit_types": "Air & Mobile & (Bomber | Gunship) - Titan",
           "min_count": 10,
           "max_count": 19
         },
@@ -58,7 +58,7 @@
           "squad": "Defense"
         },
         {
-          "unit_types": "Air & Mobile & Fighter",
+          "unit_types": "Air & Mobile & Fighter - Titan",
           "min_count": 0,
           "max_count": -1,
           "squad": "Escort"
@@ -68,7 +68,7 @@
     "BomberGunship_Attack_20": {
       "units": [
         {
-          "unit_types": "Air & Mobile & (Bomber | Gunship)",
+          "unit_types": "Air & Mobile & (Bomber | Gunship) - Titan",
           "min_count": 20,
           "max_count": 29
         },
@@ -79,7 +79,7 @@
           "squad": "Defense"
         },
         {
-          "unit_types": "Air & Mobile & Fighter",
+          "unit_types": "Air & Mobile & Fighter - Titan",
           "min_count": 0,
           "max_count": -1,
           "squad": "Escort"
@@ -89,7 +89,7 @@
     "BomberGunship_Attack_30": {
       "units": [
         {
-          "unit_types": "Air & Mobile & (Bomber | Gunship)",
+          "unit_types": "Air & Mobile & (Bomber | Gunship) - Titan",
           "min_count": 30,
           "max_count": 39
         },
@@ -100,7 +100,7 @@
           "squad": "Defense"
         },
         {
-          "unit_types": "Air & Mobile & Fighter",
+          "unit_types": "Air & Mobile & Fighter - Titan",
           "min_count": 0,
           "max_count": -1,
           "squad": "Escort"
@@ -110,7 +110,7 @@
     "BomberGunship_Attack_40": {
       "units": [
         {
-          "unit_types": "Air & Mobile & (Bomber | Gunship)",
+          "unit_types": "Air & Mobile & (Bomber | Gunship) - Titan",
           "min_count": 40,
           "max_count": -1
         },
@@ -120,7 +120,7 @@
           "squad": "Defense"
         },
         {
-          "unit_types": "Air & Mobile & Fighter",
+          "unit_types": "Air & Mobile & Fighter - Titan",
           "min_count": 0,
           "max_count": -1,
           "squad": "Escort"
@@ -184,20 +184,20 @@
     "Suicide_Attack_2": {
       "units": [
         {
-          "max_count": 4,
-          "min_count": 2,
+          "unit_types": "Air & Mobile & SelfDestruct",
           "squad": "Suicide",
-          "unit_types": "Air & Mobile & SelfDestruct"
+          "min_count": 2,
+          "max_count": 4
         }
       ]
     },
     "Suicide_Attack_3": {
       "units": [
         {
-          "max_count": 5,
-          "min_count": 3,
+          "unit_types": "Air & Mobile & SelfDestruct",
           "squad": "Suicide",
-          "unit_types": "Air & Mobile & SelfDestruct"
+          "min_count": 3,
+          "max_count": 5
         }
       ]
     }

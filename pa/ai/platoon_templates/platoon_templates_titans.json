@@ -3,58 +3,16 @@
     "Land_Titan_Attack_Queller": {
       "units": [
         {
-          "unit_types": "Bot & Titan & Mobile",
+          "unit_types": "Bot & Titan & Mobile - Custom1",
           "min_count": 0,
           "max_count": -1,
           "squad": "Close"
         },
         {
-          "unit_types": "Tank & Titan & Mobile",
+          "unit_types": "(Tank | (Bot & Custom1)) & Titan & Mobile",
           "min_count": 0,
           "max_count": -1,
           "squad": "Artillery"
-        },
-        {
-          "unit_types": "((Tank & Mobile) | (Bot & Fighter & Mobile)) - Fabber - AirDefense - Construction - Artillery - Heavy - Scout - SelfDestruct - Titan",
-          "min_count": 0,
-          "max_count": -1,
-          "squad": "General"
-        },
-        {
-          "unit_types": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - Scout - SelfDestruct - Deconstruction - Titan - Fighter",
-          "min_count": 0,
-          "max_count": -1,
-          "squad": "Fast"
-        },
-        {
-          "unit_types": "Land & Mobile & (Artillery | Tactical) - Titan",
-          "min_count": 0,
-          "percent": 0.5,
-          "squad": "Artillery"
-        },
-        {
-          "unit_types": "Land & Mobile & Heavy",
-          "min_count": 0,
-          "percent": 0.4,
-          "squad": "Close"
-        },
-        {
-          "unit_types": "Land & Mobile & AirDefense",
-          "min_count": 0,
-          "percent": 0.2,
-          "squad": "Defense"
-        },
-        {
-          "unit_types": "Land & Mobile & (Scout | Construction)",
-          "min_count": 0,
-          "percent": 0.05,
-          "squad": "Defense"
-        },
-        {
-          "unit_types": "Air & MissileDefense & Mobile",
-          "min_count": 0,
-          "max_count": -1,
-          "squad": "Defense"
         }
       ]
     },
@@ -64,18 +22,6 @@
           "unit_types": "Air & Titan & Mobile",
           "min_count": 1,
           "max_count": -1
-        },
-        {
-          "unit_types": "Air & Mobile & Fighter",
-          "min_count": 0,
-          "max_count": -1,
-          "squad": "Escort"
-        },
-        {
-          "unit_types": "Air & MissileDefense & Mobile",
-          "min_count": 0,
-          "max_count": -1,
-          "squad": "Defense"
         }
       ]
     },

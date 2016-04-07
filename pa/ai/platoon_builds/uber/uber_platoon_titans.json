@@ -19,8 +19,8 @@
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "(Tank | Bot) & Titan",
-            "compare0": ">",
-            "value0": 0
+            "compare0": ">=",
+            "value0": 1
           },
           {
             "test_type": "CanAttackWithPoolUnits",
