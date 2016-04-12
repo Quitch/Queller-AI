@@ -342,32 +342,14 @@
       ]
     },
     {
-      "name": "Uber - Slammer - Cannon",
+      "name": "Uber - Slammer",
       "to_build": "AdvancedAssaultBot",
       "instance_count": -1,
       "max_num_assisters": 10,
       "priority": 199,
       "builders": [
+        "AdvancedBotFactory",
         "UnitCannon"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Uber - Slammer - Factory",
-      "to_build": "AdvancedAssaultBot",
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 199,
-      "builders": [
-        "AdvancedBotFactory"
       ],
       "build_conditions": [
         [
@@ -457,8 +439,8 @@
       "max_num_assisters": 10,
       "priority": 199,
       "builders": [
-        "UnitCannon",
-        "AdvancedBotFactory"
+        "AdvancedBotFactory",
+        "UnitCannon"
       ],
       "build_conditions": [
         [
