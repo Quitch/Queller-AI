@@ -104,28 +104,6 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionFactoryBasicBot"
           }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionFactoryBasicBot"
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionFactoryBasicBot"
-          }
         ]
       ],
       "placement_rules": {
@@ -240,28 +218,6 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionFactoryBasicBot"
           }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionFactoryBasicBot"
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionFactoryBasicBot"
-          }
         ]
       ],
       "placement_rules": {
@@ -343,85 +299,6 @@
             "unit_type_string1": "(Land & Mobile) - Scout - Fabber - Deconstruction - Construction",
             "compare0": "<",
             "value0": 0.2
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionFactoryBasicBot"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bot",
-            "boolean": false
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "tank",
-            "boolean": false
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "CurrentMetalEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "MetalStorageFrac",
-            "compare0": ">",
-            "value0": 0.1
-          },
-          {
-            "test_type": "CurrentEnergyEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionFactoryBasicBot"
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Bot & Factory & Basic",
-            "compare0": "<",
-            "value0": 400
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionFactoryBasicBot"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionFactoryBasicBot"
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -520,6 +397,10 @@
             "boolean": true
           },
           {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -555,6 +436,10 @@
             "boolean": true
           },
           {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -584,6 +469,10 @@
           },
           {
             "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
           {
@@ -630,6 +519,10 @@
           },
           {
             "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
           {
