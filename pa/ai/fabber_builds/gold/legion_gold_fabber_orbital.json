@@ -114,6 +114,7 @@
       "name": "Legion - Gold - Starship Foundry",
       "to_build": "LegionFactoryAdvancedOrbital",
       "instance_count": 1,
+      "shared_instance_count": "AdvancedFactory",
       "priority": 477,
       "max_num_assisters": 5,
       "builders": [
@@ -141,6 +142,57 @@
       ],
       "placement_rules": {
         "buffer": 50
+      }
+    },
+    {
+      "name": "Legion - Gold - Starcannon",
+      "to_build": "LegionOrbitalAdvancedCannon",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedFactory",
+      "max_num_assisters": 5,
+      "priority": 477,
+      "builders": [
+        "LegionOrbitalBasicFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionOrbitalAdvancedCannon"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": ">",
+            "value0": 5600
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "AntiOrbital",
+            "string1": "Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionOrbitalAdvancedCannon"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2
       }
     }
   ]

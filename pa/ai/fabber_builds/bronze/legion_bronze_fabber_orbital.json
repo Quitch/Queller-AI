@@ -126,6 +126,44 @@
       "placement_rules": {
         "buffer": 3
       }
+    },
+    {
+      "name": "Legion - Bronze - Starcannon",
+      "to_build": "LegionOrbitalAdvancedCannon",
+      "instance_count": 1,
+      "shared_instance_count": "Factory",
+      "max_num_assisters": 10,
+      "priority": 477,
+      "builders": [
+        "LegionOrbitalBasicFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionOrbitalAdvancedCannon"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionOrbitalAdvancedCannon"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2
+      }
     }
   ]
 }
