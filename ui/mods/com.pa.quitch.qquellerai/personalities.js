@@ -182,7 +182,7 @@
             personality_tags:
             [
                 "uber",
-                "airswarm"
+                "air"
             ],
             fabber_to_factory_ratio_basic: 1.0,
             fabber_to_factory_ratio_advanced: 3.0,
@@ -210,7 +210,7 @@
             personality_tags:
             [
                 "uber",
-                "botonly"
+                "bot"
             ],
             fabber_to_factory_ratio_basic: 1.0,
             fabber_to_factory_ratio_advanced: 3.0,
@@ -238,7 +238,7 @@
             personality_tags:
             [
                 "uber",
-                "nonaval"
+                "land"
             ],
             fabber_to_factory_ratio_basic: 1.0,
             fabber_to_factory_ratio_advanced: 3.0,
@@ -266,7 +266,7 @@
             personality_tags:
             [
                 "uber",
-                "navalstart"
+                "naval"
             ],
             fabber_to_factory_ratio_basic: 1.0,
             fabber_to_factory_ratio_advanced: 3.0,
@@ -294,7 +294,6 @@
             personality_tags:
             [
                 "uber",
-                "botonly",
                 "rush"
             ],
             fabber_to_factory_ratio_basic: 1.0,
@@ -323,7 +322,7 @@
             personality_tags:
             [
                 "uber",
-                "tankonly"
+                "tank"
             ],
             fabber_to_factory_ratio_basic: 1.0,
             fabber_to_factory_ratio_advanced: 3.0,
@@ -351,7 +350,7 @@
             personality_tags:
             [
                 "uber",
-                "techrush",
+                "tech",
                 "threefabber"
             ],
             fabber_to_factory_ratio_basic: 1.0,
@@ -380,7 +379,7 @@
             personality_tags:
             [
                 "uber",
-                "techrush",
+                "tech",
                 "threefabber",
                 "turtle"
             ],
