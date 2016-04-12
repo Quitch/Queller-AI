@@ -288,7 +288,7 @@
             go_for_the_kill: true,
             priority_scout_metal_spots: true,
             enable_commander_danger_responses: true,
-            neural_data_mod: 0.5,
+            neural_data_mod: 1.0,
             adv_eco_mod: 2.0,
             adv_eco_mod_alone: 1.5,
             personality_tags:
