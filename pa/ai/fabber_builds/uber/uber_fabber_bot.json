@@ -716,6 +716,11 @@
             "boolean": false
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "tank",
+            "boolean": false
+          },
+          {
             "test_type": "BaseThreatened",
             "boolean": false
           },
@@ -772,17 +777,16 @@
           },
           {
             "test_type": "HasPersonalityTag",
-            "string0": "bot",
-            "boolean": false
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "tank",
             "boolean": false
           },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -819,17 +823,16 @@
           },
           {
             "test_type": "HasPersonalityTag",
-            "string0": "bot",
-            "boolean": false
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "tank",
             "boolean": false
           },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -878,6 +881,10 @@
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -930,6 +937,11 @@
             "boolean": false
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "tank",
+            "boolean": false
+          },
+          {
             "test_type": "BaseThreatened",
             "boolean": false
           },
@@ -938,11 +950,15 @@
             "boolean": true
           },
           {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedVehicleFactory"
+            "string0": "AdvancedBotFactory"
           },
           {
             "test_type": "HaveSeenEnemyUnits",
@@ -976,7 +992,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedVehicleFactory"
+            "string0": "AdvancedBotFactory"
           }
         ]
       ],
