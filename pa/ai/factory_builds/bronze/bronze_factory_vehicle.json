@@ -52,7 +52,8 @@
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "BasicVehicleFactory"
+        "BasicVehicleFactory",
+        "UnitCannon"
       ],
       "build_conditions": [
         [
@@ -98,7 +99,8 @@
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "BasicVehicleFactory"
+        "BasicVehicleFactory",
+        "UnitCannon"
       ],
       "build_conditions": [
         [
@@ -188,7 +190,7 @@
       "to_build": "AdvancedLaserTank",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 199,
+      "priority": 97,
       "builders": [
         "AdvancedVehicleFactory"
       ],
@@ -211,7 +213,7 @@
       "to_build": "AdvancedArmorTank",
       "instance_count": 1,
       "max_num_assisters": 10,
-      "priority": 199,
+      "priority": 97,
       "builders": [
         "AdvancedVehicleFactory"
       ],
@@ -234,7 +236,7 @@
       "to_build": "AdvancedArtilleryVehicle",
       "instance_count": 1,
       "max_num_assisters": 10,
-      "priority": 199,
+      "priority": 97,
       "builders": [
         "AdvancedVehicleFactory"
       ],
@@ -257,7 +259,7 @@
       "to_build": "FlakTank",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 199,
+      "priority": 97,
       "builders": [
         "AdvancedVehicleFactory"
       ],

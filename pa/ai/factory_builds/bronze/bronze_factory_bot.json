@@ -82,7 +82,8 @@
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "BasicBotFactory"
+        "BasicBotFactory",
+        "UnitCannon"
       ],
       "build_conditions": [
         [
@@ -101,7 +102,8 @@
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "BasicBotFactory"
+        "BasicBotFactory",
+        "UnitCannon"
       ],
       "build_conditions": [
         [
@@ -124,7 +126,8 @@
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "BasicBotFactory"
+        "BasicBotFactory",
+        "UnitCannon"
       ],
       "build_conditions": [
         [
@@ -224,7 +227,7 @@
       "to_build": "AdvancedAssaultBot",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 199,
+      "priority": 97,
       "builders": [
         "AdvancedBotFactory",
         "UnitCannon"
@@ -244,7 +247,7 @@
       "to_build": "AdvancedArtilleryBot",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 199,
+      "priority": 97,
       "builders": [
         "AdvancedBotFactory"
       ],
@@ -267,7 +270,7 @@
       "to_build": "TMLBot",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 199,
+      "priority": 97,
       "builders": [
         "AdvancedBotFactory"
       ],
