@@ -559,15 +559,14 @@ function ai_types() {
             go_for_the_kill: true,
             priority_scout_metal_spots: true,
             enable_commander_danger_responses: true,
-            neural_data_mod: 1.0,
+            neural_data_mod: 0.75,
             adv_eco_mod: 1.0,
             adv_eco_mod_alone: 0.65,
             personality_tags:
             [
                 "uber",
                 "tech",
-                "threefabber",
-                "turtle"
+                "threefabber"
             ],
             fabber_to_factory_ratio_basic: 3.0,
             fabber_to_factory_ratio_advanced: 5.0,

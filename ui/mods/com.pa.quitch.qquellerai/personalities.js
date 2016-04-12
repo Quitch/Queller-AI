@@ -289,8 +289,8 @@
             priority_scout_metal_spots: true,
             enable_commander_danger_responses: true,
             neural_data_mod: 0.5,
-            adv_eco_mod: 1.4,
-            adv_eco_mod_alone: 0.85,
+            adv_eco_mod: 2.0,
+            adv_eco_mod_alone: 1.5,
             personality_tags:
             [
                 "uber",
@@ -380,8 +380,7 @@
             [
                 "uber",
                 "tech",
-                "threefabber",
-                "turtle"
+                "threefabber"
             ],
             fabber_to_factory_ratio_basic: 3.0,
             fabber_to_factory_ratio_advanced: 5.0,
