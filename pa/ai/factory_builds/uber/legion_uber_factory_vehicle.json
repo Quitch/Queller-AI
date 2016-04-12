@@ -712,6 +712,10 @@
             "boolean": false
           },
           {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
             "test_type": "PlanetThreat",
             "string0": "Orbital",
             "compare0": ">",
@@ -740,6 +744,10 @@
           },
           {
             "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
           {
