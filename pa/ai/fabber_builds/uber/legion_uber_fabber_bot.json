@@ -94,6 +94,28 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionFactoryBasicBot"
           }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicBot"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicBot"
+          }
         ]
       ],
       "placement_rules": {
@@ -206,15 +228,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "botonly",
-            "boolean": false
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
@@ -224,12 +237,6 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "LegionFactoryBasicBot"
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Bot & Factory & Basic",
-            "compare0": "<",
-            "value0": 400
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -363,6 +370,28 @@
             "unit_type_string0": "Bot & Factory & Basic",
             "compare0": "<",
             "value0": 400
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicBot"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicBot"
           },
           {
             "test_type": "CanFindPlaceToBuild",
