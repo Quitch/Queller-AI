@@ -544,7 +544,7 @@ function ai_types() {
             fabber_alone_on_planet_mod: 3.0,
             basic_to_advanced_factory_ratio: 5,
             factory_alone_on_planet_mod: 0.5,
-            min_basic_fabbers: 5,
+            min_basic_fabbers: 3,
             max_basic_fabbers: 100,
             min_advanced_fabbers: 3,
             max_advanced_fabbers: 100

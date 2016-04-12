@@ -358,7 +358,7 @@
             fabber_alone_on_planet_mod: 3.0,
             basic_to_advanced_factory_ratio: 5,
             factory_alone_on_planet_mod: 0.5,
-            min_basic_fabbers: 5,
+            min_basic_fabbers: 3,
             max_basic_fabbers: 100,
             min_advanced_fabbers: 3,
             max_advanced_fabbers: 100
@@ -373,7 +373,7 @@
             go_for_the_kill: true,
             priority_scout_metal_spots: true,
             enable_commander_danger_responses: true,
-            neural_data_mod: 1.0,
+            neural_data_mod: 0.75,
             adv_eco_mod: 1.0,
             adv_eco_mod_alone: 0.65,
             personality_tags:
