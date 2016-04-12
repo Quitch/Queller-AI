@@ -66,7 +66,8 @@
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "LegionFactoryBasicVehicle"
+        "LegionFactoryBasicVehicle",
+        "LegionOrbitalAdvancedCannon"
       ],
       "build_conditions": [
         [
@@ -163,6 +164,25 @@
       "priority": 97,
       "builders": [
         "LegionFactoryBasicVehicle"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Silver - Corsair - Starcannon",
+      "to_build": "LegionVehicleBasicArtillery",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "LegionOrbitalAdvancedCannon"
       ],
       "build_conditions": [
         [
@@ -274,7 +294,7 @@
       "to_build": "LegionVehicleAdvancedArmor",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 199,
+      "priority": 97,
       "builders": [
         "LegionFactoryAdvancedVehicle"
       ],
@@ -304,9 +324,10 @@
       "to_build": "LegionVehicleAdvancedLaser",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 199,
+      "priority": 97,
       "builders": [
-        "LegionFactoryAdvancedVehicle"
+        "LegionFactoryAdvancedVehicle",
+        "LegionOrbitalAdvancedCannon"
       ],
       "build_conditions": [
         [
@@ -327,7 +348,7 @@
       "to_build": "LegionVehicleAdvancedSniper",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 199,
+      "priority": 97,
       "builders": [
         "LegionFactoryAdvancedVehicle"
       ],
@@ -350,7 +371,7 @@
       "to_build": "LegionVehicleAdvancedSwarm",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 199,
+      "priority": 97,
       "builders": [
         "LegionFactoryAdvancedVehicle"
       ],
@@ -373,7 +394,7 @@
       "to_build": "LegionVehicleAdvancedHover",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 199,
+      "priority": 97,
       "builders": [
         "LegionFactoryAdvancedVehicle"
       ],

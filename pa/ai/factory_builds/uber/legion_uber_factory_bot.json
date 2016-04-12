@@ -543,7 +543,8 @@
       "max_num_assisters": 10,
       "priority": 199,
       "builders": [
-        "LegionFactoryAdvancedBot"
+        "LegionFactoryAdvancedBot",
+        "LegionOrbitalAdvancedCannon"
       ],
       "build_conditions": [
         [
@@ -559,25 +560,6 @@
           },
           {
             "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Legion - Uber - Enforcer - Dropper",
-      "to_build": "LegionBotAdvancedAssault",
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 199,
-      "builders": [
-        "LegionOrbitalAdvancedCannon"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
             "boolean": true
           }
         ]
