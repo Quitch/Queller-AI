@@ -127,7 +127,10 @@ Normal through Absurd are the standard difficulties and will use the vanilla AI 
 
 By default, Queller at Uber level will adapt its play to try and suit the system and the opposition it faces. You can use subpersonalities to customise Queller's game to your liking, or help it play better where it's making poor strategy choices.
 
-- Air
+- Aggressive
+ - Will attack earlier and more often
+
+ - Air
  - Heavier use of air
  - Can go air first
 
@@ -153,8 +156,8 @@ By default, Queller at Uber level will adapt its play to try and suit the system
  - Will get orbital as soon as possible on multi-planet systems
 
 - Turtle
- - Emphasis on fabbers over combat units
- - Emphasis on static weapons over factories
+ - More aggressive about teching
+ - Requires a bigger advantage before attacking
 
 ## RECOMMENDED DIFFICULTY
 
