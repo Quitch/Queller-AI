@@ -339,6 +339,10 @@
             "boolean": true
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": false
           },
@@ -353,6 +357,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -371,6 +379,10 @@
             "boolean": true
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiSurface",
             "compare0": "<=",
@@ -382,6 +394,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "HaveSeenEnemyUnits",
