@@ -130,13 +130,17 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 - Aggressive
  - Will attack earlier and more often
 
- - Air
- - Heavier use of air
+- Air
+ - Greater use of air
  - Can go air first
 
 - Bot
  - Doesn't build vehicle factories
- - Will build a vehicle factory for Skitters if it detects the possibility of mines
+ - MLA will build a vehicle factory for Skitters if it detects the possibility of mines
+
+- Cautious
+ - Requires a greater advantage before attacking
+ - Techs faster
 
 - Land
  - Won't build naval factories
@@ -146,7 +150,8 @@ By default, Queller at Uber level will adapt its play to try and suit the system
  - Slightly more aggressive about getting into the water
 
 - Rush
- - Focus on T1 land rush
+ - Focus on T1
+ - Techs late
 
 - Tank
  - Doesn't build bot factories
@@ -154,10 +159,6 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 - Tech
  - Goes T2 as soon as it can afford to
  - Will get orbital as soon as possible on multi-planet systems
-
-- Turtle
- - More aggressive about teching
- - Requires a bigger advantage before attacking
 
 ## RECOMMENDED DIFFICULTY
 
