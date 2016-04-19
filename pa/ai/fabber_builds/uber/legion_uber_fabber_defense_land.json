@@ -26,7 +26,7 @@
           },
           {
             "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Bot",
+            "unit_type_string0": "(Bot & Basic & Offense) - Artillery",
             "boolean": true
           },
           {
@@ -78,7 +78,7 @@
           },
           {
             "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Bot",
+            "unit_type_string0": "(Bot & Basic & Offense) - Artillery",
             "boolean": true
           },
           {
@@ -303,8 +303,13 @@
           },
           {
             "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Bot",
+            "unit_type_string0": "(Bot & Basic & Offense) - Artillery",
             "boolean": true
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Tank",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
