@@ -110,39 +110,6 @@
       ]
     },
     {
-      "name": "Uber - Boom",
-      "to_build": "BoomBot",
-      "instance_count": 1,
-      "priority": 97,
-      "builders": [
-        "AnyUberBotFactory"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "(Tank & Heavy) | Bot",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": ">",
-            "value0": 2100
-          }
-        ]
-      ]
-    },
-    {
       "name": "Uber - Dox",
       "to_build": "BasicAssaultBot",
       "instance_count": -1,
@@ -157,45 +124,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Uber - Grenadier",
-      "to_build": "BasicArtilleryBot",
-      "instance_count": 1,
-      "max_num_assisters": 10,
-      "priority": 97,
-      "builders": [
-        "AnyUberBotFactory"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "rush",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Wall",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": ">",
-            "value0": 2100
           }
         ]
       ]
@@ -442,26 +370,6 @@
             "string0": "Orbital",
             "compare0": ">",
             "value0": 0
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Uber - Locusts",
-      "to_build": "NanoSwarm",
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 199,
-      "builders": [
-        "AdvancedBotFactory",
-        "UnitCannon"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
           }
         ]
       ]
