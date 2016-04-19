@@ -241,35 +241,6 @@
       ]
     },
     {
-      "name": "Legion - Uber - Purger",
-      "to_build": "LegionBotBasicBomb",
-      "instance_count": -1,
-      "priority": 0,
-      "builders": [
-        "LegionFactoryBasicBot",
-        "LegionFactoryAdvancedBot"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": ">",
-            "value0": 2100
-          }
-        ]
-      ]
-    },
-    {
       "name": "Legion - Uber - Lancer",
       "to_build": "LegionBotBasicSniper",
       "instance_count": -1,
