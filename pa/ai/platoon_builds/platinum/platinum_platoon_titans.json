@@ -4,7 +4,7 @@
       "name": "Platinum - Land Attack Titan",
       "to_build": "Land_Titan_Attack_Queller",
       "instance_count": -1,
-      "priority": 195,
+      "priority": 210,
       "build_conditions": [
         [
           {
@@ -18,15 +18,14 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Tank | Bot) & Mobile & Titan",
-            "compare0": ">",
-            "value0": 0
+            "unit_type_string0": "(Tank | Bot) & Titan",
+            "compare0": ">=",
+            "value0": 1
           },
           {
-            "test_type": "CanAttackWithPoolUnitsLand",
+            "test_type": "CanAttackWithPoolUnits",
             "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
+            "boolean": true
           }
         ]
       ],
@@ -36,31 +35,8 @@
       "name": "Platinum - Air Attack Titan",
       "to_build": "Air_Titan_Attack_Queller",
       "instance_count": -1,
-      "priority": 195,
+      "priority": 210,
       "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Titan",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsBomber",
-            "string0": "WL_AnySurface",
-            "string1": "WL_Air",
-            "unit_type_string0": "Mobile | Structure"
-          }
-        ],
         [
           {
             "test_type": "HasPersonalityTag",
@@ -73,19 +49,48 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Mobile & Titan",
-            "compare0": ">",
-            "value0": 0
+            "unit_type_string0": "Air & Titan",
+            "compare0": ">=",
+            "value0": 1
           },
           {
-            "test_type": "CanAttackWithPoolUnitsBomber",
+            "test_type": "CanAttackWithPoolUnits",
             "string0": "WL_AnySurface",
-            "string1": "WL_Air",
-            "unit_type_string0": "Mobile | Structure"
+            "boolean": true
           }
         ]
       ],
-      "task_type": "BomberAttack"
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Platinum - Orbital Attack Titan",
+      "to_build": "Orbital_Titan_Attack_Queller",
+      "instance_count": -1,
+      "priority": 210,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & Titan",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface"
+          }
+        ]
+      ],
+      "task_type": "OrbitalLaserAttack"
     }
   ]
 }

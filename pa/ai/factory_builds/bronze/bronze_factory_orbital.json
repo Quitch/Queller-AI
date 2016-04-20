@@ -162,7 +162,7 @@
       "name": "Bronze - Solar Array",
       "to_build": "SolarArray",
       "instance_count": 1,
-      "max_num_assisters": 15,
+      "max_num_assisters": 10,
       "priority": 195,
       "builders": [
         "OrbitalFactory"
@@ -196,7 +196,7 @@
       "name": "Bronze - SXX-1304 Laser Platform",
       "to_build": "OrbitalDeathLaser",
       "instance_count": -1,
-      "max_num_assisters": 15,
+      "max_num_assisters": 10,
       "priority": 195,
       "builders": [
         "OrbitalFactory"
@@ -207,15 +207,34 @@
             "test_type": "HasPersonalityTag",
             "string0": "bronze",
             "boolean": true
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Land",
+            "compare0": ">",
+            "value0": 12500
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Naval",
+            "compare0": ">",
+            "value0": 0
           }
         ]
       ]
     },
     {
-      "name": "Bronze - Advanced Radar Satellite - This Planet",
+      "name": "Bronze - Advanced Radar Satellite",
       "to_build": "AdvancedRadarSattelite",
       "instance_count": 1,
-      "max_num_assisters": 15,
+      "max_num_assisters": 10,
       "priority": 195,
       "builders": [
         "OrbitalFactory"

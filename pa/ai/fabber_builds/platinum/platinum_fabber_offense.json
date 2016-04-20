@@ -9,7 +9,8 @@
       "priority": 255,
       "base_sort": "FromPerimeter",
       "builders": [
-        "AnyUberBasicFabber"
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber"
       ],
       "build_conditions": [
         [
@@ -55,7 +56,7 @@
         "placement_type": "FromMainBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "(Structure - MetalProduction) | Commander",
+            "unit_type_string": "Structure - MetalProduction",
             "alliance": "Enemy",
             "compare_type": ">=",
             "range": 200,
@@ -403,7 +404,7 @@
       "name": "Platinum - Catalyst",
       "to_build": "ControlModule",
       "instance_count": 1,
-      "min_num_assisters": 20,
+      "min_num_assisters": 13,
       "max_num_assisters": 100,
       "priority": 509,
       "builders": [

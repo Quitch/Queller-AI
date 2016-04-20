@@ -4,10 +4,10 @@
       "name": "Uber - Atlas",
       "to_build": "SeismicBot",
       "instance_count": 1,
-      "min_num_assisters": 3,
+      "min_num_assisters": 5,
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
-      "priority": 361,
+      "priority": 360,
       "builders": [
         "AdvancedBotFabber",
         "UberSupportCommander",
@@ -29,6 +29,11 @@
             "boolean": false
           },
           {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Naval",
+            "boolean": true
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -36,6 +41,12 @@
             "string0": "AntiSurface",
             "compare0": ">",
             "value0": 11200
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber",
+            "compare0": ">=",
+            "value0": 5
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -50,7 +61,7 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 10,
+        "buffer": 50,
         "placement_type": "FromMainBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
@@ -64,7 +75,7 @@
       "name": "Uber - Ares",
       "to_build": "FortressVehicle",
       "instance_count": 1,
-      "min_num_assisters": 3,
+      "min_num_assisters": 5,
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
       "priority": 361,
@@ -98,6 +109,12 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory - Orbital",
             "compare0": ">=",
             "value0": 1
@@ -109,7 +126,7 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 10,
+        "buffer": 50,
         "placement_type": "FromMainBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
@@ -123,7 +140,7 @@
       "name": "Uber - Zeus",
       "to_build": "TeslaGunship",
       "instance_count": 1,
-      "min_num_assisters": 3,
+      "min_num_assisters": 5,
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
       "priority": 361,
@@ -154,6 +171,19 @@
             "string0": "AntiSurface",
             "compare0": ">",
             "value0": 11200
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": "<",
+            "value0": 0.6
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber",
+            "compare0": ">=",
+            "value0": 5
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -220,7 +250,7 @@
       "shared_instance_count": "Titan",
       "priority": 480,
       "builders": [
-        "AnyAdvancedFabber"
+        "AnyUberAdvancedFabber"
       ],
       "build_conditions": [
         [

@@ -193,6 +193,7 @@
       "name": "Platinum - Orbital Factory",
       "to_build": "OrbitalFactory",
       "instance_count": 1,
+      "shared_instance_count": "AdvancedFactory",
       "priority": 477,
       "max_num_assisters": 5,
       "builders": [
@@ -219,7 +220,7 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 50
+        "buffer": 3
       }
     }
   ]

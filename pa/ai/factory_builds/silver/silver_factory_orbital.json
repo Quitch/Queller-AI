@@ -268,7 +268,7 @@
       "name": "Silver - Solar Array",
       "to_build": "SolarArray",
       "instance_count": 1,
-      "max_num_assisters": 15,
+      "max_num_assisters": 10,
       "priority": 195,
       "builders": [
         "OrbitalFactory"
@@ -314,7 +314,7 @@
       "name": "Silver - SXX-1304 Laser Platform",
       "to_build": "OrbitalDeathLaser",
       "instance_count": -1,
-      "max_num_assisters": 15,
+      "max_num_assisters": 10,
       "priority": 195,
       "builders": [
         "OrbitalFactory"
@@ -331,6 +331,12 @@
             "string0": "Orbital",
             "compare0": "<=",
             "value0": 0
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Land",
+            "compare0": ">",
+            "value0": 12500
           }
         ],
         [
@@ -344,6 +350,12 @@
             "string0": "Orbital",
             "compare0": "<=",
             "value0": 0
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Naval",
+            "compare0": ">",
+            "value0": 0
           }
         ]
       ]
@@ -352,7 +364,7 @@
       "name": "Silver - Advanced Radar Satellite - This Planet",
       "to_build": "AdvancedRadarSattelite",
       "instance_count": 1,
-      "max_num_assisters": 15,
+      "max_num_assisters": 10,
       "priority": 195,
       "builders": [
         "OrbitalFactory"

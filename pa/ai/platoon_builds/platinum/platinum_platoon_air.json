@@ -88,19 +88,18 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Air & (Bomber | Gunship)) - Titan",
+            "unit_type_string0": "Air & (Bomber | Gunship)",
             "compare0": ">=",
             "value0": 1
           },
           {
-            "test_type": "CanAttackWithPoolUnitsBomber",
+            "test_type": "CanAttackWithPoolUnits",
             "string0": "WL_AnySurface",
-            "string1": "WL_Air",
-            "unit_type_string0": "Mobile | Structure"
+            "boolean": true
           }
         ]
       ],
-      "task_type": "BomberAttack"
+      "task_type": "LandAttack"
     },
     {
       "name": "Platinum - Bomber-Gunship Attack Platoon 4",
@@ -126,19 +125,18 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Air & (Bomber | Gunship)) - Titan",
+            "unit_type_string0": "Air & (Bomber | Gunship)",
             "compare0": ">=",
             "value0": 4
           },
           {
-            "test_type": "CanAttackWithPoolUnitsBomber",
+            "test_type": "CanAttackWithPoolUnits",
             "string0": "WL_AnySurface",
-            "string1": "WL_Air",
-            "unit_type_string0": "Mobile | Structure"
+            "boolean": true
           }
         ]
       ],
-      "task_type": "BomberAttack"
+      "task_type": "LandAttack"
     },
     {
       "name": "Platinum - Bomber-Gunship Attack Platoon 10",
@@ -164,19 +162,18 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Air & (Bomber | Gunship)) - Titan",
+            "unit_type_string0": "Air & (Bomber | Gunship)",
             "compare0": ">=",
             "value0": 10
           },
           {
-            "test_type": "CanAttackWithPoolUnitsBomber",
+            "test_type": "CanAttackWithPoolUnits",
             "string0": "WL_AnySurface",
-            "string1": "WL_Air",
-            "unit_type_string0": "Mobile | Structure"
+            "boolean": true
           }
         ]
       ],
-      "task_type": "BomberAttack"
+      "task_type": "LandAttack"
     },
     {
       "name": "Platinum - Bomber-Gunship Attack Platoon 20",
@@ -202,19 +199,18 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Air & (Bomber | Gunship)) - Titan",
+            "unit_type_string0": "Air & (Bomber | Gunship)",
             "compare0": ">=",
             "value0": 20
           },
           {
-            "test_type": "CanAttackWithPoolUnitsBomber",
+            "test_type": "CanAttackWithPoolUnits",
             "string0": "WL_AnySurface",
-            "string1": "WL_Air",
-            "unit_type_string0": "Mobile | Structure"
+            "boolean": true
           }
         ]
       ],
-      "task_type": "BomberAttack"
+      "task_type": "LandAttack"
     },
     {
       "name": "Platinum - Bomber-Gunship Attack Platoon 30",
@@ -240,19 +236,18 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Air & (Bomber | Gunship)) - Titan",
+            "unit_type_string0": "Air & (Bomber | Gunship)",
             "compare0": ">=",
             "value0": 30
           },
           {
-            "test_type": "CanAttackWithPoolUnitsBomber",
+            "test_type": "CanAttackWithPoolUnits",
             "string0": "WL_AnySurface",
-            "string1": "WL_Air",
-            "unit_type_string0": "Mobile | Structure"
+            "boolean": true
           }
         ]
       ],
-      "task_type": "BomberAttack"
+      "task_type": "LandAttack"
     },
     {
       "name": "Platinum - Bomber-Gunship Attack Platoon 40",
@@ -272,19 +267,18 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Air & (Bomber | Gunship)) - Titan",
+            "unit_type_string0": "Air & (Bomber | Gunship)",
             "compare0": ">=",
             "value0": 40
           },
           {
-            "test_type": "CanAttackWithPoolUnitsBomber",
+            "test_type": "CanAttackWithPoolUnits",
             "string0": "WL_AnySurface",
-            "string1": "WL_Air",
-            "unit_type_string0": "Mobile | Structure"
+            "boolean": true
           }
         ]
       ],
-      "task_type": "BomberAttack"
+      "task_type": "LandAttack"
     },
     {
       "name": "Platinum - Fighter Attack Platoon 1",
@@ -312,7 +306,7 @@
             "test_type": "CanAttackWithPoolUnitsFighter",
             "string0": "WL_Air",
             "string1": "WL_Air",
-            "unit_type_string0": "Mobile | Structure"
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ],
         [
@@ -336,7 +330,7 @@
             "string0": "fighter_attack",
             "string1": "WL_Air",
             "string2": "WL_Air",
-            "unit_type_string0": "Mobile | Structure"
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ]
       ],
@@ -368,7 +362,7 @@
             "test_type": "CanAttackWithPoolUnitsFighter",
             "string0": "WL_Air",
             "string1": "WL_Air",
-            "unit_type_string0": "Mobile | Structure"
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ],
         [
@@ -392,7 +386,7 @@
             "string0": "fighter_attack",
             "string1": "WL_Air",
             "string2": "WL_Air",
-            "unit_type_string0": "Mobile | Structure"
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ]
       ],
@@ -424,7 +418,7 @@
             "test_type": "CanAttackWithPoolUnitsFighter",
             "string0": "WL_Air",
             "string1": "WL_Air",
-            "unit_type_string0": "Mobile | Structure"
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ],
         [
@@ -448,7 +442,7 @@
             "string0": "fighter_attack",
             "string1": "WL_Air",
             "string2": "WL_Air",
-            "unit_type_string0": "Mobile | Structure"
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ]
       ],
@@ -480,7 +474,7 @@
             "test_type": "CanAttackWithPoolUnitsFighter",
             "string0": "WL_Air",
             "string1": "WL_Air",
-            "unit_type_string0": "Mobile | Structure"
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ],
         [
@@ -504,7 +498,7 @@
             "string0": "fighter_attack",
             "string1": "WL_Air",
             "string2": "WL_Air",
-            "unit_type_string0": "Mobile | Structure"
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ]
       ],
@@ -536,7 +530,7 @@
             "test_type": "CanAttackWithPoolUnitsFighter",
             "string0": "WL_Air",
             "string1": "WL_Air",
-            "unit_type_string0": "Mobile | Structure"
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ],
         [
@@ -560,7 +554,7 @@
             "string0": "fighter_attack",
             "string1": "WL_Air",
             "string2": "WL_Air",
-            "unit_type_string0": "Mobile | Structure"
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ]
       ],
@@ -592,7 +586,7 @@
             "test_type": "CanAttackWithPoolUnitsFighter",
             "string0": "WL_Air",
             "string1": "WL_Air",
-            "unit_type_string0": "Mobile | Structure"
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ],
         [
@@ -616,7 +610,7 @@
             "string0": "fighter_attack",
             "string1": "WL_Air",
             "string2": "WL_Air",
-            "unit_type_string0": "Mobile | Structure"
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ]
       ],

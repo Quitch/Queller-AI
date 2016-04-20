@@ -367,7 +367,7 @@
       "name": "Gold - Solar Array",
       "to_build": "SolarArray",
       "instance_count": 1,
-      "max_num_assisters": 15,
+      "max_num_assisters": 10,
       "priority": 195,
       "builders": [
         "OrbitalFactory"
@@ -427,7 +427,7 @@
       "name": "Gold - SXX-1304 Laser Platform",
       "to_build": "OrbitalDeathLaser",
       "instance_count": -1,
-      "max_num_assisters": 15,
+      "max_num_assisters": 10,
       "priority": 195,
       "builders": [
         "OrbitalFactory"
@@ -444,6 +444,12 @@
             "string0": "Orbital",
             "compare0": "<=",
             "value0": 0
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Land",
+            "compare0": ">",
+            "value0": 12500
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
@@ -466,6 +472,12 @@
             "value0": 0
           },
           {
+            "test_type": "SystemThreat",
+            "string0": "Naval",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Orbital",
             "string1": "AntiOrbital",
@@ -479,7 +491,7 @@
       "name": "Gold - Advanced Radar Satellite - This Planet",
       "to_build": "AdvancedRadarSattelite",
       "instance_count": 1,
-      "max_num_assisters": 15,
+      "max_num_assisters": 10,
       "priority": 198,
       "builders": [
         "OrbitalFactory"
@@ -514,7 +526,7 @@
       "instance_count": 1,
       "shared_instance_count": "ReconAssistance",
       "cross_planet_shared_count": true,
-      "max_num_assisters": 15,
+      "max_num_assisters": 10,
       "priority": 198,
       "builders": [
         "OrbitalFactory"

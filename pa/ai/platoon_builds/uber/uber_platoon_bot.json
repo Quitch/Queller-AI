@@ -21,6 +21,12 @@
             "boolean": false
           },
           {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Bot & Mobile & Basic) - Fabber - AirDefense - Construction - Artillery - Heavy - Scout - SelfDestruct - Custom1",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
             "test_type": "UnitCountPerPlanetRadius",
             "unit_type_string0": "Air & Scout",
             "compare0": "<",
@@ -28,9 +34,36 @@
           },
           {
             "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "(Bot & Mobile & Basic) - Fabber - AirDefense - Construction - Artillery - Heavy - Scout - SelfDestruct",
+            "unit_type_string0": "(Bot & Mobile & Basic) - Fabber - AirDefense - Construction - Artillery - Heavy - Scout - SelfDestruct - Custom1",
             "compare0": "<",
             "value0": 150
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & Scout",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Scout",
+            "compare0": "<",
+            "value0": 250
           }
         ]
       ],
@@ -68,7 +101,7 @@
             "test_type": "CanAttackWithPoolUnitsLand",
             "string0": "WL_AnySurface",
             "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ]
       ],
@@ -106,7 +139,7 @@
             "test_type": "CanAttackWithPoolUnitsLand",
             "string0": "WL_AnySurface",
             "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ]
       ],
@@ -144,7 +177,7 @@
             "test_type": "CanAttackWithPoolUnitsLand",
             "string0": "WL_AnySurface",
             "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ]
       ],
@@ -182,7 +215,7 @@
             "test_type": "CanAttackWithPoolUnitsLand",
             "string0": "WL_AnySurface",
             "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ]
       ],
@@ -220,7 +253,7 @@
             "test_type": "CanAttackWithPoolUnitsLand",
             "string0": "WL_AnySurface",
             "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ]
       ],
@@ -252,7 +285,7 @@
             "test_type": "CanAttackWithPoolUnitsLand",
             "string0": "WL_AnySurface",
             "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ]
       ],
@@ -290,7 +323,7 @@
             "test_type": "CanAttackWithPoolUnitsLand",
             "string0": "WL_AnySurface",
             "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ]
       ],
@@ -328,7 +361,7 @@
             "test_type": "CanAttackWithPoolUnitsLand",
             "string0": "WL_AnySurface",
             "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ]
       ],
@@ -366,7 +399,7 @@
             "test_type": "CanAttackWithPoolUnitsLand",
             "string0": "WL_AnySurface",
             "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ]
       ],
@@ -404,7 +437,7 @@
             "test_type": "CanAttackWithPoolUnitsLand",
             "string0": "WL_AnySurface",
             "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ]
       ],
@@ -442,7 +475,7 @@
             "test_type": "CanAttackWithPoolUnitsLand",
             "string0": "WL_AnySurface",
             "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ]
       ],
@@ -474,15 +507,15 @@
             "test_type": "CanAttackWithPoolUnitsLand",
             "string0": "WL_AnySurface",
             "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ]
       ],
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Land Raid Platoon 1",
-      "to_build": "Land_Raid_4",
+      "name": "Uber - Bot Raid Platoon 1",
+      "to_build": "Bot_Raid_1",
       "instance_count": -1,
       "priority": 190,
       "build_conditions": [
@@ -504,7 +537,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Bot & Mobile & Basic) - Fabber - Construction - Artillery - Heavy - SelfDestruct",
+            "unit_type_string0": "(Bot & Mobile & Basic) - Fabber - Construction - Artillery - Heavy - SelfDestruct - AirDefense",
             "compare0": ">=",
             "value0": 1
           },
@@ -512,15 +545,15 @@
             "test_type": "CanAttackWithPoolUnitsLand",
             "string0": "WL_AnySurface",
             "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ]
       ],
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Land Raid Platoon 4",
-      "to_build": "Land_Raid_4",
+      "name": "Uber - Bot Raid Platoon 4",
+      "to_build": "Bot_Raid_4",
       "instance_count": -1,
       "priority": 180,
       "build_conditions": [
@@ -542,7 +575,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Bot & Mobile & Basic) - Fabber - Construction - Artillery - Heavy - SelfDestruct",
+            "unit_type_string0": "(Bot & Mobile & Basic) - Fabber - Construction - Artillery - Heavy - SelfDestruct - AirDefense",
             "compare0": ">=",
             "value0": 4
           },
@@ -550,15 +583,15 @@
             "test_type": "CanAttackWithPoolUnitsLand",
             "string0": "WL_AnySurface",
             "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ]
       ],
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Land Raid Platoon 10",
-      "to_build": "Land_Raid_10",
+      "name": "Uber - Bot Raid Platoon 10",
+      "to_build": "Bot_Raid_10",
       "instance_count": -1,
       "priority": 170,
       "build_conditions": [
@@ -580,7 +613,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Bot & Mobile & Basic) - Fabber - Construction - Artillery - Heavy - SelfDestruct",
+            "unit_type_string0": "(Bot & Mobile & Basic) - Fabber - Construction - Artillery - Heavy - SelfDestruct - AirDefense",
             "compare0": ">=",
             "value0": 10
           },
@@ -588,15 +621,15 @@
             "test_type": "CanAttackWithPoolUnitsLand",
             "string0": "WL_AnySurface",
             "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ]
       ],
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Land Raid Platoon 20",
-      "to_build": "Land_Raid_20",
+      "name": "Uber - Bot Raid Platoon 20",
+      "to_build": "Bot_Raid_20",
       "instance_count": -1,
       "priority": 160,
       "build_conditions": [
@@ -618,7 +651,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Bot & Mobile & Basic) - Fabber - Construction - Artillery - Heavy - SelfDestruct",
+            "unit_type_string0": "(Bot & Mobile & Basic) - Fabber - Construction - Artillery - Heavy - SelfDestruct - AirDefense",
             "compare0": ">=",
             "value0": 20
           },
@@ -626,15 +659,15 @@
             "test_type": "CanAttackWithPoolUnitsLand",
             "string0": "WL_AnySurface",
             "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ]
       ],
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Land Raid Platoon 30",
-      "to_build": "Land_Raid_30",
+      "name": "Uber - Bot Raid Platoon 30",
+      "to_build": "Bot_Raid_30",
       "instance_count": -1,
       "priority": 150,
       "build_conditions": [
@@ -656,7 +689,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Bot & Mobile & Basic) - Fabber - Construction - Artillery - Heavy - SelfDestruct",
+            "unit_type_string0": "(Bot & Mobile & Basic) - Fabber - Construction - Artillery - Heavy - SelfDestruct - AirDefense",
             "compare0": ">=",
             "value0": 30
           },
@@ -664,15 +697,15 @@
             "test_type": "CanAttackWithPoolUnitsLand",
             "string0": "WL_AnySurface",
             "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ]
       ],
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Land Raid Platoon 40",
-      "to_build": "Land_Raid_40",
+      "name": "Uber - Bot Raid Platoon 40",
+      "to_build": "Bot_Raid_40",
       "instance_count": -1,
       "priority": 140,
       "build_conditions": [
@@ -688,7 +721,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Bot & Mobile & Basic) - Fabber - Construction - Artillery - Heavy - SelfDestruct",
+            "unit_type_string0": "(Bot & Mobile & Basic) - Fabber - Construction - Artillery - Heavy - SelfDestruct - AirDefense",
             "compare0": ">=",
             "value0": 40
           },
@@ -696,7 +729,7 @@
             "test_type": "CanAttackWithPoolUnitsLand",
             "string0": "WL_AnySurface",
             "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ]
       ],

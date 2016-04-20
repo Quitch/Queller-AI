@@ -4,7 +4,6 @@
       "name": "Silver - Basic Vehicle Fabber",
       "to_build": "BasicVehicleFabber",
       "instance_count": 1,
-      "shared_instance_count": "BasicVehicleFabber",
       "max_num_assisters": 10,
       "priority": 100,
       "builders": [
@@ -61,7 +60,7 @@
       ]
     },
     {
-      "name": "Silver - Bolo",
+      "name": "Silver - Ant",
       "to_build": "LightLaserTank",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -109,8 +108,8 @@
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | (Bot & (Artillery | Advanced)) & Mobile) & Heavy",
-            "unit_type_string1": "(Tank | (Bot & (Artillery | Advanced)) & Mobile) - Fabber - Deconstruction - Titan",
+            "unit_type_string0": "Land & Mobile & Heavy",
+            "unit_type_string1": "((Tank | (Bot & Advanced)) & Mobile) - Scout - Fabber - Deconstruction - Construction",
             "compare0": "<",
             "value0": 0.4
           }
@@ -139,8 +138,8 @@
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | (Bot & (Artillery | Advanced)) & Mobile) & AirDefense",
-            "unit_type_string1": "(Tank | (Bot & (Artillery | Advanced)) & Mobile) - Fabber - Deconstruction - Titan",
+            "unit_type_string0": "Land & Mobile & AirDefense",
+            "unit_type_string1": "(Land & Mobile) - Scout - Fabber - Deconstruction - Construction",
             "compare0": "<",
             "value0": 0.2
           }
@@ -225,7 +224,7 @@
       "name": "Silver - Leveller",
       "to_build": "AdvancedLaserTank",
       "instance_count": -1,
-      "max_num_assisters": 15,
+      "max_num_assisters": 10,
       "priority": 199,
       "builders": [
         "AdvancedVehicleFactory"
@@ -266,8 +265,8 @@
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | (Bot & (Artillery | Advanced)) & Mobile) & Heavy",
-            "unit_type_string1": "(Tank | (Bot & (Artillery | Advanced)) & Mobile) - Fabber - Deconstruction - Titan",
+            "unit_type_string0": "Land & Mobile & Heavy",
+            "unit_type_string1": "((Tank | (Bot & Advanced)) & Mobile) - Scout - Fabber - Deconstruction - Construction",
             "compare0": "<",
             "value0": 0.4
           }
@@ -319,8 +318,8 @@
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | (Bot & (Artillery | Advanced)) & Mobile) & AirDefense",
-            "unit_type_string1": "(Tank | (Bot & (Artillery | Advanced)) & Mobile) - Fabber - Deconstruction - Titan",
+            "unit_type_string0": "Land & Mobile & AirDefense",
+            "unit_type_string1": "(Land & Mobile) - Scout - Fabber - Deconstruction - Construction",
             "compare0": "<",
             "value0": 0.2
           }

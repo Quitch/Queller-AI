@@ -28,6 +28,12 @@
             "value0": 1
           },
           {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & Artillery",
+            "compare0": "<",
+            "value0": 6
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "BasicArtillery"
           }
@@ -132,7 +138,7 @@
         "placement_type": "FromMainBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "(Structure - MetalProduction) | Commander",
+            "unit_type_string": "Structure - MetalProduction",
             "alliance": "Enemy",
             "compare_type": ">=",
             "range": 500,
@@ -197,6 +203,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "silver",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetIsMainEcoBase",
+            "boolean": false
           },
           {
             "test_type": "PlanetCanBeUsedAsKineticWeapon",

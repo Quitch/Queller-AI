@@ -221,7 +221,7 @@
       "name": "Silver - Hornet",
       "to_build": "AdvancedBomber",
       "instance_count": -1,
-      "max_num_assisters": 15,
+      "max_num_assisters": 10,
       "priority": 199,
       "builders": [
         "AdvancedAirFactory"
@@ -239,7 +239,7 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & Gunship",
+            "unit_type_string0": "Air & Gunship - Custom1",
             "compare0": "==",
             "value0": 0
           }
@@ -250,7 +250,7 @@
       "name": "Silver - Kestrel",
       "to_build": "AdvancedGunship",
       "instance_count": -1,
-      "max_num_assisters": 15,
+      "max_num_assisters": 10,
       "priority": 199,
       "builders": [
         "AdvancedAirFactory"
@@ -326,8 +326,8 @@
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Air & MissileDefense",
-            "unit_type_string1": "((Air & (Bomber | Gunship)) | Titan) - Orbital",
+            "unit_type_string0": "Air & Mobile & (Offense | MissileDefense) - Fighter - Bomber - Gunship - SelfDestruct - Titan",
+            "unit_type_string1": "Air & Mobile & (Offense | MissileDefense)",
             "compare0": "<",
             "value0": 0.05
           }

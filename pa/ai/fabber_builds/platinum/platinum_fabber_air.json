@@ -81,7 +81,7 @@
           {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Factory & Air & Basic",
-            "unit_type_string1": "(Factory & Basic) - Orbital - Air",
+            "unit_type_string1": "(Factory & Basic) - Orbital",
             "compare0": "<=",
             "value0": 0.2
           },
@@ -220,7 +220,7 @@
           {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Factory & Air & Basic",
-            "unit_type_string1": "(Factory & Basic) - Orbital - Air",
+            "unit_type_string1": "(Factory & Basic) - Orbital",
             "compare0": "<=",
             "value0": 0.2
           },
@@ -421,7 +421,7 @@
           {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Factory & Air & Basic",
-            "unit_type_string1": "(Factory & Basic) - Orbital - Air",
+            "unit_type_string1": "(Factory & Basic) - Orbital",
             "compare0": "<=",
             "value0": 0.2
           },
@@ -606,7 +606,7 @@
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
       "priority": 477,
-      "min_num_assisters": 5,
+      "min_num_assisters": 4,
       "max_num_assisters": 8,
       "builders": [
         "BasicAirFabber",

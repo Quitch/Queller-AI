@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Tech - Orbital Launcher",
+      "name": "Uber Tech - Orbital Launcher",
       "to_build": "OrbitalLauncher",
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
@@ -16,7 +16,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "techrush",
+            "string0": "tech",
             "boolean": true
           },
           {
@@ -51,7 +51,7 @@
       }
     },
     {
-      "name": "Tech - Advanced Bot Factory",
+      "name": "Uber Tech - Advanced Bot Factory",
       "to_build": "AdvancedBotFactory",
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
@@ -67,7 +67,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "techrush",
+            "string0": "tech",
             "boolean": true
           },
           {
@@ -110,7 +110,7 @@
       }
     },
     {
-      "name": "Tech - Advanced Vehicle Factory",
+      "name": "Uber Tech - Advanced Vehicle Factory",
       "to_build": "AdvancedVehicleFactory",
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
@@ -125,7 +125,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "techrush",
+            "string0": "tech",
             "boolean": true
           },
           {
@@ -141,7 +141,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedBotFactory"
+            "string0": "AdvancedVehicleFactory"
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -157,7 +157,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedBotFactory"
+            "string0": "AdvancedVehicleFactory"
           }
         ]
       ],
@@ -172,7 +172,7 @@
       }
     },
     {
-      "name": "Tech - Advanced Naval Factory",
+      "name": "Uber Tech - Advanced Naval Factory",
       "to_build": "AdvancedNavalFactory",
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
@@ -187,7 +187,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "techrush",
+            "string0": "tech",
             "boolean": true
           },
           {
@@ -224,6 +224,243 @@
           {
             "test_type": "CanFindPlaceToBuild",
             "string0": "AdvancedNavalFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Legion - Uber Tech - Starship Projector",
+      "to_build": "LegionFactoryBasicOrbital",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedFactory",
+      "priority": 479,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "builders": [
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "tech",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetWithoutPresence",
+            "boolean": true
+          },
+          {
+            "test_type": "PresenceOnOtherPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicOrbital"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Factory & Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicOrbital"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3
+      }
+    },
+    {
+      "name": "Legion - Uber Tech - Advanced Walker Foundry",
+      "to_build": "LegionFactoryAdvancedBot",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedFactory",
+      "priority": 477,
+      "min_num_assisters": 5,
+      "max_num_assisters": 8,
+      "builders": [
+        "LegionBotBasicFabber",
+        "LegionBotAdvancedFabber",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "tech",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryAdvancedBot"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital - Naval",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Advanced & Factory",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryAdvancedBot"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Legion - Uber Tech - Advanced Armor Foundry",
+      "to_build": "LegionFactoryAdvancedVehicle",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedFactory",
+      "priority": 477,
+      "min_num_assisters": 5,
+      "max_num_assisters": 8,
+      "builders": [
+        "LegionVehicleBasicFabber",
+        "LegionVehicleAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "tech",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryAdvancedVehicle"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital - Naval",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Advanced & Factory",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryAdvancedVehicle"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Legion - Uber Tech - Advanced Naval Foundry",
+      "to_build": "LegionFactoryAdvancedNaval",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedFactory",
+      "priority": 477,
+      "min_num_assisters": 5,
+      "max_num_assisters": 8,
+      "builders": [
+        "LegionNavalBasicFabber",
+        "LegionNavalAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "tech",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryAdvancedNaval"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Basic & Fabber) - Orbital - Land",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Advanced & Factory",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryAdvancedNaval"
           }
         ]
       ],

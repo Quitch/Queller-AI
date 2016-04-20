@@ -21,6 +21,21 @@
             "boolean": false
           },
           {
+            "test_type": "MetMinBasicFabberCount",
+            "boolean": false
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Fabber & Basic & (Naval | Air)",
             "compare0": "<",
@@ -197,7 +212,83 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Sub",
-            "string1": "Sub",
+            "string1": "AntiSub",
+            "compare0": "<",
+            "value0": 0.6
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Naval & Mobile & Custom1",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Naval & Mobile - Custom1",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Naval",
+            "compare0": ">",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "FocusTargetThreat",
+            "string0": "Economy",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Naval & Mobile & Custom1",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Naval & Mobile - Custom1",
+            "boolean": true
+          },
+          {
+            "test_type": "FocusTargetThreatRatio",
+            "string0": "Naval",
+            "string1": "Naval",
+            "compare0": ">=",
+            "value0": 0.6
+          },
+          {
+            "test_type": "FocusTargetThreatRatio",
+            "string0": "Sub",
+            "string1": "AntiSub",
             "compare0": "<",
             "value0": 0.6
           }
@@ -333,6 +424,11 @@
             "boolean": true
           },
           {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Naval & Mobile & Custom1",
+            "boolean": false
+          },
+          {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Naval",
             "compare0": ">",
@@ -354,10 +450,79 @@
             "boolean": true
           },
           {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Naval & Mobile & Custom1",
+            "boolean": false
+          },
+          {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Sub",
             "compare0": ">",
             "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Naval & Mobile & Custom1",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Naval & Mobile - Custom1",
+            "boolean": false
+          },
+          {
+            "test_type": "FocusTargetThreatRatio",
+            "string0": "Sub",
+            "string1": "AntiSub",
+            "compare0": ">",
+            "value0": 0.9
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Naval & Mobile & Custom1",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Naval & Mobile - Custom1",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Sub",
+            "string1": "AntiSub",
+            "compare0": ">=",
+            "value0": 0.6
           }
         ]
       ]
@@ -366,7 +531,7 @@
       "name": "Uber - Advanced Naval Fabber",
       "to_build": "AdvancedNavalFabber",
       "instance_count": 1,
-      "max_num_assisters": 15,
+      "max_num_assisters": 10,
       "priority": 200,
       "builders": [
         "AdvancedNavalFactory"
@@ -443,7 +608,7 @@
       "name": "Uber - Leviathan",
       "to_build": "Battleship",
       "instance_count": 1,
-      "max_num_assisters": 15,
+      "max_num_assisters": 10,
       "priority": 199,
       "builders": [
         "AdvancedNavalFactory"
@@ -469,6 +634,13 @@
             "string1": "Naval",
             "compare0": ">",
             "value0": 0.8
+          },
+          {
+            "test_type": "FocusTargetThreatRatio",
+            "string0": "Sub",
+            "string1": "AntiSub",
+            "compare0": "<",
+            "value0": 0.9
           }
         ]
       ]
@@ -477,7 +649,7 @@
       "name": "Uber - Stingray",
       "to_build": "MissleShip",
       "instance_count": 1,
-      "max_num_assisters": 15,
+      "max_num_assisters": 10,
       "priority": 198,
       "builders": [
         "AdvancedNavalFactory"
@@ -543,7 +715,7 @@
       "name": "Uber - Kraken",
       "to_build": "MissileSub",
       "instance_count": -1,
-      "max_num_assisters": 15,
+      "max_num_assisters": 10,
       "priority": 199,
       "builders": [
         "AdvancedNavalFactory"
@@ -569,6 +741,13 @@
             "string1": "Naval",
             "compare0": ">",
             "value0": 0.8
+          },
+          {
+            "test_type": "FocusTargetThreatRatio",
+            "string0": "Sub",
+            "string1": "AntiSub",
+            "compare0": "<",
+            "value0": 0.9
           }
         ]
       ]
@@ -577,7 +756,7 @@
       "name": "Uber - Kaiju",
       "to_build": "HoverShip",
       "instance_count": -1,
-      "max_num_assisters": 15,
+      "max_num_assisters": 10,
       "priority": 198,
       "builders": [
         "AdvancedNavalFactory"

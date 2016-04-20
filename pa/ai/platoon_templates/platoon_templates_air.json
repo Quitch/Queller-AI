@@ -3,7 +3,7 @@
     "Air_Scout_1": {
       "units": [
         {
-          "unit_types": "Air & Scout",
+          "unit_types": "Air & Mobile & Scout - Titan",
           "max_count": 1
         }
       ]
@@ -11,13 +11,15 @@
     "BomberGunship_Attack_1": {
       "units": [
         {
-          "unit_types": "Air & (Bomber | Gunship)",
+          "unit_types": "Air & Mobile & (Bomber | Gunship) - Titan",
           "min_count": 1,
-          "max_count": 3
+          "max_count": 3,
+          "squad": "Close"
         },
         {
-          "unit_types": "Air & Fighter",
-          "percent": 0.8,
+          "unit_types": "Air & Mobile & Fighter - Titan",
+          "min_count": 0,
+          "max_count": -1,
           "squad": "Escort"
         }
       ]
@@ -25,19 +27,21 @@
     "BomberGunship_Attack_4": {
       "units": [
         {
-          "unit_types": "Air & (Bomber | Gunship)",
+          "unit_types": "Air & Mobile & (Bomber | Gunship) - Titan",
           "min_count": 4,
-          "max_count": 8
+          "max_count": 8,
+          "squad": "Close"
         },
         {
-          "unit_types": "Air & MissileDefense",
+          "unit_types": "Air & Mobile & (Offense | MissileDefense) - Fighter - Bomber - Gunship - SelfDestruct - Titan",
           "min_count": 0,
           "percent": 0.05,
           "squad": "Defense"
         },
         {
-          "unit_types": "Air & Fighter",
-          "percent": 0.8,
+          "unit_types": "Air & Mobile & Fighter - Titan",
+          "min_count": 0,
+          "max_count": -1,
           "squad": "Escort"
         }
       ]
@@ -45,19 +49,21 @@
     "BomberGunship_Attack_10": {
       "units": [
         {
-          "unit_types": "Air & (Bomber | Gunship)",
+          "unit_types": "Air & Mobile & (Bomber | Gunship) - Titan",
           "min_count": 10,
-          "max_count": 19
+          "max_count": 19,
+          "squad": "Close"
         },
         {
-          "unit_types": "Air & MissileDefense",
+          "unit_types": "Air & Mobile & (Offense | MissileDefense) - Fighter - Bomber - Gunship - SelfDestruct - Titan",
           "min_count": 0,
           "percent": 0.05,
           "squad": "Defense"
         },
         {
-          "unit_types": "Air & Fighter",
-          "percent": 0.8,
+          "unit_types": "Air & Mobile & Fighter - Titan",
+          "min_count": 0,
+          "max_count": -1,
           "squad": "Escort"
         }
       ]
@@ -65,19 +71,21 @@
     "BomberGunship_Attack_20": {
       "units": [
         {
-          "unit_types": "Air & (Bomber | Gunship)",
+          "unit_types": "Air & Mobile & (Bomber | Gunship) - Titan",
           "min_count": 20,
-          "max_count": 29
+          "max_count": 29,
+          "squad": "Close"
         },
         {
-          "unit_types": "Air & MissileDefense",
+          "unit_types": "Air & Mobile & (Offense | MissileDefense) - Fighter - Bomber - Gunship - SelfDestruct - Titan",
           "min_count": 0,
           "percent": 0.05,
           "squad": "Defense"
         },
         {
-          "unit_types": "Air & Fighter",
-          "percent": 0.8,
+          "unit_types": "Air & Mobile & Fighter - Titan",
+          "min_count": 0,
+          "max_count": -1,
           "squad": "Escort"
         }
       ]
@@ -85,19 +93,21 @@
     "BomberGunship_Attack_30": {
       "units": [
         {
-          "unit_types": "Air & (Bomber | Gunship)",
+          "unit_types": "Air & Mobile & (Bomber | Gunship) - Titan",
           "min_count": 30,
-          "max_count": 39
+          "max_count": 39,
+          "squad": "Close"
         },
         {
-          "unit_types": "Air & MissileDefense",
+          "unit_types": "Air & Mobile & (Offense | MissileDefense) - Fighter - Bomber - Gunship - SelfDestruct - Titan",
           "min_count": 0,
           "percent": 0.05,
           "squad": "Defense"
         },
         {
-          "unit_types": "Air & Fighter",
-          "percent": 0.8,
+          "unit_types": "Air & Mobile & Fighter - Titan",
+          "min_count": 0,
+          "max_count": -1,
           "squad": "Escort"
         }
       ]
@@ -105,19 +115,20 @@
     "BomberGunship_Attack_40": {
       "units": [
         {
-          "unit_types": "Air & (Bomber | Gunship)",
+          "unit_types": "Air & Mobile & (Bomber | Gunship) - Titan",
           "min_count": 40,
-          "max_count": -1
+          "max_count": -1,
+          "squad": "Close"
         },
         {
-          "unit_types": "Air & MissileDefense",
-          "min_count": 0,
+          "unit_types": "Air & Mobile & (Offense | MissileDefense) - Fighter - Bomber - Gunship - SelfDestruct - Titan",
           "percent": 0.05,
           "squad": "Defense"
         },
         {
-          "unit_types": "Air & Fighter",
-          "percent": 0.8,
+          "unit_types": "Air & Mobile & Fighter - Titan",
+          "min_count": 0,
+          "max_count": -1,
           "squad": "Escort"
         }
       ]
@@ -125,7 +136,7 @@
     "Fighter_Attack_1": {
       "units": [
         {
-          "unit_types": "Air & Fighter",
+          "unit_types": "Air & Mobile & Fighter",
           "min_count": 1,
           "max_count": 3
         }
@@ -134,7 +145,7 @@
     "Fighter_Attack_4": {
       "units": [
         {
-          "unit_types": "Air & Fighter",
+          "unit_types": "Air & Mobile & Fighter",
           "min_count": 4,
           "max_count": 9
         }
@@ -143,7 +154,7 @@
     "Fighter_Attack_10": {
       "units": [
         {
-          "unit_types": "Air & Fighter",
+          "unit_types": "Air & Mobile & Fighter",
           "min_count": 10,
           "max_count": 19
         }
@@ -152,7 +163,7 @@
     "Fighter_Attack_20": {
       "units": [
         {
-          "unit_types": "Air & Fighter",
+          "unit_types": "Air & Mobile & Fighter",
           "min_count": 20,
           "max_count": 39
         }
@@ -161,7 +172,7 @@
     "Fighter_Attack_30": {
       "units": [
         {
-          "unit_types": "Air & Fighter",
+          "unit_types": "Air & Mobile & Fighter",
           "min_count": 30,
           "max_count": 39
         }
@@ -170,9 +181,29 @@
     "Fighter_Attack_40": {
       "units": [
         {
-          "unit_types": "Air & Fighter",
+          "unit_types": "Air & Mobile & Fighter",
           "min_count": 40,
           "max_count": -1
+        }
+      ]
+    },
+    "Suicide_Attack_2": {
+      "units": [
+        {
+          "unit_types": "Air & Mobile & SelfDestruct",
+          "squad": "Suicide",
+          "min_count": 2,
+          "max_count": 4
+        }
+      ]
+    },
+    "Suicide_Attack_3": {
+      "units": [
+        {
+          "unit_types": "Air & Mobile & SelfDestruct",
+          "squad": "Suicide",
+          "min_count": 3,
+          "max_count": 5
         }
       ]
     }

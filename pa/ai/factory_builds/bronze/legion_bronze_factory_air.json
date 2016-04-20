@@ -1,0 +1,312 @@
+{
+  "build_list": [
+    {
+      "name": "Legion - Bronze - Fabrication Flyer",
+      "to_build": "LegionAirBasicFabber",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 100,
+      "builders": [
+        "LegionFactoryBasicAir"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "MetMinBasicFabberCount",
+            "boolean": false
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicAirFabber"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Basic & Air",
+            "unit_type_string1": "Factory & Basic & Air",
+            "compare0": "<",
+            "value0": 10
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Bronze - Marauder",
+      "to_build": "LegionAirBasicGunship",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 96,
+      "builders": [
+        "LegionFactoryBasicAir"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & (Bomber | (Tactical & Advanced)) - Titan",
+            "compare0": "==",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Uber - Nova",
+      "to_build": "LegionAirBasicBomb",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 96,
+      "builders": [
+        "LegionFactoryBasicAir"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Bronze - Scythe",
+      "to_build": "LegionAirBasicFighter",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 96,
+      "builders": [
+        "LegionFactoryBasicAir"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Bronze - Dauntless",
+      "to_build": "LegionAirBasicBomber",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 96,
+      "builders": [
+        "LegionFactoryBasicAir",
+				"LegionFactoryAdvancedAir"
+      ],
+      "build_conditions": [
+         [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Gunship & Custom1",
+            "compare0": "==",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Bronze - Advanced Fabrication Flyer",
+      "to_build": "LegionAirAdvancedFabber",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 200,
+      "builders": [
+        "LegionFactoryAdvancedAir"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Advanced - Orbital",
+            "compare0": "<",
+            "value0": 2
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedAirFabber"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Advanced & Air",
+            "unit_type_string1": "Factory & Advanced & Air",
+            "compare0": "<",
+            "value0": 5
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Bronze - Firebird",
+      "to_build": "LegionAirAdvancedFighter",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": [
+        "LegionFactoryAdvancedAir"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Bronze - Lockheed",
+      "to_build": "LegionAirAdvancedGunship",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": [
+        "LegionFactoryAdvancedAir"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & (Bomber | (Tactical & Advanced)) - Titan",
+            "compare0": "==",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Bronze - Salamander",
+      "to_build": "LegionAirAdvancedBomber",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": [
+        "LegionFactoryAdvancedAir"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Gunship & Custom1",
+            "compare0": "==",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Bronze - Meteor",
+      "to_build": "LegionAirAdvancedCarrier",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": [
+        "LegionFactoryAdvancedAir"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Air & Mobile & (Offense | MissileDefense) - Fighter - Bomber - Gunship - SelfDestruct - Titan",
+            "unit_type_string1": "Air & Mobile & (Offense | MissileDefense)",
+            "compare0": "<",
+            "value0": 0.05
+          }
+        ]
+      ]
+    }
+  ]
+}

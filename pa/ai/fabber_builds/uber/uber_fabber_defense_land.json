@@ -21,11 +21,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "turtle",
-            "boolean": false
-          },
-          {
             "test_type": "CanDeployNavalFromBase",
             "boolean": false
           },
@@ -50,7 +45,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "unit_type_string0": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
             "compare0": "<",
             "value0": 1
           },
@@ -83,10 +78,10 @@
             "count": 1
           },
           {
-            "unit_type_string": "Structure & SurfaceDefense",
+            "unit_type_string": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
             "alliance": "Ally",
             "compare_type": "<",
-            "range": 100,
+            "range": 50,
             "count": 1
           }
         ]
@@ -112,11 +107,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "turtle",
-            "boolean": false
-          },
-          {
             "test_type": "CanDeployNavalFromBase",
             "boolean": false
           },
@@ -136,7 +126,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "unit_type_string0": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
             "compare0": "<",
             "value0": 1
           },
@@ -164,11 +154,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "turtle",
-            "boolean": false
-          },
-          {
             "test_type": "CanDeployNavalFromBase",
             "boolean": false
           },
@@ -188,7 +173,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "unit_type_string0": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
             "compare0": "<",
             "value0": 2
           },
@@ -221,10 +206,10 @@
             "count": 1
           },
           {
-            "unit_type_string": "Structure & SurfaceDefense",
+            "unit_type_string": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
             "alliance": "Ally",
             "compare_type": "<",
-            "range": 100,
+            "range": 50,
             "count": 1
           }
         ]
@@ -251,11 +236,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "turtle",
-            "boolean": false
-          },
-          {
             "test_type": "CanDeployNavalFromBase",
             "boolean": false
           },
@@ -263,6 +243,11 @@
             "test_type": "HaveSeenEnemyUnits",
             "unit_type_string0": "(Bot & Basic & Offense) - Artillery",
             "boolean": true
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Tank",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -276,7 +261,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & SurfaceDefense",
+            "unit_type_string0": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
             "compare0": "<",
             "value0": 1
           },
@@ -309,7 +294,7 @@
             "count": 1
           },
           {
-            "unit_type_string": "Structure & SurfaceDefense",
+            "unit_type_string": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
             "alliance": "Ally",
             "compare_type": "<",
             "range": 75,
@@ -338,11 +323,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "turtle",
-            "boolean": false
-          },
-          {
             "test_type": "CanDeployNavalFromBase",
             "boolean": false
           },
@@ -358,7 +338,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & SurfaceDefense",
+            "unit_type_string0": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
             "compare0": "<",
             "value0": 3
           },
@@ -391,7 +371,7 @@
             "count": 1
           },
           {
-            "unit_type_string": "Structure & SurfaceDefense",
+            "unit_type_string": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
             "alliance": "Ally",
             "compare_type": "<",
             "range": 75,
@@ -401,10 +381,75 @@
       }
     },
     {
+      "name": "Uber - Laser Defense Tower - Forward Base",
+      "to_build": "BasicLandDefense",
+      "instance_count": 1,
+      "shared_instance_count": "BasicLandDefense",
+      "max_num_assisters": 1,
+      "priority": 506,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "BasicBotFabber",
+        "BasicVehicleFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Artillery & Basic",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Commander",
+            "string0": "Enemy",
+            "value0": 260,
+            "compare0": ">=",
+            "value1": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicLandDefense"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & Artillery",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 25,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
       "name": "Uber - Advanced Land Defense - Base",
       "to_build": "AdvancedLandDefense",
       "instance_count": 1,
-      "priority": 379,
+      "priority": 279,
       "max_num_assisters": 3,
       "base_sort": "FromPerimeter",
       "builders": [
@@ -416,11 +461,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "turtle",
-            "boolean": false
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -438,7 +478,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & SurfaceDefense",
+            "unit_type_string0": "Structure & Advanced & (SurfaceDefense | Tactical) - (CombatFabAdvBuild & Custom1)",
             "compare0": "<",
             "value0": 4
           },
@@ -471,7 +511,7 @@
             "count": 1
           },
           {
-            "unit_type_string": "Structure & SurfaceDefense",
+            "unit_type_string": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
             "alliance": "Ally",
             "compare_type": "<",
             "range": 75,

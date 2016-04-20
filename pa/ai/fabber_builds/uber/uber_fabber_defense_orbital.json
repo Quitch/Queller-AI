@@ -18,11 +18,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "turtle",
-            "boolean": false
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -38,7 +33,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & OrbitalDefense",
+            "unit_type_string0": "Structure & OrbitalDefense",
             "compare0": "<",
             "value0": 1
           },
@@ -60,11 +55,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "turtle",
-            "boolean": false
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -80,7 +70,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & OrbitalDefense",
+            "unit_type_string0": "Structure & OrbitalDefense",
             "compare0": "<",
             "value0": 2
           },
@@ -134,11 +124,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "turtle",
-            "boolean": false
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -149,13 +134,13 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & OrbitalDefense",
+            "unit_type_string0": "Structure & OrbitalDefense",
             "compare0": "<",
             "value0": 4
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Teleporter",
+            "unit_type_string0": "(Teleporter | (Orbital & Artillery)) - Mobile",
             "compare0": ">=",
             "value0": 1
           },
@@ -169,11 +154,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "turtle",
-            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -186,13 +166,13 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & OrbitalDefense",
+            "unit_type_string0": "Structure & OrbitalDefense",
             "compare0": "<",
             "value0": 4
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Teleporter",
+            "unit_type_string0": "(Teleporter | (Orbital & Artillery)) - Mobile",
             "compare0": ">=",
             "value0": 1
           },
@@ -208,11 +188,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "turtle",
-            "boolean": false
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -223,13 +198,13 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & OrbitalDefense",
+            "unit_type_string0": "Structure & OrbitalDefense",
             "compare0": "<",
             "value0": 4
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Teleporter",
+            "unit_type_string0": "(Teleporter | (Orbital & Artillery)) - Mobile",
             "compare0": ">=",
             "value0": 1
           },
@@ -243,7 +218,7 @@
         "placement_type": "FromMainBasePerimeter",
         "unit_count_rules": [
           {
-            "unit_type_string": "Structure & Teleporter",
+            "unit_type_string": "Teleporter - Mobile",
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 100,
@@ -274,11 +249,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "turtle",
-            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -339,11 +309,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "turtle",
-            "boolean": false
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -374,11 +339,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "turtle",
-            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -431,7 +391,7 @@
       "name": "Uber - Umbrella - Base",
       "to_build": "Umbrella",
       "instance_count": 1,
-      "priority": 356,
+      "priority": 279,
       "min_num_assisters": 1,
       "max_num_assisters": 3,
       "builders": [
@@ -444,11 +404,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "turtle",
-            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -481,11 +436,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "turtle",
-            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -528,7 +478,7 @@
             "unit_type_string": "Structure & OrbitalDefense",
             "alliance": "Ally",
             "compare_type": "<",
-            "range": 150,
+            "range": 100,
             "count": 1
           }
         ]
@@ -538,7 +488,7 @@
       "name": "Uber - Umbrella - Lock Down The Planet",
       "to_build": "Umbrella",
       "instance_count": 1,
-      "priority": 355,
+      "priority": 255,
       "min_num_assisters": 1,
       "max_num_assisters": 3,
       "builders": [
@@ -551,11 +501,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "turtle",
-            "boolean": false
           },
           {
             "test_type": "AloneOnPlanet",
@@ -605,7 +550,7 @@
       "name": "Uber - Umbrella - Protect the Commander",
       "to_build": "Umbrella",
       "instance_count": 1,
-      "priority": 357,
+      "priority": 380,
       "min_num_assisters": 1,
       "max_num_assisters": 3,
       "builders": [
@@ -618,11 +563,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "turtle",
-            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -658,14 +598,14 @@
             "unit_type_string": "Commander",
             "alliance": "Ally",
             "compare_type": ">=",
-            "range": 100,
+            "range": 75,
             "count": 1
           },
           {
             "unit_type_string": "Structure & OrbitalDefense",
             "alliance": "Ally",
             "compare_type": "<",
-            "range": 150,
+            "range": 75,
             "count": 1
           }
         ]

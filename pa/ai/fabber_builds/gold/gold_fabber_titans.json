@@ -50,7 +50,7 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 10,
+        "buffer": 50,
         "placement_type": "FromMainBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
@@ -109,7 +109,7 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 10,
+        "buffer": 50,
         "placement_type": "FromMainBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
@@ -186,7 +186,7 @@
       "shared_instance_count": "Titan",
       "priority": 480,
       "builders": [
-        "AnyAdvancedFabber"
+        "AnyUberAdvancedFabber"
       ],
       "build_conditions": [
         [

@@ -17,9 +17,19 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "ecoboom",
+            "test_type": "BaseThreatened",
             "boolean": false
+          },
+          {
+            "test_type": "MetMinBasicFabberCount",
+            "boolean": false
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
           },
           {
             "test_type": "BaseThreatened",
@@ -66,8 +76,7 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "ecoboom",
+            "test_type": "AloneOnPlanet",
             "boolean": false
           },
           {
@@ -91,15 +100,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "ecoboom",
-            "boolean": false
-          },
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
           },
           {
             "test_type": "AloneOnPlanet",
@@ -229,12 +229,6 @@
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Air",
-            "compare0": ">",
-            "value0": 0
           }
         ],
         [
@@ -281,14 +275,14 @@
             "string0": "Air",
             "string1": "AntiAir",
             "compare0": "<",
-            "value0": 0.9
+            "value0": 0.6
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Air",
             "string1": "Air",
             "compare0": "<",
-            "value0": 0.9
+            "value0": 0.6
           }
         ],
         [
@@ -408,11 +402,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "ecoboom",
-            "boolean": false
-          },
-          {
             "test_type": "BaseThreatened",
             "boolean": false
           },
@@ -428,11 +417,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "ecoboom",
-            "boolean": false
           },
           {
             "test_type": "BaseThreatened",
@@ -459,11 +443,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "ecoboom",
-            "boolean": false
           },
           {
             "test_type": "BaseThreatened",
@@ -512,7 +491,7 @@
             "string0": "Air",
             "string1": "AntiAir",
             "compare0": ">=",
-            "value0": 0.5
+            "value0": 0.6
           }
         ],
         [
@@ -530,7 +509,7 @@
             "string0": "Air",
             "string1": "Air",
             "compare0": ">=",
-            "value0": 0.5
+            "value0": 0.6
           }
         ],
         [
@@ -538,10 +517,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": false
           },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
@@ -566,7 +541,7 @@
       "name": "Uber - Kestrel",
       "to_build": "AdvancedGunship",
       "instance_count": -1,
-      "max_num_assisters": 15,
+      "max_num_assisters": 10,
       "priority": 198,
       "builders": [
         "AdvancedAirFactory"
@@ -587,14 +562,14 @@
             "string0": "Air",
             "string1": "AntiAir",
             "compare0": "<",
-            "value0": 0.9
+            "value0": 0.6
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Air",
             "string1": "Air",
             "compare0": "<",
-            "value0": 0.9
+            "value0": 0.6
           }
         ],
         [
@@ -605,10 +580,6 @@
           },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": false
           },
           {
@@ -657,7 +628,7 @@
             "string0": "Air",
             "string1": "Air",
             "compare0": "<",
-            "value0": 0.9
+            "value0": 0.6
           }
         ]
       ]
@@ -684,8 +655,8 @@
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Air & MissileDefense",
-            "unit_type_string1": "((Air & (Bomber | Gunship)) | Titan) - Orbital",
+            "unit_type_string0": "Air & Mobile & (Offense | MissileDefense) - Fighter - Bomber - Gunship - SelfDestruct - Titan",
+            "unit_type_string1": "Air & Mobile & (Offense | MissileDefense)",
             "compare0": "<",
             "value0": 0.05
           }

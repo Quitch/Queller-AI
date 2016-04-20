@@ -1,0 +1,272 @@
+{
+  "build_list": [
+    {
+      "name": "Legion - Bronze - Fabrication Starship",
+      "to_build": "LegionOrbitalBasicFabber",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": [
+        "AnyLegionFactoryOrbital"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Orbital & Fabber",
+            "compare0": "<",
+            "value0": 2
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionOrbitalBasicFabber"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Orbital",
+            "unit_type_string1": "Factory & Orbital",
+            "compare0": "<",
+            "value0": 5
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Bronze - Sputnik",
+      "to_build": "LegionOrbitalBasicRadar",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "AnyLegionFactoryOrbital"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "ThisPlanetNeedsReconAssistance",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsReconAssistance",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Bronze - Wraith",
+      "to_build": "LegionOrbitalBasicScout",
+      "instance_count": 1,
+      "priority": 97,
+      "builders": [
+        "AnyLegionFactoryOrbital"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "ThisPlanetNeedsReconAssistance",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsReconAssistance",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Bronze - Viper",
+      "to_build": "LegionOrbitalBasicFighter",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "AnyLegionFactoryOrbital"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Bronze - Chariot",
+      "to_build": "LegionOrbitalBasicTransport",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 0,
+      "builders": [
+        "AnyLegionFactoryOrbital"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetWithoutPresence",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Transport",
+            "compare0": "<",
+            "value0": 1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Bronze - Black Knight",
+      "to_build": "LegionOrbitalAdvancedLaser",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 195,
+      "builders": [
+        "LegionFactoryAdvancedOrbital"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Land",
+            "compare0": ">",
+            "value0": 12500
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Naval",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Bronze - Kosmos",
+      "to_build": "LegionOrbitalAdvancedRadar",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 195,
+      "builders": [
+        "LegionFactoryAdvancedOrbital"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "ThisPlanetNeedsReconAssistance",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsReconAssistance",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Bronze - Excalibur",
+      "to_build": "LegionOrbitalAdvancedSniper",
+      "instance_count": -1,
+      "max_num_assisters": 5,
+      "priority": 195,
+      "builders": [
+        "LegionFactoryAdvancedOrbital"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Bronze - Imperator",
+      "to_build": "LegionOrbitalAdvancedBattleship",
+      "instance_count": -1,
+      "max_num_assisters": 5,
+      "priority": 195,
+      "builders": [
+        "LegionFactoryAdvancedOrbital"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          }
+        ]
+      ]
+    }
+  ]
+}

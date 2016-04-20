@@ -4,7 +4,6 @@
       "name": "Bronze - Basic Bot Fabber",
       "to_build": "BasicBotFabber",
       "instance_count": 1,
-      "shared_instance_count": "BasicBotFabber",
       "max_num_assisters": 10,
       "priority": 100,
       "builders": [
@@ -18,14 +17,8 @@
             "boolean": true
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber & Basic & Land",
-            "compare0": "<",
-            "value0": 5
+            "test_type": "MetMinBasicFabberCount",
+            "boolean": false
           }
         ],
         [
@@ -74,8 +67,8 @@
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Bot & Construction) - Fabber",
-            "unit_type_string1": "(Tank | (Bot & (Artillery | Advanced)) & Mobile) - Fabber",
+            "unit_type_string0": "Land & Construction - Fabber",
+            "unit_type_string1": "Land & Mobile & Offense",
             "compare0": "<",
             "value0": 0.05
           }
@@ -89,7 +82,8 @@
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "BasicBotFactory"
+        "BasicBotFactory",
+        "UnitCannon"
       ],
       "build_conditions": [
         [
@@ -108,7 +102,8 @@
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "BasicBotFactory"
+        "BasicBotFactory",
+        "UnitCannon"
       ],
       "build_conditions": [
         [
@@ -131,7 +126,8 @@
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "BasicBotFactory"
+        "BasicBotFactory",
+        "UnitCannon"
       ],
       "build_conditions": [
         [
@@ -152,7 +148,7 @@
       "to_build": "UberSupportCommander",
       "instance_count": 1,
       "shared_instance_count": "AdvancedBotFabber",
-      "max_num_assisters": 15,
+      "max_num_assisters": 10,
       "priority": 200,
       "builders": [
         "AdvancedBotFactory"
@@ -230,7 +226,7 @@
       "name": "Bronze - Slammer",
       "to_build": "AdvancedAssaultBot",
       "instance_count": -1,
-      "max_num_assisters": 15,
+      "max_num_assisters": 10,
       "priority": 97,
       "builders": [
         "AdvancedBotFactory",

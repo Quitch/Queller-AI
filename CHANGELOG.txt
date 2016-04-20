@@ -1,5 +1,82 @@
 # CHANGELOG
 
+#### 4.0-beta
+
+DO NOT IGNORE! REMOVE THE UI FOLDER BEFORE PUBLICATION!
+
+ - Added support for the Legion Expansion
+    - Big thanks to Alpha2546 and Graushwein for their help
+ - Smarting spacing between defences for Uber
+ - Uber looks to have a greater air presence before bringing out bombers and gunships
+ - Sub-Personality changes:
+    - Removed Uber Eco
+    - Uber Dox renamed Uber Rush
+    - Added Uber Land: ignores the water completely
+    - Added Uber Naval: gets in the water as fast as it can
+    - Added Uber Tank: no bots used
+    - Added Uber Aggressive: it's Uber but a little more rash
+    - Uber Air now uses vehicles as well as bots
+    - Uber Air uses standard platoon builds again
+    - Uber Turtle is now Uber Cautious: a more conservative and tech happy Uber
+ - No more idle scouts in base
+ - Implemented a nasty hack to work around the bomber_attack neural net being broken
+ - Uber doesn't use scouts for artillery vision any more
+ - Check if fighters are needed somewhere before attaching them to bombers
+ - No longer sacrifices air defence for mine vision in its platoons
+ - Uber doesn't wait for you to go orbital before building Orbital Factories
+ - Errors in T1 bot and T2 vehicle factory placement fixed
+ - Resolved issue which prevented the building of vehicle factories when alone
+ - Uber switches to Kaijus if getting overwhelmed by subs
+ - Uber properly defends its orbital lasers with fighters like it's supposed to
+ - Uber uses Sparks to fight tanks not bots
+ - Uber tries to horde its airforce better
+ - Uber only goes advanced bots for torpedos or to counter orbital
+ - Uber favours the Ares and Zeus over the Atlas
+ - Uber won't build the Zeus when it doesn't have a strong lead in the air
+ - Uber more cautious about rushing a nuke when it has a planetary threat to deal with but throws more resources at rushing it
+ - Properly checks air facory ratios
+ - Fixed bug preventing Platinum properly building Hummingbirds
+ - Fix for Zeus stopping Gold reinforcing its Kestrels
+ - Gold is more active with its fighters
+ - Bronze and Silver don't clump their anti-nukes together
+ - Bronze and Silver send Support Commanders through teleporters
+ - Bronze and Silver transport Support Commanders by Astraeus
+ - Advanced fabbers will build Pelters at Gold or higher
+ - Bronze and Silver no longer position Holkins specifically to target Commanders
+ - Silver no longer smashes with its primary eco planet
+ - Some minor performance improvements
+ - Silver and Platinum are a little rasher with their armies, while Bronze is more conservative
+ - Higher levels try to be smarter about not building MEXs near threats
+ - Land Titans excluded from standard platoons as pathfinding does not play nice and it could stop the AI attacking
+ - Won't build orbital lasers if no surface threats remain in the system
+ - Uber now less predictable in the late game especially on higher resource bonuses
+ - Fixed a bug where Titans never left the base
+ - Uber gives higher priority to Commander snipes with T2 artillery
+ - Updated to work with the latest Planetary Annihilation release
+    - Thanks to mikeyh and PRoeleert for their help with this
+ - Uber less likely to build advanced defences to allow greater focus on factories and super weapons
+ - Uber commits more fabbers to Titan builds if it can
+ - Uber updated for change in radar ranges
+ - Uber more aggressive about using T1 artillery on Commanders
+ - Uber tries to better protect itself against air snipes
+ - Uber favours T2 bots when bot rushed
+ - Bronze now better recognises existence of Drifter
+ - Bronze and Silver no longer build naval factories at the same time as other factories
+ - Bronze never area builds
+ - Cap on the number of Pelters Silver can build per base
+ - Bronze is more likely to try for a Ragnarok
+ - Bronze now correctly checks Advanced Air Fabber ratio
+ - Bronze no longer produces T1 units from T2 factories
+ - Bronze will include Drifters in standard armies
+ - Limit building of Orbital Factories at Gold and Platinum
+ - Fix unnecessary travel between Orbital Factory builds
+ - Bronze builds a broader range of units in the Unit Cannon
+ - Uber Tech now properly checks requirements of an advanced vehicle factory
+ - Uber now properly checks requirements of an advanced bot factory in all situations
+ - Uber T2 bot usage properly regulated according to whether it's a land, naval or lava map
+ - More specialised usage of single laser turrets for base defence
+ - Uber no longer builds Booms, Locusts or Grenadiers
+
 #### v3.3 - 2016/03/01
 
  - Booms will now use teleporters

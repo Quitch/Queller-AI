@@ -4,7 +4,6 @@
       "name": "Bronze - Basic Vehicle Fabber",
       "to_build": "BasicVehicleFabber",
       "instance_count": 1,
-      "shared_instance_count": "BasicVehicleFabber",
       "max_num_assisters": 10,
       "priority": 100,
       "builders": [
@@ -18,14 +17,8 @@
             "boolean": true
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber & Basic & Land",
-            "compare0": "<",
-            "value0": 5
+            "test_type": "MetMinBasicFabberCount",
+            "boolean": false
           }
         ],
         [
@@ -53,13 +46,14 @@
       ]
     },
     {
-      "name": "Bronze - Bolo",
+      "name": "Bronze - Ant",
       "to_build": "LightLaserTank",
       "instance_count": -1,
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "BasicVehicleFactory"
+        "BasicVehicleFactory",
+        "UnitCannon"
       ],
       "build_conditions": [
         [
@@ -105,7 +99,8 @@
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "BasicVehicleFactory"
+        "BasicVehicleFactory",
+        "UnitCannon"
       ],
       "build_conditions": [
         [
@@ -120,8 +115,8 @@
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | (Bot & (Artillery | Advanced)) & Mobile) & AirDefense",
-            "unit_type_string1": "(Tank | (Bot & (Artillery | Advanced)) & Mobile) - Fabber - Deconstruction - Titan",
+            "unit_type_string0": "Land & Mobile & AirDefense",
+            "unit_type_string1": "(Land & Mobile) - Scout - Fabber - Deconstruction - Construction",
             "compare0": "<",
             "value0": 0.2
           }
@@ -143,10 +138,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "bronze",
             "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": false
           }
         ]
       ]
@@ -181,10 +172,6 @@
             "boolean": true
           },
           {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "AdvancedVehicleFabber"
           },
@@ -202,8 +189,8 @@
       "name": "Bronze - Leveller",
       "to_build": "AdvancedLaserTank",
       "instance_count": -1,
-      "max_num_assisters": 15,
-      "priority": 199,
+      "max_num_assisters": 10,
+      "priority": 97,
       "builders": [
         "AdvancedVehicleFactory"
       ],
@@ -226,7 +213,7 @@
       "to_build": "AdvancedArmorTank",
       "instance_count": 1,
       "max_num_assisters": 10,
-      "priority": 199,
+      "priority": 97,
       "builders": [
         "AdvancedVehicleFactory"
       ],
@@ -249,7 +236,7 @@
       "to_build": "AdvancedArtilleryVehicle",
       "instance_count": 1,
       "max_num_assisters": 10,
-      "priority": 199,
+      "priority": 97,
       "builders": [
         "AdvancedVehicleFactory"
       ],
@@ -272,7 +259,7 @@
       "to_build": "FlakTank",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 199,
+      "priority": 97,
       "builders": [
         "AdvancedVehicleFactory"
       ],
@@ -289,8 +276,8 @@
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | (Bot & (Artillery | Advanced)) & Mobile) & AirDefense",
-            "unit_type_string1": "(Tank | (Bot & (Artillery | Advanced)) & Mobile) - Fabber - Deconstruction - Titan",
+            "unit_type_string0": "Land & Mobile & AirDefense",
+            "unit_type_string1": "(Land & Mobile) - Scout - Fabber - Deconstruction - Construction",
             "compare0": "<",
             "value0": 0.2
           }

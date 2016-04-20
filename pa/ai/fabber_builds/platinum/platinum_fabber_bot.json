@@ -58,7 +58,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicVehicleFactory"
+            "string0": "BasicBotFactory"
           },
           {
             "test_type": "HaveSeenEnemyUnits",
@@ -70,6 +70,10 @@
             "unit_type_string0": "Land & Factory & Basic",
             "compare0": "<",
             "value0": 500
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicBotFactory"
           }
         ],
         [
@@ -91,7 +95,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicVehicleFactory"
+            "string0": "BasicBotFactory"
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -104,6 +108,10 @@
             "unit_type_string0": "Land & Factory & Basic",
             "compare0": "<",
             "value0": 500
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicBotFactory"
           }
         ],
         [
@@ -125,6 +133,10 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicBotFactory"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
             "string0": "BasicBotFactory"
           }
         ]
@@ -199,7 +211,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicVehicleFactory"
+            "string0": "BasicBotFactory"
           },
           {
             "test_type": "HaveSeenEnemyUnits",
@@ -211,6 +223,10 @@
             "unit_type_string0": "Land & Factory & Basic",
             "compare0": "<",
             "value0": 500
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicBotFactory"
           }
         ],
         [
@@ -232,7 +248,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicVehicleFactory"
+            "string0": "BasicBotFactory"
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -245,6 +261,10 @@
             "unit_type_string0": "Land & Factory & Basic",
             "compare0": "<",
             "value0": 500
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicBotFactory"
           }
         ],
         [
@@ -266,6 +286,10 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicBotFactory"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
             "string0": "BasicBotFactory"
           }
         ]
@@ -361,7 +385,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicVehicleFactory"
+            "string0": "BasicBotFactory"
           },
           {
             "test_type": "HaveSeenEnemyUnits",
@@ -373,6 +397,10 @@
             "unit_type_string0": "Land & Factory & Basic",
             "compare0": "<",
             "value0": 500
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicBotFactory"
           }
         ],
         [
@@ -404,7 +432,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicVehicleFactory"
+            "string0": "BasicBotFactory"
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -417,6 +445,10 @@
             "unit_type_string0": "Land & Factory & Basic",
             "compare0": "<",
             "value0": 500
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicBotFactory"
           }
         ],
         [
@@ -448,6 +480,10 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicBotFactory"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
             "string0": "BasicBotFactory"
           }
         ]
@@ -511,12 +547,12 @@
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
       "priority": 477,
-      "min_num_assisters": 5,
+      "min_num_assisters": 4,
       "max_num_assisters": 8,
       "builders": [
         "BasicBotFabber",
         "AdvancedBotFabber",
-        "UberSupportCommander"
+        "LegionBotAdvancedSupportCommander"
       ],
       "build_conditions": [
         [
