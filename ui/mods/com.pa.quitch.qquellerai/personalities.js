@@ -238,8 +238,7 @@
             personality_tags:
             [
                 "uber",
-                "tech",
-                "threefabber"
+                "tech"
             ],
             fabber_to_factory_ratio_basic: 3.0,
             fabber_to_factory_ratio_advanced: 5.0,
@@ -379,8 +378,7 @@
             personality_tags:
             [
                 "uber",
-                "tech",
-                "threefabber"
+                "tech"
             ],
             fabber_to_factory_ratio_basic: 1.0,
             fabber_to_factory_ratio_advanced: 3.0,
