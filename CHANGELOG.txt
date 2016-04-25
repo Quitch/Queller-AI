@@ -1,10 +1,84 @@
 # CHANGELOG
 
+#### 4.0 - 2016/04/25
+
+ - Added support for the Legion Expansion
+    - Big thanks to Alpha2546 and Graushwein for their help
+ - Sub-Personality changes:
+    - Removed Uber Eco
+    - Uber Dox renamed Uber Rush
+    - Added Uber Land: ignores the water completely
+    - Added Uber Naval: gets in the water as fast as it can
+    - Added Uber Tank: no bots used
+    - Added Uber Aggressive: it's Uber but a little more rash
+    - Uber Air is now Uber but without the air limits
+    - Uber Turtle is now Uber Cautious: a more conservative and tech happy Uber
+ - Smarting spacing between defences for Uber
+ - Uber looks to have a greater air presence before bringing out bombers and gunships
+ - No more idle scouts in base
+ - Implemented a nasty hack to work around the bomber_attack neural net being broken so that bombers and gunships will leave the base
+ - Uber doesn't use scouts for artillery vision any more
+ - Check if fighters are needed somewhere before attaching them to bombers
+ - No longer sacrifices air defence for mine vision in its platoons
+ - Uber doesn't wait for you to go orbital before building Orbital Factories
+ - Errors in T1 bot and T2 vehicle factory placement fixed
+ - Resolved issue which prevented the building of vehicle factories when alone
+ - Uber switches to Kaijus if getting overwhelmed by subs
+ - Uber properly defends its orbital lasers with fighters like it's supposed to
+ - Uber uses Sparks to fight tanks not bots
+ - Uber is better at hording its air force
+ - Uber only goes advanced bots for torpedoes or to counter orbital or when bot rushed
+ - Uber favours the Ares and Zeus over the Atlas
+ - Uber won't build the Zeus when it doesn't have a strong lead in the air
+ - Uber more cautious about rushing a nuke when it has a planetary threat to deal with but throws more resources at building it
+ - Properly checks air factory ratios
+ - Fixed bug preventing Platinum properly building Hummingbirds
+ - Fix for Zeus stopping Gold reinforcing its Kestrels
+ - Gold is more active with its fighters
+ - Bronze and Silver don't clump their anti-nukes together
+ - Bronze and Silver send Support Commanders through teleporters
+ - Bronze and Silver transport Support Commanders by Astraeus
+ - Advanced fabbers will build Pelters at Gold or higher
+ - Bronze and Silver no longer position Holkins specifically to target Commanders
+ - Silver no longer smashes with its primary eco planet
+ - Some minor performance improvements
+ - Silver and Platinum are a little rasher with their armies, while Bronze is more conservative
+ - Higher levels try to be smarter about not building MEXs near threats
+ - Titans excluded from standard platoons as pathfinding does not play nice and it could stop the AI attacking
+ - Won't build orbital lasers if no surface threats remain in the system
+ - Uber now less predictable in the late game especially on higher resource bonuses
+ - Fixed a bug where Titans never left the base
+ - Uber gives higher priority to Commander snipes with Holkins
+ - Updated to work with the latest Planetary Annihilation release
+    - Thanks to mikeyh and PRoeleert for their help with this
+ - Uber less likely to build advanced defences to allow greater focus on factories and super weapons
+ - Uber commits more fabbers to Titan builds if it can
+ - Uber updated for change in radar ranges
+ - Uber more aggressive about using Pelters against Commanders
+ - Uber tries to better protect itself against air snipes
+ - Bronze now better recognises existence of Drifter
+ - Bronze and Silver no longer build naval factories at the same time as other factories
+ - Bronze never area builds
+ - Cap on the number of Pelters Silver can build per base
+ - Bronze is more likely to try for a Ragnarok
+ - Bronze now correctly checks Advanced Air Fabber ratio
+ - Bronze no longer produces T1 units from T2 factories
+ - Bronze will include Drifters in standard armies
+ - Limit building of Orbital Factories by Gold and Platinum
+ - Fix unnecessary travel between Orbital Factory builds
+ - Bronze builds a broader range of units in the Unit Cannon
+ - Uber Tech now properly checks requirements of an Advanced Vehicle Factory
+ - Uber now properly checks requirements of an Advanced Bot Factory in all situations
+ - Uber T2 bot usage properly regulated according to whether it's a land, naval or lava map
+ - More specialised usage of single laser turrets for base defence
+ - Uber no longer builds Booms, Locusts or Grenadiers
+ - Uber uses less GIL-Es when it uses them at all
+
 #### v3.3 - 2016/03/01
 
  - Booms will now use teleporters
  - Tries to figure out whether the blockage to its land forces is water or lava
- - Improved amphibious checks by looking at historial enemy forces not just current ones
+ - Improved amphibious checks by looking at historical enemy forces not just current ones
  - Fixed Uber still trying to use Krakens alone
  - Improved use of naval forces against shore targets
  - Largest land and bot platoons were incorrectly capped with a maximum size
@@ -94,7 +168,7 @@
 - Uber will build a Zeus when it's alone on a planet
 - Bronze and Silver avoid spamming Orbital Launchers and don't make it their first factory on a new world
 - Updated vanilla AI
-- Uber no longer sends orbital units offworld when they're still needed on the planet
+- Uber no longer sends orbital units off world when they're still needed on the planet
 - Bronze can now send orbital units between worlds
 - Only Bronze will build Titans on asteroids
 - Enabled land Titans for all AI levels
@@ -155,7 +229,7 @@ NOW DESIGNED SOLELY FOR TITANS
 - Uber will check there's some metal in storage in addition to looking at eco efficiency before assuming float and building more stuff
 - Silver correctly checks whether it can afford to have fabbers to assist on a project
 - Correctly exclude the orbital fabber from all checks it should be excluded from
-- Uber will send ARKYD offworld even if it's the only one if it doesn't need it on that planet
+- Uber will send ARKYD off world even if it's the only one if it doesn't need it on that planet
 - No longer builds an Astraeus for an evacuation it doesn't perform
 - Corrected errors in the advanced fabber ratios
 - Uber less reluctant to build advanced fabbers
@@ -175,7 +249,7 @@ NOW DESIGNED SOLELY FOR TITANS
 - Gold, Platinum and Uber will build Kestrels
 - Uber smarter about assessing land threat when teching
 - Uber will form squads smaller than four units again
-- Uber no longer prioritises dual laser defenses over others
+- Uber no longer prioritises dual laser defences over others
 - Uber is smarter about when to wait until it can afford a nuke missile and when to just get building
 - Corrected placement check for Teleporter
 - Gold expands a little slower
@@ -183,7 +257,7 @@ NOW DESIGNED SOLELY FOR TITANS
  - Do not use this version to report bugs to Sorian as it might be my fault
 - Fixed error in Gold vehicle fabber opening
 - Bronze no longer area builds MEXs
-- Fixed discrepencies between area and standard MEX building for Uber
+- Fixed discrepancies between area and standard MEX building for Uber
 - Uber prioritises building Umbrellas in important bases first before locking down everywhere else
 - Uber is smarter about how it moves its orbital fabbers
 - Gold is less sophisticated in its troop choices
@@ -197,12 +271,12 @@ NOW DESIGNED SOLELY FOR TITANS
 - Uber won't tech while its base is under threat
 - Checks added to stop the building of torpedo launchers in lakes with no enemy navy
 - Fixed an error leading Gold through Uber to put all their advanced defence in a tiny area
-- Uber rushes nukes based on the antinuke status of its target rather than other players
+- Uber rushes nukes based on the anti-nuke status of its target rather than other players
 - Uber requires a higher income to tech than previously
 - Uber won't build duplicate radars when looking to scout another world
 - Uber is smarter about when rushing orbital on a multi planet system with a single spawnable planet is appropriate
 - Uber will build Skitters to sight for mobile artillery
-- No longer waits until a planet can receive assitance to build troops because this was leading to feeble invasions
+- No longer waits until a planet can receive assistance to build troops because this was leading to feeble invasions
 - Uber is more aggressive with scouting if you might be on its planet but it can't find you
 - Uber produces more Spinners when preparing an invasion
 - Further work done to prevent overwhelming land threats stopping the AI from using its ships
@@ -257,7 +331,7 @@ NOW DESIGNED SOLELY FOR TITANS
 - Won't build laser towers on water any more
 - Added some very beta level Boom support to counter aggressive Commander play which might be rubbish
 - Looks at the air situation as a whole rather than just anti-air when considering building more air factories
-- Will sometimes send Krakkens off by themselves to take advantage of their stealth
+- Will sometimes send Krakens off by themselves to take advantage of their stealth
 - Better about getting into the water on maps like Meso
 - Will scout with fighters again as a means to find and kill sneaky air fabbers
 - Reduced the ratio of bot factories to planet size
@@ -312,8 +386,8 @@ The "oh shit new patch with new folder structure which breaks my baby!" release
 - Deploys Spinners in reaction to losing the air war in anticipation of bombers to come
 - A little faster at getting in the water on island maps like Meso (and at getting out of it)
 - A little less energy floating
-- More aggressive about getting nukes where no enemy antinuke exists
-- Won't spam antinukes when there's no nuke threat unless planets exist where it has no presence
+- More aggressive about getting nukes where no enemy anti-nuke exists
+- Won't spam anti-nukes when there's no nuke threat unless planets exist where it has no presence
 - Will no longer build Piranhas it doesn't need
 - Will stop building ships after a while if it no longer has anywhere to send them
 - Reduced scout spam a little
@@ -328,7 +402,7 @@ The "oh shit new patch with new folder structure which breaks my baby!" release
 - Added support for Pelters and Holkins
 - Will always get at least one orbital fabber out
 - Corrected error allowing the AI to build Bumblebees and air fabbers when it's losing the air war
-- Less air fabber spammy during the opening on naval maps
+- Less air fabber spam during the opening on naval maps
 - Maintains a higher Hummingbird minimum force
 
 #### v1.2.3 - 2015/04/10
@@ -372,7 +446,7 @@ The "oh shit new patch with new folder structure which breaks my baby!" release
 - Will build Skitters in reaction to sighting combat fabbers
 - Will no longer build orbital factories and advanced factories at the same time
 - Will build Skitters on multiplanet maps to use as advance scouts to avoid invasion forces sitting on their hands
-- Even more aggressive producing antinukes
+- Even more aggressive producing anti-nukes
 
 #### v1.1 - 2015/03/30
 
@@ -387,7 +461,7 @@ This release provides a massive overhaul in how Queller tackles the orbital laye
 - Properly checks that it can afford to run the Deep Space Radar before building it
 - Fixed a bug with Skitters not being assigned to the correct platoon
 - Added support for Jigs
-- Will no longer smash with annihilaser planets
+- Will no longer smash with Annihilaser planets
 - Higher priority for orbital fabbers
 - Can send bots through teleporters again
 - Correctly uses a laser tower blueprint when checking possible placement for laser tower instead of using a laser tower single
@@ -399,7 +473,7 @@ This release provides a massive overhaul in how Queller tackles the orbital laye
 - Builds orbital fabbers and Avengers from the orbital factory
 - Will try to avoid building the SXX at gas giants as it can't send them off-planet and it has no use for them there
 - Won't use ARKYDs for remote scouting when it has the ability to produce Advanced Radar Satellites
-- AI will build antinukes sooner in response to a nuclear threat
+- AI will build anti-nukes sooner in response to a nuclear threat
 - AI will now use Slammers in armies not raiding forces
 - Fixed error where AI wasn't checking it could afford to run advanced fabbers before building them and thus tanking its economy after teching
 - Corrected errors in checking how many Spinners it can build
