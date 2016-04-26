@@ -21,24 +21,6 @@ The difficulty levels are designed to reflect the dominant playstyle of each lea
 
 The only feedback which isn't useful is AI vs. AI feedback. Believe me, I see a million of these games. I want feedback from AI vs human games.
 
-## GOALS
-
-Some of these might prove impossible given the tooling available, only time will tell.
-
-- Opening builds aligned with real players
-- Unit mixes suited to current balance
-- More aggressive early play
-- Platoon and squad sizes better suited to the units contained within them
-- Faster expansion on empty planets
-- Much greater use of teleporters to move around
-- Scouting units which can also punish lone fabbers
-- Avoiding losing games through premature orbital
-- Overhaul of naval play
-- Targeting lone fabbers more aggressively
-- Using bombers more appropriately
-- Changing of strategies according to planet size
-- Changing of strategies according to player density
-
 ## DIFFICULTY
 
 Queller offers a range of difficulties designed to try and mimic the style of human players at particular levels of play. Later in this readme you can find recommendations on which difficulty you should try.
