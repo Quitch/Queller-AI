@@ -1,21 +1,24 @@
 {
   "context": "server",
   "identifier": "com.pa.quitch.qQuellerAI",
-  "display_name": "Queller AI v3.3",
-  "description": "A more humanlike AI offering a wide range of difficulties. Doesn't affect Galactic War. Works alongside the vanilla AI",
+  "display_name": "Queller AI",
+  "description": "A smarter and more humanlike AI for Titans and Legion. Doesn't affect Galactic War. Works alongside the vanilla AI.",
   "author": "Quitch",
-  "version": "3.3",
-  "build": "89528",
-  "date": "2016/03/01",
-  "signature": "not yet implemented",
+  "version": "4.0.0",
+  "build": "94157",
+  "date": "2016/04/25",
+  "signature": " ",
   "forum": "https://forums.uberent.com/threads/rel-server-queller-ai-v3-0.65795/",
   "category": [
     "ai",
     "titans"
   ],
-  "product": ["Titans"],
-  "id": "qQuellerAI",
   "icon": "http://i.imgur.com/cFJeCgf.gif",
+  "scenes": {
+    "new_game": [
+      "coui://ui/mods/com.pa.quitch.qquellerai/new_game.js"
+    ]
+  },
   "dependencies": [
     "com.pa.quitch.qQuellerAIPersonalities",
     "com.pa.quitch.qAIModCompatibilityPatch"
