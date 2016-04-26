@@ -82,7 +82,7 @@ Normal through Absurd are the standard difficulties and will use the vanilla AI 
  - Will tech if it can
  - Will go orbital if it can
  - Expands OK
- - Good troop selection
+ - OK troop selection
  - OK scouting
  - Some reaction to opponent's play
  - Dislikes fabbers
@@ -97,7 +97,7 @@ Normal through Absurd are the standard difficulties and will use the vanilla AI 
  - Techs smartly
  - Goes orbital smartly
  - Expands quickly
- - Best troop selection
+ - Good troop selection
  - Good scouting
  - Smartly reacts to opponent's play
  - Good fabber to troop balance
