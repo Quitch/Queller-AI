@@ -6,48 +6,16 @@ function qQuellerAI() {
     }
 
     qQuellerAILoaded = true;
-
-    var newBuild = _.isFunction( model.aiPersonalities );
-
-    model.qQuellerAIServerModIsLoaded = ko.observable(false);
-
-    model.qQuellerAIServerModIsHost = ko.computed(function() {
-        return model.isGameCreator() && model.qQuellerAIServerModIsLoaded();
-    });
-
-    model.qQuellerAIServerModCheckLoaded = function() {
-        api.mods.getMountedMods('server', function(mods) {
-
-            // check to see if server mod (and optionally a dev version) are loaded
-
-            var loaded = _.intersection(_.pluck(mods, 'identifier'), ['com.pa.quitch.qQuellerAI', 'com.pa.quitch.qQuellerAI-dev']).length > 0;
-
-            model.qQuellerAIServerModIsLoaded(loaded);
-        });
-    }
-
-    // once mod data is sent check if server mod is actually loaded
-
-    if (window.scene_server_mod_list && window.scene_server_mod_list.new_game) {
-        model.qQuellerAIServerModCheckLoaded();
-    }
-    else {
-        var server_mod_info_updated_handler = handlers.server_mod_info_updated;
-
-        handlers.server_mod_info_updated = function(payload) {
-            server_mod_info_updated_handler(payload);
-
-            model.qQuellerAIServerModCheckLoaded();
-        }
-    }
-
-    model.qQuellerAIServerModIsLoaded.subscribe(function(qQuellerAIServerModIsLoaded) {
-        if (qQuellerAIServerModIsLoaded) {
-            model.qQuellerAddAIPersonalities();
-        }
-    });
+    
+    var qQuellerAddAIPersonalitiesAdded = false;
 
     model.qQuellerAddAIPersonalities = function() {
+        
+        if (qQuellerAddAIPersonalitiesAdded) {
+            return;
+        }
+
+        api.debug.log('Adding Queller Personalities');
 
         var aiPersonalities = newBuild ? model.aiPersonalities() : model.aiPersonalities;
         
@@ -485,8 +453,10 @@ function qQuellerAI() {
             max_advanced_fabbers: 20
         }
 
-        newPersonalities = _.mapValues( newPersonalities, function(personality) {
-            return _.extend(_.clone(baseline), personality);
+        newPersonalities = _.mapValues( newPersonalities, function(personality, name) {
+            var result = _.extend(_.clone(baseline), personality);
+            result['name'] = name;
+            return result;
         });
 
         _.extend(aiPersonalities, newPersonalities);
@@ -497,6 +467,63 @@ function qQuellerAI() {
             model.aiPersonalityNames(_.keys(aiPersonalities));
         }  
     }
+
+    var newBuild = _.isFunction( model.aiPersonalities );
+
+    if (newBuild) {
+
+        model.qQuellerAIServerModIsLoaded = ko.computed(function() {
+            var result = _.intersection(model.gameModIdentifiers(), ['com.pa.quitch.qQuellerAI', 'com.pa.quitch.qQuellerAI-dev']).length > 0;
+
+            if (result) {
+                model.qQuellerAddAIPersonalities();
+            }
+
+            return result;
+        });
+    }
+    else
+    {
+
+        model.qQuellerAIServerModIsLoaded = ko.observable(false);
+
+        model.qQuellerAIServerModCheckLoaded = function() {
+            api.mods.getMountedMods('server', function(mods) {
+
+                // check to see if server mod (and optionally a dev version) are loaded
+
+                var loaded = _.intersection(_.pluck(mods, 'identifier'), ['com.pa.quitch.qQuellerAI', 'com.pa.quitch.qQuellerAI-dev']).length > 0;
+
+                model.qQuellerAIServerModIsLoaded(loaded);
+            });
+        }
+
+        // once mod data is sent check if server mod is actually loaded
+
+        if (window.scene_server_mod_list && window.scene_server_mod_list.new_game) {
+            model.qQuellerAIServerModCheckLoaded();
+        }
+        else {
+            var server_mod_info_updated_handler = handlers.server_mod_info_updated;
+
+            handlers.server_mod_info_updated = function(payload) {
+                server_mod_info_updated_handler(payload);
+
+                model.qQuellerAIServerModCheckLoaded();
+            }
+        }
+
+        model.qQuellerAIServerModIsLoaded.subscribe(function(qQuellerAIServerModIsLoaded) {
+             api.debug.log('qQuellerAIServerModIsLoaded subscribe');
+
+        });
+
+
+    }
+
+    model.qQuellerAIServerModIsHost = ko.computed(function() {
+        return model.isGameCreator() && model.qQuellerAIServerModIsLoaded();
+    });
 }
 
 try {
