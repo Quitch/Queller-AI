@@ -514,8 +514,7 @@ function qQuellerAI() {
         }
 
         model.qQuellerAIServerModIsLoaded.subscribe(function(qQuellerAIServerModIsLoaded) {
-             api.debug.log('qQuellerAIServerModIsLoaded subscribe');
-
+            model.qQuellerAddAIPersonalities();
         });
 
 
