@@ -41,8 +41,8 @@ function qQuellerAI() {
         }
     }
 
-    model.qQuellerAIServerModIsHost.subscribe(function(qQuellerAIServerModIsHost) {
-        if (qQuellerAIServerModIsHost) {
+    model.qQuellerAIServerModIsLoaded.subscribe(function(qQuellerAIServerModIsLoaded) {
+        if (qQuellerAIServerModIsLoaded) {
             model.qQuellerAddAIPersonalities();
         }
     });
