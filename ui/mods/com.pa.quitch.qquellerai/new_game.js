@@ -6,6 +6,8 @@ function qQuellerAI() {
     }
 
     qQuellerAILoaded = true;
+
+    var newBuild = _.isFunction( model.aiPersonalities );
     
     var qQuellerAddAIPersonalitiesAdded = false;
 
@@ -467,8 +469,6 @@ function qQuellerAI() {
             model.aiPersonalityNames(_.keys(aiPersonalities));
         }  
     }
-
-    var newBuild = _.isFunction( model.aiPersonalities );
 
     if (newBuild) {
 
