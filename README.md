@@ -21,24 +21,6 @@ The difficulty levels are designed to reflect the dominant playstyle of each lea
 
 The only feedback which isn't useful is AI vs. AI feedback. Believe me, I see a million of these games. I want feedback from AI vs human games.
 
-## GOALS
-
-Some of these might prove impossible given the tooling available, only time will tell.
-
-- Opening builds aligned with real players
-- Unit mixes suited to current balance
-- More aggressive early play
-- Platoon and squad sizes better suited to the units contained within them
-- Faster expansion on empty planets
-- Much greater use of teleporters to move around
-- Scouting units which can also punish lone fabbers
-- Avoiding losing games through premature orbital
-- Overhaul of naval play
-- Targeting lone fabbers more aggressively
-- Using bombers more appropriately
-- Changing of strategies according to planet size
-- Changing of strategies according to player density
-
 ## DIFFICULTY
 
 Queller offers a range of difficulties designed to try and mimic the style of human players at particular levels of play. Later in this readme you can find recommendations on which difficulty you should try.
@@ -82,7 +64,7 @@ Normal through Absurd are the standard difficulties and will use the vanilla AI 
  - Will tech if it can
  - Will go orbital if it can
  - Expands OK
- - Good troop selection
+ - OK troop selection
  - OK scouting
  - Some reaction to opponent's play
  - Dislikes fabbers
@@ -97,7 +79,7 @@ Normal through Absurd are the standard difficulties and will use the vanilla AI 
  - Techs smartly
  - Goes orbital smartly
  - Expands quickly
- - Best troop selection
+ - Good troop selection
  - Good scouting
  - Smartly reacts to opponent's play
  - Good fabber to troop balance
@@ -212,6 +194,7 @@ The spawn the AI starts in and the profile used can make a big difference, even 
 
 - Ignores the factory and fabber preferences of client/UI AI personality mods
 - Will use fabbers to construct factories when the commander should really do it
+- Doesn't use Helix teleporter
 
 #### CANTFIX
 
@@ -227,7 +210,6 @@ The spawn the AI starts in and the profile used can make a big difference, even 
 - Cannot reclaim
 - Combat Fabbers can only be used to build mines or repair troops, not both, even across entirely different AI personalities
 - Doesn't handle enemy walls well
-- Doesn't use mobile teleporters
 - Bombers don't understand threat
 - Legion won't build a different tier of mass extractor on a metal spot that already has a mass extractor
 - Legion can't use orbital transports
