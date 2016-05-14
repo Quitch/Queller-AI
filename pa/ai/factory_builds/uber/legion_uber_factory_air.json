@@ -521,6 +521,20 @@
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": "<",
+            "value0": 0.6
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "Air",
+            "compare0": "<",
+            "value0": 0.6
           }
         ],
         [
@@ -578,6 +592,20 @@
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": "<",
+            "value0": 0.6
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "Air",
+            "compare0": "<",
+            "value0": 0.6
           }
         ],
         [
@@ -635,13 +663,6 @@
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Air & Mobile - Scout - Fighter - Bomber - Gunship",
-            "unit_type_string1": "Air & Mobile",
-            "compare0": "<",
-            "value0": 0.05
           }
         ],
         [
@@ -653,13 +674,6 @@
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Air & Mobile - Scout - Fighter - Bomber - Gunship",
-            "unit_type_string1": "Air & Mobile",
-            "compare0": "<",
-            "value0": 0.05
           }
         ]
       ]
