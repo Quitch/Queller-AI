@@ -1,5 +1,11 @@
 # CHANGELOG
 
+#### 4.0.3 - 2016/06/12
+
+ - MetMinBasicFabberCount now works for naval and is utilised by Uber to ensure personalities work the same on water as in other theatres
+ - Updated for changes to which units the Starcannon can build
+ - Platinum can now build Advanced Bot Factories with the Colonel
+
 #### 4.0.2 - 2016/05/14
 
  - Uber no longer uses the Nova
@@ -29,7 +35,7 @@
     - Added Uber Aggressive: it's Uber but a little more rash
     - Uber Air is now Uber but without the air limits
     - Uber Turtle is now Uber Cautious: a more conservative and tech happy Uber
- - Smarting spacing between defences for Uber
+ - Smarter spacing between defences for Uber
  - Uber looks to have a greater air presence before bringing out bombers and gunships
  - No more idle scouts in base
  - Implemented a nasty hack to work around the bomber_attack neural net being broken so that bombers and gunships will leave the base
