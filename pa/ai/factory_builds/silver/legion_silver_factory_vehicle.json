@@ -106,7 +106,8 @@
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "LegionFactoryBasicVehicle"
+        "LegionFactoryBasicVehicle",
+        "LegionOrbitalAdvancedCannon"
       ],
       "build_conditions": [
         [
@@ -163,25 +164,7 @@
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "LegionFactoryBasicVehicle"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Legion - Silver - Corsair - Starcannon",
-      "to_build": "LegionVehicleBasicArtillery",
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 97,
-      "builders": [
+        "LegionFactoryBasicVehicle",
         "LegionOrbitalAdvancedCannon"
       ],
       "build_conditions": [
@@ -201,7 +184,8 @@
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "LegionFactoryBasicVehicle"
+        "LegionFactoryBasicVehicle",
+        "LegionOrbitalAdvancedCannon"
       ],
       "build_conditions": [
         [
@@ -326,8 +310,7 @@
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "LegionFactoryAdvancedVehicle",
-        "LegionOrbitalAdvancedCannon"
+        "LegionFactoryAdvancedVehicle"
       ],
       "build_conditions": [
         [
