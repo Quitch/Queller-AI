@@ -3,7 +3,7 @@
     {
       "name": "Uber - Air Scout Platoon",
       "to_build": "Air_Scout_1",
-      "instance_count": -1,
+      "instance_count": 2,
       "priority": 220,
       "build_conditions": [
         [
@@ -15,91 +15,6 @@
           {
             "test_type": "HaveFullPlanetIntel",
             "boolean": false
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & Scout - Gunship",
-            "compare0": ">=",
-            "value0": 1
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Scout",
-            "compare0": "<",
-            "value0": 250
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & Scout",
-            "compare0": ">=",
-            "value0": 1
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyPresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Air & Scout",
-            "compare0": "<",
-            "value0": 250
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & Scout",
-            "compare0": ">=",
-            "value0": 1
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Air & Scout",
-            "compare0": "<",
-            "value0": 250
           },
           {
             "test_type": "UnitCountOnPlanet",
