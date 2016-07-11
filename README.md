@@ -187,14 +187,11 @@ The spawn the AI starts in and the profile used can make a big difference, even 
 - Takes too long transition from a naval start to a land game on mixed maps
 - Will not send all its troops through a teleporter even when there's no reason not to
 - Doesn't understand when it needs to build units in preparation for an attack versus when it should shutdown factories so it can build super weapons
-- Spikes in AI fabber performance
-- Will sometimes build torpedo launcher defences in the starting base on non-symmetrical maps without water
 
 #### WONTFIX
 
 - Ignores the factory and fabber preferences of client/UI AI personality mods
 - Will use fabbers to construct factories when the commander should really do it
-- Doesn't use Helix teleporter
 
 #### CANTFIX
 
@@ -213,6 +210,8 @@ The spawn the AI starts in and the profile used can make a big difference, even 
 - Bombers don't understand threat
 - Legion won't build a different tier of mass extractor on a metal spot that already has a mass extractor
 - Legion can't use orbital transports
+- Doesn't use Helios teleporter
+- Spikes in AI fabber performance
 
 ## THANKS TO
 
