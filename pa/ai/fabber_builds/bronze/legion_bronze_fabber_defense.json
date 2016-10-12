@@ -760,10 +760,6 @@
             "boolean": true
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -999,7 +995,7 @@
         "placement_type": "FromMainBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "unit_type_string": "Structure & ((EnergyProduction & Advanced) | Factory | PlanetEngine | ControlModule)",
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 100,
