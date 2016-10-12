@@ -8,11 +8,11 @@ function qQuellerAI() {
     qQuellerAILoaded = true;
 
     var newBuild = _.isFunction( model.aiPersonalities );
-    
+
     var qQuellerAddAIPersonalitiesAdded = false;
 
     model.qQuellerAddAIPersonalities = function() {
-        
+
         if (qQuellerAddAIPersonalitiesAdded) {
             return;
         }
@@ -20,7 +20,7 @@ function qQuellerAI() {
         api.debug.log('Adding Queller Personalities');
 
         var aiPersonalities = newBuild ? model.aiPersonalities() : model.aiPersonalities;
-        
+
         var defaultAiPersonalities = ['Idle', 'Normal', 'Hard', 'Relentless', 'Absurd'];
 
         _.forEach( aiPersonalities, function(personality, name) {
@@ -252,8 +252,8 @@ function qQuellerAI() {
                 min_advanced_fabbers: 3,
                 max_advanced_fabbers: 100
             },
-            'Uber Cautious': {
-                display_name: 'Uber Cautious',
+            'Uber FFA': {
+                display_name: 'Uber FFA',
                 metal_drain_check: 0.54,
                 energy_drain_check: 0.57,
                 metal_demand_check: 0.85,
@@ -467,7 +467,7 @@ function qQuellerAI() {
             model.aiPersonalities.valueHasMutated();
         } else {
             model.aiPersonalityNames(_.keys(aiPersonalities));
-        }  
+        }
     }
 
     if (newBuild) {
