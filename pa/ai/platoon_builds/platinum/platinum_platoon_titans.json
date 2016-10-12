@@ -54,13 +54,37 @@
             "value0": 1
           },
           {
-            "test_type": "CanAttackWithPoolUnits",
+            "test_type": "CanAttackWithPoolUnitsBomber",
             "string0": "WL_AnySurface",
+            "string1": "WL_Air",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
             "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Titan",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsBomber",
+            "string0": "WL_AnySurface",
+            "string1": "WL_Air",
+            "unit_type_string0": "Mobile | Structure"
           }
         ]
       ],
-      "task_type": "LandAttack"
+      "task_type": "BomberAttack"
     },
     {
       "name": "Platinum - Orbital Attack Titan",
