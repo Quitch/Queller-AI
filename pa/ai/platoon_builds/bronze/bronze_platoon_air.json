@@ -23,13 +23,14 @@
             "value0": 40
           },
           {
-            "test_type": "CanAttackWithPoolUnits",
+            "test_type": "CanAttackWithPoolUnitsBomber",
             "string0": "WL_AnySurface",
-            "boolean": true
+            "string1": "WL_Air",
+            "unit_type_string0": "Mobile | Structure"
           }
         ]
       ],
-      "task_type": "LandAttack"
+      "task_type": "BomberAttack"
     },
     {
       "name": "Bronze - Fighter Attack Platoon",

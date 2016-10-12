@@ -29,13 +29,14 @@
             "value0": 9
           },
           {
-            "test_type": "CanAttackWithPoolUnits",
+            "test_type": "CanAttackWithPoolUnitsBomber",
             "string0": "WL_AnySurface",
-            "boolean": true
+            "string1": "WL_Air",
+            "unit_type_string0": "Mobile | Structure"
           }
         ]
       ],
-      "task_type": "LandAttack"
+      "task_type": "BomberAttack"
     },
     {
       "name": "Silver - Bomber-Gunship Attack Platoon 40",
@@ -60,13 +61,14 @@
             "value0": 36
           },
           {
-            "test_type": "CanAttackWithPoolUnits",
+            "test_type": "CanAttackWithPoolUnitsBomber",
             "string0": "WL_AnySurface",
-            "boolean": true
+            "string1": "WL_Air",
+            "unit_type_string0": "Mobile | Structure"
           }
         ]
       ],
-      "task_type": "LandAttack"
+      "task_type": "BomberAttack"
     },
     {
       "name": "Silver - Fighter Attack Platoon",
