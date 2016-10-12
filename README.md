@@ -120,7 +120,7 @@ By default, Queller at Uber level will adapt its play to try and suit the system
  - Doesn't build vehicle factories
  - MLA will build a vehicle factory for Skitters if it detects the possibility of mines
 
-- Cautious
+- FFA
  - Requires a greater advantage before attacking
  - Techs faster
 
