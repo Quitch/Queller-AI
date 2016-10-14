@@ -694,9 +694,9 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Advanced & Factory",
-            "compare0": "<",
-            "value0": 1
+            "unit_type_string0": "Fabber - Orbital - Naval",
+            "compare0": ">=",
+            "value0": 5
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -847,6 +847,92 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "AdvancedVehicleFactory"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital - Naval",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedVehicleFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Uber - Advanced Vehicle Factory - Excess Eco",
+      "to_build": "AdvancedVehicleFactory",
+      "instance_count": -1,
+      "shared_instance_count": "AdvancedFactory",
+      "priority": 475,
+      "min_num_assisters": 6,
+      "max_num_assisters": 9,
+      "builders": [
+        "BasicVehicleFabber",
+        "AdvancedVehicleFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bot",
+            "boolean": false
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "rush",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "MetalStorageFrac",
+            "compare0": ">",
+            "value0": 0.9
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedVehicleFactory"
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Tank",
+            "boolean": true
           },
           {
             "test_type": "UnitCountOnPlanet",

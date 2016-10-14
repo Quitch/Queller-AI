@@ -727,6 +727,80 @@
           "value": 50
         }
       }
+    },
+    {
+      "name": "Uber - Advanced Naval Factory - Excess Eco",
+      "to_build": "AdvancedNavalFactory",
+      "instance_count": -1,
+      "shared_instance_count": "AdvancedFactory",
+      "priority": 475,
+      "min_num_assisters": 6,
+      "max_num_assisters": 9,
+      "builders": [
+        "BasicNavalFabber",
+        "AdvancedNavalFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "land",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "MetalStorageFrac",
+            "compare0": ">",
+            "value0": 0.9
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedNavalFactory"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedNavalFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
     }
   ]
 }
