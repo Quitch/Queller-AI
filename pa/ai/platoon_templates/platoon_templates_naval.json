@@ -11,7 +11,7 @@
     "Naval_Attack_1": {
       "units": [
         {
-          "unit_types": "(Naval & Mobile) - Artillery - Scout - Fabber - Construction - Tactical - Hover - (AirDefense & Custom1) - Heavy",
+          "unit_types": "(Naval & Mobile) - Artillery - Scout - Fabber - Construction - Tactical - Hover - Heavy",
           "min_count": 0,
           "max_count": 3,
           "squad": "General"
@@ -35,7 +35,7 @@
           "squad": "Artillery"
         },
         {
-          "unit_types": "(Naval & Mobile) & (Tactical | (AirDefense & Custom1))",
+          "unit_types": "Naval & Mobile & (Construction | (AirDefense & Custom1))",
           "min_count": 0,
           "percent": 0.2,
           "squad": "Defense"
@@ -45,7 +45,7 @@
     "Naval_Attack_4": {
       "units": [
         {
-          "unit_types": "(Naval & Mobile) - Artillery - Scout - Fabber - Construction - Tactical - Hover - (AirDefense & Custom1) - Heavy",
+          "unit_types": "(Naval & Mobile) - Artillery - Scout - Fabber - Construction - Tactical - Hover - Heavy",
           "min_count": 0,
           "max_count": 7,
           "squad": "General"
@@ -69,7 +69,7 @@
           "squad": "Artillery"
         },
         {
-          "unit_types": "(Naval & Mobile) & (Tactical | (AirDefense & Custom1))",
+          "unit_types": "Naval & Mobile & (Construction | (AirDefense & Custom1))",
           "min_count": 0,
           "percent": 0.2,
           "squad": "Defense"
@@ -79,7 +79,7 @@
     "Naval_Attack_8": {
       "units": [
         {
-          "unit_types": "(Naval & Mobile) - Artillery - Scout - Fabber - Construction - Tactical - Hover - (AirDefense & Custom1) - Heavy",
+          "unit_types": "(Naval & Mobile) - Artillery - Scout - Fabber - Construction - Tactical - Hover - Heavy",
           "min_count": 0,
           "max_count": 15,
           "squad": "General"
@@ -103,7 +103,7 @@
           "squad": "Artillery"
         },
         {
-          "unit_types": "(Naval & Mobile) & (Tactical | (AirDefense & Custom1))",
+          "unit_types": "Naval & Mobile & (Construction | (AirDefense & Custom1))",
           "min_count": 0,
           "percent": 0.2,
           "squad": "Defense"
@@ -113,7 +113,7 @@
     "Naval_Attack_12": {
       "units": [
         {
-          "unit_types": "(Naval & Mobile) - Artillery - Scout - Fabber - Construction - Tactical - Hover - (AirDefense & Custom1) - Heavy",
+          "unit_types": "(Naval & Mobile) - Artillery - Scout - Fabber - Construction - Tactical - Hover - Heavy",
           "min_count": 0,
           "max_count": -1,
           "squad": "General"
@@ -137,7 +137,7 @@
           "squad": "Artillery"
         },
         {
-          "unit_types": "(Naval & Mobile) & (Tactical | (AirDefense & Custom1))",
+          "unit_types": "Naval & Mobile & (Construction | (AirDefense & Custom1))",
           "min_count": 0,
           "percent": 0.2,
           "squad": "Defense"
