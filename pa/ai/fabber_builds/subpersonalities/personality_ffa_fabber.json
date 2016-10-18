@@ -1,13 +1,260 @@
 {
   "build_list": [
     {
+      "name": "Uber - Advanced Air Factory - FFA",
+      "to_build": "AdvancedAirFactory",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedFactory",
+      "priority": 477,
+      "min_num_assisters": 5,
+      "max_num_assisters": 8,
+      "builders": [
+        "BasicAirFabber",
+        "AdvancedAirFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "ffa",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedAirFactory"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital - Naval",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedAirFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Uber - Atlas",
+      "to_build": "SeismicBot",
+      "instance_count": 1,
+      "min_num_assisters": 5,
+      "max_num_assisters": 15,
+      "shared_instance_count": "Titan",
+      "priority": 507,
+      "builders": [
+        "AdvancedBotFabber",
+        "UberSupportCommander",
+        "OrbitalFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "ffa",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": ">",
+            "value0": 11200
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "SeismicBot"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 50,
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Uber - Ares",
+      "to_build": "FortressVehicle",
+      "instance_count": 1,
+      "min_num_assisters": 5,
+      "max_num_assisters": 15,
+      "shared_instance_count": "Titan",
+      "priority": 508,
+      "builders": [
+        "AdvancedVehicleFabber",
+        "OrbitalFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "ffa",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": ">",
+            "value0": 11200
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "FortressVehicle"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 50,
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Uber - Zeus",
+      "to_build": "TeslaGunship",
+      "instance_count": 1,
+      "min_num_assisters": 5,
+      "max_num_assisters": 15,
+      "shared_instance_count": "Titan",
+      "priority": 508,
+      "builders": [
+        "AdvancedAirFabber",
+        "OrbitalFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "ffa",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": ">",
+            "value0": 11200
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "TeslaGunship"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
       "name": "Legion - Uber - Thor",
       "to_build": "LegionTitanAdvancedBot",
       "instance_count": 1,
       "min_num_assisters": 5,
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
-      "priority": 361,
+      "priority": 508,
       "builders": [
         "LegionBotAdvancedFabber",
         "LegionOrbitalBasicFabber",
@@ -17,13 +264,8 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "ffa",
-            "boolean": false
+            "boolean": true
           },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
@@ -78,7 +320,7 @@
       "min_num_assisters": 5,
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
-      "priority": 361,
+      "priority": 508,
       "builders": [
         "LegionVehicleAdvancedFabber",
         "LegionOrbitalBasicFabber"
@@ -87,13 +329,8 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "ffa",
-            "boolean": false
+            "boolean": true
           },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
@@ -148,7 +385,7 @@
       "min_num_assisters": 5,
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
-      "priority": 361,
+      "priority": 508,
       "builders": [
         "LegionAirAdvancedFabber",
         "LegionOrbitalBasicFabber"
@@ -157,13 +394,8 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "ffa",
-            "boolean": false
+            "boolean": true
           },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
@@ -198,40 +430,6 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionTitanAdvancedAir"
           }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsRespawnable",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & Titan",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber",
-            "compare0": ">",
-            "value0": 5
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionTitanAdvancedAir"
-          }
         ]
       ],
       "placement_rules": {
@@ -251,7 +449,7 @@
       "min_num_assisters": 5,
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
-      "priority": 361,
+      "priority": 508,
       "builders": [
         "LegionOrbitalBasicFabber"
       ],
@@ -259,13 +457,8 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "ffa",
-            "boolean": false
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -294,90 +487,6 @@
         "placement_type": "FromMainBaseCenter",
         "threat": {
           "influence_type": "AntiOrbital",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
-      "name": "Legion - Uber - Holocene",
-      "to_build": "LegionTitanAdvancedStructure",
-      "instance_count": 1,
-      "min_num_assisters": 8,
-      "max_num_assisters": 15,
-      "shared_instance_count": "Titan",
-      "priority": 480,
-      "builders": [
-        "AnyLegionFabberAdvanced"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsMainEcoBase",
-            "boolean": false
-          },
-          {
-            "test_type": "PlanetIsRespawnable",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionTitanAdvancedStructure"
-          },
-          {
-            "test_type": "PlanetCount",
-            "compare0": ">=",
-            "value0": 2
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": ">",
-            "value0": 22400
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Land",
-            "string1": "AntiSurface",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber",
-            "compare0": ">=",
-            "value0": 5
-          },
-          {
-            "test_type": "AlliedUnitCountOnPlanet",
-            "unit_type_string0": "Structure & Advanced & SelfDestruct",
-            "compare0": "<",
-            "boolean": true,
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionTitanAdvancedStructure"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
           "compare_type": "<",
           "radius": 10,
           "value": 50
