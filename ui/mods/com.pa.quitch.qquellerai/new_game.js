@@ -268,6 +268,7 @@ function qQuellerAI() {
                 personality_tags:
                 [
                     "uber",
+                    "ffa",
                     "tech"
                 ],
                 fabber_to_factory_ratio_basic: 3.0,
