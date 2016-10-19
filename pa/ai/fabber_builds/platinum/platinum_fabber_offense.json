@@ -164,44 +164,6 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "LongRangeArtillery"
           }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
-            "compare0": ">=",
-            "value0": 5
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Artillery & Advanced",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountAroundBase",
-            "unit_type_string0": "Commander",
-            "string0": "Enemy",
-            "value0": 600,
-            "compare0": ">=",
-            "value1": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LongRangeArtillery"
-          }
         ]
       ],
       "placement_rules": {
@@ -209,10 +171,10 @@
         "placement_type": "FromMainBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "(Structure - MetalProduction) | Commander",
+            "unit_type_string": "Structure - MetalProduction",
             "alliance": "Enemy",
             "compare_type": ">=",
-            "range": 500,
+            "range": 600,
             "count": 5
           }
         ],
