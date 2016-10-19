@@ -190,6 +190,7 @@ The spawn the AI starts in and the profile used can make a big difference, even 
 
 - Takes too long transition from a naval start to a land game on mixed maps
 - Doesn't understand when it needs to build units in preparation for an attack versus when it should shutdown factories so it can build super weapons
+- Doesn't build enough fabbers to support building an orbital titan
 
 #### WONTFIX
 
