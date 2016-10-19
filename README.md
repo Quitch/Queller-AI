@@ -187,13 +187,11 @@ The spawn the AI starts in and the profile used can make a big difference, even 
 #### TOFIX
 
 - Takes too long transition from a naval start to a land game on mixed maps
-- Will not send all its troops through a teleporter even when there's no reason not to
 - Doesn't understand when it needs to build units in preparation for an attack versus when it should shutdown factories so it can build super weapons
 
 #### WONTFIX
 
 - Ignores the factory and fabber preferences of client/UI AI personality mods
-- Will use fabbers to construct factories when the commander should really do it
 
 #### CANTFIX
 
@@ -209,11 +207,11 @@ The spawn the AI starts in and the profile used can make a big difference, even 
 - Cannot reclaim
 - Combat Fabbers can only be used to build mines or repair troops, not both, even across entirely different AI personalities
 - Doesn't handle enemy walls well
-- Bombers don't understand threat
 - Legion won't build a different tier of mass extractor on a metal spot that already has a mass extractor
 - Legion can't use orbital transports
 - Doesn't use Helios teleporter
 - Spikes in AI fabber performance
+- Naval factories sometimes stop producing units
 
 ## THANKS TO
 
