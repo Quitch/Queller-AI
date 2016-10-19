@@ -56,10 +56,10 @@
         "placement_type": "FromMainBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "(Structure - MetalProduction) | Commander",
+            "unit_type_string": "Commander | (Structure - MetalProduction)",
             "alliance": "Enemy",
             "compare_type": ">=",
-            "range": 200,
+            "range": 260,
             "count": 1
           }
         ],
