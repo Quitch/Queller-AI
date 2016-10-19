@@ -11,7 +11,7 @@ Please ensure that if you use this work you credit Quitch's Queller AI.
 
 ## INSTALLATION
 
-You should download and install this mod via the [PA Mod Manager (PAMM)](https://forums.uberent.com/threads/pa-mod-manager-pamm-cross-platform.59992/)
+You should download and install this mod via the Planetary Annihilation TITANS in-game Community Mod Manager.
 
 ## FEEDBACK
 
