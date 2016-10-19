@@ -44,10 +44,10 @@
     {
       "name": "Uber - Basic Metal Extractor - Desire - Area",
       "to_build": "BasicMetalExtractor",
-      "instance_count": 4,
+      "instance_count": 3,
       "max_num_assisters": 1,
       "shared_instance_count": "BasicMetal",
-      "priority": 501,
+      "priority": 510,
       "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber",
@@ -83,10 +83,10 @@
     {
       "name": "Uber - Basic Metal Extractor - Expand 1 - Area",
       "to_build": "BasicMetalExtractor",
-      "instance_count": 2,
+      "instance_count": 1,
       "max_num_assisters": 1,
       "shared_instance_count": "BasicMetal",
-      "priority": 499,
+      "priority": 476,
       "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber",
@@ -118,6 +118,42 @@
     },
     {
       "name": "Uber - Basic Metal Extractor - Expand 2 - Area",
+      "to_build": "BasicMetalExtractor",
+      "instance_count": 2,
+      "max_num_assisters": 1,
+      "shared_instance_count": "BasicMetal",
+      "priority": 375,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildBasic",
+            "boolean": true
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 300,
+          "value": 50
+        }
+      },
+      "task_type": "AreaBuild"
+    },
+    {
+      "name": "Uber - Basic Metal Extractor - Expand 3 - Area",
       "to_build": "BasicMetalExtractor",
       "instance_count": 3,
       "max_num_assisters": 1,
@@ -153,10 +189,11 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Uber - Basic Metal Extractor - Expand 3 - Area",
+      "name": "Uber - Basic Metal Extractor - Expand 4 - Area",
       "to_build": "BasicMetalExtractor",
-      "instance_count": 6,
+      "instance_count": 4,
       "max_num_assisters": 1,
+      "shared_instance_count": "BasicMetal",
       "priority": 2,
       "base_sort": "FromBuilder",
       "builders": [
@@ -230,10 +267,10 @@
     {
       "name": "Uber - Basic Metal Extractor - Desire",
       "to_build": "BasicMetalExtractor",
-      "instance_count": 4,
+      "instance_count": 3,
       "max_num_assisters": 1,
       "shared_instance_count": "BasicMetal",
-      "priority": 501,
+      "priority": 510,
       "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber",
@@ -268,10 +305,10 @@
     {
       "name": "Uber - Basic Metal Extractor - Expand 1",
       "to_build": "BasicMetalExtractor",
-      "instance_count": 2,
+      "instance_count": 1,
       "max_num_assisters": 1,
       "shared_instance_count": "BasicMetal",
-      "priority": 499,
+      "priority": 476,
       "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber",
@@ -302,6 +339,41 @@
     },
     {
       "name": "Uber - Basic Metal Extractor - Expand 2",
+      "to_build": "BasicMetalExtractor",
+      "instance_count": 2,
+      "max_num_assisters": 1,
+      "shared_instance_count": "BasicMetal",
+      "priority": 375,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildBasic",
+            "boolean": true
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 300,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Uber - Basic Metal Extractor - Expand 3",
       "to_build": "BasicMetalExtractor",
       "instance_count": 3,
       "max_num_assisters": 1,
@@ -336,9 +408,9 @@
       }
     },
     {
-      "name": "Uber - Basic Metal Extractor - Expand 3",
+      "name": "Uber - Basic Metal Extractor - Expand 4",
       "to_build": "BasicMetalExtractor",
-      "instance_count": 6,
+      "instance_count": 4,
       "max_num_assisters": 1,
       "shared_instance_count": "BasicMetal",
       "priority": 2,
@@ -615,7 +687,7 @@
       "min_num_assisters": 1,
       "max_num_assisters": 3,
       "shared_instance_count": "AdvancedMetal",
-      "priority": 508,
+      "priority": 506,
       "base_sort": "FromBuilder",
       "builders": [
         "AnyUberAdvancedFabber"
@@ -691,7 +763,7 @@
       "min_num_assisters": 1,
       "max_num_assisters": 3,
       "shared_instance_count": "AdvancedMetal",
-      "priority": 510,
+      "priority": 511,
       "base_sort": "FromBuilder",
       "builders": [
         "AnyUberAdvancedFabber"
@@ -850,7 +922,7 @@
       "max_num_assisters": 5,
       "shared_instance_count": "AdvancedEnergy",
       "cross_planet_shared_count": true,
-      "priority": 511,
+      "priority": 512,
       "builders": [
         "AdvancedNavalFabber",
         "AdvancedVehicleFabber",
@@ -891,7 +963,7 @@
       "max_num_assisters": 5,
       "shared_instance_count": "AdvancedEnergy",
       "cross_planet_shared_count": true,
-      "priority": 509,
+      "priority": 510,
       "builders": [
         "AdvancedAirFabber",
         "AdvancedBotFabber"
@@ -930,7 +1002,7 @@
       "min_num_assisters": 3,
       "max_num_assisters": 5,
       "shared_instance_count": "OrbitalEco",
-      "priority": 509,
+      "priority": 510,
       "builders": [
         "OrbitalFabber"
       ],
