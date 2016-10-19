@@ -1032,7 +1032,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction & Advanced | Factory)",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
             "compare0": ">=",
             "value0": 3
           },
@@ -1052,7 +1052,7 @@
         "placement_type": "FromMainBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "Structure & (EnergyProduction & Advanced | Factory)",
+            "unit_type_string": "Structure & ((EnergyProduction & Advanced) | Factory)",
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 150,
