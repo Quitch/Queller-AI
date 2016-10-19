@@ -7,7 +7,7 @@ I love AI. To put my old person comfy jumper on for a moment, back in the day I 
 
 This mod is a total overhaul of the AI (as much as can be done with the exposed files) designed to leverage the systems Sorian has created, while playing a game better suited to the meta. It is primarily designed with 1v1 in mind, but should prove to be an improvement in other modes too. It covers a wider range of difficulties than vanilla, from easier to harder, all of which play in a more humanlike fashion than their vanilla counterparts.
 
-Please ensure that if you use this work that you credit Quitch's Queller AI.
+Please ensure that if you use this work you credit Quitch's Queller AI.
 
 ## INSTALLATION
 
