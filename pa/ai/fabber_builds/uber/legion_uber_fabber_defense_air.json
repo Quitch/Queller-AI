@@ -239,7 +239,7 @@
       "instance_count": 1,
       "min_num_assisters": 1,
       "max_num_assisters": 3,
-      "priority": 380,
+      "priority": 480,
       "base_sort": "FromPerimeter",
       "builders": [
         "AnyLegionFabberAdvanced"
@@ -296,13 +296,13 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Advanced & AirDefense",
             "compare0": "<",
-            "value0": 1
+            "value0": 3
           },
           {
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Commander",
             "compare0": ">=",
-            "value0": 5
+            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -314,7 +314,7 @@
         "placement_type": "FromMainBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "unit_type_string": "(Structure & (EnergyProduction | Factory | Tactical | Artillery)) | Commander",
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 50,
