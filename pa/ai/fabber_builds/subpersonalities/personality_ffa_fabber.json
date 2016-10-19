@@ -20,6 +20,10 @@
             "boolean": true
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
           },
@@ -35,6 +39,18 @@
             "unit_type_string0": "Fabber - Orbital - Naval",
             "compare0": ">=",
             "value0": 5
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Advanced & Factory - Air",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Advanced & Factory & Air",
+            "compare0": "<",
+            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -190,7 +206,7 @@
       "min_num_assisters": 5,
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
-      "priority": 508,
+      "priority": 509,
       "builders": [
         "AdvancedAirFabber",
         "OrbitalFabber"
