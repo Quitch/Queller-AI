@@ -300,6 +300,27 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": "<",
+            "value0": 13000
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": false
           }
         ]
       ]
@@ -337,6 +358,12 @@
             "test_type": "HaveSeenEnemyUnits",
             "unit_type_string0": "Tactical",
             "boolean": true
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": "<",
+            "value0": 13000
           },
           {
             "test_type": "UnitRatioOnPlanet",
