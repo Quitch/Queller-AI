@@ -20,6 +20,10 @@
             "boolean": true
           },
           {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
             "test_type": "PlanetWithoutPresence",
             "boolean": true
           },
@@ -65,6 +69,62 @@
             "boolean": true
           },
           {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedBotFactory"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Bot & Factory & Advanced",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital - Naval",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedBotFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "tech",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
           },
@@ -74,6 +134,16 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "AdvancedBotFactory"
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Bot",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Tank",
+            "boolean": false
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -115,6 +185,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "tech",
             "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -177,6 +251,10 @@
             "boolean": false
           },
           {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
           },
@@ -233,6 +311,10 @@
             "boolean": true
           },
           {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
             "test_type": "PlanetWithoutPresence",
             "boolean": true
           },
@@ -276,6 +358,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "tech",
             "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -334,6 +420,10 @@
             "boolean": true
           },
           {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
           },
@@ -387,6 +477,10 @@
           },
           {
             "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreatened",
             "boolean": false
           },
           {
