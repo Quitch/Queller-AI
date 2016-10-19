@@ -24,6 +24,10 @@
             "boolean": false
           },
           {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
           },
@@ -97,6 +101,10 @@
             "boolean": false
           },
           {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -109,7 +117,7 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Fabber",
             "compare0": ">=",
-            "value0": 5
+            "value0": 15
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -162,6 +170,10 @@
             "boolean": false
           },
           {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -174,7 +186,7 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Fabber",
             "compare0": ">=",
-            "value0": 5
+            "value0": 15
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -227,6 +239,10 @@
             "boolean": false
           },
           {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -239,7 +255,7 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Fabber",
             "compare0": ">=",
-            "value0": 5
+            "value0": 15
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -292,6 +308,10 @@
             "boolean": false
           },
           {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -304,7 +324,7 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Fabber",
             "compare0": ">=",
-            "value0": 5
+            "value0": 15
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -357,6 +377,10 @@
             "boolean": false
           },
           {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -369,7 +393,7 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Fabber",
             "compare0": ">=",
-            "value0": 5
+            "value0": 15
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -422,6 +446,10 @@
             "boolean": false
           },
           {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -434,7 +462,7 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Fabber",
             "compare0": ">=",
-            "value0": 5
+            "value0": 15
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -475,6 +503,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "ffa",
             "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
