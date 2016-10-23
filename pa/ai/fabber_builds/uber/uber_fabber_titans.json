@@ -21,11 +21,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "ffa",
-            "boolean": false
-          },
-          {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
@@ -96,11 +91,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "ffa",
-            "boolean": false
-          },
-          {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
@@ -153,7 +143,7 @@
       "min_num_assisters": 5,
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
-      "priority": 361,
+      "priority": 362,
       "builders": [
         "AdvancedAirFabber",
         "OrbitalFabber"
@@ -164,11 +154,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "ffa",
-            "boolean": false
           },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
