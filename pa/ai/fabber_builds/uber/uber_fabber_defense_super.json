@@ -134,43 +134,6 @@
             "string0": "Nuke",
             "string1": "AntiNuke",
             "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
-            "compare0": ">=",
-            "value0": 5
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & NukeDefense",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "AntiNukeSilo"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "AntiNukeSilo"
-          },
-          {
-            "test_type": "SystemToPlanetThreatRatio",
-            "string0": "Nuke",
-            "string1": "AntiNuke",
-            "compare0": ">",
             "value0": 1
           },
           {
@@ -266,11 +229,11 @@
         "placement_type": "FromMainBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "unit_type_string": "Commander | (Structure & ((EnergyProduction & Advanced) | Factory))",
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 150,
-            "count": 3
+            "count": 5
           },
           {
             "unit_type_string": "Structure & NukeDefense",
