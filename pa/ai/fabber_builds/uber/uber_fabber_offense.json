@@ -126,7 +126,7 @@
       "instance_count": 1,
       "min_num_assisters": 3,
       "max_num_assisters": 6,
-      "priority": 380,
+      "priority": 360,
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -140,6 +140,10 @@
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -197,7 +201,7 @@
       "shared_instance_count": "NukeSilo",
       "min_num_assisters": 3,
       "max_num_assisters": 12,
-      "priority": 380,
+      "priority": 360,
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -213,11 +217,21 @@
             "boolean": false
           },
           {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "NukeSilo"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber",
+            "compare0": ">=",
+            "value0": 10
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -275,7 +289,7 @@
       "shared_instance_count": "NukeSilo",
       "min_num_assisters": 8,
       "max_num_assisters": 12,
-      "priority": 381,
+      "priority": 361,
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -304,6 +318,12 @@
             "unit_type_string0": "Structure & Nuke",
             "compare0": "<",
             "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber",
+            "compare0": ">=",
+            "value0": 10
           },
           {
             "test_type": "CanFindPlaceToBuild",
