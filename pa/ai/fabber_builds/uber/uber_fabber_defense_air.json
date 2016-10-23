@@ -8,7 +8,8 @@
       "base_sort": "FromPerimeter",
       "builders": [
         "UberCommander",
-        "AnyUberBasicFabber"
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber"
       ],
       "build_conditions": [
         [
@@ -18,13 +19,15 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Air",
-            "compare0": ">",
-            "value0": 0
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "DistFromMainBase",
@@ -55,13 +58,15 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Air",
-            "compare0": ">",
-            "value0": 0
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "DistFromMainBase",
@@ -116,13 +121,18 @@
       "builders": [
         "UberCommander",
         "BasicBotFabber",
-        "BasicVehicleFabber"
+        "BasicVehicleFabber",
+        "AnyUberAdvancedFabber"
       ],
       "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
             "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
           {
@@ -139,7 +149,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (EnergyProduction | Factory)",
             "compare0": ">=",
-            "value0": 10
+            "value0": 5
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -152,6 +162,74 @@
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 2
+          },
+          {
+            "unit_type_string": "Structure & AirDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Uber - Galata Turret - Air Snipes",
+      "to_build": "BasicAirDefense",
+      "instance_count": 1,
+      "max_num_assisters": 1,
+      "priority": 456,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "UberCommander",
+        "BasicBotFabber",
+        "BasicVehicleFabber",
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Air",
+            "compare0": ">",
+            "value0": 4000
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Commander",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicAirDefense"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Commander | (Structure & (EnergyProduction | Factory | Tactical | Artillery))",
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 50,
@@ -186,6 +264,10 @@
             "boolean": true
           },
           {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -199,13 +281,13 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Advanced & AirDefense",
             "compare0": "<",
-            "value0": 4
+            "value0": 1
           },
           {
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (EnergyProduction | Factory)",
             "compare0": ">=",
-            "value0": 10
+            "value0": 5
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -239,7 +321,7 @@
       "instance_count": 1,
       "min_num_assisters": 1,
       "max_num_assisters": 3,
-      "priority": 480,
+      "priority": 456,
       "base_sort": "FromPerimeter",
       "builders": [
         "AnyUberAdvancedFabber"
@@ -252,12 +334,17 @@
             "boolean": true
           },
           {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Air & Transport & Advanced",
+            "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Air",
+            "compare0": ">",
+            "value0": 4000
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
@@ -265,45 +352,6 @@
             "string1": "AntiAir",
             "compare0": ">",
             "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & AirDefense",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
-            "compare0": ">=",
-            "value0": 5
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedAirDefense"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Air",
-            "string1": "AntiAir",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & AirDefense",
-            "compare0": "<",
-            "value0": 3
           },
           {
             "test_type": "UnitCountInBase",
@@ -321,7 +369,7 @@
         "placement_type": "FromMainBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "(Structure & (EnergyProduction | Factory | Tactical | Artillery)) | Commander",
+            "unit_type_string": "Commander | (Structure & (EnergyProduction | Factory | Tactical | Artillery))",
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 50,
