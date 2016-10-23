@@ -223,10 +223,10 @@
       "priority": 96,
       "builders": [
         "LegionFactoryBasicAir",
-				"LegionFactoryAdvancedAir"
+        "LegionFactoryAdvancedAir"
       ],
       "build_conditions": [
-         [
+        [
           {
             "test_type": "HasPersonalityTag",
             "string0": "silver",
