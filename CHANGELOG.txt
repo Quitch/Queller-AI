@@ -7,7 +7,6 @@
  - Corrected error where AI might try to form its largest air platoon too early
  - Remove workaround for BomberAttack as it's now fixed
  - No longer requires an enemy surface presence to deploy its air titans against air threats
- - Uber Cautious renamed to Uber FFA
  - Tactical units properly excluded from squads other than Artillery
  - Angels will now leave base
  - Bronze will build Catapults even when alone
@@ -28,24 +27,22 @@
  - Uber Legion will now mix tanks and bots
  - Correctly include Corsairs in artillery squad when forming hover platoons
  - Uber Tech is more aggressive about building T2 factories
- - Uber FFA will access T2 air to enable it to build the Zeus
- - Uber FFA will give higher priority to titans
  - Correctly looks only at surface enemy presence when evaluating how many surface troops to teleport
  - Fixed cap not being correctly applied to metal expansion in some instances
  - Tweaked Uber's economy to try and ensure it's spending the metal it's taking and is thus able to defend it
- - Uber Tech favours T2 vehicles over bots
- - Uber FFA doesn't force early air
- - Uber personalities require more fabbers before trying to build a titan
+ - Uber Cautious and Tech favour T2 vehicles over bots
+ - Uber requires more fabbers before trying to build a titan
  - Uber won't start risky build projects when the base is under attack
  - No longer rushes artillery to Comm snipe as the AI won't target the Comm
  - Uber throws more fabbers at ground-to-orbital defence rushes
  - Uber builds more ground-to-oribtal defences as the orbital threat grows
- - Uber more likely to build nukes
  - Fix error in anti-nuke placement checks
- - Check to place artillery is no longer above the requirements to build it
+ - Check to place artillery is no longer greater than the requirements to build it
  - Don't build GIL-E in response to missile ships
  - Corrected range on Gustav placement checks
  - Fixed and increased priority of Uber's air snipe defences
+ - Uber smarter about not leaving itself so vulnerable after teching
+ - Capped how many additional factories building projects can be started while floating
 
 #### 4.1.0 - 2016/07/28
 
