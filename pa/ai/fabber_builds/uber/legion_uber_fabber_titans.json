@@ -21,11 +21,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "ffa",
-            "boolean": false
-          },
-          {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
@@ -91,11 +86,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "ffa",
-            "boolean": false
-          },
-          {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
@@ -159,11 +149,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "ffa",
-            "boolean": false
           },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
@@ -243,7 +228,8 @@
           "value": 50
         }
       }
-    },{
+    },
+    {
       "name": "Legion - Uber - Tyr",
       "to_build": "LegionTitanAdvancedOrbital",
       "instance_count": 1,
@@ -261,11 +247,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "ffa",
-            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
