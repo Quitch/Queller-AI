@@ -531,11 +531,24 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Air",
+            "compare0": ">",
+            "value0": 4500
+          },
+          {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Air",
             "string1": "AntiAir",
             "compare0": ">",
             "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Tank | (Bot & (Artillery | Advanced)) & Mobile) - Fabber - AirDefense - Construction - Heavy - Deconstruction",
+            "compare0": ">",
+            "value0": 40,
+            "boolean": true
           },
           {
             "test_type": "UnitRatioOnPlanet",
