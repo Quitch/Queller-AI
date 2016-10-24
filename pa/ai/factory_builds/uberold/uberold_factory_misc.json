@@ -1,0 +1,183 @@
+{
+  "build_list": [
+    {
+      "name": "Uberold - Nuke Missile",
+      "to_build": "NukeMissile",
+      "instance_count": -1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 12,
+      "priority": 152,
+      "builders": [
+        "NukeSilo"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uberold",
+            "boolean": true
+          },
+          {
+            "test_type": "FactoryHasOpenSlot"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Uberold - Nuke Missile - Too Expensive",
+      "to_build": "NukeMissile",
+      "instance_count": -1,
+      "max_num_assisters": 12,
+      "priority": 151,
+      "builders": [
+        "NukeSilo"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uberold",
+            "boolean": true
+          },
+          {
+            "test_type": "FactoryHasOpenSlot"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Uberold - Nuke Missile - No Antis",
+      "to_build": "NukeMissile",
+      "instance_count": -1,
+      "min_num_assisters": 8,
+      "max_num_assisters": 12,
+      "priority": 478,
+      "builders": [
+        "NukeSilo"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uberold",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "FactoryHasOpenSlot"
+          },
+          {
+            "test_type": "FocusTargetThreat",
+            "string0": "AntiNuke",
+            "compare0": "<=",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Uberold - Anti Nuke Missile",
+      "to_build": "AntiNukeMissile",
+      "instance_count": -1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 12,
+      "priority": 152,
+      "builders": [
+        "AntiNukeSilo"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uberold",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "FactoryHasOpenSlot"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Uberold - Anti Nuke Missile - Too Expensive",
+      "to_build": "AntiNukeMissile",
+      "instance_count": -1,
+      "max_num_assisters": 12,
+      "priority": 151,
+      "builders": [
+        "AntiNukeSilo"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uberold",
+            "boolean": true
+          },
+          {
+            "test_type": "FactoryHasOpenSlot"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Uberold - Anti Nuke Missile - Rush",
+      "to_build": "AntiNukeMissile",
+      "instance_count": -1,
+      "min_num_assisters": 8,
+      "max_num_assisters": 12,
+      "priority": 510,
+      "builders": [
+        "AntiNukeSilo"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uberold",
+            "boolean": true
+          },
+          {
+            "test_type": "FactorySlotsEmpty",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Nuke",
+            "compare0": ">",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uberold",
+            "boolean": true
+          },
+          {
+            "test_type": "FactorySlotsEmpty",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveHadANukeEvent",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    }
+  ]
+}
