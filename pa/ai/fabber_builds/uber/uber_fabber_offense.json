@@ -24,6 +24,10 @@
             "boolean": true
           },
           {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -299,6 +303,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"

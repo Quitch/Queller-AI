@@ -7,7 +7,7 @@
       "min_num_assisters": 5,
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
-      "priority": 379,
+      "priority": 377,
       "builders": [
         "AdvancedBotFabber",
         "UberSupportCommander",
@@ -26,6 +26,10 @@
           },
           {
             "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreatened",
             "boolean": false
           },
           {
@@ -78,7 +82,7 @@
       "min_num_assisters": 5,
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
-      "priority": 380,
+      "priority": 378,
       "builders": [
         "AdvancedVehicleFabber",
         "OrbitalFabber"
@@ -96,6 +100,10 @@
           },
           {
             "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreatened",
             "boolean": false
           },
           {
@@ -143,7 +151,7 @@
       "min_num_assisters": 5,
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
-      "priority": 382,
+      "priority": 381,
       "builders": [
         "AdvancedAirFabber",
         "OrbitalFabber"
@@ -161,6 +169,10 @@
           },
           {
             "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreatened",
             "boolean": false
           },
           {
@@ -208,6 +220,10 @@
           },
           {
             "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreatened",
             "boolean": false
           },
           {
@@ -269,6 +285,10 @@
           },
           {
             "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreatened",
             "boolean": false
           },
           {
