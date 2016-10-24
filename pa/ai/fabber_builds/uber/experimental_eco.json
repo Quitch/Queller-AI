@@ -16,7 +16,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uberecoold",
+            "string0": "ubereconew",
             "boolean": true
           },
           {
@@ -44,10 +44,10 @@
     {
       "name": "Uber - Basic Metal Extractor - Desire - Area",
       "to_build": "BasicMetalExtractor",
-      "instance_count": 4,
+      "instance_count": 3,
       "max_num_assisters": 1,
       "shared_instance_count": "BasicMetal",
-      "priority": 501,
+      "priority": 510,
       "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber",
@@ -57,7 +57,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uberecoold",
+            "string0": "ubereconew",
             "boolean": true
           },
           {
@@ -83,10 +83,10 @@
     {
       "name": "Uber - Basic Metal Extractor - Expand 1 - Area",
       "to_build": "BasicMetalExtractor",
-      "instance_count": 2,
+      "instance_count": 1,
       "max_num_assisters": 1,
       "shared_instance_count": "BasicMetal",
-      "priority": 499,
+      "priority": 476,
       "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber",
@@ -96,7 +96,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uberecoold",
+            "string0": "ubereconew",
             "boolean": true
           },
           {
@@ -119,10 +119,10 @@
     {
       "name": "Uber - Basic Metal Extractor - Expand 2 - Area",
       "to_build": "BasicMetalExtractor",
-      "instance_count": 3,
+      "instance_count": 2,
       "max_num_assisters": 1,
       "shared_instance_count": "BasicMetal",
-      "priority": 259,
+      "priority": 375,
       "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber",
@@ -132,7 +132,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uberecoold",
+            "string0": "ubereconew",
             "boolean": true
           },
           {
@@ -155,8 +155,45 @@
     {
       "name": "Uber - Basic Metal Extractor - Expand 3 - Area",
       "to_build": "BasicMetalExtractor",
-      "instance_count": 6,
+      "instance_count": 3,
       "max_num_assisters": 1,
+      "shared_instance_count": "BasicMetal",
+      "priority": 259,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "ubereconew",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildBasic",
+            "boolean": true
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 300,
+          "value": 50
+        }
+      },
+      "task_type": "AreaBuild"
+    },
+    {
+      "name": "Uber - Basic Metal Extractor - Expand 4 - Area",
+      "to_build": "BasicMetalExtractor",
+      "instance_count": 4,
+      "max_num_assisters": 1,
+      "shared_instance_count": "BasicMetal",
       "priority": 2,
       "base_sort": "FromBuilder",
       "builders": [
@@ -167,7 +204,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uberecoold",
+            "string0": "ubereconew",
             "boolean": true
           },
           {
@@ -203,7 +240,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uberecoold",
+            "string0": "ubereconew",
             "boolean": true
           },
           {
@@ -230,10 +267,10 @@
     {
       "name": "Uber - Basic Metal Extractor - Desire",
       "to_build": "BasicMetalExtractor",
-      "instance_count": 4,
+      "instance_count": 3,
       "max_num_assisters": 1,
       "shared_instance_count": "BasicMetal",
-      "priority": 501,
+      "priority": 510,
       "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber",
@@ -243,7 +280,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uberecoold",
+            "string0": "ubereconew",
             "boolean": true
           },
           {
@@ -268,10 +305,10 @@
     {
       "name": "Uber - Basic Metal Extractor - Expand 1",
       "to_build": "BasicMetalExtractor",
-      "instance_count": 2,
+      "instance_count": 1,
       "max_num_assisters": 1,
       "shared_instance_count": "BasicMetal",
-      "priority": 499,
+      "priority": 476,
       "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber",
@@ -281,7 +318,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uberecoold",
+            "string0": "ubereconew",
             "boolean": true
           },
           {
@@ -303,10 +340,10 @@
     {
       "name": "Uber - Basic Metal Extractor - Expand 2",
       "to_build": "BasicMetalExtractor",
-      "instance_count": 3,
+      "instance_count": 2,
       "max_num_assisters": 1,
       "shared_instance_count": "BasicMetal",
-      "priority": 259,
+      "priority": 375,
       "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber",
@@ -316,7 +353,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uberecoold",
+            "string0": "ubereconew",
             "boolean": true
           },
           {
@@ -338,7 +375,42 @@
     {
       "name": "Uber - Basic Metal Extractor - Expand 3",
       "to_build": "BasicMetalExtractor",
-      "instance_count": 6,
+      "instance_count": 3,
+      "max_num_assisters": 1,
+      "shared_instance_count": "BasicMetal",
+      "priority": 259,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "ubereconew",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildBasic",
+            "boolean": true
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 300,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Uber - Basic Metal Extractor - Expand 4",
+      "to_build": "BasicMetalExtractor",
+      "instance_count": 4,
       "max_num_assisters": 1,
       "shared_instance_count": "BasicMetal",
       "priority": 2,
@@ -351,7 +423,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uberecoold",
+            "string0": "ubereconew",
             "boolean": true
           },
           {
@@ -386,7 +458,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uberecoold",
+            "string0": "ubereconew",
             "boolean": true
           },
           {
@@ -412,7 +484,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uberecoold",
+            "string0": "ubereconew",
             "boolean": true
           },
           {
@@ -465,7 +537,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uberecoold",
+            "string0": "ubereconew",
             "boolean": true
           },
           {
@@ -491,7 +563,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uberecoold",
+            "string0": "ubereconew",
             "boolean": true
           },
           {
@@ -544,7 +616,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uberecoold",
+            "string0": "ubereconew",
             "boolean": true
           },
           {
@@ -585,7 +657,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uberecoold",
+            "string0": "ubereconew",
             "boolean": true
           },
           {
@@ -615,7 +687,7 @@
       "min_num_assisters": 1,
       "max_num_assisters": 3,
       "shared_instance_count": "AdvancedMetal",
-      "priority": 508,
+      "priority": 506,
       "base_sort": "FromBuilder",
       "builders": [
         "AnyUberAdvancedFabber"
@@ -624,7 +696,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uberecoold",
+            "string0": "ubereconew",
             "boolean": true
           },
           {
@@ -660,7 +732,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uberecoold",
+            "string0": "ubereconew",
             "boolean": true
           },
           {
@@ -691,7 +763,7 @@
       "min_num_assisters": 1,
       "max_num_assisters": 3,
       "shared_instance_count": "AdvancedMetal",
-      "priority": 510,
+      "priority": 511,
       "base_sort": "FromBuilder",
       "builders": [
         "AnyUberAdvancedFabber"
@@ -700,7 +772,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uberecoold",
+            "string0": "ubereconew",
             "boolean": true
           },
           {
@@ -738,7 +810,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uberecoold",
+            "string0": "ubereconew",
             "boolean": true
           },
           {
@@ -775,7 +847,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uberecoold",
+            "string0": "ubereconew",
             "boolean": true
           },
           {
@@ -817,7 +889,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uberecoold",
+            "string0": "ubereconew",
             "boolean": true
           },
           {
@@ -850,7 +922,7 @@
       "max_num_assisters": 5,
       "shared_instance_count": "AdvancedEnergy",
       "cross_planet_shared_count": true,
-      "priority": 511,
+      "priority": 512,
       "builders": [
         "AdvancedNavalFabber",
         "AdvancedVehicleFabber",
@@ -860,7 +932,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uberecoold",
+            "string0": "ubereconew",
             "boolean": true
           },
           {
@@ -891,7 +963,7 @@
       "max_num_assisters": 5,
       "shared_instance_count": "AdvancedEnergy",
       "cross_planet_shared_count": true,
-      "priority": 509,
+      "priority": 510,
       "builders": [
         "AdvancedAirFabber",
         "AdvancedBotFabber"
@@ -900,7 +972,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uberecoold",
+            "string0": "ubereconew",
             "boolean": true
           },
           {
@@ -930,7 +1002,7 @@
       "min_num_assisters": 3,
       "max_num_assisters": 5,
       "shared_instance_count": "OrbitalEco",
-      "priority": 509,
+      "priority": 510,
       "builders": [
         "OrbitalFabber"
       ],
@@ -938,7 +1010,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uberecoold",
+            "string0": "ubereconew",
             "boolean": true
           },
           {
@@ -956,7 +1028,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uberecoold",
+            "string0": "ubereconew",
             "boolean": true
           },
           {
@@ -991,7 +1063,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uberecoold",
+            "string0": "ubereconew",
             "boolean": true
           },
           {
@@ -1011,7 +1083,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uberecoold",
+            "string0": "ubereconew",
             "boolean": true
           },
           {
@@ -1048,7 +1120,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uberecoold",
+            "string0": "ubereconew",
             "boolean": true
           },
           {
@@ -1096,7 +1168,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uberecoold",
+            "string0": "ubereconew",
             "boolean": true
           },
           {
