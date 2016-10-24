@@ -185,10 +185,7 @@
       "priority": 456,
       "base_sort": "FromPerimeter",
       "builders": [
-        "UberCommander",
-        "BasicBotFabber",
-        "BasicVehicleFabber",
-        "AnyUberAdvancedFabber"
+        "UberCommander"
       ],
       "build_conditions": [
         [
@@ -229,17 +226,10 @@
         "placement_type": "FromMainBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "Commander | (Structure & (EnergyProduction | Factory | Tactical | Artillery))",
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "range": 50,
-            "count": 2
-          },
-          {
             "unit_type_string": "Structure & AirDefense",
             "alliance": "Ally",
             "compare_type": "<",
-            "range": 75,
+            "range": 50,
             "count": 1
           }
         ]
@@ -369,17 +359,10 @@
         "placement_type": "FromMainBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "Commander | (Structure & (EnergyProduction | Factory | Tactical | Artillery))",
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "range": 50,
-            "count": 1
-          },
-          {
             "unit_type_string": "Structure & Advanced & AirDefense",
             "alliance": "Ally",
             "compare_type": "<",
-            "range": 75,
+            "range": 50,
             "count": 1
           }
         ]
