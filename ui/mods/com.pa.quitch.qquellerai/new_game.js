@@ -143,7 +143,7 @@ function qQuellerAI() {
                 max_advanced_fabbers: 50
             },
             'Uber Old Eco': {
-                display_name: 'Uber',
+                display_name: 'Uber Old Eco',
                 metal_drain_check: 0.54,
                 energy_drain_check: 0.57,
                 metal_demand_check: 0.85,
@@ -171,7 +171,7 @@ function qQuellerAI() {
                 max_advanced_fabbers: 100
             },
             'Uber New Eco': {
-                display_name: 'Uber',
+                display_name: 'Uber New Eco',
                 metal_drain_check: 0.54,
                 energy_drain_check: 0.57,
                 metal_demand_check: 0.85,
