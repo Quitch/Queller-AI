@@ -572,6 +572,48 @@
       ]
     },
     {
+      "name": "Legion - Uber - Monstrosity",
+      "to_build": "LegionBotAdvancedTactical",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": [
+        "LegionFactoryAdvancedBot"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "rush",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Land & Mobile - Fabber - AirDefense - Construction - Heavy - Deconstruction - Artillery",
+            "compare0": ">",
+            "value0": 40,
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & Heavy",
+            "unit_type_string1": "Land & Mobile - Scout - Fabber - Deconstruction - Titan",
+            "compare0": "<",
+            "value0": 0.1
+          }
+        ]
+      ]
+    },
+    {
       "name": "Legion - Uber - Orbweaver",
       "to_build": "LegionBotAdvancedAA",
       "instance_count": -1,
