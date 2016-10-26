@@ -8,7 +8,8 @@
       "base_sort": "FromPerimeter",
       "builders": [
         "LegionCommander",
-        "AnyLegionFabberBasic"
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced"
       ],
       "build_conditions": [
         [
@@ -116,7 +117,8 @@
       "builders": [
         "LegionCommander",
         "LegionBotBasicFabber",
-        "LegionVehicleBasicFabber"
+        "LegionVehicleBasicFabber",
+        "AnyLegionFabberAdvanced"
       ],
       "build_conditions": [
         [
