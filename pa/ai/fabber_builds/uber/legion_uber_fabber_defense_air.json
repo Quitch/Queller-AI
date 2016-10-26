@@ -168,6 +168,68 @@
       }
     },
     {
+      "name": "Legion - Uber - Shredder - Air Snipes",
+      "to_build": "LegionDefenseBasicAir",
+      "instance_count": 1,
+      "max_num_assisters": 1,
+      "priority": 456,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "LegionCommander"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Air",
+            "compare0": ">",
+            "value0": 4500
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Commander",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicAir"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & AirDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 50,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
       "name": "Legion - Uber - Archer - Base",
       "to_build": "LegionDefenseAdvancedAir",
       "instance_count": 1,
@@ -239,12 +301,13 @@
       "instance_count": 1,
       "min_num_assisters": 1,
       "max_num_assisters": 3,
-      "priority": 480,
+      "priority": 456,
       "base_sort": "FromPerimeter",
       "builders": [
         "AnyLegionFabberAdvanced"
       ],
       "build_conditions": [
+
         [
           {
             "test_type": "HasPersonalityTag",
@@ -252,38 +315,17 @@
             "boolean": true
           },
           {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Air & Transport & Advanced",
+            "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & AirDefense",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
-            "compare0": ">=",
-            "value0": 5
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedAirDefense"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Air",
+            "compare0": ">",
+            "value0": 4500
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
@@ -294,19 +336,13 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & AirDefense",
-            "compare0": "<",
-            "value0": 3
-          },
-          {
-            "test_type": "UnitCountInBase",
             "unit_type_string0": "Commander",
             "compare0": ">=",
             "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedAirDefense"
+            "string0": "LegionDefenseAdvancedAir"
           }
         ]
       ],
