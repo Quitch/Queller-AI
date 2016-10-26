@@ -171,18 +171,7 @@ Below are recommendations for the difficulty and eco modifiers you should use.
 
 ## MAP NOTES
 
-The spawn the AI starts in and the profile used can make a big difference, even for symmetrical 1v1s. Below are some recommendations for 1v1s, but feel free to experiment as your playstyle may be challenged differently.
-
-| Map     | Slot |
-| ------- |:----:|
-| Berg    | 2    |
-| Blitz   | 1/2  |
-| Clutch  | 2    |
-| Crag    | 2    |
-| Duat    | 2    |
-| Forge   | 2    |
-| Lock    | 1    |
-| Pacific | 2    |
+The spawn the AI starts in and the profile used can make a big difference, even for symmetrical 1v1s. If you find the AI too easy on a map, try a different spawn point for it.
 
 ## KNOWN ISSUES
 
