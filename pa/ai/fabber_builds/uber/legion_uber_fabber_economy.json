@@ -1015,7 +1015,8 @@
       "priority": 89,
       "builders": [
         "AnyLegionFabberBasic",
-        "AnyLegionFabberAdvanced"
+        "AnyLegionFabberAdvanced",
+        "LegionCommander"
       ],
       "build_conditions": [
         [
@@ -1054,9 +1055,9 @@
             "value0": 1
           },
           {
-            "test_type": "PotentialMetalEfficiency",
+            "test_type": "MetalStorageFrac",
             "compare0": ">",
-            "value0": 1
+            "value0": 0.5
           },
           {
             "test_type": "CanAffordBuildDemand"
