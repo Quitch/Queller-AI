@@ -409,6 +409,32 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Fabber & Advanced",
             "compare0": "<",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionAirAdvancedFabber"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Advanced & Air",
+            "unit_type_string1": "Factory & Advanced & Air",
+            "compare0": "<",
             "value0": 2
           }
         ],
@@ -424,32 +450,6 @@
           },
           {
             "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionAirAdvancedFabber"
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Fabber & Advanced & Air",
-            "unit_type_string1": "Factory & Advanced & Air",
-            "compare0": "<",
-            "value0": 3
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
-            "test_type": "AloneOnPlanet",
             "boolean": true
           },
           {
@@ -461,7 +461,7 @@
             "unit_type_string0": "Fabber & Advanced & Air",
             "unit_type_string1": "Factory & Advanced & Air",
             "compare0": "<",
-            "value0": 9
+            "value0": 4
           }
         ]
       ]
