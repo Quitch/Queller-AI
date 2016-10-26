@@ -277,6 +277,12 @@
             "string0": "NukeSilo"
           },
           {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber",
+            "compare0": ">=",
+            "value0": 10
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "NukeSilo"
           }

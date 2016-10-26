@@ -183,6 +183,12 @@
             "string0": "LegionDefenseAdvancedNukeSilo"
           },
           {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber",
+            "compare0": ">=",
+            "value0": 10
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionDefenseAdvancedNukeSilo"
           }
@@ -220,6 +226,12 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "LegionDefenseAdvancedNukeSilo"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber",
+            "compare0": ">=",
+            "value0": 10
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -271,6 +283,12 @@
             "unit_type_string0": "Structure & Nuke",
             "compare0": "<",
             "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber",
+            "compare0": ">=",
+            "value0": 10
           },
           {
             "test_type": "CanFindPlaceToBuild",
