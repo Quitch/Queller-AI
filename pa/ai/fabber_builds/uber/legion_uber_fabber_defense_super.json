@@ -30,16 +30,16 @@
             "string0": "Nuke",
             "string1": "AntiNuke",
             "compare0": ">",
-            "value0": 0
+            "value0": 1
           },
           {
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
             "compare0": ">=",
-            "value0": 3
+            "value0": 10
           },
           {
-            "test_type": "UnitCountOnPlanet",
+            "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & NukeDefense",
             "compare0": "<",
             "value0": 1
@@ -70,7 +70,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
             "compare0": ">=",
-            "value0": 3
+            "value0": 10
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -91,14 +91,14 @@
             "unit_type_string": "Structure & ((EnergyProduction & Advanced) | Factory)",
             "alliance": "Ally",
             "compare_type": ">=",
-            "range": 150,
-            "count": 3
+            "range": 200,
+            "count": 10
           },
           {
             "unit_type_string": "Structure & NukeDefense",
             "alliance": "Ally",
             "compare_type": "<",
-            "range": 300,
+            "range": 200,
             "count": 1
           }
         ]
@@ -140,7 +140,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
             "compare0": ">=",
-            "value0": 5
+            "value0": 10
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -177,7 +177,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
             "compare0": ">=",
-            "value0": 5
+            "value0": 10
           },
           {
             "test_type": "UnitCountInBase",
@@ -208,7 +208,7 @@
             "string0": "Nuke",
             "string1": "AntiNuke",
             "compare0": ">",
-            "value0": 0
+            "value0": 1
           },
           {
             "test_type": "UnitCountInBase",
@@ -248,7 +248,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
             "compare0": ">=",
-            "value0": 5
+            "value0": 10
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -266,17 +266,17 @@
         "placement_type": "FromMainBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "unit_type_string": "Commander | (Structure & ((EnergyProduction & Advanced) | Factory))",
             "alliance": "Ally",
             "compare_type": ">=",
-            "range": 150,
-            "count": 3
+            "range": 200,
+            "count": 10
           },
           {
             "unit_type_string": "Structure & NukeDefense",
             "alliance": "Ally",
             "compare_type": "<",
-            "range": 300,
+            "range": 200,
             "count": 1
           }
         ]
