@@ -7,7 +7,7 @@
       "min_num_assisters": 5,
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
-      "priority": 361,
+      "priority": 380,
       "builders": [
         "LegionBotAdvancedFabber",
         "LegionOrbitalBasicFabber",
@@ -26,6 +26,10 @@
           },
           {
             "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreatened",
             "boolean": false
           },
           {
@@ -73,7 +77,7 @@
       "min_num_assisters": 5,
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
-      "priority": 361,
+      "priority": 380,
       "builders": [
         "LegionVehicleAdvancedFabber",
         "LegionOrbitalBasicFabber"
@@ -91,6 +95,10 @@
           },
           {
             "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreatened",
             "boolean": false
           },
           {
@@ -138,7 +146,7 @@
       "min_num_assisters": 5,
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
-      "priority": 361,
+      "priority": 380,
       "builders": [
         "LegionAirAdvancedFabber",
         "LegionOrbitalBasicFabber"
@@ -156,6 +164,10 @@
           },
           {
             "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreatened",
             "boolean": false
           },
           {
@@ -199,6 +211,10 @@
             "boolean": false
           },
           {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -237,7 +253,7 @@
       "min_num_assisters": 5,
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
-      "priority": 361,
+      "priority": 380,
       "builders": [
         "LegionOrbitalBasicFabber"
       ],
@@ -247,6 +263,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -309,6 +329,10 @@
           },
           {
             "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreatened",
             "boolean": false
           },
           {
