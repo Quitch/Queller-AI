@@ -21,6 +21,10 @@
             "boolean": true
           },
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "CanDeployNavalFromBase",
             "boolean": false
           },
@@ -70,6 +74,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
           {
@@ -159,6 +167,10 @@
             "boolean": true
           },
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "CanDeployNavalFromBase",
             "boolean": false
           },
@@ -208,6 +220,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
           {
@@ -298,6 +314,10 @@
             "boolean": true
           },
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "CanDeployNavalFromBase",
             "boolean": false
           },
@@ -385,6 +405,10 @@
             "boolean": true
           },
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "CanDeployNavalFromBase",
             "boolean": false
           },
@@ -443,71 +467,6 @@
       }
     },
     {
-      "name": "Legion - Uber - Scarab - Forward Base",
-      "to_build": "LegionDefenseBasicLandII",
-      "instance_count": 1,
-      "shared_instance_count": "BasicLandDefense",
-      "max_num_assisters": 1,
-      "priority": 506,
-      "base_sort": "FromPerimeter",
-      "builders": [
-        "LegionBotBasicFabber",
-        "LegionVehicleBasicFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Artillery & Basic",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
-            "compare0": "<",
-            "value0": 3
-          },
-          {
-            "test_type": "UnitCountAroundBase",
-            "unit_type_string0": "Commander",
-            "string0": "Enemy",
-            "value0": 260,
-            "compare0": ">=",
-            "value1": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicLandDefense"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
-        "unit_count_rules": [
-          {
-            "unit_type_string": "Structure & Artillery",
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "range": 25,
-            "count": 1
-          }
-        ]
-      }
-    },
-    {
       "name": "Legion - Uber - Hive - Base",
       "to_build": "LegionDefenseBasicSwarm",
       "instance_count": 1,
@@ -524,6 +483,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
           {
@@ -603,6 +566,10 @@
             "boolean": true
           },
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
@@ -676,6 +643,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
           {
@@ -755,6 +726,10 @@
             "boolean": true
           },
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
@@ -818,6 +793,10 @@
             "boolean": true
           },
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -878,11 +857,15 @@
             "boolean": true
           },
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild",
+            "unit_type_string0": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild & Custom1",
             "compare0": "<",
             "value0": 1
           },
@@ -916,7 +899,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild",
+            "unit_type_string0": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild & Custom1",
             "compare0": "<",
             "value0": 1
           },
@@ -950,72 +933,6 @@
             "range": 700,
             "count": 1
           },
-          {
-            "unit_type_string": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild",
-            "alliance": "Ally",
-            "compare_type": "<",
-            "range": 105,
-            "count": 1
-          }
-        ]
-      }
-    },
-    {
-      "name": "Legion - Uber - Rampart - Losing Battle",
-      "to_build": "LegionDefenseAdvancedShield",
-      "instance_count": 1,
-      "shared_instance_count": "AdvancedLandDefense",
-      "priority": 508,
-      "min_num_assisters": 3,
-      "max_num_assisters": 5,
-      "base_sort": "FromPerimeter",
-      "builders": [
-        "AnyLegionFabberAdvanced"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "BaseThreat",
-            "string0": "AntiSurface",
-            "compare0": ">",
-            "value0": 5600
-          },
-          {
-            "test_type": "BaseThreatRatio",
-            "string0": "Land",
-            "string1": "AntiSurface",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionDefenseAdvancedShield"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 100,
-          "value": 50
-        },
-        "unit_count_rules": [
           {
             "unit_type_string": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild",
             "alliance": "Ally",
