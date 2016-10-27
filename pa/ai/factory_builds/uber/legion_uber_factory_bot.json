@@ -389,7 +389,7 @@
       "shared_instance_count": "AdvancedBotFabber",
       "min_num_assisters": 1,
       "max_num_assisters": 10,
-      "priority": 201,
+      "priority": 199,
       "builders": [
         "LegionFactoryAdvancedBot",
         "LegionOrbitalAdvancedCannon"
@@ -422,7 +422,38 @@
             "unit_type_string0": "Fabber & Advanced & Land",
             "unit_type_string1": "Factory & Advanced & Land",
             "compare0": "<",
-            "value0": 3
+            "value0": 2
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Titan & Air - Custom1",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionBotAdvancedSupportCommander"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Advanced & Land",
+            "unit_type_string1": "Factory & Advanced & Land",
+            "compare0": "<",
+            "value0": 2
           }
         ]
       ]
