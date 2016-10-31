@@ -524,10 +524,10 @@
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Land & Mobile & Heavy",
-            "unit_type_string1": "Land & Mobile - Scout - Fabber - Deconstruction - Construction",
+            "unit_type_string0": "Land & Mobile & Heavy & Advanced",
+            "unit_type_string1": "Land & Mobile - Scout - Fabber - Deconstruction - Construction - Basic",
             "compare0": "<",
-            "value0": 0.1
+            "value0": 0.05
           }
         ]
       ]
@@ -556,11 +556,6 @@
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Tank & Advanced & Offense - Custom1 - Artillery - Heavy",
-            "boolean": false
           }
         ]
       ]
@@ -591,9 +586,17 @@
             "boolean": true
           },
           {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Tank & Advanced & Offense - Custom1 - Artillery - Heavy",
-            "boolean": true
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Land & Mobile - Scout - Fabber - Deconstruction - Construction",
+            "compare0": ">",
+            "value0": 40
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & Artillery & Advanced",
+            "unit_type_string1": "Land & Mobile - Scout - Fabber - Deconstruction - Construction - Basic",
+            "compare0": "<",
+            "value0": 0.1
           }
         ]
       ]
