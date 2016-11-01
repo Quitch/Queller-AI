@@ -14,14 +14,8 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Orbital & Recon - Structure",
+            "unit_type_string0": "Orbital & (Recon | Scout)",
             "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Orbital & Structure & Economy",
-            "compare0": "<",
             "value0": 1
           }
         ]
