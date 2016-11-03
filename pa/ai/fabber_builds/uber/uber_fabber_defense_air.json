@@ -44,7 +44,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & MetalProduction",
             "compare0": ">=",
-            "value0": 1
+            "value0": 2
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -99,13 +99,13 @@
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 50,
-            "count": 1
+            "count": 2
           },
           {
             "unit_type_string": "Structure & AirDefense",
             "alliance": "Ally",
             "compare_type": "<",
-            "range": 75,
+            "range": 50,
             "count": 1
           }
         ]
@@ -171,7 +171,7 @@
             "unit_type_string": "Structure & AirDefense",
             "alliance": "Ally",
             "compare_type": "<",
-            "range": 75,
+            "range": 50,
             "count": 1
           }
         ]
