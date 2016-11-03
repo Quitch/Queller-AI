@@ -4,7 +4,7 @@
       "name": "Legion - Uber - Shredder - Mex",
       "to_build": "LegionDefenseBasicAir",
       "instance_count": 1,
-      "priority": 252,
+      "priority": 353,
       "base_sort": "FromPerimeter",
       "builders": [
         "LegionCommander",
@@ -17,6 +17,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -54,6 +58,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"

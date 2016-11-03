@@ -5,7 +5,7 @@
       "to_build": "LegionDefenseBasicLand",
       "instance_count": 1,
       "shared_instance_count": "BasicLandDefenseMex",
-      "priority": 252,
+      "priority": 352,
       "base_sort": "FromPerimeter",
       "builders": [
         "LegionCommander",
@@ -26,6 +26,10 @@
           },
           {
             "test_type": "CanDeployNavalFromBase",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreatened",
             "boolean": false
           },
           {
@@ -82,6 +86,10 @@
           },
           {
             "test_type": "CanDeployNavalFromBase",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreatened",
             "boolean": false
           },
           {
@@ -134,7 +142,7 @@
             "unit_type_string": "Structure & MetalProduction",
             "alliance": "Ally",
             "compare_type": ">=",
-            "range": 50,
+            "range": 25,
             "count": 1
           },
           {
@@ -152,7 +160,7 @@
       "to_build": "LegionDefenseBasicLandII",
       "instance_count": 1,
       "shared_instance_count": "BasicLandDefenseMex",
-      "priority": 252,
+      "priority": 353,
       "base_sort": "FromPerimeter",
       "builders": [
         "LegionBotBasicFabber",
@@ -172,6 +180,10 @@
           },
           {
             "test_type": "CanDeployNavalFromBase",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreatened",
             "boolean": false
           },
           {
@@ -209,7 +221,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & MetalProduction",
             "compare0": ">=",
-            "value0": 1
+            "value0": 2
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -228,6 +240,10 @@
           },
           {
             "test_type": "CanDeployNavalFromBase",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreatened",
             "boolean": false
           },
           {
@@ -281,7 +297,7 @@
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 50,
-            "count": 1
+            "count": 2
           },
           {
             "unit_type_string": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
