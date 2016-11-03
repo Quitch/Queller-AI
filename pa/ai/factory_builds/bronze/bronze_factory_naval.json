@@ -17,8 +17,14 @@
             "boolean": true
           },
           {
-            "test_type": "MetMinBasicFabberCount",
+            "test_type": "BaseThreatened",
             "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Basic & (Naval | Air)",
+            "compare0": "<",
+            "value0": 10
           }
         ],
         [
