@@ -7,9 +7,13 @@ I love AI. To put my old person comfy jumper on for a moment, back in the day I 
 
 This mod is a total overhaul of the AI (as much as can be done with the exposed files) designed to leverage the systems Sorian has created, while playing a game better suited to the meta. It is primarily designed with 1v1 in mind, but should prove to be an improvement in other modes too. It covers a wider range of difficulties than vanilla, from easier to harder, all of which play in a more humanlike fashion than their vanilla counterparts.
 
+The mod offers complete support for the [Legion Expansion](https://github.com/Legion-Expansion/Legion-Expansion).
+
+Please ensure that if you use this work you credit Quitch's Queller AI.
+
 ## INSTALLATION
 
-You should download and install this mod via the [PA Mod Manager (PAMM)](https://forums.uberent.com/threads/pa-mod-manager-pamm-cross-platform.59992/)
+You should download and install this mod via the Planetary Annihilation TITANS in-game Community Mod Manager.
 
 ## FEEDBACK
 
@@ -120,7 +124,7 @@ By default, Queller at Uber level will adapt its play to try and suit the system
  - Doesn't build vehicle factories
  - MLA will build a vehicle factory for Skitters if it detects the possibility of mines
 
-- Cautious
+- FFA
  - Requires a greater advantage before attacking
  - Techs faster
 
@@ -167,31 +171,19 @@ Below are recommendations for the difficulty and eco modifiers you should use.
 
 ## MAP NOTES
 
-The spawn the AI starts in and the profile used can make a big difference, even for symmetrical 1v1s. Below are some recommendations for 1v1s, but feel free to experiment as your playstyle may be challenged differently.
-
-| Map     | Slot |
-| ------- |:----:|
-| Berg    | 2    |
-| Blitz   | 1/2  |
-| Clutch  | 2    |
-| Crag    | 2    |
-| Duat    | 2    |
-| Forge   | 2    |
-| Lock    | 1    |
-| Pacific | 2    |
+The spawn the AI starts in and the profile used can make a big difference, even for symmetrical 1v1s. If you find the AI too easy on a map, try a different spawn point for it.
 
 ## KNOWN ISSUES
 
 #### TOFIX
 
 - Takes too long transition from a naval start to a land game on mixed maps
-- Will not send all its troops through a teleporter even when there's no reason not to
 - Doesn't understand when it needs to build units in preparation for an attack versus when it should shutdown factories so it can build super weapons
+- Doesn't build enough fabbers to support building an orbital titan
 
 #### WONTFIX
 
 - Ignores the factory and fabber preferences of client/UI AI personality mods
-- Will use fabbers to construct factories when the commander should really do it
 
 #### CANTFIX
 
@@ -207,11 +199,11 @@ The spawn the AI starts in and the profile used can make a big difference, even 
 - Cannot reclaim
 - Combat Fabbers can only be used to build mines or repair troops, not both, even across entirely different AI personalities
 - Doesn't handle enemy walls well
-- Bombers don't understand threat
 - Legion won't build a different tier of mass extractor on a metal spot that already has a mass extractor
 - Legion can't use orbital transports
 - Doesn't use Helios teleporter
 - Spikes in AI fabber performance
+- Naval factories sometimes stop producing units
 
 ## THANKS TO
 

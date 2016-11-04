@@ -1,5 +1,78 @@
 # CHANGELOG
 
+#### 4.2.0 - 2016/11/04
+
+ - Legion Uber Bot no longer uses air unless alone on the planet
+ - Doesn't use Panzers for AA if it has access to Orbweavers
+ - Corrected error where AI might try to form its largest air platoon too early
+ - Remove workaround for BomberAttack as it's now fixed
+ - No longer requires an enemy surface presence to deploy its air titans against air threats
+ - Tactical units properly excluded from squads other than Artillery
+ - Angels will now leave base
+ - Bronze will build Catapults even when alone
+ - Fixed error preventing placement of ground-to-orbital defence in some situations
+ - Bronze more likely to use Ramparts
+ - Bronze is slower to expand to other planets
+ - Silver will expand to other planets a little faster
+ - Fixed error where Uber was overly cautious when forming air platoons
+ - Fixed error where Uber was incorrectly checking AA threat instead of air
+ - Uber will no longer stop building advanced factories and float heavily
+ - Better about placing Advanced Bot Factories
+ - When floating heavily Uber can start multiple advanced factories
+ - Legion and Bronze no longer spam naval fabbers
+ - Artillery can form a larger part of a platoon
+ - No longer invades with huge AA armies
+ - Uber makes less Corsairs
+ - Uber Legion will now mix tanks and bots
+ - Correctly include Corsairs in artillery squad when forming hover platoons
+ - Uber Tech is more aggressive about building T2 factories
+ - Correctly looks only at surface enemy presence when evaluating how many surface troops to teleport
+ - Fixed cap not being correctly applied to metal expansion in some instances
+ - Uber Cautious and Tech favour T2 vehicles over bots
+ - Uber requires more fabbers before trying to build a titan
+ - Uber won't start risky build projects when the base is under attack
+ - No longer rushes artillery to Comm snipe as the AI won't target the Comm
+ - Uber throws more fabbers at ground-to-orbital defence rushes
+ - Uber builds more ground-to-oribtal defences as the orbital threat grows
+ - Fix error in anti-nuke placement checks
+ - Check to place artillery is no longer greater than the requirements to build it
+ - Don't build GIL-E in response to missile ships
+ - Corrected range on Gustav placement checks
+ - Fixed and increased priority of Uber's air snipe defences
+ - Uber smarter about not leaving itself so vulnerable after teching
+ - Requires a minimum force size before building Storms
+ - Prioritise Commander building AA to protect against air snipes
+ - Greater priority given to T2 long-range weapons
+ - Uber more likely to build Titans
+ - Uber more likely to use Metal Storage as required
+ - Uber will build advanced naval just to get to hover naval ships
+ - Uber overlaps anti-nukes but doesn't build as many
+ - Uber more aggressive with forming bomber platoons
+ - Uber will only build Ramparts on the outskirts if it protects against artillery
+ - Uber only builds Monstrosity once it has a large enough army
+ - Uber uses the Nova less
+ - Corrected bug causing Uber to confuse Unit Cannons for artillery and build Ramparts in response
+ - Small reduction in amount of ground orbital factories Silver will make on single planet systems
+ - Uber won't build Stingrays to defend against air and orbital unless it has somewhere to send its fleet
+ - Uber won't use Lancers until it sees tanks
+ - Adjusted Uber T2 Legion unit ratios
+ - Uber Legion advanced air has slightly higher requirements
+ - Uber Rush Legion uses standard Legion tech path
+ - Lower focus on air for Uber Rush
+ - Uber Air builds slightly more air
+ - Bronze and Silver will scout with the Hermes and Wraith
+ - Bronze and Silver no longer allow ground/orbital fabbers to interfere with the other's defensive builds
+ - Bronze more likely to build orbital defences
+ - Legion Bronze no longer spams radar
+ - Bronze more likely to send its armies out
+ - Suicide units now included in land armies
+ - Uber more likely to places defences by MEX
+ - Uber uses Support Commanders when building on islands
+ - Uber will use Catapults to attack nearby structures
+ - Uber panic grabs slightly less metal to try and avoid overextending to much
+ - Uber more aggressive in breaking out nuke spam during multi-planet games
+ - Uber brings out Kestrels slightly earlier
+
 #### 4.1.0 - 2016/07/28
 
  - Decreased use of Miniman by Uber
@@ -70,7 +143,7 @@
  - Uber switches to Kaijus if getting overwhelmed by subs
  - Uber properly defends its orbital lasers with fighters like it's supposed to
  - Uber uses Sparks to fight tanks not bots
- - Uber is better at hording its air force
+ - Uber is better at hoarding its air force
  - Uber only goes advanced bots for torpedoes or to counter orbital or when bot rushed
  - Uber favours the Ares and Zeus over the Atlas
  - Uber won't build the Zeus when it doesn't have a strong lead in the air
@@ -561,8 +634,6 @@ This release provides a massive overhaul in how Queller tackles the orbital laye
 - Will try to be aggressive about getting in the water when no land attack route exists
 - Removed beta tag
 
-## BETA
-
 #### v0.5.1 - 2015/01/08
 
 - All fabbers can build naval again
@@ -588,8 +659,6 @@ This release provides a massive overhaul in how Queller tackles the orbital laye
 - Added support for catalysts
 - Updated now obsolete Need[Basic/Advanced]LandFabber to use the new Bot/Vehicle test
 - Take the skies before building bombers
-
-# ALPHA
 
 #### v0.4.2 - 2014/11/27
 
