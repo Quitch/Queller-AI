@@ -455,7 +455,7 @@
       "to_build": "HoverTank",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 97,
+      "priority": 96,
       "builders": [
         "BasicVehicleFactory"
       ],
@@ -465,10 +465,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "platinum",
             "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": false
           }
         ]
       ]
