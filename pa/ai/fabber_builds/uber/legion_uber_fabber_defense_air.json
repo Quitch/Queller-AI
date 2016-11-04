@@ -8,8 +8,7 @@
       "base_sort": "FromPerimeter",
       "builders": [
         "LegionCommander",
-        "AnyLegionFabberBasic",
-        "AnyLegionFabberAdvanced"
+        "AnyLegionFabberBasic"
       ],
       "build_conditions": [
         [
@@ -34,7 +33,7 @@
           {
             "test_type": "DistFromMainBase",
             "compare0": ">=",
-            "value0": 200
+            "value0": 250
           },
           {
             "test_type": "UnitCountInBase",
@@ -75,7 +74,7 @@
           {
             "test_type": "DistFromMainBase",
             "compare0": ">=",
-            "value0": 200
+            "value0": 250
           },
           {
             "test_type": "UnitCountInBase",
@@ -102,7 +101,7 @@
             "unit_type_string": "Structure & MetalProduction",
             "alliance": "Ally",
             "compare_type": ">=",
-            "range": 50,
+            "range": 35,
             "count": 2
           },
           {

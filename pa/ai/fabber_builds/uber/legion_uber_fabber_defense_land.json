@@ -34,7 +34,7 @@
           },
           {
             "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "(Bot & Basic & Offense) - Artillery",
+            "unit_type_string0": "Bot",
             "boolean": true
           },
           {
@@ -49,7 +49,7 @@
           {
             "test_type": "DistFromMainBase",
             "compare0": ">=",
-            "value0": 200
+            "value0": 250
           },
           {
             "test_type": "UnitCountInBase",
@@ -94,7 +94,7 @@
           },
           {
             "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "(Bot & Basic & Offense) - Artillery",
+            "unit_type_string0": "Bot",
             "boolean": true
           },
           {
@@ -109,7 +109,7 @@
           {
             "test_type": "DistFromMainBase",
             "compare0": ">=",
-            "value0": 200
+            "value0": 250
           },
           {
             "test_type": "UnitCountInBase",
@@ -127,7 +127,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & MetalProduction",
             "compare0": ">=",
-            "value0": 2
+            "value0": 3
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -142,7 +142,7 @@
             "unit_type_string": "Structure & MetalProduction",
             "alliance": "Ally",
             "compare_type": ">=",
-            "range": 25,
+            "range": 35,
             "count": 1
           },
           {
@@ -203,7 +203,7 @@
           {
             "test_type": "DistFromMainBase",
             "compare0": ">=",
-            "value0": 200
+            "value0": 250
           },
           {
             "test_type": "UnitCountInBase",
@@ -222,66 +222,6 @@
             "unit_type_string0": "Structure & MetalProduction",
             "compare0": ">=",
             "value0": 2
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionDefenseBasicLandII"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Tank",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Land",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "DistFromMainBase",
-            "compare0": ">=",
-            "value0": 200
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
-            "compare0": "<",
-            "value0": 2
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Naval",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & MetalProduction",
-            "compare0": ">=",
-            "value0": 4
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -296,14 +236,14 @@
             "unit_type_string": "Structure & MetalProduction",
             "alliance": "Ally",
             "compare_type": ">=",
-            "range": 50,
+            "range": 35,
             "count": 2
           },
           {
             "unit_type_string": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
             "alliance": "Ally",
             "compare_type": "<",
-            "range": 50,
+            "range": 75,
             "count": 1
           }
         ]
