@@ -1014,9 +1014,9 @@
       "cross_planet_shared_count": true,
       "priority": 3,
       "builders": [
+        "LegionCommander",
         "AnyLegionFabberBasic",
-        "AnyLegionFabberAdvanced",
-        "LegionCommander"
+        "AnyLegionFabberAdvanced"
       ],
       "build_conditions": [
         [
@@ -1034,6 +1034,11 @@
             "test_type": "PotentialEnergyEfficiency",
             "compare0": ">",
             "value0": 1
+          },
+          {
+            "test_type": "EnergyStorageToProductionRatio",
+            "compare0": "<",
+            "value0": 5
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -1082,6 +1087,11 @@
             "test_type": "PotentialMetalEfficiency",
             "compare0": ">",
             "value0": 1
+          },
+          {
+            "test_type": "MetalStorageToProductionRatio",
+            "compare0": "<",
+            "value0": 6
           },
           {
             "test_type": "CanAffordBuildDemand"

@@ -1063,6 +1063,11 @@
             "value0": 1
           },
           {
+            "test_type": "EnergyStorageToProductionRatio",
+            "compare0": "<",
+            "value0": 5
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "EnergyStorage"
           }
@@ -1130,6 +1135,11 @@
             "test_type": "PotentialMetalEfficiency",
             "compare0": ">",
             "value0": 1
+          },
+          {
+            "test_type": "MetalStorageToProductionRatio",
+            "compare0": "<",
+            "value0": 6
           },
           {
             "test_type": "CanAffordBuildDemand"
