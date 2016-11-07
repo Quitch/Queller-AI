@@ -44,10 +44,10 @@
             "string0": "BasicBotFactory"
           },
           {
-            "test_type": "UnitCountOnPlanet",
+            "test_type": "UnitCountPerPlanetRadius",
             "unit_type_string0": "Bot & Factory & Basic",
-            "compare0": "<",
-            "value0": 1
+            "compare0": "<=",
+            "value0": 599
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -249,10 +249,10 @@
             "string0": "BasicBotFactory"
           },
           {
-            "test_type": "UnitCountOnPlanet",
+            "test_type": "UnitCountPerPlanetRadius",
             "unit_type_string0": "Bot & Factory & Basic",
-            "compare0": "<",
-            "value0": 1
+            "compare0": "<=",
+            "value0": 599
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -318,8 +318,8 @@
           {
             "test_type": "UnitCountPerPlanetRadius",
             "unit_type_string0": "Bot & Factory & Basic",
-            "compare0": "<",
-            "value0": 400
+            "compare0": "<=",
+            "value0": 599
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -537,8 +537,8 @@
           {
             "test_type": "UnitCountPerPlanetRadius",
             "unit_type_string0": "Bot & Factory & Basic",
-            "compare0": "<",
-            "value0": 400
+            "compare0": "<=",
+            "value0": 599
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -855,13 +855,6 @@
             "value0": 0
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Land",
-            "string1": "AntiSurface",
-            "compare0": "<",
-            "value0": 0.6
-          },
-          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Bot & Factory & Advanced",
             "compare0": "<",
@@ -1021,150 +1014,6 @@
             "test_type": "HaveSeenEnemyUnits",
             "unit_type_string0": "Tank",
             "boolean": false
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Land",
-            "string1": "AntiSurface",
-            "compare0": "<",
-            "value0": 0.6
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber - Orbital - Naval",
-            "compare0": ">=",
-            "value0": 5
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedBotFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "tank",
-            "boolean": false
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "tech",
-            "boolean": false
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "rush",
-            "boolean": false
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveEcoForAdvanced",
-            "boolean": true
-          },
-          {
-            "test_type": "UnableToExpand",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedBotFactory"
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Bot",
-            "boolean": true
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Tank",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber - Orbital - Naval",
-            "compare0": ">=",
-            "value0": 5
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedBotFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bot",
-            "boolean": false
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "tank",
-            "boolean": false
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "tech",
-            "boolean": false
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "rush",
-            "boolean": false
-          },
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveEcoForAdvanced",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedBotFactory"
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Bot",
-            "boolean": true
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Tank",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountAroundBase",
-            "unit_type_string0": "Land & Mobile & Offense",
-            "string0": "Enemy",
-            "value0": 700,
-            "compare0": "<",
-            "value1": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Advanced & Factory",
-            "compare0": "<",
-            "value0": 1
           },
           {
             "test_type": "UnitCountOnPlanet",
