@@ -267,8 +267,7 @@ function qQuellerAI() {
                 adv_eco_mod_alone: 0.85,
                 personality_tags:
                 [
-                    "uber",
-                    "tech"
+                    "uber"
                 ],
                 fabber_to_factory_ratio_basic: 1.0,
                 fabber_to_factory_ratio_advanced: 3.0,
@@ -407,8 +406,7 @@ function qQuellerAI() {
                 adv_eco_mod_alone: 0,
                 personality_tags:
                 [
-                    "uber",
-                    "tech"
+                    "uber"
                 ],
                 fabber_to_factory_ratio_basic: 1.0,
                 fabber_to_factory_ratio_advanced: 3.0,
