@@ -1,11 +1,35 @@
 # CHANGELOG
 
-#### 4.3.1 -
+#### 4.4.0 -
 
  - Corrected and unified heavy unit checks
  - Reduced use of Miniman
  - Amount of Miniman units depends on what Queller has seen
  - Uber doesn't use the Monstrosity
+ - Overhauled Bronze to reflect changes in Bronze play since Titans
+    - Prioritise defence at the perimeter rather than inside the base
+    - Use more defence on the perimeter
+    - Use more advanced defences on the perimeter
+    - Much lower chance of orbital factories on single planet maps
+    - Chance of more T1 before teching
+    - Better economy handling
+    - Expand a little better
+    - Use a small amount of land units on naval maps
+    - Less fabbers though still a lot
+    - Builds a factory first
+ - Fixed my misunderstanding in storage ratios leading to most levels not building storage
+ - Added Casual personality, which is the same as the old Bronze
+ - Prioritise Catalyst over Halley/Diplomat where a planet supports both
+ - Silver properly excludes all invalid units from its scout platoon
+ - Bronze will check whether it has land or naval routes to you
+ - Silver will use a limited land presence on naval maps
+ - Expanded range of ways Silver may scout you to ensure it attacks
+ - Lowered delay between builds from Bronze's factories
+ - Silver no longer has a delay in producing units from factories
+ - Uber Rush is now a late teching Uber Bot with less opening fabbers
+ - Uber Bot now uses the standard fabber opening
+ - Apparently MetMinAdvancedFabberCount is a real test so I've used it to improve check speeds and personality individuality
+ - If Uber can't expand and hasn't teched yet then it will immediately
 
 #### 4.3.0 - 2016/11/07
 
