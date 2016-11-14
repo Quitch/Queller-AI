@@ -20,11 +20,43 @@
             "boolean": true
           },
           {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "LegionFactoryBasicBot"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicBot"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicBot"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Land",
+            "compare0": "<",
+            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -43,7 +75,7 @@
       }
     },
     {
-      "name": "Legion - Bronze - Armor Foundry - Commander",
+      "name": "Legion - Bronze - Armor Foundry",
       "to_build": "LegionFactoryBasicVehicle",
       "instance_count": 1,
       "shared_instance_count": "Factory",
@@ -62,11 +94,43 @@
             "boolean": true
           },
           {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "LegionFactoryBasicVehicle"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicVehicle"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicVehicle"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Land",
+            "compare0": "<",
+            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -104,6 +168,10 @@
             "boolean": true
           },
           {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -121,6 +189,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
           {
@@ -186,6 +258,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
           {
