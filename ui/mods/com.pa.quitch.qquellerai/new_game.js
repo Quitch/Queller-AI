@@ -30,21 +30,50 @@ function qQuellerAI() {
         });
 
         var newPersonalities = {
+            'Casual': {
+                display_name: 'Casual',
+                metal_drain_check: 0.64,
+                energy_drain_check: 0.77,
+                metal_demand_check: 1.05,
+                energy_demand_check: 0.92,
+                micro_type: 0,
+                go_for_the_kill: false,
+                priority_scout_metal_spots: false,
+                enable_commander_danger_responses: true,
+                neural_data_mod: 2.0,
+                adv_eco_mod: 0.5,
+                adv_eco_mod_alone: 0.5,
+                factory_build_delay_min: 0,
+                factory_build_delay_max: 12,
+                personality_tags:
+                [
+                    "casual"
+                ],
+                fabber_to_factory_ratio_basic: 10.0,
+                fabber_to_factory_ratio_advanced: 5.0,
+                fabber_alone_on_planet_mod: 1.0,
+                basic_to_advanced_factory_ratio: 0,
+                factory_alone_on_planet_mod: 0.5,
+                min_basic_fabbers: 10,
+                max_basic_fabbers: 20,
+                min_advanced_fabbers: 10,
+                max_advanced_fabbers: 20
+            },
             'Bronze': {
                 display_name: 'Bronze',
-                metal_drain_check: 0.64,
+                metal_drain_check: 0.54,
                 energy_drain_check: 0.77,
                 metal_demand_check: 0.95,
                 energy_demand_check: 0.92,
                 micro_type: 0,
-                go_for_the_kill: false,
+                go_for_the_kill: true,
                 priority_scout_metal_spots: true,
                 enable_commander_danger_responses: true,
                 neural_data_mod: 1.5,
-                adv_eco_mod: 0.85,
-                adv_eco_mod_alone: 0.85,
+                adv_eco_mod: 0.5,
+                adv_eco_mod_alone: 0.5,
                 factory_build_delay_min: 0,
-                factory_build_delay_max: 12,
+                factory_build_delay_max: 6,
                 personality_tags:
                 [
                     "bronze"
@@ -66,14 +95,12 @@ function qQuellerAI() {
                 metal_demand_check: 0.95,
                 energy_demand_check: 0.92,
                 micro_type: 1,
-                go_for_the_kill: false,
+                go_for_the_kill: true,
                 priority_scout_metal_spots: true,
                 enable_commander_danger_responses: true,
                 neural_data_mod: 1.35,
                 adv_eco_mod: 1.0,
-                adv_eco_mod_alone: 1.0,
-                factory_build_delay_min: 0,
-                factory_build_delay_max: 3,
+                adv_eco_mod_alone: 0.65,
                 personality_tags:
                 [
                     "silver"
