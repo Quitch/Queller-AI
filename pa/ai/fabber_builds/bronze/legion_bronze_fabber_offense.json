@@ -140,6 +140,10 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionDefenseAdvancedNukeSilo"
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionDefenseAdvancedNukeSilo"
           }
@@ -150,7 +154,7 @@
       }
     },
     {
-      "name": "Legion - Bronze - Holocene",
+      "name": "Legion - Bronze - Diplomat",
       "to_build": "LegionDefenseAdvancedEngine",
       "instance_count": 1,
       "shared_instance_count": "SuperWeapon",
@@ -200,7 +204,7 @@
       "instance_count": 1,
       "shared_instance_count": "SuperWeapon",
       "max_num_assisters": 45,
-      "priority": 509,
+      "priority": 510,
       "builders": [
         "AnyLegionFabberAdvanced"
       ],
