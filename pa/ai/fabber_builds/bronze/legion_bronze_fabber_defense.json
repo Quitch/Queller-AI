@@ -267,7 +267,7 @@
       "instance_count": 1,
       "shared_instance_count": "AirDefence",
       "max_num_assisters": 3,
-      "priority": 478,
+      "priority": 477,
       "base_sort": "FromPerimeter",
       "builders": [
         "AnyLegionFabberBasic"
@@ -326,7 +326,7 @@
       "instance_count": 1,
       "shared_instance_count": "LandDefence",
       "max_num_assisters": 3,
-      "priority": 477,
+      "priority": 476,
       "base_sort": "FromPerimeter",
       "builders": [
         "AnyLegionFabberBasic"
@@ -391,7 +391,7 @@
       "instance_count": 1,
       "shared_instance_count": "LandDefence",
       "max_num_assisters": 3,
-      "priority": 478,
+      "priority": 477,
       "base_sort": "FromPerimeter",
       "builders": [
         "AnyLegionFabberBasic"
@@ -450,7 +450,7 @@
       "instance_count": 1,
       "shared_instance_count": "LandDefence",
       "max_num_assisters": 3,
-      "priority": 478,
+      "priority": 477,
       "base_sort": "FromPerimeter",
       "builders": [
         "LegionBotBasicFabber",
@@ -510,7 +510,7 @@
       "instance_count": 1,
       "shared_instance_count": "NavalDefence",
       "max_num_assisters": 3,
-      "priority": 478,
+      "priority": 477,
       "base_sort": "FromPerimeter",
       "builders": [
         "LegionAirBasicFabber",
@@ -1033,6 +1033,10 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionDefenseAdvancedAntiNukeSilo"
           },
           {
             "test_type": "UnitCountInBase",

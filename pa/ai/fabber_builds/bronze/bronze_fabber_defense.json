@@ -30,7 +30,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Basic & AirDefense",
             "compare0": "<",
-            "value0": 4
+            "value0": 9
           },
           {
             "test_type": "UnitCountInBase",
@@ -58,7 +58,7 @@
             "unit_type_string": "Structure & AirDefense",
             "alliance": "Ally",
             "compare_type": "<",
-            "range": 100,
+            "range": 50,
             "count": 1
           }
         ]
@@ -122,7 +122,7 @@
             "unit_type_string": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
             "alliance": "Ally",
             "compare_type": "<",
-            "range": 100,
+            "range": 50,
             "count": 1
           }
         ]
@@ -156,9 +156,9 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
+            "unit_type_string0": "Structure & SurfaceDefense",
             "compare0": "<",
-            "value0": 4
+            "value0": 9
           },
           {
             "test_type": "UnitCountInBase",
@@ -186,7 +186,7 @@
             "unit_type_string": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
             "alliance": "Ally",
             "compare_type": "<",
-            "range": 100,
+            "range": 50,
             "count": 1
           }
         ]
@@ -227,7 +227,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Naval & Defense",
             "compare0": "<",
-            "value0": 4
+            "value0": 9
           },
           {
             "test_type": "UnitCountInBase",
@@ -255,7 +255,201 @@
             "unit_type_string": "Structure & Naval & Defense",
             "alliance": "Ally",
             "compare_type": "<",
-            "range": 100,
+            "range": 50,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bronze - Advanced Land Defense - Mex",
+      "to_build": "AdvancedLandDefense",
+      "instance_count": 1,
+      "shared_instance_count": "LandDefence",
+      "priority": 480,
+      "max_num_assisters": 3,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "DistFromMainBase",
+            "compare0": ">=",
+            "value0": 200
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & SurfaceDefense",
+            "compare0": "<",
+            "value0": 6
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & MetalProduction",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedLandDefense"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Naval & Defense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bronze - Catapult - Mex",
+      "to_build": "TML",
+      "instance_count": 1,
+      "shared_instance_count": "LandDefence",
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "priority": 479,
+      "builders": [
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "DistFromMainBase",
+            "compare0": ">=",
+            "value0": 200
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & SurfaceDefense",
+            "compare0": "<",
+            "value0": 9
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & MetalProduction",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "TML"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Bronze - Advanced Torpedo Launcher - Mex",
+      "to_build": "AdvancedNavalDefense",
+      "instance_count": 1,
+      "shared_instance_count": "NavalDefence",
+      "priority": 480,
+      "max_num_assisters": 3,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "AdvancedNavalFabber",
+        "AdvancedAirFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "DistFromMainBase",
+            "compare0": ">=",
+            "value0": 200
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & Naval & Defense",
+            "compare0": "<",
+            "value0": 6
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Land",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & MetalProduction",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedNavalDefense"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
             "count": 1
           }
         ]
@@ -267,7 +461,7 @@
       "instance_count": 1,
       "shared_instance_count": "AirDefence",
       "max_num_assisters": 3,
-      "priority": 478,
+      "priority": 477,
       "base_sort": "FromPerimeter",
       "builders": [
         "AnyUberBasicFabber"
@@ -326,7 +520,7 @@
       "instance_count": 1,
       "shared_instance_count": "LandDefence",
       "max_num_assisters": 3,
-      "priority": 477,
+      "priority": 476,
       "base_sort": "FromPerimeter",
       "builders": [
         "AnyUberBasicFabber"
@@ -391,7 +585,7 @@
       "instance_count": 1,
       "shared_instance_count": "LandDefence",
       "max_num_assisters": 3,
-      "priority": 478,
+      "priority": 477,
       "base_sort": "FromPerimeter",
       "builders": [
         "AnyUberBasicFabber"
@@ -450,7 +644,7 @@
       "instance_count": 1,
       "shared_instance_count": "NavalDefence",
       "max_num_assisters": 3,
-      "priority": 478,
+      "priority": 477,
       "base_sort": "FromPerimeter",
       "builders": [
         "BasicAirFabber",
@@ -917,6 +1111,10 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AntiNukeSilo"
           },
           {
             "test_type": "UnitCountInBase",
