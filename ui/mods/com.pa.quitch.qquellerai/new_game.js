@@ -56,7 +56,7 @@ function qQuellerAI() {
                 factory_alone_on_planet_mod: 0.5,
                 min_basic_fabbers: 10,
                 max_basic_fabbers: 20,
-                min_advanced_fabbers: 10,
+                min_advanced_fabbers: 5,
                 max_advanced_fabbers: 20
             },
             'Bronze': {
@@ -83,9 +83,9 @@ function qQuellerAI() {
                 fabber_alone_on_planet_mod: 1.0,
                 basic_to_advanced_factory_ratio: 0,
                 factory_alone_on_planet_mod: 0.5,
-                min_basic_fabbers: 10,
+                min_basic_fabbers: 5,
                 max_basic_fabbers: 20,
-                min_advanced_fabbers: 5,
+                min_advanced_fabbers: 2,
                 max_advanced_fabbers: 20
             },
             'Silver': {
@@ -110,9 +110,9 @@ function qQuellerAI() {
                 fabber_alone_on_planet_mod: 1.0,
                 basic_to_advanced_factory_ratio: 0,
                 factory_alone_on_planet_mod: 0.5,
-                min_basic_fabbers: 2,
+                min_basic_fabbers: 3,
                 max_basic_fabbers: 30,
-                min_advanced_fabbers: 3,
+                min_advanced_fabbers: 2,
                 max_advanced_fabbers: 30
             },
             'Gold': {
@@ -139,7 +139,7 @@ function qQuellerAI() {
                 factory_alone_on_planet_mod: 0.5,
                 min_basic_fabbers: 2,
                 max_basic_fabbers: 40,
-                min_advanced_fabbers: 3,
+                min_advanced_fabbers: 2,
                 max_advanced_fabbers: 40
             },
             'Platinum': {
