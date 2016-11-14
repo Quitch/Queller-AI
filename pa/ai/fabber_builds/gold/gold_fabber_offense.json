@@ -90,6 +90,11 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetCount",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {

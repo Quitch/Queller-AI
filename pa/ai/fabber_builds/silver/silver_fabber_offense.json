@@ -83,11 +83,22 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetCount",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "UnitCannon"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Economy",
+            "compare0": ">",
+            "value0": 0
           },
           {
             "test_type": "CanFindPlaceToBuild",
