@@ -46,9 +46,9 @@
     },{
       "name": "Bronze - Orbital Launcher",
       "to_build": "OrbitalLauncher",
-      "instance_count": 2,
+      "instance_count": 1,
       "shared_instance_count": "Factory",
-      "priority": 200,
+      "priority": 376,
       "max_num_assisters": 10,
       "builders": [
         "AnyUberBasicFabber",
@@ -73,7 +73,7 @@
             "string0": "OrbitalLauncher"
           },
           {
-            "test_type": "UnitCount",
+            "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory & Orbital & Basic",
             "compare0": "<",
             "value0": 1
