@@ -4,6 +4,7 @@
       "name": "Silver - Orbital Launcher - Multi planet",
       "to_build": "OrbitalLauncher",
       "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
       "priority": 479,
       "max_num_assisters": 10,
       "builders": [
@@ -53,8 +54,7 @@
       "name": "Silver - Orbital Launcher",
       "to_build": "OrbitalLauncher",
       "instance_count": 1,
-      "shared_instance_count": "Factory",
-      "priority": 376,
+      "priority": 1,
       "max_num_assisters": 10,
       "builders": [
         "AnyUberBasicFabber",
@@ -98,8 +98,7 @@
     {
       "name": "Silver - Orbital Factory",
       "to_build": "OrbitalFactory",
-      "instance_count": 2,
-      "shared_instance_count": "Factory",
+      "instance_count": 1,
       "priority": 477,
       "max_num_assisters": 10,
       "builders": [

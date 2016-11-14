@@ -4,6 +4,7 @@
       "name": "Legion - Silver - Starship Projector - Multi planet",
       "to_build": "LegionFactoryBasicOrbital",
       "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
       "priority": 479,
       "max_num_assisters": 10,
       "builders": [
@@ -53,8 +54,7 @@
       "name": "Legion - Silver - Starship Projector",
       "to_build": "LegionFactoryBasicOrbital",
       "instance_count": 1,
-      "shared_instance_count": "Factory",
-      "priority": 376,
+      "priority": 1,
       "max_num_assisters": 10,
       "builders": [
         "AnyLegionFabberBasic",
@@ -98,8 +98,8 @@
     {
       "name": "Legion - Silver - Starship Foundry",
       "to_build": "LegionFactoryAdvancedOrbital",
-      "instance_count": 2,
-      "shared_instance_count": "Factory",
+      "instance_count": 1,
+      "shared_instance_count": "OrbitalFactory",
       "priority": 477,
       "max_num_assisters": 10,
       "builders": [
@@ -136,8 +136,8 @@
     {
       "name": "Legion - Silver - Starcannon",
       "to_build": "LegionOrbitalAdvancedCannon",
-      "instance_count": 2,
-      "shared_instance_count": "Factory",
+      "instance_count": 1,
+      "shared_instance_count": "OrbitalFactory",
       "max_num_assisters": 10,
       "priority": 477,
       "builders": [
