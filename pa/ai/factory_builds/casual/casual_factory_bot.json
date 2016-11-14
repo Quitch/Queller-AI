@@ -1,292 +1,290 @@
 {
-    "build_list": [
-        {
-            "name": "Casual - Basic Bot Fabber",
-            "to_build": "BasicBotFabber",
-            "instance_count": 1,
-            "max_num_assisters": 10,
-            "priority": 100,
-            "builders": [
-                "BasicBotFactory"
-            ],
-            "build_conditions": [
-                [
-                    {
-                        "test_type": "HasPersonalityTag",
-                        "string0": "casual",
-                        "boolean": true
-                    },
-                    {
-                        "test_type": "MetMinBasicFabberCount",
-                        "boolean": false
-                    }
-                ],
-                [
-                    {
-                        "test_type": "HasPersonalityTag",
-                        "string0": "casual",
-                        "boolean": true
-                    },
-                    {
-                        "test_type": "CanDeployLandFromBase",
-                        "boolean": true
-                    },
-                    {
-                        "test_type": "CanAffordPotentialDrain",
-                        "string0": "BasicBotFabber"
-                    },
-                    {
-                        "test_type": "UnitRatioOnPlanet",
-                        "unit_type_string0": "Fabber & Basic & Land",
-                        "unit_type_string1": "Factory & Basic & Land",
-                        "compare0": "<",
-                        "value0": 10
-                    }
-                ]
-            ]
-        },
-        {
-            "name": "Casual - Stich",
-            "to_build": "BasicBotCombatFabber",
-            "instance_count": 1,
-            "priority": 97,
-            "builders": [
-                "BasicBotFactory",
-                "UnitCannon"
-            ],
-            "build_conditions": [
-                [
-                    {
-                        "test_type": "HasPersonalityTag",
-                        "string0": "casual",
-                        "boolean": true
-                    },
-                    {
-                        "test_type": "CanDeployLandFromBase",
-                        "boolean": true
-                    },
-                    {
-                        "test_type": "UnitRatioOnPlanet",
-                        "unit_type_string0": "Land & Construction - Fabber",
-                        "unit_type_string1": "Land & Mobile & Offense",
-                        "compare0": "<",
-                        "value0": 0.05
-                    }
-                ]
-            ]
-        },
-        {
-            "name": "Casual - Dox",
-            "to_build": "BasicAssaultBot",
-            "instance_count": -1,
-            "max_num_assisters": 10,
-            "priority": 97,
-            "builders": [
-                "BasicBotFactory",
-                "UnitCannon"
-            ],
-            "build_conditions": [
-                [
-                    {
-                        "test_type": "HasPersonalityTag",
-                        "string0": "casual",
-                        "boolean": true
-                    }
-                ]
-            ]
-        },
-        {
-            "name": "Casual - Grenadier",
-            "to_build": "BasicArtilleryBot",
-            "instance_count": -1,
-            "max_num_assisters": 10,
-            "priority": 97,
-            "builders": [
-                "BasicBotFactory",
-                "UnitCannon"
-            ],
-            "build_conditions": [
-                [
-                    {
-                        "test_type": "HasPersonalityTag",
-                        "string0": "casual",
-                        "boolean": true
-                    },
-                    {
-                        "test_type": "CanDeployLandFromBase",
-                        "boolean": true
-                    }
-                ]
-            ]
-        },
-        {
-            "name": "Casual - Spark",
-            "to_build": "TeslaBot",
-            "instance_count": -1,
-            "max_num_assisters": 10,
-            "priority": 97,
-            "builders": [
-                "BasicBotFactory",
-                "UnitCannon"
-            ],
-            "build_conditions": [
-                [
-                    {
-                        "test_type": "HasPersonalityTag",
-                        "string0": "casual",
-                        "boolean": true
-                    },
-                    {
-                        "test_type": "CanDeployLandFromBase",
-                        "boolean": true
-                    }
-                ]
-            ]
-        },
-        {
-            "name": "Casual - Colonel",
-            "to_build": "UberSupportCommander",
-            "instance_count": 1,
-            "shared_instance_count": "AdvancedBotFabber",
-            "max_num_assisters": 10,
-            "priority": 200,
-            "builders": [
-                "AdvancedBotFactory"
-            ],
-            "build_conditions": [
-                [
-                    {
-                        "test_type": "HasPersonalityTag",
-                        "string0": "casual",
-                        "boolean": true
-                    },
-                    {
-                        "test_type": "BaseThreatened",
-                        "boolean": false
-                    },
-                    {
-                        "test_type": "CanAffordPotentialDrain",
-                        "string0": "UberSupportCommander"
-                    },
-                    {
-                        "test_type": "UnitRatioOnPlanet",
-                        "unit_type_string0": "Fabber & Advanced & Land",
-                        "unit_type_string1": "Factory & Advanced & Land",
-                        "compare0": "<",
-                        "value0": 5
-                    }
-                ]
-            ]
-        },
-        {
-            "name": "Casual - Advanced Bot Fabber",
-            "to_build": "AdvancedBotFabber",
-            "instance_count": 1,
-            "shared_instance_count": "AdvancedBotFabber",
-            "max_num_assisters": 10,
-            "priority": 200,
-            "builders": [
-                "AdvancedBotFactory"
-            ],
-            "build_conditions": [
-                [
-                    {
-                        "test_type": "HasPersonalityTag",
-                        "string0": "casual",
-                        "boolean": true
-                    },
-                    {
-                        "test_type": "UnitCountOnPlanet",
-                        "unit_type_string0": "Fabber & Advanced",
-                        "compare0": "<",
-                        "value0": 2
-                    }
-                ],
-                [
-                    {
-                        "test_type": "HasPersonalityTag",
-                        "string0": "casual",
-                        "boolean": true
-                    },
-                    {
-                        "test_type": "CanAffordPotentialDrain",
-                        "string0": "AdvancedBotFabber"
-                    },
-                    {
-                        "test_type": "UnitRatioOnPlanet",
-                        "unit_type_string0": "Fabber & Advanced & Land",
-                        "unit_type_string1": "Factory & Advanced & Land",
-                        "compare0": "<",
-                        "value0": 5
-                    }
-                ]
-            ]
-        },
-        {
-            "name": "Casual - Slammer",
-            "to_build": "AdvancedAssaultBot",
-            "instance_count": -1,
-            "max_num_assisters": 10,
-            "priority": 97,
-            "builders": [
-                "AdvancedBotFactory",
-                "UnitCannon"
-            ],
-            "build_conditions": [
-                [
-                    {
-                        "test_type": "HasPersonalityTag",
-                        "string0": "casual",
-                        "boolean": true
-                    }
-                ]
-            ]
-        },
-        {
-            "name": "Casual - GIL-E",
-            "to_build": "AdvancedArtilleryBot",
-            "instance_count": -1,
-            "max_num_assisters": 10,
-            "priority": 97,
-            "builders": [
-                "AdvancedBotFactory"
-            ],
-            "build_conditions": [
-                [
-                    {
-                        "test_type": "HasPersonalityTag",
-                        "string0": "casual",
-                        "boolean": true
-                    },
-                    {
-                        "test_type": "CanDeployLandFromBase",
-                        "boolean": true
-                    }
-                ]
-            ]
-        },
-        {
-            "name": "Casual - Bluehawk",
-            "to_build": "TMLBot",
-            "instance_count": -1,
-            "max_num_assisters": 10,
-            "priority": 97,
-            "builders": [
-                "AdvancedBotFactory"
-            ],
-            "build_conditions": [
-                [
-                    {
-                        "test_type": "HasPersonalityTag",
-                        "string0": "casual",
-                        "boolean": true
-                    },
-                    {
-                        "test_type": "CanDeployLandFromBase",
-                        "boolean": true
-                    }
-                ]
-            ]
-        }
-    ]
+  "build_list": [
+    {
+      "name": "Casual - Basic Bot Fabber",
+      "to_build": "BasicBotFabber",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 100,
+      "builders": [
+        "BasicBotFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "casual",
+            "boolean": true
+          },
+          {
+            "test_type": "MetMinBasicFabberCount",
+            "boolean": false
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "casual",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicBotFabber"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Basic & Land",
+            "unit_type_string1": "Factory & Basic & Land",
+            "compare0": "<",
+            "value0": 10
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Casual - Stich",
+      "to_build": "BasicBotCombatFabber",
+      "instance_count": 1,
+      "priority": 97,
+      "builders": [
+        "BasicBotFactory",
+        "UnitCannon"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "casual",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Construction - Fabber",
+            "unit_type_string1": "Land & Mobile & Offense",
+            "compare0": "<",
+            "value0": 0.05
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Casual - Dox",
+      "to_build": "BasicAssaultBot",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "BasicBotFactory",
+        "UnitCannon"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "casual",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Casual - Grenadier",
+      "to_build": "BasicArtilleryBot",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "BasicBotFactory",
+        "UnitCannon"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "casual",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Casual - Spark",
+      "to_build": "TeslaBot",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "BasicBotFactory",
+        "UnitCannon"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "casual",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Casual - Colonel",
+      "to_build": "UberSupportCommander",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedBotFabber",
+      "max_num_assisters": 10,
+      "priority": 200,
+      "builders": [
+        "AdvancedBotFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "casual",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "UberSupportCommander"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Advanced & Land",
+            "unit_type_string1": "Factory & Advanced & Land",
+            "compare0": "<",
+            "value0": 5
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Casual - Advanced Bot Fabber",
+      "to_build": "AdvancedBotFabber",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedBotFabber",
+      "max_num_assisters": 10,
+      "priority": 200,
+      "builders": [
+        "AdvancedBotFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "casual",
+            "boolean": true
+          },
+          {
+            "test_type": "MetMinAdvancedFabberCount",
+            "boolean": false
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "casual",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedBotFabber"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Advanced & Land",
+            "unit_type_string1": "Factory & Advanced & Land",
+            "compare0": "<",
+            "value0": 5
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Casual - Slammer",
+      "to_build": "AdvancedAssaultBot",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "AdvancedBotFactory",
+        "UnitCannon"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "casual",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Casual - GIL-E",
+      "to_build": "AdvancedArtilleryBot",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "AdvancedBotFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "casual",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Casual - Bluehawk",
+      "to_build": "TMLBot",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "AdvancedBotFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "casual",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          }
+        ]
+      ]
+    }
+  ]
 }
