@@ -130,29 +130,29 @@ Normal through Absurd are the standard difficulties and will use the vanilla AI 
 By default, Queller at Uber level will adapt its play to try and suit the system and the opposition it faces. You can use subpersonalities to customise Queller's game to your liking, or help it play better where it's making poor strategy choices.
 
 - Aggressive
- - Will attack earlier and more often
+ - More willing to engage in battle
 
 - Air
- - Greater use of air
- - Can go air first
+ - Much greater use of air
 
 - Bot
  - Doesn't build vehicle factories
  - MLA will build a vehicle factory for Skitters if it detects the possibility of mines
 
-- FFA
- - Requires a greater advantage before attacking
- - Techs faster
+- Cautious
+ - Looks for overwhelming odds in battle
+ - Goes T2 as soon as it can afford to
+ - Will get orbital as soon as possible on multi-planet systems
 
 - Land
  - Won't build naval factories
 
 - Naval
  - Attempts to build a naval factory first
- - Slightly more aggressive about getting into the water
+ - Ignores naval factory limits
 
 - Rush
- - Focus on T1
+ - Favours bots
  - Techs late
 
 - Tank
