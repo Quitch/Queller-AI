@@ -66,7 +66,7 @@
       }
     },
     {
-      "name": "Bronze - Unit Cannon",
+      "name": "Bronze - Unit Cannon - Multiplanet",
       "to_build": "UnitCannon",
       "instance_count": 1,
       "shared_instance_count": "SuperWeapon",
@@ -83,7 +83,50 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetCount",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "UnitCannon"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "UnitCannon"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2
+      }
+    },
+    {
+      "name": "Bronze - Unit Cannon",
+      "to_build": "UnitCannon",
+      "instance_count": 1,
+      "shared_instance_count": "SuperWeapon",
+      "max_num_assisters": 10,
+      "priority": 200,
+      "builders": [
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "UnitCannon"
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -168,6 +211,10 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "NukeSilo"
           },
           {
             "test_type": "CanFindPlaceToBuild",
