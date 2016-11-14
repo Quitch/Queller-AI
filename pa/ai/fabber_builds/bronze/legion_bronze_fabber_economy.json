@@ -309,6 +309,7 @@
       "max_num_assisters": 3,
       "priority": 260,
       "builders": [
+        "LegionCommander",
         "AnyLegionFabberBasic",
         "AnyLegionFabberAdvanced"
       ],
@@ -323,11 +324,6 @@
             "test_type": "CurrentEnergyEfficiency",
             "compare0": ">=",
             "value0": 1
-          },
-          {
-            "test_type": "EnergyStorageToProductionRatio",
-            "compare0": "<",
-            "value0": 4
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -347,11 +343,6 @@
             "test_type": "CurrentMetalEfficiency",
             "compare0": ">=",
             "value0": 1
-          },
-          {
-            "test_type": "MetalStorageToProductionRatio",
-            "compare0": "<",
-            "value0": 10
           },
           {
             "test_type": "CanAffordBuildDemand"

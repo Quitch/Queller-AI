@@ -587,6 +587,7 @@
       "instance_count": 1,
       "priority": 140,
       "builders": [
+        "UberCommander",
         "AnyUberBasicFabber",
         "AnyUberAdvancedFabber"
       ],
@@ -598,12 +599,17 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">=",
+            "value0": 1
           },
           {
             "test_type": "EnergyStorageToProductionRatio",
             "compare0": "<",
             "value0": 3
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -628,6 +634,7 @@
       "instance_count": 1,
       "priority": 140,
       "builders": [
+        "UberCommander",
         "AnyUberBasicFabber",
         "AnyUberAdvancedFabber"
       ],
@@ -639,12 +646,17 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">=",
+            "value0": 1
           },
           {
             "test_type": "MetalStorageToProductionRatio",
             "compare0": "<",
-            "value0": 4
+            "value0": 8
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "CanFindPlaceToBuild",

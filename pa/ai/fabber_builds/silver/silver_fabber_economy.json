@@ -418,6 +418,7 @@
       "max_num_assisters": 3,
       "priority": 260,
       "builders": [
+        "UberCommander",
         "AnyUberBasicFabber",
         "AnyUberAdvancedFabber"
       ],
@@ -429,9 +430,14 @@
             "boolean": true
           },
           {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
             "test_type": "EnergyStorageToProductionRatio",
             "compare0": "<",
-            "value0": 2
+            "value0": 5
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -460,6 +466,7 @@
       "max_num_assisters": 3,
       "priority": 260,
       "builders": [
+        "UberCommander",
         "AnyUberBasicFabber",
         "AnyUberAdvancedFabber"
       ],
@@ -471,9 +478,14 @@
             "boolean": true
           },
           {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
             "test_type": "MetalStorageToProductionRatio",
             "compare0": "<",
-            "value0": 2
+            "value0": 11
           },
           {
             "test_type": "CanAffordBuildDemand"
