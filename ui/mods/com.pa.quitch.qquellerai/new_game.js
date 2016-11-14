@@ -193,7 +193,7 @@ function qQuellerAI() {
                 factory_alone_on_planet_mod: 0.5,
                 min_basic_fabbers: 2,
                 max_basic_fabbers: 100,
-                min_advanced_fabbers: 3,
+                min_advanced_fabbers: 2,
                 max_advanced_fabbers: 100
             },
             'Uber Aggressive': {
@@ -220,7 +220,7 @@ function qQuellerAI() {
                 factory_alone_on_planet_mod: 0.5,
                 min_basic_fabbers: 2,
                 max_basic_fabbers: 100,
-                min_advanced_fabbers: 3,
+                min_advanced_fabbers: 2,
                 max_advanced_fabbers: 100
             },
             'Uber Air': {
@@ -248,7 +248,7 @@ function qQuellerAI() {
                 factory_alone_on_planet_mod: 0.5,
                 min_basic_fabbers: 2,
                 max_basic_fabbers: 100,
-                min_advanced_fabbers: 3,
+                min_advanced_fabbers: 2,
                 max_advanced_fabbers: 100
             },
             'Uber Bot': {
@@ -274,9 +274,9 @@ function qQuellerAI() {
                 fabber_alone_on_planet_mod: 3.0,
                 basic_to_advanced_factory_ratio: 10,
                 factory_alone_on_planet_mod: 0.5,
-                min_basic_fabbers: 1,
+                min_basic_fabbers: 2,
                 max_basic_fabbers: 100,
-                min_advanced_fabbers: 3,
+                min_advanced_fabbers: 2,
                 max_advanced_fabbers: 100
             },
             'Uber Cautious': {
@@ -301,7 +301,7 @@ function qQuellerAI() {
                 fabber_alone_on_planet_mod: 3.0,
                 basic_to_advanced_factory_ratio: 10,
                 factory_alone_on_planet_mod: 0.5,
-                min_basic_fabbers: 2,
+                min_basic_fabbers: 3,
                 max_basic_fabbers: 100,
                 min_advanced_fabbers: 3,
                 max_advanced_fabbers: 100
@@ -331,7 +331,7 @@ function qQuellerAI() {
                 factory_alone_on_planet_mod: 0.5,
                 min_basic_fabbers: 2,
                 max_basic_fabbers: 100,
-                min_advanced_fabbers: 3,
+                min_advanced_fabbers: 2,
                 max_advanced_fabbers: 100
             },
             'Uber Naval': {
@@ -359,7 +359,7 @@ function qQuellerAI() {
                 factory_alone_on_planet_mod: 0.5,
                 min_basic_fabbers: 2,
                 max_basic_fabbers: 100,
-                min_advanced_fabbers: 3,
+                min_advanced_fabbers: 2,
                 max_advanced_fabbers: 100
             },
             'Uber Rush': {
@@ -374,11 +374,11 @@ function qQuellerAI() {
                 enable_commander_danger_responses: true,
                 neural_data_mod: 1.0,
                 adv_eco_mod: 2.0,
-                adv_eco_mod_alone: 1.5,
+                adv_eco_mod_alone: 1.45,
                 personality_tags:
                 [
                     "uber",
-                    "rush"
+                    "bot"
                 ],
                 fabber_to_factory_ratio_basic: 1.0,
                 fabber_to_factory_ratio_advanced: 3.0,
@@ -387,7 +387,7 @@ function qQuellerAI() {
                 factory_alone_on_planet_mod: 0.5,
                 min_basic_fabbers: 1,
                 max_basic_fabbers: 100,
-                min_advanced_fabbers: 3,
+                min_advanced_fabbers: 1,
                 max_advanced_fabbers: 100
             },
             'Uber Tank': {
@@ -415,7 +415,7 @@ function qQuellerAI() {
                 factory_alone_on_planet_mod: 0.5,
                 min_basic_fabbers: 2,
                 max_basic_fabbers: 100,
-                min_advanced_fabbers: 3,
+                min_advanced_fabbers: 2,
                 max_advanced_fabbers: 100
             },
             'Uber Tech': {
@@ -442,7 +442,7 @@ function qQuellerAI() {
                 factory_alone_on_planet_mod: 0.5,
                 min_basic_fabbers: 3,
                 max_basic_fabbers: 100,
-                min_advanced_fabbers: 3,
+                min_advanced_fabbers: 2,
                 max_advanced_fabbers: 100
             },
         }
