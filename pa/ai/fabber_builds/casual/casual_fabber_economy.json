@@ -320,9 +320,9 @@
             "boolean": true
           },
           {
-            "test_type": "EnergyStorageToProductionRatio",
-            "compare0": "<",
-            "value0": 0.5
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">=",
+            "value0": 1
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -362,9 +362,9 @@
             "boolean": true
           },
           {
-            "test_type": "MetalStorageToProductionRatio",
-            "compare0": "<",
-            "value0": 0.5
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">=",
+            "value0": 1
           },
           {
             "test_type": "CanAffordBuildDemand"
