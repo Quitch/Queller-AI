@@ -39,7 +39,7 @@ function qQuellerAI() {
                 micro_type: 0,
                 go_for_the_kill: false,
                 priority_scout_metal_spots: false,
-                enable_commander_danger_responses: true,
+                enable_commander_danger_responses: false,
                 neural_data_mod: 2.0,
                 adv_eco_mod: 0.5,
                 adv_eco_mod_alone: 0.5,
