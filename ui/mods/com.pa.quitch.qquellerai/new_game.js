@@ -56,7 +56,7 @@ function qQuellerAI() {
                 factory_alone_on_planet_mod: 0.5,
                 min_basic_fabbers: 10,
                 max_basic_fabbers: 20,
-                min_advanced_fabbers: 5,
+                min_advanced_fabbers: 3,
                 max_advanced_fabbers: 20
             },
             'Bronze': {
