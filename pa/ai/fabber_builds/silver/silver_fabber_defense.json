@@ -30,7 +30,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & AirDefense",
             "compare0": "<",
-            "value0": 2
+            "value0": 3
           },
           {
             "test_type": "UnitCountInBase",
@@ -158,7 +158,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & SurfaceDefense",
             "compare0": "<",
-            "value0": 2
+            "value0": 3
           },
           {
             "test_type": "UnitCountInBase",
@@ -227,7 +227,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Naval & Defense",
             "compare0": "<",
-            "value0": 2
+            "value0": 3
           },
           {
             "test_type": "UnitCountInBase",
@@ -262,6 +262,70 @@
       }
     },
     {
+      "name": "Silver - Advanced Land Defense - Mex",
+      "to_build": "AdvancedLandDefense",
+      "instance_count": 1,
+      "shared_instance_count": "Defence",
+      "priority": 380,
+      "max_num_assisters": 2,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "DistFromMainBase",
+            "compare0": ">=",
+            "value0": 200
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & SurfaceDefense",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & MetalProduction",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedLandDefense"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
       "name": "Silver - Galata Turret - Base",
       "to_build": "BasicAirDefense",
       "instance_count": 1,
@@ -287,7 +351,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & AirDefense",
             "compare0": "<",
-            "value0": 6
+            "value0": 3
           },
           {
             "test_type": "UnitCountInBase",
@@ -412,7 +476,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
             "compare0": "<",
-            "value0": 5
+            "value0": 3
           },
           {
             "test_type": "UnitCountInBase",
@@ -477,7 +541,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Naval & Defense",
             "compare0": "<",
-            "value0": 5
+            "value0": 3
           },
           {
             "test_type": "UnitCountInBase",
@@ -542,7 +606,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Advanced & AirDefense",
             "compare0": "<",
-            "value0": 6
+            "value0": 3
           },
           {
             "test_type": "UnitCountInBase",
@@ -601,7 +665,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Advanced & (SurfaceDefense | Tactical) - (CombatFabAdvBuild & Custom1)",
             "compare0": "<",
-            "value0": 6
+            "value0": 3
           },
           {
             "test_type": "UnitCountInBase",
@@ -659,7 +723,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Advanced & (SurfaceDefense | Tactical) - (CombatFabAdvBuild & Custom1)",
             "compare0": "<",
-            "value0": 6
+            "value0": 3
           },
           {
             "test_type": "UnitCountInBase",
@@ -697,7 +761,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Tactical",
             "compare0": "<",
-            "value0": 2
+            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -746,7 +810,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Advanced & Naval & Defense",
             "compare0": "<",
-            "value0": 6
+            "value0": 3
           },
           {
             "test_type": "UnitCountInBase",
