@@ -221,6 +221,35 @@
       ]
     },
     {
+      "name": "Legion - Gold - Purger",
+      "to_build": "LegionBotBasicBomb",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "LegionFactoryBasicBot"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": ">",
+            "value0": 2800
+          }
+        ]
+      ]
+    },
+    {
       "name": "Legion - Gold - Peacekeeper",
       "to_build": "LegionBotBasicAssault",
       "instance_count": -1,

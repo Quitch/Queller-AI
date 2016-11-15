@@ -105,6 +105,28 @@
       ]
     },
     {
+      "name": "Silver - Boom",
+      "to_build": "BoomBot",
+      "instance_count": -1,
+      "priority": 97,
+      "builders": [
+        "BasicBotFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
       "name": "Silver - Dox",
       "to_build": "BasicAssaultBot",
       "instance_count": -1,

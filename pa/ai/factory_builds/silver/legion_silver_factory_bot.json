@@ -75,6 +75,29 @@
       ]
     },
     {
+      "name": "Legion - Silver - Purger",
+      "to_build": "LegionBotBasicBomb",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "LegionFactoryBasicBot"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
       "name": "Legion - Silver - Peacekeeper",
       "to_build": "LegionBotBasicAssault",
       "instance_count": -1,
