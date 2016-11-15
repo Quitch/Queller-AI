@@ -305,9 +305,10 @@
     {
       "name": "Casual - Energy Storage",
       "to_build": "EnergyStorage",
-      "instance_count": 2,
+      "instance_count": 1,
+      "shared_instance_count": "Storage",
       "max_num_assisters": 3,
-      "priority": 262,
+      "priority": 1,
       "builders": [
         "AnyUberBasicFabber",
         "AnyUberAdvancedFabber"
@@ -347,9 +348,10 @@
     {
       "name": "Casual - Metal Storage",
       "to_build": "MetalStorage",
-      "instance_count": 2,
+      "instance_count": 1,
+      "shared_instance_count": "Storage",
       "max_num_assisters": 3,
-      "priority": 262,
+      "priority": 1,
       "builders": [
         "AnyUberBasicFabber",
         "AnyUberAdvancedFabber"
