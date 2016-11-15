@@ -22,9 +22,26 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber & Basic & (Naval | Air)",
+            "unit_type_string0": "Fabber & Basic",
             "compare0": "<",
-            "value0": 2
+            "value0": 3
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Basic & Naval",
+            "compare0": "<",
+            "value0": 1
           }
         ],
         [
