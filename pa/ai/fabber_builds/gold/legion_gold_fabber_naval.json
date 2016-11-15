@@ -208,8 +208,7 @@
       "min_num_assisters": 2,
       "max_num_assisters": 4,
       "builders": [
-        "LegionAirBasicFabber",
-        "LegionNavalBasicFabber",
+        "AnyLegionFabberBasic",
         "LegionNavalAdvancedFabber"
       ],
       "build_conditions": [
@@ -261,8 +260,7 @@
       "min_num_assisters": 2,
       "max_num_assisters": 4,
       "builders": [
-        "LegionAirBasicFabber",
-        "LegionNavalBasicFabber",
+        "AnyLegionFabberBasic",
         "LegionNavalAdvancedFabber"
       ],
       "build_conditions": [
