@@ -6,45 +6,50 @@
  - Reduced use of Miniman
  - Amount of Miniman units depends on what Queller has seen
  - Uber doesn't use the Monstrosity
- - Overhauled Bronze to reflect changes in play since Titans was released
-    - Prioritise defence at the perimeter rather than inside the base
-    - Use more defence on the perimeter
-    - Use more advanced defences on the perimeter
-    - Much lower chance of orbital factories and Unit Cannons on single planet maps
-    - Chance of more T1 before teching
-    - Better economy handling
-    - Expand a little better
-    - Use a small amount of land units on naval maps
-    - Less fabbers though still a lot
-    - Builds a factory first
-    - Less opening fabbers
-    - Less likely to build a Titan
-    - More likely to enter the water
-    - Able to use bombers in smaller numbers
+ - Numerous personality updates to reflect changes in play since Titans released and smooth out the difficulty curve
+    - Casual
+      - New personality which takes on the role of the old Bronze
+    - Bronze
+      - Prioritise defence at the perimeter rather than inside the base
+      - Much lower chance of orbital factories and Unit Cannons on single planet maps
+      - Chance of more T1 before teching
+      - Better economy handling
+      - Expand a little better
+      - Use a small amount of land units on naval maps
+      - Less fabbers though still a lot
+      - Builds a factory first
+      - Less opening fabbers
+      - Make Titans later
+      - More likely to enter the water
+      - Can send out smaller bomber/gunship platoons
+      - Smaller delay between units being produced by factories
+      - Sends some units early on to check whether it has land or naval routes to you
+    - Silver
+      - No delay between units being produced by factories
+      - Expands more aggressively
+      - Less likely to use orbital on a single planet map
+      - No longer builds Unit Cannons on single planet maps
+      - More early fabbers
+      - Make Titans later
+      - Slightly more flexibility in factory production
+      - Will use a small land presence on naval maps
+      - More scouting options
+      - Can send out smaller bomber/gunship platoons
+      - Less T1 static artillery
+    - Gold
+      - No longer builds Unit Cannons on single planet maps
  - Fixed my misunderstanding in storage ratios leading to most levels not building storage
- - Added a Casual personality which is based on the old Bronze
  - Prioritise Catalyst over Halley/Diplomat where a planet supports both
  - Silver properly excludes all invalid units from its scout platoon
- - Bronze will check whether it has land or naval routes to you
- - Silver will use a limited land presence on naval maps
- - Expanded range of ways Silver may scout you to ensure it attacks
- - Lowered delay between builds from Bronze's factories
- - Silver no longer has a delay in producing units from factories
  - Uber Rush is now a late teching Uber Bot with less opening fabbers
  - Uber Bot now uses the standard fabber opening
  - Apparently MetMinAdvancedFabberCount is a real test so I've used it to improve check speeds and personality individuality
  - If Uber can't expand and hasn't teched yet then it will immediately
  - Further measures introduced to reduce instances of entire naval fleets camping their base on mixed land/naval maps
- - Silver allowed to build more factories at a time
  - Reduced minimum number of required advanced fabbers at almost every level
- - Silver makes Titans later
- - Silver less likely to use orbital on a single planet map
  - Fixed Silver trying to form bomber platoons without enough bombers to do so
- - Silver allowed to be more flexible in bomber platoon formation
  - Never form platoons in response to a wall
- - Silver allowed to expand a little more aggressively
  - Only build the Unit and Star Cannons in situations where the AI will probably use them
- - Silver and Gold no longer use the Unit Cannon on single planet maps
  - Remove restrictions on which fabbers can build a naval factory
  - Fixed bug preventing Stingrays from leaving the base
 
