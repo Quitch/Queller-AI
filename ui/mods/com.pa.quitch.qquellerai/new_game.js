@@ -85,7 +85,7 @@ function qQuellerAI() {
                 factory_alone_on_planet_mod: 0.5,
                 min_basic_fabbers: 5,
                 max_basic_fabbers: 20,
-                min_advanced_fabbers: 2,
+                min_advanced_fabbers: 3,
                 max_advanced_fabbers: 20
             },
             'Silver': {
@@ -110,9 +110,9 @@ function qQuellerAI() {
                 fabber_alone_on_planet_mod: 1.0,
                 basic_to_advanced_factory_ratio: 0,
                 factory_alone_on_planet_mod: 0.5,
-                min_basic_fabbers: 3,
+                min_basic_fabbers: 4,
                 max_basic_fabbers: 30,
-                min_advanced_fabbers: 2,
+                min_advanced_fabbers: 3,
                 max_advanced_fabbers: 30
             },
             'Gold': {
@@ -126,7 +126,7 @@ function qQuellerAI() {
                 priority_scout_metal_spots: true,
                 enable_commander_danger_responses: true,
                 neural_data_mod: 1.25,
-                adv_eco_mod: 1.1,
+                adv_eco_mod: 1.0,
                 adv_eco_mod_alone: 0.75,
                 personality_tags:
                 [
@@ -137,7 +137,7 @@ function qQuellerAI() {
                 fabber_alone_on_planet_mod: 3.0,
                 basic_to_advanced_factory_ratio: 0,
                 factory_alone_on_planet_mod: 0.5,
-                min_basic_fabbers: 2,
+                min_basic_fabbers: 3,
                 max_basic_fabbers: 40,
                 min_advanced_fabbers: 2,
                 max_advanced_fabbers: 40
@@ -153,7 +153,7 @@ function qQuellerAI() {
                 priority_scout_metal_spots: true,
                 enable_commander_danger_responses: true,
                 neural_data_mod: 1.15,
-                adv_eco_mod: 1.5,
+                adv_eco_mod: 1.15,
                 adv_eco_mod_alone: 0.95,
                 personality_tags:
                 [
