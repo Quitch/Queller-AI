@@ -168,7 +168,7 @@ Below are recommendations for the difficulty and eco modifiers you should use.
 
 | Vanilla    | Queller | Eco |
 | ---------- | ------- | --- |
-| Normal     | Bronze  | 1.0 |
+| Normal     | Casual  | 1.0 |
 | Hard       | Silver  | 1.1 |
 | Relentless | Gold    | 0.8 |
 | Absurd     | Gold    | 0.8 |
