@@ -171,130 +171,6 @@
       }
     },
     {
-      "name": "Legion - Uber - Flyer Foundry - Commander - Increase chance of second air",
-      "to_build": "LegionFactoryBasicAir",
-      "instance_count": 1,
-      "shared_instance_count": "BasicFactory",
-      "max_num_assisters": 2,
-      "priority": 376,
-      "builders": [
-        "LegionCommander"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "air",
-            "boolean": false
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bot",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionFactoryBasicAir"
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Factory & Air & Basic",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Factory - Orbital",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionFactoryBasicAir"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 3,
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
-      "name": "Legion - Uber - Flyer Foundry - Commander - No later than third factory",
-      "to_build": "LegionFactoryBasicAir",
-      "instance_count": 1,
-      "shared_instance_count": "BasicFactory",
-      "max_num_assisters": 2,
-      "priority": 378,
-      "builders": [
-        "LegionCommander"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "air",
-            "boolean": false
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bot",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionFactoryBasicAir"
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Factory & Air & Basic",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Factory - Orbital",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionFactoryBasicAir"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 3,
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
       "name": "Legion - Uber - Flyer Foundry - Fabber",
       "to_build": "LegionFactoryBasicAir",
       "instance_count": 1,
@@ -937,6 +813,10 @@
           {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
+          },
+          {
+            "test_type": "UnableToExpand",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
