@@ -5,7 +5,7 @@
  - Corrected and unified heavy unit checks
  - Amount of Miniman units depends on what Uber has seen and has been reduced overall
  - Uber doesn't use the Monstrosity
- - Numerous personality updates to reflect changes in human playstyles since Titans released:
+ - Numerous personality updates to reflect changes in human playstyles:
     - Casual
       - New personality which takes on the role of the old Bronze
     - Bronze
@@ -23,6 +23,7 @@
       - Can send out smaller bomber/gunship platoons
       - Smaller delay between units being produced by factories
       - Sends some units early on to check whether it has land or naval routes to you
+      - Produces less initial advanced fabbers
     - Silver
       - No delay between units being produced by factories
       - Expands more aggressively
@@ -37,28 +38,37 @@
       - Less T1 static artillery
       - Less defence in the main base but more on the front lines
       - Uses Booms and Purgers
+      - Produces more initial advanced fabbers
     - Gold
       - No longer builds Unit Cannons on single planet maps
       - More early fabbers
       - Techs earlier
       - Builds Booms later
       - Builds Purgers
+      - Produces more initial advanced fabbers
     - Platinum
       - Techs earlier
+      - Produces less initial advanced fabbers
+    - Uber
+      - Legion has a much greater focus on bots
+      - Produces less initial advanced fabbers
  - Fixed my misunderstanding in storage ratios which led to most levels not building storage
  - Prioritise Catalyst over Halley/Diplomat where a planet supports both
  - Silver properly excludes all invalid units from its scout platoon
  - Uber Rush is now a T1 focused Uber Bot with less opening fabbers
  - Uber Bot now uses the same fabber opening as Uber
  - Apparently MetMinAdvancedFabberCount is a real test so I've used it to improve check speeds and personality individuality
- - If Uber can't expand and hasn't teched yet then it will immediately
+ - If Uber can't expand then it will try to tech if it hasn't already
  - Further measures introduced to reduce instances of entire naval fleets camping their base on mixed land/naval maps
- - Tweaked minimum number of required advanced fabbers at almost every level
  - Fixed Silver trying to form bomber platoons without enough bombers to do so
  - Never form platoons in response to a wall
  - Only build the Unit and Star Cannons in situations where the AI will probably use them
  - Remove restrictions on which fabbers can build a naval factory
  - Fixed bug preventing Stingrays from leaving the base
+ - Uber deploys Orbweavers in response to enemy air build-up
+ - Uber Bot Legion no longer builds AA when enemy has a larger air force than it because it doesn't build one
+ - Uber Legion only builds T2 air on planets it completely owns
+ - Uber Legion puts less priority on an early air factory
 
 #### 4.3.0 - 2016/11/07
 
