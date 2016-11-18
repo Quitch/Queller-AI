@@ -30,9 +30,31 @@ function qQuellerAI() {
         });
 
         var newPersonalities = {
+            'Casual': {
+                display_name: 'Casual',
+                metal_drain_check: 0.64,
+                energy_drain_check: 0.77,
+                metal_demand_check: 1.05,
+                energy_demand_check: 0.92,
+                micro_type: 0,
+                go_for_the_kill: false,
+                priority_scout_metal_spots: false,
+                enable_commander_danger_responses: false,
+                neural_data_mod: 2.0,
+                adv_eco_mod: 0.5,
+                adv_eco_mod_alone: 0.5,
+                factory_build_delay_min: 0,
+                factory_build_delay_max: 12,
+                personality_tags:
+                [
+                    "casual"
+                ],
+                min_basic_fabbers: 10,
+                min_advanced_fabbers: 3
+            },
             'Bronze': {
                 display_name: 'Bronze',
-                metal_drain_check: 0.64,
+                metal_drain_check: 0.54,
                 energy_drain_check: 0.77,
                 metal_demand_check: 0.95,
                 energy_demand_check: 0.92,
@@ -41,23 +63,16 @@ function qQuellerAI() {
                 priority_scout_metal_spots: true,
                 enable_commander_danger_responses: true,
                 neural_data_mod: 1.5,
-                adv_eco_mod: 0.85,
-                adv_eco_mod_alone: 0.85,
+                adv_eco_mod: 0.5,
+                adv_eco_mod_alone: 0.5,
                 factory_build_delay_min: 0,
-                factory_build_delay_max: 12,
+                factory_build_delay_max: 6,
                 personality_tags:
                 [
                     "bronze"
                 ],
-                fabber_to_factory_ratio_basic: 10.0,
-                fabber_to_factory_ratio_advanced: 5.0,
-                fabber_alone_on_planet_mod: 1.0,
-                basic_to_advanced_factory_ratio: 0,
-                factory_alone_on_planet_mod: 0.5,
-                min_basic_fabbers: 10,
-                max_basic_fabbers: 20,
-                min_advanced_fabbers: 10,
-                max_advanced_fabbers: 20
+                min_basic_fabbers: 5,
+                min_advanced_fabbers: 3
             },
             'Silver': {
                 display_name: 'Silver',
@@ -66,27 +81,18 @@ function qQuellerAI() {
                 metal_demand_check: 0.95,
                 energy_demand_check: 0.92,
                 micro_type: 1,
-                go_for_the_kill: false,
+                go_for_the_kill: true,
                 priority_scout_metal_spots: true,
                 enable_commander_danger_responses: true,
                 neural_data_mod: 1.35,
                 adv_eco_mod: 1.0,
-                adv_eco_mod_alone: 1.0,
-                factory_build_delay_min: 0,
-                factory_build_delay_max: 3,
+                adv_eco_mod_alone: 0.65,
                 personality_tags:
                 [
                     "silver"
                 ],
-                fabber_to_factory_ratio_basic: 2.0,
-                fabber_to_factory_ratio_advanced: 1.0,
-                fabber_alone_on_planet_mod: 1.0,
-                basic_to_advanced_factory_ratio: 0,
-                factory_alone_on_planet_mod: 0.5,
-                min_basic_fabbers: 2,
-                max_basic_fabbers: 30,
-                min_advanced_fabbers: 1,
-                max_advanced_fabbers: 30
+                min_basic_fabbers: 4,
+                min_advanced_fabbers: 3
             },
             'Gold': {
                 display_name: 'Gold',
@@ -99,21 +105,14 @@ function qQuellerAI() {
                 priority_scout_metal_spots: true,
                 enable_commander_danger_responses: true,
                 neural_data_mod: 1.25,
-                adv_eco_mod: 1.1,
+                adv_eco_mod: 1.0,
                 adv_eco_mod_alone: 0.75,
                 personality_tags:
                 [
                     "gold"
                 ],
-                fabber_to_factory_ratio_basic: 0.5,
-                fabber_to_factory_ratio_advanced: 1.0,
-                fabber_alone_on_planet_mod: 3.0,
-                basic_to_advanced_factory_ratio: 0,
-                factory_alone_on_planet_mod: 0.5,
-                min_basic_fabbers: 2,
-                max_basic_fabbers: 40,
-                min_advanced_fabbers: 1,
-                max_advanced_fabbers: 40
+                min_basic_fabbers: 3,
+                min_advanced_fabbers: 2
             },
             'Platinum': {
                 display_name: 'Platinum',
@@ -126,21 +125,14 @@ function qQuellerAI() {
                 priority_scout_metal_spots: true,
                 enable_commander_danger_responses: true,
                 neural_data_mod: 1.15,
-                adv_eco_mod: 1.5,
+                adv_eco_mod: 1.15,
                 adv_eco_mod_alone: 0.95,
                 personality_tags:
                 [
                     "platinum"
                 ],
-                fabber_to_factory_ratio_basic: 1.0,
-                fabber_to_factory_ratio_advanced: 3.0,
-                fabber_alone_on_planet_mod: 3.0,
-                basic_to_advanced_factory_ratio: 0,
-                factory_alone_on_planet_mod: 0.5,
                 min_basic_fabbers: 2,
-                max_basic_fabbers: 50,
-                min_advanced_fabbers: 3,
-                max_advanced_fabbers: 50
+                min_advanced_fabbers: 2
             },
             'Uber': {
                 display_name: 'Uber',
@@ -159,15 +151,8 @@ function qQuellerAI() {
                 [
                     "uber"
                 ],
-                fabber_to_factory_ratio_basic: 1.0,
-                fabber_to_factory_ratio_advanced: 3.0,
-                fabber_alone_on_planet_mod: 3.0,
-                basic_to_advanced_factory_ratio: 10,
-                factory_alone_on_planet_mod: 0.5,
                 min_basic_fabbers: 2,
-                max_basic_fabbers: 100,
-                min_advanced_fabbers: 3,
-                max_advanced_fabbers: 100
+                min_advanced_fabbers: 1
             },
             'Uber Aggressive': {
                 display_name: 'Uber Aggressive',
@@ -193,7 +178,7 @@ function qQuellerAI() {
                 factory_alone_on_planet_mod: 0.5,
                 min_basic_fabbers: 2,
                 max_basic_fabbers: 100,
-                min_advanced_fabbers: 3,
+                min_advanced_fabbers: 1,
                 max_advanced_fabbers: 100
             },
             'Uber Air': {
@@ -214,15 +199,8 @@ function qQuellerAI() {
                     "uber",
                     "air"
                 ],
-                fabber_to_factory_ratio_basic: 1.0,
-                fabber_to_factory_ratio_advanced: 3.0,
-                fabber_alone_on_planet_mod: 3.0,
-                basic_to_advanced_factory_ratio: 10,
-                factory_alone_on_planet_mod: 0.5,
                 min_basic_fabbers: 2,
-                max_basic_fabbers: 100,
-                min_advanced_fabbers: 3,
-                max_advanced_fabbers: 100
+                min_advanced_fabbers: 1
             },
             'Uber Bot': {
                 display_name: 'Uber Bot',
@@ -242,15 +220,8 @@ function qQuellerAI() {
                     "uber",
                     "bot"
                 ],
-                fabber_to_factory_ratio_basic: 1.0,
-                fabber_to_factory_ratio_advanced: 3.0,
-                fabber_alone_on_planet_mod: 3.0,
-                basic_to_advanced_factory_ratio: 10,
-                factory_alone_on_planet_mod: 0.5,
-                min_basic_fabbers: 1,
-                max_basic_fabbers: 100,
-                min_advanced_fabbers: 3,
-                max_advanced_fabbers: 100
+                min_basic_fabbers: 2,
+                min_advanced_fabbers: 1
             },
             'Uber Cautious': {
                 display_name: 'Uber Cautious',
@@ -269,15 +240,8 @@ function qQuellerAI() {
                 [
                     "uber"
                 ],
-                fabber_to_factory_ratio_basic: 1.0,
-                fabber_to_factory_ratio_advanced: 3.0,
-                fabber_alone_on_planet_mod: 3.0,
-                basic_to_advanced_factory_ratio: 10,
-                factory_alone_on_planet_mod: 0.5,
-                min_basic_fabbers: 2,
-                max_basic_fabbers: 100,
-                min_advanced_fabbers: 3,
-                max_advanced_fabbers: 100
+                min_basic_fabbers: 3,
+                min_advanced_fabbers: 2
             },
             'Uber Land': {
                 display_name: 'Uber Land',
@@ -297,15 +261,8 @@ function qQuellerAI() {
                     "uber",
                     "land"
                 ],
-                fabber_to_factory_ratio_basic: 1.0,
-                fabber_to_factory_ratio_advanced: 3.0,
-                fabber_alone_on_planet_mod: 3.0,
-                basic_to_advanced_factory_ratio: 10,
-                factory_alone_on_planet_mod: 0.5,
                 min_basic_fabbers: 2,
-                max_basic_fabbers: 100,
-                min_advanced_fabbers: 3,
-                max_advanced_fabbers: 100
+                min_advanced_fabbers: 1
             },
             'Uber Naval': {
                 display_name: 'Uber Naval',
@@ -325,15 +282,8 @@ function qQuellerAI() {
                     "uber",
                     "naval"
                 ],
-                fabber_to_factory_ratio_basic: 1.0,
-                fabber_to_factory_ratio_advanced: 3.0,
-                fabber_alone_on_planet_mod: 3.0,
-                basic_to_advanced_factory_ratio: 10,
-                factory_alone_on_planet_mod: 0.5,
                 min_basic_fabbers: 2,
-                max_basic_fabbers: 100,
-                min_advanced_fabbers: 3,
-                max_advanced_fabbers: 100
+                min_advanced_fabbers: 1
             },
             'Uber Rush': {
                 display_name: 'Uber Rush',
@@ -347,21 +297,14 @@ function qQuellerAI() {
                 enable_commander_danger_responses: true,
                 neural_data_mod: 1.0,
                 adv_eco_mod: 2.0,
-                adv_eco_mod_alone: 1.5,
+                adv_eco_mod_alone: 1.45,
                 personality_tags:
                 [
                     "uber",
-                    "rush"
+                    "bot"
                 ],
-                fabber_to_factory_ratio_basic: 1.0,
-                fabber_to_factory_ratio_advanced: 3.0,
-                fabber_alone_on_planet_mod: 3.0,
-                basic_to_advanced_factory_ratio: 10,
-                factory_alone_on_planet_mod: 0.5,
                 min_basic_fabbers: 1,
-                max_basic_fabbers: 100,
-                min_advanced_fabbers: 3,
-                max_advanced_fabbers: 100
+                min_advanced_fabbers: 1
             },
             'Uber Tank': {
                 display_name: 'Uber Tank',
@@ -381,15 +324,8 @@ function qQuellerAI() {
                     "uber",
                     "tank"
                 ],
-                fabber_to_factory_ratio_basic: 1.0,
-                fabber_to_factory_ratio_advanced: 3.0,
-                fabber_alone_on_planet_mod: 3.0,
-                basic_to_advanced_factory_ratio: 10,
-                factory_alone_on_planet_mod: 0.5,
                 min_basic_fabbers: 2,
-                max_basic_fabbers: 100,
-                min_advanced_fabbers: 3,
-                max_advanced_fabbers: 100
+                min_advanced_fabbers: 1
             },
             'Uber Tech': {
                 display_name: 'Uber Tech',
@@ -408,15 +344,8 @@ function qQuellerAI() {
                 [
                     "uber"
                 ],
-                fabber_to_factory_ratio_basic: 1.0,
-                fabber_to_factory_ratio_advanced: 3.0,
-                fabber_alone_on_planet_mod: 3.0,
-                basic_to_advanced_factory_ratio: 5,
-                factory_alone_on_planet_mod: 0.5,
                 min_basic_fabbers: 3,
-                max_basic_fabbers: 100,
-                min_advanced_fabbers: 3,
-                max_advanced_fabbers: 100
+                min_advanced_fabbers: 1
             },
         }
 

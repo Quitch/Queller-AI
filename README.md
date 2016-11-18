@@ -31,7 +31,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 
 Normal through Absurd are the standard difficulties and will use the vanilla AI rather than Queller.
 
-- Bronze
+- Casual
  - Economy first opening
  - One army
  - Techs as soon as possible
@@ -43,9 +43,25 @@ Normal through Absurd are the standard difficulties and will use the vanilla AI 
  - Loves fabbers
  - Loves static defence/offence
  - Poor use of fabbers
- - Terrible economy handling
+ - Poor economy handling
  - No micro
  - Terrible threat assessments
+
+ - Bronze
+  - Factory first opening
+  - One army
+  - Techs as soon as possible
+  - Will go orbital if it can
+  - Expands slowly
+  - Poor troop selection
+  - Barely scouts
+  - Doesn't react to what the enemy is doing
+  - Loves fabbers
+  - Loves static defence/offence
+  - Poor use of fabbers
+  - Average economy handling
+  - No micro
+  - Terrible threat assessments
 
 - Silver
  - Factory first opening
@@ -114,29 +130,29 @@ Normal through Absurd are the standard difficulties and will use the vanilla AI 
 By default, Queller at Uber level will adapt its play to try and suit the system and the opposition it faces. You can use subpersonalities to customise Queller's game to your liking, or help it play better where it's making poor strategy choices.
 
 - Aggressive
- - Will attack earlier and more often
+ - More willing to engage in battle
 
 - Air
- - Greater use of air
- - Can go air first
+ - Much greater use of air
 
 - Bot
  - Doesn't build vehicle factories
  - MLA will build a vehicle factory for Skitters if it detects the possibility of mines
 
-- FFA
- - Requires a greater advantage before attacking
- - Techs faster
+- Cautious
+ - Looks for overwhelming odds in battle
+ - Goes T2 as soon as it can afford to
+ - Will get orbital as soon as possible on multi-planet systems
 
 - Land
  - Won't build naval factories
 
 - Naval
  - Attempts to build a naval factory first
- - Slightly more aggressive about getting into the water
+ - Ignores naval factory limits
 
 - Rush
- - Focus on T1
+ - Favours bots
  - Techs late
 
 - Tank
