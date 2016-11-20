@@ -141,7 +141,7 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 
 - Cautious
  - Looks for overwhelming odds in battle
- - Goes T2 as soon as it can afford to
+ - Goes T2 faster than normal
  - Will get orbital as soon as possible on multi-planet systems
 
 - Land
