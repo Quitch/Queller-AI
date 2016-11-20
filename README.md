@@ -96,7 +96,7 @@ Normal through Absurd are the standard difficulties and will use the vanilla AI 
 - Platinum
  - Smart factory first opening
  - Unlimited armies
- - Techs smartly
+ - Techs quickly
  - Goes orbital smartly
  - Expands quickly
  - Good troop selection
