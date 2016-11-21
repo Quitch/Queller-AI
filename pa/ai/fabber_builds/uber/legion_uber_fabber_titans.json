@@ -276,17 +276,10 @@
             "string0": "LegionTitanAdvancedOrbital"
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Orbital",
-            "string1": "AntiOrbital",
-            "compare0": "<",
-            "value0": 0.6
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Factory & Orbital",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Orbital",
             "compare0": ">=",
-            "value0": 1
+            "value0": 5
           }
         ]
       ],
