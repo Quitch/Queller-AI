@@ -105,6 +105,57 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionFactoryBasicOrbital"
           }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "tech",
+            "boolean": true
+          },
+          {
+            "test_type": "PresenceOnOtherPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetWithoutPresence",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "OrbitalLauncher"
+          },
+          {
+            "test_type": "PlanetCount",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital - Naval",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Factory & Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "OrbitalLauncher"
+          }
         ]
       ],
       "placement_rules": {
@@ -115,8 +166,8 @@
       "name": "Legion - Uber - Starship Projector",
       "to_build": "LegionFactoryBasicOrbital",
       "instance_count": 1,
-      "shared_instance_count": "AdvancedFactory",
-      "priority": 476,
+      "shared_instance_count": "BasicFactory",
+      "priority": 376,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
       "builders": [
