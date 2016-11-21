@@ -88,6 +88,29 @@
       ]
     },
     {
+      "name": "Bronze - Icarus",
+      "to_build": "TeslaGunship",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 96,
+      "builders": [
+        "BasicAirFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          }
+        ]
+      ]
+    },
+    {
       "name": "Bronze - Advanced Air Fabber",
       "to_build": "AdvancedAirFabber",
       "instance_count": 1,
