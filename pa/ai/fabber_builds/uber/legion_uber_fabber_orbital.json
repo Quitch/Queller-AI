@@ -28,10 +28,6 @@
             "boolean": false
           },
           {
-            "test_type": "PlanetWithoutPresence",
-            "boolean": true
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -58,10 +54,6 @@
           {
             "test_type": "PresenceOnOtherPlanet",
             "boolean": false
-          },
-          {
-            "test_type": "PlanetWithoutPresence",
-            "boolean": true
           },
           {
             "test_type": "HaveSeenEnemyUnits",
@@ -104,6 +96,10 @@
             "boolean": true
           },
           {
+            "test_type": "PresenceOnOtherPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "PlanetWithoutPresence",
             "boolean": true
           },
@@ -127,10 +123,6 @@
           {
             "test_type": "NoWhereToRun",
             "boolean": true
-          },
-          {
-            "test_type": "PresenceOnOtherPlanet",
-            "boolean": false
           },
           {
             "test_type": "PlanetCount",
