@@ -907,19 +907,6 @@
             "string0": "LegionFactoryAdvancedAir"
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Air",
-            "string1": "AntiAir",
-            "compare0": "<",
-            "value0": 0.6
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory & Advanced - Orbital",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Fabber - Orbital",
             "compare0": ">=",
