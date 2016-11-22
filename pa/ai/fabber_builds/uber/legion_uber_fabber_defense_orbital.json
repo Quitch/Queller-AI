@@ -142,7 +142,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Teleporter - Mobile",
+            "unit_type_string0": "(Teleporter | (Orbital & Artillery)) - Mobile",
             "compare0": ">=",
             "value0": 1
           },
@@ -158,13 +158,15 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "PlanetIsMainEcoBase",
+            "boolean": false
           },
           {
-            "test_type": "PlanetThreat",
-            "string0": "Land",
-            "compare0": ">",
-            "value0": 0
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "UnitCountInBase",
@@ -174,7 +176,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Teleporter - Mobile",
+            "unit_type_string0": "(Teleporter | (Orbital & Artillery)) - Mobile",
             "compare0": ">=",
             "value0": 1
           },
@@ -190,13 +192,15 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "PlanetIsMainEcoBase",
+            "boolean": false
           },
           {
-            "test_type": "PlanetThreat",
-            "string0": "Air",
-            "compare0": ">",
-            "value0": 0
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "UnitCountInBase",
@@ -206,7 +210,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Teleporter - Mobile",
+            "unit_type_string0": "(Teleporter | (Orbital & Artillery)) - Mobile",
             "compare0": ">=",
             "value0": 1
           },
