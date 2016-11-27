@@ -590,48 +590,6 @@
       ]
     },
     {
-      "name": "Uber - Wyrm",
-      "to_build": "HeavyBomber",
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 199,
-      "builders": [
-        "AdvancedAirFactory"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Structure & AirDefense & Advanced",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Air",
-            "string1": "AntiAir",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Air",
-            "string1": "Air",
-            "compare0": "<",
-            "value0": 0.6
-          }
-        ]
-      ]
-    },
-    {
       "name": "Uber - Angel",
       "to_build": "SupportPlatform",
       "instance_count": 1,
