@@ -242,6 +242,12 @@
             "boolean": false
           },
           {
+            "test_type": "SystemThreat",
+            "string0": "Air",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
             "test_type": "UnitCountPerPlanetRadius",
             "unit_type_string0": "Air & Fighter",
             "compare0": "<",
@@ -483,31 +489,6 @@
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Air",
-            "string1": "AntiAir",
-            "compare0": ">=",
-            "value0": 0.6
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Air",
-            "string1": "Air",
-            "compare0": ">=",
-            "value0": 0.6
           }
         ],
         [
