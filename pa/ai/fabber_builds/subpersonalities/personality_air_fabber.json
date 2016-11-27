@@ -22,21 +22,11 @@
             "boolean": false
           },
           {
-            "test_type": "HaveEcoForAdvanced",
-            "boolean": true
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicAirFactory"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory & Air & Advanced",
-            "compare0": "<",
-            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
