@@ -4,7 +4,7 @@
       "name": "Legion - Platinum - Radar",
       "to_build": "LegionIntelBasicRadar",
       "instance_count": 1,
-      "shared_instance_count": "LegionIntelBasicRadar",
+      "shared_instance_count": "BasicRadar",
       "priority": 90,
       "builders": [
         "AnyLegionFabberBasic"
@@ -63,7 +63,7 @@
       "name": "Legion - Platinum - Radar - Have none",
       "to_build": "LegionIntelBasicRadar",
       "instance_count": 1,
-      "shared_instance_count": "LegionIntelBasicRadar",
+      "shared_instance_count": "BasicRadar",
       "priority": 260,
       "builders": [
         "AnyLegionFabberBasic"
@@ -108,7 +108,7 @@
       "name": "Legion - Platinum - Overseer",
       "to_build": "LegionIntelAdvancedRadar",
       "instance_count": 1,
-      "shared_instance_count": "LegionIntelAdvancedRadar",
+      "shared_instance_count": "AdvancedRadar",
       "priority": 91,
       "builders": [
         "AnyLegionFabberAdvanced"
@@ -161,7 +161,7 @@
       "name": "Legion - Platinum - Overseer - Need for Ranged",
       "to_build": "LegionIntelAdvancedRadar",
       "instance_count": 1,
-      "shared_instance_count": "LegionIntelAdvancedRadar",
+      "shared_instance_count": "AdvancedRadar",
       "priority": 247,
       "builders": [
         "AnyLegionFabberAdvanced"
@@ -220,7 +220,7 @@
       "name": "Legion - Platinum - Overseer - Have none",
       "to_build": "LegionIntelAdvancedRadar",
       "instance_count": 1,
-      "shared_instance_count": "LegionIntelAdvancedRadar",
+      "shared_instance_count": "AdvancedRadar",
       "priority": 500,
       "builders": [
         "AnyLegionFabberAdvanced"
