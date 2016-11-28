@@ -25,13 +25,13 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Land & Structure & Recon & Basic",
+            "unit_type_string0": "Land & Structure & Recon",
             "compare0": "<",
             "value0": 1
           },
           {
             "test_type": "UnitCountAroundBase",
-            "unit_type_string0": "Land & Structure & Recon & Basic",
+            "unit_type_string0": "Land & Structure & Recon",
             "string0": "Ally",
             "value0": 450,
             "compare0": "<",
@@ -87,6 +87,65 @@
             "unit_type_string0": "Recon & (Structure | Orbital)",
             "compare0": "<",
             "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicRadar"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Uber - Basic Radar - Need for ranged",
+      "to_build": "BasicRadar",
+      "instance_count": 1,
+      "shared_instance_count": "BasicRadar",
+      "priority": 246,
+      "builders": [
+        "AnyUberBasicFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicRadar"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Land & Structure & Recon",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Basic & Structure & Artillery",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Land & Structure & Recon",
+            "string0": "Ally",
+            "value0": 190,
+            "compare0": "<",
+            "value1": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -188,7 +247,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "(Structure | Naval) & (Artillery | Tactical)",
+            "unit_type_string0": "Advanced & (Structure | Naval) & (Artillery | Tactical) - Factory",
             "compare0": ">",
             "value0": 0
           },
@@ -196,7 +255,7 @@
             "test_type": "UnitCountAroundBase",
             "unit_type_string0": "Land & Structure & Recon & Advanced",
             "string0": "Ally",
-            "value0": 450,
+            "value0": 300,
             "compare0": "<",
             "value1": 1
           },
