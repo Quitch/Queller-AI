@@ -591,11 +591,18 @@
             "boolean": false
           },
           {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "SupportPlatform"
+          },
+          {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Air & Mobile & MissileDefense",
             "unit_type_string1": "Air & Mobile - Fabber - Scout",
             "compare0": "<",
-            "value0": 0.025
+            "value0": 0.02
           }
         ]
       ]
