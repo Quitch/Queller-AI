@@ -533,11 +533,18 @@
             "boolean": false
           },
           {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Air & Mobile & MissileDefense",
             "unit_type_string1": "Air & Mobile - Fabber - Scout",
             "compare0": "<",
-            "value0": 0.05
+            "value0": 0.025
           }
         ]
       ]
