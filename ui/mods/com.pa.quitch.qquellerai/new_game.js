@@ -145,7 +145,7 @@ function qQuellerAI() {
                 priority_scout_metal_spots: true,
                 enable_commander_danger_responses: true,
                 neural_data_mod: 1.0,
-                adv_eco_mod: 0,
+                adv_eco_mod: 1.0,
                 adv_eco_mod_alone: 0.85,
                 personality_tags:
                 [
@@ -155,7 +155,7 @@ function qQuellerAI() {
                 min_advanced_fabbers: 1
             },
             'Uber Experimental': {
-                display_name: 'Uber',
+                display_name: 'Experimental',
                 metal_drain_check: 0.54,
                 energy_drain_check: 0.57,
                 metal_demand_check: 0.85,
@@ -165,12 +165,10 @@ function qQuellerAI() {
                 priority_scout_metal_spots: true,
                 enable_commander_danger_responses: true,
                 neural_data_mod: 1.0,
-                adv_eco_mod: 0,
+                adv_eco_mod: 1.0,
                 adv_eco_mod_alone: 0.85,
                 personality_tags:
                 [
-                    "uber",
-                    "bot",
                     "experimental"
                 ],
                 min_basic_fabbers: 2,
@@ -187,7 +185,7 @@ function qQuellerAI() {
                 priority_scout_metal_spots: true,
                 enable_commander_danger_responses: true,
                 neural_data_mod: 1.2,
-                adv_eco_mod: 0,
+                adv_eco_mod: 1.0,
                 adv_eco_mod_alone: 0.85,
                 personality_tags:
                 [
@@ -214,7 +212,7 @@ function qQuellerAI() {
                 priority_scout_metal_spots: true,
                 enable_commander_danger_responses: true,
                 neural_data_mod: 1.0,
-                adv_eco_mod: 0,
+                adv_eco_mod: 1.0,
                 adv_eco_mod_alone: 0.85,
                 personality_tags:
                 [
@@ -235,7 +233,7 @@ function qQuellerAI() {
                 priority_scout_metal_spots: true,
                 enable_commander_danger_responses: true,
                 neural_data_mod: 0.5,
-                adv_eco_mod: 0,
+                adv_eco_mod: 1.0,
                 adv_eco_mod_alone: 0.85,
                 personality_tags:
                 [
@@ -276,7 +274,7 @@ function qQuellerAI() {
                 priority_scout_metal_spots: true,
                 enable_commander_danger_responses: true,
                 neural_data_mod: 1.0,
-                adv_eco_mod: 0,
+                adv_eco_mod: 1.0,
                 adv_eco_mod_alone: 0.85,
                 personality_tags:
                 [
@@ -297,7 +295,7 @@ function qQuellerAI() {
                 priority_scout_metal_spots: true,
                 enable_commander_danger_responses: true,
                 neural_data_mod: 1.0,
-                adv_eco_mod: 0,
+                adv_eco_mod: 1.0,
                 adv_eco_mod_alone: 0.85,
                 personality_tags:
                 [
@@ -318,7 +316,7 @@ function qQuellerAI() {
                 priority_scout_metal_spots: true,
                 enable_commander_danger_responses: true,
                 neural_data_mod: 1.0,
-                adv_eco_mod: 0,
+                adv_eco_mod: 1.0,
                 adv_eco_mod_alone: 0,
                 personality_tags:
                 [
@@ -360,7 +358,7 @@ function qQuellerAI() {
                 priority_scout_metal_spots: true,
                 enable_commander_danger_responses: true,
                 neural_data_mod: 1.0,
-                adv_eco_mod: 0,
+                adv_eco_mod: 1.0,
                 adv_eco_mod_alone: 0.85,
                 personality_tags:
                 [
@@ -392,7 +390,7 @@ function qQuellerAI() {
             priority_scout_metal_spots: true,
             enable_commander_danger_responses: true,
             neural_data_mod: 1.0,
-            adv_eco_mod: 0,
+            adv_eco_mod: 1.0,
             adv_eco_mod_alone: 0.85,
             fabber_to_factory_ratio_basic: 1.0,
             fabber_to_factory_ratio_advanced: 1.0,
