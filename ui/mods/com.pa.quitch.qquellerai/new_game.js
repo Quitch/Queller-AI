@@ -154,26 +154,6 @@ function qQuellerAI() {
                 min_basic_fabbers: 2,
                 min_advanced_fabbers: 1
             },
-            'Uber Experimental': {
-                display_name: 'Experimental',
-                metal_drain_check: 0.54,
-                energy_drain_check: 0.57,
-                metal_demand_check: 0.85,
-                energy_demand_check: 0.72,
-                micro_type: 2,
-                go_for_the_kill: true,
-                priority_scout_metal_spots: true,
-                enable_commander_danger_responses: true,
-                neural_data_mod: 1.0,
-                adv_eco_mod: 1.0,
-                adv_eco_mod_alone: 0.85,
-                personality_tags:
-                [
-                    "experimental"
-                ],
-                min_basic_fabbers: 2,
-                min_advanced_fabbers: 1
-            },
             'Uber Aggressive': {
                 display_name: 'Uber Aggressive',
                 metal_drain_check: 0.54,
