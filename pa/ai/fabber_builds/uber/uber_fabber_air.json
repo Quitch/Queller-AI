@@ -825,6 +825,44 @@
             "boolean": true
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "air",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedAirFactory"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Factory & Air & Advanced",
+            "unit_type_string1": "Factory & Advanced - Orbital",
+            "compare0": "<=",
+            "value0": 0.2
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedAirFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
