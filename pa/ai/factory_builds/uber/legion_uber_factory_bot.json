@@ -108,27 +108,6 @@
             "boolean": false
           },
           {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Scout",
-            "compare0": "<",
-            "value0": 250
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
             "test_type": "OtherPlanetNeedsReconAssistance",
             "boolean": true
           },
