@@ -238,7 +238,8 @@ function qQuellerAI() {
                 adv_eco_mod_alone: 0.85,
                 personality_tags:
                 [
-                    "uber"
+                    "uber",
+                    "orbital"
                 ],
                 min_basic_fabbers: 3,
                 min_advanced_fabbers: 2
