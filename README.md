@@ -133,7 +133,7 @@ By default, Queller at Uber level will adapt its play to try and suit the system
  - More willing to engage in battle
 
 - Air
- - Much greater use of air
+ - Unrestricted air usage
 
 - Bot
  - Doesn't build vehicle factories
@@ -141,7 +141,6 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 
 - Cautious
  - Looks for overwhelming odds in battle
- - Goes T2 faster than normal
  - Will get orbital as soon as possible on multi-planet systems
 
 - Land
@@ -149,7 +148,10 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 
 - Naval
  - Attempts to build a naval factory first
- - Ignores naval factory limits
+ - Unrestricted naval usage
+
+- Orbital
+ - Will get orbital as soon as possible on multi-planet systems
 
 - Rush
  - Favours bots
@@ -157,10 +159,6 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 
 - Tank
  - Doesn't build bot factories
-
-- Tech
- - Goes T2 as soon as it can afford to
- - Will get orbital as soon as possible on multi-planet systems
 
 ## RECOMMENDED DIFFICULTY
 
