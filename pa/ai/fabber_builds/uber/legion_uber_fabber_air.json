@@ -791,6 +791,12 @@
             "string0": "LegionFactoryAdvancedAir"
           },
           {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Advanced",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Factory & Air & Advanced",
             "unit_type_string1": "Factory & Advanced - Orbital",
