@@ -33,6 +33,11 @@
             "boolean": true
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "bot",
+            "boolean": false
+          },
+          {
             "test_type": "BaseThreatened",
             "boolean": false
           },
@@ -53,7 +58,7 @@
             "unit_type_string0": "Fabber & Basic & Bot",
             "unit_type_string1": "Factory & Basic & Bot",
             "compare0": "<",
-            "value0": 1
+            "value0": 3
           }
         ],
         [
@@ -61,6 +66,11 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bot",
+            "boolean": false
           },
           {
             "test_type": "AloneOnPlanet",
@@ -79,7 +89,7 @@
             "unit_type_string0": "Fabber & Basic & Bot",
             "unit_type_string1": "Factory & Basic & Bot",
             "compare0": "<",
-            "value0": 3
+            "value0": 9
           }
         ]
       ]
