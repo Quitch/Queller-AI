@@ -327,6 +327,11 @@
             "value0": 1
           },
           {
+            "test_type": "EnergyStorageToProductionRatio",
+            "compare0": "<",
+            "value0": 5
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -344,6 +349,11 @@
             "test_type": "CurrentMetalEfficiency",
             "compare0": ">=",
             "value0": 1
+          },
+          {
+            "test_type": "MetalStorageToProductionRatio",
+            "compare0": "<",
+            "value0": 10
           },
           {
             "test_type": "CanAffordBuildDemand"
