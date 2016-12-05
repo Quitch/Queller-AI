@@ -137,7 +137,7 @@ function qQuellerAI() {
             'Uber': {
                 display_name: 'Uber',
                 metal_drain_check: 0.54,
-                energy_drain_check: 0.57,
+                energy_drain_check: 0.72,
                 metal_demand_check: 0.85,
                 energy_demand_check: 0.72,
                 micro_type: 2,
@@ -157,7 +157,7 @@ function qQuellerAI() {
             'Uber Aggressive': {
                 display_name: 'Uber Aggressive',
                 metal_drain_check: 0.54,
-                energy_drain_check: 0.57,
+                energy_drain_check: 0.77,
                 metal_demand_check: 0.85,
                 energy_demand_check: 0.72,
                 micro_type: 2,
@@ -205,7 +205,7 @@ function qQuellerAI() {
             'Uber Bot': {
                 display_name: 'Uber Bot',
                 metal_drain_check: 0.54,
-                energy_drain_check: 0.57,
+                energy_drain_check: 0.77,
                 metal_demand_check: 0.85,
                 energy_demand_check: 0.72,
                 micro_type: 2,
@@ -226,7 +226,7 @@ function qQuellerAI() {
             'Uber Cautious': {
                 display_name: 'Uber Cautious',
                 metal_drain_check: 0.54,
-                energy_drain_check: 0.57,
+                energy_drain_check: 0.77,
                 metal_demand_check: 0.85,
                 energy_demand_check: 0.72,
                 micro_type: 2,
@@ -247,7 +247,7 @@ function qQuellerAI() {
             'Uber Land': {
                 display_name: 'Uber Land',
                 metal_drain_check: 0.54,
-                energy_drain_check: 0.57,
+                energy_drain_check: 0.77,
                 metal_demand_check: 0.85,
                 energy_demand_check: 0.72,
                 micro_type: 2,
@@ -268,7 +268,7 @@ function qQuellerAI() {
             'Uber Naval': {
                 display_name: 'Uber Naval',
                 metal_drain_check: 0.54,
-                energy_drain_check: 0.57,
+                energy_drain_check: 0.77,
                 metal_demand_check: 0.85,
                 energy_demand_check: 0.72,
                 micro_type: 2,
@@ -289,7 +289,7 @@ function qQuellerAI() {
             'Uber Orbital': {
                 display_name: 'Uber Orbital',
                 metal_drain_check: 0.54,
-                energy_drain_check: 0.57,
+                energy_drain_check: 0.77,
                 metal_demand_check: 0.85,
                 energy_demand_check: 0.72,
                 micro_type: 2,
@@ -310,7 +310,7 @@ function qQuellerAI() {
             'Uber Rush': {
                 display_name: 'Uber Rush',
                 metal_drain_check: 0.54,
-                energy_drain_check: 0.57,
+                energy_drain_check: 0.77,
                 metal_demand_check: 0.85,
                 energy_demand_check: 0.72,
                 micro_type: 2,
@@ -331,7 +331,7 @@ function qQuellerAI() {
             'Uber Tank': {
                 display_name: 'Uber Tank',
                 metal_drain_check: 0.54,
-                energy_drain_check: 0.57,
+                energy_drain_check: 0.77,
                 metal_demand_check: 0.85,
                 energy_demand_check: 0.72,
                 micro_type: 2,
