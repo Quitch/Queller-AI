@@ -137,9 +137,9 @@ function qQuellerAI() {
             'Uber': {
                 display_name: 'Uber',
                 metal_drain_check: 0.54,
-                energy_drain_check: 0.77,
+                energy_drain_check: 0.72,
                 metal_demand_check: 0.85,
-                energy_demand_check: 0.92,
+                energy_demand_check: 0.72,
                 micro_type: 2,
                 go_for_the_kill: true,
                 priority_scout_metal_spots: true,
@@ -151,7 +151,7 @@ function qQuellerAI() {
                 [
                     "uber"
                 ],
-                min_basic_fabbers: 3,
+                min_basic_fabbers: 2,
                 min_advanced_fabbers: 1
             },
             'Uber Aggressive': {
@@ -176,8 +176,10 @@ function qQuellerAI() {
                 fabber_alone_on_planet_mod: 3.0,
                 basic_to_advanced_factory_ratio: 10,
                 factory_alone_on_planet_mod: 0.5,
-                min_basic_fabbers: 3,
-                min_advanced_fabbers: 1
+                min_basic_fabbers: 2,
+                max_basic_fabbers: 100,
+                min_advanced_fabbers: 1,
+                max_advanced_fabbers: 100
             },
             'Uber Air': {
                 display_name: 'Uber Air',
@@ -197,7 +199,7 @@ function qQuellerAI() {
                     "uber",
                     "air"
                 ],
-                min_basic_fabbers: 3,
+                min_basic_fabbers: 2,
                 min_advanced_fabbers: 1
             },
             'Uber Bot': {
@@ -218,7 +220,7 @@ function qQuellerAI() {
                     "uber",
                     "bot"
                 ],
-                min_basic_fabbers: 3,
+                min_basic_fabbers: 2,
                 min_advanced_fabbers: 1
             },
             'Uber Cautious': {
@@ -260,7 +262,7 @@ function qQuellerAI() {
                     "uber",
                     "land"
                 ],
-                min_basic_fabbers: 3,
+                min_basic_fabbers: 2,
                 min_advanced_fabbers: 1
             },
             'Uber Naval': {
@@ -281,7 +283,7 @@ function qQuellerAI() {
                     "uber",
                     "naval"
                 ],
-                min_basic_fabbers: 3,
+                min_basic_fabbers: 2,
                 min_advanced_fabbers: 1
             },
             'Uber Orbital': {
@@ -344,7 +346,7 @@ function qQuellerAI() {
                     "uber",
                     "tank"
                 ],
-                min_basic_fabbers: 3,
+                min_basic_fabbers: 2,
                 min_advanced_fabbers: 1
             }
         }
