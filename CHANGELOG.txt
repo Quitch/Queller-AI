@@ -1,5 +1,26 @@
 # CHANGELOG
 
+#### 4.8.0 - 2016/12/06
+
+ - Bronze Legion no longer spams OmniSilos
+ - Fixed Silver building less storage than intended
+ - Uber no longer builds the Meteor
+ - Uber builds the Salamander again
+ - Uber chooses between Salamander and Lockheed based on the AA types it has seen
+ - Fixed errors in number of Uber air scouts
+ - Corrected error which could cause Uber Legion to prematurely go T2 air
+ - Uber Legion gives priority to air scouts over combat units
+ - Uber Legion will scout with combat bots again
+ - Uber only uses Scorpion if it has seen bots otherwise it favours the Deathmark
+ - Uber won't build Fireflies if it doesn't need scouting intel
+ - Uber MLA only triggers its anti-bot behaviour on maps with land routes to the enemy
+ - Uber MLA will go T2 tanks against all bots in anticipation of advanced bots
+ - Uber won't build T2 tanks in areas with no land routes to the enemy
+ - Uber more flexible in where its land fabbers come from
+ - Uber will build Catapults to defend against tanks
+ - Uber uses Advanced Laser Defense Towers as an anti-bot weapons
+ - Uber counts Advanced Laser Defense towards total base defence rather than separately
+
 #### 4.7.0 - 2016/12/02
 
  - Gold through Uber tech faster though Uber Rush remains unchanged
