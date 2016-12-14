@@ -542,6 +542,11 @@
             "boolean": true
           },
           {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Tank",
+            "boolean": true
+          },
+          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Land & Mobile - Scout - Fabber - Deconstruction - Construction",
             "compare0": ">",
@@ -566,9 +571,21 @@
             "boolean": true
           },
           {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Bot",
+            "test_type": "AloneOnPlanet",
             "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Land & Mobile - Scout - Fabber - Deconstruction - Construction",
+            "compare0": ">",
+            "value0": 40
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & Artillery & Advanced",
+            "unit_type_string1": "Land & Mobile - Scout - Fabber - Deconstruction - Construction - Basic",
+            "compare0": "<",
+            "value0": 0.1
           }
         ]
       ]
