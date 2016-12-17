@@ -41,15 +41,9 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Land",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
             "test_type": "DistFromMainBase",
             "compare0": ">=",
-            "value0": 250
+            "value0": 200
           },
           {
             "test_type": "UnitCountInBase",
@@ -68,66 +62,6 @@
             "unit_type_string0": "Structure & MetalProduction",
             "compare0": ">=",
             "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionDefenseBasicLand"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "experimental",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Bot",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Land",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "DistFromMainBase",
-            "compare0": ">=",
-            "value0": 250
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
-            "compare0": "<",
-            "value0": 2
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Naval",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & MetalProduction",
-            "compare0": ">=",
-            "value0": 3
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -195,15 +129,9 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Land",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
             "test_type": "DistFromMainBase",
             "compare0": ">=",
-            "value0": 250
+            "value0": 200
           },
           {
             "test_type": "UnitCountInBase",
