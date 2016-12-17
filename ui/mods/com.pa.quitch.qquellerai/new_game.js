@@ -261,7 +261,7 @@ function qQuellerAI() {
                     "uber",
                     "orbital"
                 ],
-                min_basic_fabbers: 3,
+                min_basic_fabbers: 4,
                 min_advanced_fabbers: 2
             },
             'Uber Land': {
