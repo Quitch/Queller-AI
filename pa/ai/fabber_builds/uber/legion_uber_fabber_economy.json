@@ -1012,42 +1012,13 @@
       "to_build": "LegionEcoBasicStorage",
       "instance_count": 1,
       "cross_planet_shared_count": true,
-      "priority": 3,
+      "priority": 389,
       "builders": [
         "LegionCommander",
         "AnyLegionFabberBasic",
         "AnyLegionFabberAdvanced"
       ],
       "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "CurrentEnergyEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "PotentialEnergyEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "EnergyStorageToProductionRatio",
-            "compare0": "<",
-            "value0": 4
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionEcoBasicStorage"
-          }
-        ],
         [
           {
             "test_type": "HasPersonalityTag",
@@ -1092,6 +1063,59 @@
             "test_type": "MetalStorageToProductionRatio",
             "compare0": "<",
             "value0": 10
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionEcoBasicStorage"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 20,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 300,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Legion - Uber - Omni Silo",
+      "to_build": "LegionEcoBasicStorage",
+      "instance_count": 1,
+      "cross_planet_shared_count": true,
+      "priority": 1,
+      "builders": [
+        "LegionCommander",
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "PotentialEnergyEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "EnergyStorageToProductionRatio",
+            "compare0": "<",
+            "value0": 4
           },
           {
             "test_type": "CanAffordBuildDemand"
