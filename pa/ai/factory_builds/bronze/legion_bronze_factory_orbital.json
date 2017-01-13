@@ -5,7 +5,7 @@
       "to_build": "LegionOrbitalBasicFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
-      "priority": 199,
+      "priority": 97,
       "builders": [
         "AnyLegionFactoryOrbital"
       ],
@@ -63,17 +63,6 @@
             "test_type": "ThisPlanetNeedsReconAssistance",
             "boolean": true
           }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
-            "test_type": "OtherPlanetNeedsReconAssistance",
-            "boolean": true
-          }
         ]
       ]
     },
@@ -94,17 +83,6 @@
           },
           {
             "test_type": "ThisPlanetNeedsReconAssistance",
-            "boolean": true
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
-            "test_type": "OtherPlanetNeedsReconAssistance",
             "boolean": true
           }
         ]
@@ -163,7 +141,7 @@
       "to_build": "LegionOrbitalAdvancedLaser",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 195,
+      "priority": 97,
       "builders": [
         "LegionFactoryAdvancedOrbital"
       ],
@@ -201,7 +179,7 @@
       "to_build": "LegionOrbitalAdvancedRadar",
       "instance_count": 1,
       "max_num_assisters": 10,
-      "priority": 195,
+      "priority": 97,
       "builders": [
         "LegionFactoryAdvancedOrbital"
       ],
@@ -216,17 +194,6 @@
             "test_type": "ThisPlanetNeedsReconAssistance",
             "boolean": true
           }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
-            "test_type": "OtherPlanetNeedsReconAssistance",
-            "boolean": true
-          }
         ]
       ]
     },
@@ -235,7 +202,7 @@
       "to_build": "LegionOrbitalAdvancedSniper",
       "instance_count": -1,
       "max_num_assisters": 5,
-      "priority": 195,
+      "priority": 97,
       "builders": [
         "LegionFactoryAdvancedOrbital"
       ],
@@ -254,7 +221,7 @@
       "to_build": "LegionOrbitalAdvancedBattleship",
       "instance_count": -1,
       "max_num_assisters": 5,
-      "priority": 195,
+      "priority": 97,
       "builders": [
         "LegionFactoryAdvancedOrbital"
       ],
