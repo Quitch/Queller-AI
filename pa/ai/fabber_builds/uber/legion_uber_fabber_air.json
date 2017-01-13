@@ -730,6 +730,14 @@
             "boolean": true
           },
           {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory - Orbital",
             "compare0": "<",
