@@ -526,6 +526,16 @@
             "boolean": true
           },
           {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -551,7 +561,8 @@
             "boolean": true
           }
         ]
-      ]
+      ],
+      "task_type": "AreaBuild"
     }
   ]
 }
