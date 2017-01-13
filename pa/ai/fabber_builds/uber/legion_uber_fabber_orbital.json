@@ -20,6 +20,38 @@
             "boolean": true
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PresenceOnOtherPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicOrbital"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Factory & Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicOrbital"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": false
           },
@@ -72,7 +104,7 @@
             "string0": "Land",
             "string1": "AntiSurface",
             "compare0": "<",
-            "value0": 0.6
+            "value0": 1
           },
           {
             "test_type": "UnitCount",
