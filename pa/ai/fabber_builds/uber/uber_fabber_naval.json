@@ -573,8 +573,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "BaseThreatened",
@@ -606,6 +606,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
           {
@@ -665,8 +669,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "BaseThreatened",
