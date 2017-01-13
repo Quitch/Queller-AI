@@ -717,8 +717,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "BaseThreatened",
@@ -740,6 +740,42 @@
             "unit_type_string0": "(Basic & Fabber) - Orbital - Land",
             "compare0": ">=",
             "value0": 5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryAdvancedNaval"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "UnableToExpand",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryAdvancedNaval"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Advanced",
+            "compare0": "<",
+            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -777,8 +813,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "BaseThreatened",
