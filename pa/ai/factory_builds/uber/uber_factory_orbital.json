@@ -36,6 +36,10 @@
             "boolean": true
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "OrbitalFabber"
           },
@@ -51,6 +55,28 @@
             "unit_type_string1": "Factory & Orbital",
             "compare0": "<",
             "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "OrbitalFabber"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Orbital",
+            "unit_type_string1": "Factory & Orbital",
+            "compare0": "<",
+            "value0": 2
           }
         ],
         [
