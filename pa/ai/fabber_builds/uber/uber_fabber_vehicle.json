@@ -45,6 +45,12 @@
             "value0": 529
           },
           {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Tank & Factory & Basic",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "BasicVehicleFactory"
           }
@@ -192,6 +198,12 @@
             "unit_type_string0": "Bot & Factory & Basic",
             "compare0": ">",
             "value0": 529
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Tank & Factory & Basic",
+            "compare0": "<",
+            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -359,6 +371,12 @@
             "value0": 529
           },
           {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Tank & Factory & Basic",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "BasicVehicleFactory"
           }
@@ -518,7 +536,7 @@
             "boolean": true
           },
           {
-            "test_type": "EnemyPresenceOnPlanet",
+            "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
           {

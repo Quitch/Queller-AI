@@ -19,11 +19,6 @@
           },
           {
             "test_type": "HasPersonalityTag",
-            "string0": "bot",
-            "boolean": false
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "tank",
             "boolean": false
           },
@@ -39,12 +34,6 @@
             "string0": "BasicBotFactory"
           },
           {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Bot & Factory & Basic",
-            "compare0": "<=",
-            "value0": 529
-          },
-          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "BasicBotFactory"
           }
@@ -54,11 +43,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bot",
-            "boolean": false
           },
           {
             "test_type": "HasPersonalityTag",
@@ -104,11 +88,6 @@
           },
           {
             "test_type": "HasPersonalityTag",
-            "string0": "bot",
-            "boolean": false
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "tank",
             "boolean": false
           },
@@ -149,11 +128,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bot",
-            "boolean": false
           },
           {
             "test_type": "HasPersonalityTag",
@@ -210,11 +184,6 @@
           },
           {
             "test_type": "HasPersonalityTag",
-            "string0": "bot",
-            "boolean": false
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "tank",
             "boolean": false
           },
@@ -232,12 +201,6 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicBotFactory"
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Bot & Factory & Basic",
-            "compare0": "<=",
-            "value0": 529
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -276,11 +239,6 @@
           },
           {
             "test_type": "HasPersonalityTag",
-            "string0": "bot",
-            "boolean": false
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "tank",
             "boolean": false
           },
@@ -296,12 +254,6 @@
             "string0": "BasicBotFactory"
           },
           {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Bot & Factory & Basic",
-            "compare0": "<=",
-            "value0": 529
-          },
-          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "BasicBotFactory"
           }
@@ -311,11 +263,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bot",
-            "boolean": false
           },
           {
             "test_type": "HasPersonalityTag",
@@ -361,11 +308,6 @@
           },
           {
             "test_type": "HasPersonalityTag",
-            "string0": "bot",
-            "boolean": false
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "tank",
             "boolean": false
           },
@@ -406,11 +348,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bot",
-            "boolean": false
           },
           {
             "test_type": "HasPersonalityTag",
@@ -470,11 +407,6 @@
           },
           {
             "test_type": "HasPersonalityTag",
-            "string0": "bot",
-            "boolean": false
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "tank",
             "boolean": false
           },
@@ -505,12 +437,6 @@
             "string0": "BasicBotFactory"
           },
           {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Bot & Factory & Basic",
-            "compare0": "<=",
-            "value0": 529
-          },
-          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "BasicBotFactory"
           }
@@ -520,11 +446,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bot",
-            "boolean": false
           },
           {
             "test_type": "HasPersonalityTag",
@@ -585,11 +506,6 @@
           },
           {
             "test_type": "HasPersonalityTag",
-            "string0": "bot",
-            "boolean": false
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "tank",
             "boolean": false
           },
@@ -645,11 +561,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bot",
-            "boolean": false
           },
           {
             "test_type": "HasPersonalityTag",
@@ -729,7 +640,7 @@
             "boolean": true
           },
           {
-            "test_type": "BaseThreatened",
+            "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": false
           },
           {
@@ -776,11 +687,6 @@
           },
           {
             "test_type": "HasPersonalityTag",
-            "string0": "bot",
-            "boolean": false
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "tank",
             "boolean": false
           },
@@ -802,18 +708,6 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "AdvancedBotFactory"
-          },
-          {
-            "test_type": "SystemThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Bot & Factory & Advanced",
-            "compare0": "<",
-            "value0": 1
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -913,62 +807,6 @@
             "unit_type_string0": "Bot & Factory & Advanced",
             "compare0": "<",
             "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedBotFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bot",
-            "boolean": false
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "tank",
-            "boolean": false
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveEcoForAdvanced",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedBotFactory"
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Bot",
-            "boolean": true
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Tank",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber - Orbital - Naval",
-            "compare0": ">=",
-            "value0": 5
           },
           {
             "test_type": "CanFindPlaceToBuild",
