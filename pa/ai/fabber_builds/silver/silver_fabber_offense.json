@@ -247,6 +247,12 @@
             "value0": 1
           },
           {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "PlanetEngine"
           }
@@ -290,6 +296,12 @@
             "unit_type_string0": "ControlModule",
             "compare0": "<",
             "boolean": true,
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": ">",
             "value0": 1
           },
           {

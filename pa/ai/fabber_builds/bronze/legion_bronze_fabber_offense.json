@@ -189,6 +189,12 @@
             "value0": 1
           },
           {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionDefenseAdvancedEngine"
           }
@@ -232,6 +238,12 @@
             "unit_type_string0": "LegionDefenseAdvancedModule",
             "compare0": "<",
             "boolean": true,
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": ">",
             "value0": 1
           },
           {
