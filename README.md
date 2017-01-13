@@ -47,21 +47,21 @@ Normal through Absurd are the standard difficulties and will use the vanilla AI 
  - No micro
  - Terrible threat assessments
 
- - Bronze
-  - Factory first opening
-  - One army
-  - Techs as soon as possible
-  - Will go orbital if it can
-  - Expands slowly
-  - Poor troop selection
-  - Barely scouts
-  - Doesn't react to what the enemy is doing
-  - Loves fabbers
-  - Loves static defence/offence
-  - Poor use of fabbers
-  - Average economy handling
-  - No micro
-  - Terrible threat assessments
+- Bronze
+ - Factory first opening
+ - One army
+ - Techs as soon as possible
+ - Will go orbital if it can
+ - Expands slowly
+ - Poor troop selection
+ - Barely scouts
+ - Doesn't react to what the enemy is doing
+ - Loves fabbers
+ - Loves static defence/offence
+ - Poor use of fabbers
+ - Average economy handling
+ - No micro
+ - Terrible threat assessments
 
 - Silver
  - Factory first opening
