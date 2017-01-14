@@ -8,8 +8,7 @@
       "base_sort": "FromPerimeter",
       "builders": [
         "UberCommander",
-        "BasicAirFabber",
-        "BasicNavalFabber"
+        "AnyUberBasicFabber"
       ],
       "build_conditions": [
         [
@@ -17,6 +16,11 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "land",
+            "boolean": false
           },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
@@ -66,6 +70,11 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "land",
+            "boolean": false
           },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
@@ -139,8 +148,7 @@
       "max_num_assisters": 3,
       "base_sort": "FromPerimeter",
       "builders": [
-        "AdvancedNavalFabber",
-        "AdvancedAirFabber"
+        "AnyUberAdvancedFabber"
       ],
       "build_conditions": [
         [
@@ -148,6 +156,11 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "land",
+            "boolean": false
           },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
@@ -222,7 +235,7 @@
       "base_sort": "FromPerimeter",
       "builders": [
         "UberCommander",
-        "BasicNavalFabber"
+        "AnyUberBasicFabber"
       ],
       "build_conditions": [
         [
@@ -230,6 +243,11 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "land",
+            "boolean": false
           },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
@@ -301,8 +319,7 @@
       "max_num_assisters": 3,
       "base_sort": "FromPerimeter",
       "builders": [
-        "AdvancedNavalFabber",
-        "AdvancedAirFabber"
+        "AnyUberAdvancedFabber"
       ],
       "build_conditions": [
         [
@@ -310,6 +327,11 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "land",
+            "boolean": false
           },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
