@@ -23,6 +23,10 @@
             "boolean": false
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
@@ -53,6 +57,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "bot",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
             "boolean": false
           },
           {
@@ -94,6 +102,10 @@
             "boolean": false
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": false
           },
@@ -115,6 +127,43 @@
             "unit_type_string0": "Land & Factory & Basic",
             "compare0": "<=",
             "value0": 500
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicVehicle"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bot",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicVehicle"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Tank & Factory",
+            "compare0": "<",
+            "value0": 250
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -157,30 +206,7 @@
             "boolean": false
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionFactoryBasicVehicle"
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionFactoryBasicVehicle"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bot",
+            "test_type": "AloneOnPlanet",
             "boolean": false
           },
           {
@@ -208,6 +234,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "bot",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
             "boolean": false
           },
           {
@@ -249,6 +279,10 @@
             "boolean": false
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": false
           },
@@ -270,6 +304,43 @@
             "unit_type_string0": "Land & Factory & Basic",
             "compare0": "<=",
             "value0": 500
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicVehicle"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bot",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicVehicle"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Tank & Factory",
+            "compare0": "<",
+            "value0": 250
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -313,6 +384,10 @@
             "boolean": false
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
@@ -352,6 +427,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "bot",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
             "boolean": false
           },
           {
@@ -408,6 +487,10 @@
             "boolean": false
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": false
           },
@@ -444,6 +527,58 @@
             "unit_type_string0": "Land & Factory & Basic",
             "compare0": "<=",
             "value0": 500
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicVehicle"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bot",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "MetalStorageFrac",
+            "compare0": ">",
+            "value0": 0.1
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicVehicle"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Tank & Factory",
+            "compare0": "<",
+            "value0": 250
           },
           {
             "test_type": "CanFindPlaceToBuild",

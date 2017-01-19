@@ -1,6 +1,6 @@
 {
   "platoon_templates": {
-    "Air_Scout_1": {
+    "Air_Scout_Queller": {
       "units": [
         {
           "unit_types": "Air & Mobile & Scout - Titan",
@@ -8,134 +8,45 @@
         }
       ]
     },
-    "BomberGunship_Attack_1": {
+    "Fighter_Scout_Queller": {
       "units": [
         {
-          "unit_types": "Air & Mobile & Offense - MissileDefense - Fighter - SelfDestruct - Titan",
+          "unit_types": "Air & Mobile & Fighter - Titan",
+          "max_count": 1
+        }
+      ]
+    },
+    "Fighter_Attack_Queller": {
+      "units": [
+        {
+          "unit_types": "Air & Mobile & Fighter",
           "min_count": 1,
-          "max_count": 3
-        },
-        {
-          "unit_types": "Air & Mobile & Fighter - Titan",
-          "min_count": 0,
-          "max_count": -1,
-          "squad": "Escort"
+          "max_count": -1
         },
         {
           "unit_types": "Air & Mobile & SelfDestruct",
           "min_count": 0,
-          "percent": 0.1,
-          "squad": "Suicide"
-        }
-      ]
-    },
-    "BomberGunship_Attack_4": {
-      "units": [
-        {
-          "unit_types": "Air & Mobile & Offense - MissileDefense - Fighter - SelfDestruct - Titan",
-          "min_count": 4,
-          "max_count": 8
-        },
-        {
-          "unit_types": "Air & Mobile & Fighter - Titan",
-          "min_count": 0,
           "max_count": -1,
-          "squad": "Escort"
-        },
-        {
-          "unit_types": "Air & Mobile & SelfDestruct",
-          "min_count": 0,
-          "percent": 0.1,
-          "squad": "Suicide"
-        }
-      ]
-    },
-    "BomberGunship_Attack_10": {
-      "units": [
-        {
-          "unit_types": "Air & Mobile & Offense - MissileDefense - Fighter - SelfDestruct - Titan",
-          "min_count": 10,
-          "max_count": 19
-        },
-        {
-          "unit_types": "Air & Mobile & Fighter - Titan",
-          "min_count": 0,
-          "max_count": -1,
-          "squad": "Escort"
-        },
-        {
-          "unit_types": "Air & Mobile & SelfDestruct",
-          "min_count": 0,
-          "percent": 0.1,
           "squad": "Suicide"
         },
         {
           "unit_types": "Air & MissileDefense",
           "min_count": 0,
-          "percent": 0.05,
-          "squad": "Defense"
-        }
-      ]
-    },
-    "BomberGunship_Attack_20": {
-      "units": [
-        {
-          "unit_types": "Air & Mobile & Offense - MissileDefense - Fighter - SelfDestruct - Titan",
-          "min_count": 20,
-          "max_count": 29
-        },
-        {
-          "unit_types": "Air & Mobile & Fighter - Titan",
-          "min_count": 0,
           "max_count": -1,
-          "squad": "Escort"
-        },
-        {
-          "unit_types": "Air & Mobile & SelfDestruct",
-          "min_count": 0,
-          "percent": 0.1,
-          "squad": "Suicide"
-        },
-        {
-          "unit_types": "Air & MissileDefense",
-          "min_count": 0,
-          "percent": 0.05,
           "squad": "Defense"
         }
       ]
     },
-    "BomberGunship_Attack_30": {
+    "BomberGunship_Attack_Queller": {
       "units": [
         {
-          "unit_types": "Air & Mobile & Offense - MissileDefense - Fighter - SelfDestruct - Titan",
-          "min_count": 30,
-          "max_count": 39
+          "unit_types": "Air & Mobile & (Bomber | Gunship) - Titan",
+          "min_count": 1,
+          "max_count": -1
         },
         {
-          "unit_types": "Air & Mobile & Fighter - Titan",
-          "min_count": 0,
-          "max_count": -1,
-          "squad": "Escort"
-        },
-        {
-          "unit_types": "Air & Mobile & SelfDestruct",
-          "min_count": 0,
-          "percent": 0.1,
-          "squad": "Suicide"
-        },
-        {
-          "unit_types": "Air & MissileDefense",
-          "min_count": 0,
-          "percent": 0.05,
-          "squad": "Defense"
-        }
-      ]
-    },
-    "BomberGunship_Attack_40": {
-      "units": [
-        {
-          "unit_types": "Air & Mobile & Offense - MissileDefense - Fighter - SelfDestruct - Titan",
-          "min_count": 40,
+          "unit_types": "Air & Mobile & Offense - MissileDefense - Fighter - SelfDestruct - Gunship - Bomber - Titan",
+          "min_count": 1,
           "max_count": -1
         },
         {
@@ -147,132 +58,18 @@
         {
           "unit_types": "Air & Mobile & SelfDestruct",
           "min_count": 0,
-          "percent": 0.1,
+          "max_count": -1,
           "squad": "Suicide"
         },
         {
           "unit_types": "Air & MissileDefense",
           "min_count": 0,
-          "percent": 0.05,
+          "max_count": -1,
           "squad": "Defense"
         }
       ]
     },
-    "Fighter_Attack_1": {
-      "units": [
-        {
-          "unit_types": "Air & Mobile & Fighter",
-          "min_count": 1,
-          "max_count": 3
-        },
-        {
-          "unit_types": "Air & Mobile & SelfDestruct",
-          "min_count": 0,
-          "percent": 0.1,
-          "squad": "Suicide"
-        }
-      ]
-    },
-    "Fighter_Attack_4": {
-      "units": [
-        {
-          "unit_types": "Air & Mobile & Fighter",
-          "min_count": 4,
-          "max_count": 9
-        },
-        {
-          "unit_types": "Air & Mobile & SelfDestruct",
-          "min_count": 0,
-          "percent": 0.1,
-          "squad": "Suicide"
-        }
-      ]
-    },
-    "Fighter_Attack_10": {
-      "units": [
-        {
-          "unit_types": "Air & Mobile & Fighter",
-          "min_count": 10,
-          "max_count": 19
-        },
-        {
-          "unit_types": "Air & Mobile & SelfDestruct",
-          "min_count": 0,
-          "percent": 0.1,
-          "squad": "Suicide"
-        },
-        {
-          "unit_types": "Air & MissileDefense",
-          "min_count": 0,
-          "percent": 0.05,
-          "squad": "Defense"
-        }
-      ]
-    },
-    "Fighter_Attack_20": {
-      "units": [
-        {
-          "unit_types": "Air & Mobile & Fighter",
-          "min_count": 20,
-          "max_count": 39
-        },
-        {
-          "unit_types": "Air & Mobile & SelfDestruct",
-          "min_count": 0,
-          "percent": 0.1,
-          "squad": "Suicide"
-        },
-        {
-          "unit_types": "Air & MissileDefense",
-          "min_count": 0,
-          "percent": 0.05,
-          "squad": "Defense"
-        }
-      ]
-    },
-    "Fighter_Attack_30": {
-      "units": [
-        {
-          "unit_types": "Air & Mobile & Fighter",
-          "min_count": 30,
-          "max_count": 39
-        },
-        {
-          "unit_types": "Air & Mobile & SelfDestruct",
-          "min_count": 0,
-          "percent": 0.1,
-          "squad": "Suicide"
-        },
-        {
-          "unit_types": "Air & MissileDefense",
-          "min_count": 0,
-          "percent": 0.05,
-          "squad": "Defense"
-        }
-      ]
-    },
-    "Fighter_Attack_40": {
-      "units": [
-        {
-          "unit_types": "Air & Mobile & Fighter",
-          "min_count": 40,
-          "max_count": -1
-        },
-        {
-          "unit_types": "Air & Mobile & SelfDestruct",
-          "min_count": 0,
-          "percent": 0.1,
-          "squad": "Suicide"
-        },
-        {
-          "unit_types": "Air & MissileDefense",
-          "min_count": 0,
-          "percent": 0.05,
-          "squad": "Defense"
-        }
-      ]
-    },
-    "Icarus_Attack": {
+    "Icarus_Attack_Queller": {
       "units": [
         {
           "unit_types": "Air & Mobile & EnergyProduction",
@@ -282,13 +79,13 @@
         {
           "unit_types": "Air & Mobile & SelfDestruct",
           "min_count": 0,
-          "percent": 0.1,
+          "max_count": -1,
           "squad": "Suicide"
         },
         {
           "unit_types": "Air & MissileDefense",
           "min_count": 0,
-          "percent": 0.05,
+          "max_count": -1,
           "squad": "Defense"
         }
       ]

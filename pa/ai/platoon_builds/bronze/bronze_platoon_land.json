@@ -2,7 +2,7 @@
   "build_list": [
     {
       "name": "Bronze - Scout Platoon",
-      "to_build": "Land_Attack_10",
+      "to_build": "Land_Attack_Queller",
       "instance_count": 1,
       "shared_instance_count": "Scout",
       "priority": 200,
@@ -29,7 +29,7 @@
     },
     {
       "name": "Bronze - Land Transfer To Planet",
-      "to_build": "Teleporter_Attack_40",
+      "to_build": "Teleporter_Attack_Queller",
       "instance_count": 1,
       "priority": 2,
       "build_conditions": [
@@ -63,7 +63,7 @@
     },
     {
       "name": "Bronze - Land Attack Maximum Power",
-      "to_build": "Land_Attack_40",
+      "to_build": "Land_Attack_Queller",
       "instance_count": -1,
       "priority": 100,
       "build_conditions": [

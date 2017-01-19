@@ -28,6 +28,10 @@
             "boolean": false
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -60,6 +64,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "bot",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
             "boolean": false
           },
           {
@@ -133,11 +141,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "air",
-            "boolean": false
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
@@ -152,7 +155,7 @@
             "test_type": "UnitCountPerPlanetRadius",
             "unit_type_string0": "Air & Factory",
             "compare0": "<",
-            "value0": 200
+            "value0": 250
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -245,6 +248,10 @@
             "boolean": false
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -280,6 +287,10 @@
             "boolean": false
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -305,11 +316,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "air",
-            "boolean": false
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
@@ -324,133 +330,7 @@
             "test_type": "UnitCountPerPlanetRadius",
             "unit_type_string0": "Air & Factory",
             "compare0": "<",
-            "value0": 200
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionFactoryBasicAir"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 3,
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
-      "name": "Legion - Uber - Flyer Foundry - Fabber - Increase chance of second air",
-      "to_build": "LegionFactoryBasicAir",
-      "instance_count": 1,
-      "shared_instance_count": "BasicFactory",
-      "priority": 376,
-      "min_num_assisters": 1,
-      "max_num_assisters": 3,
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "air",
-            "boolean": false
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bot",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionFactoryBasicAir"
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Factory - Orbital",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Factory & Air & Basic",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionFactoryBasicAir"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 3,
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
-      "name": "Legion - Uber - Flyer Foundry - Fabber - No later than third factory",
-      "to_build": "LegionFactoryBasicAir",
-      "instance_count": 1,
-      "shared_instance_count": "BasicFactory",
-      "min_num_assisters": 1,
-      "max_num_assisters": 3,
-      "priority": 378,
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "air",
-            "boolean": false
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bot",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionFactoryBasicAir"
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Factory - Orbital",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Factory & Air & Basic",
-            "compare0": "<",
-            "value0": 1
+            "value0": 250
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -559,6 +439,10 @@
             "boolean": false
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CurrentMetalEfficiency",
             "compare0": ">",
             "value0": 1
@@ -609,6 +493,10 @@
             "boolean": false
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CurrentMetalEfficiency",
             "compare0": ">",
             "value0": 1
@@ -649,11 +537,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "air",
-            "boolean": false
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
@@ -683,7 +566,7 @@
             "test_type": "UnitCountPerPlanetRadius",
             "unit_type_string0": "Air & Factory",
             "compare0": "<",
-            "value0": 200
+            "value0": 250
           },
           {
             "test_type": "CanFindPlaceToBuild",

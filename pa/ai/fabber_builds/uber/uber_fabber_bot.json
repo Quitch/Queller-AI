@@ -23,6 +23,10 @@
             "boolean": false
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
@@ -140,7 +144,7 @@
           },
           {
             "test_type": "CanDeployLandFromBase",
-            "boolean": false
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -148,6 +152,12 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicBotFactory"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Bot & Factory",
+            "compare0": "<",
+            "value0": 250
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -185,6 +195,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "tank",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
             "boolean": false
           },
           {
@@ -243,6 +257,10 @@
             "boolean": false
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
@@ -360,7 +378,7 @@
           },
           {
             "test_type": "CanDeployLandFromBase",
-            "boolean": false
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -368,6 +386,12 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicBotFactory"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Bot & Factory",
+            "compare0": "<",
+            "value0": 250
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -411,6 +435,10 @@
             "boolean": false
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
@@ -573,7 +601,7 @@
           },
           {
             "test_type": "CanDeployLandFromBase",
-            "boolean": false
+            "boolean": true
           },
           {
             "test_type": "CurrentMetalEfficiency",
@@ -596,6 +624,12 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicBotFactory"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Bot & Factory",
+            "compare0": "<",
+            "value0": 250
           },
           {
             "test_type": "CanFindPlaceToBuild",

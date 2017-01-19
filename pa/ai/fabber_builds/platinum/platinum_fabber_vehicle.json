@@ -474,13 +474,6 @@
             "string0": "AdvancedVehicleFactory"
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Land",
-            "string1": "AntiSurface",
-            "compare0": "<",
-            "value0": 0.6
-          },
-          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Fabber - Orbital - Naval",
             "compare0": ">=",
@@ -525,56 +518,6 @@
           {
             "test_type": "CanFindPlaceToBuild",
             "string0": "AdvancedVehicleFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "HaveEcoForAdvanced",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedBotFactory"
-          },
-          {
-            "test_type": "UnitCountAroundBase",
-            "unit_type_string0": "Land & Mobile & Offense",
-            "string0": "Enemy",
-            "value0": 800,
-            "compare0": "<",
-            "value1": 10
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber - Orbital - Naval",
-            "compare0": ">=",
-            "value0": 5
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Advanced & Factory",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedBotFactory"
           }
         ]
       ],

@@ -1,5 +1,39 @@
 # CHANGELOG
 
+#### 4.11.0 - 2017/01/19
+
+ - Build artillery and Catapults in response to naval near the base
+ - Restored Uber Tech
+ - Check the right threat when assessing whether to build Catapults in response to Kaiju
+ - When alone Uber limits the number of T1 factories to help the sim and focus on saving for higher tech items
+ - Avoid running certain checks when alone to help performance
+ - Less air factories when alone
+ - Uber Legion won't try and force early air
+ - Uber is a bit more willing to commit to Omegas when assaulting other worlds
+ - Uber Air correctly builds T1 air when alone
+ - Uber more reliably builds air second and does so in a more performance friendly way
+ - Uber gives higher priority to defending its Commander from orbital snipes
+ - Uber focuses on producing Spinners from its vehicle factories when alone
+ - Cap on how many factories Uber will use for the production of Storms
+ - Revoked change to Uber's building of Catalysts
+ - Give a higher priority to assisting nuke production when alone on a planet and put more fabbers on the job
+ - Uber will only send orbital reinforcements in force now rather than dribs and drabs
+ - Uber gets orbital battleships off gas giants quickly
+ - Uber focuses solely on clearly local orbit before committing to any other orbital military operations
+ - Uber won't over-micro Levellers
+ - Fixed Legion not building advanced fabbers when alone for many factories
+ - The numbers of advanced fabbers Uber builds are now based on enemy layer presence
+ - Uber more likely to produce Spinners as needed
+ - All Uber personalities except Tank require larger land platoons before moving out
+ - No upper limit on platoon sizes to better allow combining multiple forces into one
+ - Uber no longer builds the GIL-E
+ - Fixed scouting with fighters being broken
+ - Loosened restrictions on orbital travel for lower levels a little
+ - Silver willing to move more troops at a time via teleporter
+ - All system-wide counts replaced with planetary ones for performance reasons
+ - Platinum will tech faster
+ - Uber gets tanks a little later on larger planets
+
 #### 4.10.1 - 2017/01/14
 
  - Uber Tank will use Skitters to scout

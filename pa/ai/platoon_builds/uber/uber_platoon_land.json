@@ -2,7 +2,7 @@
   "build_list": [
     {
       "name": "Uber - Vehicle Scout Platoon",
-      "to_build": "Vehicle_Scout_1",
+      "to_build": "Vehicle_Scout_Queller",
       "instance_count": 2,
       "priority": 200,
       "build_conditions": [
@@ -34,7 +34,7 @@
     },
     {
       "name": "Uber - Tank Scout Platoon",
-      "to_build": "Tank_Scout_1",
+      "to_build": "Tank_Scout_Queller",
       "instance_count": 2,
       "priority": 199,
       "build_conditions": [
@@ -70,7 +70,7 @@
     },
     {
       "name": "Uber - Land Transfer To Planet",
-      "to_build": "Teleporter_Attack_40",
+      "to_build": "Teleporter_Attack_Queller",
       "instance_count": -1,
       "shared_instance_count": "LandTransferToPlanet",
       "priority": 210,
@@ -105,7 +105,7 @@
     },
     {
       "name": "Uber - Land Transfer To Planet - Alone",
-      "to_build": "Teleporter_Attack_80",
+      "to_build": "Teleporter_Attack_Alone_Queller",
       "instance_count": -1,
       "shared_instance_count": "LandTransferToPlanet",
       "priority": 211,
@@ -140,7 +140,7 @@
     },
     {
       "name": "Uber - Land Attack Platoon 1",
-      "to_build": "Land_Attack_1",
+      "to_build": "Land_Attack_Queller_Uber",
       "instance_count": -1,
       "priority": 190,
       "build_conditions": [
@@ -178,7 +178,7 @@
     },
     {
       "name": "Uber - Land Attack Platoon 4",
-      "to_build": "Land_Attack_4",
+      "to_build": "Land_Attack_Queller_Uber",
       "instance_count": -1,
       "priority": 180,
       "build_conditions": [
@@ -216,7 +216,7 @@
     },
     {
       "name": "Uber - Land Attack Platoon 10",
-      "to_build": "Land_Attack_10",
+      "to_build": "Land_Attack_Queller_Uber",
       "instance_count": -1,
       "priority": 170,
       "build_conditions": [
@@ -254,7 +254,7 @@
     },
     {
       "name": "Uber - Land Attack Platoon 20",
-      "to_build": "Land_Attack_20",
+      "to_build": "Land_Attack_Queller_Uber",
       "instance_count": -1,
       "priority": 160,
       "build_conditions": [
@@ -292,7 +292,7 @@
     },
     {
       "name": "Uber - Land Attack Platoon 30",
-      "to_build": "Land_Attack_30",
+      "to_build": "Land_Attack_Queller_Uber",
       "instance_count": -1,
       "priority": 150,
       "build_conditions": [
@@ -330,7 +330,7 @@
     },
     {
       "name": "Uber - Land Attack Platoon 40",
-      "to_build": "Land_Attack_40",
+      "to_build": "Land_Attack_Queller_Uber",
       "instance_count": -1,
       "priority": 140,
       "build_conditions": [
@@ -362,7 +362,7 @@
     },
     {
       "name": "Uber - Tank Raid Platoon 1",
-      "to_build": "Tank_Raid_1",
+      "to_build": "Tank_Raid_Queller",
       "instance_count": -1,
       "priority": 190,
       "build_conditions": [
@@ -400,7 +400,7 @@
     },
     {
       "name": "Uber - Tank Raid Platoon 4",
-      "to_build": "Tank_Raid_4",
+      "to_build": "Tank_Raid_Queller",
       "instance_count": -1,
       "priority": 180,
       "build_conditions": [
@@ -438,7 +438,7 @@
     },
     {
       "name": "Uber - Tank Raid Platoon 10",
-      "to_build": "Tank_Raid_10",
+      "to_build": "Tank_Raid_Queller",
       "instance_count": -1,
       "priority": 170,
       "build_conditions": [
@@ -476,7 +476,7 @@
     },
     {
       "name": "Uber - Tank Raid Platoon 20",
-      "to_build": "Tank_Raid_20",
+      "to_build": "Tank_Raid_Queller",
       "instance_count": -1,
       "priority": 160,
       "build_conditions": [
@@ -514,7 +514,7 @@
     },
     {
       "name": "Uber - Tank Raid Platoon 30",
-      "to_build": "Tank_Raid_30",
+      "to_build": "Tank_Raid_Queller",
       "instance_count": -1,
       "priority": 150,
       "build_conditions": [
@@ -552,7 +552,7 @@
     },
     {
       "name": "Uber - Tank Raid Platoon 40",
-      "to_build": "Tank_Raid_40",
+      "to_build": "Tank_Raid_Queller",
       "instance_count": -1,
       "priority": 140,
       "build_conditions": [

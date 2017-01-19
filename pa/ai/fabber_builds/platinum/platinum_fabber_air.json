@@ -136,58 +136,6 @@
       }
     },
     {
-      "name": "Platinum - Basic Air Factory - Commander - No later than third factory",
-      "to_build": "BasicAirFactory",
-      "instance_count": 1,
-      "shared_instance_count": "BasicFactory",
-      "max_num_assisters": 2,
-      "priority": 378,
-      "builders": [
-        "UberCommander"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicAirFactory"
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Factory & Air & Basic",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Factory - Orbital",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicAirFactory"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 3,
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
       "name": "Platinum - Basic Air Factory - Fabber",
       "to_build": "BasicAirFactory",
       "instance_count": 1,
@@ -325,14 +273,14 @@
       }
     },
     {
-      "name": "Platinum - Basic Air Factory - Fabber - No later than third factory",
+      "name": "Platinum - Basic Air Factory - Early Air",
       "to_build": "BasicAirFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
-      "min_num_assisters": 1,
-      "max_num_assisters": 3,
+      "max_num_assisters": 2,
       "priority": 378,
       "builders": [
+        "UberCommander",
         "AnyUberBasicFabber"
       ],
       "build_conditions": [
@@ -343,6 +291,15 @@
             "boolean": true
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "air",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -350,15 +307,15 @@
             "string0": "BasicAirFactory"
           },
           {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Factory - Orbital",
-            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Air & Basic",
+            "compare0": "<",
             "value0": 1
           },
           {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Factory & Air & Basic",
-            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">",
             "value0": 1
           },
           {
@@ -635,61 +592,8 @@
             "string0": "AdvancedBotFactory"
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Land",
-            "string1": "AntiSurface",
-            "compare0": "<",
-            "value0": 0.6
-          },
-          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Fabber - Orbital",
-            "compare0": ">=",
-            "value0": 5
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory & Advanced - Orbital",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedBotFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveEcoForAdvanced",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedBotFactory"
-          },
-          {
-            "test_type": "UnitCountAroundBase",
-            "unit_type_string0": "Land & Mobile & Offense",
-            "string0": "Enemy",
-            "value0": 800,
-            "compare0": "<",
-            "value1": 10
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber - Orbital - Naval",
             "compare0": ">=",
             "value0": 5
           },

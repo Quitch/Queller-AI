@@ -35,7 +35,7 @@
             "string0": "OrbitalLauncher"
           },
           {
-            "test_type": "UnitCount",
+            "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory & Orbital",
             "compare0": "<",
             "value0": 1
@@ -67,7 +67,7 @@
             "string0": "OrbitalLauncher"
           },
           {
-            "test_type": "UnitCount",
+            "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory & Orbital",
             "compare0": "<",
             "value0": 1
@@ -88,11 +88,6 @@
             "boolean": false
           },
           {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Orbital",
-            "boolean": true
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -107,7 +102,14 @@
             "value0": 1
           },
           {
-            "test_type": "UnitCount",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Orbital",
+            "string1": "AntiOrbital",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory & Orbital",
             "compare0": "<",
             "value0": 1
@@ -136,7 +138,7 @@
             "boolean": true
           },
           {
-            "test_type": "UnitCount",
+            "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory & Orbital",
             "compare0": "<",
             "value0": 1

@@ -23,7 +23,7 @@
             "value0": 0
           },
           {
-            "test_type": "UnitCount",
+            "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Orbital & Fabber",
             "compare0": "<",
             "value0": 1
@@ -36,8 +36,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemyOrbitalPresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -64,8 +64,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
+            "test_type": "EnemyOrbitalPresenceOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "CanAffordPotentialDrain",

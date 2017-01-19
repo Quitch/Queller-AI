@@ -44,7 +44,7 @@
           },
           {
             "test_type": "UnitCountAroundBase",
-            "unit_type_string0": "Structure - MetalProduction",
+            "unit_type_string0": "(Structure - MetalProduction) | Naval",
             "string0": "Enemy",
             "value0": 260,
             "compare0": ">=",
@@ -60,7 +60,7 @@
         "placement_type": "FromMainBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "Commander | (Structure - MetalProduction)",
+            "unit_type_string": "Commander | (Structure - MetalProduction) | Naval",
             "alliance": "Enemy",
             "compare_type": ">=",
             "range": 260,
@@ -127,6 +127,52 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionDefenseAdvancedArtillery"
           }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Artillery & Advanced",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Naval",
+            "string0": "Enemy",
+            "value0": 400,
+            "compare0": ">=",
+            "value1": 5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedArtillery"
+          }
         ]
       ],
       "placement_rules": {
@@ -134,7 +180,7 @@
         "placement_type": "FromMainBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "Structure - MetalProduction",
+            "unit_type_string": "(S)tructure - MetalProduction) | Naval",
             "alliance": "Enemy",
             "compare_type": ">=",
             "range": 400,
@@ -403,16 +449,6 @@
             "boolean": true
           },
           {
-            "test_type": "CurrentMetalEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "CurrentEnergyEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -438,8 +474,7 @@
             "boolean": true
           }
         ]
-      ],
-      "task_type": "AreaBuild"
+      ]
     }
   ]
 }

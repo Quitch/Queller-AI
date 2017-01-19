@@ -23,6 +23,10 @@
             "boolean": false
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -50,6 +54,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "air",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
             "boolean": false
           },
           {
@@ -137,121 +145,7 @@
             "test_type": "UnitCountPerPlanetRadius",
             "unit_type_string0": "Air & Factory",
             "compare0": "<",
-            "value0": 200
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicAirFactory"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 3,
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
-      "name": "Uber - Basic Air Factory - Commander - Increase chance of second air",
-      "to_build": "BasicAirFactory",
-      "instance_count": 1,
-      "shared_instance_count": "BasicFactory",
-      "max_num_assisters": 2,
-      "priority": 376,
-      "builders": [
-        "UberCommander"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "air",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicAirFactory"
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Factory & Air & Basic",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Factory - Orbital",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicAirFactory"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 3,
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
-      "name": "Uber - Basic Air Factory - Commander - No later than third factory",
-      "to_build": "BasicAirFactory",
-      "instance_count": 1,
-      "shared_instance_count": "BasicFactory",
-      "max_num_assisters": 2,
-      "priority": 378,
-      "builders": [
-        "UberCommander"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "air",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicAirFactory"
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Factory & Air & Basic",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Factory - Orbital",
-            "compare0": ">",
-            "value0": 1
+            "value0": 250
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -334,6 +228,10 @@
             "boolean": false
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -361,6 +259,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "air",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
             "boolean": false
           },
           {
@@ -408,7 +310,7 @@
             "test_type": "UnitCountPerPlanetRadius",
             "unit_type_string0": "Air & Factory",
             "compare0": "<",
-            "value0": 200
+            "value0": 250
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -427,14 +329,14 @@
       }
     },
     {
-      "name": "Uber - Basic Air Factory - Fabber - Increase chance of second air",
+      "name": "Uber - Basic Air Factory - Second Air",
       "to_build": "BasicAirFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
-      "priority": 376,
-      "min_num_assisters": 1,
-      "max_num_assisters": 3,
+      "max_num_assisters": 2,
+      "priority": 378,
       "builders": [
+        "UberCommander",
         "AnyUberBasicFabber"
       ],
       "build_conditions": [
@@ -450,6 +352,10 @@
             "boolean": false
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -457,74 +363,16 @@
             "string0": "BasicAirFactory"
           },
           {
-            "test_type": "UnitCount",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Air & Basic",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory - Orbital",
             "compare0": ">",
             "value0": 0
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Factory & Air & Basic",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicAirFactory"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 3,
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
-      "name": "Uber - Basic Air Factory - Fabber - No later than third factory",
-      "to_build": "BasicAirFactory",
-      "instance_count": 1,
-      "shared_instance_count": "BasicFactory",
-      "min_num_assisters": 1,
-      "max_num_assisters": 3,
-      "priority": 378,
-      "builders": [
-        "AnyUberBasicFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "air",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicAirFactory"
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Factory - Orbital",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Factory & Air & Basic",
-            "compare0": "<",
-            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -623,6 +471,10 @@
             "boolean": false
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CurrentMetalEfficiency",
             "compare0": ">",
             "value0": 1
@@ -665,6 +517,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "air",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
             "boolean": false
           },
           {
@@ -742,7 +598,7 @@
             "test_type": "UnitCountPerPlanetRadius",
             "unit_type_string0": "Air & Factory",
             "compare0": "<",
-            "value0": 200
+            "value0": 250
           },
           {
             "test_type": "CanFindPlaceToBuild",

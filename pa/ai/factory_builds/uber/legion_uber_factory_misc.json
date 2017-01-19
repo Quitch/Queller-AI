@@ -4,7 +4,7 @@
       "name": "Legion - Uber - Supernova Strategic Warhead",
       "to_build": "LegionDefenseAdvancedNuke",
       "instance_count": -1,
-      "min_num_assisters": 3,
+      "min_num_assisters": 8,
       "max_num_assisters": 12,
       "priority": 152,
       "builders": [
@@ -22,6 +22,20 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "FactoryHasOpenSlot"
           }
         ]
       ]

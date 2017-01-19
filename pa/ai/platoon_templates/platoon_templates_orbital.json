@@ -1,6 +1,6 @@
 {
   "platoon_templates": {
-    "Orbital_Fighter_Attack_1": {
+    "Orbital_Fighter_Attack_Queller": {
       "units": [
         {
           "unit_types": "Orbital & Fighter & Mobile",
@@ -9,7 +9,7 @@
         }
       ]
     },
-    "Orbital_Laser_Attack_1": {
+    "Orbital_Laser_Attack_Queller": {
       "units": [
         {
           "unit_types": "(LaserPlatform | (Fighter & Heavy)) & Mobile",
@@ -18,7 +18,7 @@
         }
       ]
     },
-    "Orbital_Laser_Attack_1_Escorted": {
+    "Orbital_Laser_Attack_Escorted_Queller": {
       "units": [
         {
           "unit_types": "(LaserPlatform | (Fighter & Heavy)) & Mobile",
@@ -33,12 +33,20 @@
         }
       ]
     },
-    "Orbital_Radar_1": {
+    "Orbital_Radar_Queller": {
       "units": [
         {
           "unit_types": "Orbital & (Recon | Scout) & Mobile",
-          "min_count": 1,
           "max_count": 1
+        }
+      ]
+    },
+    "Orbital_Offense_Transfer_Queller": {
+      "units": [
+        {
+          "unit_types": "Orbital & (Fighter | LaserPlatform | Titan)",
+          "min_count": 1,
+          "max_count": -1
         }
       ]
     }

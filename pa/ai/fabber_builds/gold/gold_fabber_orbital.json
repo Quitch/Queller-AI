@@ -28,6 +28,10 @@
             "boolean": true
           },
           {
+            "test_type": "PresenceOnOtherPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -35,7 +39,7 @@
             "string0": "OrbitalLauncher"
           },
           {
-            "test_type": "UnitCount",
+            "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory & Orbital",
             "compare0": "<",
             "value0": 1

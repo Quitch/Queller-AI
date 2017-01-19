@@ -23,7 +23,7 @@
             "value0": 0
           },
           {
-            "test_type": "UnitCount",
+            "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Orbital & Fabber",
             "compare0": "<",
             "value0": 1
@@ -36,8 +36,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemyOrbitalPresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -64,8 +64,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
+            "test_type": "EnemyOrbitalPresenceOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -463,20 +463,11 @@
             "boolean": true
           },
           {
+            "test_type": "EnemyOrbitalPresenceOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "PotentialEnergyEfficiency",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Orbital",
-            "string1": "AntiOrbital",
             "compare0": "<",
             "value0": 1
           }
@@ -529,17 +520,17 @@
             "value0": 0
           },
           {
-            "test_type": "SystemThreat",
-            "string0": "Land",
-            "compare0": ">",
-            "value0": 12500
-          },
-          {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Orbital",
             "string1": "AntiOrbital",
             "compare0": "<",
             "value0": 1
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Land",
+            "compare0": ">",
+            "value0": 12500
           }
         ],
         [
@@ -555,17 +546,17 @@
             "value0": 0
           },
           {
-            "test_type": "SystemThreat",
-            "string0": "Naval",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Orbital",
             "string1": "AntiOrbital",
             "compare0": "<",
             "value0": 1
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Naval",
+            "compare0": ">",
+            "value0": 0
           }
         ]
       ]
@@ -680,23 +671,23 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetThreat",
+            "test_type": "BaseThreat",
             "string0": "Orbital",
-            "compare0": "==",
+            "compare0": "<=",
             "value0": 0
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Orbital",
+            "string1": "AntiOrbital",
+            "compare0": "<",
+            "value0": 1
           },
           {
             "test_type": "SystemThreat",
             "string0": "AntiOrbital",
             "compare0": ">",
             "value0": 0
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Orbital & Fighter & Heavy",
-            "unit_type_string1": "Orbital & Fighter",
-            "compare0": "<",
-            "value0": 0.1
           }
         ]
       ]

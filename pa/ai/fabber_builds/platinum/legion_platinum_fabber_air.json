@@ -160,13 +160,13 @@
             "string0": "LegionFactoryBasicAir"
           },
           {
-            "test_type": "UnitCount",
+            "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory & Air & Basic",
             "compare0": "<",
             "value0": 1
           },
           {
-            "test_type": "UnitCount",
+            "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory - Orbital",
             "compare0": ">",
             "value0": 1
@@ -325,14 +325,14 @@
       }
     },
     {
-      "name": "Legion - Platinum - Flyer Foundry - Fabber - No later than third factory",
+      "name": "Platinum - Legion - Basic Air Factory - Early Air",
       "to_build": "LegionFactoryBasicAir",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
-      "min_num_assisters": 1,
-      "max_num_assisters": 3,
+      "max_num_assisters": 2,
       "priority": 378,
       "builders": [
+        "LegionCommander",
         "AnyLegionFabberBasic"
       ],
       "build_conditions": [
@@ -343,6 +343,15 @@
             "boolean": true
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "air",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -350,15 +359,15 @@
             "string0": "LegionFactoryBasicAir"
           },
           {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Factory - Orbital",
-            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Air & Basic",
+            "compare0": "<",
             "value0": 1
           },
           {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Factory & Air & Basic",
-            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">",
             "value0": 1
           },
           {

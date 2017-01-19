@@ -2,7 +2,7 @@
   "build_list": [
     {
       "name": "Platinum - Air Scout Platoon",
-      "to_build": "Air_Scout_1",
+      "to_build": "Air_Scout_Queller",
       "instance_count": 2,
       "priority": 200,
       "build_conditions": [
@@ -11,10 +11,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "platinum",
             "boolean": true
-          },
-          {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -28,8 +24,8 @@
     },
     {
       "name": "Platinum - Fighter Scout Platoon",
-      "to_build": "Fighter_Scout_1",
-      "instance_count": 1,
+      "to_build": "Fighter_Scout_Queller",
+      "instance_count": -1,
       "priority": 200,
       "build_conditions": [
         [
@@ -66,8 +62,8 @@
     },
     {
       "name": "Platinum - Bomber-Gunship Attack Platoon 1",
-      "to_build": "BomberGunship_Attack_1",
-      "instance_count": 1,
+      "to_build": "BomberGunship_Attack_Queller",
+      "instance_count": -1,
       "priority": 100,
       "build_conditions": [
         [
@@ -104,8 +100,8 @@
     },
     {
       "name": "Platinum - Bomber-Gunship Attack Platoon 4",
-      "to_build": "BomberGunship_Attack_4",
-      "instance_count": 1,
+      "to_build": "BomberGunship_Attack_Queller",
+      "instance_count": -1,
       "priority": 110,
       "build_conditions": [
         [
@@ -142,8 +138,8 @@
     },
     {
       "name": "Platinum - Bomber-Gunship Attack Platoon 10",
-      "to_build": "BomberGunship_Attack_10",
-      "instance_count": 1,
+      "to_build": "BomberGunship_Attack_Queller",
+      "instance_count": -1,
       "priority": 120,
       "build_conditions": [
         [
@@ -180,8 +176,8 @@
     },
     {
       "name": "Platinum - Bomber-Gunship Attack Platoon 20",
-      "to_build": "BomberGunship_Attack_20",
-      "instance_count": 1,
+      "to_build": "BomberGunship_Attack_Queller",
+      "instance_count": -1,
       "priority": 130,
       "build_conditions": [
         [
@@ -218,8 +214,8 @@
     },
     {
       "name": "Platinum - Bomber-Gunship Attack Platoon 30",
-      "to_build": "BomberGunship_Attack_30",
-      "instance_count": 1,
+      "to_build": "BomberGunship_Attack_Queller",
+      "instance_count": -1,
       "priority": 140,
       "build_conditions": [
         [
@@ -256,8 +252,8 @@
     },
     {
       "name": "Platinum - Bomber-Gunship Attack Platoon 40",
-      "to_build": "BomberGunship_Attack_40",
-      "instance_count": 1,
+      "to_build": "BomberGunship_Attack_Queller",
+      "instance_count": -1,
       "priority": 150,
       "build_conditions": [
         [
@@ -288,8 +284,8 @@
     },
     {
       "name": "Platinum - Fighter Attack Platoon 1",
-      "to_build": "Fighter_Attack_1",
-      "instance_count": 1,
+      "to_build": "Fighter_Attack_Queller",
+      "instance_count": -1,
       "priority": 100,
       "build_conditions": [
         [
@@ -344,8 +340,8 @@
     },
     {
       "name": "Platinum - Fighter Attack Platoon 4",
-      "to_build": "Fighter_Attack_4",
-      "instance_count": 1,
+      "to_build": "Fighter_Attack_Queller",
+      "instance_count": -1,
       "priority": 110,
       "build_conditions": [
         [
@@ -400,8 +396,8 @@
     },
     {
       "name": "Platinum - Fighter Attack Platoon 10",
-      "to_build": "Fighter_Attack_10",
-      "instance_count": 1,
+      "to_build": "Fighter_Attack_Queller",
+      "instance_count": -1,
       "priority": 120,
       "build_conditions": [
         [
@@ -456,8 +452,8 @@
     },
     {
       "name": "Platinum - Fighter Attack Platoon 20",
-      "to_build": "Fighter_Attack_20",
-      "instance_count": 1,
+      "to_build": "Fighter_Attack_Queller",
+      "instance_count": -1,
       "priority": 130,
       "build_conditions": [
         [
@@ -512,8 +508,8 @@
     },
     {
       "name": "Platinum - Fighter Attack Platoon 30",
-      "to_build": "Fighter_Attack_30",
-      "instance_count": 1,
+      "to_build": "Fighter_Attack_Queller",
+      "instance_count": -1,
       "priority": 140,
       "build_conditions": [
         [
@@ -568,8 +564,8 @@
     },
     {
       "name": "Platinum - Fighter Attack Platoon 40",
-      "to_build": "Fighter_Attack_40",
-      "instance_count": 1,
+      "to_build": "Fighter_Attack_Queller",
+      "instance_count": -1,
       "priority": 150,
       "build_conditions": [
         [

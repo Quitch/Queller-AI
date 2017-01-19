@@ -28,6 +28,10 @@
             "boolean": true
           },
           {
+            "test_type": "PresenceOnOtherPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -35,7 +39,7 @@
             "string0": "LegionFactoryBasicOrbital"
           },
           {
-            "test_type": "UnitCount",
+            "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory & Orbital",
             "compare0": "<",
             "value0": 1
@@ -60,46 +64,10 @@
             "boolean": true
           },
           {
-            "test_type": "UnitCount",
+            "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory & Orbital",
             "compare0": "<",
             "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionFactoryBasicOrbital"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetWithoutPresence",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionFactoryBasicOrbital"
-          },
-          {
-            "test_type": "UnitCount",
-            "unit_type_string0": "Factory & Orbital",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountAroundBase",
-            "unit_type_string0": "Land & Mobile & Offense",
-            "string0": "Enemy",
-            "value0": 800,
-            "compare0": "<",
-            "value1": 10
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -126,7 +94,7 @@
             "value0": 1
           },
           {
-            "test_type": "UnitCount",
+            "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory & Orbital",
             "compare0": "<",
             "value0": 1
