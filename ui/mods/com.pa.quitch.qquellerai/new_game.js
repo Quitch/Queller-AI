@@ -32,8 +32,8 @@ function qQuellerAI() {
         var newPersonalities = {
             'Casual': {
                 display_name: '!LOC:Q-Casual',
-                    metal_drain_check: 0.64,
-                    energy_drain_check: 0.77,
+                metal_drain_check: 0.64,
+                energy_drain_check: 0.77,
                 metal_demand_check: 1.05,
                 energy_demand_check: 0.92,
                 micro_type: 0,
