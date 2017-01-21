@@ -97,9 +97,9 @@ function qQuellerAI() {
             'Gold': {
                 display_name: '!LOC:Q-Gold',
                 metal_drain_check: 0.54,
-                energy_drain_check: 0.47,
+                energy_drain_check: 0.77,
                 metal_demand_check: 0.85,
-                energy_demand_check: 0.62,
+                energy_demand_check: 0.92,
                 micro_type: 1,
                 go_for_the_kill: true,
                 priority_scout_metal_spots: true,
