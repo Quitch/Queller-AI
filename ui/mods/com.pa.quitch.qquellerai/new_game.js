@@ -86,7 +86,7 @@ function qQuellerAI() {
                 enable_commander_danger_responses: true,
                 neural_data_mod: 1.35,
                 adv_eco_mod: 1.0,
-                adv_eco_mod_alone: 1.0,
+                adv_eco_mod_alone: 0.85,
                 personality_tags:
                 [
                     "silver"
@@ -106,7 +106,7 @@ function qQuellerAI() {
                 enable_commander_danger_responses: true,
                 neural_data_mod: 1.25,
                 adv_eco_mod: 1.0,
-                adv_eco_mod_alone: 0.65,
+                adv_eco_mod_alone: 0.85,
                 personality_tags:
                 [
                     "gold"
@@ -126,7 +126,7 @@ function qQuellerAI() {
                 enable_commander_danger_responses: true,
                 neural_data_mod: 1.15,
                 adv_eco_mod: 1.0,
-                adv_eco_mod_alone: 0.75,
+                adv_eco_mod_alone: 0.85,
                 personality_tags:
                 [
                     "platinum"
