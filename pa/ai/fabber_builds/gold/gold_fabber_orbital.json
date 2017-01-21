@@ -56,6 +56,10 @@
             "boolean": true
           },
           {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -75,6 +79,12 @@
             "value0": 0.05
           },
           {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Fabber",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "OrbitalLauncher"
           }
@@ -84,6 +94,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "gold",
             "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -103,6 +117,12 @@
             "unit_type_string0": "Orbital & Factory",
             "compare0": "<",
             "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Fabber",
+            "compare0": ">=",
+            "value0": 5
           },
           {
             "test_type": "CanFindPlaceToBuild",
