@@ -169,10 +169,10 @@ Below are recommendations for the difficulty and eco modifiers you should use.
 
 | Vanilla    | Queller | Eco |
 | ---------- | ------- | --- |
-| Normal     | Casual  | 1.0 |
-| Hard       | Silver  | 1.1 |
+| Normal     | Bronze  | 1.0 |
+| Hard       | Silver  | 1.0 |
 | Relentless | Gold    | 0.8 |
-| Absurd     | Gold    | 0.8 |
+| Absurd     | Gold    | 1.0 |
 
 | League   | Placement | Difficulty | Eco |
 | -------- | --------- | ---------- | --- |
@@ -181,10 +181,10 @@ Below are recommendations for the difficulty and eco modifiers you should use.
 | Silver   | Low       | Gold       | 1.0 |
 | Silver   | Mid       | Platinum   | 1.0 |
 | Silver   | High      | Uber       | 1.0 |
-| Gold     | Low       | Uber       | 1.2 |
-| Gold     | High      | Uber       | 1.4 |
-| Platinum | Any       | Uber       | 1.6 |
-| Uber     | Any       | Uber       | 2.0 |
+| Gold     | Low       | Uber       | 1.3 |
+| Gold     | High      | Uber       | 1.6 |
+| Platinum | Any       | Uber       | 1.9 |
+| Uber     | Any       | Uber       | 2.2 |
 
 ## MAP NOTES
 
