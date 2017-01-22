@@ -263,7 +263,7 @@
             "unit_type_string0": "Land & Mobile & (Heavy - (Bot & Basic))",
             "unit_type_string1": "Land & Mobile - Scout - Fabber - Deconstruction - Construction",
             "compare0": "<",
-            "value0": 0.15
+            "value0": 0.2
           }
         ]
       ]
@@ -467,10 +467,10 @@
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Tank & Heavy & Advanced",
-            "unit_type_string1": "Tank & Artillery & Advanced",
+            "unit_type_string0": "Land & Mobile & (Heavy - (Bot & Basic))",
+            "unit_type_string1": "(Land & Mobile) - Scout - Fabber - Deconstruction - Construction",
             "compare0": "<",
-            "value0": 0.1
+            "value0": 0.2
           }
         ]
       ]
@@ -494,6 +494,13 @@
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Artillery",
+            "unit_type_string1": "(Land & Mobile) - Scout - Fabber - Deconstruction - Construction",
+            "compare0": "<",
+            "value0": 0.1
           }
         ]
       ]
