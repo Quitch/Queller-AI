@@ -225,6 +225,10 @@
             "boolean": true
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
@@ -233,6 +237,21 @@
             "string0": "AntiSurface",
             "compare0": ">",
             "value0": 840
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
           }
         ]
       ]
