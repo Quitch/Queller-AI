@@ -120,6 +120,10 @@
             "boolean": true
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
@@ -128,6 +132,35 @@
             "string0": "AntiSurface",
             "compare0": ">",
             "value0": 2100
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Artillery",
+            "unit_type_string1": "Land & Mobile - Scout - Fabber - Deconstruction - Construction",
+            "compare0": "<",
+            "value0": 0.1
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Artillery",
+            "unit_type_string1": "Land & Mobile - Scout - Fabber - Deconstruction - Construction",
+            "compare0": "<",
+            "value0": 0.1
           }
         ]
       ]
@@ -149,6 +182,10 @@
             "boolean": true
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
@@ -157,6 +194,21 @@
             "string0": "AntiSurface",
             "compare0": ">",
             "value0": 2100
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
           }
         ]
       ]
