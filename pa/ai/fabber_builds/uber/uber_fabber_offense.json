@@ -541,10 +541,6 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsMainEcoBase",
             "boolean": false
           },
@@ -559,6 +555,17 @@
           {
             "test_type": "HaveThrustToMovePlanet",
             "boolean": false
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Orbital",
+            "string1": "AntiOrbital",
+            "compare0": "<",
+            "value0": 1
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -610,12 +617,19 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
+            "test_type": "PlanetHasUseablePlanetWeapon",
             "boolean": true
           },
           {
-            "test_type": "PlanetHasUseablePlanetWeapon",
-            "boolean": true
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Orbital",
+            "string1": "AntiOrbital",
+            "compare0": "<",
+            "value0": 1
           },
           {
             "test_type": "CanAffordBuildDemand"
