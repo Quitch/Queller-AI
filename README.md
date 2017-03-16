@@ -125,7 +125,7 @@ Normal through Absurd are the standard difficulties and will use the vanilla AI 
  - Will use eco bonuses better than other levels
  - Selectable subpersonality
 
-### Subpersonalities
+## Subpersonalities
 
 By default, Queller at Uber level will adapt its play to try and suit the system and the opposition it faces. You can use subpersonalities to customise Queller's game to your liking, or help it play better where it's making poor strategy choices.
 
