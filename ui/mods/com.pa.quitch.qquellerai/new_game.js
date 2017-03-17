@@ -389,7 +389,7 @@ function qQuellerAI() {
             priority_scout_metal_spots: true,
             enable_commander_danger_responses: true,
             neural_data_mod: 1.0,
-            adv_eco_mod: 1.0,
+            adv_eco_mod: 1.3,
             adv_eco_mod_alone: 0.85,
             fabber_to_factory_ratio_basic: 1.0,
             fabber_to_factory_ratio_advanced: 1.0,
