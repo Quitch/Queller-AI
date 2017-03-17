@@ -1,9 +1,19 @@
 # CHANGELOG
 
+#### 4.12.2 - 2017/03/17
+
+ - Uber requires less air dominance before building a Zeus
+ - Properly use client mod as companion and not only a dependency
+ - Fix an issue that might cause the vanilla AI to tech earlier than it was supposed to
+
+#### 4.12.1 - 2017/02/28
+
+ - Disabled translations owing to PA translations breaking with them active
+
 #### 4.12.0 - 2017/01/22
 
  - Translated Queller difficulties to local languages as best I can
-    - Deutesch (de)
+    - Deutsch (de)
     - Français (fr)
       - Thanks to K-Orthic | Gamax
     - Italiano (it)
@@ -13,7 +23,6 @@
  - Silver gives a higher priority to building a teleporter on new planets
  - Silver doesn't produce air when alone
  - Silver more likely to go orbital on multi-planet systems even when not alone
- - Silver will go advanced faster when alone
  - Tweaked when Silver, Gold and Platinum tech when alone
  - Silver will move fabbers by orbital transport a little quicker
  - Stopped Silver from wrecking its early economy by going orbital too quickly
@@ -22,7 +31,7 @@
  - Fixed error preventing Uber from using the Infiltrator in some situations
  - Silver produces less early orbital fabbers
  - Gold now sends basic AA with its invasion forces
- - Gold and Platinum will use the Grenadier as part of its invasions
+ - Gold and Platinum will use the Grenadier as part of their invasions
  - Bronze can form an attacking platoon earlier
  - Gold no longer crashes its energy
  - Won't build an orbital factory unless it has established a meaningful fabber presence
