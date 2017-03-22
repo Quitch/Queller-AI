@@ -2,12 +2,12 @@
 
 ####
 
+The Queller AI **Client** is no longer required and should be uninstalled.
+
+ - mikeyh updated personality script to account for changes in 99377
  - Español (es) translation added courtesy of gmase
  - Nederlands (nl) and Nederlands (België) (nl-BE) added courtesy of PRoeleert
-
-### 4.x.x
-
- - Removed Queller AI Client dependency as it's no longer required
+ - Fixed Queller translations breaking PA translations
 
 #### 4.12.2 - 2017/03/17
 
