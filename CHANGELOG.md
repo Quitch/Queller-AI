@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### 4.13.0 - 2017/03/24
+#### 4.12.3 - 2017/03/24
 
 The Queller AI **Client** is no longer required and should be uninstalled.
 
