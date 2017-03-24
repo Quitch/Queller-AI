@@ -4,9 +4,9 @@
   "display_name": "Queller AI",
   "description": "A smarter and more humanlike non-cheating AI for Titans and Legion, with easier and harder difficulties than vanilla. Normal through Absurd remain the vanilla AI, while Casual through Uber are Queller. See the forum thread under details for more information on the differences between difficulties. Doesn't affect Galactic War due to it lacking server mod support.",
   "author": "Quitch",
-  "version": "4.12.2",
+  "version": "4.12.3",
   "build": "99377",
-  "date": "2016/03/17",
+  "date": "2016/03/24",
   "signature": " ",
   "forum": "https://forums.uberent.com/threads/rel-server-queller-ai-v4-12-2.65795/",
   "category": [
@@ -19,11 +19,7 @@
       "coui://ui/mods/com.pa.quitch.qquellerai/new_game.js"
     ]
   },
-  "companions": [
-    "com.pa.quitch.qQuellerAIPersonalities"
-  ],
   "dependencies": [
-    "com.pa.quitch.qQuellerAIPersonalities",
     "com.pa.quitch.qAIModCompatibilityPatch"
   ],
   "priority": 100,

@@ -1,5 +1,15 @@
 # CHANGELOG
 
+#### 4.12.3 - 2017/03/24
+
+The Queller AI **Client** is no longer required and should be uninstalled.
+
+ - mikeyh updated personality script to account for changes in 99377
+ - Additional languae translations
+   - Español (es) translation added courtesy of gmase
+   - Nederlands (nl) and Nederlands (België) (nl-BE) added courtesy of PRoeleert
+ - Fixed Queller translations breaking PA translations
+
 #### 4.12.2 - 2017/03/17
 
  - Uber requires less air dominance before building a Zeus
