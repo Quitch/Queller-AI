@@ -3,6 +3,11 @@
 ####
 
  - Increased distance betweeen Jigs and Rigs at higher difficulties
+ - Platinum uses more bots
+ - Platinum uses less Sparks
+ - Uber MLA slightly more likely to to tech vehicles
+ - Platinum no longer uses Grenadiers
+ - Platinum will always prefer to open with bots over vehicles
 
 #### 4.12.3 - 2017/03/24
 
