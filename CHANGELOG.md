@@ -8,6 +8,7 @@
  - Uber MLA slightly more likely to to tech vehicles
  - Platinum no longer uses Grenadiers
  - Platinum will always prefer to open with bots over vehicles
+ - Uber Legion never goes T2 air first
 
 #### 4.12.3 - 2017/03/24
 
