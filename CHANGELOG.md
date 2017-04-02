@@ -2,7 +2,7 @@
 
 #### 4.13.0 - 2017/04/02
 
- - Increased distance betweeen Jigs and Rigs at higher difficulties
+ - Increased distance between Jigs and Rigs at higher difficulties
  - Platinum uses more bots
  - Platinum uses less Sparks
  - Uber MLA slightly more likely to to tech vehicles
