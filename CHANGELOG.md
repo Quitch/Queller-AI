@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### 4.x.x
+
+ - Fixed Ramparts getting built too close to one another at higher levels
+
 #### 4.13.0 - 2017/04/02
 
  - Increased distance between Jigs and Rigs at higher difficulties
