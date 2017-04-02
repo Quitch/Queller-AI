@@ -1,11 +1,22 @@
 # CHANGELOG
 
+#### 4.13.0 - 2017/04/02
+
+ - Increased distance betweeen Jigs and Rigs at higher difficulties
+ - Platinum uses more bots
+ - Platinum uses less Sparks
+ - Uber MLA slightly more likely to to tech vehicles
+ - Platinum no longer uses Grenadiers
+ - Platinum will always prefer to open with bots over vehicles
+ - Uber Legion never goes T2 air first
+ - Platinum no longer uses the GIL-E
+
 #### 4.12.3 - 2017/03/24
 
 The Queller AI **Client** is no longer required and should be uninstalled.
 
  - mikeyh updated personality script to account for changes in 99377
- - Additional languae translations
+ - Additional language translations
    - Español (es) translation added courtesy of gmase
    - Nederlands (nl) and Nederlands (België) (nl-BE) added courtesy of PRoeleert
  - Fixed Queller translations breaking PA translations
