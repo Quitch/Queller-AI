@@ -9,6 +9,7 @@
  - Platinum no longer uses Grenadiers
  - Platinum will always prefer to open with bots over vehicles
  - Uber Legion never goes T2 air first
+ - Platinum no longer uses the GIL-E
 
 #### 4.12.3 - 2017/03/24
 
