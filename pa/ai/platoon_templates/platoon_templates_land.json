@@ -108,13 +108,19 @@
         }
       ]
     },
-    "Tank_Raid_Queller": {
+    "Amphibious_Queller": {
       "units": [
+        {
+          "unit_types": "(Bot & Mobile & Advanced) - Custom1 - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout - SelfDestruct - Deconstruction - Titan",
+          "min_count": 1,
+          "max_count": -1,
+          "squad": "Fast"
+        },
         {
           "unit_types": "(Tank & Sub & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout - SelfDestruct - Titan",
           "min_count": 1,
           "max_count": -1,
-          "squad": "Fast"
+          "squad": "General"
         },
         {
           "unit_types": "Mobile & ((Land & AirDefense) | (Land & Scout)) - Titan",
