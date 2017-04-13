@@ -5,6 +5,8 @@
  - Fixed Ramparts getting built too close to one another at higher levels
  - Casual and Bronze now build the Typhoon
  - Bronze and Silver push faster to get an anti-nuke if there's a nuke threat
+ - New amphibious platoon for mixed faction armies
+ - Properly micro Stokes in their own platoon
 
 #### 4.13.0 - 2017/04/02
 
