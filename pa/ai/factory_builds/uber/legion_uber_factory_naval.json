@@ -133,6 +133,29 @@
             "compare0": ">",
             "value0": 0
           }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemyOrbitalPresenceOnPlanet",
+            "boolean": false
+          }
         ]
       ]
     },
