@@ -7,6 +7,8 @@
  - Bronze and Silver push faster to get an anti-nuke if there's a nuke threat
  - New amphibious platoon for mixed faction armies
  - Properly micro Stokes in their own platoon
+ - Uber uses less Legion AA ships
+ - Uber makes greater use of Catfish against naval threats
 
 #### 4.13.0 - 2017/04/02
 

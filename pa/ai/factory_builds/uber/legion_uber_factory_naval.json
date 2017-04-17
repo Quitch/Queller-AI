@@ -116,6 +116,23 @@
             "compare0": ">=",
             "value0": 0.6
           }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "new",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Naval",
+            "compare0": ">",
+            "value0": 0
+          }
         ]
       ]
     },
@@ -199,7 +216,7 @@
             "unit_type_string0": "Naval & Mobile & AirDefense",
             "unit_type_string1": "Naval & Mobile - Fabber - Hover",
             "compare0": "<",
-            "value0": 0.2
+            "value0": 0.1
           }
         ]
       ]
@@ -431,7 +448,7 @@
             "unit_type_string0": "Naval & Mobile & AirDefense",
             "unit_type_string1": "Naval & Mobile - Fabber - Hover",
             "compare0": "<",
-            "value0": 0.2
+            "value0": 0.1
           }
         ]
       ]
