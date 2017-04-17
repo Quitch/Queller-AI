@@ -10,6 +10,7 @@
  - Uber uses less Legion AA ships
  - Uber makes greater use of Catfish against naval threats
  - Fixed issue causing Uber Legion factories to pause production prior to enemy contact
+ - Uber can use more fabbers to assist nuke production
 
 #### 4.13.0 - 2017/04/02
 
