@@ -11,6 +11,9 @@
  - Uber makes greater use of Catfish against naval threats
  - Fixed issue causing Uber Legion factories to pause production prior to enemy contact
  - Uber can use more fabbers to assist nuke production
+ - Uber MLA can build tanks earlier
+ - When unable to expand Platinum and Uber will tech if they haven't already
+ - Uber Cautious less likely to scout in an antagonistic way
 
 #### 4.13.0 - 2017/04/02
 
