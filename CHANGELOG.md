@@ -20,6 +20,7 @@
  - Uber no longer idles scouts sent to other planets
  - Uber builds Corsairs earlier
  - Smarter limit on the number of Talos built by Casual through Platinum
+ - Platinum uses less Monstrosities
 
 #### 4.13.0 - 2017/04/02
 

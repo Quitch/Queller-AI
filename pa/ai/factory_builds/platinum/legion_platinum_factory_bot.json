@@ -547,6 +547,13 @@
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & (Heavy - (Bot & Basic)) & Advanced",
+            "unit_type_string1": "Land & Mobile - Scout - Fabber - Deconstruction - Construction - Basic",
+            "compare0": "<",
+            "value0": 0.15
           }
         ]
       ]
