@@ -19,6 +19,7 @@
  - Gold will scout with the Investigator
  - Uber no longer idles scouts sent to other planets
  - Uber builds Corsairs earlier
+ - Smarter limit on the number of Talos built by Casual through Gold
 
 #### 4.13.0 - 2017/04/02
 
