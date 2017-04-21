@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### 4.x.x
+#### 4.14.0
 
  - Fixed Ramparts getting built too close to one another at higher levels
  - Casual and Bronze now build the Typhoon
@@ -21,6 +21,7 @@
  - Uber builds Corsairs earlier
  - Smarter limit on the number of Talos built by Casual through Platinum
  - Platinum uses less Monstrosities
+ - Gold no longer patrols all its Marauders when alone on a planet
 
 #### 4.13.0 - 2017/04/02
 
