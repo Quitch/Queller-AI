@@ -1,8 +1,31 @@
 # CHANGELOG
 
+#### 4.14.0 - 2017/04/21
+
+ - Fixed Ramparts getting built too close to one another at higher levels
+ - Casual and Bronze now build the Typhoon
+ - Bronze and Silver push faster to get an anti-nuke if there's a nuke threat
+ - New amphibious platoon for mixed faction armies
+ - Properly micro Stokes in their own platoon
+ - Uber uses less Legion AA ships
+ - Uber makes greater use of Catfish against naval threats
+ - Fixed issue causing Uber Legion factories to pause production prior to enemy contact
+ - Uber can use more fabbers to assist nuke production
+ - Uber MLA can build tanks earlier
+ - When unable to expand Platinum and Uber will tech if they haven't already
+ - Uber Cautious less likely to scout in an antagonistic way
+ - Changed how Uber Legion performs its initial scouting
+ - Uber will use Skitter to scout if it hasn't found an enemy yet
+ - Gold will scout with the Investigator
+ - Uber no longer idles scouts sent to other planets
+ - Uber builds Corsairs earlier
+ - Smarter limit on the number of Talos built by Casual through Platinum
+ - Platinum uses less Monstrosities
+ - Gold no longer patrols all its Marauders when alone on a planet
+
 #### 4.13.0 - 2017/04/02
 
- - Increased distance betweeen Jigs and Rigs at higher difficulties
+ - Increased distance between Jigs and Rigs at higher difficulties
  - Platinum uses more bots
  - Platinum uses less Sparks
  - Uber MLA slightly more likely to to tech vehicles
