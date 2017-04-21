@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### 4.14.0
+#### 4.14.0 - 2017/04/21
 
  - Fixed Ramparts getting built too close to one another at higher levels
  - Casual and Bronze now build the Typhoon
