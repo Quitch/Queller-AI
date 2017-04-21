@@ -16,6 +16,8 @@
  - Uber Cautious less likely to scout in an antagonistic way
  - Changed how Uber Legion performs its initial scouting
  - Uber will use Skitter to scout if it hasn't found an enemy yet
+ - Gold will scout with the Investigator
+ - Uber no longer idles scouts sent to other planets
 
 #### 4.13.0 - 2017/04/02
 
