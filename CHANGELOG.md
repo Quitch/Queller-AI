@@ -14,6 +14,7 @@
  - Uber MLA can build tanks earlier
  - When unable to expand Platinum and Uber will tech if they haven't already
  - Uber Cautious less likely to scout in an antagonistic way
+ - Changed how Uber Legion performs its initial scouting
 
 #### 4.13.0 - 2017/04/02
 
