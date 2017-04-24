@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### 4.x.x
+
+ - Fixed error in Gustav placement
+
 #### 4.14.0 - 2017/04/21
 
  - Fixed Ramparts getting built too close to one another at higher levels
