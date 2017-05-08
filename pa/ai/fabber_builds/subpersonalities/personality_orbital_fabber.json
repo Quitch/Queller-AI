@@ -8,6 +8,7 @@
       "priority": 479,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber",
         "AnyUberAdvancedFabber"
@@ -62,7 +63,8 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 3
+        "buffer": 3,
+        "placement_type": "FromBaseCenter"
       }
     },
     {
@@ -73,6 +75,7 @@
       "priority": 479,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyLegionFabberBasic",
         "AnyLegionFabberAdvanced"
@@ -127,7 +130,8 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 3
+        "buffer": 3,
+        "placement_type": "FromBaseCenter"
       }
     }
   ]

@@ -6,6 +6,7 @@
       "instance_count": 1,
       "shared_instance_count": "BasicRadar",
       "priority": 90,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyLegionFabberBasic"
       ],
@@ -52,11 +53,12 @@
       ],
       "placement_rules": {
         "buffer": 2,
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
-          "radius": 10,
-          "value": 50
+          "radius": 100,
+          "value": 10
         }
       }
     },
@@ -98,11 +100,12 @@
       ],
       "placement_rules": {
         "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
-          "radius": 10,
-          "value": 50
+          "radius": 100,
+          "value": 10
         }
       }
     },
@@ -112,6 +115,7 @@
       "instance_count": 1,
       "shared_instance_count": "BasicRadar",
       "priority": 246,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyLegionFabberBasic"
       ],
@@ -158,11 +162,12 @@
       ],
       "placement_rules": {
         "buffer": 2,
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
-          "radius": 10,
-          "value": 50
+          "radius": 100,
+          "value": 10
         }
       }
     },
@@ -172,6 +177,7 @@
       "instance_count": 1,
       "shared_instance_count": "AdvancedRadar",
       "priority": 91,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyLegionFabberAdvanced"
       ],
@@ -212,11 +218,12 @@
       ],
       "placement_rules": {
         "buffer": 2,
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
-          "radius": 10,
-          "value": 50
+          "radius": 100,
+          "value": 10
         }
       }
     },
@@ -226,6 +233,7 @@
       "instance_count": 1,
       "shared_instance_count": "AdvancedRadar",
       "priority": 247,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyLegionFabberAdvanced"
       ],
@@ -272,11 +280,12 @@
       ],
       "placement_rules": {
         "buffer": 2,
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
-          "radius": 10,
-          "value": 50
+          "radius": 100,
+          "value": 10
         }
       }
     },
@@ -318,11 +327,12 @@
       ],
       "placement_rules": {
         "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
-          "radius": 10,
-          "value": 50
+          "radius": 100,
+          "value": 10
         }
       }
     }

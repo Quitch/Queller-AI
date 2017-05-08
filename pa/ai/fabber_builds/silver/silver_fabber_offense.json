@@ -7,7 +7,7 @@
       "shared_instance_count": "Defence",
       "max_num_assisters": 3,
       "priority": 250,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber"
       ],
@@ -41,7 +41,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
@@ -73,6 +73,7 @@
       "shared_instance_count": "SuperWeapon",
       "max_num_assisters": 10,
       "priority": 479,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -109,7 +110,8 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 2
+        "buffer": 2,
+        "placement_type": "FromBaseCenter"
       }
     },
     {
@@ -119,6 +121,7 @@
       "shared_instance_count": "SuperWeapon",
       "max_num_assisters": 10,
       "priority": 480,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -149,7 +152,7 @@
       ],
       "placement_rules": {
         "buffer": 2,
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure - MetalProduction",
@@ -174,6 +177,7 @@
       "shared_instance_count": "SuperWeapon",
       "max_num_assisters": 10,
       "priority": 481,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -199,7 +203,14 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 2
+        "buffer": 2,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
       }
     },
     {
@@ -209,6 +220,7 @@
       "shared_instance_count": "SuperWeapon",
       "max_num_assisters": 45,
       "priority": 509,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -264,7 +276,8 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 3
+        "buffer": 3,
+        "placement_type": "FromBaseCenter"
       }
     },
     {
@@ -274,6 +287,7 @@
       "shared_instance_count": "SuperWeapon",
       "max_num_assisters": 45,
       "priority": 510,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberAdvancedFabber"
       ],

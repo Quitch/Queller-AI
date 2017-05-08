@@ -7,6 +7,7 @@
       "shared_instance_count": "BasicNavalFactory",
       "max_num_assisters": 2,
       "priority": 377,
+      "base_sort": "FromBuilder",
       "builders": [
         "UberCommander"
       ],
@@ -62,6 +63,7 @@
       ],
       "placement_rules": {
         "buffer": 3,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -78,6 +80,7 @@
       "priority": 377,
       "min_num_assisters": 2,
       "max_num_assisters": 4,
+      "base_sort": "FromBuilder",
       "builders": [
         "BasicAirFabber"
       ],
@@ -140,6 +143,7 @@
       ],
       "placement_rules": {
         "buffer": 5,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -155,6 +159,7 @@
       "shared_instance_count": "BasicNavalFactory",
       "max_num_assisters": 2,
       "priority": 377,
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionCommander"
       ],
@@ -210,6 +215,7 @@
       ],
       "placement_rules": {
         "buffer": 3,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -226,6 +232,7 @@
       "priority": 377,
       "min_num_assisters": 2,
       "max_num_assisters": 4,
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionAirBasicFabber"
       ],
@@ -288,6 +295,7 @@
       ],
       "placement_rules": {
         "buffer": 5,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",

@@ -6,7 +6,7 @@
       "instance_count": 1,
       "max_num_assisters": 1,
       "priority": 251,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionOrbitalBasicFabber"
       ],
@@ -88,7 +88,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBasePerimeter",
+        "placement_type": "FromBasePerimeter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & MetalProduction",
@@ -113,7 +113,7 @@
       "instance_count": 1,
       "max_num_assisters": 1,
       "priority": 478,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionOrbitalBasicFabber"
       ],
@@ -223,7 +223,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBasePerimeter",
+        "placement_type": "FromBasePerimeter",
         "unit_count_rules": [
           {
             "unit_type_string": "Teleporter - Mobile",
@@ -248,6 +248,7 @@
       "instance_count": 1,
       "max_num_assisters": 1,
       "priority": 252,
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionOrbitalBasicFabber"
       ],
@@ -287,7 +288,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBasePerimeter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & OrbitalDefense",
@@ -306,6 +307,7 @@
       "priority": 456,
       "min_num_assisters": 2,
       "max_num_assisters": 4,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyLegionFabberBasic",
         "AnyLegionFabberAdvanced"
@@ -442,7 +444,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & ((EnergyProduction & Advanced) | Factory | PlanetEngine | ControlModule)",
@@ -468,6 +470,7 @@
       "priority": 279,
       "min_num_assisters": 1,
       "max_num_assisters": 3,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyLegionFabberBasic",
         "AnyLegionFabberAdvanced"
@@ -540,7 +543,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & ((EnergyProduction & Advanced) | Factory | PlanetEngine | ControlModule)",
@@ -566,6 +569,7 @@
       "priority": 255,
       "min_num_assisters": 1,
       "max_num_assisters": 3,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyLegionFabberBasic",
         "AnyLegionFabberAdvanced"
@@ -610,7 +614,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & OrbitalDefense",
@@ -629,6 +633,7 @@
       "priority": 456,
       "min_num_assisters": 1,
       "max_num_assisters": 3,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyLegionFabberBasic",
         "AnyLegionFabberAdvanced"
@@ -669,7 +674,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
             "unit_type_string": "Commander",

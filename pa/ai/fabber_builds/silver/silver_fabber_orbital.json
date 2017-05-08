@@ -7,6 +7,7 @@
       "shared_instance_count": "BasicFactory",
       "priority": 479,
       "max_num_assisters": 10,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber",
         "AnyUberAdvancedFabber"
@@ -120,7 +121,8 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 3
+        "buffer": 3,
+        "placement_type": "FromBaseCenter"
       }
     },
     {
@@ -129,6 +131,7 @@
       "instance_count": 1,
       "priority": 1,
       "max_num_assisters": 10,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber",
         "AnyUberAdvancedFabber"
@@ -170,7 +173,8 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 3
+        "buffer": 3,
+        "placement_type": "FromBaseCenter"
       }
     },
     {
@@ -179,6 +183,7 @@
       "instance_count": 1,
       "priority": 477,
       "max_num_assisters": 10,
+      "base_sort": "FromBuilder",
       "builders": [
         "OrbitalFabber"
       ],
@@ -208,7 +213,8 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 3
+        "buffer": 3,
+        "placement_type": "FromBasePerimeter"
       }
     }
   ]

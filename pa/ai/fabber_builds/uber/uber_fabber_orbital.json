@@ -8,6 +8,7 @@
       "priority": 479,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber",
         "AnyUberAdvancedFabber"
@@ -189,7 +190,14 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 3
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 100,
+          "value": 10
+        }
       }
     },
     {
@@ -200,6 +208,7 @@
       "priority": 376,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber",
         "AnyUberAdvancedFabber"
@@ -252,7 +261,14 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 3
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 100,
+          "value": 10
+        }
       }
     },
     {
@@ -263,6 +279,7 @@
       "priority": 477,
       "min_num_assisters": 2,
       "max_num_assisters": 5,
+      "base_sort": "FromBuilder",
       "builders": [
         "OrbitalFabber"
       ],
@@ -296,7 +313,14 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 3
+        "buffer": 3,
+        "placement_type": "FromBasePerimeter",
+        "threat": {
+          "influence_type": "AntiOrbital",
+          "compare_type": "<",
+          "radius": 100,
+          "value": 10
+        }
       }
     },
     {
@@ -306,6 +330,7 @@
       "priority": 477,
       "min_num_assisters": 2,
       "max_num_assisters": 5,
+      "base_sort": "FromBuilder",
       "builders": [
         "OrbitalFabber"
       ],
@@ -339,7 +364,14 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 50
+        "buffer": 75,
+        "placement_type": "FromBasePerimeter",
+        "threat": {
+          "influence_type": "AntiOrbital",
+          "compare_type": "<",
+          "radius": 100,
+          "value": 10
+        }
       }
     }
   ]

@@ -8,6 +8,7 @@
       "priority": 479,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyLegionFabberBasic",
         "AnyLegionFabberAdvanced"
@@ -119,7 +120,8 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 3
+        "buffer": 3,
+        "placement_type": "FromBaseCenter"
       }
     },
     {
@@ -130,6 +132,7 @@
       "priority": 260,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyLegionFabberBasic",
         "AnyLegionFabberAdvanced"
@@ -168,7 +171,8 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 3
+        "buffer": 3,
+        "placement_type": "FromBaseCenter"
       }
     },
     {
@@ -177,6 +181,7 @@
       "instance_count": 1,
       "priority": 477,
       "max_num_assisters": 5,
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionOrbitalBasicFabber"
       ],
@@ -202,7 +207,8 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 3
+        "buffer": 3,
+        "placement_type": "FromBasePerimeter"
       }
     },
     {
@@ -213,6 +219,7 @@
       "min_num_assisters": 2,
       "max_num_assisters": 5,
       "priority": 0,
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionOrbitalBasicFabber"
       ],
@@ -268,7 +275,8 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 3
+        "buffer": 3,
+        "placement_type": "FromBaseCenter"
       }
     }
   ]

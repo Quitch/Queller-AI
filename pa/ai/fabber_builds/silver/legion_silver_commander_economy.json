@@ -57,7 +57,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -74,6 +74,7 @@
       "shared_instance_count": "BasicEnergy",
       "cross_planet_shared_count": true,
       "priority": 261,
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionCommander"
       ],

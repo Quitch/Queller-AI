@@ -7,7 +7,7 @@
       "shared_instance_count": "AirDefence",
       "max_num_assisters": 3,
       "priority": 478,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber"
       ],
@@ -46,7 +46,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBasePerimeter",
+        "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & MetalProduction",
@@ -65,7 +65,7 @@
       "shared_instance_count": "LandDefence",
       "max_num_assisters": 3,
       "priority": 477,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber"
       ],
@@ -104,7 +104,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBasePerimeter",
+        "placement_type": "FromBasePerimeter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & MetalProduction",
@@ -123,7 +123,7 @@
       "shared_instance_count": "LandDefence",
       "max_num_assisters": 3,
       "priority": 478,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber"
       ],
@@ -162,7 +162,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBasePerimeter",
+        "placement_type": "FromBasePerimeter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & MetalProduction",
@@ -181,7 +181,7 @@
       "shared_instance_count": "NavalDefence",
       "max_num_assisters": 3,
       "priority": 478,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "BasicAirFabber",
         "BasicNavalFabber"
@@ -225,7 +225,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBasePerimeter",
+        "placement_type": "FromBasePerimeter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & MetalProduction",
@@ -238,13 +238,13 @@
       }
     },
     {
-      "name": "Bronze - Advanced Land Defense - Mex",
+      "name": "Bronze - Advanced Laser Defense Tower - Mex",
       "to_build": "AdvancedLandDefense",
       "instance_count": 1,
       "shared_instance_count": "LandDefence",
       "priority": 480,
       "max_num_assisters": 3,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -283,7 +283,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBasePerimeter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
@@ -303,6 +303,7 @@
       "min_num_assisters": 2,
       "max_num_assisters": 5,
       "priority": 479,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -342,7 +343,7 @@
       ],
       "placement_rules": {
         "buffer": 2,
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -358,7 +359,7 @@
       "shared_instance_count": "NavalDefence",
       "priority": 480,
       "max_num_assisters": 3,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "AdvancedNavalFabber",
         "AdvancedAirFabber"
@@ -408,7 +409,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
@@ -427,7 +428,7 @@
       "shared_instance_count": "AirDefence",
       "max_num_assisters": 3,
       "priority": 477,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber"
       ],
@@ -461,7 +462,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
@@ -480,7 +481,7 @@
       "shared_instance_count": "LandDefence",
       "max_num_assisters": 3,
       "priority": 476,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber"
       ],
@@ -520,7 +521,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBasePerimeter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
@@ -539,7 +540,7 @@
       "shared_instance_count": "LandDefence",
       "max_num_assisters": 3,
       "priority": 477,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber"
       ],
@@ -573,7 +574,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBasePerimeter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
@@ -592,7 +593,7 @@
       "shared_instance_count": "NavalDefence",
       "max_num_assisters": 3,
       "priority": 477,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "BasicAirFabber",
         "BasicNavalFabber"
@@ -637,7 +638,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBasePerimeter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
@@ -650,13 +651,13 @@
       }
     },
     {
-      "name": "Bronze - Advanced Air Defense - Base",
+      "name": "Bronze - Flak Cannon - Base",
       "to_build": "AdvancedAirDefense",
       "instance_count": 1,
       "shared_instance_count": "AirDefence",
       "max_num_assisters": 3,
       "priority": 479,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -690,7 +691,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
@@ -703,13 +704,13 @@
       }
     },
     {
-      "name": "Bronze - Advanced Land Defense - Base",
+      "name": "Bronze - Advanced Laser Defense Tower - Base",
       "to_build": "AdvancedLandDefense",
       "instance_count": 1,
       "shared_instance_count": "LandDefence",
       "priority": 479,
       "max_num_assisters": 3,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -743,7 +744,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBasePerimeter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
@@ -763,6 +764,7 @@
       "min_num_assisters": 2,
       "max_num_assisters": 5,
       "priority": 479,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -797,7 +799,7 @@
       ],
       "placement_rules": {
         "buffer": 2,
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -813,7 +815,7 @@
       "shared_instance_count": "NavalDefence",
       "priority": 479,
       "max_num_assisters": 3,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "AdvancedNavalFabber",
         "AdvancedAirFabber"
@@ -858,7 +860,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBasePerimeter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
@@ -876,6 +878,7 @@
       "instance_count": 1,
       "max_num_assisters": 3,
       "priority": 481,
+      "base_sort": "FromBuilder",
       "builders": [
         "OrbitalFabber"
       ],
@@ -909,7 +912,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBasePerimeter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & OrbitalDefense",
@@ -927,6 +930,7 @@
       "instance_count": 1,
       "priority": 478,
       "max_num_assisters": 3,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber",
         "AnyUberAdvancedFabber"
@@ -999,7 +1003,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & ((EnergyProduction & Advanced) | Factory | PlanetEngine | ControlModule)",
@@ -1018,6 +1022,7 @@
       "shared_instance_count": "SuperWeapon",
       "priority": 480,
       "max_num_assisters": 10,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -1088,7 +1093,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & ((EnergyProduction & Advanced) | Factory)",

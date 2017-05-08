@@ -7,6 +7,7 @@
       "shared_instance_count": "BasicFactory",
       "max_num_assisters": 2,
       "priority": 376,
+      "base_sort": "FromBuilder",
       "builders": [
         "UberCommander"
       ],
@@ -65,6 +66,7 @@
       ],
       "placement_rules": {
         "buffer": 3,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -81,6 +83,7 @@
       "priority": 376,
       "min_num_assisters": 2,
       "max_num_assisters": 4,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber",
         "AnyUberAdvancedFabber"
@@ -140,6 +143,7 @@
       ],
       "placement_rules": {
         "buffer": 3,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -156,6 +160,7 @@
       "priority": 374,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
+      "base_sort": "FromBuilder",
       "builders": [
         "UberCommander",
         "AnyUberBasicFabber",
@@ -246,6 +251,7 @@
       ],
       "placement_rules": {
         "buffer": 3,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",

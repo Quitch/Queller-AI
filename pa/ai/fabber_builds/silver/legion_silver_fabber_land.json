@@ -7,6 +7,7 @@
       "shared_instance_count": "BasicFactory",
       "max_num_assisters": 5,
       "priority": 376,
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionCommander",
         "AnyLegionFabberBasic",
@@ -67,6 +68,7 @@
       ],
       "placement_rules": {
         "buffer": 3,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -82,6 +84,7 @@
       "shared_instance_count": "BasicFactory",
       "max_num_assisters": 5,
       "priority": 376,
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionCommander",
         "AnyLegionFabberBasic",
@@ -142,6 +145,7 @@
       ],
       "placement_rules": {
         "buffer": 3,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -157,6 +161,7 @@
       "shared_instance_count": "AdvancedFactory",
       "priority": 477,
       "max_num_assisters": 10,
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionBotBasicFabber",
         "LegionBotAdvancedFabber",
@@ -221,6 +226,7 @@
       ],
       "placement_rules": {
         "buffer": 3,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -236,6 +242,7 @@
       "shared_instance_count": "AdvancedFactory",
       "priority": 477,
       "max_num_assisters": 10,
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionVehicleBasicFabber",
         "LegionVehicleAdvancedFabber"
@@ -295,6 +302,7 @@
       ],
       "placement_rules": {
         "buffer": 3,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",

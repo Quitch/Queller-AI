@@ -4,6 +4,7 @@
       "name": "Uber - Fabber Assist",
       "instance_count": -1,
       "priority": 1,
+      "base_sort": "FromBuilder",
       "builders": [
         "UberCommander",
         "AnyUberBasicFabber",
@@ -86,12 +87,12 @@
       ],
       "placement_rules": {
         "buffer": 6,
-        "placement_type": "FromBaseCenter",
+        "placement_type": "FromMainBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
-          "radius": 10,
-          "value": 50
+          "radius": 100,
+          "value": 10
         }
       }
     },
@@ -99,6 +100,7 @@
       "name": "Uber - Teleport Fabber To Planet",
       "instance_count": 1,
       "priority": 801,
+      "base_sort": "FromBuilder",
       "builders": [
         "BasicBotFabber",
         "BasicVehicleFabber",
@@ -138,6 +140,7 @@
       "name": "Uber - Move Fabber To Planet",
       "instance_count": 1,
       "priority": 800,
+      "base_sort": "FromBuilder",
       "builders": [
         "BasicBotFabber",
         "BasicVehicleFabber",
@@ -179,6 +182,7 @@
       "name": "Uber - Move Orbital Fabber To Planet",
       "instance_count": 1,
       "priority": 800,
+      "base_sort": "FromBuilder",
       "builders": [
         "OrbitalFabber"
       ],
@@ -281,6 +285,7 @@
       "name": "Uber - Move Orbital Fabber To Safe Planet",
       "instance_count": 1,
       "priority": 801,
+      "base_sort": "FromBuilder",
       "builders": [
         "OrbitalFabber"
       ],

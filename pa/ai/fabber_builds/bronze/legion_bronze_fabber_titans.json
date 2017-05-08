@@ -8,6 +8,7 @@
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
       "priority": 250,
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionBotAdvancedFabber",
         "LegionOrbitalBasicFabber",
@@ -35,8 +36,8 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 30,
-        "placement_type": "FromMainBaseCenter",
+        "buffer": 15,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -53,6 +54,7 @@
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
       "priority": 250,
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionVehicleAdvancedFabber",
         "LegionOrbitalBasicFabber"
@@ -79,8 +81,8 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 50,
-        "placement_type": "FromMainBaseCenter",
+        "buffer": 15,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -97,6 +99,7 @@
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
       "priority": 250,
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionAirAdvancedFabber",
         "LegionOrbitalBasicFabber"
@@ -123,7 +126,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -140,6 +143,7 @@
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
       "priority": 250,
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionOrbitalBasicFabber"
       ],
@@ -161,8 +165,8 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 50,
-        "placement_type": "FromMainBaseCenter",
+        "buffer": 15,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiOrbital",
           "compare_type": "<",
@@ -179,6 +183,7 @@
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
       "priority": 250,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyLegionFabberAdvanced"
       ],
@@ -241,7 +246,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",

@@ -6,7 +6,7 @@
       "instance_count": 1,
       "shared_instance_count": "BasicLandDefenseMex",
       "priority": 387,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionCommander",
         "LegionBotBasicFabber",
@@ -71,7 +71,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBasePerimeter",
+        "placement_type": "FromBasePerimeter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & MetalProduction",
@@ -96,7 +96,7 @@
       "instance_count": 1,
       "shared_instance_count": "BasicLandDefenseMex",
       "priority": 387,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionBotBasicFabber",
         "LegionVehicleBasicFabber",
@@ -163,7 +163,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBasePerimeter",
+        "placement_type": "FromBasePerimeter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & MetalProduction",
@@ -189,7 +189,7 @@
       "shared_instance_count": "BasicLandDefense",
       "max_num_assisters": 1,
       "priority": 251,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionCommander",
         "LegionBotBasicFabber",
@@ -256,7 +256,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBasePerimeter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
@@ -282,7 +282,7 @@
       "shared_instance_count": "BasicLandDefense",
       "max_num_assisters": 1,
       "priority": 251,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionBotBasicFabber",
         "LegionVehicleBasicFabber"
@@ -338,7 +338,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBasePerimeter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
@@ -364,7 +364,7 @@
       "shared_instance_count": "BasicLandDefense",
       "max_num_assisters": 1,
       "priority": 251,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionBotBasicFabber",
         "LegionVehicleBasicFabber"
@@ -420,7 +420,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
@@ -446,7 +446,7 @@
       "shared_instance_count": "AdvancedLandDefense",
       "priority": 278,
       "max_num_assisters": 3,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyLegionFabberAdvanced"
       ],
@@ -501,7 +501,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBasePerimeter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
@@ -527,7 +527,7 @@
       "shared_instance_count": "AdvancedLandDefense",
       "priority": 279,
       "max_num_assisters": 3,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyLegionFabberAdvanced"
       ],
@@ -582,7 +582,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBasePerimeter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
@@ -608,7 +608,7 @@
       "shared_instance_count": "AdvancedLandDefense",
       "priority": 280,
       "max_num_assisters": 3,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyLegionFabberAdvanced"
       ],
@@ -650,7 +650,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure",
@@ -676,7 +676,7 @@
       "shared_instance_count": "AdvancedLandDefense",
       "priority": 380,
       "max_num_assisters": 3,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyLegionFabberAdvanced"
       ],
@@ -714,7 +714,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
             "unit_type_string": "Commander",
@@ -741,7 +741,7 @@
       "priority": 508,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyLegionFabberAdvanced"
       ],
@@ -821,7 +821,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
             "unit_type_string": "Artillery & Structure - Factory",

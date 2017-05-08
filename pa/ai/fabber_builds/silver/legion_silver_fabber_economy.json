@@ -46,7 +46,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -101,7 +101,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -117,6 +117,7 @@
       "instance_count": 1,
       "max_num_assisters": 3,
       "priority": 361,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyLegionFabberBasic"
       ],
@@ -209,7 +210,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -264,7 +265,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -279,6 +280,7 @@
       "instance_count": 1,
       "max_num_assisters": 3,
       "priority": 370,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyLegionFabberAdvanced"
       ],
@@ -332,6 +334,7 @@
       "instance_count": 1,
       "max_num_assisters": 3,
       "priority": 261,
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionOrbitalBasicFabber"
       ],
@@ -423,6 +426,7 @@
       "to_build": "LegionEcoBasicStorage",
       "instance_count": 1,
       "priority": 260,
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionCommander",
         "AnyLegionFabberBasic",

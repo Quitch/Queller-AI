@@ -8,6 +8,7 @@
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
       "priority": 470,
+      "base_sort": "FromBuilder",
       "builders": [
         "AdvancedBotFabber",
         "UberSupportCommander",
@@ -51,8 +52,8 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 50,
-        "placement_type": "FromMainBaseCenter",
+        "buffer": 15,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -69,6 +70,7 @@
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
       "priority": 470,
+      "base_sort": "FromBuilder",
       "builders": [
         "AdvancedVehicleFabber",
         "OrbitalFabber"
@@ -111,8 +113,8 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 50,
-        "placement_type": "FromMainBaseCenter",
+        "buffer": 15,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -129,6 +131,7 @@
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
       "priority": 470,
+      "base_sort": "FromBuilder",
       "builders": [
         "AdvancedAirFabber",
         "OrbitalFabber"
@@ -171,7 +174,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -188,6 +191,7 @@
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
       "priority": 480,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -234,7 +238,7 @@
             "string0": "Land",
             "string1": "AntiSurface",
             "compare0": ">",
-            "value0": 1
+            "value0": 2
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -256,7 +260,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",

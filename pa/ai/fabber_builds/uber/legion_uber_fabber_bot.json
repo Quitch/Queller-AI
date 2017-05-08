@@ -7,6 +7,7 @@
       "shared_instance_count": "BasicFactory",
       "max_num_assisters": 2,
       "priority": 376,
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionCommander"
       ],
@@ -79,11 +80,12 @@
       ],
       "placement_rules": {
         "buffer": 3,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
-          "radius": 10,
-          "value": 50
+          "radius": 100,
+          "value": 10
         }
       }
     },
@@ -94,6 +96,7 @@
       "shared_instance_count": "BasicFactory",
       "max_num_assisters": 2,
       "priority": 373,
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionCommander"
       ],
@@ -137,11 +140,12 @@
       ],
       "placement_rules": {
         "buffer": 3,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
-          "radius": 10,
-          "value": 50
+          "radius": 100,
+          "value": 10
         }
       }
     },
@@ -150,9 +154,10 @@
       "to_build": "LegionFactoryBasicBot",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
-      "priority": 0,
+      "priority": 376,
       "min_num_assisters": 2,
       "max_num_assisters": 4,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyLegionFabberBasic",
         "AnyLegionFabberAdvanced"
@@ -226,11 +231,12 @@
       ],
       "placement_rules": {
         "buffer": 3,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
-          "radius": 10,
-          "value": 50
+          "radius": 100,
+          "value": 10
         }
       }
     },
@@ -242,6 +248,7 @@
       "min_num_assisters": 3,
       "max_num_assisters": 5,
       "priority": 374,
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionCommander",
         "AnyLegionFabberBasic",
@@ -346,11 +353,12 @@
       ],
       "placement_rules": {
         "buffer": 3,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
-          "radius": 10,
-          "value": 50
+          "radius": 100,
+          "value": 10
         }
       }
     },
@@ -359,6 +367,7 @@
       "to_build": "LegionFactoryBasicBot",
       "instance_count": 1,
       "priority": 601,
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionCommander",
         "AnyLegionFabberBasic",
@@ -399,11 +408,12 @@
       ],
       "placement_rules": {
         "buffer": 3,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
-          "radius": 10,
-          "value": 50
+          "radius": 100,
+          "value": 10
         }
       }
     },
@@ -415,6 +425,7 @@
       "priority": 477,
       "min_num_assisters": 5,
       "max_num_assisters": 8,
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionBotBasicFabber",
         "LegionBotAdvancedFabber",
@@ -493,11 +504,12 @@
       ],
       "placement_rules": {
         "buffer": 3,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
-          "radius": 10,
-          "value": 50
+          "radius": 100,
+          "value": 10
         }
       }
     },
@@ -509,6 +521,7 @@
       "priority": 475,
       "min_num_assisters": 6,
       "max_num_assisters": 9,
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionBotBasicFabber",
         "LegionBotAdvancedFabber",
@@ -570,11 +583,12 @@
       ],
       "placement_rules": {
         "buffer": 3,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
-          "radius": 10,
-          "value": 50
+          "radius": 100,
+          "value": 10
         }
       }
     }

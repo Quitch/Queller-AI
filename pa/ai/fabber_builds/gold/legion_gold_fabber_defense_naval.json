@@ -5,7 +5,7 @@
       "to_build": "LegionDefenseBasicNaval",
       "instance_count": 1,
       "priority": 352,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionCommander",
         "LegionAirBasicFabber",
@@ -97,7 +97,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBasePerimeter",
+        "placement_type": "FromBasePerimeter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & MetalProduction",
@@ -122,7 +122,7 @@
       "instance_count": 1,
       "max_num_assisters": 1,
       "priority": 354,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionCommander",
         "LegionNavalBasicFabber"
@@ -174,7 +174,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBasePerimeter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
@@ -199,7 +199,7 @@
       "instance_count": 1,
       "priority": 479,
       "max_num_assisters": 3,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionNavalAdvancedFabber",
         "LegionAirAdvancedFabber"
@@ -251,7 +251,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBasePerimeter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",

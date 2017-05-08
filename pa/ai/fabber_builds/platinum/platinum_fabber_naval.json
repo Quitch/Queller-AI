@@ -7,6 +7,7 @@
       "shared_instance_count": "BasicNavalFactory",
       "max_num_assisters": 2,
       "priority": 376,
+      "base_sort": "FromBuilder",
       "builders": [
         "UberCommander"
       ],
@@ -36,6 +37,7 @@
       ],
       "placement_rules": {
         "buffer": 5,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -51,6 +53,7 @@
       "shared_instance_count": "BasicFactory",
       "max_num_assisters": 2,
       "priority": 376,
+      "base_sort": "FromBuilder",
       "builders": [
         "UberCommander"
       ],
@@ -190,6 +193,7 @@
       ],
       "placement_rules": {
         "buffer": 5,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -206,6 +210,7 @@
       "priority": 377,
       "min_num_assisters": 2,
       "max_num_assisters": 4,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber",
         "AdvancedNavalFabber"
@@ -243,6 +248,7 @@
       ],
       "placement_rules": {
         "buffer": 5,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -259,6 +265,7 @@
       "priority": 377,
       "min_num_assisters": 2,
       "max_num_assisters": 4,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber",
         "AdvancedNavalFabber"
@@ -399,6 +406,7 @@
       ],
       "placement_rules": {
         "buffer": 5,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -415,6 +423,7 @@
       "priority": 374,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
+      "base_sort": "FromBuilder",
       "builders": [
         "UberCommander",
         "AnyUberBasicFabber",
@@ -634,6 +643,7 @@
       ],
       "placement_rules": {
         "buffer": 5,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -650,6 +660,7 @@
       "priority": 477,
       "min_num_assisters": 4,
       "max_num_assisters": 8,
+      "base_sort": "FromBuilder",
       "builders": [
         "BasicNavalFabber",
         "AdvancedNavalFabber"
@@ -777,6 +788,7 @@
       ],
       "placement_rules": {
         "buffer": 5,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",

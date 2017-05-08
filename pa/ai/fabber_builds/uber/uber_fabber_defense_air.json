@@ -5,7 +5,7 @@
       "to_build": "BasicAirDefense",
       "instance_count": 1,
       "priority": 353,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "UberCommander",
         "AnyUberBasicFabber",
@@ -93,7 +93,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBasePerimeter",
+        "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & MetalProduction",
@@ -118,7 +118,7 @@
       "instance_count": 1,
       "max_num_assisters": 1,
       "priority": 251,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "UberCommander",
         "BasicBotFabber",
@@ -160,7 +160,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
@@ -185,7 +185,7 @@
       "instance_count": 1,
       "max_num_assisters": 1,
       "priority": 456,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "UberCommander"
       ],
@@ -230,7 +230,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & AirDefense",
@@ -243,13 +243,13 @@
       }
     },
     {
-      "name": "Uber - Advanced Air Defense - Base",
+      "name": "Uber - Flak Cannon - Base",
       "to_build": "AdvancedAirDefense",
       "instance_count": 1,
       "min_num_assisters": 1,
       "max_num_assisters": 3,
       "priority": 279,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -294,7 +294,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
@@ -314,13 +314,13 @@
       }
     },
     {
-      "name": "Uber - Advanced Air Defense - Air Snipes",
+      "name": "Uber - Flak Cannon - Air Snipes",
       "to_build": "AdvancedAirDefense",
       "instance_count": 1,
       "min_num_assisters": 1,
       "max_num_assisters": 3,
       "priority": 456,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -365,7 +365,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & Advanced & AirDefense",

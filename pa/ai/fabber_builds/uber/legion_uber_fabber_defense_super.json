@@ -8,6 +8,7 @@
       "priority": 380,
       "min_num_assisters": 3,
       "max_num_assisters": 12,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyLegionFabberAdvanced"
       ],
@@ -52,7 +53,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & ((EnergyProduction & Advanced) | Factory)",
@@ -79,6 +80,7 @@
       "priority": 510,
       "min_num_assisters": 5,
       "max_num_assisters": 12,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyLegionFabberAdvanced"
       ],
@@ -271,7 +273,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
             "unit_type_string": "Commander | (Structure & ((EnergyProduction & Advanced) | Factory))",

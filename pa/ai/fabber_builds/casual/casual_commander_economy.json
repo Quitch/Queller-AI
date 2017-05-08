@@ -45,7 +45,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -61,6 +61,7 @@
       "max_num_assisters": 3,
       "shared_instance_count": "BasicEnergy",
       "priority": 261,
+      "base_sort": "FromBuilder",
       "builders": [
         "UberCommander"
       ],

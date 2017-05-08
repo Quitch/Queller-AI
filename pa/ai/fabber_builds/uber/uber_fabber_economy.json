@@ -32,12 +32,12 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
           "radius": 300,
-          "value": 50
+          "value": 10
         }
       },
       "task_type": "AreaBuild"
@@ -72,12 +72,12 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
           "radius": 300,
-          "value": 50
+          "value": 10
         }
       },
       "task_type": "AreaBuild"
@@ -109,12 +109,12 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
           "radius": 300,
-          "value": 50
+          "value": 10
         }
       },
       "task_type": "AreaBuild"
@@ -146,12 +146,12 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
           "radius": 300,
-          "value": 50
+          "value": 10
         }
       },
       "task_type": "AreaBuild"
@@ -183,12 +183,12 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
           "radius": 300,
-          "value": 50
+          "value": 10
         }
       },
       "task_type": "AreaBuild"
@@ -225,12 +225,12 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
           "radius": 300,
-          "value": 50
+          "value": 10
         }
       }
     },
@@ -264,12 +264,12 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
           "radius": 300,
-          "value": 50
+          "value": 10
         }
       }
     },
@@ -300,12 +300,12 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
           "radius": 300,
-          "value": 50
+          "value": 10
         }
       }
     },
@@ -336,12 +336,12 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
           "radius": 300,
-          "value": 50
+          "value": 10
         }
       }
     },
@@ -372,12 +372,12 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
           "radius": 300,
-          "value": 50
+          "value": 10
         }
       }
     },
@@ -389,6 +389,7 @@
       "shared_instance_count": "BasicEnergy",
       "cross_planet_shared_count": true,
       "priority": 262,
+      "base_sort": "FromBuilder",
       "builders": [
         "BasicVehicleFabber",
         "BasicNavalFabber"
@@ -456,8 +457,8 @@
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
-          "radius": 10,
-          "value": 50
+          "radius": 100,
+          "value": 10
         }
       }
     },
@@ -469,6 +470,7 @@
       "shared_instance_count": "BasicEnergy",
       "cross_planet_shared_count": true,
       "priority": 260,
+      "base_sort": "FromBuilder",
       "builders": [
         "BasicAirFabber",
         "BasicBotFabber"
@@ -536,8 +538,8 @@
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
-          "radius": 10,
-          "value": 50
+          "radius": 100,
+          "value": 10
         }
       }
     },
@@ -573,12 +575,12 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
           "radius": 300,
-          "value": 50
+          "value": 10
         }
       },
       "task_type": "AreaBuild"
@@ -613,12 +615,12 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
           "radius": 300,
-          "value": 50
+          "value": 10
         }
       },
       "task_type": "AreaBuild"
@@ -650,12 +652,12 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
           "radius": 300,
-          "value": 50
+          "value": 10
         }
       },
       "task_type": "AreaBuild"
@@ -692,12 +694,12 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
           "radius": 300,
-          "value": 50
+          "value": 10
         }
       }
     },
@@ -731,12 +733,12 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
           "radius": 300,
-          "value": 50
+          "value": 10
         }
       }
     },
@@ -767,12 +769,12 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
           "radius": 300,
-          "value": 50
+          "value": 10
         }
       }
     },
@@ -785,6 +787,7 @@
       "max_num_assisters": 5,
       "cross_planet_shared_count": true,
       "priority": 271,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -813,8 +816,8 @@
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
-          "radius": 10,
-          "value": 50
+          "radius": 100,
+          "value": 10
         }
       }
     },
@@ -827,6 +830,7 @@
       "shared_instance_count": "AdvancedEnergy",
       "cross_planet_shared_count": true,
       "priority": 511,
+      "base_sort": "FromBuilder",
       "builders": [
         "AdvancedNavalFabber",
         "AdvancedVehicleFabber",
@@ -855,8 +859,8 @@
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
-          "radius": 10,
-          "value": 50
+          "radius": 100,
+          "value": 10
         }
       }
     },
@@ -869,6 +873,7 @@
       "shared_instance_count": "AdvancedEnergy",
       "cross_planet_shared_count": true,
       "priority": 509,
+      "base_sort": "FromBuilder",
       "builders": [
         "AdvancedAirFabber",
         "AdvancedBotFabber"
@@ -896,8 +901,8 @@
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
-          "radius": 10,
-          "value": 50
+          "radius": 100,
+          "value": 10
         }
       }
     },
@@ -909,6 +914,7 @@
       "max_num_assisters": 5,
       "shared_instance_count": "OrbitalEco",
       "priority": 509,
+      "base_sort": "FromBuilder",
       "builders": [
         "OrbitalFabber"
       ],
@@ -952,7 +958,8 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 75
+        "buffer": 75,
+        "placement_type": "FromBaseCenter"
       }
     },
     {
@@ -963,6 +970,7 @@
       "max_num_assisters": 5,
       "shared_instance_count": "OrbitalEco",
       "priority": 260,
+      "base_sort": "FromBuilder",
       "builders": [
         "OrbitalFabber"
       ],
@@ -1010,7 +1018,8 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 75
+        "buffer": 75,
+        "placement_type": "FromBaseCenter"
       }
     },
     {
@@ -1019,6 +1028,7 @@
       "instance_count": 1,
       "cross_planet_shared_count": true,
       "priority": 1,
+      "base_sort": "FromBuilder",
       "builders": [
         "UberCommander",
         "AnyUberBasicFabber",
@@ -1060,7 +1070,7 @@
           "influence_type": "AntiSurface",
           "compare_type": "<",
           "radius": 300,
-          "value": 50
+          "value": 10
         }
       }
     },
@@ -1070,6 +1080,7 @@
       "instance_count": 1,
       "cross_planet_shared_count": true,
       "priority": 389,
+      "base_sort": "FromBuilder",
       "builders": [
         "UberCommander",
         "AnyUberBasicFabber",
@@ -1138,7 +1149,7 @@
           "influence_type": "AntiSurface",
           "compare_type": "<",
           "radius": 300,
-          "value": 50
+          "value": 10
         }
       }
     }

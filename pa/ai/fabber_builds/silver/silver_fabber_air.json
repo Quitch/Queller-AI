@@ -7,6 +7,7 @@
       "shared_instance_count": "BasicFactory",
       "priority": 376,
       "max_num_assisters": 10,
+      "base_sort": "FromBuilder",
       "builders": [
         "UberCommander",
         "AnyUberBasicFabber",
@@ -46,6 +47,7 @@
       ],
       "placement_rules": {
         "buffer": 3,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -61,6 +63,7 @@
       "shared_instance_count": "AdvancedFactory",
       "priority": 477,
       "max_num_assisters": 10,
+      "base_sort": "FromBuilder",
       "builders": [
         "BasicAirFabber",
         "AdvancedAirFabber"
@@ -120,6 +123,7 @@
       ],
       "placement_rules": {
         "buffer": 3,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",

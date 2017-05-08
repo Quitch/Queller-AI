@@ -7,7 +7,7 @@
       "min_num_assisters": 1,
       "max_num_assisters": 3,
       "priority": 255,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber",
         "AnyUberAdvancedFabber"
@@ -58,7 +58,7 @@
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
             "unit_type_string": "Commander | (Structure - MetalProduction) | Naval",
@@ -84,6 +84,7 @@
       "min_num_assisters": 3,
       "max_num_assisters": 12,
       "priority": 507,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -123,7 +124,8 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 2
+        "buffer": 2,
+        "placement_type": "FromBaseCenter"
       }
     },
     {
@@ -133,6 +135,7 @@
       "min_num_assisters": 2,
       "max_num_assisters": 4,
       "priority": 380,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -229,7 +232,7 @@
       ],
       "placement_rules": {
         "buffer": 2,
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure | Naval",
@@ -243,7 +246,7 @@
           "influence_type": "AntiSurface",
           "compare_type": "<",
           "radius": 30,
-          "value": 50
+          "value": 10
         }
       }
     },
@@ -254,6 +257,7 @@
       "min_num_assisters": 3,
       "max_num_assisters": 6,
       "priority": 380,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -350,7 +354,7 @@
       ],
       "placement_rules": {
         "buffer": 2,
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
             "unit_type_string": "(Structure - MetalProduction) | Naval",
@@ -364,7 +368,7 @@
           "influence_type": "AntiSurface",
           "compare_type": "<",
           "radius": 30,
-          "value": 50
+          "value": 10
         }
       }
     },
@@ -376,6 +380,7 @@
       "min_num_assisters": 3,
       "max_num_assisters": 45,
       "priority": 374,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -415,7 +420,14 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 2
+        "buffer": 2,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 100,
+          "value": 10
+        }
       }
     },
     {
@@ -426,6 +438,7 @@
       "min_num_assisters": 8,
       "max_num_assisters": 45,
       "priority": 508,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -479,6 +492,7 @@
       "min_num_assisters": 8,
       "max_num_assisters": 45,
       "priority": 375,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -526,7 +540,14 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 2
+        "buffer": 2,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 100,
+          "value": 10
+        }
       }
     },
     {
@@ -537,6 +558,7 @@
       "min_num_assisters": 8,
       "max_num_assisters": 45,
       "priority": 509,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -603,7 +625,8 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 3
+        "buffer": 3,
+        "placement_type": "FromBaseCenter"
       }
     },
     {
@@ -614,6 +637,7 @@
       "min_num_assisters": 20,
       "max_num_assisters": 100,
       "priority": 510,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberAdvancedFabber"
       ],
