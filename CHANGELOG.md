@@ -2,7 +2,16 @@
 
 #### 4.x.x
 
- - Fixed error in Gustav placement
+ - Fixed error in Uber's Gustav placement
+ - Uber doesn't build the Monstrosity again
+ - Always place ground and orbital defences at a base perimeter
+ - Always place structures based on the postion of the fabber
+ - Place factories outwards from a base rather than inside it
+ - Allow structures like nuke launchers to be built in any base not just the main one
+ - Gold through Uber must be losing a planet more heavily before building a planet splitter
+ - Casual will continue to use its Commander to build metal extractors throughout the game
+ - Fixed error with lower levels checking how many radar satellites were moving through space
+ - Reduced Platinum Catfish spam
 
 #### 4.14.0 - 2017/04/21
 
