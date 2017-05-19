@@ -7,7 +7,7 @@
       "shared_instance_count": "BasicFactory",
       "priority": 376,
       "max_num_assisters": 5,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "UberCommander",
         "AnyUberBasicFabber",
@@ -68,7 +68,7 @@
       ],
       "placement_rules": {
         "buffer": 3,
-        "placement_type": "FromBasePerimeter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -84,7 +84,7 @@
       "shared_instance_count": "BasicFactory",
       "priority": 376,
       "max_num_assisters": 5,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "UberCommander",
         "AnyUberBasicFabber",
@@ -145,7 +145,7 @@
       ],
       "placement_rules": {
         "buffer": 3,
-        "placement_type": "FromBasePerimeter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -161,7 +161,7 @@
       "shared_instance_count": "AdvancedFactory",
       "priority": 477,
       "max_num_assisters": 10,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "BasicBotFabber",
         "AdvancedBotFabber",
@@ -222,7 +222,7 @@
       ],
       "placement_rules": {
         "buffer": 3,
-        "placement_type": "FromBasePerimeter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -238,7 +238,7 @@
       "shared_instance_count": "AdvancedFactory",
       "priority": 477,
       "max_num_assisters": 10,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "BasicVehicleFabber",
         "AdvancedVehicleFabber"
@@ -302,7 +302,7 @@
       ],
       "placement_rules": {
         "buffer": 3,
-        "placement_type": "FromBasePerimeter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",

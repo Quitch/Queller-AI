@@ -4,7 +4,7 @@
       "name": "Legion - Uber - Fabber Assist",
       "instance_count": -1,
       "priority": 1,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "LegionCommander",
         "AnyLegionFabberBasic",
@@ -100,7 +100,7 @@
       "name": "Legion - Uber - Teleport Fabber To Planet",
       "instance_count": 1,
       "priority": 801,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "LegionBotBasicFabber",
         "LegionVehicleBasicFabber",
@@ -140,7 +140,7 @@
       "name": "Legion - Uber - Move Fabber To Planet",
       "instance_count": 1,
       "priority": 800,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "LegionBotBasicFabber",
         "LegionVehicleBasicFabber",
@@ -182,7 +182,7 @@
       "name": "Legion - Uber - Move Orbital Fabber To Planet",
       "instance_count": 1,
       "priority": 800,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "LegionOrbitalBasicFabber"
       ],
@@ -285,7 +285,7 @@
       "name": "Legion - Uber - Move Orbital Fabber To Safe Planet",
       "instance_count": 1,
       "priority": 801,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "LegionOrbitalBasicFabber"
       ],

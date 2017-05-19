@@ -7,7 +7,7 @@
       "shared_instance_count": "BasicFactory",
       "max_num_assisters": 2,
       "priority": 376,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "LegionCommander"
       ],
@@ -129,7 +129,7 @@
       ],
       "placement_rules": {
         "buffer": 3,
-        "placement_type": "FromBasePerimeter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -145,7 +145,7 @@
       "shared_instance_count": "BasicFactory",
       "max_num_assisters": 2,
       "priority": 378,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "LegionCommander"
       ],
@@ -184,7 +184,7 @@
       ],
       "placement_rules": {
         "buffer": 3,
-        "placement_type": "FromBasePerimeter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -201,7 +201,7 @@
       "priority": 376,
       "min_num_assisters": 1,
       "max_num_assisters": 3,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "AnyLegionFabberBasic",
         "AnyLegionFabberAdvanced"
@@ -324,7 +324,7 @@
       ],
       "placement_rules": {
         "buffer": 3,
-        "placement_type": "FromBasePerimeter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -340,7 +340,7 @@
       "shared_instance_count": "BasicFactory",
       "max_num_assisters": 2,
       "priority": 378,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "LegionCommander",
         "AnyLegionFabberBasic"
@@ -389,7 +389,7 @@
       ],
       "placement_rules": {
         "buffer": 3,
-        "placement_type": "FromBasePerimeter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -406,7 +406,7 @@
       "priority": 374,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "LegionCommander",
         "AnyLegionFabberBasic",
@@ -590,7 +590,7 @@
       ],
       "placement_rules": {
         "buffer": 3,
-        "placement_type": "FromBasePerimeter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -606,7 +606,7 @@
       "shared_instance_count": "BasicFactory",
       "max_num_assisters": 2,
       "priority": 601,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "LegionCommander",
         "AnyLegionFabberBasic",
@@ -638,7 +638,7 @@
       ],
       "placement_rules": {
         "buffer": 3,
-        "placement_type": "FromBasePerimeter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -655,7 +655,7 @@
       "priority": 477,
       "min_num_assisters": 4,
       "max_num_assisters": 8,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "LegionAirBasicFabber",
         "LegionAirAdvancedFabber"
@@ -796,7 +796,7 @@
       ],
       "placement_rules": {
         "buffer": 3,
-        "placement_type": "FromBasePerimeter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",

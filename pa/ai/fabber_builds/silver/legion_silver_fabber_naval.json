@@ -7,7 +7,7 @@
       "shared_instance_count": "BasicFactory",
       "max_num_assisters": 5,
       "priority": 377,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "LegionCommander",
         "AnyLegionFabberBasic",
@@ -64,7 +64,7 @@
       ],
       "placement_rules": {
         "buffer": 5,
-        "placement_type": "FromBasePerimeter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -80,7 +80,7 @@
       "shared_instance_count": "AdvancedFactory",
       "priority": 477,
       "max_num_assisters": 10,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "LegionNavalBasicFabber",
         "LegionNavalAdvancedFabber"
@@ -144,7 +144,7 @@
       ],
       "placement_rules": {
         "buffer": 5,
-        "placement_type": "FromBasePerimeter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",

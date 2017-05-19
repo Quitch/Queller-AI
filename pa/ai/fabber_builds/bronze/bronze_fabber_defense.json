@@ -7,7 +7,7 @@
       "shared_instance_count": "AirDefence",
       "max_num_assisters": 3,
       "priority": 478,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": [
         "AnyUberBasicFabber"
       ],
@@ -65,7 +65,7 @@
       "shared_instance_count": "LandDefence",
       "max_num_assisters": 3,
       "priority": 477,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": [
         "AnyUberBasicFabber"
       ],
@@ -123,7 +123,7 @@
       "shared_instance_count": "LandDefence",
       "max_num_assisters": 3,
       "priority": 478,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": [
         "AnyUberBasicFabber"
       ],
@@ -181,7 +181,7 @@
       "shared_instance_count": "NavalDefence",
       "max_num_assisters": 3,
       "priority": 478,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": [
         "BasicAirFabber",
         "BasicNavalFabber"
@@ -244,7 +244,7 @@
       "shared_instance_count": "LandDefence",
       "priority": 480,
       "max_num_assisters": 3,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -303,7 +303,7 @@
       "min_num_assisters": 2,
       "max_num_assisters": 5,
       "priority": 479,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -359,7 +359,7 @@
       "shared_instance_count": "NavalDefence",
       "priority": 480,
       "max_num_assisters": 3,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": [
         "AdvancedNavalFabber",
         "AdvancedAirFabber"
@@ -428,7 +428,7 @@
       "shared_instance_count": "AirDefence",
       "max_num_assisters": 3,
       "priority": 477,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": [
         "AnyUberBasicFabber"
       ],
@@ -481,7 +481,7 @@
       "shared_instance_count": "LandDefence",
       "max_num_assisters": 3,
       "priority": 476,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": [
         "AnyUberBasicFabber"
       ],
@@ -540,7 +540,7 @@
       "shared_instance_count": "LandDefence",
       "max_num_assisters": 3,
       "priority": 477,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": [
         "AnyUberBasicFabber"
       ],
@@ -593,7 +593,7 @@
       "shared_instance_count": "NavalDefence",
       "max_num_assisters": 3,
       "priority": 477,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": [
         "BasicAirFabber",
         "BasicNavalFabber"
@@ -657,7 +657,7 @@
       "shared_instance_count": "AirDefence",
       "max_num_assisters": 3,
       "priority": 479,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -710,7 +710,7 @@
       "shared_instance_count": "LandDefence",
       "priority": 479,
       "max_num_assisters": 3,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -764,7 +764,7 @@
       "min_num_assisters": 2,
       "max_num_assisters": 5,
       "priority": 479,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -815,7 +815,7 @@
       "shared_instance_count": "NavalDefence",
       "priority": 479,
       "max_num_assisters": 3,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": [
         "AdvancedNavalFabber",
         "AdvancedAirFabber"
@@ -878,7 +878,7 @@
       "instance_count": 1,
       "max_num_assisters": 3,
       "priority": 481,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "OrbitalFabber"
       ],
@@ -930,7 +930,7 @@
       "instance_count": 1,
       "priority": 478,
       "max_num_assisters": 3,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": [
         "AnyUberBasicFabber",
         "AnyUberAdvancedFabber"
@@ -1022,7 +1022,7 @@
       "shared_instance_count": "SuperWeapon",
       "priority": 480,
       "max_num_assisters": 10,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "AnyUberAdvancedFabber"
       ],

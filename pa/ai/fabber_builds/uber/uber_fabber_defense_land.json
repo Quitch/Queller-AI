@@ -6,7 +6,7 @@
       "instance_count": 1,
       "shared_instance_count": "BasicLandDefenseMex",
       "priority": 352,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": [
         "UberCommander",
         "BasicBotFabber",
@@ -96,7 +96,7 @@
       "instance_count": 1,
       "shared_instance_count": "BasicLandDefenseMex",
       "priority": 353,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": [
         "BasicBotFabber",
         "BasicVehicleFabber",
@@ -184,7 +184,7 @@
       "shared_instance_count": "BasicLandDefense",
       "max_num_assisters": 1,
       "priority": 251,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": [
         "UberCommander",
         "BasicBotFabber",
@@ -277,7 +277,7 @@
       "shared_instance_count": "BasicLandDefense",
       "max_num_assisters": 1,
       "priority": 251,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": [
         "BasicBotFabber",
         "BasicVehicleFabber"
@@ -358,7 +358,7 @@
       "instance_count": 1,
       "priority": 279,
       "max_num_assisters": 3,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -443,7 +443,7 @@
       "instance_count": 1,
       "priority": 279,
       "max_num_assisters": 3,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": [
         "AnyUberAdvancedFabber"
       ],

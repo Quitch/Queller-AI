@@ -5,7 +5,7 @@
       "to_build": "BasicAirDefense",
       "instance_count": 1,
       "priority": 353,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": [
         "UberCommander",
         "AnyUberBasicFabber",
@@ -118,7 +118,7 @@
       "instance_count": 1,
       "max_num_assisters": 1,
       "priority": 251,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": [
         "UberCommander",
         "BasicBotFabber",
@@ -185,7 +185,7 @@
       "instance_count": 1,
       "max_num_assisters": 1,
       "priority": 456,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "UberCommander"
       ],
@@ -249,7 +249,7 @@
       "min_num_assisters": 1,
       "max_num_assisters": 3,
       "priority": 279,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -320,7 +320,7 @@
       "min_num_assisters": 1,
       "max_num_assisters": 3,
       "priority": 456,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "AnyUberAdvancedFabber"
       ],

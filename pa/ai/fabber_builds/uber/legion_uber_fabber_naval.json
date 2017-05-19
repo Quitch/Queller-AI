@@ -7,7 +7,7 @@
       "shared_instance_count": "BasicFactory",
       "max_num_assisters": 2,
       "priority": 376,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "LegionCommander"
       ],
@@ -187,7 +187,7 @@
       ],
       "placement_rules": {
         "buffer": 5,
-        "placement_type": "FromBasePerimeter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -204,7 +204,7 @@
       "priority": 377,
       "min_num_assisters": 2,
       "max_num_assisters": 4,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "AnyLegionFabberBasic",
         "LegionNavalAdvancedFabber"
@@ -385,7 +385,7 @@
       ],
       "placement_rules": {
         "buffer": 5,
-        "placement_type": "FromBasePerimeter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -402,7 +402,7 @@
       "priority": 374,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "LegionCommander",
         "AnyLegionFabberBasic",
@@ -697,7 +697,7 @@
       ],
       "placement_rules": {
         "buffer": 5,
-        "placement_type": "FromBasePerimeter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -714,7 +714,7 @@
       "priority": 477,
       "min_num_assisters": 5,
       "max_num_assisters": 8,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "LegionNavalBasicFabber",
         "LegionNavalAdvancedFabber"
@@ -796,7 +796,7 @@
       ],
       "placement_rules": {
         "buffer": 5,
-        "placement_type": "FromBasePerimeter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -813,7 +813,7 @@
       "priority": 475,
       "min_num_assisters": 6,
       "max_num_assisters": 9,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "LegionNavalBasicFabber",
         "LegionNavalAdvancedFabber"
@@ -874,7 +874,7 @@
       ],
       "placement_rules": {
         "buffer": 5,
-        "placement_type": "FromBasePerimeter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
