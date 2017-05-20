@@ -40,6 +40,16 @@
           "max_count": -1,
           "squad": "Defense"
         }
+      ],
+      "target_priorities": [
+          "Commander",
+          "Fabber & (Land | Naval)",
+          "Naval & Defense",
+          "Mobile & Offense",
+          "Structure & Nuke",
+          "Structure & NukeDefense",
+          "Structure & (Artillery | Tactical)",
+          "MetalProduction | EnergyProduction"
       ]
     }
   }

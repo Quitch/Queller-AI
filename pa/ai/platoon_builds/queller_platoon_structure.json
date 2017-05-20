@@ -1,0 +1,21 @@
+{
+    "build_list": [
+        {
+            "name": "Queller - Artillery Platoon",
+            "to_build": "Artillery_Queller",
+            "instance_count": -1,
+            "priority": 110,
+            "build_conditions": [
+                [
+                    {
+                        "test_type": "UnitPoolCount",
+                        "unit_type_string0": "Structure & (Artillery | Tactical) - Factory",
+                        "compare0": ">=",
+                        "value0": 1
+                    }
+                ]
+            ],
+            "task_type": "Artillery"
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+  "platoon_templates": {
+    "Artillery_Queller": {
+      "units": [
+        {
+          "unit_types": "(Structure & (Artillery | Tactical)) - Factory",
+          "max_count": 1
+        }
+      ],
+      "target_priorities": [
+        "Structure & SelfDestruct",
+        "Commander",
+        "Land & Titan",
+        "Structure & Nuke",
+        "Structure & NukeDefense",
+        "Structure & (Artillery | Tactical)",
+        "Fabber & (Land | Naval)",
+        "Land & (MetalProduction | EnergyProduction)",
+        "Structure & Factory",
+        "Land & Mobile & Offense"
+      ]
+    }
+  }
+}

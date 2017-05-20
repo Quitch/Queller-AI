@@ -7,6 +7,13 @@
           "min_count": 1,
           "max_count": -1
         }
+      ],
+      "target_priorities": [
+          "Orbital & MetalProduction",
+          "Orbital & Transport",
+          "Orbital & OrbitalDefense",
+          "Orbital & Mobile & Offense",
+          "Orbital & EnergyProduction"
       ]
     },
     "Orbital_Laser_Attack_Queller": {
@@ -16,21 +23,17 @@
           "min_count": 1,
           "max_count": -1
         }
-      ]
-    },
-    "Orbital_Laser_Attack_Escorted_Queller": {
-      "units": [
-        {
-          "unit_types": "(LaserPlatform | (Fighter & Heavy)) & Mobile",
-          "min_count": 1,
-          "max_count": -1
-        },
-        {
-          "unit_types": "Orbital & Fighter & Mobile",
-          "min_count": 0,
-          "max_count": -1,
-          "squad": "Escort"
-        }
+      ],
+      "target_priorities": [
+          "Commander",
+          "ControlModule",
+          "PlanetEngine",
+          "Structure & Nuke",
+          "Structure & NukeDefense",
+          "Fabber - Orbital",
+          "Land & OrbitalDefense",
+          "Land & (MetalProduction | EnergyProduction)",
+          "Structure & Factory"
       ]
     },
     "Orbital_Radar_Queller": {
