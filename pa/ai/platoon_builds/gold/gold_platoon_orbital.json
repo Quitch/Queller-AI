@@ -160,7 +160,7 @@
       "task_type": "OrbitalLaserAttack"
     },
     {
-      "name": "Gold - Orbital Transfer To Planet",
+      "name": "Gold - Orbital Fighter Transfer",
       "to_build": "Orbital_Offense_Transfer_Queller",
       "instance_count": -1,
       "priority": 99,
@@ -182,11 +182,21 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Orbital & (Fighter | LaserPlatform)",
+            "unit_type_string0": "Orbital & Fighter",
             "compare0": ">=",
             "value0": 1
           }
-        ],
+        ]
+      ],
+      "task_type": "TransferOrbitalToPlanet"
+    },
+    {
+      "name": "Gold - Orbital Battleship Transfer",
+      "to_build": "Orbital_Offense_Transfer_Queller",
+      "instance_count": -1,
+      "priority": 99,
+      "debug": false,
+      "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
@@ -198,7 +208,34 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetIsGasGiant",
+            "test_type": "ThisPlanetNeedsOrbitalUnitAssistance",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & Fighter & Heavy",
+            "compare0": ">=",
+            "value0": 1
+          }
+        ]
+      ],
+      "task_type": "TransferOrbitalAttackToPlanet"
+    },
+    {
+      "name": "Gold - Orbital Laser Transfer",
+      "to_build": "Orbital_Offense_Transfer_Queller",
+      "instance_count": -1,
+      "priority": 99,
+      "debug": false,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
             "boolean": true
           },
           {
@@ -209,7 +246,7 @@
           }
         ]
       ],
-      "task_type": "TransferOrbitalToPlanet"
+      "task_type": "TransferOrbitalCommanderAttackToPlanet"
     }
   ]
 }

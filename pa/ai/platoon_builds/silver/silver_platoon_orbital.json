@@ -130,38 +130,7 @@
       "task_type": "OrbitalFighterAttack"
     },
     {
-      "name": "Silver - Orbital Death Laser Attack Platoon",
-      "to_build": "Orbital_Laser_Attack_Queller",
-      "instance_count": -1,
-      "priority": 100,
-      "debug": false,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "(LaserPlatform | (Fighter & Heavy))",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "CanAttackWithPoolUnits",
-            "string0": "WL_AnySurface"
-          }
-        ]
-      ],
-      "task_type": "OrbitalLaserAttack"
-    },
-    {
-      "name": "Silver - Orbital Transfer To Planet",
+      "name": "Silver - Orbital Fighter Transfer",
       "to_build": "Orbital_Offense_Transfer_Queller",
       "instance_count": -1,
       "priority": 99,
@@ -183,11 +152,21 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Orbital & (Fighter | LaserPlatform)",
+            "unit_type_string0": "Orbital & Fighter",
             "compare0": ">=",
             "value0": 1
           }
-        ],
+        ]
+      ],
+      "task_type": "TransferOrbitalToPlanet"
+    },
+    {
+      "name": "Silver - Orbital Battleship Transfer",
+      "to_build": "Orbital_Offense_Transfer_Queller",
+      "instance_count": -1,
+      "priority": 99,
+      "debug": false,
+      "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
@@ -199,7 +178,34 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetIsGasGiant",
+            "test_type": "ThisPlanetNeedsOrbitalUnitAssistance",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & Fighter & Heavy",
+            "compare0": ">=",
+            "value0": 1
+          }
+        ]
+      ],
+      "task_type": "TransferOrbitalAttackToPlanet"
+    },
+    {
+      "name": "Silver - Orbital Laser Transfer",
+      "to_build": "Orbital_Offense_Transfer_Queller",
+      "instance_count": -1,
+      "priority": 99,
+      "debug": false,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
             "boolean": true
           },
           {
@@ -210,7 +216,7 @@
           }
         ]
       ],
-      "task_type": "TransferOrbitalToPlanet"
+      "task_type": "TransferOrbitalCommanderAttackToPlanet"
     }
   ]
 }
