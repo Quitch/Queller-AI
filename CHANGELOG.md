@@ -16,6 +16,7 @@
    - Custom target priorities for naval and orbital platoons
    - Choose orbital forces arrival location on another planet based on the type of unit being sent
    - Silver through Uber will try to Commander snipe with orbital forces if possible
+   - Platinum and Uber prioritise getting to gas giants
 
 #### 4.14.0 - 2017/04/21
 
