@@ -9,6 +9,8 @@
  - Casual will continue to use its Commander to build metal extractors throughout the game
  - Fixed error with lower levels checking how many radar satellites were moving through space
  - Reduced Platinum Catfish spam
+ - Uber is more likely to build defence by its MEXs
+ - Fixed Uber not building AA by MEX expansions close to the main base
  - Added support for latest AI functions and features introduced in #####
    - Uber will rush orbital if other players might have started offworld
    - Uber rushes orbital if there's an orbital threat on a multi-planet map and it hasn't gone orbital yet
