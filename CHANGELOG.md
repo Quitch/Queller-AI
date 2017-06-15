@@ -12,6 +12,7 @@
  - Uber is more likely to build defence by its MEXs
  - Fixed Uber not building AA by MEX expansions close to the main base
  - Properly exclude orbital factories from checks related to moving to T2
+ - Bronze and Silver faster to get orbital factories once they've gone orbital
  - Added support for latest AI functions and features introduced in #####
    - Uber will rush orbital if other players might have started offworld
    - Uber rushes orbital if there's an orbital threat on a multi-planet map and it hasn't gone orbital yet
