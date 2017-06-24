@@ -406,6 +406,68 @@
       ]
     },
     {
+      "name": "Uber - GIL-E",
+      "to_build": "AdvancedArtilleryBot",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": [
+        "AdvancedBotFactory"
+      ],
+      "debug": false,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "(Tank & Advanced) - Custom1",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Bot & Artillery & Advanced",
+            "unit_type_string1": "Land & Mobile - Scout - Fabber - Deconstruction - Construction",
+            "compare0": "<",
+            "value0": 0.1
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Bot & Artillery & Advanced",
+            "unit_type_string1": "Land & Mobile - Scout - Fabber - Deconstruction - Construction",
+            "compare0": "<",
+            "value0": 0.1
+          }
+        ]
+      ]
+    },
+    {
       "name": "Uber - Bluehawk",
       "to_build": "TMLBot",
       "instance_count": 1,
