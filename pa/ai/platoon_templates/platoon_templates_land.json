@@ -198,10 +198,28 @@
           "unit_types": "Land & Mobile & (Heavy - (Bot & Basic)) - Titan",
           "min_count": 0,
           "max_count": -1,
-          "squad": "Close"
+          "squad": "Suicide"
         },
         {
           "unit_types": "Land & Mobile & (Scout | Construction | AirDefense) - Titan",
+          "min_count": 0,
+          "max_count": -1,
+          "squad": "Defense"
+        },
+        {
+          "unit_types": "Air & Mobile & Fighter",
+          "min_count": 1,
+          "max_count": -1,
+          "squad": "Escort"
+        },
+        {
+          "unit_types": "Air & Mobile & SelfDestruct",
+          "min_count": 0,
+          "max_count": -1,
+          "squad": "Defense"
+        },
+        {
+          "unit_types": "Air & MissileDefense",
           "min_count": 0,
           "max_count": -1,
           "squad": "Defense"
