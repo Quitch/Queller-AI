@@ -14,6 +14,8 @@
  - Properly exclude orbital factories from checks related to moving to T2
  - Bronze and Silver faster to get orbital factories once they've gone orbital
  - Bronze and Silver will scout with Legion Marauders
+ - Moved Novas into a valid air squad
+ - Tweaked when Uber rushes orbital
  - Added support for latest AI functions and features introduced in #####
    - Uber will rush orbital if other players might have started offworld
    - Uber rushes orbital if there's an orbital threat on a multi-planet map and it hasn't gone orbital yet
@@ -22,6 +24,9 @@
    - Choose orbital force's arrival location on another planet based on the type of unit being sent
    - Silver through Uber will try to Commander snipe with orbital forces if possible
    - Platinum and Uber prioritise getting to gas giants
+ - Changes to accomodate balance changes
+   - Platinum will build the GIL-E
+   - Uber will build the GIL-E when it deems it appropriate
 
 #### 4.14.0 - 2017/04/21
 
