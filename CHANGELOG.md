@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### 4.x.x
+#### 4.15.0-beta
 
  - Fixed error in Uber's Gustav placement
  - Uber doesn't build the Monstrosity again
@@ -18,8 +18,8 @@
    - Uber will rush orbital if other players might have started offworld
    - Uber rushes orbital if there's an orbital threat on a multi-planet map and it hasn't gone orbital yet
    - Platinum and Uber more likely to rush orbital if there's a gas giant up for grabs
-   - Custom target priorities for naval and orbital platoons
-   - Choose orbital forces arrival location on another planet based on the type of unit being sent
+   - Improved target priorities for naval, orbital and artillery platoons
+   - Choose orbital force's arrival location on another planet based on the type of unit being sent
    - Silver through Uber will try to Commander snipe with orbital forces if possible
    - Platinum and Uber prioritise getting to gas giants
 
