@@ -24,6 +24,7 @@
    - Choose orbital force's arrival location on another planet based on the type of unit being sent
    - Silver through Uber will try to Commander snipe with orbital forces if possible
    - Platinum and Uber prioritise getting to gas giants
+   - Uber will escort its land and hover platoons with Novas and fighter aircraft
  - Changes to accomodate balance changes
    - Platinum will build the GIL-E
    - Uber will build the GIL-E when it deems it appropriate
