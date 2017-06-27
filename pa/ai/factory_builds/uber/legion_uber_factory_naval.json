@@ -110,11 +110,10 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Sub",
-            "string1": "AntiSub",
-            "compare0": ">=",
-            "value0": 0.6
+            "compare0": ">",
+            "value0": 0
           }
         ],
         [

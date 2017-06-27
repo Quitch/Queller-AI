@@ -8,7 +8,7 @@
  - Gold through Uber must be losing a planet more heavily before building a planet splitter
  - Casual will continue to use its Commander to build metal extractors throughout the game
  - Fixed error with lower levels checking how many radar satellites were moving through space
- - Reduced Platinum Catfish spam
+ - Fixed Platinum building nothing but Catfish
  - Uber is more likely to build defence by its MEXs
  - Fixed Uber not building AA by MEX expansions close to the main base
  - Properly exclude orbital factories from checks related to moving to T2
@@ -17,6 +17,7 @@
  - Moved Novas into a valid air squad
  - Tweaked when Uber rushes orbital
  - Gold no longer builds the Necromancer
+ - Uber builds more Catfish
  - Added support for latest AI functions and features introduced in #####
    - Uber will rush orbital if other players might have started offworld
    - Uber rushes orbital if there's an orbital threat on a multi-planet map and it hasn't gone orbital yet
