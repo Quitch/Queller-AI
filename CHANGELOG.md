@@ -27,7 +27,8 @@
    - Uber will escort its land and hover platoons with Novas and fighter aircraft
  - Changes to accomodate balance changes
    - Platinum will build the GIL-E
-   - Uber will build the GIL-E when it deems it appropriate
+   - Uber will build the GIL-E in response to Levelers
+   - Uber will build Shellers in response to GIL-Es
 
 #### 4.14.0 - 2017/04/21
 
