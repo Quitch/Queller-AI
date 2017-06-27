@@ -557,26 +557,6 @@
       ]
     },
     {
-      "name": "Legion - Gold - Necromancer",
-      "to_build": "LegionBotAdvancedBomb",
-      "instance_count": 1,
-      "max_num_assisters": 10,
-      "priority": 199,
-      "builders": [
-        "LegionFactoryAdvancedBot"
-      ],
-      "debug": false,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          }
-        ]
-      ]
-    },
-    {
       "name": "Legion - Gold - Orbweaver",
       "to_build": "LegionBotAdvancedAA",
       "instance_count": -1,

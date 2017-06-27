@@ -16,6 +16,7 @@
  - Bronze and Silver will scout with Legion Marauders
  - Moved Novas into a valid air squad
  - Tweaked when Uber rushes orbital
+ - Gold no longer builds the Necromancer
  - Added support for latest AI functions and features introduced in #####
    - Uber will rush orbital if other players might have started offworld
    - Uber rushes orbital if there's an orbital threat on a multi-planet map and it hasn't gone orbital yet
