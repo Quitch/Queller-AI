@@ -24,6 +24,8 @@
  - Tweaked platoons to allow Uber to utilise bots by themselves a bit more
  - Removed the amphibious platoon
  - Less willing to disengage units such as Infernos
+ - Uber places greater emphasis on protecting the Commander against nukes
+ - Uber avoids spamming Barracudas just because it saw some Stokes
  - Added support for latest AI functions and features introduced in #####
    - Uber will rush orbital if other players might have started offworld
    - Uber rushes orbital if there's an orbital threat on a multi-planet map and it hasn't gone orbital yet
