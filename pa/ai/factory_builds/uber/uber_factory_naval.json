@@ -407,7 +407,7 @@
           },
           {
             "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Naval & Mobile & Custom1",
+            "unit_type_string0": "(Naval | (Tank & Sub)) & Mobile & Custom1",
             "boolean": false
           },
           {
@@ -433,7 +433,7 @@
           },
           {
             "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Naval & Mobile & Custom1",
+            "unit_type_string0": "(Naval | (Tank & Sub)) & Mobile & Custom1",
             "boolean": true
           },
           {
@@ -465,7 +465,7 @@
           },
           {
             "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Naval & Mobile & Custom1",
+            "unit_type_string0": "(Naval | (Tank & Sub)) & Mobile & Custom1",
             "boolean": true
           },
           {
