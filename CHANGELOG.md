@@ -22,6 +22,8 @@
  - Ensure Bluehawks are always treated as a long-range unit
  - No longer tries to take non-amphibious units in its amphibious platoons
  - Tweaked platoons to allow Uber to utilise bots by themselves a bit more
+ - Removed the amphibious platoon
+ - Less willing to disengage units such as Infernos
  - Added support for latest AI functions and features introduced in #####
    - Uber will rush orbital if other players might have started offworld
    - Uber rushes orbital if there's an orbital threat on a multi-planet map and it hasn't gone orbital yet
