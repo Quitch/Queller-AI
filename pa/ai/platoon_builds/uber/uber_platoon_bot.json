@@ -97,6 +97,408 @@
         ]
       ],
       "task_type": "Scout"
+    },
+    {
+      "name": "Uber - Bot Attack Platoon 1",
+      "to_build": "Bot_Attack_Queller_Uber",
+      "instance_count": -1,
+      "priority": 195,
+      "debug": false,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": "<",
+            "value0": 840
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & Mobile - Fabber - AirDefense - Construction - Titan",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Bot Attack Platoon 4",
+      "to_build": "Bot_Attack_Queller_Uber",
+      "instance_count": -1,
+      "priority": 185,
+      "debug": false,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": "<",
+            "value0": 2800
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & Mobile - Fabber - AirDefense - Construction - Titan",
+            "compare0": ">=",
+            "value0": 4
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Bot Attack Platoon 10",
+      "to_build": "Bot_Attack_Queller_Uber",
+      "instance_count": -1,
+      "priority": 175,
+      "debug": false,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": "<",
+            "value0": 5600
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & Mobile - Fabber - AirDefense - Construction - Titan",
+            "compare0": ">=",
+            "value0": 10
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & Land & AirDefense",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Bot Attack Escorted Platoon 10",
+      "to_build": "Bot_Attack_Escorted_Queller_Uber",
+      "instance_count": -1,
+      "priority": 170,
+      "debug": false,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": "<",
+            "value0": 5600
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & Mobile - Fabber - AirDefense - Construction - Titan",
+            "compare0": ">=",
+            "value0": 10
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Bot Attack Platoon 20",
+      "to_build": "Bot_Attack_Queller_Uber",
+      "instance_count": -1,
+      "priority": 165,
+      "debug": false,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": "<",
+            "value0": 11200
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & Mobile - Fabber - AirDefense - Construction - Titan",
+            "compare0": ">=",
+            "value0": 20
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & Land & AirDefense",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Bot Attack Escorted Platoon 20",
+      "to_build": "Bot_Attack_Escorted_Queller_Uber",
+      "instance_count": -1,
+      "priority": 160,
+      "debug": false,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": "<",
+            "value0": 11200
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & Mobile - Fabber - AirDefense - Construction - Titan",
+            "compare0": ">=",
+            "value0": 20
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Bot Attack Platoon 30",
+      "to_build": "Bot_Attack_Queller_Uber",
+      "instance_count": -1,
+      "priority": 155,
+      "debug": false,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": "<",
+            "value0": 16800
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & Mobile - Fabber - AirDefense - Construction - Titan",
+            "compare0": ">=",
+            "value0": 30
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & Land & AirDefense",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Bot Attack Escorted Platoon 30",
+      "to_build": "Bot_Attack_Escorted_Queller_Uber",
+      "instance_count": -1,
+      "priority": 150,
+      "debug": false,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": "<",
+            "value0": 16800
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & Mobile - Fabber - AirDefense - Construction - Titan",
+            "compare0": ">=",
+            "value0": 30
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Bot Attack Platoon 40",
+      "to_build": "Bot_Attack_Queller_Uber",
+      "instance_count": -1,
+      "priority": 145,
+      "debug": false,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & Mobile - Fabber - AirDefense - Construction - Titan",
+            "compare0": ">=",
+            "value0": 40
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & Land & AirDefense",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Bot Attack Escorted Platoon 40",
+      "to_build": "Bot_Attack_Escorted_Queller_Uber",
+      "instance_count": -1,
+      "priority": 140,
+      "debug": false,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & Mobile - Fabber - AirDefense - Construction - Titan",
+            "compare0": ">=",
+            "value0": 40
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
     }
   ]
 }

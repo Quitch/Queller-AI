@@ -28,7 +28,17 @@
         }
       ]
     },
-    "Bot_Raid_Queller": {
+    "Bot_Attack_Queller": {
+      "units": [
+        {
+          "unit_types": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout - SelfDestruct - Deconstruction - Titan",
+          "min_count": 1,
+          "max_count": -1,
+          "squad": "Fast"
+        }
+      ]
+    },
+    "Bot_Attack_Escorted_Queller": {
       "units": [
         {
           "unit_types": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout - SelfDestruct - Deconstruction - Titan",
@@ -37,9 +47,9 @@
           "squad": "Fast"
         },
         {
-          "unit_types": "Mobile & ((Bot & AirDefense) | (Land & Scout)) - Titan",
+          "unit_types": "Mobile & ((Land & AirDefense) | (Land & Scout)) - Titan",
           "min_count": 0,
-          "max_count": -1,
+          "percent": 0.2,
           "squad": "Defense"
         }
       ]
