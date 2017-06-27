@@ -148,7 +148,7 @@ The Queller AI **Client** is no longer required and should be uninstalled.
  - Uber will only send orbital reinforcements in force now rather than dribs and drabs
  - Uber gets orbital battleships off gas giants quickly
  - Uber focuses solely on clearly local orbit before committing to any other orbital military operations
- - Uber won't over-micro Levellers
+ - Uber won't over-micro Levelers
  - Fixed Legion not building advanced fabbers when alone for many factories
  - The numbers of advanced fabbers Uber builds are now based on enemy layer presence
  - Uber more likely to produce Spinners as needed
@@ -584,13 +584,13 @@ The Queller AI **Client** is no longer required and should be uninstalled.
 
 #### v3.2 - 2016/02/16
 
- - Uber now focuses on Levellers over other T2 vehicles
+ - Uber now focuses on Levelers over other T2 vehicles
  - Uber no longer techs to T2 air except in special circumstances
  - Uber only uses Support Commanders when it is prevented from expanding
  - Uber uses GIL-Es only as a counter to missile units
  - Uber now uses the Slammer as a primary T2 bot
  - Uber will use more T2 bots if it thinks it's being bot rushed
- - Corrected bug preventing Queller from building Levellers
+ - Corrected bug preventing Queller from building Levelers
  - Uber no longer uses Krakens alone
  - Uber favours the Krakken for naval warfare
  - Where a land target cannot be found hover platoons will pursue naval targets
@@ -688,7 +688,7 @@ NOW DESIGNED SOLELY FOR TITANS
 - Uber builds Grenadiers in response to spotting Walls
 - Uber will build the GIL-E as a response to spotting Bluehawks
 - Added support for TITANS units
-- Fixed Gold so it will build Levellers as intended
+- Fixed Gold so it will build Levelers as intended
 - Uber properly checks placement of vehicle factories
 - Updated openings for TITANS
 - Updated naval ship choices for TITANS
@@ -706,7 +706,7 @@ NOW DESIGNED SOLELY FOR TITANS
 - Uber and Platinum more aggressive about getting up anti-orbital measures where none exist but an orbital threat does
 - Updated all difficulties in accordance with the latest playstyles in each league
 - Naval platoon 12 now maps to the correct template
-- Platinum now builds Levellers
+- Platinum now builds Levelers
 - Uber brings out Infernos even when not winning the land war to help in base attacks or raids
 - Gold's micro is a little worse
 - Removed naval platoon 16
@@ -718,7 +718,7 @@ NOW DESIGNED SOLELY FOR TITANS
 
 #### v2.1 - 2015/08/09
 
-- Gold will build the Leveller
+- Gold will build the Leveler
 - Uber will check there's some metal in storage in addition to looking at eco efficiency before assuming float and building more stuff
 - Silver correctly checks whether it can afford to have fabbers to assist on a project
 - Correctly exclude the orbital fabber from all checks it should be excluded from
