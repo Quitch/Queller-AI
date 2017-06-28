@@ -269,7 +269,7 @@
       "min_num_assisters": 5,
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
-      "priority": 380,
+      "priority": 381,
       "base_sort": "FromMainBase",
       "builders": [
         "LegionOrbitalBasicFabber"
@@ -283,7 +283,7 @@
             "boolean": true
           },
           {
-            "test_type": "BaseThreatened",
+            "test_type": "EnemyOrbitalPresenceOnPlanet",
             "boolean": false
           },
           {
@@ -297,12 +297,12 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Fabber & Orbital",
             "compare0": ">=",
-            "value0": 5
+            "value0": 2
           }
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromBasePerimeter",
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiOrbital",
           "compare_type": "<",
