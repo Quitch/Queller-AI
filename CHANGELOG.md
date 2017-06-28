@@ -26,6 +26,9 @@
  - Less willing to disengage units such as Infernos
  - Uber places greater emphasis on protecting the Commander against nukes
  - Uber avoids spamming Barracudas just because it saw some Stokes
+ - Uber Legion more likely to build Iron Domes
+ - Uber Legion more likely to build the Tyr
+ - Uber Legion favours the Tyr over other Titans
  - Added support for latest AI functions and features introduced in #####
    - Uber will rush orbital if other players might have started offworld
    - Uber rushes orbital if there's an orbital threat on a multi-planet map and it hasn't gone orbital yet
