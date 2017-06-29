@@ -61,29 +61,6 @@
             "string1": "WL_Air",
             "unit_type_string0": "(Mobile | Structure) - Wall"
           }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Titan",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsBomber",
-            "string0": "WL_AnySurface",
-            "string1": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
         ]
       ],
       "task_type": "BomberAttack"

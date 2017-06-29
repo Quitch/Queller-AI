@@ -154,7 +154,7 @@
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Orbital & Fighter",
             "compare0": ">=",
-            "value0": 1
+            "value0": 5
           }
         ]
       ],
@@ -185,7 +185,7 @@
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Orbital & Fighter & Heavy",
             "compare0": ">=",
-            "value0": 1
+            "value0": 2
           }
         ]
       ],
@@ -209,8 +209,75 @@
             "boolean": true
           },
           {
+            "test_type": "ThisPlanetNeedsOrbitalUnitAssistance",
+            "boolean": false
+          },
+          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Orbital & LaserPlatform",
+            "compare0": ">=",
+            "value0": 2
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & LaserPlatform",
+            "compare0": ">=",
+            "value0": 2
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "ThisPlanetNeedsOrbitalUnitAssistance",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & Titan",
+            "compare0": ">=",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & Titan",
             "compare0": ">=",
             "value0": 1
           }

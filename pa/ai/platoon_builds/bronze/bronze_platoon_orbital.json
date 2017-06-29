@@ -214,7 +214,28 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Orbital & ((Fighter & Heavy) | LaserPlatform)",
+            "unit_type_string0": "Orbital & ((Fighter & Heavy) | LaserPlatform | Titan)",
+            "compare0": ">=",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & (LaserPlatform | Titan)",
             "compare0": ">=",
             "value0": 1
           }
