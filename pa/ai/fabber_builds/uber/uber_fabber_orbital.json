@@ -119,6 +119,10 @@
             "boolean": false
           },
           {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
             "test_type": "StartingPlanetCount",
             "compare0": ">",
             "value0": 1
@@ -150,6 +154,10 @@
           {
             "test_type": "PresenceOnOtherPlanet",
             "boolean": false
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
           },
           {
             "test_type": "PlanetCount",
@@ -189,6 +197,10 @@
           {
             "test_type": "PresenceOnOtherPlanet",
             "boolean": false
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
           },
           {
             "test_type": "HasGasGiant",
