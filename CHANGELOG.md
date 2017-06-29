@@ -41,7 +41,7 @@
    - Platinum and Uber more likely to rush orbital if there's a gas giant up for grabs
    - Improved target priorities for naval, orbital and artillery platoons
    - Choose orbital force's arrival location on another planet based on the type of unit being sent
-   - Silver through Uber will try to Commander snipe with orbital forces if possible
+   - Will try to Commander snipe with orbital forces if possible
    - Platinum and Uber prioritise getting to gas giants
    - Uber will escort its land and hover platoons with Novas and fighter aircraft
  - Changes to accomodate balance changes

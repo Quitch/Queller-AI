@@ -2,7 +2,7 @@
   "build_list": [
     {
       "name": "Uber - Orbital Radar",
-      "to_build": "Orbital_Radar_Queller",
+      "to_build": "Orbital_Scout_Queller",
       "instance_count": -1,
       "priority": 100,
       "debug": false,
@@ -25,7 +25,7 @@
     },
     {
       "name": "Uber - Orbital Radar Transfer To Planet",
-      "to_build": "Orbital_Radar_Queller",
+      "to_build": "Orbital_Scout_Queller",
       "instance_count": -1,
       "priority": 101,
       "debug": false,
@@ -157,7 +157,7 @@
     },
     {
       "name": "Uber - Orbital Fighter Transfer",
-      "to_build": "Orbital_Offense_Transfer_Queller",
+      "to_build": "Orbital_Fighter_Transfer_Queller",
       "instance_count": -1,
       "priority": 99,
       "debug": false,
@@ -187,8 +187,8 @@
       "task_type": "TransferOrbitalToPlanet"
     },
     {
-      "name": "Uber - Orbital Battleship and Laser Transfer",
-      "to_build": "Orbital_Offense_Transfer_Queller",
+      "name": "Uber - Orbital Battleship Transfer",
+      "to_build": "Orbital_Fighter_Transfer_Queller",
       "instance_count": -1,
       "priority": 99,
       "debug": false,
@@ -219,7 +219,7 @@
     },
     {
       "name": "Uber - Orbital Laser Transfer",
-      "to_build": "Orbital_Offense_Transfer_Queller",
+      "to_build": "Orbital_Laser_Transfer_Queller",
       "instance_count": -1,
       "priority": 99,
       "debug": false,

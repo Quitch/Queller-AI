@@ -13,8 +13,8 @@
           "Orbital & Transport",
           "Orbital & Fabber",
           "Orbital & MetalProduction",
-          "Orbital & OrbitalDefense",
           "Orbital & Mobile & Offense",
+          "Orbital & OrbitalDefense",
           "Orbital & EnergyProduction"
       ]
     },
@@ -38,7 +38,7 @@
           "Structure & Factory"
       ]
     },
-    "Orbital_Radar_Queller": {
+    "Orbital_Scout_Queller": {
       "units": [
         {
           "unit_types": "Orbital & (Recon | Scout) & Mobile",
@@ -46,7 +46,16 @@
         }
       ]
     },
-    "Orbital_Offense_Transfer_Queller": {
+    "Orbital_Fighter_Transfer_Queller": {
+      "units": [
+        {
+          "unit_types": "Orbital & Fighter",
+          "min_count": 1,
+          "max_count": -1
+        }
+      ]
+    },
+    "Orbital_Laser_Transfer_Queller": {
       "units": [
         {
           "unit_types": "Orbital & (Fighter | LaserPlatform | Titan)",

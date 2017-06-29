@@ -2,7 +2,7 @@
   "build_list": [
     {
       "name": "Bronze - Orbital Radar",
-      "to_build": "Orbital_Radar_Queller",
+      "to_build": "Orbital_Scout_Queller",
       "instance_count": -1,
       "priority": 100,
       "debug": false,
@@ -25,7 +25,7 @@
     },
     {
       "name": "Bronze - Orbital Radar Transfer To Planet",
-      "to_build": "Orbital_Radar_Queller",
+      "to_build": "Orbital_Scout_Queller",
       "instance_count": 1,
       "priority": 101,
       "debug": false,
@@ -162,7 +162,7 @@
     },
     {
       "name": "Bronze - Orbital Fighter Transfer",
-      "to_build": "Orbital_Offense_Transfer_Queller",
+      "to_build": "Orbital_Fighter_Transfer_Queller",
       "instance_count": -1,
       "priority": 99,
       "debug": false,
@@ -192,8 +192,8 @@
       "task_type": "TransferOrbitalToPlanet"
     },
     {
-      "name": "Bronze - Orbital Battleship and Laser Transfer",
-      "to_build": "Orbital_Offense_Transfer_Queller",
+      "name": "Bronze - Orbital Battleship Transfer",
+      "to_build": "Orbital_Fighter_Transfer_Queller",
       "instance_count": -1,
       "priority": 99,
       "debug": false,
@@ -214,7 +214,38 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Orbital & ((Fighter & Heavy) | LaserPlatform | Titan)",
+            "unit_type_string0": "Orbital & Fighter & Heavy",
+            "compare0": ">=",
+            "value0": 1
+          }
+        ]
+      ],
+      "task_type": "TransferOrbitalAttackToPlanet"
+    },
+    {
+      "name": "Bronze - Orbital Laser Transfer",
+      "to_build": "Orbital_Laser_Transfer_Queller",
+      "instance_count": -1,
+      "priority": 99,
+      "debug": false,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "ThisPlanetNeedsOrbitalUnitAssistance",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & (LaserPlatform | Titan)",
             "compare0": ">=",
             "value0": 1
           }
@@ -241,7 +272,7 @@
           }
         ]
       ],
-      "task_type": "TransferOrbitalAttackToPlanet"
+      "task_type": "TransferOrbitalCommanderAttackToPlanet"
     }
   ]
 }
