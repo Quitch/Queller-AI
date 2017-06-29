@@ -256,6 +256,10 @@
             "boolean": true
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -274,7 +278,7 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Fabber - Orbital",
             "compare0": ">",
-            "value0": 1
+            "value0": 2
           },
           {
             "test_type": "CanFindControlPointToBuild",

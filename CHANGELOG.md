@@ -29,6 +29,9 @@
  - Uber Legion more likely to build Iron Domes
  - Uber Legion more likely to build the Tyr
  - Uber Legion favours the Tyr over other Titans
+ - Uber more likely to build Catalysts
+ - Silver won't build Catalysts when the enemy is on the planet
+ - Bronze and Silver won't put their only fabber to building a Catalyst
  - Added support for latest AI functions and features introduced in #####
    - Uber will rush orbital if other players might have started offworld
    - Uber rushes orbital if there's an orbital threat on a multi-planet map and it hasn't gone orbital yet

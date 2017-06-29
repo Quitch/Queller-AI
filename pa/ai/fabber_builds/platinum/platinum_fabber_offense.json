@@ -411,11 +411,11 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
+            "test_type": "PlanetHasUseablePlanetWeapon",
             "boolean": true
           },
           {
-            "test_type": "PlanetHasUseablePlanetWeapon",
+            "test_type": "AloneOnPlanet",
             "boolean": true
           },
           {
@@ -430,7 +430,7 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Fabber - Orbital",
             "compare0": ">=",
-            "value0": 14
+            "value0": 10
           },
           {
             "test_type": "AlliedUnitCountOnPlanet",
