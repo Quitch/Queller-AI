@@ -230,13 +230,6 @@
           },
           {
             "test_type": "FocusTargetThreatRatio",
-            "string0": "Naval",
-            "string1": "Naval",
-            "compare0": ">=",
-            "value0": 0.6
-          },
-          {
-            "test_type": "FocusTargetThreatRatio",
             "string0": "Sub",
             "string1": "AntiSub",
             "compare0": "<",
@@ -374,11 +367,6 @@
             "boolean": true
           },
           {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Naval & Mobile & Custom1",
-            "boolean": false
-          },
-          {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Naval",
             "compare0": ">",
@@ -400,79 +388,10 @@
             "boolean": true
           },
           {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "(Naval | (Tank & Sub)) & Mobile & Custom1",
-            "boolean": false
-          },
-          {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Sub",
             "compare0": ">",
             "value0": 0
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "(Naval | (Tank & Sub)) & Mobile & Custom1",
-            "boolean": true
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Naval & Mobile - Custom1",
-            "boolean": false
-          },
-          {
-            "test_type": "FocusTargetThreatRatio",
-            "string0": "Sub",
-            "string1": "AntiSub",
-            "compare0": ">",
-            "value0": 0.9
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "(Naval | (Tank & Sub)) & Mobile & Custom1",
-            "boolean": true
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Naval & Mobile - Custom1",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Sub",
-            "string1": "AntiSub",
-            "compare0": ">=",
-            "value0": 0.6
           }
         ]
       ]
