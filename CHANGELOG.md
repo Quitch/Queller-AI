@@ -46,6 +46,7 @@
    - Will try to Commander snipe with orbital forces if possible
    - Platinum and Uber prioritise getting to gas giants
    - Uber will escort its land and hover platoons with Novas and fighter aircraft
+   - Removed Uber Land, Uber Naval and Uber Orbital as new checks should make them redundant
  - Changes to accomodate balance changes
    - Platinum will build the GIL-E
    - Uber will build Shellers in response to GIL-Es
