@@ -1,17 +1,16 @@
 {
   "build_list": [
     {
-      "name": "Uber - Basic Bot Factory - Commander",
+      "name": "Uber - Basic Bot Factory - Opening",
       "to_build": "BasicBotFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
       "max_num_assisters": 2,
-      "priority": 376,
+      "priority": 377,
       "base_sort": "FromMainBase",
       "builders": [
         "UberCommander"
       ],
-      "debug": false,
       "build_conditions": [
         [
           {
@@ -29,63 +28,55 @@
             "boolean": false
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicBotFactory"
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicBotFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "tank",
+            "test_type": "BasePossiblyOnIsland",
             "boolean": false
           },
           {
-            "test_type": "AloneOnPlanet",
+            "test_type": "BasePossiblyLandContained",
             "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicBotFactory"
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Naval",
-            "boolean": true
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Bot & Factory & Basic",
+            "unit_type_string0": "Factory",
             "compare0": "<",
             "value0": 1
           },
           {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicBotFactory"
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "BasicBotFactory"
           }
-        ],
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Uber - Basic Bot Factory - Commander",
+      "to_build": "BasicBotFactory",
+      "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "max_num_assisters": 2,
+      "priority": 376,
+      "base_sort": "FromMainBase",
+      "builders": [
+        "UberCommander"
+      ],
+      "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
@@ -102,8 +93,16 @@
             "boolean": false
           },
           {
-            "test_type": "CanDeployLandFromBase",
+            "test_type": "BasePossiblyOnIsland",
             "boolean": false
+          },
+          {
+            "test_type": "BasePossiblyLandContained",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -113,18 +112,6 @@
             "string0": "BasicBotFactory"
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Naval & Factory & Basic",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Bot & Factory & Basic",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "BasicBotFactory"
           }
@@ -143,6 +130,14 @@
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
+          },
+          {
+            "test_type": "BasePossiblyOnIsland",
+            "boolean": false
+          },
+          {
+            "test_type": "BasePossiblyLandContained",
+            "boolean": false
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -179,66 +174,6 @@
       }
     },
     {
-      "name": "Uber - Basic Bot Factory - Commander Stuck",
-      "to_build": "BasicBotFactory",
-      "instance_count": 1,
-      "shared_instance_count": "BasicFactory",
-      "max_num_assisters": 2,
-      "priority": 373,
-      "base_sort": "FromMainBase",
-      "builders": [
-        "UberCommander"
-      ],
-      "debug": false,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "tank",
-            "boolean": false
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicBotFactory"
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicBotFactory"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 3,
-        "placement_type": "FromBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
       "name": "Uber - Basic Bot Factory - Fabbers",
       "to_build": "BasicBotFactory",
       "instance_count": 1,
@@ -251,7 +186,6 @@
         "AnyUberBasicFabber",
         "AnyUberAdvancedFabber"
       ],
-      "debug": false,
       "build_conditions": [
         [
           {
@@ -269,6 +203,14 @@
             "boolean": false
           },
           {
+            "test_type": "BasePossiblyOnIsland",
+            "boolean": false
+          },
+          {
+            "test_type": "BasePossiblyLandContained",
+            "boolean": false
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
@@ -300,46 +242,18 @@
             "boolean": false
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicBotFactory"
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Naval",
+            "test_type": "BasePossiblyOnIsland",
             "boolean": true
           },
           {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Land & Factory & Basic",
-            "compare0": "<=",
-            "value0": 500
+            "test_type": "PlanetLavaEstimate",
+            "compare0": "<",
+            "value0": 0.1
           },
           {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicBotFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "tank",
-            "boolean": false
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "PlanetLandEstimate",
+            "compare0": ">",
+            "value0": 0.4
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -354,15 +268,9 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Naval & Factory & Basic",
-            "compare0": ">=",
+            "unit_type_string0": "Bot & Factory & Basic",
+            "compare0": "<",
             "value0": 1
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Land & Factory & Basic",
-            "compare0": "<=",
-            "value0": 500
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -383,6 +291,14 @@
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
+          },
+          {
+            "test_type": "BasePossiblyOnIsland",
+            "boolean": false
+          },
+          {
+            "test_type": "BasePossiblyLandContained",
+            "boolean": false
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -432,7 +348,6 @@
         "AnyUberBasicFabber",
         "AnyUberAdvancedFabber"
       ],
-      "debug": false,
       "build_conditions": [
         [
           {
@@ -450,6 +365,14 @@
             "boolean": false
           },
           {
+            "test_type": "BasePossiblyOnIsland",
+            "boolean": false
+          },
+          {
+            "test_type": "BasePossiblyLandContained",
+            "boolean": false
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
@@ -496,61 +419,18 @@
             "boolean": false
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": false
+            "test_type": "BasePossiblyOnIsland",
+            "boolean": true
           },
           {
-            "test_type": "CurrentMetalEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "MetalStorageFrac",
-            "compare0": ">",
+            "test_type": "PlanetLavaEstimate",
+            "compare0": "<",
             "value0": 0.1
           },
           {
-            "test_type": "CurrentEnergyEfficiency",
+            "test_type": "PlanetLandEstimate",
             "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicBotFactory"
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Naval",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Land & Factory & Basic",
-            "compare0": "<=",
-            "value0": 500
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicBotFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "tank",
-            "boolean": false
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "value0": 0.4
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -580,15 +460,9 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Naval & Factory & Basic",
-            "compare0": ">=",
+            "unit_type_string0": "Bot & Factory & Basic",
+            "compare0": "<",
             "value0": 1
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Land & Factory & Basic",
-            "compare0": "<=",
-            "value0": 500
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -609,6 +483,14 @@
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
+          },
+          {
+            "test_type": "BasePossiblyOnIsland",
+            "boolean": false
+          },
+          {
+            "test_type": "BasePossiblyLandContained",
+            "boolean": false
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -670,7 +552,6 @@
         "AnyUberBasicFabber",
         "AnyUberAdvancedFabber"
       ],
-      "debug": false,
       "build_conditions": [
         [
           {
@@ -690,6 +571,18 @@
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": false
+          },
+          {
+            "test_type": "BasePossiblyOnIsland",
+            "boolean": false
+          },
+          {
+            "test_type": "BasePossiblyLandContained",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -728,7 +621,6 @@
         "AdvancedBotFabber",
         "UberSupportCommander"
       ],
-      "debug": false,
       "build_conditions": [
         [
           {
@@ -744,6 +636,14 @@
           {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
+          },
+          {
+            "test_type": "BasePossiblyOnIsland",
+            "boolean": false
+          },
+          {
+            "test_type": "BasePossiblyLandContained",
+            "boolean": false
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -787,50 +687,13 @@
             "boolean": true
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedBotFactory"
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Naval",
+            "test_type": "BasePossiblyOnIsland",
             "boolean": true
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Bot & Factory & Advanced",
+            "test_type": "PlanetLavaEstimate",
             "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedBotFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "tank",
-            "boolean": false
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveEcoForAdvanced",
-            "boolean": true
+            "value0": 0.1
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -842,12 +705,6 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "AdvancedBotFactory"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Naval & Factory & Basic",
-            "compare0": ">=",
-            "value0": 1
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -886,7 +743,6 @@
         "AdvancedBotFabber",
         "UberSupportCommander"
       ],
-      "debug": false,
       "build_conditions": [
         [
           {

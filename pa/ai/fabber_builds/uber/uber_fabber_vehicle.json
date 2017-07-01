@@ -11,7 +11,6 @@
       "builders": [
         "UberCommander"
       ],
-      "debug": false,
       "build_conditions": [
         [
           {
@@ -27,6 +26,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "bot",
+            "boolean": false
+          },
+          {
+            "test_type": "BasePossiblyOnIsland",
             "boolean": false
           },
           {
@@ -74,50 +77,11 @@
             "boolean": false
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicVehicleFactory"
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "(Mobile & Offense) - Air - Fabber - Construction",
+            "test_type": "BasePossiblyOnIsland",
             "boolean": true
           },
           {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Land & Factory & Basic",
-            "compare0": "<=",
-            "value0": 500
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicVehicleFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "tank",
-            "boolean": false
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bot",
-            "boolean": false
-          },
-          {
-            "test_type": "AloneOnPlanet",
+            "test_type": "BasePossiblyLandContained",
             "boolean": false
           },
           {
@@ -130,18 +94,6 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicVehicleFactory"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Naval & Factory & Basic",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Land & Factory & Basic",
-            "compare0": "<=",
-            "value0": 500
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -173,7 +125,6 @@
         "AnyUberBasicFabber",
         "AnyUberAdvancedFabber"
       ],
-      "debug": false,
       "build_conditions": [
         [
           {
@@ -189,6 +140,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "bot",
+            "boolean": false
+          },
+          {
+            "test_type": "BasePossiblyOnIsland",
             "boolean": false
           },
           {
@@ -240,50 +195,11 @@
             "boolean": false
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicVehicleFactory"
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "(Mobile & Offense) - Air - Fabber - Construction",
+            "test_type": "BasePossiblyOnIsland",
             "boolean": true
           },
           {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Land & Factory & Basic",
-            "compare0": "<=",
-            "value0": 500
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicVehicleFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "tank",
-            "boolean": false
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bot",
-            "boolean": false
-          },
-          {
-            "test_type": "AloneOnPlanet",
+            "test_type": "BasePossiblyLandContained",
             "boolean": false
           },
           {
@@ -296,18 +212,6 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicVehicleFactory"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Naval & Factory & Basic",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Land & Factory & Basic",
-            "compare0": "<=",
-            "value0": 500
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -340,7 +244,6 @@
         "AnyUberBasicFabber",
         "AnyUberAdvancedFabber"
       ],
-      "debug": false,
       "build_conditions": [
         [
           {
@@ -356,6 +259,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "bot",
+            "boolean": false
+          },
+          {
+            "test_type": "BasePossiblyOnIsland",
             "boolean": false
           },
           {
@@ -418,7 +325,11 @@
             "boolean": false
           },
           {
-            "test_type": "AloneOnPlanet",
+            "test_type": "BasePossiblyOnIsland",
+            "boolean": true
+          },
+          {
+            "test_type": "BasePossiblyLandContained",
             "boolean": false
           },
           {
@@ -446,80 +357,6 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicVehicleFactory"
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "(Mobile & Offense) - Air - Fabber - Construction",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Land & Factory & Basic",
-            "compare0": "<=",
-            "value0": 500
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicVehicleFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "tank",
-            "boolean": false
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bot",
-            "boolean": false
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "CurrentMetalEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "MetalStorageFrac",
-            "compare0": ">",
-            "value0": 0.1
-          },
-          {
-            "test_type": "CurrentEnergyEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicVehicleFactory"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Naval & Factory & Basic",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Land & Factory & Basic",
-            "compare0": "<=",
-            "value0": 500
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -549,7 +386,6 @@
         "AnyUberBasicFabber",
         "AnyUberAdvancedFabber"
       ],
-      "debug": false,
       "build_conditions": [
         [
           {
@@ -568,6 +404,14 @@
           },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "BasePossiblyOnIsland",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
           {
@@ -606,7 +450,6 @@
         "BasicVehicleFabber",
         "AdvancedVehicleFabber"
       ],
-      "debug": false,
       "build_conditions": [
         [
           {
@@ -622,6 +465,10 @@
           {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
+          },
+          {
+            "test_type": "BasePossiblyOnIsland",
+            "boolean": false
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -661,6 +508,10 @@
             "boolean": true
           },
           {
+            "test_type": "BasePossiblyOnIsland",
+            "boolean": false
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
@@ -696,6 +547,10 @@
           {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
+          },
+          {
+            "test_type": "BasePossiblyOnIsland",
+            "boolean": false
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -744,7 +599,6 @@
         "BasicVehicleFabber",
         "AdvancedVehicleFabber"
       ],
-      "debug": false,
       "build_conditions": [
         [
           {
@@ -760,6 +614,10 @@
           {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
+          },
+          {
+            "test_type": "BasePossiblyOnIsland",
+            "boolean": false
           },
           {
             "test_type": "CanDeployLandFromBase",
