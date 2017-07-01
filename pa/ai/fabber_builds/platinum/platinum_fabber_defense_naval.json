@@ -46,7 +46,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & MetalProduction",
             "compare0": ">=",
-            "value0": 2
+            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -68,7 +68,7 @@
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Naval",
+            "string0": "Sub",
             "compare0": ">",
             "value0": 0
           },
@@ -81,13 +81,13 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Basic & Naval & Defense",
             "compare0": "<",
-            "value0": 2
+            "value0": 1
           },
           {
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & MetalProduction",
             "compare0": ">=",
-            "value0": 4
+            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -103,7 +103,7 @@
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 50,
-            "count": 2
+            "count": 1
           },
           {
             "unit_type_string": "Structure & Naval & Defense",
@@ -163,7 +163,50 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (EnergyProduction | Factory)",
             "compare0": ">=",
-            "value0": 10
+            "value0": 5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalDefense"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Sub",
+            "string1": "AntiSub",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Naval & Defense",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Land",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 5
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -239,7 +282,50 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (EnergyProduction | Factory)",
             "compare0": ">=",
-            "value0": 10
+            "value0": 5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalDefense"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Sub",
+            "string1": "AntiSub",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Naval & Defense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Land",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 5
           },
           {
             "test_type": "CanFindPlaceToBuild",
