@@ -36,6 +36,7 @@
  - Silver through Platinum require more orbital units before moving between planets
  - Stopped lower levels sometimes arriving and immediately leaving with orbital
  - Removed Land, Naval and Orbital personalities as new checks make them redundant
+ - Uber builds more Barracudas
  - Added support for latest AI functions and features introduced in #####
    - Uber will rush orbital if other players might have started offworld
    - Uber rushes orbital if there's an orbital threat on a multi-planet map and it hasn't gone orbital yet
@@ -47,7 +48,6 @@
    - Uber will escort its land and hover platoons with Novas and fighter aircraft
  - Changes to accomodate balance changes
    - Platinum will build the GIL-E
-   - Uber will build the GIL-E in response to Levelers
    - Uber will build Shellers in response to GIL-Es
 
 #### 4.14.0 - 2017/04/21
