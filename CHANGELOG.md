@@ -55,6 +55,7 @@
  - Build additional radars at the outskirts of territory rather than the interior
  - Uber will correctly use Pelters only on land
  - Gold through Uber will again deploy Pelters and Theodors against Commanders
+ - Platinum and Uber won't build air on asteroids
 
 #### 4.14.0 - 2017/04/21
 

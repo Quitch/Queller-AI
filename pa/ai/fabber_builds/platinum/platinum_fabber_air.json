@@ -19,6 +19,10 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -42,6 +46,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "platinum",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -70,6 +78,10 @@
           },
           {
             "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
           {
@@ -106,6 +118,10 @@
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -162,6 +178,10 @@
             "boolean": false
           },
           {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -193,6 +213,10 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -216,6 +240,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "platinum",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -245,6 +273,10 @@
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -302,6 +334,10 @@
           },
           {
             "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
           {
@@ -366,6 +402,10 @@
             "boolean": false
           },
           {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
             "test_type": "CurrentMetalEfficiency",
             "compare0": ">",
             "value0": 1
@@ -407,6 +447,10 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
             "test_type": "CurrentMetalEfficiency",
             "compare0": ">",
             "value0": 1
@@ -440,6 +484,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "platinum",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
           },
           {
             "test_type": "CurrentMetalEfficiency",
@@ -479,6 +527,10 @@
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
           },
           {
             "test_type": "CurrentMetalEfficiency",
@@ -543,6 +595,10 @@
           {
             "test_type": "PresenceOnOtherPlanet",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
           },
           {
             "test_type": "UnitCountOnPlanet",
