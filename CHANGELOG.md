@@ -40,7 +40,7 @@
  - Gold through Uber more likely to build torpedo launchers to defend MEX
  - Gold and Platinum more likely to build base defence
  - Uber more likely to build base defence but will build less of it
- - Build additional radars at the outskirts
+ - Build additional radars at the outskirts of territory rather than the interior
  - Added support for latest AI functions and features introduced in #####
    - Uber will rush orbital if other players might have started offworld
    - Uber rushes orbital if there's an orbital threat on a multi-planet map and it hasn't gone orbital yet
