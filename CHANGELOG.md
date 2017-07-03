@@ -53,6 +53,7 @@
  - Gold and Platinum more likely to build base defence
  - Uber more likely to build base defence but will build less of it
  - Build additional radars at the outskirts of territory rather than the interior
+ - Uber will correctly use Pelters only on land
 
 #### 4.14.0 - 2017/04/21
 
