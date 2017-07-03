@@ -147,20 +147,25 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetLandEstimate",
+            "compare0": ">",
+            "value0": 0.1
+          },
+          {
             "test_type": "FocusTargetThreat",
             "string0": "Economy",
             "compare0": ">",
             "value0": 0
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "test_type": "FocusTargetThreatRatio",
             "string0": "Naval",
             "string1": "Naval",
             "compare0": "<",
             "value0": 0.6
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "test_type": "FocusTargetThreatRatio",
             "string0": "Sub",
             "string1": "AntiSub",
             "compare0": "<",
@@ -511,6 +516,26 @@
             "compare0": "<",
             "value0": 0.9
           }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetLandEstimate",
+            "compare0": "<=",
+            "value0": 0.1
+          }
         ]
       ]
     },
@@ -631,6 +656,26 @@
             "string1": "AntiSub",
             "compare0": "<",
             "value0": 0.9
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetLandEstimate",
+            "compare0": "<=",
+            "value0": 0.1
           }
         ]
       ]
