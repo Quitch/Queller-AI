@@ -57,6 +57,8 @@
  - Uber will correctly use Pelters only on land
  - Gold through Uber will again deploy Pelters and Theodors against Commanders
  - Platinum and Uber won't build air on asteroids
+ - Uber Legion will correctly move to T2 naval in lakes without enemies
+ - Uber more willing to tech for hover ships in lakes
 
 #### 4.14.0 - 2017/04/21
 
