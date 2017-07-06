@@ -59,6 +59,7 @@
  - Platinum and Uber won't build air on asteroids
  - Uber Legion will correctly move to T2 naval in lakes without enemies
  - Uber more willing to tech for hover ships in lakes
+ - Fixed issue where Uber was sometimes unable to place MEX AA even though it wanted to
 
 #### 4.14.0 - 2017/04/21
 
