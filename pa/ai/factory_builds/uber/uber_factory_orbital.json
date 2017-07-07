@@ -463,8 +463,8 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
+            "test_type": "EnemyOrbitalPresenceOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "PotentialEnergyEfficiency",
@@ -479,11 +479,20 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
+            "test_type": "DesireEnergy"
           },
           {
-            "test_type": "DesireEnergy"
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Orbital",
+            "string1": "AntiOrbital",
+            "compare0": "<",
+            "value0": 1
           }
         ]
       ]
