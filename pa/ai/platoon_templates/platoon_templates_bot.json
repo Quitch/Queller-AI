@@ -27,50 +27,6 @@
           "squad": "Fast"
         }
       ]
-    },
-    "Bot_Attack_Queller": {
-      "units": [
-        {
-          "unit_types": "(Bot & Mobile) - (Fabber - SupportCommander) - AirDefense - Construction - Artillery - Tactical - Heavy - Scout - SelfDestruct - Deconstruction - Titan",
-          "min_count": 1,
-          "max_count": -1,
-          "squad": "Fast"
-        },
-        {
-          "unit_types": "Mobile & ((Land & AirDefense) | (Land & Scout)) - Titan",
-          "min_count": 0,
-          "percent": 0.2,
-          "squad": "Defense"
-        }
-      ]
-    },
-    "Bot_Attack_Escorted_Queller": {
-      "units": [
-        {
-          "unit_types": "(Bot & Mobile) - (Fabber - SupportCommander) - AirDefense - Construction - Artillery - Tactical - Heavy - Scout - SelfDestruct - Deconstruction - Titan",
-          "min_count": 1,
-          "max_count": -1,
-          "squad": "Fast"
-        },
-        {
-          "unit_types": "Air & Mobile & Fighter - Titan",
-          "min_count": 0,
-          "max_count": 1,
-          "squad": "Escort"
-        },
-        {
-          "unit_types": "Air & Mobile & SelfDestruct",
-          "min_count": 0,
-          "max_count": 2,
-          "squad": "Defense"
-        },
-        {
-          "unit_types": "Air & MissileDefense",
-          "min_count": 0,
-          "max_count": -1,
-          "squad": "Defense"
-        }
-      ]
     }
   }
 }
