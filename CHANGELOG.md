@@ -65,6 +65,7 @@
  - Uber faster to build advanced factories in response to excess income
  - Uber more cautious in use of solar arrays
  - Uber will use more Avengers and Vipers
+ - Uber Legion will use the Imperator more
 
 #### 4.14.0 - 2017/04/21
 

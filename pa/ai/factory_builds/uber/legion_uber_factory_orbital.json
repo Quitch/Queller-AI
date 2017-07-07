@@ -645,23 +645,17 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetThreat",
+            "test_type": "BaseThreat",
             "string0": "Orbital",
-            "compare0": "==",
+            "compare0": "<=",
             "value0": 0
           },
           {
-            "test_type": "SystemThreat",
-            "string0": "AntiOrbital",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Orbital & Fighter & Heavy",
-            "unit_type_string1": "Orbital & Fighter",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Orbital",
+            "string1": "AntiOrbital",
             "compare0": "<",
-            "value0": 0.1
+            "value0": 1
           }
         ]
       ]

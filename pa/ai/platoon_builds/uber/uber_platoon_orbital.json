@@ -182,8 +182,8 @@
       "task_type": "TransferOrbitalToPlanet"
     },
     {
-      "name": "Uber - Orbital Battleship Transfer",
-      "to_build": "Orbital_Fighter_Transfer_Queller",
+      "name": "Uber - Orbital Snipe Transfer",
+      "to_build": "Orbital_Snipe_Transfer_Queller",
       "instance_count": -1,
       "priority": 99,
       "build_conditions": [
@@ -203,37 +203,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Orbital & Fighter & Heavy",
-            "compare0": ">=",
-            "value0": 5
-          }
-        ]
-      ],
-      "task_type": "TransferOrbitalAttackToPlanet"
-    },
-    {
-      "name": "Uber - Orbital Laser Transfer",
-      "to_build": "Orbital_Laser_Transfer_Queller",
-      "instance_count": -1,
-      "priority": 99,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
-            "boolean": true
-          },
-          {
-            "test_type": "ThisPlanetNeedsOrbitalUnitAssistance",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Orbital & LaserPlatform",
+            "unit_type_string0": "Orbital & (LaserPlatform | (Fighter & Heavy - Custom1))",
             "compare0": ">=",
             "value0": 5
           }
@@ -254,7 +224,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Orbital & LaserPlatform",
+            "unit_type_string0": "Orbital & (LaserPlatform | (Fighter & Heavy - Custom1))",
             "compare0": ">=",
             "value0": 5
           }
