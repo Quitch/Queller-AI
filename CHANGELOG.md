@@ -60,6 +60,9 @@
  - Uber Legion will correctly move to T2 naval in lakes without enemies
  - Uber more willing to tech for hover ships in lakes
  - Fixed issue where Uber was sometimes unable to place MEX AA even though it wanted to
+ - Bronze through Gold might a tiny bit worse at threat assessments
+ - Uber Cautious no longer produces more advanced fabbers early than Uber
+ - Uber faster to build advanced factories in response to excess income
 
 #### 4.14.0 - 2017/04/21
 
