@@ -16,6 +16,7 @@
  - Changes to accomodate balance changes
    - Platinum will build the GIL-E
    - Uber will build Shellers in response to GIL-Es
+   - Uber will build GIL-E in response to advanced air
  - Fixed error in Uber's Gustav placement
  - Uber doesn't build the Monstrosity again
  - Tweaks to which base a structure is placed in and where in the base it's placed
