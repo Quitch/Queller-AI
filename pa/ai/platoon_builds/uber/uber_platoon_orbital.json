@@ -194,11 +194,11 @@
             "boolean": true
           },
           {
-            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
             "boolean": true
           },
           {
-            "test_type": "ThisPlanetNeedsOrbitalUnitAssistance",
+            "test_type": "ThisPlanetNeedsLandUnitAssistance",
             "boolean": false
           },
           {
@@ -215,54 +215,12 @@
             "boolean": true
           },
           {
-            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
             "boolean": true
           },
           {
-            "test_type": "PlanetIsGasGiant",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Orbital & (LaserPlatform | (Fighter & Heavy - Custom1))",
-            "compare0": ">=",
-            "value0": 5
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
-            "boolean": true
-          },
-          {
-            "test_type": "ThisPlanetNeedsOrbitalUnitAssistance",
+            "test_type": "ThisPlanetNeedsLandUnitAssistance",
             "boolean": false
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Orbital & Titan",
-            "compare0": ">=",
-            "value0": 1
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsGasGiant",
-            "boolean": true
           },
           {
             "test_type": "UnitPoolCount",

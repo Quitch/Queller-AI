@@ -199,33 +199,12 @@
             "boolean": true
           },
           {
-            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
             "boolean": true
           },
           {
-            "test_type": "ThisPlanetNeedsOrbitalUnitAssistance",
+            "test_type": "ThisPlanetNeedsLandUnitAssistance",
             "boolean": false
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Orbital & LaserPlatform",
-            "compare0": ">=",
-            "value0": 2
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
-          {
-            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsGasGiant",
-            "boolean": true
           },
           {
             "test_type": "UnitPoolCount",
@@ -241,33 +220,12 @@
             "boolean": true
           },
           {
-            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
             "boolean": true
           },
           {
-            "test_type": "ThisPlanetNeedsOrbitalUnitAssistance",
+            "test_type": "ThisPlanetNeedsLandUnitAssistance",
             "boolean": false
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Orbital & Titan",
-            "compare0": ">=",
-            "value0": 1
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsGasGiant",
-            "boolean": true
           },
           {
             "test_type": "UnitPoolCount",

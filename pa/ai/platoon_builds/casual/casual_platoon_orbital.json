@@ -205,39 +205,12 @@
             "boolean": true
           },
           {
-            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
             "boolean": true
           },
           {
-            "test_type": "ThisPlanetNeedsOrbitalUnitAssistance",
+            "test_type": "ThisPlanetNeedsLandUnitAssistance",
             "boolean": false
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Orbital & (LaserPlatform | Titan)",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInCelestialTransit",
-            "unit_type_string0": "Orbital & Offense",
-            "compare0": "<",
-            "value0": 1
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "casual",
-            "boolean": true
-          },
-          {
-            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsGasGiant",
-            "boolean": true
           },
           {
             "test_type": "UnitPoolCount",
