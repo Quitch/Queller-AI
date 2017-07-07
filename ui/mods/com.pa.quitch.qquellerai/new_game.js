@@ -52,7 +52,7 @@ function qQuellerAI() {
             go_for_the_kill: false,
             priority_scout_metal_spots: true,
             enable_commander_danger_responses: true,
-            neural_data_mod: 1.5,
+            neural_data_mod: 1.6,
             adv_eco_mod: 0.5,
             adv_eco_mod_alone: 0.5,
             factory_build_delay_min: 0,
@@ -74,7 +74,7 @@ function qQuellerAI() {
             go_for_the_kill: true,
             priority_scout_metal_spots: true,
             enable_commander_danger_responses: true,
-            neural_data_mod: 1.35,
+            neural_data_mod: 1.45,
             adv_eco_mod: 1.0,
             adv_eco_mod_alone: 0.85,
             personality_tags:
@@ -94,7 +94,7 @@ function qQuellerAI() {
             go_for_the_kill: true,
             priority_scout_metal_spots: true,
             enable_commander_danger_responses: true,
-            neural_data_mod: 1.25,
+            neural_data_mod: 1.3,
             adv_eco_mod: 1.0,
             adv_eco_mod_alone: 0.85,
             personality_tags:
@@ -227,11 +227,10 @@ function qQuellerAI() {
             personality_tags:
             [
                 "uber",
-                "cautious",
-                "orbital"
+                "cautious"
             ],
             min_basic_fabbers: 4,
-            min_advanced_fabbers: 2
+            min_advanced_fabbers: 1
         },
         'Q-Uber Rush': {
             display_name: '!LOC:Q-Uber Rush',
