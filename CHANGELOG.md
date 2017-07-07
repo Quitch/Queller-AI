@@ -34,7 +34,6 @@
  - Uber builds more Catfish
  - Ensure Sparks are in the proper squad when teleporting
  - Ensure Bluehawks are always treated as a long-range unit
- - Tweaked platoons to allow Uber to utilise bots by themselves a bit more
  - Removed the amphibious platoon
  - Less willing to disengage units such as Infernos
  - Uber places greater emphasis on protecting the Commander against nukes
