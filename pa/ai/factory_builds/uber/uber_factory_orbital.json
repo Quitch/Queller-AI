@@ -239,7 +239,7 @@
       "max_num_assisters": 10,
       "priority": 100,
       "builders": [
-        "AnyUberOrbitalFactory"
+        "OrbitalLauncher"
       ],
       "build_conditions": [
         [
@@ -264,7 +264,7 @@
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "AnyUberOrbitalFactory"
+        "OrbitalLauncher"
       ],
       "build_conditions": [
         [
@@ -615,6 +615,31 @@
             "test_type": "BaseThreat",
             "string0": "Orbital",
             "compare0": "<=",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Uber - Avenger",
+      "to_build": "OrbitalFighter",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 195,
+      "builders": [
+        "OrbitalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
             "value0": 0
           }
         ]

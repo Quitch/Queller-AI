@@ -63,6 +63,8 @@
  - Bronze through Gold might a tiny bit worse at threat assessments
  - Uber Cautious no longer produces more advanced fabbers early than Uber
  - Uber faster to build advanced factories in response to excess income
+ - Uber more cautious in use of solar arrays
+ - Uber will use more Avengers and Vipers
 
 #### 4.14.0 - 2017/04/21
 

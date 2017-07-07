@@ -239,7 +239,7 @@
       "max_num_assisters": 10,
       "priority": 100,
       "builders": [
-        "AnyLegionFactoryOrbital"
+        "LegionFactoryBasicOrbital"
       ],
       "build_conditions": [
         [
@@ -264,7 +264,7 @@
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "AnyLegionFactoryOrbital"
+        "LegionFactoryBasicOrbital"
       ],
       "build_conditions": [
         [
@@ -573,6 +573,31 @@
             "test_type": "BaseThreat",
             "string0": "Orbital",
             "compare0": "<=",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Uber - Viper",
+      "to_build": "LegionOrbitalBasicFighter",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 195,
+      "builders": [
+        "LegionFactoryAdvancedOrbital"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
             "value0": 0
           }
         ]
