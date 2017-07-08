@@ -67,6 +67,7 @@
  - Uber more cautious in use of solar arrays
  - Uber will use more Avengers and Vipers
  - Uber Legion will use the Imperator more
+ - Uber will use support commanders when losing the air
 
 #### 4.14.0 - 2017/04/21
 

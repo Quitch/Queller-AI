@@ -194,12 +194,23 @@
             "boolean": false
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": false
           },
           {
-            "test_type": "MetMinAdvancedFabberCount",
-            "boolean": false
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "UberSupportCommander"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Advanced & Land",
+            "unit_type_string1": "Factory & Advanced & Land",
+            "compare0": "<",
+            "value0": 2
           }
         ],
         [
@@ -213,12 +224,15 @@
             "boolean": false
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": false
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -261,32 +275,6 @@
             "unit_type_string1": "Factory & Advanced & Land",
             "compare0": "<",
             "value0": 2
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "UberSupportCommander"
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Fabber & Advanced & Land",
-            "unit_type_string1": "Factory & Advanced & Land",
-            "compare0": "<",
-            "value0": 4
           }
         ]
       ]
@@ -338,6 +326,17 @@
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
+          },
+          {
+            "test_type": "UnableToExpand",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": "<=",
+            "value0": 1
           },
           {
             "test_type": "CanAffordPotentialDrain",
