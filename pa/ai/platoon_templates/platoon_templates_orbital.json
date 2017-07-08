@@ -9,16 +9,16 @@
         }
       ],
       "target_priorities": [
-          "Commander",
-          "Orbital & Transport",
-          "Orbital & Fabber",
-          "Orbital & MetalProduction",
-          "Orbital & Mobile & Offense",
-          "Orbital & OrbitalDefense",
-          "Orbital & EnergyProduction"
+        "Commander",
+        "Orbital & Transport",
+        "Orbital & Fabber",
+        "Orbital & MetalProduction",
+        "Orbital & Mobile & Offense",
+        "Orbital & OrbitalDefense",
+        "Orbital & EnergyProduction"
       ]
     },
-    "Orbital_Laser_Attack_Queller": {
+    "Orbital_Ground_Attack_Queller": {
       "units": [
         {
           "unit_types": "(LaserPlatform | (Fighter & Heavy)) & Mobile",
@@ -27,15 +27,16 @@
         }
       ],
       "target_priorities": [
-          "Commander",
-          "ControlModule",
-          "PlanetEngine",
-          "Structure & Nuke",
-          "Structure & NukeDefense",
-          "Fabber - Orbital",
-          "Land & OrbitalDefense",
-          "Land & (MetalProduction | EnergyProduction)",
-          "Structure & Factory"
+        "Structure & Titan & SelfDestruct",
+        "ControlModule",
+        "PlanetEngine",
+        "Commander",
+        "Structure & Nuke",
+        "Structure & NukeDefense",
+        "Fabber - Orbital",
+        "Land & OrbitalDefense",
+        "Land & (MetalProduction | EnergyProduction)",
+        "Structure & Factory"
       ]
     },
     "Orbital_Scout_Queller": {
