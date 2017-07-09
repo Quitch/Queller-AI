@@ -168,179 +168,6 @@
       }
     },
     {
-      "name": "Uber - Single Laser Defense Tower - Base",
-      "to_build": "BasicLandDefenseSingle",
-      "instance_count": 1,
-      "shared_instance_count": "BasicLandDefense",
-      "max_num_assisters": 1,
-      "priority": 251,
-      "base_sort": "FromPerimeter",
-      "builders": [
-        "UberCommander",
-        "BasicBotFabber",
-        "BasicVehicleFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "(Bot & Basic & Offense) - Artillery",
-            "boolean": true
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Tank",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Land",
-            "string1": "AntiSurface",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Naval",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
-            "compare0": ">=",
-            "value0": 5
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicLandDefenseSingle"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "placement_type": "FromBasePerimeter",
-        "unit_count_rules": [
-          {
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "range": 50,
-            "count": 1
-          },
-          {
-            "unit_type_string": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
-            "alliance": "Ally",
-            "compare_type": "<",
-            "range": 75,
-            "count": 1
-          }
-        ]
-      }
-    },
-    {
-      "name": "Uber - Laser Defense Tower - Base",
-      "to_build": "BasicLandDefense",
-      "instance_count": 1,
-      "shared_instance_count": "BasicLandDefense",
-      "max_num_assisters": 1,
-      "priority": 251,
-      "base_sort": "FromPerimeter",
-      "builders": [
-        "BasicBotFabber",
-        "BasicVehicleFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Land",
-            "string1": "AntiSurface",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
-            "compare0": "<",
-            "value0": 3
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Naval",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
-            "compare0": ">=",
-            "value0": 5
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicLandDefense"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "placement_type": "FromBasePerimeter",
-        "unit_count_rules": [
-          {
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "range": 50,
-            "count": 1
-          },
-          {
-            "unit_type_string": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
-            "alliance": "Ally",
-            "compare_type": "<",
-            "range": 75,
-            "count": 1
-          }
-        ]
-      }
-    },
-    {
       "name": "Uber - Advanced Laser Defense Tower - Base",
       "to_build": "AdvancedLandDefense",
       "instance_count": 1,
@@ -384,7 +211,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (SurfaceDefense | Tactical) - (CombatFabAdvBuild & Custom1)",
             "compare0": "<",
-            "value0": 4
+            "value0": 1
           },
           {
             "test_type": "UnitCountInBase",
@@ -468,7 +295,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Advanced & (SurfaceDefense | Tactical) - (CombatFabAdvBuild & Custom1)",
             "compare0": "<",
-            "value0": 2
+            "value0": 1
           },
           {
             "test_type": "UnitCountInBase",
@@ -520,7 +347,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Advanced & (SurfaceDefense | Tactical) - (CombatFabAdvBuild & Custom1)",
             "compare0": "<",
-            "value0": 2
+            "value0": 1
           },
           {
             "test_type": "UnitCountInBase",

@@ -173,179 +173,6 @@
       }
     },
     {
-      "name": "Legion - Uber - Jackal - Base",
-      "to_build": "LegionDefenseBasicLand",
-      "instance_count": 1,
-      "shared_instance_count": "BasicLandDefense",
-      "max_num_assisters": 1,
-      "priority": 251,
-      "base_sort": "FromPerimeter",
-      "builders": [
-        "LegionCommander",
-        "LegionBotBasicFabber",
-        "LegionVehicleBasicFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "(Bot & Basic & Offense) - Artillery",
-            "boolean": true
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Tank",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Land",
-            "string1": "AntiSurface",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Naval",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
-            "compare0": ">=",
-            "value0": 5
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionDefenseBasicLand"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "placement_type": "FromBasePerimeter",
-        "unit_count_rules": [
-          {
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "range": 50,
-            "count": 1
-          },
-          {
-            "unit_type_string": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
-            "alliance": "Ally",
-            "compare_type": "<",
-            "range": 75,
-            "count": 1
-          }
-        ]
-      }
-    },
-    {
-      "name": "Legion - Uber - Scarab - Base",
-      "to_build": "LegionDefenseBasicLandII",
-      "instance_count": 1,
-      "shared_instance_count": "BasicLandDefense",
-      "max_num_assisters": 1,
-      "priority": 251,
-      "base_sort": "FromPerimeter",
-      "builders": [
-        "LegionBotBasicFabber",
-        "LegionVehicleBasicFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Land",
-            "string1": "AntiSurface",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
-            "compare0": "<",
-            "value0": 3
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Naval",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
-            "compare0": ">=",
-            "value0": 5
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionDefenseBasicLandII"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "placement_type": "FromBasePerimeter",
-        "unit_count_rules": [
-          {
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "range": 50,
-            "count": 1
-          },
-          {
-            "unit_type_string": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
-            "alliance": "Ally",
-            "compare_type": "<",
-            "range": 75,
-            "count": 1
-          }
-        ]
-      }
-    },
-    {
       "name": "Legion - Uber - Hive - Base",
       "to_build": "LegionDefenseBasicSwarm",
       "instance_count": 1,
@@ -386,7 +213,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
             "compare0": "<",
-            "value0": 3
+            "value0": 1
           },
           {
             "test_type": "UnitCountInBase",
@@ -466,7 +293,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Advanced & (SurfaceDefense | Tactical) - (CombatFabAdvBuild & Custom1)",
             "compare0": "<",
-            "value0": 2
+            "value0": 3
           },
           {
             "test_type": "UnitCountInBase",
@@ -476,9 +303,9 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "unit_type_string0": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild",
             "compare0": ">=",
-            "value0": 5
+            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -501,6 +328,13 @@
             "alliance": "Ally",
             "compare_type": "<",
             "range": 75,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 150,
             "count": 1
           }
         ]
@@ -546,7 +380,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Advanced & (SurfaceDefense | Tactical) - (CombatFabAdvBuild & Custom1)",
             "compare0": "<",
-            "value0": 2
+            "value0": 3
           },
           {
             "test_type": "UnitCountInBase",
@@ -556,9 +390,9 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "unit_type_string0": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild",
             "compare0": ">=",
-            "value0": 5
+            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -581,6 +415,13 @@
             "alliance": "Ally",
             "compare_type": "<",
             "range": 75,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 150,
             "count": 1
           }
         ]
@@ -623,7 +464,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure - MetalProduction",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
             "compare0": ">=",
             "value0": 5
           },

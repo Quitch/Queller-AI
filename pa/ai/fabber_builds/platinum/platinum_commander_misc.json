@@ -1,6 +1,28 @@
 {
   "build_list": [
     {
+      "name": "Platinum - Game Over Man",
+      "instance_count": 1,
+      "priority": 999,
+      "builders": [
+        "LegionCommander"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "NoWhereToRun",
+            "boolean": true
+          }
+        ]
+      ],
+      "task_type": "GiveUp"
+    },
+    {
       "name": "Platinum - Move Commander To Planet",
       "instance_count": 1,
       "priority": 1000,

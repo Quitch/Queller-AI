@@ -69,6 +69,8 @@
  - Uber Legion will use the Imperator more
  - Uber will use support commanders when losing the air
  - Uber is more willing to use Novas
+ - Uber less likely to build base defence
+ - Uber Legion places its defences around Ramparts
 
 #### 4.14.0 - 2017/04/21
 
