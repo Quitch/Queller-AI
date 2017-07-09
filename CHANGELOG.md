@@ -71,6 +71,7 @@
  - Uber is more willing to use Novas
  - Uber less likely to build base defence
  - Uber Legion places its defences around Ramparts
+ - Properly account for Catapults when spacing defences
 
 #### 4.14.0 - 2017/04/21
 
