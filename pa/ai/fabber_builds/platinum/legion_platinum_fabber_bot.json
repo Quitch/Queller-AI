@@ -374,7 +374,6 @@
       "to_build": "LegionFactoryBasicBot",
       "instance_count": 1,
       "priority": 601,
-      "base_sort": "FromMainBase",
       "builders": [
         "LegionCommander",
         "AnyLegionFabberBasic",
@@ -405,7 +404,7 @@
       ],
       "placement_rules": {
         "buffer": 3,
-        "placement_type": "FromBaseCenter",
+        "placement_type": "FromMainBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",

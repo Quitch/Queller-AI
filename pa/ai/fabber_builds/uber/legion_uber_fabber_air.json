@@ -597,7 +597,6 @@
       "shared_instance_count": "BasicFactory",
       "max_num_assisters": 2,
       "priority": 601,
-      "base_sort": "FromMainBase",
       "builders": [
         "LegionCommander",
         "AnyLegionFabberBasic",
@@ -641,7 +640,7 @@
       ],
       "placement_rules": {
         "buffer": 3,
-        "placement_type": "FromBaseCenter",
+        "placement_type": "FromMainBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
