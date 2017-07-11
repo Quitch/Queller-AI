@@ -1,12 +1,17 @@
 {
     "build_list": [
         {
-            "name": "Queller - Artillery Platoon",
+            "name": "Gold - Artillery Platoon",
             "to_build": "Artillery_Queller",
             "instance_count": -1,
             "priority": 110,
             "build_conditions": [
                 [
+                    {
+                        "test_type": "HasPersonalityTag",
+                        "string0": "gold",
+                        "boolean": true
+                    },
                     {
                         "test_type": "EnemySurfacePresenceOnPlanet",
                         "boolean": true
@@ -22,12 +27,17 @@
             "task_type": "Artillery"
         },
         {
-            "name": "Legion - Queller - Artillery Platoon",
+            "name": "Legion - Gold - Artillery Platoon",
             "to_build": "Artillery_Queller_Legion",
             "instance_count": -1,
             "priority": 110,
             "build_conditions": [
                 [
+                    {
+                        "test_type": "HasPersonalityTag",
+                        "string0": "gold",
+                        "boolean": true
+                    },
                     {
                         "test_type": "EnemySurfacePresenceOnPlanet",
                         "boolean": true
