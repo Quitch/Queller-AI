@@ -3,7 +3,7 @@
     "Artillery_Queller": {
       "units": [
         {
-          "unit_types": "(Structure & (Artillery | Tactical)) - Factory",
+          "unit_types": "(Structure & (Artillery | Tactical)) - Factory - Custom1",
           "max_count": 1
         }
       ],
@@ -18,6 +18,26 @@
         "Land & (MetalProduction | EnergyProduction)",
         "Structure & Factory",
         "Land & Mobile & Offense"
+      ]
+    },
+    "Artillery_Queller_Legion": {
+      "units": [
+        {
+          "unit_types": "Custom1 & (Structure & (Artillery | Tactical)) - Factory",
+          "max_count": 1
+        }
+      ],
+      "target_priorities": [
+        "Structure & Titan & SelfDestruct",
+        "Commander",
+        "Land & Titan",
+        "Structure & Nuke",
+        "Structure & NukeDefense",
+        "Structure & (Artillery | Tactical)",
+        "Fabber & (Land | Naval)",
+        "Land & Mobile & Offense",
+        "Land & (MetalProduction | EnergyProduction)",
+        "Structure & Factory"
       ]
     }
   }
