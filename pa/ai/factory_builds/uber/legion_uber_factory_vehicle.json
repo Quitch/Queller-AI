@@ -297,27 +297,7 @@
           },
           {
             "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Naval",
-            "boolean": true
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Sub",
+            "unit_type_string0": "Naval | Sub",
             "boolean": true
           }
         ]
