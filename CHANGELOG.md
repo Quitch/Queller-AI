@@ -70,8 +70,10 @@
  - Uber will use support commanders when losing the air
  - Uber is more willing to use Novas
  - Uber less likely to build base defence
- - Uber Legion places its defences around Ramparts
+ - Uber Legion places its base defences around Ramparts
  - Properly account for Catapults when spacing defences
+ - Uber brings out Mauls earlier when facing bots
+ - Ensure Ramparts built to defend things are in range to actually defend them
 
 #### 4.14.0 - 2017/04/21
 
