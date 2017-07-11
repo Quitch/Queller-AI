@@ -376,6 +376,62 @@
       }
     },
     {
+      "name": "Uber - Basic Vehicle Factory - Need AA",
+      "to_build": "BasicVehicleFactory",
+      "instance_count": 1,
+      "priority": 478,
+      "builders": [
+        "UberCommander",
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicVehicleFactory"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicVehicleFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
       "name": "Uber - Basic Vehicle Factory - Arrived on a new world",
       "to_build": "BasicVehicleFactory",
       "instance_count": 1,
@@ -441,7 +497,7 @@
       "to_build": "AdvancedVehicleFactory",
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
-      "priority": 477,
+      "priority": 479,
       "min_num_assisters": 5,
       "max_num_assisters": 8,
       "base_sort": "FromMainBase",

@@ -589,11 +589,11 @@
       ]
     },
     {
-      "name": "Uber - Storm",
+      "name": "Uber - Storm - Need AA",
       "to_build": "FlakTank",
       "instance_count": 1,
       "max_num_assisters": 10,
-      "priority": 1199,
+      "priority": 200,
       "builders": [
         "AdvancedVehicleFactory"
       ],
@@ -606,6 +606,10 @@
           },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "MetMinAdvancedFabberCount",
             "boolean": true
           },
           {
@@ -634,7 +638,19 @@
             "compare0": "<",
             "value0": 0.2
           }
-        ],
+        ]
+      ]
+    },
+    {
+      "name": "Uber - Storm",
+      "to_build": "FlakTank",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": [
+        "AdvancedVehicleFactory"
+      ],
+      "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
@@ -643,6 +659,10 @@
           },
           {
             "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "MetMinAdvancedFabberCount",
             "boolean": true
           },
           {

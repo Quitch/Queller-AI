@@ -148,7 +148,7 @@
       "instance_count": 1,
       "shared_instance_count": "AdvancedBotFabber",
       "max_num_assisters": 10,
-      "priority": 199,
+      "priority": 200,
       "builders": [
         "AdvancedBotFactory"
       ],
@@ -326,17 +326,6 @@
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
-          },
-          {
-            "test_type": "UnableToExpand",
-            "boolean": false
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Air",
-            "string1": "AntiAir",
-            "compare0": "<=",
-            "value0": 1
           },
           {
             "test_type": "CanAffordPotentialDrain",
