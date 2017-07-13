@@ -97,10 +97,6 @@
             "boolean": false
           },
           {
-            "test_type": "BasePossiblyLandContained",
-            "boolean": false
-          },
-          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
@@ -129,14 +125,61 @@
           },
           {
             "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "BasePossiblyOnIsland",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetLavaEstimate",
+            "compare0": "<",
+            "value0": 0.1
+          },
+          {
+            "test_type": "PlanetLandEstimate",
+            "compare0": ">",
+            "value0": 0.1
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicBotFactory"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Land & Factory & Basic",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicBotFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "tank",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
             "boolean": true
           },
           {
             "test_type": "BasePossiblyOnIsland",
-            "boolean": false
-          },
-          {
-            "test_type": "BasePossiblyLandContained",
             "boolean": false
           },
           {
@@ -253,7 +296,7 @@
           {
             "test_type": "PlanetLandEstimate",
             "compare0": ">",
-            "value0": 0.4
+            "value0": 0.1
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -294,10 +337,6 @@
           },
           {
             "test_type": "BasePossiblyOnIsland",
-            "boolean": false
-          },
-          {
-            "test_type": "BasePossiblyLandContained",
             "boolean": false
           },
           {
@@ -430,7 +469,7 @@
           {
             "test_type": "PlanetLandEstimate",
             "compare0": ">",
-            "value0": 0.4
+            "value0": 0.1
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -545,6 +584,9 @@
       "name": "Uber - Basic Bot Factory - Arrived on a new world",
       "to_build": "BasicBotFactory",
       "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
       "priority": 601,
       "builders": [
         "UberCommander",

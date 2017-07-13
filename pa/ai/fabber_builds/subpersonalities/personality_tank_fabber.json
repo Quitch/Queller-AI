@@ -262,7 +262,8 @@
       "to_build": "LegionFactoryBasicAir",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
-      "max_num_assisters": 2,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
       "priority": 478,
       "builders": [
         "LegionCommander",

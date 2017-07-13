@@ -76,6 +76,7 @@
  - Ensure Ramparts built to defend things are in range to actually defend them
  - When Uber is losing to air it prioritises getting factories which can produce anti-air
  - Uber gives greater weight to producing mobile T2 AA when required
+ - Don't build multiple factories at once on a new world
 
 #### 4.14.0 - 2017/04/21
 

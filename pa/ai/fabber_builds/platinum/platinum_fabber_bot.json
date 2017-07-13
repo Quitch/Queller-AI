@@ -558,6 +558,9 @@
       "name": "Platinum - Basic Bot Factory - Arrived on a new world",
       "to_build": "BasicBotFactory",
       "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
       "priority": 601,
       "builders": [
         "UberCommander",
