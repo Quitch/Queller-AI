@@ -78,6 +78,7 @@
  - Uber gives greater weight to producing mobile T2 AA when required
  - Don't build multiple factories at once on a new world
  - Bronze through Uber won't build offensive structures on asteroids that aren't planetary engines
+ - Added support for the server mod help bot
 
 #### 4.14.0 - 2017/04/21
 
