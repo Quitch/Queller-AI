@@ -13,6 +13,8 @@ function qQuellerAI() {
 
     var defaultAiPersonalities = ['Idle', 'Normal', 'Hard', 'Relentless', 'Absurd'];
 
+    var helpText = 'To use Queller just set an AI to use one of the difficulties prefixed with a Q. Queller supports the Legion Expansion.';
+
     _.forEach( aiPersonalities, function(personality, name) {
         if(defaultAiPersonalities.indexOf(name) != -1) {
             personality.personality_tags = _.union(personality.personality_tags || [], ['Vanilla']);
@@ -338,6 +340,11 @@ function qQuellerAI() {
     _.extend(aiPersonalities, newPersonalities);
 
     model.aiPersonalities.valueHasMutated();
+
+    _.defer( function()
+    {
+        model.localChatMessage( 'Queller AI', helpText );
+    });
 
 }
 
