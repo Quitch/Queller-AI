@@ -24,12 +24,12 @@
  - Gold through Uber must be losing a planet more heavily before building a planet splitter
  - Casual will continue to use its Commander to build metal extractors throughout the game
  - Fixed error with lower levels checking how many radar satellites were moving through space
- - Fixed Platinum building nothing but Catfish
+ - Fixed Platinum building nothing but Catfish from its naval factories
  - Uber is more likely to build defence by its MEXs
  - Fixed Uber not building AA by MEX expansions close to the main base
  - Properly exclude orbital factories from checks related to moving to T2
  - Bronze and Silver faster to get orbital factories once they've gone orbital
- - Bronze and Silver will scout with Legion Marauders
+ - Bronze and Silver will scout with Marauders
  - Moved Novas into a valid air squad
  - Tweaked when Uber rushes orbital
  - Gold no longer builds the Necromancer
@@ -37,40 +37,39 @@
  - Ensure Sparks are in the proper squad when teleporting
  - Ensure Bluehawks are always treated as a long-range unit
  - Removed the amphibious platoon
- - Less willing to disengage units such as Infernos
+ - Less willing to disengage with short-range units like Infernos and Mauls
  - Uber places greater emphasis on protecting the Commander against nukes
  - Uber avoids spamming Barracudas just because it saw some Stokes
- - Uber Legion more likely to build Iron Domes
- - Uber Legion more likely to build the Tyr
- - Uber Legion favours the Tyr over other Titans
+ - Uber more likely to build Iron Domes
+ - Uber more likely to build the Tyr
+ - Uber favours the Tyr over other Titans
  - Uber more likely to build Catalysts
  - Silver won't build Catalysts when the enemy is on the planet
  - Bronze and Silver won't put their only fabber to building a Catalyst
  - Fixed error which might have stopped some difficulties moving the Tyr between planets
- - Silver through Platinum require more orbital units before moving between planets
+ - Silver, Gold and Platinum require more orbital units before moving between planets
  - Stopped lower levels sometimes arriving and immediately leaving with orbital
  - Uber builds more Barracudas
  - Properly account for sub threats when building torpedo launchers
- - Gold through Uber more likely to build torpedo launchers to defend MEX
+ - Gold, Platinum and Uber more likely to build torpedo launchers to defend MEX
  - Gold and Platinum more likely to build base defence
- - Uber more likely to build base defence but will build less of it
+ - Uber builds less base defence
  - Build additional radars at the outskirts of territory rather than the interior
- - Uber will correctly use Pelters only on land
- - Gold through Uber will again deploy Pelters and Theodors against Commanders
+ - Uber will use Pelters only on land
+ - Gold, Platinum and Uber will again deploy Pelters and Theodors against Commanders
  - Platinum and Uber won't build air on asteroids
- - Uber Legion will correctly move to T2 naval in lakes without enemies
+ - Uber will correctly move to T2 naval in lakes without enemies when playing as Legion
  - Uber more willing to tech for hover ships in lakes
  - Fixed issue where Uber was sometimes unable to place MEX AA even though it wanted to
- - Bronze through Gold might a tiny bit worse at threat assessments
- - Uber Cautious no longer produces more advanced fabbers early than Uber
+ - Bronze, Silver and Gold are a tiny bit worse at threat assessments than before
+ - Uber Cautious no longer produces more initial advanced fabbers than Uber
  - Uber faster to build advanced factories in response to excess income
  - Uber more cautious in use of solar arrays
  - Uber will use more Avengers and Vipers
- - Uber Legion will use the Imperator more
+ - Uber will use the Imperator more
  - Uber will use support commanders when losing the air
  - Uber is more willing to use Novas
- - Uber less likely to build base defence
- - Uber Legion places its base defences around Ramparts
+ - Uber places its base defences around Ramparts when playing as Legion
  - Properly account for Catapults when spacing defences
  - Uber brings out Mauls earlier when facing bots
  - Ensure Ramparts built to defend things are in range to actually defend them
