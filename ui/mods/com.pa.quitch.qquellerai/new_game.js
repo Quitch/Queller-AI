@@ -163,11 +163,6 @@ function qQuellerAI() {
             [
                 "uber"
             ],
-            fabber_to_factory_ratio_basic: 1.0,
-            fabber_to_factory_ratio_advanced: 3.0,
-            fabber_alone_on_planet_mod: 3.0,
-            basic_to_advanced_factory_ratio: 10,
-            factory_alone_on_planet_mod: 0.5,
             min_basic_fabbers: 3,
             min_advanced_fabbers: 1,
         },
