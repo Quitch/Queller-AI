@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### 4.14.1 - 2017/09/10
+
+ - Lobby message tells players how to select a Queller AI
+
 #### 4.14.0 - 2017/04/21
 
  - Fixed Ramparts getting built too close to one another at higher levels
