@@ -4,8 +4,7 @@
       "name": "Uber - Naval Scout Platoon",
       "to_build": "Naval_Scout_Queller",
       "instance_count": 2,
-      "shared_instance_count": "NavalScout",
-      "priority": 140,
+      "priority": 200,
       "build_conditions": [
         [
           {
@@ -39,6 +38,105 @@
             "unit_type_string0": "Naval & Scout",
             "compare0": ">=",
             "value0": 1
+          }
+        ]
+      ],
+      "task_type": "Scout"
+    },
+    {
+      "name": "Uber - Naval Aggressive Scout Platoon 12",
+      "to_build": "Naval_Attack_Queller",
+      "instance_count": 1,
+      "shared_instance_count": "NavalScout",
+      "priority": 190,
+      "debug": false,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Naval & Mobile & Offense",
+            "compare0": ">=",
+            "value0": 12
+          }
+        ]
+      ],
+      "task_type": "Scout"
+    },
+    {
+      "name": "Uber - Naval Aggressive Scout Platoon 8",
+      "to_build": "Naval_Attack_Queller",
+      "instance_count": 1,
+      "shared_instance_count": "NavalScout",
+      "priority": 180,
+      "debug": false,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Naval & Mobile & Offense",
+            "compare0": ">=",
+            "value0": 8
+          }
+        ]
+      ],
+      "task_type": "Scout"
+    },
+    {
+      "name": "Uber - Naval Aggressive Scout Platoon 4",
+      "to_build": "Naval_Attack_Queller",
+      "instance_count": 1,
+      "shared_instance_count": "NavalScout",
+      "priority": 170,
+      "debug": false,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Naval & Mobile & Offense",
+            "compare0": ">=",
+            "value0": 4
           }
         ]
       ],
