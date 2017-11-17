@@ -404,60 +404,6 @@
         ]
       ],
       "task_type": "OrbitalFabberMoveToSafePlanet"
-    },
-    {
-      "name": "Uber - Move Orbital Fabber To Safe Gas Giant",
-      "instance_count": 1,
-      "priority": 830,
-      "base_sort": "FromMainBase",
-      "builders": [
-        "OrbitalFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasGasGiant",
-            "boolean": true
-          },
-          {
-            "test_type": "SafeGasGiantWithoutPresence",
-            "boolean": true
-          }
-        ]
-      ],
-      "task_type": "OrbitalFabberMoveToSafeGasGiant"
-    },
-    {
-      "name": "Uber - Move Orbital Fabber To Gas Giant",
-      "instance_count": 1,
-      "priority": 820,
-      "base_sort": "FromMainBase",
-      "builders": [
-        "OrbitalFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasGasGiant",
-            "boolean": true
-          },
-          {
-            "test_type": "GasGiantWithoutPresence",
-            "boolean": true
-          }
-        ]
-      ],
-      "task_type": "OrbitalFabberMoveToGasGiant"
     }
   ]
 }

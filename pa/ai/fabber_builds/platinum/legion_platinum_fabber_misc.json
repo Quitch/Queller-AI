@@ -237,33 +237,6 @@
         ]
       ],
       "task_type": "OrbitalFabberMoveToPlanet"
-    },
-    {
-      "name": "Platinum - Move Orbital Fabber To Gas Giant",
-      "instance_count": 1,
-      "priority": 820,
-      "base_sort": "FromMainBase",
-      "builders": [
-        "LegionOrbitalBasicFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "HasGasGiant",
-            "boolean": true
-          },
-          {
-            "test_type": "GasGiantWithoutPresence",
-            "boolean": true
-          }
-        ]
-      ],
-      "task_type": "OrbitalFabberMoveToGasGiant"
     }
   ]
 }
