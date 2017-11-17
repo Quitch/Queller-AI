@@ -122,43 +122,6 @@
             "boolean": true
           },
           {
-            "test_type": "StartingPlanetCount",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "OrbitalLauncher"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory & Orbital",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "OrbitalLauncher"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "PresenceOnOtherPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveEcoForAdvanced",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetCount",
             "compare0": ">",
             "value0": 1
@@ -168,47 +131,6 @@
             "string0": "Orbital",
             "compare0": ">",
             "value0": 0
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "OrbitalLauncher"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory & Orbital",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "OrbitalLauncher"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "PresenceOnOtherPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveEcoForAdvanced",
-            "boolean": true
-          },
-          {
-            "test_type": "HasGasGiant",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetCount",
-            "compare0": ">",
-            "value0": 2
           },
           {
             "test_type": "CanAffordBuildDemand"

@@ -157,8 +157,8 @@
       "task_type": "OrbitalLaserAttack"
     },
     {
-      "name": "Bronze - Orbital Fighter Transfer",
-      "to_build": "Orbital_Fighter_Transfer_Queller",
+      "name": "Bronze - Orbital Transfer",
+      "to_build": "Orbital_Transfer_Queller",
       "instance_count": -1,
       "priority": 99,
       "build_conditions": [
@@ -178,73 +178,34 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Orbital & Fighter",
+            "unit_type_string0": "Orbital & (Fighter | LaserPlatform)",
+            "compare0": ">=",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & LaserPlatform",
             "compare0": ">=",
             "value0": 1
           }
         ]
       ],
       "task_type": "TransferOrbitalToPlanet"
-    },
-    {
-      "name": "Bronze - Orbital Battleship Transfer",
-      "to_build": "Orbital_Fighter_Transfer_Queller",
-      "instance_count": -1,
-      "priority": 99,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
-            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
-            "boolean": true
-          },
-          {
-            "test_type": "ThisPlanetNeedsOrbitalUnitAssistance",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Orbital & Fighter & Heavy",
-            "compare0": ">=",
-            "value0": 1
-          }
-        ]
-      ],
-      "task_type": "TransferOrbitalAttackToPlanet"
-    },
-    {
-      "name": "Bronze - Orbital Laser Transfer",
-      "to_build": "Orbital_Snipe_Transfer_Queller",
-      "instance_count": -1,
-      "priority": 99,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
-            "test_type": "OtherPlanetNeedsLandUnitAssistance",
-            "boolean": true
-          },
-          {
-            "test_type": "ThisPlanetNeedsLandUnitAssistance",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Orbital & (LaserPlatform | Titan)",
-            "compare0": ">=",
-            "value0": 1
-          }
-        ]
-      ],
-      "task_type": "TransferOrbitalCommanderAttackToPlanet"
     }
   ]
 }

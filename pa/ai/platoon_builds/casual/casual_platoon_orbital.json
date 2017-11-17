@@ -158,7 +158,7 @@
     },
     {
       "name": "Casual - Orbital Transfer To Planet",
-      "to_build": "Orbital_Fighter_Transfer_Queller",
+      "to_build": "Orbital_Transfer_Queller",
       "instance_count": -1,
       "priority": 99,
       "build_conditions": [
@@ -193,8 +193,8 @@
       "task_type": "TransferOrbitalToPlanet"
     },
     {
-      "name": "Casual - Orbital Laser Transfer To Planet",
-      "to_build": "Orbital_Snipe_Transfer_Queller",
+      "name": "Casual - Orbital Transfer To Planet",
+      "to_build": "Orbital_Transfer_Queller",
       "instance_count": -1,
       "priority": 99,
       "build_conditions": [
@@ -205,23 +205,38 @@
             "boolean": true
           },
           {
-            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
             "boolean": true
           },
           {
-            "test_type": "ThisPlanetNeedsLandUnitAssistance",
+            "test_type": "ThisPlanetNeedsOrbitalUnitAssistance",
             "boolean": false
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Orbital & (LaserPlatform | Titan)",
+            "unit_type_string0": "Orbital & (Fighter | LaserPlatform)",
             "compare0": ">=",
             "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "casual",
+            "boolean": true
           },
           {
-            "test_type": "UnitCountInCelestialTransit",
-            "unit_type_string0": "Orbital & Offense",
-            "compare0": "<",
+            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & (Fighter | LaserPlatform)",
+            "compare0": ">=",
             "value0": 1
           }
         ]

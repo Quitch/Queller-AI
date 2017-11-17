@@ -3,7 +3,7 @@
     "Orbital_Fighter_Attack_Queller": {
       "units": [
         {
-          "unit_types": "Orbital & Fighter & Mobile",
+          "unit_types": "Orbital & Fighter & Mobile - Titan",
           "min_count": 1,
           "max_count": -1
         }
@@ -20,7 +20,7 @@
     "Orbital_Ground_Attack_Queller": {
       "units": [
         {
-          "unit_types": "(LaserPlatform | (Fighter & Heavy)) & Mobile",
+          "unit_types": "(LaserPlatform | (Fighter & Heavy)) & Mobile - Titan",
           "min_count": 1,
           "max_count": -1
         }
@@ -46,19 +46,10 @@
         }
       ]
     },
-    "Orbital_Fighter_Transfer_Queller": {
+    "Orbital_Transfer_Queller": {
       "units": [
         {
-          "unit_types": "Orbital & Fighter",
-          "min_count": 1,
-          "max_count": -1
-        }
-      ]
-    },
-    "Orbital_Snipe_Transfer_Queller": {
-      "units": [
-        {
-          "unit_types": "Orbital & (Fighter | LaserPlatform | Titan)",
+          "unit_types": "Orbital &  (Fighter | LaserPlatform)",
           "min_count": 1,
           "max_count": -1
         }

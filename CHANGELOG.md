@@ -78,6 +78,7 @@
  - Don't build multiple factories at once on a new world
  - Bronze through Uber won't build offensive structures on asteroids
  - Uber will use Catapults as an anti-orbital defence
+ - Silver and above move more units through orbital at a time
 
 #### 4.14.1 - 2017/09/10
 
