@@ -5,7 +5,6 @@
  - Added support for latest AI functions and features introduced in #####
    - Removed Land, Naval and Orbital personalities as new checks make them redundant
    - Uber will prioritise orbital if other players might have started offworld
-   - Uber priotises orbital if there's an orbital threat on a multi-planet map and it hasn't gone orbital yet
    - Platinum and Uber more likely to rush orbital if there's a gas giant up for grabs
    - Improved target priorities for naval, orbital and artillery platoons
    - Choose orbital force's arrival location on another planet based on the type of unit being sent
@@ -79,6 +78,7 @@
  - Bronze through Uber won't build offensive structures on asteroids
  - Uber will use Catapults as an anti-orbital defence
  - Silver and above move more units through orbital at a time
+ - Uber priotises orbital if there's an orbital threat on a multi-planet map and it hasn't gone orbital yet
 
 #### 4.14.1 - 2017/09/10
 
