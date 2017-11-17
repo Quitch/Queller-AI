@@ -127,6 +127,36 @@
       "task_type": "OrbitalFighterAttack"
     },
     {
+      "name": "Silver - Orbital Death Laser Attack Platoon",
+      "to_build": "Orbital_Ground_Attack_Queller",
+      "instance_count": -1,
+      "priority": 100,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(LaserPlatform | (Fighter & Heavy))",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface"
+          }
+        ]
+      ],
+      "task_type": "OrbitalLaserAttack"
+    },
+    {
       "name": "Silver - Orbital Fighter Transfer",
       "to_build": "Orbital_Fighter_Transfer_Queller",
       "instance_count": -1,
