@@ -321,9 +321,9 @@ function qQuellerAI() {
         basic_to_advanced_factory_ratio: 0,
         factory_alone_on_planet_mod: 0.5,
         min_basic_fabbers: 2,
-        max_basic_fabbers: 6,
+        max_basic_fabbers: 20,
         min_advanced_fabbers: 3,
-        max_advanced_fabbers: 20
+        max_advanced_fabbers: 50
     }
 
     newPersonalities = _.mapValues( newPersonalities, function(personality, name) {
