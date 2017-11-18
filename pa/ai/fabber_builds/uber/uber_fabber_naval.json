@@ -1,56 +1,6 @@
 {
   "build_list": [
     {
-      "name": "Uber - Basic Naval Factory - Opening",
-      "to_build": "BasicNavalFactory",
-      "instance_count": 1,
-      "shared_instance_count": "BasicFactory",
-      "max_num_assisters": 2,
-      "priority": 377,
-      "base_sort": "FromMainBase",
-      "builders": [
-        "UberCommander"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "BaseDeepWaterReachableEstimate",
-            "compare0": ">",
-            "value0": 0.4
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicNavalFactory"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 3,
-        "placement_type": "FromBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
       "name": "Uber - Basic Naval Factory - Commander",
       "to_build": "BasicNavalFactory",
       "instance_count": 1,
@@ -61,6 +11,7 @@
       "builders": [
         "UberCommander"
       ],
+      "debug": false,
       "build_conditions": [
         [
           {
@@ -69,15 +20,17 @@
             "boolean": true
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "land",
+            "boolean": false
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
+          },
+          {
             "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "BasePossiblyInPond",
-            "boolean": false
-          },
-          {
-            "test_type": "BasePossiblyInLake",
             "boolean": false
           },
           {
@@ -92,6 +45,12 @@
             "string0": "BasicNavalFactory"
           },
           {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Naval & Basic",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "BasicNavalFactory"
           }
@@ -103,11 +62,21 @@
             "boolean": true
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "land",
+            "boolean": false
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
+          },
+          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
           {
-            "test_type": "BasePossiblyInLake",
+            "test_type": "CanDeployNavalFromBase",
             "boolean": true
           },
           {
@@ -118,10 +87,54 @@
             "string0": "BasicNavalFactory"
           },
           {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Naval & Factory",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "AntiSub",
+            "string1": "Sub",
+            "compare0": ">",
+            "value0": 0.5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "land",
+            "boolean": false
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicNavalFactory"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Land",
+            "string1": "Land",
             "compare0": "<",
-            "value0": 1
+            "value0": 0.5
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -130,7 +143,7 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 3,
+        "buffer": 5,
         "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
@@ -153,6 +166,7 @@
         "AnyUberBasicFabber",
         "AdvancedNavalFabber"
       ],
+      "debug": false,
       "build_conditions": [
         [
           {
@@ -161,46 +175,18 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
+            "test_type": "HasPersonalityTag",
+            "string0": "land",
             "boolean": false
           },
-          {
-            "test_type": "BasePossiblyInPond",
-            "boolean": false
-          },
-          {
-            "test_type": "BasePossiblyInLake",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicNavalFactory"
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicNavalFactory"
-          }
-        ],
-        [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
+            "string0": "naval",
+            "boolean": false
           },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
-          },
-          {
-            "test_type": "BasePossiblyInLake",
-            "boolean": true
           },
           {
             "test_type": "CanDeployNavalFromBase",
@@ -215,9 +201,95 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Naval & Factory",
+            "unit_type_string0": "Factory & Naval & Basic",
             "compare0": "<",
-            "value0": 1
+            "value0": 4
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "land",
+            "boolean": false
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicNavalFactory"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "AntiSub",
+            "string1": "Naval",
+            "compare0": ">",
+            "value0": 0.5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "land",
+            "boolean": false
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicNavalFactory"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Land",
+            "string1": "Land",
+            "compare0": "<",
+            "value0": 0.5
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -226,7 +298,7 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 3,
+        "buffer": 5,
         "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
@@ -250,6 +322,7 @@
         "AnyUberBasicFabber",
         "AdvancedNavalFabber"
       ],
+      "debug": false,
       "build_conditions": [
         [
           {
@@ -258,61 +331,18 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
+            "test_type": "HasPersonalityTag",
+            "string0": "land",
             "boolean": false
           },
-          {
-            "test_type": "BasePossiblyInPond",
-            "boolean": false
-          },
-          {
-            "test_type": "BasePossiblyInLake",
-            "boolean": false
-          },
-          {
-            "test_type": "CurrentMetalEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "MetalStorageFrac",
-            "compare0": ">",
-            "value0": 0.2
-          },
-          {
-            "test_type": "CurrentEnergyEfficiency",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicNavalFactory"
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicNavalFactory"
-          }
-        ],
-        [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
+            "string0": "naval",
+            "boolean": false
           },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
-          },
-          {
-            "test_type": "BasePossiblyInLake",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": true
           },
           {
             "test_type": "CurrentMetalEfficiency",
@@ -346,10 +376,183 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "BasicNavalFactory"
           }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "land",
+            "boolean": false
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "MetalStorageFrac",
+            "compare0": ">",
+            "value0": 0.2
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicNavalFactory"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Naval & Basic",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "land",
+            "boolean": false
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "MetalStorageFrac",
+            "compare0": ">",
+            "value0": 0.2
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicNavalFactory"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSub",
+            "string1": "Naval",
+            "compare0": ">",
+            "value0": 0.5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "land",
+            "boolean": false
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "MetalStorageFrac",
+            "compare0": ">",
+            "value0": 0.2
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicNavalFactory"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Land",
+            "string1": "Land",
+            "compare0": "<",
+            "value0": 0.5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalFactory"
+          }
         ]
       ],
       "placement_rules": {
-        "buffer": 3,
+        "buffer": 5,
         "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
@@ -372,6 +575,7 @@
         "BasicNavalFabber",
         "AdvancedNavalFabber"
       ],
+      "debug": false,
       "build_conditions": [
         [
           {
@@ -479,7 +683,7 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 3,
+        "buffer": 5,
         "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
@@ -502,6 +706,7 @@
         "BasicNavalFabber",
         "AdvancedNavalFabber"
       ],
+      "debug": false,
       "build_conditions": [
         [
           {
@@ -546,7 +751,7 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 3,
+        "buffer": 5,
         "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
