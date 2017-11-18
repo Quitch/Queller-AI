@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### 4.15.0
+#### 4.15.0 - 2017-11-18
 
  - Platinum will build the GIL-E
  - Uber will build Shellers in response to GIL-Es
