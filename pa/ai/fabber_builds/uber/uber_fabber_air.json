@@ -1,62 +1,6 @@
 {
   "build_list": [
     {
-      "name": "Uber - Basic Air Factory - Opening",
-      "to_build": "BasicAirFactory",
-      "instance_count": 1,
-      "shared_instance_count": "BasicFactory",
-      "max_num_assisters": 2,
-      "priority": 377,
-      "base_sort": "FromMainBase",
-      "builders": [
-        "UberCommander"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "BasePossiblyLandContained",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicAirFactory"
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicAirFactory"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 3,
-        "placement_type": "FromBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
       "name": "Uber - Basic Air Factory - Commander",
       "to_build": "BasicAirFactory",
       "instance_count": 1,
@@ -80,34 +24,7 @@
             "boolean": false
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "BasePossiblyLandContained",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicAirFactory"
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicAirFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "air",
+            "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
           {
@@ -145,6 +62,10 @@
             "boolean": false
           },
           {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -176,6 +97,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "air",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
           {
@@ -216,6 +141,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "air",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
           {
@@ -278,34 +207,7 @@
             "boolean": false
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "BasePossiblyLandContained",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicAirFactory"
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicAirFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "air",
+            "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
           {
@@ -349,6 +251,10 @@
             "boolean": false
           },
           {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -383,6 +289,10 @@
             "boolean": false
           },
           {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -414,6 +324,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "air",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
           {
@@ -472,6 +386,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "air",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
           {
@@ -600,6 +518,10 @@
             "boolean": false
           },
           {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -655,6 +577,10 @@
             "boolean": false
           },
           {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -704,6 +630,10 @@
             "boolean": false
           },
           {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -750,6 +680,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "air",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
           {
@@ -822,16 +756,16 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
             "test_type": "PresenceOnOtherPlanet",
             "boolean": true
           },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
-          },
-          {
-            "test_type": "PlanetIsRespawnable",
-            "boolean": false
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -870,37 +804,6 @@
         "AdvancedAirFabber"
       ],
       "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "air",
-            "boolean": false
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "BasePossiblyLandContained",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedAirFactory"
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedAirFactory"
-          }
-        ],
         [
           {
             "test_type": "HasPersonalityTag",
