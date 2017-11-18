@@ -736,38 +736,6 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "TML"
           }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "SystemThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
-            "compare0": ">=",
-            "value0": 5
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Tactical",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "TML"
-          }
         ]
       ],
       "placement_rules": {
@@ -938,6 +906,12 @@
           },
           {
             "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & (SurfaceDefense | Tactical) - (CombatFabAdvBuild & Custom1)",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (EnergyProduction | Factory)",
             "compare0": ">=",
             "value0": 3
@@ -967,6 +941,12 @@
             "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
             "compare0": "<",
             "value0": 6
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Tactical",
+            "compare0": "<",
+            "value0": 3
           },
           {
             "test_type": "UnitCountInBase",

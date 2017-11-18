@@ -63,7 +63,7 @@
  - Uber gives greater weight to producing mobile T2 AA when required
  - Don't build multiple factories at once on a new world
  - Bronze through Uber won't build offensive structures on asteroids
- - Uber will use Catapults as an anti-orbital defence
+ - All difficulties will use Catapults as an anti-orbital defence
  - Uber prioritises orbital if there's an orbital threat on a multi-planet map and it hasn't gone orbital yet
  - Uber won't build air Titans when alone
 

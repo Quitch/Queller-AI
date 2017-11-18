@@ -573,6 +573,12 @@
           },
           {
             "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & OrbitalDefense",
             "compare0": "<",
             "value0": 4
@@ -581,12 +587,6 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Advanced & (SurfaceDefense | Tactical) - (CombatFabAdvBuild & Custom1)",
             "compare0": "<",
-            "value0": 3
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
-            "compare0": ">=",
             "value0": 3
           },
           {
@@ -611,6 +611,12 @@
           },
           {
             "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & OrbitalDefense",
             "compare0": "<",
             "value0": 4
@@ -620,12 +626,6 @@
             "unit_type_string0": "Structure & Advanced & (SurfaceDefense | Tactical) - (CombatFabAdvBuild & Custom1)",
             "compare0": "<",
             "value0": 3
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
-            "compare0": ">",
-            "value0": 0
           },
           {
             "test_type": "CanFindPlaceToBuild",
