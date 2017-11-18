@@ -18,7 +18,7 @@
  - Bronze and Silver faster to get orbital factories once they've gone orbital
  - Bronze and Silver will scout with Marauders
  - Moved Novas into a valid air squad
- - Tweaked when Uber rushes orbital
+ - Platinum and Uber will now rush orbital on multiplanet maps if other players have done so
  - Gold no longer builds the Necromancer
  - Uber builds more Catfish
  - Ensure Sparks are in the proper squad when teleporting
@@ -36,7 +36,7 @@
  - Fixed error which might have stopped some difficulties moving the Tyr between planets
  - Silver, Gold, Platinum and Uber require more orbital units before moving between planets
  - Stopped lower levels sometimes arriving and immediately leaving with orbital
- - Uber builds more Barracudas
+ - Uber better about switching between Barracudas and Orcas as needed
  - Properly account for sub threats when building torpedo launchers
  - Gold, Platinum and Uber more likely to build torpedo launchers to defend MEX
  - Gold and Platinum more likely to build base defence
@@ -158,7 +158,7 @@ The Queller AI **Client** is no longer required and should be uninstalled.
  - Fixed error in Uber Legion T1 energy builds
  - Platinum uses less Grenadiers
  - Silver will no longer go all air
- - Changed how Uber measures when it can build a Halley or Catalyst to make it more aggressive about doing so
+ - All difficulties more likely to build Catalysts
  - Gold uses less Shellers
  - Gold uses more Vanguards
  - Gold will use Sparks in invasions
