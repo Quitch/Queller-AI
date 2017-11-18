@@ -30,16 +30,16 @@
           "max_count": -1
         },
         {
-          "unit_types": "Air & (SelfDestruct | MissileDefense)",
-          "min_count": 0,
-          "max_count": -1,
-          "squad": "Defense"
-        },
-        {
-          "unit_types": "Air & Fighter",
+          "unit_types": "Air & (Fighter | SelfDestruct)",
           "min_count": 0,
           "max_count": -1,
           "squad": "Escort"
+        },
+        {
+          "unit_types": "Air & MissileDefense",
+          "min_count": 0,
+          "max_count": -1,
+          "squad": "Defense"
         }
       ]
     },
@@ -48,11 +48,6 @@
         {
           "unit_types": "Orbital & Titan & Mobile",
           "min_count": 1,
-          "max_count": -1
-        },
-        {
-          "unit_types": "Orbital & Fighter & Mobile",
-          "min_count": 0,
           "max_count": -1
         }
       ]
