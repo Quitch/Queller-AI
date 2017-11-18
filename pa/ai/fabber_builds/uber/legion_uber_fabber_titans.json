@@ -196,40 +196,6 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionTitanAdvancedAir"
           }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsRespawnable",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & Titan",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber",
-            "compare0": ">",
-            "value0": 15
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionTitanAdvancedAir"
-          }
         ]
       ],
       "placement_rules": {
