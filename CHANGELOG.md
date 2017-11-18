@@ -1,5 +1,75 @@
 # CHANGELOG
 
+#### 4.15.0 - 2017-11-18
+
+ - Platinum will build the GIL-E
+ - Uber will build Shellers in response to GIL-Es
+ - Uber will build GIL-E in response to advanced air
+ - Fixed error in Uber's Gustav placement
+ - Uber doesn't build the Monstrosity again
+ - Tweaks to which base a structure is placed in and where in the base it's placed
+ - Gold through Uber must be losing a planet more heavily before building a planet splitter
+ - Casual will continue to use its Commander to build metal extractors throughout the game
+ - Fixed error with lower levels checking how many radar satellites were moving through space
+ - Fixed Platinum building nothing but Catfish from its naval factories
+ - Uber is more likely to build defence by its MEXs
+ - Fixed Uber not building AA by MEX expansions close to the main base
+ - Properly exclude orbital factories from checks related to moving to T2
+ - Bronze and Silver faster to get orbital factories once they've gone orbital
+ - Bronze and Silver will scout with Marauders
+ - Moved Novas into a valid air squad
+ - Platinum and Uber will now rush orbital on multiplanet maps if other players have done so
+ - Gold no longer builds the Necromancer
+ - Uber builds more Catfish
+ - Ensure Sparks are in the proper squad when teleporting
+ - Ensure Bluehawks are always treated as a long-range unit
+ - Removed the amphibious platoon
+ - Less willing to disengage with short-range units like Infernos and Mauls
+ - Uber places greater emphasis on protecting the Commander against nukes
+ - Uber avoids spamming Barracudas just because it saw some Stokes
+ - Uber more likely to build Iron Domes
+ - Uber more likely to build the Tyr
+ - Uber favours the Tyr over other Titans
+ - Uber more likely to build Catalysts
+ - Silver won't build Catalysts when the enemy is on the planet
+ - Bronze and Silver won't put their only fabber to building a Catalyst
+ - Fixed error which might have stopped some difficulties moving the Tyr between planets
+ - Silver, Gold, Platinum and Uber require more orbital units before moving between planets
+ - Stopped lower levels sometimes arriving and immediately leaving with orbital
+ - Uber better about switching between Barracudas and Orcas as needed
+ - Properly account for sub threats when building torpedo launchers
+ - Gold, Platinum and Uber more likely to build torpedo launchers to defend MEX
+ - Gold and Platinum more likely to build base defence
+ - Uber builds less base defence
+ - Build additional radars at the outskirts of territory rather than the interior
+ - Uber will use Pelters only on land
+ - Platinum and Uber won't build air on asteroids
+ - Uber will correctly move to T2 naval in lakes without enemies when playing as Legion
+ - Uber more willing to tech for hover ships in lakes
+ - Fixed issue where Uber was sometimes unable to place MEX AA even though it wanted to
+ - Bronze, Silver and Gold are a tiny bit worse at threat assessments than before
+ - Uber Cautious no longer produces more initial advanced fabbers than Uber
+ - Uber faster to build advanced factories in response to excess income
+ - Uber more cautious in use of solar arrays
+ - Uber will use more Avengers and Vipers
+ - Uber will use the Imperator more
+ - Uber will use support commanders when losing the air
+ - Uber is more willing to use Novas
+ - Uber places its base defences around Ramparts when playing as Legion
+ - Properly account for Catapults when spacing defences
+ - Uber brings out Mauls earlier when facing bots
+ - Ensure Ramparts built to defend things are in range to actually defend them
+ - When Uber is losing to air it prioritises getting factories which can produce anti-air
+ - Uber gives greater weight to producing mobile T2 AA when required
+ - Don't build multiple factories at once on a new world
+ - Bronze through Uber won't build offensive structures on asteroids
+ - All difficulties will use Catapults as an anti-orbital defence
+ - Uber prioritises orbital if there's an orbital threat on a multi-planet map and it hasn't gone orbital yet
+ - Uber won't build air Titans when alone
+ - Uber and Platinum properly tech up naval when they can't expand
+ - Always meets minimum fabber count regardless of terrain
+ - Platinum and Uber are more aggressive about teching when they can't expand
+
 #### 4.14.1 - 2017/09/10
 
  - Lobby message tells players how to select a Queller AI
@@ -88,7 +158,7 @@ The Queller AI **Client** is no longer required and should be uninstalled.
  - Fixed error in Uber Legion T1 energy builds
  - Platinum uses less Grenadiers
  - Silver will no longer go all air
- - Changed how Uber measures when it can build a Halley or Catalyst to make it more aggressive about doing so
+ - All difficulties more likely to build Catalysts
  - Gold uses less Shellers
  - Gold uses more Vanguards
  - Gold will use Sparks in invasions
@@ -122,7 +192,7 @@ The Queller AI **Client** is no longer required and should be uninstalled.
  - Uber will only send orbital reinforcements in force now rather than dribs and drabs
  - Uber gets orbital battleships off gas giants quickly
  - Uber focuses solely on clearly local orbit before committing to any other orbital military operations
- - Uber won't over-micro Levellers
+ - Uber won't over-micro Levelers
  - Fixed Legion not building advanced fabbers when alone for many factories
  - The numbers of advanced fabbers Uber builds are now based on enemy layer presence
  - Uber more likely to produce Spinners as needed
@@ -558,13 +628,13 @@ The Queller AI **Client** is no longer required and should be uninstalled.
 
 #### v3.2 - 2016/02/16
 
- - Uber now focuses on Levellers over other T2 vehicles
+ - Uber now focuses on Levelers over other T2 vehicles
  - Uber no longer techs to T2 air except in special circumstances
  - Uber only uses Support Commanders when it is prevented from expanding
  - Uber uses GIL-Es only as a counter to missile units
  - Uber now uses the Slammer as a primary T2 bot
  - Uber will use more T2 bots if it thinks it's being bot rushed
- - Corrected bug preventing Queller from building Levellers
+ - Corrected bug preventing Queller from building Levelers
  - Uber no longer uses Krakens alone
  - Uber favours the Krakken for naval warfare
  - Where a land target cannot be found hover platoons will pursue naval targets
@@ -662,7 +732,7 @@ NOW DESIGNED SOLELY FOR TITANS
 - Uber builds Grenadiers in response to spotting Walls
 - Uber will build the GIL-E as a response to spotting Bluehawks
 - Added support for TITANS units
-- Fixed Gold so it will build Levellers as intended
+- Fixed Gold so it will build Levelers as intended
 - Uber properly checks placement of vehicle factories
 - Updated openings for TITANS
 - Updated naval ship choices for TITANS
@@ -680,7 +750,7 @@ NOW DESIGNED SOLELY FOR TITANS
 - Uber and Platinum more aggressive about getting up anti-orbital measures where none exist but an orbital threat does
 - Updated all difficulties in accordance with the latest playstyles in each league
 - Naval platoon 12 now maps to the correct template
-- Platinum now builds Levellers
+- Platinum now builds Levelers
 - Uber brings out Infernos even when not winning the land war to help in base attacks or raids
 - Gold's micro is a little worse
 - Removed naval platoon 16
@@ -692,7 +762,7 @@ NOW DESIGNED SOLELY FOR TITANS
 
 #### v2.1 - 2015/08/09
 
-- Gold will build the Leveller
+- Gold will build the Leveler
 - Uber will check there's some metal in storage in addition to looking at eco efficiency before assuming float and building more stuff
 - Silver correctly checks whether it can afford to have fabbers to assist on a project
 - Correctly exclude the orbital fabber from all checks it should be excluded from
