@@ -330,7 +330,6 @@
       "name": "Gold - Halley",
       "to_build": "PlanetEngine",
       "instance_count": 1,
-      "shared_instance_count": "Annihilaser",
       "min_num_assisters": 8,
       "max_num_assisters": 45,
       "priority": 509,
@@ -401,11 +400,9 @@
       "name": "Gold - Catalyst",
       "to_build": "ControlModule",
       "instance_count": 1,
-      "shared_instance_count": "Annihilaser",
       "min_num_assisters": 6,
       "max_num_assisters": 100,
       "priority": 510,
-      "base_sort": "FromMainBase",
       "builders": [
         "AnyUberAdvancedFabber"
       ],

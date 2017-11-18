@@ -290,7 +290,6 @@
       "name": "Legion - Platinum - Diplomat",
       "to_build": "LegionDefenseAdvancedEngine",
       "instance_count": 1,
-      "shared_instance_count": "Annihilaser",
       "min_num_assisters": 8,
       "max_num_assisters": 45,
       "priority": 509,
@@ -361,11 +360,9 @@
       "name": "Legion - Platinum - Catalyst",
       "to_build": "LegionDefenseAdvancedModule",
       "instance_count": 1,
-      "shared_instance_count": "Annihilaser",
       "min_num_assisters": 13,
       "max_num_assisters": 100,
       "priority": 510,
-      "base_sort": "FromMainBase",
       "builders": [
         "AnyLegionFabberAdvanced"
       ],
