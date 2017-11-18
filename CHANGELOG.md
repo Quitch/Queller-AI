@@ -67,6 +67,7 @@
  - Uber prioritises orbital if there's an orbital threat on a multi-planet map and it hasn't gone orbital yet
  - Uber won't build air Titans when alone
  - Uber and Platinum properly tech up naval when they can't expand
+ - Always meets minimum fabber count regardless of terrain
 
 #### 4.14.1 - 2017/09/10
 
