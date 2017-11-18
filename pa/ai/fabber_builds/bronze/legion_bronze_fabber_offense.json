@@ -233,7 +233,7 @@
       "instance_count": 1,
       "shared_instance_count": "SuperWeapon",
       "max_num_assisters": 45,
-      "priority": 510,
+      "priority": 512,
       "builders": [
         "AnyLegionFabberAdvanced"
       ],
@@ -246,6 +246,10 @@
           },
           {
             "test_type": "PlanetHasUseablePlanetWeapon",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
             "boolean": true
           },
           {
