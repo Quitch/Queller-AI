@@ -2,21 +2,9 @@
 
 #### 5.0.0-beta
 
- - Added support for latest AI functions and features introduced in #####
-   - Removed Land, Naval and Orbital personalities as new checks make them redundant
-   - Uber will prioritise orbital if other players might have started offworld
-   - Platinum and Uber more likely to rush orbital if there's a gas giant up for grabs
-   - Improved target priorities for naval, orbital and artillery platoons
-   - Choose orbital force's arrival location on another planet based on the type of unit being sent
-   - Will try to Commander snipe with orbital forces if possible
-   - Platinum and Uber prioritise getting to gas giants
-   - Uber will escort its land and hover platoons with Novas and fighter aircraft
-   - Uber adjusts its naval fleet mix depending on whether it's a pure sea map or not
-   - Orbital to ground units look at planets requiring ground assistance not orbital assistance
- - Changes to accomodate balance changes
-   - Platinum will build the GIL-E
-   - Uber will build Shellers in response to GIL-Es
-   - Uber will build GIL-E in response to advanced air
+ - Platinum will build the GIL-E
+ - Uber will build Shellers in response to GIL-Es
+ - Uber will build GIL-E in response to advanced air
  - Fixed error in Uber's Gustav placement
  - Uber doesn't build the Monstrosity again
  - Tweaks to which base a structure is placed in and where in the base it's placed
@@ -46,7 +34,7 @@
  - Silver won't build Catalysts when the enemy is on the planet
  - Bronze and Silver won't put their only fabber to building a Catalyst
  - Fixed error which might have stopped some difficulties moving the Tyr between planets
- - Silver, Gold and Platinum require more orbital units before moving between planets
+ - Silver, Gold, Platinum and Uber require more orbital units before moving between planets
  - Stopped lower levels sometimes arriving and immediately leaving with orbital
  - Uber builds more Barracudas
  - Properly account for sub threats when building torpedo launchers
@@ -55,7 +43,6 @@
  - Uber builds less base defence
  - Build additional radars at the outskirts of territory rather than the interior
  - Uber will use Pelters only on land
- - Gold, Platinum and Uber will again deploy Pelters and Theodors against Commanders
  - Platinum and Uber won't build air on asteroids
  - Uber will correctly move to T2 naval in lakes without enemies when playing as Legion
  - Uber more willing to tech for hover ships in lakes
@@ -77,8 +64,7 @@
  - Don't build multiple factories at once on a new world
  - Bronze through Uber won't build offensive structures on asteroids
  - Uber will use Catapults as an anti-orbital defence
- - Silver and above move more units through orbital at a time
- - Uber priotises orbital if there's an orbital threat on a multi-planet map and it hasn't gone orbital yet
+ - Uber prioritises orbital if there's an orbital threat on a multi-planet map and it hasn't gone orbital yet
 
 #### 4.14.1 - 2017/09/10
 
