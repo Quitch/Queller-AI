@@ -189,6 +189,27 @@
             "boolean": true
           },
           {
+            "test_type": "ThisPlanetNeedsOrbitalUnitAssistance",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & (LaserPlatform | (Fighter & Heavy))",
+            "compare0": ">=",
+            "value0": 2
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
+            "boolean": true
+          },
+          {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
           },
