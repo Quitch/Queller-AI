@@ -154,13 +154,6 @@
           },
           {
             "test_type": "FocusTargetThreatRatio",
-            "string0": "Naval",
-            "string1": "Naval",
-            "compare0": "<",
-            "value0": 0.6
-          },
-          {
-            "test_type": "FocusTargetThreatRatio",
             "string0": "Sub",
             "string1": "AntiSub",
             "compare0": "<",
@@ -196,44 +189,6 @@
             "string0": "Naval",
             "compare0": ">",
             "value0": 0
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "FocusTargetThreat",
-            "string0": "Economy",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Naval & Mobile & Custom1",
-            "boolean": true
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Naval & Mobile - Custom1",
-            "boolean": true
-          },
-          {
-            "test_type": "FocusTargetThreatRatio",
-            "string0": "Sub",
-            "string1": "AntiSub",
-            "compare0": "<",
-            "value0": 0.6
           }
         ]
       ]
