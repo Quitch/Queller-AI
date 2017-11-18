@@ -54,7 +54,7 @@
           },
           {
             "test_type": "UnitCountAroundBase",
-            "unit_type_string0": "(Structure - MetalProduction) | Naval | Commander",
+            "unit_type_string0": "(Structure - MetalProduction) | Naval",
             "string0": "Enemy",
             "value0": 260,
             "compare0": ">=",
@@ -70,7 +70,7 @@
         "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "Commander | (Structure - MetalProduction) | Naval",
+            "unit_type_string": "(Structure - MetalProduction) | Naval",
             "alliance": "Enemy",
             "compare_type": ">=",
             "range": 260,
@@ -183,7 +183,7 @@
           },
           {
             "test_type": "UnitCountAroundBase",
-            "unit_type_string0": "(Structure - MetalProduction) | Naval | Commander",
+            "unit_type_string0": "(Structure - MetalProduction) | Naval",
             "string0": "Enemy",
             "value0": 280,
             "compare0": ">=",
@@ -200,7 +200,7 @@
         "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "(Structure - MetalProduction) | Naval | Commander",
+            "unit_type_string": "(Structure - MetalProduction) | Naval",
             "alliance": "Enemy",
             "compare_type": ">=",
             "range": 280,
