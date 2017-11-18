@@ -68,6 +68,7 @@
  - Uber won't build air Titans when alone
  - Uber and Platinum properly tech up naval when they can't expand
  - Always meets minimum fabber count regardless of terrain
+ - Platinum and Uber are more aggressive about teching when they can't expand
 
 #### 4.14.1 - 2017/09/10
 
