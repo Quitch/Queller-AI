@@ -76,16 +76,16 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "gold",
+            "string0": "silver",
             "boolean": true
           },
           {
-            "test_type": "PlanetWithoutPresence",
+            "test_type": "PlanetIsGasGiant",
             "boolean": true
           },
           {
-            "test_type": "ThisPlanetNeedsReconAssistance",
-            "boolean": false
+            "test_type": "OtherPlanetNeedsReconAssistance",
+            "boolean": true
           }
         ]
       ],
