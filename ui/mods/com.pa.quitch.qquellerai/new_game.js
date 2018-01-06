@@ -37,6 +37,7 @@ function qQuellerAI() {
             adv_eco_mod_alone: 0.5,
             factory_build_delay_min: 0,
             factory_build_delay_max: 12,
+            per_expansion_delay: 60,
             personality_tags:
             [
                 "casual"
