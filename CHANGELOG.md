@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### 4.16.0 - 2018
+#### 4.16.0 - 2018-01-06
 
  - Casual slower to expand
  - Casual builds Titans further from the base to avoid blocking them in with future builds
