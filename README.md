@@ -155,7 +155,7 @@ Below are recommendations for the difficulty you may wish to start on based on w
 
 | Vanilla    | Queller |
 | ---------- | ------- |
-| Normal     | Bronze  |
+| Normal     | Casual  |
 | Hard       | Silver  |
 | Relentless | Gold    |
 | Absurd     | Gold    |
@@ -169,7 +169,7 @@ Below are recommendations for the difficulty you may wish to start on based on w
 | Silver   | High      | Uber       | 1.0 |
 | Gold     | Low       | Uber       | 1.3 |
 | Gold     | High      | Uber       | 1.6 |
-| Platinum | Any       | Uber       | 1.9 |
+| Platinum | Any       | Uber       | 2.0 |
 | Uber     | Any       | Uber       | 2.5 |
 
 ## MAP NOTES
