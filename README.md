@@ -1,29 +1,15 @@
 Queller-AI
 ==========
 
-Improved AI for [Planetary Annihilation: TITANS](http://www.uberent.com/pa)
+Improved AI for [Planetary Annihilation: Titans](http://www.uberent.com/pa)
 
-I love AI. To put my old person comfy jumper on for a moment, back in the day I modded Total Annihilation's AI and ran a site called [AI Central](http://aicentral.tauniverse.com) (WARNING: very 90's site design) for AI mods, and I ran an AI league for Kohan II to identify the best. I've been an enthusiast in AI for as long as I've been gaming. This Queller AI will be a continuation of my Queller AI for Total Annihilation & Core Contingency.
-
-This mod is a total overhaul of the AI (as much as can be done with the exposed files) designed to leverage the systems Sorian has created, while playing a game better suited to the meta. It is primarily designed with 1v1 in mind, but should prove to be an improvement in other modes too. It covers a wider range of difficulties than vanilla, from easier to harder, all of which play in a more humanlike fashion than their vanilla counterparts.
-
-The mod offers complete support for the [Legion Expansion](https://github.com/Legion-Expansion/Legion-Expansion).
+This mod is a total overhaul of the AI designed to smooth out the difficulty curve, providing more humanlike challenges that are both easier and harder than the vanilla AI. It features complete support for the [Legion Expansion](https://github.com/Legion-Expansion/Legion-Expansion).
 
 Please ensure that if you use this work you credit Quitch's Queller AI.
 
 ## INSTALLATION
 
 You should download and install this mod via the Planetary Annihilation TITANS in-game Community Mod Manager.
-
-## FEEDBACK
-
-Any feedback based on playing the AI is greatly appreciated. Please include a link to the game on [PA Stats](http://www.pastats.com/) or the replay ID and any time codes of interest. Failing that, please provide the system name, the number of AIs, their difficulty setting, and which slot(s) the players occupied. Remember to set Local Server to OFF in settings otherwise you won't get an entry in PA Stats or a replay ID.
-
-Be aware that Queller will produce more units and fabbers than the vanilla AI, especially on multi-planet systems. I have optimised the AI as best as I can, but it is a bigger performance hog than vanilla. If you are encountering performance issues try setting Local Server to OFF.
-
-The difficulty levels are designed to reflect the dominant playstyle of each league. I'm always eager to garner feedback on any improvements that can be made here.
-
-The only feedback which isn't useful is AI vs. AI feedback. Believe me, I see a million of these games. I want feedback from AI vs human games.
 
 ## DIFFICULTY
 
@@ -165,14 +151,14 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 
 ## RECOMMENDED DIFFICULTY
 
-Below are recommendations for the difficulty and eco modifiers you should use.
+Below are recommendations for the difficulty you may wish to start on based on what you set the vanilla AI to or your ladder ranking.
 
-| Vanilla    | Queller | Eco |
-| ---------- | ------- | --- |
-| Normal     | Bronze  | 1.0 |
-| Hard       | Silver  | 1.0 |
-| Relentless | Gold    | 0.8 |
-| Absurd     | Gold    | 1.0 |
+| Vanilla    | Queller |
+| ---------- | ------- |
+| Normal     | Casual  |
+| Hard       | Silver  |
+| Relentless | Gold    |
+| Absurd     | Gold    |
 
 | League   | Placement | Difficulty | Eco |
 | -------- | --------- | ---------- | --- |
@@ -183,8 +169,8 @@ Below are recommendations for the difficulty and eco modifiers you should use.
 | Silver   | High      | Uber       | 1.0 |
 | Gold     | Low       | Uber       | 1.3 |
 | Gold     | High      | Uber       | 1.6 |
-| Platinum | Any       | Uber       | 1.9 |
-| Uber     | Any       | Uber       | 2.2 |
+| Platinum | Any       | Uber       | 2.0 |
+| Uber     | Any       | Uber       | 2.5 |
 
 ## MAP NOTES
 
@@ -196,7 +182,6 @@ The spawn the AI starts in and the profile used can make a big difference, even 
 
 - Takes too long transition from a naval start to a land game on mixed maps
 - Doesn't understand when it needs to build units in preparation for an attack versus when it should shutdown factories so it can build super weapons
-- Doesn't build enough fabbers to support building an orbital titan
 
 #### WONTFIX
 
@@ -219,8 +204,8 @@ The spawn the AI starts in and the profile used can make a big difference, even 
 - Legion won't build a different tier of mass extractor on a metal spot that already has a mass extractor
 - Legion can't use orbital transports
 - Doesn't use Helios teleporter
-- Spikes in AI fabber performance
 - Naval factories sometimes stop producing units
+- Won't attack on gas giants
 
 ## THANKS TO
 
@@ -232,4 +217,4 @@ The spawn the AI starts in and the profile used can make a big difference, even 
  - adding cool new features which make the AI increasingly smart
 - wondible for his creation of the [AI Showdown](https://github.com/JustinLove/ai_showdown/) tool which allows easy setup of matches between different AIs
 - mikeyh for writing the Javascript for loading Queller's personalities
-- alpha2546 for extensively playtesting Queller during Legion development
+- alpha2546 for extensively playtesting Queller during Legion Expansion development

@@ -1,5 +1,16 @@
 # CHANGELOG
 
+#### 4.16.0 - 2018-01-06
+
+ - Casual slower to expand
+ - Casual builds Titans further from the base to avoid blocking them in with future builds
+ - Modified recommended difficulty levels in readme
+ - Uber Bot no longer builds vehicle factories when low on AA
+ - Uber Tank no longer builds bot foundries when low on AA
+ - Uber just as likely to tech to bots as vehicles when playing MLA
+ - Fixed error preventing Uber Bot from properly spending its eco on T2 factories
+ - Uber prioritises T2 over the need for more AA for the most part
+
 #### 4.15.0 - 2017-11-18
 
  - Platinum will build the GIL-E
