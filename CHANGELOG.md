@@ -4,6 +4,7 @@
 
  - Casual slower to expand
  - Casual builds Titans further from the base to avoid blocking them in with future builds
+ - Modified recommended difficulty levels in readme
 
 #### 4.15.0 - 2017-11-18
 
