@@ -1,5 +1,10 @@
 # CHANGELOG
 
+#### 4.16.0 - 2018
+
+ - Casual slower to expand
+ - Casual builds Titans further from the base to avoid blocking them in with future builds
+
 #### 4.15.0 - 2017-11-18
 
  - Platinum will build the GIL-E
