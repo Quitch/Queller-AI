@@ -151,14 +151,14 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 
 ## RECOMMENDED DIFFICULTY
 
-Below are recommendations for the difficulty and eco modifiers you should use.
+Below are recommendations for the difficulty you may wish to start on based on what you set the vanilla AI to or your ladder ranking.
 
-| Vanilla    | Queller | Eco |
-| ---------- | ------- | --- |
-| Normal     | Casual  | 1.0 |
-| Hard       | Silver  | 1.0 |
-| Relentless | Gold    | 0.8 |
-| Absurd     | Gold    | 1.0 |
+| Vanilla    | Queller |
+| ---------- | ------- |
+| Normal     | Bronze  |
+| Hard       | Silver  |
+| Relentless | Gold    |
+| Absurd     | Gold    |
 
 | League   | Placement | Difficulty | Eco |
 | -------- | --------- | ---------- | --- |
@@ -170,7 +170,7 @@ Below are recommendations for the difficulty and eco modifiers you should use.
 | Gold     | Low       | Uber       | 1.3 |
 | Gold     | High      | Uber       | 1.6 |
 | Platinum | Any       | Uber       | 1.9 |
-| Uber     | Any       | Uber       | 2.2 |
+| Uber     | Any       | Uber       | 2.5 |
 
 ## MAP NOTES
 
