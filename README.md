@@ -17,7 +17,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 
 Normal through Absurd are the standard difficulties and will use the vanilla AI rather than Queller.
 
-- Casual
+### Casual
  - Economy first opening
  - One army
  - Techs as soon as possible
@@ -33,7 +33,7 @@ Normal through Absurd are the standard difficulties and will use the vanilla AI 
  - No micro
  - Terrible threat assessments
 
-- Bronze
+### Bronze
  - Factory first opening
  - One army
  - Techs as soon as possible
@@ -49,7 +49,7 @@ Normal through Absurd are the standard difficulties and will use the vanilla AI 
  - No micro
  - Terrible threat assessments
 
-- Silver
+### Silver
  - Factory first opening
  - Few armies
  - Will tech if it can
@@ -64,7 +64,7 @@ Normal through Absurd are the standard difficulties and will use the vanilla AI 
  - Average micro
  - Poor threat assessments
 
-- Gold
+### Gold
  - Smart factory first opening
  - Many armies
  - Will tech if it can
@@ -79,7 +79,7 @@ Normal through Absurd are the standard difficulties and will use the vanilla AI 
  - Average micro
  - OK threat assessments
 
-- Platinum
+### Platinum
  - Smart factory first opening
  - Unlimited armies
  - Techs quickly
@@ -94,7 +94,7 @@ Normal through Absurd are the standard difficulties and will use the vanilla AI 
  - Best micro
  - Great threat assessments
 
-- Uber
+### Uber
  - Smart factory first opening
  - Unlimited armies
  - Techs smartly
@@ -111,39 +111,39 @@ Normal through Absurd are the standard difficulties and will use the vanilla AI 
  - Will use eco bonuses better than other levels
  - Selectable subpersonality
 
-### Subpersonalities
+## Subpersonalities
 
 By default, Queller at Uber level will adapt its play to try and suit the system and the opposition it faces. You can use subpersonalities to customise Queller's game to your liking, or help it play better where it's making poor strategy choices.
 
-- Aggressive
+### Aggressive
  - More willing to engage in battle
 
-- Air
+### Air
  - Unrestricted air usage
 
-- Bot
+### Bot
  - Doesn't build vehicle factories
  - MLA will build a vehicle factory for Skitters if it detects the possibility of mines
 
-- Cautious
+### Cautious
  - Looks for overwhelming odds in battle
  - Will get orbital as soon as possible on multi-planet systems
 
-- Land
+### Land
  - Won't build naval factories
 
-- Naval
+### Naval
  - Attempts to build a naval factory first
  - Unrestricted naval usage
 
-- Orbital
+### Orbital
  - Will get orbital as soon as possible on multi-planet systems
 
-- Rush
+### Rush
  - Favours bots
  - Techs late
 
-- Tank
+### Tank
  - Doesn't build bot factories
 
 - Tech
