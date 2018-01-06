@@ -9,6 +9,7 @@
  - Uber Tank no longer builds bot foundries when low on AA
  - Uber just as likely to tech to bots as vehicles when playing MLA
  - Fixed error preventing Uber Bot from properly spending its eco on T2 factories
+ - Uber prioritises T2 over the need for more AA for the most part
 
 #### 4.15.0 - 2017-11-18
 
