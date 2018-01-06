@@ -5,6 +5,8 @@
  - Casual slower to expand
  - Casual builds Titans further from the base to avoid blocking them in with future builds
  - Modified recommended difficulty levels in readme
+ - Uber Bot no longer builds vehicle factories when low on AA
+ - Uber Tank no longer builds bot foundries when low on AA
 
 #### 4.15.0 - 2017-11-18
 
