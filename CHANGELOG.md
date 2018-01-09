@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### 4.16.1 - 2018
+
+ - Resolved an issue that could cause Bronze and Silver to stop expanding on island maps
+
 #### 4.16.0 - 2018-01-06
 
  - Casual slower to expand
