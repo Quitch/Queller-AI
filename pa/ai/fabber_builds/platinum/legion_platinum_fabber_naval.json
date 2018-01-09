@@ -4,7 +4,7 @@
       "name": "Legion - Platinum - Ship Foundry - Commander - Initial",
       "to_build": "LegionFactoryBasicNaval",
       "instance_count": 1,
-      "shared_instance_count": "BasicNavalFactory",
+      "shared_instance_count": "BasicFactory",
       "max_num_assisters": 2,
       "priority": 376,
       "base_sort": "FromMainBase",
@@ -108,7 +108,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicNavalFactory"
+            "string0": "LegionFactoryBasicNaval"
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
@@ -119,7 +119,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicNavalFactory"
+            "string0": "LegionFactoryBasicNaval"
           }
         ],
         [
@@ -204,7 +204,7 @@
       "name": "Legion - Platinum - Ship Foundry - Fabber - Initial",
       "to_build": "LegionFactoryBasicNaval",
       "instance_count": 1,
-      "shared_instance_count": "BasicNavalFactory",
+      "shared_instance_count": "BasicFactory",
       "priority": 377,
       "min_num_assisters": 2,
       "max_num_assisters": 4,
@@ -319,7 +319,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicNavalFactory"
+            "string0": "LegionFactoryBasicNaval"
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
@@ -330,7 +330,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicNavalFactory"
+            "string0": "LegionFactoryBasicNaval"
           }
         ],
         [
@@ -535,7 +535,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicNavalFactory"
+            "string0": "LegionFactoryBasicNaval"
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
@@ -546,7 +546,7 @@
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicNavalFactory"
+            "string0": "LegionFactoryBasicNaval"
           }
         ],
         [
