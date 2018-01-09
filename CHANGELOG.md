@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### 4.16.1 - 2018
+#### 4.16.1 - 2018-01-09
 
  - Resolved an issue that could cause Bronze and Silver to stop expanding on island maps
  - Casual through Silver may now open naval first on maps like Pacific
