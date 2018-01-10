@@ -169,7 +169,7 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 ### Tank
  - Doesn't build bot factories
 
-- Tech
+### Tech
  - Will get T2 as soon as it can afford it
 
 # MAP NOTES
