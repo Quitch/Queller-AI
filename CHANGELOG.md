@@ -5,7 +5,7 @@
  - Resolved an issue that could cause Bronze and Silver to stop expanding on island maps
  - Casual through Silver may now open naval first on maps like Pacific
  - Bronze and Silver will always open air or naval on island spawns to prevent expansion issues from occurring
- - Fix errors in Legion naval foundry placement
+ - Fixed errors in Legion naval foundry placement
  - Additional checks to stop low levels crippling expansion with naval fabbers
 
 #### 4.16.0 - 2018-01-06
