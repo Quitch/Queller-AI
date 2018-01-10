@@ -7,15 +7,13 @@ This mod is a total overhaul of the AI designed to smooth out the difficulty cur
 
 Please ensure that if you use this work you credit Quitch's Queller AI.
 
-## INSTALLATION
+# INSTALLATION
 
 You should download and install this mod via the Planetary Annihilation TITANS in-game Community Mod Manager.
 
-## DIFFICULTY
+# DIFFICULTY
 
-Queller offers a range of difficulties designed to try and mimic the style of human players at particular levels of play. Later in this readme you can find recommendations on which difficulty you should try.
-
-Normal through Absurd are the standard difficulties and will use the vanilla AI rather than Queller.
+Queller offers a range of difficulties designed to try and mimic the style of human players at particular levels of play. It does not modify the vanilla difficulties.
 
 ### Casual
  - Economy first opening
@@ -111,6 +109,29 @@ Normal through Absurd are the standard difficulties and will use the vanilla AI 
  - Will use eco bonuses better than other levels
  - Selectable subpersonality
 
+## RECOMMENDED DIFFICULTY
+
+Below are recommendations for the difficulty you may wish to start on based on what you set the vanilla AI to or your ladder ranking.
+
+| Vanilla    | Queller |
+| ---------- | ------- |
+| Normal     | Casual  |
+| Hard       | Silver  |
+| Relentless | Gold    |
+| Absurd     | Gold    |
+
+| League   | Placement | Difficulty | Eco |
+| -------- | --------- | ---------- | --- |
+| Bronze   | Low       | Bronze     | 1.0 |
+| Bronze   | High      | Silver     | 1.0 |
+| Silver   | Low       | Gold       | 1.0 |
+| Silver   | Mid       | Platinum   | 1.0 |
+| Silver   | High      | Uber       | 1.0 |
+| Gold     | Low       | Uber       | 1.3 |
+| Gold     | High      | Uber       | 1.6 |
+| Platinum | Any       | Uber       | 2.0 |
+| Uber     | Any       | Uber       | 2.5 |
+
 ## Subpersonalities
 
 By default, Queller at Uber level will adapt its play to try and suit the system and the opposition it faces. You can use subpersonalities to customise Queller's game to your liking, or help it play better where it's making poor strategy choices.
@@ -149,45 +170,22 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 - Tech
  - Will get T2 as soon as it can afford it
 
-## RECOMMENDED DIFFICULTY
-
-Below are recommendations for the difficulty you may wish to start on based on what you set the vanilla AI to or your ladder ranking.
-
-| Vanilla    | Queller |
-| ---------- | ------- |
-| Normal     | Casual  |
-| Hard       | Silver  |
-| Relentless | Gold    |
-| Absurd     | Gold    |
-
-| League   | Placement | Difficulty | Eco |
-| -------- | --------- | ---------- | --- |
-| Bronze   | Low       | Bronze     | 1.0 |
-| Bronze   | High      | Silver     | 1.0 |
-| Silver   | Low       | Gold       | 1.0 |
-| Silver   | Mid       | Platinum   | 1.0 |
-| Silver   | High      | Uber       | 1.0 |
-| Gold     | Low       | Uber       | 1.3 |
-| Gold     | High      | Uber       | 1.6 |
-| Platinum | Any       | Uber       | 2.0 |
-| Uber     | Any       | Uber       | 2.5 |
-
-## MAP NOTES
+# MAP NOTES
 
 The spawn the AI starts in and the profile used can make a big difference, even for symmetrical 1v1s. If you find the AI too easy on a map, try a different spawn point for it.
 
-## KNOWN ISSUES
+# KNOWN ISSUES
 
-#### TOFIX
+### TOFIX
 
 - Takes too long transition from a naval start to a land game on mixed maps
 - Doesn't understand when it needs to build units in preparation for an attack versus when it should shutdown factories so it can build super weapons
 
-#### WONTFIX
+### WONTFIX
 
 - Ignores the factory and fabber preferences of client/UI AI personality mods
 
-#### CANTFIX
+### CANTFIX
 
 - Will sometimes take much longer than necessary routes to attack
 - Fabbers don't always take the closest metal spot when building MEX
@@ -207,7 +205,7 @@ The spawn the AI starts in and the profile used can make a big difference, even 
 - Naval factories sometimes stop producing units
 - Won't attack on gas giants
 
-## THANKS TO
+# THANKS TO
 
 - Sorian of Uber Entertainment for
  - making his AI moddable
