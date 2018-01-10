@@ -1,4 +1,4 @@
-Queller-AI
+Queller AI
 ==========
 
 Improved AI for [Planetary Annihilation: Titans](http://www.uberent.com/pa)
