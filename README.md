@@ -7,6 +7,8 @@ This mod is a total overhaul of the AI designed to smooth out the difficulty cur
 
 Please ensure that if you use this work you credit Quitch's Queller AI.
 
+Want to make your own AI? I've written [a guide to get you started](http://exodusesports.com/guides/building-your-own-planetary-annihilation-ai/).
+
 # INSTALLATION
 
 You should download and install this mod via the Planetary Annihilation TITANS in-game Community Mod Manager.
