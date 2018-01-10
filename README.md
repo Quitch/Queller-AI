@@ -134,7 +134,7 @@ Below are recommendations for the difficulty you may wish to start on based on w
 | Platinum | Any       | Uber       | 2.0 |
 | Uber     | Any       | Uber       | 2.5 |
 
-## Subpersonalities
+## SUBPERSONALITIES
 
 By default, Queller at Uber level will adapt its play to try and suit the system and the opposition it faces. You can use subpersonalities to customise Queller's game to your liking, or help it play better where it's making poor strategy choices.
 
