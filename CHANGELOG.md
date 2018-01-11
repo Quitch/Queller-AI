@@ -1,5 +1,10 @@
 # CHANGELOG
 
+#### 4.17.0
+
+ - Increase spacing between Uber radar builds
+ - Uber more likely to build additional radars when using ships
+
 #### 4.16.1 - 2018-01-09
 
  - Resolved an issue that could cause Bronze and Silver to stop expanding on island maps

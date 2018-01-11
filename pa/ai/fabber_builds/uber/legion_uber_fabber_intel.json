@@ -147,7 +147,49 @@
             "test_type": "UnitCountAroundBase",
             "unit_type_string0": "Land & Structure & Recon",
             "string0": "Ally",
-            "value0": 240,
+            "value0": 225,
+            "compare0": "<",
+            "value1": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionIntelBasicRadar"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionIntelBasicRadar"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Land & Structure & Recon",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Naval",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Land & Structure & Recon",
+            "string0": "Ally",
+            "value0": 400,
             "compare0": "<",
             "value1": 1
           },
@@ -263,13 +305,55 @@
             "test_type": "UnitCountAroundBase",
             "unit_type_string0": "Land & Structure & Recon & Advanced",
             "string0": "Ally",
-            "value0": 300,
+            "value0": 450,
             "compare0": "<",
             "value1": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionIntelAdvancedRadar"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionIntelBasicRadar"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Land & Structure & Recon & Advanced",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Naval & Advanced",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Land & Structure & Recon & Advanced",
+            "string0": "Ally",
+            "value0": 720,
+            "compare0": "<",
+            "value1": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionIntelBasicRadar"
           }
         ]
       ],
