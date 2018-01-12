@@ -7,7 +7,7 @@
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "OrbitalLauncher"
+        "AnyUberOrbitalFactory"
       ],
       "build_conditions": [
         [
@@ -95,7 +95,7 @@
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "OrbitalLauncher"
+        "AnyUberOrbitalFactory"
       ],
       "build_conditions": [
         [
@@ -126,6 +126,10 @@
           {
             "test_type": "PlanetWithoutPresence",
             "boolean": true
+          },
+          {
+            "test_type": "IsGasGiant",
+            "boolean": false
           },
           {
             "test_type": "UnitCountOnPlanet",
