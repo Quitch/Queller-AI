@@ -9,6 +9,7 @@
  - Casual Legion will not build T1 recon from T2 orbital factories
  - Casual through Silver won't build orbital transports on gas giants
  - Fixed building a transport for the Commander to retreat
+ - Fixed some difficulties not moving orbital radar away from gas giants
 
 #### 4.16.1 - 2018-01-09
 
