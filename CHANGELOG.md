@@ -9,7 +9,7 @@
  - Casual Legion will not build T1 recon from T2 orbital factories
  - Casual through Silver won't build orbital transports on gas giants
  - Fixed building a transport for the Commander to retreat
- - Fixed some difficulties not moving orbital radar away from gas giants
+ - Fixed not always moving orbital radar away from gas giants should they somehow end up there
  - No longer tries to transfer orbital scouts which don't exist
  - Casual and Bronze now scout with orbital on single planet systems
  - Casual will build the Helios
