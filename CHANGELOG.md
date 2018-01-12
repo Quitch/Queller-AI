@@ -10,6 +10,7 @@
  - Casual through Silver won't build orbital transports on gas giants
  - Fixed building a transport for the Commander to retreat
  - Fixed some difficulties not moving orbital radar away from gas giants
+ - No longer tries to transfer orbital scouts which don't exist
 
 #### 4.16.1 - 2018-01-09
 
