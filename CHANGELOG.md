@@ -1,11 +1,27 @@
 # CHANGELOG
 
+#### 4.17.0 - 2018-01-12
+
+ - Increase spacing between Uber radar builds
+ - Uber more likely to build additional radars when using ships
+ - Casual MLA now correctly builds orbital fabbers from orbital factories
+ - Casual MLA will now build Avengers from orbital factories
+ - Casual Legion will not build T1 recon from T2 orbital factories
+ - Casual through Silver won't build orbital transports on gas giants
+ - Fixed building a transport for the Commander to retreat
+ - Fixed not always moving orbital radar away from gas giants should they somehow end up there
+ - No longer tries to transfer orbital scouts which don't exist
+ - Casual and Bronze now scout with orbital on single planet systems
+ - Casual will build the Helios
+ - Air and Orbital Titans react to the presence of air and orbital units at all difficulties
+ - Prevent low levels bouncing orbital scouts and radars between planets
+
 #### 4.16.1 - 2018-01-09
 
  - Resolved an issue that could cause Bronze and Silver to stop expanding on island maps
  - Casual through Silver may now open naval first on maps like Pacific
- - Bronze and Silver will always open air or naval on island spawns to prevent expansion issues from occuring
- - Fix errors in Legion naval foundry placement
+ - Bronze and Silver will always open air or naval on island spawns to prevent expansion issues from occurring
+ - Fixed errors in Legion naval foundry placement
  - Additional checks to stop low levels crippling expansion with naval fabbers
 
 #### 4.16.0 - 2018-01-06
