@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### 4.17.0
+#### 4.17.0 - 2018-01-12
 
  - Increase spacing between Uber radar builds
  - Uber more likely to build additional radars when using ships
