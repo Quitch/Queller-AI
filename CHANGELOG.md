@@ -4,6 +4,11 @@
 
  - Increase spacing between Uber radar builds
  - Uber more likely to build additional radars when using ships
+ - Casual MLA now correctly builds orbital fabbers from orbital factories
+ - Casual MLA will now build Avengers from orbital factories
+ - Casual Legion will not build T1 recon from T2 orbital factories
+ - Casual through Silver won't build orbital transports on gas giants
+ - Fixed building a transport for the Commander to retreat
 
 #### 4.16.1 - 2018-01-09
 
