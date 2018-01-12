@@ -13,6 +13,7 @@
  - No longer tries to transfer orbital scouts which don't exist
  - Casual and Bronze now scout with orbital on single planet systems
  - Casual will build the Helios
+ - Air and Orbital Titans react to the presence of air and orbital units at all difficulties
 
 #### 4.16.1 - 2018-01-09
 
