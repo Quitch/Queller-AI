@@ -12,6 +12,7 @@
  - Fixed some difficulties not moving orbital radar away from gas giants
  - No longer tries to transfer orbital scouts which don't exist
  - Casual and Bronze now scout with orbital on single planet systems
+ - Casual will build the Helios
 
 #### 4.16.1 - 2018-01-09
 
