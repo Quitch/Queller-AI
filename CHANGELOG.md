@@ -14,7 +14,7 @@
  - Casual and Bronze now scout with orbital on single planet systems
  - Casual will build the Helios
  - Air and Orbital Titans react to the presence of air and orbital units at all difficulties
- - Prevent low levels bouncing orbital scouts and radar between planets
+ - Prevent low levels bouncing orbital scouts and radars between planets
 
 #### 4.16.1 - 2018-01-09
 
