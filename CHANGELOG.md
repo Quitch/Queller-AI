@@ -1,5 +1,10 @@
 # CHANGELOG
 
+#### 4.17.1 - 2018-01-13
+
+ - Resolved an issue that would cause Gold to sometimes idle its naval factories
+ - Lobby message now includes version number
+
 #### 4.17.0 - 2018-01-12
 
  - Increase spacing between Uber radar builds
