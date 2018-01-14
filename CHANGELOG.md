@@ -3,7 +3,7 @@
 #### 4.18.0 - 2018
 
  - Corrected how many fabbers Uber Legion puts on building nukes when alone
- - Increased liklihood of Uber using nukes
+ - Increased likelihood of Uber using nukes
 
 #### 4.17.1 - 2018-01-13
 
