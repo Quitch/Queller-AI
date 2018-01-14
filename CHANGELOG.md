@@ -4,6 +4,7 @@
 
  - Corrected how many fabbers Uber Legion puts on building nukes when alone
  - Uber prioritises nukes over Holkins if the target has no anti-nukes
+ - Correctly checks whether an ally is building planet engines or Catalysts when playing as Legion
 
 #### 4.17.1 - 2018-01-13
 
