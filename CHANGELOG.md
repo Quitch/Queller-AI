@@ -3,7 +3,7 @@
 #### 4.18.0 - 2018
 
  - Corrected how many fabbers Uber Legion puts on building nukes when alone
- - Increased likelihood of Uber using nukes
+ - Rectify long standing issue where in certinain situations Uber AI wouldn't build nukes if it was floating its eco
 
 #### 4.17.1 - 2018-01-13
 
