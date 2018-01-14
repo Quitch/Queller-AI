@@ -1,5 +1,10 @@
 # CHANGELOG
 
+#### 4.18.0 - 2018
+
+ - Corrected how many fabbers Uber Legion puts on building nukes when alone
+ - Uber more likely to use nukes when heavily floating resources
+
 #### 4.17.1 - 2018-01-13
 
  - Resolved an issue that would cause Gold to sometimes idle its naval factories

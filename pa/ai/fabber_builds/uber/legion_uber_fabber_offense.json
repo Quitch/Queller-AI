@@ -264,11 +264,11 @@
       }
     },
     {
-      "name": "Legion - Uber - Supernova - Alone",
+      "name": "Legion - Uber - Supernova - Alone/Float",
       "to_build": "LegionDefenseAdvancedNukeSilo",
       "instance_count": 1,
       "shared_instance_count": "NukeSilo",
-      "min_num_assisters": 3,
+      "min_num_assisters": 8,
       "max_num_assisters": 45,
       "priority": 508,
       "base_sort": "FromMainBase",
@@ -295,6 +295,49 @@
             "string0": "Orbital",
             "string1": "AntiOrbital",
             "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionDefenseAdvancedNukeSilo"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber",
+            "compare0": ">=",
+            "value0": 10
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedNukeSilo"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "MetalStorageFrac",
+            "compare0": ">",
+            "value0": 0.8
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">",
             "value0": 1
           },
           {
