@@ -1,13 +1,15 @@
 # CHANGELOG
 
-#### 4.18.0 - 2018
+#### 4.17.2 - 2018
 
  - Corrected how many fabbers Uber Legion puts on building nukes when alone
  - Uber prioritises nukes over Holkins if the target has no anti-nukes
  - Correctly checks whether an ally is building planet engines or Catalysts when playing as Legion
  - Capped the number of factories Uber can build at once when floating eco
  - Removed rarely used Uber metal expansion routine to improve performance
- - Fixed Bronze through Platinum not accounting for all of their bot forces when forming armies
+ - Fixed major bug preventing Bronze through Platinum properly counting their bots when trying to form an army
+ - Fixed bug preventing Silver building orbital factories in certain situations
+ - Fixed bug preventing Platinum rushing orbital when other players do
 
 #### 4.17.1 - 2018-01-13
 
