@@ -153,41 +153,6 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Platinum - Basic Metal Extractor - Expand 3 - Area",
-      "to_build": "BasicMetalExtractor",
-      "instance_count": 4,
-      "max_num_assisters": 1,
-      "priority": 2,
-      "base_sort": "FromBuilder",
-      "builders": [
-        "AnyUberBasicFabber",
-        "AnyUberAdvancedFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "CanFindMetalSpotToBuildBasic",
-            "boolean": true
-          }
-        ]
-      ],
-      "placement_rules": {
-        "placement_type": "FromBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 200,
-          "value": 50
-        }
-      },
-      "task_type": "AreaBuild"
-    },
-    {
       "name": "Platinum - Basic Metal Extractor",
       "to_build": "BasicMetalExtractor",
       "instance_count": 3,
@@ -307,41 +272,6 @@
       "max_num_assisters": 1,
       "shared_instance_count": "BasicMetal",
       "priority": 260,
-      "base_sort": "FromBuilder",
-      "builders": [
-        "AnyUberBasicFabber",
-        "AnyUberAdvancedFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "CanFindMetalSpotToBuildBasic",
-            "boolean": true
-          }
-        ]
-      ],
-      "placement_rules": {
-        "placement_type": "FromBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 200,
-          "value": 50
-        }
-      }
-    },
-    {
-      "name": "Platinum - Basic Metal Extractor - Expand 3",
-      "to_build": "BasicMetalExtractor",
-      "instance_count": 4,
-      "max_num_assisters": 1,
-      "shared_instance_count": "BasicMetal",
-      "priority": 2,
       "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber",
@@ -565,42 +495,6 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Platinum - Advanced Metal Extractor - Expand 2 - Area",
-      "to_build": "AdvancedMetalExtractor",
-      "instance_count": 3,
-      "min_num_assisters": 1,
-      "max_num_assisters": 3,
-      "shared_instance_count": "AdvancedMetal",
-      "priority": 2,
-      "base_sort": "FromBuilder",
-      "builders": [
-        "AnyUberAdvancedFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "CanFindMetalSpotToBuildAdvanced",
-            "boolean": true
-          }
-        ]
-      ],
-      "placement_rules": {
-        "placement_type": "FromBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 200,
-          "value": 50
-        }
-      },
-      "task_type": "AreaBuild"
-    },
-    {
       "name": "Platinum - Advanced Metal Extractor",
       "to_build": "AdvancedMetalExtractor",
       "instance_count": 2,
@@ -686,40 +580,6 @@
       "max_num_assisters": 3,
       "shared_instance_count": "AdvancedMetal",
       "priority": 509,
-      "base_sort": "FromBuilder",
-      "builders": [
-        "AnyUberAdvancedFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "CanFindMetalSpotToBuildAdvanced",
-            "boolean": true
-          }
-        ]
-      ],
-      "placement_rules": {
-        "placement_type": "FromBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 200,
-          "value": 50
-        }
-      }
-    },
-    {
-      "name": "Platinum - Advanced Metal Extractor - Expand 2",
-      "to_build": "AdvancedMetalExtractor",
-      "instance_count": 3,
-      "min_num_assisters": 1,
-      "max_num_assisters": 3,
-      "priority": 2,
       "base_sort": "FromBuilder",
       "builders": [
         "AnyUberAdvancedFabber"
