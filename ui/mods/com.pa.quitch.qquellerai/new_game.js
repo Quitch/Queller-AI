@@ -13,7 +13,7 @@ function qQuellerAI() {
 
     var defaultAiPersonalities = ['Idle', 'Normal', 'Hard', 'Relentless', 'Absurd'];
 
-    var helpText = 'by Quitch. Version 4.17.1. My difficulties are prefixed with a Q. I support the Legion Expansion.';
+    var helpText = 'by Quitch. Version 4.17.2. My difficulties are prefixed with a Q. I support the Legion Expansion.';
 
     _.forEach( aiPersonalities, function(personality, name) {
         if(defaultAiPersonalities.indexOf(name) != -1) {
