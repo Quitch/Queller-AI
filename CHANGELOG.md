@@ -10,6 +10,7 @@
  - Fixed major bug preventing Bronze through Platinum properly counting their bots when trying to form an army
  - Fixed bug preventing Silver building orbital factories in certain situations
  - Fixed bug preventing Platinum rushing orbital when other players do
+ - Fixed bug which could delay Uber closing out a game as it required anti-air units to form large armies
 
 #### 4.17.1 - 2018-01-13
 
