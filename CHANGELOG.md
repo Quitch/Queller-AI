@@ -7,7 +7,7 @@
  - Correctly checks whether an ally is building planet engines or Catalysts when playing as Legion
  - Capped the number of factories Uber can build at once when floating eco
  - Removed rarely used Uber metal expansion routine to improve performance
- - Fixed major bug preventing Bronze through Platinum properly counting their bots when trying to form an army
+ - Fixed bug interfering with Bronze through Platinum properly forming new armies
  - Fixed bug preventing Silver building orbital factories in certain situations
  - Fixed bug preventing Platinum rushing orbital when other players do
  - Fixed bug which could delay Uber closing out a game as it required anti-air units to form large armies
