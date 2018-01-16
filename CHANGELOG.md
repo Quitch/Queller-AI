@@ -6,6 +6,7 @@
  - Uber prioritises nukes over Holkins if the target has no anti-nukes
  - Correctly checks whether an ally is building planet engines or Catalysts when playing as Legion
  - Capped the number of factories Uber can build at once when floating eco
+ - Removed rarely used Uber metal expansion routine to improve performance
 
 #### 4.17.1 - 2018-01-13
 

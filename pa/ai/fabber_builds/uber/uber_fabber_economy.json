@@ -153,42 +153,6 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Uber - Basic Metal Extractor - Expand 3 - Area",
-      "to_build": "BasicMetalExtractor",
-      "instance_count": 6,
-      "max_num_assisters": 1,
-      "shared_instance_count": "BasicMetal",
-      "priority": 2,
-      "base_sort": "FromBuilder",
-      "builders": [
-        "AnyUberBasicFabber",
-        "AnyUberAdvancedFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "CanFindMetalSpotToBuildBasic",
-            "boolean": true
-          }
-        ]
-      ],
-      "placement_rules": {
-        "placement_type": "FromBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      },
-      "task_type": "AreaBuild"
-    },
-    {
       "name": "Uber - Basic Metal Extractor",
       "to_build": "BasicMetalExtractor",
       "instance_count": 4,
@@ -308,41 +272,6 @@
       "max_num_assisters": 1,
       "shared_instance_count": "BasicMetal",
       "priority": 259,
-      "base_sort": "FromBuilder",
-      "builders": [
-        "AnyUberBasicFabber",
-        "AnyUberAdvancedFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "CanFindMetalSpotToBuildBasic",
-            "boolean": true
-          }
-        ]
-      ],
-      "placement_rules": {
-        "placement_type": "FromBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
-      "name": "Uber - Basic Metal Extractor - Expand 3",
-      "to_build": "BasicMetalExtractor",
-      "instance_count": 6,
-      "max_num_assisters": 1,
-      "shared_instance_count": "BasicMetal",
-      "priority": 2,
       "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber",
