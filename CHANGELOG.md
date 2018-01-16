@@ -11,6 +11,7 @@
  - Fixed bug preventing Silver building orbital factories in certain situations
  - Fixed bug preventing Platinum rushing orbital when other players do
  - Fixed bug which could delay Uber closing out a game as it required anti-air units to form large armies
+ - Exclude scouts from unit counts when forming armies
 
 #### 4.17.1 - 2018-01-13
 
