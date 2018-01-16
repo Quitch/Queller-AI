@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### 4.17.2 - 2018
+#### 4.17.2 - 2018-01-16
 
  - Corrected how many fabbers Uber Legion puts on building nukes when alone
  - Uber prioritises nukes over Holkins if the target has no anti-nukes
