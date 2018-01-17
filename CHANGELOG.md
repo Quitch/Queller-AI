@@ -1,5 +1,10 @@
 # CHANGELOG
 
+#### 4.x.x
+
+ - No longer prioritises nukes over Holkins
+ - Increased priority of Ares Titan
+
 #### 4.17.2 - 2018-01-16
 
  - Corrected how many fabbers Uber Legion puts on building nukes when alone
