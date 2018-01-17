@@ -4,6 +4,7 @@
 
  - No longer prioritises nukes over Holkins
  - Increased priority of Ares Titan
+ - Uber techs a little earlier
 
 #### 4.17.2 - 2018-01-16
 
