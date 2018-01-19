@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### 4.x.x
+#### 4.18.0 - 2018-01-19
 
  - No longer prioritises nukes over Holkins
  - Increased priority of Ares Titan
