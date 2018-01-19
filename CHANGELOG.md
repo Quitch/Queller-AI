@@ -6,6 +6,7 @@
  - Increased priority of Ares Titan
  - Uber techs a little earlier
  - Tone down Uber's love of nukes slightly
+ - All difficulties give Titans more space when building them
 
 #### 4.17.2 - 2018-01-16
 
