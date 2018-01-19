@@ -13,7 +13,7 @@ function qQuellerAI() {
 
     var defaultAiPersonalities = ['Idle', 'Normal', 'Hard', 'Relentless', 'Absurd'];
 
-    var helpText = 'by Quitch. Version 4.17.2. My difficulties are prefixed with a Q. I support the Legion Expansion.';
+    var helpText = 'by Quitch. Version 4.18.0. My difficulties are prefixed with a Q. I support the Legion Expansion.';
 
     _.forEach( aiPersonalities, function(personality, name) {
         if(defaultAiPersonalities.indexOf(name) != -1) {
@@ -138,8 +138,8 @@ function qQuellerAI() {
             priority_scout_metal_spots: true,
             enable_commander_danger_responses: true,
             neural_data_mod: 1.0,
-            adv_eco_mod: 1.0,
-            adv_eco_mod_alone: 0.85,
+            adv_eco_mod: 0.85,
+            adv_eco_mod_alone: 0,
             personality_tags:
             [
                 "uber"

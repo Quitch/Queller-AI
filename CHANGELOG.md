@@ -1,5 +1,13 @@
 # CHANGELOG
 
+#### 4.18.0 - 2018-01-19
+
+ - No longer prioritises nukes over Holkins
+ - Increased priority of Ares Titan
+ - Uber techs a little earlier
+ - Tone down Uber's love of nukes slightly
+ - All difficulties give Titans more space when building them
+
 #### 4.17.2 - 2018-01-16
 
  - Corrected how many fabbers Uber Legion puts on building nukes when alone
