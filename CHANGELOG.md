@@ -3,6 +3,7 @@
 #### 4.x.x
 
  - Uber will use a small amount of GIL-Es as a counter to Catapults
+ - Uber more willing to scout with the Firefly
 
 #### 4.18.0 - 2018-01-19
 
