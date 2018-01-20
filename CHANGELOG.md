@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### 4.x.x
+
+ - Uber will use a small amount of GIL-Es as a counter to Catapults
+
 #### 4.18.0 - 2018-01-19
 
  - No longer prioritises nukes over Holkins
