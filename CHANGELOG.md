@@ -4,6 +4,12 @@
 
  - Uber will use a small number of GIL-Es as a counter to Catapults
  - Uber more willing to scout with the Firefly
+ - Let Casual build the Manhattan because why not
+ - Properly exclude orbital fabbers from fabber counts where appropriate
+ - Platinum and Uber will develop more fabbers before trying to build nukes
+ - Gold through Uber will develop more fabbers before trying to build Titans
+ - Gold through Uber will check how the ground war is going before trying to build nukes
+ - All levels allow more fabbers to assist building a planet splitter Titan
 
 #### 4.18.0 - 2018-01-19
 
