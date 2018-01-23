@@ -52,13 +52,7 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Fabber - Orbital",
             "compare0": ">=",
-            "value0": 15
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory - Orbital",
-            "compare0": ">=",
-            "value0": 1
+            "value0": 30
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -123,13 +117,7 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Fabber - Orbital",
             "compare0": ">=",
-            "value0": 15
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory - Orbital",
-            "compare0": ">=",
-            "value0": 1
+            "value0": 30
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -196,13 +184,7 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Fabber - Orbital",
             "compare0": ">=",
-            "value0": 15
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory - Orbital",
-            "compare0": ">=",
-            "value0": 1
+            "value0": 30
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -224,8 +206,8 @@
       "name": "Uber - Ragnarok",
       "to_build": "PlanetSplitter",
       "instance_count": 1,
-      "min_num_assisters": 8,
-      "max_num_assisters": 15,
+      "min_num_assisters": 100,
+      "max_num_assisters": 100,
       "shared_instance_count": "Titan",
       "priority": 480,
       "base_sort": "FromMainBase",
@@ -280,7 +262,7 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Fabber - Orbital",
             "compare0": ">=",
-            "value0": 15
+            "value0": 30
           },
           {
             "test_type": "AlliedUnitCountOnPlanet",

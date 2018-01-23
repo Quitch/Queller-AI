@@ -179,6 +179,13 @@
             "string0": "LegionDefenseAdvancedNukeSilo"
           },
           {
+            "test_type": "FocusTargetThreatRatio",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionDefenseAdvancedNukeSilo"
           }
@@ -250,6 +257,13 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "LegionDefenseAdvancedNukeSilo"
+          },
+          {
+            "test_type": "FocusTargetThreatRatio",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "compare0": "<",
+            "value0": 1
           },
           {
             "test_type": "FocusTargetThreat",

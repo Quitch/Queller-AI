@@ -234,6 +234,13 @@
             "boolean": false
           },
           {
+            "test_type": "FocusTargetThreatRatio",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -244,7 +251,7 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Fabber - Orbital",
             "compare0": ">=",
-            "value0": 20
+            "value0": 30
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -308,7 +315,7 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Fabber - Orbital",
             "compare0": ">=",
-            "value0": 20
+            "value0": 30
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -352,6 +359,13 @@
             "string0": "LegionDefenseAdvancedNukeSilo"
           },
           {
+            "test_type": "FocusTargetThreatRatio",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
             "test_type": "FocusTargetThreat",
             "string0": "AntiNuke",
             "compare0": "<=",
@@ -367,7 +381,7 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Fabber - Orbital",
             "compare0": ">=",
-            "value0": 20
+            "value0": 30
           },
           {
             "test_type": "CanFindPlaceToBuild",
