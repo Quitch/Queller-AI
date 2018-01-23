@@ -232,6 +232,12 @@
             "string0": "NukeSilo"
           },
           {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": ">=",
+            "value0": 20
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "NukeSilo"
           }
@@ -283,6 +289,12 @@
             "string0": "NukeSilo"
           },
           {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": ">=",
+            "value0": 20
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "NukeSilo"
           }
@@ -315,6 +327,12 @@
             "unit_type_string0": "Structure & Nuke",
             "compare0": "<",
             "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": ">=",
+            "value0": 20
           },
           {
             "test_type": "CanFindPlaceToBuild",
