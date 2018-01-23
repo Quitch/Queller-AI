@@ -65,6 +65,38 @@
         ]
       ],
       "task_type": "LandAttack"
+    },
+    {
+      "name": "Casual - Land Attack Nuke",
+      "to_build": "Land_Attack_Nuke_Queller",
+      "instance_count": -1,
+      "priority": 100,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "casual",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Tank & Important - Titan",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "Structure - Wall"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
     }
   ]
 }

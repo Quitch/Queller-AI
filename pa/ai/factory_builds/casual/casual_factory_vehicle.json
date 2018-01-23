@@ -281,6 +281,34 @@
           }
         ]
       ]
+    },
+    {
+      "name": "Casual - Manhattan",
+      "to_build": "NukeTank",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "AdvancedVehicleFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "casual",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Tank & Important - Titan",
+            "compare0": "<",
+            "value0": 1
+          }
+        ]
+      ]
     }
   ]
 }
