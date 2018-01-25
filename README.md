@@ -206,6 +206,7 @@ The spawn the AI starts in and the profile used can make a big difference, even 
 - Doesn't use Helios teleporter
 - Naval factories sometimes stop producing units
 - Won't attack on gas giants
+- All AI Commanders spawn and act together using shared army mode
 
 # THANKS TO
 
