@@ -1,5 +1,29 @@
 # CHANGELOG
 
+#### 4.19.0 - 2018-01-27
+
+ - Uber will use a small number of GIL-Es as a counter to Catapults
+ - Uber more willing to scout with the Firefly
+ - Let Casual build the Manhattan because why not
+ - Properly exclude orbital fabbers from fabber counts where appropriate
+ - Platinum and Uber will develop more fabbers before trying to build nukes
+ - Gold through Uber will develop more fabbers before trying to build Titans
+ - Gold through Uber will check how the ground war is going before trying to build nukes
+ - All levels allow more fabbers to assist building a planet splitter Titan
+ - Adjusted handling of Sparks and Monstrosities
+ - Fixed broken behaviour for building more factories when floating
+ - Uber prefers Hermes and Wraith for local orbital scouting
+ - Uber Naval can now correctly expand its naval presence with naval fabbers
+ - Platinum no longer has behaviours for spending excess eco
+ - Uber won't use excess eco to expand its T1 presence outside of specialised subpersonality behaviour
+ - Only Uber Naval will now use excess eco to expand its naval presence
+ - Uber won't use T2 fabbers to build T1 factories outside of some specialised circumstances
+ - Fix possible issue with Platinum and Uber Commanders escaping by orbital transport
+ - Removed experimental give up behaviour that shouldn't have been in release
+ - Uber no longer makes more factories than intended when building for AA
+ - Uber uses a small number of Shellers as standard
+ - Uber uses less GIL-Es and Storms in invasion forces
+
 #### 4.18.0 - 2018-01-19
 
  - No longer prioritises nukes over Holkins
