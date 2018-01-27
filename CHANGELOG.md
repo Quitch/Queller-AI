@@ -21,6 +21,7 @@
  - Fix possible issue with Platinum and Uber Commanders escaping by orbital transport
  - Removed experimental give up behaviour that shouldn't have been in release
  - Uber no longer makes more factories than intended when building for AA
+ - Uber uses a small number of Shellers as standard
 
 #### 4.18.0 - 2018-01-19
 
