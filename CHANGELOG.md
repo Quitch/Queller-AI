@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### 4.x.x
+#### 4.19.0 - 2018-01-27
 
  - Uber will use a small number of GIL-Es as a counter to Catapults
  - Uber more willing to scout with the Firefly
