@@ -12,7 +12,7 @@
  - All levels allow more fabbers to assist building a planet splitter Titan
  - Adjusted handling of Sparks and Monstrosities
  - Fixed broken behaviour for building more factories when floating
- - Uber prefers Hermes for local orbital scouting
+ - Uber prefers Hermes and Wraith for local orbital scouting
 
 #### 4.18.0 - 2018-01-19
 
