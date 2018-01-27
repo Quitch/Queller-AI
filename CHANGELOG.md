@@ -13,6 +13,14 @@
  - Adjusted handling of Sparks and Monstrosities
  - Fixed broken behaviour for building more factories when floating
  - Uber prefers Hermes and Wraith for local orbital scouting
+ - Uber Naval can now correctly expand its naval presence with naval fabbers
+ - Platinum no longer has behaviours for spending excess eco
+ - Uber won't use excess eco to expand its T1 presence outside of specialised subpersonality behaviour
+ - Only Uber Naval will now use excess eco to expand its naval presence
+ - Uber won't use T2 fabbers to build T1 factories outside of some specialised circumstances
+ - Fix possible issue with Platinum and Uber Commanders escaping by orbital transport
+ - Removed experimental give up behaviour that shouldn't have been in release
+ - Uber no longer makes more factories than intended when building for AA
 
 #### 4.18.0 - 2018-01-19
 
