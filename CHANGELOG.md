@@ -22,6 +22,7 @@
  - Removed experimental give up behaviour that shouldn't have been in release
  - Uber no longer makes more factories than intended when building for AA
  - Uber uses a small number of Shellers as standard
+ - Uber uses less GIL-Es and Storms in invasion forces
 
 #### 4.18.0 - 2018-01-19
 
