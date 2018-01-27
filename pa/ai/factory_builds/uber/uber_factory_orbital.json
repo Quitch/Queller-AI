@@ -103,46 +103,13 @@
       ]
     },
     {
-      "name": "Uber - ARKYD - This Planet",
-      "to_build": "BasicRadarSattelite",
-      "instance_count": 1,
-      "max_num_assisters": 10,
-      "priority": 99,
-      "builders": [
-        "AnyUberOrbitalFactory"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "ThisPlanetNeedsReconAssistance",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicRadarSattelite"
-          },
-          {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
-          }
-        ]
-      ]
-    },
-    {
       "name": "Uber - ARKYD - Other Planet",
       "to_build": "BasicRadarSattelite",
       "instance_count": 1,
       "shared_instance_count": "ReconAssistance",
       "cross_planet_shared_count": true,
       "max_num_assisters": 10,
-      "priority": 100,
+      "priority": 99,
       "builders": [
         "AnyUberOrbitalFactory"
       ],
@@ -174,7 +141,7 @@
       "name": "Uber - Hermes - This Planet",
       "to_build": "OrbitalProbe",
       "instance_count": 1,
-      "priority": 98,
+      "priority": 99,
       "builders": [
         "AnyUberOrbitalFactory"
       ],
