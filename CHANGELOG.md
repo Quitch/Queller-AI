@@ -104,7 +104,7 @@
  - Bronze and Silver faster to get orbital factories once they've gone orbital
  - Bronze and Silver will scout with Marauders
  - Moved Novas into a valid air squad
- - Platinum and Uber will now rush orbital on multiplanet maps if other players have done so
+ - Platinum and Uber will now rush orbital on multi-planet maps if other players have done so
  - Gold no longer builds the Necromancer
  - Uber builds more Catfish
  - Ensure Sparks are in the proper squad when teleporting
@@ -489,7 +489,7 @@ The Queller AI **Client** is no longer required and should be uninstalled.
  - Uber Bot Legion no longer builds AA when enemy has a larger air force than it because it doesn't build one
  - Uber Legion only builds T2 air on planets it completely owns
  - Uber Legion puts less priority on an early air factory
- - Disabled Starcannon owing to multiple server crashes iinked to the unit
+ - Disabled Starcannon owing to multiple server crashes linked to the unit
 
 #### 4.3.0 - 2016/11/07
 
@@ -539,7 +539,7 @@ The Queller AI **Client** is no longer required and should be uninstalled.
  - Uber won't start risky build projects when the base is under attack
  - No longer rushes artillery to Comm snipe as the AI won't target the Comm
  - Uber throws more fabbers at ground-to-orbital defence rushes
- - Uber builds more ground-to-oribtal defences as the orbital threat grows
+ - Uber builds more ground-to-orbital defences as the orbital threat grows
  - Fix error in anti-nuke placement checks
  - Check to place artillery is no longer greater than the requirements to build it
  - Don't build GIL-E in response to missile ships
@@ -722,7 +722,7 @@ The Queller AI **Client** is no longer required and should be uninstalled.
  - Uber will use more T2 bots if it thinks it's being bot rushed
  - Corrected bug preventing Queller from building Levelers
  - Uber no longer uses Krakens alone
- - Uber favours the Krakken for naval warfare
+ - Uber favours the Kraken for naval warfare
  - Where a land target cannot be found hover platoons will pursue naval targets
 
 #### v3.1.6 - 2016/01/29
@@ -856,12 +856,12 @@ NOW DESIGNED SOLELY FOR TITANS
 - No longer builds an Astraeus for an evacuation it doesn't perform
 - Corrected errors in the advanced fabber ratios
 - Uber less reluctant to build advanced fabbers
-- Uber floats less energy on multiplanet systems
+- Uber floats less energy on multi-planet systems
 - Gold through Uber have been updated for the Grenadier meta
 - Uber is better at building storage when it can't immediately counter an eco float
 - Uber prioritises Deep Space Radar after going orbital
 - Removed the building of Booms for now
-- Gold is more likely to build the Unit Cannon on a multiplanet system
+- Gold is more likely to build the Unit Cannon on a multi-planet system
 - Uber spaces its Jigs out more
 - Uber won't assign as many fabbers to grab metal while it's floating
 - Platinum more likely to tech up when it's out of expansion options
@@ -903,7 +903,7 @@ NOW DESIGNED SOLELY FOR TITANS
 - Uber is more aggressive with scouting if you might be on its planet but it can't find you
 - Uber produces more Spinners when preparing an invasion
 - Further work done to prevent overwhelming land threats stopping the AI from using its ships
-- Uber now has subpersonalities allowing you to customise how it plays
+- Uber now has sub-personalities allowing you to customise how it plays
  - Adaptive
  - Air
  - Dox
@@ -943,7 +943,7 @@ NOW DESIGNED SOLELY FOR TITANS
 - Added support for the Unit Cannon
 - Added Slammer support for use by the Unit Cannon
 - Will use an Astraeus rather than a Teleporter to get off planet when its base is in water
-- Will pursue orbital more aggressively when on multiplanet systems with only one spawnable planet
+- Will pursue orbital more aggressively when on multi-planet systems with only one spawnable planet
 - Prioritise a factory above all else on arrival at a new world
 - Will evac Commander by Astraeus if it doesn't have the energy to run its teleporters
 - Use new eco checks to be more aggressive about avoiding eco floating
@@ -1068,7 +1068,7 @@ The "oh shit new patch with new folder structure which breaks my baby!" release
 - Increased bomber platoon sizes by 50%
 - Will build Skitters in reaction to sighting combat fabbers
 - Will no longer build orbital factories and advanced factories at the same time
-- Will build Skitters on multiplanet maps to use as advance scouts to avoid invasion forces sitting on their hands
+- Will build Skitters on multi-planet maps to use as advance scouts to avoid invasion forces sitting on their hands
 - Even more aggressive producing anti-nukes
 
 #### v1.1 - 2015/03/30
