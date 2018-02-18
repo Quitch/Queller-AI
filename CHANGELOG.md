@@ -4,7 +4,7 @@
 
  - Uber builds a tiny number of Vanguards to provide radar for Shellers
  - Uber less likely to produce as many GIL-E when alone and Shellers are an option
- - Fix some checks which failed to cover all scenarios despite intending to
+ - Uber won't build advanced specialist units until it has its advanced fabbers out
 
 #### 4.19.0 - 2018-01-27
 
