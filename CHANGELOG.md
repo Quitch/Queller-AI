@@ -1,5 +1,9 @@
 # CHANGELOG
 
+####
+
+ - Uber builds a tiny number of Vanguards to provide radar for Shellers
+
 #### 4.19.0 - 2018-01-27
 
  - Uber will use a small number of GIL-Es as a counter to Catapults
