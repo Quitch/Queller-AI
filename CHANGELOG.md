@@ -6,6 +6,7 @@
  - Uber less likely to produce as many GIL-E when alone and Shellers are an option
  - Uber won't build advanced specialist units until it has its advanced fabbers out
  - Owing to AI targeting issues will now stop building Dox when it realises it can't path by land
+ - Uber Naval properly limits basic factory building
 
 #### 4.19.0 - 2018-01-27
 
