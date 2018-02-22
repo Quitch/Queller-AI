@@ -5,7 +5,7 @@
  - Uber builds a tiny number of Vanguards to provide radar for Shellers
  - Uber less likely to produce as many GIL-E when alone and Shellers are an option
  - Uber won't build advanced specialist units until it has its advanced fabbers out
- - Stops building Dox when it realises it can't path by land owing to AI targeting issues
+ - Owing to AI targeting issues will now stop building Dox when it realises it can't path by land
 
 #### 4.19.0 - 2018-01-27
 
