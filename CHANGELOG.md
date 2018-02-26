@@ -8,6 +8,7 @@
  - Owing to AI targeting issues will now stop building Dox when it realises it can't path by land
  - Uber Naval properly limits basic factory building
  - Uber will use a small amount of Locusts and more when dealing with naval maps
+ - Send out Locust swarms earlier in the late game
 
 #### 4.19.0 - 2018-01-27
 
