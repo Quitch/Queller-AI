@@ -7,6 +7,7 @@
  - Uber won't build advanced specialist units until it has its advanced fabbers out
  - Owing to AI targeting issues will now stop building Dox when it realises it can't path by land
  - Uber Naval properly limits basic factory building
+ - Uber will use a small amount of Locusts and more when dealing with naval maps
 
 #### 4.19.0 - 2018-01-27
 
