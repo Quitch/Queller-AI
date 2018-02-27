@@ -13,6 +13,7 @@
  - Fix Uber Naval making too many air fabbers
  - Uber uses less Shellers
  - Bronze uses less Pelters and Theodors
+ - Bronze more likely to use Catapults near the front
 
 #### 4.19.0 - 2018-01-27
 
