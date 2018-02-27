@@ -9,6 +9,7 @@
  - Uber Naval properly limits basic factory building
  - Uber will use a small amount of Locusts and more when dealing with naval maps
  - Send out Locust swarms earlier in the late game
+ - Uber won't build Pelters and Theodors to counter naval any more
 
 #### 4.19.0 - 2018-01-27
 
