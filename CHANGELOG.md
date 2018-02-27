@@ -14,6 +14,8 @@
  - Uber uses less Shellers
  - Bronze uses less Pelters and Theodors
  - Bronze more likely to use Catapults near the front
+ - Catapults always properly included in base defence counts
+ - Ramparts always properly excluded from base defence counts
 
 #### 4.19.0 - 2018-01-27
 
