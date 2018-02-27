@@ -23,9 +23,10 @@
             "value0": 0
           },
           {
-            "test_type": "CanAttackWithPoolUnits",
-            "string0": "WL_AnySurface",
-            "boolean": true
+              "test_type": "CanAttackWithPoolUnitsLand",
+              "string0": "WL_AnySurface",
+              "string1": "WL_AnySurface",
+              "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ]
       ],
