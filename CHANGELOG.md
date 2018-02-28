@@ -16,6 +16,10 @@
  - Bronze more likely to use Catapults near the front
  - Catapults always properly included in base defence counts
  - Ramparts always properly excluded from base defence counts
+ - Uber prioritises getting out an early Firefly
+ - Uber Naval puts out more early Piranhas
+ - Uber far less likely to use bots on island maps unless it can push to advanced bots
+ - Uber will no longer get stuck on naval maps (though you should still use Uber Naval)
 
 #### 4.19.0 - 2018-01-27
 
