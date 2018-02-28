@@ -308,6 +308,71 @@
             "value": 50
           }
         }
+      },
+      {
+        "name": "Legion - Uber Naval - Advanced Naval Foundry - First",
+        "to_build": "LegionFactoryAdvancedNaval",
+        "instance_count": 1,
+        "shared_instance_count": "AdvancedFactory",
+        "priority": 479,
+        "min_num_assisters": 5,
+        "max_num_assisters": 8,
+        "base_sort": "FromMainBase",
+        "builders": [
+          "LegionNavalBasicFabber",
+          "LegionNavalAdvancedFabber"
+        ],
+        "debug": false,
+        "build_conditions": [
+          [
+            {
+              "test_type": "HasPersonalityTag",
+              "string0": "naval",
+              "boolean": true
+            },
+            {
+              "test_type": "EnemySurfacePresenceOnPlanet",
+              "boolean": true
+            },
+            {
+              "test_type": "HaveEcoForAdvanced",
+              "boolean": true
+            },
+            {
+              "test_type": "CanDeployNavalFromBase",
+              "boolean": true
+            },
+            {
+              "test_type": "CanAffordBuildDemand"
+            },
+            {
+              "test_type": "UnitCountOnPlanet",
+              "unit_type_string0": "(Basic & Fabber) - Orbital - Land",
+              "compare0": ">=",
+              "value0": 5
+            },
+            {
+              "test_type": "UnitCountOnPlanet",
+              "unit_type_string0": "Factory & Advanced & Naval",
+              "compare0": "<",
+              "value0": 1
+            },
+            {
+              "test_type": "CanFindPlaceToBuild",
+              "string0": "LegionFactoryAdvancedNaval"
+            }
+          ]
+        ],
+        "placement_rules": {
+          "buffer": 5,
+          "placement_type": "FromBaseCenter",
+          "threat": {
+            "influence_type": "AntiSurface",
+            "compare_type": "<",
+            "radius": 10,
+            "value": 50
+          }
+        }
       }
     ]
   }
