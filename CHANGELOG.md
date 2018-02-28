@@ -1,6 +1,6 @@
 # CHANGELOG
 
-####
+#### - 4.20.0
 
  - Uber builds a tiny number of Vanguards to provide radar for Shellers
  - Uber less likely to produce as many GIL-E when alone and Shellers are an option
@@ -20,6 +20,9 @@
  - Uber Naval puts out more early Piranhas and Catfish
  - Uber far less likely to use bots on island maps unless it can push to advanced bots
  - Uber will no longer get stuck on naval maps (though you should still use Uber Naval)
+ - Corrected Uber Naval over producing T1 factories when floating
+ - Allow Uber to use more T2 naval when floating eco
+ - Uber Naval much more aggressive about teching
 
 #### 4.19.0 - 2018-01-27
 
