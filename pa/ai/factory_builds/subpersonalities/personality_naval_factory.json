@@ -36,8 +36,7 @@
         "max_num_assisters": 10,
         "priority": 100,
         "builders": [
-          "LegionFactoryBasicAir",
-          "LegionFactoryAdvancedAir"
+          "AnyLegionAirFactory"
         ],
         "build_conditions": [
           [
