@@ -25,6 +25,7 @@
  - Uber Naval much more aggressive about teching
  - Corrected Uber failing to expand T1 naval to counter subs
  - Unified a lot of Uber and Uber Naval behaviours as Uber was performing better in the water
+ - Uber Naval always assigns hover units to its naval attack behaviours
 
 #### 4.19.0 - 2018-01-27
 
