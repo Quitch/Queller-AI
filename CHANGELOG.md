@@ -23,6 +23,7 @@
  - Corrected Uber Naval over producing T1 factories when floating
  - Allow Uber to use more T2 naval when floating eco
  - Uber Naval much more aggressive about teching
+ - Corrected Uber failing to expand T1 naval to counter subs
 
 #### 4.19.0 - 2018-01-27
 
