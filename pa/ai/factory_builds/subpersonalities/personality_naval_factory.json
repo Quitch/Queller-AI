@@ -104,7 +104,7 @@
           [
             {
               "test_type": "HasPersonalityTag",
-              "string0": "uber",
+              "string0": "naval",
               "boolean": true
             },
             {
@@ -221,6 +221,29 @@
               "unit_type_string0": "Naval & Scout",
               "compare0": "<",
               "value0": 500
+            }
+          ],
+          [
+            {
+              "test_type": "HasPersonalityTag",
+              "string0": "naval",
+              "boolean": true
+            },
+            {
+              "test_type": "AloneOnPlanet",
+              "boolean": false
+            },
+            {
+              "test_type": "EnemyPresenceOnPlanet",
+              "boolean": false
+            },
+            {
+              "test_type": "BaseThreatened",
+              "boolean": false
+            },
+            {
+              "test_type": "HaveFullPlanetIntel",
+              "boolean": false
             }
           ]
         ]
