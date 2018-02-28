@@ -176,6 +176,8 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 
 The spawn the AI starts in and the profile used can make a big difference, even for symmetrical 1v1s. If you find the AI too easy on a map, try a different spawn point for it.
 
+And don't use Bedlam, the AI's forces can't path find on this map.
+
 # KNOWN ISSUES
 
 ### TOFIX
@@ -197,7 +199,7 @@ The spawn the AI starts in and the profile used can make a big difference, even 
 - Won't send interplanetary aircraft between planets
 - Will assign fabbers to a assist on a project that they could start earlier than the fabber they're assisting
 - Won't use more than one teleporter at a time
-- Won't use telepoters to move around a single planet
+- Won't use teleporters to move around a single planet
 - Cannot reclaim
 - Combat Fabbers can only be used to build mines or repair troops, not both, even across entirely different AI personalities
 - Doesn't handle enemy walls well
@@ -217,5 +219,5 @@ The spawn the AI starts in and the profile used can make a big difference, even 
  - fixing bugs as they come up
  - adding cool new features which make the AI increasingly smart
 - wondible for his creation of the [AI Showdown](https://github.com/JustinLove/ai_showdown/) tool which allows easy setup of matches between different AIs
-- mikeyh for writing the Javascript for loading Queller's personalities
+- mikeyh for writing the JavaScript for loading Queller's personalities
 - alpha2546 for extensively playtesting Queller during Legion Expansion development
