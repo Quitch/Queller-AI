@@ -204,7 +204,7 @@
       "priority": 373,
       "base_sort": "FromMainBase",
       "builders": [
-        "UberCommander"
+        "LegionCommander"
       ],
       "debug": false,
       "build_conditions": [
@@ -224,8 +224,8 @@
             "boolean": false
           },
           {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": true
+            "test_type": "EnemyPresenceOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "UnitCountOnPlanet",
