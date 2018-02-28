@@ -24,6 +24,7 @@
  - Allow Uber to use more T2 naval when floating eco
  - Uber Naval much more aggressive about teching
  - Corrected Uber failing to expand T1 naval to counter subs
+ - Unified a lot of Uber and Uber Naval behaviours
 
 #### 4.19.0 - 2018-01-27
 
