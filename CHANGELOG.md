@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### - 4.20.0
+#### - 4.20.0 - 2018-02-28
 
  - Uber builds a tiny number of Vanguards to provide radar for Shellers
  - Uber less likely to produce as many GIL-E when alone and Shellers are an option
