@@ -1,6 +1,14 @@
 # CHANGELOG
 
-#### - 4.20.0 - 2018-02-28
+#### 4.20.2 - 2018-03-01
+
+ - Introduce fallback behaviour for Uber Naval to prevent idle factories due to misdetection of ability to deploy naval
+
+#### 4.20.1 - 2018-02-28
+
+ - Correct lobby version number
+
+#### 4.20.0 - 2018-02-28
 
  - Uber builds a tiny number of Vanguards to provide radar for Shellers
  - Uber less likely to produce as many GIL-E when alone and Shellers are an option

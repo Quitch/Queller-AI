@@ -30,6 +30,33 @@
         ]
       },
       {
+        "name": "Uber Naval - Barracuda",
+        "to_build": "Sub",
+        "instance_count": -1,
+        "max_num_assisters": 10,
+        "priority": 96,
+        "builders": [
+          "AnyUberNavalFactory"
+        ],
+        "build_conditions": [
+          [
+            {
+              "test_type": "HasPersonalityTag",
+              "string0": "naval",
+              "boolean": true
+            },
+            {
+              "test_type": "EnemySurfacePresenceOnPlanet",
+              "boolean": true
+            },
+            {
+              "test_type": "CanDeployNavalFromBase",
+              "boolean": false
+            }
+          ]
+        ]
+      },
+      {
         "name": "Legion - Uber Naval - Fabrication Flyer",
         "to_build": "LegionAirBasicFabber",
         "instance_count": 1,
@@ -54,6 +81,34 @@
               "unit_type_string0": "Fabber & Basic",
               "compare0": "<",
               "value0": 3
+            }
+          ]
+        ]
+      },
+      {
+        "name": "Legion - Uber Naval - Catfish",
+        "to_build": "LegionNavalBasicScout",
+        "instance_count": -1,
+        "max_num_assisters": 10,
+        "priority": 96,
+        "builders": [
+          "LegionFactoryBasicNaval",
+          "LegionFactoryAdvancedNaval"
+        ],
+        "build_conditions": [
+          [
+            {
+              "test_type": "HasPersonalityTag",
+              "string0": "naval",
+              "boolean": true
+            },
+            {
+              "test_type": "EnemySurfacePresenceOnPlanet",
+              "boolean": true
+            },
+            {
+              "test_type": "CanDeployNavalFromBase",
+              "boolean": false
             }
           ]
         ]
