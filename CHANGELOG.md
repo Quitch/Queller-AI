@@ -3,6 +3,7 @@
 ####
 
 - Uber Naval won't build laser towers by MEX to avoid uselessly building them on water
+- Uber properly considers subs in addition to ships when considering torpedo base defence
 
 #### 4.20.2 - 2018-03-01
 
