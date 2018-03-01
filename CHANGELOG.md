@@ -1,5 +1,9 @@
 # CHANGELOG
 
+####
+
+- Uber Naval won't build laser towers by MEX to avoid uselessly building them on water
+
 #### 4.20.2 - 2018-03-01
 
  - Introduce fallback behaviour for Uber Naval to prevent idle factories due to misdetection of ability to deploy naval
