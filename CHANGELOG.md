@@ -1,10 +1,10 @@
 # CHANGELOG
 
-#### 4.20.3 - 2018-03-2
+#### 4.20.3 - 2018-03-02
 
-- Uber Naval won't build laser towers by MEX to avoid uselessly building them on water
-- Uber properly considers subs in addition to ships when considering torpedo base defence
-- Fixed error where Gold would not build torpedo launchers in response to subs
+ - Uber Naval won't build laser towers by MEX to avoid uselessly building them on water
+ - Uber properly considers subs in addition to ships when considering torpedo base defence
+ - Fixed error where Gold would not build torpedo launchers in response to subs
 
 #### 4.20.2 - 2018-03-01
 
