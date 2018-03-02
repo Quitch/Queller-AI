@@ -53,7 +53,7 @@
  - All levels allow more fabbers to assist building a planet splitter Titan
  - Adjusted handling of Sparks and Monstrosities
  - Fixed broken behaviour for building more factories when floating
- - Uber prefers Hermes and Wraith for local orbital scouting
+ - Uber prefers Hermes and Spectre for local orbital scouting
  - Uber Naval can now correctly expand its naval presence with naval fabbers
  - Platinum no longer has behaviours for spending excess eco
  - Uber won't use excess eco to expand its T1 presence outside of specialised subpersonality behaviour
@@ -607,7 +607,7 @@ The Queller AI **Client** is no longer required and should be uninstalled.
  - Uber Rush Legion uses standard Legion tech path
  - Lower focus on air for Uber Rush
  - Uber Air builds slightly more air
- - Bronze and Silver will scout with the Hermes and Wraith
+ - Bronze and Silver will scout with the Hermes and Spectre
  - Bronze and Silver no longer allow ground/orbital fabbers to interfere with the other's defensive builds
  - Bronze more likely to build orbital defences
  - Legion Bronze no longer spams radar
