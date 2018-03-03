@@ -1,6 +1,87 @@
 {
   "build_list": [
     {
+      "name": "Uber - Basic Metal Extractor - Area",
+      "to_build": "LegionEcoBasicMetalExtractor",
+      "instance_count": 4,
+      "min_num_assisters": 1,
+      "max_num_assisters": 2,
+      "shared_instance_count": "BasicMetal",
+      "priority": 400,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildBasic",
+            "boolean": true
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "task_type": "AreaBuild"
+    },
+    {
+      "name": "Uber - Advanced Metal Extractor - Area",
+      "to_build": "LegionEcoAdvancedMetalExtractor",
+      "instance_count": 4,
+      "min_num_assisters": 2,
+      "max_num_assisters": 6,
+      "shared_instance_count": "AdvancedMetal",
+      "priority": 401,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildAdvanced",
+            "boolean": true
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "task_type": "AreaBuild"
+    },
+    {
       "name": "Legion - Uber - Metal Extractor - Area",
       "to_build": "LegionEcoBasicMetalExtractor",
       "instance_count": 4,
@@ -151,154 +232,6 @@
         }
       },
       "task_type": "AreaBuild"
-    },
-    {
-      "name": "Legion - Uber - Metal Extractor",
-      "to_build": "LegionEcoBasicMetalExtractor",
-      "instance_count": 4,
-      "max_num_assisters": 1,
-      "shared_instance_count": "BasicMetal",
-      "priority": 261,
-      "base_sort": "FromBuilder",
-      "builders": [
-        "AnyLegionFabberBasic",
-        "AnyLegionFabberAdvanced"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "PotentialMetalEfficiency",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindMetalSpotToBuildBasic",
-            "boolean": true
-          }
-        ]
-      ],
-      "placement_rules": {
-        "placement_type": "FromBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
-      "name": "Legion - Uber - Metal Extractor - Desire",
-      "to_build": "LegionEcoBasicMetalExtractor",
-      "instance_count": 3,
-      "max_num_assisters": 1,
-      "shared_instance_count": "BasicMetal",
-      "priority": 501,
-      "base_sort": "FromBuilder",
-      "builders": [
-        "AnyLegionFabberBasic",
-        "AnyLegionFabberAdvanced"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "DesireMetal"
-          },
-          {
-            "test_type": "CanFindMetalSpotToBuildBasic",
-            "boolean": true
-          }
-        ]
-      ],
-      "placement_rules": {
-        "placement_type": "FromBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
-      "name": "Legion - Uber - Metal Extractor - Expand 1",
-      "to_build": "LegionEcoBasicMetalExtractor",
-      "instance_count": 2,
-      "max_num_assisters": 1,
-      "shared_instance_count": "BasicMetal",
-      "priority": 499,
-      "base_sort": "FromBuilder",
-      "builders": [
-        "AnyLegionFabberBasic",
-        "AnyLegionFabberAdvanced"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "CanFindMetalSpotToBuildBasic",
-            "boolean": true
-          }
-        ]
-      ],
-      "placement_rules": {
-        "placement_type": "FromBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
-      "name": "Legion - Uber - Metal Extractor - Expand 2",
-      "to_build": "LegionEcoBasicMetalExtractor",
-      "instance_count": 3,
-      "max_num_assisters": 1,
-      "shared_instance_count": "BasicMetal",
-      "priority": 259,
-      "base_sort": "FromBuilder",
-      "builders": [
-        "AnyLegionFabberBasic",
-        "AnyLegionFabberAdvanced"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "CanFindMetalSpotToBuildBasic",
-            "boolean": true
-          }
-        ]
-      ],
-      "placement_rules": {
-        "placement_type": "FromBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
     },
     {
       "name": "Legion - Uber - Power Catalyst - Fast Builders",
@@ -551,119 +484,6 @@
         }
       },
       "task_type": "AreaBuild"
-    },
-    {
-      "name": "Legion - Uber - M-48A Advanced Mass Extractor",
-      "to_build": "LegionEcoAdvancedMetalExtractor",
-      "instance_count": 2,
-      "min_num_assisters": 1,
-      "max_num_assisters": 3,
-      "shared_instance_count": "AdvancedMetal",
-      "priority": 270,
-      "base_sort": "FromBuilder",
-      "builders": [
-        "AnyLegionFabberAdvanced"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "PotentialMetalEfficiency",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindMetalSpotToBuildAdvanced",
-            "boolean": true
-          }
-        ]
-      ],
-      "placement_rules": {
-        "placement_type": "FromBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
-      "name": "Legion - Uber - M-48A Advanced Mass Extractor - Desire",
-      "to_build": "LegionEcoAdvancedMetalExtractor",
-      "instance_count": 2,
-      "min_num_assisters": 1,
-      "max_num_assisters": 3,
-      "shared_instance_count": "AdvancedMetal",
-      "priority": 510,
-      "base_sort": "FromBuilder",
-      "builders": [
-        "AnyLegionFabberAdvanced"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "DesireMetal"
-          },
-          {
-            "test_type": "CanFindMetalSpotToBuildAdvanced",
-            "boolean": true
-          }
-        ]
-      ],
-      "placement_rules": {
-        "placement_type": "FromBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
-      "name": "Legion - Uber - M-48A Advanced Mass Extractor - Expand",
-      "to_build": "LegionEcoAdvancedMetalExtractor",
-      "instance_count": 1,
-      "min_num_assisters": 1,
-      "max_num_assisters": 3,
-      "shared_instance_count": "AdvancedMetal",
-      "priority": 508,
-      "base_sort": "FromBuilder",
-      "builders": [
-        "AnyLegionFabberAdvanced"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "CanFindMetalSpotToBuildAdvanced",
-            "boolean": true
-          }
-        ]
-      ],
-      "placement_rules": {
-        "placement_type": "FromBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
     },
     {
       "name": "Legion - Uber - Black Hole Generator - Fast Builders",

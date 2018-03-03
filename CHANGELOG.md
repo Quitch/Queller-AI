@@ -1,5 +1,10 @@
 # CHANGELOG
 
+####
+
+ - Silver and above only use area builds for metal which will help sim performance
+ - Uber builds MEX more aggressively once it owns a planet
+
 #### 4.20.3 - 2018-03-02
 
  - Uber Naval won't build laser towers by MEX to avoid uselessly building them on water
