@@ -218,6 +218,6 @@ And don't use Bedlam, the AI's forces can't path find on this map.
  - taking on suggestions
  - fixing bugs as they come up
  - adding cool new features which make the AI increasingly smart
-- wondible for his creation of the [AI Showdown](https://github.com/JustinLove/ai_showdown/) tool which allows easy setup of matches between different AIs
+- wondible for his creation of the [AI Showdown](https://github.com/JustinLove/ai_showdown/) tool
 - mikeyh for writing the JavaScript for loading Queller's personalities
 - alpha2546 for extensively playtesting Queller during Legion Expansion development
