@@ -1,9 +1,10 @@
 # CHANGELOG
 
-####
+#### 4.21.0 - 2018-03-04
 
  - Silver and above only use area builds for metal which will help sim performance
  - Uber builds MEX more aggressively once it owns a planet
+ - Updated for changes to the AI Mod Compatibility Framework
 
 #### 4.20.3 - 2018-03-02
 
