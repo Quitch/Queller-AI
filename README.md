@@ -178,6 +178,20 @@ The spawn the AI starts in and the profile used can make a big difference, even 
 
 And don't use Bedlam, the AI's forces can't path find on this map.
 
+# TRANSLATIONS
+
+If you would like to help translate Queller to your local language then please look at the [translation file](https://github.com/Quitch/Queller-AI/blob/develop/ui/main/_i18n/locales/en-US/queller.json). The "message" lines are the ones which needs translating.
+
+Queller currently supports:
+
+ - de
+ - en-US
+ - es-ES
+ - fr
+ - it
+ - nl
+ - nl-BE
+
 # KNOWN ISSUES
 
 ### TOFIX
