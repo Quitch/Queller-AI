@@ -180,17 +180,9 @@ And don't use Bedlam, the AI's forces can't path find on this map.
 
 # TRANSLATIONS
 
-If you would like to help translate Queller to your local language then please look at the [translation file](https://github.com/Quitch/Queller-AI/blob/develop/ui/main/_i18n/locales/en-US/queller.json). The "message" lines are the ones which needs translating.
+If you would like to help translate the Queller AI to your local language then please look at [the translation project](https://poeditor.com/join/project/TDjqIKATML).
 
-Queller currently supports:
-
- - de
- - en-US
- - es-ES
- - fr
- - it
- - nl
- - nl-BE
+If a translation is currently empty but you're not 100% on the translation you're entering then please [mark it as fuzzy](https://poeditor.com/kb/fuzzy-translations). It's better to have a translation than no translation, but marking it as fuzzy will let others know they should review it.
 
 # KNOWN ISSUES
 
