@@ -2,7 +2,7 @@
 
 #### 4.21.2
 
- - Fixed issue where naval production was intermittent on mixed sea/land maps
+ - Fixed issue where naval production was intermittent early on mixed sea/land maps
  - Fixed issue causing Queller Legion to build too many turrets in one place
 
 #### 4.21.1 - 2018-03-09
