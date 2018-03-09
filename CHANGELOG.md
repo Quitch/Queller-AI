@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### 4.21.2
+
+ - Fixed issue where naval production was intermittent on mixed sea/land maps
+
 #### 4.21.1 - 2018-03-09
 
  - Fixed issue causing Bronze and Silver to build orbital factories on the ground. Thanks to Xangi for tracking this one down.
