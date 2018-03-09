@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### 4.21.1
+
+ - Fixed issue causing Bronze and Silver to build orbital factories on the ground. Thanks to Xangi for tracking this one down.
+
 #### 4.21.0 - 2018-03-04
 
  - Silver and above only use area builds for metal which will help sim performance
