@@ -11,7 +11,7 @@ function qQuellerAI() {
 
     var aiPersonalities = model.aiPersonalities();
 
-    var helpText = 'by Quitch. Version DEV. My difficulties are prefixed with a Q. I support the Legion Expansion.';
+    var helpText = 'by Quitch. Version 4.21.2. My difficulties are prefixed with a Q. I support the Legion Expansion.';
 
     var newPersonalities = {
         'Q-Casual': {
