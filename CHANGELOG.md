@@ -1,5 +1,10 @@
 # CHANGELOG
 
+#### 4.21.2 - 2018-03-10
+
+ - Fixed issue where naval production was intermittent early on mixed sea/land maps
+ - Fixed issue causing Queller Legion to build too many turrets in one place
+
 #### 4.21.1 - 2018-03-09
 
  - Fixed issue causing Bronze and Silver to build orbital factories on the ground. Thanks to Xangi for tracking this one down.
