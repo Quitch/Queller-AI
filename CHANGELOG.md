@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### 4.21.3
+
+ - Properly exclude naval units from land and air scout ratio checks
+
 #### 4.21.2 - 2018-03-10
 
  - Fixed issue where naval production was intermittent early on mixed sea/land maps
