@@ -1,5 +1,18 @@
 # CHANGELOG
 
+#### 4.22.0 - 2018-03-16
+
+ - Properly exclude naval units from land and air scout ratio checks
+ - Prevent Platinum over scouting with Fighters
+ - Allow all levels to be much freer with their bombers and gunships to try and help prevent air sitting in base
+ - Limit the splitting of air forces again
+ - Largest Locust platoon made smaller to allow for quicker deployment
+ - Uber allowed to build nukes and Titans a little earlier again
+ - Less Locusts built by Uber
+ - Uber now has the option to try for a nuke when it's losing on the land
+ - Properly exclude Locusts from army available unit checks
+ - Scout with fighters only when there's nothing they're needed for right now
+
 #### 4.21.2 - 2018-03-10
 
  - Fixed issue where naval production was intermittent early on mixed sea/land maps
