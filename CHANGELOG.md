@@ -9,6 +9,7 @@
  - Largest Locust platoon made smaller to allow for quicker deployment
  - Uber allowed to build nukes and Titans a little earlier again
  - Less Locusts built by Uber
+ - Uber now has the option to try for a nuke when it's losing on the land
 
 #### 4.21.2 - 2018-03-10
 
