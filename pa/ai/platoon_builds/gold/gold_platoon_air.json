@@ -23,9 +23,9 @@
       "task_type": "Scout"
     },
     {
-      "name": "Gold - Bomber-Gunship Attack Platoon 4",
+      "name": "Gold - Bomber-Gunship Attack Platoon",
       "to_build": "BomberGunship_Attack_Queller",
-      "instance_count": -1,
+      "instance_count": 1,
       "priority": 190,
       "build_conditions": [
         [
@@ -39,124 +39,10 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 1260
-          },
-          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Mobile & Offense - MissileDefense - Fighter - SelfDestruct - Titan",
             "compare0": ">=",
-            "value0": 4
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsBomber",
-            "string0": "WL_AnySurface",
-            "string1": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "BomberAttack"
-    },
-    {
-      "name": "Gold - Bomber-Gunship Attack Platoon 10",
-      "to_build": "BomberGunship_Attack_Queller",
-      "instance_count": -1,
-      "priority": 180,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 2800
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Mobile & Offense - MissileDefense - Fighter - SelfDestruct - Titan",
-            "compare0": ">=",
-            "value0": 10
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsBomber",
-            "string0": "WL_AnySurface",
-            "string1": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "BomberAttack"
-    },
-    {
-      "name": "Gold - Bomber-Gunship Attack Platoon 20",
-      "to_build": "BomberGunship_Attack_Queller",
-      "instance_count": -1,
-      "priority": 170,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 5600
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Mobile & Offense - MissileDefense - Fighter - SelfDestruct - Titan",
-            "compare0": ">=",
-            "value0": 20
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsBomber",
-            "string0": "WL_AnySurface",
-            "string1": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "BomberAttack"
-    },
-    {
-      "name": "Gold - Bomber-Gunship Attack Platoon 40",
-      "to_build": "BomberGunship_Attack_Queller",
-      "instance_count": -1,
-      "priority": 160,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Mobile & Offense - MissileDefense - Fighter - SelfDestruct - Titan",
-            "compare0": ">=",
-            "value0": 40
+            "value0": 1
           },
           {
             "test_type": "CanAttackWithPoolUnitsBomber",
@@ -171,8 +57,8 @@
     {
       "name": "Gold - Fighter Attack Platoon 4",
       "to_build": "Fighter_Attack_Queller",
-      "instance_count": -1,
-      "priority": 190,
+      "instance_count": 1,
+      "priority": 180,
       "build_conditions": [
         [
           {
@@ -183,6 +69,12 @@
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<=",
+            "value0": 630
           },
           {
             "test_type": "UnitPoolCount",
@@ -206,6 +98,12 @@
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<=",
+            "value0": 630
           },
           {
             "test_type": "UnitPoolCount",
@@ -227,8 +125,8 @@
     {
       "name": "Gold - Fighter Attack Platoon 10",
       "to_build": "Fighter_Attack_Queller",
-      "instance_count": -1,
-      "priority": 180,
+      "instance_count": 1,
+      "priority": 170,
       "build_conditions": [
         [
           {
@@ -239,6 +137,12 @@
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<",
+            "value0": 1400
           },
           {
             "test_type": "UnitPoolCount",
@@ -262,6 +166,12 @@
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<",
+            "value0": 1400
           },
           {
             "test_type": "UnitPoolCount",
@@ -283,8 +193,8 @@
     {
       "name": "Gold - Fighter Attack Platoon 20",
       "to_build": "Fighter_Attack_Queller",
-      "instance_count": -1,
-      "priority": 170,
+      "instance_count": 1,
+      "priority": 160,
       "build_conditions": [
         [
           {
@@ -295,6 +205,12 @@
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<",
+            "value0": 2800
           },
           {
             "test_type": "UnitPoolCount",
@@ -320,6 +236,12 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<",
+            "value0": 2800
+          },
+          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
@@ -339,8 +261,8 @@
     {
       "name": "Gold - Fighter Attack Platoon 40",
       "to_build": "Fighter_Attack_Queller",
-      "instance_count": -1,
-      "priority": 160,
+      "instance_count": 1,
+      "priority": 150,
       "build_conditions": [
         [
           {
