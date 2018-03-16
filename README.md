@@ -187,6 +187,8 @@ Be sure to follow the recommended number of players for any map.
 
 If you would like to help translate the Queller AI to your local language then please look at [the translation project](https://poeditor.com/join/project/TDjqIKATML).
 
+If a translation is currently empty but you're not 100% on the translation you're entering then please mark it as fuzzy. It's better to have a translation than no translation, but marking it as fuzzy will let others know they should review it.
+
 # KNOWN ISSUES
 
 ### TOFIX
