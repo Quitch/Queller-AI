@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### 4.22.0
+#### 4.22.0 - 2018-03-16
 
  - Properly exclude naval units from land and air scout ratio checks
  - Prevent Platinum over scouting with Fighters
