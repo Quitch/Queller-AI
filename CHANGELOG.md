@@ -8,6 +8,7 @@
  - Limit the splitting of air forces again
  - Largest Locust platoon made smaller to allow for quicker deployment
  - Uber allowed to build nukes and Titans a little earlier again
+ - Less Locusts built by Uber
 
 #### 4.21.2 - 2018-03-10
 
