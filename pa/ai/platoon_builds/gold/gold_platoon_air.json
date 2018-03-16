@@ -55,7 +55,7 @@
       "task_type": "BomberAttack"
     },
     {
-      "name": "Gold - Fighter Attack Platoon 4",
+      "name": "Gold - Fighter Attack Platoon",
       "to_build": "Fighter_Attack_Queller",
       "instance_count": 1,
       "priority": 180,
@@ -71,214 +71,10 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiAir",
-            "compare0": "<=",
-            "value0": 630
-          },
-          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
-            "value0": 4
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsFighter",
-            "string0": "WL_Air",
-            "string1": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiAir",
-            "compare0": "<=",
-            "value0": 630
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 4
-          },
-          {
-            "test_type": "CanProvideAirSupportWithPoolUnits",
-            "string0": "fighter_attack",
-            "string1": "WL_Air",
-            "string2": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "FighterAttack"
-    },
-    {
-      "name": "Gold - Fighter Attack Platoon 10",
-      "to_build": "Fighter_Attack_Queller",
-      "instance_count": 1,
-      "priority": 170,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 1400
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 10
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsFighter",
-            "string0": "WL_Air",
-            "string1": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 1400
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 10
-          },
-          {
-            "test_type": "CanProvideAirSupportWithPoolUnits",
-            "string0": "fighter_attack",
-            "string1": "WL_Air",
-            "string2": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "FighterAttack"
-    },
-    {
-      "name": "Gold - Fighter Attack Platoon 20",
-      "to_build": "Fighter_Attack_Queller",
-      "instance_count": 1,
-      "priority": 160,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 2800
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 20
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsFighter",
-            "string0": "WL_Air",
-            "string1": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 2800
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 20
-          },
-          {
-            "test_type": "CanProvideAirSupportWithPoolUnits",
-            "string0": "fighter_attack",
-            "string1": "WL_Air",
-            "string2": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "FighterAttack"
-    },
-    {
-      "name": "Gold - Fighter Attack Platoon 40",
-      "to_build": "Fighter_Attack_Queller",
-      "instance_count": 1,
-      "priority": 150,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 40
+            "value0": 1
           },
           {
             "test_type": "CanAttackWithPoolUnitsFighter",
@@ -301,7 +97,7 @@
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
-            "value0": 40
+            "value0": 1
           },
           {
             "test_type": "CanProvideAirSupportWithPoolUnits",
