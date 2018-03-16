@@ -4,7 +4,7 @@
 
  - Properly exclude naval units from land and air scout ratio checks
  - Prevent Platinum over scouting with Fighters
- - Allow all levels to be much freer with their bombers to try and help prevent air sitting in base
+ - Allow all levels to be much freer with their bombers and gunships to try and help prevent air sitting in base
  - Limit the splitting of air forces again
  - Largest Locust platoon made smaller to allow for quicker deployment
  - Uber allowed to build nukes and Titans a little earlier again
