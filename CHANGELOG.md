@@ -11,6 +11,7 @@
  - Less Locusts built by Uber
  - Uber now has the option to try for a nuke when it's losing on the land
  - Properly exclude Locusts from army available unit checks
+ - Scout with fighters only when there's nothing they're needed for right now
 
 #### 4.21.2 - 2018-03-10
 
