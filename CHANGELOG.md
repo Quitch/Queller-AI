@@ -1,8 +1,12 @@
 # CHANGELOG
 
-#### 4.21.3
+#### 4.22.0
 
  - Properly exclude naval units from land and air scout ratio checks
+ - Prevent Platinum over scouting with Fighters
+ - Allow all levels to be much freer with their air to try and help prevent air sitting in base
+ - Limit the splitting of air forces again
+ - Largest Locust platoon made smaller to allow for quicker deployment
 
 #### 4.21.2 - 2018-03-10
 
