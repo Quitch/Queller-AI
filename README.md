@@ -115,6 +115,8 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 
 Below are recommendations for the difficulty you may wish to start on based on what you set the vanilla AI to or your ladder ranking.
 
+When you need to increase the challenge, but don't want to increase the difficulty, give the AI an eco boost rather than adding more AIs. Not only will this be better for the sim, it'll stop the problem of there being less resources to go around for the AI which in turn makes it easier to beat.
+
 | Vanilla    | Queller |
 | ---------- | ------- |
 | Normal     | Casual  |
@@ -145,15 +147,16 @@ By default, Queller at Uber level will adapt its play to try and suit the system
  - Unrestricted air usage
 
 ### Bot
- - Doesn't build vehicle factories
- - MLA will build a vehicle factory for Skitters if it detects the possibility of mines
+ - Doesn't build vehicle factories except to detect mines
 
 ### Cautious
  - Looks for overwhelming odds in battle
  - Will get orbital as soon as possible on multi-planet systems
+ - Consider using in close quarter FFAs
 
 ### Land
  - Won't build naval factories
+ - If you're playing a map without water this can be a tiny sim speed boost
 
 ### Naval
  - Attempts to build a naval factory first
@@ -178,6 +181,8 @@ The spawn the AI starts in and the profile used can make a big difference, even 
 
 And don't use Bedlam, the AI's forces can't path find on this map.
 
+Be sure to follow the recommended number of players for any map.
+
 # TRANSLATIONS
 
 If you would like to help translate the Queller AI to your local language then please look at [the translation project](https://poeditor.com/join/project/TDjqIKATML).
@@ -186,12 +191,7 @@ If you would like to help translate the Queller AI to your local language then p
 
 ### TOFIX
 
-- Takes too long transition from a naval start to a land game on mixed maps
 - Doesn't understand when it needs to build units in preparation for an attack versus when it should shutdown factories so it can build super weapons
-
-### WONTFIX
-
-- Ignores the factory and fabber preferences of client/UI AI personality mods
 
 ### CANTFIX
 
