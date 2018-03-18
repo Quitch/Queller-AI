@@ -647,6 +647,36 @@
       ]
     },
     {
+      "name": "Legion - Uber - Monstrosity",
+      "to_build": "LegionBotAdvancedTactical",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": [
+        "LegionFactoryAdvancedBot"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & (Heavy - (Bot & Basic)) & Advanced",
+            "unit_type_string1": "Bot & Mobile & Offense & Advanced - Deconstruction - Fabber - Basic",
+            "compare0": "<",
+            "value0": 0.1
+          }
+        ]
+      ]
+    },
+    {
       "name": "Legion - Uber - Miniman",
       "to_build": "LegionBotAdvancedArtillery",
       "instance_count": -1,
