@@ -6,6 +6,7 @@
  - Fixed subpersonalities not teching at the same speed as Uber
  - Uber Rush sticks with T1 for longer
  - Uber Cautious will tech as quickly as Uber Tech
+ - Greatly reduced situations in which Uber will use Locusts
 
 #### 4.22.0 - 2018-03-16
 
