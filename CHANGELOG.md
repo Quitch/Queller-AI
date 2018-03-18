@@ -1,5 +1,12 @@
 # CHANGELOG
 
+#### 4.xx.x
+
+ - Uber Legion will use a small number of Monstrosities balanced against its advanced bots
+ - Fixed subpersonalities not teching at the same speed as Uber
+ - Uber Rush sticks with T1 for longer
+ - Uber Cautious will tech as quickly as Uber Tech
+
 #### 4.22.0 - 2018-03-16
 
  - Properly exclude naval units from land and air scout ratio checks
