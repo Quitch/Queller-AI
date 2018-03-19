@@ -4,10 +4,9 @@
       "name": "Uber - Galata Turret - Mex",
       "to_build": "BasicAirDefense",
       "instance_count": 1,
-      "priority": 353,
+      "priority": 400,
       "base_sort": "FromPerimeter",
       "builders": [
-        "UberCommander",
         "AnyUberBasicFabber"
       ],
       "build_conditions": [
@@ -27,7 +26,7 @@
           {
             "test_type": "DistFromMainBase",
             "compare0": ">=",
-            "value0": 200
+            "value0": 400
           },
           {
             "test_type": "UnitCountInBase",
@@ -62,7 +61,7 @@
           {
             "test_type": "DistFromMainBase",
             "compare0": ">=",
-            "value0": 200
+            "value0": 400
           },
           {
             "test_type": "UnitCountInBase",

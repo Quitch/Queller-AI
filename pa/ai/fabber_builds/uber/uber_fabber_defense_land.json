@@ -5,10 +5,9 @@
       "to_build": "BasicLandDefenseSingle",
       "instance_count": 1,
       "shared_instance_count": "BasicLandDefenseMex",
-      "priority": 352,
+      "priority": 400,
       "base_sort": "FromPerimeter",
       "builders": [
-        "UberCommander",
         "BasicBotFabber",
         "BasicVehicleFabber",
         "BasicAirFabber"
@@ -39,12 +38,17 @@
             "boolean": true
           },
           {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Advanced",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "DistFromMainBase",
             "compare0": ">=",
-            "value0": 200
+            "value0": 400
           },
           {
             "test_type": "UnitCountInBase",
@@ -95,8 +99,8 @@
       "to_build": "BasicLandDefense",
       "instance_count": 1,
       "shared_instance_count": "BasicLandDefenseMex",
-      "priority": 353,
-      "base_sort": "FromPerimeter",
+      "priority": 401,
+      "base_sort": "FromMainBase",
       "builders": [
         "BasicBotFabber",
         "BasicVehicleFabber",
@@ -131,7 +135,7 @@
           {
             "test_type": "DistFromMainBase",
             "compare0": ">=",
-            "value0": 200
+            "value0": 400
           },
           {
             "test_type": "UnitCountInBase",
@@ -181,7 +185,7 @@
       "name": "Uber - Advanced Laser Defense Tower - Base",
       "to_build": "AdvancedLandDefense",
       "instance_count": 1,
-      "priority": 279,
+      "priority": 278,
       "max_num_assisters": 3,
       "base_sort": "FromPerimeter",
       "builders": [

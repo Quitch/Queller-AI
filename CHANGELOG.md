@@ -13,6 +13,8 @@
  - Changed how Locusts are used by the AI to avoid them engaging units
  - Uber less likely to use the Colonel
  - Lower the number of factories Gold and above can use to make Locusts
+ - Uber makes greater use of turrets around its MEX
+ - Uber doesn't place MEX turrets as close to the main base
 
 #### 4.22.0 - 2018-03-16
 
