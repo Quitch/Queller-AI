@@ -2,7 +2,8 @@
 
 #### 4.xx.x
 
- - Added Korean (ko) translation with thanks to R.O.S.S
+ - Additional language translations:
+   - Korean (ko) translation courtesy of R.O.S.S
  - Uber Legion will use a small number of Monstrosities balanced against its advanced bots
  - Fixed subpersonalities not teching at the same speed as Uber
  - Uber Rush sticks with T1 for longer
@@ -277,7 +278,7 @@
 The Queller AI **Client** is no longer required and should be uninstalled.
 
  - mikeyh updated personality script to account for changes in 99377
- - Additional language translations
+ - Additional language translations:
    - Español (es) translation added courtesy of gmase
    - Nederlands (nl) and Nederlands (België) (nl-BE) added courtesy of PRoeleert
  - Fixed Queller translations breaking PA translations
