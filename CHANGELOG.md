@@ -6,7 +6,6 @@
    - Korean (ko) translation courtesy of R.O.S.S
  - Uber Legion will use a small number of Monstrosities balanced against its advanced bots
  - Fixed subpersonalities not teching at the same speed as Uber
- - Uber Rush sticks with T1 for longer
  - Uber Cautious will tech as quickly as Uber Tech
  - Properly exclude hover titans from hover platoons
  - Changed how Locusts are used by the AI to avoid them engaging units
