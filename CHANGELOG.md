@@ -7,7 +7,7 @@
  - Uber Legion will use a small number of Monstrosities balanced against its advanced bots
  - Fixed subpersonalities not teching at the same speed as Uber
  - Uber Cautious will tech as quickly as Uber Tech
- - Properly exclude hover titans from hover platoons
+ - Properly exclude hover titans and Locusts from hover platoons
  - Changed how Locusts are used by the AI to avoid them engaging units
  - Uber less likely to use the Colonel and Praetorian
  - Lower the number of factories Gold and above can use to make Locusts
