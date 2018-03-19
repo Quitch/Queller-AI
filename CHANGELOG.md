@@ -14,6 +14,7 @@
  - Uber makes greater use of turrets around its MEX
  - Uber doesn't place MEX turrets as close to the main base
  - Uber tries to place defences to deal with Locust threats
+ - Minor changes made to Gold and Platinum to help performance
 
 #### 4.22.0 - 2018-03-16
 
