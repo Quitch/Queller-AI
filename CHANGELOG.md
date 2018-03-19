@@ -16,6 +16,7 @@
  - Uber tries to place defences to deal with Locust threats
  - Minor changes made to Gold and Platinum to help performance
  - Gold and above properly check energy before building orbital scouts
+ - Uber favours the Catapult over the Advanced Laser Turret
 
 #### 4.22.0 - 2018-03-16
 
