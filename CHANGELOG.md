@@ -2,6 +2,7 @@
 
 #### 4.xx.x
 
+ - Added Korean (ko) translation
  - Uber Legion will use a small number of Monstrosities balanced against its advanced bots
  - Fixed subpersonalities not teching at the same speed as Uber
  - Uber Rush sticks with T1 for longer
