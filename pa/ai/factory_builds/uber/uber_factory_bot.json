@@ -540,6 +540,32 @@
             "boolean": true
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Bot & Deconstruction",
+            "unit_type_string1": "Land & Mobile & Offense - Fabber",
+            "compare0": "<",
+            "value0": 0.02
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": false
           }
