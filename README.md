@@ -185,9 +185,16 @@ Be sure to follow the recommended number of players for any map.
 
 # TRANSLATIONS
 
-If you would like to help translate the Queller AI to your local language then please look at [the translation project](https://poeditor.com/join/project/TDjqIKATML).
+If you would like to help translate Queller to one of PA's languages then please drop me a line.
 
-If a translation is currently empty but you're not 100% on the translation you're entering then please mark it as fuzzy. It's better to have a translation than no translation, but marking it as fuzzy will let others know they should review it.
+Queller currently supports:
+ - Dutch (nl)
+ - English (US) (en-US)
+ - French (fr)
+ - German (de)
+ - Italian (it)
+ - Korean (ko)
+ - Spanish (es-ES)
 
 # KNOWN ISSUES
 
