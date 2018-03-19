@@ -8,7 +8,6 @@
  - Fixed subpersonalities not teching at the same speed as Uber
  - Uber Rush sticks with T1 for longer
  - Uber Cautious will tech as quickly as Uber Tech
- - Greatly reduced situations in which Uber will use Locusts
  - Properly exclude hover titans from hover platoons
  - Changed how Locusts are used by the AI to avoid them engaging units
  - Uber less likely to use the Colonel
