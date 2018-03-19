@@ -182,6 +182,83 @@
       }
     },
     {
+      "name": "Uber - Advanced Laser Defense Tower - Locusts",
+      "to_build": "AdvancedLandDefense",
+      "instance_count": 1,
+      "priority": 456,
+      "base_sort": "FromMainBase",
+      "max_num_assisters": 3,
+      "builders": [
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Deconstruction",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Naval",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedLandDefense"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & (SurfaceDefense | Tactical) - (CombatFabAdvBuild & Advanced & Custom1)",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 100,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
       "name": "Uber - Advanced Laser Defense Tower - Base",
       "to_build": "AdvancedLandDefense",
       "instance_count": 1,
