@@ -103,83 +103,7 @@
       "task_type": "Scout"
     },
     {
-      "name": "Platinum - Swarm Raid Platoon 1",
-      "to_build": "Swarm_Raid_Queller",
-      "instance_count": -1,
-      "priority": 109,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Bot & Deconstruction",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": "<",
-            "value0": 840
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "LandAttack"
-    },
-    {
-      "name": "Platinum - Swarm Raid Platoon 4",
-      "to_build": "Swarm_Raid_Queller",
-      "instance_count": -1,
-      "priority": 108,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Bot & Deconstruction",
-            "compare0": ">=",
-            "value0": 4
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": "<",
-            "value0": 2800
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "LandAttack"
-    },
-    {
-      "name": "Platinum - Swarm Raid Platoon 10",
+      "name": "Platinum - Swarm Raid Platoon",
       "to_build": "Swarm_Raid_Queller",
       "instance_count": -1,
       "priority": 10,
@@ -199,16 +123,10 @@
             "unit_type_string0": "Bot & Deconstruction",
             "compare0": ">=",
             "value0": 10
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ]
       ],
-      "task_type": "LandAttack"
+      "task_type": "Scout"
     },
     {
       "name": "Platinum - Bot Raid Platoon 1",

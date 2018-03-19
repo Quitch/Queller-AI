@@ -9,8 +9,8 @@
  - Uber Rush sticks with T1 for longer
  - Uber Cautious will tech as quickly as Uber Tech
  - Greatly reduced situations in which Uber will use Locusts
- - Properly exclude Locusts from land armies
  - Properly exclude hover titans from hover platoons
+ - Changed how Locusts are used by the AI to avoid them engaging units
 
 #### 4.22.0 - 2018-03-16
 
