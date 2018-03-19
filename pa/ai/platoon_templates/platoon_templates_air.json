@@ -19,15 +19,9 @@
     "Fighter_Attack_Queller": {
       "units": [
         {
-          "unit_types": "Air & Mobile & Fighter - Titan",
+          "unit_types": "Air & Mobile & (Fighter | SelfDestruct) - Titan",
           "min_count": 1,
           "max_count": -1
-        },
-        {
-          "unit_types": "Air & Mobile & SelfDestruct - Titan",
-          "min_count": 0,
-          "max_count": -1,
-          "squad": "Escort"
         },
         {
           "unit_types": "Air & Mobile & MissileDefense - Titan",
