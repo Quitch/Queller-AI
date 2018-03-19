@@ -10,7 +10,7 @@
  - Uber Cautious will tech as quickly as Uber Tech
  - Properly exclude hover titans from hover platoons
  - Changed how Locusts are used by the AI to avoid them engaging units
- - Uber less likely to use the Colonel
+ - Uber less likely to use the Colonel and Praetorian
  - Lower the number of factories Gold and above can use to make Locusts
  - Uber makes greater use of turrets around its MEX
  - Uber doesn't place MEX turrets as close to the main base
