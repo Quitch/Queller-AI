@@ -11,6 +11,7 @@
  - Greatly reduced situations in which Uber will use Locusts
  - Properly exclude hover titans from hover platoons
  - Changed how Locusts are used by the AI to avoid them engaging units
+ - Uber less likely to use the Colonel
 
 #### 4.22.0 - 2018-03-16
 
