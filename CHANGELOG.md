@@ -21,6 +21,7 @@
  - Bronze through Gold won't use Legion bots when there isn't a land route
  - Casual through Silver should never get stuck on their starting island
  - Don't rush for a T1 naval factory if a T2 naval factory still remains
+ - Won't keep building units to clear mines when the enemy's planetary presence has been removed
 
 #### 4.22.0 - 2018-03-16
 
