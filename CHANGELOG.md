@@ -19,6 +19,7 @@
  - Uber favours the Catapult over the Advanced Laser Turret
  - Uber checks advanced units are around before building Decimators
  - Bronze through Gold won't use Legion bots when there isn't a land route
+ - Casual through Silver should never get stuck on their starting island
 
 #### 4.22.0 - 2018-03-16
 
