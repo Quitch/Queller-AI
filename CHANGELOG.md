@@ -18,6 +18,7 @@
  - Gold and above properly check energy before building orbital scouts
  - Uber favours the Catapult over the Advanced Laser Turret
  - Uber checks advanced units are around before building Decimators
+ - Bronze through Gold won't use Legion bots when there isn't a land route
 
 #### 4.22.0 - 2018-03-16
 
