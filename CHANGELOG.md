@@ -22,6 +22,7 @@
  - Casual through Silver should never get stuck on their starting island
  - Don't rush for a T1 naval factory if a T2 naval factory still remains
  - Won't keep building units to clear mines when the enemy's planetary presence has been removed
+ - Silver Legion no longer sweeps for mines to maintain consistency with MLA
 
 #### 4.22.0 - 2018-03-16
 
