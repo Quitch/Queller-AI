@@ -379,6 +379,11 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Advanced",
+            "boolean": true
+          },
+          {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Land",
             "string1": "AntiSurface",

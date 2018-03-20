@@ -17,6 +17,7 @@
  - Minor changes made to Gold and Platinum to help performance
  - Gold and above properly check energy before building orbital scouts
  - Uber favours the Catapult over the Advanced Laser Turret
+ - Uber checks advanced units are around before building Decimators
 
 #### 4.22.0 - 2018-03-16
 
