@@ -37,6 +37,8 @@
  - Ensure proper chance of Uber MLA teching to T2 tanks when alone
  - Move Locusts between planets
  - Minor changes made to various checks to help performance
+ - Allow Uber to build defence slightly closer to the main base
+ - Correct Uber's torpedo launcher builds not having been updated for the new distances
 
 #### 4.22.0 - 2018-03-16
 
