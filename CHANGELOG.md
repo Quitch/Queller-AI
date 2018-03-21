@@ -27,17 +27,14 @@
  - Bronze won't build fabbers when its base is threatened
  - Platinum uses less Deathmarks
  - Platinum and Uber no longer build Locusts in the Unit Cannon
- - Don't confuse the presence of a Stoke for there being water on the map
  - Uber produces less Bluehawks in response to orbital threats
  - When thinking about Bluehawks Uber will only worry about the local orbital threat when still fighting for the planet
  - Platinum and Uber check that an air threat exists before building AA for invasion forces
  - If alone on a planet don't build troops unless there is somewhere to send them
- - Don't continue to deploy minesweepers once a planet is clear
  - Corrected what appeared to be errors in Uber Bot's T2 Legion choices
  - Ensure proper chance of Uber MLA teching to T2 tanks when alone
  - Move Locusts between planets
  - Minor changes made to various checks to help performance
- - Allow Uber to build defence slightly closer to the main base
  - Fixed difficulties below Uber not assigning Levelers to platoons
  - Fixed Levelers not being sent between planets
 
