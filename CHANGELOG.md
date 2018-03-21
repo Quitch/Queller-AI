@@ -14,7 +14,6 @@
  - Uber makes greater use of turrets around its MEX
  - Uber doesn't place MEX turrets as close to the main base
  - Uber tries to place defences to deal with Locust threats
- - Minor changes made to Gold and Platinum to help performance
  - Gold and above properly check energy before building orbital scouts
  - Uber favours the Catapult over the Advanced Laser Turret
  - Uber checks advanced units are around before building Decimators
@@ -22,7 +21,22 @@
  - Casual through Silver should never get stuck on their starting island
  - Don't rush for a T1 naval factory if a T2 naval factory still remains
  - Won't keep building units to clear mines when the enemy's planetary presence has been removed
- - Silver Legion no longer sweeps for mines to maintain consistency with MLA
+ - Corrected Gold Legion not building certain units for invasions
+ - Gold Legion is a little more selective with its advanced unit mix
+ - Casual will build fabbers even when under attack
+ - Bronze won't build fabbers when its base is threatened
+ - Platinum uses less Deathmarks
+ - Platinum and Uber no longer build Locusts in the Unit Cannon
+ - Don't confuse the presence of a Stoke for there being water on the map
+ - Uber produces less Bluehawks in response to orbital threats
+ - When thinking about Bluehawks Uber will only worry about the local orbital threat when still fighting for the planet
+ - Platinum and Uber check that an air threat exists before building AA for invasion forces
+ - If alone on a planet don't build troops unless there is somewhere to send them
+ - Don't continue to deploy minesweepers once a planet is clear
+ - Corrected what appeared to be errors in Uber Bot's T2 Legion choices
+ - Ensure proper chance of Uber MLA teching to T2 tanks when alone
+ - Move Locusts between planets
+ - Minor changes made to various checks to help performance
 
 #### 4.22.0 - 2018-03-16
 
