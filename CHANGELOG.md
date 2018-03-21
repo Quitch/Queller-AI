@@ -38,7 +38,6 @@
  - Move Locusts between planets
  - Minor changes made to various checks to help performance
  - Allow Uber to build defence slightly closer to the main base
- - Correct Uber's torpedo launcher builds not having been updated for the new distances
  - Fixed difficulties below Uber not assigning Levelers to platoons
  - Fixed Levelers not being sent between planets
 
