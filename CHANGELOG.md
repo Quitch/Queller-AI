@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### 4.xx.x
+#### 4.23.0
 
  - Additional language translations:
    - Korean (ko) translation courtesy of R.O.S.S
@@ -39,6 +39,8 @@
  - Minor changes made to various checks to help performance
  - Allow Uber to build defence slightly closer to the main base
  - Correct Uber's torpedo launcher builds not having been updated for the new distances
+ - Fixed difficulties below Uber not assigning Levelers to platoons
+ - Fixed Levelers not being sent between planets
 
 #### 4.22.0 - 2018-03-16
 
