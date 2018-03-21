@@ -12,7 +12,7 @@
  - Uber less likely to use the Colonel and Praetorian
  - Lower the number of factories Gold and above can use to make Locusts
  - Uber makes greater use of turrets around its MEX
- - Uber doesn't place MEX turrets as close to the main base
+ - Uber doesn't place MEX defences as close to the main base
  - Uber tries to place defences to deal with Locust threats
  - Gold and above properly check energy before building orbital scouts
  - Uber favours the Catapult over the Advanced Laser Turret
