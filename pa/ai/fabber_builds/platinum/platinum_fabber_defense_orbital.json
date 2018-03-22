@@ -41,44 +41,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & MetalProduction",
             "compare0": ">=",
-            "value0": 2
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "DefenseSatellite"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "SystemThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "DistFromMainBase",
-            "compare0": ">=",
-            "value0": 200
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & OrbitalDefense",
-            "compare0": "<",
-            "value0": 2
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & MetalProduction",
-            "compare0": ">=",
-            "value0": 4
+            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -94,7 +57,7 @@
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 50,
-            "count": 2
+            "count": 1
           },
           {
             "unit_type_string": "Structure & OrbitalDefense",
@@ -205,7 +168,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & (SurfaceDefense | Tactical) - (CombatFabAdvBuild & Custom1)",
+            "unit_type_string0": "Structure & Advanced & Tactical",
             "compare0": "<",
             "value0": 3
           },
@@ -243,7 +206,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & (SurfaceDefense | Tactical) - (CombatFabAdvBuild & Custom1)",
+            "unit_type_string0": "Structure & Advanced & Tactical",
             "compare0": "<",
             "value0": 3
           },
