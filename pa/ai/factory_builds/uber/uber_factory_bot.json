@@ -598,6 +598,12 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 1000
+          },
+          {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Orbital",
             "string1": "AntiOrbital",
