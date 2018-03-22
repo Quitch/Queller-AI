@@ -397,6 +397,12 @@
             "value0": 0.9
           },
           {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Tank & Mobile) - Fabber - AirDefense - Construction - Heavy - Deconstruction - Artillery",
+            "compare0": ">",
+            "value0": 15
+          },
+          {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Land & Mobile & Artillery",
             "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
@@ -406,12 +412,6 @@
           {
             "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
             "boolean": true
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Tank & Mobile) - Fabber - AirDefense - Construction - Heavy - Deconstruction - Artillery",
-            "compare0": ">",
-            "value0": 15
           }
         ]
       ]
