@@ -333,9 +333,15 @@
             "boolean": false
           },
           {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Naval",
-            "boolean": false
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & Artillery",
+            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
+            "compare0": "<",
+            "value0": 0.05
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
           }
         ]
       ]
@@ -365,24 +371,10 @@
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": false
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Naval",
             "boolean": true
           }
         ]
