@@ -37,6 +37,16 @@
  - Minor changes made to various checks to help performance
  - Fixed difficulties below Uber not assigning Levelers to platoons
  - Fixed Levelers not being sent between planets
+ - Uber no longer requires a base amount of vehicle fabbers
+ - Allow Uber to build Tyrs on multiple planets at the same time
+ - Overhauled how Uber uses Anchors and Centurions
+ - Allow Gold and Platinum to use Anchors and Centurions across more of a planet
+ - Stopped Umbrellas including surface defence in their placement calculations
+ - Uber tries be smarter about when it requires certain anti-orbital units
+ - Never assign orbital scouts or radar to recon on a gas giant
+ - Allow building of amphibious bots again due to land pathfinding detection sometimes failing causing factories to idle
+ - Restore old defence placement method to prevent undercounting of defences
+ - Uber won't use more orbital fabbers when alone
 
 #### 4.22.0 - 2018-03-16
 
