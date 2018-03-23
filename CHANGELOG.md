@@ -46,6 +46,7 @@
  - Allow building of amphibious bots again due to land pathfinding detection sometimes failing causing factories to idle
  - Restore old defence placement method to prevent undercounting of defences
  - Uber won't use more orbital fabbers when alone
+ - Setup lobby messages to work with translations
 
 #### 4.22.0 - 2018-03-16
 

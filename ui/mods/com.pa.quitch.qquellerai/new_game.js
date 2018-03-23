@@ -11,8 +11,6 @@ function qQuellerAI() {
 
     var aiPersonalities = model.aiPersonalities();
 
-    var helpText = 'by Quitch. Version DEV. My difficulties are prefixed with a Q. I support the Legion Expansion.';
-
     var newPersonalities = {
         'Q-Casual': {
             display_name: '!LOC:Q-Casual',
@@ -393,7 +391,7 @@ function qQuellerAI() {
     model.aiPersonalities.valueHasMutated();
 
     _.defer(function () {
-        model.localChatMessage('Queller AI', helpText);
+        model.localChatMessage(loc("!LOC:Queller AI"), loc("!LOC:by Quitch. Version DEV. My difficulties are prefixed with a Q. I support the Legion Expansion."));
     });
 
 }
