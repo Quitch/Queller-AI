@@ -55,10 +55,6 @@
             "boolean": false
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
           },
@@ -72,32 +68,6 @@
             "unit_type_string1": "Factory & Basic & Naval",
             "compare0": "<",
             "value0": 0.5
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionNavalBasicFabber"
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Fabber & Basic & Naval",
-            "unit_type_string1": "Factory & Basic & Naval",
-            "compare0": "<",
-            "value0": 2
           }
         ]
       ]
@@ -352,10 +322,6 @@
             "boolean": false
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "LegionNavalAdvancedFabber"
           },
@@ -365,28 +331,6 @@
             "unit_type_string1": "Factory & Advanced & Naval",
             "compare0": "<",
             "value0": 1
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionNavalAdvancedFabber"
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Fabber & Advanced & Naval",
-            "unit_type_string1": "Factory & Advanced & Naval",
-            "compare0": "<",
-            "value0": 2
           }
         ]
       ]

@@ -60,6 +60,7 @@
  - Don't build a transport for Commander evac if a teleporter is available
  - Won't allow gas giant attack bug to trap it in an anti-orbital build loop
  - Uber Free For All will use more tanks at T1
+ - Gold and above no longer increase the naval fabber to factory ratio when alone on a planet
 
 #### 4.22.0 - 2018-03-16
 
