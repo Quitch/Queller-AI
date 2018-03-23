@@ -89,7 +89,7 @@
       "name": "Uber - Unit Cannon",
       "to_build": "UnitCannon",
       "instance_count": 1,
-      "shared_instance_count": "UnitCannon",
+      "shared_instance_count": "AdvancedFactory",
       "min_num_assisters": 3,
       "max_num_assisters": 12,
       "priority": 507,
@@ -98,6 +98,36 @@
         "AnyUberAdvancedFabber"
       ],
       "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetWithoutPresence",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "UnitCannon"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "UnitCannon"
+          }
+        ],
         [
           {
             "test_type": "HasPersonalityTag",
@@ -458,6 +488,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "PlanetIsRespawnable",
