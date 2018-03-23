@@ -48,6 +48,7 @@
  - Uber won't use more orbital fabbers when alone
  - Setup lobby messages to work with translations
  - Fix for orbital units never leaving gas giants
+ - Gold and above won't stop their gas giant expansion
 
 #### 4.22.0 - 2018-03-16
 

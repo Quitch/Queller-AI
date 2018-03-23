@@ -768,6 +768,40 @@
       }
     },
     {
+      "name": "Uber - Rig - Expand",
+      "to_build": "LegionEcoAdvancedMine",
+      "instance_count": 1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "shared_instance_count": "OrbitalEco",
+      "priority": 100,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "LegionOrbitalBasicFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionEcoAdvancedMine"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 75,
+        "placement_type": "FromBaseCenter"
+      }
+    },
+    {
       "name": "Legion - Uber - Omni Silo - Metal",
       "to_build": "LegionEcoBasicStorage",
       "instance_count": 1,

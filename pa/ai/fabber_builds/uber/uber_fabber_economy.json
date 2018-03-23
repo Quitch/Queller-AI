@@ -749,6 +749,40 @@
       }
     },
     {
+      "name": "Uber - Jig - Expand",
+      "to_build": "OrbitalExtractor",
+      "instance_count": 1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "shared_instance_count": "OrbitalEco",
+      "priority": 100,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "OrbitalFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "OrbitalExtractor"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 75,
+        "placement_type": "FromBaseCenter"
+      }
+    },
+    {
       "name": "Uber - Energy Storage",
       "to_build": "EnergyStorage",
       "instance_count": 1,
