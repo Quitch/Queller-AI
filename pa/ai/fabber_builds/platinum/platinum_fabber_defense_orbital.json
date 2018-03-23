@@ -33,7 +33,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & OrbitalDefense",
+            "unit_type_string0": "Structure & (OrbitalDefense | (Tactical & Advanced))",
             "compare0": "<",
             "value0": 1
           },
@@ -162,15 +162,9 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & OrbitalDefense",
+            "unit_type_string0": "Structure & (OrbitalDefense | (Tactical & Advanced))",
             "compare0": "<",
-            "value0": 4
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & Tactical",
-            "compare0": "<",
-            "value0": 3
+            "value0": 2
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -200,15 +194,9 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & OrbitalDefense",
+            "unit_type_string0": "Structure & (OrbitalDefense | (Tactical & Advanced))",
             "compare0": "<",
-            "value0": 4
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & Tactical",
-            "compare0": "<",
-            "value0": 3
+            "value0": 2
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -270,7 +258,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & OrbitalDefense",
+            "unit_type_string0": "Structure & (OrbitalDefense | (Tactical & Advanced))",
             "compare0": "<",
             "value0": 1
           },

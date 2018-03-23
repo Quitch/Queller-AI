@@ -49,6 +49,8 @@
  - Setup lobby messages to work with translations
  - Fix for orbital units never leaving gas giants
  - Gold and above won't stop their gas giant expansion
+ - Combined some orbital defence checks for performance
+ - Less orbital defence at most levels
 
 #### 4.22.0 - 2018-03-16
 
