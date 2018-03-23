@@ -268,7 +268,7 @@
       "instance_count": 1,
       "min_num_assisters": 8,
       "max_num_assisters": 20,
-      "priority": 102,
+      "priority": 200,
       "builders": [
         "AnyUberOrbitalFactory"
       ],
@@ -286,6 +286,12 @@
           {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Orbital & Transport",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
             "compare0": "<",
             "value0": 1
           }
