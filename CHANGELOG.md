@@ -54,6 +54,7 @@
  - Uber uses less orbital fabbers outside gas giants
  - Orbital builds no longer block land builds
  - Gold and above choose between T2 factories or unit cannons
+ - Uber Cautious will give a higher priority to orbital
 
 #### 4.22.0 - 2018-03-16
 
