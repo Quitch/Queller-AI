@@ -17,7 +17,6 @@
  - Gold and above properly check energy before building orbital scouts
  - Uber favours the Catapult over the Advanced Laser Turret
  - Uber checks advanced units are around before building Decimators
- - Bronze through Gold won't use Legion bots when there isn't a land route
  - Casual through Silver should never get stuck on their starting island
  - Don't rush for a T1 naval factory if a T2 naval factory still remains
  - Won't keep building units to clear mines when the enemy's planetary presence has been removed
@@ -30,7 +29,7 @@
  - Uber produces less Bluehawks in response to orbital threats
  - When thinking about Bluehawks Uber will only worry about the local orbital threat when still fighting for the planet
  - Platinum and Uber check that an air threat exists before building AA for invasion forces
- - If alone on a planet don't build troops unless there is somewhere to send them
+ - If alone on a planet don't build troops unless there is somewhere to send them to both save the sim and free up resources for other purposes
  - Corrected what appeared to be errors in Uber Bot's T2 Legion choices
  - Ensure proper chance of Uber MLA teching to T2 tanks when alone
  - Move Locusts between planets
@@ -39,11 +38,11 @@
  - Fixed Levelers not being sent between planets
  - Uber no longer requires a base amount of vehicle fabbers
  - Allow Uber to build Tyrs on multiple planets at the same time
- - Overhauled how Uber uses Anchors and Centurions
- - Allow Gold and Platinum to use Anchors and Centurions across more of a planet
+ - Uber no longer uses Anchors and Centurions to defend its bases
+ - Allow Gold and above to use Anchors and Centurions across more of a planet
  - Stopped Umbrellas including surface defence in their placement calculations
- - Uber tries be smarter about when it requires certain anti-orbital units
- - Never assign orbital scouts or radar to recon on a gas giant
+ - Uber tries be smarter about when it needs certain anti-orbital units
+ - Never get orbital scouts or radar to perform recon on a gas giant
  - Allow building of amphibious bots again due to land pathfinding detection sometimes failing causing factories to idle
  - Restore old defence placement method to prevent undercounting of defences
  - Uber won't use more orbital fabbers when alone
