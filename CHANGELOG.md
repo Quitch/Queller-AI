@@ -51,6 +51,9 @@
  - Gold and above won't stop their gas giant expansion
  - Combined some orbital defence checks for performance
  - Less orbital defence at most levels
+ - Uber uses less orbital fabbers outside gas giants
+ - Orbital builds no longer block land builds
+ - Gold and above choose between T2 factories or unit cannons
 
 #### 4.22.0 - 2018-03-16
 
