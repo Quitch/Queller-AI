@@ -199,8 +199,8 @@ function qQuellerAI() {
             min_basic_fabbers: 3,
             min_advanced_fabbers: 1
         },
-        'Q-Uber Cautious': {
-            display_name: '!LOC:Q-Uber Cautious',
+        'Q-Uber Free For All': {
+            display_name: '!LOC:Q-Uber Free For All',
             metal_drain_check: 0.54,
             energy_drain_check: 0.57,
             metal_demand_check: 0.85,
@@ -209,7 +209,7 @@ function qQuellerAI() {
             go_for_the_kill: true,
             priority_scout_metal_spots: true,
             enable_commander_danger_responses: true,
-            neural_data_mod: 0.6,
+            neural_data_mod: 0.5,
             adv_eco_mod: 0,
             adv_eco_mod_alone: 0,
             personality_tags:
