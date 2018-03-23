@@ -55,6 +55,9 @@
  - Orbital builds no longer block land builds
  - Gold and above choose between T2 factories or unit cannons
  - Uber Cautious will give a higher priority to orbital
+ - Uber Cautious is slightly less cautious
+ - Uber Cautious is now Uber Free For All
+ - Don't build a transport for Commander evac if a teleporter is available
 
 #### 4.22.0 - 2018-03-16
 
