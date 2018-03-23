@@ -387,7 +387,7 @@
       "to_build": "SolarArray",
       "instance_count": 1,
       "max_num_assisters": 10,
-      "priority": 196,
+      "priority": 195,
       "builders": [
         "OrbitalFactory"
       ],
@@ -400,6 +400,10 @@
           },
           {
             "test_type": "EnemyOrbitalPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
             "boolean": false
           },
           {
@@ -416,6 +420,10 @@
           },
           {
             "test_type": "EnemyOrbitalPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
             "boolean": false
           },
           {
