@@ -149,10 +149,9 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 ### Bot
  - Doesn't build vehicle factories except to detect mines
 
-### Cautious
+### Free For All
  - Looks for overwhelming odds in battle
  - Will get orbital as soon as possible on multi-planet systems
- - Consider using in close quarter FFAs
 
 ### Land
  - Won't build naval factories
