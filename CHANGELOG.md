@@ -73,6 +73,7 @@
  - Don't form a land platoon if the only mobile units available to attack are naval
  - Uber doesn't mistake T1 artillery for T2 when placing Ramparts
  - Uber accounts for the difference in range between MLA and Legion artillery
+ - Doesn't make the Odin turn as much due to low turret speed
 
 #### 4.22.0 - 2018-03-16
 
