@@ -611,9 +611,47 @@
           },
           {
             "test_type": "UnitCountAroundBase",
-            "unit_type_string0": "Artillery & Structure - Factory",
+            "unit_type_string0": "Artillery & Structure & Advanced - Factory - Custom1",
             "string0": "Enemy",
             "value0": 600,
+            "compare0": ">=",
+            "value1": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedShield"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild & Custom1",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Artillery & Structure & Advanced & Custom1 - Factory",
+            "string0": "Enemy",
+            "value0": 450,
             "compare0": ">=",
             "value1": 1
           },
