@@ -75,6 +75,7 @@
  - Uber accounts for the difference in range between MLA and Legion artillery
  - Doesn't make the Odin turn as much due to low turret speed
  - Fixed error where Uber was placing defences outside of shields instead of inside them
+ - Uber Legion uses less T2 defence at each location
 
 #### 4.22.0 - 2018-03-16
 
