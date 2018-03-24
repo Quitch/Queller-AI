@@ -66,6 +66,7 @@
  - Uber less likely to build Solar Arrays
  - Gold techs earlier
  - Gold will tech if it can't expand
+ - Gold won't rush a nuke as early
 
 #### 4.22.0 - 2018-03-16
 

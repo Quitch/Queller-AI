@@ -237,6 +237,12 @@
             "string0": "LegionDefenseAdvancedNukeSilo"
           },
           {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": ">=",
+            "value0": 15
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionDefenseAdvancedNukeSilo"
           }
@@ -270,6 +276,12 @@
             "string0": "AntiNuke",
             "compare0": "<=",
             "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": ">=",
+            "value0": 15
           },
           {
             "test_type": "CanFindPlaceToBuild",
