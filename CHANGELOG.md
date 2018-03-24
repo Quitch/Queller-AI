@@ -54,7 +54,7 @@
  - Uber uses less orbital fabbers outside gas giants
  - Orbital builds no longer block land builds
  - Gold and above choose between T2 factories or unit cannons
- - Uber Cautious is slightly less cautious
+ - Uber Cautious is less cautious
  - Uber Cautious is now Uber Free For All
  - Don't build a transport for Commander evac if a teleporter is available
  - Won't allow gas giant attack bug to trap it in an anti-orbital build loop
