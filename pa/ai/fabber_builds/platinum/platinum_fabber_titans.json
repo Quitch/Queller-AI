@@ -215,6 +215,10 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "PlanetSplitter"
+          },
+          {
             "test_type": "PlanetCount",
             "compare0": ">=",
             "value0": 2
@@ -236,7 +240,7 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Fabber - Orbital",
             "compare0": ">=",
-            "value0": 10
+            "value0": 20
           },
           {
             "test_type": "AlliedUnitCountOnPlanet",
