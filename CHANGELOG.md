@@ -64,6 +64,8 @@
  - Uber Free For All doesn't prioritise early air as highly
  - Place artillery slightly within max range to account for interference from planet curvature
  - Uber less likely to build Solar Arrays
+ - Gold techs earlier
+ - Gold will tech if it can't expand
 
 #### 4.22.0 - 2018-03-16
 
