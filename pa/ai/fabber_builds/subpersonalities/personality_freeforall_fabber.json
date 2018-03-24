@@ -210,6 +210,53 @@
           "value": 50
         }
       }
+    },
+    {
+      "name": "Legion - Uber - Armor Foundry - Fabber",
+      "to_build": "LegionFactoryBasicVehicle",
+      "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "priority": 376,
+      "min_num_assisters": 2,
+      "max_num_assisters": 4,
+      "base_sort": "FromMainBase",
+      "builders": [
+        "AnyLegionFabberBasic"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "cautious",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicVehicle"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicVehicle"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
     }
   ]
 }
