@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### 4.23.0
+#### 4.23.0 - 2018-03-24
 
  - Additional language translations:
    - Korean (ko) translation courtesy of R.O.S.S
