@@ -198,10 +198,6 @@ Queller currently supports:
 
 # KNOWN ISSUES
 
-### TOFIX
-
-- Doesn't understand when it needs to build units in preparation for an attack versus when it should shutdown factories so it can build super weapons
-
 ### CANTFIX
 
 - Will sometimes take much longer than necessary routes to attack
