@@ -197,10 +197,9 @@ Queller currently supports:
 
 # KNOWN ISSUES
 
-### CANTFIX
+## CANTFIX
 
 - Will sometimes take much longer than necessary routes to attack
-- Fabbers don't always take the closest metal spot when building MEX
 - Doesn't defend its fabbers
 - Attempts to attack with amphibious units underwater even if they don't have an underwater weapon
 - Will queue buildings on the other side of obstacles despite closer locations (pathfinding wise) being available
@@ -218,10 +217,12 @@ Queller currently supports:
 - Won't attack on gas giants
 - All AI Commanders on a team spawn and act together using shared army mode
 - Play From Here in Chronocam can cause strange AI behaviour or even break it
+- Different armies will sometimes build on the same metal spot
+- Naval factories occasionally built on land
 
 # THANKS TO
 
-- Sorian of Uber Entertainment for
+- Sorian of Uber Entertainment for:
  - making his AI moddable
  - answering my questions
  - taking on suggestions
@@ -230,3 +231,10 @@ Queller currently supports:
 - wondible for his creation of the [AI Showdown](https://github.com/JustinLove/ai_showdown/) tool
 - mikeyh for writing the JavaScript for loading Queller's personalities
 - alpha2546 for extensively playtesting Queller during Legion Expansion development
+- Everyone who has helped with translations:
+ - K-Orthic | Gamax
+ - gmase
+ - PRoeleert
+ - R.O.S.S
+ - DeathByDenim
+ - River
