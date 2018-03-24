@@ -70,6 +70,7 @@
  - Uber uses a new method to determine the risk of nukes it hasn't scouted on other worlds exist
  - Casual and Platinum and Uber more likely to use a planet splitter titan
  - Uber Legion fabbers now properly aligned with when vehicle factory builds should occur
+ - Don't form a land platoon if the only mobile units available to attack are naval
 
 #### 4.22.0 - 2018-03-16
 
