@@ -74,6 +74,7 @@
  - Uber doesn't mistake T1 artillery for T2 when placing Ramparts
  - Uber accounts for the difference in range between MLA and Legion artillery
  - Doesn't make the Odin turn as much due to low turret speed
+ - Fixed error where Uber was placing defences outside of shields instead of inside them
 
 #### 4.22.0 - 2018-03-16
 
