@@ -477,15 +477,15 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild & Custom1",
-            "compare0": ">=",
-            "value0": 1
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "compare0": ">",
+            "value0": 3
           },
           {
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Advanced & (SurfaceDefense | Tactical) - (CombatFabAdvBuild & Custom1)",
             "compare0": "<",
-            "value0": 2
+            "value0": 1
           },
           {
             "test_type": "UnitCountInBase",
@@ -514,13 +514,6 @@
             "alliance": "Ally",
             "compare_type": "<",
             "range": 75,
-            "count": 1
-          },
-          {
-            "unit_type_string": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild & Custom1",
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "range": 200,
             "count": 1
           }
         ]
