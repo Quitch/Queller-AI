@@ -150,9 +150,8 @@ By default, Queller at Uber level will adapt its play to try and suit the system
  - Doesn't build vehicle factories except to detect mines
 
 ### Free For All
- - Looks for overwhelming odds in battle
+ - More cautious about engaging in battle
  - Will get T2 as soon as it can afford it
- - Make more liberal use of early tanks
 
 ### Land
  - Won't build naval factories
