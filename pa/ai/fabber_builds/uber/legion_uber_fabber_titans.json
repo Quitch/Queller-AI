@@ -258,7 +258,7 @@
             "boolean": true
           },
           {
-            "test_type": "EnemyPresenceOnPlanet",
+            "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
           {
@@ -288,7 +288,7 @@
             "string0": "Land",
             "string1": "AntiSurface",
             "compare0": ">",
-            "value0": 2
+            "value0": 3
           },
           {
             "test_type": "UnitCountOnPlanet",
