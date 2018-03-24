@@ -54,12 +54,10 @@
  - Uber uses less orbital fabbers outside gas giants
  - Orbital builds no longer block land builds
  - Gold and above choose between T2 factories or unit cannons
- - Uber Cautious will give a higher priority to orbital
  - Uber Cautious is slightly less cautious
  - Uber Cautious is now Uber Free For All
  - Don't build a transport for Commander evac if a teleporter is available
  - Won't allow gas giant attack bug to trap it in an anti-orbital build loop
- - Uber Free For All will use more tanks at T1
  - Gold and above no longer increase the naval fabber to factory ratio when alone on a planet
  - Uber Free For All doesn't prioritise early air as highly
  - Place artillery slightly within max range to account for interference from planet curvature
@@ -76,6 +74,7 @@
  - Doesn't make the Odin turn as much due to low turret speed
  - Fixed error where Uber was placing defences outside of shields instead of inside them
  - Uber Legion uses less T2 defence at each location
+ - Uber more likely to use Decimators when it has Ramparts
 
 #### 4.22.0 - 2018-03-16
 
