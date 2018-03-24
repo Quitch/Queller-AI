@@ -151,7 +151,8 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 
 ### Free For All
  - Looks for overwhelming odds in battle
- - Will get orbital as soon as possible on multi-planet systems
+ - Will get T2 as soon as it can afford it
+ - Make more liberal use of early tanks
 
 ### Land
  - Won't build naval factories
