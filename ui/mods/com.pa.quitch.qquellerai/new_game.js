@@ -11,8 +11,6 @@ function qQuellerAI() {
 
     var aiPersonalities = model.aiPersonalities();
 
-    var helpText = 'by Quitch. Version 4.22.0. My difficulties are prefixed with a Q. I support the Legion Expansion.';
-
     var newPersonalities = {
         'Q-Casual': {
             display_name: '!LOC:Q-Casual',
@@ -150,8 +148,8 @@ function qQuellerAI() {
             priority_scout_metal_spots: true,
             enable_commander_danger_responses: true,
             neural_data_mod: 1.2,
-            adv_eco_mod: 1.0,
-            adv_eco_mod_alone: 0.85,
+            adv_eco_mod: 0.85,
+            adv_eco_mod_alone: 0,
             personality_tags:
                 [
                     "uber"
@@ -170,8 +168,8 @@ function qQuellerAI() {
             priority_scout_metal_spots: true,
             enable_commander_danger_responses: true,
             neural_data_mod: 1.0,
-            adv_eco_mod: 1.0,
-            adv_eco_mod_alone: 0.85,
+            adv_eco_mod: 0.85,
+            adv_eco_mod_alone: 0,
             personality_tags:
                 [
                     "uber",
@@ -191,8 +189,8 @@ function qQuellerAI() {
             priority_scout_metal_spots: true,
             enable_commander_danger_responses: true,
             neural_data_mod: 0.5,
-            adv_eco_mod: 1.0,
-            adv_eco_mod_alone: 0.85,
+            adv_eco_mod: 0.85,
+            adv_eco_mod_alone: 0,
             personality_tags:
                 [
                     "uber",
@@ -201,8 +199,8 @@ function qQuellerAI() {
             min_basic_fabbers: 3,
             min_advanced_fabbers: 1
         },
-        'Q-Uber Cautious': {
-            display_name: '!LOC:Q-Uber Cautious',
+        'Q-Uber Free For All': {
+            display_name: '!LOC:Q-Uber Free For All',
             metal_drain_check: 0.54,
             energy_drain_check: 0.57,
             metal_demand_check: 0.85,
@@ -211,9 +209,9 @@ function qQuellerAI() {
             go_for_the_kill: true,
             priority_scout_metal_spots: true,
             enable_commander_danger_responses: true,
-            neural_data_mod: 0.5,
-            adv_eco_mod: 1.0,
-            adv_eco_mod_alone: 0.85,
+            neural_data_mod: 0.75,
+            adv_eco_mod: 0,
+            adv_eco_mod_alone: 0,
             personality_tags:
                 [
                     "uber",
@@ -233,8 +231,8 @@ function qQuellerAI() {
             priority_scout_metal_spots: true,
             enable_commander_danger_responses: true,
             neural_data_mod: 1.0,
-            adv_eco_mod: 1.0,
-            adv_eco_mod_alone: 0.85,
+            adv_eco_mod: 0.85,
+            adv_eco_mod_alone: 0,
             personality_tags:
                 [
                     "uber",
@@ -254,8 +252,8 @@ function qQuellerAI() {
             priority_scout_metal_spots: true,
             enable_commander_danger_responses: true,
             neural_data_mod: 1.0,
-            adv_eco_mod: 1.0,
-            adv_eco_mod_alone: 0.85,
+            adv_eco_mod: 0.85,
+            adv_eco_mod_alone: 0,
             personality_tags:
                 [
                     "uber",
@@ -275,7 +273,7 @@ function qQuellerAI() {
             priority_scout_metal_spots: true,
             enable_commander_danger_responses: true,
             neural_data_mod: 1.0,
-            adv_eco_mod: 1.0,
+            adv_eco_mod: 0.85,
             adv_eco_mod_alone: 0,
             personality_tags:
                 [
@@ -297,7 +295,7 @@ function qQuellerAI() {
             enable_commander_danger_responses: true,
             neural_data_mod: 1.0,
             adv_eco_mod: 2.0,
-            adv_eco_mod_alone: 1.45,
+            adv_eco_mod_alone: 0,
             personality_tags:
                 [
                     "uber",
@@ -317,8 +315,8 @@ function qQuellerAI() {
             priority_scout_metal_spots: true,
             enable_commander_danger_responses: true,
             neural_data_mod: 1.0,
-            adv_eco_mod: 1.0,
-            adv_eco_mod_alone: 0.85,
+            adv_eco_mod: 0.85,
+            adv_eco_mod_alone: 0,
             personality_tags:
                 [
                     "uber",
@@ -393,7 +391,7 @@ function qQuellerAI() {
     model.aiPersonalities.valueHasMutated();
 
     _.defer(function () {
-        model.localChatMessage('Queller AI', helpText);
+        model.localChatMessage(loc("!LOC:Queller AI"), loc("!LOC:by Quitch. Version 4.23.0. My difficulties are prefixed with a Q. I support the Legion Expansion."));
     });
 
 }

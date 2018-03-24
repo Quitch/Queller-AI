@@ -1,5 +1,82 @@
 # CHANGELOG
 
+#### 4.23.0 - 2018-03-24
+
+ - Additional language translations:
+   - Korean (ko) translation courtesy of R.O.S.S
+ - Uber Legion will use a small number of Monstrosities balanced against its advanced bots
+ - Fixed subpersonalities not teching at the same speed as Uber
+ - Uber Cautious will tech as quickly as Uber Tech
+ - Properly exclude hover titans and Locusts from hover platoons
+ - Changed how Locusts are used to avoid them engaging units
+ - Uber less likely to use support commanders
+ - Lower the number of factories Gold and above can use to make Locusts
+ - Uber makes greater use of turrets around its MEX
+ - Uber doesn't place MEX defences as close to the main base
+ - Uber tries to place defences to deal with Locust threats
+ - Gold and above properly check energy before building orbital scouts
+ - Uber favours the Catapult over the Advanced Laser Turret
+ - Uber checks advanced units are around before building Decimators
+ - Casual through Silver should never get stuck on their starting island
+ - Don't rush for a T1 naval factory if a T2 naval factory still remains
+ - Won't keep building units to clear mines when the enemy's planetary presence has been removed
+ - Corrected Gold Legion not building certain units for invasions
+ - Gold Legion is a little more selective with its advanced unit mix
+ - Casual will build fabbers even when under attack
+ - Bronze won't build fabbers when its base is threatened
+ - Platinum uses less Deathmarks
+ - Platinum and Uber no longer build Locusts in the Unit Cannon
+ - Uber produces less Bluehawks in response to orbital threats
+ - When thinking about Bluehawks and Panzers Uber will only worry about the local orbital threat when still fighting for the planet
+ - Platinum and Uber check that an air threat exists before building AA for invasion forces
+ - If alone on a planet don't build troops unless there is somewhere to send them so as to save the sim and free up resources for other purposes
+ - Corrected what appeared to be errors in Uber Bot's T2 Legion choices
+ - Ensure proper chance of Uber MLA teching to T2 tanks when alone
+ - Move Locusts between planets
+ - Minor changes made to various checks to try and help performance
+ - Fixed difficulties below Uber not assigning Levelers to platoons
+ - Fixed Levelers not being sent through teleporters
+ - Uber no longer requires a base amount of vehicle fabbers
+ - Allow Uber to build Tyrs on multiple planets at the same time
+ - Reduced Uber's usage of Anchors and Centurions to defend ground bases
+ - Allow Gold and above to use Anchors and Centurions across more of a planet
+ - Stopped Umbrellas including anti-ground defence in their placement calculations
+ - Uber tries be smarter about when it needs certain anti-orbital units
+ - Never have orbital scouts or radar perform recon on a gas giant
+ - Allow building of amphibious bots again due to land pathfinding detection sometimes failing causing factories to idle
+ - Restore old defence placement method to reduce undercounting of defences
+ - Uber won't use more orbital fabbers when alone
+ - Setup lobby messages to work with translations
+ - Fix for orbital units never leaving gas giants
+ - Gold more aggressive about their gas giant expansion
+ - Combined some orbital defence checks for performance
+ - Less orbital defence at most levels
+ - Uber uses less orbital fabbers outside gas giants
+ - Orbital factory builds no longer block land factory builds
+ - Gold and above choose between T2 factories or Unit Cannons to ensure focused builds
+ - Uber Cautious is now Uber Free For All
+ - Uber Free For All is less cautious
+ - Don't build a transport for Commander evac if a teleporter is available
+ - Won't allow gas giant attack bug to trap it in an anti-orbital build loop
+ - Gold and above no longer increase the naval fabber to factory ratio when alone on a planet
+ - Uber Free For All doesn't prioritise early air as highly
+ - Place artillery slightly within max range to account for interference from planet curvature
+ - Uber less likely to build Solar Arrays
+ - Gold will tech if it can't expand
+ - Gold won't rush a nuke as early
+ - Gold and Platinum prioritise a teleporter over a factory when arriving on a new world
+ - Uber uses a new method to determine the risk of nukes it hasn't scouted on other worlds existing
+ - Casual, Platinum and Uber more likely to use a planet splitter titan
+ - Uber Legion fabbers now properly aligned with the Commander on when vehicle factory builds should occur
+ - Don't form a land platoon if the only thing available to attack is naval
+ - Uber doesn't mistake T1 artillery for T2 when placing Ramparts
+ - Uber accounts for the difference in range between MLA and Legion artillery when placing Ramparts
+ - Don't make the Odin turn as much due to low turret speed preventing it from tracking
+ - Fixed error where Uber was placing defences outside of shields instead of inside them
+ - Uber Legion uses less T2 defence at each location
+ - Uber more likely to use Decimators when it has Ramparts
+ - Ensure that on arriving at a new world a teleporter is always placed before a factory
+
 #### 4.22.0 - 2018-03-16
 
  - Properly exclude naval units from land and air scout ratio checks
@@ -268,7 +345,7 @@
 The Queller AI **Client** is no longer required and should be uninstalled.
 
  - mikeyh updated personality script to account for changes in 99377
- - Additional language translations
+ - Additional language translations:
    - Español (es) translation added courtesy of gmase
    - Nederlands (nl) and Nederlands (België) (nl-BE) added courtesy of PRoeleert
  - Fixed Queller translations breaking PA translations

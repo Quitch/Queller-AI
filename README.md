@@ -133,8 +133,8 @@ When you need to increase the challenge, but don't want to increase the difficul
 | Silver   | High      | Uber       | 1.0 |
 | Gold     | Low       | Uber       | 1.3 |
 | Gold     | High      | Uber       | 1.6 |
-| Platinum | Any       | Uber       | 2.0 |
-| Uber     | Any       | Uber       | 2.5 |
+| Platinum | Any       | Uber       | 1.9 |
+| Uber     | Any       | Uber       | 2.2 |
 
 ## SUBPERSONALITIES
 
@@ -149,10 +149,9 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 ### Bot
  - Doesn't build vehicle factories except to detect mines
 
-### Cautious
- - Looks for overwhelming odds in battle
- - Will get orbital as soon as possible on multi-planet systems
- - Consider using in close quarter FFAs
+### Free For All
+ - More cautious about engaging in battle
+ - Will get T2 as soon as it can afford it
 
 ### Land
  - Won't build naval factories
@@ -185,18 +184,22 @@ Be sure to follow the recommended number of players for any map.
 
 # TRANSLATIONS
 
-If you would like to help translate the Queller AI to your local language then please look at [the translation project](https://poeditor.com/join/project/TDjqIKATML).
+If you would like to help translate Queller to one of PA's languages then please drop me a line.
+
+Queller currently supports:
+ - Dutch (nl)
+ - English (US) (en-US)
+ - French (fr)
+ - German (de)
+ - Italian (it)
+ - Korean (ko)
+ - Spanish (es-ES)
 
 # KNOWN ISSUES
 
-### TOFIX
-
-- Doesn't understand when it needs to build units in preparation for an attack versus when it should shutdown factories so it can build super weapons
-
-### CANTFIX
+## CANTFIX
 
 - Will sometimes take much longer than necessary routes to attack
-- Fabbers don't always take the closest metal spot when building MEX
 - Doesn't defend its fabbers
 - Attempts to attack with amphibious units underwater even if they don't have an underwater weapon
 - Will queue buildings on the other side of obstacles despite closer locations (pathfinding wise) being available
@@ -213,10 +216,13 @@ If you would like to help translate the Queller AI to your local language then p
 - Naval factories sometimes stop producing units
 - Won't attack on gas giants
 - All AI Commanders on a team spawn and act together using shared army mode
+- Play From Here in Chronocam can cause strange AI behaviour or even break it
+- Different armies will sometimes build on the same metal spot
+- Naval factories occasionally built on land
 
 # THANKS TO
 
-- Sorian of Uber Entertainment for
+- Sorian of Uber Entertainment for:
  - making his AI moddable
  - answering my questions
  - taking on suggestions
@@ -225,3 +231,10 @@ If you would like to help translate the Queller AI to your local language then p
 - wondible for his creation of the [AI Showdown](https://github.com/JustinLove/ai_showdown/) tool
 - mikeyh for writing the JavaScript for loading Queller's personalities
 - alpha2546 for extensively playtesting Queller during Legion Expansion development
+- Everyone who has helped with translations:
+ - K-Orthic | Gamax
+ - gmase
+ - PRoeleert
+ - R.O.S.S
+ - DeathByDenim
+ - River
