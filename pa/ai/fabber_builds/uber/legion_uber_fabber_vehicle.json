@@ -218,6 +218,11 @@
             "boolean": false
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "cautious",
+            "boolean": false
+          },
+          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -227,6 +232,12 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Bot & Factory & Basic",
+            "compare0": ">",
+            "value0": 250
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -331,6 +342,11 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "bot",
+            "boolean": false
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "cautious",
             "boolean": false
           },
           {

@@ -69,6 +69,7 @@
  - Gold and Platinum prioritise a teleporter over a factory when arriving on a new world
  - Uber uses a new method to determine the risk of nukes it hasn't scouted on other worlds exist
  - Casual and Platinum and Uber more likely to use a planet splitter titan
+ - Uber Legion fabbers now properly aligned with when vehicle factory builds should occur
 
 #### 4.22.0 - 2018-03-16
 
