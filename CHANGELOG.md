@@ -69,6 +69,7 @@
  - Gold won't rush a nuke as early
  - Gold and Platinum prioritise a teleporter over a factory when arriving on a new world
  - Uber uses a new method to determine the risk of nukes it hasn't scouted on other worlds exist
+ - Casual, Platinum and Uber more likely to use a planet splitter titan
 
 #### 4.22.0 - 2018-03-16
 
