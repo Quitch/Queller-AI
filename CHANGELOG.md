@@ -75,6 +75,7 @@
  - Fixed error where Uber was placing defences outside of shields instead of inside them
  - Uber Legion uses less T2 defence at each location
  - Uber more likely to use Decimators when it has Ramparts
+ - Ensure a on arriving at a new world a teleporter is always placed before a factory
 
 #### 4.22.0 - 2018-03-16
 
