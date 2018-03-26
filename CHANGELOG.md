@@ -7,7 +7,7 @@
  - Corrected inconsistencies in defence spacing
  - Allowed tighter placement of anti-orbital defences
  - Bronze will build the Hive on the perimeter
- - Fixed Uber not building the Defence Laser Tower when it was supposed to
+ - Fixed Uber not building the Laser Defence Tower when it was supposed to
  - Slightly reduced the chance of Uber building Defence Laser Towers to compensate for this
  - Corrected errors preventing defence placement in certain circumstances
  - Changed how each difficulty detects where it can place defences
