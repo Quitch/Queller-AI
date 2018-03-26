@@ -8,11 +8,13 @@
  - Allowed tighter placement of anti-orbital defences
  - Bronze will build the Hive on the perimeter
  - Fixed Uber not building the Laser Defence Tower when it was supposed to
- - Slightly reduced the chance of Uber building Defence Laser Towers to compensate for this
  - Corrected errors preventing defence placement in certain circumstances
  - Changed how each difficulty detects where it can place defences
  - Bronze and Silver try to avoid placing laser turrets on water
  - Consider more than just land threats when placing Ramparts
+ - Push Uber's MEX defence further from the base again
+ - Uber slightly more likely to use the Single Laser Tower and Jackal
+ - Fix Uber Legion not putting Tolas by super weapons
 
 #### 4.23.0 - 2018-03-24
 
