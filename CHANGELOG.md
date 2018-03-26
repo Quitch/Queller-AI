@@ -15,6 +15,7 @@
  - Push Uber's MEX defence further from the base again
  - Uber slightly more likely to use the Single Laser Tower and Jackal
  - Fix Uber Legion not putting Tolas by super weapons
+ - Uber more likely to put AA by MEX
 
 #### 4.23.0 - 2018-03-24
 
