@@ -29,8 +29,8 @@
             "boolean": true
           },
           {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": false
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
           },
           {
             "test_type": "HaveSeenEnemyUnits",
@@ -121,8 +121,8 @@
             "boolean": true
           },
           {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": false
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
           },
           {
             "test_type": "HaveSeenEnemyUnits",
@@ -205,8 +205,8 @@
             "boolean": true
           },
           {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": false
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -540,10 +540,6 @@
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
