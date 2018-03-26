@@ -16,6 +16,7 @@
  - Uber slightly more likely to use the Single Laser Tower and Jackal
  - Fix Uber Legion not putting Tolas by super weapons
  - Uber more likely to put AA by MEX
+ - Uber tries to detect when the Commander or base faces an immediate orbital threat and to respond with ground anti-orbital
 
 #### 4.23.0 - 2018-03-24
 
