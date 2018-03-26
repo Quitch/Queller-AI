@@ -88,7 +88,7 @@
             "unit_type_string": "Structure & (SurfaceDefense | Tactical) - (CombatFabAdvBuild & Advanced & Custom1)",
             "alliance": "Ally",
             "compare_type": "<",
-            "range": 75,
+            "range": 50,
             "count": 1
           }
         ]
@@ -169,13 +169,13 @@
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 35,
-            "count": 2
+            "count": 1
           },
           {
             "unit_type_string": "Structure & (SurfaceDefense | Tactical) - (CombatFabAdvBuild & Advanced & Custom1)",
             "alliance": "Ally",
             "compare_type": "<",
-            "range": 75,
+            "range": 50,
             "count": 1
           }
         ]
@@ -507,14 +507,14 @@
             "unit_type_string": "Structure & ((EnergyProduction & Advanced) | Factory | PlanetEngine | ControlModule)",
             "alliance": "Ally",
             "compare_type": ">=",
-            "range": 100,
-            "count": 3
+            "range": 50,
+            "count": 1
           },
           {
             "unit_type_string": "Structure & Advanced & Tactical",
             "alliance": "Ally",
             "compare_type": "<",
-            "range": 150,
+            "range": 75,
             "count": 1
           }
         ]
@@ -790,7 +790,7 @@
             "unit_type_string": "Commander",
             "alliance": "Ally",
             "compare_type": ">=",
-            "range": 75,
+            "range": 50,
             "count": 1
           },
           {

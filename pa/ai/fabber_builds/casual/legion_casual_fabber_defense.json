@@ -704,7 +704,7 @@
         "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "Structure",
+            "unit_type_string": "Structure - (Advanced & SurfaceDefense & CombatFabAdvBuild & Custom1)",
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 50,
@@ -798,7 +798,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & ((EnergyProduction & (Orbital | Advanced)) | Factory)",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
             "compare0": ">=",
             "value0": 3
           },

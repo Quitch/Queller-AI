@@ -602,14 +602,16 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 2,
         "placement_type": "FromBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          }
+        ]
       }
     },
     {
@@ -703,7 +705,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & ((EnergyProduction & (Orbital | Advanced)) | Factory)",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
             "compare0": ">=",
             "value0": 3
           },
@@ -787,7 +789,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
+            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
             "compare0": "<",
             "value0": 12
           },

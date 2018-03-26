@@ -53,6 +53,13 @@
             "compare_type": ">=",
             "range": 50,
             "count": 1
+          },
+          {
+            "unit_type_string": "Structure & AirDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 100,
+            "count": 1
           }
         ]
       }
@@ -63,7 +70,7 @@
       "instance_count": 1,
       "shared_instance_count": "LandDefence",
       "max_num_assisters": 3,
-      "priority": 277,
+      "priority": 478,
       "base_sort": "FromPerimeter",
       "builders": [
         "AnyLegionFabberBasic"
@@ -109,6 +116,13 @@
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & (SurfaceDefense | Tactical) - (CombatFabAdvBuild & Advanced & Custom1)",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 100,
             "count": 1
           }
         ]
@@ -166,6 +180,78 @@
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & (SurfaceDefense | Tactical) - (CombatFabAdvBuild & Advanced & Custom1)",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 100,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Legion - Bronze - Hive - Mex",
+      "to_build": "LegionDefenseBasicSwarm",
+      "instance_count": 1,
+      "shared_instance_count": "Defence",
+      "max_num_assisters": 2,
+      "priority": 478,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "LegionBotBasicFabber",
+        "LegionVehicleBasicFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "DistFromMainBase",
+            "compare0": ">=",
+            "value0": 200
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (SurfaceDefense | Tactical) - (CombatFabAdvBuild & Advanced & Custom1)",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & MetalProduction",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicSwarm"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & (SurfaceDefense | Tactical) - (CombatFabAdvBuild & Advanced & Custom1)",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 100,
             "count": 1
           }
         ]
@@ -228,7 +314,14 @@
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 50,
-            "count": 2
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Naval & Defense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 100,
+            "count": 1
           }
         ]
       }
@@ -280,7 +373,14 @@
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 50,
-            "count": 2
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & AirDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 1
           }
         ]
       }
@@ -339,6 +439,13 @@
             "compare_type": ">=",
             "range": 50,
             "count": 1
+          },
+          {
+            "unit_type_string": "Structure & (SurfaceDefense | Tactical) - (CombatFabAdvBuild & Advanced & Custom1)",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 1
           }
         ]
       }
@@ -390,6 +497,13 @@
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & (SurfaceDefense | Tactical) - (CombatFabAdvBuild & Advanced & Custom1)",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
             "count": 1
           }
         ]
@@ -443,6 +557,13 @@
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & (SurfaceDefense | Tactical) - (CombatFabAdvBuild & Advanced & Custom1)",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
             "count": 1
           }
         ]
@@ -501,6 +622,13 @@
             "compare_type": ">=",
             "range": 50,
             "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Naval & Defense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 1
           }
         ]
       }
@@ -552,6 +680,13 @@
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Advanced & AirDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
             "count": 1
           }
         ]
@@ -605,6 +740,13 @@
             "compare_type": ">=",
             "range": 50,
             "count": 1
+          },
+          {
+            "unit_type_string": "Structure & (SurfaceDefense | Tactical) - (CombatFabAdvBuild & Advanced & Custom1)",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 1
           }
         ]
       }
@@ -657,6 +799,13 @@
             "compare_type": ">=",
             "range": 50,
             "count": 1
+          },
+          {
+            "unit_type_string": "Structure & (SurfaceDefense | Tactical) - (CombatFabAdvBuild & Advanced & Custom1)",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 1
           }
         ]
       }
@@ -704,10 +853,17 @@
         "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "Structure",
+            "unit_type_string": "Structure - (Advanced & SurfaceDefense & CombatFabAdvBuild & Custom1)",
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild & Custom1",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
             "count": 1
           }
         ]
@@ -766,6 +922,13 @@
             "compare_type": ">=",
             "range": 50,
             "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Naval & Defense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 1
           }
         ]
       }
@@ -798,7 +961,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & ((EnergyProduction & (Orbital | Advanced)) | Factory)",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
             "compare0": ">=",
             "value0": 3
           },
@@ -812,10 +975,17 @@
         "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
+            "unit_type_string": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
             "unit_type_string": "Structure & OrbitalDefense",
             "alliance": "Ally",
             "compare_type": "<",
-            "range": 50,
+            "range": 75,
             "count": 1
           }
         ]
@@ -905,8 +1075,15 @@
             "unit_type_string": "Structure & ((EnergyProduction & Advanced) | Factory | PlanetEngine | ControlModule)",
             "alliance": "Ally",
             "compare_type": ">=",
-            "range": 100,
+            "range": 50,
             "count": 3
+          },
+          {
+            "unit_type_string": "Structure & OrbitalDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 1
           }
         ]
       }

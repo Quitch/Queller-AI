@@ -1,5 +1,14 @@
 # CHANGELOG
 
+#### 4.23.1
+
+ - Corrected issue on naval maps which could cause Bronze and Silver to not produce fabbers
+ - Bronze now spaces its defences
+ - Corrected inconsistencies in defence spacing
+ - Allowed tighter placement of anti-orbital defences
+ - Bronze will build the Hive on the perimeter
+ - Corrected errors preventing defence placement in certain circumstances
+
 #### 4.23.0 - 2018-03-24
 
  - Additional language translations:

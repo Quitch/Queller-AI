@@ -503,7 +503,7 @@
         "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "Structure & (EnergyProduction | Factory)",
+            "unit_type_string": "Structure & ((EnergyProduction & Advanced) | Factory)",
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 50,
@@ -570,7 +570,7 @@
         "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "Structure",
+            "unit_type_string": "Structure - (Advanced & SurfaceDefense & CombatFabAdvBuild & Custom1)",
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 105,
@@ -743,7 +743,7 @@
         "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "Structure",
+            "unit_type_string": "Structure - (Advanced & SurfaceDefense & CombatFabAdvBuild & Custom1)",
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 105,

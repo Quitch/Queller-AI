@@ -155,7 +155,7 @@
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 50,
-            "count": 2
+            "count": 1
           },
           {
             "unit_type_string": "Structure & AirDefense",
@@ -349,7 +349,7 @@
         "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "(Structure & (EnergyProduction | Factory | Tactical | Artillery)) | Commander",
+            "unit_type_string": "Commander",
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 50,
