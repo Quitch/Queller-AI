@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### 4.23.1
+#### 4.24.0 - 2018-03-37
 
  - Corrected issue on naval maps which could cause Bronze and Silver to not produce fabbers
  - Bronze now spaces its defences
