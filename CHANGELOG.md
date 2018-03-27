@@ -13,7 +13,7 @@
  - Bronze and Silver try to avoid placing laser turrets on water
  - Consider more than just land threats when placing Ramparts
  - Push Uber's MEX defence further from the base again
- - Uber slightly more likely to use the Single Laser Tower and Jackal
+ - Uber slightly more likely to use the Single Laser Defence Tower and Jackal
  - Fix Uber Legion not putting Tolas by super weapons
  - Uber more likely to put AA by MEX
  - Uber tries to detect when the Commander or base faces an immediate orbital threat and to respond with ground anti-orbital
