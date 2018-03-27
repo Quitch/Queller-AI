@@ -1,5 +1,22 @@
 # CHANGELOG
 
+#### 4.24.0 - 2018-03-27
+
+ - Corrected issue on naval maps which could cause Bronze and Silver to not produce fabbers
+ - Bronze now spaces its defences
+ - Corrected inconsistencies in defence spacing
+ - Allowed tighter placement of anti-orbital defences
+ - Bronze will build the Hive on the perimeter
+ - Fixed Uber not building the Laser Defence Tower when it was supposed to
+ - Corrected errors preventing defence placement in certain circumstances
+ - Changed how each difficulty detects where it can place defences
+ - Bronze and Silver try to avoid placing laser turrets on water
+ - Consider more than just land threats when placing Ramparts
+ - Push Uber's MEX defence further from the base again
+ - Uber slightly more likely to use the Single Laser Defence Tower and Jackal
+ - Fix Uber Legion not putting Tolas by super weapons
+ - Uber more likely to put AA by MEX
+
 #### 4.23.0 - 2018-03-24
 
  - Additional language translations:

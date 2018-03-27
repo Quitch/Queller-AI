@@ -238,3 +238,4 @@ Queller currently supports:
  - R.O.S.S
  - DeathByDenim
  - River
+ - Felix Köhler
