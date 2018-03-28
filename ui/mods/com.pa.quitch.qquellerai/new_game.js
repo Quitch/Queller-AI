@@ -160,9 +160,9 @@ function qQuellerAI() {
         'Q-Uber Air': {
             display_name: '!LOC:Q-Uber Air',
             metal_drain_check: 0.54,
-            energy_drain_check: 0.65,
+            energy_drain_check: 0.57,
             metal_demand_check: 0.85,
-            energy_demand_check: 0.8,
+            energy_demand_check: 0.72,
             micro_type: 2,
             go_for_the_kill: true,
             priority_scout_metal_spots: true,
