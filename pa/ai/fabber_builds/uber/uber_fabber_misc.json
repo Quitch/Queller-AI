@@ -155,8 +155,41 @@
             "boolean": true
           },
           {
+            "test_type": "SafePlanetWithoutPresence",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & Transport",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": ">=",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Commander",
+            "compare0": "<=",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
             "test_type": "PlanetWithoutPresence",
             "boolean": true
+          },
+          {
+            "test_type": "SafePlanetWithoutPresence",
+            "boolean": false
           },
           {
             "test_type": "UnitPoolCount",
