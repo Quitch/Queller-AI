@@ -5,7 +5,6 @@
  - Fixed an error in Uber Air's economy handling
  - Updated Uber Rush to make use of multiple Commanders
  - Fix for Legion Commanders not leaving their starting planet
- - Attempts to split up Commanders when playing in a shared army
 
 #### 4.24.0 - 2018-03-27
 
