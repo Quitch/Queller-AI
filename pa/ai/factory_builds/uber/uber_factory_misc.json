@@ -19,77 +19,6 @@
           },
           {
             "test_type": "FactoryHasOpenSlot"
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "FactoryHasOpenSlot"
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Uber - Nuke Missile - Too Expensive",
-      "to_build": "NukeMissile",
-      "instance_count": -1,
-      "max_num_assisters": 12,
-      "priority": 151,
-      "builders": [
-        "NukeSilo"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "FactoryHasOpenSlot"
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Uber - Nuke Missile - No Antis",
-      "to_build": "NukeMissile",
-      "instance_count": -1,
-      "min_num_assisters": 8,
-      "max_num_assisters": 45,
-      "priority": 478,
-      "builders": [
-        "NukeSilo"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "FactoryHasOpenSlot"
-          },
-          {
-            "test_type": "FocusTargetThreat",
-            "string0": "AntiNuke",
-            "compare0": "<=",
-            "value0": 0
           }
         ]
       ]
@@ -98,34 +27,8 @@
       "name": "Uber - Anti Nuke Missile",
       "to_build": "AntiNukeMissile",
       "instance_count": -1,
-      "min_num_assisters": 3,
       "max_num_assisters": 12,
       "priority": 152,
-      "builders": [
-        "AntiNukeSilo"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "FactoryHasOpenSlot"
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Uber - Anti Nuke Missile - Too Expensive",
-      "to_build": "AntiNukeMissile",
-      "instance_count": -1,
-      "max_num_assisters": 12,
-      "priority": 151,
       "builders": [
         "AntiNukeSilo"
       ],
@@ -167,10 +70,11 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "test_type": "SystemThreat",
+            "test_type": "SystemToPlanetThreatRatio",
             "string0": "Nuke",
+            "string1": "AntiNuke",
             "compare0": ">",
-            "value0": 0
+            "value0": 1
           }
         ],
         [
