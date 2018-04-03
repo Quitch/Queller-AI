@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### 4.25.1 - 2018-04-03
+
+ - Increased priority Uber gives to going orbital
+
 #### 4.25.0 - 2018-04-03
 
  - Fixed an error in Uber Air's economy handling
