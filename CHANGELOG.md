@@ -7,6 +7,7 @@
  - Fix for Legion Commanders not leaving their starting planet
  - Attempts to split up Commanders when playing in a shared army
  - Will move its Commander to other worlds to expand not just to escape
+ - Send fabbers to other planets when they have nothing to do on their current planet
 
 #### 4.24.0 - 2018-03-27
 
