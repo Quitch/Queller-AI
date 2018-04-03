@@ -5,6 +5,8 @@
  - Fixed an error in Uber Air's economy handling
  - Updated Uber Rush to make use of multiple Commanders
  - Fix for Legion Commanders not leaving their starting planet
+ - Continue to build basic energy into the late game
+ - Uber Legion checks it has enough fabbers before having them build energy
 
 #### 4.24.0 - 2018-03-27
 
