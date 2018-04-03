@@ -1,6 +1,6 @@
 # CHANGELOG
 
-####
+#### 4.25.0 - 2018-04-03
 
  - Fixed an error in Uber Air's economy handling
  - Updated Uber Rush to make use of multiple Commanders
