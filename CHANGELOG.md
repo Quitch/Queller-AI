@@ -8,6 +8,7 @@
  - Continue to build basic energy into the late game
  - Uber Legion checks it has enough fabbers before having them build energy
  - Uber more likely to throw additional resources at building nukes
+ - Uber less likely to throw additional resources at anti-nukes with a missile in the silo
 
 #### 4.24.0 - 2018-03-27
 

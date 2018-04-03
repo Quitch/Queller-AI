@@ -67,14 +67,11 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "HaveHadANukeEvent",
+            "boolean": true
           },
           {
-            "test_type": "SystemToPlanetThreatRatio",
-            "string0": "Nuke",
-            "string1": "AntiNuke",
-            "compare0": ">",
-            "value0": 1
+            "test_type": "CanAffordBuildDemand"
           }
         ],
         [
@@ -88,11 +85,33 @@
             "boolean": true
           },
           {
-            "test_type": "HaveHadANukeEvent",
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Nuke",
+            "compare0": ">",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
             "boolean": true
           },
           {
+            "test_type": "FactoryHasOpenSlot"
+          },
+          {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemToPlanetThreatRatio",
+            "string0": "Nuke",
+            "string1": "AntiNuke",
+            "compare0": ">",
+            "value0": 1
           }
         ]
       ]
