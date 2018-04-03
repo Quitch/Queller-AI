@@ -160,9 +160,9 @@ function qQuellerAI() {
         'Q-Uber Air': {
             display_name: '!LOC:Q-Uber Air',
             metal_drain_check: 0.54,
-            energy_drain_check: 0.65,
+            energy_drain_check: 0.57,
             metal_demand_check: 0.85,
-            energy_demand_check: 0.8,
+            energy_demand_check: 0.72,
             micro_type: 2,
             go_for_the_kill: true,
             priority_scout_metal_spots: true,
@@ -299,7 +299,8 @@ function qQuellerAI() {
             personality_tags:
                 [
                     "uber",
-                    "bot"
+                    "bot",
+                    "rush"
                 ],
             min_basic_fabbers: 2,
             min_advanced_fabbers: 1
@@ -391,7 +392,7 @@ function qQuellerAI() {
     model.aiPersonalities.valueHasMutated();
 
     _.defer(function () {
-        model.localChatMessage(loc("!LOC:Queller AI"), loc("!LOC:by Quitch. Version 4.24.0. My difficulties are prefixed with a Q. I support the Legion Expansion."));
+        model.localChatMessage(loc("!LOC:Queller AI"), loc("!LOC:by Quitch. Version 4.25.0. My difficulties are prefixed with a Q. I support the Legion Expansion."));
     });
 
 }

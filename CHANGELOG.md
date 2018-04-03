@@ -1,5 +1,15 @@
 # CHANGELOG
 
+#### 4.25.0 - 2018-04-03
+
+ - Fixed an error in Uber Air's economy handling
+ - Updated Uber Rush to make use of multiple Commanders
+ - Fix for Legion Commanders not leaving their starting planet
+ - Continue to build basic energy into the late game
+ - Uber Legion checks it has enough fabbers before having them build energy
+ - Uber more likely to throw additional resources at building nukes
+ - Uber less likely to throw additional resources at anti-nukes with a missile in the silo
+
 #### 4.24.0 - 2018-03-27
 
  - Corrected issue on naval maps which could cause Bronze and Silver to not produce fabbers
