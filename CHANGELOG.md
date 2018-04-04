@@ -1,5 +1,9 @@
 # CHANGELOG
 
+####
+
+ - Updated German translation with thanks to tunsel
+
 #### 4.25.1 - 2018-04-03
 
  - Increased priority Uber gives to going orbital
