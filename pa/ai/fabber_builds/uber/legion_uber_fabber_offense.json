@@ -291,13 +291,6 @@
             "boolean": false
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Orbital",
-            "string1": "AntiOrbital",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -328,7 +321,7 @@
       "shared_instance_count": "NukeSilo",
       "min_num_assisters": 8,
       "max_num_assisters": 45,
-      "priority": 381,
+      "priority": 380,
       "base_sort": "FromMainBase",
       "builders": [
         "AnyLegionFabberAdvanced"
@@ -339,6 +332,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "PlanetIsRespawnable",
@@ -432,13 +429,6 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Orbital",
-            "string1": "AntiOrbital",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -496,13 +486,6 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Orbital",
-            "string1": "AntiOrbital",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -511,17 +494,17 @@
             "value0": 1
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber - Orbital",
-            "compare0": ">=",
-            "value0": 10
-          },
-          {
             "test_type": "AlliedUnitCountOnPlanet",
             "unit_type_string0": "ControlModule",
             "compare0": "<",
             "boolean": true,
             "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": ">=",
+            "value0": 10
           },
           {
             "test_type": "CanFindControlPointToBuild",
