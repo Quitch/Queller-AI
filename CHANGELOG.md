@@ -1,5 +1,11 @@
 # CHANGELOG
 
+#### 4.25.2 - 2018-04-08
+
+ - Updated German translation with thanks to tunsel
+ - Corrected some issues with Uber Legion's nuke builds
+ - Uber won't build long range artillery in reaction to naval any more
+
 #### 4.25.1 - 2018-04-03
 
  - Increased priority Uber gives to going orbital

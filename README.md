@@ -239,3 +239,4 @@ Queller currently supports:
  - DeathByDenim
  - River
  - Felix Köhler
+ - tunsel
