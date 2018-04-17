@@ -187,6 +187,9 @@ Be sure to follow the recommended number of players for any map.
 If you would like to help translate Queller to one of PA's languages then please drop me a line.
 
 Queller currently supports:
+ - Chinese (Hong Kong) (zh-HK)
+ - Chinese (Simplified) (zh-CN)
+ - Chinese (Traditional) (zh-TW)
  - Dutch (nl)
  - English (US) (en-US)
  - French (fr)
@@ -223,20 +226,20 @@ Queller currently supports:
 # THANKS TO
 
 - Sorian of Uber Entertainment for:
- - making his AI moddable
- - answering my questions
- - taking on suggestions
- - fixing bugs as they come up
- - adding cool new features which make the AI increasingly smart
+  - making his AI moddable
+  - answering my questions
+  - taking on suggestions
+  - fixing bugs as they come up
+  - adding cool new features which make the AI increasingly smart
 - wondible for his creation of the [AI Showdown](https://github.com/JustinLove/ai_showdown/) tool
 - mikeyh for writing the JavaScript for loading Queller's personalities
 - alpha2546 for extensively playtesting Queller during Legion Expansion development
 - Everyone who has helped with translations:
- - K-Orthic | Gamax
- - gmase
- - PRoeleert
- - R.O.S.S
- - DeathByDenim
- - River
- - Felix Köhler
- - tunsel
+  - K-Orthic | Gamax
+  - gmase
+  - PRoeleert
+  - R.O.S.S
+  - DeathByDenim
+  - River
+  - Felix Köhler
+  - tunsel

@@ -1,5 +1,12 @@
 # CHANGELOG
 
+#### 4.26.0 - 2018-04-17
+
+ - Added translations for:
+   - Chinese (Simplified) (zh-CN)
+   - Chinese (Traditional) (zh-TW)
+   - Chinese (Hong Kong) (zh-HK)
+
 #### 4.25.2 - 2018-04-08
 
  - Updated German translation with thanks to tunsel
