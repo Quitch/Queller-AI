@@ -187,6 +187,9 @@ Be sure to follow the recommended number of players for any map.
 If you would like to help translate Queller to one of PA's languages then please drop me a line.
 
 Queller currently supports:
+ - Chinese (Hong Kong) (zh-HK)
+ - Chinese (Simplified) (zh-CN)
+ - Chinese (Traditional) (zh-TW)
  - Dutch (nl)
  - English (US) (en-US)
  - French (fr)
