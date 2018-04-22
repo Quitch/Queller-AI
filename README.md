@@ -243,3 +243,4 @@ Queller currently supports:
   - River
   - Felix Köhler
   - tunsel
+  - omylist
