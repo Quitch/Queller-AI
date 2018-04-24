@@ -392,7 +392,7 @@ function qQuellerAI() {
     model.aiPersonalities.valueHasMutated();
 
     _.defer(function () {
-        model.localChatMessage(loc("!LOC:Queller AI"), loc("!LOC:by Quitch. Version 4.25.2. My difficulties are prefixed with a Q. I support the Legion Expansion."));
+        model.localChatMessage(loc("!LOC:Queller AI"), loc("!LOC:by Quitch. Version 4.26.1. My difficulties are prefixed with a Q. I support the Legion Expansion."));
     });
 
 }

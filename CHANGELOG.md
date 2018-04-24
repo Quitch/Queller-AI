@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### 4.26.1 - 2018-04-24
+
+ - Corrections to Chinese translations with thanks to omylist
+
 #### 4.26.0 - 2018-04-17
 
  - Added translations for:
