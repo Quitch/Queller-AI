@@ -2,7 +2,7 @@
 
 #### 4.26.2
 
- - Corrections and updates for Chinese (Traditional) with thanks to 祐隼 蔡
+ - Corrections and updates for Chinese (Traditional) with thanks to IPWIW
 
 #### 4.26.1 - 2018-04-24
 
