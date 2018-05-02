@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### 4.26.2
+#### 4.26.2 - 2018-05-02
 
  - Corrections and updates for Chinese (Traditional) with thanks to IPWIW
 
