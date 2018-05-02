@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### 4.26.2 - 2018-05-02
+
+ - Corrections and updates for Chinese (Traditional) with thanks to IPWIW
+
 #### 4.26.1 - 2018-04-24
 
  - Corrections to Chinese translations with thanks to omylist
