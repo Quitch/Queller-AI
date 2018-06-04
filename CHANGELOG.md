@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### 4.26.3
+#### 4.26.3 - 2018-06-04
 
  - Mod icon correctly linked using HTTPS
 
