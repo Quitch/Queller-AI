@@ -3,6 +3,7 @@
 #### 4.26.3 - 2018-06-04
 
  - Mod icon correctly linked using HTTPS
+ - Corrections and updates for Chinese (Traditional) with thanks to IPWIW
 
 #### 4.26.2 - 2018-05-02
 
