@@ -244,3 +244,4 @@ Queller currently supports:
   - Felix Köhler
   - tunsel
   - omylist
+  - IPWIW
