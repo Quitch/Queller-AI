@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### 4.27.0 - 2018-06-23
+#### 4.26.3 - 2018-06-23
 
  - Mod icon correctly linked using HTTPS
  - Corrections and updates for Chinese (Traditional) with thanks to IPWIW
