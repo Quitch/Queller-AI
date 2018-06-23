@@ -4,7 +4,6 @@
 
  - Mod icon correctly linked using HTTPS
  - Corrections and updates for Chinese (Traditional) with thanks to IPWIW
- - Added Improved AI Neural Network Weights mod as a dependency
 
 #### 4.26.2 - 2018-05-02
 
