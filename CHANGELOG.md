@@ -1,5 +1,9 @@
 # CHANGELOG
 
+####
+
+ - Uber doesn't run its energy as tight
+
 #### 4.26.3 - 2018-06-23
 
  - Mod icon correctly linked using HTTPS
