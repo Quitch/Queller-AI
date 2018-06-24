@@ -122,7 +122,7 @@ function qQuellerAI() {
             metal_drain_check: 0.54,
             energy_drain_check: 0.65,
             metal_demand_check: 0.85,
-            energy_demand_check: 0.82,
+            energy_demand_check: 0.8,
             micro_type: 2,
             go_for_the_kill: true,
             priority_scout_metal_spots: true,
