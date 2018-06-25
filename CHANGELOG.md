@@ -4,6 +4,7 @@
 
  - Uber doesn't run its energy as tight
  - Corrected an error in Uber's energy handling
+ - Lowered priority of building factories specifically for AA
 
 #### 4.26.3 - 2018-06-23
 
