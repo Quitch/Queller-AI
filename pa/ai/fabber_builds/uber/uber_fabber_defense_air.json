@@ -173,7 +173,7 @@
       "instance_count": 1,
       "max_num_assisters": 1,
       "priority": 456,
-      "base_sort": "FromMainBase",
+      "base_sort": "FromBuilder",
       "builders": [
         "UberCommander"
       ],
@@ -202,12 +202,6 @@
             "string0": "Air",
             "string1": "AntiAir",
             "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Commander",
-            "compare0": ">=",
             "value0": 1
           },
           {
