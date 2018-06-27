@@ -38,6 +38,10 @@
             "boolean": true
           },
           {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicVehicleFactory"
           },
@@ -202,6 +206,10 @@
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": false
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -568,6 +576,12 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory & Advanced - Orbital",
             "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">=",
             "value0": 1
           },
           {
