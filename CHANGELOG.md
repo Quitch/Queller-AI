@@ -18,6 +18,7 @@
  - Corrected some build condition name errors
  - Uber attempts to protect against Boom and Purger snipes
  - Uber avoids building factories using air fabbers as the initiating builder
+ - Uber more reliable at teching
 
 #### 4.26.3 - 2018-06-23
 
