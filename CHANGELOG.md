@@ -13,6 +13,7 @@
  - Uber Legion won't build more T1 bot factories for AA if it has a T2 bot factory
  - Uber Free-For-All uses less Locusts
  - Uber never uses GIL-E for AA
+ - Uber less likely to build Colonels
 
 #### 4.26.3 - 2018-06-23
 
