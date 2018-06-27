@@ -191,7 +191,7 @@
       "max_num_assisters": 4,
       "base_sort": "FromMainBase",
       "builders": [
-        "AnyLegionFabberBasic"
+        "AnyLegionBasicFabberLand"
       ],
       "build_conditions": [
         [
@@ -373,7 +373,7 @@
       "priority": 601,
       "builders": [
         "LegionCommander",
-        "AnyLegionFabberBasic",
+        "AnyLegionBasicFabber",
         "AnyLegionFabberAdvanced"
       ],
       "build_conditions": [
