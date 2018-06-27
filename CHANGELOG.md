@@ -12,6 +12,7 @@
  - Reduce the amount of T1 factories constructed as an AA measure
  - Uber Legion won't build more T1 bot factories for AA if it has a T2 bot factory
  - Uber Free-For-All uses less Locusts
+ - Uber never uses GIL-E for AA
 
 #### 4.26.3 - 2018-06-23
 
