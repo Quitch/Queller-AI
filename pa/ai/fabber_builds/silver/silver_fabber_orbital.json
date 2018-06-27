@@ -20,9 +20,6 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "OrbitalLauncher"
           },
@@ -59,9 +56,6 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
             "test_type": "PlanetCount",
             "compare0": ">",
             "value0": 1
@@ -92,9 +86,6 @@
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "PlanetCount",
@@ -148,9 +139,6 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "OrbitalLauncher"
           },
@@ -191,9 +179,6 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory & Advanced & Orbital",
             "compare0": "<",
@@ -209,9 +194,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "silver",
             "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "CanAffordPotentialDrain",
