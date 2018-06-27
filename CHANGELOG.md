@@ -8,6 +8,7 @@
  - Check Advanced Vehicle Fabricators can move around before building
  - Improve how Uber Commander protects itself from air snipes
  - Uber uses far less GIL-Es
+ - Uber uses less Bluehawks
 
 #### 4.26.3 - 2018-06-23
 
