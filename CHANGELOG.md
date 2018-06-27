@@ -15,6 +15,7 @@
  - Uber never uses GIL-E for AA
  - Uber less likely to build Colonels
  - Changed how factory build checks are performed from Silver upwards to encourage more builds and help performance
+ - Corrected some build condition name errors
 
 #### 4.26.3 - 2018-06-23
 
