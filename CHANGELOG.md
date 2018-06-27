@@ -5,7 +5,7 @@
  - Uber doesn't run its energy as tight
  - Corrected an error in Uber's energy handling
  - Lowered priority of building factories specifically for AA
- - Check Advanced Vehicle Fabricators can move around before building
+ - Check Advanced Vehicle Fabricators can move around before Uber builds them
  - Improve how Uber Commander protects itself from air snipes
  - Uber uses far less GIL-Es
  - Uber uses less Bluehawks
