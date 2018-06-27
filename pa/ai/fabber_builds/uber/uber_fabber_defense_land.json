@@ -89,6 +89,74 @@
       }
     },
     {
+      "name": "Uber - Single Laser Defense Tower - Snipe",
+      "to_build": "BasicLandDefenseSingle",
+      "instance_count": 1,
+      "priority": 454,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "UberCommander"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Bot & SelfDestruct & Basic",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Commander - Custom1",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & SurfaceDefense - Tactical - (CombatFabAdvBuild & Advanced & Custom1)",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicLandDefenseSingle"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & SurfaceDefense - Tactical - (CombatFabAdvBuild & Advanced & Custom1)",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
       "name": "Uber - Laser Defense Tower - Mex",
       "to_build": "BasicLandDefense",
       "instance_count": 1,
