@@ -19,6 +19,7 @@
  - Uber attempts to protect against Boom and Purger snipes
  - Uber avoids building factories using air fabbers as the initiating builder
  - Uber more reliable at teching
+ - Uber will build more advanced naval factories in ponds
 
 #### 4.26.3 - 2018-06-23
 
