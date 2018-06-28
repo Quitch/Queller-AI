@@ -21,7 +21,6 @@
  - Uber more consistent at teching
  - Uber will build more advanced naval factories in ponds
  - Uber MLA more willing to go tanks on planets it owns so as to increase likelihood of Levelers
- - Uber places a much greater emphasis on T2
  - Uber gives preference to energy over metal to prevent fabbers getting locked into area builds and stalling
  - Removed Uber Tech personality
  - Removed Uber Land personality
