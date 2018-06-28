@@ -165,7 +165,7 @@
       ]
     },
     {
-      "name": "Uber - Skitter",
+      "name": "Uber - Skitter - Minesweeper",
       "to_build": "LandScout",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -203,37 +203,6 @@
             "unit_type_string1": "Land & Mobile & Offense",
             "compare0": "<",
             "value0": 0.05
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Bot & Mobile & Advanced - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout - SelfDestruct - Titan",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Tank & Scout",
-            "compare0": "==",
-            "value0": 0
           }
         ]
       ]
