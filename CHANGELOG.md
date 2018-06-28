@@ -6,21 +6,21 @@
  - Corrected an error in Uber's energy handling
  - Lowered priority of building factories specifically for AA
  - Check Advanced Vehicle Fabricators can move around before Uber builds them
- - Improve how Uber Commander protects itself from air snipes
- - Uber uses far less GIL-Es
- - Uber uses less Bluehawks
+ - Improve how Uber's Commander protects itself from air snipes
+ - Uber MLA uses far less GIL-Es
+ - Uber MLA uses less Bluehawks
  - Reduce the amount of T1 factories constructed as an AA measure
  - Uber Legion won't build more T1 bot factories for AA if it has a T2 bot factory
- - Uber Free-For-All uses less Locusts
- - Uber never uses GIL-E for AA
- - Uber less likely to build Colonels
+ - Uber MLA Free-For-All uses less Locusts
+ - Uber MLA never uses GIL-E for AA
+ - Uber MLA less likely to build Colonels
  - Changed how factory build checks are performed from Silver upwards to encourage more builds and help performance
  - Corrected some build condition name errors
- - Uber attempts to protect against Boom and Purger snipes
+ - Uber's Commander attempts to better protect itself against Boom and Purger snipes
  - Uber avoids building factories using air fabbers as the initiating builder
  - Uber more reliable at teching
  - Uber will build more advanced naval factories in ponds
- - Uber more willing to go tanks on planets it owns so as to increase likelihood of Levelers
+ - Uber MLA more willing to go tanks on planets it owns so as to increase likelihood of Levelers
 
 #### 4.26.3 - 2018-06-23
 
