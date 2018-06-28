@@ -18,7 +18,7 @@
  - Corrected some build condition name errors
  - Uber's Commander attempts to better protect itself against Boom and Purger snipes
  - Uber avoids building factories using air fabbers as the initiating builder
- - Uber more reliable at teching
+ - Uber more consistent at teching
  - Uber will build more advanced naval factories in ponds
  - Uber MLA more willing to go tanks on planets it owns so as to increase likelihood of Levelers
 
