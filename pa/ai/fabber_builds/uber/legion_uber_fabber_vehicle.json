@@ -37,6 +37,10 @@
             "boolean": true
           },
           {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": false
+          },
+          {
             "test_type": "UnitCountPerPlanetRadius",
             "unit_type_string0": "Bot & Factory & Basic",
             "compare0": ">",
@@ -217,6 +221,10 @@
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": false
           },
           {
             "test_type": "UnitCountPerPlanetRadius",

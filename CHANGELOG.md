@@ -21,6 +21,7 @@
  - Uber more consistent at teching
  - Uber will build more advanced naval factories in ponds
  - Uber MLA more willing to go tanks on planets it owns so as to increase likelihood of Levelers
+ - Uber places a much greater emphasis on T2
 
 #### 4.26.3 - 2018-06-23
 
