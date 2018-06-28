@@ -20,6 +20,7 @@
  - Uber avoids building factories using air fabbers as the initiating builder
  - Uber more reliable at teching
  - Uber will build more advanced naval factories in ponds
+ - Uber more willing to go tanks on planets it owns so as to increase likelihood of Levelers
 
 #### 4.26.3 - 2018-06-23
 

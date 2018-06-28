@@ -30,31 +30,6 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "BasicVehicleFactory"
           }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "tank",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicVehicleFactory"
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Tank & Factory",
-            "compare0": "<",
-            "value0": 250
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicVehicleFactory"
-          }
         ]
       ],
       "placement_rules": {
