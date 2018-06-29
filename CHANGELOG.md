@@ -24,6 +24,7 @@
  - Uber gives preference to energy over metal to prevent fabbers getting locked into area builds and stalling
  - Removed Uber Tech personality
  - Removed Uber Land personality
+ - Uber Free For All won't use fighters for scouting
 
 #### 4.26.3 - 2018-06-23
 
