@@ -27,6 +27,7 @@
  - Uber Free For All won't use fighters for scouting
  - Remove some checks which stopped Uber Free For All from using tanks when it should
  - Uber Naval uses more Krakens
+ - Separate Kaiju from naval platoons again to prevent hording when facing sub fleets
 
 #### 4.26.3 - 2018-06-23
 
