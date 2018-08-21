@@ -57,6 +57,33 @@
       ]
     },
     {
+      "name": "Uber Naval - Kraken",
+      "to_build": "MissileSub",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 198,
+      "builders": [
+        "AdvancedNavalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
       "name": "Legion - Uber Naval - Fabrication Flyer",
       "to_build": "LegionAirBasicFabber",
       "instance_count": 1,

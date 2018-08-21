@@ -26,6 +26,7 @@
  - Removed Uber Land personality
  - Uber Free For All won't use fighters for scouting
  - Remove some checks which stopped Uber Free For All from using tanks when it should
+ - Uber Naval uses more Krakens
 
 #### 4.26.3 - 2018-06-23
 
