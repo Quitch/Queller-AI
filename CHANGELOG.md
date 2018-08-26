@@ -28,6 +28,8 @@
  - Remove some checks which stopped Uber Free For All from using tanks when it should
  - Uber Naval uses more Krakens
  - Separate Kaiju from naval platoons again to prevent hording when facing sub fleets
+ - Uber assigns less fabbers to metal expansion when alone
+ - Fixed Uber Legion not properly checking for advanced metal extractor possibilities when alone
 
 #### 4.26.3 - 2018-06-23
 
