@@ -1,49 +1,9 @@
 {
   "build_list": [
     {
-      "name": "Uber - Advanced Metal Extractor - Area",
-      "to_build": "AdvancedMetalExtractor",
-      "instance_count": 4,
-      "min_num_assisters": 2,
-      "max_num_assisters": 6,
-      "shared_instance_count": "AdvancedMetal",
-      "priority": 401,
-      "base_sort": "FromBuilder",
-      "builders": [
-        "AnyUberAdvancedFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanFindMetalSpotToBuildAdvanced",
-            "boolean": true
-          }
-        ]
-      ],
-      "placement_rules": {
-        "placement_type": "FromBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      },
-      "task_type": "AreaBuild"
-    },
-    {
-      "name": "Uber - Basic Metal Extractor - Area",
+      "name": "Uber - Basic Metal Extractor - Alone",
       "to_build": "BasicMetalExtractor",
-      "instance_count": 4,
+      "instance_count": 3,
       "min_num_assisters": 1,
       "max_num_assisters": 2,
       "shared_instance_count": "BasicMetal",
@@ -298,6 +258,46 @@
           "value": 50
         }
       }
+    },
+    {
+      "name": "Uber - Advanced Metal Extractor - Alone",
+      "to_build": "AdvancedMetalExtractor",
+      "instance_count": 2,
+      "min_num_assisters": 2,
+      "max_num_assisters": 6,
+      "shared_instance_count": "AdvancedMetal",
+      "priority": 401,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildAdvanced",
+            "boolean": true
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "task_type": "AreaBuild"
     },
     {
       "name": "Uber - Advanced Metal Extractor - Area",
