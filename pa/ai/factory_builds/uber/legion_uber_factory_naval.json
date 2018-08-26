@@ -270,11 +270,11 @@
       ]
     },
     {
-      "name": "Legion - Uber - Advanced Fabrication Barge",
+      "name": "Legion - Uber - Advanced Fabrication Barge - Initial",
       "to_build": "LegionNavalAdvancedFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
-      "priority": 199,
+      "priority": 200,
       "builders": [
         "LegionFactoryAdvancedNaval"
       ],
@@ -295,7 +295,19 @@
             "compare0": "<",
             "value0": 1
           }
-        ],
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Uber - Advanced Fabrication Barge",
+      "to_build": "LegionNavalAdvancedFabber",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": [
+        "LegionFactoryAdvancedNaval"
+      ],
+      "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",

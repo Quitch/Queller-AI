@@ -30,6 +30,7 @@
  - Separate Kaiju from naval platoons again to prevent hording when facing sub fleets
  - Uber assigns less fabbers to metal expansion when alone
  - Fixed Uber Legion not properly checking for advanced metal extractor possibilities when alone
+ - Uber Naval builds an advanced naval fabber before advanced offensive ships
 
 #### 4.26.3 - 2018-06-23
 

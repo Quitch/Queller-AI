@@ -339,11 +339,11 @@
       ]
     },
     {
-      "name": "Uber - Advanced Naval Fabber",
+      "name": "Uber - Advanced Naval Fabber - Initial",
       "to_build": "AdvancedNavalFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
-      "priority": 199,
+      "priority": 200,
       "builders": [
         "AdvancedNavalFactory"
       ],
@@ -364,7 +364,19 @@
             "compare0": "<",
             "value0": 1
           }
-        ],
+        ]
+      ]
+    },
+    {
+      "name": "Uber - Advanced Naval Fabber",
+      "to_build": "AdvancedNavalFabber",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": [
+        "AdvancedNavalFactory"
+      ],
+      "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
