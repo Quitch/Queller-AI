@@ -21,7 +21,6 @@
  - Uber more consistent at teching
  - Uber will build more advanced naval factories in ponds
  - Uber MLA more willing to go tanks on planets it owns so as to increase likelihood of Levelers
- - Uber gives preference to energy over metal to prevent fabbers getting locked into area builds and stalling
  - Removed Uber Tech personality
  - Removed Uber Land personality
  - Uber Free For All won't use fighters for scouting
@@ -32,6 +31,7 @@
  - Fixed Uber Legion not properly checking for advanced metal extractor possibilities when alone
  - Uber Naval builds an advanced naval fabber before advanced offensive ships
  - Delayed Uber's building of advanced air
+ - Revised how Uber prioritises metal and energy
 
 #### 4.26.3 - 2018-06-23
 
