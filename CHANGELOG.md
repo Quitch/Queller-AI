@@ -17,7 +17,7 @@
  - Changed how factory build checks are performed from Silver upwards to encourage more builds and help performance
  - Corrected some build condition name errors
  - Uber's Commander attempts to better protect itself against Boom and Purger snipes
- - Uber avoids building factories using air fabbers as the initiating builder
+ - Uber avoids building land factories using air fabbers as the initiating builder
  - Uber more consistent at teching
  - Uber will build more advanced naval factories in ponds
  - Uber MLA more willing to go tanks on planets it owns so as to increase likelihood of Levelers
@@ -27,10 +27,10 @@
  - Remove some checks which stopped Uber Free For All from using tanks when it should
  - Uber Naval uses more Krakens
  - Separate Kaiju from naval platoons again to prevent hording when facing sub fleets
- - Uber assigns less fabbers to metal expansion when alone
+ - Uber assigns less fabbers to metal expansion when alone than it did before
  - Fixed Uber Legion not properly checking for advanced metal extractor possibilities when alone
  - Uber Naval builds an advanced naval fabber before advanced offensive ships
- - Delayed Uber's building of advanced air
+ - Further delayed Uber's building of advanced air
  - Revised how Uber prioritises metal and energy
  - Uber Free For All is a little less expansive
 
