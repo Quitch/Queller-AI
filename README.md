@@ -11,7 +11,7 @@ Want to make your own AI? I've written [a guide to get you started](http://exodu
 
 # INSTALLATION
 
-You should download and install this mod via the Planetary Annihilation TITANS in-game Community Mod Manager.
+You should download and install this mod via the Planetary Annihilation TITANS in-game Community Mod Manager. You will need to [enable Community Mods](https://steamcommunity.com/sharedfiles/filedetails/?id=1417396826).
 
 # DIFFICULTY
 
