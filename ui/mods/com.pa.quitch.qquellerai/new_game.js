@@ -361,7 +361,7 @@ function qQuellerAI() {
             personality_tags:
                 [
                     "uberold",
-                    "air"
+                    "airold"
                 ],
             min_basic_fabbers: 3,
             min_advanced_fabbers: 1
@@ -382,7 +382,7 @@ function qQuellerAI() {
             personality_tags:
                 [
                     "uberold",
-                    "bot"
+                    "botold"
                 ],
             min_basic_fabbers: 3,
             min_advanced_fabbers: 1
@@ -403,7 +403,7 @@ function qQuellerAI() {
             personality_tags:
                 [
                     "uberold",
-                    "cautious"
+                    "cautiousold"
                 ],
             min_basic_fabbers: 4,
             min_advanced_fabbers: 1
@@ -424,7 +424,7 @@ function qQuellerAI() {
             personality_tags:
                 [
                     "uberold",
-                    "naval"
+                    "navalold"
                 ],
             min_basic_fabbers: 3,
             min_advanced_fabbers: 1
@@ -445,7 +445,7 @@ function qQuellerAI() {
             personality_tags:
                 [
                     "uberold",
-                    "orbital"
+                    "orbitalold"
                 ],
             min_basic_fabbers: 3,
             min_advanced_fabbers: 1
@@ -466,8 +466,8 @@ function qQuellerAI() {
             personality_tags:
                 [
                     "uberold",
-                    "bot",
-                    "rush"
+                    "botold",
+                    "rushold"
                 ],
             min_basic_fabbers: 2,
             min_advanced_fabbers: 1
@@ -488,7 +488,7 @@ function qQuellerAI() {
             personality_tags:
                 [
                     "uberold",
-                    "tank"
+                    "tankold"
                 ],
             min_basic_fabbers: 3,
             min_advanced_fabbers: 1
