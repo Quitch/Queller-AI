@@ -35,6 +35,7 @@
  - Uber Free For All is a little less expansive
  - Uber Air won't open with air
  - Uber more likely to produce Spinners when sighting air
+ - Reduced the percentage of Uber's land forces comprised of mobile AA
 
 #### 4.26.3 - 2018-06-23
 
