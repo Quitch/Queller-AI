@@ -2,7 +2,8 @@
 
 ####
 
- - Fix issue causing Gold to keep orbital fighters on gas giants too long
+ - Fix issue causing Silver, Gold and Platinum to keep orbital fighters on gas giants too long
+ - Fixed a build condition naming error for Catapults in Gold
 
 #### 4.27.0 - 2018-08-27
 
