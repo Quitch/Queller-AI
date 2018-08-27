@@ -33,6 +33,7 @@
  - Further delayed Uber's building of advanced air
  - Uber priortises metal expansion over energy
  - Uber Free For All is a little less expansive
+ - Uber Air won't open with air
 
 #### 4.26.3 - 2018-06-23
 
