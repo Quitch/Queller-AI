@@ -32,6 +32,7 @@
  - Uber Naval builds an advanced naval fabber before advanced offensive ships
  - Delayed Uber's building of advanced air
  - Revised how Uber prioritises metal and energy
+ - Uber Free For All is a little less expansive
 
 #### 4.26.3 - 2018-06-23
 
