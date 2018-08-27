@@ -1,5 +1,42 @@
 # CHANGELOG
 
+#### 4.27.0 - 2018-08-27
+
+ - Uber doesn't run its energy as tight
+ - Corrected an error in Uber's energy handling
+ - Lowered priority of building factories specifically for AA
+ - Check Advanced Vehicle Fabricators can move around before Uber builds them
+ - Improve how Uber's Commander protects itself from air snipes
+ - Uber MLA uses far less GIL-Es
+ - Uber MLA uses less Bluehawks
+ - Reduce the amount of T1 factories constructed as an AA measure
+ - Uber Legion won't build more T1 bot factories for AA if it has a T2 bot factory
+ - Uber MLA Free-For-All uses less Locusts
+ - Uber MLA never uses GIL-E for AA
+ - Uber MLA less likely to build Colonels
+ - Changed how factory build checks are performed from Silver upwards to encourage more builds and help performance
+ - Corrected some build condition name errors
+ - Uber's Commander attempts to better protect itself against Boom and Purger snipes
+ - Uber avoids building land factories using air fabbers as the initiating builder
+ - Uber more consistent at teching
+ - Uber will build more advanced naval factories in ponds
+ - Uber MLA more willing to go tanks on planets it owns so as to increase likelihood of Levelers
+ - Removed Uber Tech personality
+ - Removed Uber Land personality
+ - Uber Free For All won't use fighters for scouting
+ - Remove some checks which stopped Uber Free For All from using tanks when it should
+ - Uber Naval uses more Krakens
+ - Separate Kaiju from naval platoons again to prevent hording when facing sub fleets
+ - Uber assigns less fabbers to metal expansion when alone than it did before
+ - Fixed Uber Legion not properly checking for advanced metal extractor possibilities when alone
+ - Uber Naval builds an advanced naval fabber before advanced offensive ships
+ - Further delayed Uber's building of advanced air
+ - Uber priortises metal expansion over energy
+ - Uber Free For All is a little less expansive
+ - Uber Air won't open with air
+ - Uber more likely to produce Spinners when sighting air
+ - Reduced the percentage of Uber's land forces comprised of mobile AA
+
 #### 4.26.3 - 2018-06-23
 
  - Mod icon correctly linked using HTTPS
