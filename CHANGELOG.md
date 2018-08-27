@@ -1,6 +1,6 @@
 # CHANGELOG
 
-####
+#### 4.27.0 - 2018-08-27
 
  - Uber doesn't run its energy as tight
  - Corrected an error in Uber's energy handling
