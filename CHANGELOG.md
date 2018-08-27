@@ -1,5 +1,9 @@
 # CHANGELOG
 
+####
+
+ - Fix issue causing Gold to keep orbital fighters on gas giants too long
+
 #### 4.27.0 - 2018-08-27
 
  - Uber doesn't run its energy as tight
