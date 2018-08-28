@@ -1,6 +1,6 @@
 # CHANGELOG
 
-####
+#### 4.27.1 - 2018-08-28
 
  - Fixed issue causing Silver, Gold and Platinum to keep orbital fighters on gas giants too long
  - Fixed more build condition naming errors
