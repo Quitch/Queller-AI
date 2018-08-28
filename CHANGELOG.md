@@ -1,5 +1,11 @@
 # CHANGELOG
 
+#### 4.27.1 - 2018-08-28
+
+ - Fixed issue causing Silver, Gold and Platinum to keep orbital fighters on gas giants too long
+ - Fixed more build condition naming errors
+ - Fixed lobby version chat message being incorrect
+
 #### 4.27.0 - 2018-08-27
 
  - Uber doesn't run its energy as tight
