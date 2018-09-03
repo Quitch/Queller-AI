@@ -10,6 +10,7 @@
  - Casual more likely to build Unit Cannon
  - Casual will send Manhattans through teleporters
  - Casual, Bronze and Silver now rush anti-nukes when necessary
+ - Fixed the amount of anti-orbital being placed by Legion at low difficulty levels
 
 #### 4.27.1 - 2018-08-28
 
