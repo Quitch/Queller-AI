@@ -30,6 +30,27 @@
             "compare0": ">=",
             "value0": 10
           }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "casual",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "CanProvideLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Tank & Important - Titan",
+            "compare0": ">=",
+            "value0": 1
+          }
         ]
       ],
       "task_type": "TeleportLandToPlanet"
