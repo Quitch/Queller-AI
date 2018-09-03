@@ -7,6 +7,7 @@
  - Bronze won't grow its air presence when alone on a planet
  - Casual, Bronze and Silver won't grow their naval presence when alone on a planet
  - Casual and Bronze won't build Halleys on their main eco planet
+ - Casual more likely to build Unit Cannon
 
 #### 4.27.1 - 2018-08-28
 
