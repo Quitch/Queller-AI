@@ -3,6 +3,7 @@
 ####
 
  - Casual won't build most defences or artillery when alone
+ - Casual places less Umbrellas in bases
 
 #### 4.27.1 - 2018-08-28
 
