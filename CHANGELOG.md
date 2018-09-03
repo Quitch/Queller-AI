@@ -1,6 +1,6 @@
 # CHANGELOG
 
-####
+#### 4.28.0 - 2018-09-03
 
  - Casual, Bronze and Silver won't build most defences or artillery when alone
  - Casual places less Umbrellas in bases
