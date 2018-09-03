@@ -1,5 +1,9 @@
 # CHANGELOG
 
+####
+
+ - Casual won't build most defences or artillery when alone
+
 #### 4.27.1 - 2018-08-28
 
  - Fixed issue causing Silver, Gold and Platinum to keep orbital fighters on gas giants too long
