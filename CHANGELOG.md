@@ -1,5 +1,20 @@
 # CHANGELOG
 
+#### 4.28.0 - 2018-09-03
+
+ - Casual, Bronze and Silver won't build most defences or artillery when alone
+ - Casual places less Umbrellas in bases
+ - Bronze won't grow its air presence when alone on a planet
+ - Casual, Bronze and Silver won't grow their naval presence when alone on a planet
+ - Casual and Bronze won't build Halleys on their main eco planet
+ - Casual more likely to build Unit Cannon
+ - Casual will send Manhattans through teleporters
+ - Casual, Bronze and Silver now rush anti-nukes when necessary
+ - Fixed the amount of anti-orbital being placed by Legion at low difficulty levels
+ - Reduced the amount of orbital defence placed by Casual
+ - Fixed Causal, Bronze and Silver not properly using hover units
+ - Properly exclude hover units from offensive scout platoons
+
 #### 4.27.1 - 2018-08-28
 
  - Fixed issue causing Silver, Gold and Platinum to keep orbital fighters on gas giants too long
