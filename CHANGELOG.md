@@ -9,6 +9,7 @@
  - Casual and Bronze won't build Halleys on their main eco planet
  - Casual more likely to build Unit Cannon
  - Casual will send Manhattans through teleporters
+ - Casual, Bronze and Silver now rush anti-nukes when necessary
 
 #### 4.27.1 - 2018-08-28
 

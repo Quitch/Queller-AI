@@ -1186,6 +1186,87 @@
           }
         ]
       }
+    },
+    {
+      "name": "Legion - Silver - Iron Dome - Rush",
+      "to_build": "LegionDefenseAdvancedAntiNukeSilo",
+      "instance_count": 1,
+      "shared_instance_count": "SuperWeapon",
+      "priority": 510,
+      "min_num_assisters": 5,
+      "max_num_assisters": 12,
+      "builders": [
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveHadANukeEvent",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionDefenseAdvancedAntiNukeSilo"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & NukeDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedAntiNukeSilo"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionDefenseAdvancedAntiNukeSilo"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Nuke",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & NukeDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedAntiNukeSilo"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
     }
   ]
 }
