@@ -2,7 +2,7 @@
 
 ####
 
- - Casual won't build most defences or artillery when alone
+ - Casual, Bronze and Silver won't build most defences or artillery when alone
  - Casual places less Umbrellas in bases
  - Bronze won't grow its air presence when alone on a planet
  - Casual, Bronze and Silver won't grow their naval presence when alone on a planet

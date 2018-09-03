@@ -19,6 +19,10 @@
             "boolean": true
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -81,6 +85,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "bronze",
             "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -149,6 +157,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "bronze",
             "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -220,6 +232,10 @@
             "boolean": true
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
           },
@@ -286,6 +302,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "bronze",
             "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -357,6 +377,10 @@
             "boolean": true
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -420,6 +444,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "bronze",
             "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "CanDeployNavalFromBase",
@@ -496,6 +524,10 @@
             "boolean": true
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -553,6 +585,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "bronze",
             "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -624,6 +660,10 @@
             "boolean": true
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
@@ -686,6 +726,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "bronze",
             "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "CanDeployNavalFromBase",
@@ -757,6 +801,10 @@
             "boolean": true
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -814,6 +862,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "bronze",
             "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "CanDeployLandFromBase",
@@ -880,6 +932,10 @@
             "boolean": true
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -938,6 +994,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "bronze",
             "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "CanDeployNavalFromBase",
@@ -1083,9 +1143,9 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
+            "unit_type_string0": "Structure & OrbitalDefense",
             "compare0": "<",
-            "value0": 4
+            "value0": 3
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -1115,9 +1175,9 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
+            "unit_type_string0": "Structure & OrbitalDefense",
             "compare0": "<",
-            "value0": 4
+            "value0": 3
           },
           {
             "test_type": "CanFindPlaceToBuild",
