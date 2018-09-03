@@ -12,6 +12,7 @@
  - Casual, Bronze and Silver now rush anti-nukes when necessary
  - Fixed the amount of anti-orbital being placed by Legion at low difficulty levels
  - Reduced the amount of orbital defence placed by Casual
+ - Fixed Causal, Bronze and Silver not properly using hover units
 
 #### 4.27.1 - 2018-08-28
 
