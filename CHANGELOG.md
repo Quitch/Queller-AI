@@ -4,6 +4,7 @@
 
  - Casual won't build most defences or artillery when alone
  - Casual places less Umbrellas in bases
+ - Casual and Bronze won't grow their air presence when alone on a planet
 
 #### 4.27.1 - 2018-08-28
 
