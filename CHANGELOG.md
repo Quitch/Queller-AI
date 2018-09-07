@@ -1,6 +1,6 @@
 # CHANGELOG
 
-####
+#### 4.28.1 - 2019-09-07
 
  - Bronze, Silver and Gold now always make sure to check if a naval route is available from a naval factory
  - Allow Uber to build advanced air a little earlier
