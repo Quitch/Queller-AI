@@ -1,5 +1,9 @@
 # CHANGELOG
 
+####
+
+ - Bronze, Silver and Gold now always make sure to check if a naval route is available from a naval factory
+
 #### 4.28.0 - 2018-09-03
 
  - Casual, Bronze and Silver won't build most defences or artillery when alone

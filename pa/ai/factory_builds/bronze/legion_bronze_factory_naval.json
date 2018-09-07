@@ -102,6 +102,27 @@
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
           }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Naval & Mobile & Offense - Hover",
+            "compare0": "<",
+            "value0": 4
+          }
         ]
       ]
     },
@@ -152,6 +173,27 @@
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
           }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Naval & Mobile & Offense - Hover",
+            "compare0": "<",
+            "value0": 4
+          }
         ]
       ]
     },
@@ -186,6 +228,27 @@
             "compare0": "<",
             "value0": 0.2
           }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Naval & Mobile & Offense - Hover",
+            "compare0": "<",
+            "value0": 4
+          }
         ]
       ]
     },
@@ -212,6 +275,27 @@
           {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Naval & Mobile & Offense - Hover",
+            "compare0": "<",
+            "value0": 4
           }
         ]
       ]
