@@ -630,22 +630,15 @@
             "boolean": true
           },
           {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Tank",
+            "test_type": "MetMinAdvancedFabberCount",
             "boolean": true
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Land & Mobile & Offense - Deconstruction - Fabber",
-            "compare0": ">",
-            "value0": 40
-          },
-          {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Land & Mobile & Artillery & Advanced",
-            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber - Basic",
+            "unit_type_string0": "(Tank | Bot) & Artillery & Advanced",
+            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
             "compare0": "<",
-            "value0": 0.1
+            "value0": 0.02
           }
         ],
         [
@@ -663,17 +656,15 @@
             "boolean": true
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Land & Mobile & Offense - Deconstruction - Fabber",
-            "compare0": ">",
-            "value0": 40
+            "test_type": "MetMinAdvancedFabberCount",
+            "boolean": true
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Land & Mobile & Artillery & Advanced",
-            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber - Basic",
+            "unit_type_string0": "(Tank | Bot) & Artillery & Advanced",
+            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
             "compare0": "<",
-            "value0": 0.1
+            "value0": 0.02
           },
           {
             "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
@@ -756,7 +747,7 @@
             "unit_type_string0": "Land & Mobile & AirDefense",
             "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
             "compare0": "<",
-            "value0": 0.2
+            "value0": 0.1
           }
         ],
         [
@@ -850,7 +841,7 @@
             "unit_type_string0": "Land & Mobile & AirDefense",
             "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
             "compare0": "<",
-            "value0": 0.2
+            "value0": 0.1
           },
           {
             "test_type": "OtherPlanetCanReceiveLandUnitAssistance",

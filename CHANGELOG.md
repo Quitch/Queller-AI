@@ -3,6 +3,7 @@
 ####
 
  - Uber Panzer builds properly updated for changes to anti-air ratios
+ - Uber builds less Deathmarks when facing bots
 
 #### 4.28.1 - 2019-09-07
 
