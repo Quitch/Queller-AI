@@ -7,6 +7,7 @@
  - Uber builds more Scorpions
  - Improved checks for water
  - Uber builds less Monstrosities
+ - Increased chance of Uber building an Ares
 
 #### 4.28.1 - 2019-09-07
 
