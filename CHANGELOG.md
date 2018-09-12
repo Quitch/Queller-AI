@@ -11,7 +11,7 @@
  - Fix for Gold and above getting in situations where they wouldn't scout orbitally
  - Check targets exist for nukes and unit cannons before building
  - Tweak to teleporter placement
- - Gold won't build Locusts in Unit Cannon to workaround an issue which caused them never to be fired
+ - Gold won't build Locusts in Unit Cannon to workaround an issue which caused them to not fire
 
 #### 4.28.1 - 2019-09-07
 
