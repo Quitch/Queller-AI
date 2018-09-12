@@ -9,7 +9,6 @@
  - Uber builds less Monstrosities
  - Increased chance of Uber building an Ares
  - Fix for Gold and above getting in situations where they wouldn't scout orbitally
- - Check targets exist for nukes and unit cannons before building
  - Tweak to teleporter placement
  - Gold won't build Locusts in Unit Cannon to workaround an issue which caused them to not fire
 
