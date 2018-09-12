@@ -178,6 +178,12 @@
             "boolean": false
           },
           {
+            "test_type": "SystemThreat",
+            "string0": "Economy",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
             "test_type": "FocusTargetThreatRatio",
             "string0": "Land",
             "string1": "AntiSurface",
@@ -240,6 +246,12 @@
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Economy",
+            "compare0": ">",
+            "value0": 0
           },
           {
             "test_type": "CanAffordBuildDemand"
