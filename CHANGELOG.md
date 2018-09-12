@@ -8,7 +8,7 @@
  - Improved checks for water
  - Uber builds less Monstrosities
  - Increased chance of Uber building an Ares
- - Fix for Gold and above getting in situations where they wouldn't scout orbitally limiting their use of interplanetary weapons
+ - Fix for Gold and above getting in situations where they wouldn't scout orbitally
  - Check targets exist for nukes and unit cannons before building
 
 #### 4.28.1 - 2019-09-07
