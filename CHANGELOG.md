@@ -26,6 +26,7 @@
  - Removed remaining references to Uber Land
  - Fix for Gold, Platinum and Uber building too many Marauders at once
  - Fixed Uber Tank not working correctly when playing as Legion
+ - Prevent Corsairs being put in the wrong squad
 
 #### 4.28.1 - 2019-09-07
 
