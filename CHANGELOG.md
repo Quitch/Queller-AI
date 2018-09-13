@@ -3,7 +3,7 @@
 #### 4.29.0 - 2019-09-13
 
  - Panzer builds at Uber level properly updated for changes to anti-air ratios
- - Uber builds less Deathmarks when facing bots
+ - Uber builds less Deathmarks
  - Uber builds more Scorpions
  - Improved checks for lava
  - Uber builds less Monstrosities
