@@ -11,6 +11,7 @@
  - Fix for Gold and above getting in situations where they wouldn't scout orbitally
  - Tweak to teleporter placement
  - Gold won't build Locusts in Unit Cannon to work around an issue which caused them to not fire
+ - Uber builds more Minimen in response to Scorpions
 
 #### 4.28.1 - 2019-09-07
 
