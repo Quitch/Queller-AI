@@ -14,7 +14,7 @@
  - Uber builds more Minimen in response to Scorpions
  - Uber won't build Praetorians in response to standard air
  - Uber Naval puts greater emphasis on T1 naval
- - Don't look for naval locations using land fabbers as it's rare enough that it's not worth the performance cost
+ - Don't look for naval build locations using land fabbers as it's rare enough that it's not worth the performance cost
  - Capped the number of naval scouts Uber will use
  - Uber won't build Hammerheads when it's losing the sub war
  - Uber forms larger naval platoons for Legion when using Catfish

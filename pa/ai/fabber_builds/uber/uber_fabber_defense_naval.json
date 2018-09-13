@@ -8,7 +8,8 @@
       "base_sort": "FromPerimeter",
       "builders": [
         "UberCommander",
-        "AnyUberBasicFabber"
+        "BasicAirFabber",
+        "BasicNavalFabber"
       ],
       "build_conditions": [
         [
@@ -131,7 +132,8 @@
       "base_sort": "FromMainBase",
       "builders": [
         "UberCommander",
-        "AnyUberBasicFabber"
+        "BasicAirFabber",
+        "BasicNavalFabber"
       ],
       "build_conditions": [
         [
@@ -257,7 +259,8 @@
       "max_num_assisters": 3,
       "base_sort": "FromMainBase",
       "builders": [
-        "AnyUberAdvancedFabber"
+        "AdvancedNavalFabber",
+        "AdvancedAirFabber"
       ],
       "build_conditions": [
         [

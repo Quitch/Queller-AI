@@ -8,7 +8,8 @@
       "base_sort": "FromPerimeter",
       "builders": [
         "LegionCommander",
-        "AnyLegionFabberBasic"
+        "LegionAirBasicFabber",
+        "LegionNavalBasicFabber"
       ],
       "build_conditions": [
         [
@@ -130,7 +131,8 @@
       "max_num_assisters": 3,
       "base_sort": "FromPerimeter",
       "builders": [
-        "AnyLegionFabberAdvanced"
+        "LegionNavalAdvancedFabber",
+        "LegionAirAdvancedFabber"
       ],
       "build_conditions": [
         [
@@ -208,7 +210,8 @@
       "base_sort": "FromMainBase",
       "builders": [
         "LegionCommander",
-        "AnyLegionFabberBasic"
+        "LegionAirBasicFabber",
+        "LegionNavalBasicFabber"
       ],
       "build_conditions": [
         [
@@ -322,7 +325,8 @@
       "max_num_assisters": 3,
       "base_sort": "FromMainBase",
       "builders": [
-        "AnyLegionFabberAdvanced"
+        "LegionNavalAdvancedFabber",
+        "LegionAirAdvancedFabber"
       ],
       "build_conditions": [
         [
