@@ -19,6 +19,8 @@
  - Uber won't build Hammerheads when it's losing the sub war
  - Uber forms larger naval platoons for Legion when using Catfish
  - Don't treat Kaijus as artillery
+ - Don't count Talos when forming offensive naval scout platoons
+ - Fixed hover units not being excluded from naval scout platoons by Silver and Uber
 
 #### 4.28.1 - 2019-09-07
 
