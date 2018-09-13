@@ -29,6 +29,7 @@
  - Prevent Corsairs being put in the wrong squad
  - Uber Naval will build air second with Legion as it doesn't have access to Patriots
  - Uber Naval can meet its base fabber requirements with air
+ - Uber Naval will always try to have at least one naval fabber to avoid getting stuck in an eco spiral with land fabbers on an island
 
 #### 4.28.1 - 2019-09-07
 
