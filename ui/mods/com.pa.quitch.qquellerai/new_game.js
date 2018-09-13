@@ -238,7 +238,7 @@ function qQuellerAI() {
                     "uber",
                     "naval"
                 ],
-            min_basic_fabbers: 3,
+            min_basic_fabbers: 1,
             min_advanced_fabbers: 1
         },
         'Q-Uber Orbital': {
@@ -351,7 +351,7 @@ function qQuellerAI() {
     model.aiPersonalities.valueHasMutated();
 
     _.defer(function () {
-        model.localChatMessage(loc("!LOC:Queller AI"), loc("!LOC:by Quitch. Version 4.28.1. My difficulties are prefixed with a Q. I support the Legion Expansion."));
+        model.localChatMessage(loc("!LOC:Queller AI"), loc("!LOC:by Quitch. Version 4.29.0. My difficulties are prefixed with a Q.  Don't make AI teams larger than human teams, increase the difficulty or the econ rate instead. I support the Legion Expansion."));
     });
 
 }

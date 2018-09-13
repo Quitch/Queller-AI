@@ -1,5 +1,35 @@
 # CHANGELOG
 
+#### 4.29.0 - 2019-09-13
+
+ - Panzer builds at Uber level properly updated for changes to anti-air ratios
+ - Uber builds less Deathmarks
+ - Uber builds more Scorpions
+ - Improved checks for lava
+ - Uber builds less Monstrosities
+ - Increased chance of Uber building an Ares
+ - Fix for Gold and above getting in situations where they wouldn't scout orbitally
+ - Tweak to teleporter placement
+ - Gold won't build Locusts in Unit Cannon to work around an issue which caused them not to fire
+ - Uber builds more Minimen in response to Scorpions
+ - Uber won't build Praetorians in response to non-Titan air
+ - Uber Naval puts greater emphasis on T1 naval when it's fighting a sub war
+ - Don't look for naval build locations using land fabbers as it's rare enough that it's not worth the performance cost
+ - Capped the number of naval scouts Uber will use
+ - Uber won't build Hammerheads when it's losing the sub war
+ - Uber forms larger naval platoons for Legion when using Catfish
+ - Don't treat Kaijus as artillery
+ - Don't count Talos when forming offensive naval scout platoons
+ - Fixed hover units not being excluded from offensive naval scout platoons by Silver and Uber
+ - Uber uses a higher number of Peacekeepers in its early game forces and maintains a small amount later on
+ - Expand lobby message to cover AI best practice
+ - Removed remaining references to Uber Land
+ - Fix for Gold, Platinum and Uber building too many Marauders at once
+ - Fixed Uber Tank not working correctly when playing as Legion
+ - Prevent Corsairs being put in the wrong squad
+ - Uber Naval will build air second with Legion as it doesn't have access to Patriots
+ - Uber Naval is smarter about meeting its fabber requirements
+
 #### 4.28.1 - 2019-09-07
 
  - Bronze, Silver and Gold now always make sure to check if a naval route is available from a naval factory
@@ -57,7 +87,7 @@
  - Fixed Uber Legion not properly checking for advanced metal extractor possibilities when alone
  - Uber Naval builds an advanced naval fabber before advanced offensive ships
  - Further delayed Uber's building of advanced air
- - Uber priortises metal expansion over energy
+ - Uber prioritises metal expansion over energy
  - Uber Free For All is a little less expansive
  - Uber Air won't open with air
  - Uber more likely to produce Spinners when sighting air
