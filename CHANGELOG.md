@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### 4.29.0 - 2019-09-13
+#### 4.29.0 - 2018-09-13
 
  - Panzer builds at Uber level properly updated for changes to anti-air ratios
  - Uber builds less Deathmarks
@@ -30,7 +30,7 @@
  - Uber Naval will build air second with Legion as it doesn't have access to Patriots
  - Uber Naval is smarter about meeting its fabber requirements
 
-#### 4.28.1 - 2019-09-07
+#### 4.28.1 - 2018-09-07
 
  - Bronze, Silver and Gold now always make sure to check if a naval route is available from a naval factory
  - Allow Uber to build advanced air a little earlier
