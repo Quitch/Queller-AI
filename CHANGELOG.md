@@ -13,7 +13,7 @@
  - Gold won't build Locusts in Unit Cannon to work around an issue which caused them to not fire
  - Uber builds more Minimen in response to Scorpions
  - Uber won't build Praetorians in response to standard air
- - Uber Naval puts greater emphasis on tier 1 naval
+ - Uber Naval puts greater emphasis on T1 naval
  - Don't look for naval locations using land fabbers as it's rare enough that it's not worth the performance cost
 
 #### 4.28.1 - 2019-09-07
