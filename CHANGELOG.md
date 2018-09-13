@@ -16,6 +16,7 @@
  - Uber Naval puts greater emphasis on T1 naval
  - Don't look for naval locations using land fabbers as it's rare enough that it's not worth the performance cost
  - Capped the number of Piranha scouts Uber will use
+ - Fixed Uber causing Uber to scout too much on naval maps
 
 #### 4.28.1 - 2019-09-07
 
