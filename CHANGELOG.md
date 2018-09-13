@@ -1,5 +1,9 @@
 # CHANGELOG
 
+####
+
+ - Uber Tank will go second air when playing as Legion
+
 #### 4.29.0 - 2018-09-13
 
  - Panzer builds at Uber level properly updated for changes to anti-air ratios
