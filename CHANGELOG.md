@@ -17,7 +17,7 @@
  - Don't look for naval locations using land fabbers as it's rare enough that it's not worth the performance cost
  - Capped the number of naval scouts Uber will use
  - Uber won't build Hammerheads when it's losing the sub war
- - Uber uses larger naval platoons for Legion
+ - Uber forms larger naval platoons for Legion when using Catfish
  - Don't treat Kaijus as artillery
 
 #### 4.28.1 - 2019-09-07
