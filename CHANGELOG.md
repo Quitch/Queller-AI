@@ -87,7 +87,7 @@
  - Fixed Uber Legion not properly checking for advanced metal extractor possibilities when alone
  - Uber Naval builds an advanced naval fabber before advanced offensive ships
  - Further delayed Uber's building of advanced air
- - Uber priortises metal expansion over energy
+ - Uber prioritises metal expansion over energy
  - Uber Free For All is a little less expansive
  - Uber Air won't open with air
  - Uber more likely to produce Spinners when sighting air
