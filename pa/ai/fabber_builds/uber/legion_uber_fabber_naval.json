@@ -202,7 +202,8 @@
       "max_num_assisters": 4,
       "base_sort": "FromMainBase",
       "builders": [
-        "AnyLegionFabberBasic",
+        "LegionAirBasicFabber",
+        "LegionNavalBasicFabber",
         "LegionNavalAdvancedFabber"
       ],
       "build_conditions": [
