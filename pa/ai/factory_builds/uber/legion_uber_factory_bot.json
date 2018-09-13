@@ -205,7 +205,7 @@
     {
       "name": "Legion - Uber - Peacekeeper",
       "to_build": "LegionBotBasicAssault",
-      "instance_count": -1,
+      "instance_count": 1,
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
@@ -229,7 +229,20 @@
             "compare0": "<=",
             "value0": 40
           }
-        ],
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Uber - Peacekeeper",
+      "to_build": "LegionBotBasicAssault",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 96,
+      "builders": [
+        "LegionFactoryBasicBot",
+        "LegionFactoryAdvancedBot"
+      ],
+      "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
@@ -244,6 +257,23 @@
             "test_type": "HaveSeenEnemyUnits",
             "unit_type_string0": "Tank",
             "boolean": false
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Land & Mobile - Fabber - AirDefense - Construction - Deconstruction - Artillery",
+            "compare0": "<=",
+            "value0": 40
           }
         ],
         [
@@ -274,7 +304,7 @@
       "to_build": "LegionBotBasicSniper",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 97,
+      "priority": 96,
       "builders": [
         "LegionFactoryBasicBot",
         "LegionFactoryAdvancedBot"
