@@ -152,7 +152,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Naval & Mobile & Offense) - (Scout - Custom1) - Hover - Sub - (AirDefense & Custom1)",
+            "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover - Custom1",
             "compare0": ">=",
             "value0": 1
           },
@@ -180,9 +180,71 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Naval & Mobile & Offense) - (Scout - Custom1) - Hover - AirDefense",
+            "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover - Custom1",
             "compare0": ">=",
             "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Naval",
+            "compare0": "<",
+            "value0": 6750
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSub",
+            "compare0": "<",
+            "value0": 1680
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Naval & Mobile & Offense & Custom1 - Hover - AirDefense",
+            "compare0": ">=",
+            "value0": 2
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSub",
+            "compare0": "<",
+            "value0": 1680
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Naval & Mobile & Offense & Custom1 - Hover - AirDefense",
+            "compare0": ">=",
+            "value0": 2
           },
           {
             "test_type": "CanAttackWithPoolUnits",
@@ -223,7 +285,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Naval & Mobile & Offense) - (Scout - Custom1) - Hover - Sub - (AirDefense & Custom1)",
+            "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover - Custom1",
             "compare0": ">=",
             "value0": 4
           },
@@ -251,9 +313,71 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Naval & Mobile & Offense) - (Scout - Custom1) - Hover - AirDefense",
+            "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover - Custom1",
             "compare0": ">=",
             "value0": 4
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Naval",
+            "compare0": "<",
+            "value0": 22477
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSub",
+            "compare0": "<",
+            "value0": 6720
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Naval & Mobile & Offense & Custom1 - Hover - AirDefense",
+            "compare0": ">=",
+            "value0": 8
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSub",
+            "compare0": "<",
+            "value0": 6720
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Naval & Mobile & Offense & Custom1 - Hover - AirDefense",
+            "compare0": ">=",
+            "value0": 8
           },
           {
             "test_type": "CanAttackWithPoolUnits",
@@ -294,7 +418,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Naval & Mobile & Offense) - (Scout - Custom1) - Hover - Sub - (AirDefense & Custom1)",
+            "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover - Custom1",
             "compare0": ">=",
             "value0": 8
           },
@@ -322,9 +446,71 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Naval & Mobile & Offense) - (Scout - Custom1) - Hover - AirDefense",
+            "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover - Custom1",
             "compare0": ">=",
             "value0": 8
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Naval",
+            "compare0": "<",
+            "value0": 44955
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSub",
+            "compare0": "<",
+            "value0": 13440
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Naval & Mobile & Offense & Custom1 - Hover - AirDefense",
+            "compare0": ">=",
+            "value0": 16
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSub",
+            "compare0": "<",
+            "value0": 13440
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Naval & Mobile & Offense & Custom1 - Hover - AirDefense",
+            "compare0": ">=",
+            "value0": 16
           },
           {
             "test_type": "CanAttackWithPoolUnits",
@@ -353,9 +539,31 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Naval & Mobile & Offense) - (Scout - Custom1) - Hover - (AirDefense & Custom1)",
+            "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover - Custom1",
             "compare0": ">=",
             "value0": 12
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Naval & Mobile & Offense & Custom1 - Hover - AirDefense",
+            "compare0": ">=",
+            "value0": 24
           },
           {
             "test_type": "CanAttackWithPoolUnits",

@@ -18,6 +18,7 @@
  - Capped the number of Piranha scouts Uber will use
  - Fixed Uber causing Uber to scout too much on naval maps
  - Uber won't build Hammerheads when it's losing the sub war
+ - Uber uses larger naval platoons for Legion
 
 #### 4.28.1 - 2019-09-07
 
