@@ -5,7 +5,7 @@
  - Panzer builds at Uber level properly updated for changes to anti-air ratios
  - Uber builds less Deathmarks when facing bots
  - Uber builds more Scorpions
- - Improved checks for water
+ - Improved checks for lava
  - Uber builds less Monstrosities
  - Increased chance of Uber building an Ares
  - Fix for Gold and above getting in situations where they wouldn't scout orbitally
