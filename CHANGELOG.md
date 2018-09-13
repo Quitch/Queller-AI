@@ -28,6 +28,7 @@
  - Fixed Uber Tank not working correctly when playing as Legion
  - Prevent Corsairs being put in the wrong squad
  - Uber Naval will build air second with Legion as it doesn't have access to Patriots
+ - Uber Naval can meet its base fabber requirements with air
 
 #### 4.28.1 - 2019-09-07
 
