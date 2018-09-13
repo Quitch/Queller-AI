@@ -1,13 +1,13 @@
 {
   "build_list": [
     {
-      "name": "Uber Naval - Basic Air Fabber",
-      "to_build": "BasicAirFabber",
+      "name": "Uber Naval - Basic Naval Fabber",
+      "to_build": "BasicNavalFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
       "priority": 100,
       "builders": [
-        "AnyUberAirFactory"
+        "AnyUberNavalFactory"
       ],
       "build_conditions": [
         [
@@ -22,9 +22,9 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber & Basic",
+            "unit_type_string0": "Fabber & Basic & Naval",
             "compare0": "<",
-            "value0": 3
+            "value0": 2
           }
         ]
       ]
@@ -80,13 +80,14 @@
       ]
     },
     {
-      "name": "Legion - Uber Naval - Fabrication Flyer",
-      "to_build": "LegionAirBasicFabber",
+      "name": "Legion - Uber Naval - Fabrication Barge",
+      "to_build": "LegionNavalBasicFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
       "priority": 100,
       "builders": [
-        "AnyLegionAirFactory"
+        "LegionFactoryBasicNaval",
+        "LegionFactoryAdvancedNaval"
       ],
       "build_conditions": [
         [
@@ -101,9 +102,9 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber & Basic",
+            "unit_type_string0": "Fabber & Basic & Naval",
             "compare0": "<",
-            "value0": 3
+            "value0": 2
           }
         ]
       ]

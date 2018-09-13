@@ -17,6 +17,11 @@
             "boolean": true
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
+          },
+          {
             "test_type": "BaseThreatened",
             "boolean": false
           },
@@ -25,23 +30,6 @@
             "unit_type_string0": "Fabber & Basic",
             "compare0": "<",
             "value0": 2
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber & Naval",
-            "compare0": "<",
-            "value0": 1
           }
         ],
         [
