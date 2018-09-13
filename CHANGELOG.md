@@ -25,6 +25,7 @@
  - Expand lobby message to cover AI best practice
  - Removed remaining references to Uber Land
  - Fix for Gold, Platinum and Uber building too many Marauders at once
+ - Fixed Uber Tank not working correctly when playing as Legion
 
 #### 4.28.1 - 2019-09-07
 
