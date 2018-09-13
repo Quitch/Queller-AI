@@ -238,7 +238,7 @@ function qQuellerAI() {
                     "uber",
                     "naval"
                 ],
-            min_basic_fabbers: 3,
+            min_basic_fabbers: 1,
             min_advanced_fabbers: 1
         },
         'Q-Uber Orbital': {
