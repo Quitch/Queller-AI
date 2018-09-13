@@ -2,7 +2,7 @@
 
 ####
 
- - Uber Panzer builds properly updated for changes to anti-air ratios
+ - Panzer builds at Uber level properly updated for changes to anti-air ratios
  - Uber builds less Deathmarks when facing bots
  - Uber builds more Scorpions
  - Improved checks for water
@@ -15,8 +15,7 @@
  - Uber won't build Praetorians in response to standard air
  - Uber Naval puts greater emphasis on T1 naval
  - Don't look for naval locations using land fabbers as it's rare enough that it's not worth the performance cost
- - Capped the number of Piranha scouts Uber will use
- - Fixed Uber causing Uber to scout too much on naval maps
+ - Capped the number of naval scouts Uber will use
  - Uber won't build Hammerheads when it's losing the sub war
  - Uber uses larger naval platoons for Legion
 
