@@ -22,6 +22,7 @@
  - Don't count Talos when forming offensive naval scout platoons
  - Fixed hover units not being excluded from naval scout platoons by Silver and Uber
  - Uber uses a higher number of Peacekeepers in its early game forces
+ - Expand lobby message to cover AI best practice
 
 #### 4.28.1 - 2019-09-07
 
