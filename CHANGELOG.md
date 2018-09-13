@@ -12,6 +12,7 @@
  - Tweak to teleporter placement
  - Gold won't build Locusts in Unit Cannon to work around an issue which caused them to not fire
  - Uber builds more Minimen in response to Scorpions
+ - Uber won't build Praetorians in response to standard air
 
 #### 4.28.1 - 2019-09-07
 
