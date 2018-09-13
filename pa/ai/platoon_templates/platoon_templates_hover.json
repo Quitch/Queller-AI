@@ -3,10 +3,16 @@
     "Hover_Attack_Lava_Queller": {
       "units": [
         {
-          "unit_types": "Hover & Mobile & (Naval | Artillery) - Titan",
+          "unit_types": "Hover & Mobile & (Naval | Artillery) & Custom1 - Titan",
           "min_count": 0,
           "max_count": -1,
           "squad": "Artillery"
+        },
+        {
+          "unit_types": "Hover & Mobile & Naval - Custom1 - Titan",
+          "min_count": 0,
+          "max_count": -1,
+          "squad": "General"
         },
         {
           "unit_types": "Hover & Mobile & Land - Titan - Deconstruction",
@@ -19,10 +25,16 @@
     "Hover_Attack_Water_Queller": {
       "units": [
         {
-          "unit_types": "Hover & Mobile & (Naval | Artillery) - Titan",
+          "unit_types": "Hover & Mobile & (Naval | Artillery) & Custom1 - Titan",
           "min_count": 0,
           "max_count": -1,
           "squad": "Artillery"
+        },
+        {
+          "unit_types": "Hover & Mobile & Naval - Custom1 - Titan",
+          "min_count": 0,
+          "max_count": -1,
+          "squad": "General"
         },
         {
           "unit_types": "(Hover | Sub) & Land & Mobile - Titan - Deconstruction",

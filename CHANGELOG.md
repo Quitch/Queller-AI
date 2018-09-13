@@ -18,6 +18,7 @@
  - Capped the number of naval scouts Uber will use
  - Uber won't build Hammerheads when it's losing the sub war
  - Uber uses larger naval platoons for Legion
+ - Don't treat Kaijus as artillery
 
 #### 4.28.1 - 2019-09-07
 
