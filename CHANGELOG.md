@@ -22,7 +22,7 @@
  - Don't count Talos when forming offensive naval scout platoons
  - Fixed hover units not being excluded from offensive naval scout platoons by Silver and Uber
  - Uber uses a higher number of Peacekeepers in its early game forces and maintains a small amount later on
- - Expand lobby message to cover AI best practice
+ - Expanded lobby message to cover AI best practice
  - Removed remaining references to Uber Land
  - Fix for Gold, Platinum and Uber building too many Marauders at once
  - Fixed Uber Tank not working correctly when playing as Legion
