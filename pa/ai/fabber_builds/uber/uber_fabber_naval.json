@@ -119,12 +119,12 @@
       }
     },
     {
-      "name": "Uber - Basic Naval Factory - Commander Stuck",
+      "name": "Uber - Basic Naval Factory - Start Naval",
       "to_build": "BasicNavalFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
       "max_num_assisters": 2,
-      "priority": 373,
+      "priority": 374,
       "base_sort": "FromMainBase",
       "builders": [
         "UberCommander"
@@ -142,16 +142,12 @@
             "boolean": false
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
             "test_type": "EnemyPresenceOnPlanet",
             "boolean": false
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory & Naval",
+            "unit_type_string0": "Factory",
             "compare0": "<",
             "value0": 1
           },
@@ -162,7 +158,7 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 5,
+        "buffer": 3,
         "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
