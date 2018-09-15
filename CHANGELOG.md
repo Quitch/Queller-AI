@@ -8,6 +8,7 @@
  - Uber will properly handle a naval opening - you should still use Uber Naval for these though
  - Fixed incorrect build condition name
  - Fixed some personality assignment errors
+ - Updated the translation files
 
 #### 4.29.0 - 2018-09-13
 
