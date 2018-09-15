@@ -197,6 +197,10 @@
             "boolean": false
           },
           {
+            "test_type": "EnemyPresenceOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": false
           },
@@ -205,8 +209,8 @@
             "string0": "BasicBotFactory"
           },
           {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Bot & Factory & Basic",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory",
             "compare0": "<",
             "value0": 1
           },
