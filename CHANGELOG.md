@@ -1,6 +1,6 @@
 # CHANGELOG
 
-####
+#### 4.29.1 - 2019-09-15
 
  - Uber Tank will go second air when playing as Legion
  - Fixed priority Uber Air gives to additional air factories when floating eco
