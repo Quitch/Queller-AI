@@ -1,6 +1,16 @@
 # CHANGELOG
 
-#### 4.29.0 - 2019-09-13
+#### 4.29.1 - 2019-09-15
+
+ - Uber Tank will go second air when playing as Legion
+ - Fixed priority Uber Air gives to additional air factories when floating eco
+ - Made changes to how Gold, Platinum and Uber handle not understanding the landing zone terrain
+ - Uber will properly handle a naval opening - you should still use Uber Naval for these though
+ - Fixed incorrect build condition name
+ - Fixed some personality assignment errors
+ - Updated the translation files
+
+#### 4.29.0 - 2018-09-13
 
  - Panzer builds at Uber level properly updated for changes to anti-air ratios
  - Uber builds less Deathmarks
@@ -8,7 +18,7 @@
  - Improved checks for lava
  - Uber builds less Monstrosities
  - Increased chance of Uber building an Ares
- - Fix for Gold and above getting in situations where they wouldn't scout orbitally
+ - Fix for Gold, Platinum and Uber getting in situations where they wouldn't scout orbitally
  - Tweak to teleporter placement
  - Gold won't build Locusts in Unit Cannon to work around an issue which caused them not to fire
  - Uber builds more Minimen in response to Scorpions
@@ -22,7 +32,7 @@
  - Don't count Talos when forming offensive naval scout platoons
  - Fixed hover units not being excluded from offensive naval scout platoons by Silver and Uber
  - Uber uses a higher number of Peacekeepers in its early game forces and maintains a small amount later on
- - Expand lobby message to cover AI best practice
+ - Expanded lobby message to cover AI best practice
  - Removed remaining references to Uber Land
  - Fix for Gold, Platinum and Uber building too many Marauders at once
  - Fixed Uber Tank not working correctly when playing as Legion
@@ -30,7 +40,7 @@
  - Uber Naval will build air second with Legion as it doesn't have access to Patriots
  - Uber Naval is smarter about meeting its fabber requirements
 
-#### 4.28.1 - 2019-09-07
+#### 4.28.1 - 2018-09-07
 
  - Bronze, Silver and Gold now always make sure to check if a naval route is available from a naval factory
  - Allow Uber to build advanced air a little earlier
@@ -160,11 +170,11 @@
  - Properly exclude hover titans and Locusts from hover platoons
  - Changed how Locusts are used to avoid them engaging units
  - Uber less likely to use support commanders
- - Lower the number of factories Gold and above can use to make Locusts
+ - Lower the number of factories Gold, Platinum and Uber can use to make Locusts
  - Uber makes greater use of turrets around its MEX
  - Uber doesn't place MEX defences as close to the main base
  - Uber tries to place defences to deal with Locust threats
- - Gold and above properly check energy before building orbital scouts
+ - Gold, Platinum and Uber properly check energy before building orbital scouts
  - Uber favours the Catapult over the Advanced Laser Turret
  - Uber checks advanced units are around before building Decimators
  - Casual through Silver should never get stuck on their starting island
@@ -189,7 +199,7 @@
  - Uber no longer requires a base amount of vehicle fabbers
  - Allow Uber to build Tyrs on multiple planets at the same time
  - Reduced Uber's usage of Anchors and Centurions to defend ground bases
- - Allow Gold and above to use Anchors and Centurions across more of a planet
+ - Allow Gold, Platinum and Uber to use Anchors and Centurions across more of a planet
  - Stopped Umbrellas including anti-ground defence in their placement calculations
  - Uber tries be smarter about when it needs certain anti-orbital units
  - Never have orbital scouts or radar perform recon on a gas giant
@@ -203,12 +213,12 @@
  - Less orbital defence at most levels
  - Uber uses less orbital fabbers outside gas giants
  - Orbital factory builds no longer block land factory builds
- - Gold and above choose between T2 factories or Unit Cannons to ensure focused builds
+ - Gold, Platinum and Uber choose between T2 factories or Unit Cannons to ensure focused builds
  - Uber Cautious is now Uber Free For All
  - Uber Free For All is less cautious
  - Don't build a transport for Commander evac if a teleporter is available
  - Won't allow gas giant attack bug to trap it in an anti-orbital build loop
- - Gold and above no longer increase the naval fabber to factory ratio when alone on a planet
+ - Gold, Platinum and Uber no longer increase the naval fabber to factory ratio when alone on a planet
  - Uber Free For All doesn't prioritise early air as highly
  - Place artillery slightly within max range to account for interference from planet curvature
  - Uber less likely to build Solar Arrays
@@ -688,7 +698,7 @@ The Queller AI **Client** is no longer required and should be uninstalled.
  - Uber will use basic radar to support T1 artillery
  - Ensure everything works as well as possible in a mixed faction shared army setup
  - Fixed overproduction of Angels
- - Fixed issue leading to little to no Kestrels at Gold and above
+ - Fixed issue leading to little to no Kestrels at Gold, Platinum and Uber
  - Restored air dominance Uber requires before building Kestrels
  - Uber no longer builds the Angel
  - Uber Air favours the Zeus and Loki titans
