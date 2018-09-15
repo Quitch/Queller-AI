@@ -164,18 +164,14 @@
             "boolean": false
           },
           {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": false
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicBotFactory"
           },
           {
-            "test_type": "UnitCountPerPlanetRadius",
+            "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Bot & Factory & Basic",
-            "compare0": "<=",
-            "value0": 250
+            "compare0": "<",
+            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",

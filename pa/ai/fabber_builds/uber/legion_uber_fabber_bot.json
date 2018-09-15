@@ -110,20 +110,18 @@
             "boolean": false
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
             "test_type": "CanDeployLandFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
             "boolean": false
           },
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "LegionFactoryBasicBot"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Bot & Factory & Basic",
+            "compare0": "<",
+            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
