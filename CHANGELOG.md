@@ -4,7 +4,7 @@
 
  - Uber Tank will go second air when playing as Legion
  - Fixed priority Uber Air gives to additional air factories when floating eco
- - Made changes to how Gold, Platinum and Uber handle not understanding the landing zone terrain to avoid them doing nothing
+ - Made changes to how Gold, Platinum and Uber handle not understanding the landing zone terrain
  - Uber will properly handle a naval opening - you should still use Uber Naval for these though
  - Fixed incorrect build condition name
  - Fixed some personality assignment errors
