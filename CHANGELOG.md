@@ -4,7 +4,7 @@
 
  - Uber Tank will go second air when playing as Legion
  - Fixed priority Uber Air gives to additional air factories when floating eco
- - Made changes to how Gold and above handle not understanding the landing zone terrain to avoid them doing nothing
+ - Made changes to how Gold, Platinum and Uber handle not understanding the landing zone terrain to avoid them doing nothing
  - Uber will properly handle a naval opening - you should still use Uber Naval for these though
  - Fixed incorrect build condition name
  - Fixed some personality assignment errors
@@ -17,7 +17,7 @@
  - Improved checks for lava
  - Uber builds less Monstrosities
  - Increased chance of Uber building an Ares
- - Fix for Gold and above getting in situations where they wouldn't scout orbitally
+ - Fix for Gold, Platinum and Uber getting in situations where they wouldn't scout orbitally
  - Tweak to teleporter placement
  - Gold won't build Locusts in Unit Cannon to work around an issue which caused them not to fire
  - Uber builds more Minimen in response to Scorpions
@@ -169,11 +169,11 @@
  - Properly exclude hover titans and Locusts from hover platoons
  - Changed how Locusts are used to avoid them engaging units
  - Uber less likely to use support commanders
- - Lower the number of factories Gold and above can use to make Locusts
+ - Lower the number of factories Gold, Platinum and Uber can use to make Locusts
  - Uber makes greater use of turrets around its MEX
  - Uber doesn't place MEX defences as close to the main base
  - Uber tries to place defences to deal with Locust threats
- - Gold and above properly check energy before building orbital scouts
+ - Gold, Platinum and Uber properly check energy before building orbital scouts
  - Uber favours the Catapult over the Advanced Laser Turret
  - Uber checks advanced units are around before building Decimators
  - Casual through Silver should never get stuck on their starting island
@@ -198,7 +198,7 @@
  - Uber no longer requires a base amount of vehicle fabbers
  - Allow Uber to build Tyrs on multiple planets at the same time
  - Reduced Uber's usage of Anchors and Centurions to defend ground bases
- - Allow Gold and above to use Anchors and Centurions across more of a planet
+ - Allow Gold, Platinum and Uber to use Anchors and Centurions across more of a planet
  - Stopped Umbrellas including anti-ground defence in their placement calculations
  - Uber tries be smarter about when it needs certain anti-orbital units
  - Never have orbital scouts or radar perform recon on a gas giant
@@ -212,12 +212,12 @@
  - Less orbital defence at most levels
  - Uber uses less orbital fabbers outside gas giants
  - Orbital factory builds no longer block land factory builds
- - Gold and above choose between T2 factories or Unit Cannons to ensure focused builds
+ - Gold, Platinum and Uber choose between T2 factories or Unit Cannons to ensure focused builds
  - Uber Cautious is now Uber Free For All
  - Uber Free For All is less cautious
  - Don't build a transport for Commander evac if a teleporter is available
  - Won't allow gas giant attack bug to trap it in an anti-orbital build loop
- - Gold and above no longer increase the naval fabber to factory ratio when alone on a planet
+ - Gold, Platinum and Uber no longer increase the naval fabber to factory ratio when alone on a planet
  - Uber Free For All doesn't prioritise early air as highly
  - Place artillery slightly within max range to account for interference from planet curvature
  - Uber less likely to build Solar Arrays
@@ -697,7 +697,7 @@ The Queller AI **Client** is no longer required and should be uninstalled.
  - Uber will use basic radar to support T1 artillery
  - Ensure everything works as well as possible in a mixed faction shared army setup
  - Fixed overproduction of Angels
- - Fixed issue leading to little to no Kestrels at Gold and above
+ - Fixed issue leading to little to no Kestrels at Gold, Platinum and Uber
  - Restored air dominance Uber requires before building Kestrels
  - Uber no longer builds the Angel
  - Uber Air favours the Zeus and Loki titans
