@@ -1,5 +1,9 @@
 # CHANGELOG
 
+####
+
+ - Fixed a bug which caused Uber Naval to sometimes start bots
+
 #### 4.29.1 - 2019-09-15
 
  - Uber Tank will go second air when playing as Legion
