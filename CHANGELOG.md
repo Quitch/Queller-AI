@@ -1,6 +1,6 @@
 # CHANGELOG
 
-####
+#### 4.29.2 - 2019-09-20
 
  - Fixed a bug which caused Uber Naval to sometimes start bots
 
