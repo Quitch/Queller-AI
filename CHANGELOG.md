@@ -16,6 +16,7 @@
  - Ensure advanced air fabbers try to build naval factories too
  - Fixed Uber Naval being unable to use Legion naval fabber to ensure the second factory is air
  - Help performance by limiting second air builds to the only fabber types that could exist
+ - Gold, Platinum and Uber won't wait so long to form Locust platoons
 
 #### 4.29.2 - 2019-09-20
 
