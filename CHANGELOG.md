@@ -11,6 +11,7 @@
  - Fixed some factory checks for Silver not having been properly updated for the changes in 4.27.0
  - Ensure opening naval factory checks are used in the opening only
  - Bronze properly only uses naval units when sharing a planet
+ - Changes to how all levels handle naval builds which should help performance but may make them slower to get in the water
 
 #### 4.29.2 - 2019-09-20
 

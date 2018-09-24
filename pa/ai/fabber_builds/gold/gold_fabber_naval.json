@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Gold - Basic Naval Factory - Commander - Initial",
+      "name": "Gold - Basic Naval Factory - Commander - Opening",
       "to_build": "BasicNavalFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicNavalFactory",
@@ -46,7 +46,7 @@
       }
     },
     {
-      "name": "Gold - Basic Naval Factory - Commander - Expansion",
+      "name": "Gold - Basic Naval Factory - Commander",
       "to_build": "BasicNavalFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -189,59 +189,7 @@
       }
     },
     {
-      "name": "Gold - Basic Naval Factory - Fabber - Initial",
-      "to_build": "BasicNavalFactory",
-      "instance_count": 1,
-      "shared_instance_count": "BasicNavalFactory",
-      "priority": 376,
-      "min_num_assisters": 2,
-      "max_num_assisters": 4,
-      "base_sort": "FromMainBase",
-      "builders": [
-        "BasicAirFabber",
-        "BasicNavalFabber",
-        "AdvancedNavalFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicNavalFactory"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory & Naval",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicNavalFactory"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 3,
-        "placement_type": "FromBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
-      "name": "Gold - Basic Naval Factory - Fabber - Expansion",
+      "name": "Gold - Basic Naval Factory - Fabber",
       "to_build": "BasicNavalFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
