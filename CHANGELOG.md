@@ -14,6 +14,7 @@
  - Changes to how all levels handle naval builds which should help performance but may make them slower to get in the water
  - Fixed Uber Naval still trying to build naval with land fabbers
  - Fixed Uber Naval not building naval foundries using air fabbers when playing Legion and floating eco
+ - Ensure advanced air fabbers try to build naval factories too
 
 #### 4.29.2 - 2019-09-20
 
