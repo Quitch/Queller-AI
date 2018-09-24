@@ -15,6 +15,7 @@
  - Fixed Uber Naval still trying to build naval with land fabbers
  - Fixed Uber Naval not building naval foundries using air fabbers when playing Legion and floating eco
  - Ensure advanced air fabbers try to build naval factories too
+ - Fixed Uber Naval being unable to use Legion naval fabber to ensure the second factory is air
 
 #### 4.29.2 - 2019-09-20
 
