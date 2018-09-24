@@ -3,7 +3,6 @@
 ####
 
  - Eliminated situation where Bronze and Silver would try to go naval when alone
- - Bronze more likely to enter the water when it has the chance
  - Uber will build a battleship in a pond and defend it with anti-air to control the area
  - Stopped Uber building more Narwhals than it should
  - Uber requires greater sub dominance before producing battleships
