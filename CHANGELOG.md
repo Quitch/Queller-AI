@@ -3,6 +3,7 @@
 ####
 
  - Eliminated situation where Bronze and Silver would try to go naval when alone
+ - Bronze more likely to enter the water when it has the chance
 
 #### 4.29.2 - 2019-09-20
 
