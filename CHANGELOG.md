@@ -9,6 +9,8 @@
  - Uber requires greater sub dominance before producing battleships
  - Changed how factory build checks are performed at Casual and Bronze to match the other levels
  - Fixed some factory checks for Silver not having been properly updated for the changes in 4.27.0
+ - Ensure opening naval factory checks are used in the opening only
+ - Bronze properly only uses naval units when sharing a planet
 
 #### 4.29.2 - 2019-09-20
 
