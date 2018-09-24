@@ -10,9 +10,9 @@
  - Fixed some factory checks for Silver not having been properly updated for the changes in 4.27.0
  - Ensure opening naval factory checks are used in the opening only
  - Bronze properly only uses naval units when sharing a planet
- - Changes to how all levels handle naval builds which should help performance but may make them slower to get in the water
+ - Changes to how all levels below Uber handle naval builds which should help performance but may make them slower to get in the water
  - Fixed Uber Naval still trying to build naval with land fabbers
- - Fixed Uber Naval not building naval foundries using air fabbers when playing Legion and floating eco
+ - Fixed Uber Naval not building Naval Foundries using air fabbers and floating eco
  - Ensure advanced air fabbers try to build naval factories too
  - Fixed Uber Naval being unable to use Legion naval fabber to ensure the second factory is air
  - Help performance by limiting second air builds to the only fabber types that could exist
