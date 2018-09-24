@@ -8,6 +8,7 @@
  - Stopped Uber building more Narwhals than it should
  - Uber requires greater sub dominance before producing battleships
  - Changed how factory build checks are performed at Casual and Bronze to match the other levels
+ - Fixed some factory checks for Silver not having been properly updated for the changes in 4.27.0
 
 #### 4.29.2 - 2019-09-20
 
