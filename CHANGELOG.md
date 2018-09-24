@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### 4.30.0 - 3019-09-24
+#### 4.30.0 - 2018-09-24
 
  - Eliminated situation where Bronze and Silver would try to go naval when alone
  - Uber will build a battleship in a pond and defend it with anti-air to control the area
@@ -19,11 +19,11 @@
  - Gold, Platinum and Uber won't wait so long to form Locust platoons
  - Added behaviour to help prevent Queller getting stuck with only a single factory if it went naval first on certain planet layouts
 
-#### 4.29.2 - 2019-09-20
+#### 4.29.2 - 2018-09-20
 
  - Fixed a bug which caused Uber Naval to sometimes start bots
 
-#### 4.29.1 - 2019-09-15
+#### 4.29.1 - 2018-09-15
 
  - Uber Tank will go second air when playing as Legion
  - Fixed priority Uber Air gives to additional air factories when floating eco
