@@ -7,6 +7,7 @@
  - Uber will build a battleship in a pond and defend it with anti-air to control the area
  - Stopped Uber building more Narwhals than it should
  - Uber requires greater sub dominance before producing battleships
+ - Changed how factory build checks are performed at Casual and Bronze to match the other levels
 
 #### 4.29.2 - 2019-09-20
 
