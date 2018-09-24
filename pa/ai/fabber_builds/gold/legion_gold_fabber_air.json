@@ -82,6 +82,62 @@
       }
     },
     {
+      "name": "Legion - Gold - Flyer Foundry - Stuck",
+      "to_build": "LegionFactoryBasicAir",
+      "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "priority": 10,
+      "max_num_assisters": 2,
+      "base_sort": "FromMainBase",
+      "builders": [
+        "LegionCommander",
+        "LegionAirBasicFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Naval",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Air",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicAir"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
       "name": "Legion - Gold - Flyer Foundry - Fabber",
       "to_build": "LegionFactoryBasicAir",
       "instance_count": 1,

@@ -17,6 +17,7 @@
  - Fixed Uber Naval being unable to use Legion naval fabber to ensure the second factory is air
  - Help performance by limiting second air builds to the only fabber types that could exist
  - Gold, Platinum and Uber won't wait so long to form Locust platoons
+ - Added behaviour to help prevent Queller getting stuck with only a single factory if it went naval first on certain planet layouts
 
 #### 4.29.2 - 2019-09-20
 

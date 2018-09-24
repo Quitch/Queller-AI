@@ -46,6 +46,62 @@
       }
     },
     {
+      "name": "Bronze - Basic Air Factory - Stuck",
+      "to_build": "BasicAirFactory",
+      "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "priority": 10,
+      "max_num_assisters": 10,
+      "base_sort": "FromMainBase",
+      "builders": [
+        "UberCommander",
+        "BasicNavalFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Naval",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Air",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicAirFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
       "name": "Bronze - Advanced Air Factory",
       "to_build": "AdvancedAirFactory",
       "instance_count": 1,
