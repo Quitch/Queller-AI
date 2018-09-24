@@ -1,5 +1,24 @@
 # CHANGELOG
 
+#### 4.30.0 - 3019-09-24
+
+ - Eliminated situation where Bronze and Silver would try to go naval when alone
+ - Uber will build a battleship in a pond and defend it with anti-air to control the area
+ - Stopped Uber building more Narwhals than it should
+ - Uber requires greater sub dominance before producing battleships
+ - Changed how factory build checks are performed at Casual and Bronze to match the other levels
+ - Fixed some factory checks for Silver not having been properly updated for the changes in 4.27.0
+ - Ensure opening naval factory checks are used in the opening only
+ - Bronze properly only uses naval units when sharing a planet
+ - Changes to how all levels below Uber handle naval builds which should help performance but may make them slower to get in the water
+ - Fixed Uber Naval still trying to build naval with land fabbers
+ - Fixed Uber Naval not building Naval Foundries using air fabbers and floating eco
+ - Ensure advanced air fabbers try to build naval factories too
+ - Fixed Uber Naval being unable to use Legion naval fabber to ensure the second factory is air
+ - Help performance by limiting second air builds to the only fabber types that could exist
+ - Gold, Platinum and Uber won't wait so long to form Locust platoons
+ - Added behaviour to help prevent Queller getting stuck with only a single factory if it went naval first on certain planet layouts
+
 #### 4.29.2 - 2019-09-20
 
  - Fixed a bug which caused Uber Naval to sometimes start bots
