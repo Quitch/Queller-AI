@@ -1,6 +1,6 @@
 # CHANGELOG
 
-####
+#### 4.30.0 - 3019-09-24
 
  - Eliminated situation where Bronze and Silver would try to go naval when alone
  - Uber will build a battleship in a pond and defend it with anti-air to control the area
