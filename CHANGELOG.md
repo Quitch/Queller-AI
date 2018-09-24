@@ -4,6 +4,7 @@
 
  - Eliminated situation where Bronze and Silver would try to go naval when alone
  - Bronze more likely to enter the water when it has the chance
+ - Uber will build a battleship in a pond and defend it with anti-air to control the area
 
 #### 4.29.2 - 2019-09-20
 
