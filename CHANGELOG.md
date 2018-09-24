@@ -12,6 +12,8 @@
  - Ensure opening naval factory checks are used in the opening only
  - Bronze properly only uses naval units when sharing a planet
  - Changes to how all levels handle naval builds which should help performance but may make them slower to get in the water
+ - Fixed Uber Naval still trying to build naval with land fabbers
+ - Fixed Uber Naval not building naval foundries using air fabbers when playing Legion and floating eco
 
 #### 4.29.2 - 2019-09-20
 
