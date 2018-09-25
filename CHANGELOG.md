@@ -9,6 +9,7 @@
  - Translation adjustments to better align with official translations
  - Uber no longer prematurely techs when using an elevated econ rate
  - Uber Naval uses less Kaiju
+ - Uber no longer idles T2 naval factories when switching to hover units and playing as Legion
 
 #### 4.31.0 - 2018-09-25
 
