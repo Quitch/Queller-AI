@@ -240,3 +240,6 @@ Queller currently supports:
   - tunsel
   - omylist
   - IPWIW
+  - Fred
+  - CmdrEdem
+  - something more than human
