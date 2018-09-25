@@ -5,6 +5,7 @@
  - Uber Naval won't build bot factories
  - Don't build bot factories specifically for amphibious usage
  - Uber uses less Narwhals
+ - Cleaned up some odd bot conditions in Gold and Platinum that I have no idea what I was doing with
 
 #### 4.31.0 - 2018-09-25
 
