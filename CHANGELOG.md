@@ -1,5 +1,15 @@
 # CHANGELOG
 
+#### 4.31.0 - 2018-09-25
+
+ - Fix version numbers not displaying in Chinese (Simplified)
+ - Unified Chinese (Traditional) and Chinese (HK) translations
+ - Update Korean translation with Judou marks
+ - Updated Italian translation with thanks to Fred
+ - Updated Spanish translation with thanks to Fred
+ - Added Portugese (Brazil) translation with thanks to CmdrEdem
+ - Added Russian translation with thanks to something more than human
+
 #### 4.30.1 - 2018-09-25
 
  - Removed empty strings from translations so they properly fallback to the source text

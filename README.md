@@ -189,6 +189,8 @@ Queller currently supports:
  - German (de)
  - Italian (it)
  - Korean (ko)
+ - Portugese (Brazil) (pt-BR)
+ - Russian (ru)
  - Spanish (es-ES)
 
 # KNOWN ISSUES
