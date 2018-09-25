@@ -7,7 +7,7 @@
  - Update Korean with Judou marks
  - Updated Italian translation with thanks to Fred
  - Updated Spanish translation with thanks to Fred
- - Added Portugese (Brazil) with thanks to CmdrEdem
+ - Added Portugese (Brazil) translation with thanks to CmdrEdem
  - Added Russian translation with thanks to something more than human
 
 #### 4.30.1 - 2018-09-25
