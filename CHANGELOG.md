@@ -1,5 +1,9 @@
 # CHANGELOG
 
+####
+
+ - Removed empty strings from translations so they properly fallback to the source text
+
 #### 4.30.0 - 2018-09-24
 
  - Eliminated situation where Bronze and Silver would try to go naval when alone
