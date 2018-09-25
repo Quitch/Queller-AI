@@ -4,6 +4,7 @@
 
  - Fix version numbers not displaying in Chinese (Simplified)
  - Unified Chinese (Traditional) and Chinese (HK) translations
+ - Update Korean with Judou marks
 
 #### 4.30.1 - 2018-09-25
 
