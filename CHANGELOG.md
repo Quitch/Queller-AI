@@ -13,6 +13,7 @@
  - Uber will build Advanced Torpedo Launchers outside the base
  - Uber more likely to build Tsunamis outside the base
  - Uber includes the Stingray in its anti-air ratio
+ - Uber Naval doesn't use pond builds
 
 #### 4.31.0 - 2018-09-25
 
