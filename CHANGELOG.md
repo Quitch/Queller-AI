@@ -1,6 +1,6 @@
 # CHANGELOG
 
-####
+#### 4.30.1 - 2018-09-25
 
  - Removed empty strings from translations so they properly fallback to the source text
 
