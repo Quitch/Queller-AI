@@ -1,5 +1,9 @@
 # CHANGELOG
 
+####
+
+ - Uber Naval won't build bots
+
 #### 4.31.0 - 2018-09-25
 
  - Fix version numbers not displaying in Chinese (Simplified)
