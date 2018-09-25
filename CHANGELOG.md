@@ -6,6 +6,7 @@
  - Don't build bot factories specifically for amphibious usage
  - Uber uses less Narwhals
  - Cleaned up some odd bot conditions in Gold and Platinum that I have no idea what I was doing with
+ - Translation adjustments to better align with official translations
 
 #### 4.31.0 - 2018-09-25
 
