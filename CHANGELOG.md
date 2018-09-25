@@ -8,6 +8,7 @@
  - Cleaned up some odd bot conditions in Gold and Platinum that I have no idea what I was doing with
  - Translation adjustments to better align with official translations
  - Uber no longer prematurely techs when using an elevated econ rate
+ - Uber Naval uses less Kaiju
 
 #### 4.31.0 - 2018-09-25
 

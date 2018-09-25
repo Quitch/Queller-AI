@@ -80,6 +80,29 @@
       ]
     },
     {
+      "name": "Uber Naval - Kaiju",
+      "to_build": "HoverShip",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 198,
+      "builders": [
+        "AdvancedNavalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
       "name": "Legion - Uber Naval - Fabrication Barge",
       "to_build": "LegionNavalBasicFabber",
       "instance_count": 1,
