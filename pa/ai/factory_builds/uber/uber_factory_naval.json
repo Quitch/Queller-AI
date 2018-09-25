@@ -218,7 +218,7 @@
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Naval & Mobile & AirDefense",
+            "unit_type_string0": "Naval & Mobile & (AirDefense | Tactical)",
             "unit_type_string1": "(Naval & Mobile) - Fabber - Hover",
             "compare0": "<",
             "value0": 0.1
@@ -525,6 +525,13 @@
             "string1": "AntiAir",
             "compare0": ">",
             "value0": 1
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Naval & Mobile & (AirDefense | Tactical)",
+            "unit_type_string1": "(Naval & Mobile) - Fabber - Hover",
+            "compare0": "<",
+            "value0": 0.1
           }
         ],
         [
