@@ -177,7 +177,7 @@ Be sure to follow the recommended number of players for any map.
 
 # TRANSLATIONS
 
-If you would like to help translate Queller to one of PA's languages then please drop me a line.
+Please help [translate Queller AI](https://poeditor.com/join/project/avPZrv6yyE) to your local language.
 
 Queller currently supports:
  - Chinese (Hong Kong) (zh-HK)
