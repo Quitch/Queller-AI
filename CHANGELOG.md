@@ -4,7 +4,7 @@
 
  - Fix version numbers not displaying in Chinese (Simplified)
  - Unified Chinese (Traditional) and Chinese (HK) translations
- - Update Korean with Judou marks
+ - Update Korean translation with Judou marks
  - Updated Italian translation with thanks to Fred
  - Updated Spanish translation with thanks to Fred
  - Added Portugese (Brazil) translation with thanks to CmdrEdem
