@@ -3,7 +3,7 @@
 ####
 
  - Fix version numbers not displaying in Chinese (Simplified)
- - Unified Chinese (Traditional) and Chinese (Hong Kong) translations
+ - Unified Chinese (Traditional) and Chinese (HK) translations
 
 #### 4.30.1 - 2018-09-25
 
