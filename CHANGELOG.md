@@ -3,6 +3,7 @@
 ####
 
  - Uber Naval won't build bots
+ - Uber no longer builds bot factories specifically for amphibious usage
 
 #### 4.31.0 - 2018-09-25
 
