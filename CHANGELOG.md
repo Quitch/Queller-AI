@@ -4,7 +4,7 @@
 
  - Uber Naval won't build bot factories
  - Uber no longer builds bot factories specifically for amphibious usage
- - Uber Naval uses less Narwhals
+ - Uber uses less Narwhals
 
 #### 4.31.0 - 2018-09-25
 
