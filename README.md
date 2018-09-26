@@ -191,7 +191,7 @@ Completed translations:
  - Spanish (es-ES)
  - Swedish (sv)
 
-Partial translations
+Partial translations:
 
  - Chinese (Simplified) (zh-CN)
  - Norwegian (no)
