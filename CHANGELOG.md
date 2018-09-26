@@ -15,6 +15,7 @@
  - Uber includes the Stingray in its anti-air ratio
  - Uber Naval doesn't use pond builds
  - Fixed Uber spamming Stingrays in ponds
+ - Added Swedish translation with thanks to Linus Petersson and Spassky
 
 #### 4.31.0 - 2018-09-25
 

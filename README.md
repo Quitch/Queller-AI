@@ -192,6 +192,7 @@ Queller currently supports:
  - Portuguese (Brazil) (pt-BR)
  - Russian (ru)
  - Spanish (es-ES)
+ - Swedish (sv)
 
 # KNOWN ISSUES
 
@@ -243,3 +244,5 @@ Queller currently supports:
   - Fred
   - CmdrEdem
   - something more than human
+  - Linus Petersson
+  - Spassky
