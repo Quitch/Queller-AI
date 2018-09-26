@@ -181,7 +181,6 @@ Please help [translate Queller AI](https://poeditor.com/join/project/avPZrv6yyE)
 
 Completed translations:
  - Chinese (Hong Kong) (zh-HK)
- - Chinese (Simplified) (zh-CN)
  - Chinese (Traditional) (zh-TW)
  - Dutch (nl)
  - English (US) (en-US)
@@ -196,6 +195,7 @@ Completed translations:
 
 Partial translations
 
+ - Chinese (Simplified) (zh-CN)
  - Norwegian (no)
  - Polish (pl-PL)
 
