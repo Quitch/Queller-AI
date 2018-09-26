@@ -169,9 +169,7 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 
 # MAP NOTES
 
-The spawn the AI starts in and the profile used can make a big difference, even for symmetrical 1v1s. If you find the AI too easy on a map, try a different spawn point for it.
-
-And don't use Bedlam, the AI's forces can't path find on this map.
+The spawn the AI starts in and the profile used can make a big difference, even for symmetrical 1v1s. If you find the AI too easy on a map, try a different spawn point for it. And don't use Bedlam, the AI's forces can't pathfind on this map.
 
 Be sure to follow the recommended number of players for any map.
 
