@@ -1,5 +1,23 @@
 # CHANGELOG
 
+#### 4.32.0 - 2018-09-26
+
+ - Uber Naval won't build bot factories
+ - Don't build bot factories specifically for amphibious usage
+ - Uber uses less Narwhals
+ - Cleaned up some odd bot conditions in Gold and Platinum that I have no idea what I was doing with
+ - Translation adjustments to better align with official translations
+ - Uber no longer prematurely techs when using an elevated econ rate
+ - Uber Naval uses less Kaiju
+ - Uber no longer idles T2 naval factories when switching to hover units and playing as Legion
+ - Uber will build Advanced Torpedo Launchers outside the base
+ - Uber more likely to build Tsunamis outside the base
+ - Uber includes the Stingray in its anti-air ratio
+ - Uber Naval doesn't use pond builds
+ - Fixed Uber spamming Stingrays in ponds
+ - Added Swedish translation with thanks to Linus Petersson and Spassky
+ - Added partial Norwegian translation with thanks to Spassky
+
 #### 4.31.0 - 2018-09-25
 
  - Fix version numbers not displaying in Chinese (Simplified)
@@ -7,7 +25,7 @@
  - Update Korean translation with Judou marks
  - Updated Italian translation with thanks to Fred
  - Updated Spanish translation with thanks to Fred
- - Added Portugese (Brazil) translation with thanks to CmdrEdem
+ - Added Portuguese (Brazil) translation with thanks to CmdrEdem
  - Added Russian translation with thanks to something more than human
 
 #### 4.30.1 - 2018-09-25

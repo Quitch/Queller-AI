@@ -169,9 +169,7 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 
 # MAP NOTES
 
-The spawn the AI starts in and the profile used can make a big difference, even for symmetrical 1v1s. If you find the AI too easy on a map, try a different spawn point for it.
-
-And don't use Bedlam, the AI's forces can't path find on this map.
+The spawn the AI starts in and the profile used can make a big difference, even for symmetrical 1v1s. If you find the AI too easy on a map, try a different spawn point for it. And don't use Bedlam, the AI's forces can't pathfind on this map.
 
 Be sure to follow the recommended number of players for any map.
 
@@ -179,9 +177,8 @@ Be sure to follow the recommended number of players for any map.
 
 Please help [translate Queller AI](https://poeditor.com/join/project/avPZrv6yyE) to your local language.
 
-Queller currently supports:
+Completed translations:
  - Chinese (Hong Kong) (zh-HK)
- - Chinese (Simplified) (zh-CN)
  - Chinese (Traditional) (zh-TW)
  - Dutch (nl)
  - English (US) (en-US)
@@ -189,9 +186,16 @@ Queller currently supports:
  - German (de)
  - Italian (it)
  - Korean (ko)
- - Portugese (Brazil) (pt-BR)
+ - Portuguese (Brazil) (pt-BR)
  - Russian (ru)
  - Spanish (es-ES)
+ - Swedish (sv)
+
+Partial translations
+
+ - Chinese (Simplified) (zh-CN)
+ - Norwegian (no)
+ - Polish (pl-PL)
 
 # KNOWN ISSUES
 
@@ -240,3 +244,8 @@ Queller currently supports:
   - tunsel
   - omylist
   - IPWIW
+  - Fred
+  - CmdrEdem
+  - something more than human
+  - Linus Petersson
+  - Spassky
