@@ -1,6 +1,6 @@
 # CHANGELOG
 
-####
+#### 4.32.0 - 2018-09-26
 
  - Uber Naval won't build bot factories
  - Don't build bot factories specifically for amphibious usage
