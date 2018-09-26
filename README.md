@@ -179,7 +179,7 @@ Be sure to follow the recommended number of players for any map.
 
 Please help [translate Queller AI](https://poeditor.com/join/project/avPZrv6yyE) to your local language.
 
-Queller currently supports:
+Completed translations:
  - Chinese (Hong Kong) (zh-HK)
  - Chinese (Simplified) (zh-CN)
  - Chinese (Traditional) (zh-TW)
@@ -193,6 +193,11 @@ Queller currently supports:
  - Russian (ru)
  - Spanish (es-ES)
  - Swedish (sv)
+
+Partial translations
+
+ - Norwegian (no)
+ - Polish (pl-PL)
 
 # KNOWN ISSUES
 

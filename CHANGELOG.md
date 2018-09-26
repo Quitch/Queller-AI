@@ -16,6 +16,7 @@
  - Uber Naval doesn't use pond builds
  - Fixed Uber spamming Stingrays in ponds
  - Added Swedish translation with thanks to Linus Petersson and Spassky
+ - Added partial Norwegian translation with thanks to Spassky
 
 #### 4.31.0 - 2018-09-25
 
