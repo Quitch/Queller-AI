@@ -249,3 +249,4 @@ Partial translations:
   - something more than human
   - Linus Petersson
   - Spassky
+  - Craeox
