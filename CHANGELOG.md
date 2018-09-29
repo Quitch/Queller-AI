@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 4.33.0 - 2018-09-29
+
+ - Added Polish translation with thanks to Craeox
+
 #### 4.32.0 - 2018-09-26
 
  - Uber Naval won't build bot factories

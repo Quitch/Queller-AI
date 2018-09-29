@@ -186,16 +186,16 @@ Completed translations:
  - German (de)
  - Italian (it)
  - Korean (ko)
+ - Polish (pl-PL)
  - Portuguese (Brazil) (pt-BR)
  - Russian (ru)
  - Spanish (es-ES)
  - Swedish (sv)
 
-Partial translations
+Partial translations:
 
  - Chinese (Simplified) (zh-CN)
  - Norwegian (no)
- - Polish (pl-PL)
 
 # KNOWN ISSUES
 
@@ -249,3 +249,4 @@ Partial translations
   - something more than human
   - Linus Petersson
   - Spassky
+  - Craeox
