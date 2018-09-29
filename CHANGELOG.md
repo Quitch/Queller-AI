@@ -1,6 +1,6 @@
 # CHANGELOG
 
-##
+## 4.33.0 - 2018-09-29
 
  - Added Polish translation with thanks to Craeox
 
