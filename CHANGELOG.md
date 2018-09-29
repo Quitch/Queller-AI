@@ -1,5 +1,10 @@
 # CHANGELOG
 
+####
+
+ - Changed how Uber decides to bring out Sparks which will lead to it using them more often
+ - Uber Bot will use Sparks
+
 #### 4.33.0 - 2018-09-29
 
  - Added Polish translation with thanks to Craeox
