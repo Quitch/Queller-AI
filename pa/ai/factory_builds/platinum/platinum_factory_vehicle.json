@@ -167,7 +167,7 @@
       ]
     },
     {
-      "name": "Platinum - Skitter - Mines",
+      "name": "Platinum - Skitter - Minesweeper",
       "to_build": "LandScout",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -201,7 +201,7 @@
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Land & Scout",
+            "unit_type_string0": "Land & (Construction | Scout) - Fabber",
             "unit_type_string1": "Land & Mobile & Offense",
             "compare0": "<",
             "value0": 0.05
