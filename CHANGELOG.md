@@ -6,6 +6,7 @@
  - Uber Bot will use Sparks
  - Uber MLA waits longer before building vehicles
  - Platinum and Uber will uses Stiches to detect mines
+ - Fixed Uber Bot building vehicle factories when alone on a planet
 
 #### 4.33.0 - 2018-09-29
 
