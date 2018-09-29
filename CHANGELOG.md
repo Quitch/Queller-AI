@@ -4,7 +4,6 @@
 
  - Changed how Uber decides to bring out Sparks which will lead to it using them more often
  - Uber Bot will use Sparks
- - Uber MLA waits longer before building vehicles
  - Platinum and Uber will uses Stiches to detect mines
  - Fixed Uber Bot building vehicle factories when alone on a planet
 
