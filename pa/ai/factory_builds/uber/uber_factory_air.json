@@ -208,6 +208,36 @@
       ]
     },
     {
+      "name": "Uber - Hummingbird - Take Back The Skies",
+      "to_build": "BasicFighter",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 101,
+      "builders": [
+        "BasicAirFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1
+          }
+        ]
+      ]
+    },
+    {
       "name": "Uber - Hummingbird",
       "to_build": "BasicFighter",
       "instance_count": -1,

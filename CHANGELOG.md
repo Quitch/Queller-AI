@@ -6,6 +6,7 @@
  - Uber Bot will use Sparks
  - Platinum and Uber will use Stiches to detect mines
  - Fixed Uber Bot building vehicle factories when alone on a planet
+ - Uber gives higher priority to Hummingbirds when losing the air
 
 #### 4.33.0 - 2018-09-29
 

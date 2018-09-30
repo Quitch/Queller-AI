@@ -211,6 +211,37 @@
       ]
     },
     {
+      "name": "Legion - Uber - Scythe - Take Back The Skies",
+      "to_build": "LegionAirBasicFighter",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 101,
+      "builders": [
+        "LegionFactoryBasicAir",
+        "LegionFactoryAdvancedAir"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1
+          }
+        ]
+      ]
+    },
+    {
       "name": "Legion - Uber - Scythe",
       "to_build": "LegionAirBasicFighter",
       "instance_count": -1,
