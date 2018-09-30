@@ -147,7 +147,7 @@ By default, Queller at Uber level will adapt its play to try and suit the system
  - Unrestricted air usage
 
 ### Bot
- - Doesn't build vehicle factories except to detect mines
+ - Doesn't build vehicle factories
 
 ### Free For All
  - More cautious about engaging in battle

@@ -1,5 +1,13 @@
 # CHANGELOG
 
+#### 4.34.0 - 2018-09-30
+
+ - Changed how Uber decides to bring out Sparks which will lead to it using them more often
+ - Uber Bot will use Sparks
+ - Platinum and Uber will use Stiches to detect mines
+ - Fixed Uber Bot building vehicle factories when alone on a planet
+ - Uber gets out a fighter earlier
+
 #### 4.33.0 - 2018-09-29
 
  - Added Polish translation with thanks to Craeox
