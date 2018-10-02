@@ -3,6 +3,7 @@
 ####
 
  - Uber builds slightly more mobile land AA
+ - Uber builds slightly more mine detection units
 
 #### 4.34.0 - 2018-09-30
 
