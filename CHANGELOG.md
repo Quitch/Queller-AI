@@ -2,7 +2,7 @@
 
 ####
 
- - Uber can build slightly more mobile AA
+ - Uber can build slightly more land AA
  - Uber can build slightly more mine detection units
  - Uber properly handles the overlap between Investigator and Guardian for mine detection
  - Uber builds vehicle factories later
