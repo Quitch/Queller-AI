@@ -32,10 +32,10 @@
             "boolean": true
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory & Basic",
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Bot & Factory & Basic",
             "compare0": ">",
-            "value0": 4
+            "value0": 250
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -204,10 +204,10 @@
             "boolean": true
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory & Basic",
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Bot & Factory & Basic",
             "compare0": ">",
-            "value0": 4
+            "value0": 250
           },
           {
             "test_type": "CanAffordPotentialDrain",
