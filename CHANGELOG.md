@@ -9,6 +9,7 @@
  - Better spread of unit types between platoons
  - Put Sparks back in the Fast squad
  - Locust platoon template minimum correctly matches minimum required to form it
+ - Uber is more accurate in checking its AA needs in shared army mode
 
 #### 4.34.0 - 2018-09-30
 
