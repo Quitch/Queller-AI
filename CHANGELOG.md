@@ -2,7 +2,7 @@
 
 ####
 
- - Uber builds slightly more mobile land AA
+ - Uber builds slightly more mobile AA
  - Uber builds slightly more mine detection units
  - Uber properly handles the overlap between Investigator and Guardian for mine detection
 
