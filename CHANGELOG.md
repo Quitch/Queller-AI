@@ -6,7 +6,7 @@
  - Uber can build slightly more mine detection units
  - Uber properly handles the overlap between Investigator and Guardian for mine detection
  - Uber builds vehicle factories later
- - Better spread unit types between platoons
+ - Better spread of unit types between platoons
  - Put Sparks back in the Fast squad
  - Locust platoon template minimum correctly matches minimum required to form it
 
