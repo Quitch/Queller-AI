@@ -7,6 +7,7 @@
  - Uber properly handles the overlap between Investigator and Guardian for mine detection
  - Uber builds vehicle factories later
  - Better spread unit types between platoons
+ - Put Sparks back in the Fast squad
 
 #### 4.34.0 - 2018-09-30
 
