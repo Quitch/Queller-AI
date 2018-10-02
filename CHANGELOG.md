@@ -8,6 +8,7 @@
  - Uber builds vehicle factories later
  - Better spread unit types between platoons
  - Put Sparks back in the Fast squad
+ - Locust platoon template minimum correctly matches minimum required to form it
 
 #### 4.34.0 - 2018-09-30
 
