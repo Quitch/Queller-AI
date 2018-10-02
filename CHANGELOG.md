@@ -1,5 +1,9 @@
 # CHANGELOG
 
+####
+
+ - Uber builds slightly more mobile land AA
+
 #### 4.34.0 - 2018-09-30
 
  - Changed how Uber decides to bring out Sparks which will lead to it using them more often
