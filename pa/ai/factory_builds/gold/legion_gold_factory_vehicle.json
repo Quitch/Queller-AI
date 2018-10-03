@@ -104,16 +104,7 @@
             "boolean": false
           },
           {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
             "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "((Construction & Mobile) - Fabber - Commander) | (CombatFabBuild & Defense)",
             "boolean": true
           },
           {
@@ -122,6 +113,32 @@
             "unit_type_string1": "Land & Mobile & Offense",
             "compare0": "<",
             "value0": 0.03
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & (Construction | Scout) - Fabber",
+            "unit_type_string1": "Land & Mobile & Offense",
+            "compare0": "<",
+            "value0": 0.03
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
           }
         ]
       ]

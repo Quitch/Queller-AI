@@ -10,6 +10,7 @@
  - Fixed my most embarrassing error so far as I found factories were being counted in combat fabber checks
  - Silver, Gold, Platinum and Uber minesweeper ratios changed in light of this bug but may need more work
  - All difficulties understand that land scouts can see mines
+ - Gold will use the Guardian more often
 
 #### 4.34.0 - 2018-09-30
 
