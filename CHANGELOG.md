@@ -8,6 +8,8 @@
  - Put Sparks back in the Fast squad
  - Locust platoon template minimum correctly matches minimum required to form it
  - Uber is more accurate in checking its AA needs when a shared army has MLA and Legion Commanders
+ - Fixed my most embarrassing error so far as I found factories were being counted in combat fabber checks
+ - All difficulties understand that land scouts can see mines
 
 #### 4.34.0 - 2018-09-30
 
