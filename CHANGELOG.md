@@ -2,7 +2,6 @@
 
 ####
 
- - Uber can build slightly more mine detection units
  - Uber properly handles the overlap between Investigator and Guardian for mine detection
  - Better spread of unit types between platoons
  - Put Sparks back in the Fast squad
