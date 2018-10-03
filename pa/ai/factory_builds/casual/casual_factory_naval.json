@@ -48,6 +48,39 @@
       ]
     },
     {
+      "name": "Casual - Barnacle",
+      "to_build": "SupportBarge",
+      "instance_count": 1,
+      "priority": 97,
+      "builders": [
+        "BasicNavalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "casual",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Naval & Mobile & Construction) - Fabber",
+            "unit_type_string1": "Naval & Mobile & Offense",
+            "compare0": "<",
+            "value0": 0.05
+          }
+        ]
+      ]
+    },
+    {
       "name": "Casual - Orca",
       "to_build": "Destroyer",
       "instance_count": -1,
