@@ -5,7 +5,6 @@
  - Uber properly handles the overlap between Investigator and Guardian for mine detection
  - Better spread of unit types between platoons
  - Put Sparks back in the Fast squad
- - Locust platoon template minimum correctly matches minimum required to form it
  - Uber is more accurate in checking its AA needs when a shared army has MLA and Legion Commanders
  - Fixed my most embarrassing error so far as I found factories were being counted in combat fabber checks
  - Silver, Gold, Platinum and Uber minesweeper ratios changed in light of this bug but may need more work
