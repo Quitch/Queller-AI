@@ -14,6 +14,7 @@
  - Bronze, Silver and Gold will build the Barnacle
  - Platinum and Uber will build the Barnacle to detect mines
  - Correct error in how Uber searches for places to put Laser Turrets to defend MEX
+ - Allow Uber more freedome to use Catapults for base defence
 
 #### 4.34.0 - 2018-09-30
 
