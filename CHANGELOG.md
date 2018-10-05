@@ -15,6 +15,7 @@
  - Platinum and Uber will build the Barnacle to detect mines
  - Correct error in how Uber searches for places to put Laser Turrets to defend MEX
  - Allow Uber more freedome to use Catapults for base defence
+ - Uber rushes its anti-orbital based on the location of its fabbers
 
 #### 4.34.0 - 2018-09-30
 
