@@ -96,11 +96,16 @@
             "boolean": true
           },
           {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "(Naval & Mobile & Construction) - Fabber",
+            "boolean": true
+          },
+          {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Naval & Mobile & Construction) - Fabber",
             "unit_type_string1": "Naval & Mobile & Offense",
             "compare0": "<",
-            "value0": 0.03
+            "value0": 0.01
           }
         ]
       ]

@@ -10,8 +10,8 @@
  - Silver, Gold, Platinum and Uber minesweeper ratios changed in light of this bug but may need more work
  - All difficulties understand that land scouts can see mines
  - Gold will use the Guardian more often
- - Bronze, Silver and Gold will build the Barnacle
- - Platinum and Uber will build the Barnacle to detect mines
+ - Bronze, Silver will build the Barnacle
+ - Gold, Platinum and Uber will build the Barnacle to detect mines
  - Uber correctly searches from the perimeter inwards when looking to place Laser Turrets to defend MEX
  - Allow Uber more freedom to use Catapults for base defence
  - Uber rushes its anti-orbital based on the location of its fabbers
