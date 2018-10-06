@@ -16,6 +16,7 @@
  - Allow Uber more freedom to use Catapults for base defence
  - Uber rushes its anti-orbital based on the location of its fabbers
  - Updated difficulty recommendations in readme
+ - Fixed Platinum not building the Stitch when needing minesweepers
 
 #### 4.34.0 - 2018-09-30
 
