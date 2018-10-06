@@ -352,6 +352,39 @@
       ]
     },
     {
+      "name": "Legion - Bronze - Remora",
+      "to_build": "LegionNavalAdvancedFabberSub",
+      "instance_count": 1,
+      "priority": 199,
+      "builders": [
+        "LegionFactoryAdvancedNaval"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Naval & Mobile & Construction) - Fabber",
+            "unit_type_string1": "Naval & Mobile & Offense",
+            "compare0": "<",
+            "value0": 0.01
+          }
+        ]
+      ]
+    },
+    {
       "name": "Legion - Bronze - Epoch",
       "to_build": "LegionNavalAdvancedBattleship",
       "instance_count": -1,
