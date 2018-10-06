@@ -1,10 +1,28 @@
 # CHANGELOG
 
+#### 4.35.0 - 2018-10-06
+
+ - Uber properly handles the overlap between Investigator and Guardian for mine detection
+ - Better spread of unit types between platoons
+ - Put Sparks back in the Fast squad
+ - Uber is more accurate in checking its AA needs when a shared army has MLA and Legion Commanders
+ - Fixed my most embarrassing error so far as I found factories were being counted in combat fabber checks
+ - Silver, Gold, Platinum and Uber minesweeper ratios changed in light of this bug but may need more work
+ - All difficulties understand that land scouts can see mines
+ - Gold will use the Guardian more often
+ - Bronze, Silver will build the Barnacle and Remora
+ - Gold, Platinum and Uber will build the Barnacle and Remora to detect mines
+ - Uber correctly searches from the perimeter inwards when looking to place Laser Turrets to defend MEX
+ - Allow Uber more freedom to use Catapults for base defence
+ - Uber rushes its anti-orbital based on the location of its fabbers
+ - Updated difficulty recommendations in readme
+ - Fixed Platinum not building the Stitch when needing minesweepers
+
 #### 4.34.0 - 2018-09-30
 
  - Changed how Uber decides to bring out Sparks which will lead to it using them more often
  - Uber Bot will use Sparks
- - Platinum and Uber will use Stiches to detect mines
+ - Platinum and Uber will use Stitches to detect mines
  - Fixed Uber Bot building vehicle factories when alone on a planet
  - Uber gets out a fighter earlier
 

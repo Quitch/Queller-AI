@@ -131,8 +131,8 @@ When you need to increase the challenge, but don't want to increase the difficul
 | Silver   | Low       | Gold       | 1.0 |
 | Silver   | Mid       | Platinum   | 1.0 |
 | Silver   | High      | Uber       | 1.0 |
-| Gold     | Low       | Uber       | 1.3 |
-| Gold     | High      | Uber       | 1.5 |
+| Gold     | Low       | Uber       | 1.2 |
+| Gold     | High      | Uber       | 1.4 |
 | Platinum | Any       | Uber       | 1.7 |
 | Uber     | Any       | Uber       | 2.0 |
 
