@@ -1,6 +1,6 @@
 # CHANGELOG
 
-####
+#### 4.35.0 - 2018-10-06
 
  - Uber properly handles the overlap between Investigator and Guardian for mine detection
  - Better spread of unit types between platoons
