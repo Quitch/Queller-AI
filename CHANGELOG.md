@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### 4.35.1 - 2018-10-17
+
+ - Fixed error preventing Uber forming bombing platoons after the early game
+
 #### 4.35.0 - 2018-10-06
 
  - Uber properly handles the overlap between Investigator and Guardian for mine detection
