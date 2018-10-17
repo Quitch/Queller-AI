@@ -3,6 +3,7 @@
 ####
 
  - Neural net now almost completely responsible for formation of air and land platoons
+ - Check for presence of water rather than absence when forming hover platoons
 
 #### 4.35.0 - 2018-10-06
 
