@@ -4,6 +4,7 @@
 
  - Neural net now almost completely responsible for formation of air and land platoons
  - Check for presence of water rather than absence when forming hover platoons
+ - Delayed Uber teching to T2
 
 #### 4.35.1 - 2018-10-17
 
