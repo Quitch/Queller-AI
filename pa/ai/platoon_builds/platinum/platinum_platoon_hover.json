@@ -17,11 +17,6 @@
             "boolean": true
           },
           {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Naval | (Sub - Land)",
-            "boolean": false
-          },
-          {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiSurface",
             "compare0": "<",
@@ -58,11 +53,6 @@
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Naval | (Sub - Land)",
-            "boolean": false
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
@@ -103,11 +93,6 @@
             "boolean": true
           },
           {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Naval | (Sub - Land)",
-            "boolean": false
-          },
-          {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiSurface",
             "compare0": "<",
@@ -144,11 +129,6 @@
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Naval | (Sub - Land)",
-            "boolean": false
           },
           {
             "test_type": "UnitPoolCount",
@@ -218,6 +198,11 @@
             "value0": 840
           },
           {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Naval | (Sub - Land)",
+            "boolean": true
+          },
+          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "(Hover | Sub) & Land",
             "compare0": ">=",
@@ -283,6 +268,11 @@
             "string0": "AntiSurface",
             "compare0": "<",
             "value0": 5600
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Naval | (Sub - Land)",
+            "boolean": true
           },
           {
             "test_type": "UnitPoolCount",
@@ -352,6 +342,11 @@
             "value0": 11200
           },
           {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Naval | (Sub - Land)",
+            "boolean": true
+          },
+          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "(Hover | Sub) & Land",
             "compare0": ">=",
@@ -404,6 +399,11 @@
           },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Naval | (Sub - Land)",
             "boolean": true
           },
           {
