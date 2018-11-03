@@ -2,7 +2,6 @@
 
 ####
 
- - Neural net now almost completely responsible for formation of air and land platoons
  - Check for presence of water rather than absence when forming hover platoons
  - Delayed Uber teching to T2
  - Fix Uber not properly checking T2 requirements before teching to T2 naval when floating eco and playing MLA
