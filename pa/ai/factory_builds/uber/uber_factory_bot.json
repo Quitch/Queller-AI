@@ -562,26 +562,6 @@
           {
             "test_type": "MetMinAdvancedFabberCount",
             "boolean": true
-          },
-          {
-            "test_type": "PlanetThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 1000
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Orbital",
-            "string1": "AntiOrbital",
-            "compare0": ">=",
-            "value0": 0.9
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Bot & Advanced & Tactical",
-            "unit_type_string1": "Land & Mobile & Offense & Advanced - Deconstruction - Fabber",
-            "compare0": "<",
-            "value0": 0.05
           }
         ],
         [
@@ -601,19 +581,6 @@
           {
             "test_type": "MetMinAdvancedFabberCount",
             "boolean": true
-          },
-          {
-            "test_type": "SystemThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 1000
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Bot & Advanced & Tactical",
-            "unit_type_string1": "Land & Mobile & Offense & Advanced - Deconstruction - Fabber",
-            "compare0": "<",
-            "value0": 0.05
           },
           {
             "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
