@@ -9,6 +9,7 @@
  - Uber builds Gil-E even without sighting tactical missiles
  - Hover attacks always handled by land neural network
  - Platinum and Uber scout with bots later into the game
+ - Uber more likely to stop using Single Laser Towers
 
 #### 4.35.1 - 2018-10-17
 
