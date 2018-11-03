@@ -8,6 +8,7 @@
  - Bluehawk built as part of standard army at all levels
  - Uber builds Gil-E even without sighting tactical missiles
  - Hover attacks always handled by land neural network
+ - Platinum and Uber scout with bots later into the game
 
 #### 4.35.1 - 2018-10-17
 
