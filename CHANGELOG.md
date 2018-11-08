@@ -1,5 +1,15 @@
 # CHANGELOG
 
+#### v4.36.0 - 2018-11-08
+
+ - Check for presence of water rather than absence when forming hover platoons
+ - Fix Uber not properly checking T2 requirements before teching to T2 naval when floating eco and playing MLA
+ - Bluehawk built as part of standard army at all levels
+ - Uber builds Gil-E even without sighting tactical missiles
+ - Hover attacks always handled by land neural network
+ - Platinum and Uber scout with bots later into the game
+ - Uber more likely to stop using Single Laser Towers
+
 #### 4.35.1 - 2018-10-17
 
  - Fixed error preventing Uber forming bombing platoons after the early game
@@ -162,12 +172,12 @@
  - Lowered priority of building factories specifically for AA
  - Check Advanced Vehicle Fabricators can move around before Uber builds them
  - Improve how Uber's Commander protects itself from air snipes
- - Uber MLA uses far less GIL-Es
+ - Uber MLA uses far less Gil-Es
  - Uber MLA uses less Bluehawks
  - Reduce the amount of T1 factories constructed as an AA measure
  - Uber Legion won't build more T1 bot factories for AA if it has a T2 bot factory
  - Uber MLA Free-For-All uses less Locusts
- - Uber MLA never uses GIL-E for AA
+ - Uber MLA never uses Gil-E for AA
  - Uber MLA less likely to build Colonels
  - Changed how factory build checks are performed from Silver upwards to encourage more builds and help performance
  - Corrected some build condition name errors
@@ -371,7 +381,7 @@
 #### 4.20.0 - 2018-02-28
 
  - Uber builds a tiny number of Vanguards to provide radar for Shellers
- - Uber less likely to produce as many GIL-E when alone and Shellers are an option
+ - Uber less likely to produce as many Gil-E when alone and Shellers are an option
  - Uber won't build advanced specialist units until it has its advanced fabbers out
  - Owing to AI targeting issues Queller will now stop building Dox when it realises it can't path by land
  - Uber Naval properly limits basic factory building
@@ -397,7 +407,7 @@
 
 #### 4.19.0 - 2018-01-27
 
- - Uber will use a small number of GIL-Es as a counter to Catapults
+ - Uber will use a small number of Gil-Es as a counter to Catapults
  - Uber more willing to scout with the Firefly
  - Let Casual build the Manhattan because why not
  - Properly exclude orbital fabbers from fabber counts where appropriate
@@ -417,7 +427,7 @@
  - Removed experimental give up behaviour that shouldn't have been in release
  - Uber no longer makes more factories than intended when building for AA
  - Uber uses a small number of Shellers as standard
- - Uber uses less GIL-Es and Storms in invasion forces
+ - Uber uses less Gil-Es and Storms in invasion forces
 
 #### 4.18.0 - 2018-01-19
 
@@ -483,9 +493,9 @@
 
 #### 4.15.0 - 2017-11-18
 
- - Platinum will build the GIL-E
- - Uber will build Shellers in response to GIL-Es
- - Uber will build GIL-E in response to advanced air
+ - Platinum will build the Gil-E
+ - Uber will build Shellers in response to Gil-Es
+ - Uber will build Gil-E in response to advanced air
  - Fixed error in Uber's Gustav placement
  - Uber doesn't build the Monstrosity again
  - Tweaks to which base a structure is placed in and where in the base it's placed
@@ -587,7 +597,7 @@
  - Platinum no longer uses Grenadiers
  - Platinum will always prefer to open with bots over vehicles
  - Uber Legion never goes T2 air first
- - Platinum no longer uses the GIL-E
+ - Platinum no longer uses the Gil-E
 
 #### 4.12.3 - 2017/03/24
 
@@ -635,7 +645,7 @@ The Queller AI **Client** is no longer required and should be uninstalled.
  - Gold no longer crashes its energy
  - Won't build an orbital factory unless it has established a meaningful fabber presence
  - Gold will build more fabbers when alone
- - Platinum uses less Shellers and GIL-Es
+ - Platinum uses less Shellers and Gil-Es
  - Fixed error in Uber Legion T1 energy builds
  - Platinum uses less Grenadiers
  - Silver will no longer go all air
@@ -679,7 +689,7 @@ The Queller AI **Client** is no longer required and should be uninstalled.
  - Uber more likely to produce Spinners as needed
  - All Uber personalities except Tank require larger land platoons before moving out
  - No upper limit on platoon sizes to better allow combining multiple forces into one
- - Uber no longer builds the GIL-E
+ - Uber no longer builds the Gil-E
  - Fixed scouting with fighters being broken
  - Loosened restrictions on orbital travel for lower levels a little
  - Silver willing to move more troops at a time via teleporter
@@ -709,7 +719,7 @@ The Queller AI **Client** is no longer required and should be uninstalled.
  - Uber decides between factories on a new planet based on enemy layer presence
  - Don't bring out the Spark until after teching and only in limited numbers
  - Uber will use advanced fabbers to build defences by MEX
- - Uber uses less GIL-Es to shoot down tactical missiles
+ - Uber uses less Gil-Es to shoot down tactical missiles
  - Uber gets naval fabbers out without waiting to confirm that they can travel
  - Uber no longer gets confused and stops producing offensive land units from T2 land factories
  - Uber builds more orbital fabbers when alone
@@ -937,7 +947,7 @@ The Queller AI **Client** is no longer required and should be uninstalled.
  - Uber builds more ground-to-orbital defences as the orbital threat grows
  - Fix error in anti-nuke placement checks
  - Check to place artillery is no longer greater than the requirements to build it
- - Don't build GIL-E in response to missile ships
+ - Don't build Gil-E in response to missile ships
  - Corrected range on Gustav placement checks
  - Fixed and increased priority of Uber's air snipe defences
  - Uber smarter about not leaving itself so vulnerable after teching
@@ -1090,7 +1100,7 @@ The Queller AI **Client** is no longer required and should be uninstalled.
  - Uber T2 bot usage properly regulated according to whether it's a land, naval or lava map
  - More specialised usage of single laser turrets for base defence
  - Uber no longer builds Booms, Locusts or Grenadiers
- - Uber uses less GIL-Es when it uses them at all
+ - Uber uses less Gil-Es when it uses them at all
 
 #### v3.3 - 2016/03/01
 
@@ -1112,7 +1122,7 @@ The Queller AI **Client** is no longer required and should be uninstalled.
  - Uber now focuses on Levelers over other T2 vehicles
  - Uber no longer techs to T2 air except in special circumstances
  - Uber only uses Support Commanders when it is prevented from expanding
- - Uber uses GIL-Es only as a counter to missile units
+ - Uber uses Gil-Es only as a counter to missile units
  - Uber now uses the Slammer as a primary T2 bot
  - Uber will use more T2 bots if it thinks it's being bot rushed
  - Corrected bug preventing Queller from building Levelers
@@ -1211,7 +1221,7 @@ NOW DESIGNED SOLELY FOR TITANS
 - Umbrellas no longer require any kind of radar
 - Focus is back on Bolos over Grenadiers at all levels
 - Uber builds Grenadiers in response to spotting Walls
-- Uber will build the GIL-E as a response to spotting Bluehawks
+- Uber will build the Gil-E as a response to spotting Bluehawks
 - Added support for TITANS units
 - Fixed Gold so it will build Levelers as intended
 - Uber properly checks placement of vehicle factories
@@ -1382,7 +1392,7 @@ The "oh shit new patch with new folder structure which breaks my baby!" release
 
 - Fixed bug in checking placement of advanced naval factory
 - Updated for new AI folder structure
-- No longer stops building GIL-Es when there is an orbital threat
+- No longer stops building Gil-Es when there is an orbital threat
 
 #### v1.3.2 - 2015/05/04
 
