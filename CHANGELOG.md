@@ -1,6 +1,6 @@
 # CHANGELOG
 
-####
+#### v4.36.0 - 2018-11-08
 
  - Check for presence of water rather than absence when forming hover platoons
  - Fix Uber not properly checking T2 requirements before teching to T2 naval when floating eco and playing MLA
