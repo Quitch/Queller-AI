@@ -1,5 +1,9 @@
 # CHANGELOG
 
+####
+
+ - Uber transitions to T1 vehicles as game progresses
+
 #### v4.36.0 - 2018-11-08
 
  - Check for presence of water rather than absence when forming hover platoons
