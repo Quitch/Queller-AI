@@ -1,0 +1,832 @@
+{
+  "build_list": [
+    {
+      "name": "Legion - Uber Old - Basic Metal Extractor - Alone",
+      "to_build": "LegionEcoBasicMetalExtractor",
+      "instance_count": 3,
+      "min_num_assisters": 1,
+      "max_num_assisters": 2,
+      "shared_instance_count": "BasicMetal",
+      "priority": 400,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uberold",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildBasic",
+            "boolean": true
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "task_type": "AreaBuild"
+    },
+    {
+      "name": "Legion - Uber Old - Advanced Metal Extractor - Area",
+      "to_build": "LegionEcoAdvancedMetalExtractor",
+      "instance_count": 4,
+      "min_num_assisters": 2,
+      "max_num_assisters": 6,
+      "shared_instance_count": "AdvancedMetal",
+      "priority": 401,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uberold",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildAdvanced",
+            "boolean": true
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "task_type": "AreaBuild"
+    },
+    {
+      "name": "Legion - Uber Old - Metal Extractor - Area",
+      "to_build": "LegionEcoBasicMetalExtractor",
+      "instance_count": 4,
+      "max_num_assisters": 1,
+      "shared_instance_count": "BasicMetal",
+      "priority": 261,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uberold",
+            "boolean": true
+          },
+          {
+            "test_type": "PotentialMetalEfficiency",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildBasic",
+            "boolean": true
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "task_type": "AreaBuild"
+    },
+    {
+      "name": "Legion - Uber Old - Metal Extractor - Desire - Area",
+      "to_build": "LegionEcoBasicMetalExtractor",
+      "instance_count": 3,
+      "max_num_assisters": 1,
+      "shared_instance_count": "BasicMetal",
+      "priority": 501,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uberold",
+            "boolean": true
+          },
+          {
+            "test_type": "DesireMetal"
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildBasic",
+            "boolean": true
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "task_type": "AreaBuild"
+    },
+    {
+      "name": "Legion - Uber Old - Metal Extractor - Expand 1 - Area",
+      "to_build": "LegionEcoBasicMetalExtractor",
+      "instance_count": 2,
+      "max_num_assisters": 1,
+      "shared_instance_count": "BasicMetal",
+      "priority": 499,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uberold",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "cautiousold",
+            "boolean": false
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildBasic",
+            "boolean": true
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "task_type": "AreaBuild"
+    },
+    {
+      "name": "Legion - Uber Old - Metal Extractor - Expand 2 - Area",
+      "to_build": "LegionEcoBasicMetalExtractor",
+      "instance_count": 3,
+      "max_num_assisters": 1,
+      "shared_instance_count": "BasicMetal",
+      "priority": 259,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uberold",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "cautiousold",
+            "boolean": false
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildBasic",
+            "boolean": true
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "task_type": "AreaBuild"
+    },
+    {
+      "name": "Legion - Uber Old - Power Catalyst",
+      "to_build": "LegionEcoBasicEnergyPlant",
+      "instance_count": 1,
+      "max_num_assisters": 1,
+      "shared_instance_count": "BasicEnergy",
+      "cross_planet_shared_count": true,
+      "priority": 260,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyLegionFabberBasic"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uberold",
+            "boolean": true
+          },
+          {
+            "test_type": "DesireEnergy"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Basic - Orbital",
+            "compare0": ">",
+            "value0": 2
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionEcoBasicEnergyPlant"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uberold",
+            "boolean": true
+          },
+          {
+            "test_type": "PotentialEnergyEfficiency",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Basic - Orbital",
+            "compare0": ">",
+            "value0": 2
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionEcoBasicEnergyPlant"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 6,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Legion - Uber Old - M-48A Advanced Mass Extractor - Alone",
+      "to_build": "LegionEcoAdvancedMetalExtractor",
+      "instance_count": 2,
+      "min_num_assisters": 2,
+      "max_num_assisters": 6,
+      "shared_instance_count": "AdvancedMetal",
+      "priority": 401,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uberold",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildAdvanced",
+            "boolean": true
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "task_type": "AreaBuild"
+    },
+    {
+      "name": "Legion - Uber Old - M-48A Advanced Mass Extractor - Area",
+      "to_build": "LegionEcoAdvancedMetalExtractor",
+      "instance_count": 3,
+      "min_num_assisters": 1,
+      "max_num_assisters": 3,
+      "shared_instance_count": "AdvancedMetal",
+      "priority": 270,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyLegionFabberAdvanced"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uberold",
+            "boolean": true
+          },
+          {
+            "test_type": "PotentialMetalEfficiency",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildAdvanced",
+            "boolean": true
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "task_type": "AreaBuild"
+    },
+    {
+      "name": "Legion - Uber Old - M-48A Advanced Mass Extractor - Desire - Area",
+      "to_build": "LegionEcoAdvancedMetalExtractor",
+      "instance_count": 2,
+      "min_num_assisters": 1,
+      "max_num_assisters": 3,
+      "shared_instance_count": "AdvancedMetal",
+      "priority": 510,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyLegionFabberAdvanced"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uberold",
+            "boolean": true
+          },
+          {
+            "test_type": "DesireMetal"
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildAdvanced",
+            "boolean": true
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "task_type": "AreaBuild"
+    },
+    {
+      "name": "Legion - Uber Old - M-48A Advanced Mass Extractor - Expand - Area",
+      "to_build": "LegionEcoAdvancedMetalExtractor",
+      "instance_count": 1,
+      "min_num_assisters": 1,
+      "max_num_assisters": 3,
+      "shared_instance_count": "AdvancedMetal",
+      "priority": 508,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyLegionFabberAdvanced"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uberold",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "cautiousold",
+            "boolean": false
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildAdvanced",
+            "boolean": true
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "task_type": "AreaBuild"
+    },
+    {
+      "name": "Legion - Uber Old - Black Hole Generator",
+      "to_build": "LegionEcoAdvancedEnergyPlant",
+      "instance_count": 2,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "shared_instance_count": "AdvancedEnergy",
+      "cross_planet_shared_count": true,
+      "priority": 270,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyLegionFabberAdvanced"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uberold",
+            "boolean": true
+          },
+          {
+            "test_type": "PotentialEnergyEfficiency",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionEcoAdvancedEnergyPlant"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 30,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Legion - Uber Old - Black Hole Generator - Desire",
+      "to_build": "LegionEcoAdvancedEnergyPlant",
+      "instance_count": 2,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "shared_instance_count": "AdvancedEnergy",
+      "cross_planet_shared_count": true,
+      "priority": 511,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyLegionFabberAdvanced"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uberold",
+            "boolean": true
+          },
+          {
+            "test_type": "DesireEnergy"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionEcoAdvancedEnergyPlant"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 30,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Legion - Uber Old - Rig - Desire",
+      "to_build": "LegionEcoAdvancedMine",
+      "instance_count": 1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "shared_instance_count": "OrbitalEco",
+      "priority": 509,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "LegionOrbitalBasicFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uberold",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
+          {
+            "test_type": "DesireEnergy"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionEcoAdvancedMine"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uberold",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
+          {
+            "test_type": "DesireMetal"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionEcoAdvancedMine"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 75,
+        "placement_type": "FromBaseCenter"
+      }
+    },
+    {
+      "name": "Legion - Uber Old - Rig",
+      "to_build": "LegionEcoAdvancedMine",
+      "instance_count": 2,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "shared_instance_count": "OrbitalEco",
+      "priority": 260,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "LegionOrbitalBasicFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uberold",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
+          {
+            "test_type": "PotentialMetalEfficiency",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionEcoAdvancedMine"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uberold",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
+          {
+            "test_type": "PotentialEnergyEfficiency",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionEcoAdvancedMine"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 75,
+        "placement_type": "FromBaseCenter"
+      }
+    },
+    {
+      "name": "Legion - Uber Old - Rig - Expand",
+      "to_build": "LegionEcoAdvancedMine",
+      "instance_count": 1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "shared_instance_count": "OrbitalEco",
+      "priority": 400,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "LegionOrbitalBasicFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uberold",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionEcoAdvancedMine"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 75,
+        "placement_type": "FromBaseCenter"
+      }
+    },
+    {
+      "name": "Legion - Uber Old - Omni Silo - Metal",
+      "to_build": "LegionEcoBasicStorage",
+      "instance_count": 1,
+      "cross_planet_shared_count": true,
+      "priority": 389,
+      "base_sort": "FromMainBase",
+      "builders": [
+        "LegionCommander",
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uberold",
+            "boolean": true
+          },
+          {
+            "test_type": "MetalStorageFrac",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionEcoBasicStorage"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uberold",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "PotentialMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "MetalStorageToProductionRatio",
+            "compare0": "<",
+            "value0": 10
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionEcoBasicStorage"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 20,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Legion - Uber Old - Omni Silo - Energy",
+      "to_build": "LegionEcoBasicStorage",
+      "instance_count": 1,
+      "cross_planet_shared_count": true,
+      "priority": 10,
+      "base_sort": "FromMainBase",
+      "builders": [
+        "LegionCommander",
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uberold",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "PotentialEnergyEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "EnergyStorageToProductionRatio",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionEcoBasicStorage"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 20,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    }
+  ]
+}
