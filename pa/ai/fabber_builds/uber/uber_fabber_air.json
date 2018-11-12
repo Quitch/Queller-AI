@@ -466,68 +466,6 @@
       }
     },
     {
-      "name": "Uber - Basic Air Factory - Need AA",
-      "to_build": "BasicAirFactory",
-      "instance_count": 1,
-      "shared_instance_count": "BasicFactory",
-      "min_num_assisters": 3,
-      "max_num_assisters": 5,
-      "priority": 378,
-      "builders": [
-        "UberCommander",
-        "AnyUberBasicFabberLand"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bot",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsRespawnable",
-            "boolean": false
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Air",
-            "string1": "AntiAir",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Factory & (Air | (Tank & Basic - Custom1) | (Bot & Basic & Custom1))",
-            "unit_type_string1": "Factory - Orbital",
-            "compare0": "<=",
-            "value0": 0.2
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicAirFactory"
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicAirFactory"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 3,
-        "placement_type": "FromMainBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
       "name": "Uber - Basic Air Factory - Arrived on a new world",
       "to_build": "BasicAirFactory",
       "instance_count": 1,

@@ -3,6 +3,7 @@
 ####
 
  - Uber transitions to T1 vehicles as game progresses
+ - Removed Uber's factory AA rules due to greater use of vehicles
 
 #### v4.36.0 - 2018-11-08
 
