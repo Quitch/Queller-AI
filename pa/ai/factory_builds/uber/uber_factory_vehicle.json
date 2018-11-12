@@ -331,81 +331,11 @@
       ]
     },
     {
-      "name": "Uber - Spinner - Support",
-      "to_build": "BasicAAVehicle",
-      "instance_count": 1,
-      "max_num_assisters": 10,
-      "priority": 99,
-      "builders": [
-        "AnyUberVehicleFactory"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Land & Mobile & AirDefense",
-            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
-            "compare0": "<",
-            "value0": 0.1
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "SystemThreat",
-            "string0": "Air",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Land & Mobile & AirDefense",
-            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
-            "compare0": "<",
-            "value0": 0.1
-          },
-          {
-            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
-            "boolean": true
-          }
-        ]
-      ]
-    },
-    {
       "name": "Uber - Spinner",
       "to_build": "BasicAAVehicle",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 98,
+      "priority": 97,
       "builders": [
         "AnyUberVehicleFactory"
       ],
