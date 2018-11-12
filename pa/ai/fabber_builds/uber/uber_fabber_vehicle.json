@@ -67,47 +67,6 @@
           },
           {
             "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicVehicleFactory"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Tank & Factory & Basic",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Bot & Factory & Basic",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicVehicleFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "tank",
-            "boolean": false
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bot",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
             "boolean": false
           },
           {
@@ -265,47 +224,6 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicVehicleFactory"
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicVehicleFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "tank",
-            "boolean": false
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bot",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicVehicleFactory"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Bot & Factory & Basic",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Tank & Factory & Basic",
-            "compare0": "<",
-            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
