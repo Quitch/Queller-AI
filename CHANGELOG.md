@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### v4.37.0 - 2018-11-15
+#### 4.37.0 - 2018-11-15
 
  - Uber transitions to T1 vehicles as game progresses
  - Removed Uber's factory AA rules due to greater use of vehicles
@@ -9,7 +9,7 @@
  - Adjusted flexibility Silver and Gold have in sending out Booms
  - Greater Gil-E usage by Platinum and Uber
 
-#### v4.36.0 - 2018-11-08
+#### 4.36.0 - 2018-11-08
 
  - Check for presence of water rather than absence when forming hover platoons
  - Fix Uber not properly checking T2 requirements before teching to T2 naval when floating eco and playing MLA
