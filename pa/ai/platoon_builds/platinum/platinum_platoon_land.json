@@ -75,7 +75,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Tank | Bot) & Mobile - Fabber - AirDefense - Construction - Titan - Scout - Deconstruction",
+            "unit_type_string0": "(Tank | Bot) & Mobile - Fabber - AirDefense - Construction - Titan - Scout - Deconstruction - SelfDestruct",
             "compare0": ">=",
             "value0": 20
           }
@@ -109,13 +109,45 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Tank | Bot) & Mobile - Fabber - AirDefense - Construction - Titan - Scout - Deconstruction",
+            "unit_type_string0": "(Tank | Bot) & Mobile - Fabber - AirDefense - Construction - Titan - Scout - Deconstruction - SelfDestruct",
             "compare0": ">=",
             "value0": 20
           }
         ]
       ],
       "task_type": "TeleportLandToPlanet"
+    },
+    {
+      "name": "Platinum - Boom Platoon",
+      "to_build": "Boom_Raid_Queller",
+      "instance_count": -1,
+      "priority": 170,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & SelfDestruct & Mobile - Titan",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall - Naval"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
     },
     {
       "name": "Platinum - Land Attack Platoon 1",
@@ -141,7 +173,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Tank | Bot) & Mobile - Fabber - AirDefense - Construction - Titan - Scout - Deconstruction",
+            "unit_type_string0": "(Tank | Bot) & Mobile - Fabber - AirDefense - Construction - Titan - Scout - Deconstruction - SelfDestruct",
             "compare0": ">=",
             "value0": 1
           },
@@ -179,7 +211,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Tank | Bot) & Mobile - Fabber - AirDefense - Construction - Titan - Scout - Deconstruction",
+            "unit_type_string0": "(Tank | Bot) & Mobile - Fabber - AirDefense - Construction - Titan - Scout - Deconstruction - SelfDestruct",
             "compare0": ">=",
             "value0": 4
           },
@@ -217,7 +249,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Tank | Bot) & Mobile - Fabber - AirDefense - Construction - Titan - Scout - Deconstruction",
+            "unit_type_string0": "(Tank | Bot) & Mobile - Fabber - AirDefense - Construction - Titan - Scout - Deconstruction - SelfDestruct",
             "compare0": ">=",
             "value0": 10
           },
@@ -255,7 +287,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Tank | Bot) & Mobile - Fabber - AirDefense - Construction - Titan - Scout - Deconstruction",
+            "unit_type_string0": "(Tank | Bot) & Mobile - Fabber - AirDefense - Construction - Titan - Scout - Deconstruction - SelfDestruct",
             "compare0": ">=",
             "value0": 20
           },
@@ -293,7 +325,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Tank | Bot) & Mobile - Fabber - AirDefense - Construction - Titan - Scout - Deconstruction",
+            "unit_type_string0": "(Tank | Bot) & Mobile - Fabber - AirDefense - Construction - Titan - Scout - Deconstruction - SelfDestruct",
             "compare0": ">=",
             "value0": 30
           },
@@ -325,7 +357,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Tank | Bot) & Mobile - Fabber - AirDefense - Construction - Titan - Scout - Deconstruction",
+            "unit_type_string0": "(Tank | Bot) & Mobile - Fabber - AirDefense - Construction - Titan - Scout - Deconstruction - SelfDestruct",
             "compare0": ">=",
             "value0": 40
           },

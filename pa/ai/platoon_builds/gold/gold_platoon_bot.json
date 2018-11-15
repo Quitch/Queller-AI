@@ -50,10 +50,10 @@
       "task_type": "Scout"
     },
     {
-      "name": "Gold - Boom Raid Platoon 4",
+      "name": "Gold - Boom Platoon",
       "to_build": "Boom_Raid_Queller",
-      "instance_count": 1,
-      "priority": 108,
+      "instance_count": -1,
+      "priority": 170,
       "build_conditions": [
         [
           {
@@ -67,167 +67,15 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Bot & SelfDestruct",
+            "unit_type_string0": "Bot & SelfDestruct & Mobile - Titan",
             "compare0": ">=",
-            "value0": 4
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": "<",
-            "value0": 2800
+            "value0": 1
           },
           {
             "test_type": "CanAttackWithPoolUnitsLand",
             "string0": "WL_AnySurface",
             "string1": "WL_AnySurface",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "LandAttack"
-    },
-    {
-      "name": "Gold - Boom Raid Platoon 10",
-      "to_build": "Boom_Raid_Queller",
-      "instance_count": 1,
-      "priority": 107,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Bot & SelfDestruct",
-            "compare0": ">=",
-            "value0": 10
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": "<",
-            "value0": 5600
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "LandAttack"
-    },
-    {
-      "name": "Gold - Boom Raid Platoon 20",
-      "to_build": "Boom_Raid_Queller",
-      "instance_count": 1,
-      "priority": 106,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Bot & SelfDestruct",
-            "compare0": ">=",
-            "value0": 20
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": "<",
-            "value0": 11200
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "LandAttack"
-    },
-    {
-      "name": "Gold - Boom Raid Platoon 30",
-      "to_build": "Boom_Raid_Queller",
-      "instance_count": 1,
-      "priority": 106,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Bot & SelfDestruct",
-            "compare0": ">=",
-            "value0": 30
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": "<",
-            "value0": 16800
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "LandAttack"
-    },
-    {
-      "name": "Gold - Boom Raid Platoon 40",
-      "to_build": "Boom_Raid_Queller",
-      "instance_count": 1,
-      "priority": 105,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Bot & SelfDestruct",
-            "compare0": ">=",
-            "value0": 40
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
+            "unit_type_string0": "(Mobile | Structure) - Wall - Naval"
           }
         ]
       ],
