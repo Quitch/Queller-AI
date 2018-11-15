@@ -6,6 +6,7 @@
  - Removed Uber's factory AA rules due to greater use of vehicles
  - Uber correctly builds T1 vehicles when alone on a planet
  - Booms now use dedicated platoons only
+ - Adjusted flexibility Silver and Gold have in sending out Booms
 
 #### v4.36.0 - 2018-11-08
 
