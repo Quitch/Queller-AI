@@ -4,6 +4,7 @@
 
  - Uber transitions to T1 vehicles as game progresses
  - Removed Uber's factory AA rules due to greater use of vehicles
+ - Uber correctly builds T1 vehicles when alone on a planet
 
 #### v4.36.0 - 2018-11-08
 
