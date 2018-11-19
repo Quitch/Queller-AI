@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### 4.37.1
+#### 4.37.1 - 2018-11-19
 
  - Introduced workaround for AI placement bug in 112176 onwards by allowing air opening if all else fails
 
