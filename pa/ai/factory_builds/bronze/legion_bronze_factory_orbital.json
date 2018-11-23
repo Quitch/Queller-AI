@@ -44,7 +44,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Sputnik",
+      "name": "Legion - Bronze - Sputnik - This Planet",
       "to_build": "LegionOrbitalBasicRadar",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -71,17 +71,6 @@
             "boolean": true
           },
           {
-            "test_type": "OtherPlanetNeedsReconAssistance",
-            "boolean": true
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "HaveFullPlanetIntel",
             "boolean": false
           },
@@ -95,7 +84,31 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Spectre",
+      "name": "Legion - Bronze - Sputnik - Other Planet",
+      "to_build": "LegionOrbitalBasicRadar",
+      "instance_count": 1,
+      "shared_instance_count": "ReconAssistance",
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "AnyLegionFactoryOrbital"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsReconAssistance",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Bronze - Spectre - This Planet",
       "to_build": "LegionOrbitalBasicScout",
       "instance_count": 1,
       "priority": 97,
@@ -121,17 +134,6 @@
             "boolean": true
           },
           {
-            "test_type": "OtherPlanetNeedsReconAssistance",
-            "boolean": true
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "HaveFullPlanetIntel",
             "boolean": false
           },
@@ -140,6 +142,29 @@
             "unit_type_string0": "Orbital & (Recon | Scout) - Structure",
             "compare0": "<",
             "value0": 1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Bronze - Spectre - Other Planet",
+      "to_build": "LegionOrbitalBasicScout",
+      "instance_count": 1,
+      "shared_instance_count": "ReconAssistance",
+      "priority": 97,
+      "builders": [
+        "AnyLegionFactoryOrbital"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsReconAssistance",
+            "boolean": true
           }
         ]
       ]
@@ -235,7 +260,20 @@
             "test_type": "ThisPlanetNeedsReconAssistance",
             "boolean": true
           }
-        ],
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Bronze - Kosmos - Other Planet",
+      "to_build": "LegionOrbitalAdvancedRadar",
+      "instance_count": 1,
+      "shared_instance_count": "ReconAssistance",
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "LegionFactoryAdvancedOrbital"
+      ],
+      "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",

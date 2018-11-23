@@ -44,7 +44,7 @@
       ]
     },
     {
-      "name": "Bronze - ARKYD",
+      "name": "Bronze - ARKYD - This Planet",
       "to_build": "BasicRadarSattelite",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -71,17 +71,6 @@
             "boolean": true
           },
           {
-            "test_type": "OtherPlanetNeedsReconAssistance",
-            "boolean": true
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "HaveFullPlanetIntel",
             "boolean": false
           },
@@ -95,7 +84,31 @@
       ]
     },
     {
-      "name": "Bronze - Hermes",
+      "name": "Bronze - ARKYD - Other Planet",
+      "to_build": "BasicRadarSattelite",
+      "instance_count": 1,
+      "shared_instance_count": "ReconAssistance",
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "OrbitalLauncher"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsReconAssistance",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bronze - Hermes - This Planet",
       "to_build": "OrbitalProbe",
       "instance_count": 1,
       "priority": 97,
@@ -124,7 +137,19 @@
             "test_type": "OtherPlanetNeedsReconAssistance",
             "boolean": true
           }
-        ],
+        ]
+      ]
+    },
+    {
+      "name": "Bronze - Hermes - Other Planet",
+      "to_build": "OrbitalProbe",
+      "instance_count": 1,
+      "shared_instance_count": "ReconAssistance",
+      "priority": 97,
+      "builders": [
+        "OrbitalLauncher"
+      ],
+      "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
@@ -151,7 +176,7 @@
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "OrbitalLauncher"
+        "AnyUberOrbitalFactory"
       ],
       "build_conditions": [
         [
@@ -250,7 +275,7 @@
       ]
     },
     {
-      "name": "Bronze - Advanced Radar Satellite",
+      "name": "Bronze - Advanced Radar Satellite - This Planet",
       "to_build": "AdvancedRadarSattelite",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -269,7 +294,20 @@
             "test_type": "ThisPlanetNeedsReconAssistance",
             "boolean": true
           }
-        ],
+        ]
+      ]
+    },
+    {
+      "name": "Bronze - Advanced Radar Satellite - Other Planet",
+      "to_build": "AdvancedRadarSattelite",
+      "instance_count": 1,
+      "shared_instance_count": "ReconAssistance",
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "OrbitalFactory"
+      ],
+      "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
