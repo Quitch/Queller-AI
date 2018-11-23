@@ -3,6 +3,7 @@
 ####
 
  - Bronze is slightly more proactive at orbital scouting
+ - Unified how Bronze handles local orbital scouting for MLA and Legion
 
 #### 4.37.1 - 2018-11-19
 
