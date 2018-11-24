@@ -85,7 +85,7 @@
       "to_build": "BasicRadarSattelite",
       "instance_count": 1,
       "max_num_assisters": 10,
-      "priority": 99,
+      "priority": 98,
       "builders": [
         "OrbitalLauncher"
       ],
@@ -120,7 +120,7 @@
       "shared_instance_count": "ReconAssistance",
       "cross_planet_shared_count": true,
       "max_num_assisters": 10,
-      "priority": 99,
+      "priority": 98,
       "builders": [
         "OrbitalLauncher"
       ],
@@ -183,7 +183,7 @@
       "name": "Platinum - Hermes - This Planet",
       "to_build": "OrbitalProbe",
       "instance_count": 1,
-      "priority": 99,
+      "priority": 98,
       "builders": [
         "OrbitalLauncher"
       ],
@@ -217,7 +217,7 @@
       "instance_count": 1,
       "shared_instance_count": "ReconAssistance",
       "cross_planet_shared_count": true,
-      "priority": 99,
+      "priority": 98,
       "builders": [
         "OrbitalLauncher"
       ],
@@ -250,7 +250,7 @@
       "to_build": "OrbitalFighter",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 99,
+      "priority": 98,
       "builders": [
         "OrbitalLauncher"
       ],
@@ -277,7 +277,7 @@
       "max_num_assisters": 10,
       "priority": 97,
       "builders": [
-        "OrbitalLauncher"
+        "AnyUberOrbitalFactory"
       ],
       "build_conditions": [
         [
@@ -385,7 +385,7 @@
       "to_build": "SolarArray",
       "instance_count": 1,
       "max_num_assisters": 10,
-      "priority": 195,
+      "priority": 97,
       "builders": [
         "OrbitalFactory"
       ],
@@ -445,7 +445,7 @@
       "to_build": "OrbitalDeathLaser",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 195,
+      "priority": 97,
       "builders": [
         "OrbitalFactory"
       ],
@@ -498,7 +498,7 @@
       "to_build": "AdvancedRadarSattelite",
       "instance_count": 1,
       "max_num_assisters": 10,
-      "priority": 198,
+      "priority": 99,
       "builders": [
         "OrbitalFactory"
       ],
@@ -533,7 +533,7 @@
       "shared_instance_count": "ReconAssistance",
       "cross_planet_shared_count": true,
       "max_num_assisters": 10,
-      "priority": 198,
+      "priority": 99,
       "builders": [
         "OrbitalFactory"
       ],
@@ -566,7 +566,7 @@
       "to_build": "OrbitalRailgun",
       "instance_count": -1,
       "max_num_assisters": 5,
-      "priority": 195,
+      "priority": 97,
       "builders": [
         "OrbitalFactory"
       ],
@@ -591,7 +591,7 @@
       "to_build": "OrbitalBattleShip",
       "instance_count": -1,
       "max_num_assisters": 5,
-      "priority": 195,
+      "priority": 97,
       "builders": [
         "OrbitalFactory"
       ],

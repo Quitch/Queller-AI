@@ -5,6 +5,7 @@
  - Bronze is slightly more proactive at orbital scouting
  - Unified how Bronze handles local orbital scouting for MLA and Legion
  - Don't try and force AI to orbital scout if it doesn't want to
+ - Build Avengers and Vipers from orbital factories at all levels
 
 #### 4.37.1 - 2018-11-19
 
