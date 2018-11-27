@@ -20,6 +20,7 @@
  - Removed AA factory builds from Uber Legion to match MLA
  - Fixed error preventing Gold building the Astraeus
  - Fixed Iron Dome rush builds being broken for Casual, Bronze and Silver
+ - Fixed Uber being unable to teleport its Commander when playing as Legion
 
 #### 4.37.1 - 2018-11-19
 
