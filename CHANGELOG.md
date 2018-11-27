@@ -9,6 +9,7 @@
  - Fixed Uber MLA potentially teching to T2 naval slightly later than it should
  - Bronze and Silver will ensure they have enough fabbers on a planet before building an advanced factory
  - Corrected error where Gold Legion wouldn't tech to T2 vehicles when it couldn't expand
+ - Tidied up some redundancies or ordering inefficiencies in checks
 
 #### 4.37.1 - 2018-11-19
 
