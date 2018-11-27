@@ -13,6 +13,7 @@
  - Corrected Platinum not properly checking for routes from advanced Bot factories
  - Corrected error where Platinum MLA wouldn't tech to T2 bots when it couldn't expand
  - Platinum Legion was incorrectly using old code for teching to T2 air and bots
+ - Platinum properly runs its T2 air upgrade checks against the T2 air factory
 
 #### 4.37.1 - 2018-11-19
 
