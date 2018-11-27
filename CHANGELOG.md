@@ -9,7 +9,7 @@
  - Fixed Uber MLA potentially teching to T2 naval slightly later than it should
  - Bronze and Silver will ensure they have enough fabbers on a planet before building an advanced factory
  - Corrected error where Gold Legion wouldn't tech to T2 vehicles when it couldn't expand
- - Tidied up some redundancies or ordering inefficiencies in checks
+ - Tidied up some redundancies and ordering inefficiencies in checks
  - Corrected Platinum not properly checking for routes from advanced Bot factories
  - Corrected error where Platinum MLA wouldn't tech to T2 bots when it couldn't expand
  - Platinum Legion was incorrectly using old code for teching to T2 air and bots
