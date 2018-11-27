@@ -6,6 +6,8 @@
  - Unified how Bronze handles local orbital scouting for MLA and Legion
  - Don't try and force AI to orbital scout if it doesn't want to
  - Build Avengers and Vipers from orbital factories at all levels
+ - Fixed Uber MLA potentially teching to T2 naval slightly later than it should
+ - Bronze and Silver will ensure they have enough fabbers on a planet before building an advanced factory
 
 #### 4.37.1 - 2018-11-19
 
