@@ -20,6 +20,7 @@
  - Fixed Gold being unable to build the Astraeus
  - Fixed Iron Dome rush builds being broken for Casual, Bronze and Silver
  - Fixed Uber being unable to teleport its Commander when playing as Legion
+ - Fixed Platinum not scouting with Investigators
 
 #### 4.37.1 - 2018-11-19
 
