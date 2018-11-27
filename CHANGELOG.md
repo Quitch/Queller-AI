@@ -10,7 +10,7 @@
  - Bronze and Silver will ensure they have enough fabbers on a planet before building an advanced factory
  - Corrected error where Gold Legion wouldn't tech to T2 vehicles when it couldn't expand
  - Tidied up some redundancies and ordering inefficiencies in checks
- - Corrected Platinum not properly checking for routes from advanced Bot factories
+ - Corrected Platinum not properly checking for routes from T2 bot factories
  - Corrected error where Platinum MLA wouldn't tech to T2 bots when it couldn't expand
  - Platinum Legion was incorrectly using old code for teching to T2 air and bots
  - Platinum properly runs its T2 air upgrade checks against the T2 air factory
