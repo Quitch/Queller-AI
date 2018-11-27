@@ -16,6 +16,7 @@
  - Platinum properly runs its T2 air upgrade checks against the T2 air factory
  - Fixed all instances of factory drain checks being performed against the wrong factory
  - Fixed Gold and Platinum not always properly counting a naval factory build against their concurrent build limit
+ - Removed limits imposed on Bronze and Silver for orbital scouting
 
 #### 4.37.1 - 2018-11-19
 
