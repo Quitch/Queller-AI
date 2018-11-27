@@ -8,7 +8,6 @@
  - Build Avengers and Vipers from orbital factories at all levels
  - Fixed Uber MLA potentially teching to T2 naval slightly later than it should
  - Bronze and Silver will ensure they have enough fabbers on a planet before building an advanced factory
- - Added missing fabber checks for Gold on teching
 
 #### 4.37.1 - 2018-11-19
 
