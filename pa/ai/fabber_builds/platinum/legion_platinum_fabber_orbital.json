@@ -21,6 +21,10 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
@@ -54,6 +58,10 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
             "test_type": "UnableToExpand",
             "boolean": true
           },
@@ -83,6 +91,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "platinum",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
           },
           {
             "test_type": "PresenceOnOtherPlanet",
@@ -117,6 +129,36 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionFactoryBasicOrbital"
           }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": true
+          },
+          {
+            "test_type": "PresenceOnOtherPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetCount",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Orbital & Basic",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicOrbital"
+          }
         ]
       ],
       "placement_rules": {
@@ -143,6 +185,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "platinum",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -190,6 +236,10 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "LegionFactoryAdvancedOrbital"
           },
@@ -222,6 +272,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "platinum",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
           },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",

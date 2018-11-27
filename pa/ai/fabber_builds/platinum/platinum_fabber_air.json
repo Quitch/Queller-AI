@@ -71,11 +71,11 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
+            "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
           {
-            "test_type": "PlanetIsRespawnable",
+            "test_type": "AloneOnPlanet",
             "boolean": false
           },
           {
@@ -107,12 +107,12 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -158,6 +158,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "platinum",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
           },
           {
             "test_type": "EnemyPresenceOnPlanet",
@@ -208,6 +212,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "platinum",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
           },
           {
             "test_type": "AloneOnPlanet",
@@ -267,11 +275,11 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
+            "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
           {
-            "test_type": "PlanetIsRespawnable",
+            "test_type": "AloneOnPlanet",
             "boolean": false
           },
           {
@@ -355,12 +363,12 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -409,11 +417,11 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
+            "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
           {
-            "test_type": "PlanetIsRespawnable",
+            "test_type": "AloneOnPlanet",
             "boolean": false
           },
           {
@@ -527,6 +535,10 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
           },
@@ -556,6 +568,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "platinum",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
           },
           {
             "test_type": "AloneOnPlanet",
@@ -595,6 +611,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "platinum",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
           },
           {
             "test_type": "AloneOnPlanet",
