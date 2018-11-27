@@ -18,6 +18,7 @@
  - Fixed Gold and Platinum not always properly counting a naval factory build against their concurrent build limit
  - Removed limits imposed on Bronze and Silver for orbital scouting
  - Removed AA factory builds from Uber Legion to match MLA
+ - Fixed error preventing Gold building the Astraeus
 
 #### 4.37.1 - 2018-11-19
 
