@@ -17,6 +17,7 @@
  - Fixed all instances of factory drain checks being performed against the wrong factory
  - Fixed Gold and Platinum not always properly counting a naval factory build against their concurrent build limit
  - Removed limits imposed on Bronze and Silver for orbital scouting
+ - Removed AA factory builds from Uber Legion to match MLA
 
 #### 4.37.1 - 2018-11-19
 
