@@ -582,10 +582,6 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
           },
@@ -594,17 +590,16 @@
             "string0": "LegionFactoryAdvancedAir"
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Land",
-            "string1": "AntiSurface",
-            "compare0": "<",
-            "value0": 0.6
-          },
-          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Fabber - Orbital",
             "compare0": ">=",
             "value0": 5
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Advanced - Orbital",
+            "compare0": ">=",
+            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -619,7 +614,11 @@
           },
           {
             "test_type": "AloneOnPlanet",
-            "boolean": false
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHasUseablePlanetWeapon",
+            "boolean": true
           },
           {
             "test_type": "HaveEcoForAdvanced",
@@ -630,24 +629,16 @@
             "string0": "LegionFactoryAdvancedAir"
           },
           {
-            "test_type": "UnitCountAroundBase",
-            "unit_type_string0": "Land & Mobile & Offense",
-            "string0": "Enemy",
-            "value0": 800,
-            "compare0": "<",
-            "value1": 10
-          },
-          {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber - Orbital - Naval",
+            "unit_type_string0": "Basic & Fabber - Orbital",
             "compare0": ">=",
             "value0": 5
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory & Advanced - Orbital",
-            "compare0": ">=",
-            "value0": 1
+            "unit_type_string0": "Factory & Air & Advanced",
+            "compare0": "<",
+            "value0": 2
           },
           {
             "test_type": "CanFindPlaceToBuild",
