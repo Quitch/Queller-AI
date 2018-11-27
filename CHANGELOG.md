@@ -11,6 +11,7 @@
  - Corrected error where Gold Legion wouldn't tech to T2 vehicles when it couldn't expand
  - Tidied up some redundancies or ordering inefficiencies in checks
  - Corrected Platinum not properly checking for routes from advanced Bot factories
+ - Corrected error where Platinum MLA wouldn't tech to T2 bots when it couldn't expand
 
 #### 4.37.1 - 2018-11-19
 
