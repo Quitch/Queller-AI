@@ -19,6 +19,7 @@
  - Removed limits imposed on Bronze and Silver for orbital scouting
  - Removed AA factory builds from Uber Legion to match MLA
  - Fixed error preventing Gold building the Astraeus
+ - Fixed Iron Dome rush builds being broken for Casual, Bronze and Silver
 
 #### 4.37.1 - 2018-11-19
 
