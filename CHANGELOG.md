@@ -21,6 +21,7 @@
  - Fixed Iron Dome rush builds being broken for Casual, Bronze and Silver
  - Fixed Uber being unable to teleport its Commander when playing as Legion
  - Fixed Platinum not scouting with Investigators
+ - Fixed Gold teching to T2 bots even when it couldn't afford it
 
 #### 4.37.1 - 2018-11-19
 
