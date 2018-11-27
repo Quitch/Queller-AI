@@ -13,12 +13,11 @@
  - Corrected Platinum not properly checking for routes from T2 bot factories
  - Corrected error where Platinum MLA wouldn't tech to T2 bots when it couldn't expand
  - Platinum Legion was incorrectly using old code for teching to T2 air and bots
- - Platinum properly runs its T2 air upgrade checks against the T2 air factory
  - Fixed all instances of factory template and drain checks being performed against the wrong factory
  - Fixed Gold and Platinum not always properly counting a naval factory build against their concurrent build limit
  - Removed limits imposed on Bronze and Silver for orbital scouting
  - Removed AA factory builds from Uber Legion to match MLA
- - Fixed error preventing Gold building the Astraeus
+ - Fixed Gold being unable to build the Astraeus
  - Fixed Iron Dome rush builds being broken for Casual, Bronze and Silver
  - Fixed Uber being unable to teleport its Commander when playing as Legion
 
