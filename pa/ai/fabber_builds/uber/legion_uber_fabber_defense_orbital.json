@@ -226,10 +226,10 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "test_type": "PlanetThreat",
+            "test_type": "SystemThreat",
             "string0": "Orbital",
-            "compare0": ">",
-            "value0": 0
+            "compare0": ">=",
+            "value0": 1100
           },
           {
             "test_type": "UnitCountInBase",
@@ -239,104 +239,8 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory | PlanetEngine | ControlModule)",
             "compare0": ">=",
-            "value0": 3
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionDefenseBasicOrbital"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionDefenseBasicOrbital"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 13000
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
-            "compare0": "<",
-            "value0": 2
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
-            "compare0": ">=",
-            "value0": 3
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionDefenseBasicOrbital"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
-            "compare0": "<",
-            "value0": 2
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
-            "compare0": ">",
             "value0": 1
           },
           {
@@ -397,45 +301,13 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
             "compare0": "<",
-            "value0": 4
+            "value0": 2
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory | PlanetEngine | ControlModule)",
             "compare0": ">=",
-            "value0": 3
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionDefenseBasicOrbital"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "SystemThreat",
-            "string0": "Orbital",
-            "compare0": ">=",
-            "value0": 1100
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
-            "compare0": "<",
-            "value0": 4
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
-            "compare0": ">",
-            "value0": 0
+            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
