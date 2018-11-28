@@ -30,6 +30,7 @@
  - All levels more generous in determining valid bases for placement of ground anti-orbital
  - Unified Uber MLA and Legion's approach to ground anti-orbital
  - Fixed error preventing Legion sometimes placing ground anti-orbital by superweapons
+ - Uber and Platinum maintain more scouts when alone on a planet
 
 #### 4.37.1 - 2018-11-19
 
