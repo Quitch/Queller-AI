@@ -27,7 +27,7 @@
  - Fixed an issue which could cause Uber to fail to scale up its fabber presence when alone
  - Gold, Platinum and Uber are much faster at building their first orbital launcher if they're alone on a planet
  - Platinum and Uber build more scouts if they can't find the enemy on their planet
- - Uber is a little more generous in its anti-orbital defence placements
+ - All levels more generous in valid targets for placement of ground anti-orbital
  - Unifid Uber MLA and Legion's approval to ground anti-orbital
 
 #### 4.37.1 - 2018-11-19
