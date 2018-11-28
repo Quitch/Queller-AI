@@ -24,6 +24,7 @@
  - Fixed Gold teching to T2 bots even when it couldn't afford it
  - Specialised asteroid builds focus on getting a Halley online
  - Fixed Silver Legion building a Walker Foundry without a land route
+ - Fixed an issue which could cause Uber to fail to scale up its fabber presence when alone
 
 #### 4.37.1 - 2018-11-19
 
