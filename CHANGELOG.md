@@ -29,6 +29,7 @@
  - Platinum and Uber build more scouts if they can't find the enemy on their planet
  - All levels more generous in valid targets for placement of ground anti-orbital
  - Unifid Uber MLA and Legion's approval to ground anti-orbital
+ - Fixed error preventing Legion sometimes placing ground anti-orbital by superweapons
 
 #### 4.37.1 - 2018-11-19
 
