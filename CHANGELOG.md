@@ -26,6 +26,7 @@
  - Fixed Silver Legion building a Walker Foundry without a land route
  - Fixed an issue which could cause Uber to fail to scale up its fabber presence when alone
  - Gold, Platinum and Uber are much faster at building their first orbital launcher if they're alone on a planet
+ - Platinum and Uber build more scouts if they can't find the enemy on their planet
 
 #### 4.37.1 - 2018-11-19
 
