@@ -13,8 +13,8 @@
  - Corrected Platinum not properly checking for routes from T2 bot factories
  - Corrected error where Platinum MLA wouldn't tech to T2 bots when it couldn't expand
  - Platinum Legion was incorrectly using old code for teching to T2 air and bots
- - Fixed all instances of template and drain checks being performed against the wrong factory or unit
- - Fixed Gold and Platinum not always properly counting a naval factory build against their concurrent build limit
+ - Fixed all instances of placement and drain checks being performed against the wrong factory or unit
+ - Fixed Gold and Platinum not always counting a naval factory build against their concurrent build limit
  - Removed limits imposed on Bronze and Silver for orbital scouting
  - Removed AA factory builds from Uber Legion to match MLA
  - Fixed Gold being unable to build the Astraeus
@@ -22,13 +22,13 @@
  - Fixed Uber being unable to teleport its Commander when playing as Legion
  - Fixed Platinum not scouting with Investigators
  - Fixed Gold teching to T2 bots even when it couldn't afford it
- - Specialised asteroid builds focus on getting a Halley online
+ - Added specialised asteroid builds which focus on getting a Halley online
  - Fixed Silver Legion building a Walker Foundry without a land route
  - Fixed an issue which could cause Uber to fail to scale up its fabber presence when alone
  - Gold, Platinum and Uber are much faster at building their first orbital launcher if they're alone on a planet
- - Platinum and Uber build more scouts if they can't find the enemy on their planet
+ - Platinum and Uber build more scouts if they can't find an enemy on their planet
  - All levels more generous in determining valid bases for placement of ground anti-orbital
- - Unified Uber MLA and Legion's approach to ground anti-orbital
+ - Unified Uber MLA and Legion approach to ground anti-orbital
  - Fixed error preventing Legion sometimes placing ground anti-orbital by superweapons
  - Uber and Platinum maintain more scouts when alone on a planet
  - MLA and Legion orbital launchers and factories are built near the fabber rather than the main base
