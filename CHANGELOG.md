@@ -1,5 +1,40 @@
 # CHANGELOG
 
+#### 4.38.0 - 2018-11-29
+
+ - Bronze is slightly more proactive at orbital scouting
+ - Unified how Bronze handles local orbital scouting for MLA and Legion
+ - Don't try and force AI to orbital scout if it doesn't want to
+ - Build Avengers and Vipers from orbital factories at all levels
+ - Fixed Uber MLA potentially teching to T2 naval slightly later than it should
+ - Bronze and Silver will ensure they have enough fabbers on a planet before building an advanced factory
+ - Corrected error where Gold Legion wouldn't tech to T2 vehicles when it couldn't expand
+ - Tidied up some redundancies and ordering inefficiencies in checks
+ - Corrected Platinum not properly checking for routes from T2 bot factories
+ - Corrected error where Platinum MLA wouldn't tech to T2 bots when it couldn't expand
+ - Platinum Legion was incorrectly using old code for teching to T2 air and bots
+ - Fixed all instances of placement and drain checks being performed against the wrong factory or unit
+ - Fixed Gold and Platinum not always counting a naval factory build against their concurrent build limit
+ - Removed limits imposed on Bronze and Silver for orbital scouting
+ - Removed AA factory builds from Uber Legion to match MLA
+ - Fixed Gold being unable to build the Astraeus
+ - Fixed Iron Dome rush builds being broken for Casual, Bronze and Silver
+ - Fixed Uber being unable to teleport its Commander when playing as Legion
+ - Fixed Platinum not scouting with Investigators
+ - Fixed Gold teching to T2 bots even when it couldn't afford it
+ - Added specialised asteroid builds which focus on getting a Halley online
+ - Fixed Silver Legion building a Walker Foundry without a land route
+ - Fixed an issue which could cause Uber to fail to scale up its fabber presence when alone
+ - Gold, Platinum and Uber are much faster at building their first orbital launcher if they're alone on a planet
+ - Platinum and Uber build more scouts if they can't find an enemy on their planet
+ - All levels more generous in determining valid bases for placement of ground anti-orbital
+ - Unified Uber MLA and Legion approach to ground anti-orbital
+ - Fixed error preventing Legion sometimes placing ground anti-orbital by superweapons
+ - Uber and Platinum maintain more scouts when alone on a planet
+ - MLA and Legion orbital launchers and factories are built near the fabber rather than the main base
+ - Fixed errors preventing Uber Legion from expanding properly
+ - Fixed all duplicate build condition names
+
 #### 4.37.1 - 2018-11-19
 
  - Introduced workaround for AI placement bug in 112176 onwards by allowing air opening if all else fails

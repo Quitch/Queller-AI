@@ -222,6 +222,10 @@ Partial translations:
 - Different armies will sometimes build on the same metal spot
 - Naval factories occasionally built on land
 
+## WONTFIX
+
+- Mistakes respawning planets for asteroids and won't behave properly on them
+
 # THANKS TO
 
 - Sorian of Uber Entertainment for:
