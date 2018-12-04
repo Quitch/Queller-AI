@@ -1,9 +1,5 @@
 # CHANGELOG
 
-####
-
- - Remove all instance limits on teleporting land armies
-
 #### 4.38.0 - 2018-11-29
 
  - Bronze is slightly more proactive at orbital scouting
