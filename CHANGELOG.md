@@ -1,5 +1,9 @@
 # CHANGELOG
 
+####
+
+ - Limit the number of teleporter troop transfer platoons formed when not alone
+
 #### 4.38.0 - 2018-11-29
 
  - Bronze is slightly more proactive at orbital scouting
