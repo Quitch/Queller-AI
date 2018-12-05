@@ -3,6 +3,7 @@
 ####
 
  - Limit the number of teleporter troop transfer platoons formed when not alone
+ - Uber allowed to build T2 air factories earlier
 
 #### 4.38.0 - 2018-11-29
 
