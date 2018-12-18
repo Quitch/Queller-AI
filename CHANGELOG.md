@@ -6,6 +6,7 @@
  - Uber allowed to build T2 air factories earlier
  - Uber uses the neural net to decide what size land, hover and air platoons to form
  - Uber no longer caps the number of air platoons in existence
+ - Made hover platoon creation more efficient
 
 #### 4.38.0 - 2018-11-29
 
