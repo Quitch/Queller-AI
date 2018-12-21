@@ -96,6 +96,11 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetCount",
+            "compare0": "==",
+            "value0": 1
+          },
+          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "LegionFactoryBasicNaval"
           },
@@ -153,6 +158,11 @@
           {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetCount",
+            "compare0": "==",
+            "value0": 1
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -271,6 +281,11 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetCount",
+            "compare0": "==",
+            "value0": 1
+          },
+          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "LegionFactoryBasicNaval"
           },
@@ -330,6 +345,11 @@
           {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetCount",
+            "compare0": "==",
+            "value0": 1
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -448,6 +468,11 @@
           {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetCount",
+            "compare0": "==",
+            "value0": 1
           },
           {
             "test_type": "CurrentMetalEfficiency",
