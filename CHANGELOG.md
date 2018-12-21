@@ -8,6 +8,7 @@
  - Uber no longer caps the number of air platoons in existence
  - Made hover platoon creation more efficient
  - Radically simplified how Uber forms naval platoons
+ - Fixed Uber not using the correct AA ratio in naval platoons
 
 #### 4.38.0 - 2018-11-29
 
