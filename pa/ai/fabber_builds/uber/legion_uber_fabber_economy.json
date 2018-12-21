@@ -42,46 +42,6 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Legion - Uber - Advanced Metal Extractor - Area",
-      "to_build": "LegionEcoAdvancedMetalExtractor",
-      "instance_count": 4,
-      "min_num_assisters": 2,
-      "max_num_assisters": 6,
-      "shared_instance_count": "AdvancedMetal",
-      "priority": 401,
-      "base_sort": "FromBuilder",
-      "builders": [
-        "AnyLegionFabberAdvanced"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanFindMetalSpotToBuildAdvanced",
-            "boolean": true
-          }
-        ]
-      ],
-      "placement_rules": {
-        "placement_type": "FromBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      },
-      "task_type": "AreaBuild"
-    },
-    {
       "name": "Legion - Uber - Metal Extractor - Area",
       "to_build": "LegionEcoBasicMetalExtractor",
       "instance_count": 4,
