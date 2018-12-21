@@ -9,6 +9,7 @@
  - Made hover platoon creation more efficient
  - Radically simplified how Uber forms naval platoons
  - Fixed Uber not using the correct AA ratio in naval platoons
+ - Uber uses less fabbers to assist economy builds
 
 #### 4.38.0 - 2018-11-29
 
