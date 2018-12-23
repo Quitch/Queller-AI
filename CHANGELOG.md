@@ -4,7 +4,6 @@
 
  - Limit the number of teleporter troop transfer platoons formed when not alone
  - Uber allowed to build T2 air factories earlier
- - Uber no longer caps the number of air platoons in existence
  - Made hover platoon creation more efficient
  - Fixed Uber not using the correct AA ratio in naval platoons
  - Uber uses less fabbers to assist economy builds
