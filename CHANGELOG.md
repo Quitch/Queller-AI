@@ -4,14 +4,14 @@
 
  - Limit the number of teleporter troop transfer platoons formed when not alone
  - Uber allowed to build T2 air factories earlier
- - Uber uses the neural net to decide what size land, hover and air platoons to form
  - Uber no longer caps the number of air platoons in existence
  - Made hover platoon creation more efficient
- - Radically simplified how Uber forms naval platoons
  - Fixed Uber not using the correct AA ratio in naval platoons
  - Uber uses less fabbers to assist economy builds
  - Uber invests less heavily in naval on multi-planet maps
  - Uber Free For All invests in orbital earlier on multi-planet maps
+ - Uber Aggressive no longer over-estimates its strength
+ - Uber Aggressive will form larger numbers of smaller platoons to increase its activity on the map
 
 #### 4.38.0 - 2018-11-29
 

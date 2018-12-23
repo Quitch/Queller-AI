@@ -27,9 +27,74 @@
       "task_type": "Scout"
     },
     {
-      "name": "Uber - Naval Aggressive Scout Platoon",
-      "to_build": "Naval_Attack_Queller_Uber",
+      "name": "Uber - Naval Aggressive Scout Platoon 12",
+      "to_build": "Naval_Attack_Queller",
       "instance_count": 1,
+      "shared_instance_count": "NavalScout",
+      "priority": 190,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Naval & Mobile & Offense - Hover - (AirDefense & Custom1)",
+            "compare0": ">=",
+            "value0": 12
+          }
+        ]
+      ],
+      "task_type": "Scout"
+    },
+    {
+      "name": "Uber - Naval Aggressive Scout Platoon 8",
+      "to_build": "Naval_Attack_Queller",
+      "instance_count": 1,
+      "shared_instance_count": "NavalScout",
+      "priority": 180,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Naval & Mobile & Offense - Hover - (AirDefense & Custom1)",
+            "compare0": ">=",
+            "value0": 8
+          }
+        ]
+      ],
+      "task_type": "Scout"
+    },
+    {
+      "name": "Uber - Naval Aggressive Scout Platoon 4",
+      "to_build": "Naval_Attack_Queller",
+      "instance_count": 1,
+      "shared_instance_count": "NavalScout",
       "priority": 170,
       "build_conditions": [
         [
@@ -44,16 +109,12 @@
             "boolean": false
           },
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
             "test_type": "HaveFullPlanetIntel",
             "boolean": false
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover - (AirDefense & Custom1)",
+            "unit_type_string0": "Naval & Mobile & Offense - Hover - (AirDefense & Custom1)",
             "compare0": ">=",
             "value0": 4
           }
@@ -62,8 +123,8 @@
       "task_type": "Scout"
     },
     {
-      "name": "Uber - Naval Attack Platoon",
-      "to_build": "Naval_Attack_Queller_Uber",
+      "name": "Uber - Naval Attack Platoon 1",
+      "to_build": "Naval_Attack_Queller",
       "instance_count": -1,
       "priority": 130,
       "build_conditions": [
@@ -74,6 +135,470 @@
             "boolean": true
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "aggressive",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Naval",
+            "compare0": "<",
+            "value0": 6750
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSub",
+            "compare0": "<",
+            "value0": 1680
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover - (AirDefense & Custom1)",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "aggressive",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSub",
+            "compare0": "<",
+            "value0": 1680
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover - (AirDefense & Custom1)",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "aggressive",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Naval",
+            "compare0": "<",
+            "value0": 6750
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSub",
+            "compare0": "<",
+            "value0": 1680
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Naval & Mobile & Offense & Custom1 - Hover - AirDefense",
+            "compare0": ">=",
+            "value0": 2
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "aggressive",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSub",
+            "compare0": "<",
+            "value0": 1680
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Naval & Mobile & Offense & Custom1 - Hover - AirDefense",
+            "compare0": ">=",
+            "value0": 2
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface",
+            "boolean": true
+          }
+        ]
+      ],
+      "task_type": "NavalAttack"
+    },
+    {
+      "name": "Uber - Naval Attack Platoon 4",
+      "to_build": "Naval_Attack_Queller",
+      "instance_count": -1,
+      "priority": 120,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "aggressive",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Naval",
+            "compare0": "<",
+            "value0": 22477
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSub",
+            "compare0": "<",
+            "value0": 6720
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover - (AirDefense & Custom1)",
+            "compare0": ">=",
+            "value0": 4
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "aggressive",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSub",
+            "compare0": "<",
+            "value0": 6720
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover - (AirDefense & Custom1)",
+            "compare0": ">=",
+            "value0": 4
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "aggressive",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Naval",
+            "compare0": "<",
+            "value0": 22477
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSub",
+            "compare0": "<",
+            "value0": 6720
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Naval & Mobile & Offense & Custom1 - Hover - AirDefense",
+            "compare0": ">=",
+            "value0": 8
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "aggressive",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSub",
+            "compare0": "<",
+            "value0": 6720
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Naval & Mobile & Offense & Custom1 - Hover - AirDefense",
+            "compare0": ">=",
+            "value0": 8
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface",
+            "boolean": true
+          }
+        ]
+      ],
+      "task_type": "NavalAttack"
+    },
+    {
+      "name": "Uber - Naval Attack Platoon 8",
+      "to_build": "Naval_Attack_Queller",
+      "instance_count": -1,
+      "priority": 110,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "aggressive",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Naval",
+            "compare0": "<",
+            "value0": 44955
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSub",
+            "compare0": "<",
+            "value0": 13440
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover - (AirDefense & Custom1)",
+            "compare0": ">=",
+            "value0": 8
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "aggressive",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSub",
+            "compare0": "<",
+            "value0": 13440
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover - (AirDefense & Custom1)",
+            "compare0": ">=",
+            "value0": 8
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "aggressive",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Naval",
+            "compare0": "<",
+            "value0": 44955
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSub",
+            "compare0": "<",
+            "value0": 13440
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Naval & Mobile & Offense & Custom1 - Hover - AirDefense",
+            "compare0": ">=",
+            "value0": 16
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "aggressive",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSub",
+            "compare0": "<",
+            "value0": 13440
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Naval & Mobile & Offense & Custom1 - Hover - AirDefense",
+            "compare0": ">=",
+            "value0": 16
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface",
+            "boolean": true
+          }
+        ]
+      ],
+      "task_type": "NavalAttack"
+    },
+    {
+      "name": "Uber - Naval Attack Platoon 12",
+      "to_build": "Naval_Attack_Queller",
+      "instance_count": -1,
+      "priority": 100,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "aggressive",
+            "boolean": false
+          },
+          {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
@@ -81,7 +606,34 @@
             "test_type": "UnitPoolCount",
             "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover - (AirDefense & Custom1)",
             "compare0": ">=",
-            "value0": 1
+            "value0": 12
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "aggressive",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Naval & Mobile & Offense & Custom1 - Hover - AirDefense",
+            "compare0": ">=",
+            "value0": 24
           },
           {
             "test_type": "CanAttackWithPoolUnits",
