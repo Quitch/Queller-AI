@@ -11,6 +11,7 @@
  - Fixed Uber not using the correct AA ratio in naval platoons
  - Uber uses less fabbers to assist economy builds
  - Uber invests less heavily in naval on multi-planet maps
+ - Uber Free For All invests in orbital earlier on multi-planet maps
 
 #### 4.38.0 - 2018-11-29
 
