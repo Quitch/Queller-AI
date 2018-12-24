@@ -12,6 +12,7 @@
  - Uber Aggressive no longer over-estimates its strength
  - Uber Aggressive will form larger numbers of small platoons to increase its activity on the map
  - Uber will now always use any Icarus it has to defend its planet if it can
+ - Casual is slightly more metal aggressive in its spending
 
 #### 4.38.0 - 2018-11-29
 
