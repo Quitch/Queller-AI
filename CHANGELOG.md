@@ -1,6 +1,6 @@
 # CHANGELOG
 
-####
+#### 4.39.0 - 2018-12-31
 
  - Limit the number of teleporter troop transfer platoons formed when not alone
  - Uber allowed to build T2 air factories earlier
