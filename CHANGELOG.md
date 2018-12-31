@@ -1,5 +1,19 @@
 # CHANGELOG
 
+#### 4.39.0 - 2018-12-31
+
+ - Limit the number of teleporter troop transfer platoons formed when not alone
+ - Uber allowed to build T2 air factories earlier
+ - Made hover platoon creation more efficient
+ - Fixed Uber not using the correct AA ratio in naval platoons
+ - Uber uses less fabbers to assist economy builds
+ - Uber invests less heavily in naval on multi-planet maps
+ - Uber Free For All invests in orbital earlier on multi-planet maps
+ - Uber Aggressive no longer over-estimates its strength
+ - Uber Aggressive will form larger numbers of small platoons to increase its activity on the map
+ - Uber will now always use any Icarus it has to defend its planet if it can
+ - Casual is slightly more metal aggressive in its spending
+
 #### 4.38.0 - 2018-11-29
 
  - Bronze is slightly more proactive at orbital scouting
