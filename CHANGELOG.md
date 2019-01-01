@@ -3,7 +3,6 @@
 ####
 
  - Limit the number of teleporter troop transfer platoons formed in all situations
- - Uber will build up bomber numbers before sending them out as AA threat increases
  - Uber Aggressive will rely on the neural net for forming bomber platoons
  - Removed caps on air platoons for Uber
  - Capped Uber's air scout platoons to stop it sending all fighters on scouting at the same time
