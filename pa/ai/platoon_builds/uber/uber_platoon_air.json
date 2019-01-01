@@ -58,38 +58,6 @@
       "task_type": "Scout"
     },
     {
-      "name": "Uber - Bomber-Gunship Attack Platoon",
-      "to_build": "BomberGunship_Attack_Queller",
-      "instance_count": -1,
-      "priority": 195,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Mobile & Offense - MissileDefense - Fighter - SelfDestruct - Titan",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsBomber",
-            "string0": "WL_AnySurface",
-            "string1": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "BomberAttack"
-    },
-    {
       "name": "Uber - Bomber Attack Platoon 1",
       "to_build": "Fighter_Attack_Queller",
       "instance_count": -1,
