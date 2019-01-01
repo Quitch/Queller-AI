@@ -1,5 +1,9 @@
 # CHANGELOG
 
+####
+
+ - Limit the number of teleporter troop transfer platoons formed in all situations
+
 #### 4.39.0 - 2018-12-31
 
  - Limit the number of teleporter troop transfer platoons formed when not alone
