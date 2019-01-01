@@ -6,6 +6,7 @@
  - Uber will build up bomber numbers before sending them out as AA threat increases
  - Uber Aggressive will rely on the neural net for forming bomber platoons
  - Removed caps on air platoons for Uber
+ - Capped Uber's air scout platoons to stop it sending all fighters on scouting at the same time
 
 #### 4.39.0 - 2018-12-31
 
