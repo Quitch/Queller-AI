@@ -1,6 +1,6 @@
 # CHANGELOG
 
-####
+#### 4.40.0 - 2018-01-01
 
  - Removed caps on air platoons for Uber
  - Capped Uber's air scout platoons to stop it sending all fighters on scouting at the same time
