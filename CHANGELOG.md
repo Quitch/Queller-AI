@@ -1,5 +1,11 @@
 # CHANGELOG
 
+#### 4.40.0 - 2018-01-01
+
+ - Removed caps on air platoons for Uber
+ - Capped Uber's air scout platoons to stop it sending all fighters on scouting at the same time
+ - Uber Aggressive may delay its first air factory
+
 #### 4.39.0 - 2018-12-31
 
  - Limit the number of teleporter troop transfer platoons formed when not alone
