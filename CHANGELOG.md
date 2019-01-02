@@ -1,5 +1,9 @@
 # CHANGELOG
 
+####
+
+ - Allow Uber FFA to open tanks
+
 #### 4.40.1 - 2019-01-02
 
  - It's no longer 2018 and we should not date our releases with this year
