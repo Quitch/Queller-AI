@@ -309,38 +309,7 @@ function qQuellerAI() {
         }
     }
 
-    var baseline = {
-        display_name: '!LOC:Absurd',
-        percent_vehicle: 0.45,
-        percent_bot: 0.25,
-        percent_air: 0.2,
-        percent_naval: 0.05,
-        percent_orbital: 0.05,
-        personality_tags:
-            [
-                "PreventsWaste"
-            ],
-        metal_drain_check: 0.54,
-        energy_drain_check: 0.65,
-        metal_demand_check: 0.71,
-        energy_demand_check: 0.8,
-        micro_type: 2,
-        go_for_the_kill: true,
-        priority_scout_metal_spots: true,
-        enable_commander_danger_responses: true,
-        neural_data_mod: 1.0,
-        adv_eco_mod: 1.3,
-        adv_eco_mod_alone: 0.85,
-        fabber_to_factory_ratio_basic: 1.0,
-        fabber_to_factory_ratio_advanced: 1.0,
-        fabber_alone_on_planet_mod: 2.0,
-        basic_to_advanced_factory_ratio: 0,
-        factory_alone_on_planet_mod: 0.5,
-        min_basic_fabbers: 2,
-        max_basic_fabbers: 20,
-        min_advanced_fabbers: 3,
-        max_advanced_fabbers: 50
-    }
+    var baseline = aiPersonalities.Absurd
 
     newPersonalities = _.mapValues(newPersonalities, function (personality, name) {
         var result = _.extend(_.clone(baseline), personality);
