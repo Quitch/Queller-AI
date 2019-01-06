@@ -1,5 +1,12 @@
 # CHANGELOG
 
+#### 4.41.0 - 2019-01-06
+
+ - Allow Uber FFA to open tanks
+ - Minor performance improvements for Legion Uber Tank
+ - Uber will build the Firebird now that it has been fixed
+ - Platinum and Uber more likely to build the Infiltrator
+
 #### 4.40.1 - 2019-01-02
 
  - It's no longer 2018 and we should not date our releases with this year
