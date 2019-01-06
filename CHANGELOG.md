@@ -4,6 +4,7 @@
 
  - Allow Uber FFA to open tanks
  - Minor performance improvements for Legion Uber Tank
+ - Uber Legion will build the Firebird now that it has been fixed
 
 #### 4.40.1 - 2019-01-02
 
