@@ -1,6 +1,6 @@
 # CHANGELOG
 
-####
+#### 4.41.0 - 2019-01-06
 
  - Allow Uber FFA to open tanks
  - Minor performance improvements for Legion Uber Tank
