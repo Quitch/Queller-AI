@@ -1,5 +1,9 @@
 # CHANGELOG
 
+####
+
+ - Uber will once again build Colonels and Praetorians when it has heavily lost air control
+
 #### 4.41.0 - 2019-01-06
 
  - Allow Uber FFA to open tanks
