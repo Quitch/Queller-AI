@@ -7,7 +7,7 @@
       "shared_instance_count": "BasicFactory",
       "max_num_assisters": 2,
       "priority": 376,
-      "base_sort": "FromMainBase",
+      "base_sort": "FromBuilder",
       "builders": [
         "UberCommander"
       ],
@@ -55,7 +55,7 @@
       "priority": 376,
       "min_num_assisters": 2,
       "max_num_assisters": 4,
-      "base_sort": "FromMainBase",
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber",
         "AnyUberAdvancedFabber"
@@ -103,7 +103,7 @@
       "shared_instance_count": "BasicFactory",
       "priority": 376,
       "max_num_assisters": 2,
-      "base_sort": "FromMainBase",
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionCommander"
       ],
@@ -155,7 +155,7 @@
       "priority": 376,
       "min_num_assisters": 2,
       "max_num_assisters": 4,
-      "base_sort": "FromMainBase",
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyLegionBasicFabberLand"
       ],

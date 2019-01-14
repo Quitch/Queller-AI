@@ -6,7 +6,7 @@
       "instance_count": 1,
       "shared_instance_count": "BasicLandDefenseMex",
       "priority": 352,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionCommander",
         "LegionBotBasicFabber",
@@ -91,7 +91,7 @@
       "instance_count": 1,
       "shared_instance_count": "BasicLandDefenseMex",
       "priority": 352,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionBotBasicFabber",
         "LegionVehicleBasicFabber",
@@ -208,7 +208,7 @@
       "shared_instance_count": "BasicLandDefense",
       "max_num_assisters": 1,
       "priority": 351,
-      "base_sort": "FromMainBase",
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionCommander",
         "LegionBotBasicFabber",
@@ -289,7 +289,7 @@
       "shared_instance_count": "BasicLandDefense",
       "max_num_assisters": 1,
       "priority": 351,
-      "base_sort": "FromMainBase",
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionBotBasicFabber",
         "LegionVehicleBasicFabber"
@@ -360,7 +360,7 @@
       "shared_instance_count": "BasicLandDefense",
       "max_num_assisters": 1,
       "priority": 351,
-      "base_sort": "FromMainBase",
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionBotBasicFabber",
         "LegionVehicleBasicFabber"
@@ -431,7 +431,7 @@
       "shared_instance_count": "AdvancedLandDefense",
       "priority": 479,
       "max_num_assisters": 3,
-      "base_sort": "FromMainBase",
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyLegionFabberAdvanced"
       ],
@@ -501,7 +501,7 @@
       "shared_instance_count": "AdvancedLandDefense",
       "priority": 479,
       "max_num_assisters": 3,
-      "base_sort": "FromMainBase",
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyLegionFabberAdvanced"
       ],
@@ -571,7 +571,7 @@
       "shared_instance_count": "AdvancedLandDefense",
       "priority": 480,
       "max_num_assisters": 3,
-      "base_sort": "FromMainBase",
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyLegionFabberAdvanced"
       ],

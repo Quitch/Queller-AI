@@ -7,7 +7,7 @@
       "shared_instance_count": "BasicFactory",
       "max_num_assisters": 5,
       "priority": 376,
-      "base_sort": "FromMainBase",
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionCommander",
         "AnyLegionFabberBasic",
@@ -81,7 +81,7 @@
       "shared_instance_count": "BasicFactory",
       "max_num_assisters": 5,
       "priority": 376,
-      "base_sort": "FromMainBase",
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionCommander",
         "AnyLegionFabberBasic",
@@ -190,7 +190,7 @@
       "shared_instance_count": "AdvancedFactory",
       "max_num_assisters": 10,
       "priority": 477,
-      "base_sort": "FromMainBase",
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionBotBasicFabber",
         "LegionBotAdvancedFabber",
@@ -276,7 +276,7 @@
       "shared_instance_count": "AdvancedFactory",
       "max_num_assisters": 10,
       "priority": 477,
-      "base_sort": "FromMainBase",
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionVehicleBasicFabber",
         "LegionVehicleAdvancedFabber"

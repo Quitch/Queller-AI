@@ -5,7 +5,7 @@
       "to_build": "LegionDefenseBasicAir",
       "instance_count": 1,
       "priority": 401,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyLegionFabberBasic"
       ],
@@ -111,7 +111,7 @@
       "instance_count": 1,
       "max_num_assisters": 1,
       "priority": 251,
-      "base_sort": "FromMainBase",
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionCommander",
         "LegionBotBasicFabber",
@@ -173,7 +173,7 @@
       "instance_count": 1,
       "max_num_assisters": 1,
       "priority": 456,
-      "base_sort": "FromMainBase",
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionCommander"
       ],
@@ -230,7 +230,7 @@
       "min_num_assisters": 1,
       "max_num_assisters": 3,
       "priority": 279,
-      "base_sort": "FromMainBase",
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyLegionFabberAdvanced"
       ],
@@ -296,7 +296,7 @@
       "min_num_assisters": 1,
       "max_num_assisters": 3,
       "priority": 456,
-      "base_sort": "FromMainBase",
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyLegionFabberAdvanced"
       ],

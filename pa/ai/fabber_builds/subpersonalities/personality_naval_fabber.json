@@ -7,7 +7,7 @@
       "shared_instance_count": "BasicFactory",
       "max_num_assisters": 2,
       "priority": 377,
-      "base_sort": "FromMainBase",
+      "base_sort": "FromBuilder",
       "builders": [
         "UberCommander"
       ],
@@ -53,7 +53,7 @@
       "priority": 375,
       "min_num_assisters": 2,
       "max_num_assisters": 4,
-      "base_sort": "FromMainBase",
+      "base_sort": "FromBuilder",
       "builders": [
         "UberCommander",
         "BasicAirFabber",
@@ -120,7 +120,7 @@
       "priority": 479,
       "min_num_assisters": 5,
       "max_num_assisters": 8,
-      "base_sort": "FromMainBase",
+      "base_sort": "FromBuilder",
       "builders": [
         "BasicNavalFabber",
         "AdvancedNavalFabber"
@@ -182,7 +182,7 @@
       "priority": 475,
       "min_num_assisters": 6,
       "max_num_assisters": 9,
-      "base_sort": "FromMainBase",
+      "base_sort": "FromBuilder",
       "builders": [
         "BasicNavalFabber",
         "AdvancedNavalFabber"
@@ -252,7 +252,7 @@
       "shared_instance_count": "BasicFactory",
       "max_num_assisters": 2,
       "priority": 377,
-      "base_sort": "FromMainBase",
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionCommander"
       ],
@@ -298,7 +298,7 @@
       "priority": 375,
       "min_num_assisters": 2,
       "max_num_assisters": 4,
-      "base_sort": "FromMainBase",
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionCommander",
         "LegionAirBasicFabber",
@@ -363,7 +363,7 @@
       "shared_instance_count": "BasicFactory",
       "max_num_assisters": 2,
       "priority": 378,
-      "base_sort": "FromMainBase",
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionCommander",
         "LegionNavalBasicFabber"
@@ -424,7 +424,7 @@
       "priority": 479,
       "min_num_assisters": 5,
       "max_num_assisters": 8,
-      "base_sort": "FromMainBase",
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionNavalBasicFabber",
         "LegionNavalAdvancedFabber"
@@ -486,7 +486,7 @@
       "priority": 475,
       "min_num_assisters": 6,
       "max_num_assisters": 9,
-      "base_sort": "FromMainBase",
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionNavalBasicFabber",
         "LegionNavalAdvancedFabber"
