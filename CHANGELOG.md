@@ -5,6 +5,7 @@
  - Uber will once again build Colonels and Praetorians when it has heavily lost air control
  - Casual will build the Mend
  - Uber only uses Colonels and Praetorians for AA once it has met its minimum advanced fabber requirements
+ - Uber will use the Mend to construct AA turrets
 
 #### 4.41.0 - 2019-01-06
 

@@ -7,7 +7,8 @@
       "priority": 401,
       "base_sort": "FromPerimeter",
       "builders": [
-        "AnyUberBasicFabber"
+        "AnyUberBasicFabber",
+        "AdvancedBotCombatFabber"
       ],
       "build_conditions": [
         [
@@ -112,7 +113,8 @@
         "UberCommander",
         "BasicBotFabber",
         "BasicVehicleFabber",
-        "AnyUberAdvancedFabber"
+        "AnyUberAdvancedFabber",
+        "AdvancedBotCombatFabber"
       ],
       "build_conditions": [
         [
