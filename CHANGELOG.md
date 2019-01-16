@@ -9,7 +9,7 @@
  - Remove cap from how many Bluehawks Uber can make at once
  - Uber will use a wider variety of fabbers to build Galata
  - Fix issue where Uber would would endless Advanced Torpedo Launchers by MEX
- - Uber Bot and Uber Rush will build suicide bots
+ - Uber Rush will build suicide bots
 
 #### 4.41.0 - 2019-01-06
 
