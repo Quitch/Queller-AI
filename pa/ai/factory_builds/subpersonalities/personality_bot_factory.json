@@ -63,6 +63,70 @@
           }
         ]
       ]
+    },
+    {
+      "name": "Uber Bot - Boom",
+      "to_build": "BoomBot",
+      "instance_count": -1,
+      "priority": 97,
+      "builders": [
+        "BasicBotFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bot",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": ">",
+            "value0": 2800
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Lgion - Uber Bot - Purger",
+      "to_build": "LegionBotBasicBomb",
+      "instance_count": -1,
+      "priority": 97,
+      "builders": [
+        "LegionFactoryBasicBot"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bot",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": ">",
+            "value0": 2800
+          }
+        ]
+      ]
     }
   ]
 }
