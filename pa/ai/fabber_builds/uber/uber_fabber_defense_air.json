@@ -46,41 +46,6 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "BasicAirDefense"
           }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "DistFromMainBase",
-            "compare0": ">=",
-            "value0": 350
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & AirDefense",
-            "compare0": "<",
-            "value0": 2
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & MetalProduction",
-            "compare0": ">=",
-            "value0": 3
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicAirDefense"
-          }
         ]
       ],
       "placement_rules": {
