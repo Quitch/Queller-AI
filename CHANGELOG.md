@@ -10,6 +10,7 @@
  - Uber will use a wider variety of fabbers to build Galata
  - Fix issue where Uber would would endless Advanced Torpedo Launchers by MEX
  - Uber Rush will build suicide bots
+ - Uber will only send out bombers and gunships when it has enough fighters to escort them
 
 #### 4.41.0 - 2019-01-06
 
