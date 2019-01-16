@@ -8,6 +8,7 @@
       "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber",
         "AdvancedBotCombatFabber"
       ],
       "build_conditions": [
@@ -111,8 +112,7 @@
       "base_sort": "FromBuilder",
       "builders": [
         "UberCommander",
-        "BasicBotFabber",
-        "BasicVehicleFabber",
+        "AnyUberBasicFabber",
         "AnyUberAdvancedFabber",
         "AdvancedBotCombatFabber"
       ],

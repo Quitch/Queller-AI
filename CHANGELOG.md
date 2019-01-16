@@ -8,6 +8,7 @@
  - Uber will use the Mend to construct AA turrets
  - Most builds now done in the closest base to the fabber, possibly leading to some weirdness let's see how it goes
  - Remove cap from how many Bluehawks Uber can make at once
+ - Uber will use a wider variety of fabbers to build Galata
 
 #### 4.41.0 - 2019-01-06
 
