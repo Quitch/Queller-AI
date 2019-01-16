@@ -5,10 +5,10 @@
  - Uber will once again build Colonels and Praetorians when it has heavily lost air control
  - Casual will build the Mend
  - Uber only uses Colonels and Praetorians for AA once it has met its minimum advanced fabber requirements
- - Most builds now done in the closest base to the fabber, possibly leading to some weirdness let's see how it goes
+ - Most builds now done in the base closest to the fabber, possibly leading to some weirdness let's see how it goes
  - Remove cap from how many Bluehawks Uber can make at once
  - Uber will use a wider variety of fabbers to build AA structures
- - Fix issue where Uber would would endless Advanced Torpedo Launchers by MEX
+ - Fix issue where Uber would build endless Advanced Torpedo Launchers by MEX
  - Uber Rush will build suicide bots
  - Uber will only send out bombers and gunships when it has enough fighters to escort them
 
