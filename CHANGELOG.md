@@ -16,6 +16,7 @@
  - Uber is smarter about balancing Spinners and Storms in its platoons
  - Uber Rush is more aggressive
  - Updated Korean translation to ensure its presentation matches other translations
+ - Uber will use slightly more Spinners when losing air on a planet
 
 #### 4.41.0 - 2019-01-06
 
