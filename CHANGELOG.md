@@ -11,6 +11,8 @@
  - Fix issue where Uber would build endless Advanced Torpedo Launchers by MEX
  - Uber Rush will build suicide bots
  - Uber will only send out bombers and gunships when it has enough fighters to escort them
+ - Added new personality Uber Neural which uses the neural net for all platoon creation decisions
+ - Uber Aggressive has been reverted to a slightly more aggressive version of its old form
 
 #### 4.41.0 - 2019-01-06
 
