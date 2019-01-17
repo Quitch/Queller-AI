@@ -158,6 +158,9 @@ By default, Queller at Uber level will adapt its play to try and suit the system
  - Attempts to build a naval factory first
  - Unrestricted naval usage
 
+### Neural
+ - All platoon creation decisions are made by the neural network
+
 ### Orbital
  - Will get orbital as soon as possible on multi-planet systems
 
