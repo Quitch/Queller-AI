@@ -181,26 +181,6 @@ Be sure to follow the recommended number of players for any map.
 
 Please help [translate Queller AI](https://poeditor.com/join/project/avPZrv6yyE) to your local language.
 
-Completed translations:
- - Chinese (Hong Kong) (zh-HK)
- - Chinese (Traditional) (zh-TW)
- - Dutch (nl)
- - English (US) (en-US)
- - French (fr)
- - German (de)
- - Italian (it)
- - Korean (ko)
- - Polish (pl-PL)
- - Portuguese (Brazil) (pt-BR)
- - Russian (ru)
- - Spanish (es-ES)
- - Swedish (sv)
-
-Partial translations:
-
- - Chinese (Simplified) (zh-CN)
- - Norwegian (no)
-
 # KNOWN ISSUES
 
 ## CANTFIX
