@@ -15,6 +15,7 @@
  - Uber Aggressive has been reverted to a slightly more aggressive version of its old form
  - Uber is smarter about balancing Spinners and Storms in its platoons
  - Uber Rush is more aggressive
+ - Updated Korean translation to ensure its presentation matches other translations
 
 #### 4.41.0 - 2019-01-06
 
