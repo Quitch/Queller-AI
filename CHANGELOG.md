@@ -14,6 +14,7 @@
  - Added new personality Uber Neural which uses the neural net for all platoon creation decisions
  - Uber Aggressive has been reverted to a slightly more aggressive version of its old form
  - Uber is smarter about balancing Spinners and Storms in its platoons
+ - Uber Rush is more aggressive
 
 #### 4.41.0 - 2019-01-06
 
