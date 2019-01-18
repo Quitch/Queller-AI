@@ -19,6 +19,7 @@
  - Uber will use slightly more Spinners when losing air on a planet
  - Uber less likely to expand its T1 naval presence
  - Uber Naval more likely to expand its T1 naval presence
+ - Uber will use Legion advanced air fabbers to build T1 Ship Foundries
 
 #### 4.41.0 - 2019-01-06
 
