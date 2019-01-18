@@ -176,7 +176,7 @@
 
 #### 4.30.1 - 2018-09-25
 
- - Removed empty strings from translations so they properly fallback to the source text
+ - Removed empty strings from translations so they properly failback to the source text
 
 #### 4.30.0 - 2018-09-24
 
@@ -219,7 +219,7 @@
  - Improved checks for lava
  - Uber builds less Monstrosities
  - Increased chance of Uber building an Ares
- - Fix for Gold, Platinum and Uber getting in situations where they wouldn't scout orbitally
+ - Fix for Gold, Platinum and Uber getting in situations where they wouldn't scout in the orbital layer
  - Tweak to teleporter placement
  - Gold won't build Locusts in Unit Cannon to work around an issue which caused them not to fire
  - Uber builds more Minimen in response to Scorpions
@@ -474,7 +474,7 @@
 
 #### 4.20.2 - 2018-03-01
 
- - Introduce fallback behaviour for Uber Naval to prevent idle factories due to misdetection of ability to deploy naval
+ - Introduce failback behaviour for Uber Naval to prevent idle factories due to misdetection of ability to deploy naval
 
 #### 4.20.1 - 2018-02-28
 
@@ -1044,7 +1044,7 @@ The Queller AI **Client** is no longer required and should be uninstalled.
  - Uber Cautious and Tech favour T2 vehicles over bots
  - Uber requires more fabbers before trying to build a titan
  - Uber won't start risky build projects when the base is under attack
- - No longer rushes artillery to Comm snipe as the AI won't target the Comm
+ - No longer rushes artillery to Commander snipe as the AI won't target the Commander
  - Uber throws more fabbers at ground-to-orbital defence rushes
  - Uber builds more ground-to-orbital defences as the orbital threat grows
  - Fix error in anti-nuke placement checks
@@ -1469,7 +1469,7 @@ NOW DESIGNED SOLELY FOR TITANS
 - More reactive with its naval fleet compositions
 - Complete overhaul of Naval fleet platoons to make them more appropriate in size and better avoid huge fleet in base syndrome
 - Forced an air presence within the first three factories
-- Introduced Queller personalities to allow for a range of difficulties - bronze is easier than normal and uber is harder than absurd - see the readme for more details
+- Introduced Queller personalities to allow for a range of difficulties - Bronze is easier than Normal and Uber is harder than Absurd - see the readme for more details
 - Will no longer spam defence structures within a small area
 - Will no longer loop the Commander through a teleporter
 - Checks it has the radar necessary for ground anti-orbital defences
