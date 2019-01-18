@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### DEV
+
+There is no 4.43.0 because I released 42 as 43 in modinfo
+
 #### 4.42.0 - 2019-01-18
 
  - Uber will once again build Colonels and Praetorians when it has heavily lost air control
