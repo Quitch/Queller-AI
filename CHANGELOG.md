@@ -21,6 +21,7 @@
  - Uber Naval more likely to expand its T1 naval presence
  - Uber will use Legion advanced air fabbers to build T1 Ship Foundries
  - Uber will prioritise getting T2 naval on land maps once it has T1
+ - Uber will only prioritise naval T2 on single planet systems
 
 #### 4.41.0 - 2019-01-06
 
