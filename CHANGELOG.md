@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### DEV
+#### 4.43.0 - 2019-01-18
 
  - Uber will once again build Colonels and Praetorians when it has heavily lost air control
  - Casual will build the Mend
