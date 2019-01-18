@@ -158,6 +158,9 @@ By default, Queller at Uber level will adapt its play to try and suit the system
  - Attempts to build a naval factory first
  - Unrestricted naval usage
 
+### Neural
+ - All platoon creation decisions are made by the neural network
+
 ### Orbital
  - Will get orbital as soon as possible on multi-planet systems
 
@@ -177,26 +180,6 @@ Be sure to follow the recommended number of players for any map.
 # TRANSLATIONS
 
 Please help [translate Queller AI](https://poeditor.com/join/project/avPZrv6yyE) to your local language.
-
-Completed translations:
- - Chinese (Hong Kong) (zh-HK)
- - Chinese (Traditional) (zh-TW)
- - Dutch (nl)
- - English (US) (en-US)
- - French (fr)
- - German (de)
- - Italian (it)
- - Korean (ko)
- - Polish (pl-PL)
- - Portuguese (Brazil) (pt-BR)
- - Russian (ru)
- - Spanish (es-ES)
- - Swedish (sv)
-
-Partial translations:
-
- - Chinese (Simplified) (zh-CN)
- - Norwegian (no)
 
 # KNOWN ISSUES
 

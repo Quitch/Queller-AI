@@ -147,13 +147,12 @@ function qQuellerAI() {
       go_for_the_kill: true,
       priority_scout_metal_spots: true,
       enable_commander_danger_responses: true,
-      neural_data_mod: 1.0,
+      neural_data_mod: 1.25,
       adv_eco_mod: 1.0,
       adv_eco_mod_alone: 0,
       personality_tags:
         [
-          "uber",
-          "aggressive"
+          "uber"
         ],
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1,
@@ -243,6 +242,27 @@ function qQuellerAI() {
       min_basic_fabbers: 1,
       min_advanced_fabbers: 1
     },
+    'Q-Uber Neural': {
+      display_name: '!LOC:Q-Uber Neural',
+      metal_drain_check: 0.54,
+      energy_drain_check: 0.65,
+      metal_demand_check: 0.85,
+      energy_demand_check: 0.8,
+      micro_type: 2,
+      go_for_the_kill: true,
+      priority_scout_metal_spots: true,
+      enable_commander_danger_responses: true,
+      neural_data_mod: 1.0,
+      adv_eco_mod: 1.0,
+      adv_eco_mod_alone: 0,
+      personality_tags:
+        [
+          "uber",
+          "aggressive"
+        ],
+      min_basic_fabbers: 3,
+      min_advanced_fabbers: 1,
+    },
     'Q-Uber Orbital': {
       display_name: '!LOC:Q-Uber Orbital',
       metal_drain_check: 0.54,
@@ -274,7 +294,7 @@ function qQuellerAI() {
       go_for_the_kill: true,
       priority_scout_metal_spots: true,
       enable_commander_danger_responses: true,
-      neural_data_mod: 1.0,
+      neural_data_mod: 1.25,
       adv_eco_mod: 2.0,
       adv_eco_mod_alone: 0,
       personality_tags:
@@ -322,7 +342,7 @@ function qQuellerAI() {
   model.aiPersonalities.valueHasMutated();
 
   _.defer(function () {
-    model.localChatMessage(loc("!LOC:Queller AI"), loc("!LOC:by Quitch. Version 4.41.0. My difficulties are prefixed with a Q.  Don't make AI teams larger than human teams, increase the difficulty or the econ rate instead. I support the Legion Expansion."));
+    model.localChatMessage(loc("!LOC:Queller AI"), loc("!LOC:by Quitch. Version 4.42.0. My difficulties are prefixed with a Q. Don't make AI teams larger than human teams, increase the difficulty or the econ rate instead. I support the Legion Expansion."));
   });
 
 }
