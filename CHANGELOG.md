@@ -17,6 +17,8 @@
  - Uber Rush is more aggressive
  - Updated Korean translation to ensure its presentation matches other translations
  - Uber will use slightly more Spinners when losing air on a planet
+ - Uber less likely to expand its T1 naval presence
+ - Uber Naval more likely to expand its T1 naval presence
 
 #### 4.41.0 - 2019-01-06
 

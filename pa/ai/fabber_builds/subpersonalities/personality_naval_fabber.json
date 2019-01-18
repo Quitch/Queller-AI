@@ -32,10 +32,84 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "BasicNavalFactory"
           }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicNavalFactory"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalFactory"
+          }
         ]
       ],
       "placement_rules": {
         "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Uber Naval - Basic Naval Factory - Fabber",
+      "to_build": "BasicNavalFactory",
+      "instance_count": 2,
+      "shared_instance_count": "BasicFactory",
+      "priority": 376,
+      "min_num_assisters": 2,
+      "max_num_assisters": 4,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "BasicAirFabber",
+        "BasicNavalFabber",
+        "AdvancedAirFabber",
+        "AdvancedNavalFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicNavalFactory"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 5,
         "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
@@ -277,10 +351,98 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionFactoryBasicNaval"
           }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicNaval"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicNaval"
+          }
         ]
       ],
       "placement_rules": {
         "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Legion - Uber Naval - Ship Foundry - Fabber",
+      "to_build": "LegionFactoryBasicNaval",
+      "instance_count": 2,
+      "shared_instance_count": "BasicFactory",
+      "priority": 375,
+      "min_num_assisters": 2,
+      "max_num_assisters": 4,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "LegionAirBasicFabber",
+        "LegionNavalBasicFabber",
+        "LegionNavalAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "MetalStorageFrac",
+            "compare0": ">",
+            "value0": 0.2
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicNaval"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicNaval"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 5,
         "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
