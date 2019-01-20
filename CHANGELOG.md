@@ -2,7 +2,11 @@
 
 #### DEV
 
-There is no 4.43.0 because I released 42 as 43 in modinfo
+ - 
+
+#### 4.43.0
+
+ - This version does not exist because 4.42.0 was incorrectly labelled as 4.43.0
 
 #### 4.42.0 - 2019-01-18
 
