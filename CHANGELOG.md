@@ -1,12 +1,12 @@
 # CHANGELOG
 
-#### DEV
-
- - 
-
 #### 4.43.0
 
  - This version does not exist because 4.42.0 was incorrectly labelled as 4.43.0
+
+#### 4.42.1 - 2019-01-21
+
+ - Uber Free For All works correctly again
 
 #### 4.42.0 - 2019-01-18
 

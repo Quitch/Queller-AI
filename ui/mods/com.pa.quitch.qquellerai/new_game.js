@@ -215,7 +215,7 @@ function qQuellerAI() {
       personality_tags:
         [
           "uber",
-          "cautious",
+          "ffa",
           "orbital"
         ],
       min_basic_fabbers: 4,
