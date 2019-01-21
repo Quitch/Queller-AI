@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### 4.42.1 - 2019-01-21
+
+ - Uber Free For All works correctly again
+
 #### 4.42.0 - 2019-01-18
 
  - Uber will once again build Colonels and Praetorians when it has heavily lost air control
