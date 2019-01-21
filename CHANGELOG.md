@@ -3,6 +3,7 @@
 #### DEV
 
  - Updated translations
+ - Uber Aggressive is now Uber 1v1
 
 #### 4.42.1 - 2019-01-21
 
