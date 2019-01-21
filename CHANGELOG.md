@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### DEV
+
+ - Updated translations
+
 #### 4.42.1 - 2019-01-21
 
  - Uber Free For All works correctly again
