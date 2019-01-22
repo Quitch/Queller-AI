@@ -12,6 +12,7 @@
  - Updated Uber's use of Bluehawks and Gil-Es in response to the evolution of the meta
  - Uber builds the Sheller independent of the Gil-E
  - Uber will use more Bluehawks and Gil-Es in responses to naval hover units
+ - Fix Uber Neural so it does what it's supposed to do
 
 #### 4.42.1 - 2019-01-21
 
