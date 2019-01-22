@@ -9,11 +9,9 @@
  - Correct Uber not putting enough assistants on its first air factory
  - Uber Neural correctly gets air second
  - Further improve Uber's pond build behaviour
- - Uber uses less Gil-E again
- - Uber will use the Bluehawk to counter advanced units until Gil-Es enter the field
- - Uber will use the Bluehawk to counter orbital threats
+ - Updated Uber's use of Bluehawks and Gil-Es in response to evolution of the meta
  - Uber builds the Sheller independent of the Gil-E
- - Uber continues to use large numbers of Gil-E and Bluehawks if it sees naval hover units
+ - Uber will use more Bluehawks and Gil-Es in responses to naval hover units
 
 #### 4.42.1 - 2019-01-21
 
