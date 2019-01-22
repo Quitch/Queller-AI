@@ -13,6 +13,7 @@
  - Uber will use the Bluehawk to counter advanced units until Gil-Es enter the field
  - Uber will use the Bluehawk to counter orbital threats
  - Uber builds the Sheller independent of the Gil-E
+ - Uber continues to use large numbers of Gil-E and Bluehawks if it sees Kaiju
 
 #### 4.42.1 - 2019-01-21
 
