@@ -12,6 +12,7 @@
  - Uber builds the Sheller independent of the Gil-E
  - Uber will use more Bluehawks and Gil-Es in responses to naval hover units
  - Fix Uber Neural so it does what it's supposed to do
+ - Moved heavy tanks back into the Close squad due to some odd behaviour observed while in the Suicide squad.
 
 #### 4.42.1 - 2019-01-21
 
