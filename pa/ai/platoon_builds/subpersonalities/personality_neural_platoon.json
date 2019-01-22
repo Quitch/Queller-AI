@@ -89,6 +89,38 @@
       "task_type": "FighterAttack"
     },
     {
+      "name": "Uber Neural - Boom Platoon",
+      "to_build": "Land_Attack_Queller_Uber",
+      "instance_count": -1,
+      "priority": 190,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & Mobile & SelfDestruct & Basic",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
       "name": "Uber Neural - Land Attack Platoon",
       "to_build": "Land_Attack_Queller_Uber",
       "instance_count": -1,
