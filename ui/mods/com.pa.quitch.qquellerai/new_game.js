@@ -137,8 +137,8 @@ function qQuellerAI() {
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1
     },
-    'Q-Uber 1v1': {
-      display_name: '!LOC:Q-Uber 1v1',
+    'Q-Uber Aggressive': {
+      display_name: '!LOC:Q-Uber Aggressive',
       metal_drain_check: 0.54,
       energy_drain_check: 0.65,
       metal_demand_check: 0.85,

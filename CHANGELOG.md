@@ -3,7 +3,6 @@
 #### DEV
 
  - Updated translations
- - Uber Aggressive is now Uber 1v1
  - Uber counts Novas towards bomber-gunship platoon formation in high threat environments
  - Uber Rush can open two bot factories
  - Correct Uber not putting enough assistants on its first air factory
