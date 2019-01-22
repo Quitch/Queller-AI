@@ -9,6 +9,9 @@
  - Correct Uber not putting enough assistants on its first air factory
  - Uber Neural correctly gets air second
  - Further improve Uber's pond build behaviour
+ - Uber uses less Gil-E again
+ - Uber will use the Bluehawk to counter advanced units until Gil-Es enter the field
+ - Uber will use the Bluehawk to counter orbital threats
 
 #### 4.42.1 - 2019-01-21
 
