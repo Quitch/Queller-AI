@@ -13,6 +13,7 @@
  - Uber will use more Bluehawks and Gil-Es in responses to naval hover units
  - Fix Uber Neural so it does what it's supposed to do
  - Moved heavy tanks back into the Close squad due to some odd behaviour observed while in the Suicide squad
+ - Suicide bot squads are formed earlier in high threat scenarios
 
 #### 4.42.1 - 2019-01-21
 
