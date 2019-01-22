@@ -5,7 +5,6 @@
  - Updated translations
  - Uber Aggressive is now Uber 1v1
  - Uber counts Novas towards bomber-gunship platoon formation in high threat environments
- - Air Titans no longer have their own air platoon but rather integrate into bomber-gunship platoon
 
 #### 4.42.1 - 2019-01-21
 
