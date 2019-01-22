@@ -258,7 +258,7 @@ function qQuellerAI() {
       personality_tags:
         [
           "uber",
-          "aggressive"
+          "neural"
         ],
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1,
