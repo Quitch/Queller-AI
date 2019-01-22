@@ -8,6 +8,7 @@
  - Uber Rush can open two bot factories
  - Correct Uber not putting enough assistants on its first air factory
  - Uber Neural correctly gets air second
+ - Further improve Uber's pond build behaviour
 
 #### 4.42.1 - 2019-01-21
 
