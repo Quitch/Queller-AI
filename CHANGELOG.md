@@ -9,7 +9,7 @@
  - Correct Uber not putting enough assistants on its first air factory
  - Uber Neural correctly gets air second
  - Further improve Uber's pond build behaviour
- - Updated Uber's use of Bluehawks and Gil-Es in response to evolution of the meta
+ - Updated Uber's use of Bluehawks and Gil-Es in response to the evolution of the meta
  - Uber builds the Sheller independent of the Gil-E
  - Uber will use more Bluehawks and Gil-Es in responses to naval hover units
 
