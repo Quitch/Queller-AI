@@ -81,6 +81,40 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionFactoryBasicBot"
           }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "tank",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicBot"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Bot & Factory",
+            "compare0": "<",
+            "value0": 2
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicBot"
+          }
         ]
       ],
       "placement_rules": {
@@ -238,6 +272,40 @@
             "unit_type_string0": "Bot & Factory",
             "compare0": "<",
             "value0": 250
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicBot"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "tank",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicBot"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Bot & Factory",
+            "compare0": "<",
+            "value0": 2
           },
           {
             "test_type": "CanFindPlaceToBuild",

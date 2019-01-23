@@ -56,6 +56,12 @@
             "value0": 250
           },
           {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Bot & Factory & Basic",
+            "compare0": ">=",
+            "value0": 2
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "BasicVehicleFactory"
           }
@@ -258,6 +264,12 @@
             "unit_type_string0": "Bot & Factory & Basic",
             "compare0": ">=",
             "value0": 250
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Bot & Factory & Basic",
+            "compare0": ">=",
+            "value0": 2
           },
           {
             "test_type": "CanFindPlaceToBuild",
