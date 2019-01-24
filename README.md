@@ -160,6 +160,7 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 
 ### Neural
  - All platoon creation decisions are made by the neural network
+ - High map activity
 
 ### Orbital
  - Will get orbital as soon as possible on multi-planet systems
