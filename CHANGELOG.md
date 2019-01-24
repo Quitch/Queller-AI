@@ -19,6 +19,7 @@
  - Removed aggressive naval scouting behaviour as shore bombardment behaviour appears to have been fixed
  - Small improvement to Uber Naval's economy settings
  - Fixed errors in placement of advanced torpedo launchers for base defence
+ - Uber will attempt to defend islands from ships using shore based torpedo launchers
 
 #### 4.42.1 - 2019-01-21
 
