@@ -5,22 +5,22 @@
  - Updated translations
  - Uber counts Novas towards bomber-gunship platoon formation in high threat environments
  - Uber Rush can open two bot factories
- - Correct Uber not putting enough assistants on its first air factory
+ - Corrected Uber not putting enough assistants on its first air factory
  - Uber Neural correctly gets air second
  - Further improve Uber's pond build behaviour
  - Updated Uber's use of Bluehawks and Gil-Es in response to the evolution of the meta
- - Uber builds the Sheller independent of the Gil-E
- - Uber will use more Bluehawks and Gil-Es in responses to naval hover units
- - Fix Uber Neural so it does what it's supposed to do
- - Moved heavy tanks back into the Close squad due to some odd behaviour observed while in the Suicide squad
+ - Uber builds the Sheller independent of the amount of Gil-Es it has
+ - Uber will use more Bluehawks in response to naval hover units
+ - Fixed Uber Neural so it does what it's supposed to do
+ - Moved heavy tanks back into the Close squad
  - Suicide bot squads are formed earlier in high threat scenarios
  - Don't try and put Locusts in bot scout platoons
  - Uber has a higher bot factory minimum for its opening build
- - Removed aggressive naval scouting behaviour as shore bombardment behaviour appears to have been fixed
+ - Removed aggressive naval scouting behaviour as shore bombardment behaviour appears to have been fixed in 112686
  - Small improvement to Uber Naval's economy settings
  - Fixed errors in placement of advanced torpedo launchers for base defence
  - Uber will attempt to defend islands from ships using shore based torpedo launchers
- - Correct error preventing the building of the Tsunami
+ - Corrected error preventing the building of the Tsunami
  - Uber won't produce more Piranhas than it can use
  - Base defence will be put in smaller bases
 
