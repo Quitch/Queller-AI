@@ -16,6 +16,7 @@
  - Suicide bot squads are formed earlier in high threat scenarios
  - Don't try and put Locusts in bot scout platoons
  - Uber has a higher bot factory minimum for its opening build
+ - Removed aggressive naval scouting behaviour as shore bombardment behaviour appears to have been fixed
 
 #### 4.42.1 - 2019-01-21
 

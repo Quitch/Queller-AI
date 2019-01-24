@@ -27,32 +27,6 @@
       "task_type": "Scout"
     },
     {
-      "name": "Gold - Naval Scout Platoon 4",
-      "to_build": "Naval_Attack_Queller",
-      "instance_count": 2,
-      "priority": 160,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Naval & Mobile & Offense - Hover - (AirDefense & Custom1)",
-            "compare0": ">=",
-            "value0": 4
-          }
-        ]
-      ],
-      "task_type": "Scout"
-    },
-    {
       "name": "Gold - Naval Attack Platoon 4",
       "to_build": "Naval_Attack_Queller",
       "instance_count": -1,
