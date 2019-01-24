@@ -22,6 +22,7 @@
  - Uber will attempt to defend islands from ships using shore based torpedo launchers
  - Correct error preventing the building of the Tsunami
  - Uber won't produce more Piranhas than it can use
+ - Base defence will be put in smaller bases
 
 #### 4.42.1 - 2019-01-21
 
