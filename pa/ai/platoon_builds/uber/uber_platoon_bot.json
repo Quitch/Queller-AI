@@ -87,7 +87,7 @@
       "task_type": "Scout"
     },
     {
-      "name": "Uber - Swarm Raid Platoon 4",
+      "name": "Uber - Swarm Raid Platoon",
       "to_build": "Swarm_Raid_Queller",
       "instance_count": -1,
       "priority": 198,
@@ -106,43 +106,17 @@
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Bot & Deconstruction",
             "compare0": ">=",
-            "value0": 4
+            "value0": 1
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": "<",
-            "value0": 16800
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ]
       ],
-      "task_type": "Scout"
-    },
-    {
-      "name": "Uber - Swarm Raid Platoon 8",
-      "to_build": "Swarm_Raid_Queller",
-      "instance_count": -1,
-      "priority": 197,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Bot & Deconstruction",
-            "compare0": ">=",
-            "value0": 8
-          }
-        ]
-      ],
-      "task_type": "Scout"
+      "task_type": "LandAttack"
     },
     {
       "name": "Uber - Boom Platoon 1",
