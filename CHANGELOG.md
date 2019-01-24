@@ -23,6 +23,7 @@
  - Corrected error preventing the building of the Tsunami
  - Uber won't produce more Piranhas than it can use
  - Base defence will be put in smaller bases
+ - Increased chance that Uber techs to T2 bots before T2 tanks
 
 #### 4.42.1 - 2019-01-21
 
