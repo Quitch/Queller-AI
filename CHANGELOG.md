@@ -18,6 +18,7 @@
  - Uber has a higher bot factory minimum for its opening build
  - Removed aggressive naval scouting behaviour as shore bombardment behaviour appears to have been fixed
  - Small improvement to Uber Naval's economy settings
+ - Fixed errors in placement of advanced torpedo launchers for base defence
 
 #### 4.42.1 - 2019-01-21
 
