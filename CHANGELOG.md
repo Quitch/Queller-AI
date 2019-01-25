@@ -25,6 +25,8 @@
  - Base defence will be put in smaller bases
  - Increased chance that Uber techs to T2 bots before T2 tanks
  - Uber's Locust attacks are back in the hands of the neural net
+ - Uber Rush no longer builds suicide bots
+ - Uber Rush no longer overestimates its strength
 
 #### 4.42.1 - 2019-01-21
 
