@@ -13,13 +13,13 @@
  - Uber will use more Bluehawks in response to naval hover units
  - Fixed Uber Neural so it does what it's supposed to do
  - Moved heavy tanks back into the Close squad
- - Suicide bot squads are formed earlier in high threat scenarios
+ - Suicide bot platoons are formed earlier in high threat scenarios
  - Don't try and put Locusts in bot scout platoons
  - Uber has a higher bot factory minimum for its opening build
  - Removed aggressive naval scouting behaviour as shore bombardment behaviour appears to have been fixed in 112686
  - Small improvement to Uber Naval's economy settings
  - Fixed errors in placement of advanced torpedo launchers for base defence
- - Uber will attempt to defend islands from ships using shore based torpedo launchers
+ - Uber will attempt to defend islands from ships using shore-based torpedo launchers
  - Corrected error preventing the building of the Tsunami
  - Uber won't produce more Piranhas than it can use
  - Base defence will be put in smaller bases
