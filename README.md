@@ -133,7 +133,7 @@ When you need to increase the challenge, but don't want to increase the difficul
 | Silver   | High      | Uber       | 1.0 |
 | Gold     | Low       | Uber       | 1.2 |
 | Gold     | High      | Uber       | 1.4 |
-| Platinum | Any       | Uber       | 1.7 |
+| Platinum | Any       | Uber       | 1.6 |
 | Uber     | Any       | Uber       | 2.0 |
 
 ## SUBPERSONALITIES
