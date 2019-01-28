@@ -27,6 +27,7 @@
  - Uber's Locust attacks are back in the hands of the neural net
  - Uber Rush no longer builds suicide bots
  - Uber Rush no longer overestimates its strength
+ - Remove restriction on number of air platoons at all difficulties
 
 #### 4.42.1 - 2019-01-21
 
