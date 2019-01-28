@@ -16,8 +16,7 @@
  - Suicide bot platoons are formed earlier in high threat scenarios
  - Don't try and put Locusts in bot scout platoons
  - Uber has a higher bot factory minimum for its opening build
- - Removed aggressive naval scouting behaviour as shore bombardment behaviour appears to have been fixed in 112686
- - Small improvement to Uber Naval's economy settings
+ - Removed aggressive naval scouting behaviour as shore bombardment behaviour appears to have been improved in 112686
  - Fixed errors in placement of advanced torpedo launchers for base defence
  - Uber will attempt to defend islands from ships using shore-based torpedo launchers
  - Corrected error preventing the building of the Tsunami
@@ -27,7 +26,7 @@
  - Uber's Locust attacks are back in the hands of the neural net
  - Uber Rush no longer builds suicide bots
  - Uber Rush no longer overestimates its strength
- - Remove restriction on number of air platoons at all difficulties
+ - Removed restriction on number of air platoons at all difficulties
  - Introduced minimum bomber-gunship platoon size requirements at all difficulties
  - Gold, Platinum and Uber will build the Stingray for vision
  - Ensure naval unit pool check matches platoon squad criteria for Casual, Bronze and Silver
