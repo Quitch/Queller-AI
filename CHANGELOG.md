@@ -31,6 +31,7 @@
  - Introduced minimum bomber-gunship platoon size requirements at all difficulties
  - Gold, Platinum and Uber will build the Stingray for vision
  - Ensure naval unit pool check matches platoon squad criteria for Casual, Bronze and Silver
+ - Corrected Uber building too much T1 naval
 
 #### 4.42.1 - 2019-01-21
 
