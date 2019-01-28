@@ -32,6 +32,7 @@
  - Gold, Platinum and Uber will build the Stingray for vision
  - Ensure naval unit pool check matches platoon squad criteria for Casual, Bronze and Silver
  - Corrected Uber building too much T1 naval
+ - If Uber somehow ends up with an Advanced Bot Factory on an island it will use more Locusts
 
 #### 4.42.1 - 2019-01-21
 
