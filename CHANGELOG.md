@@ -28,6 +28,7 @@
  - Uber Rush no longer builds suicide bots
  - Uber Rush no longer overestimates its strength
  - Remove restriction on number of air platoons at all difficulties
+ - Introduced minimum bomber-gunship platoon size requirements at all difficulties
 
 #### 4.42.1 - 2019-01-21
 
