@@ -33,6 +33,7 @@
  - Corrected Uber building too much T1 naval
  - If Uber somehow ends up with an Advanced Bot Factory on an island it will use more Locusts
  - Removed redundant builds following spawn pathing detection improvement
+ - Uber produces Sparks much earlier
 
 #### 4.42.1 - 2019-01-21
 
