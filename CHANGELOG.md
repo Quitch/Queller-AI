@@ -35,7 +35,6 @@
  - Removed redundant builds following spawn pathing detection improvement
  - Uber produces Sparks much earlier and is more aggressive about it
  - Silver, Gold, Platinum and Uber ensure they don't produce more Sparks than required
- - Gold makes Sparks later
  - Platinum makes Sparks earlier
 
 #### 4.42.1 - 2019-01-21
