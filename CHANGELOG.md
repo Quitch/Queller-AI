@@ -34,6 +34,7 @@
  - If Uber somehow ends up with an Advanced Bot Factory on an island it will use more Locusts
  - Removed redundant builds following spawn pathing detection improvement
  - Uber produces Sparks much earlier
+ - Silver, Gold, Platinum and Uber ensure they don't produce more Sparks than required
 
 #### 4.42.1 - 2019-01-21
 

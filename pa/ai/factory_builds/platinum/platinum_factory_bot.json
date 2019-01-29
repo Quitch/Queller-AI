@@ -220,6 +220,13 @@
             "string0": "AntiSurface",
             "compare0": ">",
             "value0": 2100
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Bot & Mobile & Heavy",
+            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
+            "compare0": "<",
+            "value0": 0.2
           }
         ],
         [
@@ -239,6 +246,13 @@
           {
             "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
             "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Bot & Mobile & Heavy",
+            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
+            "compare0": "<",
+            "value0": 0.2
           }
         ]
       ]
