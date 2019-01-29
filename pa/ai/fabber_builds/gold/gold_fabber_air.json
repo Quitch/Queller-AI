@@ -90,21 +90,22 @@
       }
     },
     {
-      "name": "Gold - Basic Air Factory - Commander Stuck",
+      "name": "Gold - Basic Air Factory - Stuck",
       "to_build": "BasicAirFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
+      "priority": 10,
       "max_num_assisters": 2,
-      "priority": 372,
       "base_sort": "FromBuilder",
       "builders": [
-        "UberCommander"
+        "UberCommander",
+        "BasicNavalFabber"
       ],
       "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "gold",
+            "string0": "platinum",
             "boolean": true
           },
           {
@@ -129,32 +130,7 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "BasicAirFactory"
           }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 3,
-        "placement_type": "FromBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
-      "name": "Gold - Basic Air Factory - Stuck",
-      "to_build": "BasicAirFactory",
-      "instance_count": 1,
-      "shared_instance_count": "BasicFactory",
-      "priority": 10,
-      "max_num_assisters": 2,
-      "base_sort": "FromBuilder",
-      "builders": [
-        "UberCommander",
-        "BasicNavalFabber"
-      ],
-      "build_conditions": [
+        ],
         [
           {
             "test_type": "HasPersonalityTag",

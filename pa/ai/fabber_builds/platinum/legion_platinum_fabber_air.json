@@ -142,15 +142,16 @@
       }
     },
     {
-      "name": "Legion - Platinum - Basic Air Factory - Commander Stuck",
+      "name": "Legion - Platinum - Flyer Foundry - Stuck",
       "to_build": "LegionFactoryBasicAir",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
+      "priority": 10,
       "max_num_assisters": 2,
-      "priority": 372,
       "base_sort": "FromBuilder",
       "builders": [
-        "LegionCommander"
+        "LegionCommander",
+        "LegionAirBasicFabber"
       ],
       "build_conditions": [
         [
@@ -181,32 +182,7 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionFactoryBasicAir"
           }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 3,
-        "placement_type": "FromBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
-      "name": "Legion - Platinum - Flyer Foundry - Stuck",
-      "to_build": "LegionFactoryBasicAir",
-      "instance_count": 1,
-      "shared_instance_count": "BasicFactory",
-      "priority": 10,
-      "max_num_assisters": 2,
-      "base_sort": "FromBuilder",
-      "builders": [
-        "LegionCommander",
-        "LegionAirBasicFabber"
-      ],
-      "build_conditions": [
+        ],
         [
           {
             "test_type": "HasPersonalityTag",
