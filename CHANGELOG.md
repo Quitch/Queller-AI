@@ -37,6 +37,7 @@
  - Silver, Gold and Platinum ensure they don't produce more Sparks than used by their platoons
  - Uber no longer builds orbital transports on gas giants
  - Silver gives a higher priority to anti-orbital defences
+ - Bronze will build Catapults when alone
 
 #### 4.42.1 - 2019-01-21
 
