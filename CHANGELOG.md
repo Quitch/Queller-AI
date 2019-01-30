@@ -35,6 +35,7 @@
  - Removed redundant builds following spawn pathing detection improvement
  - Platinum and Uber produce Sparks earlier
  - Silver, Gold and Platinum ensure they don't produce more Sparks than used by their platoons
+ - Uber no longer builds orbital transports on gas giants
 
 #### 4.42.1 - 2019-01-21
 
