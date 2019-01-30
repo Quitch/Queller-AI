@@ -33,9 +33,8 @@
  - Corrected Uber building too much T1 naval
  - If Uber somehow ends up with an Advanced Bot Factory on an island it will use more Locusts
  - Removed redundant builds following spawn pathing detection improvement
- - Uber produces Sparks much earlier and is more aggressive about it
+ - Platinum and Uber produce Sparks earlier
  - Silver, Gold and Platinum ensure they don't produce more Sparks than used by their platoons
- - Platinum makes Sparks earlier
 
 #### 4.42.1 - 2019-01-21
 
