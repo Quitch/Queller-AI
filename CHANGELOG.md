@@ -39,6 +39,7 @@
  - Silver gives a higher priority to anti-orbital defences
  - Bronze will build Catapults when alone
  - Uber gives a much lower priority to building a basic radar
+ - Uber is better about not overlapping basic radar and advanced radar
 
 #### 4.42.1 - 2019-01-21
 

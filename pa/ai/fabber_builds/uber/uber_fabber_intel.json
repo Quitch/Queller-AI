@@ -80,9 +80,17 @@
           },
           {
             "test_type": "UnitCountAroundBase",
-            "unit_type_string0": "Land & Structure & Recon",
+            "unit_type_string0": "Land & Structure & Recon & Basic",
             "string0": "Ally",
             "value0": 360,
+            "compare0": "<",
+            "value1": 1
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Land & Structure & Recon & Advanced",
+            "string0": "Ally",
+            "value0": 450,
             "compare0": "<",
             "value1": 1
           },
