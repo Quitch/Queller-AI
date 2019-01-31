@@ -104,61 +104,6 @@
       }
     },
     {
-      "name": "Uber - Advanced Radar",
-      "to_build": "AdvancedRadar",
-      "instance_count": 1,
-      "shared_instance_count": "AdvancedRadar",
-      "priority": 91,
-      "base_sort": "FromBuilder",
-      "builders": [
-        "AnyUberAdvancedFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedRadar"
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Land & Structure & Recon & Advanced",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountAroundBase",
-            "unit_type_string0": "Land & Structure & Recon & Advanced",
-            "string0": "Ally",
-            "value0": 900,
-            "compare0": "<",
-            "value1": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedRadar"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
       "name": "Uber - Advanced Radar - Need for Ranged",
       "to_build": "AdvancedRadar",
       "instance_count": 1,
