@@ -38,6 +38,7 @@
  - Uber no longer builds orbital transports on gas giants
  - Silver gives a higher priority to anti-orbital defences
  - Bronze will build Catapults when alone
+ - Uber gives a much lower priority to building a basic radar
 
 #### 4.42.1 - 2019-01-21
 

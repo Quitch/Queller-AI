@@ -62,52 +62,6 @@
       }
     },
     {
-      "name": "Uber - Basic Radar - Have none",
-      "to_build": "BasicRadar",
-      "instance_count": 1,
-      "shared_instance_count": "BasicRadar",
-      "priority": 260,
-      "builders": [
-        "AnyUberBasicFabber"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicRadar"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Recon & (Structure | Orbital)",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicRadar"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromMainBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
       "name": "Uber - Basic Radar - Need for ranged",
       "to_build": "BasicRadar",
       "instance_count": 1,
