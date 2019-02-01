@@ -44,6 +44,7 @@
  - Bronze and Silver produce Sparks later
  - Uber has more leeway when trying to place ground anti-orbital defences to protect the Commander
  - Improve ground anti-orbital placement
+ - Uber will place anti-Kaiju Catapults on water as well as land
 
 #### 4.42.1 - 2019-01-21
 
