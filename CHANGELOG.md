@@ -51,6 +51,7 @@
  - Behaviour updated for gas giant combat fix
  - Corrected errors with transferring anti-ground platoons from gas giants
  - Fixed Casual not transferring orbital anti-ground lasers between planets
+ - Platinum and Uber avoid using orbital battleships as anti-orbital weapons where possible
 
 #### 4.42.1 - 2019-01-21
 
