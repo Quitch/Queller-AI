@@ -267,6 +267,12 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": ">=",
+            "value0": 2800
+          },
+          {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Bot & Mobile & Heavy",
             "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
