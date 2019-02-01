@@ -3,7 +3,7 @@
 #### DEV
 
  - Updated translations
- - Uber counts Novas towards bomber-gunship platoon formation in high threat environments
+ - Uber counts Novas towards bomber-gunship platoon formation
  - Uber Rush can open two bot factories
  - Corrected Uber not putting enough assistants on its first air factory
  - Uber Neural correctly gets air second
