@@ -49,7 +49,6 @@
  - Allow Casual to scout from orbit on any system size
  - Casual scouts smarter
  - Behaviour updated for gas giant combat fix
- - Corrected errors with transferring anti-ground platoons from gas giants
  - Fixed Casual, Gold and Platinum sometimes not transferring orbital anti-ground lasers between planets
  - Platinum and Uber avoid using orbital battleships as anti-orbital weapons where possible
 
