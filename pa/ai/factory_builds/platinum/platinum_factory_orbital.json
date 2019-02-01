@@ -457,10 +457,6 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetIsGasGiant",
-            "boolean": false
-          },
-          {
             "test_type": "BaseThreat",
             "string0": "Orbital",
             "compare0": "<=",
@@ -472,23 +468,6 @@
             "string1": "AntiOrbital",
             "compare0": "<",
             "value0": 1
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsGasGiant",
-            "boolean": true
-          },
-          {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
           }
         ]
       ]
