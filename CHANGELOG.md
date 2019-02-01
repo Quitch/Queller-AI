@@ -45,7 +45,7 @@
  - Uber has more leeway when trying to place ground anti-orbital defences to protect the Commander
  - Improve ground anti-orbital placement
  - Uber will place anti-Kaiju Catapults on water as well as land
- - Reduce the number of anti-orbital Catapults Gold, Platinum and Uber will build in one base
+ - Reduce the number of anti-orbital Catapults that Gold, Platinum and Uber will build in one base
 
 #### 4.42.1 - 2019-01-21
 
