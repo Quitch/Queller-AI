@@ -667,30 +667,6 @@
             "boolean": true
           },
           {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Advanced & ((Naval & Hover) | Custom1)",
-            "boolean": true
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "MetMinAdvancedFabberCount",
-            "boolean": true
-          },
-          {
             "test_type": "SystemThreat",
             "string0": "Orbital",
             "compare0": ">",

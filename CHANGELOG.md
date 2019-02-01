@@ -10,7 +10,6 @@
  - Further improve Uber's pond build behaviour
  - Updated Uber's use of Bluehawks and Gil-Es in response to the evolution of the meta
  - Uber builds the Sheller independent of the amount of Gil-Es it has
- - Uber will use more Bluehawks in response to naval hover and advanced Legion units
  - Fixed Uber Neural so it does what it's supposed to do
  - Moved heavy tanks back into the Close squad
  - Suicide bot platoons are formed earlier in high threat scenarios
