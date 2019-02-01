@@ -24,7 +24,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
  - Goes orbital as soon as possible
  - Turtles
  - Poor troop selection
- - Doesn't scout
+ - Barely scouts
  - Doesn't react to what the enemy is doing
  - Loves fabbers
  - Loves static defence/offence
