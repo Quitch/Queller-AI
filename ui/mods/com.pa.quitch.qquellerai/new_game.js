@@ -7,7 +7,7 @@ function qQuellerAI() {
 
   qQuellerAILoaded = true;
 
-  api.debug.log('Adding Queller AI Personalities');
+  api.debug.log('Loading Queller AI Personalities');
 
   var aiPersonalities = model.aiPersonalities();
 
