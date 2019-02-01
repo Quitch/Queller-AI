@@ -60,12 +60,8 @@
             "boolean": true
           },
           {
-            "test_type": "ThisPlanetNeedsReconAssistance",
-            "boolean": true
-          },
-          {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Orbital & Recon - Structure",
+            "unit_type_string0": "Orbital & (Recon | Scout) - Structure",
             "compare0": "<",
             "value0": 1
           }
@@ -88,12 +84,8 @@
             "boolean": true
           },
           {
-            "test_type": "ThisPlanetNeedsReconAssistance",
-            "boolean": true
-          },
-          {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Orbital & Scout",
+            "unit_type_string0": "Orbital & (Recon | Scout) - Structure",
             "compare0": "<",
             "value0": 1
           }
