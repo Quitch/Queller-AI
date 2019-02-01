@@ -50,6 +50,7 @@
  - Casual scouts smarter
  - Behaviour updated for gas giant combat fix
  - Corrected errors with transferring anti-ground platoons from gas giants
+ - Fixed Casual not transferring orbital anti-ground lasers between planets
 
 #### 4.42.1 - 2019-01-21
 
