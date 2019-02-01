@@ -47,6 +47,7 @@
  - Uber will place anti-Kaiju Catapults on water as well as land
  - Reduce the number of anti-orbital Catapults that Gold, Platinum and Uber will build in one base
  - Allow Casual to scout from orbit on any system size
+ - Casual scouts smarter
 
 #### 4.42.1 - 2019-01-21
 

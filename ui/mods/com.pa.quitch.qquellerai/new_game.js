@@ -20,7 +20,7 @@ function qQuellerAI() {
       energy_demand_check: 0.92,
       micro_type: 0,
       go_for_the_kill: false,
-      priority_scout_metal_spots: false,
+      priority_scout_metal_spots: true,
       enable_commander_danger_responses: false,
       neural_data_mod: 2.0,
       adv_eco_mod: 0.5,
