@@ -151,37 +151,6 @@
         ]
       ],
       "task_type": "LandAttack"
-    },
-    {
-      "name": "Uber Neural - Naval Attack Platoon",
-      "to_build": "Naval_Attack_Queller_Uber",
-      "instance_count": -1,
-      "priority": 10,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "neural",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover - (AirDefense & Custom1)",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "CanAttackWithPoolUnits",
-            "string0": "WL_AnySurface",
-            "boolean": true
-          }
-        ]
-      ],
-      "task_type": "NavalAttack"
     }
   ]
 }

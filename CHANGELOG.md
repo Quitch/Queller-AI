@@ -51,6 +51,7 @@
  - Platinum and Uber avoid using orbital battleships as anti-orbital weapons where possible
  - Uber Naval will only build hover or amphibious units from vehicle factories
  - Changed how Uber decides when to start producing Sparks
+ - Uber Neural only uses its platoon behaviour where a neural net exists
 
 #### 4.42.1 - 2019-01-21
 
