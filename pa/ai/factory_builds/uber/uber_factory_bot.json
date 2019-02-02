@@ -194,10 +194,10 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Tank & Factory & Basic",
             "compare0": ">=",
-            "value0": 2800
+            "value0": 2
           }
         ],
         [

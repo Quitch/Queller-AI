@@ -50,6 +50,7 @@
  - Fixed Casual, Gold and Platinum sometimes not transferring orbital anti-ground lasers between planets
  - Platinum and Uber avoid using orbital battleships as anti-orbital weapons where possible
  - Uber Naval will only build Drifters from vehicle factories
+ - Changed how Uber decides when to start producing Sparks
 
 #### 4.42.1 - 2019-01-21
 
