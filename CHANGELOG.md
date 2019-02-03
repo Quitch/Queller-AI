@@ -38,7 +38,6 @@
  - Bronze will build Catapults when alone
  - Uber gives a much lower priority to building radar
  - Uber is better about not overlapping basic radar and advanced radar
- - Casual and Bronze build defence from a base's perimeter to ensure better spacing and coverage
  - Bronze and Silver produce Sparks later
  - Uber has more leeway when trying to place ground anti-orbital defences to protect the Commander
  - Improve ground anti-orbital placement
