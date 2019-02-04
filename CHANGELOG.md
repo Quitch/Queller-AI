@@ -53,6 +53,7 @@
  - Uber Neural only uses its platoon behaviour where a neural net exists
  - Casual won't build an orbital launcher first on arrival at a new planet
  - Casual no longer uses the Manhattan
+ - Disabled usage of self-destruct titans
 
 #### 4.42.1 - 2019-01-21
 
