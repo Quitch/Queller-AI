@@ -64,6 +64,8 @@
  - Uber gives higher priority to anti-orbital defences when alone
  - Uber will build orbital defences on gas giants
  - Uber scales the amount of anti-orbital defence placed around the Commander in accordance with the threat
+ - Fixed issue with Uber Legion rushing Tolas at the wrong time
+ - Uber tries to be smarter about assessing orbital threats
 
 #### 4.42.1 - 2019-01-21
 
