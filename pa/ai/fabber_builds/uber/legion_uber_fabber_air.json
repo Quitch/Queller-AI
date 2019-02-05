@@ -449,6 +449,68 @@
       }
     },
     {
+      "name": "Legion - Uber - Flyer Foundry - Second Air",
+      "to_build": "LegionFactoryBasicAir",
+      "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "min_num_assisters": 1,
+      "max_num_assisters": 3,
+      "priority": 378,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "LegionCommander",
+        "AnyLegionBasicFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "rush",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicAir"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Air & Basic",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicAir"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
       "name": "Legion - Uber - Flyer Foundry - Arrived on a new world",
       "to_build": "LegionFactoryBasicAir",
       "instance_count": 1,
