@@ -62,6 +62,7 @@
  - Uber will produce more orbital resource extractors when it is energy or metal blocked
  - Uber gives priority to getting a factory on a gas giant
  - Uber gives higher priority to anti-orbital defences when alone
+ - Uber will build orbital defences on gas giants
 
 #### 4.42.1 - 2019-01-21
 
