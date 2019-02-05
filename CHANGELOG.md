@@ -68,6 +68,7 @@
  - Uber tries to be smarter about assessing orbital threats
  - Subpersonalities now always use the correct fabber type for factories
  - Uber avoids building expensive recon units on gas giants
+ - Fixed error delaying orbital scouting
 
 #### 4.42.1 - 2019-01-21
 
