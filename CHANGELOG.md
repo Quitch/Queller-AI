@@ -60,6 +60,7 @@
  - Uber Air and Uber Free For All and Uber playing as Legion will now always build air no later than second to avoid issues with the AI expansion routine on maps like PAX
  - Fixed Uber Tank not building air second
  - Uber will produce more orbital resource extractors when it is energy or metal blocked
+ - Uber gives priority to getting a factory on a gas giant
 
 #### 4.42.1 - 2019-01-21
 
