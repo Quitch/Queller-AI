@@ -499,7 +499,71 @@
             "test_type": "SystemThreat",
             "string0": "Orbital",
             "compare0": ">=",
-            "value0": 1100
+            "value0": 2800
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Commander",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicOrbital"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">=",
+            "value0": 5600
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Commander",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
+            "compare0": "<",
+            "value0": 2
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicOrbital"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">=",
+            "value0": 11200
           },
           {
             "test_type": "UnitCountInBase",
@@ -522,13 +586,6 @@
       "placement_rules": {
         "placement_type": "FromBaseCenter",
         "unit_count_rules": [
-          {
-            "unit_type_string": "Commander",
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "range": 150,
-            "count": 1
-          },
           {
             "unit_type_string": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
             "alliance": "Ally",
