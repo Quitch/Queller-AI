@@ -67,6 +67,7 @@
  - Fixed issue with Uber Legion rushing Tolas at the wrong time
  - Uber tries to be smarter about assessing orbital threats
  - Subpersonalities now always use the correct fabber type for factories
+ - Uber avoids building expensive recon units on gas giants
 
 #### 4.42.1 - 2019-01-21
 
