@@ -55,6 +55,7 @@
  - Casual no longer uses the Manhattan
  - Disabled usage of self-destruct titans
  - Fixed error preventing Silver building Bluehawks
+ - Uber Free For All and Uber Orbital will think about going orbital earlier
 
 #### 4.42.1 - 2019-01-21
 
