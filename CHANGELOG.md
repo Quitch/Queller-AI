@@ -54,6 +54,7 @@
  - Casual won't build an orbital launcher first on arrival at a new planet
  - Casual no longer uses the Manhattan
  - Disabled usage of self-destruct titans
+ - Fixed error preventing Silver building Bluehawks
 
 #### 4.42.1 - 2019-01-21
 
