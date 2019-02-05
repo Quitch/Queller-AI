@@ -57,7 +57,7 @@
  - Fixed error preventing Silver building Bluehawks
  - Uber Free For All and Uber Orbital will think about going orbital earlier
  - When alone on a planet build land troops only if another planet wants them
- - Uber Air and Uber Free For All will now always build air no later than second to avoid issues with the AI expansion routine on maps like PAX
+ - Uber Air and Uber Free For All and Uber playing as Legion will now always build air no later than second to avoid issues with the AI expansion routine on maps like PAX
 
 #### 4.42.1 - 2019-01-21
 
