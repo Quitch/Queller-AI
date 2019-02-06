@@ -70,6 +70,7 @@
  - Uber avoids building expensive recon units on gas giants
  - Fixed error delaying orbital scouting
  - Uber builds less defence in orbit
+ - Gold and Platinum will build orbital defences on gas giants
 
 #### 4.42.1 - 2019-01-21
 
