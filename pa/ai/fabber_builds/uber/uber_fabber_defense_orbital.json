@@ -404,40 +404,8 @@
           {
             "test_type": "SystemThreat",
             "string0": "Orbital",
-            "compare0": ">",
-            "value0": 18000
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
-            "compare0": "<",
-            "value0": 2
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory | PlanetEngine | ControlModule)",
             "compare0": ">=",
-            "value0": 3
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "Umbrella"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "SystemThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 36000
+            "value0": 1100
           },
           {
             "test_type": "UnitCountInBase",
@@ -572,72 +540,8 @@
           {
             "test_type": "SystemThreat",
             "string0": "Orbital",
-            "compare0": ">",
-            "value0": 9000
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Commander",
             "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "Umbrella"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "SystemThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 18000
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Commander",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
-            "compare0": "<",
-            "value0": 2
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "Umbrella"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "SystemThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 36000
+            "value0": 1100
           },
           {
             "test_type": "UnitCountInBase",
