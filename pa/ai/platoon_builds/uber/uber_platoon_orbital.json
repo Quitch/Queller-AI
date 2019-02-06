@@ -52,27 +52,6 @@
             "compare0": ">=",
             "value0": 1
           }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsGasGiant",
-            "boolean": true
-          },
-          {
-            "test_type": "OtherPlanetNeedsReconAssistance",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Orbital & (Recon | Scout) - Structure",
-            "compare0": ">=",
-            "value0": 1
-          }
         ]
       ],
       "task_type": "TransferReconToPlanet"
