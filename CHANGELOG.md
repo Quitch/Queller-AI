@@ -71,6 +71,7 @@
  - Fixed error delaying orbital scouting
  - Uber builds less defence in orbit
  - Made correction so Gold and Platinum may build orbital defences on gas giants
+ - Gold gives a slightly higher priority to going orbital
 
 #### 4.42.1 - 2019-01-21
 
