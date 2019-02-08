@@ -172,42 +172,6 @@
       ]
     },
     {
-      "name": "Legion - Silver - Chariot - Commander Evac",
-      "to_build": "LegionOrbitalBasicTransport",
-      "instance_count": 1,
-      "min_num_assisters": 8,
-      "max_num_assisters": 20,
-      "priority": 0,
-      "builders": [
-        "AnyLegionFactoryOrbital"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
-          {
-            "test_type": "WantCommanderOffPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Orbital & Transport",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter",
-            "compare0": "<",
-            "value0": 1
-          }
-        ]
-      ]
-    },
-    {
       "name": "Legion - Silver - Chariot",
       "to_build": "LegionOrbitalBasicTransport",
       "instance_count": 1,

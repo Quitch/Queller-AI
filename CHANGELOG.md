@@ -75,6 +75,7 @@
  - Uber Orbital removed and its behaviour moved into Uber baseline
  - Uber will consider orbital earlier in a match
  - Standardise behaviour for getting stuck on a single planet and removed excess build conditions
+ - Bronze and above will no longer move the Commander by orbital transport because of excessive stupidity
 
 #### 4.42.1 - 2019-01-21
 
