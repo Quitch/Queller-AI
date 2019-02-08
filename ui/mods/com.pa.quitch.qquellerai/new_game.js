@@ -210,7 +210,7 @@ function qQuellerAI() {
       priority_scout_metal_spots: true,
       enable_commander_danger_responses: true,
       neural_data_mod: 0.75,
-      adv_eco_mod: 0.85,
+      adv_eco_mod: 0,
       adv_eco_mod_alone: 0,
       personality_tags:
         [
