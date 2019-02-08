@@ -152,7 +152,6 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 ### Free For All
  - More cautious about engaging in battle
  - Techs earlier
- - Will get orbital as soon as possible on multi-planet systems
 
 ### Naval
  - Attempts to build a naval factory first
@@ -161,9 +160,6 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 ### Neural
  - All platoon creation decisions are made by the neural network
  - High map activity
-
-### Orbital
- - Will get orbital as soon as possible on multi-planet systems
 
 ### Rush
  - Favours bots

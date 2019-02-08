@@ -91,19 +91,18 @@
             "boolean": false
           },
           {
-            "test_type": "PlanetCount",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "SystemThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 0
+            "test_type": "PlanetWithoutPresence",
+            "boolean": true
           },
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "LegionFactoryBasicOrbital"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital - Naval",
+            "compare0": ">=",
+            "value0": 5
           },
           {
             "test_type": "UnitCountOnPlanet",
