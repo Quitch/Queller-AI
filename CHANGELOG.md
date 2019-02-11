@@ -76,6 +76,7 @@
  - Uber Free for All will consider orbital earlier in a match
  - Standardise behaviour for getting stuck on a single planet and removed excess build conditions
  - Bronze and above will no longer move the Commander by orbital transport because of excessive stupidity
+ - Fix an error preventing Uber making the correct number of T1 bot fabbers
 
 #### 4.42.1 - 2019-01-21
 
