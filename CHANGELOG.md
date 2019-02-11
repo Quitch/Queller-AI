@@ -82,6 +82,7 @@
  - Uber uses more Storms
  - Uber brings out Storms earlier
  - Now looks at its own Air threat rather than AntiAir when making related fabber and factory decisions
+ - Gold, Platinum and Uber only dispatch air when they think they have a stronger airforce than the enemy and rely on the neural net to deal with ground AA effectively
 
 #### 4.42.1 - 2019-01-21
 
