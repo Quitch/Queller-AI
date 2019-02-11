@@ -346,7 +346,6 @@
       "priority": 477,
       "min_num_assisters": 3,
       "max_num_assisters": 8,
-      "base_sort": "FromBuilder",
       "builders": [
         "LegionNavalBasicFabber",
         "LegionNavalAdvancedFabber"
@@ -452,7 +451,6 @@
       ],
       "placement_rules": {
         "buffer": 3,
-        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",

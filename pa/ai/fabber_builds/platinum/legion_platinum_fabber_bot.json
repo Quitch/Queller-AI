@@ -212,7 +212,6 @@
       ],
       "placement_rules": {
         "buffer": 3,
-        "placement_type": "FromMainBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -229,7 +228,6 @@
       "priority": 477,
       "min_num_assisters": 4,
       "max_num_assisters": 8,
-      "base_sort": "FromBuilder",
       "builders": [
         "LegionBotBasicFabber",
         "LegionBotAdvancedFabber"
@@ -329,7 +327,6 @@
       ],
       "placement_rules": {
         "buffer": 3,
-        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",

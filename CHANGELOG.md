@@ -77,6 +77,8 @@
  - Standardise behaviour for getting stuck on a single planet and removed excess build conditions
  - Bronze and above will no longer move the Commander by orbital transport because of excessive stupidity
  - Fix an error preventing Uber making the correct number of T1 bot fabbers
+ - Bronze through Platinum once again only build advanced factories near the main base
+ - Uber builds advanced factories near the main base except when it is floating and needs them quickly
 
 #### 4.42.1 - 2019-01-21
 

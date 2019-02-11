@@ -135,7 +135,6 @@
       "shared_instance_count": "SuperWeapon",
       "max_num_assisters": 10,
       "priority": 480,
-      "base_sort": "FromMainBase",
       "builders": [
         "AnyLegionFabberAdvanced"
       ],
@@ -157,7 +156,6 @@
       ],
       "placement_rules": {
         "buffer": 2,
-        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",

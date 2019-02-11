@@ -168,7 +168,6 @@
       "min_num_assisters": 3,
       "max_num_assisters": 45,
       "priority": 275,
-      "base_sort": "FromMainBase",
       "builders": [
         "AnyLegionFabberAdvanced"
       ],
@@ -208,7 +207,6 @@
       ],
       "placement_rules": {
         "buffer": 2,
-        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -276,7 +274,6 @@
       "min_num_assisters": 8,
       "max_num_assisters": 45,
       "priority": 380,
-      "base_sort": "FromMainBase",
       "builders": [
         "AnyLegionFabberAdvanced"
       ],
@@ -335,7 +332,6 @@
       ],
       "placement_rules": {
         "buffer": 2,
-        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",

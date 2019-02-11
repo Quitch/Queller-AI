@@ -511,7 +511,6 @@
       ],
       "placement_rules": {
         "buffer": 3,
-        "placement_type": "FromMainBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -528,7 +527,6 @@
       "priority": 479,
       "min_num_assisters": 5,
       "max_num_assisters": 8,
-      "base_sort": "FromBuilder",
       "builders": [
         "BasicVehicleFabber",
         "AdvancedVehicleFabber"
@@ -663,7 +661,6 @@
       ],
       "placement_rules": {
         "buffer": 3,
-        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",

@@ -156,7 +156,6 @@
       "shared_instance_count": "AdvancedFactory",
       "priority": 477,
       "max_num_assisters": 10,
-      "base_sort": "FromBuilder",
       "builders": [
         "BasicNavalFabber",
         "AdvancedNavalFabber"
@@ -221,7 +220,6 @@
       ],
       "placement_rules": {
         "buffer": 3,
-        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
