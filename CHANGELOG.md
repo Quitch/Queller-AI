@@ -21,7 +21,6 @@
  - Corrected error preventing the building of the Tsunami
  - Uber won't produce more Piranhas than it can use
  - Base defence will be put in smaller bases
- - Increased chance that Uber techs to T2 bots before T2 tanks
  - Uber's Locust attacks are back in the hands of the neural net
  - Uber Rush no longer builds suicide bots
  - Uber Rush no longer overestimates its strength
