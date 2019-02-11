@@ -5,7 +5,7 @@
       "to_build": "BasicNavalDefense",
       "instance_count": 1,
       "priority": 501,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": [
         "UberCommander",
         "BasicAirFabber",
@@ -165,7 +165,7 @@
       "to_build": "AdvancedNavalDefense",
       "instance_count": 1,
       "priority": 502,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": [
         "AdvancedNavalFabber",
         "AdvancedAirFabber"

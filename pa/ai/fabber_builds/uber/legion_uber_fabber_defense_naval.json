@@ -5,7 +5,7 @@
       "to_build": "LegionDefenseBasicNaval",
       "instance_count": 1,
       "priority": 501,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": [
         "LegionCommander",
         "LegionAirBasicFabber",
@@ -165,7 +165,7 @@
       "to_build": "LegionDefenseAdvancedNaval",
       "instance_count": 1,
       "priority": 502,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": [
         "LegionNavalAdvancedFabber",
         "LegionAirAdvancedFabber"
