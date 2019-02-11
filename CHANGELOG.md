@@ -81,6 +81,7 @@
  - Uber builds advanced factories near the main base except when it is floating and needs them quickly
  - Uber uses more Storms
  - Uber brings out Storms earlier
+ - Now looks at its own Air threat rather than AntiAir when making related fabber and factory decisions
 
 #### 4.42.1 - 2019-01-21
 
