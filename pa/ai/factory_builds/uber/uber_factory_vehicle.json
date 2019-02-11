@@ -822,12 +822,6 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Air",
-            "compare0": ">",
-            "value0": 4500
-          },
-          {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Air",
             "string1": "AntiAir",
@@ -839,7 +833,7 @@
             "unit_type_string0": "Tank & Mobile & AirDefense & Advanced",
             "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
             "compare0": "<",
-            "value0": 0.05
+            "value0": 0.04
           }
         ],
         [
@@ -867,7 +861,7 @@
             "unit_type_string0": "Tank & Mobile & AirDefense & Advanced",
             "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
             "compare0": "<",
-            "value0": 0.05
+            "value0": 0.02
           },
           {
             "test_type": "OtherPlanetNeedsLandUnitAssistance",

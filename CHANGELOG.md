@@ -80,6 +80,7 @@
  - Bronze through Platinum once again only build advanced factories near the main base
  - Uber builds advanced factories near the main base except when it is floating and needs them quickly
  - Uber uses more Storms
+ - Uber brings out Storms earlier
 
 #### 4.42.1 - 2019-01-21
 
