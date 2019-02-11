@@ -79,6 +79,7 @@
  - Fix an error preventing Uber making the correct number of T1 bot fabbers
  - Bronze through Platinum once again only build advanced factories near the main base
  - Uber builds advanced factories near the main base except when it is floating and needs them quickly
+ - Uber uses more Storms
 
 #### 4.42.1 - 2019-01-21
 
