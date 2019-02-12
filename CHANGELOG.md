@@ -81,7 +81,7 @@
  - Uber builds less air factories when alone
  - Uber builds more orbital fabbers on gas giants
  - Try to avoid throwing orbital units into battles they can't win
- - Gold, Platinum and Uber are faster to build orbital
+ - Gold, Platinum and Uber Free For All are faster to build orbital
  - Gold and Platinum have reverted to a more proactive approach to orbital
  - Avoid instances of idle orbital recon
  - Platinum no longer builds the Wyrm
