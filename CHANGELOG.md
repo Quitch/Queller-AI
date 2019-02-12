@@ -89,6 +89,7 @@
  - Uber builds more orbital fabbers on gas giants
  - Try to avoid throwing orbital units into battles they can't win
  - Gold, Platinum and Uber are faster to build orbital
+ - Gold and Platinum have reverted to a more proactive approach to orbital
 
 #### 4.42.1 - 2019-01-21
 
