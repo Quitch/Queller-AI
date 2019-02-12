@@ -79,7 +79,6 @@
  - All difficulties excluding Casual return to a more conservative placement strategy for expensive builds
  - Uber uses more Storms
  - Now looks at its own Air threat rather than AntiAir when making related fabber and factory decisions
- - Gold, Platinum and Uber only dispatch air when they think they have a stronger airforce than the enemy and rely on the neural net to deal with ground AA effectively
  - Uber Neural uses the same air handling as Uber baseline
  - Restore old behaviour for how locations for MEX defence are chosen
  - Check for Catalyst build points from builders not bases
