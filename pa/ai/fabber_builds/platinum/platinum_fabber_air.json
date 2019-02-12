@@ -7,7 +7,7 @@
       "shared_instance_count": "BasicFactory",
       "max_num_assisters": 2,
       "priority": 376,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "UberCommander"
       ],
@@ -148,7 +148,7 @@
       "shared_instance_count": "BasicFactory",
       "priority": 10,
       "max_num_assisters": 2,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "UberCommander",
         "BasicNavalFabber"
@@ -238,7 +238,7 @@
       "priority": 376,
       "min_num_assisters": 1,
       "max_num_assisters": 3,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "AnyUberBasicFabber",
         "AnyUberAdvancedFabber"
@@ -380,7 +380,7 @@
       "shared_instance_count": "BasicFactory",
       "max_num_assisters": 2,
       "priority": 378,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "UberCommander",
         "AnyUberBasicFabber"

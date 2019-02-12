@@ -7,7 +7,7 @@
       "shared_instance_count": "BasicFactory",
       "max_num_assisters": 2,
       "priority": 376,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "UberCommander"
       ],
@@ -61,7 +61,7 @@
       "priority": 376,
       "min_num_assisters": 1,
       "max_num_assisters": 3,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "AnyUberBasicFabber"
       ],
@@ -109,7 +109,7 @@
       "priority": 375,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "UberCommander",
         "AnyUberBasicFabber"
@@ -173,7 +173,7 @@
       "priority": 477,
       "min_num_assisters": 5,
       "max_num_assisters": 8,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "BasicAirFabber",
         "AdvancedAirFabber"
@@ -257,7 +257,7 @@
       "priority": 475,
       "min_num_assisters": 6,
       "max_num_assisters": 9,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "BasicAirFabber",
         "AdvancedAirFabber"
@@ -330,7 +330,7 @@
       "shared_instance_count": "BasicFactory",
       "max_num_assisters": 2,
       "priority": 376,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "LegionCommander"
       ],
@@ -378,7 +378,7 @@
       "priority": 376,
       "min_num_assisters": 1,
       "max_num_assisters": 3,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "AnyLegionFabberBasic"
       ],
@@ -426,7 +426,7 @@
       "priority": 375,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "LegionCommander",
         "AnyLegionFabberBasic"
@@ -490,7 +490,7 @@
       "priority": 477,
       "min_num_assisters": 5,
       "max_num_assisters": 8,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "LegionAirBasicFabber",
         "LegionAirAdvancedFabber"
@@ -574,7 +574,7 @@
       "priority": 475,
       "min_num_assisters": 5,
       "max_num_assisters": 8,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromMainBase",
       "builders": [
         "LegionAirBasicFabber",
         "LegionAirAdvancedFabber"
