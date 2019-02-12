@@ -91,6 +91,7 @@
  - Gold and Platinum have reverted to a more proactive approach to orbital
  - Avoid instances of idle orbital recon
  - Platinum no longer builds the Wyrm
+ - Uber builds the correct amount of Spinners when alone
 
 #### 4.42.1 - 2019-01-21
 
