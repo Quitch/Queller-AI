@@ -6,11 +6,9 @@
  - Uber counts Novas towards bomber-gunship platoon formation
  - Uber Rush can open two bot factories
  - Corrected Uber not putting enough assistants on its first air factory
- - Uber Neural correctly gets air second
  - Further improve Uber's pond build behaviour
  - Updated Uber's use of Bluehawks and Gil-Es in response to the evolution of the meta
  - Uber builds the Sheller independent of the amount of Gil-Es it has
- - Fixed Uber Neural so it does what it's supposed to do
  - Moved heavy tanks back into the Close squad
  - Suicide bot platoons are formed earlier in high threat scenarios
  - Don't try and put Locusts in bot scout platoons
@@ -49,7 +47,6 @@
  - Platinum and Uber avoid using orbital battleships as anti-orbital weapons where possible
  - Uber Naval will only build hover or amphibious units from vehicle factories
  - Changed how Uber decides when to start producing Sparks
- - Uber Neural only uses its platoon behaviour where a neural net exists
  - Casual won't build an orbital launcher first on arrival at a new planet
  - Casual no longer uses the Manhattan
  - Disabled usage of self-destruct titans
@@ -79,7 +76,6 @@
  - All difficulties excluding Casual return to a more conservative placement strategy for expensive builds
  - Uber uses more Storms
  - Now looks at its own Air threat rather than AntiAir when making related fabber and factory decisions
- - Uber Neural uses the same air handling as Uber baseline
  - Restore old behaviour for how locations for MEX defence are chosen
  - Check for Catalyst build points from builders not bases
  - Uber builds less air factories when alone
@@ -91,6 +87,7 @@
  - Platinum no longer builds the Wyrm
  - Uber builds the correct amount of Spinners when alone
  - Changed how Uber decides when to build a Unit Cannon
+ - Removed Uber Neural
 
 #### 4.42.1 - 2019-01-21
 
