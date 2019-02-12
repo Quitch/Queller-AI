@@ -172,7 +172,8 @@ function qQuellerAI() {
       adv_eco_mod_alone: 0,
       personality_tags:
         [
-          "uber"
+          "uber",
+          "aggressive"
         ],
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1,

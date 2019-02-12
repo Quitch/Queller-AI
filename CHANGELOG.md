@@ -4,7 +4,7 @@
 
  - Updated translations
  - Uber counts Novas towards bomber-gunship platoon formation
- - Uber Rush can open two bot factories
+ - Uber Aggressive and Uber Rush can open two bot factories
  - Corrected Uber not putting enough assistants on its first air factory
  - Further improve Uber's pond build behaviour
  - Updated Uber's use of Bluehawks and Gil-Es in response to the evolution of the meta
