@@ -84,6 +84,7 @@
  - Uber Neural uses the same air handling as Uber baseline
  - Uber prioritises using its air to help land platoons
  - Restore old behaviour for how locations for MEX defence are chosen
+ - Check for Catalyst build points from builders not bases
 
 #### 4.42.1 - 2019-01-21
 
