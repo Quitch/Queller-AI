@@ -89,6 +89,7 @@
  - Changed how Uber decides when to build a Unit Cannon
  - Removed Uber Neural
  - Commander less likely to accept build assistance
+ - Commander continues to build energy even after going teching to advanced buildings
 
 #### 4.42.1 - 2019-01-21
 
