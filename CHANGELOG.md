@@ -87,6 +87,7 @@
  - Check for Catalyst build points from builders not bases
  - Uber builds less air factories when alone
  - Uber builds more orbital fabbers on gas giants
+ - Try to avoid throwing orbital units into battles they can't win
 
 #### 4.42.1 - 2019-01-21
 
