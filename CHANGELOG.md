@@ -88,6 +88,7 @@
  - Uber builds the correct amount of Spinners when alone
  - Changed how Uber decides when to build a Unit Cannon
  - Removed Uber Neural
+ - Commander less likely to accept build assistance
 
 #### 4.42.1 - 2019-01-21
 
