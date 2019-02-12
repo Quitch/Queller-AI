@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Casual - Orbital Radar - Recon",
+      "name": "Casual - Orbital Recon",
       "to_build": "Orbital_Scout_Queller",
       "instance_count": -1,
       "priority": 100,
@@ -17,10 +17,6 @@
             "boolean": false
           },
           {
-            "test_type": "ThisPlanetNeedsReconAssistance",
-            "boolean": true
-          },
-          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Orbital & (Recon | Scout) - Structure",
             "compare0": ">=",
@@ -31,10 +27,10 @@
       "task_type": "OrbitalRecon"
     },
     {
-      "name": "Casual - Orbital Radar - Scout",
+      "name": "Casual - Orbital Scout",
       "to_build": "Orbital_Scout_Queller",
       "instance_count": -1,
-      "priority": 100,
+      "priority": 102,
       "build_conditions": [
         [
           {
@@ -61,10 +57,10 @@
       "task_type": "Scout"
     },
     {
-      "name": "Casual - Orbital Radar Transfer To Planet",
+      "name": "Casual - Orbital Recon Transfer To Planet",
       "to_build": "Orbital_Scout_Queller",
       "instance_count": 1,
-      "priority": 101,
+      "priority": 105,
       "build_conditions": [
         [
           {
