@@ -92,6 +92,7 @@
  - Avoid instances of idle orbital recon
  - Platinum no longer builds the Wyrm
  - Uber builds the correct amount of Spinners when alone
+ - Changed how Uber decides when to build a Unit Cannon
 
 #### 4.42.1 - 2019-01-21
 

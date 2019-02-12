@@ -109,15 +109,12 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetWithoutPresence",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": false
           },
           {
             "test_type": "CanAffordPotentialDrain",
