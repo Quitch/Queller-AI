@@ -78,7 +78,6 @@
  - Fix an error preventing Uber making the correct number of T1 bot fabbers
  - All difficulties excluding Casual return to a more conservative placement strategy for expensive builds
  - Uber uses more Storms
- - Uber brings out Storms earlier
  - Now looks at its own Air threat rather than AntiAir when making related fabber and factory decisions
  - Gold, Platinum and Uber only dispatch air when they think they have a stronger airforce than the enemy and rely on the neural net to deal with ground AA effectively
  - Uber Neural uses the same air handling as Uber baseline
