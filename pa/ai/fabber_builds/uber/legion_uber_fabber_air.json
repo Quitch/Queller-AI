@@ -157,10 +157,10 @@
             "string0": "LegionFactoryBasicAir"
           },
           {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Air & Factory",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Factory & Basic",
             "compare0": "<",
-            "value0": 250
+            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -426,10 +426,10 @@
             "string0": "LegionFactoryBasicAir"
           },
           {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Air & Factory",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Factory & Basic",
             "compare0": "<",
-            "value0": 250
+            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -673,36 +673,32 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
           },
           {
-            "test_type": "UnableToExpand",
-            "boolean": false
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionFactoryAdvancedAir"
+            "string0": "AdvancedAirFactory"
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Basic & Fabber) - Orbital - Land",
+            "unit_type_string0": "Basic & Fabber - Orbital",
             "compare0": ">=",
             "value0": 5
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Factory & Land) - Orbital",
+            "unit_type_string0": "Factory & Air & Advanced",
             "compare0": "<",
-            "value0": 3
+            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",

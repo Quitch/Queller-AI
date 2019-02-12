@@ -85,6 +85,7 @@
  - Uber prioritises using its air to help land platoons
  - Restore old behaviour for how locations for MEX defence are chosen
  - Check for Catalyst build points from builders not bases
+ - Uber builds less air factories when alone
 
 #### 4.42.1 - 2019-01-21
 
