@@ -102,55 +102,10 @@
       "task_type": "BomberAttack"
     },
     {
-      "name": "Uber - Fighter Attack Platoon - Defend",
+      "name": "Uber - Fighter Attack Platoon",
       "to_build": "Fighter_Attack_Queller",
       "instance_count": -1,
-      "priority": 175,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "neural",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Air",
-            "string1": "Air",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "CanProvideAirSupportWithPoolUnits",
-            "string0": "fighter_attack",
-            "string1": "WL_Air",
-            "string2": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "FighterAttack"
-    },
-    {
-      "name": "Uber - Fighter Attack Platoon - Attack",
-      "to_build": "Fighter_Attack_Queller",
-      "instance_count": -1,
-      "priority": 125,
+      "priority": 150,
       "build_conditions": [
         [
           {
@@ -184,6 +139,42 @@
             "test_type": "CanAttackWithPoolUnitsFighter",
             "string0": "WL_Air",
             "string1": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "neural",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "Air",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Fighter",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanProvideAirSupportWithPoolUnits",
+            "string0": "fighter_attack",
+            "string1": "WL_Air",
+            "string2": "WL_Air",
             "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ]
