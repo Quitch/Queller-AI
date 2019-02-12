@@ -90,6 +90,7 @@
  - Removed Uber Neural
  - Commander less likely to accept build assistance
  - Commander continues to build energy even after going teching to advanced buildings
+ - Uber uses more T1 fabbers
 
 #### 4.42.1 - 2019-01-21
 
