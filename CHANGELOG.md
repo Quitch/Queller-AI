@@ -88,6 +88,7 @@
  - Uber builds less air factories when alone
  - Uber builds more orbital fabbers on gas giants
  - Try to avoid throwing orbital units into battles they can't win
+ - Gold, Platinum and Uber are faster to build orbital
 
 #### 4.42.1 - 2019-01-21
 
