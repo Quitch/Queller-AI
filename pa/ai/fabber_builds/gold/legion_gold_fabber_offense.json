@@ -303,7 +303,6 @@
       "min_num_assisters": 8,
       "max_num_assisters": 45,
       "priority": 509,
-      "base_sort": "FromMainBase",
       "builders": [
         "AnyLegionFabberAdvanced"
       ],
@@ -362,8 +361,7 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 3,
-        "placement_type": "FromBaseCenter"
+        "buffer": 3
       }
     },
     {

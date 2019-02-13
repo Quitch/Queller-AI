@@ -80,7 +80,6 @@
       "shared_instance_count": "SuperWeapon",
       "max_num_assisters": 10,
       "priority": 479,
-      "base_sort": "FromMainBase",
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -111,8 +110,7 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromBaseCenter"
+        "buffer": 2
       }
     },
     {

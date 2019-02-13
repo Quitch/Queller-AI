@@ -83,7 +83,6 @@
       "min_num_assisters": 3,
       "max_num_assisters": 12,
       "priority": 507,
-      "base_sort": "FromMainBase",
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -114,8 +113,7 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromBaseCenter"
+        "buffer": 2
       }
     },
     {
@@ -346,7 +344,6 @@
       "min_num_assisters": 8,
       "max_num_assisters": 45,
       "priority": 509,
-      "base_sort": "FromMainBase",
       "builders": [
         "AnyUberAdvancedFabber"
       ],
@@ -405,8 +402,7 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 3,
-        "placement_type": "FromBaseCenter"
+        "buffer": 3
       }
     },
     {
