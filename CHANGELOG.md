@@ -92,6 +92,7 @@
  - Commander continues to build energy even after going teching to advanced buildings
  - Uber uses more T1 fabbers
  - Removed Uber Rush's alternate approach to shared armies just for ease of maintenance
+ - Removed offensive Catapult build for performance reasons as it was almost never used
 
 #### 4.42.1 - 2019-01-21
 
