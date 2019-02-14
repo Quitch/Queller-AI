@@ -71,6 +71,22 @@
             "boolean": true
           },
           {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicEnergyGenerator"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
             "test_type": "PotentialEnergyEfficiency",
             "compare0": "<",
             "value0": 1
