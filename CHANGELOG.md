@@ -102,6 +102,7 @@ Many thanks to B13 for his help with testing
  - Ensure Unit Cannons don't stop building until full
  - Always assume land factories have a land route to the teleporter when alone on a planet
  - If a factory has hover units it's assumed that land blockages are water or lava and not CSG
+ - Uber will build Catapults in bases threatened by naval
 
 #### 4.42.1 - 2019-01-21
 
