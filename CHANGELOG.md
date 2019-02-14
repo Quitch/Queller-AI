@@ -94,6 +94,7 @@
  - Removed Uber Rush's alternate approach to shared armies just for ease of maintenance
  - Removed offensive Catapult build for performance reasons as it was almost never used
  - Uber will use slightly more advanced air fabbers when alone
+ - Don't build more factories if there's nowhere that wants the troops
 
 #### 4.42.1 - 2019-01-21
 
