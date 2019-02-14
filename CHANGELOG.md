@@ -95,7 +95,7 @@
  - Removed offensive Catapult build for performance reasons as it was almost never used
  - Uber will use slightly more advanced air fabbers when alone
  - Don't build more factories if there's nowhere that wants the troops
- - Tweaks to Uber's economy balancing
+ - Uber Commander more aggressive at correcting energy issues
  - Allow Uber to assign more fabbers to metal expansion when alone
 
 #### 4.42.1 - 2019-01-21
