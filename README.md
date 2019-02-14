@@ -218,6 +218,7 @@ Please help [translate Queller AI](https://poeditor.com/join/project/avPZrv6yyE)
 - wondible for his creation of the [AI Showdown](https://github.com/JustinLove/ai_showdown/) tool
 - mikeyh for writing the JavaScript for loading Queller's personalities
 - alpha2546 for extensively playtesting Queller during Legion Expansion development
+- B13 for assisting with MLA playtesting
 - Everyone who has helped with translations:
   - K-Orthic | Gamax
   - gmase
