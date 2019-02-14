@@ -157,10 +157,6 @@ By default, Queller at Uber level will adapt its play to try and suit the system
  - Attempts to build a naval factory first
  - Unrestricted naval usage
 
-### Neural
- - All platoon creation decisions are made by the neural network
- - High map activity
-
 ### Rush
  - Favours bots
  - Techs late
