@@ -95,7 +95,6 @@
  - Removed offensive Catapult build for performance reasons as it was almost never used
  - Uber will use slightly more advanced air fabbers when alone
  - Don't build more factories if there's nowhere that wants the troops
- - Uber tries to focus on one interplanetary weapon build at a time
  - Tweaks to Uber's economy balancing
 
 #### 4.42.1 - 2019-01-21
