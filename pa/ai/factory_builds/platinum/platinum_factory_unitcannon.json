@@ -1,0 +1,23 @@
+{
+  "build_list": [
+    {
+      "name": "Platinum - Slammer - Unit Cannon",
+      "to_build": "AdvancedAssaultBot",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": [
+        "UnitCannon"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          }
+        ]
+      ]
+    }
+  ]
+}

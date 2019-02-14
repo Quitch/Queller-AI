@@ -97,6 +97,7 @@
  - Don't build more factories if there's nowhere that wants the troops
  - Uber Commander more aggressive at correcting energy issues
  - Allow Uber to assign more fabbers to metal expansion when alone
+ - Ensure Unit Cannons don't stop building until full
 
 #### 4.42.1 - 2019-01-21
 
