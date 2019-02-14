@@ -100,50 +100,6 @@
             "string0": "BasicVehicleFactory"
           },
           {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "(Mobile & Offense) - Air - Fabber - Construction",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Land & Factory & Basic",
-            "compare0": "<=",
-            "value0": 500
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicVehicleFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsRespawnable",
-            "boolean": false
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicVehicleFactory"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Naval & Factory",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
             "test_type": "UnitCountPerPlanetRadius",
             "unit_type_string0": "Land & Factory & Basic",
             "compare0": "<=",
@@ -272,51 +228,6 @@
             "test_type": "HaveSeenEnemyUnits",
             "unit_type_string0": "(Mobile & Offense) - Air - Fabber - Construction",
             "boolean": true
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Land & Factory & Basic",
-            "compare0": "<=",
-            "value0": 500
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicVehicleFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsRespawnable",
-            "boolean": false
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicVehicleFactory"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Naval & Factory",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Land & Factory & Basic",
-            "compare0": "<=",
-            "value0": 500
           },
           {
             "test_type": "CanFindPlaceToBuild",
