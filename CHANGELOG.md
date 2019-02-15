@@ -53,7 +53,7 @@ Many thanks to B13 for his help with testing
  - Casual no longer uses the Manhattan
  - Disabled usage of self-destruct titans
  - Fixed error preventing Silver building Bluehawks
- - When alone on a planet build land troops only if another planet wants them
+ - When alone on a planet only build land troops if another planet wants them
  - Uber Air and Uber Free For All and Uber playing as Legion will now always build air no later than second to avoid issues with the AI expansion routine on maps like PAX
  - Fixed Uber Tank not building air second
  - Uber will produce more orbital resource extractors when it is energy or metal blocked
@@ -68,32 +68,30 @@ Many thanks to B13 for his help with testing
  - Fixed error delaying orbital scouting
  - Uber builds less defence in orbit
  - Made correction so Gold and Platinum may build orbital defences on gas giants
- - Gold gives a slightly higher priority to going orbital
  - Uber tries to avoid losing its Commander to single orbital lasers even if its eco is struggling
  - Uber Orbital removed and its behaviour moved into Uber baseline
  - Uber Free for All will consider orbital earlier in a match
- - Standardise behaviour for getting stuck on a single planet and removed excess build conditions
+ - Standardised behaviour for getting stuck on a single planet and removed excess build conditions
  - Bronze and above will no longer move the Commander by orbital transport because of excessive stupidity
- - Fix an error preventing Uber making the correct number of T1 bot fabbers
+ - Fixed an error preventing Uber making the correct number of T1 bot fabbers
  - All difficulties excluding Casual return to a more conservative placement strategy for expensive builds
  - Uber uses more Storms
- - Now looks at its own Air threat rather than AntiAir when making related fabber and factory decisions
- - Restore old behaviour for how locations for MEX defence are chosen
+ - Look at friendly Air threat rather than AntiAir when making AA fabber and factory decisions
+ - Restore old search behaviour for how locations for MEX defence are found
  - Check for Catalyst build points from builders not bases
  - Uber builds less air factories when alone
  - Uber builds more orbital fabbers on gas giants
- - Try to avoid throwing orbital units into battles they can't win
  - Gold, Platinum and Uber Free For All are faster to build orbital
  - Gold and Platinum have reverted to a more proactive approach to orbital
  - Avoid instances of idle orbital recon
  - Platinum no longer builds the Wyrm
  - Uber builds the correct amount of Spinners when alone
- - Changed how Uber decides when to build a Unit Cannon
+ - Improved how Uber decides when to build a Unit Cannon
  - Removed Uber Neural
  - Commander less likely to accept build assistance
  - Commander continues to build energy even after going teching to advanced buildings
  - Uber uses more T1 fabbers
- - Removed Uber Rush's alternate approach to shared armies just for ease of maintenance
+ - Removed Uber Rush's alternate approach to shared armies for ease of maintenance
  - Removed offensive Catapult build for performance reasons as it was almost never used
  - Uber will use slightly more advanced air fabbers when alone
  - Don't build more factories if there's nowhere that wants the troops
