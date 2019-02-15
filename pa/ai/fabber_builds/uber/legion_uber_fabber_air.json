@@ -80,46 +80,6 @@
             "string0": "LegionFactoryBasicAir"
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Air",
-            "string1": "Air",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionFactoryBasicAir"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "air",
-            "boolean": false
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bot",
-            "boolean": false
-          },
-          {
-            "test_type": "PlanetIsRespawnable",
-            "boolean": false
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionFactoryBasicAir"
-          },
-          {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Factory & Air & Basic",
             "unit_type_string1": "Factory & Basic - Orbital",
