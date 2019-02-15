@@ -70,10 +70,45 @@
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "AntiSub",
+            "string0": "Naval",
             "string1": "Sub",
             "compare0": ">",
-            "value0": 0.8
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicNaval"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicNaval"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Naval",
+            "string1": "Naval",
+            "compare0": ">",
+            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -226,10 +261,45 @@
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "AntiSub",
+            "string0": "Naval",
             "string1": "Sub",
             "compare0": ">",
-            "value0": 0.8
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicNaval"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicNaval"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Naval",
+            "string1": "Naval",
+            "compare0": ">",
+            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
