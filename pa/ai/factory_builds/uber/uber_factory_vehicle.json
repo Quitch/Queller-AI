@@ -45,10 +45,6 @@
             "boolean": false
           },
           {
-            "test_type": "HaveEcoForAdvanced",
-            "boolean": false
-          },
-          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
@@ -62,40 +58,6 @@
             "unit_type_string1": "Factory & Basic & Tank",
             "compare0": "<",
             "value0": 1
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveEcoForAdvanced",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicVehicleFabber"
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Fabber & Basic & Tank",
-            "unit_type_string1": "Factory & Basic & Tank",
-            "compare0": "<",
-            "value0": 2
           }
         ],
         [
