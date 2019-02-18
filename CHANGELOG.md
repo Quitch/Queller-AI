@@ -69,7 +69,6 @@ Many thanks to B13 for his help with testing
  - Made correction so Gold and Platinum may build orbital defences on gas giants
  - Uber tries to avoid losing its Commander to single orbital lasers even if its eco is struggling
  - Uber Orbital removed and its behaviour moved into Uber baseline
- - Uber Free for All will consider orbital earlier in a match
  - Standardised behaviour for getting stuck on a single planet and removed excess build conditions
  - Bronze and above will no longer move the Commander by orbital transport because of excessive stupidity
  - Fixed an error preventing Uber making the correct number of T1 bot fabbers
