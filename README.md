@@ -127,13 +127,13 @@ When you need to increase the challenge, but don't want to increase the difficul
 | League   | Placement | Difficulty | Eco |
 | -------- | --------- | ---------- | --- |
 | Bronze   | Low       | Bronze     | 1.0 |
-| Bronze   | High      | Silver     | 1.0 |
-| Silver   | Low       | Gold       | 1.0 |
-| Silver   | Mid       | Platinum   | 1.0 |
-| Silver   | High      | Uber       | 1.0 |
-| Gold     | Low       | Uber       | 1.2 |
-| Gold     | High      | Uber       | 1.4 |
-| Platinum | Any       | Uber       | 1.6 |
+| Bronze   | Mid       | Silver     | 1.0 |
+| Bronze   | High      | Gold       | 1.0 |
+| Silver   | Low       | Platinum   | 1.0 |
+| Silver   | Mid       | Uber       | 1.0 |
+| Silver   | High      | Uber       | 1.2 |
+| Gold     | Any       | Uber       | 1.4 |
+| Platinum | Any       | Uber       | 1.7 |
 | Uber     | Any       | Uber       | 2.0 |
 
 ## SUBPERSONALITIES
