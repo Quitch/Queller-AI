@@ -29,7 +29,6 @@ Many thanks to B13 for his help with testing
  - Gold, Platinum and Uber will build the Stingray for vision
  - Ensure naval unit pool check matches platoon squad criteria for Casual, Bronze and Silver
  - Corrected Uber building too much T1 naval
- - If Uber somehow ends up with an Advanced Bot Factory on an island it will use more Locusts
  - Removed redundant builds following spawn pathing detection improvement
  - Silver, Gold and Platinum ensure they don't produce more Sparks than used by their platoons
  - Uber no longer builds orbital transports on gas giants
