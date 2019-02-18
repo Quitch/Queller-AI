@@ -619,42 +619,6 @@
             "boolean": true
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "BaseThreat",
-            "string0": "Naval",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & (SurfaceDefense | Tactical) - (CombatFabAdvBuild & Custom1)",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
-            "compare0": ">",
-            "value0": 3
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "TML"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
