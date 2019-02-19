@@ -100,6 +100,7 @@ Many thanks to B13 for his help with testing
  - If a factory has hover units it's assumed that land blockages are water or lava and not CSG
  - Uber MLA builds slightly more T1 vehicles when alone
  - Updated difficulty recommendations for new leaderboard system
+ - Uber uses more Slammers than Gil-Es and Bluehawks
 
 #### 4.42.1 - 2019-01-21
 
