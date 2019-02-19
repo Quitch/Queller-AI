@@ -14,7 +14,7 @@ Many thanks to B13 for his help with testing
  - Moved heavy tanks back into the Close squad
  - Suicide bot platoons are formed earlier in high threat scenarios
  - Don't try and put Locusts in bot scout platoons
- - Uber has a higher bot factory minimum and maximum for its opening build
+ - Uber has a higher bot factory minimum for its opening build
  - Removed aggressive naval scouting behaviour as shore bombardment behaviour appears to have been improved in 112686
  - Fixed errors in placement of advanced torpedo launchers for base defence
  - Uber will attempt to defend islands from ships using shore-based torpedo launchers
