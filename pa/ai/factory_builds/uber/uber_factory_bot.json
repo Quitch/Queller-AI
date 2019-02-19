@@ -455,59 +455,6 @@
       ]
     },
     {
-      "name": "Uber - Mend",
-      "to_build": "AdvancedBotCombatFabber",
-      "instance_count": 1,
-      "priority": 0,
-      "builders": [
-        "AdvancedBotFactory"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "ffa",
-            "boolean": false
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "MetMinAdvancedFabberCount",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedBotCombatFabber"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Land & Mobile & Advanced & Construction - Fabber",
-            "compare0": "<",
-            "value0": 1
-          }
-        ]
-      ]
-    },
-    {
       "name": "Uber - Slammer",
       "to_build": "AdvancedAssaultBot",
       "instance_count": -1,
