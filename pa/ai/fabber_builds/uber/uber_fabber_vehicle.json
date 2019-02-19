@@ -118,10 +118,6 @@
             "boolean": true
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicVehicleFactory"
           },
@@ -129,7 +125,7 @@
             "test_type": "UnitCountPerPlanetRadius",
             "unit_type_string0": "Tank & Factory & Basic",
             "compare0": "<=",
-            "value0": 200
+            "value0": 250
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -272,10 +268,6 @@
             "boolean": true
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicVehicleFactory"
           },
@@ -283,7 +275,7 @@
             "test_type": "UnitCountPerPlanetRadius",
             "unit_type_string0": "Tank & Factory & Basic",
             "compare0": "<=",
-            "value0": 200
+            "value0": 250
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -468,10 +460,6 @@
           },
           {
             "test_type": "HaveEcoForAdvanced",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
           {
