@@ -1039,9 +1039,6 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "AntiNukeSilo"
           },
@@ -1069,7 +1066,8 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AntiNukeSilo"
           },
           {
             "test_type": "SystemToPlanetThreatRatio",
@@ -1139,9 +1137,6 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "AntiNukeSilo"
           },
@@ -1161,9 +1156,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "silver",
             "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "CanAffordPotentialDrain",
