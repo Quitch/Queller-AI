@@ -101,6 +101,7 @@ Many thanks to B13 for his help with testing
  - Updated difficulty recommendations for new leaderboard system
  - Ensure all factory units are properly checking against their drain and not that of the fabber building them
  - Ensure combat fabbers are excluded from fabber ratio checks
+ - Uber grows its fabber presence when alone according to planet size not factory count
 
 #### 4.42.1 - 2019-01-21
 

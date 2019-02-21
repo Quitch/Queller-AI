@@ -67,11 +67,10 @@
             "string0": "LegionAirBasicFabber"
           },
           {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Fabber & Basic & Air - Construction",
-            "unit_type_string1": "Factory & Basic & Air",
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Fabber & Basic - Construction",
             "compare0": "<",
-            "value0": 6
+            "value0": 20
           }
         ]
       ]
@@ -481,11 +480,10 @@
             "string0": "LegionAirAdvancedFabber"
           },
           {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Fabber & Advanced & Air - Construction",
-            "unit_type_string1": "Factory & Advanced & Air",
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Fabber & Advanced - Construction",
             "compare0": "<",
-            "value0": 4
+            "value0": 10
           }
         ]
       ]
