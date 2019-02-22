@@ -99,7 +99,6 @@ Many thanks to B13 for his help with testing
  - Always assume land factories have a land route to the teleporter when alone on a planet
  - If a factory has hover units it's assumed that land blockages are water or lava and not CSG
  - Updated difficulty recommendations for new leaderboard system
- - Ensure all factory units are properly checking against their drain and not that of the fabber building them
  - Uber grows its fabber presence when alone according to planet size not factory count
 
 #### 4.42.1 - 2019-01-21
