@@ -70,11 +70,10 @@
             "string0": "BasicVehicleFabber"
           },
           {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Fabber & Basic & Land",
-            "unit_type_string1": "Factory & Basic & Land",
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Fabber & Basic",
             "compare0": "<",
-            "value0": 2
+            "value0": 30
           }
         ]
       ]
@@ -459,11 +458,10 @@
             "string0": "AdvancedVehicleFabber"
           },
           {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Fabber & Advanced & Land",
-            "unit_type_string1": "Factory & Advanced & Land",
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Fabber & Advanced",
             "compare0": "<",
-            "value0": 2
+            "value0": 20
           }
         ]
       ]

@@ -99,7 +99,7 @@ Many thanks to B13 for his help with testing
  - Always assume land factories have a land route to the teleporter when alone on a planet
  - If a factory has hover units it's assumed that land blockages are water or lava and not CSG
  - Updated difficulty recommendations for new leaderboard system
- - Uber grows its fabber presence when alone according to planet size not factory count
+ - Silver, Gold, Platinum and Uber grow their fabber presence when alone according to planet size not factory count
  - Bronze, Silver, Gold and Platinum attack earlier with hover and amphibious platoons
  - Bronze slightly less likely to place light artillery
  - Silver slightly more likely to place light artillery but places less of it in a base

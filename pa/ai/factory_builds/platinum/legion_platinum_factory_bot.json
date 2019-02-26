@@ -70,11 +70,10 @@
             "string0": "LegionBotBasicFabber"
           },
           {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Fabber & Basic & Bot",
-            "unit_type_string1": "Factory & Basic & Bot",
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Fabber & Basic",
             "compare0": "<",
-            "value0": 3
+            "value0": 25
           }
         ]
       ]
@@ -459,11 +458,10 @@
             "string0": "LegionBotAdvancedFabber"
           },
           {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Fabber & Advanced & Land",
-            "unit_type_string1": "Factory & Advanced & Land",
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Fabber & Advanced",
             "compare0": "<",
-            "value0": 9
+            "value0": 15
           }
         ]
       ]

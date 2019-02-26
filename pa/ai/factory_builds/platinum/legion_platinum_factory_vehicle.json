@@ -70,11 +70,10 @@
             "string0": "LegionVehicleBasicFabber"
           },
           {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Fabber & Basic & Tank",
-            "unit_type_string1": "Factory & Basic & Tank",
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Fabber & Basic",
             "compare0": "<",
-            "value0": 3
+            "value0": 25
           }
         ]
       ]
@@ -490,11 +489,10 @@
             "string0": "LegionVehicleAdvancedFabber"
           },
           {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Fabber & Advanced & Land",
-            "unit_type_string1": "Factory & Advanced & Land",
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Fabber & Advanced",
             "compare0": "<",
-            "value0": 9
+            "value0": 15
           }
         ]
       ]

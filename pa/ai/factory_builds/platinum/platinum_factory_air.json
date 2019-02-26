@@ -66,11 +66,10 @@
             "string0": "BasicAirFabber"
           },
           {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Fabber & Basic & Air",
-            "unit_type_string1": "Factory & Basic & Air",
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Fabber & Basic",
             "compare0": "<",
-            "value0": 3
+            "value0": 25
           }
         ]
       ]
@@ -336,11 +335,10 @@
             "string0": "AdvancedAirFabber"
           },
           {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Fabber & Advanced & Air",
-            "unit_type_string1": "Factory & Advanced & Air",
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Fabber & Advanced",
             "compare0": "<",
-            "value0": 9
+            "value0": 15
           }
         ]
       ]
