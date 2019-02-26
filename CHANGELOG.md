@@ -87,7 +87,7 @@ Many thanks to B13 for his help with testing
  - Improved how Uber decides when to build a Unit Cannon
  - Removed Uber Neural
  - Commander less likely to accept build assistance
- - Commander continues to build energy even after going teching to advanced buildings
+ - Commander continues to build energy even after teching to advanced buildings
  - Removed Uber Rush's alternate approach to shared armies for ease of maintenance
  - Removed offensive Catapult build for performance reasons as it was almost never used
  - Don't build more factories if there's nowhere that wants the troops
