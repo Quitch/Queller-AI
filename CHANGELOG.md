@@ -88,10 +88,8 @@ Many thanks to B13 for his help with testing
  - Removed Uber Neural
  - Commander less likely to accept build assistance
  - Commander continues to build energy even after going teching to advanced buildings
- - Uber uses more T1 fabbers
  - Removed Uber Rush's alternate approach to shared armies for ease of maintenance
  - Removed offensive Catapult build for performance reasons as it was almost never used
- - Uber will use slightly more advanced air fabbers when alone
  - Don't build more factories if there's nowhere that wants the troops
  - Uber Commander more aggressive at correcting energy issues
  - Uber puts more priority on metal expansion when alone
@@ -102,7 +100,7 @@ Many thanks to B13 for his help with testing
  - Silver, Gold, Platinum and Uber grow their fabber presence when alone according to planet size not factory count
  - Bronze, Silver, Gold and Platinum attack earlier with hover and amphibious platoons
  - Bronze slightly less likely to place light artillery
- - Silver slightly more likely to place light artillery but places less of it in a base
+ - Silver slightly more likely to place light artillery but places less of it per base
  - Simplified artillery placement
  - Bronze, Silver and Gold build less ground orbital factories
 
