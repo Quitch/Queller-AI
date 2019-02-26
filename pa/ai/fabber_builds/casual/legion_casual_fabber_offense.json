@@ -111,15 +111,6 @@
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromBaseCenter",
-        "unit_count_rules": [
-          {
-            "unit_type_string": "Structure - MetalProduction",
-            "alliance": "Enemy",
-            "compare_type": ">=",
-            "range": 375,
-            "count": 5
-          }
-        ],
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",

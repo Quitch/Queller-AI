@@ -103,6 +103,7 @@ Many thanks to B13 for his help with testing
  - Bronze, Silver, Gold and Platinum attack earlier with hover and amphibious platoons
  - Bronze slightly less likely to place light artillery
  - Silver slightly more likely to place light artillery but places less of it in a base
+ - Simplified artillery placement
 
 #### 4.42.1 - 2019-01-21
 
