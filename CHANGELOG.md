@@ -102,7 +102,7 @@ Many thanks to B13 for his help with testing
  - Uber grows its fabber presence when alone according to planet size not factory count
  - Bronze, Silver, Gold and Platinum attack earlier with hover and amphibious platoons
  - Bronze slightly less likely to place light artillery
- - Silver slightly more likely to place light artillery but places less of it
+ - Silver slightly more likely to place light artillery but places less of it in a base
 
 #### 4.42.1 - 2019-01-21
 
