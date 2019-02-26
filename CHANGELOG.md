@@ -100,6 +100,7 @@ Many thanks to B13 for his help with testing
  - If a factory has hover units it's assumed that land blockages are water or lava and not CSG
  - Updated difficulty recommendations for new leaderboard system
  - Uber grows its fabber presence when alone according to planet size not factory count
+ - Bronze, Silver, Gold and Platinum attack earlier with hover and amphibious platoons
 
 #### 4.42.1 - 2019-01-21
 

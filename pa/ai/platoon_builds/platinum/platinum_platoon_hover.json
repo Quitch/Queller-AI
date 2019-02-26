@@ -55,86 +55,10 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": "<",
-            "value0": 5600
-          },
-          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Hover & Mobile - Titan",
             "compare0": ">=",
             "value0": 4
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "LandAttack"
-    },
-    {
-      "name": "Platinum - Hover Attack Platoon 8",
-      "to_build": "Hover_Attack_Queller",
-      "instance_count": -1,
-      "priority": 150,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": "<",
-            "value0": 11200
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Hover & Mobile - Titan",
-            "compare0": ">=",
-            "value0": 8
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "LandAttack"
-    },
-    {
-      "name": "Platinum - Hover Attack Platoon 12",
-      "to_build": "Hover_Attack_Queller",
-      "instance_count": -1,
-      "priority": 140,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Hover & Mobile - Titan",
-            "compare0": ">=",
-            "value0": 12
           },
           {
             "test_type": "CanAttackWithPoolUnitsLand",
@@ -190,7 +114,7 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Platinum - Amphibious Attack Platoon 4",
+      "name": "Platinum - Amphibious Attack Platoon 12",
       "to_build": "Amphibious_Attack_Queller",
       "instance_count": -1,
       "priority": 120,
@@ -233,7 +157,7 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Platinum - Amphibious Attack Platoon 8",
+      "name": "Platinum - Amphibious Attack Platoon 24",
       "to_build": "Amphibious_Attack_Queller",
       "instance_count": -1,
       "priority": 110,
@@ -249,12 +173,6 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": "<",
-            "value0": 11200
-          },
-          {
             "test_type": "HaveSeenEnemyUnits",
             "unit_type_string0": "Naval | (Sub - Land)",
             "boolean": true
@@ -264,43 +182,6 @@
             "unit_type_string0": "(Hover | Sub) & Land",
             "compare0": ">=",
             "value0": 24
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "LandAttack"
-    },
-    {
-      "name": "Platinum - Amphibious Attack Platoon 12",
-      "to_build": "Amphibious_Attack_Queller",
-      "instance_count": -1,
-      "priority": 105,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Naval | (Sub - Land)",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Hover | Sub) & Land",
-            "compare0": ">=",
-            "value0": 36
           },
           {
             "test_type": "CanAttackWithPoolUnitsLand",
