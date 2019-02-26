@@ -62,40 +62,6 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionFactoryBasicOrbital"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory - Orbital",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionFactoryBasicOrbital"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsRespawnable",
-            "boolean": false
-          },
-          {
-            "test_type": "PlanetCount",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "HaveEcoForAdvanced",
-            "boolean": true
-          },
-          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory & Orbital & Basic",
             "compare0": "<",

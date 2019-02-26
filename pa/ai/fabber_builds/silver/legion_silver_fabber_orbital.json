@@ -20,35 +20,6 @@
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetWithoutPresence",
-            "boolean": true
-          },
-          {
-            "test_type": "PresenceOnOtherPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory & Orbital",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionFactoryBasicOrbital"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
@@ -89,13 +60,8 @@
             "boolean": false
           },
           {
-            "test_type": "HaveEcoForAdvanced",
+            "test_type": "AloneOnPlanet",
             "boolean": true
-          },
-          {
-            "test_type": "PlanetCount",
-            "compare0": ">",
-            "value0": 1
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -105,9 +71,9 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory - Orbital",
+            "unit_type_string0": "Fabber - Orbital - Naval",
             "compare0": ">=",
-            "value0": 1
+            "value0": 5
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -125,25 +91,22 @@
             "boolean": false
           },
           {
-            "test_type": "AloneOnPlanet",
+            "test_type": "PlanetWithoutPresence",
             "boolean": true
           },
           {
-            "test_type": "PlanetCount",
-            "compare0": ">",
-            "value0": 1
+            "test_type": "PresenceOnOtherPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
           },
           {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory & Orbital & Basic",
             "compare0": "<",
             "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber - Orbital - Naval",
-            "compare0": ">=",
-            "value0": 5
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -188,11 +151,10 @@
             "string0": "LegionFactoryBasicOrbital"
           },
           {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Factory & Orbital",
-            "unit_type_string1": "Factory - Orbital",
-            "compare0": "<=",
-            "value0": 0.05
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Orbital & Basic",
+            "compare0": "<",
+            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",

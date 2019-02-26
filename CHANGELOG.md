@@ -104,6 +104,7 @@ Many thanks to B13 for his help with testing
  - Bronze slightly less likely to place light artillery
  - Silver slightly more likely to place light artillery but places less of it in a base
  - Simplified artillery placement
+ - Bronze, Silver and Gold build less ground orbital factories
 
 #### 4.42.1 - 2019-01-21
 
