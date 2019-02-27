@@ -35,7 +35,7 @@
  - Uber gives a much lower priority to building radar
  - Uber is better about not overlapping basic radar and advanced radar
  - Bronze and Silver produce Sparks later
- - Uber has more leeway when trying to place ground anti-orbital defences to protect the Commander
+ - Allow for "good enough" placement when trying to place defences to protect the Commander
  - Improve ground anti-orbital placement
  - Uber will place anti-Kaiju Catapults on water as well as land
  - Reduce the number of anti-orbital Catapults that Gold, Platinum and Uber will build in one base
