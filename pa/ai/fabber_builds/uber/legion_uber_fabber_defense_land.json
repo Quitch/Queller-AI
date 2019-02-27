@@ -603,11 +603,11 @@
         "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "Structure - (Advanced & SurfaceDefense & CombatFabAdvBuild & Custom1)",
+            "unit_type_string": "Structure & (EnergyProduction | Factory)",
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 105,
-            "count": 5
+            "count": 3
           },
           {
             "unit_type_string": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild & Custom1",

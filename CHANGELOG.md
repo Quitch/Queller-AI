@@ -106,6 +106,7 @@
  - Fixed a bug that could cause Gold, Platinum and Uber to put all their bots on scouting duty when playing as Legion
  - Corrected misalignment between Uber's criteria for rushing an anti-nuke and placing an anti-nuke
  - Corrected Gold and Platinum not counting Commander when looking at anti-nuke placement criteria
+ - Corrected misalignment between criteria for placing Ramparts and placing Ramparts
 
 #### 4.42.1 - 2019-01-21
 
