@@ -103,6 +103,7 @@ Many thanks to B13 for his help with testing
  - Silver slightly more likely to place light artillery but places less of it per base
  - Simplified artillery placement
  - Bronze, Silver and Gold build less ground orbital factories
+ - Casual, Bronze and Silver no longer build Titans in response to an enemy orbital presence
 
 #### 4.42.1 - 2019-01-21
 
