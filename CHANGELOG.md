@@ -103,7 +103,7 @@ Many thanks to B13 for his help with testing
  - Silver slightly more likely to place light artillery but places less of it per base
  - Simplified artillery placement
  - Bronze, Silver and Gold build less ground orbital factories
- - Casual, Bronze and Silver no longer build Titans in response to an enemy orbital presence
+ - Casual, Bronze and Silver no longer build Titans in response to an enemy air or orbital presence
  - Casual will now correctly build the Helios regardless of the absence of enemy threats
 
 #### 4.42.1 - 2019-01-21
