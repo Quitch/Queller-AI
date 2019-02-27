@@ -2,8 +2,6 @@
 
 #### DEV
 
-Many thanks to B13 for his help with testing
-
  - Updated translations
  - Uber counts Novas towards bomber-gunship platoon formation
  - Uber Aggressive and Uber Rush can open two bot factories
