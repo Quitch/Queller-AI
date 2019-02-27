@@ -105,6 +105,7 @@ Many thanks to B13 for his help with testing
  - Bronze, Silver and Gold build less ground orbital factories
  - Casual, Bronze and Silver no longer build Titans in response to an enemy air or orbital presence
  - Casual will now correctly build the Helios regardless of the absence of enemy threats
+ - Fixed a bug that could cause Gold, Platinum and Uber to put all their bots on scouting duty when playing as Legion
 
 #### 4.42.1 - 2019-01-21
 
@@ -1108,7 +1109,6 @@ The Queller AI **Client** is no longer required and should be uninstalled.
  - Uber Legion only builds T2 air on planets it completely owns
  - Uber Legion puts less priority on an early air factory
  - Disabled Starcannon owing to multiple server crashes linked to the unit
- - Fixed a bug that could cause Gold, Platinum and Uber to put all their bots on scouting duty when playing as Legion
 
 #### 4.3.0 - 2016/11/07
 
