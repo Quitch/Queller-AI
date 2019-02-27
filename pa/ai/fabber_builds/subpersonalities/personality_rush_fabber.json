@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Uber - Basic Air Factory - Third Air",
+      "name": "Uber Rush - Basic Air Factory - Third Air",
       "to_build": "BasicAirFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -62,7 +62,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Flyer Foundry - Third Air",
+      "name": "Legion - Uber Rush - Flyer Foundry - Third Air",
       "to_build": "LegionFactoryBasicAir",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -78,18 +78,8 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "aggressive",
-            "boolean": false
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "rush",
-            "boolean": false
+            "boolean": true
           },
           {
             "test_type": "PlanetIsRespawnable",
