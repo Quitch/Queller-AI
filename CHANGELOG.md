@@ -1108,6 +1108,7 @@ The Queller AI **Client** is no longer required and should be uninstalled.
  - Uber Legion only builds T2 air on planets it completely owns
  - Uber Legion puts less priority on an early air factory
  - Disabled Starcannon owing to multiple server crashes linked to the unit
+ - Fixed a bug that could cause Gold, Platinum and Uber to put all their bots on scouting duty when alone and playing as Legion
 
 #### 4.3.0 - 2016/11/07
 
