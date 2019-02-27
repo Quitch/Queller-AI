@@ -104,8 +104,7 @@
  - Casual, Bronze and Silver no longer build Titans in response to an enemy air or orbital presence
  - Casual will now correctly build the Helios regardless of the absence of enemy threats
  - Fixed a bug that could cause Gold, Platinum and Uber to put all their bots on scouting duty when playing as Legion
- - Corrected misalignment between Uber's criteria for building an anti-nuke and placing an anti-nuke
- - Corrected Gold and Platinum not counting Commander when looking at anti-nuke placement criteria
+ - Corrected misalignment between criteria for building an anti-nuke and placing an anti-nuke
  - Corrected misalignment between criteria for building Ramparts and placing Ramparts
 
 #### 4.42.1 - 2019-01-21
