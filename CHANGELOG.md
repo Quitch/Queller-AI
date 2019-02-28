@@ -107,6 +107,7 @@
  - Corrected misalignment between criteria for building an anti-nuke and placing an anti-nuke
  - Corrected misalignment between criteria for building Ramparts and placing Ramparts
  - More aggressive about putting engines on asteroids
+ - Casual and Bronze won't build land and air titans on asteroids
 
 #### 4.42.1 - 2019-01-21
 
