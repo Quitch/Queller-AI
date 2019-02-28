@@ -99,7 +99,6 @@
  - Bronze, Silver, Gold and Platinum attack earlier with hover and amphibious platoons
  - Bronze slightly less likely to place light artillery
  - Silver slightly more likely to place light artillery but places less of it per base
- - Simplified artillery placement
  - Bronze, Silver and Gold build less ground orbital factories
  - Casual, Bronze and Silver no longer build Titans in response to an enemy air or orbital presence
  - Casual will now correctly build the Helios regardless of the absence of enemy threats
@@ -108,7 +107,7 @@
  - Corrected misalignment between criteria for building Ramparts and placing Ramparts
  - More aggressive about putting engines on asteroids
  - Casual and Bronze won't build land and air titans on asteroids
- - Changed Rampart and anti-nuke placement checks to comply with max supported range
+ - Updated or removed placement checks to comply with new max supported range
  - Aligned Platinum threat checks for placements with all other difficulties
 
 #### 4.42.1 - 2019-01-21
