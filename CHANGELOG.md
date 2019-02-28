@@ -106,6 +106,7 @@
  - Fixed a bug that could cause Gold, Platinum and Uber to put all their bots on scouting duty when playing as Legion
  - Corrected misalignment between criteria for building an anti-nuke and placing an anti-nuke
  - Corrected misalignment between criteria for building Ramparts and placing Ramparts
+ - More aggressive about putting engines on asteroids
 
 #### 4.42.1 - 2019-01-21
 

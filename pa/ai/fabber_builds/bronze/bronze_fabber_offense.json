@@ -274,6 +274,10 @@
             "boolean": false
           },
           {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
             "test_type": "PlanetCanBeUsedAsKineticWeapon",
             "boolean": true
           },
@@ -282,7 +286,61 @@
             "boolean": false
           },
           {
+            "test_type": "PlanetCount",
+            "compare0": ">",
+            "value0": 2
+          },
+          {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "AlliedUnitCountOnPlanet",
+            "unit_type_string0": "PlanetEngine",
+            "compare0": "<",
+            "boolean": true,
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "PlanetEngine"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsMainEcoBase",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetCanBeUsedAsKineticWeapon",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHasUseablePlanetWeapon",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveThrustToMovePlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetCount",
+            "compare0": ">",
+            "value0": 2
           },
           {
             "test_type": "AlliedUnitCountOnPlanet",
