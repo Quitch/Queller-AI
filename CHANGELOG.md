@@ -108,7 +108,7 @@
  - More aggressive about putting engines on asteroids
  - Casual and Bronze won't build land and air titans on asteroids
  - Updated or removed placement checks to comply with new max supported range
- - Aligned Platinum threat checks for placements with all other difficulties
+ - Changed radius of Platinum threat checks for placing structures to match all other difficulties
 
 #### 4.42.1 - 2019-01-21
 
