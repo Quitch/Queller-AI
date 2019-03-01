@@ -109,6 +109,7 @@
  - Casual and Bronze won't build land and air titans on asteroids
  - Updated or removed placement checks to comply with new max supported range
  - Changed radius of Platinum threat checks for placing structures to match all other difficulties
+ - Bronze slightly more likely to use nukes
 
 #### 4.42.1 - 2019-01-21
 
