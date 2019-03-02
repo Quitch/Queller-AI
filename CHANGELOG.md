@@ -111,6 +111,8 @@
  - Changed radius of Platinum threat checks for placing structures to match all other difficulties
  - Bronze slightly more likely to use nukes and anti-nukes
  - Bronze assigns much more importance to creating teleporters
+ - Uber may expand its radar presence as its expands
+ - Gold, Platinum and Uber less likely to build radar when alone
 
 #### 4.42.1 - 2019-01-21
 

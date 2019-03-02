@@ -1,11 +1,12 @@
 {
   "build_list": [
     {
-      "name": "Uber - Basic Radar - Have none",
+      "name": "Uber - Basic Radar",
       "to_build": "BasicRadar",
       "instance_count": 1,
       "shared_instance_count": "BasicRadar",
       "priority": 90,
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber"
       ],
@@ -17,6 +18,10 @@
             "boolean": true
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -24,10 +29,26 @@
             "string0": "BasicRadar"
           },
           {
-            "test_type": "UnitCountOnPlanet",
+            "test_type": "UnitCountInBase",
             "unit_type_string0": "Recon & (Structure | Orbital)",
             "compare0": "<",
             "value0": 1
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Land & Structure & Recon & Basic",
+            "string0": "Ally",
+            "value0": 225,
+            "compare0": "<",
+            "value1": 1
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Land & Structure & Recon & Advanced",
+            "string0": "Ally",
+            "value0": 640,
+            "compare0": "<",
+            "value1": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -37,6 +58,7 @@
       ],
       "placement_rules": {
         "buffer": 2,
+        "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",
@@ -61,6 +83,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -107,6 +133,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "CanDeployNavalFromBase",
@@ -182,6 +212,10 @@
             "boolean": true
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -218,6 +252,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "CanDeployNavalFromBase",
