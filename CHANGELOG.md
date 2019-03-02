@@ -113,7 +113,7 @@
  - Bronze assigns much more importance to creating teleporters
  - Uber may expand its radar presence as its expands
  - Gold, Platinum and Uber less likely to build radar when alone
- - Fix incorrectly including orbital satellites in base radar presence checks
+ - Fixed incorrectly including orbital satellites in base radar presence checks
 
 #### 4.42.1 - 2019-01-21
 
