@@ -116,7 +116,7 @@
  - Fixed incorrectly including orbital satellites in base radar presence checks
  - Uber more likely to build a bot factory when arriving on a new world with an air
  - Ensured Uber Bot will build enough factories in all conditions
- - Platinum and Uber are more aggressive about mainintaing local intel when they think they're alone
+ - Platinum and Uber are more aggressive about maintaining local intel when they think they're alone
  - Correctly preclude Uber Naval from building bots when playing as Legion
 
 #### 4.42.1 - 2019-01-21
