@@ -33,7 +33,6 @@
  - Silver gives a higher priority to anti-orbital defences
  - Bronze will build Catapults when alone
  - Uber gives a much lower priority to building radar
- - Uber is better about not overlapping basic radar and advanced radar
  - Bronze and Silver produce Sparks later
  - Allow for "good enough" placement when trying to place defences to protect the Commander
  - Improve ground anti-orbital placement
@@ -111,7 +110,6 @@
  - Changed radius of Platinum threat checks for placing structures to match all other difficulties
  - Bronze slightly more likely to use nukes and anti-nukes
  - Bronze assigns much more importance to creating teleporters
- - Uber may expand its radar presence as its expands
  - Gold, Platinum and Uber less likely to build radar when alone
  - Fixed incorrectly including orbital satellites in base radar presence checks
  - Uber more likely to build a bot factory when arriving on a new world with an air
@@ -125,7 +123,7 @@
  - Uber Naval techs as aggressively as land personalities
  - Gold and Platinum build less advanced radars
  - Radar no longer built as much for naval due to Stingray changes
- - Optimised radar placements
+ - Tweaked radar placements
  - Uber Rush will now use tanks
 
 #### 4.42.1 - 2019-01-21

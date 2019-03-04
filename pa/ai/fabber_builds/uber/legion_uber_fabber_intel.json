@@ -29,30 +29,10 @@
             "string0": "LegionIntelBasicRadar"
           },
           {
-            "test_type": "UnitCountInBase",
+            "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Recon & Structure",
             "compare0": "<",
             "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Recon & Advanced & Structure",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountAroundBase",
-            "unit_type_string0": "Land & Structure & Recon & Basic",
-            "string0": "Ally",
-            "value0": 400,
-            "compare0": "<",
-            "value1": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
