@@ -120,6 +120,7 @@
  - Correctly preclude Uber Naval from building bots when playing as Legion
  - Correctly allow naval fabbers to expand air factory presence
  - Fixed Uber Naval not properly expanding its T1 Naval Foundry presence
+ - Uber produces Bowheads sooner when facing a naval threat
 
 #### 4.42.1 - 2019-01-21
 
