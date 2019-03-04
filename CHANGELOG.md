@@ -121,6 +121,7 @@
  - Correctly allow naval fabbers to expand air factory presence
  - Fixed Uber Naval not properly expanding its T1 Naval Foundry presence
  - Uber produces Bowheads sooner when facing a naval threat
+ - Avoid unnecessary torpedo defence checks when there's no enemy present
 
 #### 4.42.1 - 2019-01-21
 
