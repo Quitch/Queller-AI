@@ -115,6 +115,7 @@
  - Gold, Platinum and Uber less likely to build radar when alone
  - Fixed incorrectly including orbital satellites in base radar presence checks
  - Uber more likely to build a bot factory when arriving on a new world with an air
+ - Ensured Uber Bot will build enough factories in all conditions
 
 #### 4.42.1 - 2019-01-21
 

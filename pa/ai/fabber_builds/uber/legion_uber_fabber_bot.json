@@ -67,10 +67,10 @@
             "string0": "LegionFactoryBasicBot"
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Bot & Factory",
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Land & Factory & Basic",
             "compare0": "<",
-            "value0": 2
+            "value0": 250
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -158,10 +158,10 @@
             "string0": "LegionFactoryBasicBot"
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Bot & Factory",
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Land & Factory & Basic",
             "compare0": "<",
-            "value0": 2
+            "value0": 250
           },
           {
             "test_type": "CanFindPlaceToBuild",
