@@ -114,6 +114,7 @@
  - Uber may expand its radar presence as its expands
  - Gold, Platinum and Uber less likely to build radar when alone
  - Fixed incorrectly including orbital satellites in base radar presence checks
+ - Uber more likely to build a bot factory when arriving on a new world with an air
 
 #### 4.42.1 - 2019-01-21
 
