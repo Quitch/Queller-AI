@@ -122,6 +122,7 @@
  - Fixed Uber Naval not properly expanding its T1 Naval Foundry presence
  - Uber produces Bowheads sooner when facing a naval threat
  - Avoid unnecessary torpedo defence checks when there's no enemy present
+ - Uber Naval techs as aggressively as land personalities
 
 #### 4.42.1 - 2019-01-21
 

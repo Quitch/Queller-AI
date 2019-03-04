@@ -250,8 +250,14 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedNavalFactory"
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Advanced - Orbital",
+            "compare0": "<",
+            "value0": 1
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -597,8 +603,14 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionFactoryAdvancedNaval"
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Advanced - Orbital",
+            "compare0": "<",
+            "value0": 1
           },
           {
             "test_type": "UnitCountOnPlanet",
