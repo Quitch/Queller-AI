@@ -148,7 +148,7 @@
       "base_sort": "FromMainBase",
       "builders": [
         "LegionCommander",
-        "LegionAirBasicFabber"
+        "LegionNavalBasicFabber"
       ],
       "build_conditions": [
         [
@@ -237,7 +237,7 @@
       "max_num_assisters": 3,
       "base_sort": "FromMainBase",
       "builders": [
-        "AnyLegionBasicFabberLand"
+        "AnyUberBasicFabberNotAir"
       ],
       "build_conditions": [
         [
@@ -418,7 +418,7 @@
       "base_sort": "FromMainBase",
       "builders": [
         "LegionCommander",
-        "AnyLegionBasicFabberLand"
+        "AnyUberBasicFabberNotAir"
       ],
       "build_conditions": [
         [

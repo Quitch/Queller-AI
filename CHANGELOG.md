@@ -118,6 +118,7 @@
  - Ensured Uber Bot will build enough factories in all conditions
  - Platinum and Uber are more aggressive about maintaining local intel when they think they're alone
  - Correctly preclude Uber Naval from building bots when playing as Legion
+ - Correctly allow naval fabbers to expand air factory presence
 
 #### 4.42.1 - 2019-01-21
 
