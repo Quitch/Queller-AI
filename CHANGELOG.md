@@ -123,6 +123,9 @@
  - Uber produces Bowheads sooner when facing a naval threat
  - Avoid unnecessary torpedo defence checks when there's no enemy present
  - Uber Naval techs as aggressively as land personalities
+ - Gold and Platinum build less advanced radars
+ - Radar no longer built as much for naval due to Stingray changes
+ - Optimised radar placements
 
 #### 4.42.1 - 2019-01-21
 

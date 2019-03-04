@@ -38,7 +38,7 @@
             "test_type": "UnitCountAroundBase",
             "unit_type_string0": "Land & Structure & Recon & Basic",
             "string0": "Ally",
-            "value0": 600,
+            "value0": 400,
             "compare0": "<",
             "value1": 1
           },
@@ -111,65 +111,6 @@
       }
     },
     {
-      "name": "Legion - Platinum - Overseer",
-      "to_build": "LegionIntelAdvancedRadar",
-      "instance_count": 1,
-      "shared_instance_count": "AdvancedRadar",
-      "priority": 91,
-      "base_sort": "FromBuilder",
-      "builders": [
-        "AnyLegionFabberAdvanced"
-      ],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionIntelAdvancedRadar"
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Land & Structure & Recon & Advanced",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountAroundBase",
-            "unit_type_string0": "Land & Structure & Recon & Advanced",
-            "string0": "Ally",
-            "value0": 1000,
-            "compare0": "<",
-            "value1": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionIntelAdvancedRadar"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
       "name": "Legion - Platinum - Overseer - Need for Ranged",
       "to_build": "LegionIntelAdvancedRadar",
       "instance_count": 1,
@@ -205,7 +146,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "(Structure | Naval) & (Artillery | Tactical)",
+            "unit_type_string0": "Advanced & Structure & Artillery - Factory",
             "compare0": ">",
             "value0": 0
           },
@@ -213,7 +154,7 @@
             "test_type": "UnitCountAroundBase",
             "unit_type_string0": "Land & Structure & Recon & Advanced",
             "string0": "Ally",
-            "value0": 500,
+            "value0": 300,
             "compare0": "<",
             "value1": 1
           },
