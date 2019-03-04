@@ -99,7 +99,7 @@
  - Bronze, Silver, Gold and Platinum attack earlier with hover and amphibious platoons
  - Bronze slightly less likely to place light artillery
  - Silver slightly more likely to place light artillery but places less of it per base
- - Bronze, Silver and Gold build less ground orbital factories
+ - Bronze, Silver, Gold and Uber build less ground orbital factories
  - Casual, Bronze and Silver no longer build Titans in response to an enemy air or orbital presence
  - Casual will now correctly build the Helios regardless of the absence of enemy threats
  - Fixed a bug that could cause Gold, Platinum and Uber to put all their bots on scouting duty when playing as Legion
