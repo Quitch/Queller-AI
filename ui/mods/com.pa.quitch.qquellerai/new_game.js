@@ -382,7 +382,6 @@ function qQuellerAI() {
       personality_tags:
         [
           "uber",
-          "bot",
           "rush"
         ],
       min_basic_fabbers: 2,

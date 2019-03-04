@@ -126,6 +126,7 @@
  - Gold and Platinum build less advanced radars
  - Radar no longer built as much for naval due to Stingray changes
  - Optimised radar placements
+ - Uber Rush will now use tanks
 
 #### 4.42.1 - 2019-01-21
 
