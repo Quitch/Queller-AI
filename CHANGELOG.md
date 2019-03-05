@@ -125,6 +125,7 @@
  - Radar no longer built as much for naval due to Stingray changes
  - Tweaked radar placements
  - Uber Rush will now use tanks
+ - Gold, Platinum and Uber are more likely to keep an orbital fabber to build their local presence
 
 #### 4.42.1 - 2019-01-21
 
