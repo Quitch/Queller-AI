@@ -221,6 +221,33 @@
             "boolean": true
           },
           {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "EnergyStorageFrac",
+            "compare0": "<",
+            "value0": 0.1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Basic - Orbital",
+            "compare0": ">",
+            "value0": 2
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicEnergyGenerator"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
             "test_type": "DesireEnergy"
           },
           {
@@ -462,6 +489,53 @@
       ],
       "placement_rules": {
         "buffer": 10,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Uber - Basic Energy Generator - Crash",
+      "to_build": "BasicEnergyGenerator",
+      "instance_count": 2,
+      "shared_instance_count": "AdvancedEnergy",
+      "min_num_assisters": 1,
+      "max_num_assisters": 3,
+      "cross_planet_shared_count": true,
+      "priority": 280,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "EnergyStorageFrac",
+            "compare0": "<",
+            "value0": 0.1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedEnergyGenerator"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 6,
         "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",

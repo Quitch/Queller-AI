@@ -222,6 +222,33 @@
             "boolean": true
           },
           {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "EnergyStorageFrac",
+            "compare0": "<",
+            "value0": 0.1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Basic - Orbital",
+            "compare0": ">",
+            "value0": 2
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionEcoBasicEnergyPlant"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
             "test_type": "DesireEnergy"
           },
           {
@@ -429,6 +456,58 @@
         }
       },
       "task_type": "AreaBuild"
+    },
+    {
+      "name": "Legion - Uber - Power Catalyst - Crash",
+      "to_build": "LegionEcoBasicEnergyPlant",
+      "instance_count": 1,
+      "max_num_assisters": 1,
+      "shared_instance_count": "BasicEnergy",
+      "cross_planet_shared_count": true,
+      "priority": 280,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyLegionFabberAdvanced"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "EnergyStorageFrac",
+            "compare0": "<",
+            "value0": 0.1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Basic - Orbital",
+            "compare0": ">",
+            "value0": 2
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionEcoBasicEnergyPlant"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 6,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
     },
     {
       "name": "Legion - Uber - Black Hole Generator",
