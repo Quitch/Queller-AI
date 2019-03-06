@@ -201,8 +201,12 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetIsGasGiant",
+            "test_type": "PresenceOnOtherPlanet",
             "boolean": false
+          },
+          {
+            "test_type": "PlanetIsMainEcoBase",
+            "boolean": true
           },
           {
             "test_type": "UnitCountOnPlanet",

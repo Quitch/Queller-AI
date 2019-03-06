@@ -227,10 +227,12 @@
             "boolean": true
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter",
-            "compare0": ">=",
-            "value0": 1
+            "test_type": "PresenceOnOtherPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsMainEcoBase",
+            "boolean": true
           },
           {
             "test_type": "UnitCountInCelestialTransit",

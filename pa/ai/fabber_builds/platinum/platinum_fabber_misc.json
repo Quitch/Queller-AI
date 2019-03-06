@@ -201,31 +201,12 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetIsGasGiant",
+            "test_type": "PresenceOnOtherPlanet",
             "boolean": false
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory & Orbital",
-            "compare0": ">=",
-            "value0": 1
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
+            "test_type": "PlanetIsMainEcoBase",
             "boolean": true
-          },
-          {
-            "test_type": "PlanetOrGasGiantWithoutPresence",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter",
-            "compare0": ">=",
-            "value0": 1
           },
           {
             "test_type": "UnitCountInCelestialTransit",
