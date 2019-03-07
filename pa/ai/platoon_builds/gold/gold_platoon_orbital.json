@@ -27,36 +27,6 @@
       "task_type": "OrbitalRecon"
     },
     {
-      "name": "Gold - Orbital Scout",
-      "to_build": "Orbital_Scout_Queller",
-      "instance_count": 1,
-      "priority": 102,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsGasGiant",
-            "boolean": false
-          },
-          {
-            "test_type": "ThisPlanetNeedsReconAssistance",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Orbital & (Recon | Scout) - Structure",
-            "compare0": ">=",
-            "value0": 1
-          }
-        ]
-      ],
-      "task_type": "Scout"
-    },
-    {
       "name": "Gold - Orbital Recon Transfer To Planet",
       "to_build": "Orbital_Scout_Queller",
       "instance_count": -1,
