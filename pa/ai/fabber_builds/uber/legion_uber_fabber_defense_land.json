@@ -318,6 +318,79 @@
       }
     },
     {
+      "name": "Uber - Jackal - Locusts",
+      "to_build": "LegionDefenseBasicLand",
+      "instance_count": 1,
+      "priority": 456,
+      "base_sort": "FromMainBase",
+      "max_num_assisters": 3,
+      "builders": [
+        "LegionBotBasicFabber",
+        "LegionVehicleBasicFabber",
+        "AnyLegionFabberAdvanced"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Deconstruction",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & SurfaceDefense - (CombatFabAdvBuild & Advanced & Custom1)",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicLand"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & Advanced (EnergyProduction | Factory)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & (SurfaceDefense | Tactical) - (CombatFabAdvBuild & Advanced & Custom1)",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 110,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
       "name": "Legion - Uber - Arsonist - Base",
       "to_build": "LegionDefenseAdvancedLand",
       "instance_count": 1,
