@@ -80,7 +80,7 @@
  - Gold and Platinum have reverted to a more proactive approach to orbital
  - Avoid instances of idle orbital recon
  - Platinum no longer builds the Wyrm
- - Uber builds the correct amount of Spinners when alone
+ - Uber builds the correct ratio of Spinners when alone
  - Improved how Uber decides when to build a Unit Cannon
  - Removed Uber Neural
  - Commander less likely to accept build assistance
@@ -128,7 +128,7 @@
  - Improvements to how Gold, Platinum and Uber decide when to send orbital fabbers to other planets
  - Uber is a little less predictable in its orbital expansion
  - Uber will use T1 energy to climb out of an energy stall
- - Uber uses cheaper Laser Defense Tower to defend agaisnt Locusts now they've been nerfed
+ - Uber uses cheaper Laser Defense Tower to defend against Locusts now they've been nerfed
  - Uber is much better about spending a boosted economy
  - Expanded Locust defence behaviour to Legion Uber
  - Starcannon behaviours enabled again
