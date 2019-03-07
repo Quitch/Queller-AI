@@ -129,6 +129,7 @@
  - Uber is a little less predictable in its orbital expansion
  - Uber will use T1 energy to climb out of an energy stall
  - Uber uses cheaper Laser Defense Tower to defend agaisnt Locusts now they've been nerfed
+ - Uber is much better about spending a boosted economy
 
 #### 4.42.1 - 2019-01-21
 
