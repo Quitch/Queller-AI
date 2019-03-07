@@ -134,6 +134,7 @@
  - Starcannon behaviours enabled again
  - Casual will send orbital recon offworld to ensure its interplanetary weapons are used
  - Fixed error which meant Casual and Bronze would almost never send orbital fabbers to other planets when playing as Legion
+ - Bronze sends orbital fabbers offworld a little earlier
 
 #### 4.42.1 - 2019-01-21
 
