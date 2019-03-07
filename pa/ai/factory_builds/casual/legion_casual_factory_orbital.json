@@ -44,7 +44,7 @@
       ]
     },
     {
-      "name": "Legion - Casual - Sputnik",
+      "name": "Legion - Casual - Sputnik - This Planet",
       "to_build": "LegionOrbitalBasicRadar",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -68,6 +68,30 @@
             "unit_type_string0": "Orbital & Recon - Structure",
             "compare0": "<",
             "value0": 1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Casual - Sputnik - Other Planet",
+      "to_build": "LegionOrbitalBasicRadar",
+      "instance_count": 1,
+      "shared_instance_count": "ReconAssistance",
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "AnyLegionFactoryOrbital"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "casual",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsReconAssistance",
+            "boolean": true
           }
         ]
       ]
@@ -172,7 +196,7 @@
       ]
     },
     {
-      "name": "Legion - Casual - Kosmos",
+      "name": "Legion - Casual - Kosmos - This Planet",
       "to_build": "LegionOrbitalAdvancedRadar",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -189,6 +213,30 @@
           },
           {
             "test_type": "ThisPlanetNeedsReconAssistance",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Casual - Kosmos - Other Planet",
+      "to_build": "LegionOrbitalAdvancedRadar",
+      "instance_count": 1,
+      "shared_instance_count": "ReconAssistance",
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "LegionFactoryAdvancedOrbital"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "casual",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsReconAssistance",
             "boolean": true
           }
         ]

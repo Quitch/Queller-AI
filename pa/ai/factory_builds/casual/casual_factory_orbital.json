@@ -44,7 +44,7 @@
       ]
     },
     {
-      "name": "Casual - ARKYD",
+      "name": "Casual - ARKYD - This Planet",
       "to_build": "BasicRadarSattelite",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -64,6 +64,30 @@
             "unit_type_string0": "Orbital & (Recon | Scout) - Structure",
             "compare0": "<",
             "value0": 1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Casual - ARKYD - Other Planet",
+      "to_build": "BasicRadarSattelite",
+      "instance_count": 1,
+      "shared_instance_count": "ReconAssistance",
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "OrbitalLauncher"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "casual",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsReconAssistance",
+            "boolean": true
           }
         ]
       ]
@@ -198,7 +222,7 @@
       ]
     },
     {
-      "name": "Casual - Advanced Radar Satellite",
+      "name": "Casual - Advanced Radar Satellite - This Planet",
       "to_build": "AdvancedRadarSattelite",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -215,6 +239,30 @@
           },
           {
             "test_type": "ThisPlanetNeedsReconAssistance",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Casual - Advanced Radar Satellite - Other Planet",
+      "to_build": "AdvancedRadarSattelite",
+      "instance_count": 1,
+      "shared_instance_count": "ReconAssistance",
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": [
+        "OrbitalFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "casual",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsReconAssistance",
             "boolean": true
           }
         ]

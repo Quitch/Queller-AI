@@ -132,6 +132,7 @@
  - Uber is much better about spending a boosted economy
  - Expanded Locust defence behaviour to Legion Uber
  - Starcannon behaviours enabled again
+ - Casual will send orbital recon offworld to ensure its interplanetary weapons are used
 
 #### 4.42.1 - 2019-01-21
 
