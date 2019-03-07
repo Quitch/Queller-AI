@@ -196,7 +196,7 @@
       "instance_count": 1,
       "shared_instance_count": "OrbitalFactory",
       "max_num_assisters": 10,
-      "priority": 0,
+      "priority": 477,
       "base_sort": "FromBuilder",
       "builders": [
         "LegionOrbitalBasicFabber"
@@ -219,6 +219,12 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "LegionOrbitalAdvancedCannon"
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "Economy",
+            "compare0": ">",
+            "value0": 0
           },
           {
             "test_type": "CanFindPlaceToBuild",

@@ -134,7 +134,7 @@
       "instance_count": 1,
       "shared_instance_count": "OrbitalFactory",
       "max_num_assisters": 5,
-      "priority": 0,
+      "priority": 477,
       "base_sort": "FromBuilder",
       "builders": [
         "LegionOrbitalBasicFabber"
@@ -159,14 +159,14 @@
             "string0": "LegionOrbitalAdvancedCannon"
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
+            "test_type": "PlanetThreat",
+            "string0": "Economy",
             "compare0": ">",
-            "value0": 5600
+            "value0": 0
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "AntiOrbital",
+            "string0": "Orbital",
             "string1": "Orbital",
             "compare0": "<",
             "value0": 1
