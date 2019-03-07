@@ -234,8 +234,8 @@
       }
     },
     {
-      "name": "Uber - Advanced Laser Defense Tower - Locusts",
-      "to_build": "AdvancedLandDefense",
+      "name": "Uber - Laser Defense Tower - Locusts",
+      "to_build": "BasicLandDefense",
       "instance_count": 1,
       "priority": 456,
       "base_sort": "FromMainBase",
@@ -276,11 +276,11 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Advanced & (EnergyProduction | Factory)",
             "compare0": ">=",
-            "value0": 5
+            "value0": 3
           },
           {
             "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedLandDefense"
+            "string0": "BasicLandDefense"
           }
         ]
       ],
@@ -298,7 +298,7 @@
             "unit_type_string": "Structure & (SurfaceDefense | Tactical) - (CombatFabAdvBuild & Advanced & Custom1)",
             "alliance": "Ally",
             "compare_type": "<",
-            "range": 100,
+            "range": 110,
             "count": 1
           }
         ]

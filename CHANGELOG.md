@@ -128,6 +128,7 @@
  - Improvements to how Gold, Platinum and Uber decide when to send orbital fabbers to other planets
  - Uber is a little less predictable in its orbital expansion
  - Uber will use T1 energy to climb out of an energy stall
+ - Uber uses cheaper Laser Defense Tower to defend agaisnt Locusts now they've been nerfed
 
 #### 4.42.1 - 2019-01-21
 
