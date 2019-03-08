@@ -131,7 +131,6 @@
  - Uber uses cheaper Laser Defense Tower to defend against Locusts now they've been nerfed
  - Uber is much better about spending a boosted economy
  - Expanded Locust defence behaviour to Legion Uber
- - Starcannon behaviours enabled again
  - Casual will send orbital recon offworld to ensure its interplanetary weapons are used
  - Fixed error which meant Casual and Bronze would almost never send orbital fabbers to other planets when playing as Legion
  - Bronze sends orbital fabbers offworld a little earlier
