@@ -98,6 +98,12 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicNavalFabber"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Fabber & Basic",
+            "compare0": "<",
+            "value0": 20
           }
         ]
       ]
@@ -524,6 +530,12 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "AdvancedNavalFabber"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Fabber & Advanced",
+            "compare0": "<",
+            "value0": 10
           }
         ]
       ]
