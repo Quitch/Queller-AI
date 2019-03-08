@@ -2,7 +2,7 @@
 
 #### v4.43.0 - 2019-03-08
 
- - Updated translations
+ - Updated translations (https://poeditor.com/join/project/avPZrv6yyE)
  - Uber counts Novas towards bomber-gunship platoon formation
  - Uber Aggressive and Uber Rush can open two bot factories
  - Corrected Uber not putting enough assistants on its first air factory
