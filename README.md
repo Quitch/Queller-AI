@@ -24,7 +24,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
  - Goes orbital as soon as possible
  - Turtles
  - Poor troop selection
- - Doesn't scout
+ - Barely scouts
  - Doesn't react to what the enemy is doing
  - Loves fabbers
  - Loves static defence/offence
@@ -127,12 +127,12 @@ When you need to increase the challenge, but don't want to increase the difficul
 | League   | Placement | Difficulty | Eco |
 | -------- | --------- | ---------- | --- |
 | Bronze   | Low       | Bronze     | 1.0 |
-| Bronze   | High      | Silver     | 1.0 |
-| Silver   | Low       | Gold       | 1.0 |
-| Silver   | Mid       | Platinum   | 1.0 |
-| Silver   | High      | Uber       | 1.0 |
-| Gold     | Low       | Uber       | 1.2 |
-| Gold     | High      | Uber       | 1.4 |
+| Bronze   | Mid       | Silver     | 1.0 |
+| Bronze   | High      | Gold       | 1.0 |
+| Silver   | Low       | Platinum   | 1.0 |
+| Silver   | Mid       | Uber       | 1.0 |
+| Silver   | High      | Uber       | 1.2 |
+| Gold     | Any       | Uber       | 1.4 |
 | Platinum | Any       | Uber       | 1.7 |
 | Uber     | Any       | Uber       | 2.0 |
 
@@ -152,17 +152,10 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 ### Free For All
  - More cautious about engaging in battle
  - Techs earlier
- - Will get orbital as soon as possible on multi-planet systems
 
 ### Naval
  - Attempts to build a naval factory first
  - Unrestricted naval usage
-
-### Neural
- - All platoon creation decisions are made by the neural network
-
-### Orbital
- - Will get orbital as soon as possible on multi-planet systems
 
 ### Rush
  - Favours bots

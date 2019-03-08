@@ -7,7 +7,7 @@ function qQuellerAI() {
 
   qQuellerAILoaded = true;
 
-  api.debug.log('Adding Queller AI Personalities');
+  api.debug.log('Loading Queller AI Personalities');
 
   var aiPersonalities = model.aiPersonalities();
 
@@ -20,7 +20,7 @@ function qQuellerAI() {
       energy_demand_check: 0.92,
       micro_type: 0,
       go_for_the_kill: false,
-      priority_scout_metal_spots: false,
+      priority_scout_metal_spots: true,
       enable_commander_danger_responses: false,
       neural_data_mod: 2.0,
       adv_eco_mod: 0.5,
@@ -152,7 +152,8 @@ function qQuellerAI() {
       adv_eco_mod_alone: 0,
       personality_tags:
         [
-          "uber"
+          "uber",
+          "aggressive"
         ],
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1,
@@ -210,20 +211,19 @@ function qQuellerAI() {
       priority_scout_metal_spots: true,
       enable_commander_danger_responses: true,
       neural_data_mod: 0.75,
-      adv_eco_mod: 0.85,
+      adv_eco_mod: 0,
       adv_eco_mod_alone: 0,
       personality_tags:
         [
           "uber",
-          "ffa",
-          "orbital"
+          "ffa"
         ],
       min_basic_fabbers: 4,
       min_advanced_fabbers: 1
     },
     'Q-Uber Naval': {
       display_name: '!LOC:Q-Uber Naval',
-      metal_drain_check: 0.54,
+      metal_drain_check: 0.64,
       energy_drain_check: 0.65,
       metal_demand_check: 0.85,
       energy_demand_check: 0.8,
@@ -242,48 +242,6 @@ function qQuellerAI() {
       min_basic_fabbers: 1,
       min_advanced_fabbers: 1
     },
-    'Q-Uber Neural': {
-      display_name: '!LOC:Q-Uber Neural',
-      metal_drain_check: 0.54,
-      energy_drain_check: 0.65,
-      metal_demand_check: 0.85,
-      energy_demand_check: 0.8,
-      micro_type: 2,
-      go_for_the_kill: true,
-      priority_scout_metal_spots: true,
-      enable_commander_danger_responses: true,
-      neural_data_mod: 1.0,
-      adv_eco_mod: 1.0,
-      adv_eco_mod_alone: 0,
-      personality_tags:
-        [
-          "uber",
-          "aggressive"
-        ],
-      min_basic_fabbers: 3,
-      min_advanced_fabbers: 1,
-    },
-    'Q-Uber Orbital': {
-      display_name: '!LOC:Q-Uber Orbital',
-      metal_drain_check: 0.54,
-      energy_drain_check: 0.65,
-      metal_demand_check: 0.85,
-      energy_demand_check: 0.8,
-      micro_type: 2,
-      go_for_the_kill: true,
-      priority_scout_metal_spots: true,
-      enable_commander_danger_responses: true,
-      neural_data_mod: 1.0,
-      adv_eco_mod: 1.0,
-      adv_eco_mod_alone: 0,
-      personality_tags:
-        [
-          "uber",
-          "orbital"
-        ],
-      min_basic_fabbers: 3,
-      min_advanced_fabbers: 1
-    },
     'Q-Uber Rush': {
       display_name: '!LOC:Q-Uber Rush',
       metal_drain_check: 0.54,
@@ -294,13 +252,12 @@ function qQuellerAI() {
       go_for_the_kill: true,
       priority_scout_metal_spots: true,
       enable_commander_danger_responses: true,
-      neural_data_mod: 1.25,
+      neural_data_mod: 1.0,
       adv_eco_mod: 2.0,
       adv_eco_mod_alone: 0,
       personality_tags:
         [
           "uber",
-          "bot",
           "rush"
         ],
       min_basic_fabbers: 2,
@@ -342,7 +299,7 @@ function qQuellerAI() {
   model.aiPersonalities.valueHasMutated();
 
   _.defer(function () {
-    model.localChatMessage(loc("!LOC:Queller AI"), loc("!LOC:by Quitch. Version 4.42.1. My difficulties are prefixed with a Q. Don't make AI teams larger than human teams, increase the difficulty or the econ rate instead. I support the Legion Expansion."));
+    model.localChatMessage(loc("!LOC:Queller AI"), loc("!LOC:by Quitch. Version 4.43.0. My difficulties are prefixed with a Q. Don't make AI teams larger than human teams, increase the difficulty or the econ rate instead. I support the Legion Expansion."));
   });
 
 }
