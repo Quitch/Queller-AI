@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### DEV
+#### v4.43.0 - 2019-03-08
 
  - Updated translations
  - Uber counts Novas towards bomber-gunship platoon formation
