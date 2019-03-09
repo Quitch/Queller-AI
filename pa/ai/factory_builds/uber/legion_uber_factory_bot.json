@@ -792,13 +792,6 @@
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Land & Mobile & (Heavy - (Bot & Basic)) & Advanced",
-            "unit_type_string1": "Bot & Mobile & Offense & Advanced - Deconstruction - Fabber - Basic",
-            "compare0": "<",
-            "value0": 0.05
-          }
         ],
         [
           {
@@ -809,13 +802,6 @@
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Land & Mobile & (Heavy - (Bot & Basic)) & Advanced",
-            "unit_type_string1": "Bot & Mobile & Offense & Advanced - Deconstruction - Fabber - Basic",
-            "compare0": "<",
-            "value0": 0.05
           },
           {
             "test_type": "OtherPlanetNeedsLandUnitAssistance",
