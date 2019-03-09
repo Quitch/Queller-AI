@@ -286,8 +286,8 @@
             "boolean": true
           },
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "HaveSeenEnemyUnits",
@@ -831,8 +831,8 @@
             "boolean": true
           },
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "MetMinAdvancedFabberCount",
@@ -864,8 +864,8 @@
             "boolean": true
           },
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "MetMinAdvancedFabberCount",
@@ -966,12 +966,8 @@
             "boolean": true
           },
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": false
+            "test_type": "AloneOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "MetMinAdvancedFabberCount",
