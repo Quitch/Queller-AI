@@ -53,15 +53,11 @@
             "boolean": true
           },
           {
-            "test_type": "PresenceOnOtherPlanet",
-            "boolean": false
-          },
-          {
             "test_type": "PlanetWithoutPresence",
             "boolean": true
           },
           {
-            "test_type": "UnitCountOnPlanet",
+            "test_type": "UnitCount",
             "unit_type_string0": "Factory & Orbital",
             "compare0": "<",
             "value0": 1

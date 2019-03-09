@@ -3,6 +3,7 @@
 #### DEV
 
  - Gold will rush an orbital launcher on multi-planet systems when it cannot expand and has no orbital
+ - Platinum and Uber more reliable at rushing an orbital launcher on multi-planet systems when they cannot expand and have no orbital
 
 #### v4.43.0 - 2019-03-08
 
