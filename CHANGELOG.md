@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### DEV
+
+ - Gold will rush an orbital launcher on multi-planet systems when it cannot expand and has no orbital
+
 #### v4.43.0 - 2019-03-08
 
  - Updated translations (https://poeditor.com/join/project/avPZrv6yyE)
