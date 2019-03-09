@@ -7,6 +7,7 @@
  - Fixed error when Uber played as Legion where it might tech to T2 naval first when there were no enemies on the planet
  - Reintroduce behaviour for Uber that was incorrectly removed designed to handle multi-naval planet systems
  - Uber uses a lot more Monstrosities
+ - Uber Legion puts more priority on getting its T2 fabbers out before producing T2 troops
 
 #### v4.43.0 - 2019-03-08
 
