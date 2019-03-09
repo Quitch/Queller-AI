@@ -6,6 +6,7 @@
  - Platinum and Uber more reliable at rushing an orbital launcher on multi-planet systems when they cannot expand and have no orbital
  - Fixed error when Uber played as Legion where it might tech to T2 naval first when there were no enemies on the planet
  - Gold and Platinum will tech to T2 earlier
+ - Reintroduce behaviour for Uber that was incorrectly removed designed to handle multi-naval planet systems
 
 #### v4.43.0 - 2019-03-08
 
