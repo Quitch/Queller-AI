@@ -10,6 +10,7 @@
  - Uber Legion puts more priority on getting its T2 fabbers out before producing T2 troops
  - Uber builds T2 air later
  - Uber FFA techs slightly later
+ - Uber takes a proactive approach to orbital
 
 #### v4.43.0 - 2019-03-08
 
