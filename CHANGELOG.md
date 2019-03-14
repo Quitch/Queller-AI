@@ -13,6 +13,7 @@
  - Uber takes a proactive approach to orbital
  - All difficulties tech as soon as possible if alone on a planet
  - Uber will build orbital launchers on the water
+ - Avoid building duplicate orbital launchers in shared armies
 
 #### v4.43.0 - 2019-03-08
 
