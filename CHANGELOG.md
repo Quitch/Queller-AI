@@ -11,6 +11,7 @@
  - Uber builds T2 air later
  - Uber FFA techs slightly later
  - Uber takes a proactive approach to orbital
+ - All difficulties tech as soon as possible if alone on a planet
 
 #### v4.43.0 - 2019-03-08
 
