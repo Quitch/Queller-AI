@@ -15,6 +15,7 @@
  - Uber will build orbital launchers on the water
  - Avoid building duplicate orbital launchers in shared armies
  - Resolved edge case where Uber wouldn't replace its lost orbital launcher
+ - Silver and higher can no longer get trapped on asteroids
 
 #### v4.43.0 - 2019-03-08
 
