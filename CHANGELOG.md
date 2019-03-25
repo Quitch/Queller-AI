@@ -17,6 +17,7 @@
  - Resolved edge case where Uber wouldn't replace its lost orbital launcher
  - Silver and higher can no longer get trapped on asteroids
  - Commander tries to build around the main base where it's theoretically safer
+ - Silver uses less air
 
 #### v4.43.0 - 2019-03-08
 
