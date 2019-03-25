@@ -16,7 +16,7 @@
  - Avoid building duplicate orbital launchers in shared armies
  - Resolved edge case where Uber wouldn't replace its lost orbital launcher
  - Silver and higher can no longer get trapped on asteroids
- - Gold, Platinum and Uber have Commander try and build around the main base where it's theoretically safer
+ - Commander tries to build around the main base where it's theoretically safer
 
 #### v4.43.0 - 2019-03-08
 
