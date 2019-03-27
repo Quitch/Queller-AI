@@ -1,5 +1,27 @@
 # CHANGELOG
 
+#### v4.44.0 - 2019-03-27
+
+ - Gold will rush an orbital launcher on multi-planet systems when it cannot expand and has no orbital
+ - Platinum and Uber more reliable at rushing an orbital launcher on multi-planet systems when they cannot expand and have no orbital
+ - Fixed error when Uber played as Legion where it might tech to T2 naval first when there were no enemies on the planet
+ - Reintroduce behaviour for Uber that was incorrectly removed designed to handle multi-naval planet systems
+ - Uber uses a lot more Monstrosities
+ - Uber Legion puts more priority on getting its T2 fabbers out before producing T2 troops
+ - Uber builds T2 air later
+ - Uber FFA techs slightly later
+ - Uber takes a proactive approach to orbital
+ - All difficulties tech as soon as possible if alone on a planet
+ - Uber will build orbital launchers on the water
+ - Avoid building duplicate orbital launchers in shared armies
+ - Resolved edge case where Uber wouldn't replace its lost orbital launcher
+ - Silver and higher can no longer get trapped on asteroids
+ - Commander tries to build around the main base where it's theoretically safer
+ - Silver uses less air
+ - Uber produces more Investigators and Skitters to spot mines
+ - Uber uses slightly less Storms
+ - Monstrosity and Spark moved into main bot squad
+
 #### v4.43.0 - 2019-03-08
 
  - Updated translations (https://poeditor.com/join/project/avPZrv6yyE)

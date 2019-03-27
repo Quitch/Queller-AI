@@ -24,7 +24,7 @@ function qQuellerAI() {
       enable_commander_danger_responses: false,
       neural_data_mod: 2.0,
       adv_eco_mod: 0.5,
-      adv_eco_mod_alone: 0.5,
+      adv_eco_mod_alone: 0,
       factory_build_delay_min: 0,
       factory_build_delay_max: 12,
       per_expansion_delay: 60,
@@ -47,7 +47,7 @@ function qQuellerAI() {
       enable_commander_danger_responses: true,
       neural_data_mod: 1.6,
       adv_eco_mod: 0.5,
-      adv_eco_mod_alone: 0.5,
+      adv_eco_mod_alone: 0,
       factory_build_delay_min: 0,
       factory_build_delay_max: 6,
       personality_tags:
@@ -69,7 +69,7 @@ function qQuellerAI() {
       enable_commander_danger_responses: true,
       neural_data_mod: 1.45,
       adv_eco_mod: 1.0,
-      adv_eco_mod_alone: 0.85,
+      adv_eco_mod_alone: 0,
       personality_tags:
         [
           "silver"
@@ -89,7 +89,7 @@ function qQuellerAI() {
       enable_commander_danger_responses: true,
       neural_data_mod: 1.3,
       adv_eco_mod: 1.0,
-      adv_eco_mod_alone: 0.85,
+      adv_eco_mod_alone: 0,
       personality_tags:
         [
           "gold"
@@ -109,7 +109,7 @@ function qQuellerAI() {
       enable_commander_danger_responses: true,
       neural_data_mod: 1.15,
       adv_eco_mod: 1.0,
-      adv_eco_mod_alone: 0.85,
+      adv_eco_mod_alone: 0,
       personality_tags:
         [
           "platinum"
@@ -211,7 +211,7 @@ function qQuellerAI() {
       priority_scout_metal_spots: true,
       enable_commander_danger_responses: true,
       neural_data_mod: 0.75,
-      adv_eco_mod: 0,
+      adv_eco_mod: 0.85,
       adv_eco_mod_alone: 0,
       personality_tags:
         [
@@ -299,7 +299,7 @@ function qQuellerAI() {
   model.aiPersonalities.valueHasMutated();
 
   _.defer(function () {
-    model.localChatMessage(loc("!LOC:Queller AI"), loc("!LOC:by Quitch. Version 4.43.0. My difficulties are prefixed with a Q. Don't make AI teams larger than human teams, increase the difficulty or the econ rate instead. I support the Legion Expansion."));
+    model.localChatMessage(loc("!LOC:Queller AI"), loc("!LOC:by Quitch. Version 4.44.0. My difficulties are prefixed with a Q. Don't make AI teams larger than human teams, increase the difficulty or the econ rate instead. I support the Legion Expansion."));
   });
 
 }
