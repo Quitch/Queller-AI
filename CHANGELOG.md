@@ -19,6 +19,7 @@
  - Commander tries to build around the main base where it's theoretically safer
  - Silver uses less air
  - Uber produces more Investigators and Skitters to spot mines
+ - Uber uses slightly less Storms
 
 #### v4.43.0 - 2019-03-08
 
