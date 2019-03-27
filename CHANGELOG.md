@@ -20,6 +20,7 @@
  - Silver uses less air
  - Uber produces more Investigators and Skitters to spot mines
  - Uber uses slightly less Storms
+ - Monstrosity and Spark moved into main bot squad
 
 #### v4.43.0 - 2019-03-08
 
