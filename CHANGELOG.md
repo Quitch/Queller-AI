@@ -18,7 +18,6 @@
  - Silver and higher can no longer get trapped on asteroids
  - Commander tries to build around the main base where it's theoretically safer
  - Silver uses less air
- - Uber scales up T1 fabbers into the late game
  - Uber builds less Locusts
 
 #### v4.43.0 - 2019-03-08
