@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### DEV
+
+ - Uber won't assign Skitters and Investigators to scouting when they're being built for minesweeping
+
 #### v4.44.0 - 2019-03-27
 
  - Gold will rush an orbital launcher on multi-planet systems when it cannot expand and has no orbital
