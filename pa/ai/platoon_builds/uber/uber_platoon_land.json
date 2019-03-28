@@ -13,6 +13,10 @@
             "boolean": true
           },
           {
+            "test_type": "EnemyPresenceOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "HaveFullPlanetIntel",
             "boolean": false
           },
@@ -27,11 +31,6 @@
             "unit_type_string0": "Air & Scout",
             "compare0": "<",
             "value0": 1
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "((Construction & Mobile) - Fabber - Commander) | (CombatFabBuild & Defense)",
-            "boolean": false
           }
         ],
         [
