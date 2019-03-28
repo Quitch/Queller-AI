@@ -175,36 +175,6 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "BasicAirDefense"
           }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Air",
-            "string1": "AntiAir",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Air & Transport",
-            "boolean": true
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicAirDefense"
-          }
         ]
       ],
       "placement_rules": {
