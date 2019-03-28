@@ -4,6 +4,7 @@
 
  - Uber won't assign Skitters and Investigators to scouting when they're being built for minesweeping
  - Uber is more paranoid about air snipes if it sees an air transport
+ - Tweaked how Uber's Commander places anti-snipe defences
 
 #### v4.44.0 - 2019-03-27
 
