@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### DEV
+
+ - Uber gives high priority to Ares and Thor titans
+
 #### v4.44.1 - 2019-03-28
 
  - Uber won't assign Skitters and Investigators to scouting when they're being built for minesweeping
