@@ -3,6 +3,7 @@
 #### DEV
 
  - Uber gives high priority to Ares and Thor titans
+ - Updated French translation with thanks to sevmek
 
 #### v4.44.1 - 2019-03-28
 
