@@ -241,6 +241,8 @@
       "base_sort": "FromMainBase",
       "max_num_assisters": 3,
       "builders": [
+        "BasicBotFabber",
+        "BasicVehicleFabber",
         "AnyUberAdvancedFabber"
       ],
       "build_conditions": [
@@ -312,8 +314,6 @@
       "max_num_assisters": 3,
       "base_sort": "FromMainBase",
       "builders": [
-        "BasicBotFabber",
-        "BasicVehicleFabber",
         "AnyUberAdvancedFabber"
       ],
       "build_conditions": [

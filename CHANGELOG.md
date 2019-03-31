@@ -4,6 +4,7 @@
 
  - Uber gives higher priority to Ares and Thor titans
  - Updated French translation with thanks to sevmek
+ - Corrected error with T1 fabbers trying to build T2 Locust defences
 
 #### v4.44.1 - 2019-03-28
 
