@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### DEV
+#### v4.44.2 - 2019-04-01
 
  - Uber gives higher priority to Ares and Thor titans
  - Updated French translation with thanks to sevmek
