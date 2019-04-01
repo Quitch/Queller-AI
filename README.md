@@ -230,3 +230,4 @@ Please help [translate Queller AI](https://poeditor.com/join/project/avPZrv6yyE)
   - Linus Petersson
   - Spassky
   - Craeox
+  - sevmek
