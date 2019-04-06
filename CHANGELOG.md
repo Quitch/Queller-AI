@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### DEV
+
+ - Loosened restrictions on Bronze and Silver building interplanetary weapons and defences
+
 #### v4.44.2 - 2019-04-01
 
  - Uber gives higher priority to Ares and Thor titans
