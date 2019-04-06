@@ -4,6 +4,7 @@
 
  - Loosened restrictions on Bronze and Silver building interplanetary weapons and defences
  - Ensure Bronze and Silver correctly handle spreading anti-nukes across a planet
+ - Reduced Uber's paranoia about nukes on other planets it doesn't know about
 
 #### v4.44.2 - 2019-04-01
 
