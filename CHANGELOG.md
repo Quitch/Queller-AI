@@ -10,6 +10,7 @@
  - Bronze through Platinum will keep their Commander closer to the main base
  - More willing to place defences if a Commander is in the area
  - Bronze and Silver put more effort into protecting planets they own from orbital attack
+ - Silver avoids building base defences against non-existent threats
 
 #### v4.44.2 - 2019-04-01
 
