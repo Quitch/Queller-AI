@@ -7,6 +7,7 @@
  - Reduced Uber's paranoia about nukes on other planets it doesn't know about
  - Silver has more freedom to build anti-orbital defences
  - Bronze through Platinum send orbital units in slightly larger groups than before
+ - Bronze through Platinum will keep their Commander closer to the main base
 
 #### v4.44.2 - 2019-04-01
 
