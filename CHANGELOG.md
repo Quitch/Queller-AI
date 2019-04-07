@@ -8,6 +8,7 @@
  - Silver has more freedom to build anti-orbital defences
  - Bronze through Platinum send orbital units in slightly larger groups than before
  - Bronze through Platinum will keep their Commander closer to the main base
+ - More willing to place defences if a Commander is in the area
 
 #### v4.44.2 - 2019-04-01
 
