@@ -2,14 +2,14 @@
 
 #### DEV
 
- - Loosened restrictions on Bronze and Silver building interplanetary weapons and defences
+ - Loosened restrictions on Silver building interplanetary weapons and defences
  - Ensure Bronze and Silver correctly handle spreading anti-nukes across a planet
  - Reduced Uber's paranoia about nukes on other planets it doesn't know about
  - Silver has more freedom to build anti-orbital defences
  - Bronze through Platinum send orbital units in slightly larger groups than before
- - Bronze through Platinum will keep their Commander closer to the main base
+ - Silver through Platinum will keep their Commander closer to the main base
  - More willing to place defences if a Commander is in the area
- - Bronze and Silver put more effort into protecting planets they own from orbital attack
+ - Silver puts more effort into protecting planets they own from orbital attack
  - Silver avoids building base defences against non-existent threats
  - Less strict placement of anti-orbital defences when locking down a planet
  - Fabbers try to be more efficient in where they go to place anti-orbital defences when locking down planet

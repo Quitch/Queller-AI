@@ -120,7 +120,7 @@
       "name": "Bronze - Unit Cannon",
       "to_build": "UnitCannon",
       "instance_count": 1,
-      "shared_instance_count": "AdvancedFactory",
+      "shared_instance_count": "SuperWeapon",
       "max_num_assisters": 10,
       "priority": 1,
       "builders": [
@@ -158,6 +158,7 @@
       "name": "Bronze - Holkins",
       "to_build": "LongRangeArtillery",
       "instance_count": 1,
+      "shared_instance_count": "SuperWeapon",
       "max_num_assisters": 10,
       "priority": 480,
       "base_sort": "FromBuilder",
@@ -211,6 +212,7 @@
       "name": "Bronze - Nuke Silo",
       "to_build": "NukeSilo",
       "instance_count": 1,
+      "shared_instance_count": "SuperWeapon",
       "max_num_assisters": 10,
       "priority": 481,
       "builders": [
@@ -254,6 +256,7 @@
       "name": "Bronze - Halley",
       "to_build": "PlanetEngine",
       "instance_count": 1,
+      "shared_instance_count": "SuperWeapon",
       "max_num_assisters": 45,
       "priority": 509,
       "builders": [
@@ -366,6 +369,7 @@
       "name": "Bronze - Catalyst",
       "to_build": "ControlModule",
       "instance_count": 1,
+      "shared_instance_count": "SuperWeapon",
       "max_num_assisters": 45,
       "priority": 512,
       "base_sort": "FromBuilder",
