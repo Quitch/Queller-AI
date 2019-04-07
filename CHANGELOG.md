@@ -11,6 +11,7 @@
  - More willing to place defences if a Commander is in the area
  - Bronze and Silver put more effort into protecting planets they own from orbital attack
  - Silver avoids building base defences against non-existent threats
+ - Less strict placement of anti-orbital defences when locking down a planet
 
 #### v4.44.2 - 2019-04-01
 
