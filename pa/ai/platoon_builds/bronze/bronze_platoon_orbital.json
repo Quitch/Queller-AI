@@ -138,9 +138,30 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Orbital & (Fighter | LaserPlatform)",
+            "unit_type_string0": "Orbital & Fighter",
             "compare0": ">=",
-            "value0": 1
+            "value0": 10
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "ThisPlanetNeedsOrbitalUnitAssistance",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & (LaserPlatform | (Fighter & Heavy))",
+            "compare0": ">=",
+            "value0": 2
           }
         ],
         [
@@ -159,9 +180,9 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Orbital & LaserPlatform",
+            "unit_type_string0": "Orbital & (LaserPlatform | (Fighter & Heavy))",
             "compare0": ">=",
-            "value0": 1
+            "value0": 2
           }
         ]
       ],
