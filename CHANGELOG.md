@@ -13,7 +13,7 @@
  - Silver avoids building base defences against non-existent threats
  - Less strict placement of anti-orbital defences when locking down a planet
  - Fabbers try to be more efficient in where they go to place anti-orbital defences when locking down planet
- - Fixed Silver not using orbital fighters to attack orbital threats
+ - Fixed Silver not always using orbital fighters to attack orbital threats
 
 #### v4.44.2 - 2019-04-01
 
