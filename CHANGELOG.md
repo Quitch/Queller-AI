@@ -15,6 +15,7 @@
  - Fabbers try to be more efficient in where they go to place anti-orbital defences when locking down planet
  - Fixed Silver not always using orbital fighters to attack orbital threats
  - Fixed Silver not moving Booms between planets
+ - Fixed Gold MLA not using air scouts on multi-planet systems to check if was alone on its planet
 
 #### v4.44.2 - 2019-04-01
 
