@@ -806,81 +806,6 @@
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "MetMinAdvancedFabberCount",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Air",
-            "string1": "Air",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Advanced & Bot & Factory",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Land & Mobile & AirDefense",
-            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
-            "compare0": "<",
-            "value0": 0.1
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "MetMinAdvancedFabberCount",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 1000
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Orbital",
-            "string1": "AntiOrbital",
-            "compare0": ">=",
-            "value0": 0.9
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": false
           }
         ],
         [
@@ -892,54 +817,6 @@
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
-          },
-          {
-            "test_type": "MetMinAdvancedFabberCount",
-            "boolean": true
-          },
-          {
-            "test_type": "SystemThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 1000
-          },
-          {
-            "test_type": "OtherPlanetNeedsLandUnitAssistance",
-            "boolean": true
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "MetMinAdvancedFabberCount",
-            "boolean": true
-          },
-          {
-            "test_type": "SystemThreat",
-            "string0": "Air",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Advanced & Bot & Factory",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Land & Mobile & AirDefense",
-            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
-            "compare0": "<",
-            "value0": 0.1
           },
           {
             "test_type": "OtherPlanetNeedsLandUnitAssistance",
