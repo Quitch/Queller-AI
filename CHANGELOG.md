@@ -3,8 +3,8 @@
 #### DEV
 
  - Loosened restrictions on Silver building interplanetary weapons and defences
- - Ensure Bronze and Silver correctly handle spreading anti-nukes across a planet
- - Reduced Uber's paranoia about nukes on other planets it doesn't know about
+ - Bronze and Silver correctly handle spreading anti-nukes across a planet
+ - Reduced Uber's paranoia about the possibility of nukes on other planets that it hasn't scouted
  - Silver has more freedom to build anti-orbital defences
  - Bronze through Platinum send orbital units in slightly larger groups than before
  - Silver through Platinum will keep their Commander closer to the main base
@@ -19,7 +19,7 @@
  - Gold only land scouts when it thinks a local enemy exists
  - Fixed Platinum building too many advanced air factories when alone
  - Uber more aggressive in using the Icarus to correct energy issues on multi-planet systems
- - Uber will build Gustav as a defensive weapon where it has shields in its base
+ - Uber will build the Gustav as a defensive weapon where it has shields in its base
  - Uber uses more Panzers
  - Puts the Panzer in land armies not hover raids
  - Uber gets more aggressive about maintaining mine vision once it has confirmed mines are in play
