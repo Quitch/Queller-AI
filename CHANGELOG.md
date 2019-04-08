@@ -21,6 +21,7 @@
  - Uber more aggressive in using the Icarus to correct energy issues on multi-planet systems
  - Uber will build Gustav as a defensive weapon where it has shields in its base
  - Uber uses more Panzers
+ - Puts the Panzer in land armies not hover raids
 
 #### v4.44.2 - 2019-04-01
 
