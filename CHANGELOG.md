@@ -22,6 +22,7 @@
  - Uber will build Gustav as a defensive weapon where it has shields in its base
  - Uber uses more Panzers
  - Puts the Panzer in land armies not hover raids
+ - Uber gets more aggressive about maintaining mine vision once it has confirmed mines are in play
 
 #### v4.44.2 - 2019-04-01
 
