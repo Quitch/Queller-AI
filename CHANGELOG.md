@@ -18,6 +18,7 @@
  - Fixed Gold MLA not using air scouts on multi-planet systems to check if was alone on its planet
  - Gold only land scouts when it thinks a local enemy exists
  - Fixed Platinum building too many advanced air factories when alone
+ - Uber more aggressive in using the Icarus to correct energy issues on multi-planet systems
 
 #### v4.44.2 - 2019-04-01
 
