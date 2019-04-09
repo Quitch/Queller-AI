@@ -1,14 +1,14 @@
 {
   "build_list": [
     {
-      "name": "Legion - Uber - Starship Projector",
+      "name": "Legion - Uber - Starship Projector - Alone",
       "to_build": "LegionFactoryBasicOrbital",
       "instance_count": 1,
       "shared_instance_count": "OrbitalLauncher",
       "priority": 480,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
-      "base_sort": "FromMainBase",
+      "base_sort": "FromBuilder",
       "builders": [
         "AnyUberBasicFabber",
         "AnyLegionFabberAdvanced"
@@ -38,7 +38,33 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionFactoryBasicOrbital"
           }
-        ],
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Legion - Uber - Starship Projector",
+      "to_build": "LegionFactoryBasicOrbital",
+      "instance_count": 1,
+      "shared_instance_count": "OrbitalLauncher",
+      "priority": 480,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "base_sort": "FromMainBase",
+      "builders": [
+        "AnyUberBasicFabberNotAir",
+        "AnyLegionFabberAdvanced"
+      ],
+      "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
