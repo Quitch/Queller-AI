@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### DEV
+#### 4.45.0 - 2019-04-09
 
  - Loosened restrictions on Silver building interplanetary weapons and defences
  - Bronze and Silver correctly handle spreading anti-nukes across a planet
