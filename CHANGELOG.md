@@ -23,7 +23,7 @@
  - Uber uses more Panzers
  - Puts the Panzer in land armies not hover raids
  - Uber gets more aggressive about maintaining mine vision once it has confirmed mines are in play
- - Uber is more reliable about going orbital when it is supposed to
+ - Uber is more reliable at transitioning to orbital when alone
 
 #### v4.44.2 - 2019-04-01
 
