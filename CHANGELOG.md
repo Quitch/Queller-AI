@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### DEV
+
+ - Fixed Uber Legion trying to use MLA fabbers for some builds
+
 #### 4.45.0 - 2019-04-09
 
  - Loosened restrictions on Silver building interplanetary weapons and defences
