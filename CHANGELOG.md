@@ -1,5 +1,30 @@
 # CHANGELOG
 
+#### 4.45.0 - 2019-04-09
+
+ - Loosened restrictions on Silver building interplanetary weapons and defences
+ - Bronze and Silver correctly handle spreading anti-nukes across a planet
+ - Reduced Uber's paranoia about the possibility of nukes on other planets that it hasn't scouted
+ - Silver has more freedom to build anti-orbital defences
+ - Bronze through Platinum send orbital units in slightly larger groups than before
+ - Silver through Platinum will keep their Commander closer to the main base
+ - More willing to place defences if a Commander is in the area
+ - Silver puts more effort into protecting planets they own from orbital attack
+ - Silver avoids building base defences against non-existent threats
+ - Less strict placement of anti-orbital defences when locking down a planet
+ - Fabbers try to be more efficient in where they go to place anti-orbital defences when locking down planet
+ - Fixed Silver not always using orbital fighters to attack orbital threats
+ - Fixed Silver not moving Booms between planets
+ - Fixed Gold MLA not using air scouts on multi-planet systems to check if was alone on its planet
+ - Gold only land scouts when it thinks a local enemy exists
+ - Fixed Platinum building too many advanced air factories when alone
+ - Uber more aggressive in using the Icarus to correct energy issues on multi-planet systems
+ - Uber will build the Gustav as a defensive weapon where it has shields in its base
+ - Uber uses more Panzers
+ - Puts the Panzer in land armies not hover raids
+ - Uber gets more aggressive about maintaining mine vision once it has confirmed mines are in play
+ - Uber is more reliable at transitioning to orbital when alone
+
 #### v4.44.2 - 2019-04-01
 
  - Uber gives higher priority to Ares and Thor titans
