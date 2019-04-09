@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### DEV
+#### v4.45.1 - 2019-04-09
 
  - Fixed Uber Legion trying to use MLA fabbers for some builds
  - Fixed error in Uber MLA anti-nuke paranoia build
