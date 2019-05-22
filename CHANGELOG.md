@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### DEV
+
+ - Reintroduced Uber Neural which uses large numbers of small platoons and leans more heavily on the neural net
+
 #### v4.45.1 - 2019-04-09
 
  - Fixed Uber Legion trying to use MLA fabbers for some builds
