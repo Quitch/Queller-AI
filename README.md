@@ -150,6 +150,7 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 ### Free For All
  - More cautious about engaging in battle
  - Techs earlier
+ - Orbital earlier
 
 ### Naval
  - Attempts to build a naval factory first
