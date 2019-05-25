@@ -150,10 +150,15 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 ### Free For All
  - More cautious about engaging in battle
  - Techs earlier
+ - Orbital earlier
 
 ### Naval
  - Attempts to build a naval factory first
  - Unrestricted naval usage
+
+### Neural
+ - Large number of small platoons in the same way as vanilla AI
+ - Relies more heavily on the neural net
 
 ### Rush
   - Techs late
