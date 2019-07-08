@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### DEV
+#### v4.46.1 - 2019-07-08
 
  - Fix for AI not properly defending its Commander against low orbital threat
  - Correctly recognises the Unit Cannon as requiring anti-orbital land defences
