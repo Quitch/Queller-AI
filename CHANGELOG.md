@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### DEV
+
+ - Fix for AI not properly defending its Commander against low orbital threat
+
 #### v4.46.0 - 2019-05-25
 
  - Reintroduced Uber Neural which uses large numbers of small platoons and leans more heavily on the neural net
