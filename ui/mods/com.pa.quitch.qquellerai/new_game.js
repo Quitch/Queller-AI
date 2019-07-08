@@ -137,26 +137,6 @@ function qQuellerAI() {
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1
     },
-    'Q-Uber Old': {
-      display_name: '!LOC:Q-UberO',
-      metal_drain_check: 0.54,
-      energy_drain_check: 0.65,
-      metal_demand_check: 0.85,
-      energy_demand_check: 0.8,
-      micro_type: 2,
-      go_for_the_kill: true,
-      priority_scout_metal_spots: true,
-      enable_commander_danger_responses: true,
-      neural_data_mod: 1.0,
-      adv_eco_mod: 1.0,
-      adv_eco_mod_alone: 0,
-      personality_tags:
-        [
-          "uberold"
-        ],
-      min_basic_fabbers: 3,
-      min_advanced_fabbers: 1
-    },
     'Q-Uber Aggressive': {
       display_name: '!LOC:Q-Uber Aggressive',
       metal_drain_check: 0.54,
@@ -174,26 +154,6 @@ function qQuellerAI() {
         [
           "uber",
           "aggressive"
-        ],
-      min_basic_fabbers: 3,
-      min_advanced_fabbers: 1,
-    },
-    'Q-UberO Aggressive': {
-      display_name: '!LOC:Q-UberO Aggressive',
-      metal_drain_check: 0.54,
-      energy_drain_check: 0.65,
-      metal_demand_check: 0.85,
-      energy_demand_check: 0.8,
-      micro_type: 2,
-      go_for_the_kill: true,
-      priority_scout_metal_spots: true,
-      enable_commander_danger_responses: true,
-      neural_data_mod: 1.25,
-      adv_eco_mod: 1.0,
-      adv_eco_mod_alone: 0,
-      personality_tags:
-        [
-          "uberold"
         ],
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1,
@@ -219,27 +179,6 @@ function qQuellerAI() {
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1
     },
-    'Q-UberO Air': {
-      display_name: '!LOC:Q-UberO Air',
-      metal_drain_check: 0.54,
-      energy_drain_check: 0.65,
-      metal_demand_check: 0.85,
-      energy_demand_check: 0.8,
-      micro_type: 2,
-      go_for_the_kill: true,
-      priority_scout_metal_spots: true,
-      enable_commander_danger_responses: true,
-      neural_data_mod: 1.0,
-      adv_eco_mod: 1.0,
-      adv_eco_mod_alone: 0,
-      personality_tags:
-        [
-          "uberold",
-          "airold"
-        ],
-      min_basic_fabbers: 3,
-      min_advanced_fabbers: 1
-    },
     'Q-Uber Bot': {
       display_name: '!LOC:Q-Uber Bot',
       metal_drain_check: 0.54,
@@ -257,27 +196,6 @@ function qQuellerAI() {
         [
           "uber",
           "bot"
-        ],
-      min_basic_fabbers: 3,
-      min_advanced_fabbers: 1
-    },
-    'Q-UberO Bot': {
-      display_name: '!LOC:Q-UberO Bot',
-      metal_drain_check: 0.54,
-      energy_drain_check: 0.65,
-      metal_demand_check: 0.85,
-      energy_demand_check: 0.8,
-      micro_type: 2,
-      go_for_the_kill: true,
-      priority_scout_metal_spots: true,
-      enable_commander_danger_responses: true,
-      neural_data_mod: 0.5,
-      adv_eco_mod: 1.0,
-      adv_eco_mod_alone: 0,
-      personality_tags:
-        [
-          "uberold",
-          "botold"
         ],
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1
@@ -303,27 +221,6 @@ function qQuellerAI() {
       min_basic_fabbers: 4,
       min_advanced_fabbers: 1
     },
-    'Q-UberO Free For All': {
-      display_name: '!LOC:Q-UberO Free For All',
-      metal_drain_check: 0.54,
-      energy_drain_check: 0.65,
-      metal_demand_check: 0.85,
-      energy_demand_check: 0.8,
-      micro_type: 2,
-      go_for_the_kill: true,
-      priority_scout_metal_spots: true,
-      enable_commander_danger_responses: true,
-      neural_data_mod: 0.75,
-      adv_eco_mod: 0,
-      adv_eco_mod_alone: 0,
-      personality_tags:
-        [
-          "uberold",
-          "ffaold"
-        ],
-      min_basic_fabbers: 4,
-      min_advanced_fabbers: 1
-    },
     'Q-Uber Naval': {
       display_name: '!LOC:Q-Uber Naval',
       metal_drain_check: 0.64,
@@ -341,27 +238,6 @@ function qQuellerAI() {
         [
           "uber",
           "naval"
-        ],
-      min_basic_fabbers: 1,
-      min_advanced_fabbers: 1
-    },
-    'Q-UberO Naval': {
-      display_name: '!LOC:Q-UberO Naval',
-      metal_drain_check: 0.64,
-      energy_drain_check: 0.65,
-      metal_demand_check: 0.85,
-      energy_demand_check: 0.8,
-      micro_type: 2,
-      go_for_the_kill: true,
-      priority_scout_metal_spots: true,
-      enable_commander_danger_responses: true,
-      neural_data_mod: 1.0,
-      adv_eco_mod: 1.0,
-      adv_eco_mod_alone: 0,
-      personality_tags:
-        [
-          "uberold",
-          "navalold"
         ],
       min_basic_fabbers: 1,
       min_advanced_fabbers: 1
@@ -408,28 +284,6 @@ function qQuellerAI() {
       min_basic_fabbers: 2,
       min_advanced_fabbers: 1
     },
-    'Q-UberO Rush': {
-      display_name: '!LOC:Q-UberO Rush',
-      metal_drain_check: 0.54,
-      energy_drain_check: 0.65,
-      metal_demand_check: 0.85,
-      energy_demand_check: 0.8,
-      micro_type: 2,
-      go_for_the_kill: true,
-      priority_scout_metal_spots: true,
-      enable_commander_danger_responses: true,
-      neural_data_mod: 1.0,
-      adv_eco_mod: 2.0,
-      adv_eco_mod_alone: 0,
-      personality_tags:
-        [
-          "uberold",
-          "botold",
-          "rushold"
-        ],
-      min_basic_fabbers: 2,
-      min_advanced_fabbers: 1
-    },
     'Q-Uber Tank': {
       display_name: '!LOC:Q-Uber Tank',
       metal_drain_check: 0.54,
@@ -447,27 +301,6 @@ function qQuellerAI() {
         [
           "uber",
           "tank"
-        ],
-      min_basic_fabbers: 3,
-      min_advanced_fabbers: 1
-    },
-    'Q-UberO Tank': {
-      display_name: '!LOC:Q-UberO Tank',
-      metal_drain_check: 0.54,
-      energy_drain_check: 0.65,
-      metal_demand_check: 0.85,
-      energy_demand_check: 0.8,
-      micro_type: 2,
-      go_for_the_kill: true,
-      priority_scout_metal_spots: true,
-      enable_commander_danger_responses: true,
-      neural_data_mod: 1.0,
-      adv_eco_mod: 1.0,
-      adv_eco_mod_alone: 0,
-      personality_tags:
-        [
-          "uberold",
-          "tankold"
         ],
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1
