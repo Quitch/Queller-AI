@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### DEV
+
+ - Bronze through Uber try to build air and orbital titans somewhere safe
+
 #### v4.46.1 - 2019-07-08
 
  - Fix for Uber not properly defending its Commander against low orbital threat
