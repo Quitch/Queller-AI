@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### DEV
+#### v4.46.2 - 2019-07-09
 
  - Bronze through Uber try to build air and orbital titans somewhere safe
 
