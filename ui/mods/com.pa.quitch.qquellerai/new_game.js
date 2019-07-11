@@ -136,7 +136,7 @@ function qQuellerAI() {
         ],
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1
-    },
+    },/*
     'Q-Uber Old': {
       display_name: '!LOC:Q-UberO',
       metal_drain_check: 0.54,
@@ -156,7 +156,7 @@ function qQuellerAI() {
         ],
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1
-    },
+    },*/
     'Q-Uber Aggressive': {
       display_name: '!LOC:Q-Uber Aggressive',
       metal_drain_check: 0.54,
@@ -177,7 +177,7 @@ function qQuellerAI() {
         ],
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1,
-    },
+    },/*
     'Q-UberO Aggressive': {
       display_name: '!LOC:Q-UberO Aggressive',
       metal_drain_check: 0.54,
@@ -197,7 +197,7 @@ function qQuellerAI() {
         ],
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1,
-    },
+    },*/
     'Q-Uber Air': {
       display_name: '!LOC:Q-Uber Air',
       metal_drain_check: 0.54,
@@ -218,7 +218,7 @@ function qQuellerAI() {
         ],
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1
-    },
+    },/*
     'Q-UberO Air': {
       display_name: '!LOC:Q-UberO Air',
       metal_drain_check: 0.54,
@@ -239,7 +239,7 @@ function qQuellerAI() {
         ],
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1
-    },
+    },*/
     'Q-Uber Bot': {
       display_name: '!LOC:Q-Uber Bot',
       metal_drain_check: 0.54,
@@ -260,7 +260,7 @@ function qQuellerAI() {
         ],
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1
-    },
+    },/*
     'Q-UberO Bot': {
       display_name: '!LOC:Q-UberO Bot',
       metal_drain_check: 0.54,
@@ -281,7 +281,7 @@ function qQuellerAI() {
         ],
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1
-    },
+    },*/
     'Q-Uber Free For All': {
       display_name: '!LOC:Q-Uber Free For All',
       metal_drain_check: 0.54,
@@ -302,7 +302,7 @@ function qQuellerAI() {
         ],
       min_basic_fabbers: 4,
       min_advanced_fabbers: 1
-    },
+    },/*
     'Q-UberO Free For All': {
       display_name: '!LOC:Q-UberO Free For All',
       metal_drain_check: 0.54,
@@ -323,7 +323,7 @@ function qQuellerAI() {
         ],
       min_basic_fabbers: 4,
       min_advanced_fabbers: 1
-    },
+    },*/
     'Q-Uber Naval': {
       display_name: '!LOC:Q-Uber Naval',
       metal_drain_check: 0.64,
@@ -344,7 +344,7 @@ function qQuellerAI() {
         ],
       min_basic_fabbers: 1,
       min_advanced_fabbers: 1
-    },
+    },/*
     'Q-UberO Naval': {
       display_name: '!LOC:Q-UberO Naval',
       metal_drain_check: 0.64,
@@ -365,7 +365,7 @@ function qQuellerAI() {
         ],
       min_basic_fabbers: 1,
       min_advanced_fabbers: 1
-    },
+    },*/
     'Q-Uber Neural': {
       display_name: '!LOC:Q-Uber Neural',
       metal_drain_check: 0.54,
@@ -407,7 +407,7 @@ function qQuellerAI() {
         ],
       min_basic_fabbers: 2,
       min_advanced_fabbers: 1
-    },
+    },/*
     'Q-UberO Rush': {
       display_name: '!LOC:Q-UberO Rush',
       metal_drain_check: 0.54,
@@ -429,7 +429,7 @@ function qQuellerAI() {
         ],
       min_basic_fabbers: 2,
       min_advanced_fabbers: 1
-    },
+    },*/
     'Q-Uber Tank': {
       display_name: '!LOC:Q-Uber Tank',
       metal_drain_check: 0.54,
@@ -450,7 +450,7 @@ function qQuellerAI() {
         ],
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1
-    },
+    }/*,
     'Q-UberO Tank': {
       display_name: '!LOC:Q-UberO Tank',
       metal_drain_check: 0.54,
@@ -471,7 +471,7 @@ function qQuellerAI() {
         ],
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1
-    }
+    }*/
   }
 
   var baseline = aiPersonalities.Absurd
