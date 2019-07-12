@@ -3,6 +3,7 @@
 #### DEV
 
  - Uber uses less Locusts
+ - Ensure Uber always puts bots in the right squad
 
 #### v4.46.2 - 2019-07-09
 
