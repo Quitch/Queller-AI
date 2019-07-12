@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### DEV
+#### v4.62.3 - 2019-07-12
 
  - Uber uses less Locusts
  - Ensure Uber always puts bots in the right squad
