@@ -1,5 +1,10 @@
 # CHANGELOG
 
+#### v4.62.3 - 2019-07-12
+
+ - Uber uses less Locusts
+ - Ensure Uber always puts bots in the right squad
+
 #### v4.46.2 - 2019-07-09
 
  - Bronze through Uber try to build air and orbital titans somewhere safe

@@ -195,7 +195,6 @@ Please help [translate Queller AI](https://poeditor.com/join/project/avPZrv6yyE)
 - Legion can't use orbital transports
 - Doesn't use Helios teleporter
 - Naval factories sometimes stop producing units
-- Won't attack on gas giants
 - All AI Commanders on a team spawn and act together using shared army mode
 - Play From Here in Chronocam can cause strange AI behaviour or even break it
 - Different armies will sometimes build on the same metal spot
