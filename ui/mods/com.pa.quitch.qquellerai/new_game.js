@@ -305,6 +305,29 @@ function qQuellerAI() {
         ],
       min_basic_fabbers: 4,
       min_advanced_fabbers: 1
+    },
+    'Q-UberN Free For All': {
+      display_name: '!LOC:Q-UberN Free For All',
+      metal_drain_check: 0.54,
+      energy_drain_check: 0.65,
+      metal_demand_check: 0.85,
+      energy_demand_check: 0.8,
+      micro_type: 2,
+      go_for_the_kill: true,
+      priority_scout_metal_spots: true,
+      enable_commander_danger_responses: true,
+      neural_data_mod: 0.75,
+      adv_eco_mod: 0.85,
+      adv_eco_mod_alone: 0,
+      personality_tags:
+        [
+          "uber",
+          "ffa",
+          "aggressive",
+          "neural"
+        ],
+      min_basic_fabbers: 4,
+      min_advanced_fabbers: 1
     },/*
     'Q-UberO Free For All': {
       display_name: '!LOC:Q-UberO Free For All',
@@ -386,6 +409,28 @@ function qQuellerAI() {
         [
           "uber",
           "aggressive"
+        ],
+      min_basic_fabbers: 2,
+      min_advanced_fabbers: 1
+    },
+    'Q-Uber Rush Neural': {
+      display_name: '!LOC:Q-Uber Rush Neural',
+      metal_drain_check: 0.54,
+      energy_drain_check: 0.65,
+      metal_demand_check: 0.85,
+      energy_demand_check: 0.8,
+      micro_type: 2,
+      go_for_the_kill: true,
+      priority_scout_metal_spots: true,
+      enable_commander_danger_responses: true,
+      neural_data_mod: 1.0,
+      adv_eco_mod: 2.0,
+      adv_eco_mod_alone: 0,
+      personality_tags:
+        [
+          "uber",
+          "aggressive",
+          "neural"
         ],
       min_basic_fabbers: 2,
       min_advanced_fabbers: 1
