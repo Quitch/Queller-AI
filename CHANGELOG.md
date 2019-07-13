@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### DEV
+#### v4.47.0 - 2019-07-13
 
  - Cleaned up some unnecessary personality duplication
  - Removed Uber Aggressive
