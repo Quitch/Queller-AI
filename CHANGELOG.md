@@ -2,7 +2,7 @@
 
 #### DEV
 
- - Clean-up some unnecessary personality duplication
+ - Cleaned up some unnecessary personality duplication
  - Removed Uber Aggressive
  - Uber Neural renamed Uber Aggressive
 
