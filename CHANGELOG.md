@@ -1,12 +1,15 @@
 # CHANGELOG
 
+#### DEV
+
+ - Clean-up some unnecessary personality duplication
+ - Removed Uber Aggressive
+ - Uber Neural renamed Uber Aggressive
+
 #### v4.46.3 - 2019-07-12
 
  - Uber uses less Locusts
  - Ensure Uber always puts bots in the right squad
- - Clean-up some unnecessary personality duplication
- - Removed Uber Aggressive
- - Uber Neural renamed Uber Aggressive
 
 #### v4.46.2 - 2019-07-09
 
