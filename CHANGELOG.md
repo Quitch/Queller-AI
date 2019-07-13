@@ -1,5 +1,11 @@
 # CHANGELOG
 
+#### v4.47.0 - 2019-07-13
+
+ - Cleaned up some unnecessary personality duplication
+ - Removed Uber Aggressive
+ - Uber Neural renamed Uber Aggressive
+
 #### v4.46.3 - 2019-07-12
 
  - Uber uses less Locusts
