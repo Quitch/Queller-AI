@@ -189,12 +189,14 @@ function qQuellerAI() {
       go_for_the_kill: true,
       priority_scout_metal_spots: true,
       enable_commander_danger_responses: true,
-      neural_data_mod: 1.25,
+      neural_data_mod: 1.0,
       adv_eco_mod: 1.0,
       adv_eco_mod_alone: 0,
       personality_tags:
         [
-          "uberold"
+          "uberold",
+          "aggressiveold",
+          "neuralold"
         ],
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1,
@@ -315,7 +317,7 @@ function qQuellerAI() {
       priority_scout_metal_spots: true,
       enable_commander_danger_responses: true,
       neural_data_mod: 0.75,
-      adv_eco_mod: 0,
+      adv_eco_mod: 0.85,
       adv_eco_mod_alone: 0,
       personality_tags:
         [
