@@ -137,8 +137,8 @@ function qQuellerAI() {
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1
     },
-    'Q-Uber Aggressive': {
-      display_name: '!LOC:Q-Uber Aggressive',
+    'Q-Uber 1v1': {
+      display_name: '!LOC:Q-Uber 1v1',
       metal_drain_check: 0.54,
       energy_drain_check: 0.65,
       metal_demand_check: 0.85,
@@ -300,7 +300,7 @@ function qQuellerAI() {
   model.aiPersonalities.valueHasMutated();
 
   _.defer(function () {
-    model.localChatMessage(loc("!LOC:Queller AI"), loc("!LOC:by Quitch. Version 4.47.0. My difficulties are prefixed with a Q. Don't make AI teams larger than human teams, increase the difficulty or the econ rate instead. I support the Legion Expansion."));
+    model.localChatMessage(loc("!LOC:Queller AI"), loc("!LOC:by Quitch. Version 4.48.0. My difficulties are prefixed with a Q. Don't make AI teams larger than human teams, increase the difficulty or the econ rate instead. I support the Legion Expansion."));
   });
 
 }
