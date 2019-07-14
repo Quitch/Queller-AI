@@ -153,7 +153,7 @@ function qQuellerAI() {
       personality_tags:
         [
           "uber",
-          "aggressive",
+          "doublebot",
           "neural"
         ],
       min_basic_fabbers: 3,
@@ -197,7 +197,7 @@ function qQuellerAI() {
         [
           "uber",
           "bot",
-          "aggressive"
+          "doublebot"
         ],
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1
@@ -260,7 +260,7 @@ function qQuellerAI() {
       personality_tags:
         [
           "uber",
-          "aggressive",
+          "doublebot",
           "neural"
         ],
       min_basic_fabbers: 2,

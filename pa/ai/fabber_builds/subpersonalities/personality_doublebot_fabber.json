@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Uber Aggressive - Basic Air Factory - Third Air",
+      "name": "Uber Double Bot - Basic Air Factory - Third Air",
       "to_build": "BasicAirFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -17,7 +17,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "aggressive",
+            "string0": "doublebot",
             "boolean": true
           },
           {
@@ -58,7 +58,7 @@
       }
     },
     {
-      "name": "Legion - Uber Aggressive - Flyer Foundry - Third Air",
+      "name": "Legion - Uber Double Bot - Flyer Foundry - Third Air",
       "to_build": "LegionFactoryBasicAir",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -74,7 +74,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "aggressive",
+            "string0": "doublebot",
             "boolean": true
           },
           {
