@@ -1,6 +1,6 @@
 # CHANGELOG
 
-####
+#### 4.48.0 - 2019-07-14
 
  - Added Turkish (tr-TR) translations with thanks to fera
  - Uber Aggressive now named Uber 1v1
