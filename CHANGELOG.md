@@ -3,6 +3,7 @@
 ####
 
  - Added Turkish (tr-TR) translations with thanks to fera
+ - Uber Aggressive now named Uber 1v1
 
 #### v4.47.0 - 2019-07-13
 
