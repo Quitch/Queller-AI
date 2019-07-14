@@ -138,7 +138,7 @@ When you need to increase the challenge, but don't want to increase the difficul
 
 By default, Queller at Uber level will adapt its play to try and suit the system and the opposition it faces. You can use subpersonalities to customise Queller's game to your liking, or help it play better where it's making poor strategy choices.
 
-### Aggressive
+### 1v1
  - More willing to engage in battle
 
 ### Air
