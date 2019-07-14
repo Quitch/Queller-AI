@@ -1,5 +1,9 @@
 # CHANGELOG
 
+####
+
+ - Added Turkish (tr-TR) translations with thanks to fera
+
 #### v4.47.0 - 2019-07-13
 
  - Cleaned up some unnecessary personality duplication

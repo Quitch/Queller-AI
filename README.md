@@ -229,3 +229,4 @@ Please help [translate Queller AI](https://poeditor.com/join/project/avPZrv6yyE)
   - Spassky
   - Craeox
   - sevmek
+  - fera
