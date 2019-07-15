@@ -5,6 +5,7 @@
  - Uber Rush uses a more aggressive approach to creating platoons
  - Uber Bot can now start double bot
  - Updated Turkish (tr-TR) translation
+ - Tidied up the formation of orbital platoons
 
 #### v4.48.0 - 2019-07-14
 
