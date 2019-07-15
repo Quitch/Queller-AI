@@ -12,7 +12,7 @@
     "Orbital_Ground_Attack_Queller": {
       "units": [
         {
-          "unit_types": "(LaserPlatform | (Fighter & Heavy)) & Mobile - Titan",
+          "unit_types": "Orbital & (LaserPlatform | (Fighter & Heavy)) & Mobile - Titan",
           "min_count": 1,
           "max_count": -1
         }
