@@ -56,7 +56,8 @@
       "max_num_assisters": 4,
       "base_sort": "FromBuilder",
       "builders": [
-        "AnyUberBasicFabberLand"
+        "BasicBotFabber",
+        "BasicVehicleFabber"
       ],
       "build_conditions": [
         [
@@ -183,7 +184,8 @@
       "max_num_assisters": 4,
       "base_sort": "FromBuilder",
       "builders": [
-        "AnyLegionBasicFabberLand"
+        "LegionBotBasicFabber",
+        "LegionVehicleBasicFabber"
       ],
       "build_conditions": [
         [

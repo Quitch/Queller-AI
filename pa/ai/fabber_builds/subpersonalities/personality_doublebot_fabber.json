@@ -11,7 +11,8 @@
       "base_sort": "FromMainBase",
       "builders": [
         "UberCommander",
-        "AnyUberBasicFabberLand"
+        "BasicBotFabber",
+        "BasicVehicleFabber"
       ],
       "build_conditions": [
         [
@@ -68,7 +69,8 @@
       "base_sort": "FromMainBase",
       "builders": [
         "LegionCommander",
-        "AnyLegionBasicFabberLand"
+        "LegionBotBasicFabber",
+        "LegionVehicleBasicFabber"
       ],
       "build_conditions": [
         [
