@@ -18,7 +18,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Orbital & (Recon | Scout) - Structure",
+            "unit_type_string0": "Orbital & (Recon | Scout) & Mobile",
             "compare0": ">=",
             "value0": 1
           }
@@ -48,7 +48,7 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Orbital & (Recon | Scout) - Structure",
+            "unit_type_string0": "Orbital & (Recon | Scout) & Mobile",
             "compare0": ">=",
             "value0": 1
           }
@@ -78,7 +78,7 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Orbital & (Recon | Scout) - Structure",
+            "unit_type_string0": "Orbital & (Recon | Scout) & Mobile",
             "compare0": ">=",
             "value0": 1
           },
@@ -110,7 +110,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Orbital & Fighter",
+            "unit_type_string0": "Orbital & Fighter & Mobile - Titan",
             "compare0": ">=",
             "value0": 1
           },
@@ -140,7 +140,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(LaserPlatform | (Fighter & Heavy))",
+            "unit_type_string0": "Orbital & (LaserPlatform | Heavy) & Mobile - Titan",
             "compare0": ">=",
             "value0": 1
           },
@@ -174,7 +174,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Orbital & (Fighter | LaserPlatform)",
+            "unit_type_string0": "Orbital & (Fighter | LaserPlatform) & Mobile",
             "compare0": ">=",
             "value0": 1
           }
@@ -195,7 +195,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Orbital & LaserPlatform",
+            "unit_type_string0": "Orbital & LaserPlatform & Mobile",
             "compare0": ">=",
             "value0": 1
           }
