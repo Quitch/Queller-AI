@@ -154,7 +154,8 @@ function qQuellerAI() {
         [
           "uber",
           "doublebot",
-          "neural"
+          "neural",
+          "1v1"
         ],
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1,
