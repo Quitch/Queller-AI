@@ -6,6 +6,7 @@
  - Uber Bot can now start double bot
  - Updated Turkish (tr-TR) translation
  - Tidied up the formation of orbital platoons
+ - Corrected an issue that was causing Uber to go orbital much later than it should
 
 #### v4.48.0 - 2019-07-14
 
