@@ -8,7 +8,7 @@
  - Tidied up the formation of orbital platoons
  - Corrected an issue that was causing Uber to go orbital much later than it should
  - Updated Uber to ensure similar timing issues weren't occuring elsewhere
- - Updated Uber 1v1 to ensure it doesn't prematurely orbital now the timing issues are fixed
+ - Updated Uber 1v1 to ensure it doesn't prematurely enter orbital now the timing issues are fixed
 
 #### v4.48.0 - 2019-07-14
 
