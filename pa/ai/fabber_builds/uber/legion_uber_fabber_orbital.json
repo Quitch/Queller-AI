@@ -55,7 +55,7 @@
       "name": "Legion - Uber - Starship Projector",
       "to_build": "LegionFactoryBasicOrbital",
       "instance_count": 1,
-      "shared_instance_count": "OrbitalLauncher",
+      "shared_instance_count": "AdvancedFactory",
       "priority": 480,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
@@ -119,10 +119,6 @@
             "test_type": "PlanetCount",
             "compare0": ">",
             "value0": 1
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionFactoryBasicOrbital"
           },
           {
             "test_type": "UnitCountOnPlanet",
