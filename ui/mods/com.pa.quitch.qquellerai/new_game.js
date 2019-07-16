@@ -260,7 +260,8 @@ function qQuellerAI() {
       personality_tags:
         [
           "uber",
-          "doublebot"
+          "doublebot",
+          "lateorbital"
         ],
       min_basic_fabbers: 2,
       min_advanced_fabbers: 1
