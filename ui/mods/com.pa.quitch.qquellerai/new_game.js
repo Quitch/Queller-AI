@@ -154,7 +154,6 @@ function qQuellerAI() {
         [
           "uber",
           "doublebot",
-          "neural",
           "1v1"
         ],
       min_basic_fabbers: 3,
@@ -260,9 +259,7 @@ function qQuellerAI() {
       adv_eco_mod_alone: 0,
       personality_tags:
         [
-          "uber",
-          "doublebot",
-          "neural"
+          "uber"
         ],
       min_basic_fabbers: 2,
       min_advanced_fabbers: 1

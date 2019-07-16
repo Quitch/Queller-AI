@@ -55,7 +55,7 @@
     },
     {
       "name": "Uber - Land Transfer To Planet",
-      "to_build": "Teleporter_Attack_Queller_Uber",
+      "to_build": "Land_Attack_XLarge",
       "instance_count": 1,
       "priority": 910,
       "build_conditions": [
@@ -89,7 +89,7 @@
     },
     {
       "name": "Uber - Land Transfer To Planet - Alone",
-      "to_build": "Teleporter_Attack_Alone_Queller_Uber",
+      "to_build": "Land_Attack_Max",
       "instance_count": -1,
       "priority": 920,
       "build_conditions": [
@@ -122,10 +122,10 @@
       "task_type": "TeleportLandToPlanet"
     },
     {
-      "name": "Uber - Land Attack Platoon 1",
-      "to_build": "Land_Attack_Queller_Uber",
-      "instance_count": -1,
-      "priority": 190,
+      "name": "Uber - Land Raid Platoon Small",
+      "to_build": "Land_Raid_Small",
+      "instance_count": 1,
+      "priority": 109,
       "build_conditions": [
         [
           {
@@ -134,23 +134,12 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "neural",
-            "boolean": false
-          },
-          {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": "<",
-            "value0": 840
-          },
-          {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Tank | Bot) & Mobile - Fabber - AirDefense - Construction - Titan - Scout - Deconstruction - SelfDestruct",
+            "unit_type_string0": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - SelfDestruct",
             "compare0": ">=",
             "value0": 1
           },
@@ -158,17 +147,17 @@
             "test_type": "CanAttackWithPoolUnitsLand",
             "string0": "WL_AnySurface",
             "string1": "WL_AnySurface",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
+            "unit_type_string0": "Mobile | Structure"
           }
         ]
       ],
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Land Attack Platoon 4",
-      "to_build": "Land_Attack_Queller_Uber",
-      "instance_count": -1,
-      "priority": 180,
+      "name": "Uber - Land Raid Platoon Medium",
+      "to_build": "Land_Raid_Medium",
+      "instance_count": 1,
+      "priority": 108,
       "build_conditions": [
         [
           {
@@ -177,23 +166,12 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "neural",
-            "boolean": false
-          },
-          {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": "<",
-            "value0": 2800
-          },
-          {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Tank | Bot) & Mobile - Fabber - AirDefense - Construction - Titan - Scout - Deconstruction - SelfDestruct",
+            "unit_type_string0": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - SelfDestruct",
             "compare0": ">=",
             "value0": 4
           },
@@ -201,17 +179,17 @@
             "test_type": "CanAttackWithPoolUnitsLand",
             "string0": "WL_AnySurface",
             "string1": "WL_AnySurface",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
+            "unit_type_string0": "Mobile | Structure"
           }
         ]
       ],
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Land Attack Platoon 10",
-      "to_build": "Land_Attack_Queller_Uber",
-      "instance_count": -1,
-      "priority": 170,
+      "name": "Uber - Land Raid Platoon Large",
+      "to_build": "Land_Raid_Large",
+      "instance_count": 1,
+      "priority": 107,
       "build_conditions": [
         [
           {
@@ -220,23 +198,12 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "neural",
-            "boolean": false
-          },
-          {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": "<",
-            "value0": 5600
-          },
-          {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Tank | Bot) & Mobile - Fabber - AirDefense - Construction - Titan - Scout - Deconstruction - SelfDestruct",
+            "unit_type_string0": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - SelfDestruct",
             "compare0": ">=",
             "value0": 10
           },
@@ -244,17 +211,17 @@
             "test_type": "CanAttackWithPoolUnitsLand",
             "string0": "WL_AnySurface",
             "string1": "WL_AnySurface",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
+            "unit_type_string0": "Mobile | Structure"
           }
         ]
       ],
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Land Attack Platoon 20",
-      "to_build": "Land_Attack_Queller_Uber",
-      "instance_count": -1,
-      "priority": 160,
+      "name": "Uber - Land Raid Platoon XLarge",
+      "to_build": "Land_Raid_XLarge",
+      "instance_count": 1,
+      "priority": 106,
       "build_conditions": [
         [
           {
@@ -263,23 +230,12 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "neural",
-            "boolean": false
-          },
-          {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": "<",
-            "value0": 11200
-          },
-          {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Tank | Bot) & Mobile - Fabber - AirDefense - Construction - Titan - Scout - Deconstruction - SelfDestruct",
+            "unit_type_string0": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - SelfDestruct",
             "compare0": ">=",
             "value0": 20
           },
@@ -287,17 +243,17 @@
             "test_type": "CanAttackWithPoolUnitsLand",
             "string0": "WL_AnySurface",
             "string1": "WL_AnySurface",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
+            "unit_type_string0": "Mobile | Structure"
           }
         ]
       ],
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Land Attack Platoon 30",
-      "to_build": "Land_Attack_Queller_Uber",
-      "instance_count": -1,
-      "priority": 150,
+      "name": "Uber - Land Raid Platoon Max",
+      "to_build": "Land_Raid_Max",
+      "instance_count": 1,
+      "priority": 105,
       "build_conditions": [
         [
           {
@@ -306,60 +262,12 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "neural",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": "<",
-            "value0": 16800
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Tank | Bot) & Mobile - Fabber - AirDefense - Construction - Titan - Scout - Deconstruction - SelfDestruct",
-            "compare0": ">=",
-            "value0": 30
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "LandAttack"
-    },
-    {
-      "name": "Uber - Land Attack Platoon 40",
-      "to_build": "Land_Attack_Queller_Uber",
-      "instance_count": -1,
-      "priority": 140,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "neural",
-            "boolean": false
-          },
-          {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Tank | Bot) & Mobile - Fabber - AirDefense - Construction - Titan - Scout - Deconstruction - SelfDestruct",
+            "unit_type_string0": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - SelfDestruct",
             "compare0": ">=",
             "value0": 40
           },
@@ -367,7 +275,167 @@
             "test_type": "CanAttackWithPoolUnitsLand",
             "string0": "WL_AnySurface",
             "string1": "WL_AnySurface",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Land Attack Platoon Small",
+      "to_build": "Land_Attack_Small",
+      "instance_count": -1,
+      "priority": 104,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Land Attack Platoon Medium",
+      "to_build": "Land_Attack_Medium",
+      "instance_count": -1,
+      "priority": 103,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 4
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Land Attack Platoon Large",
+      "to_build": "Land_Attack_Large",
+      "instance_count": -1,
+      "priority": 102,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 10
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Land Attack Platoon XLarge",
+      "to_build": "Land_Attack_XLarge",
+      "instance_count": -1,
+      "priority": 101,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 20
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Land Attack Platoon Max",
+      "to_build": "Land_Attack_Max",
+      "instance_count": -1,
+      "priority": 100,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 40
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "Mobile | Structure"
           }
         ]
       ],

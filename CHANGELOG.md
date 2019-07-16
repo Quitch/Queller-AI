@@ -11,6 +11,7 @@
  - Updated Uber 1v1 to ensure it doesn't prematurely enter orbital now the timing issues are fixed
  - Uber no longer attacks with Icarus as they would merge with Bomber platoons and slow them down
  - Uber favours orbital over T2 on multi-planet maps when not playing 1v1
+ - Uber and its subpersonalities now use the same approach for most land platoons as the base game AI
 
 #### v4.48.0 - 2019-07-14
 
