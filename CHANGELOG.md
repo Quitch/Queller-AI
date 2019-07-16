@@ -2,8 +2,7 @@
 
 #### DEV
 
- - Uber Rush uses a more aggressive approach to creating platoons
- - Uber Bot can now start double bot
+ - Uber Bot and Uber Rush can now start double bot
  - Updated Turkish (tr-TR) translation
  - Tidied up the formation of orbital platoons
  - Corrected an issue that was causing Uber to go orbital much later than it should
@@ -12,7 +11,6 @@
  - Uber no longer attacks with Icarus as they would merge with Bomber platoons and slow them down
  - Uber favours orbital over T2 on multi-planet maps when not playing 1v1
  - Uber and its subpersonalities now use the same approach for most land platoons as the base game AI
- - Uber Rush can use a double bot opening
 
 #### v4.48.0 - 2019-07-14
 
