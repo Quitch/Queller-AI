@@ -259,7 +259,8 @@ function qQuellerAI() {
       adv_eco_mod_alone: 0,
       personality_tags:
         [
-          "uber"
+          "uber",
+          "doublebot"
         ],
       min_basic_fabbers: 2,
       min_advanced_fabbers: 1

@@ -12,6 +12,7 @@
  - Uber no longer attacks with Icarus as they would merge with Bomber platoons and slow them down
  - Uber favours orbital over T2 on multi-planet maps when not playing 1v1
  - Uber and its subpersonalities now use the same approach for most land platoons as the base game AI
+ - Uber Rush can use a double bot opening
 
 #### v4.48.0 - 2019-07-14
 
