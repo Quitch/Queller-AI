@@ -12,6 +12,7 @@
  - Uber favours orbital over T2 on multi-planet maps when not playing 1v1
  - Uber and its subpersonalities now use the same approach for most land platoons as the base game AI
  - Resolve issue where too many land platoons could be sent offworld during an enemy invasion
+ - Only build troops and factories for other planets if those planets can receive them
 
 #### v4.48.0 - 2019-07-14
 
