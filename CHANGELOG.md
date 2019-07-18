@@ -15,6 +15,7 @@
  - Only build troops and factories for other planets if those planets can receive them
  - Improved Uber's checks on when to build a Unit Cannon to cover more scenarios
  - Uber responds faster to being nuked when the Commander is in danger
+ - Corrected error in Uber's Scythe build when responding to air threats
 
 #### v4.48.0 - 2019-07-14
 
