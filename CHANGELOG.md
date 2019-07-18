@@ -14,9 +14,10 @@
  - Resolve issue where too many land platoons could be sent offworld during an enemy invasion
  - Only build troops and factories for other planets if those planets can receive them
  - Improved Uber's checks on when to build a Unit Cannon to cover more scenarios
- - Uber responds faster to being nuked when the Commander is in danger
+ - Uber responds faster to nukes when the Commander is in danger
  - Corrected error in Uber's Scythe build when responding to air threats
  - Corrected error in Uber's Praetorian build when responding to air titans
+ - Improved reliability of Uber's anti-nuke builds to protect the Commander
 
 #### v4.48.0 - 2019-07-14
 
