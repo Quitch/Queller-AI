@@ -153,8 +153,8 @@ function qQuellerAI() {
       personality_tags:
         [
           "uber",
-          "aggressive",
-          "neural"
+          "doublebot",
+          "lateorbital"
         ],
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1,
@@ -196,7 +196,8 @@ function qQuellerAI() {
       personality_tags:
         [
           "uber",
-          "bot"
+          "bot",
+          "doublebot"
         ],
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1
@@ -259,7 +260,8 @@ function qQuellerAI() {
       personality_tags:
         [
           "uber",
-          "aggressive"
+          "doublebot",
+          "lateorbital"
         ],
       min_basic_fabbers: 2,
       min_advanced_fabbers: 1
@@ -300,7 +302,7 @@ function qQuellerAI() {
   model.aiPersonalities.valueHasMutated();
 
   _.defer(function () {
-    model.localChatMessage(loc("!LOC:Queller AI"), loc("!LOC:by Quitch. Version 4.48.0. My difficulties are prefixed with a Q. Don't make AI teams larger than human teams, increase the difficulty or the econ rate instead. I support the Legion Expansion."));
+    model.localChatMessage(loc("!LOC:Queller AI"), loc("!LOC:by Quitch. Version 4.49.0. My difficulties are prefixed with a Q. Don't make AI teams larger than human teams, increase the difficulty or the econ rate instead. I support the Legion Expansion."));
   });
 
 }

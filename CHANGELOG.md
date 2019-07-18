@@ -1,6 +1,28 @@
 # CHANGELOG
 
-#### 4.48.0 - 2019-07-14
+#### v4.49.0 - 2019-07-18
+
+ - Uber Bot and Uber Rush can now start double bot
+ - Updated Turkish (tr-TR) translation
+ - Tidied up the formation of orbital platoons
+ - Corrected an issue that was causing Uber to go orbital much later than it should
+ - Updated Uber to ensure similar timing issues weren't occurring elsewhere
+ - Updated Uber 1v1 and Uber Rush to ensure they don't prematurely enter orbital now the timing issues are fixed
+ - Uber no longer attacks with Icarus as they would merge with bomber platoons and slow them down
+ - Uber and its subpersonalities now use the same approach for most land platoons as the base game AI
+ - Resolve issue where too many land platoons could be sent off world during an enemy invasion
+ - Only build troops and factories for other planets if those planets can receive them
+ - Improved Uber's checks on when to build a Unit Cannon
+ - Uber responds faster to nukes when the Commander is in danger
+ - Corrected error in Uber's Scythe build when responding to air threats
+ - Corrected error in Uber's Praetorian build when responding to air titans
+ - Improved reliability of Uber's anti-nuke builds to protect the Commander
+ - Uber is less panicked by minor orbital threats
+ - Updated new Uber platoons to more closely align them to the old Uber platoon squad assignments
+ - Removed the tank opening from Uber FFA
+ - Uber Bot and Uber Tank don't check whether they can form platoons of the other's type
+
+#### v4.48.0 - 2019-07-14
 
  - Added Turkish (tr-TR) translations with thanks to fera
  - Uber Aggressive now named Uber 1v1
