@@ -18,6 +18,7 @@
  - Corrected error in Uber's Scythe build when responding to air threats
  - Corrected error in Uber's Praetorian build when responding to air titans
  - Improved reliability of Uber's anti-nuke builds to protect the Commander
+ - Uber is less paniced about minor orbital threats
 
 #### v4.48.0 - 2019-07-14
 
