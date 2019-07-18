@@ -20,7 +20,7 @@
  - Improved reliability of Uber's anti-nuke builds to protect the Commander
  - Uber is less paniced about minor orbital threats
  - Updated new Uber platoons to more closely align them to the old Uber platoon squad assignments
- - Removed the tank start from Uber FFA
+ - Removed the tank opening from Uber FFA
 
 #### v4.48.0 - 2019-07-14
 
