@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### DEV
+#### v4.49.0 - 2019-07-18
 
  - Uber Bot and Uber Rush can now start double bot
  - Updated Turkish (tr-TR) translation
