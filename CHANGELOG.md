@@ -19,6 +19,7 @@
  - Corrected error in Uber's Praetorian build when responding to air titans
  - Improved reliability of Uber's anti-nuke builds to protect the Commander
  - Uber is less paniced about minor orbital threats
+ - Updated new Uber platoons to more closely align them to the old Uber platoon squad assignments
 
 #### v4.48.0 - 2019-07-14
 
