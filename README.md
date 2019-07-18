@@ -140,6 +140,7 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 
 ### 1v1
  - More willing to engage in battle
+ - Slower to enter orbital
 
 ### Air
  - Unrestricted air usage
