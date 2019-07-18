@@ -21,7 +21,7 @@
  - Uber is less paniced about minor orbital threats
  - Updated new Uber platoons to more closely align them to the old Uber platoon squad assignments
  - Removed the tank opening from Uber FFA
- - Uber Tank doesn't bother checking if bot platoons can be formed
+ - Uber Bot and Uber Tank don't check whether they can form platoons of the other's type
 
 #### v4.48.0 - 2019-07-14
 
