@@ -3,6 +3,7 @@
 #### DEV
 
  - Changed again how Uber decides when to build a Unit Cannon
+ - Fixed Uber using the wrong platoons
 
 #### v4.49.0 - 2019-07-18
 
