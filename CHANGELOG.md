@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### DEV
+
+ - Changed again how Uber decides when to build a Unit Cannon
+
 #### v4.49.0 - 2019-07-18
 
  - Uber Bot and Uber Rush can now start double bot
