@@ -158,7 +158,8 @@ By default, Queller at Uber level will adapt its play to try and suit the system
  - Unrestricted naval usage
 
 ### Rush
-  - Techs late
+ - Techs late
+ - Slower to enter orbital
 
 ### Tank
  - Doesn't build bot factories
