@@ -58,9 +58,8 @@
       "base_sort": "FromBuilder",
       "builders": [
         "LegionCommander",
-        "LegionAirBasicFabber",
-        "LegionNavalBasicFabber",
-        "LegionNavalAdvancedFabber"
+        "AnyLegionBasicFabber",
+        "AnyLegionFabberAdvanced"
       ],
       "build_conditions": [
         [

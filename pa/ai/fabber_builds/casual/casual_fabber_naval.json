@@ -54,10 +54,8 @@
       "base_sort": "FromBuilder",
       "builders": [
         "UberCommander",
-        "BasicAirFabber",
-        "BasicNavalFabber",
-        "AdvancedAirFabber",
-        "AdvancedNavalFabber"
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber"
       ],
       "build_conditions": [
         [

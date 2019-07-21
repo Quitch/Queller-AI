@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### DEV
+
+ - Expanded range of fabbers which can build naval factories
+
 #### v4.49.1 - 2019-07-19
 
  - Changed again how Uber decides when to build a Unit Cannon
