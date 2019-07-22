@@ -3,6 +3,10 @@
 #### DEV
 
  - Expanded range of fabbers which can build naval factories
+ - Uber uses more land scouts and Combat Fabbers once it has confirmed the existence of mines
+ - Improved distribution of mine vision among Uber platoons
+ - Uber Naval will use Investigators to spot mines
+ - Uber recognises that Investigators built to sweep mines are amphibious
 
 #### v4.49.1 - 2019-07-19
 
