@@ -65,7 +65,7 @@
     },
     {
       "name": "Uber - Land Transfer To Planet",
-      "to_build": "Land_Attack_XLarge_Uber",
+      "to_build": "Teleporter_Attack_Queller",
       "instance_count": 1,
       "shared_instance_count": "LandTransferToPlanet",
       "priority": 910,
@@ -100,7 +100,7 @@
     },
     {
       "name": "Uber - Land Transfer To Planet - Alone",
-      "to_build": "Land_Attack_Max_Uber",
+      "to_build": "Teleporter_Attack_Alone_Queller",
       "instance_count": -1,
       "shared_instance_count": "LandTransferToPlanet",
       "priority": 920,
@@ -336,7 +336,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction - Deconstruction - Titan",
+            "unit_type_string0": "((Tank | Bot) & Mobile) - Hover - Fabber - AirDefense - Construction - Deconstruction - Titan",
             "compare0": ">=",
             "value0": 1
           },
@@ -368,7 +368,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction - Deconstruction - Titan",
+            "unit_type_string0": "((Tank | Bot) & Mobile) - Hover - Fabber - AirDefense - Construction - Deconstruction - Titan",
             "compare0": ">=",
             "value0": 4
           },
@@ -400,7 +400,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction - Deconstruction - Titan",
+            "unit_type_string0": "((Tank | Bot) & Mobile) - Hover - Fabber - AirDefense - Construction - Deconstruction - Titan",
             "compare0": ">=",
             "value0": 10
           },
@@ -432,7 +432,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction - Deconstruction - Titan",
+            "unit_type_string0": "((Tank | Bot) & Mobile) - Hover - Fabber - AirDefense - Construction - Deconstruction - Titan",
             "compare0": ">=",
             "value0": 20
           },
@@ -464,7 +464,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction - Deconstruction - Titan",
+            "unit_type_string0": "((Tank | Bot) & Mobile) - Hover - Fabber - AirDefense - Construction - Deconstruction - Titan",
             "compare0": ">=",
             "value0": 40
           },

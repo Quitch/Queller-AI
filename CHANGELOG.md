@@ -7,6 +7,7 @@
  - Improved distribution of mine vision among Uber platoons
  - Uber Naval will use Investigators to spot mines
  - Uber recognises that Investigators built to sweep mines are amphibious
+ - Properly exclude hover tanks from land attack platoons
 
 #### v4.49.1 - 2019-07-19
 
