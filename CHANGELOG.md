@@ -8,6 +8,7 @@
  - Uber Naval will use Investigators to spot mines
  - Uber recognises that Investigators built to sweep mines are amphibious
  - Properly exclude hover tanks from land attack platoons
+ - Uber builds Catapults in bases under naval threat
 
 #### v4.49.1 - 2019-07-19
 
