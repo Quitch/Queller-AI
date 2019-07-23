@@ -9,6 +9,7 @@
  - Uber recognises that Investigators built to sweep mines are amphibious
  - Properly attempt to exclude hover tanks from land attack platoons
  - Uber builds Catapults in bases under naval threat
+ - Uber prioritises naval when the enemy has it and it doesn't
 
 #### v4.49.1 - 2019-07-19
 
