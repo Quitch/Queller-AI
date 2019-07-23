@@ -2,14 +2,14 @@
 
 #### DEV
 
- - Expanded range of fabbers which can build naval factories
- - Uber uses more land scouts and combat Fabbers once it has confirmed the existence of mines
+ - Expanded naval factory builds to encompass all fabbers
+ - Uber uses more land scouts and combat fabbers once it has confirmed the existence of mines
  - Slight improvement of mine vision distribution among platoons
  - Uber Naval will use Investigators to spot mines
  - Uber recognises that Investigators built to sweep mines are amphibious
  - Properly attempt to exclude hover tanks from land attack platoons
  - Uber builds Catapults in bases under naval threat
- - Uber prioritises naval when the enemy has it and it doesn't
+ - Uber prioritises building a naval factory when the enemy has naval and it doesn't
  - Removed island torpedo launcher builds to avoid builds too far inland
 
 #### v4.49.1 - 2019-07-19
