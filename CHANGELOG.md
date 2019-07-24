@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### DEV
+#### v4.50.0 - 2019-07-24
 
  - Expanded naval factory builds to encompass all fabbers
  - Uber uses more land scouts and combat fabbers once it has confirmed the existence of mines
