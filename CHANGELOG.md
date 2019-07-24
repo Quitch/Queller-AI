@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### DEV
+
+ - Reverted approach to Unit Cannons back to what it used to be. We're rearranging the deck chairs, people!
+
 #### v4.50.0 - 2019-07-24
 
  - Expanded naval factory builds to encompass all fabbers
