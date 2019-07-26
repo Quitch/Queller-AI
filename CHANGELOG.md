@@ -4,7 +4,7 @@
 
  - Further fiddling of Uber's Unit Cannons. We're rearranging the deck chairs, people!
  - Uber won't build up factory infrastructure on an asteroid if an ally has an engine
- - 
+ - Uber more likely to assist halley builds on asteroids 
 
 #### v4.50.0 - 2019-07-24
 
