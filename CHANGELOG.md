@@ -3,6 +3,7 @@
 #### DEV
 
  - Reverted approach to Unit Cannons back to what it used to be. We're rearranging the deck chairs, people!
+ - Uber won't build up factory infrastructure on an asteroid if an ally has an engine
 
 #### v4.50.0 - 2019-07-24
 

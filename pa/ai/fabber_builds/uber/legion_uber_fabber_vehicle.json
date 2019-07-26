@@ -348,6 +348,49 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionFactoryBasicVehicle"
           }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bot",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": true
+          },
+          {
+            "test_type": "PresenceOnOtherPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "AlliedUnitCountOnPlanet",
+            "unit_type_string0": "PlanetEngine",
+            "compare0": "<",
+            "boolean": true,
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicVehicle"
+          }
         ]
       ],
       "placement_rules": {
@@ -529,6 +572,13 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory & Advanced - Orbital",
             "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "AlliedUnitCountOnPlanet",
+            "unit_type_string0": "PlanetEngine",
+            "compare0": "<",
+            "boolean": true,
             "value0": 1
           },
           {
