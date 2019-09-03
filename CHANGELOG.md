@@ -6,6 +6,7 @@
  - Uber won't build up factory infrastructure on an asteroid if an ally has an engine
  - Uber more likely to assist builds on asteroids 
  - Added support for the Stryker
+ - Uber completely avoids Skitters for scouting if it has Fireflies
 
 #### v4.50.0 - 2019-07-24
 
