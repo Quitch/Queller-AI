@@ -50,6 +50,40 @@
       "task_type": "Scout"
     },
     {
+      "name": "Platinum - Stryker Scout Platoon",
+      "to_build": "Stryker_Scout_Queller",
+      "instance_count": 5,
+      "priority": 200,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemyPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Tank & Basic & Mobile) - Hover - Fabber - AirDefense - Construction - Artillery - Heavy - Scout - SelfDestruct - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 1
+          }
+        ]
+      ],
+      "task_type": "Scout"
+    },
+    {
       "name": "Platinum - Land Transfer To Planet",
       "to_build": "Teleporter_Attack_Queller",
       "instance_count": 1,
