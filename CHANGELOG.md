@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### DEV
+#### 4.51.0 - 2019-09-04
 
  - Further fiddling of Uber's Unit Cannons. We're rearranging the deck chairs, people!
  - Uber won't build up factory infrastructure on an asteroid if an ally has an engine
