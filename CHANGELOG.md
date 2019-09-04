@@ -1,5 +1,13 @@
 # CHANGELOG
 
+#### 4.51.0 - 2019-09-04
+
+ - Further fiddling of Uber's Unit Cannons. We're rearranging the deck chairs, people!
+ - Uber won't build up factory infrastructure on an asteroid if an ally has an engine
+ - Uber more likely to assist builds on asteroids
+ - Added support for the Stryker
+ - Uber completely avoids Skitters for scouting if it has Fireflies
+
 #### v4.50.0 - 2019-07-24
 
  - Expanded naval factory builds to encompass all fabbers
