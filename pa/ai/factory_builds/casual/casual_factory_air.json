@@ -233,6 +233,29 @@
       ]
     },
     {
+      "name": "Casual - Horsefly",
+      "to_build": "Strafer",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": [
+        "AdvancedAirFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "casual",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          }
+        ]
+      ]
+    },
+    {
       "name": "Casual - Wyrm",
       "to_build": "HeavyBomber",
       "instance_count": 1,

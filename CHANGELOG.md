@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### DEV
+
+ - Added support for Horsefly
+
 #### 4.51.0 - 2019-09-04
 
  - Further fiddling of Uber's Unit Cannons. We're rearranging the deck chairs, people!

@@ -322,6 +322,29 @@
       ]
     },
     {
+      "name": "Silver - Horsefly",
+      "to_build": "Strafer",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": [
+        "AdvancedAirFactory"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
       "name": "Silver - Wyrm",
       "to_build": "HeavyBomber",
       "instance_count": 1,
