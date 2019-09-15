@@ -4,9 +4,7 @@
       "name": "Uber - Commander Assist",
       "instance_count": -1,
       "priority": 10,
-      "builders": [
-        "UberCommander"
-      ],
+      "builders": ["UberCommander"],
       "build_conditions": [
         [
           {
@@ -47,9 +45,7 @@
       "name": "Uber - Teleport Commander To Planet",
       "instance_count": 1,
       "priority": 1001,
-      "builders": [
-        "UberCommander"
-      ],
+      "builders": ["UberCommander"],
       "build_conditions": [
         [
           {

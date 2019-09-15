@@ -7,9 +7,7 @@
       "shared_instance_count": "BasicFactory",
       "priority": 376,
       "base_sort": "FromMainBase",
-      "builders": [
-        "UberCommander"
-      ],
+      "builders": ["UberCommander"],
       "build_conditions": [
         [
           {
@@ -170,9 +168,7 @@
       "max_num_assisters": 2,
       "priority": 374,
       "base_sort": "FromBuilder",
-      "builders": [
-        "UberCommander"
-      ],
+      "builders": ["UberCommander"],
       "build_conditions": [
         [
           {
@@ -226,10 +222,7 @@
       "min_num_assisters": 2,
       "max_num_assisters": 4,
       "base_sort": "FromBuilder",
-      "builders": [
-        "AnyUberBasicFabber",
-        "AnyUberAdvancedFabber"
-      ],
+      "builders": ["AnyUberBasicFabber", "AnyUberAdvancedFabber"],
       "build_conditions": [
         [
           {
@@ -390,10 +383,7 @@
       "priority": 479,
       "min_num_assisters": 5,
       "max_num_assisters": 8,
-      "builders": [
-        "BasicNavalFabber",
-        "AdvancedNavalFabber"
-      ],
+      "builders": ["BasicNavalFabber", "AdvancedNavalFabber"],
       "build_conditions": [
         [
           {
@@ -602,10 +592,7 @@
       "min_num_assisters": 6,
       "max_num_assisters": 9,
       "base_sort": "FromBuilder",
-      "builders": [
-        "BasicNavalFabber",
-        "AdvancedNavalFabber"
-      ],
+      "builders": ["BasicNavalFabber", "AdvancedNavalFabber"],
       "build_conditions": [
         [
           {

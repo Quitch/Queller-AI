@@ -58,10 +58,7 @@
       "shared_instance_count": "Titan",
       "priority": 250,
       "base_sort": "FromBuilder",
-      "builders": [
-        "AdvancedVehicleFabber",
-        "OrbitalFabber"
-      ],
+      "builders": ["AdvancedVehicleFabber", "OrbitalFabber"],
       "build_conditions": [
         [
           {
@@ -106,10 +103,7 @@
       "shared_instance_count": "Titan",
       "priority": 250,
       "base_sort": "FromMainBase",
-      "builders": [
-        "AdvancedAirFabber",
-        "OrbitalFabber"
-      ],
+      "builders": ["AdvancedAirFabber", "OrbitalFabber"],
       "build_conditions": [
         [
           {

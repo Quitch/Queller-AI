@@ -7,9 +7,7 @@
       "shared_instance_count": "BasicFactory",
       "priority": 376,
       "base_sort": "FromMainBase",
-      "builders": [
-        "LegionCommander"
-      ],
+      "builders": ["LegionCommander"],
       "build_conditions": [
         [
           {
@@ -55,9 +53,7 @@
       "shared_instance_count": "BasicFactory",
       "priority": 376,
       "base_sort": "FromMainBase",
-      "builders": [
-        "LegionCommander"
-      ],
+      "builders": ["LegionCommander"],
       "build_conditions": [
         [
           {
@@ -199,10 +195,7 @@
       "min_num_assisters": 2,
       "max_num_assisters": 4,
       "base_sort": "FromBuilder",
-      "builders": [
-        "AnyLegionBasicFabber",
-        "AnyLegionFabberAdvanced"
-      ],
+      "builders": ["AnyLegionBasicFabber", "AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
           {
@@ -343,10 +336,7 @@
       "priority": 477,
       "min_num_assisters": 4,
       "max_num_assisters": 8,
-      "builders": [
-        "LegionNavalBasicFabber",
-        "LegionNavalAdvancedFabber"
-      ],
+      "builders": ["LegionNavalBasicFabber", "LegionNavalAdvancedFabber"],
       "build_conditions": [
         [
           {

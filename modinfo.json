@@ -9,20 +9,12 @@
   "date": "2019-09-04",
   "signature": " ",
   "forum": "https://forums.planetaryannihilation.com/threads/server-queller-ai.65795/",
-  "category": [
-    "ai",
-    "titans",
-    "skirmish"
-  ],
+  "category": ["ai", "titans", "skirmish"],
   "icon": "https://i.imgur.com/cFJeCgf.gif",
   "scenes": {
-    "new_game": [
-      "coui://ui/mods/com.pa.quitch.qquellerai/new_game.js"
-    ]
+    "new_game": ["coui://ui/mods/com.pa.quitch.qquellerai/new_game.js"]
   },
-  "dependencies": [
-    "com.pa.quitch.qAIModCompatibilityPatch"
-  ],
+  "dependencies": ["com.pa.quitch.qAIModCompatibilityPatch"],
   "priority": 100,
   "titansOnly": true
 }

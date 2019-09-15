@@ -9,10 +9,7 @@
       "min_num_assisters": 3,
       "max_num_assisters": 5,
       "base_sort": "FromBuilder",
-      "builders": [
-        "AnyLegionBasicFabber",
-        "AnyLegionFabberAdvanced"
-      ],
+      "builders": ["AnyLegionBasicFabber", "AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
           {
@@ -218,9 +215,7 @@
       "min_num_assisters": 2,
       "max_num_assisters": 5,
       "base_sort": "FromBuilder",
-      "builders": [
-        "LegionOrbitalBasicFabber"
-      ],
+      "builders": ["LegionOrbitalBasicFabber"],
       "build_conditions": [
         [
           {
@@ -283,9 +278,7 @@
       "max_num_assisters": 5,
       "priority": 0,
       "base_sort": "FromPerimeter",
-      "builders": [
-        "LegionOrbitalBasicFabber"
-      ],
+      "builders": ["LegionOrbitalBasicFabber"],
       "build_conditions": [
         [
           {

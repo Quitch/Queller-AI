@@ -7,9 +7,7 @@
       "shared_instance_count": "BasicFactory",
       "priority": 376,
       "base_sort": "FromMainBase",
-      "builders": [
-        "UberCommander"
-      ],
+      "builders": ["UberCommander"],
       "build_conditions": [
         [
           {
@@ -55,10 +53,7 @@
       "min_num_assisters": 2,
       "max_num_assisters": 4,
       "base_sort": "FromBuilder",
-      "builders": [
-        "BasicBotFabber",
-        "BasicVehicleFabber"
-      ],
+      "builders": ["BasicBotFabber", "BasicVehicleFabber"],
       "build_conditions": [
         [
           {
@@ -131,9 +126,7 @@
       "shared_instance_count": "BasicFactory",
       "priority": 376,
       "base_sort": "FromMainBase",
-      "builders": [
-        "LegionCommander"
-      ],
+      "builders": ["LegionCommander"],
       "build_conditions": [
         [
           {
@@ -183,10 +176,7 @@
       "min_num_assisters": 2,
       "max_num_assisters": 4,
       "base_sort": "FromBuilder",
-      "builders": [
-        "LegionBotBasicFabber",
-        "LegionVehicleBasicFabber"
-      ],
+      "builders": ["LegionBotBasicFabber", "LegionVehicleBasicFabber"],
       "build_conditions": [
         [
           {

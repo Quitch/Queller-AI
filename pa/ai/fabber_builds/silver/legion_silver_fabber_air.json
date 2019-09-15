@@ -64,10 +64,7 @@
       "priority": 10,
       "max_num_assisters": 10,
       "base_sort": "FromMainBase",
-      "builders": [
-        "LegionCommander",
-        "LegionNavalBasicFabber"
-      ],
+      "builders": ["LegionCommander", "LegionNavalBasicFabber"],
       "build_conditions": [
         [
           {
@@ -123,10 +120,7 @@
       "shared_instance_count": "AdvancedFactory",
       "priority": 477,
       "max_num_assisters": 10,
-      "builders": [
-        "LegionAirBasicFabber",
-        "LegionAirAdvancedFabber"
-      ],
+      "builders": ["LegionAirBasicFabber", "LegionAirAdvancedFabber"],
       "build_conditions": [
         [
           {
