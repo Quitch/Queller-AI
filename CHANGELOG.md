@@ -3,6 +3,7 @@
 #### DEV
 
 - Added support for Horsefly
+- Gold uses less Hornets
 
 #### 4.51.0 - 2019-09-04
 
