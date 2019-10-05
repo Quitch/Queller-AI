@@ -1,1 +1,622 @@
-{"build_list":[{"name":"Uber Air - Basic Air Factory - Commander","to_build":"BasicAirFactory","instance_count":1,"shared_instance_count":"BasicFactory","priority":376,"base_sort":"FromMainBase","builders":["UberCommander"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"air","boolean":true},{"test_type":"PlanetIsRespawnable","boolean":false},{"test_type":"AloneOnPlanet","boolean":false},{"test_type":"CanAffordPotentialDrain","string0":"BasicAirFactory"},{"test_type":"UnitCountOnPlanet","unit_type_string0":"Factory - Orbital","compare0":">=","value0":1},{"test_type":"CanFindPlaceToBuild","string0":"BasicAirFactory"}]],"placement_rules":{"buffer":3,"placement_type":"FromBaseCenter","threat":{"influence_type":"AntiSurface","compare_type":"<","radius":10,"value":50}}},{"name":"Uber Air - Basic Air Factory - Fabber","to_build":"BasicAirFactory","instance_count":1,"shared_instance_count":"BasicFactory","priority":376,"min_num_assisters":1,"max_num_assisters":3,"base_sort":"FromMainBase","builders":["AnyUberBasicFabber"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"air","boolean":true},{"test_type":"PlanetIsRespawnable","boolean":false},{"test_type":"AloneOnPlanet","boolean":false},{"test_type":"CanAffordPotentialDrain","string0":"BasicAirFactory"},{"test_type":"CanFindPlaceToBuild","string0":"BasicAirFactory"}]],"placement_rules":{"buffer":3,"placement_type":"FromBaseCenter","threat":{"influence_type":"AntiSurface","compare_type":"<","radius":10,"value":50}}},{"name":"Uber Air - Basic Air Factory - Excess eco","to_build":"BasicAirFactory","instance_count":1,"shared_instance_count":"BasicFactory","priority":375,"min_num_assisters":3,"max_num_assisters":5,"base_sort":"FromMainBase","builders":["UberCommander","AnyUberBasicFabber"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"air","boolean":true},{"test_type":"PlanetIsRespawnable","boolean":false},{"test_type":"AloneOnPlanet","boolean":false},{"test_type":"CurrentMetalEfficiency","compare0":">","value0":1},{"test_type":"MetalStorageFrac","compare0":">","value0":0.1},{"test_type":"CurrentEnergyEfficiency","compare0":">","value0":1},{"test_type":"CanAffordPotentialDrain","string0":"BasicAirFactory"},{"test_type":"CanFindPlaceToBuild","string0":"BasicAirFactory"}]],"placement_rules":{"buffer":3,"placement_type":"FromBaseCenter","threat":{"influence_type":"AntiSurface","compare_type":"<","radius":10,"value":50}}},{"name":"Uber Air - Advanced Air Factory","to_build":"AdvancedAirFactory","instance_count":1,"shared_instance_count":"AdvancedFactory","priority":477,"min_num_assisters":5,"max_num_assisters":8,"base_sort":"FromMainBase","builders":["BasicAirFabber","AdvancedAirFabber"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"air","boolean":true},{"test_type":"PlanetIsRespawnable","boolean":false},{"test_type":"AloneOnPlanet","boolean":false},{"test_type":"HaveEcoForAdvanced","boolean":true},{"test_type":"CanAffordPotentialDrain","string0":"AdvancedAirFactory"},{"test_type":"UnitCountOnPlanet","unit_type_string0":"Fabber - Orbital","compare0":">=","value0":5},{"test_type":"CanFindPlaceToBuild","string0":"AdvancedAirFactory"}],[{"test_type":"HasPersonalityTag","string0":"air","boolean":true},{"test_type":"PlanetIsRespawnable","boolean":false},{"test_type":"UnableToExpand","boolean":true},{"test_type":"UnitCountOnPlanet","unit_type_string0":"Factory & Advanced - Orbital","compare0":"<","value0":1},{"test_type":"CanFindPlaceToBuild","string0":"AdvancedAirFactory"}]],"placement_rules":{"buffer":3,"placement_type":"FromBaseCenter","threat":{"influence_type":"AntiSurface","compare_type":"<","radius":10,"value":50}}},{"name":"Uber Air - Advanced Air Factory - Excess Eco","to_build":"AdvancedAirFactory","instance_count":2,"shared_instance_count":"AdvancedFactory","priority":475,"min_num_assisters":6,"max_num_assisters":9,"base_sort":"FromMainBase","builders":["BasicAirFabber","AdvancedAirFabber"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"air","boolean":true},{"test_type":"PlanetIsRespawnable","boolean":false},{"test_type":"AloneOnPlanet","boolean":false},{"test_type":"HaveEcoForAdvanced","boolean":true},{"test_type":"CurrentMetalEfficiency","compare0":">","value0":1},{"test_type":"MetalStorageFrac","compare0":">","value0":0.9},{"test_type":"CurrentEnergyEfficiency","compare0":">","value0":1},{"test_type":"CanAffordPotentialDrain","string0":"AdvancedAirFactory"},{"test_type":"UnitCountOnPlanet","unit_type_string0":"Fabber - Orbital","compare0":">=","value0":5},{"test_type":"CanFindPlaceToBuild","string0":"AdvancedAirFactory"}]],"placement_rules":{"buffer":3,"placement_type":"FromBaseCenter","threat":{"influence_type":"AntiSurface","compare_type":"<","radius":10,"value":50}}},{"name":"Legion - Uber Air - Flyer Foundry - Commander","to_build":"LegionFactoryBasicAir","instance_count":1,"shared_instance_count":"BasicFactory","priority":376,"base_sort":"FromMainBase","builders":["LegionCommander"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"air","boolean":true},{"test_type":"PlanetIsRespawnable","boolean":false},{"test_type":"AloneOnPlanet","boolean":false},{"test_type":"CanAffordPotentialDrain","string0":"LegionFactoryBasicAir"},{"test_type":"CanFindPlaceToBuild","string0":"LegionFactoryBasicAir"}]],"placement_rules":{"buffer":3,"placement_type":"FromBaseCenter","threat":{"influence_type":"AntiSurface","compare_type":"<","radius":10,"value":50}}},{"name":"Legion - Uber Air - Flyer Foundry - Fabber","to_build":"LegionFactoryBasicAir","instance_count":1,"shared_instance_count":"BasicFactory","priority":376,"min_num_assisters":1,"max_num_assisters":3,"base_sort":"FromMainBase","builders":["AnyLegionFabberBasic"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"air","boolean":true},{"test_type":"PlanetIsRespawnable","boolean":false},{"test_type":"AloneOnPlanet","boolean":false},{"test_type":"CanAffordPotentialDrain","string0":"LegionFactoryBasicAir"},{"test_type":"CanFindPlaceToBuild","string0":"LegionFactoryBasicAir"}]],"placement_rules":{"buffer":3,"placement_type":"FromBaseCenter","threat":{"influence_type":"AntiSurface","compare_type":"<","radius":10,"value":50}}},{"name":"Legion - Uber Air - Flyer Foundry - Excess eco","to_build":"LegionFactoryBasicAir","instance_count":1,"shared_instance_count":"BasicFactory","priority":375,"min_num_assisters":3,"max_num_assisters":5,"base_sort":"FromMainBase","builders":["LegionCommander","AnyLegionFabberBasic"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"air","boolean":true},{"test_type":"PlanetIsRespawnable","boolean":false},{"test_type":"AloneOnPlanet","boolean":false},{"test_type":"CurrentMetalEfficiency","compare0":">","value0":1},{"test_type":"MetalStorageFrac","compare0":">","value0":0.1},{"test_type":"CurrentEnergyEfficiency","compare0":">","value0":1},{"test_type":"CanAffordPotentialDrain","string0":"LegionFactoryBasicAir"},{"test_type":"CanFindPlaceToBuild","string0":"LegionFactoryBasicAir"}]],"placement_rules":{"buffer":3,"placement_type":"FromBaseCenter","threat":{"influence_type":"AntiSurface","compare_type":"<","radius":10,"value":50}}},{"name":"Legion - Uber Air - Advanced Air Foundry","to_build":"LegionFactoryAdvancedAir","instance_count":1,"shared_instance_count":"AdvancedFactory","priority":477,"min_num_assisters":5,"max_num_assisters":8,"base_sort":"FromMainBase","builders":["LegionAirBasicFabber","LegionAirAdvancedFabber"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"air","boolean":true},{"test_type":"PlanetIsRespawnable","boolean":false},{"test_type":"AloneOnPlanet","boolean":false},{"test_type":"HaveEcoForAdvanced","boolean":true},{"test_type":"CanAffordPotentialDrain","string0":"LegionFactoryAdvancedAir"},{"test_type":"UnitCountOnPlanet","unit_type_string0":"Fabber - Orbital","compare0":">=","value0":5},{"test_type":"CanFindPlaceToBuild","string0":"LegionFactoryAdvancedAir"}],[{"test_type":"HasPersonalityTag","string0":"air","boolean":true},{"test_type":"PlanetIsRespawnable","boolean":false},{"test_type":"UnableToExpand","boolean":true},{"test_type":"UnitCountOnPlanet","unit_type_string0":"Factory & Advanced - Orbital","compare0":"<","value0":1},{"test_type":"CanFindPlaceToBuild","string0":"LegionFactoryAdvancedAir"}]],"placement_rules":{"buffer":3,"placement_type":"FromBaseCenter","threat":{"influence_type":"AntiSurface","compare_type":"<","radius":10,"value":50}}},{"name":"Legion - Uber Air - Advanced Air Foundry - Excess Eco","to_build":"LegionFactoryAdvancedAir","instance_count":2,"shared_instance_count":"AdvancedFactory","priority":475,"min_num_assisters":5,"max_num_assisters":8,"base_sort":"FromMainBase","builders":["LegionAirBasicFabber","LegionAirAdvancedFabber"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"air","boolean":true},{"test_type":"PlanetIsRespawnable","boolean":false},{"test_type":"AloneOnPlanet","boolean":false},{"test_type":"HaveEcoForAdvanced","boolean":true},{"test_type":"CurrentMetalEfficiency","compare0":">","value0":1},{"test_type":"MetalStorageFrac","compare0":">","value0":0.2},{"test_type":"CurrentEnergyEfficiency","compare0":">","value0":1},{"test_type":"CanAffordPotentialDrain","string0":"LegionFactoryAdvancedAir"},{"test_type":"UnitCountOnPlanet","unit_type_string0":"Factory & Advanced - Orbital","compare0":">","value0":0},{"test_type":"UnitCountOnPlanet","unit_type_string0":"Fabber - Orbital","compare0":">=","value0":5},{"test_type":"CanFindPlaceToBuild","string0":"LegionFactoryAdvancedAir"}]],"placement_rules":{"buffer":3,"placement_type":"FromBaseCenter","threat":{"influence_type":"AntiSurface","compare_type":"<","radius":10,"value":50}}}]}
+{
+  "build_list": [
+    {
+      "name": "Uber Air - Basic Air Factory - Commander",
+      "to_build": "BasicAirFactory",
+      "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "priority": 376,
+      "base_sort": "FromMainBase",
+      "builders": ["UberCommander"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "air",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicAirFactory"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicAirFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Uber Air - Basic Air Factory - Fabber",
+      "to_build": "BasicAirFactory",
+      "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "priority": 376,
+      "min_num_assisters": 1,
+      "max_num_assisters": 3,
+      "base_sort": "FromMainBase",
+      "builders": ["AnyUberBasicFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "air",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicAirFactory"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicAirFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Uber Air - Basic Air Factory - Excess eco",
+      "to_build": "BasicAirFactory",
+      "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "priority": 375,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "base_sort": "FromMainBase",
+      "builders": ["UberCommander", "AnyUberBasicFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "air",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "MetalStorageFrac",
+            "compare0": ">",
+            "value0": 0.1
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicAirFactory"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicAirFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Uber Air - Advanced Air Factory",
+      "to_build": "AdvancedAirFactory",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedFactory",
+      "priority": 477,
+      "min_num_assisters": 5,
+      "max_num_assisters": 8,
+      "base_sort": "FromMainBase",
+      "builders": ["BasicAirFabber", "AdvancedAirFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "air",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedAirFactory"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedAirFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "air",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "UnableToExpand",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Advanced - Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedAirFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Uber Air - Advanced Air Factory - Excess Eco",
+      "to_build": "AdvancedAirFactory",
+      "instance_count": 2,
+      "shared_instance_count": "AdvancedFactory",
+      "priority": 475,
+      "min_num_assisters": 6,
+      "max_num_assisters": 9,
+      "base_sort": "FromMainBase",
+      "builders": ["BasicAirFabber", "AdvancedAirFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "air",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "MetalStorageFrac",
+            "compare0": ">",
+            "value0": 0.9
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedAirFactory"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedAirFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Legion - Uber Air - Flyer Foundry - Commander",
+      "to_build": "LegionFactoryBasicAir",
+      "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "priority": 376,
+      "base_sort": "FromMainBase",
+      "builders": ["LegionCommander"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "air",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicAir"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicAir"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Legion - Uber Air - Flyer Foundry - Fabber",
+      "to_build": "LegionFactoryBasicAir",
+      "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "priority": 376,
+      "min_num_assisters": 1,
+      "max_num_assisters": 3,
+      "base_sort": "FromMainBase",
+      "builders": ["AnyLegionFabberBasic"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "air",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicAir"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicAir"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Legion - Uber Air - Flyer Foundry - Excess eco",
+      "to_build": "LegionFactoryBasicAir",
+      "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "priority": 375,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "base_sort": "FromMainBase",
+      "builders": ["LegionCommander", "AnyLegionFabberBasic"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "air",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "MetalStorageFrac",
+            "compare0": ">",
+            "value0": 0.1
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicAir"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicAir"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Legion - Uber Air - Advanced Air Foundry",
+      "to_build": "LegionFactoryAdvancedAir",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedFactory",
+      "priority": 477,
+      "min_num_assisters": 5,
+      "max_num_assisters": 8,
+      "base_sort": "FromMainBase",
+      "builders": ["LegionAirBasicFabber", "LegionAirAdvancedFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "air",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryAdvancedAir"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryAdvancedAir"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "air",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "UnableToExpand",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Advanced - Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryAdvancedAir"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Legion - Uber Air - Advanced Air Foundry - Excess Eco",
+      "to_build": "LegionFactoryAdvancedAir",
+      "instance_count": 2,
+      "shared_instance_count": "AdvancedFactory",
+      "priority": 475,
+      "min_num_assisters": 5,
+      "max_num_assisters": 8,
+      "base_sort": "FromMainBase",
+      "builders": ["LegionAirBasicFabber", "LegionAirAdvancedFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "air",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "MetalStorageFrac",
+            "compare0": ">",
+            "value0": 0.2
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryAdvancedAir"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Advanced - Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryAdvancedAir"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    }
+  ]
+}

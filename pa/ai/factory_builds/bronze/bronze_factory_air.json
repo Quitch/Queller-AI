@@ -1,1 +1,312 @@
-{"build_list":[{"name":"Bronze - Basic Air Fabber","to_build":"BasicAirFabber","instance_count":1,"max_num_assisters":10,"priority":100,"builders":["BasicAirFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"bronze","boolean":true},{"test_type":"BaseThreatened","boolean":false},{"test_type":"MetMinBasicFabberCount","boolean":false}],[{"test_type":"HasPersonalityTag","string0":"bronze","boolean":true},{"test_type":"BaseThreatened","boolean":false},{"test_type":"CanAffordPotentialDrain","string0":"BasicAirFabber"},{"test_type":"UnitRatioOnPlanet","unit_type_string0":"Fabber & Basic & Air","unit_type_string1":"Factory & Basic & Air","compare0":"<","value0":5}]]},{"name":"Bronze - Hummingbird","to_build":"BasicFighter","instance_count":-1,"max_num_assisters":10,"priority":96,"builders":["BasicAirFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"bronze","boolean":true},{"test_type":"AloneOnPlanet","boolean":false}]]},{"name":"Bronze - Bumblebee","to_build":"BasicBomber","instance_count":-1,"max_num_assisters":10,"priority":96,"builders":["BasicAirFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"bronze","boolean":true},{"test_type":"AloneOnPlanet","boolean":false}]]},{"name":"Bronze - Icarus","to_build":"SolarDrone","instance_count":-1,"max_num_assisters":10,"priority":96,"builders":["BasicAirFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"bronze","boolean":true},{"test_type":"AloneOnPlanet","boolean":false}]]},{"name":"Bronze - Advanced Air Fabber","to_build":"AdvancedAirFabber","instance_count":1,"max_num_assisters":10,"priority":200,"builders":["AdvancedAirFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"bronze","boolean":true},{"test_type":"BaseThreatened","boolean":false},{"test_type":"MetMinAdvancedFabberCount","boolean":false}],[{"test_type":"HasPersonalityTag","string0":"bronze","boolean":true},{"test_type":"BaseThreatened","boolean":false},{"test_type":"CanAffordPotentialDrain","string0":"AdvancedAirFabber"},{"test_type":"UnitRatioOnPlanet","unit_type_string0":"Fabber & Advanced & Air","unit_type_string1":"Factory & Advanced & Air","compare0":"<","value0":5}]]},{"name":"Bronze - Phoenix","to_build":"AdvancedFighter","instance_count":-1,"max_num_assisters":10,"priority":199,"builders":["AdvancedAirFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"bronze","boolean":true},{"test_type":"AloneOnPlanet","boolean":false}]]},{"name":"Bronze - Hornet","to_build":"AdvancedBomber","instance_count":-1,"max_num_assisters":10,"priority":199,"builders":["AdvancedAirFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"bronze","boolean":true},{"test_type":"AloneOnPlanet","boolean":false},{"test_type":"UnitCountOnPlanet","unit_type_string0":"Air & Gunship - Custom1","compare0":"==","value0":0}]]},{"name":"Bronze - Kestrel","to_build":"AdvancedGunship","instance_count":-1,"max_num_assisters":10,"priority":199,"builders":["AdvancedAirFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"bronze","boolean":true},{"test_type":"AloneOnPlanet","boolean":false},{"test_type":"UnitCountOnPlanet","unit_type_string0":"Air & Tactical & Advanced","compare0":"==","value0":0}]]},{"name":"Bronze - Wyrm","to_build":"HeavyBomber","instance_count":1,"max_num_assisters":10,"priority":199,"builders":["AdvancedAirFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"bronze","boolean":true},{"test_type":"AloneOnPlanet","boolean":false},{"test_type":"PlanetHighestEnemyArmyThreat","string0":"AntiAir","compare0":">","value0":8400}]]},{"name":"Bronze - Angel","to_build":"SupportPlatform","instance_count":1,"max_num_assisters":10,"priority":199,"builders":["AdvancedAirFactory"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"bronze","boolean":true},{"test_type":"AloneOnPlanet","boolean":false},{"test_type":"UnitRatioOnPlanet","unit_type_string0":"Air & Mobile & MissileDefense","unit_type_string1":"Air & Mobile - Fabber - Scout","compare0":"<","value0":0.05}]]}]}
+{
+  "build_list": [
+    {
+      "name": "Bronze - Basic Air Fabber",
+      "to_build": "BasicAirFabber",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 100,
+      "builders": ["BasicAirFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "MetMinBasicFabberCount",
+            "boolean": false
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicAirFabber"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Basic & Air",
+            "unit_type_string1": "Factory & Basic & Air",
+            "compare0": "<",
+            "value0": 5
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bronze - Hummingbird",
+      "to_build": "BasicFighter",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 96,
+      "builders": ["BasicAirFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bronze - Bumblebee",
+      "to_build": "BasicBomber",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 96,
+      "builders": ["BasicAirFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bronze - Icarus",
+      "to_build": "SolarDrone",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 96,
+      "builders": ["BasicAirFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bronze - Advanced Air Fabber",
+      "to_build": "AdvancedAirFabber",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 200,
+      "builders": ["AdvancedAirFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "MetMinAdvancedFabberCount",
+            "boolean": false
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedAirFabber"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Advanced & Air",
+            "unit_type_string1": "Factory & Advanced & Air",
+            "compare0": "<",
+            "value0": 5
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bronze - Phoenix",
+      "to_build": "AdvancedFighter",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": ["AdvancedAirFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bronze - Hornet",
+      "to_build": "AdvancedBomber",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": ["AdvancedAirFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Gunship - Heavy - Custom1",
+            "compare0": "==",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bronze - Kestrel",
+      "to_build": "AdvancedGunship",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": ["AdvancedAirFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Tactical & Advanced",
+            "compare0": "==",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bronze - Horsefly",
+      "to_build": "Strafer",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": ["AdvancedAirFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bronze - Wyrm",
+      "to_build": "HeavyBomber",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": ["AdvancedAirFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": ">",
+            "value0": 8400
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bronze - Angel",
+      "to_build": "SupportPlatform",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": ["AdvancedAirFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Air & Mobile & MissileDefense",
+            "unit_type_string1": "Air & Mobile - Fabber - Scout",
+            "compare0": "<",
+            "value0": 0.05
+          }
+        ]
+      ]
+    }
+  ]
+}

@@ -1,1 +1,98 @@
-{"build_list":[{"name":"Silver - Naval Scout Platoon","to_build":"Naval_Attack_Queller","instance_count":1,"priority":106,"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"silver","boolean":true},{"test_type":"HaveFullPlanetIntel","boolean":false},{"test_type":"UnitPoolCount","unit_type_string0":"Naval & Mobile & Offense - Hover - (AirDefense & Custom1)","compare0":">=","value0":4}]],"task_type":"Scout"},{"name":"Silver - Naval Attack Platoon 8","to_build":"Naval_Attack_Queller","instance_count":-1,"priority":102,"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"silver","boolean":true},{"test_type":"EnemySurfacePresenceOnPlanet","boolean":true},{"test_type":"PlanetHighestEnemyArmyThreat","string0":"AntiSurface","compare0":"<","value0":39960},{"test_type":"UnitPoolCount","unit_type_string0":"Naval & Mobile & Offense - (AirDefense & Custom1) - Fabber - Construction - Hover","compare0":">=","value0":8},{"test_type":"CanAttackWithPoolUnits","string0":"WL_AnySurface","boolean":true}]],"task_type":"NavalAttack"},{"name":"Silver - Naval Attack Platoon 12","to_build":"Naval_Attack_Queller","instance_count":-1,"priority":100,"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"silver","boolean":true},{"test_type":"EnemySurfacePresenceOnPlanet","boolean":true},{"test_type":"UnitPoolCount","unit_type_string0":"Naval & Mobile & Offense - (AirDefense & Custom1) - Fabber - Construction - Hover","compare0":">=","value0":12},{"test_type":"CanAttackWithPoolUnits","string0":"WL_AnySurface","boolean":true}]],"task_type":"NavalAttack"}]}
+{
+  "build_list": [
+    {
+      "name": "Silver - Naval Scout Platoon",
+      "to_build": "Naval_Attack_Queller",
+      "instance_count": 1,
+      "priority": 106,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Naval & Mobile & Offense - Hover - (AirDefense & Custom1)",
+            "compare0": ">=",
+            "value0": 4
+          }
+        ]
+      ],
+      "task_type": "Scout"
+    },
+    {
+      "name": "Silver - Naval Attack Platoon 8",
+      "to_build": "Naval_Attack_Queller",
+      "instance_count": -1,
+      "priority": 102,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": "<",
+            "value0": 39960
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Naval & Mobile & Offense - (AirDefense & Custom1) - Fabber - Construction - Hover",
+            "compare0": ">=",
+            "value0": 8
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface",
+            "boolean": true
+          }
+        ]
+      ],
+      "task_type": "NavalAttack"
+    },
+    {
+      "name": "Silver - Naval Attack Platoon 12",
+      "to_build": "Naval_Attack_Queller",
+      "instance_count": -1,
+      "priority": 100,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Naval & Mobile & Offense - (AirDefense & Custom1) - Fabber - Construction - Hover",
+            "compare0": ">=",
+            "value0": 12
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface",
+            "boolean": true
+          }
+        ]
+      ],
+      "task_type": "NavalAttack"
+    }
+  ]
+}

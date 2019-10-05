@@ -1,10 +1,9 @@
 ---
 name: Bug report
 about: Create a report to help us improve
-title: ''
-labels: ''
+title: ""
+labels: ""
 assignees: Quitch
-
 ---
 
 **Describe the bug**
@@ -20,7 +19,8 @@ A clear and concise description of what you expected to happen.
 If applicable, add screenshots to help explain your problem.
 
 **Version (check version.txt in the PA root folder):**
- - PA: [e.g. 112895]
+
+- PA: [e.g. 112895]
 
 **Additional context**
 Add any other context about the problem here.

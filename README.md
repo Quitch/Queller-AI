@@ -1,5 +1,4 @@
-Queller AI
-==========
+# Queller AI
 
 Improved AI for [Planetary Annihilation: Titans](http://www.uberent.com/pa)
 
@@ -16,98 +15,104 @@ You should download and install this mod via the Planetary Annihilation TITANS i
 Queller offers a range of difficulties designed to try and mimic the style of human players at particular levels of play. It does not modify the vanilla difficulties.
 
 ### Casual
- - Economy first opening
- - One army
- - Techs as soon as possible
- - Goes orbital as soon as possible
- - Turtles
- - Poor troop selection
- - Barely scouts
- - Doesn't react to what the enemy is doing
- - Loves fabbers
- - Loves static defence/offence
- - Poor use of fabbers
- - Poor economy handling
- - No micro
- - Terrible threat assessments
+
+- Economy first opening
+- One army
+- Techs as soon as possible
+- Goes orbital as soon as possible
+- Turtles
+- Poor troop selection
+- Barely scouts
+- Doesn't react to what the enemy is doing
+- Loves fabbers
+- Loves static defence/offence
+- Poor use of fabbers
+- Poor economy handling
+- No micro
+- Terrible threat assessments
 
 ### Bronze
- - Factory first opening
- - One army
- - Techs as soon as possible
- - Will go orbital if it can
- - Expands slowly
- - Poor troop selection
- - Barely scouts
- - Doesn't react to what the enemy is doing
- - Loves fabbers
- - Loves static defence/offence
- - Poor use of fabbers
- - Average economy handling
- - No micro
- - Terrible threat assessments
+
+- Factory first opening
+- One army
+- Techs as soon as possible
+- Will go orbital if it can
+- Expands slowly
+- Poor troop selection
+- Barely scouts
+- Doesn't react to what the enemy is doing
+- Loves fabbers
+- Loves static defence/offence
+- Poor use of fabbers
+- Average economy handling
+- No micro
+- Terrible threat assessments
 
 ### Silver
- - Factory first opening
- - Few armies
- - Will tech if it can
- - Will go orbital if it can
- - Expands slowly
- - Poor troop selection
- - Barely scouts
- - Doesn't react to what the enemy is doing
- - Likes fabbers
- - Likes static defence/offence
- - Average economy handling
- - Average micro
- - Poor threat assessments
+
+- Factory first opening
+- Few armies
+- Will tech if it can
+- Will go orbital if it can
+- Expands slowly
+- Poor troop selection
+- Barely scouts
+- Doesn't react to what the enemy is doing
+- Likes fabbers
+- Likes static defence/offence
+- Average economy handling
+- Average micro
+- Poor threat assessments
 
 ### Gold
- - Smart factory first opening
- - Many armies
- - Will tech if it can
- - Will go orbital if it can
- - Expands OK
- - OK troop selection
- - OK scouting
- - Some reaction to opponent's play
- - Dislikes fabbers
- - Appropriate use of static defence/offence
- - Average economy handling
- - Average micro
- - OK threat assessments
+
+- Smart factory first opening
+- Many armies
+- Will tech if it can
+- Will go orbital if it can
+- Expands OK
+- OK troop selection
+- OK scouting
+- Some reaction to opponent's play
+- Dislikes fabbers
+- Appropriate use of static defence/offence
+- Average economy handling
+- Average micro
+- OK threat assessments
 
 ### Platinum
- - Smart factory first opening
- - Unlimited armies
- - Techs quickly
- - Goes orbital smartly
- - Expands quickly
- - Good troop selection
- - Good scouting
- - Smartly reacts to opponent's play
- - Good fabber to troop balance
- - Appropriate use of static defence/offence
- - Good economy handling
- - Best micro
- - Great threat assessments
+
+- Smart factory first opening
+- Unlimited armies
+- Techs quickly
+- Goes orbital smartly
+- Expands quickly
+- Good troop selection
+- Good scouting
+- Smartly reacts to opponent's play
+- Good fabber to troop balance
+- Appropriate use of static defence/offence
+- Good economy handling
+- Best micro
+- Great threat assessments
 
 ### Uber
- - Smart factory first opening
- - Unlimited armies
- - Techs smartly
- - Goes orbital smartly
- - Expands quickly
- - Best troop selection
- - Best scouting
- - Smartly reacts to opponent's play
- - Good fabber to troop balance
- - Appropriate use of static defence/offence
- - Best economy handling
- - Best micro
- - Best threat assessments
- - Will use eco bonuses better than other levels
- - Selectable subpersonality
+
+- Smart factory first opening
+- Unlimited armies
+- Techs smartly
+- Goes orbital smartly
+- Expands quickly
+- Best troop selection
+- Best scouting
+- Smartly reacts to opponent's play
+- Good fabber to troop balance
+- Appropriate use of static defence/offence
+- Best economy handling
+- Best micro
+- Best threat assessments
+- Will use eco bonuses better than other levels
+- Selectable subpersonality
 
 ## RECOMMENDED DIFFICULTY
 
@@ -139,30 +144,37 @@ When you need to increase the challenge, but don't want to increase the difficul
 By default, Queller at Uber level will adapt its play to try and suit the system and the opposition it faces. You can use subpersonalities to customise Queller's game to your liking, or help it play better where it's making poor strategy choices.
 
 ### 1v1
- - More willing to engage in battle
- - Slower to enter orbital
+
+- More willing to engage in battle
+- Slower to enter orbital
 
 ### Air
- - Unrestricted air usage
+
+- Unrestricted air usage
 
 ### Bot
- - Doesn't build vehicle factories
+
+- Doesn't build vehicle factories
 
 ### Free For All
- - More cautious about engaging in battle
- - Techs earlier
- - Orbital earlier
+
+- More cautious about engaging in battle
+- Techs earlier
+- Orbital earlier
 
 ### Naval
- - Attempts to build a naval factory first
- - Unrestricted naval usage
+
+- Attempts to build a naval factory first
+- Unrestricted naval usage
 
 ### Rush
- - Techs late
- - Slower to enter orbital
+
+- Techs late
+- Slower to enter orbital
 
 ### Tank
- - Doesn't build bot factories
+
+- Doesn't build bot factories
 
 # MAP NOTES
 

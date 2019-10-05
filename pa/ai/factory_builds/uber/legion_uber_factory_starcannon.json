@@ -1,1 +1,21 @@
-{"build_list":[{"name":"Legion - Uber - Scorpion - Starcannon","to_build":"LegionVehicleAdvancedLaser","instance_count":-1,"max_num_assisters":10,"priority":199,"builders":["LegionOrbitalAdvancedCannon"],"build_conditions":[[{"test_type":"HasPersonalityTag","string0":"uber","boolean":true}]]}]}
+{
+  "build_list": [
+    {
+      "name": "Legion - Uber - Scorpion - Starcannon",
+      "to_build": "LegionVehicleAdvancedLaser",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": ["LegionOrbitalAdvancedCannon"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          }
+        ]
+      ]
+    }
+  ]
+}
