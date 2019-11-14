@@ -408,6 +408,31 @@
       ]
     },
     {
+      "name": "Silver - Typhoon",
+      "to_build": "DroneCarrier",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": ["AdvancedNavalFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
       "name": "Silver - Kaiju",
       "to_build": "HoverShip",
       "instance_count": -1,

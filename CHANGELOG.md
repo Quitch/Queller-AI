@@ -3,6 +3,7 @@
 #### DEV
 
 - Uber makes heavier use of the Horsefly
+- Silver through Uber will now build the Typhoon
 
 #### 4.52.0 - 2019-10-05
 
