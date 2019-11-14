@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### DEV
+
+- Uber makes heavier use of the Horsefly
+
 #### 4.52.0 - 2019-10-05
 
 - Added support for Horsefly
