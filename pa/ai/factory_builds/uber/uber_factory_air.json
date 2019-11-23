@@ -60,6 +60,9 @@
             "boolean": true
           },
           {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicAirFabber"
           },
@@ -226,6 +229,9 @@
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "BaseThreatened",
@@ -400,6 +406,9 @@
             "boolean": true
           },
           {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
             "test_type": "PotentialEnergyEfficiency",
             "compare0": "<",
             "value0": 1
@@ -414,6 +423,9 @@
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "CurrentEnergyEfficiency",
@@ -481,6 +493,9 @@
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "CanAffordPotentialDrain",
