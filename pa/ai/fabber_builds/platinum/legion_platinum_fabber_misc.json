@@ -71,6 +71,10 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Structure & Teleporter",
             "compare0": "<",
@@ -251,6 +255,10 @@
           },
           {
             "test_type": "PlanetIsMainEcoBase",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
             "boolean": false
           },
           {

@@ -3,6 +3,7 @@
 #### DEV
 
 - Stop Uber immediately moving an orbital fabber away from a planet it just arrived at
+- Don't run teleporter checks on gas giants
 
 #### 4.53.0 - 2019-11-19
 
