@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### DEV
+
+- Stop Uber immediately moving an orbital fabber away from a planet it just arrived at
+
 #### 4.53.0 - 2019-11-19
 
 - Uber makes greater use of the Horsefly
