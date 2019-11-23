@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### DEV
+#### 4.54.0 - 2019-11-23
 
 - Stop Uber immediately moving an orbital fabber away from a planet it just arrived at
 - Don't run teleporter checks on gas giants
