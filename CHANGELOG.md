@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### DEV
+
+- Casual through Platinum show more variance in which planets they choose to expand to
+
 #### v4.54.0 - 2019-11-23
 
 - Stop Uber immediately moving an orbital fabber away from a planet it just arrived at
