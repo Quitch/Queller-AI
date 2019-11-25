@@ -17,7 +17,6 @@
 - Number of targets in range requirement higher for building advanced artillery
 - All difficulties will use Gustav's in defence
 - Uber more likely to make a defensive Gustav
-- Allow for Necromancers to operate more independently
 
 #### v4.54.0 - 2019-11-23
 
