@@ -67,46 +67,13 @@
       "name": "Legion - Gold - Gustav",
       "to_build": "LegionDefenseAdvancedArtillery",
       "instance_count": 1,
+      "shared_instance_count": "Artillery",
       "min_num_assisters": 3,
       "max_num_assisters": 6,
       "priority": 360,
       "base_sort": "FromBuilder",
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsRespawnable",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild & Custom1",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Artillery & Advanced",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionDefenseAdvancedArtillery"
-          }
-        ],
         [
           {
             "test_type": "HasPersonalityTag",
@@ -153,6 +120,66 @@
           "radius": 10,
           "value": 50
         }
+      }
+    },
+    {
+      "name": "Legion - Gold - Gustav - Shield",
+      "to_build": "LegionDefenseAdvancedArtillery",
+      "instance_count": 1,
+      "shared_instance_count": "Artillery",
+      "min_num_assisters": 3,
+      "max_num_assisters": 6,
+      "priority": 360,
+      "base_sort": "FromBuilder",
+      "builders": ["AnyLegionFabberAdvanced"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild & Custom1",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Artillery & Advanced",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedArtillery"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild & Custom1",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 200,
+            "count": 1
+          }
+        ]
       }
     },
     {
