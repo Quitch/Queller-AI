@@ -17,6 +17,7 @@
 - Number of targets in range requirement higher for building advanced artillery
 - All difficulties will use Gustav's in defence
 - Uber more likely to make a defensive Gustav
+- Allow for lower levels to use more Mauls, Infernos and Grenadiers in a single platoon
 
 #### v4.54.0 - 2019-11-23
 
