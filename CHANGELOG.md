@@ -7,6 +7,7 @@
 - Uber requires less air dominance to use the Horsefly
 - Gold and Platinum prefer the Horsefly over the Kestrel
 - Silver no longer uses the Hornet
+- Fixed Uber not building more than one Horsefly concurrently
 
 #### v4.54.0 - 2019-11-23
 
