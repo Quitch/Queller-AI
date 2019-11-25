@@ -12,6 +12,8 @@
 - Uber maintains a smaller bomber/gunship presence when alone
 - Uber favours the Salamander over the Lockheed
 - Uber no longer maintains a fighter air force when alone
+- Gold through Uber produce less advanced fabbers when alone
+- Uber produces less fabbers when floating eco
 
 #### v4.54.0 - 2019-11-23
 
