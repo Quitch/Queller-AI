@@ -409,23 +409,6 @@
             "boolean": false
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & (Bomber | Gunship)",
-            "compare0": "<",
-            "value0": 40
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": false
-          },
-          {
             "test_type": "UnitCountPerPlanetRadius",
             "unit_type_string0": "Air & (Bomber | Gunship)",
             "compare0": "<",
@@ -711,23 +694,6 @@
             "test_type": "HaveSeenEnemyUnits",
             "unit_type_string0": "(Advanced & AirDefense & Structure) | (Advanced & AirDefense & Mobile - Custom1)",
             "boolean": true
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & (Bomber | Gunship)",
-            "compare0": "<",
-            "value0": 40
           }
         ],
         [

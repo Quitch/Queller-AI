@@ -9,6 +9,7 @@
 - Silver no longer uses the Hornet
 - Fixed Uber not building more than one Horsefly concurrently
 - Uber can handle the Horsefly being disabled
+- Uber maintains a smaller bomber presence on smaller planets when alone
 
 #### v4.54.0 - 2019-11-23
 
