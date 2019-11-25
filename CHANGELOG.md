@@ -14,6 +14,7 @@
 - Uber no longer maintains a fighter air force when alone
 - Gold through Uber produce less advanced fabbers when alone
 - Uber produces less fabbers when floating eco
+- Number of targets in range requirement higher for building advanced artillery
 
 #### v4.54.0 - 2019-11-23
 
