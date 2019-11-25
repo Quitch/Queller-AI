@@ -254,33 +254,6 @@
       ]
     },
     {
-      "name": "Silver - Hornet",
-      "to_build": "AdvancedBomber",
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 199,
-      "builders": ["AdvancedAirFactory"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & Gunship - Heavy - Custom1",
-            "compare0": "==",
-            "value0": 0
-          }
-        ]
-      ]
-    },
-    {
       "name": "Silver - Kestrel",
       "to_build": "AdvancedGunship",
       "instance_count": -1,
@@ -297,12 +270,6 @@
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & Tactical & Advanced",
-            "compare0": "==",
-            "value0": 0
           }
         ]
       ]

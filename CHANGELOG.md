@@ -6,6 +6,7 @@
 - Resolve issue with some levels failure to expand when starting with a naval factory
 - Uber requires less air dominance to use the Horsefly
 - Gold and Platinum prefer the Horsefly over the Kestrel
+- Silver no longer uses the Hornet
 
 #### v4.54.0 - 2019-11-23
 
