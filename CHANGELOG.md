@@ -11,6 +11,7 @@
 - Uber can handle the Horsefly being disabled
 - Uber maintains a smaller bomber/gunship presence when alone
 - Uber favours the Salamander over the Lockheed
+- Uber no longer maintains a fighter air force when alone
 
 #### v4.54.0 - 2019-11-23
 

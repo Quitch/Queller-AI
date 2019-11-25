@@ -299,29 +299,6 @@
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "SystemThreat",
-            "string0": "Air",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": "<",
-            "value0": 20
-          }
         ]
       ]
     },
@@ -645,29 +622,6 @@
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "SystemThreat",
-            "string0": "Air",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": "<",
-            "value0": 10
           }
         ]
       ]
