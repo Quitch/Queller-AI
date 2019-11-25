@@ -8,6 +8,7 @@
 - Gold and Platinum prefer the Horsefly over the Kestrel
 - Silver no longer uses the Hornet
 - Fixed Uber not building more than one Horsefly concurrently
+- Uber can handle the Horsefly being disabled
 
 #### v4.54.0 - 2019-11-23
 
