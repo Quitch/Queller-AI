@@ -8,7 +8,7 @@
 - Gold and Platinum prefer the Horsefly over the Kestrel
 - Silver no longer uses the Hornet
 - Fixed Uber not building more than one Horsefly concurrently
-- Uber can handle the Horsefly being disabled
+- Uber properly handles the Horsefly being disabled
 - Uber maintains a smaller bomber/gunship presence when alone
 - Uber favours the Salamander over the Lockheed
 - Uber no longer maintains a fighter air force when alone
