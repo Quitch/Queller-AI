@@ -79,9 +79,32 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Bot & SelfDestruct & Mobile - Titan",
+            "unit_type_string0": "Bot & SelfDestruct & Mobile - Custom1 - Titan",
             "compare0": ">=",
             "value0": 10
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & SelfDestruct & Mobile & Custom1 - Titan",
+            "compare0": ">=",
+            "value0": 1
           },
           {
             "test_type": "CanAttackWithPoolUnitsLand",

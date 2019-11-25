@@ -62,6 +62,38 @@
       "task_type": "TeleportLandToPlanet"
     },
     {
+      "name": "Bronze - Boom Platoon",
+      "to_build": "Boom_Raid_Queller",
+      "instance_count": -1,
+      "priority": 170,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & SelfDestruct & Mobile & Custom1 - Titan",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
       "name": "Bronze - Land Attack Platoon 20",
       "to_build": "Land_Attack_Queller",
       "instance_count": -1,
