@@ -15,6 +15,8 @@
 - Gold through Uber produce less advanced fabbers when alone
 - Uber produces less fabbers when floating eco
 - Number of targets in range requirement higher for building advanced artillery
+- All difficulties will use Gustav's in defence
+- Uber more likely to make a defensive Gustav
 
 #### v4.54.0 - 2019-11-23
 

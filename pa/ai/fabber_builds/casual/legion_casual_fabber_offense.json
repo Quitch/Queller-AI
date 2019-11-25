@@ -84,6 +84,40 @@
             "boolean": true
           },
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild & Custom1",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Artillery & Advanced",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedArtillery"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "casual",
+            "boolean": true
+          },
+          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
