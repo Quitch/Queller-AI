@@ -976,34 +976,6 @@
       ]
     },
     {
-      "name": "Legion - Uber - Necromancer",
-      "to_build": "LegionBotAdvancedBomb",
-      "instance_count": 1,
-      "max_num_assisters": 10,
-      "priority": 199,
-      "builders": ["LegionFactoryAdvancedBot"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Bot & SelfDestruct & Mobile & Advanced & Custom1 - Titan",
-            "unit_type_string1": "Land & Mobile - Scout - Fabber - Deconstruction - Titan - Basic",
-            "compare0": "<",
-            "value0": 0.01
-          }
-        ]
-      ]
-    },
-    {
       "name": "Legion - Uber - Orbweaver",
       "to_build": "LegionBotAdvancedAA",
       "instance_count": -1,
