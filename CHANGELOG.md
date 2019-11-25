@@ -10,7 +10,6 @@
 - Fixed Uber not building more than one Horsefly concurrently
 - Uber properly handles the Horsefly being disabled
 - Uber maintains a smaller bomber/gunship presence when alone
-- Uber favours the Salamander over the Lockheed
 - Uber no longer maintains a fighter air force when alone
 - Gold through Uber produce less advanced fabbers when alone
 - Uber produces less fabbers when floating eco
