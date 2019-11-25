@@ -3,6 +3,7 @@
 #### DEV
 
 - Casual through Platinum show more variance in which planets they choose to expand to
+- Resolve issue with some levels failure to expand when starting with a naval factory
 
 #### v4.54.0 - 2019-11-23
 
