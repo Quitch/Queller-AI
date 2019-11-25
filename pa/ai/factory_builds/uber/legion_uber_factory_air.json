@@ -677,7 +677,7 @@
       "to_build": "LegionAirAdvancedGunship",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 198,
+      "priority": 1,
       "builders": ["LegionFactoryAdvancedAir"],
       "build_conditions": [
         [
@@ -737,6 +737,23 @@
             "test_type": "HaveSeenEnemyUnits",
             "unit_type_string0": "(Advanced & AirDefense & Structure) | (Advanced & AirDefense & Mobile - Custom1)",
             "boolean": false
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Air & (Bomber | Gunship)",
+            "compare0": "<",
+            "value0": 10
           }
         ]
       ]
