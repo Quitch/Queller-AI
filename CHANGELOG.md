@@ -18,6 +18,7 @@
 - Uber more likely to make a defensive Gustav
 - Fixed Uber FFA not building tanks
 - Uber FFA expands as aggressively as other personalities again
+- Gold and above will not overreact with air defence when scouting air fabbers
 
 #### v4.54.0 - 2019-11-23
 
