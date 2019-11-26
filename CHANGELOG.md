@@ -17,6 +17,7 @@
 - All difficulties will use Gustav's in defence
 - Uber more likely to make a defensive Gustav
 - Fixed Uber FFA not building tanks
+- Uber FFA expands as aggressively as other personalities again
 
 #### v4.54.0 - 2019-11-23
 
