@@ -16,6 +16,7 @@
 - Number of targets in range requirement higher for building advanced artillery
 - All difficulties will use Gustav's in defence
 - Uber more likely to make a defensive Gustav
+- Fixed Uber FFA not building tanks
 
 #### v4.54.0 - 2019-11-23
 
