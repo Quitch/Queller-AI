@@ -19,10 +19,16 @@
     "Boom_Raid_Queller": {
       "units": [
         {
-          "unit_types": "Bot & SelfDestruct & Mobile - Titan",
-          "min_count": 1,
+          "unit_types": "Bot & SelfDestruct & Mobile - Custom1 - Titan",
+          "min_count": 0,
           "max_count": -1,
           "squad": "Suicide"
+        },
+        {
+          "unit_types": "Bot & SelfDestruct & Mobile & Custom1 - Titan",
+          "min_count": 0,
+          "max_count": -1,
+          "squad": "Artillery"
         }
       ]
     },

@@ -122,6 +122,12 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Air",
+            "compare0": ">=",
+            "value0": 40
+          },
+          {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Air",
             "string1": "Air",

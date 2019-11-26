@@ -1,22 +1,42 @@
 # CHANGELOG
 
-#### 4.54.0 - 2019-11-23
+#### v4.55.0 - 2019-11-26
+
+- Casual through Platinum show more variance in which planets they choose to expand to
+- Resolve issue with some levels' failure to expand when starting with a naval factory
+- Uber requires less air dominance to use the Horsefly
+- Gold and Platinum prefer the Horsefly over the Kestrel
+- Silver no longer uses the Hornet
+- Fixed Uber not building more than one Horsefly concurrently
+- Uber properly handles the Horsefly being disabled
+- Uber maintains a smaller bomber/gunship presence when alone
+- Uber no longer maintains a fighter air force when alone
+- Gold through Uber produce less advanced fabbers when alone
+- Uber produces less fabbers when floating eco
+- Number of targets in range requirement higher for building advanced artillery
+- All difficulties will use Gustav's in defence
+- Uber more likely to make a defensive Gustav
+- Fixed Uber FFA not building tanks
+- Uber FFA expands as aggressively as other personalities again
+- Gold and above will not overreact with air defence when scouting air fabbers
+
+#### v4.54.0 - 2019-11-23
 
 - Stop Uber immediately moving an orbital fabber away from a planet it just arrived at
 - Don't run teleporter checks on gas giants
 - Uber will switch off land and air factories on planets it owns if it cannot afford to run them
 
-#### 4.53.0 - 2019-11-19
+#### v4.53.0 - 2019-11-19
 
 - Uber makes greater use of the Horsefly
 - Silver through Uber will now build the Typhoon
 
-#### 4.52.0 - 2019-10-05
+#### v4.52.0 - 2019-10-05
 
 - Added support for Horsefly
 - Gold uses less Hornets
 
-#### 4.51.0 - 2019-09-04
+#### v4.51.0 - 2019-09-04
 
 - Further fiddling of Uber's Unit Cannons. We're rearranging the deck chairs, people!
 - Uber won't build up factory infrastructure on an asteroid if an ally has an engine
