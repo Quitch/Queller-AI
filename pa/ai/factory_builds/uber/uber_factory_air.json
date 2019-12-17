@@ -352,9 +352,29 @@
       "to_build": "SolarDrone",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 101,
+      "priority": 99,
       "builders": ["BasicAirFactory"],
       "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "(Tank - Custom1) | (Bot & Custom1)",
+            "boolean": false
+          }
+        ],
         [
           {
             "test_type": "HasPersonalityTag",

@@ -1,5 +1,10 @@
 # CHANGELOG
 
+#### DEV
+
+- Uber will use Icarus when enemy has no mobile anti-air potential
+- Uber will use Icarus offensively again
+
 #### v4.55.0 - 2019-11-26
 
 - Casual through Platinum show more variance in which planets they choose to expand to
