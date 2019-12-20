@@ -4,6 +4,7 @@
 
 - Uber will use Icarus when enemy has no mobile anti-air potential
 - Uber will use Icarus offensively again
+- Uber uses more Typhoon
 
 #### v4.55.0 - 2019-11-26
 
