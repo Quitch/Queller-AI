@@ -218,10 +218,11 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "test_type": "PlanetThreat",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Orbital",
-            "compare0": ">=",
-            "value0": 1100
+            "string1": "AntiOrbital",
+            "compare0": ">",
+            "value0": 1
           },
           {
             "test_type": "UnitCountInBase",
