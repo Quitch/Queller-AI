@@ -1,5 +1,14 @@
 # CHANGELOG
 
+#### v4.56.0 - 2019-12-21
+
+- Uber will use Icarus when enemy has no mobile anti-air potential outside of the Commander
+- Uber will use Icarus offensively again
+- Uber uses more Typhoons
+- Uber won't use Stingray or Manta for anti-air
+- Improvements to how Uber considers its position in relation to planet specific orbital threat
+- Uber won't build Artemis when its orbital position is immediately threatened
+
 #### v4.55.0 - 2019-11-26
 
 - Casual through Platinum show more variance in which planets they choose to expand to

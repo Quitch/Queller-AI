@@ -58,6 +58,38 @@
       "task_type": "Scout"
     },
     {
+      "name": "Uber - Icarus Attack Platoon",
+      "to_build": "Icarus_Attack_Queller",
+      "instance_count": -1,
+      "priority": 200,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Mobile & EnergyProduction - Titan",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsBomber",
+            "string0": "WL_AnySurface",
+            "string1": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "BomberAttack"
+    },
+    {
       "name": "Uber - Bomber-Gunship Attack Platoon 1",
       "to_build": "BomberGunship_Attack_Queller",
       "instance_count": -1,

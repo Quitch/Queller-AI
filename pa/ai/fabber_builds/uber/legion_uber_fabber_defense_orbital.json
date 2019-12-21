@@ -218,15 +218,42 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "test_type": "PlanetThreat",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Orbital",
+            "string1": "AntiOrbital",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (Economy | Factory | Important)",
             "compare0": ">=",
-            "value0": 1100
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicOrbital"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "SystemThreat",
             "string0": "Orbital",
-            "compare0": ">",
+            "compare0": ">=",
             "value0": 10100
           },
           {
@@ -470,7 +497,7 @@
       "name": "Legion - Uber - Tola - Protect the Commander",
       "to_build": "LegionDefenseBasicOrbital",
       "instance_count": 1,
-      "priority": 456,
+      "priority": 457,
       "min_num_assisters": 1,
       "max_num_assisters": 3,
       "base_sort": "FromMainBase",

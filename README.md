@@ -1,6 +1,6 @@
 # Queller AI
 
-Improved AI for [Planetary Annihilation: Titans](http://www.uberent.com/pa)
+Improved AI for [Planetary Annihilation: Titans](https://planetaryannihilation.com/)
 
 This mod is a total overhaul of the AI designed to smooth out the difficulty curve, providing more humanlike challenges that are both easier and harder than the vanilla AI. It features complete support for the [Legion Expansion](https://github.com/Legion-Expansion/Legion-Expansion).
 
@@ -136,8 +136,8 @@ When you need to increase the challenge, but don't want to increase the difficul
 | Silver   | Mid       | Uber       | 1.0 |
 | Silver   | High      | Uber       | 1.2 |
 | Gold     | Any       | Uber       | 1.4 |
-| Platinum | Any       | Uber       | 1.6 |
-| Uber     | Any       | Uber       | 1.8 |
+| Platinum | Any       | Uber       | 1.7 |
+| Uber     | Any       | Uber       | 2.0 |
 
 ## SUBPERSONALITIES
 

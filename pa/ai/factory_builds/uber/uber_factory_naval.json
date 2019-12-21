@@ -529,7 +529,7 @@
       "to_build": "Battleship",
       "instance_count": 1,
       "max_num_assisters": 10,
-      "priority": 199,
+      "priority": 198,
       "builders": ["AdvancedNavalFactory"],
       "build_conditions": [
         [
@@ -552,13 +552,6 @@
             "string1": "Naval",
             "compare0": ">",
             "value0": 0.8
-          },
-          {
-            "test_type": "FocusTargetThreatRatio",
-            "string0": "Sub",
-            "string1": "AntiSub",
-            "compare0": "<",
-            "value0": 0.6
           }
         ],
         [
@@ -616,10 +609,11 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Orbital",
+            "string1": "AntiOrbital",
             "compare0": ">",
-            "value0": 1000
+            "value0": 1
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
@@ -631,42 +625,6 @@
           {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Naval & Mobile & Tactical",
-            "unit_type_string1": "(Naval & Mobile) - Fabber - Hover",
-            "compare0": "<",
-            "value0": 0.1
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Naval",
-            "string1": "Naval",
-            "compare0": ">",
-            "value0": 0.8
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Air",
-            "string1": "Air",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Naval & Mobile & (AirDefense | Tactical)",
             "unit_type_string1": "(Naval & Mobile) - Fabber - Hover",
             "compare0": "<",
             "value0": 0.1
@@ -723,7 +681,7 @@
       "to_build": "MissileSub",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 199,
+      "priority": 198,
       "builders": ["AdvancedNavalFactory"],
       "build_conditions": [
         [
@@ -746,13 +704,6 @@
             "string1": "Naval",
             "compare0": ">",
             "value0": 0.8
-          },
-          {
-            "test_type": "FocusTargetThreatRatio",
-            "string0": "Sub",
-            "string1": "AntiSub",
-            "compare0": "<",
-            "value0": 0.9
           }
         ]
       ]
@@ -760,9 +711,9 @@
     {
       "name": "Uber - Typhoon",
       "to_build": "DroneCarrier",
-      "instance_count": 1,
+      "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 198,
+      "priority": 199,
       "builders": ["AdvancedNavalFactory"],
       "build_conditions": [
         [
