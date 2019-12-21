@@ -7,6 +7,7 @@
 - Uber uses more Typhoons
 - Uber won't use Stingray or Manta for anti-air
 - Improvements to how Uber considers its position in relation to planet specific orbital threat
+- Uber won't build Artemis when its orbital position is immediately threatened
 
 #### v4.55.0 - 2019-11-26
 
