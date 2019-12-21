@@ -2,7 +2,7 @@
 
 #### DEV
 
-- Uber will use Icarus when enemy has no mobile anti-air potential
+- Uber will use Icarus when enemy has no mobile anti-air potential outside of the Commander
 - Uber will use Icarus offensively again
 - Uber uses more Typhoons
 - Uber won't use Stingray or Manta for anti-air
