@@ -224,9 +224,35 @@
             "value0": 1100
           },
           {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (Economy | Factory | Important)",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicOrbital"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
             "test_type": "SystemThreat",
             "string0": "Orbital",
-            "compare0": ">",
+            "compare0": ">=",
             "value0": 10100
           },
           {
