@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### DEV
+#### v4.56.0 - 2019-12-21
 
 - Uber will use Icarus when enemy has no mobile anti-air potential outside of the Commander
 - Uber will use Icarus offensively again
