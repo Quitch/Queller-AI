@@ -370,15 +370,9 @@
             "boolean": false
           },
           {
-            "test_type": "PlanetCount",
-            "compare0": "==",
-            "value0": 1
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 1200
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "(Tank - Custom1) | (Bot & Custom1) | Naval | Air",
+            "boolean": false
           }
         ],
         [
