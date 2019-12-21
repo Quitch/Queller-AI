@@ -7,6 +7,7 @@
 - Uber uses more Typhoons
 - Uber won't use Stingray for anti-air
 - Uber more likely to respond to an orbital threat with Stingrays
+- Uber more likely to respond to Anchor builds with Umbrellas
 
 #### v4.55.0 - 2019-11-26
 
