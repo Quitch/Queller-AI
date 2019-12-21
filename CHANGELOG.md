@@ -6,8 +6,6 @@
 - Uber will use Icarus offensively again
 - Uber uses more Typhoons
 - Uber won't use Stingray for anti-air
-- Uber more likely to respond to an orbital threat with Stingrays
-- Uber more likely to respond to Anchor builds with Umbrellas
 - Improvements to how Uber consider its position in relation to planet specific orbital threat
 
 #### v4.55.0 - 2019-11-26
