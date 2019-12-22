@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### DEV
+
+- Correct Uber reacting to an orbital-only presence with Icarus
+
 #### v4.56.0 - 2019-12-21
 
 - Uber will use Icarus when enemy has no mobile anti-air potential outside of the Commander
