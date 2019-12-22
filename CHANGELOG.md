@@ -4,6 +4,7 @@
 
 - Correct Uber reacting to an orbital-only presence with Icarus
 - Uber won't build Excaliburs when its orbital position is immediately threatened
+- Uber only uses the Icarus strategy in the early game
 
 #### v4.56.0 - 2019-12-21
 
