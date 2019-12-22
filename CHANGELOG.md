@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### DEV
+#### v4.56.1 - 2019-12-22
 
 - Correct Uber reacting to an orbital-only presence with Icarus
 - Uber won't build Excaliburs when its orbital position is immediately threatened
