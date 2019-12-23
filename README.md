@@ -120,12 +120,12 @@ Below are recommendations for the difficulty you may wish to start on based on w
 
 When you need to increase the challenge, but don't want to increase the difficulty, give the AI an eco boost rather than adding more AIs. Not only will this be better for the sim, it'll stop the problem of there being less resources to go around for the AI which in turn makes it easier to beat. Alternatively, put the AIs into shared armies.
 
-| Vanilla    | Queller |
-| ---------- | ------- |
-| Normal     | Casual  |
-| Hard       | Silver  |
-| Relentless | Gold    |
-| Absurd     | Gold    |
+| Vanilla    | Queller | Eco |
+| ---------- | ------- | --- |
+| Normal     | Casual  | 1.0 |
+| Hard       | Silver  | 1.0 |
+| Relentless | Gold    | 0.8 |
+| Absurd     | Gold    | 1.0 |
 
 | League   | Placement | Difficulty | Eco |
 | -------- | --------- | ---------- | --- |
