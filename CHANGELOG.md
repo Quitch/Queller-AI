@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### DEV
+
+- Increased flexibility in platoon composition
+
 #### v4.56.1 - 2019-12-22
 
 - Prevented Uber reacting to an orbital-only presence with Icarus
