@@ -6,6 +6,7 @@
 - Uber 1v1 uses more T1 bots
 - Uber FFA can use vehicles earlier
 - Cleaned up obsolete build conditions
+- Changed how Uber is assessing the need for more air factories to avoid over-producing them
 
 #### v4.56.1 - 2019-12-22
 
