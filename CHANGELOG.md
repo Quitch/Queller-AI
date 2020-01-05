@@ -3,6 +3,7 @@
 #### DEV
 
 - Increased flexibility in platoon composition
+- Uber uses more T1 bots
 
 #### v4.56.1 - 2019-12-22
 
