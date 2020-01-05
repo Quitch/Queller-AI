@@ -132,7 +132,7 @@ function qQuellerAI() {
       neural_data_mod: 1.0,
       adv_eco_mod: 1.0,
       adv_eco_mod_alone: 0,
-      personality_tags: ["uber", "doublebot", "lateorbital"],
+      personality_tags: ["uber", "1v1", "doublebot", "lateorbital"],
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1
     },
@@ -183,7 +183,7 @@ function qQuellerAI() {
       neural_data_mod: 0.75,
       adv_eco_mod: 0.85,
       adv_eco_mod_alone: 0,
-      personality_tags: ["uber"],
+      personality_tags: ["uber", "ffa"],
       min_basic_fabbers: 4,
       min_advanced_fabbers: 1
     },
@@ -256,7 +256,7 @@ function qQuellerAI() {
     model.localChatMessage(
       loc("!LOC:Queller AI"),
       loc(
-        "!LOC:by Quitch. Version 4.56.1. My difficulties are prefixed with a Q. Don't make AI teams larger than human teams, increase the difficulty or the econ rate instead. I support the Legion Expansion."
+        "!LOC:by Quitch. Version 4.57.0. My difficulties are prefixed with a Q. Don't make AI teams larger than human teams, increase the difficulty or the econ rate instead. I support the Legion Expansion."
       )
     );
   });

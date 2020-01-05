@@ -120,12 +120,16 @@ Below are recommendations for the difficulty you may wish to start on based on w
 
 When you need to increase the challenge, but don't want to increase the difficulty, give the AI an eco boost rather than adding more AIs. Not only will this be better for the sim, it'll stop the problem of there being less resources to go around for the AI which in turn makes it easier to beat. Alternatively, put the AIs into shared armies.
 
-| Vanilla    | Queller |
-| ---------- | ------- |
-| Normal     | Casual  |
-| Hard       | Silver  |
-| Relentless | Gold    |
-| Absurd     | Gold    |
+Comparison between vanilla difficulty and Queller difficulty:
+
+| Vanilla    | Queller | Eco |
+| ---------- | ------- | --- |
+| Normal     | Casual  | 1.0 |
+| Hard       | Silver  | 1.0 |
+| Relentless | Gold    | 0.8 |
+| Absurd     | Gold    | 1.0 |
+
+Suggestions based on 1v1 ranked position or challenge sought:
 
 | League   | Placement | Difficulty | Eco |
 | -------- | --------- | ---------- | --- |
@@ -136,8 +140,8 @@ When you need to increase the challenge, but don't want to increase the difficul
 | Silver   | Mid       | Uber       | 1.0 |
 | Silver   | High      | Uber       | 1.2 |
 | Gold     | Any       | Uber       | 1.4 |
-| Platinum | Any       | Uber       | 1.7 |
-| Uber     | Any       | Uber       | 2.0 |
+| Platinum | Any       | Uber       | 1.6 |
+| Uber     | Any       | Uber       | 1.8 |
 
 ## SUBPERSONALITIES
 
@@ -145,7 +149,6 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 
 ### 1v1
 
-- More willing to engage in battle
 - Slower to enter orbital
 
 ### Air

@@ -35,6 +35,45 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicAirFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "air",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicAirFactory"
+          },
+          {
+            "test_type": "FocusTargetThreatRatio",
+            "string0": "Air",
             "string1": "Air",
             "compare0": ">",
             "value0": 1
@@ -295,7 +334,7 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Air",
-            "string1": "Air",
+            "string1": "AntiAir",
             "compare0": ">",
             "value0": 1
           },
@@ -324,11 +363,15 @@
             "boolean": false
           },
           {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicAirFactory"
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "test_type": "FocusTargetThreatRatio",
             "string0": "Air",
             "string1": "Air",
             "compare0": ">",

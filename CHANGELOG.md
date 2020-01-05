@@ -1,8 +1,16 @@
 # CHANGELOG
 
+#### v4.57.0 - 2020-01-05
+
+- Increased flexibility in platoon composition
+- Uber 1v1 uses more T1 bots
+- Uber FFA can use vehicles earlier
+- Cleaned up obsolete build conditions
+- Changed how Uber is assessing the need for more air factories to avoid over-producing them
+
 #### v4.56.1 - 2019-12-22
 
-- Correct Uber reacting to an orbital-only presence with Icarus
+- Prevented Uber reacting to an orbital-only presence with Icarus
 - Uber won't build Excaliburs when its orbital position is immediately threatened
 - Uber only uses the Icarus strategy in the early game
 

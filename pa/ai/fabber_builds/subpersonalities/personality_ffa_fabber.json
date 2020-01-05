@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Uber Tank - Basic Vehicle Factory - Commander",
+      "name": "Uber FFA - Basic Vehicle Factory - Commander",
       "to_build": "BasicVehicleFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -12,7 +12,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "tank",
+            "string0": "ffa",
             "boolean": true
           },
           {
@@ -45,7 +45,7 @@
       }
     },
     {
-      "name": "Uber Tank - Basic Vehicle Factory - Fabber",
+      "name": "Uber FFA - Basic Vehicle Factory - Fabber",
       "to_build": "BasicVehicleFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -58,7 +58,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "tank",
+            "string0": "ffa",
             "boolean": true
           },
           {
@@ -91,7 +91,7 @@
       }
     },
     {
-      "name": "Legion - Uber Tank - Armor Foundry - Commander",
+      "name": "Legion - Uber FFA - Armor Foundry - Commander",
       "to_build": "LegionFactoryBasicVehicle",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -102,7 +102,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "tank",
+            "string0": "ffa",
             "boolean": true
           },
           {
@@ -139,7 +139,7 @@
       }
     },
     {
-      "name": "Legion - Uber Tank - Armor Foundry - Fabber",
+      "name": "Legion - Uber FFA - Armor Foundry - Fabber",
       "to_build": "LegionFactoryBasicVehicle",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -152,7 +152,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "tank",
+            "string0": "ffa",
             "boolean": true
           },
           {
