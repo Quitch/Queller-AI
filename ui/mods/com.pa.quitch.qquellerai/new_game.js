@@ -183,7 +183,7 @@ function qQuellerAI() {
       neural_data_mod: 0.75,
       adv_eco_mod: 0.85,
       adv_eco_mod_alone: 0,
-      personality_tags: ["uber"],
+      personality_tags: ["uber", "ffa"],
       min_basic_fabbers: 4,
       min_advanced_fabbers: 1
     },
