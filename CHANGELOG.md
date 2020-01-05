@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### DEV
+#### v4.57.0 - 2020-01-05
 
 - Increased flexibility in platoon composition
 - Uber 1v1 uses more T1 bots
