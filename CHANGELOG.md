@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### DEV
+
+- Uber priorises fixing energy issues over creating a defensive air force when alone
+
 #### v4.57.0 - 2020-01-05
 
 - Increased flexibility in platoon composition
