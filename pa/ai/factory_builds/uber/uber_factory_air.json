@@ -348,37 +348,13 @@
       ]
     },
     {
-      "name": "Uber - Icarus",
+      "name": "Uber - Icarus - Eco",
       "to_build": "SolarDrone",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 96,
+      "priority": 99,
       "builders": ["BasicAirFactory"],
       "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveEcoForAdvanced",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "(Tank - Custom1) | (Bot & Custom1) | Naval | Air",
-            "boolean": false
-          }
-        ],
         [
           {
             "test_type": "HasPersonalityTag",
@@ -415,6 +391,40 @@
             "test_type": "CurrentEnergyEfficiency",
             "compare0": "<",
             "value0": 1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Uber - Icarus",
+      "to_build": "SolarDrone",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 96,
+      "builders": ["BasicAirFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "(Tank - Custom1) | (Bot & Custom1) | Naval | Air",
+            "boolean": false
           }
         ]
       ]
