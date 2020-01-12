@@ -3,7 +3,6 @@
 #### DEV
 
 - Uber priorises fixing energy issues over creating a defensive air force when alone
-- Ensure AI does not give up if reduced to its commander and stuck on an asteroid. Thanks to Odinthegreat for reporting this
 - Correct minor error in Bronze Legion's handling of asteroids
 
 #### v4.57.0 - 2020-01-05
