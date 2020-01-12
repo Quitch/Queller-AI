@@ -1,5 +1,12 @@
 # CHANGELOG
 
+#### v4.58.0 - 2020-01-12
+
+- Uber priorises fixing energy issues over creating a defensive air force when alone
+- Try to ensure AI does not give up if reduced to its commander and stuck on an asteroid
+- Correct minor error in Bronze Legion's handling of asteroids
+- Bronze and Silver quicker to move fabbers to other planets
+
 #### v4.57.0 - 2020-01-05
 
 - Increased flexibility in platoon composition

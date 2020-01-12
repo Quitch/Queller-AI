@@ -36,6 +36,31 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionFactoryBasicAir"
           }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicAir"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Basic) - Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicAir"
+          }
         ]
       ],
       "placement_rules": {
@@ -66,10 +91,6 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetIsRespawnable",
-            "boolean": false
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -86,31 +107,6 @@
           {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory & Air",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionFactoryBasicAir"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsRespawnable",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionFactoryBasicAir"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Factory & Basic) - Orbital",
             "compare0": "<",
             "value0": 1
           },
