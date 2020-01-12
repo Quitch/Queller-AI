@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### DEV
+#### v4.58.0 - 2020-01-12
 
 - Uber priorises fixing energy issues over creating a defensive air force when alone
 - Try to ensure AI does not give up if reduced to its commander and stuck on an asteroid
