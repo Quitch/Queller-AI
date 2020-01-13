@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### DEV
+
+- Fixed Uber microing Bluehawks wrong
+
 #### v4.58.0 - 2020-01-12
 
 - Uber priorises fixing energy issues over creating a defensive air force when alone
