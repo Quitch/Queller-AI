@@ -151,7 +151,7 @@
     "Land_Attack_Small_Uber": {
       "units": [
         {
-          "unit_types": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - SelfDestruct - Deconstruction - Titan",
+          "unit_types": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - SelfDestruct - Deconstruction - Titan",
           "min_count": 0,
           "max_count": 3,
           "squad": "Fast"
@@ -169,7 +169,7 @@
           "squad": "General"
         },
         {
-          "unit_types": "(((Tank | Bot) & Mobile) & Artillery) - Titan",
+          "unit_types": "(Land & (Artillery | Tactical) & Mobile) - Titan",
           "min_count": 0,
           "max_count": -1,
           "squad": "Artillery"
@@ -181,13 +181,13 @@
           "squad": "Close"
         },
         {
-          "unit_types": "((Tank | Bot) & Mobile & AirDefense) - Titan",
+          "unit_types": "(Land & Mobile & AirDefense) - Titan",
           "min_count": 0,
           "percent": 0.15,
           "squad": "Defense"
         },
         {
-          "unit_types": "((Tank | Bot) & Mobile & (Construction | Scout)) - Titan",
+          "unit_types": "(Land & Mobile & (Construction | Scout)) - Titan",
           "min_count": 0,
           "percent": 0.05,
           "squad": "Defense"
@@ -197,7 +197,7 @@
     "Land_Attack_Medium_Uber": {
       "units": [
         {
-          "unit_types": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - SelfDestruct - Deconstruction - Titan",
+          "unit_types": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - SelfDestruct - Deconstruction - Titan",
           "min_count": 0,
           "max_count": 10,
           "squad": "Fast"
@@ -215,7 +215,7 @@
           "squad": "General"
         },
         {
-          "unit_types": "(((Tank | Bot) & Mobile) & Artillery) - Titan",
+          "unit_types": "(Land & (Artillery | Tactical) & Mobile) - Titan",
           "min_count": 0,
           "max_count": -1,
           "squad": "Artillery"
@@ -227,13 +227,13 @@
           "squad": "Close"
         },
         {
-          "unit_types": "((Tank | Bot) & Mobile & AirDefense) - Titan",
+          "unit_types": "(Land & Mobile & AirDefense) - Titan",
           "min_count": 0,
           "percent": 0.15,
           "squad": "Defense"
         },
         {
-          "unit_types": "((Tank | Bot) & Mobile & (Construction | Scout)) - Titan",
+          "unit_types": "(Land & Mobile & (Construction | Scout)) - Titan",
           "min_count": 0,
           "percent": 0.05,
           "squad": "Defense"
@@ -243,7 +243,7 @@
     "Land_Attack_Large_Uber": {
       "units": [
         {
-          "unit_types": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - SelfDestruct - Deconstruction - Titan",
+          "unit_types": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - SelfDestruct - Deconstruction - Titan",
           "min_count": 0,
           "max_count": 20,
           "squad": "Fast"
@@ -261,7 +261,7 @@
           "squad": "General"
         },
         {
-          "unit_types": "(((Tank | Bot) & Mobile) & Artillery) - Titan",
+          "unit_types": "(Land & (Artillery | Tactical) & Mobile) - Titan",
           "min_count": 0,
           "max_count": -1,
           "squad": "Artillery"
@@ -273,13 +273,13 @@
           "squad": "Close"
         },
         {
-          "unit_types": "((Tank | Bot) & Mobile & AirDefense) - Titan",
+          "unit_types": "(Land & Mobile & AirDefense) - Titan",
           "min_count": 0,
           "percent": 0.15,
           "squad": "Defense"
         },
         {
-          "unit_types": "((Tank | Bot) & Mobile & (Construction | Scout)) - Titan",
+          "unit_types": "(Land & Mobile & (Construction | Scout)) - Titan",
           "min_count": 0,
           "percent": 0.05,
           "squad": "Defense"
@@ -289,7 +289,7 @@
     "Land_Attack_XLarge_Uber": {
       "units": [
         {
-          "unit_types": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - SelfDestruct - Deconstruction - Titan",
+          "unit_types": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - SelfDestruct - Deconstruction - Titan",
           "min_count": 0,
           "max_count": 40,
           "squad": "Fast"
@@ -307,7 +307,7 @@
           "squad": "General"
         },
         {
-          "unit_types": "(((Tank | Bot) & Mobile) & Artillery) - Titan",
+          "unit_types": "(Land & (Artillery | Tactical) & Mobile) - Titan",
           "min_count": 0,
           "max_count": -1,
           "squad": "Artillery"
@@ -319,13 +319,13 @@
           "squad": "Close"
         },
         {
-          "unit_types": "((Tank | Bot) & Mobile & AirDefense) - Titan",
+          "unit_types": "(Land & Mobile & AirDefense) - Titan",
           "min_count": 0,
           "percent": 0.15,
           "squad": "Defense"
         },
         {
-          "unit_types": "((Tank | Bot) & Mobile & (Construction | Scout)) - Titan",
+          "unit_types": "(Land & Mobile & (Construction | Scout)) - Titan",
           "min_count": 0,
           "percent": 0.05,
           "squad": "Defense"
@@ -335,7 +335,7 @@
     "Land_Attack_Max_Uber": {
       "units": [
         {
-          "unit_types": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - SelfDestruct - Deconstruction - Titan",
+          "unit_types": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - SelfDestruct - Deconstruction - Titan",
           "min_count": 0,
           "max_count": -1,
           "squad": "Fast"
@@ -353,7 +353,7 @@
           "squad": "General"
         },
         {
-          "unit_types": "(((Tank | Bot) & Mobile) & Artillery) - Titan",
+          "unit_types": "(Land & (Artillery | Tactical) & Mobile) - Titan",
           "min_count": 0,
           "max_count": -1,
           "squad": "Artillery"
@@ -365,13 +365,13 @@
           "squad": "Close"
         },
         {
-          "unit_types": "((Tank | Bot) & Mobile & AirDefense) - Titan",
+          "unit_types": "(Land & Mobile & AirDefense) - Titan",
           "min_count": 0,
           "percent": 0.15,
           "squad": "Defense"
         },
         {
-          "unit_types": "((Tank | Bot) & Mobile & (Construction | Scout)) - Titan",
+          "unit_types": "(Land & Mobile & (Construction | Scout)) - Titan",
           "min_count": 0,
           "percent": 0.05,
           "squad": "Defense"
