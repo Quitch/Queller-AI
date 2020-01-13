@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### DEV
+#### v4.58.1 - 2020-01-13
 
 - Fixed Uber microing Bluehawks wrong
 
