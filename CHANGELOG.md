@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### DEV
+
+- Search for artillery placements from the perimeter bases first
+
 #### v4.58.1 - 2020-01-13
 
 - Fixed Uber microing Bluehawks wrong

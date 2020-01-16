@@ -7,7 +7,7 @@
       "min_num_assisters": 1,
       "max_num_assisters": 3,
       "priority": 255,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": ["AnyUberBasicFabber", "AnyUberAdvancedFabber"],
       "build_conditions": [
         [
@@ -107,7 +107,7 @@
       "min_num_assisters": 3,
       "max_num_assisters": 6,
       "priority": 360,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
