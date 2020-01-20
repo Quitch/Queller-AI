@@ -5,6 +5,7 @@
 - Search for artillery placements from the perimeter bases first
 - Much less fussy about titan placement
 - Fixed Casual running some checks it didn't need to
+- Gold and above won't launch a naval fleet with only combat barges in it
 
 #### v4.58.1 - 2020-01-13
 
