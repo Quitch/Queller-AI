@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### DEV
+
+- Minor tweaks to Titan builds
+
 #### v4.59.0 - 2020-01-20
 
 - Search for artillery placements from the perimeter bases first
