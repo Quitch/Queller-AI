@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### DEV
+#### v4.59.0 - 2020-01-20
 
 - Search for artillery placements from the perimeter bases first
 - Much less fussy about titan placement
