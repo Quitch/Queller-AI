@@ -4,6 +4,7 @@
 
 - Search for artillery placements from the perimeter bases first
 - Much less fussy about titan placement
+- Fixed Casual running some checks it didn't need to
 
 #### v4.58.1 - 2020-01-13
 
