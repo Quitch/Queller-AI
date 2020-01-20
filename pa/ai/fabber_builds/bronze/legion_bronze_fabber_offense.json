@@ -7,7 +7,7 @@
       "shared_instance_count": "LandDefence",
       "max_num_assisters": 5,
       "priority": 477,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": ["AnyLegionFabberBasic"],
       "build_conditions": [
         [
@@ -78,7 +78,7 @@
       "shared_instance_count": "SuperWeapon",
       "max_num_assisters": 10,
       "priority": 480,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
@@ -130,7 +130,7 @@
       "shared_instance_count": "SuperWeapon",
       "max_num_assisters": 10,
       "priority": 480,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [

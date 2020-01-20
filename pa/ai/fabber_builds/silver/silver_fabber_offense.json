@@ -7,7 +7,7 @@
       "shared_instance_count": "Defence",
       "max_num_assisters": 3,
       "priority": 250,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": ["AnyUberBasicFabber"],
       "build_conditions": [
         [
@@ -118,7 +118,7 @@
       "instance_count": 1,
       "max_num_assisters": 10,
       "priority": 480,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [

@@ -7,7 +7,7 @@
       "shared_instance_count": "Defence",
       "max_num_assisters": 3,
       "priority": 250,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": ["AnyLegionFabberBasic"],
       "build_conditions": [
         [
@@ -78,7 +78,7 @@
       "shared_instance_count": "Artillery",
       "max_num_assisters": 10,
       "priority": 480,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
@@ -130,7 +130,7 @@
       "shared_instance_count": "Artillery",
       "max_num_assisters": 10,
       "priority": 480,
-      "base_sort": "FromBuilder",
+      "base_sort": "FromPerimeter",
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [

@@ -1,5 +1,13 @@
 # CHANGELOG
 
+#### v4.59.0 - 2020-01-20
+
+- Search for artillery placements from the perimeter bases first
+- Much less fussy about titan placement
+- Fixed Casual running some checks it didn't need to
+- Gold and above won't launch a naval fleet with only combat barges in it
+- Improved how Queller handles naval maps at all difficulties
+
 #### v4.58.1 - 2020-01-13
 
 - Fixed Uber microing Bluehawks wrong
