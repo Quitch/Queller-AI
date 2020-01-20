@@ -25,6 +25,10 @@
             "boolean": false
           },
           {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "LegionFactoryBasicBot"
           },
@@ -97,6 +101,10 @@
             "boolean": false
           },
           {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "LegionFactoryBasicVehicle"
           },
@@ -165,6 +173,10 @@
             "boolean": true
           },
           {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory & Advanced - Orbital",
             "compare0": "<",
@@ -187,6 +199,10 @@
           },
           {
             "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
           {
@@ -258,6 +274,10 @@
             "boolean": true
           },
           {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory & Advanced - Orbital",
             "compare0": "<",
@@ -280,6 +300,10 @@
           },
           {
             "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
           {
