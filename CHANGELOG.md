@@ -2,7 +2,8 @@
 
 #### DEV
 
-- Minor tweaks to Titan builds
+- All difficulties give higher priority to titans
+- Adjusted how titans are placed for building
 
 #### v4.59.0 - 2020-01-20
 

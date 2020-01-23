@@ -7,8 +7,8 @@
       "min_num_assisters": 3,
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
-      "priority": 250,
-      "base_sort": "FromBuilder",
+      "priority": 480,
+      "base_sort": "FromPerimeter",
       "builders": [
         "AdvancedBotFabber",
         "UberSupportCommander",
@@ -33,6 +33,18 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": ">",
+            "value0": 2800
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": ">=",
+            "value0": 10
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "SeismicBot"
           }
@@ -55,8 +67,8 @@
       "min_num_assisters": 3,
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
-      "priority": 250,
-      "base_sort": "FromBuilder",
+      "priority": 480,
+      "base_sort": "FromPerimeter",
       "builders": ["AdvancedVehicleFabber", "OrbitalFabber"],
       "build_conditions": [
         [
@@ -75,6 +87,18 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": ">",
+            "value0": 2800
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": ">=",
+            "value0": 10
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -99,7 +123,7 @@
       "min_num_assisters": 3,
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
-      "priority": 250,
+      "priority": 480,
       "base_sort": "FromMainBase",
       "builders": ["AdvancedAirFabber", "OrbitalFabber"],
       "build_conditions": [
@@ -119,6 +143,18 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": ">",
+            "value0": 2800
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": ">=",
+            "value0": 10
           },
           {
             "test_type": "CanFindPlaceToBuild",
