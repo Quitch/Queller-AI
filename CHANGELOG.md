@@ -1,8 +1,8 @@
 # CHANGELOG
 
-#### DEV
+#### v4.59.1 - 2020-01-24
 
-- Minor tweaks to Titan builds
+- Correct Uber's Atlas build for the changes to water targeting
 
 #### v4.59.0 - 2020-01-20
 
