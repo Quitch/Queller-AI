@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### v4.59.1 - 2020-01-24
+
+- Correct Uber's Atlas build for the changes to water targeting
+
 #### v4.59.0 - 2020-01-20
 
 - Search for artillery placements from the perimeter bases first
