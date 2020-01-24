@@ -7,8 +7,8 @@
       "min_num_assisters": 3,
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
-      "priority": 480,
-      "base_sort": "FromPerimeter",
+      "priority": 250,
+      "base_sort": "FromBuilder",
       "builders": [
         "LegionBotAdvancedFabber",
         "LegionOrbitalBasicFabber",
@@ -33,18 +33,6 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": ">",
-            "value0": 2800
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber - Orbital",
-            "compare0": ">=",
-            "value0": 10
-          },
-          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionTitanAdvancedBot"
           }
@@ -67,8 +55,8 @@
       "min_num_assisters": 3,
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
-      "priority": 480,
-      "base_sort": "FromPerimeter",
+      "priority": 250,
+      "base_sort": "FromBuilder",
       "builders": ["LegionVehicleAdvancedFabber", "LegionOrbitalBasicFabber"],
       "build_conditions": [
         [
@@ -87,18 +75,6 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": ">",
-            "value0": 2800
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber - Orbital",
-            "compare0": ">=",
-            "value0": 10
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -123,7 +99,7 @@
       "min_num_assisters": 3,
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
-      "priority": 480,
+      "priority": 250,
       "base_sort": "FromMainBase",
       "builders": ["LegionAirAdvancedFabber", "LegionOrbitalBasicFabber"],
       "build_conditions": [
@@ -143,18 +119,6 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": ">",
-            "value0": 2800
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber - Orbital",
-            "compare0": ">=",
-            "value0": 10
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -179,7 +143,7 @@
       "min_num_assisters": 3,
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
-      "priority": 480,
+      "priority": 250,
       "base_sort": "FromMainBase",
       "builders": ["LegionOrbitalBasicFabber"],
       "build_conditions": [
@@ -193,25 +157,13 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": ">",
-            "value0": 2800
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber - Orbital",
-            "compare0": ">=",
-            "value0": 10
-          },
-          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionTitanAdvancedOrbital"
           }
         ]
       ],
       "placement_rules": {
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiOrbital",
           "compare_type": "<",

@@ -8,7 +8,7 @@
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
       "priority": 480,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": [
         "AdvancedBotFabber",
         "UberSupportCommander",
@@ -68,7 +68,7 @@
       "max_num_assisters": 15,
       "shared_instance_count": "Titan",
       "priority": 480,
-      "base_sort": "FromPerimeter",
+      "base_sort": "FromBuilder",
       "builders": ["AdvancedVehicleFabber", "OrbitalFabber"],
       "build_conditions": [
         [
