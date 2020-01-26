@@ -11,6 +11,7 @@
 - Fixed Uber MLA still being too paranoid about nukes on planets it hasn't scouted
 - Uber will only use combat fabbers for minesweeping when it has confirmed the existence of mines
 - Uber will only build orbital fabbers on multi-planet maps
+- Platinum and Uber only consider their current target when deciding whether or not to overbuild on air
 
 #### v4.59.1 - 2020-01-24
 
