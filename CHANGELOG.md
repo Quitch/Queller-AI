@@ -16,6 +16,7 @@
 - Further checks to prevent overbuilding of air by Platinum and Uber
 - Uber uses less Gil-E
 - Slight adjustments to Platinum and Uber's decision making process about their orbital launcher presence
+- Protect against some orbital edge cases
 
 #### v4.59.1 - 2020-01-24
 
