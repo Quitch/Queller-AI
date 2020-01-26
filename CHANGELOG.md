@@ -10,6 +10,7 @@
 - Platinum and Uber may build an orbital launcher to counter an orbital threat
 - Fixed Uber MLA still being too paranoid about nukes on planets it hasn't scouted
 - Uber will only use combat fabbers for minesweeping when it has confirmed the existence of mines
+- Platinum and Uber only build orbital factories on multi-planet maps
 
 #### v4.59.1 - 2020-01-24
 
