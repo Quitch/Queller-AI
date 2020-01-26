@@ -15,6 +15,7 @@
 - Replaced all checks using FocusTargetThreatRatio as it appears to be returning true under all circumstances
 - Further checks to prevent overbuilding of air by Platinum and Uber
 - Uber uses less Gil-E
+- Slight improvements to Platinum and Uber's decision making process about expanding their orbital launcher presence
 
 #### v4.59.1 - 2020-01-24
 

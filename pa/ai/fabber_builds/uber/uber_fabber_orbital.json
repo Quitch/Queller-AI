@@ -217,10 +217,6 @@
             "boolean": false
           },
           {
-            "test_type": "PresenceOnOtherPlanet",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetCount",
             "compare0": ">",
             "value0": 1
@@ -228,6 +224,12 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "OrbitalLauncher"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital - Naval",
+            "compare0": ">=",
+            "value0": 5
           },
           {
             "test_type": "UnitCountOnPlanet",
