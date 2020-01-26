@@ -14,6 +14,7 @@
 - Corrected missing checks for Platinum in its assessment of whether it needs additional air
 - Replaced all checks using FocusTargetThreatRatio as it appears to be returning true under all circumstances
 - Further checks to prevent overbuilding of air by Platinum and Uber
+- Uber uses less Gil-E
 
 #### v4.59.1 - 2020-01-24
 
