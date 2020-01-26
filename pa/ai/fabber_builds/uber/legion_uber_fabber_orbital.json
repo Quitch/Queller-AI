@@ -147,11 +147,10 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "test_type": "SystemThreat",
             "string0": "Orbital",
-            "string1": "AntiOrbital",
             "compare0": ">",
-            "value0": 1
+            "value0": 0
           },
           {
             "test_type": "CanAffordPotentialDrain",
