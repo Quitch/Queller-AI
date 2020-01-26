@@ -13,6 +13,7 @@
 - Uber will only build orbital fabbers on multi-planet maps
 - Corrected missing checks for Platinum in its assessment of whether it needs additional air
 - Replaced all checks using FocusTargetThreatRatio as it appears to be returning true under all circumstances
+- Further checks to prevent overbuilding of air by Platinum and Uber
 
 #### v4.59.1 - 2020-01-24
 
