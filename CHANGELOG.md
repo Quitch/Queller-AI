@@ -1,5 +1,10 @@
 # CHANGELOG
 
+#### DEV
+
+- Improved decision making by Gold, Platinum and Uber about when to expand their naval presence
+- Gold and Platinum more likely to try and get in the water if they don't have a naval presence and the enemy does
+
 #### v4.59.1 - 2020-01-24
 
 - Correct Uber's Atlas build for the changes to water targeting
