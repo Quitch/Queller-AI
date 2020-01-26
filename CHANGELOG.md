@@ -15,6 +15,7 @@
 - Replaced all checks using FocusTargetThreatRatio as it appears to be returning true under all circumstances
 - Further checks to prevent overbuilding of air by Platinum and Uber
 - Uber uses less Gil-E
+- Lowered the threat requirement for Uber to build titans
 
 #### v4.59.1 - 2020-01-24
 
