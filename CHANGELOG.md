@@ -7,6 +7,7 @@
 - Changed how Gold, Platinum and Uber measure the need for land and naval anti-air defences and units
 - Ensure Uber Naval is only building land units that are amphibious or hover
 - Platinum and Uber may build an orbital launcher to counter an orbital threat
+- Fixed Uber MLA still being too paranoid about nukes on planets it hasn't scouted
 
 #### v4.59.1 - 2020-01-24
 
