@@ -6,6 +6,7 @@
 - Gold and Platinum more likely to try and get in the water if they don't have a naval presence and the enemy does
 - Changed how Gold, Platinum and Uber measure the need for land and naval anti-air defences and units
 - Ensure Uber Naval is only building land units that are amphibious or hover
+- Removed Uber Air personality
 - Platinum and Uber may build an orbital launcher to counter an orbital threat
 - Fixed Uber MLA still being too paranoid about nukes on planets it hasn't scouted
 - Uber will only use combat fabbers for minesweeping when it has confirmed the existence of mines
