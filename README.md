@@ -150,30 +150,33 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 ### 1v1
 
 - Slower to enter orbital
-
-### Air
-
-- Unrestricted air usage
+- Uses more T1 bots
+- May use a more aggressive opening
 
 ### Bot
 
 - Doesn't build vehicle factories
+- May use a more aggressive opening
 
 ### Free For All
 
 - More cautious about engaging in battle
 - Techs earlier
 - Orbital earlier
+- May open with a vehicle factory
+- Avoids antagonistic scouting raids
 
 ### Naval
 
-- Attempts to build a naval factory first
+- Uses naval opening if possible
 - Unrestricted naval usage
+- Only uses amphibious and hover units from land factories
 
 ### Rush
 
 - Techs late
 - Slower to enter orbital
+- May use a more aggressive opening
 
 ### Tank
 
