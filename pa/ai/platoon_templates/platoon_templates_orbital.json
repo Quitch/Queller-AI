@@ -1,14 +1,5 @@
 {
   "platoon_templates": {
-    "Orbital_Fighter_Attack_Queller": {
-      "units": [
-        {
-          "unit_types": "Orbital & Fighter & Mobile - Titan",
-          "min_count": 1,
-          "max_count": -1
-        }
-      ]
-    },
     "Orbital_Ground_Attack_Queller": {
       "units": [
         {
@@ -18,18 +9,10 @@
         }
       ]
     },
-    "Orbital_Scout_Queller": {
+    "Orbital_Fighter_Attack_Queller": {
       "units": [
         {
-          "unit_types": "Orbital & (Recon | Scout) & Mobile",
-          "max_count": 1
-        }
-      ]
-    },
-    "Orbital_Transfer_Queller": {
-      "units": [
-        {
-          "unit_types": "Orbital & (Fighter | LaserPlatform) & Mobile - Titan",
+          "unit_types": "Orbital & Fighter & Mobile - Titan",
           "min_count": 1,
           "max_count": -1
         }
