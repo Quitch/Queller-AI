@@ -109,7 +109,7 @@
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiAir",
             "compare0": "<=",
-            "value0": 300
+            "value0": 400
           },
           {
             "test_type": "UnitPoolCount",
@@ -137,8 +137,8 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Air",
-            "compare0": "<=",
-            "value0": 375
+            "compare0": "<",
+            "value0": 150
           },
           {
             "test_type": "UnitPoolCount",
@@ -176,7 +176,7 @@
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiAir",
             "compare0": "<=",
-            "value0": 630
+            "value0": 720
           },
           {
             "test_type": "UnitPoolCount",
@@ -211,7 +211,7 @@
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Air",
             "compare0": "<=",
-            "value0": 750
+            "value0": 600
           },
           {
             "test_type": "UnitPoolCount",
@@ -254,8 +254,8 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 1400
+            "compare0": "<=",
+            "value0": 1200
           },
           {
             "test_type": "UnitPoolCount",
@@ -289,7 +289,7 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Air",
-            "compare0": "<",
+            "compare0": "<=",
             "value0": 1500
           },
           {
@@ -333,8 +333,8 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 2800
+            "compare0": "<=",
+            "value0": 2000
           },
           {
             "test_type": "UnitPoolCount",
@@ -368,7 +368,7 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Air",
-            "compare0": "<",
+            "compare0": "<=",
             "value0": 3000
           },
           {
@@ -376,85 +376,6 @@
             "unit_type_string0": "Air & (Fighter | SelfDestruct)",
             "compare0": ">=",
             "value0": 20
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Mobile & Offense - MissileDefense - Fighter - SelfDestruct - Titan",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsBomber",
-            "string0": "WL_AnySurface",
-            "string1": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "BomberAttack"
-    },
-    {
-      "name": "Uber - Bomber-Gunship Attack Platoon 30",
-      "to_build": "BomberGunship_Attack_Queller",
-      "instance_count": -1,
-      "priority": 150,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 4200
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Mobile & (Fighter | SelfDestruct) - Titan",
-            "compare0": ">=",
-            "value0": 30
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Mobile & Offense - MissileDefense - Fighter - SelfDestruct - Titan",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsBomber",
-            "string0": "WL_AnySurface",
-            "string1": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Air",
-            "compare0": "<",
-            "value0": 4500
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Mobile & (Fighter | SelfDestruct) - Titan",
-            "compare0": ">=",
-            "value0": 30
           },
           {
             "test_type": "UnitPoolCount",
@@ -530,7 +451,7 @@
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiAir",
             "compare0": "<=",
-            "value0": 300
+            "value0": 400
           },
           {
             "test_type": "UnitPoolCount",
@@ -558,8 +479,8 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Air",
-            "compare0": "<=",
-            "value0": 375
+            "compare0": "<",
+            "value0": 150
           },
           {
             "test_type": "UnitPoolCount",
@@ -588,7 +509,7 @@
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiAir",
             "compare0": "<=",
-            "value0": 300
+            "value0": 400
           },
           {
             "test_type": "UnitPoolCount",
@@ -617,8 +538,8 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Air",
-            "compare0": "<=",
-            "value0": 375
+            "compare0": "<",
+            "value0": 150
           },
           {
             "test_type": "UnitPoolCount",
@@ -657,7 +578,7 @@
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiAir",
             "compare0": "<=",
-            "value0": 630
+            "value0": 720
           },
           {
             "test_type": "UnitPoolCount",
@@ -686,7 +607,7 @@
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Air",
             "compare0": "<=",
-            "value0": 750
+            "value0": 600
           },
           {
             "test_type": "UnitPoolCount",
@@ -715,7 +636,7 @@
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiAir",
             "compare0": "<=",
-            "value0": 630
+            "value0": 720
           },
           {
             "test_type": "UnitPoolCount",
@@ -745,7 +666,7 @@
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Air",
             "compare0": "<=",
-            "value0": 750
+            "value0": 600
           },
           {
             "test_type": "UnitPoolCount",
@@ -783,8 +704,8 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 1400
+            "compare0": "<=",
+            "value0": 1200
           },
           {
             "test_type": "UnitPoolCount",
@@ -812,7 +733,7 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Air",
-            "compare0": "<",
+            "compare0": "<=",
             "value0": 1500
           },
           {
@@ -841,8 +762,8 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 1000
+            "compare0": "<=",
+            "value0": 1200
           },
           {
             "test_type": "UnitPoolCount",
@@ -871,7 +792,7 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Air",
-            "compare0": "<",
+            "compare0": "<=",
             "value0": 1500
           },
           {
@@ -910,8 +831,8 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 2800
+            "compare0": "<=",
+            "value0": 2000
           },
           {
             "test_type": "UnitPoolCount",
@@ -939,7 +860,7 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Air",
-            "compare0": "<",
+            "compare0": "<=",
             "value0": 3000
           },
           {
@@ -968,8 +889,8 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 2800
+            "compare0": "<=",
+            "value0": 2000
           },
           {
             "test_type": "UnitPoolCount",
@@ -998,7 +919,7 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Air",
-            "compare0": "<",
+            "compare0": "<=",
             "value0": 3000
           },
           {
@@ -1006,133 +927,6 @@
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
             "value0": 20
-          },
-          {
-            "test_type": "CanProvideAirSupportWithPoolUnits",
-            "string0": "fighter_attack",
-            "string1": "WL_Air",
-            "string2": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "FighterAttack"
-    },
-    {
-      "name": "Uber - Fighter Attack Platoon 30",
-      "to_build": "Fighter_Attack_Queller",
-      "instance_count": -1,
-      "priority": 150,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 4200
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 30
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsFighter",
-            "string0": "WL_Air",
-            "string1": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Air",
-            "compare0": "<",
-            "value0": 4500
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 30
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsFighter",
-            "string0": "WL_Air",
-            "string1": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 4200
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 30
-          },
-          {
-            "test_type": "CanProvideAirSupportWithPoolUnits",
-            "string0": "fighter_attack",
-            "string1": "WL_Air",
-            "string2": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Air",
-            "compare0": "<",
-            "value0": 4500
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 30
           },
           {
             "test_type": "CanProvideAirSupportWithPoolUnits",
