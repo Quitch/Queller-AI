@@ -94,10 +94,10 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Silver - Land Attack Platoon 10",
-      "to_build": "Land_Attack_Queller",
+      "name": "Silver - Land Attack Platoon Large",
+      "to_build": "Land_Attack_Large_Queller",
       "instance_count": -1,
-      "priority": 130,
+      "priority": 102,
       "build_conditions": [
         [
           {
@@ -132,10 +132,10 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Silver - Land Attack Platoon 20",
-      "to_build": "Land_Attack_Queller",
+      "name": "Silver - Land Attack Platoon XLarge",
+      "to_build": "Land_Attack_XLarge_Queller",
       "instance_count": -1,
-      "priority": 120,
+      "priority": 101,
       "build_conditions": [
         [
           {
@@ -170,46 +170,8 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Silver - Land Attack Platoon 30",
-      "to_build": "Land_Attack_Queller",
-      "instance_count": -1,
-      "priority": 110,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": "<",
-            "value0": 16800
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Tank | Bot) & Mobile) - Hover - Fabber - AirDefense - Construction - Deconstruction - SelfDestruct - Titan",
-            "compare0": ">=",
-            "value0": 30
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "LandAttack"
-    },
-    {
-      "name": "Silver - Land Attack Platoon 40",
-      "to_build": "Land_Attack_Queller",
+      "name": "Silver - Land Attack Platoon Max",
+      "to_build": "Land_Attack_Max_Queller",
       "instance_count": -1,
       "priority": 100,
       "build_conditions": [

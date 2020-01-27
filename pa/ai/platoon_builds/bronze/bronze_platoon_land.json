@@ -94,10 +94,10 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Bronze - Land Attack Platoon 20",
-      "to_build": "Land_Attack_Queller",
+      "name": "Bronze - Land Attack Platoon XLarge",
+      "to_build": "Land_Attack_XLarge_Queller",
       "instance_count": -1,
-      "priority": 110,
+      "priority": 101,
       "build_conditions": [
         [
           {
@@ -132,8 +132,8 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Bronze - Land Attack Maximum Power",
-      "to_build": "Land_Attack_Queller",
+      "name": "Bronze - Land Attack Platoon Max",
+      "to_build": "Land_Attack_Max_Queller",
       "instance_count": -1,
       "priority": 100,
       "build_conditions": [
@@ -149,7 +149,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
+            "unit_type_string0": "((Tank | Bot) & Mobile) - Hover - Fabber - AirDefense - Construction - Deconstruction - SelfDestruct - Titan",
             "compare0": ">=",
             "value0": 40
           },
