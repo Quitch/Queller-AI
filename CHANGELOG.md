@@ -18,6 +18,7 @@
 - Slight adjustments to Platinum and Uber's decision making process about their orbital launcher presence
 - Protect against some orbital edge cases
 - Fixed hover and amphibious platoons sometimes being formed after land armies causing them to get stuck on islands
+- Bronze Commander doesn't continue to build bot factories when alone
 
 #### v4.59.1 - 2020-01-24
 
