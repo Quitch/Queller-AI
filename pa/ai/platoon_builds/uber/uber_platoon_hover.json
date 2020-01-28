@@ -1,10 +1,10 @@
 {
   "build_list": [
     {
-      "name": "Uber - Hover Attack Platoon",
-      "to_build": "Hover_Attack_Queller",
+      "name": "Uber - Amphibious Attack Platoon Small",
+      "to_build": "Amphibious_Attack_Small_Queller",
       "instance_count": -1,
-      "priority": 197,
+      "priority": 125,
       "build_conditions": [
         [
           {
@@ -18,7 +18,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Hover & Mobile - Titan - Deconstruction - (Tank & Advanced & Custom1)",
+            "unit_type_string0": "((Bot | (Tank & Sub)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - Hover - Fighter - Deconstruction - SelfDestruct - Titan",
             "compare0": ">=",
             "value0": 1
           },
@@ -33,10 +33,10 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Amphibious Attack Platoon",
-      "to_build": "Amphibious_Attack_Queller",
+      "name": "Uber - Amphibious Attack Platoon Medium",
+      "to_build": "Amphibious_Attack_Medium_Queller",
       "instance_count": -1,
-      "priority": 193,
+      "priority": 124,
       "build_conditions": [
         [
           {
@@ -49,15 +49,10 @@
             "boolean": true
           },
           {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Naval | (Sub - Land)",
-            "boolean": true
-          },
-          {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Hover | Sub) & Land - Titan - Deconstruction",
+            "unit_type_string0": "((Bot | (Tank & Sub)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - Hover - Fighter - Deconstruction - SelfDestruct - Titan",
             "compare0": ">=",
-            "value0": 1
+            "value0": 4
           },
           {
             "test_type": "CanAttackWithPoolUnitsLand",
@@ -70,16 +65,341 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Swarm Raid Platoon",
-      "to_build": "Swarm_Raid_Queller",
+      "name": "Uber - Amphibious Attack Platoon Large",
+      "to_build": "Amphibious_Attack_Large_Queller",
       "instance_count": -1,
-      "priority": 198,
+      "priority": 123,
       "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "((Bot | (Tank & Sub)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - Hover - Fighter - Deconstruction - SelfDestruct - Titan",
+            "compare0": ">=",
+            "value0": 10
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Amphibious Attack Platoon XLarge",
+      "to_build": "Amphibious_Attack_XLarge_Queller",
+      "instance_count": -1,
+      "priority": 122,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "((Bot | (Tank & Sub)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - Hover - Fighter - Deconstruction - SelfDestruct - Titan",
+            "compare0": ">=",
+            "value0": 20
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Amphibious Attack Platoon Huge",
+      "to_build": "Amphibious_Attack_Huge_Queller",
+      "instance_count": -1,
+      "priority": 121,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "((Bot | (Tank & Sub)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - Hover - Fighter - Deconstruction - SelfDestruct - Titan",
+            "compare0": ">=",
+            "value0": 30
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Amphibious Attack Platoon Max",
+      "to_build": "Amphibious_Attack_Max_Queller",
+      "instance_count": -1,
+      "priority": 120,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "((Bot | (Tank & Sub)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - Hover - Fighter - Deconstruction - SelfDestruct - Titan",
+            "compare0": ">=",
+            "value0": 40
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Hover Attack Platoon Small",
+      "to_build": "Hover_Attack_Small_Queller",
+      "instance_count": -1,
+      "priority": 125,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Hover & Mobile - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Hover Attack Platoon Medium",
+      "to_build": "Hover_Attack_Medium_Queller",
+      "instance_count": -1,
+      "priority": 124,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Hover & Mobile - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 4
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Hover Attack Platoon Large",
+      "to_build": "Hover_Attack_Large_Queller",
+      "instance_count": -1,
+      "priority": 123,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Hover & Mobile - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 10
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Hover Attack Platoon XLarge",
+      "to_build": "Hover_Attack_XLarge_Queller",
+      "instance_count": -1,
+      "priority": 122,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Hover & Mobile - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 20
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Hover Attack Platoon Huge",
+      "to_build": "Hover_Attack_Huge_Queller",
+      "instance_count": -1,
+      "priority": 121,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Hover & Mobile - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 30
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Hover Attack Platoon Max",
+      "to_build": "Hover_Attack_Max_Queller",
+      "instance_count": -1,
+      "priority": 120,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Hover & Mobile - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 40
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Swarm Attack Platoon Small",
+      "to_build": "Swarm_Attack_Small",
+      "instance_count": -1,
+      "priority": 125,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "tank",
+            "boolean": false
           },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
@@ -95,7 +415,384 @@
             "test_type": "CanAttackWithPoolUnitsLand",
             "string0": "WL_AnySurface",
             "string1": "WL_AnySurface",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Swarm Attack Platoon Medium",
+      "to_build": "Swarm_Attack_Medium",
+      "instance_count": -1,
+      "priority": 124,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "tank",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & Deconstruction",
+            "compare0": ">=",
+            "value0": 4
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Swarm Attack Platoon Large",
+      "to_build": "Swarm_Attack_Large",
+      "instance_count": -1,
+      "priority": 123,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "tank",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & Deconstruction",
+            "compare0": ">=",
+            "value0": 10
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Swarm Attack Platoon XLarge",
+      "to_build": "Swarm_Attack_XLarge_Queller",
+      "instance_count": -1,
+      "priority": 122,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "tank",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & Deconstruction",
+            "compare0": ">=",
+            "value0": 20
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Swarm Attack Platoon Huge",
+      "to_build": "Swarm_Attack_Huge_Queller",
+      "instance_count": -1,
+      "priority": 121,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "tank",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & Deconstruction",
+            "compare0": ">=",
+            "value0": 30
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Swarm Attack Platoon Max",
+      "to_build": "Swarm_Attack_Max",
+      "instance_count": -1,
+      "priority": 120,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "tank",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & Deconstruction",
+            "compare0": ">=",
+            "value0": 40
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Necromancer Attack Platoon Small",
+      "to_build": "Necromancer_Attack_Small_Queller",
+      "instance_count": -1,
+      "priority": 125,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & SelfDestruct & Advanced & Custom1",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Necromancer Attack Platoon Medium",
+      "to_build": "Necromancer_Attack_Medium_Queller",
+      "instance_count": -1,
+      "priority": 124,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & SelfDestruct & Advanced & Custom1",
+            "compare0": ">=",
+            "value0": 4
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Necromancer Attack Platoon Large",
+      "to_build": "Necromancer_Attack_Large_Queller",
+      "instance_count": -1,
+      "priority": 123,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & SelfDestruct & Advanced & Custom1",
+            "compare0": ">=",
+            "value0": 10
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Necromancer Attack Platoon XLarge",
+      "to_build": "Necromancer_Attack_XLarge_Queller",
+      "instance_count": -1,
+      "priority": 122,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & SelfDestruct & Advanced & Custom1",
+            "compare0": ">=",
+            "value0": 20
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Necromancer Attack Platoon Huge",
+      "to_build": "Necromancer_Attack_Huge_Queller",
+      "instance_count": -1,
+      "priority": 121,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & SelfDestruct & Advanced & Custom1",
+            "compare0": ">=",
+            "value0": 30
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Uber - Necromancer Attack Platoon Max",
+      "to_build": "Necromancer_Attack_Max_Queller",
+      "instance_count": -1,
+      "priority": 120,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & SelfDestruct & Advanced & Custom1",
+            "compare0": ">=",
+            "value0": 40
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "Mobile | Structure"
           }
         ]
       ],

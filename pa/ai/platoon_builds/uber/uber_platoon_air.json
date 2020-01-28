@@ -1,67 +1,10 @@
 {
   "build_list": [
     {
-      "name": "Uber - Air Scout Platoon",
-      "to_build": "Air_Scout_Queller",
-      "instance_count": -1,
-      "priority": 200,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & Scout",
-            "compare0": ">=",
-            "value0": 1
-          }
-        ]
-      ],
-      "task_type": "Scout"
-    },
-    {
-      "name": "Uber - Fighter Scout Platoon",
-      "to_build": "Fighter_Scout_Queller",
-      "instance_count": 2,
-      "priority": 100,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "ffa",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & Fighter & Basic",
-            "compare0": ">=",
-            "value0": 1
-          }
-        ]
-      ],
-      "task_type": "Scout"
-    },
-    {
       "name": "Uber - Icarus Attack Platoon",
       "to_build": "Icarus_Attack_Queller",
       "instance_count": -1,
-      "priority": 200,
+      "priority": 110,
       "build_conditions": [
         [
           {
@@ -90,10 +33,10 @@
       "task_type": "BomberAttack"
     },
     {
-      "name": "Uber - Bomber-Gunship Attack Platoon 1",
-      "to_build": "BomberGunship_Attack_Queller",
+      "name": "Uber - Bomber-Gunship Attack Platoon Small",
+      "to_build": "BomberGunship_Attack_Small_Queller",
       "instance_count": -1,
-      "priority": 104,
+      "priority": 105,
       "build_conditions": [
         [
           {
@@ -157,10 +100,10 @@
       "task_type": "BomberAttack"
     },
     {
-      "name": "Uber - Bomber-Gunship Attack Platoon 4",
-      "to_build": "BomberGunship_Attack_Queller",
+      "name": "Uber - Bomber-Gunship Attack Platoon Medium",
+      "to_build": "BomberGunship_Attack_Medium_Queller",
       "instance_count": -1,
-      "priority": 103,
+      "priority": 104,
       "build_conditions": [
         [
           {
@@ -236,10 +179,10 @@
       "task_type": "BomberAttack"
     },
     {
-      "name": "Uber - Bomber-Gunship Attack Platoon 10",
-      "to_build": "BomberGunship_Attack_Queller",
+      "name": "Uber - Bomber-Gunship Attack Platoon Large",
+      "to_build": "BomberGunship_Attack_Large_Queller",
       "instance_count": -1,
-      "priority": 102,
+      "priority": 103,
       "build_conditions": [
         [
           {
@@ -315,10 +258,10 @@
       "task_type": "BomberAttack"
     },
     {
-      "name": "Uber - Bomber-Gunship Attack Platoon 20",
-      "to_build": "BomberGunship_Attack_Queller",
+      "name": "Uber - Bomber-Gunship Attack Platoon XLarge",
+      "to_build": "BomberGunship_Attack_XLarge_Queller",
       "instance_count": -1,
-      "priority": 101,
+      "priority": 102,
       "build_conditions": [
         [
           {
@@ -394,8 +337,87 @@
       "task_type": "BomberAttack"
     },
     {
-      "name": "Uber - Bomber-Gunship Attack Platoon 40",
-      "to_build": "BomberGunship_Attack_Queller",
+      "name": "Uber - Bomber-Gunship Attack Platoon Huge",
+      "to_build": "BomberGunship_Attack_Huge_Queller",
+      "instance_count": -1,
+      "priority": 101,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<=",
+            "value0": 3000
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & (Fighter | SelfDestruct)",
+            "compare0": ">=",
+            "value0": 30
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Mobile & Offense - MissileDefense - Fighter - SelfDestruct - Titan",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsBomber",
+            "string0": "WL_AnySurface",
+            "string1": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Air",
+            "compare0": "<=",
+            "value0": 4500
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & (Fighter | SelfDestruct)",
+            "compare0": ">=",
+            "value0": 30
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Mobile & Offense - MissileDefense - Fighter - SelfDestruct - Titan",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsBomber",
+            "string0": "WL_AnySurface",
+            "string1": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "BomberAttack"
+    },
+    {
+      "name": "Uber - Bomber-Gunship Attack Platoon Max",
+      "to_build": "BomberGunship_Attack_Max_Queller",
       "instance_count": -1,
       "priority": 100,
       "build_conditions": [
@@ -432,8 +454,135 @@
       "task_type": "BomberAttack"
     },
     {
-      "name": "Uber - Fighter Attack Platoon 1",
-      "to_build": "Fighter_Attack_Queller",
+      "name": "Uber - Fighter Attack Platoon Small",
+      "to_build": "Fighter_Attack_Small_Queller",
+      "instance_count": -1,
+      "priority": 105,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<=",
+            "value0": 400
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Fighter",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsFighter",
+            "string0": "WL_Air",
+            "string1": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Air",
+            "compare0": "<",
+            "value0": 150
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Fighter",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsFighter",
+            "string0": "WL_Air",
+            "string1": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<=",
+            "value0": 400
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Fighter",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanProvideAirSupportWithPoolUnits",
+            "string0": "fighter_attack",
+            "string1": "WL_Air",
+            "string2": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Air",
+            "compare0": "<",
+            "value0": 150
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Fighter",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanProvideAirSupportWithPoolUnits",
+            "string0": "fighter_attack",
+            "string1": "WL_Air",
+            "string2": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "FighterAttack"
+    },
+    {
+      "name": "Uber - Fighter Attack Platoon Medium",
+      "to_build": "Fighter_Attack_Medium_Queller",
       "instance_count": -1,
       "priority": 104,
       "build_conditions": [
@@ -451,13 +600,13 @@
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiAir",
             "compare0": "<=",
-            "value0": 400
+            "value0": 720
           },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
-            "value0": 1
+            "value0": 4
           },
           {
             "test_type": "CanAttackWithPoolUnitsFighter",
@@ -479,14 +628,14 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Air",
-            "compare0": "<",
-            "value0": 150
+            "compare0": "<=",
+            "value0": 600
           },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
-            "value0": 1
+            "value0": 4
           },
           {
             "test_type": "CanAttackWithPoolUnitsFighter",
@@ -509,13 +658,13 @@
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiAir",
             "compare0": "<=",
-            "value0": 400
+            "value0": 720
           },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
-            "value0": 1
+            "value0": 4
           },
           {
             "test_type": "CanProvideAirSupportWithPoolUnits",
@@ -538,14 +687,14 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Air",
-            "compare0": "<",
-            "value0": 150
+            "compare0": "<=",
+            "value0": 600
           },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
-            "value0": 1
+            "value0": 4
           },
           {
             "test_type": "CanProvideAirSupportWithPoolUnits",
@@ -559,8 +708,8 @@
       "task_type": "FighterAttack"
     },
     {
-      "name": "Uber - Fighter Attack Platoon 4",
-      "to_build": "Fighter_Attack_Queller",
+      "name": "Uber - Fighter Attack Platoon Large",
+      "to_build": "Fighter_Attack_Large_Queller",
       "instance_count": -1,
       "priority": 103,
       "build_conditions": [
@@ -578,13 +727,13 @@
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiAir",
             "compare0": "<=",
-            "value0": 720
+            "value0": 1200
           },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
-            "value0": 4
+            "value0": 10
           },
           {
             "test_type": "CanAttackWithPoolUnitsFighter",
@@ -607,13 +756,13 @@
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Air",
             "compare0": "<=",
-            "value0": 600
+            "value0": 1500
           },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
-            "value0": 4
+            "value0": 10
           },
           {
             "test_type": "CanAttackWithPoolUnitsFighter",
@@ -636,13 +785,13 @@
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiAir",
             "compare0": "<=",
-            "value0": 720
+            "value0": 1200
           },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
-            "value0": 4
+            "value0": 10
           },
           {
             "test_type": "CanProvideAirSupportWithPoolUnits",
@@ -666,13 +815,13 @@
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Air",
             "compare0": "<=",
-            "value0": 600
+            "value0": 1500
           },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
-            "value0": 4
+            "value0": 10
           },
           {
             "test_type": "CanProvideAirSupportWithPoolUnits",
@@ -686,8 +835,8 @@
       "task_type": "FighterAttack"
     },
     {
-      "name": "Uber - Fighter Attack Platoon 10",
-      "to_build": "Fighter_Attack_Queller",
+      "name": "Uber - Fighter Attack Platoon XLarge",
+      "to_build": "Fighter_Attack_XLarge_Queller",
       "instance_count": -1,
       "priority": 102,
       "build_conditions": [
@@ -705,13 +854,13 @@
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiAir",
             "compare0": "<=",
-            "value0": 1200
+            "value0": 2000
           },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
-            "value0": 10
+            "value0": 20
           },
           {
             "test_type": "CanAttackWithPoolUnitsFighter",
@@ -734,13 +883,13 @@
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Air",
             "compare0": "<=",
-            "value0": 1500
+            "value0": 3000
           },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
-            "value0": 10
+            "value0": 20
           },
           {
             "test_type": "CanAttackWithPoolUnitsFighter",
@@ -763,13 +912,13 @@
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiAir",
             "compare0": "<=",
-            "value0": 1200
+            "value0": 2000
           },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
-            "value0": 10
+            "value0": 20
           },
           {
             "test_type": "CanProvideAirSupportWithPoolUnits",
@@ -793,13 +942,13 @@
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Air",
             "compare0": "<=",
-            "value0": 1500
+            "value0": 3000
           },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
-            "value0": 10
+            "value0": 20
           },
           {
             "test_type": "CanProvideAirSupportWithPoolUnits",
@@ -813,8 +962,8 @@
       "task_type": "FighterAttack"
     },
     {
-      "name": "Uber - Fighter Attack Platoon 20",
-      "to_build": "Fighter_Attack_Queller",
+      "name": "Uber - Fighter Attack Platoon Huge",
+      "to_build": "Fighter_Attack_Huge_Queller",
       "instance_count": -1,
       "priority": 101,
       "build_conditions": [
@@ -832,13 +981,13 @@
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiAir",
             "compare0": "<=",
-            "value0": 2000
+            "value0": 3000
           },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
-            "value0": 20
+            "value0": 30
           },
           {
             "test_type": "CanAttackWithPoolUnitsFighter",
@@ -861,13 +1010,13 @@
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Air",
             "compare0": "<=",
-            "value0": 3000
+            "value0": 4500
           },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
-            "value0": 20
+            "value0": 30
           },
           {
             "test_type": "CanAttackWithPoolUnitsFighter",
@@ -890,13 +1039,13 @@
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiAir",
             "compare0": "<=",
-            "value0": 2000
+            "value0": 3000
           },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
-            "value0": 20
+            "value0": 30
           },
           {
             "test_type": "CanProvideAirSupportWithPoolUnits",
@@ -920,13 +1069,13 @@
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Air",
             "compare0": "<=",
-            "value0": 3000
+            "value0": 4500
           },
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
             "compare0": ">=",
-            "value0": 20
+            "value0": 30
           },
           {
             "test_type": "CanProvideAirSupportWithPoolUnits",
@@ -940,8 +1089,8 @@
       "task_type": "FighterAttack"
     },
     {
-      "name": "Uber - Fighter Attack Platoon 40",
-      "to_build": "Fighter_Attack_Queller",
+      "name": "Uber - Fighter Attack Platoon Max",
+      "to_build": "Fighter_Attack_Max_Queller",
       "instance_count": -1,
       "priority": 100,
       "build_conditions": [
