@@ -28,7 +28,7 @@ function qQuellerAI() {
       factory_build_delay_min: 0,
       factory_build_delay_max: 12,
       per_expansion_delay: 60,
-      personality_tags: ["queller", "casual"],
+      personality_tags: ["casual"],
       min_basic_fabbers: 10,
       min_advanced_fabbers: 3
     },
@@ -47,7 +47,7 @@ function qQuellerAI() {
       adv_eco_mod_alone: 0,
       factory_build_delay_min: 0,
       factory_build_delay_max: 6,
-      personality_tags: ["queller", "bronze"],
+      personality_tags: ["bronze"],
       min_basic_fabbers: 5,
       min_advanced_fabbers: 3
     },
@@ -64,7 +64,7 @@ function qQuellerAI() {
       neural_data_mod: 1.45,
       adv_eco_mod: 1.0,
       adv_eco_mod_alone: 0,
-      personality_tags: ["queller", "silver"],
+      personality_tags: ["silver"],
       min_basic_fabbers: 4,
       min_advanced_fabbers: 3
     },
@@ -81,7 +81,7 @@ function qQuellerAI() {
       neural_data_mod: 1.3,
       adv_eco_mod: 1.0,
       adv_eco_mod_alone: 0,
-      personality_tags: ["queller", "gold"],
+      personality_tags: ["gold"],
       min_basic_fabbers: 3,
       min_advanced_fabbers: 2
     },
@@ -98,7 +98,7 @@ function qQuellerAI() {
       neural_data_mod: 1.15,
       adv_eco_mod: 1.0,
       adv_eco_mod_alone: 0,
-      personality_tags: ["queller", "platinum"],
+      personality_tags: ["platinum"],
       min_basic_fabbers: 2,
       min_advanced_fabbers: 2
     },
@@ -115,7 +115,7 @@ function qQuellerAI() {
       neural_data_mod: 1.0,
       adv_eco_mod: 1.0,
       adv_eco_mod_alone: 0,
-      personality_tags: ["queller", "uber"],
+      personality_tags: ["uber"],
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1
     },
@@ -132,7 +132,7 @@ function qQuellerAI() {
       neural_data_mod: 1.0,
       adv_eco_mod: 1.0,
       adv_eco_mod_alone: 0,
-      personality_tags: ["queller", "uber", "1v1", "doublebot", "lateorbital"],
+      personality_tags: ["uber", "1v1", "doublebot", "lateorbital"],
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1
     },
@@ -149,7 +149,7 @@ function qQuellerAI() {
       neural_data_mod: 0.5,
       adv_eco_mod: 1.0,
       adv_eco_mod_alone: 0,
-      personality_tags: ["queller", "uber", "bot", "doublebot"],
+      personality_tags: ["uber", "bot", "doublebot"],
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1
     },
@@ -166,7 +166,7 @@ function qQuellerAI() {
       neural_data_mod: 0.75,
       adv_eco_mod: 0.85,
       adv_eco_mod_alone: 0,
-      personality_tags: ["queller", "uber", "ffa"],
+      personality_tags: ["uber", "ffa"],
       min_basic_fabbers: 4,
       min_advanced_fabbers: 1
     },
@@ -183,7 +183,7 @@ function qQuellerAI() {
       neural_data_mod: 1.0,
       adv_eco_mod: 1.0,
       adv_eco_mod_alone: 0,
-      personality_tags: ["queller", "uber", "naval"],
+      personality_tags: ["uber", "naval"],
       min_basic_fabbers: 1,
       min_advanced_fabbers: 1
     },
@@ -200,7 +200,7 @@ function qQuellerAI() {
       neural_data_mod: 1.0,
       adv_eco_mod: 2.0,
       adv_eco_mod_alone: 0,
-      personality_tags: ["queller", "uber", "doublebot", "lateorbital"],
+      personality_tags: ["uber", "doublebot", "lateorbital"],
       min_basic_fabbers: 2,
       min_advanced_fabbers: 1
     },
@@ -217,7 +217,7 @@ function qQuellerAI() {
       neural_data_mod: 1.0,
       adv_eco_mod: 1.0,
       adv_eco_mod_alone: 0,
-      personality_tags: ["queller", "uber", "tank"],
+      personality_tags: ["uber", "tank"],
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1
     }
