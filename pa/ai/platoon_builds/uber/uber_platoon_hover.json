@@ -497,7 +497,7 @@
     },
     {
       "name": "Uber - Swarm Attack Platoon XLarge",
-      "to_build": "Swarm_Attack_XLarge_Queller",
+      "to_build": "Swarm_Attack_XLarge",
       "instance_count": -1,
       "priority": 122,
       "build_conditions": [
@@ -521,43 +521,6 @@
             "unit_type_string0": "Bot & Deconstruction",
             "compare0": ">=",
             "value0": 20
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "LandAttack"
-    },
-    {
-      "name": "Uber - Swarm Attack Platoon Huge",
-      "to_build": "Swarm_Attack_Huge_Queller",
-      "instance_count": -1,
-      "priority": 121,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "tank",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Bot & Deconstruction",
-            "compare0": ">=",
-            "value0": 30
           },
           {
             "test_type": "CanAttackWithPoolUnitsLand",
