@@ -655,6 +655,35 @@
             "boolean": true
           },
           {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Naval",
+            "compare0": ">=",
+            "value0": 5000
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "(Naval & Mobile & Advanced) - Fabber - Construction - Artillery - Sub - Hover - Custom1",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Naval & Mobile & (AirDefense | Tactical)",
+            "unit_type_string1": "(Naval & Mobile) - Fabber - Hover",
+            "compare0": "<",
+            "value0": 0.1
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
             "test_type": "HasPersonalityTag",
             "string0": "naval",
             "boolean": false

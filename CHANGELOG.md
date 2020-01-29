@@ -20,6 +20,7 @@
 - Fixed hover and amphibious platoons sometimes being formed after land armies causing them to get stuck on islands
 - Bronze Commander doesn't continue to build bot factories when alone
 - Uber will always use its Icarus offensively if it can
+- Uber will build the Stingray in response to the Typhoon
 
 #### v4.59.1 - 2020-01-24
 
