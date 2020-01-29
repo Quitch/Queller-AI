@@ -2,7 +2,7 @@
 
 #### DEV
 
-- Improved decision making by Gold, Platinum and Uber about when to expand their naval presence
+- Improved decision making by Gold, Platinum, and Uber about when to expand their naval presence
 - Gold and Platinum more likely to try and get in the water if they don't have a naval presence and the enemy does
 - Changed how Gold, Platinum and Uber measure the need for land and naval anti-air defences and units
 - Ensure Uber Naval is only building land units that are amphibious or hover
@@ -15,15 +15,15 @@
 - Replaced all checks using FocusTargetThreatRatio as it appears to be returning true under all circumstances
 - Further checks to prevent overbuilding of air by Platinum and Uber
 - Uber uses less Gil-E
-- Slight adjustments to Platinum and Uber's decision making process about their orbital launcher presence
+- Slight adjustments to Platinum and Uber's decision-making process about their orbital launcher presence
 - Protect against some orbital edge cases
-- Fixed hover and amphibious platoons sometimes being formed after land armies causing them to get stuck on islands
+- Fixed hover and amphibious platoons sometimes forming after land armies causing them to get stuck on islands
 - Bronze Commander doesn't continue to build bot factories when alone
 - Uber will always use its Icarus offensively if it can
 - Uber will build the Stingray in response to the Typhoon
-- Fixed Uber FFA building vehice factories on islands when playing as the MLA
+- Fixed Uber FFA building vehicle factories on islands when playing as the MLA
 - Try to avoid Bronze and Silver building titans in response to tiny land forces
-- Allow hover units to be used in army platoons if they aren't strong enough to operate alone
+- Allow hover units use in army platoons if they aren't strong enough to operate alone
 - Removed multi-planet restrictions from Uber's use of naval
 - Fixed Uber MLA starting naval even if it didn't think it could path from its base
 
