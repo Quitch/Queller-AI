@@ -30,11 +30,6 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetCount",
-            "compare0": "==",
-            "value0": 1
-          },
-          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory",
             "compare0": "<",
@@ -409,11 +404,6 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetCount",
-            "compare0": "==",
-            "value0": 1
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "LegionFactoryAdvancedNaval"
           },
@@ -441,11 +431,6 @@
           {
             "test_type": "UnableToExpand",
             "boolean": true
-          },
-          {
-            "test_type": "PlanetCount",
-            "compare0": "==",
-            "value0": 1
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -480,11 +465,6 @@
           {
             "test_type": "CanDeployNavalFromBase",
             "boolean": false
-          },
-          {
-            "test_type": "PlanetCount",
-            "compare0": "==",
-            "value0": 1
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -555,11 +535,6 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetCount",
-            "compare0": "==",
-            "value0": 1
-          },
-          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory & Advanced & Naval - Orbital",
             "compare0": "<",
@@ -616,11 +591,6 @@
           {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
-          },
-          {
-            "test_type": "PlanetCount",
-            "compare0": "==",
-            "value0": 1
           },
           {
             "test_type": "CurrentMetalEfficiency",
