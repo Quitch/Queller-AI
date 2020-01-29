@@ -25,7 +25,7 @@
 - Try to avoid Bronze and Silver building titans in response to tiny land forces
 - Allow hover units to be used in army platoons if they aren't strong enough to operate alone
 - Removed multi-planet restrictions from Uber's use of naval
-- Uber will only open naval if it thinks it can path from its base
+- Fixed Uber MLA starting naval even if it didn't think it could path from its base
 
 #### v4.59.1 - 2020-01-24
 
