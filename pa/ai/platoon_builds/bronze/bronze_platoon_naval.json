@@ -1,33 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Bronze - Naval Scout Platoon",
-      "to_build": "Naval_Attack_Queller",
-      "instance_count": 1,
-      "priority": 90,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Naval & Mobile & Offense - Hover - (AirDefense & Custom1)",
-            "compare0": ">=",
-            "value0": 4
-          }
-        ]
-      ],
-      "task_type": "Scout"
-    },
-    {
-      "name": "Bronze - Naval Attack Platoon 12",
+      "name": "Bronze - Naval Attack Platoon Max",
       "to_build": "Naval_Attack_Queller",
       "instance_count": -1,
       "priority": 100,
@@ -44,7 +18,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Naval & Mobile & Offense - (AirDefense & Custom1) - Fabber - Construction - Hover",
+            "unit_type_string0": "(Naval & Mobile & Offense) - Scout - Hover - Fabber - (AirDefense & Custom1) - Construction",
             "compare0": ">=",
             "value0": 12
           },
