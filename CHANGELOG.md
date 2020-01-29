@@ -22,6 +22,7 @@
 - Uber will always use its Icarus offensively if it can
 - Uber will build the Stingray in response to the Typhoon
 - Fixed Uber FFA building vehice factories on islands when playing as the MLA
+- Try to avoid Bronze and Silver building titans in response to tiny land forces
 
 #### v4.59.1 - 2020-01-24
 
