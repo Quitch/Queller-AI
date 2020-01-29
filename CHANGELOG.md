@@ -23,6 +23,7 @@
 - Uber will build the Stingray in response to the Typhoon
 - Fixed Uber FFA building vehice factories on islands when playing as the MLA
 - Try to avoid Bronze and Silver building titans in response to tiny land forces
+- Allow hover units to be used in army platoons if they aren't strong enough to operate alone
 
 #### v4.59.1 - 2020-01-24
 
