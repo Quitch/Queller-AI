@@ -20,7 +20,6 @@
 - Fixed hover and amphibious platoons sometimes forming after land armies causing them to get stuck on islands
 - Bronze Commander doesn't continue to build bot factories when alone
 - Uber will always use its Icarus offensively if it can
-- Uber will build the Stingray in response to the Typhoon
 - Fixed Uber FFA building vehicle factories on islands when playing as the MLA
 - Try to avoid Bronze and Silver building titans in response to tiny land forces
 - Allow hover units use in army platoons if they aren't strong enough to operate alone
