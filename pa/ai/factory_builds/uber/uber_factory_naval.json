@@ -655,42 +655,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "naval",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Naval & Mobile & Advanced & Tactical",
-            "compare0": "<",
-            "value0": 1
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Uber - Stingray - Anti-Typhoon",
-      "to_build": "MissleShip",
-      "instance_count": 1,
-      "max_num_assisters": 10,
-      "priority": 199,
-      "builders": ["AdvancedNavalFactory"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
           },
@@ -711,6 +675,32 @@
             "unit_type_string1": "(Naval & Mobile) - Fabber - Hover",
             "compare0": "<",
             "value0": 0.1
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Naval & Mobile & Advanced & Tactical",
+            "compare0": "<",
+            "value0": 1
           }
         ]
       ]
