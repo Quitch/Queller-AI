@@ -4,7 +4,7 @@
       "name": "Casual - Land Attack Titan",
       "to_build": "Land_Titan_Attack_Queller",
       "instance_count": -1,
-      "priority": 210,
+      "priority": 190,
       "build_conditions": [
         [
           {
@@ -19,8 +19,8 @@
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "(Tank | Bot) & Titan",
-            "compare0": ">",
-            "value0": 0
+            "compare0": ">=",
+            "value0": 1
           },
           {
             "test_type": "CanAttackWithPoolUnitsLand",
@@ -36,7 +36,7 @@
       "name": "Casual - Air Attack Titan",
       "to_build": "Air_Titan_Attack_Queller",
       "instance_count": -1,
-      "priority": 210,
+      "priority": 190,
       "build_conditions": [
         [
           {
@@ -46,29 +46,6 @@
           },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Titan",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsBomber",
-            "string0": "WL_AnySurface",
-            "string1": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "casual",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
           {
@@ -91,7 +68,7 @@
       "name": "Casual - Orbital Attack Titan",
       "to_build": "Orbital_Titan_Attack_Queller",
       "instance_count": -1,
-      "priority": 210,
+      "priority": 190,
       "build_conditions": [
         [
           {
@@ -106,27 +83,6 @@
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Orbital & Titan",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "CanAttackWithPoolUnits",
-            "string0": "WL_AnySurface"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "casual",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyOrbitalPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Orbital & Titan - Custom1",
             "compare0": ">=",
             "value0": 1
           },

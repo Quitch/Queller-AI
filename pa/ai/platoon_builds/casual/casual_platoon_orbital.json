@@ -151,57 +151,6 @@
         ]
       ],
       "task_type": "OrbitalLaserAttack"
-    },
-    {
-      "name": "Casual - Orbital Transfer",
-      "to_build": "Orbital_Transfer_Queller",
-      "instance_count": -1,
-      "priority": 120,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "casual",
-            "boolean": true
-          },
-          {
-            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
-            "boolean": true
-          },
-          {
-            "test_type": "ThisPlanetNeedsOrbitalUnitAssistance",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Orbital & (Fighter | LaserPlatform) & Mobile",
-            "compare0": ">=",
-            "value0": 1
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "casual",
-            "boolean": true
-          },
-          {
-            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsGasGiant",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Orbital & LaserPlatform & Mobile",
-            "compare0": ">=",
-            "value0": 1
-          }
-        ]
-      ],
-      "task_type": "TransferOrbitalToPlanet"
     }
   ]
 }
