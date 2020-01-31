@@ -73,7 +73,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 - Expands OK
 - OK troop selection
 - OK scouting
-- Some reaction to opponent's play
+- Some reaction to its opponent's play
 - Dislikes fabbers
 - Appropriate use of static defence/offence
 - Average economy handling
@@ -89,7 +89,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 - Expands quickly
 - Good troop selection
 - Good scouting
-- Smartly reacts to opponent's play
+- Smartly reacts to its opponent's play
 - Good fabber to troop balance
 - Appropriate use of static defence/offence
 - Good economy handling
@@ -105,7 +105,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 - Expands quickly
 - Best troop selection
 - Best scouting
-- Smartly reacts to opponent's play
+- Smartly reacts to its opponent's play
 - Good fabber to troop balance
 - Appropriate use of static defence/offence
 - Best economy handling
@@ -118,7 +118,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 
 Below are recommendations for the difficulty you may wish to start on based on what you set the vanilla AI to or your ladder ranking.
 
-When you need to increase the challenge, but don't want to increase the difficulty, give the AI an eco boost rather than adding more AIs. Not only will this be better for the sim, it'll stop the problem of there being less resources to go around for the AI which in turn makes it easier to beat. Alternatively, put the AIs into shared armies.
+When you need to increase the challenge, but don't want to increase the difficulty, give the AI an eco-boost rather than adding more AIs. Not only will this be better for the sim, but it'll also stop the problem of there being fewer resources to go around for the AI which in turn makes it easier to beat. Alternatively, put the AIs into shared armies.
 
 Comparison between vanilla difficulty and Queller difficulty:
 
@@ -145,7 +145,7 @@ Suggestions based on 1v1 ranked position or challenge sought:
 
 ## SUBPERSONALITIES
 
-By default, Queller at Uber level will adapt its play to try and suit the system and the opposition it faces. You can use subpersonalities to customise Queller's game to your liking, or help it play better where it's making poor strategy choices.
+By default, Queller at Uber level will adapt its play to try and suit the system and the opposition it faces. You can use subpersonalities to customise Queller's game to your liking or help it play better where it's making poor strategy choices.
 
 ### 1v1
 
@@ -201,7 +201,7 @@ Please help [translate Queller AI](https://poeditor.com/join/project/avPZrv6yyE)
 - Attempts to attack with amphibious units underwater even if they don't have an underwater weapon
 - Will queue buildings on the other side of obstacles despite closer locations (pathfinding wise) being available
 - Won't send interplanetary aircraft between planets
-- Will assign fabbers to a assist on a project that they could start earlier than the fabber they're assisting
+- Will assign fabbers to assist on a project that they could start earlier than the fabber they're assisting
 - Won't use more than one teleporter at a time
 - Won't use teleporters to move around a single planet
 - Cannot reclaim
