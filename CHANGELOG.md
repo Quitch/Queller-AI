@@ -48,7 +48,7 @@
 
 - Uber prioritises fixing energy issues over creating a defensive air force when alone
 - Try to ensure AI does not give up if reduced to its commander and stuck on an asteroid
-- Correct minor error in Bronze Legion's handling of asteroids
+- Corrected minor error in Bronze Legion's handling of asteroids
 - Bronze and Silver quicker to move fabbers to other planets
 
 #### v4.57.0 - 2020-01-05
@@ -61,7 +61,7 @@
 
 #### v4.56.1 - 2019-12-22
 
-- Prevented Uber reacting to an orbital-only presence with Icarus
+- Prevented Uber from reacting to an orbital-only presence with Icarus
 - Uber won't build Excaliburs when its orbital position is immediately threatened
 - Uber only uses the Icarus strategy in the early game
 
@@ -255,7 +255,7 @@
 - Uber counts Novas towards bomber-gunship platoon formation
 - Uber Aggressive and Uber Rush can open two bot factories
 - Corrected Uber not putting enough assistants on its first air factory
-- Further improve Uber's pond build behaviour
+- Further improved Uber's pond build behaviour
 - Updated Uber's use of Bluehawks and Gil-Es in response to the evolution of the meta
 - Uber builds the Sheller independent of the amount of Gil-Es it has
 - Moved heavy tanks back into the Close squad
@@ -356,7 +356,7 @@
 - More aggressive about putting engines on asteroids
 - Casual and Bronze won't build land and air titans on asteroids
 - Updated or removed placement checks to comply with new max supported range
-- Changed radius of Platinum threat checks for placing structures to match all other difficulties
+- Changed the radius of Platinum threat checks for placing structures to match all other difficulties
 - Bronze slightly more likely to use nukes and anti-nukes
 - Bronze attaches much more importance to building teleporters
 - Gold, Platinum and Uber less likely to build radar when alone
@@ -584,7 +584,7 @@
 - Fixed Uber Naval being unable to use Legion naval fabber to ensure the second factory is air
 - Help performance by limiting second air builds to the only fabber types that could exist
 - Gold, Platinum and Uber won't wait so long to form Locust platoons
-- Added behaviour to help prevent Queller getting stuck with only a single factory if it went naval first on certain planet layouts
+- Added behaviour to help prevent Queller from getting stuck with only a single factory if it went naval first on certain planet layouts
 
 #### v4.29.2 - 2018-09-20
 
@@ -626,7 +626,7 @@
 - Removed remaining references to Uber Land
 - Fix for Gold, Platinum and Uber building too many Marauders at once
 - Fixed Uber Tank not working correctly when playing as Legion
-- Prevent Corsairs being put in the wrong squad
+- Prevent Corsairs from being put in the wrong squad
 - Uber Naval will build air second with Legion as it doesn't have access to Patriots
 - Uber Naval is smarter about meeting its fabber requirements
 
@@ -867,7 +867,7 @@
 
 #### v4.20.1 - 2018-02-28
 
-- Correct lobby version number
+- Corrected lobby version number
 
 #### v4.20.0 - 2018-02-28
 
@@ -1895,7 +1895,7 @@ The "oh shit new patch with new folder structure which breaks my baby!" release
 - Removed dependency on ai_config (except for unit cap, but 3000 will do)
 - Now checks for Commander as a means to determine whether this is a military or eco planet
 - Fixed an error that allowed proxy air bases to spam air fabbers
-- Dropped custom ai_unit_map file until such time as I actually use it
+- Dropped custom ai_unit_map file until I use it
 
 #### v1.3 - 2015/04/26
 
