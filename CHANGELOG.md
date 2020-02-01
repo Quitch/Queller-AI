@@ -28,6 +28,7 @@
 - Uber prefers the Kestrel over the Horsefly
 - Platinum will use the Kestrel again
 - Don't check for threats in build conditions running specifically due to the absence of threats
+- Ensure blind builds designed for openings are only used where the AI believes it has incomplete information
 
 #### v4.59.1 - 2020-01-24
 
