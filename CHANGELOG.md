@@ -25,7 +25,8 @@
 - Allow hover units use in army platoons if they aren't strong enough to operate alone
 - Removed multi-planet restrictions from Uber's use of naval
 - Fixed Uber MLA starting naval even if it didn't think it could path from its base
-- Uber will use the Kestrel again
+- Uber prefers the Kestrel over the Horsefly
+- Platinum will use the Kestrel again
 
 #### v4.59.1 - 2020-01-24
 
