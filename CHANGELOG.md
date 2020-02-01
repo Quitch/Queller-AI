@@ -27,6 +27,7 @@
 - Fixed Uber MLA starting naval even if it didn't think it could path from its base
 - Uber prefers the Kestrel over the Horsefly
 - Platinum will use the Kestrel again
+- Don't check for threats in build conditions running specifically due to the absence of threats
 
 #### v4.59.1 - 2020-01-24
 
