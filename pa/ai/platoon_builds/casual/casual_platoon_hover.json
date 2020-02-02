@@ -52,7 +52,30 @@
             "test_type": "UnitPoolCount",
             "unit_type_string0": "(Hover & Mobile) - Fabber - Construction - Deconstruction - Titan",
             "compare0": ">=",
-            "value0": 10
+            "value0": 15
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "casual",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Hover & Mobile) - Fabber - Construction - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 30
           },
           {
             "test_type": "CanAttackWithPoolUnitsLand",

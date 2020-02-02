@@ -208,6 +208,35 @@
           },
           {
             "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Hover & Mobile & Naval) - Fabber - Construction - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 2
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": "<",
+            "value0": 2800
+          },
+          {
+            "test_type": "UnitPoolCount",
             "unit_type_string0": "(Hover & Mobile) - Fabber - Construction - Deconstruction - Titan",
             "compare0": ">=",
             "value0": 4
@@ -246,6 +275,35 @@
           },
           {
             "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Hover & Mobile & Naval) - Fabber - Construction - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": "<",
+            "value0": 5600
+          },
+          {
+            "test_type": "UnitPoolCount",
             "unit_type_string0": "(Hover & Mobile) - Fabber - Construction - Deconstruction - Titan",
             "compare0": ">=",
             "value0": 10
@@ -266,6 +324,29 @@
       "instance_count": -1,
       "priority": 122,
       "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "gold",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Hover & Mobile & Naval) - Fabber - Construction - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 10
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ],
         [
           {
             "test_type": "HasPersonalityTag",
