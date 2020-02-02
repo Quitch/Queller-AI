@@ -33,6 +33,7 @@
 - Double bot openings now function correctly
 - Uber will use the Astraeus to more quickly establish its first off-world presence
 - Uber will set up for scouting faster when it thinks it has arrived on a planet before other players
+- Try to ensure a teleporter is built before a factory when arriving on a new planet
 
 #### v4.59.1 - 2020-01-24
 
