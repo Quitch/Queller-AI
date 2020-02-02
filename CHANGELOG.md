@@ -37,6 +37,7 @@
 - Denser energy plant placement
 - Gold won't build the Stryker
 - Overhaul of platoons to resolve numerous inconsistencies and timing issues
+- Low difficulties hoard more air before attacking
 
 #### v4.59.1 - 2020-01-24
 
