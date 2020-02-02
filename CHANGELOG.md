@@ -30,6 +30,7 @@
 - Don't check for threats in build conditions running specifically due to the absence of threats
 - Ensure blind builds designed for openings are only used where the AI believes it has incomplete information
 - Platinum and Uber will scout when they have conflicting information about enemy presence on their planet
+- Double bot openings now function correctly
 
 #### v4.59.1 - 2020-01-24
 
