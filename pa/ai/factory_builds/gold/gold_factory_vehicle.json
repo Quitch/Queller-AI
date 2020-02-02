@@ -203,39 +203,6 @@
       ]
     },
     {
-      "name": "Gold - Stryker",
-      "to_build": "AttackVehicle",
-      "instance_count": 1,
-      "max_num_assisters": 10,
-      "priority": 97,
-      "builders": ["BasicVehicleFactory"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          }
-        ]
-      ]
-    },
-    {
       "name": "Gold - Ant",
       "to_build": "LightLaserTank",
       "instance_count": -1,

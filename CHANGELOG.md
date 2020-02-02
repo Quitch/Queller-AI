@@ -35,6 +35,7 @@
 - Uber will set up for scouting faster when it thinks it has arrived on a planet before other players
 - Try to ensure a teleporter is built before a factory when arriving on a new planet
 - Denser energy plant placement
+- Gold won't build the Stryker
 
 #### v4.59.1 - 2020-01-24
 
