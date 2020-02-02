@@ -459,8 +459,8 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Swarm Attack Platoon Large",
-      "to_build": "Swarm_Attack_Large",
+      "name": "Uber - Swarm Attack Platoon Max",
+      "to_build": "Swarm_Raid_Max_Queller",
       "instance_count": -1,
       "priority": 123,
       "build_conditions": [
@@ -484,80 +484,6 @@
             "unit_type_string0": "Bot & Deconstruction",
             "compare0": ">=",
             "value0": 10
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "LandAttack"
-    },
-    {
-      "name": "Uber - Swarm Attack Platoon XLarge",
-      "to_build": "Swarm_Attack_XLarge",
-      "instance_count": -1,
-      "priority": 122,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "tank",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Bot & Deconstruction",
-            "compare0": ">=",
-            "value0": 20
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "LandAttack"
-    },
-    {
-      "name": "Uber - Swarm Attack Platoon Max",
-      "to_build": "Swarm_Attack_Max",
-      "instance_count": -1,
-      "priority": 120,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "tank",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Bot & Deconstruction",
-            "compare0": ">=",
-            "value0": 40
           },
           {
             "test_type": "CanAttackWithPoolUnitsLand",
