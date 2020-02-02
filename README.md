@@ -206,15 +206,16 @@ Please help [translate Queller AI](https://poeditor.com/join/project/avPZrv6yyE)
 - Won't use teleporters to move around a single planet
 - Cannot reclaim
 - Combat Fabbers can only be used to build mines or repair troops, not both, even across entirely different AI personalities
-- Doesn't handle enemy walls well
 - Legion won't build a different tier of mass extractor on a metal spot that already has a mass extractor
 - Legion can't use orbital transports
-- Doesn't use Helios teleporter
+- Doesn't use the Helios teleporter
 - Naval factories sometimes stop producing units
 - All AI Commanders on a team spawn and act together using shared army mode
 - Play From Here in Chronocam can cause strange AI behaviour or even break it
 - Different armies will sometimes build on the same metal spot
 - Naval factories occasionally built on land
+- Attempts to attack land targets with underwater units even if they don't have a weapon which can attack land
+- Slow to start moving troops between planets
 
 ## WONTFIX
 
