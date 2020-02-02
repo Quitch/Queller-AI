@@ -2,7 +2,7 @@
   "build_list": [
     {
       "name": "Bronze - Amphibious Attack Platoon XLarge",
-      "to_build": "Amphibious_Attack_XLarge_Queller",
+      "to_build": "Amphibious_Attack_Max_Queller",
       "instance_count": -1,
       "priority": 122,
       "build_conditions": [
@@ -27,6 +27,44 @@
             "unit_type_string0": "((Bot | (Tank & Sub)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - Hover - Fighter - Deconstruction - SelfDestruct - Titan",
             "compare0": ">=",
             "value0": 20
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Bronze - Amphibious Attack Platoon Huge",
+      "to_build": "Amphibious_Attack_Max_Queller",
+      "instance_count": -1,
+      "priority": 122,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": "<",
+            "value0": 16800
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "((Bot | (Tank & Sub)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - Hover - Fighter - Deconstruction - SelfDestruct - Titan",
+            "compare0": ">=",
+            "value0": 30
           },
           {
             "test_type": "CanAttackWithPoolUnitsLand",
