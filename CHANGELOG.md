@@ -38,6 +38,7 @@
 - Gold won't build the Stryker
 - Overhaul of platoons to resolve numerous inconsistencies and timing issues
 - Low difficulties hoard more air before attacking
+- Minor adjustment to the size of naval scout platoons at low difficulties
 
 #### v4.59.1 - 2020-01-24
 
