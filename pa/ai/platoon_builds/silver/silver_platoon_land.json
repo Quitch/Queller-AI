@@ -1,11 +1,10 @@
 {
   "build_list": [
     {
-      "name": "Silver - Land Scout Platoon",
-      "to_build": "Land_Attack_Queller",
-      "instance_count": 1,
-      "shared_instance_count": "Scout",
-      "priority": 200,
+      "name": "Silver - Boom Attack Platoon Large",
+      "to_build": "Boom_Attack_Large_Queller",
+      "instance_count": -1,
+      "priority": 113,
       "build_conditions": [
         [
           {
@@ -14,58 +13,112 @@
             "boolean": true
           },
           {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": "<",
+            "value0": 5600
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
-            "compare0": ">=",
-            "value0": 4
-          }
-        ]
-      ],
-      "task_type": "Scout"
-    },
-    {
-      "name": "Silver - Land Transfer Platoon",
-      "to_build": "Teleporter_Attack_Queller",
-      "instance_count": 1,
-      "priority": 100,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
-            "test_type": "OtherPlanetNeedsLandUnitAssistance",
-            "boolean": true
-          },
-          {
-            "test_type": "CanProvideLandUnitAssistance",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Land & Mobile & Offense",
+            "unit_type_string0": "Bot & SelfDestruct",
             "compare0": ">=",
             "value0": 10
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ]
       ],
-      "task_type": "TeleportLandToPlanet"
+      "task_type": "LandAttack"
     },
     {
-      "name": "Silver - Boom Platoon",
-      "to_build": "Boom_Raid_Queller",
+      "name": "Silver - Boom Attack Platoon XLarge",
+      "to_build": "Boom_Attack_XLarge_Queller",
       "instance_count": -1,
-      "priority": 155,
+      "priority": 112,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": "<",
+            "value0": 11200
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & SelfDestruct",
+            "compare0": ">=",
+            "value0": 20
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Silver - Boom Attack Platoon Huge",
+      "to_build": "Boom_Attack_Huge_Queller",
+      "instance_count": -1,
+      "priority": 111,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": "<",
+            "value0": 16800
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & SelfDestruct",
+            "compare0": ">=",
+            "value0": 30
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Silver - Boom Attack Platoon Max",
+      "to_build": "Boom_Attack_Max_Queller",
+      "instance_count": -1,
+      "priority": 110,
       "build_conditions": [
         [
           {
@@ -79,9 +132,9 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Bot & SelfDestruct & Mobile - Titan",
+            "unit_type_string0": "Bot & SelfDestruct",
             "compare0": ">=",
-            "value0": 7
+            "value0": 40
           },
           {
             "test_type": "CanAttackWithPoolUnitsLand",
@@ -95,9 +148,9 @@
     },
     {
       "name": "Silver - Land Attack Platoon Large",
-      "to_build": "Land_Attack_Large_Queller",
+      "to_build": "Land_Attack_Large_Queller_Silver",
       "instance_count": -1,
-      "priority": 102,
+      "priority": 103,
       "build_conditions": [
         [
           {
@@ -135,7 +188,7 @@
       "name": "Silver - Land Attack Platoon XLarge",
       "to_build": "Land_Attack_XLarge_Queller",
       "instance_count": -1,
-      "priority": 101,
+      "priority": 102,
       "build_conditions": [
         [
           {
@@ -158,6 +211,44 @@
             "unit_type_string0": "((Tank | Bot) & Mobile) - Hover - Fabber - AirDefense - Construction - Deconstruction - SelfDestruct - Titan",
             "compare0": ">=",
             "value0": 20
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Silver - Land Attack Platoon Huge",
+      "to_build": "Land_Attack_Huge_Queller",
+      "instance_count": -1,
+      "priority": 102,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "silver",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": "<",
+            "value0": 16800
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "((Tank | Bot) & Mobile) - Hover - Fabber - AirDefense - Construction - Deconstruction - SelfDestruct - Titan",
+            "compare0": ">=",
+            "value0": 30
           },
           {
             "test_type": "CanAttackWithPoolUnitsLand",
