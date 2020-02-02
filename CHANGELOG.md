@@ -17,7 +17,7 @@
 - Uber uses less Gil-E
 - Slight adjustments to Platinum and Uber's decision-making process about their orbital launcher presence
 - Protect against some orbital edge cases
-- Fixed hover and amphibious platoons sometimes forming after land armies causing them to get stuck on islands
+- Try to ensure hover and amphibious platoons don't get stuck on islands
 - Bronze Commander doesn't continue to build bot factories when alone
 - Uber will always use its Icarus offensively if it can
 - Fixed Uber FFA building vehicle factories on islands when playing as the MLA
