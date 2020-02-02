@@ -29,7 +29,7 @@
 - Platinum will use the Kestrel again
 - Don't check for threats in build conditions running specifically due to the absence of threats
 - Ensure blind builds designed for openings are only used where the AI believes it has incomplete information
-- Platinum and Uber will scout when they have conflicting information about enemy presence on their planet
+- Platinum and Uber will scout when they have conflicting information about the enemy presence on their planet
 - Double bot openings now function correctly
 - Uber will use the Astraeus to more quickly establish its first off-world presence
 - Uber will set up for scouting faster when it thinks it has arrived on a planet before other players
