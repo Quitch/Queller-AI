@@ -29,7 +29,7 @@
     },
     {
       "name": "Silver - Land Scout Platoon",
-      "to_build": "Land_Attack_Large_Queller",
+      "to_build": "Land_Attack_Medium_Queller",
       "instance_count": 1,
       "shared_instance_count": "Scout",
       "priority": 90,
@@ -48,7 +48,7 @@
             "test_type": "UnitPoolCount",
             "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
             "compare0": ">=",
-            "value0": 3
+            "value0": 4
           }
         ]
       ],
@@ -74,7 +74,7 @@
             "test_type": "UnitPoolCount",
             "unit_type_string0": "(Naval & Mobile & Offense) - Hover - Fabber - (AirDefense & Custom1) - Construction",
             "compare0": ">=",
-            "value0": 4
+            "value0": 3
           }
         ]
       ],
