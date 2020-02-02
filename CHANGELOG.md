@@ -42,6 +42,7 @@
 - Minor adjustment to the size of naval scout platoons at low difficulties
 - Fixed some instances of advanced factories being incorrectly built on islands
 - Fixed Bronze Legion teching too early
+- Bronze and Silver may now run land and air scouting alongside one another
 
 #### v4.59.1 - 2020-01-24
 
