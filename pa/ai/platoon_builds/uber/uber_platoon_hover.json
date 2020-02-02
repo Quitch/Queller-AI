@@ -634,8 +634,8 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Necromancer Attack Platoon Large",
-      "to_build": "Necromancer_Attack_Large_Queller",
+      "name": "Uber - Necromancer Attack Platoon Max",
+      "to_build": "Necromancer_Attack_Max_Queller",
       "instance_count": -1,
       "priority": 123,
       "build_conditions": [
@@ -654,102 +654,6 @@
             "unit_type_string0": "Bot & SelfDestruct & Advanced & Custom1",
             "compare0": ">=",
             "value0": 10
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "LandAttack"
-    },
-    {
-      "name": "Uber - Necromancer Attack Platoon XLarge",
-      "to_build": "Necromancer_Attack_XLarge_Queller",
-      "instance_count": -1,
-      "priority": 122,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Bot & SelfDestruct & Advanced & Custom1",
-            "compare0": ">=",
-            "value0": 20
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "LandAttack"
-    },
-    {
-      "name": "Uber - Necromancer Attack Platoon Huge",
-      "to_build": "Necromancer_Attack_Huge_Queller",
-      "instance_count": -1,
-      "priority": 121,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Bot & SelfDestruct & Advanced & Custom1",
-            "compare0": ">=",
-            "value0": 30
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "LandAttack"
-    },
-    {
-      "name": "Uber - Necromancer Attack Platoon Max",
-      "to_build": "Necromancer_Attack_Max_Queller",
-      "instance_count": -1,
-      "priority": 120,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Bot & SelfDestruct & Advanced & Custom1",
-            "compare0": ">=",
-            "value0": 40
           },
           {
             "test_type": "CanAttackWithPoolUnitsLand",
