@@ -128,7 +128,7 @@
             "test_type": "UnitPoolCount",
             "unit_type_string0": "(Hover & Mobile & Naval) - Fabber - Construction - Deconstruction - Titan",
             "compare0": ">=",
-            "value0": 10
+            "value0": 5
           },
           {
             "test_type": "CanAttackWithPoolUnitsLand",
@@ -165,7 +165,7 @@
     },
     {
       "name": "Bronze - Necromancer Attack Platoon Max",
-      "to_build": "Necromancer_Attack_Max_Queller",
+      "to_build": "Necromancer_Attack_Queller",
       "instance_count": -1,
       "priority": 123,
       "build_conditions": [
@@ -183,7 +183,7 @@
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Bot & SelfDestruct & Advanced & Custom1",
             "compare0": ">=",
-            "value0": 10
+            "value0": 5
           },
           {
             "test_type": "CanAttackWithPoolUnitsLand",
