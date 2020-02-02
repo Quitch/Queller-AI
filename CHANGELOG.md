@@ -36,6 +36,7 @@
 - Try to ensure a teleporter is built before a factory when arriving on a new planet
 - Denser energy plant placement
 - Gold won't build the Stryker
+- Overhaul of platoons to resolve numerous inconsistencies and timing issues
 
 #### v4.59.1 - 2020-01-24
 
