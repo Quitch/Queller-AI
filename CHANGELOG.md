@@ -38,6 +38,7 @@
 - Gold won't build the Stryker
 - Overhaul of platoons to resolve numerous inconsistencies and timing issues
 - Low difficulties hoard more air before attacking
+- All difficulties now prioritise moving armies between planets
 - Minor adjustment to the size of naval scout platoons at low difficulties
 - Fixed some instances of advanced factories being incorrectly built on islands
 - Fixed Bronze Legion teching too early
