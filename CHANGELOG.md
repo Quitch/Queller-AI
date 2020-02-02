@@ -31,6 +31,7 @@
 - Ensure blind builds designed for openings are only used where the AI believes it has incomplete information
 - Platinum and Uber will scout when they have conflicting information about enemy presence on their planet
 - Double bot openings now function correctly
+- Uber will use the Astraeus to more quickly establish its first off-world presence
 
 #### v4.59.1 - 2020-01-24
 

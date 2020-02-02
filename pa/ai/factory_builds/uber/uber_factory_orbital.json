@@ -261,11 +261,11 @@
       ]
     },
     {
-      "name": "Uber - Astraeus",
+      "name": "Uber - Astraeus - Initial Expansion/Naval multi-planet",
       "to_build": "OrbitalLander",
       "instance_count": 1,
       "max_num_assisters": 10,
-      "priority": 101,
+      "priority": 200,
       "builders": ["OrbitalLauncher"],
       "build_conditions": [
         [
@@ -277,14 +277,6 @@
           {
             "test_type": "PlanetWithoutPresence",
             "boolean": true
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": false
           },
           {
             "test_type": "BaseThreat",
@@ -308,7 +300,7 @@
       ]
     },
     {
-      "name": "Uber - Astraeus - Unsafe",
+      "name": "Uber - Astraeus",
       "to_build": "OrbitalLander",
       "instance_count": 1,
       "max_num_assisters": 10,
