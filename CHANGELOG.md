@@ -39,6 +39,7 @@
 - Overhaul of platoons to resolve numerous inconsistencies and timing issues
 - Low difficulties hoard more air before attacking
 - Minor adjustment to the size of naval scout platoons at low difficulties
+- Fixed some instances of advanced factories being incorrectly built on islands
 
 #### v4.59.1 - 2020-01-24
 
