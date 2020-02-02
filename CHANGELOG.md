@@ -25,7 +25,7 @@
 - Allow hover units use in army platoons if they aren't strong enough to operate alone
 - Removed multi-planet restrictions from Uber's use of naval
 - Fixed Uber MLA starting naval even if it didn't think it could path from its base
-- Uber prefers the Kestrel over the Horsefly
+- Uber will use the Kestrel alongside the Horsefly
 - Platinum will use the Kestrel again
 - Don't check for threats in build conditions running specifically due to the absence of threats
 - Ensure blind builds designed for openings are only used where the AI believes it has incomplete information
