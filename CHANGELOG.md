@@ -40,6 +40,7 @@
 - Low difficulties hoard more air before attacking
 - Minor adjustment to the size of naval scout platoons at low difficulties
 - Fixed some instances of advanced factories being incorrectly built on islands
+- Fixed Bronze Legion teching too early
 
 #### v4.59.1 - 2020-01-24
 
