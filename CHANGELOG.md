@@ -2,8 +2,8 @@
 
 #### DEV
 
-- Improved decision making by Gold, Platinum, and Uber about when to expand their naval presence
-- Gold and Platinum more likely to try and get in the water if they don't have a naval presence and the enemy does
+- Improved decision-making by Gold, Platinum, and Uber about when to expand their naval presence
+- Gold and Platinum more likely to try and get in the water if they don't have a naval presence but the enemy does
 - Changed how Gold, Platinum and Uber measure the need for land and naval anti-air defences and units
 - Ensured Uber Naval is only building land units that are amphibious or hover
 - Removed Uber Air personality
@@ -21,7 +21,7 @@
 - Bronze's commander won't continue to build bot factories when alone
 - Uber will always use its Icarus offensively if it can
 - Fixed Uber Free-For-All building vehicle factories on islands when playing as the MLA
-- Tried to avoid Bronze and Silver building titans in response to tiny land forces
+- Tried to avoid Bronze and Silver building titans in response to tiny forces
 - Allowed the use of hover units in army platoons if they aren't strong enough to operate alone
 - Removed multi-planet restrictions from Uber's use of naval
 - Fixed Uber MLA starting naval even if it didn't think it had a naval path from its base
@@ -50,7 +50,7 @@
 - Ensured mobile artillery ratio checks exclude static artillery
 - Don't transfer troops from planets that require assistance
 - Fix a major error preventing the teleportation of troops when alone. This one was really bad, sorry :(
-- Planets will send as many troops as they can so long as they don't need them
+- Planets will send as many troops off-world as they can so long as they don't need them
 - Uber puts more emphasis on its commander building energy plants
 
 #### v4.59.1 - 2020-01-24
