@@ -47,6 +47,7 @@
 - Ensure Silver builds air to scout if required even if there's no enemy air presence
 - Bronze through Uber form naval platoons earlier than before
 - Uber slightly more aggressive in forming air-to-ground attack platoons
+- Ensure mobile artillery ratio checks exclude static artillery
 
 #### v4.59.1 - 2020-01-24
 
