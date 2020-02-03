@@ -48,6 +48,8 @@
 - Bronze through Uber form naval platoons earlier than before
 - Uber is slightly more aggressive in forming air-to-ground attack platoons
 - Ensured mobile artillery ratio checks exclude static artillery
+- Don't transfer troops from planets that require assistance
+- Fix an error preventing the teleportation of troops when alone
 
 #### v4.59.1 - 2020-01-24
 
