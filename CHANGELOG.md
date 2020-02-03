@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### DEV
+#### v4.60.0 - 2020-02-03
 
 - Improved decision-making by Gold, Platinum, and Uber about when to expand their naval presence
 - Gold and Platinum more likely to try and get in the water if they don't have a naval presence but the enemy does
