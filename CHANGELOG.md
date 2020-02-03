@@ -51,6 +51,7 @@
 - Don't transfer troops from planets that require assistance
 - Fix a major error preventing the teleportation of troops when alone. This one was really bad, sorry :(
 - Planets will send as many troops as they can so long as they don't need them
+- Uber puts more emphasis on its commander building energy plants
 
 #### v4.59.1 - 2020-01-24
 
