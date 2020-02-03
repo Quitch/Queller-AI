@@ -50,6 +50,7 @@
 - Ensured mobile artillery ratio checks exclude static artillery
 - Don't transfer troops from planets that require assistance
 - Fix an error preventing the teleportation of troops when alone
+- Planets will send as many troops as they can so long as they don't need them
 
 #### v4.59.1 - 2020-01-24
 
