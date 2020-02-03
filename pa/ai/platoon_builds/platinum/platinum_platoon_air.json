@@ -1,10 +1,10 @@
 {
   "build_list": [
     {
-      "name": "Platinum - Air Scout Platoon",
-      "to_build": "Air_Scout_Queller",
+      "name": "Platinum - Bomber-Gunship Attack Platoon Small",
+      "to_build": "BomberGunship_Attack_Queller",
       "instance_count": -1,
-      "priority": 200,
+      "priority": 105,
       "build_conditions": [
         [
           {
@@ -13,21 +13,28 @@
             "boolean": true
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & Scout",
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<=",
+            "value0": 400
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Mobile & Offense - MissileDefense - Fighter - SelfDestruct - Titan",
             "compare0": ">=",
             "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsBomber",
+            "string0": "WL_AnySurface",
+            "string1": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
-        ]
-      ],
-      "task_type": "Scout"
-    },
-    {
-      "name": "Platinum - Fighter Scout Platoon",
-      "to_build": "Fighter_Scout_Queller",
-      "instance_count": 1,
-      "priority": 100,
-      "build_conditions": [
+        ],
         [
           {
             "test_type": "HasPersonalityTag",
@@ -35,37 +42,352 @@
             "boolean": true
           },
           {
-            "test_type": "EnemyAirPresenceOnPlanet",
+            "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Air",
-            "compare0": ">",
-            "value0": 0
+            "compare0": "<",
+            "value0": 150
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & Fighter & Basic",
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Mobile & Offense - MissileDefense - Fighter - SelfDestruct - Titan",
             "compare0": ">=",
             "value0": 1
           },
           {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Air & Fighter & Basic",
-            "compare0": "<",
-            "value0": 250
+            "test_type": "CanAttackWithPoolUnitsBomber",
+            "string0": "WL_AnySurface",
+            "string1": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ]
       ],
-      "task_type": "Scout"
+      "task_type": "BomberAttack"
     },
     {
-      "name": "Platinum - Bomber-Gunship Attack Platoon",
+      "name": "Platinum - Bomber-Gunship Attack Platoon Medium",
       "to_build": "BomberGunship_Attack_Queller",
       "instance_count": -1,
-      "shared_instance_count": "Air",
-      "priority": 195,
+      "priority": 104,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<=",
+            "value0": 720
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Mobile & Offense - Titan",
+            "compare0": ">=",
+            "value0": 4
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Mobile & Offense - MissileDefense - Fighter - SelfDestruct - Titan",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsBomber",
+            "string0": "WL_AnySurface",
+            "string1": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Air",
+            "compare0": "<=",
+            "value0": 600
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Mobile & Offense - Titan",
+            "compare0": ">=",
+            "value0": 4
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Mobile & Offense - MissileDefense - Fighter - SelfDestruct - Titan",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsBomber",
+            "string0": "WL_AnySurface",
+            "string1": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "BomberAttack"
+    },
+    {
+      "name": "Platinum - Bomber-Gunship Attack Platoon Large",
+      "to_build": "BomberGunship_Attack_Queller",
+      "instance_count": -1,
+      "priority": 103,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<=",
+            "value0": 1200
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Mobile & Offense - Titan",
+            "compare0": ">=",
+            "value0": 10
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Mobile & Offense - MissileDefense - Fighter - SelfDestruct - Titan",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsBomber",
+            "string0": "WL_AnySurface",
+            "string1": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Air",
+            "compare0": "<=",
+            "value0": 1500
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Mobile & Offense - Titan",
+            "compare0": ">=",
+            "value0": 10
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Mobile & Offense - MissileDefense - Fighter - SelfDestruct - Titan",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsBomber",
+            "string0": "WL_AnySurface",
+            "string1": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "BomberAttack"
+    },
+    {
+      "name": "Platinum - Bomber-Gunship Attack Platoon XLarge",
+      "to_build": "BomberGunship_Attack_Queller",
+      "instance_count": -1,
+      "priority": 102,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<=",
+            "value0": 2000
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Mobile & Offense - Titan",
+            "compare0": ">=",
+            "value0": 20
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Mobile & Offense - MissileDefense - Fighter - SelfDestruct - Titan",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsBomber",
+            "string0": "WL_AnySurface",
+            "string1": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Air",
+            "compare0": "<=",
+            "value0": 3000
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Mobile & Offense - Titan",
+            "compare0": ">=",
+            "value0": 20
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Mobile & Offense - MissileDefense - Fighter - SelfDestruct - Titan",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsBomber",
+            "string0": "WL_AnySurface",
+            "string1": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "BomberAttack"
+    },
+    {
+      "name": "Platinum - Bomber-Gunship Attack Platoon Huge",
+      "to_build": "BomberGunship_Attack_Queller",
+      "instance_count": -1,
+      "priority": 101,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<=",
+            "value0": 3000
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Mobile & Offense - Titan",
+            "compare0": ">=",
+            "value0": 30
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Mobile & Offense - MissileDefense - Fighter - SelfDestruct - Titan",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsBomber",
+            "string0": "WL_AnySurface",
+            "string1": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Air",
+            "compare0": "<=",
+            "value0": 4500
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Mobile & Offense - Titan",
+            "compare0": ">=",
+            "value0": 30
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Mobile & Offense - MissileDefense - Fighter - SelfDestruct - Titan",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsBomber",
+            "string0": "WL_AnySurface",
+            "string1": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "BomberAttack"
+    },
+    {
+      "name": "Platinum - Bomber-Gunship Attack Platoon Max",
+      "to_build": "BomberGunship_Attack_Queller",
+      "instance_count": -1,
+      "priority": 100,
       "build_conditions": [
         [
           {
@@ -79,15 +401,15 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Mobile & Offense - MissileDefense - Fighter - SelfDestruct - Titan",
+            "unit_type_string0": "Air & Mobile & Offense - Titan",
             "compare0": ">=",
-            "value0": 1
+            "value0": 40
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Mobile & Offense",
+            "unit_type_string0": "Air & Mobile & Offense - MissileDefense - Fighter - SelfDestruct - Titan",
             "compare0": ">=",
-            "value0": 4
+            "value0": 1
           },
           {
             "test_type": "CanAttackWithPoolUnitsBomber",
@@ -100,11 +422,10 @@
       "task_type": "BomberAttack"
     },
     {
-      "name": "Platinum - Fighter Attack Platoon 1",
+      "name": "Platinum - Fighter Attack Platoon Small",
       "to_build": "Fighter_Attack_Queller",
       "instance_count": -1,
-      "shared_instance_count": "Air",
-      "priority": 190,
+      "priority": 105,
       "build_conditions": [
         [
           {
@@ -120,7 +441,7 @@
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiAir",
             "compare0": "<=",
-            "value0": 300
+            "value0": 400
           },
           {
             "test_type": "UnitPoolCount",
@@ -148,235 +469,233 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Air",
-            "compare0": "<=",
-            "value0": 375
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsFighter",
-            "string0": "WL_Air",
-            "string1": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiAir",
-            "compare0": "<=",
-            "value0": 300
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "CanProvideAirSupportWithPoolUnits",
-            "string0": "fighter_attack",
-            "string1": "WL_Air",
-            "string2": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Air",
-            "compare0": "<=",
-            "value0": 375
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "CanProvideAirSupportWithPoolUnits",
-            "string0": "fighter_attack",
-            "string1": "WL_Air",
-            "string2": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "FighterAttack"
-    },
-    {
-      "name": "Platinum - Fighter Attack Platoon 4",
-      "to_build": "Fighter_Attack_Queller",
-      "instance_count": -1,
-      "shared_instance_count": "Air",
-      "priority": 180,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiAir",
-            "compare0": "<=",
-            "value0": 630
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 4
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsFighter",
-            "string0": "WL_Air",
-            "string1": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Air",
-            "compare0": "<=",
-            "value0": 750
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 4
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsFighter",
-            "string0": "WL_Air",
-            "string1": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiAir",
-            "compare0": "<=",
-            "value0": 630
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 4
-          },
-          {
-            "test_type": "CanProvideAirSupportWithPoolUnits",
-            "string0": "fighter_attack",
-            "string1": "WL_Air",
-            "string2": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Air",
-            "compare0": "<=",
-            "value0": 750
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 4
-          },
-          {
-            "test_type": "CanProvideAirSupportWithPoolUnits",
-            "string0": "fighter_attack",
-            "string1": "WL_Air",
-            "string2": "WL_Air",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "FighterAttack"
-    },
-    {
-      "name": "Platinum - Fighter Attack Platoon 10",
-      "to_build": "Fighter_Attack_Queller",
-      "instance_count": -1,
-      "shared_instance_count": "Air",
-      "priority": 170,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiAir",
             "compare0": "<",
-            "value0": 1400
+            "value0": 150
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Fighter",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsFighter",
+            "string0": "WL_Air",
+            "string1": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<=",
+            "value0": 400
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Fighter",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanProvideAirSupportWithPoolUnits",
+            "string0": "fighter_attack",
+            "string1": "WL_Air",
+            "string2": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Air",
+            "compare0": "<",
+            "value0": 150
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Fighter",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanProvideAirSupportWithPoolUnits",
+            "string0": "fighter_attack",
+            "string1": "WL_Air",
+            "string2": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "FighterAttack"
+    },
+    {
+      "name": "Platinum - Fighter Attack Platoon Medium",
+      "to_build": "Fighter_Attack_Queller",
+      "instance_count": -1,
+      "priority": 104,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<=",
+            "value0": 720
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Fighter",
+            "compare0": ">=",
+            "value0": 4
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsFighter",
+            "string0": "WL_Air",
+            "string1": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Air",
+            "compare0": "<=",
+            "value0": 600
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Fighter",
+            "compare0": ">=",
+            "value0": 4
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsFighter",
+            "string0": "WL_Air",
+            "string1": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<=",
+            "value0": 720
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Fighter",
+            "compare0": ">=",
+            "value0": 4
+          },
+          {
+            "test_type": "CanProvideAirSupportWithPoolUnits",
+            "string0": "fighter_attack",
+            "string1": "WL_Air",
+            "string2": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Air",
+            "compare0": "<=",
+            "value0": 600
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Fighter",
+            "compare0": ">=",
+            "value0": 4
+          },
+          {
+            "test_type": "CanProvideAirSupportWithPoolUnits",
+            "string0": "fighter_attack",
+            "string1": "WL_Air",
+            "string2": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "FighterAttack"
+    },
+    {
+      "name": "Platinum - Fighter Attack Platoon Large",
+      "to_build": "Fighter_Attack_Queller",
+      "instance_count": -1,
+      "priority": 103,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiAir",
+            "compare0": "<=",
+            "value0": 1200
           },
           {
             "test_type": "UnitPoolCount",
@@ -404,7 +723,7 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Air",
-            "compare0": "<",
+            "compare0": "<=",
             "value0": 1500
           },
           {
@@ -433,8 +752,8 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 1000
+            "compare0": "<=",
+            "value0": 1200
           },
           {
             "test_type": "UnitPoolCount",
@@ -463,7 +782,7 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Air",
-            "compare0": "<",
+            "compare0": "<=",
             "value0": 1500
           },
           {
@@ -484,11 +803,10 @@
       "task_type": "FighterAttack"
     },
     {
-      "name": "Platinum - Fighter Attack Platoon 20",
+      "name": "Platinum - Fighter Attack Platoon XLarge",
       "to_build": "Fighter_Attack_Queller",
       "instance_count": -1,
-      "shared_instance_count": "Air",
-      "priority": 160,
+      "priority": 102,
       "build_conditions": [
         [
           {
@@ -503,8 +821,8 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 2800
+            "compare0": "<=",
+            "value0": 2000
           },
           {
             "test_type": "UnitPoolCount",
@@ -532,7 +850,7 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Air",
-            "compare0": "<",
+            "compare0": "<=",
             "value0": 3000
           },
           {
@@ -561,8 +879,8 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 2800
+            "compare0": "<=",
+            "value0": 2000
           },
           {
             "test_type": "UnitPoolCount",
@@ -591,7 +909,7 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Air",
-            "compare0": "<",
+            "compare0": "<=",
             "value0": 3000
           },
           {
@@ -612,11 +930,10 @@
       "task_type": "FighterAttack"
     },
     {
-      "name": "Platinum - Fighter Attack Platoon 30",
+      "name": "Platinum - Fighter Attack Platoon Huge",
       "to_build": "Fighter_Attack_Queller",
       "instance_count": -1,
-      "shared_instance_count": "Air",
-      "priority": 150,
+      "priority": 101,
       "build_conditions": [
         [
           {
@@ -631,8 +948,8 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 4200
+            "compare0": "<=",
+            "value0": 3000
           },
           {
             "test_type": "UnitPoolCount",
@@ -660,7 +977,7 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Air",
-            "compare0": "<",
+            "compare0": "<=",
             "value0": 4500
           },
           {
@@ -689,8 +1006,8 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiAir",
-            "compare0": "<",
-            "value0": 4200
+            "compare0": "<=",
+            "value0": 3000
           },
           {
             "test_type": "UnitPoolCount",
@@ -719,7 +1036,7 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Air",
-            "compare0": "<",
+            "compare0": "<=",
             "value0": 4500
           },
           {
@@ -740,11 +1057,10 @@
       "task_type": "FighterAttack"
     },
     {
-      "name": "Platinum - Fighter Attack Platoon 40",
+      "name": "Platinum - Fighter Attack Platoon Max",
       "to_build": "Fighter_Attack_Queller",
       "instance_count": -1,
-      "shared_instance_count": "Air",
-      "priority": 140,
+      "priority": 100,
       "build_conditions": [
         [
           {

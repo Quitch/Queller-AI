@@ -76,10 +76,6 @@
             "boolean": true
           },
           {
-            "test_type": "PresenceOnOtherPlanet",
-            "boolean": false
-          },
-          {
             "test_type": "PlanetWithoutPresence",
             "boolean": true
           },
@@ -98,7 +94,48 @@
             "value0": 5
           },
           {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Factory & Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "OrbitalLauncher"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "OrbitalLauncher"
+          },
+          {
             "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital - Naval",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "UnitCount",
             "unit_type_string0": "Factory & Orbital",
             "compare0": "<",
             "value0": 1
@@ -143,6 +180,12 @@
             "test_type": "PlanetCount",
             "compare0": ">",
             "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital - Naval",
+            "compare0": ">=",
+            "value0": 5
           },
           {
             "test_type": "UnitRatioOnPlanet",

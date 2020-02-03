@@ -136,23 +136,6 @@ function qQuellerAI() {
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1
     },
-    "Q-Uber Air": {
-      display_name: "!LOC:Q-Uber Air",
-      metal_drain_check: 0.54,
-      energy_drain_check: 0.65,
-      metal_demand_check: 0.85,
-      energy_demand_check: 0.8,
-      micro_type: 2,
-      go_for_the_kill: true,
-      priority_scout_metal_spots: true,
-      enable_commander_danger_responses: true,
-      neural_data_mod: 1.0,
-      adv_eco_mod: 1.0,
-      adv_eco_mod_alone: 0,
-      personality_tags: ["uber", "air"],
-      min_basic_fabbers: 3,
-      min_advanced_fabbers: 1
-    },
     "Q-Uber Bot": {
       display_name: "!LOC:Q-Uber Bot",
       metal_drain_check: 0.54,
@@ -170,8 +153,8 @@ function qQuellerAI() {
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1
     },
-    "Q-Uber Free For All": {
-      display_name: "!LOC:Q-Uber Free For All",
+    "Q-Uber Free-For-All": {
+      display_name: "!LOC:Q-Uber Free-For-All",
       metal_drain_check: 0.54,
       energy_drain_check: 0.65,
       metal_demand_check: 0.85,
@@ -256,7 +239,7 @@ function qQuellerAI() {
     model.localChatMessage(
       loc("!LOC:Queller AI"),
       loc(
-        "!LOC:by Quitch. Version 4.59.1. My difficulties are prefixed with a Q. Don't make AI teams larger than human teams, increase the difficulty or the econ rate instead. I support the Legion Expansion."
+        "!LOC:by Quitch. Version 4.60.0. My difficulties are prefixed with a Q. Don't make AI teams larger than human teams, increase the difficulty or the econ rate instead. I support the Legion Expansion."
       )
     );
   });

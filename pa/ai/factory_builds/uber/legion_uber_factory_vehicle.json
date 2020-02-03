@@ -147,6 +147,11 @@
             "boolean": true
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
+          },
+          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -169,37 +174,6 @@
             "unit_type_string1": "Land & Mobile & Offense",
             "compare0": "<",
             "value0": 0.05
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "(Construction & Mobile) - Fabber - Commander",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Land & Mobile & (Construction | Scout) - Fabber",
-            "unit_type_string1": "Land & Mobile & Offense",
-            "compare0": "<",
-            "value0": 0.03
           }
         ]
       ]
@@ -617,6 +591,11 @@
             "boolean": true
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
+          },
+          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -647,6 +626,11 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
           },
           {
             "test_type": "AloneOnPlanet",
@@ -698,6 +682,11 @@
             "boolean": true
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
+          },
+          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -711,6 +700,11 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
           },
           {
             "test_type": "AloneOnPlanet",
@@ -745,6 +739,11 @@
             "boolean": true
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
+          },
+          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -758,7 +757,7 @@
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & Artillery & Advanced",
+            "unit_type_string0": "Land & Artillery & Advanced & Mobile",
             "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
             "compare0": "<",
             "value0": 0.02
@@ -769,6 +768,11 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
           },
           {
             "test_type": "AloneOnPlanet",
@@ -783,7 +787,7 @@
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & Artillery & Advanced",
+            "unit_type_string0": "Land & Artillery & Advanced & Mobile",
             "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
             "compare0": "<",
             "value0": 0.02
@@ -812,6 +816,11 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
           },
           {
             "test_type": "AloneOnPlanet",

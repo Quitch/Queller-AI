@@ -133,7 +133,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Investigator - Intel/Seen Mines",
+      "name": "Legion - Uber - Investigator - Intel/Minesweeper",
       "to_build": "LegionBotBasicScout",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -186,10 +186,6 @@
           },
           {
             "test_type": "EnemyPresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "BaseThreatened",
             "boolean": false
           },
           {
@@ -270,7 +266,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Peacekeeper",
+      "name": "Legion - Uber - Peacekeeper - Maintain Numbers",
       "to_build": "LegionBotBasicAssault",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -433,7 +429,7 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Air",
-            "string1": "Air",
+            "string1": "AntiAir",
             "compare0": ">",
             "value0": 0.9
           },
@@ -578,7 +574,7 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Air",
-            "string1": "Air",
+            "string1": "AntiAir",
             "compare0": ">",
             "value0": 1
           },
@@ -615,7 +611,7 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Air",
-            "string1": "Air",
+            "string1": "AntiAir",
             "compare0": ">",
             "value0": 2
           },
@@ -1000,7 +996,7 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Air",
-            "string1": "Air",
+            "string1": "AntiAir",
             "compare0": ">",
             "value0": 1
           },

@@ -52,6 +52,10 @@
             "boolean": false
           },
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
             "boolean": true
           },
@@ -231,6 +235,10 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
           {

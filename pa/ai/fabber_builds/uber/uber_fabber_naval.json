@@ -26,9 +26,8 @@
             "boolean": false
           },
           {
-            "test_type": "PlanetCount",
-            "compare0": "==",
-            "value0": 1
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -122,7 +121,7 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Sub",
-            "string1": "Sub",
+            "string1": "AntiSub",
             "compare0": ">",
             "value0": 1
           },
@@ -156,8 +155,8 @@
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Sub",
-            "string1": "Naval",
+            "string0": "Naval",
+            "string1": "AntiSub",
             "compare0": ">",
             "value0": 1
           },
@@ -284,7 +283,7 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Sub",
-            "string1": "Sub",
+            "string1": "AntiSub",
             "compare0": ">",
             "value0": 1
           },
@@ -318,8 +317,8 @@
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Sub",
-            "string1": "Naval",
+            "string0": "Naval",
+            "string1": "AntiSub",
             "compare0": ">",
             "value0": 1
           },
@@ -405,11 +404,6 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetCount",
-            "compare0": "==",
-            "value0": 1
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "AdvancedNavalFactory"
           },
@@ -437,11 +431,6 @@
           {
             "test_type": "UnableToExpand",
             "boolean": true
-          },
-          {
-            "test_type": "PlanetCount",
-            "compare0": "==",
-            "value0": 1
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -476,11 +465,6 @@
           {
             "test_type": "CanDeployNavalFromBase",
             "boolean": false
-          },
-          {
-            "test_type": "PlanetCount",
-            "compare0": "==",
-            "value0": 1
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -551,11 +535,6 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetCount",
-            "compare0": "==",
-            "value0": 1
-          },
-          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory & Advanced & Naval - Orbital",
             "compare0": "<",
@@ -612,11 +591,6 @@
           {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
-          },
-          {
-            "test_type": "PlanetCount",
-            "compare0": "==",
-            "value0": 1
           },
           {
             "test_type": "CurrentMetalEfficiency",

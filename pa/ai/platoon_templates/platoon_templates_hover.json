@@ -1,40 +1,214 @@
 {
   "platoon_templates": {
-    "Hover_Attack_Queller": {
+    "Amphibious_Attack_Small_Queller": {
       "units": [
         {
-          "unit_types": "Hover & Mobile & (Naval | Artillery) & Custom1 - Titan",
+          "unit_types": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Fighter - SelfDestruct - Deconstruction - Titan",
           "min_count": 0,
-          "max_count": -1,
-          "squad": "Artillery"
+          "max_count": 3,
+          "squad": "Fast"
         },
         {
-          "unit_types": "Hover & Mobile & (Land | Naval) - Custom1 - Titan - Deconstruction",
+          "unit_types": "Tank & Sub & Mobile",
+          "min_count": 0,
+          "max_count": 3,
+          "squad": "General"
+        }
+      ]
+    },
+    "Amphibious_Attack_Medium_Queller": {
+      "units": [
+        {
+          "unit_types": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Fighter - SelfDestruct - Deconstruction - Titan",
+          "min_count": 0,
+          "max_count": 10,
+          "squad": "Fast"
+        },
+        {
+          "unit_types": "Tank & Sub & Mobile",
+          "min_count": 0,
+          "max_count": 10,
+          "squad": "General"
+        }
+      ]
+    },
+    "Amphibious_Attack_Large_Queller": {
+      "units": [
+        {
+          "unit_types": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Fighter - SelfDestruct - Deconstruction - Titan",
+          "min_count": 0,
+          "max_count": 20,
+          "squad": "Fast"
+        },
+        {
+          "unit_types": "Tank & Sub & Mobile",
+          "min_count": 0,
+          "max_count": 20,
+          "squad": "General"
+        }
+      ]
+    },
+    "Amphibious_Attack_XLarge_Queller": {
+      "units": [
+        {
+          "unit_types": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Fighter - SelfDestruct - Deconstruction - Titan",
+          "min_count": 0,
+          "max_count": 30,
+          "squad": "Fast"
+        },
+        {
+          "unit_types": "Tank & Sub & Mobile",
+          "min_count": 0,
+          "max_count": 30,
+          "squad": "General"
+        }
+      ]
+    },
+    "Amphibious_Attack_Huge_Queller": {
+      "units": [
+        {
+          "unit_types": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Fighter - SelfDestruct - Deconstruction - Titan",
+          "min_count": 0,
+          "max_count": 40,
+          "squad": "Fast"
+        },
+        {
+          "unit_types": "Tank & Sub & Mobile",
+          "min_count": 0,
+          "max_count": 40,
+          "squad": "General"
+        }
+      ]
+    },
+    "Amphibious_Attack_Max_Queller": {
+      "units": [
+        {
+          "unit_types": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Fighter - SelfDestruct - Deconstruction - Titan",
+          "min_count": 0,
+          "max_count": -1,
+          "squad": "Fast"
+        },
+        {
+          "unit_types": "Tank & Sub & Mobile",
           "min_count": 0,
           "max_count": -1,
           "squad": "General"
         }
       ]
     },
-    "Amphibious_Attack_Queller": {
+    "Hover_Attack_Small_Queller": {
       "units": [
         {
-          "unit_types": "Hover & Mobile & (Naval | Artillery) & Custom1 - Titan",
+          "unit_types": "(Hover & Mobile) - Custom1 - Fabber - Construction - Deconstruction - Titan",
+          "min_count": 0,
+          "max_count": 3,
+          "squad": "General"
+        },
+        {
+          "unit_types": "(Hover & Mobile & Custom1) - Fabber - Construction - Deconstruction - Titan",
+          "min_count": 0,
+          "max_count": 3,
+          "squad": "Artillery"
+        }
+      ]
+    },
+    "Hover_Attack_Medium_Queller": {
+      "units": [
+        {
+          "unit_types": "(Hover & Mobile) - Custom1 - Fabber - Construction - Deconstruction - Titan",
+          "min_count": 0,
+          "max_count": 10,
+          "squad": "General"
+        },
+        {
+          "unit_types": "(Hover & Mobile & Custom1) - Fabber - Construction - Deconstruction - Titan",
+          "min_count": 0,
+          "max_count": 10,
+          "squad": "Artillery"
+        }
+      ]
+    },
+    "Hover_Attack_Large_Queller": {
+      "units": [
+        {
+          "unit_types": "(Hover & Mobile) - Custom1 - Fabber - Construction - Deconstruction - Titan",
+          "min_count": 0,
+          "max_count": 20,
+          "squad": "General"
+        },
+        {
+          "unit_types": "(Hover & Mobile & Custom1) - Fabber - Construction - Deconstruction - Titan",
+          "min_count": 0,
+          "max_count": 20,
+          "squad": "Artillery"
+        }
+      ]
+    },
+    "Hover_Attack_XLarge_Queller": {
+      "units": [
+        {
+          "unit_types": "(Hover & Mobile) - Custom1 - Fabber - Construction - Deconstruction - Titan",
+          "min_count": 0,
+          "max_count": 30,
+          "squad": "General"
+        },
+        {
+          "unit_types": "(Hover & Mobile & Custom1) - Fabber - Construction - Deconstruction - Titan",
+          "min_count": 0,
+          "max_count": 30,
+          "squad": "Artillery"
+        }
+      ]
+    },
+    "Hover_Attack_Huge_Queller": {
+      "units": [
+        {
+          "unit_types": "(Hover & Mobile) - Custom1 - Fabber - Construction - Deconstruction - Titan",
+          "min_count": 0,
+          "max_count": 40,
+          "squad": "General"
+        },
+        {
+          "unit_types": "(Hover & Mobile & Custom1) - Fabber - Construction - Deconstruction - Titan",
+          "min_count": 0,
+          "max_count": 40,
+          "squad": "Artillery"
+        }
+      ]
+    },
+    "Hover_Attack_Max_Queller": {
+      "units": [
+        {
+          "unit_types": "(Hover & Mobile) - Custom1 - Fabber - Construction - Deconstruction - Titan",
+          "min_count": 0,
+          "max_count": -1,
+          "squad": "General"
+        },
+        {
+          "unit_types": "(Hover & Mobile & Custom1) - Fabber - Construction - Deconstruction - Titan",
           "min_count": 0,
           "max_count": -1,
           "squad": "Artillery"
-        },
+        }
+      ]
+    },
+    "Necromancer_Attack_Queller": {
+      "units": [
         {
-          "unit_types": "Hover & Mobile & Naval - Custom1 - Titan",
-          "min_count": 0,
+          "unit_types": "Bot & SelfDestruct & Advanced & Custom1",
+          "min_count": 1,
           "max_count": -1,
-          "squad": "General"
-        },
+          "squad": "Artillery"
+        }
+      ]
+    },
+    "Swarm_Raid_Max_Queller": {
+      "units": [
         {
-          "unit_types": "(Hover | Sub) & Land & Mobile - Titan - Deconstruction - Artillery",
-          "min_count": 0,
+          "unit_types": "Bot & Deconstruction",
+          "min_count": 10,
           "max_count": -1,
-          "squad": "General"
+          "squad": "Fast"
         }
       ]
     }

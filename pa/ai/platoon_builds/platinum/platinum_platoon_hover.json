@@ -1,10 +1,10 @@
 {
   "build_list": [
     {
-      "name": "Platinum - Hover Attack Platoon 1",
-      "to_build": "Hover_Attack_Queller",
+      "name": "Platinum - Amphibious Attack Platoon Small",
+      "to_build": "Amphibious_Attack_Small_Queller",
       "instance_count": -1,
-      "priority": 170,
+      "priority": 125,
       "build_conditions": [
         [
           {
@@ -24,7 +24,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Hover & Mobile - Titan",
+            "unit_type_string0": "((Bot | (Tank & Sub)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Fighter - SelfDestruct - Deconstruction - Titan",
             "compare0": ">=",
             "value0": 1
           },
@@ -39,10 +39,10 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Platinum - Hover Attack Platoon 4",
-      "to_build": "Hover_Attack_Queller",
+      "name": "Platinum - Amphibious Attack Platoon Medium",
+      "to_build": "Amphibious_Attack_Medium_Queller",
       "instance_count": -1,
-      "priority": 160,
+      "priority": 124,
       "build_conditions": [
         [
           {
@@ -55,8 +55,14 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": "<",
+            "value0": 2800
+          },
+          {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Hover & Mobile - Titan",
+            "unit_type_string0": "((Bot | (Tank & Sub)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Fighter - SelfDestruct - Deconstruction - Titan",
             "compare0": ">=",
             "value0": 4
           },
@@ -71,53 +77,10 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Platinum - Amphibious Attack Platoon 1",
-      "to_build": "Amphibious_Attack_Queller",
+      "name": "Platinum - Amphibious Attack Platoon Large",
+      "to_build": "Amphibious_Attack_Large_Queller",
       "instance_count": -1,
-      "priority": 130,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": "<",
-            "value0": 840
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Naval | (Sub - Land)",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Hover | Sub) & Land",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "LandAttack"
-    },
-    {
-      "name": "Platinum - Amphibious Attack Platoon 12",
-      "to_build": "Amphibious_Attack_Queller",
-      "instance_count": -1,
-      "priority": 120,
+      "priority": 123,
       "build_conditions": [
         [
           {
@@ -136,15 +99,10 @@
             "value0": 5600
           },
           {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Naval | (Sub - Land)",
-            "boolean": true
-          },
-          {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Hover | Sub) & Land",
+            "unit_type_string0": "((Bot | (Tank & Sub)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Fighter - SelfDestruct - Deconstruction - Titan",
             "compare0": ">=",
-            "value0": 12
+            "value0": 10
           },
           {
             "test_type": "CanAttackWithPoolUnitsLand",
@@ -157,10 +115,10 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Platinum - Amphibious Attack Platoon 24",
-      "to_build": "Amphibious_Attack_Queller",
+      "name": "Platinum - Amphibious Attack Platoon XLarge",
+      "to_build": "Amphibious_Attack_XLarge_Queller",
       "instance_count": -1,
-      "priority": 110,
+      "priority": 122,
       "build_conditions": [
         [
           {
@@ -173,15 +131,16 @@
             "boolean": true
           },
           {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Naval | (Sub - Land)",
-            "boolean": true
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": "<",
+            "value0": 11200
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Hover | Sub) & Land",
+            "unit_type_string0": "((Bot | (Tank & Sub)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Fighter - SelfDestruct - Deconstruction - Titan",
             "compare0": ">=",
-            "value0": 24
+            "value0": 20
           },
           {
             "test_type": "CanAttackWithPoolUnitsLand",
@@ -194,10 +153,10 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Platinum - Swarm Raid Platoon 4",
-      "to_build": "Swarm_Raid_Queller",
+      "name": "Platinum - Amphibious Attack Platoon Huge",
+      "to_build": "Amphibious_Attack_Huge_Queller",
       "instance_count": -1,
-      "priority": 108,
+      "priority": 121,
       "build_conditions": [
         [
           {
@@ -208,6 +167,347 @@
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": "<",
+            "value0": 16800
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "((Bot | (Tank & Sub)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Fighter - SelfDestruct - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 30
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Platinum - Amphibious Attack Platoon Max",
+      "to_build": "Amphibious_Attack_Max_Queller",
+      "instance_count": -1,
+      "priority": 120,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "((Bot | (Tank & Sub)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Fighter - SelfDestruct - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 40
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Platinum - Hover Attack Platoon Small",
+      "to_build": "Hover_Attack_Small_Queller",
+      "instance_count": -1,
+      "priority": 125,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": "<",
+            "value0": 840
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Hover & Mobile) - Fabber - Construction - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Platinum - Hover Attack Platoon Medium",
+      "to_build": "Hover_Attack_Medium_Queller",
+      "instance_count": -1,
+      "priority": 124,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": "<",
+            "value0": 2800
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Hover & Mobile & Naval) - Fabber - Construction - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 2
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": "<",
+            "value0": 2800
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Hover & Mobile) - Fabber - Construction - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 4
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Platinum - Hover Attack Platoon Large",
+      "to_build": "Hover_Attack_Large_Queller",
+      "instance_count": -1,
+      "priority": 123,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": "<",
+            "value0": 5600
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Hover & Mobile & Naval) - Fabber - Construction - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": "<",
+            "value0": 5600
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Hover & Mobile) - Fabber - Construction - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 10
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Platinum - Hover Attack Platoon Max",
+      "to_build": "Hover_Attack_Max_Queller",
+      "instance_count": -1,
+      "priority": 122,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Hover & Mobile & Naval) - Fabber - Construction - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Hover & Mobile) - Fabber - Construction - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 20
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Platinum - Swarm Attack Platoon Small",
+      "to_build": "Swarm_Raid_Small",
+      "instance_count": -1,
+      "priority": 125,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": "<",
+            "value0": 5600
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & Deconstruction",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Platinum - Swarm Attack Platoon Medium",
+      "to_build": "Swarm_Raid_Medium",
+      "instance_count": -1,
+      "priority": 124,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": "<",
+            "value0": 11200
           },
           {
             "test_type": "UnitPoolCount",
@@ -216,20 +516,20 @@
             "value0": 4
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": "<",
-            "value0": 16800
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ]
       ],
       "task_type": "LandAttack"
     },
     {
-      "name": "Platinum - Swarm Raid Platoon 8",
-      "to_build": "Swarm_Raid_Queller",
+      "name": "Platinum - Swarm Attack Platoon Max",
+      "to_build": "Swarm_Raid_Max_Queller",
       "instance_count": -1,
-      "priority": 10,
+      "priority": 123,
       "build_conditions": [
         [
           {
@@ -245,7 +545,121 @@
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Bot & Deconstruction",
             "compare0": ">=",
-            "value0": 8
+            "value0": 10
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Platinum - Necromancer Attack Platoon Small",
+      "to_build": "Necromancer_Attack_Small_Queller",
+      "instance_count": -1,
+      "priority": 125,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": "<",
+            "value0": 5600
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & SelfDestruct & Advanced & Custom1",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Platinum - Necromancer Attack Platoon Medium",
+      "to_build": "Necromancer_Attack_Medium_Queller",
+      "instance_count": -1,
+      "priority": 124,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": "<",
+            "value0": 11200
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & SelfDestruct & Advanced & Custom1",
+            "compare0": ">=",
+            "value0": 4
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Platinum - Necromancer Attack Platoon Max",
+      "to_build": "Necromancer_Attack_Max_Queller",
+      "instance_count": -1,
+      "priority": 123,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Bot & SelfDestruct & Advanced & Custom1",
+            "compare0": ">=",
+            "value0": 10
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
           }
         ]
       ],

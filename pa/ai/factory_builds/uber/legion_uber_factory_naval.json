@@ -179,10 +179,6 @@
             "boolean": false
           },
           {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
             "test_type": "HaveFullPlanetIntel",
             "boolean": false
           }
@@ -268,7 +264,7 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Air",
-            "string1": "Air",
+            "string1": "AntiAir",
             "compare0": ">",
             "value0": 1
           },

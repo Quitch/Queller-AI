@@ -91,16 +91,14 @@
             "boolean": false
           },
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
+            "test_type": "HaveFullPlanetIntel",
             "boolean": false
           },
           {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyOrbitalPresenceOnPlanet",
-            "boolean": false
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & (Fighter | Scout)",
+            "compare0": "<",
+            "value0": 1
           }
         ],
         [
@@ -144,6 +142,10 @@
           },
           {
             "test_type": "EnemyOrbitalPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
             "boolean": false
           }
         ],

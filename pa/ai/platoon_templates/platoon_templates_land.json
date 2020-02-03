@@ -1,154 +1,246 @@
 {
   "platoon_templates": {
-    "Vehicle_Scout_Queller": {
+    "Land_Attack_Small_Queller": {
       "units": [
         {
-          "unit_types": "Tank & Scout - Titan",
-          "max_count": 1
-        }
-      ]
-    },
-    "Stryker_Scout_Queller": {
-      "units": [
-        {
-          "unit_types": "(Tank & Basic & Mobile) - Hover - Fabber - AirDefense - Construction - Artillery - Heavy - Scout - SelfDestruct - Deconstruction",
-          "max_count": 1
-        }
-      ]
-    },
-    "Teleporter_Attack_Queller": {
-      "units": [
-        {
-          "unit_types": "Bot & Mobile - Fabber - AirDefense - Construction - Artillery - Tactical - Scout - SelfDestruct - Titan",
+          "unit_types": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Scout - SelfDestruct - Deconstruction - Titan",
           "min_count": 0,
-          "max_count": 49,
+          "max_count": 3,
           "squad": "Fast"
         },
         {
-          "unit_types": "Tank & Mobile - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout - SelfDestruct - Titan",
+          "unit_types": "(Tank & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout - SelfDestruct - Titan",
           "min_count": 0,
-          "max_count": 49,
+          "max_count": 3,
           "squad": "General"
         },
         {
-          "unit_types": "Bot & SelfDestruct & Mobile - Titan",
+          "unit_types": "(Tank & Heavy & Mobile) - Titan",
           "min_count": 0,
-          "percent": 0.4,
-          "squad": "Suicide"
-        },
-        {
-          "unit_types": "Tank & Heavy & Mobile - Titan",
-          "min_count": 0,
-          "percent": 0.4,
+          "max_count": 3,
           "squad": "Close"
         },
         {
-          "unit_types": "Land & Mobile & (Artillery | Tactical) - Titan",
+          "unit_types": "(Land & Mobile & (Artillery | Tactical)) - Titan",
           "min_count": 0,
-          "percent": 0.5,
+          "max_count": 3,
           "squad": "Artillery"
         },
         {
-          "unit_types": "Land & Mobile & AirDefense - Fabber - Titan",
+          "unit_types": "(Land & Mobile & AirDefense) - Fabber - Titan",
           "min_count": 0,
           "percent": 0.2,
           "squad": "Defense"
         },
         {
-          "unit_types": "Land & Mobile & (Scout | Construction) - Fabber - Titan",
-          "min_count": 0,
-          "percent": 0.05,
-          "squad": "Defense"
-        }
-      ]
-    },
-    "Teleporter_Attack_Alone_Queller": {
-      "units": [
-        {
-          "unit_types": "Bot & Mobile - Fabber - AirDefense - Construction - Artillery - Tactical - Scout - SelfDestruct - Titan",
-          "min_count": 0,
-          "max_count": -1,
-          "squad": "Fast"
-        },
-        {
-          "unit_types": "Tank & Mobile - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout - SelfDestruct - Titan",
-          "min_count": 0,
-          "max_count": -1,
-          "squad": "General"
-        },
-        {
-          "unit_types": "Bot & SelfDestruct & Mobile - Titan",
-          "min_count": 1,
-          "max_count": -1,
-          "squad": "Suicide"
-        },
-        {
-          "unit_types": "Tank & Heavy & Mobile - Titan",
-          "min_count": 0,
-          "max_count": -1,
-          "squad": "Close"
-        },
-        {
-          "unit_types": "Land & Mobile & (Artillery | Tactical) - Titan",
-          "min_count": 0,
-          "max_count": -1,
-          "squad": "Artillery"
-        },
-        {
-          "unit_types": "Land & Mobile & AirDefense - Fabber - Titan",
-          "min_count": 0,
-          "max_count": -1,
-          "squad": "Defense"
-        },
-        {
-          "unit_types": "Land & Mobile & (Scout | Construction) - Fabber - Titan",
-          "min_count": 0,
-          "max_count": -1,
-          "squad": "Defense"
-        }
-      ]
-    },
-    "Land_Attack_Queller": {
-      "units": [
-        {
-          "unit_types": "Bot & Mobile - Fabber - AirDefense - Construction - Artillery - Tactical - Scout - SelfDestruct - Deconstruction - Titan",
-          "min_count": 0,
-          "max_count": -1,
-          "squad": "Fast"
-        },
-        {
-          "unit_types": "Tank & Mobile - Hover - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout - SelfDestruct - Titan",
-          "min_count": 0,
-          "max_count": -1,
-          "squad": "General"
-        },
-        {
-          "unit_types": "Tank & Heavy & Mobile - Titan",
-          "min_count": 0,
-          "max_count": -1,
-          "squad": "Close"
-        },
-        {
-          "unit_types": "Land & Mobile & (Artillery | Tactical) - Titan",
-          "min_count": 0,
-          "max_count": -1,
-          "squad": "Artillery"
-        },
-        {
-          "unit_types": "Land & Mobile & AirDefense - Fabber - Titan",
-          "min_count": 0,
-          "percent": 0.2,
-          "squad": "Defense"
-        },
-        {
-          "unit_types": "Land & Mobile & (Scout | Construction) - Fabber - Titan",
+          "unit_types": "(Land & Mobile & (Scout | Construction)) - Fabber - Titan",
           "min_count": 0,
           "percent": 0.1,
           "squad": "Defense"
         }
       ]
     },
-    "Land_Attack_Small_Uber": {
+    "Land_Attack_Medium_Queller": {
+      "units": [
+        {
+          "unit_types": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Scout - SelfDestruct - Deconstruction - Titan",
+          "min_count": 0,
+          "max_count": 10,
+          "squad": "Fast"
+        },
+        {
+          "unit_types": "(Tank & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout - SelfDestruct - Titan",
+          "min_count": 0,
+          "max_count": 10,
+          "squad": "General"
+        },
+        {
+          "unit_types": "(Tank & Heavy & Mobile) - Titan",
+          "min_count": 0,
+          "max_count": 10,
+          "squad": "Close"
+        },
+        {
+          "unit_types": "(Land & Mobile & (Artillery | Tactical)) - Titan",
+          "min_count": 0,
+          "max_count": 10,
+          "squad": "Artillery"
+        },
+        {
+          "unit_types": "(Land & Mobile & AirDefense) - Fabber - Titan",
+          "min_count": 0,
+          "percent": 0.2,
+          "squad": "Defense"
+        },
+        {
+          "unit_types": "(Land & Mobile & (Scout | Construction)) - Fabber - Titan",
+          "min_count": 0,
+          "percent": 0.1,
+          "squad": "Defense"
+        }
+      ]
+    },
+    "Land_Attack_Large_Queller": {
+      "units": [
+        {
+          "unit_types": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Scout - SelfDestruct - Deconstruction - Titan",
+          "min_count": 0,
+          "max_count": 20,
+          "squad": "Fast"
+        },
+        {
+          "unit_types": "(Tank & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout - SelfDestruct - Titan",
+          "min_count": 0,
+          "max_count": 20,
+          "squad": "General"
+        },
+        {
+          "unit_types": "(Tank & Heavy & Mobile) - Titan",
+          "min_count": 0,
+          "max_count": 20,
+          "squad": "Close"
+        },
+        {
+          "unit_types": "(Land & Mobile & (Artillery | Tactical)) - Titan",
+          "min_count": 0,
+          "max_count": 20,
+          "squad": "Artillery"
+        },
+        {
+          "unit_types": "(Land & Mobile & AirDefense) - Fabber - Titan",
+          "min_count": 0,
+          "percent": 0.2,
+          "squad": "Defense"
+        },
+        {
+          "unit_types": "(Land & Mobile & (Scout | Construction)) - Fabber - Titan",
+          "min_count": 0,
+          "percent": 0.1,
+          "squad": "Defense"
+        }
+      ]
+    },
+    "Land_Attack_XLarge_Queller": {
+      "units": [
+        {
+          "unit_types": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Scout - SelfDestruct - Deconstruction - Titan",
+          "min_count": 0,
+          "max_count": 30,
+          "squad": "Fast"
+        },
+        {
+          "unit_types": "(Tank & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout - SelfDestruct - Titan",
+          "min_count": 0,
+          "max_count": 30,
+          "squad": "General"
+        },
+        {
+          "unit_types": "(Tank & Heavy & Mobile) - Titan",
+          "min_count": 0,
+          "max_count": 30,
+          "squad": "Close"
+        },
+        {
+          "unit_types": "(Land & Mobile & (Artillery | Tactical)) - Titan",
+          "min_count": 0,
+          "max_count": 30,
+          "squad": "Artillery"
+        },
+        {
+          "unit_types": "(Land & Mobile & AirDefense) - Fabber - Titan",
+          "min_count": 0,
+          "percent": 0.2,
+          "squad": "Defense"
+        },
+        {
+          "unit_types": "(Land & Mobile & (Scout | Construction)) - Fabber - Titan",
+          "min_count": 0,
+          "percent": 0.1,
+          "squad": "Defense"
+        }
+      ]
+    },
+    "Land_Attack_Huge_Queller": {
+      "units": [
+        {
+          "unit_types": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Scout - SelfDestruct - Deconstruction - Titan",
+          "min_count": 0,
+          "max_count": 40,
+          "squad": "Fast"
+        },
+        {
+          "unit_types": "(Tank & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout - SelfDestruct - Titan",
+          "min_count": 0,
+          "max_count": 40,
+          "squad": "General"
+        },
+        {
+          "unit_types": "(Tank & Heavy & Mobile) - Titan",
+          "min_count": 0,
+          "max_count": 40,
+          "squad": "Close"
+        },
+        {
+          "unit_types": "(Land & Mobile & (Artillery | Tactical)) - Titan",
+          "min_count": 0,
+          "max_count": 40,
+          "squad": "Artillery"
+        },
+        {
+          "unit_types": "(Land & Mobile & AirDefense) - Fabber - Titan",
+          "min_count": 0,
+          "percent": 0.2,
+          "squad": "Defense"
+        },
+        {
+          "unit_types": "(Land & Mobile & (Scout | Construction)) - Fabber - Titan",
+          "min_count": 0,
+          "percent": 0.1,
+          "squad": "Defense"
+        }
+      ]
+    },
+    "Land_Attack_Max_Queller": {
+      "units": [
+        {
+          "unit_types": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Scout - SelfDestruct - Deconstruction - Titan",
+          "min_count": 0,
+          "max_count": -1,
+          "squad": "Fast"
+        },
+        {
+          "unit_types": "(Tank & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout - SelfDestruct - Titan",
+          "min_count": 0,
+          "max_count": -1,
+          "squad": "General"
+        },
+        {
+          "unit_types": "(Tank & Heavy & Mobile) - Titan",
+          "min_count": 0,
+          "max_count": -1,
+          "squad": "Close"
+        },
+        {
+          "unit_types": "(Land & Mobile & (Artillery | Tactical)) - Titan",
+          "min_count": 0,
+          "max_count": -1,
+          "squad": "Artillery"
+        },
+        {
+          "unit_types": "(Land & Mobile & AirDefense) - Fabber - Titan",
+          "min_count": 0,
+          "percent": 0.2,
+          "squad": "Defense"
+        },
+        {
+          "unit_types": "(Land & Mobile & (Scout | Construction)) - Fabber - Titan",
+          "min_count": 0,
+          "percent": 0.1,
+          "squad": "Defense"
+        }
+      ]
+    },
+    "Land_Attack_Small_Queller_Uber": {
       "units": [
         {
           "unit_types": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - SelfDestruct - Deconstruction - Titan",
@@ -157,7 +249,7 @@
           "squad": "Fast"
         },
         {
-          "unit_types": "(Tank & Basic & Mobile) - Hover - Fabber - AirDefense - Construction - Artillery - Heavy - Scout - SelfDestruct - Deconstruction",
+          "unit_types": "(Tank & Basic & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - Scout - SelfDestruct - Deconstruction",
           "min_count": 0,
           "max_count": 3,
           "squad": "General"
@@ -169,19 +261,19 @@
           "squad": "Close"
         },
         {
-          "unit_types": "(Land & Mobile & (Artillery | Tactical)) - Titan",
+          "unit_types": "((Land & Mobile & (Artillery | Tactical))) - Titan",
           "min_count": 0,
-          "max_count": -1,
+          "max_count": 3,
           "squad": "Artillery"
         },
         {
           "unit_types": "(Tank & Mobile & Heavy) - Titan",
           "min_count": 0,
-          "max_count": -1,
+          "max_count": 3,
           "squad": "Close"
         },
         {
-          "unit_types": "(Land & Mobile & AirDefense) - Titan",
+          "unit_types": "((Land & Mobile & AirDefense)) - Titan",
           "min_count": 0,
           "percent": 0.15,
           "squad": "Defense"
@@ -194,7 +286,7 @@
         }
       ]
     },
-    "Land_Attack_Medium_Uber": {
+    "Land_Attack_Medium_Queller_Uber": {
       "units": [
         {
           "unit_types": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - SelfDestruct - Deconstruction - Titan",
@@ -203,7 +295,7 @@
           "squad": "Fast"
         },
         {
-          "unit_types": "(Tank & Basic & Mobile) - Hover - Fabber - AirDefense - Construction - Artillery - Heavy - Scout - SelfDestruct - Deconstruction",
+          "unit_types": "(Tank & Basic & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - Scout - SelfDestruct - Deconstruction",
           "min_count": 0,
           "max_count": 10,
           "squad": "General"
@@ -215,19 +307,19 @@
           "squad": "Close"
         },
         {
-          "unit_types": "(Land & Mobile & (Artillery | Tactical)) - Titan",
+          "unit_types": "((Land & Mobile & (Artillery | Tactical))) - Titan",
           "min_count": 0,
-          "max_count": -1,
+          "max_count": 10,
           "squad": "Artillery"
         },
         {
           "unit_types": "(Tank & Mobile & Heavy) - Titan",
           "min_count": 0,
-          "max_count": -1,
+          "max_count": 10,
           "squad": "Close"
         },
         {
-          "unit_types": "(Land & Mobile & AirDefense) - Titan",
+          "unit_types": "((Land & Mobile & AirDefense)) - Titan",
           "min_count": 0,
           "percent": 0.15,
           "squad": "Defense"
@@ -240,7 +332,7 @@
         }
       ]
     },
-    "Land_Attack_Large_Uber": {
+    "Land_Attack_Large_Queller_Uber": {
       "units": [
         {
           "unit_types": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - SelfDestruct - Deconstruction - Titan",
@@ -249,7 +341,7 @@
           "squad": "Fast"
         },
         {
-          "unit_types": "(Tank & Basic & Mobile) - Hover - Fabber - AirDefense - Construction - Artillery - Heavy - Scout - SelfDestruct - Deconstruction",
+          "unit_types": "(Tank & Basic & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - Scout - SelfDestruct - Deconstruction",
           "min_count": 0,
           "max_count": 20,
           "squad": "General"
@@ -261,19 +353,19 @@
           "squad": "Close"
         },
         {
-          "unit_types": "(Land & Mobile & (Artillery | Tactical)) - Titan",
+          "unit_types": "((Land & Mobile & (Artillery | Tactical))) - Titan",
           "min_count": 0,
-          "max_count": -1,
+          "max_count": 20,
           "squad": "Artillery"
         },
         {
           "unit_types": "(Tank & Mobile & Heavy) - Titan",
           "min_count": 0,
-          "max_count": -1,
+          "max_count": 20,
           "squad": "Close"
         },
         {
-          "unit_types": "(Land & Mobile & AirDefense) - Titan",
+          "unit_types": "((Land & Mobile & AirDefense)) - Titan",
           "min_count": 0,
           "percent": 0.15,
           "squad": "Defense"
@@ -286,40 +378,40 @@
         }
       ]
     },
-    "Land_Attack_XLarge_Uber": {
+    "Land_Attack_XLarge_Queller_Uber": {
       "units": [
         {
           "unit_types": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - SelfDestruct - Deconstruction - Titan",
           "min_count": 0,
-          "max_count": 40,
+          "max_count": 30,
           "squad": "Fast"
         },
         {
-          "unit_types": "(Tank & Basic & Mobile) - Hover - Fabber - AirDefense - Construction - Artillery - Heavy - Scout - SelfDestruct - Deconstruction",
+          "unit_types": "(Tank & Basic & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - Scout - SelfDestruct - Deconstruction",
           "min_count": 0,
-          "max_count": 40,
+          "max_count": 30,
           "squad": "General"
         },
         {
           "unit_types": "(Tank & Advanced & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - Scout - SelfDestruct - Deconstruction - Titan",
           "min_count": 0,
-          "max_count": 40,
+          "max_count": 30,
           "squad": "Close"
         },
         {
-          "unit_types": "(Land & Mobile & (Artillery | Tactical)) - Titan",
+          "unit_types": "((Land & Mobile & (Artillery | Tactical))) - Titan",
           "min_count": 0,
-          "max_count": -1,
+          "max_count": 30,
           "squad": "Artillery"
         },
         {
           "unit_types": "(Tank & Mobile & Heavy) - Titan",
           "min_count": 0,
-          "max_count": -1,
+          "max_count": 30,
           "squad": "Close"
         },
         {
-          "unit_types": "(Land & Mobile & AirDefense) - Titan",
+          "unit_types": "((Land & Mobile & AirDefense)) - Titan",
           "min_count": 0,
           "percent": 0.15,
           "squad": "Defense"
@@ -332,7 +424,53 @@
         }
       ]
     },
-    "Land_Attack_Max_Uber": {
+    "Land_Attack_Huge_Queller_Uber": {
+      "units": [
+        {
+          "unit_types": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - SelfDestruct - Deconstruction - Titan",
+          "min_count": 0,
+          "max_count": 40,
+          "squad": "Fast"
+        },
+        {
+          "unit_types": "(Tank & Basic & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - Scout - SelfDestruct - Deconstruction",
+          "min_count": 0,
+          "max_count": 40,
+          "squad": "General"
+        },
+        {
+          "unit_types": "(Tank & Advanced & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - Scout - SelfDestruct - Deconstruction - Titan",
+          "min_count": 0,
+          "max_count": 40,
+          "squad": "Close"
+        },
+        {
+          "unit_types": "((Land & Mobile & (Artillery | Tactical))) - Titan",
+          "min_count": 0,
+          "max_count": 40,
+          "squad": "Artillery"
+        },
+        {
+          "unit_types": "(Tank & Mobile & Heavy) - Titan",
+          "min_count": 0,
+          "max_count": 40,
+          "squad": "Close"
+        },
+        {
+          "unit_types": "((Land & Mobile & AirDefense)) - Titan",
+          "min_count": 0,
+          "percent": 0.15,
+          "squad": "Defense"
+        },
+        {
+          "unit_types": "(Land & Mobile & (Construction | Scout)) - Titan",
+          "min_count": 0,
+          "percent": 0.05,
+          "squad": "Defense"
+        }
+      ]
+    },
+    "Land_Attack_Max_Queller_Uber": {
       "units": [
         {
           "unit_types": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - SelfDestruct - Deconstruction - Titan",
@@ -341,7 +479,7 @@
           "squad": "Fast"
         },
         {
-          "unit_types": "(Tank & Basic & Mobile) - Hover - Fabber - AirDefense - Construction - Artillery - Heavy - Scout - SelfDestruct - Deconstruction",
+          "unit_types": "(Tank & Basic & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - Scout - SelfDestruct - Deconstruction",
           "min_count": 0,
           "max_count": -1,
           "squad": "General"
@@ -353,7 +491,7 @@
           "squad": "Close"
         },
         {
-          "unit_types": "(Land & Mobile & (Artillery | Tactical)) - Titan",
+          "unit_types": "((Land & Mobile & (Artillery | Tactical))) - Titan",
           "min_count": 0,
           "max_count": -1,
           "squad": "Artillery"
@@ -365,7 +503,7 @@
           "squad": "Close"
         },
         {
-          "unit_types": "(Land & Mobile & AirDefense) - Titan",
+          "unit_types": "((Land & Mobile & AirDefense)) - Titan",
           "min_count": 0,
           "percent": 0.15,
           "squad": "Defense"
@@ -375,6 +513,102 @@
           "min_count": 0,
           "percent": 0.05,
           "squad": "Defense"
+        }
+      ]
+    },
+    "Boom_Attack_Small_Queller": {
+      "units": [
+        {
+          "unit_types": "(Bot & SelfDestruct) - Advanced",
+          "min_count": 0,
+          "max_count": 3,
+          "squad": "Suicide"
+        },
+        {
+          "unit_types": "Bot & SelfDestruct & Advanced & Custom1",
+          "min_count": 0,
+          "max_count": 3,
+          "squad": "Artillery"
+        }
+      ]
+    },
+    "Boom_Attack_Medium_Queller": {
+      "units": [
+        {
+          "unit_types": "(Bot & SelfDestruct) - Advanced",
+          "min_count": 0,
+          "max_count": 10,
+          "squad": "Suicide"
+        },
+        {
+          "unit_types": "Bot & SelfDestruct & Advanced & Custom1",
+          "min_count": 0,
+          "max_count": 10,
+          "squad": "Artillery"
+        }
+      ]
+    },
+    "Boom_Attack_Large": {
+      "units": [
+        {
+          "unit_types": "(Bot & SelfDestruct) - Advanced",
+          "min_count": 0,
+          "max_count": 20,
+          "squad": "Suicide"
+        },
+        {
+          "unit_types": "Bot & SelfDestruct & Advanced & Custom1",
+          "min_count": 0,
+          "max_count": 20,
+          "squad": "Artillery"
+        }
+      ]
+    },
+    "Boom_Attack_XLarge_Queller": {
+      "units": [
+        {
+          "unit_types": "(Bot & SelfDestruct) - Advanced",
+          "min_count": 0,
+          "max_count": 30,
+          "squad": "Suicide"
+        },
+        {
+          "unit_types": "Bot & SelfDestruct & Advanced & Custom1",
+          "min_count": 0,
+          "max_count": 30,
+          "squad": "Artillery"
+        }
+      ]
+    },
+    "Boom_Attack_Huge_Queller": {
+      "units": [
+        {
+          "unit_types": "(Bot & SelfDestruct) - Advanced",
+          "min_count": 0,
+          "max_count": 40,
+          "squad": "Suicide"
+        },
+        {
+          "unit_types": "Bot & SelfDestruct & Advanced & Custom1",
+          "min_count": 0,
+          "max_count": 40,
+          "squad": "Artillery"
+        }
+      ]
+    },
+    "Boom_Attack_Max_Queller": {
+      "units": [
+        {
+          "unit_types": "(Bot & SelfDestruct) - Advanced",
+          "min_count": 0,
+          "max_count": -1,
+          "squad": "Suicide"
+        },
+        {
+          "unit_types": "Bot & SelfDestruct & Advanced & Custom1",
+          "min_count": 0,
+          "max_count": -1,
+          "squad": "Artillery"
         }
       ]
     }

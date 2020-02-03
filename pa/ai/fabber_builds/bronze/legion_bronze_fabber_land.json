@@ -242,6 +242,10 @@
             "boolean": true
           },
           {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory & Advanced - Orbital",
             "compare0": "<",
@@ -360,6 +364,14 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "bronze",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
             "boolean": true
           },
           {

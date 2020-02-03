@@ -53,10 +53,10 @@
     {
       "name": "Uber - Basic Energy Generator - Commander",
       "to_build": "BasicEnergyGenerator",
-      "instance_count": 1,
+      "instance_count": 2,
       "shared_instance_count": "BasicEnergy",
       "cross_planet_shared_count": true,
-      "priority": 260,
+      "priority": 261,
       "base_sort": "FromMainBase",
       "builders": ["UberCommander"],
       "build_conditions": [
@@ -108,7 +108,7 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 6,
+        "buffer": 3,
         "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",

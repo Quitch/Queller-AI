@@ -73,7 +73,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 - Expands OK
 - OK troop selection
 - OK scouting
-- Some reaction to opponent's play
+- Some reaction to its opponent's play
 - Dislikes fabbers
 - Appropriate use of static defence/offence
 - Average economy handling
@@ -89,7 +89,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 - Expands quickly
 - Good troop selection
 - Good scouting
-- Smartly reacts to opponent's play
+- Smartly reacts to its opponent's play
 - Good fabber to troop balance
 - Appropriate use of static defence/offence
 - Good economy handling
@@ -105,7 +105,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 - Expands quickly
 - Best troop selection
 - Best scouting
-- Smartly reacts to opponent's play
+- Smartly reacts to its opponent's play
 - Good fabber to troop balance
 - Appropriate use of static defence/offence
 - Best economy handling
@@ -118,7 +118,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 
 Below are recommendations for the difficulty you may wish to start on based on what you set the vanilla AI to or your ladder ranking.
 
-When you need to increase the challenge, but don't want to increase the difficulty, give the AI an eco boost rather than adding more AIs. Not only will this be better for the sim, it'll stop the problem of there being less resources to go around for the AI which in turn makes it easier to beat. Alternatively, put the AIs into shared armies.
+When you need to increase the challenge, but don't want to increase the difficulty, give the AI an eco-boost rather than adding more AIs. Not only will this be better for the sim, but will also stop the problem of there being fewer resources to go around for the AI which in turn makes it easier to beat. Alternatively, put the AI into shared armies.
 
 Comparison between vanilla difficulty and Queller difficulty:
 
@@ -145,35 +145,38 @@ Suggestions based on 1v1 ranked position or challenge sought:
 
 ## SUBPERSONALITIES
 
-By default, Queller at Uber level will adapt its play to try and suit the system and the opposition it faces. You can use subpersonalities to customise Queller's game to your liking, or help it play better where it's making poor strategy choices.
+By default, Queller at Uber level will adapt its play to try and suit the system and the opposition it faces. You can use subpersonalities to customise Queller's game to your liking or help it play better where it's making poor strategy choices.
 
 ### 1v1
 
 - Slower to enter orbital
-
-### Air
-
-- Unrestricted air usage
+- Uses more T1 bots
+- May use a more aggressive opening
 
 ### Bot
 
 - Doesn't build vehicle factories
+- May use a more aggressive opening
 
-### Free For All
+### Free-For-All
 
 - More cautious about engaging in battle
 - Techs earlier
 - Orbital earlier
+- May use a more cautious opening
+- Avoids antagonistic scouting raids
 
 ### Naval
 
-- Attempts to build a naval factory first
+- Uses naval opening if possible
 - Unrestricted naval usage
+- Only uses amphibious and hover units from land factories
 
 ### Rush
 
 - Techs late
 - Slower to enter orbital
+- May use a more aggressive opening
 
 ### Tank
 
@@ -198,20 +201,21 @@ Please help [translate Queller AI](https://poeditor.com/join/project/avPZrv6yyE)
 - Attempts to attack with amphibious units underwater even if they don't have an underwater weapon
 - Will queue buildings on the other side of obstacles despite closer locations (pathfinding wise) being available
 - Won't send interplanetary aircraft between planets
-- Will assign fabbers to a assist on a project that they could start earlier than the fabber they're assisting
+- Will assign fabbers to assist on a project that they could start earlier than the fabber they're assisting
 - Won't use more than one teleporter at a time
 - Won't use teleporters to move around a single planet
 - Cannot reclaim
 - Combat Fabbers can only be used to build mines or repair troops, not both, even across entirely different AI personalities
-- Doesn't handle enemy walls well
 - Legion won't build a different tier of mass extractor on a metal spot that already has a mass extractor
 - Legion can't use orbital transports
-- Doesn't use Helios teleporter
+- Doesn't use the Helios teleporter
 - Naval factories sometimes stop producing units
 - All AI Commanders on a team spawn and act together using shared army mode
 - Play From Here in Chronocam can cause strange AI behaviour or even break it
 - Different armies will sometimes build on the same metal spot
 - Naval factories occasionally built on land
+- Attempts to attack land targets with underwater units even if they don't have a weapon which can attack land
+- Slow to start moving troops between planets
 
 ## WONTFIX
 

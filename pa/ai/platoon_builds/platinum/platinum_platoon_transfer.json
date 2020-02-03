@@ -1,0 +1,145 @@
+{
+  "build_list": [
+    {
+      "name": "Platinum - Land Transfer Platoon",
+      "to_build": "Teleporter_Attack_Queller",
+      "instance_count": -1,
+      "shared_instance_count": "LandTransferToPlanet",
+      "priority": 300,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "ThisPlanetNeedsLandUnitAssistance",
+            "boolean": false
+          },
+          {
+            "test_type": "CanProvideLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Land & Mobile) - Fabber - AirDefense - Construction - Titan",
+            "compare0": ">=",
+            "value0": 20
+          }
+        ]
+      ],
+      "task_type": "TeleportLandToPlanet"
+    },
+    {
+      "name": "Platinum - Orbital Recon Transfer",
+      "to_build": "Orbital_Scout_Queller",
+      "instance_count": -1,
+      "priority": 300,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsReconAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "ThisPlanetNeedsReconAssistance",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & (Recon | Scout) & Mobile",
+            "compare0": ">=",
+            "value0": 1
+          }
+        ]
+      ],
+      "task_type": "TransferReconToPlanet"
+    },
+    {
+      "name": "Platinum - Orbital Transfer",
+      "to_build": "Orbital_Transfer_Queller",
+      "instance_count": -1,
+      "priority": 300,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "ThisPlanetNeedsOrbitalUnitAssistance",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & Fighter & Mobile - Titan",
+            "compare0": ">=",
+            "value0": 25
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "ThisPlanetNeedsOrbitalUnitAssistance",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & (LaserPlatform | Heavy) & Mobile",
+            "compare0": ">=",
+            "value0": 5
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "platinum",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & (LaserPlatform | Heavy) & Mobile",
+            "compare0": ">=",
+            "value0": 5
+          }
+        ]
+      ],
+      "task_type": "TransferOrbitalToPlanet"
+    }
+  ]
+}

@@ -21,6 +21,11 @@
             "value0": 0
           },
           {
+            "test_type": "PlanetCount",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Orbital & Fabber",
             "compare0": "<",
@@ -46,6 +51,11 @@
             "string0": "Orbital",
             "compare0": "<=",
             "value0": 0
+          },
+          {
+            "test_type": "PlanetCount",
+            "compare0": ">",
+            "value0": 1
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -251,7 +261,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Chariot",
+      "name": "Legion - Uber - Chariot - Initial Expansion/Naval multi-planet",
       "to_build": "LegionOrbitalBasicTransport",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -267,14 +277,6 @@
           {
             "test_type": "PlanetWithoutPresence",
             "boolean": true
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": false
           },
           {
             "test_type": "BaseThreat",
@@ -298,7 +300,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Chariot - Unsafe",
+      "name": "Legion - Uber - Chariot",
       "to_build": "LegionOrbitalBasicTransport",
       "instance_count": 1,
       "max_num_assisters": 10,

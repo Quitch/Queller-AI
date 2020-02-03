@@ -33,6 +33,12 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": ">",
+            "value0": 2800
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "SeismicBot"
           }
@@ -77,6 +83,12 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": ">",
+            "value0": 2800
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "FortressVehicle"
           }
@@ -119,6 +131,12 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": ">",
+            "value0": 2800
           },
           {
             "test_type": "CanFindPlaceToBuild",

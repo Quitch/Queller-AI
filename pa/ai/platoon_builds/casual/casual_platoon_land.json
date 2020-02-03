@@ -1,63 +1,8 @@
 {
   "build_list": [
     {
-      "name": "Casual - Land Transfer To Planet",
-      "to_build": "Teleporter_Attack_Queller",
-      "instance_count": 1,
-      "priority": 2,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "casual",
-            "boolean": true
-          },
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
-            "test_type": "OtherPlanetNeedsLandUnitAssistance",
-            "boolean": true
-          },
-          {
-            "test_type": "CanProvideLandUnitAssistance",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Land & Mobile & Offense",
-            "compare0": ">=",
-            "value0": 10
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "casual",
-            "boolean": true
-          },
-          {
-            "test_type": "OtherPlanetNeedsLandUnitAssistance",
-            "boolean": true
-          },
-          {
-            "test_type": "CanProvideLandUnitAssistance",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Tank & Important - Titan",
-            "compare0": ">=",
-            "value0": 1
-          }
-        ]
-      ],
-      "task_type": "TeleportLandToPlanet"
-    },
-    {
-      "name": "Casual - Land Attack Maximum Power",
-      "to_build": "Land_Attack_Queller",
+      "name": "Casual - Land Attack Platoon Max",
+      "to_build": "Land_Attack_Max_Queller",
       "instance_count": -1,
       "priority": 100,
       "build_conditions": [
@@ -73,7 +18,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Tank | Bot) & Mobile) - Fabber - AirDefense - Construction",
+            "unit_type_string0": "(Land & Mobile) - Hover - Fabber - AirDefense - Construction - Deconstruction - SelfDestruct - Titan",
             "compare0": ">=",
             "value0": 40
           },
