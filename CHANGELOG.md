@@ -44,6 +44,7 @@
 - Fixed Bronze Legion teching too early
 - Bronze and Silver may now run land and air scouting alongside one another
 - Ensure Bronze and Silver can scout with the Marauder
+- Ensure Silver builds air to scout if required even if there's no enemy air presence
 
 #### v4.59.1 - 2020-01-24
 

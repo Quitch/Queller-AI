@@ -91,26 +91,14 @@
             "boolean": false
           },
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyOrbitalPresenceOnPlanet",
-            "boolean": false
-          },
-          {
             "test_type": "HaveFullPlanetIntel",
             "boolean": false
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & Bomber & Custom1 - Titan",
-            "compare0": "==",
-            "value0": 0
+            "unit_type_string0": "Air & (Fighter | Scout)",
+            "compare0": "<",
+            "value0": 1
           }
         ],
         [
