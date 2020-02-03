@@ -158,7 +158,7 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 - Doesn't build vehicle factories
 - May use a more aggressive opening
 
-### Free For All
+### Free-For-All
 
 - More cautious about engaging in battle
 - Techs earlier

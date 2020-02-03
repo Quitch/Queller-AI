@@ -319,7 +319,7 @@
 - Disabled usage of self-destruct titans
 - Fixed error preventing Silver building Bluehawks
 - When alone on a planet only build land troops if another planet wants them
-- Uber Air and Uber Free For All and Uber playing as Legion will now always build air no later than second to avoid issues with the AI expansion routine on maps like PAX
+- Uber Air and Uber Free-For-All and Uber playing as Legion will now always build air no later than second to avoid issues with the AI expansion routine on maps like PAX
 - Fixed Uber Tank not building air second
 - Uber will produce more orbital resource extractors when it is energy or metal blocked
 - Uber gives priority to getting a factory on a gas giant
@@ -345,7 +345,7 @@
 - Check for Catalyst build points from builders not bases
 - Uber builds fewer air factories when alone
 - Uber builds more orbital fabbers on gas giants
-- Gold, Platinum and Uber Free For All are faster to build orbital
+- Gold, Platinum and Uber Free-For-All are faster to build orbital
 - Gold and Platinum have reverted to a more proactive approach to orbital
 - Avoid instances of idle orbital recon
 - Platinum no longer builds the Wyrm
@@ -406,7 +406,7 @@
 
 #### v4.42.1 - 2019-01-21
 
-- Uber Free For All works correctly again
+- Uber Free-For-All works correctly again
 
 #### v4.42.0 - 2019-01-18
 
@@ -457,7 +457,7 @@
 - Fixed Uber not using the correct AA ratio in naval platoons
 - Uber uses fewer fabbers to assist economy builds
 - Uber invests less heavily in naval on multi-planet maps
-- Uber Free For All invests in orbital earlier on multi-planet maps
+- Uber Free-For-All invests in orbital earlier on multi-planet maps
 - Uber Aggressive no longer over-estimates its strength
 - Uber Aggressive will form larger numbers of small platoons to increase its activity on the map
 - Uber will now always use any Icarus it has to defend its planet if it can
@@ -699,8 +699,8 @@
 - Uber MLA more willing to go tanks on planets it owns to increase the likelihood of Levelers
 - Removed Uber Tech personality
 - Removed Uber Land personality
-- Uber Free For All won't use fighters for scouting
-- Remove some checks which stopped Uber Free For All from using tanks when it should
+- Uber Free-For-All won't use fighters for scouting
+- Remove some checks which stopped Uber Free-For-All from using tanks when it should
 - Uber Naval uses more Krakens
 - Separate Kaiju from naval platoons again to prevent hoarding when facing sub fleets
 - Uber assigns fewer fabbers to metal expansion when alone than it did before
@@ -708,7 +708,7 @@
 - Uber Naval builds an advanced naval fabber before advanced offensive ships
 - Further delayed Uber's building of advanced air
 - Uber prioritises metal expansion over energy
-- Uber Free For All is a little less expansive
+- Uber Free-For-All is a little less expansive
 - Uber Air won't open with air
 - Uber more likely to produce Spinners when sighting air
 - Reduced the percentage of Uber's land forces comprised of mobile AA
@@ -824,12 +824,12 @@
 - Uber uses less orbital fabbers outside gas giants
 - Orbital factory builds no longer block land factory builds
 - Gold, Platinum and Uber choose between T2 factories or Unit Cannons to ensure focused builds
-- Uber Cautious is now Uber Free For All
-- Uber Free For All is less cautious
+- Uber Cautious is now Uber Free-For-All
+- Uber Free-For-All is less cautious
 - Don't build a transport for Commander evac if a teleporter is available
 - Won't allow gas giant attack bug to trap it in an anti-orbital build loop
 - Gold, Platinum and Uber no longer increase the naval fabber to factory ratio when alone on a planet
-- Uber Free For All doesn't prioritise early air as highly
+- Uber Free-For-All doesn't prioritise early air as highly
 - Place artillery slightly within max range to account for interference from planet curvature
 - Uber less likely to build Solar Arrays
 - Gold will tech if it can't expand
