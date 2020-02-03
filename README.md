@@ -118,7 +118,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 
 Below are recommendations for the difficulty you may wish to start on based on what you set the vanilla AI to or your ladder ranking.
 
-When you need to increase the challenge, but don't want to increase the difficulty, give the AI an eco-boost rather than adding more AIs. Not only will this be better for the sim, but it'll also stop the problem of there being fewer resources to go around for the AI which in turn makes it easier to beat. Alternatively, put the AIs into shared armies.
+When you need to increase the challenge, but don't want to increase the difficulty, give the AI an eco-boost rather than adding more AIs. Not only will this be better for the sim, but will also stop the problem of there being fewer resources to go around for the AI which in turn makes it easier to beat. Alternatively, put the AI into shared armies.
 
 Comparison between vanilla difficulty and Queller difficulty:
 
@@ -163,7 +163,7 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 - More cautious about engaging in battle
 - Techs earlier
 - Orbital earlier
-- May open with a vehicle factory
+- May use a more cautious opening
 - Avoids antagonistic scouting raids
 
 ### Naval
