@@ -82,7 +82,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 
 ### ![Platinum badge](./images/badge_level_4_28px.png) Platinum
 
-- Smart factory first opening
+- Smartest factory first opening
 - Unlimited armies
 - Techs quickly
 - Goes orbital smartly
@@ -98,7 +98,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 
 ### ![Uber badge](./images/badge_level_5_28px.png) Uber
 
-- Smart factory first opening
+- Smartest factory first opening
 - Unlimited armies
 - Techs smartly
 - Goes orbital smartly
