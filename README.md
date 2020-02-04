@@ -23,7 +23,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 - Turtles
 - Poor troop selection
 - Barely scouts
-- Doesn't react to what the enemy is doing
+- Doesn't adapt to what the enemy is doing
 - Loves fabbers
 - Loves static defence/offence
 - Poor use of fabbers
@@ -40,7 +40,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 - Expands slowly
 - Poor troop selection
 - Barely scouts
-- Doesn't react to what the enemy is doing
+- Doesn't adapt to what the enemy is doing
 - Loves fabbers
 - Loves static defence/offence
 - Poor use of fabbers
@@ -57,7 +57,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 - Expands slowly
 - Poor troop selection
 - Barely scouts
-- Doesn't react to what the enemy is doing
+- Doesn't adapt to what the enemy is doing
 - Likes fabbers
 - Likes static defence/offence
 - Average economy handling
@@ -73,7 +73,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 - Expands OK
 - OK troop selection
 - OK scouting
-- Some reaction to its opponent's play
+- Some adaption to its opponent's play
 - Dislikes fabbers
 - Appropriate use of static defence/offence
 - Average economy handling
@@ -89,7 +89,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 - Expands quickly
 - Good troop selection
 - Good scouting
-- Smartly reacts to its opponent's play
+- Smartly adapts to its opponent's play
 - Good fabber to troop balance
 - Appropriate use of static defence/offence
 - Good economy handling
@@ -105,7 +105,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 - Expands quickly
 - Best troop selection
 - Best scouting
-- Smartly reacts to its opponent's play
+- Smartly adapts to its opponent's play
 - Good fabber to troop balance
 - Appropriate use of static defence/offence
 - Best economy handling
