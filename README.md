@@ -14,7 +14,7 @@ You should download and install this mod via the Planetary Annihilation TITANS i
 
 Queller offers a range of difficulties designed to try and mimic the style of human players at particular levels of play. It does not modify the vanilla difficulties.
 
-### Casual
+### ![Casual badge](./images/badge_level_0_28px.png) Casual
 
 - Economy first opening
 - One army
@@ -31,7 +31,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 - No micro
 - Terrible threat assessments
 
-### Bronze
+### ![Bronze badge](./images/badge_level_1_28px.png) Bronze
 
 - Factory first opening
 - One army
@@ -48,7 +48,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 - No micro
 - Terrible threat assessments
 
-### Silver
+### ![Silver badge](./images/badge_level_2_28px.png) Silver
 
 - Factory first opening
 - Few armies
@@ -64,7 +64,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 - Average micro
 - Poor threat assessments
 
-### Gold
+### ![Gold badge](./images/badge_level_3_28px.png) Gold
 
 - Smart factory first opening
 - Many armies
@@ -80,7 +80,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 - Average micro
 - OK threat assessments
 
-### Platinum
+### ![Platinum badge](./images/badge_level_4_28px.png) Platinum
 
 - Smart factory first opening
 - Unlimited armies
@@ -96,7 +96,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 - Best micro
 - Great threat assessments
 
-### Uber
+### ![Uber badge](./images/badge_level_5_28px.png) Uber
 
 - Smart factory first opening
 - Unlimited armies
