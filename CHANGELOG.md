@@ -1,5 +1,9 @@
 # CHANGELOG
 
+#### DEV
+
+- Consolidate orbital beachhead build conditions
+
 #### v4.60.0 - 2020-02-03
 
 - Improved decision-making by Gold, Platinum, and Uber about when to expand their naval presence

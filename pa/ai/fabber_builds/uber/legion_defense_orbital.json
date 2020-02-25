@@ -86,75 +86,7 @@
             "boolean": false
           },
           {
-            "test_type": "EnemyOrbitalPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
-            "compare0": "<",
-            "value0": 4
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Teleporter - Mobile",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionDefenseBasicOrbitalII"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsMainEcoBase",
-            "boolean": false
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
-            "compare0": "<",
-            "value0": 4
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Teleporter - Mobile",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionDefenseBasicOrbitalII"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsMainEcoBase",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
+            "test_type": "EnemyPresenceOnPlanet",
             "boolean": true
           },
           {
