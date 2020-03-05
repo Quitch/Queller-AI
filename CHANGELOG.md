@@ -2,7 +2,7 @@
 
 #### DEV
 
-- Consolidate orbital beachhead build conditions
+- Consolidated orbital beachhead build conditions
 
 #### v4.60.0 - 2020-02-03
 
