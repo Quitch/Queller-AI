@@ -3,6 +3,7 @@
 #### DEV
 
 - Consolidated orbital beachhead build conditions
+- Uber will once again produce mobile T1 AA when it feels it is losing the air game
 
 #### v4.60.0 - 2020-02-03
 
