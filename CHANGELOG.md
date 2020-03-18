@@ -3,7 +3,7 @@
 #### DEV
 
 - Consolidated orbital beachhead build conditions
-- Uber will once again produce mobile AA when it feels it is losing the air game regardless of its current anti-air capabilities
+- Uber will once again produce mobile AA when it feels it is losing the air game
 
 #### v4.60.0 - 2020-02-03
 
