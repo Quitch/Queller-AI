@@ -153,7 +153,6 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 
 - Slower to enter orbital
 - Uses more T1 bots
-- May use a more aggressive opening
 
 ### Bot
 

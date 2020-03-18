@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## DEV
+
+- Uber 1v1 will no longer open with double bot factories
+
 ## v4.61.1 - 2020-03-18
 
 - Corrected ratio of Bluehawks used by Uber
