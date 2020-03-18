@@ -7,6 +7,7 @@
 - Uber will use more Shellers
 - Corrected and lowered Uber's Bluehawk to Slammer ratio
 - Lowered Uber's Gil-E to Slammer ratio
+- Platinum and Uber will produce titans earlier
 
 ## v4.60.0 - 2020-02-03
 
