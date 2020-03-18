@@ -1,12 +1,12 @@
 {
   "build_list": [
     {
-      "name": "Uber - Basic Vehicle Fabber",
-      "to_build": "BasicVehicleFabber",
+      "name": "Legion - Uber - Fabrication Walker",
+      "to_build": "LegionBotBasicFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
       "priority": 100,
-      "builders": ["AnyUberVehicleFactory"],
+      "builders": ["LegionFactoryBasicBot", "LegionFactoryAdvancedBot"],
       "build_conditions": [
         [
           {
@@ -48,12 +48,12 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicVehicleFabber"
+            "string0": "LegionBotBasicFabber"
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Fabber & Basic & Tank",
-            "unit_type_string1": "Factory & Basic & Tank",
+            "unit_type_string0": "Fabber & Basic & Bot",
+            "unit_type_string1": "Factory & Basic & Bot",
             "compare0": "<",
             "value0": 1
           }
@@ -73,7 +73,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicVehicleFabber"
+            "string0": "LegionBotBasicFabber"
           },
           {
             "test_type": "UnitCountPerPlanetRadius",
@@ -121,7 +121,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicVehicleFabber"
+            "string0": "LegionBotBasicFabber"
           },
           {
             "test_type": "UnitCountPerPlanetRadius",
@@ -133,24 +133,19 @@
       ]
     },
     {
-      "name": "Uber - Skitter - Intel/Minesweeper",
-      "to_build": "LandScout",
+      "name": "Legion - Uber - Investigator - Intel/Minesweeper",
+      "to_build": "LegionBotBasicScout",
       "instance_count": 1,
       "max_num_assisters": 10,
       "shared_instance_count": "LandScout",
-      "priority": 98,
-      "builders": ["AnyUberVehicleFactory"],
+      "priority": 99,
+      "builders": ["LegionFactoryBasicBot", "LegionFactoryAdvancedBot"],
       "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "naval",
-            "boolean": false
           },
           {
             "test_type": "BaseThreatened",
@@ -186,11 +181,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "naval",
-            "boolean": false
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -204,7 +194,7 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Air | Land) & Scout",
+            "unit_type_string0": "Land & Scout",
             "compare0": "<",
             "value0": 1
           }
@@ -216,21 +206,12 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "naval",
-            "boolean": false
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
           {
             "test_type": "BaseThreatened",
             "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
           },
           {
             "test_type": "HaveSeenEnemyUnits",
@@ -248,12 +229,12 @@
       ]
     },
     {
-      "name": "Uber - Skitter - Suspect Mines",
-      "to_build": "LandScout",
+      "name": "Legion - Uber - Investigator - Suspect Mines",
+      "to_build": "LegionBotBasicScout",
       "instance_count": 1,
       "max_num_assisters": 10,
       "priority": 97,
-      "builders": ["AnyUberVehicleFactory"],
+      "builders": ["LegionFactoryBasicBot", "LegionFactoryAdvancedBot"],
       "build_conditions": [
         [
           {
@@ -262,21 +243,12 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "naval",
-            "boolean": false
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
           {
             "test_type": "BaseThreatened",
             "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
           },
           {
             "test_type": "HaveSeenEnemyUnits",
@@ -294,12 +266,12 @@
       ]
     },
     {
-      "name": "Uber - Stryker",
-      "to_build": "AttackVehicle",
+      "name": "Legion - Uber - Peacekeeper - Maintain Numbers",
+      "to_build": "LegionBotBasicAssault",
       "instance_count": 1,
       "max_num_assisters": 10,
-      "priority": 99,
-      "builders": ["BasicVehicleFactory"],
+      "priority": 97,
+      "builders": ["LegionFactoryBasicBot", "LegionFactoryAdvancedBot"],
       "build_conditions": [
         [
           {
@@ -308,48 +280,36 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "ffa",
+            "test_type": "AloneOnPlanet",
             "boolean": false
-          },
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Uber - Peacekeeper",
+      "to_build": "LegionBotBasicAssault",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 96,
+      "builders": ["LegionFactoryBasicBot", "LegionFactoryAdvancedBot"],
+      "build_conditions": [
+        [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "naval",
-            "boolean": false
+            "string0": "uber",
+            "boolean": true
           },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Tank",
             "boolean": false
-          },
-          {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Tank & Basic & Mobile) - Hover - Fabber - AirDefense - Construction - Artillery - Heavy - Scout - SelfDestruct - Deconstruction - Titan",
-            "compare0": "<",
-            "value0": 5
           }
-        ]
-      ]
-    },
-    {
-      "name": "Uber - Ant",
-      "to_build": "LightLaserTank",
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 97,
-      "builders": ["AnyUberVehicleFactory"],
-      "build_conditions": [
+        ],
         [
           {
             "test_type": "HasPersonalityTag",
@@ -357,9 +317,59 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "naval",
+            "test_type": "AloneOnPlanet",
             "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Land & Mobile - Fabber - AirDefense - Construction - Deconstruction - Artillery",
+            "compare0": "<=",
+            "value0": 40
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Land & Mobile - Fabber - AirDefense - Construction - Deconstruction - Artillery",
+            "compare0": "<=",
+            "value0": 40
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Uber - Lancer",
+      "to_build": "LegionBotBasicSniper",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 96,
+      "builders": ["LegionFactoryBasicBot", "LegionFactoryAdvancedBot"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
           },
           {
             "test_type": "AloneOnPlanet",
@@ -375,11 +385,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "naval",
-            "boolean": false
           },
           {
             "test_type": "AloneOnPlanet",
@@ -400,106 +405,18 @@
       ]
     },
     {
-      "name": "Uber - Inferno",
-      "to_build": "BasicArmorTank",
+      "name": "Legion - Uber - Patriot",
+      "to_build": "LegionBotBasicAA",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 97,
-      "builders": ["AnyUberVehicleFactory"],
+      "priority": 98,
+      "builders": ["LegionFactoryBasicBot", "LegionFactoryAdvancedBot"],
       "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "naval",
-            "boolean": false
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Land & Mobile & Offense - Deconstruction - Fabber",
-            "compare0": ">",
-            "value0": 40
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Land & Mobile & (Heavy - (Bot & Basic))",
-            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
-            "compare0": "<",
-            "value0": 0.1
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "naval",
-            "boolean": false
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Land & Mobile & Offense - Deconstruction - Fabber",
-            "compare0": ">",
-            "value0": 40
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Land & Mobile & (Heavy - (Bot & Basic))",
-            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
-            "compare0": "<",
-            "value0": 0.1
-          },
-          {
-            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
-            "boolean": true
-          },
-          {
-            "test_type": "OtherPlanetNeedsLandUnitAssistance",
-            "boolean": true
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Uber - Spinner",
-      "to_build": "BasicAAVehicle",
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 97,
-      "builders": ["AnyUberVehicleFactory"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "naval",
-            "boolean": false
           },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
@@ -518,10 +435,10 @@
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Land & Mobile & AirDefense - (Tank & Advanced)",
+            "unit_type_string0": "Land & Mobile & AirDefense",
             "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
             "compare0": "<",
-            "value0": 0.15
+            "value0": 0.1
           }
         ],
         [
@@ -531,9 +448,33 @@
             "boolean": true
           },
           {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "Air",
+            "compare0": ">",
+            "value0": 0.9
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & AirDefense",
+            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
+            "compare0": "<",
+            "value0": 0.1
+          }
+        ],
+        [
+          {
             "test_type": "HasPersonalityTag",
-            "string0": "naval",
-            "boolean": false
+            "string0": "uber",
+            "boolean": true
           },
           {
             "test_type": "AloneOnPlanet",
@@ -550,10 +491,10 @@
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Land & Mobile & AirDefense - (Tank & Advanced)",
+            "unit_type_string0": "Land & Mobile & AirDefense",
             "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
             "compare0": "<",
-            "value0": 0.15
+            "value0": 0.1
           },
           {
             "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
@@ -567,12 +508,14 @@
       ]
     },
     {
-      "name": "Uber - Drifter",
-      "to_build": "HoverTank",
-      "instance_count": -1,
+      "name": "Legion - Uber - Praetorian",
+      "to_build": "LegionBotAdvancedSupportCommander",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedBotFabber",
+      "min_num_assisters": 1,
       "max_num_assisters": 10,
-      "priority": 96,
-      "builders": ["AnyUberVehicleFactory"],
+      "priority": 199,
+      "builders": ["LegionFactoryAdvancedBot"],
       "build_conditions": [
         [
           {
@@ -583,17 +526,146 @@
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
+          },
+          {
+            "test_type": "UnableToExpand",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionBotAdvancedSupportCommander"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Advanced & Bot",
+            "unit_type_string1": "Factory & Advanced & Bot",
+            "compare0": "<",
+            "value0": 2
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionBotAdvancedSupportCommander"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Advanced & Bot",
+            "unit_type_string1": "Factory & Advanced & Bot",
+            "compare0": "<",
+            "value0": 2
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "MetMinAdvancedFabberCount",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Air & Titan",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionBotAdvancedSupportCommander"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Advanced & Bot",
+            "unit_type_string1": "Factory & Advanced & Bot",
+            "compare0": "<",
+            "value0": 2
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "MetMinAdvancedFabberCount",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 2
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionBotAdvancedSupportCommander"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Advanced & Bot",
+            "unit_type_string1": "Factory & Advanced & Bot",
+            "compare0": "<",
+            "value0": 2
           }
         ]
       ]
     },
     {
-      "name": "Uber - Advanced Vehicle Fabber",
-      "to_build": "AdvancedVehicleFabber",
+      "name": "Legion - Uber - Advanced Fabrication Walker",
+      "to_build": "LegionBotAdvancedFabber",
       "instance_count": 1,
+      "shared_instance_count": "AdvancedBotFabber",
       "max_num_assisters": 10,
       "priority": 199,
-      "builders": ["AdvancedVehicleFactory"],
+      "builders": ["LegionFactoryAdvancedBot"],
       "build_conditions": [
         [
           {
@@ -635,12 +707,12 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedVehicleFabber"
+            "string0": "LegionBotAdvancedFabber"
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Fabber & Advanced & Tank",
-            "unit_type_string1": "Factory & Advanced & Tank",
+            "unit_type_string0": "Fabber & Advanced & Bot",
+            "unit_type_string1": "Factory & Advanced & Bot",
             "compare0": "<",
             "value0": 2
           }
@@ -648,7 +720,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uberold",
+            "string0": "uber",
             "boolean": true
           },
           {
@@ -660,7 +732,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedVehicleFabber"
+            "string0": "LegionBotAdvancedFabber"
           },
           {
             "test_type": "UnitCountPerPlanetRadius",
@@ -708,7 +780,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedVehicleFabber"
+            "string0": "LegionBotAdvancedFabber"
           },
           {
             "test_type": "UnitCountPerPlanetRadius",
@@ -720,12 +792,12 @@
       ]
     },
     {
-      "name": "Uber - Leveler",
-      "to_build": "AdvancedLaserTank",
+      "name": "Legion - Uber - Enforcer",
+      "to_build": "LegionBotAdvancedAssault",
       "instance_count": -1,
       "max_num_assisters": 10,
       "priority": 199,
-      "builders": ["AdvancedVehicleFactory"],
+      "builders": ["LegionFactoryAdvancedBot"],
       "build_conditions": [
         [
           {
@@ -767,12 +839,12 @@
       ]
     },
     {
-      "name": "Uber - Vanguard",
-      "to_build": "AdvancedArmorTank",
+      "name": "Legion - Uber - Monstrosity",
+      "to_build": "LegionBotAdvancedTactical",
       "instance_count": 1,
       "max_num_assisters": 10,
       "priority": 199,
-      "builders": ["AdvancedVehicleFactory"],
+      "builders": ["LegionFactoryAdvancedBot"],
       "build_conditions": [
         [
           {
@@ -791,13 +863,6 @@
           {
             "test_type": "MetMinAdvancedFabberCount",
             "boolean": true
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Tank & Heavy & Advanced",
-            "unit_type_string1": "Land & Artillery & Advanced & Mobile",
-            "compare0": "<",
-            "value0": 0.01
           }
         ],
         [
@@ -814,21 +879,6 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "test_type": "MetMinAdvancedFabberCount",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Tank & Heavy & Advanced",
-            "unit_type_string1": "Land & Artillery & Advanced & Mobile",
-            "compare0": "<",
-            "value0": 0.01
-          },
-          {
-            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
-            "boolean": true
-          },
-          {
             "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
             "boolean": true
           },
@@ -840,12 +890,12 @@
       ]
     },
     {
-      "name": "Uber - Sheller",
-      "to_build": "AdvancedArtilleryVehicle",
-      "instance_count": 1,
+      "name": "Legion - Uber - Miniman",
+      "to_build": "LegionBotAdvancedArtillery",
+      "instance_count": -1,
       "max_num_assisters": 10,
       "priority": 199,
-      "builders": ["AdvancedVehicleFactory"],
+      "builders": ["LegionFactoryAdvancedBot"],
       "build_conditions": [
         [
           {
@@ -858,19 +908,59 @@
             "boolean": false
           },
           {
-            "test_type": "CanDeployLandFromBase",
+            "test_type": "MetMinAdvancedFabberCount",
             "boolean": true
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Tank & Advanced - Heavy - Artillery - AirDefense",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Land & Mobile - Fabber - AirDefense - Construction - Heavy - Deconstruction - Artillery",
+            "compare0": ">",
+            "value0": 40
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & Artillery",
+            "unit_type_string1": "Land & Mobile - Scout - Fabber - Deconstruction - Titan - Basic",
+            "compare0": "<",
+            "value0": 0.2
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "MetMinAdvancedFabberCount",
             "boolean": true
           },
           {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Tank",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Land & Mobile - Fabber - AirDefense - Construction - Heavy - Deconstruction - Artillery",
+            "compare0": ">",
+            "value0": 40
+          },
+          {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Tank & Artillery & Advanced",
-            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
+            "unit_type_string0": "Land & Mobile & Artillery",
+            "unit_type_string1": "Land & Mobile - Scout - Fabber - Deconstruction - Titan - Basic",
             "compare0": "<",
-            "value0": 0.02
+            "value0": 0.1
           }
         ],
         [
@@ -887,15 +977,17 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "test_type": "MetMinAdvancedFabberCount",
-            "boolean": true
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Land & Mobile - Fabber - AirDefense - Construction - Heavy - Deconstruction - Artillery",
+            "compare0": ">",
+            "value0": 40
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Tank & Artillery & Advanced",
-            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
+            "unit_type_string0": "Land & Mobile & Artillery",
+            "unit_type_string1": "Land & Mobile - Scout - Fabber - Deconstruction - Titan - Basic",
             "compare0": "<",
-            "value0": 0.02
+            "value0": 0.1
           },
           {
             "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
@@ -909,12 +1001,12 @@
       ]
     },
     {
-      "name": "Uber - Storm - Need AA",
-      "to_build": "FlakTank",
-      "instance_count": 1,
+      "name": "Legion - Uber - Orbweaver",
+      "to_build": "LegionBotAdvancedAA",
+      "instance_count": -1,
       "max_num_assisters": 10,
       "priority": 200,
-      "builders": ["AdvancedVehicleFactory"],
+      "builders": ["LegionFactoryAdvancedBot"],
       "build_conditions": [
         [
           {
@@ -931,12 +1023,6 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Air",
-            "compare0": ">",
-            "value0": 4500
-          },
-          {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Air",
             "string1": "AntiAir",
@@ -945,10 +1031,39 @@
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Tank & Mobile & AirDefense & Advanced",
+            "unit_type_string0": "Land & Mobile & AirDefense",
             "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
             "compare0": "<",
-            "value0": 0.03
+            "value0": 0.1
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "MetMinAdvancedFabberCount",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "Air",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & AirDefense",
+            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
+            "compare0": "<",
+            "value0": 0.1
           }
         ],
         [
@@ -972,14 +1087,14 @@
             "test_type": "SystemThreat",
             "string0": "Air",
             "compare0": ">",
-            "value0": 4500
+            "value0": 0
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Tank & Mobile & AirDefense & Advanced",
+            "unit_type_string0": "Land & Mobile & AirDefense",
             "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
             "compare0": "<",
-            "value0": 0.03
+            "value0": 0.1
           },
           {
             "test_type": "OtherPlanetCanReceiveLandUnitAssistance",

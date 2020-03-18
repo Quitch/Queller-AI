@@ -1,5 +1,7 @@
 # Queller AI
 
+> _"Your Quller AI is literally best teacher there is when it comes to pure learning how to play this game, especially in basics" - B13, Uber rank #2_
+
 Improved AI for [Planetary Annihilation: Titans](https://planetaryannihilation.com/)
 
 This mod is a total overhaul of the AI designed to smooth out the difficulty curve, providing more humanlike challenges that are both easier and harder than the vanilla AI. It features complete support for the [Legion Expansion](https://github.com/Legion-Expansion/Legion-Expansion).
@@ -14,7 +16,7 @@ You should download and install this mod via the Planetary Annihilation TITANS i
 
 Queller offers a range of difficulties designed to try and mimic the style of human players at particular levels of play. It does not modify the vanilla difficulties.
 
-### Casual
+### ![Casual badge](./images/badge_level_0_28px.png) Casual
 
 - Economy first opening
 - One army
@@ -23,7 +25,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 - Turtles
 - Poor troop selection
 - Barely scouts
-- Doesn't react to what the enemy is doing
+- Doesn't adapt to what the enemy is doing
 - Loves fabbers
 - Loves static defence/offence
 - Poor use of fabbers
@@ -31,7 +33,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 - No micro
 - Terrible threat assessments
 
-### Bronze
+### ![Bronze badge](./images/badge_level_1_28px.png) Bronze
 
 - Factory first opening
 - One army
@@ -40,7 +42,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 - Expands slowly
 - Poor troop selection
 - Barely scouts
-- Doesn't react to what the enemy is doing
+- Doesn't adapt to what the enemy is doing
 - Loves fabbers
 - Loves static defence/offence
 - Poor use of fabbers
@@ -48,7 +50,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 - No micro
 - Terrible threat assessments
 
-### Silver
+### ![Silver badge](./images/badge_level_2_28px.png) Silver
 
 - Factory first opening
 - Few armies
@@ -57,14 +59,14 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 - Expands slowly
 - Poor troop selection
 - Barely scouts
-- Doesn't react to what the enemy is doing
+- Doesn't adapt to what the enemy is doing
 - Likes fabbers
 - Likes static defence/offence
 - Average economy handling
 - Average micro
 - Poor threat assessments
 
-### Gold
+### ![Gold badge](./images/badge_level_3_28px.png) Gold
 
 - Smart factory first opening
 - Many armies
@@ -73,39 +75,39 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 - Expands OK
 - OK troop selection
 - OK scouting
-- Some reaction to its opponent's play
+- Some adaption to its opponent's play
 - Dislikes fabbers
 - Appropriate use of static defence/offence
 - Average economy handling
 - Average micro
 - OK threat assessments
 
-### Platinum
+### ![Platinum badge](./images/badge_level_4_28px.png) Platinum
 
-- Smart factory first opening
+- Smartest factory first opening
 - Unlimited armies
 - Techs quickly
 - Goes orbital smartly
 - Expands quickly
 - Good troop selection
 - Good scouting
-- Smartly reacts to its opponent's play
+- Smartly adapts to its opponent's play
 - Good fabber to troop balance
 - Appropriate use of static defence/offence
 - Good economy handling
 - Best micro
 - Great threat assessments
 
-### Uber
+### ![Uber badge](./images/badge_level_5_28px.png) Uber
 
-- Smart factory first opening
+- Smartest factory first opening
 - Unlimited armies
 - Techs smartly
 - Goes orbital smartly
 - Expands quickly
 - Best troop selection
 - Best scouting
-- Smartly reacts to its opponent's play
+- Smartly adapts to its opponent's play
 - Good fabber to troop balance
 - Appropriate use of static defence/offence
 - Best economy handling
