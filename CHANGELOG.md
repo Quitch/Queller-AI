@@ -1,6 +1,6 @@
 # CHANGELOG
 
-#### DEV
+## DEV
 
 - Consolidated orbital beachhead build conditions
 - Uber will once again produce mobile AA when it feels it is losing the air game
@@ -8,7 +8,7 @@
 - Corrected and lowered Uber's Bluehawk to Slammer ratio
 - Lowered Uber's Gil-E to Slammer ratio
 
-#### v4.60.0 - 2020-02-03
+## v4.60.0 - 2020-02-03
 
 - Improved decision-making by Gold, Platinum, and Uber about when to expand their naval presence
 - Gold and Platinum more likely to try and get in the water if they don't have a naval presence but the enemy does
@@ -61,11 +61,11 @@
 - Planets will send as many troops off-world as they can so long as they don't need them
 - Uber puts more emphasis on its commander building energy plants
 
-#### v4.59.1 - 2020-01-24
+## v4.59.1 - 2020-01-24
 
 - Correct Uber's Atlas build for the changes to water targeting
 
-#### v4.59.0 - 2020-01-20
+## v4.59.0 - 2020-01-20
 
 - Search for artillery placements from the perimeter bases first
 - Much less fussy about titan placement
@@ -73,18 +73,18 @@
 - Gold and above won't launch a naval fleet with only combat barges in it
 - Improved how Queller handles naval maps at all difficulties
 
-#### v4.58.1 - 2020-01-13
+## v4.58.1 - 2020-01-13
 
 - Fixed Uber microing Bluehawks wrong
 
-#### v4.58.0 - 2020-01-12
+## v4.58.0 - 2020-01-12
 
 - Uber prioritises fixing energy issues over creating a defensive air force when alone
 - Try to ensure AI does not give up if reduced to its commander and stuck on an asteroid
 - Corrected minor error in Bronze Legion's handling of asteroids
 - Bronze and Silver quicker to move fabbers to other planets
 
-#### v4.57.0 - 2020-01-05
+## v4.57.0 - 2020-01-05
 
 - Increased flexibility in platoon composition
 - Uber 1v1 uses more T1 bots
@@ -92,13 +92,13 @@
 - Cleaned up obsolete build conditions
 - Changed how Uber is assessing the need for more air factories to avoid over-producing them
 
-#### v4.56.1 - 2019-12-22
+## v4.56.1 - 2019-12-22
 
 - Prevented Uber from reacting to an orbital-only presence with Icarus
 - Uber won't build Excaliburs when its orbital position is immediately threatened
 - Uber only uses the Icarus strategy in the early game
 
-#### v4.56.0 - 2019-12-21
+## v4.56.0 - 2019-12-21
 
 - Uber will use Icarus when the enemy has no mobile anti-air potential outside of the commander
 - Uber will use Icarus offensively again
@@ -107,7 +107,7 @@
 - Improvements to how Uber considers its position concerning planet specific orbital threat
 - Uber won't build Artemis when its orbital position is immediately threatened
 
-#### v4.55.0 - 2019-11-26
+## v4.55.0 - 2019-11-26
 
 - Casual through Platinum show more variance in which planets they choose to expand to
 - Resolve issue with some levels' failure to expand when starting with a naval factory
@@ -127,23 +127,23 @@
 - Uber Free-For-All expands as aggressively as other personalities again
 - Gold and above will not overreact with air defence when scouting air fabbers
 
-#### v4.54.0 - 2019-11-23
+## v4.54.0 - 2019-11-23
 
 - Stop Uber immediately moving an orbital fabber away from a planet it just arrived at
 - Don't run teleporter checks on gas giants
 - Uber will switch off land and air factories on planets it owns if it cannot afford to run them
 
-#### v4.53.0 - 2019-11-19
+## v4.53.0 - 2019-11-19
 
 - Uber makes greater use of the Horsefly
 - Silver through Uber will now build the Typhoon
 
-#### v4.52.0 - 2019-10-05
+## v4.52.0 - 2019-10-05
 
 - Added support for Horsefly
 - Gold uses fewer Hornets
 
-#### v4.51.0 - 2019-09-04
+## v4.51.0 - 2019-09-04
 
 - Further fiddling of Uber's Unit Cannons. We're rearranging the deck chairs, people!
 - Uber won't build up factory infrastructure on an asteroid if an ally has an engine
@@ -151,7 +151,7 @@
 - Added support for the Stryker
 - Uber completely avoids Skitters for scouting if it has Fireflies
 
-#### v4.50.0 - 2019-07-24
+## v4.50.0 - 2019-07-24
 
 - Expanded naval factory builds to encompass all fabbers
 - Uber uses more land scouts and combat fabbers once it has confirmed the existence of mines
@@ -163,12 +163,12 @@
 - Uber prioritises building a naval factory when the enemy has naval and it doesn't
 - Removed island torpedo launcher builds to avoid builds too far inland
 
-#### v4.49.1 - 2019-07-19
+## v4.49.1 - 2019-07-19
 
 - Changed again how Uber decides when to build a Unit Cannon
 - Fixed Uber using the wrong platoons
 
-#### v4.49.0 - 2019-07-18
+## v4.49.0 - 2019-07-18
 
 - Uber Bot and Uber Rush can now start double bot factory
 - Updated Turkish (tr-TR) translation
@@ -190,41 +190,41 @@
 - Removed the tank opening from Uber Free-For-All
 - Uber Bot and Uber Tank don't check whether they can form platoons of the other's type
 
-#### v4.48.0 - 2019-07-14
+## v4.48.0 - 2019-07-14
 
 - Added Turkish (tr-TR) translations with thanks to fera
 - Uber Aggressive now named Uber 1v1
 
-#### v4.47.0 - 2019-07-13
+## v4.47.0 - 2019-07-13
 
 - Cleaned up some unnecessary personality duplication
 - Removed Uber Aggressive
 - Uber Neural renamed Uber Aggressive
 
-#### v4.46.3 - 2019-07-12
+## v4.46.3 - 2019-07-12
 
 - Uber uses fewer Locusts
 - Ensure Uber always puts bots in the right squad
 
-#### v4.46.2 - 2019-07-09
+## v4.46.2 - 2019-07-09
 
 - Bronze through Uber try to build air and orbital titans somewhere safe
 
-#### v4.46.1 - 2019-07-08
+## v4.46.1 - 2019-07-08
 
 - Fix for Uber not properly defending its commander against a low orbital threat
 - Correctly recognises the Unit Cannon as requiring anti-orbital land defences
 
-#### v4.46.0 - 2019-05-25
+## v4.46.0 - 2019-05-25
 
 - Reintroduced Uber Neural which uses large numbers of small platoons and leans more heavily on the neural net
 
-#### v4.45.1 - 2019-04-09
+## v4.45.1 - 2019-04-09
 
 - Fixed Uber Legion trying to use MLA fabbers for some builds
 - Fixed error in Uber MLA anti-nuke paranoia build
 
-#### v4.45.0 - 2019-04-09
+## v4.45.0 - 2019-04-09
 
 - Loosened restrictions on Silver building interplanetary weapons and defences
 - Bronze and Silver correctly handle spreading anti-nukes across a planet
@@ -249,18 +249,18 @@
 - Uber gets more aggressive about maintaining mine vision once it has confirmed mines are in play
 - Uber is more reliable at transitioning to orbital when alone
 
-#### v4.44.2 - 2019-04-01
+## v4.44.2 - 2019-04-01
 
 - Uber gives higher priority to Ares and Thor titans
 - Updated French translation with thanks to sevmek
 - Corrected error with T1 fabbers trying to build T2 Locust defences
 
-#### v4.44.1 - 2019-03-28
+## v4.44.1 - 2019-03-28
 
 - Uber won't assign Skitters and Investigators to scout when they're being built for minesweeping
 - Uber's commander places anti-snipe defences closer to itself
 
-#### v4.44.0 - 2019-03-27
+## v4.44.0 - 2019-03-27
 
 - Gold will rush an orbital launcher on multi-planet systems when it cannot expand and has no orbital
 - Platinum and Uber more reliable at rushing an orbital launcher on multi-planet systems when they cannot expand and have no orbital
@@ -282,7 +282,7 @@
 - Uber uses slightly fewer Storms
 - Monstrosity and Spark moved into main bot squad
 
-#### v4.43.0 - 2019-03-08
+## v4.43.0 - 2019-03-08
 
 - Updated translations (https://poeditor.com/join/project/avPZrv6yyE)
 - Uber counts Novas towards bomber-gunship platoon formation
@@ -417,11 +417,11 @@
 - Fixed error which meant Casual and Bronze would rarely send orbital fabbers to other planets when playing as Legion
 - Bronze sends orbital fabbers off-world a little earlier
 
-#### v4.42.1 - 2019-01-21
+## v4.42.1 - 2019-01-21
 
 - Uber Free-For-All works correctly again
 
-#### v4.42.0 - 2019-01-18
+## v4.42.0 - 2019-01-18
 
 - Uber will once again build Colonels and Praetorians when it has heavily lost air control
 - Casual will build the Mend
@@ -445,24 +445,24 @@
 - Uber will prioritise getting T2 naval on land maps once it has T1
 - Uber will only prioritise naval T2 on single planet systems
 
-#### v4.41.0 - 2019-01-06
+## v4.41.0 - 2019-01-06
 
 - Allow Uber Free-For-All to open tanks
 - Minor performance improvements for Legion Uber Tank
 - Uber will build the Firebird now that it has been fixed
 - Platinum and Uber more likely to build the Infiltrator
 
-#### v4.40.1 - 2019-01-02
+## v4.40.1 - 2019-01-02
 
 - It's no longer 2018 and we should not date our releases with this year
 
-#### v4.40.0 - 2019-01-01
+## v4.40.0 - 2019-01-01
 
 - Removed caps on air platoons for Uber
 - Capped Uber's air scout platoons to stop it sending all fighters on scouting at the same time
 - Uber Aggressive may delay its first air factory
 
-#### v4.39.0 - 2018-12-31
+## v4.39.0 - 2018-12-31
 
 - Limit the number of teleporter troop transfer platoons formed when not alone
 - Uber allowed to build T2 air factories earlier
@@ -476,7 +476,7 @@
 - Uber will now always use any Icarus it has to defend its planet if it can
 - Casual is slightly more metal aggressive in its spending
 
-#### v4.38.0 - 2018-11-29
+## v4.38.0 - 2018-11-29
 
 - Bronze is slightly more proactive at orbital scouting
 - Unified how Bronze handles local orbital scouting for MLA and Legion
@@ -511,11 +511,11 @@
 - Fixed errors preventing Uber Legion from expanding properly
 - Fixed all duplicate build condition names
 
-#### v4.37.1 - 2018-11-19
+## v4.37.1 - 2018-11-19
 
 - Introduced workaround for AI placement bug in 112176 onwards by allowing air opening if all else fails
 
-#### v4.37.0 - 2018-11-15
+## v4.37.0 - 2018-11-15
 
 - Uber transitions to T1 vehicles as game progresses
 - Removed Uber's factory AA rules due to greater use of vehicles
@@ -524,7 +524,7 @@
 - Adjusted flexibility Silver and Gold have in sending out Booms
 - Greater Gil-E usage by Platinum and Uber
 
-#### v4.36.0 - 2018-11-08
+## v4.36.0 - 2018-11-08
 
 - Check for the presence of water rather than absence when forming hover platoons
 - Fix Uber not properly checking T2 requirements before teching to T2 naval when floating eco and playing MLA
@@ -534,11 +534,11 @@
 - Platinum and Uber scout with bots later into the game
 - Uber more likely to stop using Single Laser Towers
 
-#### v4.35.1 - 2018-10-17
+## v4.35.1 - 2018-10-17
 
 - Fixed error preventing Uber forming bombing platoons after the early game
 
-#### v4.35.0 - 2018-10-06
+## v4.35.0 - 2018-10-06
 
 - Uber properly handles the overlap between Investigator and Guardian for mine detection
 - A better spread of unit types between platoons
@@ -556,7 +556,7 @@
 - Updated difficulty recommendations in the readme
 - Fixed Platinum not building the Stitch when needing minesweepers
 
-#### v4.34.0 - 2018-09-30
+## v4.34.0 - 2018-09-30
 
 - Changed how Uber decides to bring out Sparks which will lead to it using them more often
 - Uber Bot will use Sparks
@@ -564,11 +564,11 @@
 - Fixed Uber Bot building vehicle factories when alone on a planet
 - Uber gets out a fighter earlier
 
-#### v4.33.0 - 2018-09-29
+## v4.33.0 - 2018-09-29
 
 - Added Polish translation with thanks to Craeox
 
-#### v4.32.0 - 2018-09-26
+## v4.32.0 - 2018-09-26
 
 - Uber Naval won't build bot factories
 - Don't build bot factories specifically for amphibious usage
@@ -586,7 +586,7 @@
 - Added Swedish translation with thanks to Linus Petersson and Spassky
 - Added partial Norwegian translation with thanks to Spassky
 
-#### v4.31.0 - 2018-09-25
+## v4.31.0 - 2018-09-25
 
 - Fix version numbers not displaying in Chinese (Simplified)
 - Unified Chinese (Traditional) and Chinese (HK) translations
@@ -596,11 +596,11 @@
 - Added Portuguese (Brazil) translation with thanks to CmdrEdem
 - Added Russian translation with thanks to something more than human
 
-#### v4.30.1 - 2018-09-25
+## v4.30.1 - 2018-09-25
 
 - Removed empty strings from translations so they properly failback to the source text
 
-#### v4.30.0 - 2018-09-24
+## v4.30.0 - 2018-09-24
 
 - Eliminated situation where Bronze and Silver would try to go naval when alone
 - Uber will build a battleship in a pond and defend it with anti-air to control the area
@@ -619,11 +619,11 @@
 - Gold, Platinum and Uber won't wait so long to form Locust platoons
 - Added behaviour to help prevent Queller from getting stuck with only a single factory if it went naval first on certain planet layouts
 
-#### v4.29.2 - 2018-09-20
+## v4.29.2 - 2018-09-20
 
 - Fixed a bug which caused Uber Naval to sometimes start bots
 
-#### v4.29.1 - 2018-09-15
+## v4.29.1 - 2018-09-15
 
 - Uber Tank will go second air when playing as Legion
 - Fixed priority Uber Air gives to additional air factories when floating eco
@@ -633,7 +633,7 @@
 - Fixed some personality assignment errors
 - Updated the translation files
 
-#### v4.29.0 - 2018-09-13
+## v4.29.0 - 2018-09-13
 
 - Panzer builds at Uber level properly updated for changes to anti-air ratios
 - Uber builds fewer Deathmarks
@@ -663,12 +663,12 @@
 - Uber Naval will build air second with Legion as it doesn't have access to Patriots
 - Uber Naval is smarter about meeting its fabber requirements
 
-#### v4.28.1 - 2018-09-07
+## v4.28.1 - 2018-09-07
 
 - Bronze, Silver and Gold now always make sure to check if a naval route is available from a naval factory
 - Allow Uber to build advanced air a little earlier
 
-#### v4.28.0 - 2018-09-03
+## v4.28.0 - 2018-09-03
 
 - Casual, Bronze and Silver won't build most defences or artillery when alone
 - Casual places fewer Umbrellas in bases
@@ -683,13 +683,13 @@
 - Fixed Causal, Bronze and Silver not properly using hover units
 - Properly exclude hover units from offensive scout platoons
 
-#### v4.27.1 - 2018-08-28
+## v4.27.1 - 2018-08-28
 
 - Fixed issue causing Silver, Gold and Platinum to keep orbital fighters on gas giants too long
 - Fixed more build condition naming errors
 - Fixed lobby version chat message being incorrect
 
-#### v4.27.0 - 2018-08-27
+## v4.27.0 - 2018-08-27
 
 - Uber doesn't run its energy as tight
 - Corrected an error in Uber's energy handling
@@ -726,37 +726,37 @@
 - Uber more likely to produce Spinners when sighting air
 - Reduced the percentage of Uber's land forces comprised of mobile AA
 
-#### v4.26.3 - 2018-06-23
+## v4.26.3 - 2018-06-23
 
 - Mod icon correctly linked using HTTPS
 - Corrections and updates for Chinese (Traditional) with thanks to IPWIW
 
-#### v4.26.2 - 2018-05-02
+## v4.26.2 - 2018-05-02
 
 - Corrections and updates for Chinese (Traditional) with thanks to IPWIW
 
-#### v4.26.1 - 2018-04-24
+## v4.26.1 - 2018-04-24
 
 - Corrections to Chinese translations with thanks to omylist
 
-#### v4.26.0 - 2018-04-17
+## v4.26.0 - 2018-04-17
 
 - Added translations for:
   - Chinese (Simplified) (zh-CN)
   - Chinese (Traditional) (zh-TW)
   - Chinese (Hong Kong) (zh-HK)
 
-#### v4.25.2 - 2018-04-08
+## v4.25.2 - 2018-04-08
 
 - Updated German translation with thanks to tunsel
 - Corrected some issues with Uber Legion's nuke builds
 - Uber won't build long-range artillery in reaction to naval any more
 
-#### v4.25.1 - 2018-04-03
+## v4.25.1 - 2018-04-03
 
 - Increased priority Uber gives to going orbital
 
-#### v4.25.0 - 2018-04-03
+## v4.25.0 - 2018-04-03
 
 - Fixed an error in Uber Air's economy handling
 - Updated Uber Rush to make use of multiple commanders
@@ -766,7 +766,7 @@
 - Uber more likely to throw additional resources at building nukes
 - Uber less likely to throw additional resources at anti-nukes with a missile in the silo
 
-#### v4.24.0 - 2018-03-27
+## v4.24.0 - 2018-03-27
 
 - Corrected issue on naval maps which could cause Bronze and Silver to not produce fabbers
 - Bronze now spaces its defences
@@ -783,7 +783,7 @@
 - Fix Uber Legion not putting Tolas by superweapons
 - Uber more likely to put AA by MEX
 
-#### v4.23.0 - 2018-03-24
+## v4.23.0 - 2018-03-24
 
 - Additional language translations:
   - Korean (ko) translation courtesy of R.O.S.S
@@ -860,7 +860,7 @@
 - Uber more likely to use Decimators when it has Ramparts
 - Ensure that on arriving at a new world a teleporter is always placed before a factory
 
-#### v4.22.0 - 2018-03-16
+## v4.22.0 - 2018-03-16
 
 - Properly exclude naval units from land and air scout ratio checks
 - Prevent Platinum over scouting with Fighters
@@ -873,36 +873,36 @@
 - Properly exclude Locusts from army available unit checks
 - Scout with fighters only when there's nothing they're needed for right now
 
-#### v4.21.2 - 2018-03-10
+## v4.21.2 - 2018-03-10
 
 - Fixed issue where naval production was intermittent early on mixed sea/land maps
 - Fixed issue causing Queller Legion to build too many turrets in one place
 
-#### v4.21.1 - 2018-03-09
+## v4.21.1 - 2018-03-09
 
 - Fixed issue causing Bronze and Silver to build orbital factories on the ground. Thanks to Xangi for tracking this one down.
 
-#### v4.21.0 - 2018-03-04
+## v4.21.0 - 2018-03-04
 
 - Silver and above only use area builds for metal which will help sim performance
 - Uber builds MEX more aggressively once it owns a planet
 - Updated for changes to the AI Mod Compatibility Framework
 
-#### v4.20.3 - 2018-03-02
+## v4.20.3 - 2018-03-02
 
 - Uber Naval won't build laser towers by MEX to avoid uselessly building them on water
 - Uber properly considers subs in addition to ships when considering torpedo base defence
 - Fixed error where Gold would not build torpedo launchers in response to subs
 
-#### v4.20.2 - 2018-03-01
+## v4.20.2 - 2018-03-01
 
 - Introduce failback behaviour for Uber Naval to prevent idle factories due to misdetection of ability to deploy naval
 
-#### v4.20.1 - 2018-02-28
+## v4.20.1 - 2018-02-28
 
 - Corrected lobby version number
 
-#### v4.20.0 - 2018-02-28
+## v4.20.0 - 2018-02-28
 
 - Uber builds a tiny number of Vanguards to provide radar for Shellers
 - Uber less likely to produce as many Gil-E when alone and Shellers are an option
@@ -929,7 +929,7 @@
 - Unified a lot of Uber and Uber Naval behaviours as Uber was performing better in the water
 - Uber Naval always assigns hover units to its naval attack behaviours
 
-#### v4.19.0 - 2018-01-27
+## v4.19.0 - 2018-01-27
 
 - Uber will use a small number of Gil-Es as a counter to Catapults
 - Uber more willing to scout with the Firefly
@@ -953,7 +953,7 @@
 - Uber uses a small number of Shellers as standard
 - Uber uses fewer Gil-Es and Storms in invasion forces
 
-#### v4.18.0 - 2018-01-19
+## v4.18.0 - 2018-01-19
 
 - No longer prioritises nukes over Holkins
 - Increased priority of Ares Titan
@@ -961,7 +961,7 @@
 - Tone down Uber's love of nukes slightly
 - All difficulties give Titans more space when building them
 
-#### v4.17.2 - 2018-01-16
+## v4.17.2 - 2018-01-16
 
 - Corrected how many fabbers Uber Legion puts on building nukes when alone
 - Uber prioritises nukes over Holkins if the target has no anti-nukes
@@ -975,12 +975,12 @@
 - Exclude scouts from unit counts when forming armies
 - Better division of air defence between armies
 
-#### v4.17.1 - 2018-01-13
+## v4.17.1 - 2018-01-13
 
 - Resolved an issue that would cause Gold to sometimes idle its naval factories
 - Lobby message now includes the version number
 
-#### v4.17.0 - 2018-01-12
+## v4.17.0 - 2018-01-12
 
 - Increase spacing between Uber radar builds
 - Uber more likely to build additional radars when using ships
@@ -996,7 +996,7 @@
 - Air and Orbital Titans react to the presence of air and orbital units at all difficulties
 - Prevent low levels bouncing orbital scouts and radars between planets
 
-#### v4.16.1 - 2018-01-09
+## v4.16.1 - 2018-01-09
 
 - Resolved an issue that could cause Bronze and Silver to stop expanding on island maps
 - Casual through Silver may now open naval first on maps like Pacific
@@ -1004,7 +1004,7 @@
 - Fixed errors in Legion naval foundry placement
 - Additional checks to stop low levels crippling expansion with naval fabbers
 
-#### v4.16.0 - 2018-01-06
+## v4.16.0 - 2018-01-06
 
 - Casual slower to expand
 - Casual builds Titans further from the base to avoid blocking them in with future builds
@@ -1015,7 +1015,7 @@
 - Fixed error preventing Uber Bot from properly spending its eco on T2 factories
 - Uber prioritises T2 over the need for more AA for the most part
 
-#### v4.15.0 - 2017-11-18
+## v4.15.0 - 2017-11-18
 
 - Platinum will build the Gil-E
 - Uber will build Shellers in response to Gil-Es
@@ -1085,11 +1085,11 @@
 - Always meets minimum fabber count regardless of terrain
 - Platinum and Uber are more aggressive about teching when they can't expand
 
-#### v4.14.1 - 2017/09/10
+## v4.14.1 - 2017/09/10
 
 - Lobby message tells players how to select a Queller AI
 
-#### v4.14.0 - 2017/04/21
+## v4.14.0 - 2017/04/21
 
 - Fixed Ramparts getting built too close to one another at higher levels
 - Casual and Bronze now build the Typhoon
@@ -1112,7 +1112,7 @@
 - Platinum uses fewer Monstrosities
 - Gold no longer patrols all its Marauders when alone on a planet
 
-#### v4.13.0 - 2017/04/02
+## v4.13.0 - 2017/04/02
 
 - Increased distance between Jigs and Rigs at higher difficulties
 - Platinum uses more bots
@@ -1123,7 +1123,7 @@
 - Uber Legion never goes T2 air first
 - Platinum no longer uses the Gil-E
 
-#### v4.12.3 - 2017/03/24
+## v4.12.3 - 2017/03/24
 
 The Queller AI **Client** is no longer required and should be uninstalled.
 
@@ -1133,17 +1133,17 @@ The Queller AI **Client** is no longer required and should be uninstalled.
   - Nederlands (nl) and Nederlands (België) (nl-BE) added courtesy of PRoeleert
 - Fixed Queller translations breaking PA translations
 
-#### v4.12.2 - 2017/03/17
+## v4.12.2 - 2017/03/17
 
 - Uber requires less air dominance before building a Zeus
 - Properly use client mod as a companion and not only a dependency
 - Fix an issue that might cause the vanilla AI to tech earlier than it was supposed to
 
-#### v4.12.1 - 2017/02/28
+## v4.12.1 - 2017/02/28
 
 - Disabled translations owing to PA translations breaking with them active
 
-#### v4.12.0 - 2017/01/22
+## v4.12.0 - 2017/01/22
 
 - Translated Queller difficulties to local languages as best I can
   - Deutsch (de)
@@ -1183,11 +1183,11 @@ The Queller AI **Client** is no longer required and should be uninstalled.
 - Implemented change to reduce the chance of Uber wrecking its economy when going orbital alone
 - Uber faster to respond to late game energy shortages
 
-#### v4.11.1 - 2017/01/20
+## v4.11.1 - 2017/01/20
 
 - Prefixed all difficulties with Q for ease of identification
 
-#### v4.11.0 - 2017/01/19
+## v4.11.0 - 2017/01/19
 
 - Build artillery and Catapults in response to naval near the base
 - Restored Uber Tech
@@ -1221,7 +1221,7 @@ The Queller AI **Client** is no longer required and should be uninstalled.
 - Platinum will tech faster
 - Uber gets tanks a little later on larger planets
 
-#### v4.10.1 - 2017/01/14
+## v4.10.1 - 2017/01/14
 
 - Uber Tank will use Skitters to scout
 - Uber Bot will use Investigators to scout
@@ -1236,7 +1236,7 @@ The Queller AI **Client** is no longer required and should be uninstalled.
 - Uber Bot can build the Miniman
 - Properly capped Investigator scout platoons
 
-#### v4.10.0 - 2017/01/13
+## v4.10.0 - 2017/01/13
 
 - Uber MLA focuses on T1 bots rather than tanks
 - Uber MLA will use T2 bots as well as tanks
@@ -1262,7 +1262,7 @@ The Queller AI **Client** is no longer required and should be uninstalled.
 - Uber gives higher priority to its first anti-nuke on multi-planet maps
 - Uber less likely to build Catalysts when it can't commit to all five
 
-#### v4.9.0 - 2016/12/22
+## v4.9.0 - 2016/12/22
 
 - Moved Sparks and Monstrosities into the fast squad for land attacks
 - Fixed error causing Uber to produce Deathmarks when it shouldn't
@@ -1276,7 +1276,7 @@ The Queller AI **Client** is no longer required and should be uninstalled.
 - Uber much more likely to build metal storage when required
 - Increased chance of defences being built by MEX at Uber level when playing as Legion
 
-#### v4.8.0 - 2016/12/06
+## v4.8.0 - 2016/12/06
 
 - Bronze Legion no longer spams OmniSilos
 - Fixed Silver building less storage than intended
@@ -1297,7 +1297,7 @@ The Queller AI **Client** is no longer required and should be uninstalled.
 - Uber uses Advanced Laser Defense Towers as an anti-bot weapons
 - Uber counts Advanced Laser Defense towards total base defence rather than separately
 
-#### v4.7.0 - 2016/12/02
+## v4.7.0 - 2016/12/02
 
 - Gold through Uber tech faster, though Uber Rush remains unchanged
 - Uber Tech has become Uber Orbital
@@ -1312,7 +1312,7 @@ The Queller AI **Client** is no longer required and should be uninstalled.
 - Uber uses fewer fighters to scout
 - Uber won't scout a planet with Skitters or Investigators but will still send them to scout other planets
 
-#### v4.6.0 - 2016/11/29
+## v4.6.0 - 2016/11/29
 
 - Uber no longer builds the Wyrm
 - Fixed error where Uber Air MLA commander was not properly building T1 air factories
@@ -1327,7 +1327,7 @@ The Queller AI **Client** is no longer required and should be uninstalled.
 - Uber Air favours the Zeus and Loki titans
 - Gold and Platinum build fewer Angels
 
-#### v4.5.0 - 2016/11/22
+## v4.5.0 - 2016/11/22
 
 - Silver techs later when alone
 - Platinum techs earlier when alone
@@ -1349,7 +1349,7 @@ The Queller AI **Client** is no longer required and should be uninstalled.
 - Uber less likely to build defences around a teleporter unless it has spotted a threat
 - Uber only anticipates nukes on other worlds if it's likely someone is on that other world
 
-#### v4.4.0 - 2016/11/18
+## v4.4.0 - 2016/11/18
 
 - Corrected and unified heavy unit checks
 - Amount of Miniman units depends on what Uber has seen and has been reduced overall
@@ -1420,7 +1420,7 @@ The Queller AI **Client** is no longer required and should be uninstalled.
 - Uber Legion puts less priority on an early air factory
 - Disabled Starcannon owing to multiple server crashes linked to the unit
 
-#### v4.3.0 - 2016/11/07
+## v4.3.0 - 2016/11/07
 
 - Sparks counted towards platoon formation
 - Uber builds Sparks later
@@ -1435,7 +1435,7 @@ The Queller AI **Client** is no longer required and should be uninstalled.
 - Increased space around naval factories to reduce the chance of them getting blocked off
 - Spark properly excluded from heavy unit checks
 
-#### v4.2.0 - 2016/11/04
+## v4.2.0 - 2016/11/04
 
 - Legion Uber Bot no longer uses air unless alone on the planet
 - Doesn't use Panzers for AA if it has access to Orbweavers
@@ -1508,7 +1508,7 @@ The Queller AI **Client** is no longer required and should be uninstalled.
 - Uber more aggressive in breaking out nuke spam during multi-planet games
 - Uber brings out Kestrels slightly earlier
 
-#### v4.1.0 - 2016/07/28
+## v4.1.0 - 2016/07/28
 
 - Decreased use of Miniman by Uber
 - Decreased use of Monstrosities by Uber
@@ -1520,23 +1520,23 @@ The Queller AI **Client** is no longer required and should be uninstalled.
 - Increased minimum army size requirements for some Legion units used by Uber while widening the units counted
 - Lancers moved to the fast squad
 
-#### v4.0.5 - 2016/07/11
+## v4.0.5 - 2016/07/11
 
 - Fixed bug which could result in Legion not scouting at Gold and higher
 
-#### v4.0.4 - 2016/07/07
+## v4.0.4 - 2016/07/07
 
 - Fix for issue where Queller would do nothing on certain maps
   - thanks to MrTBSC for reporting this
 - Gold and Platinum move into the water faster at the expense of sometimes starting naval when they should start land
 
-#### v4.0.3 - 2016/06/12
+## v4.0.3 - 2016/06/12
 
 - MetMinBasicFabberCount now works for naval and is utilised by Uber to ensure personalities work the same on water as in other theatres
 - Updated for changes to which units the Starcannon can build
 - Platinum can now build Advanced Bot Factories with the Colonel
 
-#### v4.0.2 - 2016/05/14
+## v4.0.2 - 2016/05/14
 
 - Uber no longer uses the Nova
 - Uber will use more Meteors
@@ -1546,13 +1546,13 @@ The Queller AI **Client** is no longer required and should be uninstalled.
 - Uber stops producing Havocs once advanced units hit the field
 - No longer keeps the Thor at maximum range
 
-#### v4.0.1 - 2016/04/29
+## v4.0.1 - 2016/04/29
 
 - Uber builds OmniSilos a little further away from its buildings
 - mikeyh fixed error in way personalities were passed between hosts which also makes it compatible with PA's stable release
 - mikeyh removed dependency on AI Compatibility Mod Personalities Patch
 
-#### v4.0.0 - 2016/04/25
+## v4.0.0 - 2016/04/25
 
 - Added support for the Legion Expansion
   - Big thanks to Alpha2546 and Graushwein for their help
@@ -1626,7 +1626,7 @@ The Queller AI **Client** is no longer required and should be uninstalled.
 - Uber no longer builds Booms, Locusts or Grenadiers
 - Uber uses fewer Gil-Es when it uses them at all
 
-#### v3.3 - 2016/03/01
+## v3.3 - 2016/03/01
 
 - Booms will now use teleporters
 - Tries to figure out whether the blockage to its land forces is water or lava
@@ -1641,7 +1641,7 @@ The Queller AI **Client** is no longer required and should be uninstalled.
 - Titans better integrated into platoons
 - Fixed issue preventing Support commanders being built
 
-#### v3.2 - 2016/02/16
+## v3.2 - 2016/02/16
 
 - Uber now focuses on Levelers over other T2 vehicles
 - Uber no longer techs to T2 air except in special circumstances
@@ -1654,33 +1654,33 @@ The Queller AI **Client** is no longer required and should be uninstalled.
 - Uber favours the Kraken for naval warfare
 - Where a land target cannot be found hover platoons will pursue naval targets
 
-#### v3.1.6 - 2016/01/29
+## v3.1.6 - 2016/01/29
 
 - Titans now properly excluded from teleporter platoons
 - Titans now properly excluded from general squads in hover platoons
 - Fixed bug where Uber would sometimes run placement checks using the T2 naval factory when trying to place a T2 air factory
 
-#### v3.1.5 - 2016/01/22
+## v3.1.5 - 2016/01/22
 
 - Fixed an issue that could cause only one Advanced Air Factory to build anything
 - Resolved issue with duplicate Drifter build block names
 
-#### v3.1.4 - 2015/10/06
+## v3.1.4 - 2015/10/06
 
 - Removed an unnecessary platoon templates file
 - Fixed all instances where Queller's platoons shared a name with vanilla platoons
 
-#### v3.1.3 - 2015/10/01
+## v3.1.3 - 2015/10/01
 
 - Vanilla AI split off into a separate mod
 - Added dependency on AI Mod Compatibility Patch
 
-#### v3.1.2 - 2015/09/21
+## v3.1.2 - 2015/09/21
 
 - Updated vanilla AI
 - Booms use the new Suicide squad type
 
-#### v3.1.1 - 2015/09/12
+## v3.1.1 - 2015/09/12
 
 - Made some very minor performance optimisations
 - Silver now deploys the Catapult as a defensive measure rather than an offensive one
@@ -1699,7 +1699,7 @@ The Queller AI **Client** is no longer required and should be uninstalled.
 - Fixed a bug for Gold, Platinum and Uber where T2 would never be achieved on an all naval multi-planet system
 - Fixed some checks preventing a factory being the first building on a new world under certain circumstances
 
-#### v3.1 - 2015/09/09
+## v3.1 - 2015/09/09
 
 - Silver gives higher priority to Orbital Launcher on multi-planet maps
 - Added support for new platoon performance savers
@@ -1736,7 +1736,7 @@ The Queller AI **Client** is no longer required and should be uninstalled.
 - Uber better limits its Narwhal production
 - Smarter at judging whether ships should be produced from its factories on multi-planet systems
 
-#### v3.0 - 2015/09/04
+## v3.0 - 2015/09/04
 
 NOW DESIGNED SOLELY FOR TITANS
 
@@ -1775,7 +1775,7 @@ NOW DESIGNED SOLELY FOR TITANS
 - Builds either Kestrels or Hornets but never both
 - Bronze no longer artificially restricted on the number of factories it can build
 
-#### v2.1 - 2015/08/09
+## v2.1 - 2015/08/09
 
 - Gold will build the Leveler
 - Uber will check there's some metal in storage in addition to looking at eco-efficiency before assuming float and building more stuff
@@ -1851,7 +1851,7 @@ NOW DESIGNED SOLELY FOR TITANS
 - Uber checks that the commander has anti-nuke coverage
 - Uber gives a higher priority to Umbrellas
 
-#### v2.0.1 - 2015/07/09
+## v2.0.1 - 2015/07/09
 
 - Bronze and Silver no longer build defences where there's nothing to defend (thanks to DarkslayerRoy for the report)
 - Bronze favours dual lasers over single lasers just like the other difficulties
@@ -1861,7 +1861,7 @@ NOW DESIGNED SOLELY FOR TITANS
 - Silver no longer builds multiple basic radars in a base
 - Building defences against one threat layer no longer stops Bronze building defences against a different threat type
 
-#### v2.0 - 2015/07/03
+## v2.0 - 2015/07/03
 
 - Integrated new AI checks to replace hacky workarounds
 - Builds its factories tighter
@@ -1910,7 +1910,7 @@ NOW DESIGNED SOLELY FOR TITANS
 - Tries to control the orbital space before flying expensive and vulnerable radar around the local planet
 - Builds SXX to destroy naval threats in addition to land ones
 
-#### v1.3.3 - 2015/05/29
+## v1.3.3 - 2015/05/29
 
 The "oh shit new patch with new folder structure which breaks my baby!" release
 
@@ -1918,11 +1918,11 @@ The "oh shit new patch with new folder structure which breaks my baby!" release
 - Updated for new AI folder structure
 - No longer stops building Gil-Es when there is an orbital threat
 
-#### v1.3.2 - 2015/05/04
+## v1.3.2 - 2015/05/04
 
 - Put the ai_unit_map file back because I need it for the Piranha. Derp!
 
-#### v1.3.1 - 2015/05/03
+## v1.3.1 - 2015/05/03
 
 - Now works on air only maps
 - Removed dependency on ai_config (except for unit cap, but 3000 will do)
@@ -1930,7 +1930,7 @@ The "oh shit new patch with new folder structure which breaks my baby!" release
 - Fixed an error that allowed proxy air bases to spam air fabbers
 - Dropped custom ai_unit_map file until I use it
 
-#### v1.3 - 2015/04/26
+## v1.3 - 2015/04/26
 
 - More aggressive about building MEX defences
 - Will build turrets to remove enemy MEX when there's no threat in the area
@@ -1947,7 +1947,7 @@ The "oh shit new patch with new folder structure which breaks my baby!" release
 - Invests in Hummingbirds at lower threat levels due to a tendency to underestimate the threat and not have enough of them
 - Only builds land troops when alone on a planet if it has somewhere to send them
 
-#### v1.2.4 - 2015/04/17
+## v1.2.4 - 2015/04/17
 
 - When unable to expand it now checks its need for an advanced factory against the number of advanced factories, not fabbers
 - Inferno, Spinner and Skitter ratios are now calculated only against units which are relevant to their potential platoon makeup
@@ -1957,19 +1957,19 @@ The "oh shit new patch with new folder structure which breaks my baby!" release
 - Less air fabber spam during the opening on naval maps
 - Maintains a higher Hummingbird minimum force
 
-#### v1.2.3 - 2015/04/10
+## v1.2.3 - 2015/04/10
 
 - No longer prevented from building basic fabbers when advanced ones exist
 - Advanced fabbers can now build Umbrellas
 - Removed any meaningful cap on the number of fabbers used
 
-#### v1.2.2 - 2015/04/09
+## v1.2.2 - 2015/04/09
 
 - No longer builds Skitters in reaction to scouting a commander (herp derp!)
 - Will spam Umbrellas over planets it owns (this is going to need some work)
 - Will attempt to protect the commander from orbital snipes using Umbrellas (might be a bit spammy right now)
 
-#### v1.2.1 - 2015/04/08
+## v1.2.1 - 2015/04/08
 
 - Now builds Skitters when it has seen mines or advanced combat fabbers
 - Will now only build an orbital launcher to run away to another planet if there's another planet to run away to
@@ -1979,7 +1979,7 @@ The "oh shit new patch with new folder structure which breaks my baby!" release
 - No longer sends orbital fabbers to planets only to immediately send them elsewhere after doing nothing
 - Can now redeploy orbital fabbers from gas giants
 
-#### v1.2 - 2015/04/07
+## v1.2 - 2015/04/07
 
 - Removed platoon minimum requirements for frontline units to allow Queller to form land attacks faster
 - Will build Bluehawks and Stingrays when there's an orbital threat
@@ -2000,7 +2000,7 @@ The "oh shit new patch with new folder structure which breaks my baby!" release
 - Will build Skitters on multi-planet maps to use as advance scouts to avoid invasion forces sitting on their hands
 - Even more aggressive producing anti-nukes
 
-#### v1.1 - 2015/03/30
+## v1.1 - 2015/03/30
 
 This release provides a massive overhaul in how Queller tackles the orbital layer. It also brings Queller's game up-to-speed with the latest balance changes.
 
@@ -2032,19 +2032,19 @@ This release provides a massive overhaul in how Queller tackles the orbital laye
 - Added Boom Bot support (though the AI doesn't use them yet)
 - More likely to build the advanced radar
 
-#### v1.0.2 - 2015/03/20
+## v1.0.2 - 2015/03/20
 
 - No longer builds Piranhas when the base is threatened
 - Won't start naval if it can attack by land
 
-#### v1.0.1 - 2015/03/20
+## v1.0.1 - 2015/03/20
 
 - Fixed issue with Piranha scouting
 - Fixed commander factory drain checks to use the correct factory
 - Somehow broke my naval attack fix before releasing version 1. Fixed for reals this time.
 - Corrected bug where the commander wasn't checking drain on its first two vehicle factories
 
-#### v1.0 - 2015/03/17
+## v1.0 - 2015/03/17
 
 - Won't move commander by Astraeus except as a last resort
 - Reduced buffer spaces from many buildings to allow tighter base packing
@@ -2069,12 +2069,12 @@ This release provides a massive overhaul in how Queller tackles the orbital laye
 - Will try to be aggressive about getting in the water when no land attack route exists
 - Removed beta tag
 
-#### v0.5.1 - 2015/01/08
+## v0.5.1 - 2015/01/08
 
 - All fabbers can build naval again
 - Removed three fabber opening
 
-#### v0.5.0.1 - 2015/01/06
+## v0.5.0.1 - 2015/01/06
 
 - Updated for new meta
 - Wider variety of openings now possible, more responsive to what an opponent is doing
@@ -2095,15 +2095,15 @@ This release provides a massive overhaul in how Queller tackles the orbital laye
 - Updated now obsolete Need[Basic/Advanced]LandFabber to use the new Bot/Vehicle test
 - Take the skies before building bombers
 
-#### v0.4.2 - 2014/11/27
+## v0.4.2 - 2014/11/27
 
 - After reverting platoons I forgot to revert the squad percentage makeup to my own. Now fixed.
 
-#### v0.4.1 - 2014/11/11
+## v0.4.1 - 2014/11/11
 
 - Reverted AI land platoon sizes to vanilla settings as it seems the AI is better with large numbers of small platoons than small numbers of large platoons
 
-#### v0.4 - 2014/11/11
+## v0.4 - 2014/11/11
 
 - Corrected bug where AI only used half as many Dox scouts as it was supposed to
 - Updated the basic factory builds to work properly in a multi-planet scenario
@@ -2119,7 +2119,7 @@ This release provides a massive overhaul in how Queller tackles the orbital laye
 - Assistance allowed on combat units again so a fabber has something to do when it has nothing to build
 - Disabled storage for the time being as I just can't stop it building the things at stupid timings
 
-#### v0.3 - 2014/11/09
+## v0.3 - 2014/11/09
 
 - Skitter can be used to scout if AI plays a three vehicle opening (this is now actually true)
 - AI will no longer go all bots
@@ -2139,7 +2139,7 @@ This release provides a massive overhaul in how Queller tackles the orbital laye
 - AI no longer uses Catapults or Holkins
 - More assistance allowed and required on various defence/offence structures
 
-#### v0.2 - 2014/11/07
+## v0.2 - 2014/11/07
 
 - Total overhaul of AI's opening builds
 - AI now has bot, tank and air openings
@@ -2152,7 +2152,7 @@ This release provides a massive overhaul in how Queller tackles the orbital laye
 - Reverted to economy building rules more aligned with the default AI (for now)
 - AI will no longer build offensive Pelters
 
-#### v0.1 - 2014/11/05
+## v0.1 - 2014/11/05
 
 - Alpha release
 - AI uses larger platoons
