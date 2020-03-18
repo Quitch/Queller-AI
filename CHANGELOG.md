@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v4.61.1 - 2020-03-18
+
+- Corrected ratio of Bluehawks used by Uber
+
 ## v4.61.0 - 2020-03-18
 
 - Consolidated orbital beachhead build conditions
