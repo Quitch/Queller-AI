@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v4.61.2 - 2020-03-22
+
+- Remove unnecessary files from release version to reduce mod size
+
 ## v4.61.1 - 2020-03-18
 
 - Corrected ratio of Bluehawks used by Uber
