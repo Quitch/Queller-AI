@@ -168,7 +168,11 @@
       "shared_instance_count": "BasicMetal",
       "priority": 259,
       "base_sort": "FromBuilder",
-      "builders": ["AnyUberBasicFabber", "OrbitalFabber"],
+      "builders": [
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber",
+        "OrbitalFabber"
+      ],
       "build_conditions": [
         [
           {
