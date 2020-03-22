@@ -3,6 +3,8 @@
 ## DEV
 
 - Uber 1v1 will no longer open with double bot factories
+- Corrected Uber MLA not using advanced fabbers for T1 MEX expansion in some situations
+- Updated for Orbital Fabbers being able to build MEX
 
 ## v4.61.1 - 2020-03-18
 
