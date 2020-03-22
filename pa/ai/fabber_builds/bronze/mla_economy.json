@@ -21,6 +21,10 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
             "test_type": "PotentialMetalEfficiency",
             "compare0": "<",
             "value0": 1
@@ -35,6 +39,10 @@
             "test_type": "HasPersonalityTag",
             "string0": "bronze",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
           },
           {
             "test_type": "DesireMetal"
