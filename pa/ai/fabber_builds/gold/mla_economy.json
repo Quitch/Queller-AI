@@ -8,7 +8,11 @@
       "shared_instance_count": "BasicMetal",
       "priority": 261,
       "base_sort": "FromBuilder",
-      "builders": ["AnyUberBasicFabber", "AnyUberAdvancedFabber"],
+      "builders": [
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber",
+        "OrbitalFabber"
+      ],
       "build_conditions": [
         [
           {
@@ -46,7 +50,11 @@
       "shared_instance_count": "BasicMetal",
       "priority": 501,
       "base_sort": "FromBuilder",
-      "builders": ["AnyUberBasicFabber", "AnyUberAdvancedFabber"],
+      "builders": [
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber",
+        "OrbitalFabber"
+      ],
       "build_conditions": [
         [
           {
