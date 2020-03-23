@@ -5,7 +5,7 @@
 - Uber 1v1 will no longer open with double bot factories
 - Corrected Uber MLA not using advanced fabbers for T1 MEX expansion in some situations
 - Updated for Orbital Fabbers and Fabrication Starships being able to build T1 MEX
-- Further avoid unnecessary checks on gas giants
+- Avoid further unnecessary checks on gas giants
 
 ## v4.61.1 - 2020-03-18
 
