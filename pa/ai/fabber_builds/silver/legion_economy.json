@@ -8,7 +8,11 @@
       "max_num_assisters": 1,
       "priority": 360,
       "base_sort": "FromBuilder",
-      "builders": ["AnyLegionFabberBasic", "AnyLegionFabberAdvanced"],
+      "builders": [
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced",
+        "LegionOrbitalBasicFabber"
+      ],
       "build_conditions": [
         [
           {
