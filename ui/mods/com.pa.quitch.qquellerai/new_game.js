@@ -149,7 +149,7 @@ function qQuellerAI() {
       neural_data_mod: 0.5,
       adv_eco_mod: 1.0,
       adv_eco_mod_alone: 0,
-      personality_tags: ["uber", "bot", "doublebot"],
+      personality_tags: ["uber", "bot"],
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1
     },
@@ -200,7 +200,7 @@ function qQuellerAI() {
       neural_data_mod: 1.0,
       adv_eco_mod: 2.0,
       adv_eco_mod_alone: 0,
-      personality_tags: ["uber", "doublebot", "lateorbital"],
+      personality_tags: ["uber", "lateorbital"],
       min_basic_fabbers: 2,
       min_advanced_fabbers: 1
     },

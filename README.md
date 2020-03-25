@@ -157,7 +157,6 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 ### Bot
 
 - Doesn't build vehicle factories
-- May use a more aggressive opening
 
 ### Free-For-All
 
@@ -177,7 +176,6 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 
 - Techs late
 - Slower to enter orbital
-- May use a more aggressive opening
 
 ### Tank
 
