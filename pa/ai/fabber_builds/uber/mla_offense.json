@@ -6,7 +6,7 @@
       "instance_count": 1,
       "min_num_assisters": 1,
       "max_num_assisters": 3,
-      "priority": 255,
+      "priority": 355,
       "base_sort": "FromPerimeter",
       "builders": [
         "BasicBotFabber",
@@ -46,15 +46,9 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "unit_type_string0": "Structure - MetalProduction",
             "compare0": ">=",
-            "value0": 3
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Naval | (Sub - Land)",
-            "compare0": "==",
-            "value0": 0
+            "value0": 1
           },
           {
             "test_type": "UnitCountAroundBase",
