@@ -11,6 +11,7 @@
 - Bronze will only build orbital units that can defend themselves when its orbital base is threatened
 - Bronze more likely to build Unit Cannons on single-planet systems
 - Fixed Bronze not going orbital on single-planet systems even though it was supposed to be a small possibility
+- Bronze and Silver won't scale their orbital fabber presence on single-planet systems
 
 ## v4.61.1 - 2020-03-18
 
