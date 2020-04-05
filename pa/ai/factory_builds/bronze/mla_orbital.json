@@ -15,6 +15,12 @@
             "boolean": true
           },
           {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Orbital & Fabber",
             "compare0": "<",
@@ -30,6 +36,12 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "OrbitalFabber"
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
           },
           {
             "test_type": "UnitRatioOnPlanet",
@@ -58,6 +70,12 @@
           {
             "test_type": "ThisPlanetNeedsReconAssistance",
             "boolean": true
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
           }
         ]
       ]
@@ -80,6 +98,12 @@
           {
             "test_type": "OtherPlanetNeedsReconAssistance",
             "boolean": true
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
           }
         ]
       ]
@@ -100,6 +124,12 @@
           {
             "test_type": "ThisPlanetNeedsReconAssistance",
             "boolean": true
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
           }
         ]
       ]
@@ -121,6 +151,12 @@
           {
             "test_type": "OtherPlanetNeedsReconAssistance",
             "boolean": true
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
           }
         ]
       ]
@@ -165,6 +201,12 @@
             "boolean": false
           },
           {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Orbital & Transport",
             "compare0": "<",
@@ -201,6 +243,12 @@
           },
           {
             "test_type": "DesireEnergy"
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
           }
         ]
       ]
@@ -218,6 +266,12 @@
             "test_type": "HasPersonalityTag",
             "string0": "bronze",
             "boolean": true
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
           }
         ]
       ]
@@ -239,6 +293,12 @@
           {
             "test_type": "ThisPlanetNeedsReconAssistance",
             "boolean": true
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
           }
         ]
       ]
@@ -261,6 +321,12 @@
           {
             "test_type": "OtherPlanetNeedsReconAssistance",
             "boolean": true
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
           }
         ]
       ]

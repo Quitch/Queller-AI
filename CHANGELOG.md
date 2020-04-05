@@ -8,6 +8,7 @@
 - Avoid further unnecessary checks on gas giants
 - Don't count walls when performing offensive artillery evaluations
 - Bronze through Platinum will potentially respond to an orbital threat with an orbital factory
+- Bronze will only build orbital units that can defend themselves when its orbital base is threatened
 
 ## v4.61.1 - 2020-03-18
 
