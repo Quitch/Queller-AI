@@ -13,6 +13,7 @@
 - Fixed Bronze not going orbital on single-planet systems even though it was supposed to be a small possibility
 - Bronze and Silver won't scale their orbital fabber presence on single-planet systems
 - Correct errors in placement of Hives near perimter MEX by Bronze and Silver
+- Correct errors causing overbuild of certain types of defence by Casual and Bronze
 
 ## v4.61.1 - 2020-03-18
 
