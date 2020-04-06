@@ -14,6 +14,7 @@
 - Bronze and Silver won't scale their orbital fabber presence on single-planet systems
 - Correct errors in placement of Hives near perimter MEX by Bronze and Silver
 - Correct errors causing overbuild of certain types of defence by Casual and Bronze
+- Gustavs are built closer to Ramparts
 
 ## v4.61.1 - 2020-03-18
 
