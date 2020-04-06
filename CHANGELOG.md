@@ -10,7 +10,7 @@
 - Bronze through Platinum will potentially respond to an orbital threat with an orbital factory
 - Bronze will only build orbital units that can defend themselves when its orbital base is threatened
 - Bronze more likely to build Unit Cannons on single-planet systems
-- Fixed Bronze not going orbital on single-planet systems even though it was supposed to be a small possibility
+- Fixed Bronze not going orbital on single-planet systems even though there was supposed to be a small possibility
 - Bronze and Silver won't scale their orbital fabber presence on single-planet systems
 - Corrected errors in placement of Hives near perimeter MEX by Bronze and Silver
 - Corrected errors causing overbuild of certain types of defence by Casual and Bronze
