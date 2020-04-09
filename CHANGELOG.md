@@ -16,6 +16,7 @@
 - Corrected errors causing overbuild of certain types of defence by Casual and Bronze
 - Build Gustavs closer to Ramparts
 - Casual through Gold give a slightly lower priority to building Ramparts
+- Improved Silver's T2 economy builds
 
 ## v4.61.1 - 2020-03-18
 
