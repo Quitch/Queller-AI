@@ -18,6 +18,7 @@
 - Casual through Gold give a slightly lower priority to building Ramparts
 - Improved Silver's T2 economy builds
 - More likely to use interplanetary weapons
+- Silver won't start with an air factory anymore
 
 ## v4.61.1 - 2020-03-18
 
