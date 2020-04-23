@@ -24,13 +24,6 @@
   },
   "plugins": ["lodash"],
   "rules": {
-    "no-inner-declarations": "off",
-    "no-unused-vars": [
-      "error",
-      {
-        "argsIgnorePattern": "^_"
-      }
-    ],
     "lodash/callback-binding": 2,
     "lodash/collection-method-value": 2,
     "lodash/collection-return": 2,
