@@ -19,6 +19,7 @@
 - Improved Silver's T2 economy builds
 - More likely to use interplanetary weapons
 - Silver won't start with an air factory anymore
+- Uber only uses T2 air for eco expansion when alone if the planet is large enough to justify it
 
 ## v4.61.1 - 2020-03-18
 

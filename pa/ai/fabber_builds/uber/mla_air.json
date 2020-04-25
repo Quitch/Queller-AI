@@ -633,6 +633,10 @@
             "boolean": true
           },
           {
+            "test_type": "AllMetalSpotsFull",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "AdvancedAirFactory"
           },
@@ -647,6 +651,12 @@
             "unit_type_string0": "Factory & Air & Advanced",
             "compare0": "<",
             "value0": 1
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Factory & Air & Advanced",
+            "compare0": "<",
+            "value0": 300
           },
           {
             "test_type": "CanFindPlaceToBuild",
