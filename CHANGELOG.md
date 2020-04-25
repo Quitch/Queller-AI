@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## DEV
+## v4.62.0 - 2020-04-25
 
 - Uber will no longer open with double bot factories
 - Corrected Uber MLA not using advanced fabbers for T1 MEX expansion in some situations
