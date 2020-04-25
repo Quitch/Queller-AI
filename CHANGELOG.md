@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## DEV
+
+- Clean-up Platinum Legion Walker Foundry builds
+
 ## v4.62.0 - 2020-04-25
 
 - Uber will no longer open with double bot factories
