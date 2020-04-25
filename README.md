@@ -181,6 +181,10 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 
 - Doesn't build bot factories
 
+### Turtle
+
+- More likely to build defences at its expansions
+
 ## MAP NOTES
 
 The spawn the AI starts in and the profile used can make a big difference, even for symmetrical 1v1s. If you find the AI too easy on a map, try a different spawn point for it. And don't use Bedlam, the AI's forces can't pathfind on this map.
