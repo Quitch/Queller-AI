@@ -1,6 +1,6 @@
 # Queller AI
 
-> _"Your Quller AI is literally best teacher there is when it comes to pure learning how to play this game, especially in basics" - B13, Uber rank #2_
+> _"Your Queller AI is literally best teacher there is when it comes to pure learning how to play this game, especially in basics" - B13, Uber rank #2_
 
 Improved AI for [Planetary Annihilation: Titans](https://planetaryannihilation.com/)
 
@@ -8,11 +8,11 @@ This mod is a total overhaul of the AI designed to smooth out the difficulty cur
 
 Please ensure that if you use this work you credit Quitch's Queller AI.
 
-# INSTALLATION
+## INSTALLATION
 
 You should download and install this mod via the Planetary Annihilation TITANS in-game [Community Mods](https://steamcommunity.com/sharedfiles/filedetails/?id=1417396826).
 
-# DIFFICULTY
+## DIFFICULTY
 
 Queller offers a range of difficulties designed to try and mimic the style of human players at particular levels of play. It does not modify the vanilla difficulties.
 
@@ -153,12 +153,10 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 
 - Slower to enter orbital
 - Uses more T1 bots
-- May use a more aggressive opening
 
 ### Bot
 
 - Doesn't build vehicle factories
-- May use a more aggressive opening
 
 ### Free-For-All
 
@@ -178,25 +176,24 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 
 - Techs late
 - Slower to enter orbital
-- May use a more aggressive opening
 
 ### Tank
 
 - Doesn't build bot factories
 
-# MAP NOTES
+## MAP NOTES
 
 The spawn the AI starts in and the profile used can make a big difference, even for symmetrical 1v1s. If you find the AI too easy on a map, try a different spawn point for it. And don't use Bedlam, the AI's forces can't pathfind on this map.
 
 Be sure to follow the recommended number of players for any map.
 
-# TRANSLATIONS
+## TRANSLATIONS
 
 Please help [translate Queller AI](https://poeditor.com/join/project/avPZrv6yyE) to your local language.
 
-# KNOWN ISSUES
+## KNOWN ISSUES
 
-## CANTFIX
+### CANTFIX
 
 - Will sometimes take much longer than necessary routes to attack
 - Doesn't defend its fabbers
@@ -219,11 +216,11 @@ Please help [translate Queller AI](https://poeditor.com/join/project/avPZrv6yyE)
 - Attempts to attack land targets with underwater units even if they don't have a weapon which can attack land
 - Slow to start moving troops between planets
 
-## WONTFIX
+### WONTFIX
 
 - Mistakes respawning planets for asteroids and won't behave properly on them
 
-# THANKS TO
+## THANKS TO
 
 - Sorian of Uber Entertainment for:
   - making his AI moddable

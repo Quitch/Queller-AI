@@ -1,20 +1,28 @@
 {
   "build_list": [
     {
-      "name": "Uber - Basic Metal Extractor - Alone",
+      "name": "Uber - Metal Extractor - Alone",
       "to_build": "BasicMetalExtractor",
       "instance_count": 3,
       "max_num_assisters": 1,
       "shared_instance_count": "BasicMetal",
       "priority": 600,
       "base_sort": "FromBuilder",
-      "builders": ["AnyUberBasicFabber", "AnyUberAdvancedFabber"],
+      "builders": [
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber",
+        "OrbitalFabber"
+      ],
       "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
           },
           {
             "test_type": "AloneOnPlanet",
@@ -38,20 +46,28 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Uber - Basic Metal Extractor - Area",
+      "name": "Uber - Metal Extractor - Area",
       "to_build": "BasicMetalExtractor",
       "instance_count": 4,
       "max_num_assisters": 1,
       "shared_instance_count": "BasicMetal",
       "priority": 261,
       "base_sort": "FromBuilder",
-      "builders": ["AnyUberBasicFabber", "AnyUberAdvancedFabber"],
+      "builders": [
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber",
+        "OrbitalFabber"
+      ],
       "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
           },
           {
             "test_type": "PotentialMetalEfficiency",
@@ -76,20 +92,28 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Uber - Basic Metal Extractor - Desire - Area",
+      "name": "Uber - Metal Extractor - Desire - Area",
       "to_build": "BasicMetalExtractor",
       "instance_count": 4,
       "max_num_assisters": 1,
       "shared_instance_count": "BasicMetal",
       "priority": 501,
       "base_sort": "FromBuilder",
-      "builders": ["AnyUberBasicFabber", "AnyUberAdvancedFabber"],
+      "builders": [
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber",
+        "OrbitalFabber"
+      ],
       "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
           },
           {
             "test_type": "DesireMetal"
@@ -112,20 +136,28 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Uber - Basic Metal Extractor - Expand 1 - Area",
+      "name": "Uber - Metal Extractor - Expand 1 - Area",
       "to_build": "BasicMetalExtractor",
       "instance_count": 2,
       "max_num_assisters": 1,
       "shared_instance_count": "BasicMetal",
       "priority": 499,
       "base_sort": "FromBuilder",
-      "builders": ["AnyUberBasicFabber", "AnyUberAdvancedFabber"],
+      "builders": [
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber",
+        "OrbitalFabber"
+      ],
       "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
           },
           {
             "test_type": "CanFindMetalSpotToBuildBasic",
@@ -145,20 +177,28 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Uber - Basic Metal Extractor - Expand 2 - Area",
+      "name": "Uber - Metal Extractor - Expand 2 - Area",
       "to_build": "BasicMetalExtractor",
       "instance_count": 3,
       "max_num_assisters": 1,
       "shared_instance_count": "BasicMetal",
       "priority": 259,
       "base_sort": "FromBuilder",
-      "builders": ["AnyUberBasicFabber"],
+      "builders": [
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber",
+        "OrbitalFabber"
+      ],
       "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
           },
           {
             "test_type": "CanFindMetalSpotToBuildBasic",

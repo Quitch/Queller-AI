@@ -30,7 +30,7 @@ function qQuellerAI() {
       per_expansion_delay: 60,
       personality_tags: ["casual"],
       min_basic_fabbers: 10,
-      min_advanced_fabbers: 3
+      min_advanced_fabbers: 3,
     },
     "Q-Bronze": {
       display_name: "!LOC:Q-Bronze",
@@ -49,7 +49,7 @@ function qQuellerAI() {
       factory_build_delay_max: 6,
       personality_tags: ["bronze"],
       min_basic_fabbers: 5,
-      min_advanced_fabbers: 3
+      min_advanced_fabbers: 3,
     },
     "Q-Silver": {
       display_name: "!LOC:Q-Silver",
@@ -66,7 +66,7 @@ function qQuellerAI() {
       adv_eco_mod_alone: 0,
       personality_tags: ["silver"],
       min_basic_fabbers: 4,
-      min_advanced_fabbers: 3
+      min_advanced_fabbers: 3,
     },
     "Q-Gold": {
       display_name: "!LOC:Q-Gold",
@@ -83,7 +83,7 @@ function qQuellerAI() {
       adv_eco_mod_alone: 0,
       personality_tags: ["gold"],
       min_basic_fabbers: 3,
-      min_advanced_fabbers: 2
+      min_advanced_fabbers: 2,
     },
     "Q-Platinum": {
       display_name: "!LOC:Q-Platinum",
@@ -100,7 +100,7 @@ function qQuellerAI() {
       adv_eco_mod_alone: 0,
       personality_tags: ["platinum"],
       min_basic_fabbers: 2,
-      min_advanced_fabbers: 2
+      min_advanced_fabbers: 2,
     },
     "Q-Uber": {
       display_name: "!LOC:Q-Uber",
@@ -117,7 +117,7 @@ function qQuellerAI() {
       adv_eco_mod_alone: 0,
       personality_tags: ["uber"],
       min_basic_fabbers: 3,
-      min_advanced_fabbers: 1
+      min_advanced_fabbers: 1,
     },
     "Q-Uber 1v1": {
       display_name: "!LOC:Q-Uber 1v1",
@@ -132,9 +132,9 @@ function qQuellerAI() {
       neural_data_mod: 1.0,
       adv_eco_mod: 1.0,
       adv_eco_mod_alone: 0,
-      personality_tags: ["uber", "1v1", "doublebot", "lateorbital"],
+      personality_tags: ["uber", "1v1", "lateorbital"],
       min_basic_fabbers: 3,
-      min_advanced_fabbers: 1
+      min_advanced_fabbers: 1,
     },
     "Q-Uber Bot": {
       display_name: "!LOC:Q-Uber Bot",
@@ -149,9 +149,9 @@ function qQuellerAI() {
       neural_data_mod: 0.5,
       adv_eco_mod: 1.0,
       adv_eco_mod_alone: 0,
-      personality_tags: ["uber", "bot", "doublebot"],
+      personality_tags: ["uber", "bot"],
       min_basic_fabbers: 3,
-      min_advanced_fabbers: 1
+      min_advanced_fabbers: 1,
     },
     "Q-Uber Free-For-All": {
       display_name: "!LOC:Q-Uber Free-For-All",
@@ -168,7 +168,7 @@ function qQuellerAI() {
       adv_eco_mod_alone: 0,
       personality_tags: ["uber", "ffa"],
       min_basic_fabbers: 4,
-      min_advanced_fabbers: 1
+      min_advanced_fabbers: 1,
     },
     "Q-Uber Naval": {
       display_name: "!LOC:Q-Uber Naval",
@@ -185,7 +185,7 @@ function qQuellerAI() {
       adv_eco_mod_alone: 0,
       personality_tags: ["uber", "naval"],
       min_basic_fabbers: 1,
-      min_advanced_fabbers: 1
+      min_advanced_fabbers: 1,
     },
     "Q-Uber Rush": {
       display_name: "!LOC:Q-Uber Rush",
@@ -200,9 +200,9 @@ function qQuellerAI() {
       neural_data_mod: 1.0,
       adv_eco_mod: 2.0,
       adv_eco_mod_alone: 0,
-      personality_tags: ["uber", "doublebot", "lateorbital"],
+      personality_tags: ["uber", "lateorbital"],
       min_basic_fabbers: 2,
-      min_advanced_fabbers: 1
+      min_advanced_fabbers: 1,
     },
     "Q-Uber Tank": {
       display_name: "!LOC:Q-Uber Tank",
@@ -219,13 +219,16 @@ function qQuellerAI() {
       adv_eco_mod_alone: 0,
       personality_tags: ["uber", "tank"],
       min_basic_fabbers: 3,
-      min_advanced_fabbers: 1
-    }
+      min_advanced_fabbers: 1,
+    },
   };
 
   var baseline = aiPersonalities.Absurd;
 
-  newPersonalities = _.mapValues(newPersonalities, function(personality, name) {
+  newPersonalities = _.mapValues(newPersonalities, function (
+    personality,
+    name
+  ) {
     var result = _.extend(_.clone(baseline), personality);
     result["name"] = name;
     return result;
@@ -235,11 +238,11 @@ function qQuellerAI() {
 
   model.aiPersonalities.valueHasMutated();
 
-  _.defer(function() {
+  _.defer(function () {
     model.localChatMessage(
       loc("!LOC:Queller AI"),
       loc(
-        "!LOC:by Quitch. Version 4.61.2. My difficulties are prefixed with a Q. Don't make AI teams larger than human teams, increase the difficulty or the econ rate instead. I support the Legion Expansion."
+        "!LOC:by Quitch. Version 4.62.0. My difficulties are prefixed with a Q. Don't make AI teams larger than human teams, increase the difficulty or the econ rate instead. I support the Legion Expansion."
       )
     );
   });

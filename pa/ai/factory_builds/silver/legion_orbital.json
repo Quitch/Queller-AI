@@ -34,6 +34,11 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetCount",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "LegionOrbitalBasicFabber"
           },
@@ -180,6 +185,10 @@
           {
             "test_type": "PlanetWithoutPresence",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
           },
           {
             "test_type": "BaseThreat",

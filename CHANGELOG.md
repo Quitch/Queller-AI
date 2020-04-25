@@ -1,8 +1,25 @@
 # CHANGELOG
 
-## v4.61.2 - 2020-03-22
+## v4.62.0 - 2020-04-25
 
-- Remove unnecessary files from release version to reduce mod size
+- Uber will no longer open with double bot factories
+- Corrected Uber MLA not using advanced fabbers for T1 MEX expansion in some situations
+- Updated for Orbital Fabbers and Fabrication Starships being able to build T1 MEX
+- Avoid further unnecessary checks on gas giants
+- Don't count walls when performing offensive artillery evaluations
+- Bronze through Platinum will potentially respond to an orbital threat with an orbital factory
+- Bronze will only build orbital units that can defend themselves when its orbital base is threatened
+- Bronze more likely to build Unit Cannons on single-planet systems
+- Fixed Bronze not going orbital on single-planet systems even though there was supposed to be a small possibility
+- Bronze and Silver won't scale their orbital fabber presence on single-planet systems
+- Corrected errors in placement of Hives near perimeter MEX by Bronze and Silver
+- Corrected errors causing overbuild of certain types of defence by Casual and Bronze
+- Build Gustavs closer to Ramparts
+- Casual through Gold give a slightly lower priority to building Ramparts
+- Improved Silver's T2 economy builds
+- More likely to use interplanetary weapons
+- Silver won't start with an air factory anymore
+- Uber only uses T2 air for eco expansion when alone if the planet is large enough to justify it
 
 ## v4.61.1 - 2020-03-18
 
