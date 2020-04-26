@@ -4,6 +4,7 @@
 
 - Clean-up Platinum Legion Walker Foundry builds
 - Added Uber Turtle, a personality which puts more emphasis on defending its expansions
+- Uber may build light artillery to defend key expansions
 
 ## v4.62.0 - 2020-04-25
 
