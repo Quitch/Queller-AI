@@ -183,7 +183,7 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 
 ### Turtle
 
-- More likely to build defences
+- More likely to build defences at its expansions
 - More likely to build titans
 
 ## MAP NOTES
