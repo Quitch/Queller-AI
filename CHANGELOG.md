@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## DEV
+## v4.63.0 - 2020-04-27
 
 - Clean-up Platinum Legion Walker Foundry builds
 - Added Uber Turtle, a personality which puts more emphasis on defending its expansions and titans
