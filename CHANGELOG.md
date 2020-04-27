@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v4.63.0 - 2020-04-27
+
+- Clean-up Platinum Legion Walker Foundry builds
+- Added Uber Turtle, a personality which puts more emphasis on defending its expansions and titans
+- Uber may build light artillery to defend key expansions
+
 ## v4.62.0 - 2020-04-25
 
 - Uber will no longer open with double bot factories
