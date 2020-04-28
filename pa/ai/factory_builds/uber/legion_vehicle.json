@@ -263,11 +263,6 @@
             "boolean": true
           },
           {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Bot",
-            "boolean": true
-          },
-          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Land & Mobile - Fabber - AirDefense - Construction - Heavy - Deconstruction - Artillery",
             "compare0": ">",
@@ -278,7 +273,7 @@
             "unit_type_string0": "Land & Mobile & (Heavy - (Bot & Basic))",
             "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
             "compare0": "<",
-            "value0": 0.1
+            "value0": 0.2
           }
         ],
         [
@@ -304,7 +299,7 @@
             "unit_type_string0": "Land & Mobile & (Heavy - (Bot & Basic))",
             "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
             "compare0": "<",
-            "value0": 0.1
+            "value0": 0.2
           },
           {
             "test_type": "OtherPlanetCanReceiveLandUnitAssistance",

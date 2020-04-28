@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## DEV
+
+- Infernos and Mauls enter the field earlier and in greater numbers
+
 ## v4.63.0 - 2020-04-27
 
 - Clean-up Platinum Legion Walker Foundry builds
