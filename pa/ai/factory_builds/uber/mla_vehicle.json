@@ -294,7 +294,7 @@
       ]
     },
     {
-      "name": "Uber - Stryker",
+      "name": "Uber - Stryker - Intel",
       "to_build": "AttackVehicle",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -338,6 +338,42 @@
             "unit_type_string0": "(Tank & Basic & Mobile) - Hover - Fabber - AirDefense - Construction - Artillery - Heavy - Scout - SelfDestruct - Deconstruction - Titan",
             "compare0": "<",
             "value0": 5
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Uber - Stryker",
+      "to_build": "AttackVehicle",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["BasicVehicleFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Bot & Basic & Offense",
+            "compare0": "==",
+            "value0": 0
           }
         ]
       ]

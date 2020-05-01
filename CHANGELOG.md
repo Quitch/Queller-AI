@@ -3,6 +3,7 @@
 ## DEV
 
 - Infernos and Mauls enter the field earlier and in greater numbers
+- Uber builds Strykers when it doesn't have bots
 
 ## v4.63.0 - 2020-04-27
 
