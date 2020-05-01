@@ -3,7 +3,7 @@
 ## DEV
 
 - Uber uses Infernos and Mauls earlier and in greater numbers
-- Uber builds Strykers when it doesn't have bots
+- Uber builds Strykers when it doesn't have bots itself and encounters suicide bots
 
 ## v4.63.0 - 2020-04-27
 
