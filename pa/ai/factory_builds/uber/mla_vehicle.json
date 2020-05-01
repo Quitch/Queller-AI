@@ -343,47 +343,6 @@
       ]
     },
     {
-      "name": "Uber - Stryker",
-      "to_build": "AttackVehicle",
-      "instance_count": 1,
-      "max_num_assisters": 10,
-      "priority": 97,
-      "builders": ["BasicVehicleFactory"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "naval",
-            "boolean": false
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Bot & Basic & Offense",
-            "compare0": "==",
-            "value0": 0
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Bot & SelfDestruct",
-            "boolean": true
-          }
-        ]
-      ]
-    },
-    {
       "name": "Uber - Ant",
       "to_build": "LightLaserTank",
       "instance_count": -1,
