@@ -1,9 +1,13 @@
 # CHANGELOG
 
+## v4.64.0 - 2020-05-02
+
+- Uber uses Infernos and Mauls earlier and in greater numbers
+
 ## v4.63.0 - 2020-04-27
 
 - Clean-up Platinum Legion Walker Foundry builds
-- Added Uber Turtle, a personality which puts more emphasis on defending its expansions and titans
+- Added Uber Turtle, a personality which puts more emphasis on defending its expansions and building titans
 - Uber may build light artillery to defend key expansions
 
 ## v4.62.0 - 2020-04-25

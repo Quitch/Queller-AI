@@ -294,7 +294,7 @@
       ]
     },
     {
-      "name": "Uber - Stryker",
+      "name": "Uber - Stryker - Intel",
       "to_build": "AttackVehicle",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -430,14 +430,14 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Land & Mobile & Offense - Deconstruction - Fabber",
             "compare0": ">",
-            "value0": 40
+            "value0": 20
           },
           {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Land & Mobile & (Heavy - (Bot & Basic))",
             "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
             "compare0": "<",
-            "value0": 0.1
+            "value0": 0.2
           }
         ],
         [
@@ -459,17 +459,11 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Land & Mobile & Offense - Deconstruction - Fabber",
-            "compare0": ">",
-            "value0": 40
-          },
-          {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Land & Mobile & (Heavy - (Bot & Basic))",
             "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
             "compare0": "<",
-            "value0": 0.1
+            "value0": 0.2
           },
           {
             "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
