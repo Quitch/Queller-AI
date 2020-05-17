@@ -3,6 +3,7 @@
 ## DEV
 
 - Uber won't build Bluehawks in response to MLA T2 bots
+- Updated Polish translation with thanks to Craeox
 
 ## v4.64.0 - 2020-05-02
 
