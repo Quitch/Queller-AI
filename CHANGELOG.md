@@ -5,6 +5,7 @@
 - Uber won't build Bluehawks in response to MLA T2 bots
 - Updated Polish translation with thanks to Craeox
 - Fixed Uber not properly growing its Advanced Fabrication Vehicle presence when alone
+- Uber Tank will use the Stryker more
 
 ## v4.64.0 - 2020-05-02
 
