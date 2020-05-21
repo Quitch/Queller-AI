@@ -22,6 +22,7 @@
     "_": "readonly",
     "loc": "readonly"
   },
+  "plugins": ["lodash"],
   "rules": {
     "lodash/preferred-alias": [2, { "ignoreMethods": ["extend", "any"] }],
     "lodash/prefer-lodash-method": 0
