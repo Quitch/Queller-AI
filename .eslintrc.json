@@ -15,20 +15,15 @@
       "pragma": "_"
     }
   },
-  "extends": ["eslint:recommended", "prettier"],
+  "extends": ["eslint:recommended", "prettier", "plugin:lodash/v3"],
   "globals": {
     "api": "readonly",
     "model": "readonly",
     "_": "readonly",
     "loc": "readonly"
   },
-  "plugins": ["lodash"],
   "rules": {
-    "lodash/callback-binding": 2,
-    "lodash/collection-method-value": 2,
-    "lodash/collection-return": 2,
-    "lodash/no-double-unwrap": 2,
-    "lodash/no-extra-args": 2,
-    "lodash/unwrap": 2
+    "lodash/preferred-alias": [2, { "ignoreMethods": ["extend", "any"] }],
+    "lodash/prefer-lodash-method": 0
   }
 }
