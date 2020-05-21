@@ -7,6 +7,7 @@
 - Fixed Uber not properly growing its Advanced Fabrication Vehicle presence when alone
 - Uber Tank will use the Stryker more
 - Uber uses more Bluehawks if it hasn't seen advanced MLA bots
+- Fixed Uber Bot being incorrectly cautious
 
 ## v4.64.0 - 2020-05-02
 
