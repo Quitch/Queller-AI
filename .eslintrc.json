@@ -15,7 +15,7 @@
       "pragma": "_"
     }
   },
-  "extends": ["eslint:recommended", "prettier", "plugin:lodash/v3"],
+  "extends": ["eslint:recommended", "plugin:lodash/v3", "prettier"],
   "globals": {
     "api": "readonly",
     "model": "readonly",
