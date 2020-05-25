@@ -12,6 +12,8 @@
 - Uber invests in more mobile ground anti-air
 - Uber builds Stingray for anti-air again
 - Uber responds more aggressively with Narwhals against air threats
+- Uber less focused on Typhoons
+- Uber builds Leviathans and Epochs when it feels it has the sub situation under control
 
 ## v4.64.0 - 2020-05-02
 

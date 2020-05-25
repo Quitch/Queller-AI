@@ -548,10 +548,10 @@
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Naval",
-            "string1": "Naval",
-            "compare0": ">",
-            "value0": 0.8
+            "string0": "Sub",
+            "string1": "AntiSub",
+            "compare0": "<",
+            "value0": 0.6
           }
         ],
         [
@@ -771,7 +771,7 @@
       "to_build": "DroneCarrier",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 199,
+      "priority": 198,
       "builders": ["AdvancedNavalFactory"],
       "build_conditions": [
         [
