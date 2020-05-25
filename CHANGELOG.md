@@ -10,6 +10,7 @@
 - Fixed Uber Bot being incorrectly cautious
 - Uber tries harder again to maintain air parity
 - Uber invests in more mobile ground anti-air
+- Uber builds Stingray for anti-air again
 
 ## v4.64.0 - 2020-05-02
 
