@@ -8,7 +8,7 @@
 - Uber Tank will use the Stryker more
 - Uber uses more Bluehawks if it hasn't seen advanced MLA bots
 - Fixed Uber Bot being incorrectly cautious
-- Uber tries harder again to maintain air parity
+- Uber tries harder again to maintain air parity with its target
 - Uber invests in more mobile ground anti-air
 - Uber builds Stingray for anti-air again
 - Uber responds more aggressively with Narwhals against air threats
