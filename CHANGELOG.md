@@ -15,6 +15,7 @@
 - Uber focuses less on Typhoons
 - Uber builds Leviathans and Krakens only when it feels it has the sub situation under control
 - Uber will build the Epoch purely for shore bombardment
+- Updated pt-BR translation with thanks to CmdrEdem
 
 ## v4.64.0 - 2020-05-02
 
