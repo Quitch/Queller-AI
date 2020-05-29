@@ -49,17 +49,17 @@
       ]
     },
     {
-      "name": "Uber Naval - Kraken",
-      "to_build": "MissileSub",
+      "name": "Uber - Typhoon",
+      "to_build": "DroneCarrier",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 198,
+      "priority": 199,
       "builders": ["AdvancedNavalFactory"],
       "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "naval",
+            "string0": "uber",
             "boolean": true
           },
           {
@@ -69,27 +69,12 @@
           {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Uber Naval - Kaiju",
-      "to_build": "HoverShip",
-      "instance_count": 1,
-      "max_num_assisters": 10,
-      "priority": 198,
-      "builders": ["AdvancedNavalFactory"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "naval",
-            "boolean": true
           },
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Sub",
+            "compare0": ">",
+            "value0": 0
           }
         ]
       ]

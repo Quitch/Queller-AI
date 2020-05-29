@@ -3,6 +3,7 @@
 ## DEV
 
 - Uber Rush puts a lower emphasis on static defence
+- Uber Naval places higher priority on Typhoon
 
 ## v4.65.0 - 2020-05-29
 
