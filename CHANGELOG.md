@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## DEV
+## v4.65.0 - 2020-05-29
 
 - Uber won't build Bluehawks in response to MLA T2 bots
 - Updated Polish translation with thanks to Craeox
