@@ -16,6 +16,7 @@
 - Uber builds Leviathans and Krakens only when it feels it has the sub situation under control
 - Uber will build the Epoch purely for shore bombardment
 - Updated Portuguese (Brazilian) translation with thanks to CmdrEdem
+- Uber won't build the Peacekeeper anymore
 
 ## v4.64.0 - 2020-05-02
 
