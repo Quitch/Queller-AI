@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## DEV
+
+- Uber Rush puts a lower emphasis on static defence
+
 ## v4.65.0 - 2020-05-29
 
 - Uber won't build Bluehawks in response to MLA T2 bots
