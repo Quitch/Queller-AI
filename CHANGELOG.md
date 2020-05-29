@@ -1,5 +1,24 @@
 # CHANGELOG
 
+## v4.65.0 - 2020-05-29
+
+- Uber won't build Bluehawks in response to MLA T2 bots
+- Updated Polish translation with thanks to Craeox
+- Fixed Uber not properly growing its Advanced Fabrication Vehicle presence when alone
+- Uber Tank will use the Stryker more
+- Uber uses more Bluehawks if it hasn't seen advanced MLA bots
+- Fixed Uber Bot being incorrectly cautious
+- Uber tries harder again to maintain air parity with its target
+- Uber invests in more mobile ground anti-air
+- Uber builds Stingray for anti-air again
+- Uber responds more aggressively with Narwhals against air threats
+- Uber focuses less on Typhoons
+- Uber builds Leviathans and Krakens only when it feels it has the sub situation under control
+- Uber will build the Epoch purely for shore bombardment
+- Updated Portuguese (Brazilian) translation with thanks to CmdrEdem
+- Uber won't build the Peacekeeper anymore
+- Uber Rush will use more bots as MLA
+
 ## v4.64.0 - 2020-05-02
 
 - Uber uses Infernos and Mauls earlier and in greater numbers

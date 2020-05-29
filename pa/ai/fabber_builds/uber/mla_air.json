@@ -60,43 +60,6 @@
             "boolean": false
           },
           {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicAirFactory"
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Air",
-            "string1": "AntiAir",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Factory & Air",
-            "unit_type_string1": "Factory - Orbital",
-            "compare0": "<=",
-            "value0": 0.2
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicAirFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsRespawnable",
-            "boolean": false
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
@@ -105,18 +68,11 @@
             "string0": "BasicAirFactory"
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "test_type": "FocusTargetThreatRatio",
             "string0": "Air",
             "string1": "Air",
             "compare0": ">",
             "value0": 1
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Factory & Air",
-            "unit_type_string1": "Factory - Orbital",
-            "compare0": "<=",
-            "value0": 0.2
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -304,43 +260,6 @@
             "boolean": false
           },
           {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicAirFactory"
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Air",
-            "string1": "AntiAir",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Factory & Air",
-            "unit_type_string1": "Factory - Orbital",
-            "compare0": "<=",
-            "value0": 0.2
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "BasicAirFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetIsRespawnable",
-            "boolean": false
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
@@ -349,18 +268,11 @@
             "string0": "BasicAirFactory"
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "test_type": "FocusTargetThreatRatio",
             "string0": "Air",
             "string1": "Air",
             "compare0": ">",
             "value0": 1
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Factory & Air",
-            "unit_type_string1": "Factory - Orbital",
-            "compare0": "<=",
-            "value0": 0.2
           },
           {
             "test_type": "CanFindPlaceToBuild",
