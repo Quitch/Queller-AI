@@ -17,6 +17,7 @@
 - Uber will build the Epoch purely for shore bombardment
 - Updated Portuguese (Brazilian) translation with thanks to CmdrEdem
 - Uber won't build the Peacekeeper anymore
+- Uber Rush will use more bots as MLA
 
 ## v4.64.0 - 2020-05-02
 
