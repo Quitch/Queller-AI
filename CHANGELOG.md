@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## DEV
+## v4.66.0 - 2020-05-30
 
 - Uber Rush puts a lower emphasis on static defence
 - Uber Naval places higher priority on Typhoon
