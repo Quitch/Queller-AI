@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v4.66.0 - 2020-05-30
+
+- Uber Rush puts a lower emphasis on static defence
+- Uber Naval places higher priority on Typhoon
+
 ## v4.65.0 - 2020-05-29
 
 - Uber won't build Bluehawks in response to MLA T2 bots
