@@ -4,6 +4,7 @@
 
 - Uber builds Drifters in response to tanks
 - Silver through Platinum build Drifters as standard
+- Uber only builds basic radar as artillery support
 
 ## v4.66.0 - 2020-05-30
 
