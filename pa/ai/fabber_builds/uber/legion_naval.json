@@ -17,11 +17,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "naval",
-            "boolean": false
-          },
-          {
             "test_type": "EnemyPresenceOnPlanet",
             "boolean": false
           },
@@ -122,7 +117,7 @@
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Sub",
             "string1": "AntiSub",
-            "compare0": ">",
+            "compare0": ">=",
             "value0": 1
           },
           {
@@ -157,7 +152,7 @@
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Naval",
             "string1": "Naval",
-            "compare0": ">",
+            "compare0": ">=",
             "value0": 1
           },
           {
@@ -284,7 +279,7 @@
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Sub",
             "string1": "AntiSub",
-            "compare0": ">",
+            "compare0": ">=",
             "value0": 1
           },
           {
@@ -319,7 +314,7 @@
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Naval",
             "string1": "Naval",
-            "compare0": ">",
+            "compare0": ">=",
             "value0": 1
           },
           {
@@ -391,9 +386,39 @@
             "boolean": true
           },
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Advanced - Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Basic & Fabber) - Orbital - Land",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryAdvancedNaval"
+          }
+        ],
+        [
+          {
             "test_type": "HasPersonalityTag",
-            "string0": "naval",
-            "boolean": false
+            "string0": "uber",
+            "boolean": true
           },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
@@ -402,6 +427,13 @@
           {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Sub",
+            "string1": "AntiSub",
+            "compare0": "<",
+            "value0": 1
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -519,37 +551,6 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionFactoryAdvancedNaval"
           }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "HaveEcoForAdvanced",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory & Advanced & Naval - Orbital",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Basic & Fabber) - Orbital - Land",
-            "compare0": ">=",
-            "value0": 5
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionFactoryAdvancedNaval"
-          }
         ]
       ],
       "placement_rules": {
@@ -580,11 +581,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "naval",
-            "boolean": false
-          },
-          {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
@@ -605,6 +601,13 @@
           {
             "test_type": "CurrentEnergyEfficiency",
             "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Sub",
+            "string1": "AntiSub",
+            "compare0": "<",
             "value0": 1
           },
           {

@@ -7,6 +7,7 @@
 - Uber only builds basic radar as artillery support
 - Improved Uber's T2 naval decision making
 - Platinum and Uber can use vehicles ahead of bots on naval maps
+- Merged portions of Uber and Uber Naval
 
 ## v4.66.0 - 2020-05-30
 
