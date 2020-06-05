@@ -607,6 +607,11 @@
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Tank",
+            "boolean": true
           }
         ],
         [
@@ -629,6 +634,27 @@
           {
             "test_type": "OtherPlanetNeedsLandUnitAssistance",
             "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Uber - Drifter - Hover",
+      "to_build": "HoverTank",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 96,
+      "builders": ["AnyUberVehicleFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "uber",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           }
         ]
       ]
