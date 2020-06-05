@@ -166,12 +166,6 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 - May use a more cautious opening
 - Avoids antagonistic scouting raids
 
-### Naval
-
-- Uses naval opening if possible
-- Unrestricted naval usage
-- Only uses amphibious and hover units from land factories
-
 ### Rush
 
 - Techs late

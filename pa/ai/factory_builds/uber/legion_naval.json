@@ -15,11 +15,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "naval",
-            "boolean": false
-          },
-          {
             "test_type": "BaseThreatened",
             "boolean": false
           },
@@ -43,6 +38,10 @@
           {
             "test_type": "HaveEcoForAdvanced",
             "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -177,10 +176,6 @@
           {
             "test_type": "EnemyPresenceOnPlanet",
             "boolean": false
-          },
-          {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
           }
         ]
       ]
@@ -275,32 +270,6 @@
             "compare0": "<",
             "value0": 0.1
           }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "naval",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Naval & Mobile & Basic & AirDefense",
-            "compare0": "<",
-            "value0": 4
-          }
         ]
       ]
     },
@@ -337,7 +306,7 @@
             "string0": "Sub",
             "string1": "AntiSub",
             "compare0": "<",
-            "value0": 0.8
+            "value0": 0.6
           }
         ]
       ]
@@ -361,10 +330,8 @@
             "boolean": false
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber & Advanced & Naval",
-            "compare0": "<",
-            "value0": 1
+            "test_type": "MetMinAdvancedFabberCount",
+            "boolean": false
           }
         ]
       ]
@@ -386,6 +353,10 @@
           {
             "test_type": "BaseThreatened",
             "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -490,7 +461,7 @@
             "unit_type_string0": "(Naval & Mobile & Construction) - Fabber",
             "unit_type_string1": "Naval & Mobile & Offense",
             "compare0": "<",
-            "value0": 0.01
+            "value0": 0.05
           }
         ],
         [
@@ -527,7 +498,7 @@
             "unit_type_string0": "(Naval & Mobile & Construction) - Fabber",
             "unit_type_string1": "Naval & Mobile & Offense",
             "compare0": "<",
-            "value0": 0.01
+            "value0": 0.05
           }
         ]
       ]
@@ -556,6 +527,13 @@
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Naval",
+            "string1": "Naval",
+            "compare0": ">",
+            "value0": 0.8
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Sub",
             "string1": "AntiSub",
             "compare0": "<",
@@ -567,11 +545,6 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "naval",
-            "boolean": false
           },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
@@ -634,9 +607,33 @@
             "boolean": true
           },
           {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Naval & Mobile & Tactical",
+            "unit_type_string1": "(Naval & Mobile) - Fabber - Hover",
+            "compare0": "<",
+            "value0": 0.1
+          }
+        ],
+        [
+          {
             "test_type": "HasPersonalityTag",
-            "string0": "naval",
-            "boolean": false
+            "string0": "uber",
+            "boolean": true
           },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
@@ -689,7 +686,7 @@
             "string0": "Sub",
             "string1": "AntiSub",
             "compare0": "<=",
-            "value0": 0.8
+            "value0": 0.6
           }
         ]
       ]

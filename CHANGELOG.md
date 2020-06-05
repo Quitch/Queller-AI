@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## v4.67.0 - 2020-06-05
+
+- Uber builds Drifters in response to tanks
+- Silver through Platinum build Drifters as standard
+- Uber only builds basic radar as artillery support
+- Improved Uber's T2 naval decision making
+- Platinum and Uber can use vehicles ahead of bots on naval maps
+- Merged portions of Uber and Uber Naval
+- Avoid naval fabbers in ponds
+- Ensure Uber has a fallback Peacekeeper build for islands and unit restrictions
+- Capped how aggressively Uber can scale up its air to try and keep pace
+- Removed Uber Naval
+- Uber now handles Legion bot scouting the same as Uber Bot
+- Uber is back to requiring heavy sub control before switching up its naval play
+
 ## v4.66.0 - 2020-05-30
 
 - Uber Rush puts a lower emphasis on static defence

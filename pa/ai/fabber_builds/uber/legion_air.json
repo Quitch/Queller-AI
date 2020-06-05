@@ -86,6 +86,13 @@
           },
           {
             "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Factory & Air & Basic",
+            "unit_type_string1": "Factory & Basic - Orbital",
+            "compare0": "<=",
+            "value0": 0.4
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Factory & Air",
             "unit_type_string1": "Factory - Orbital",
             "compare0": "<=",
@@ -304,6 +311,13 @@
             "string1": "Air",
             "compare0": ">",
             "value0": 1
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Factory & Air & Basic",
+            "unit_type_string1": "Factory & Basic - Orbital",
+            "compare0": "<=",
+            "value0": 0.4
           },
           {
             "test_type": "CanFindPlaceToBuild",
