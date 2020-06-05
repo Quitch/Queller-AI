@@ -13,6 +13,7 @@
 - Capped how aggressively Uber can scale up its air to try and keep pace
 - Removed Uber Naval
 - Uber now handles Legion bot scouting the same as Uber Bot
+- Uber requires less sub control again before fielding destroyers
 
 ## v4.66.0 - 2020-05-30
 
