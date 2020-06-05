@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## DEV
+## v4.67.0 - 2020-06-05
 
 - Uber builds Drifters in response to tanks
 - Silver through Platinum build Drifters as standard
