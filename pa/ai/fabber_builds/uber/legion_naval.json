@@ -482,44 +482,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "naval",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "HaveEcoForAdvanced",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionFactoryAdvancedNaval"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory & Advanced - Orbital",
-            "compare0": ">=",
-            "value0": 2
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionFactoryAdvancedNaval"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
