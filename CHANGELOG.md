@@ -9,6 +9,7 @@
 - Platinum and Uber can use vehicles ahead of bots on naval maps
 - Merged portions of Uber and Uber Naval
 - Avoid naval fabbers in ponds
+- Ensure Uber has a fallback Peacekeeper build for islands and unit restrictions
 
 ## v4.66.0 - 2020-05-30
 
