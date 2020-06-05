@@ -8,6 +8,7 @@
 - Improved Uber's T2 naval decision making
 - Platinum and Uber can use vehicles ahead of bots on naval maps
 - Merged portions of Uber and Uber Naval
+- Avoid naval fabbers in ponds
 
 ## v4.66.0 - 2020-05-30
 
