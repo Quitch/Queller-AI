@@ -449,7 +449,7 @@
       "to_build": "AdvancedNavalFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
-      "priority": 199,
+      "priority": 198,
       "builders": ["AdvancedNavalFactory"],
       "build_conditions": [
         [
@@ -457,6 +457,11 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
           },
           {
             "test_type": "BaseThreatened",
@@ -479,6 +484,11 @@
             "test_type": "HasPersonalityTag",
             "string0": "uber",
             "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
           },
           {
             "test_type": "PlanetIsRespawnable",
@@ -548,10 +558,17 @@
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Naval",
+            "string1": "Naval",
+            "compare0": ">",
+            "value0": 0.8
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Sub",
             "string1": "AntiSub",
             "compare0": "<",
-            "value0": 0.6
+            "value0": 0.8
           }
         ],
         [
@@ -684,35 +701,6 @@
             "boolean": true
           },
           {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Naval",
-            "compare0": ">=",
-            "value0": 5000
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "(Naval & Mobile & Advanced) - Fabber - Construction - Artillery - Sub - Hover - Custom1",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Naval & Mobile & (AirDefense | Tactical)",
-            "unit_type_string1": "(Naval & Mobile) - Fabber - Hover",
-            "compare0": "<",
-            "value0": 0.1
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "HasPersonalityTag",
             "string0": "naval",
             "boolean": false
@@ -814,7 +802,7 @@
       "to_build": "HoverShip",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 198,
+      "priority": 197,
       "builders": ["AdvancedNavalFactory"],
       "build_conditions": [
         [
