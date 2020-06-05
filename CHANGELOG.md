@@ -11,6 +11,7 @@
 - Avoid naval fabbers in ponds
 - Ensure Uber has a fallback Peacekeeper build for islands and unit restrictions
 - Capped how aggressively Uber can scale up its air to try and keep pace
+- Removed Uber Naval
 
 ## v4.66.0 - 2020-05-30
 
