@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## DEV
+
+- Revert Drifter builds for Silver through Platinum
+
 ## v4.67.0 - 2020-06-05
 
 - Uber builds Drifters in response to tanks
