@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## DEV
+## v4.67.1 - 2020-06-12
 
 - Revert Drifter builds for Silver through Platinum
 - Ensure Stingrays are always deployed as needed to protect mobile naval assets against orbital threats
