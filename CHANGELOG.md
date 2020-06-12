@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v4.67.1 - 2020-06-12
+
+- Revert Drifter builds for Silver through Platinum
+- Ensure Stingrays are always deployed as needed to protect mobile naval assets against orbital threats
+- Reintroduced T1 naval caps for Uber based on enemy threat
+
 ## v4.67.0 - 2020-06-05
 
 - Uber builds Drifters in response to tanks
@@ -9,7 +15,7 @@
 - Platinum and Uber can use vehicles ahead of bots on naval maps
 - Merged portions of Uber and Uber Naval
 - Avoid naval fabbers in ponds
-- Ensure Uber has a fallback Peacekeeper build for islands and unit restrictions
+- Ensure Uber has a fall-back Peacekeeper build for islands and unit restrictions
 - Capped how aggressively Uber can scale up its air to try and keep pace
 - Removed Uber Naval
 - Uber now handles Legion bot scouting the same as Uber Bot
