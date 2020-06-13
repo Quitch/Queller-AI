@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## DEV
+## v4.67.2 - 2020-06-13
 
 - Fix Uber building too many advanced air factories when alone on a metal world
 
