@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v4.67.2 - 2020-06-13
+
+- Fix Uber building too many advanced air factories when alone on a metal world
+
 ## v4.67.1 - 2020-06-12
 
 - Revert Drifter builds for Silver through Platinum
