@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## DEV
+## v4.67.3 - 2020-06-13
 
 - Correct Uber's Spinner ratio when alone
 
