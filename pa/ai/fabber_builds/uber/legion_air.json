@@ -568,6 +568,12 @@
             "value0": 5
           },
           {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Air & Advanced",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionFactoryAdvancedAir"
           }
@@ -609,12 +615,6 @@
             "unit_type_string0": "Factory & Air & Advanced",
             "compare0": "<",
             "value0": 1
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Factory & Air & Advanced",
-            "compare0": "<",
-            "value0": 300
           },
           {
             "test_type": "CanFindPlaceToBuild",
