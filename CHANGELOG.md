@@ -2,7 +2,7 @@
 
 ## DEV
 
-- Removed need for AI Mod Compatibility Framework
+- Removed dependency on AI Mod Compatibility Framework
 
 ## v4.67.3 - 2020-06-13
 
