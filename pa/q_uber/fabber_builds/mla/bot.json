@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Uber - Basic Bot Factory - Commander",
+      "name": "Basic Bot Factory - Commander",
       "to_build": "BasicBotFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -10,11 +10,6 @@
       "builders": ["UberCommander"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "HasPersonalityTag",
             "string0": "bot",
@@ -53,11 +48,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "HasPersonalityTag",
             "string0": "bot",
@@ -104,7 +94,7 @@
       }
     },
     {
-      "name": "Uber - Basic Bot Factory - Fabbers",
+      "name": "Basic Bot Factory - Fabbers",
       "to_build": "BasicBotFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -117,11 +107,6 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "bot",
             "boolean": false
           },
@@ -158,11 +143,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "HasPersonalityTag",
             "string0": "bot",
@@ -209,7 +189,7 @@
       }
     },
     {
-      "name": "Uber - Basic Bot Factory - Arrived on a new world",
+      "name": "Basic Bot Factory - Arrived on a new world",
       "to_build": "BasicBotFactory",
       "instance_count": 1,
       "min_num_assisters": 3,
@@ -222,11 +202,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "HasPersonalityTag",
             "string0": "tank",
@@ -273,7 +248,7 @@
       }
     },
     {
-      "name": "Uber - Advanced Bot Factory",
+      "name": "Advanced Bot Factory",
       "to_build": "AdvancedBotFactory",
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
@@ -287,11 +262,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -324,11 +294,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -366,11 +331,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
@@ -394,11 +354,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -440,7 +395,7 @@
       }
     },
     {
-      "name": "Uber - Advanced Bot Factory - Excess Eco",
+      "name": "Advanced Bot Factory - Excess Eco",
       "to_build": "AdvancedBotFactory",
       "instance_count": 2,
       "shared_instance_count": "AdvancedFactory",
@@ -455,11 +410,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false

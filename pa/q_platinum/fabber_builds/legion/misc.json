@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Platinum - Fabber Assist",
+      "name": "Fabber Assist",
       "instance_count": -1,
       "priority": 1,
       "builders": [
@@ -13,20 +13,10 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "CurrentMetalEfficiency",
             "compare0": ">",
@@ -47,7 +37,7 @@
       "task_type": "BuilderAssist"
     },
     {
-      "name": "Legion - Platinum - Sky Bridge",
+      "name": "Sky Bridge",
       "to_build": "LegionStructureBasicTeleporter",
       "instance_count": 1,
       "priority": 710,
@@ -61,11 +51,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PresenceOnOtherPlanet",
             "boolean": true
@@ -97,7 +82,7 @@
       }
     },
     {
-      "name": "Legion - Platinum - Teleport Fabber To Planet",
+      "name": "Teleport Fabber To Planet",
       "instance_count": 1,
       "priority": 801,
       "builders": [
@@ -109,11 +94,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetWithoutFabberWithTeleporter",
             "boolean": true
@@ -135,7 +115,7 @@
       "task_type": "TeleportFabberToPlanet"
     },
     {
-      "name": "Legion - Platinum - Move Fabber To Planet",
+      "name": "Move Fabber To Planet",
       "instance_count": 1,
       "priority": 800,
       "builders": [
@@ -149,11 +129,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetWithoutPresence",
             "boolean": true
@@ -175,17 +150,12 @@
       "task_type": "TransportToPlanet"
     },
     {
-      "name": "Legion - Platinum - Move Orbital Fabber To Planet",
+      "name": "Move Orbital Fabber To Planet",
       "instance_count": 1,
       "priority": 800,
       "builders": ["LegionOrbitalBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetOrGasGiantWithoutPresence",
             "boolean": true
@@ -198,11 +168,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetOrGasGiantWithoutPresence",
             "boolean": true
@@ -219,11 +184,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetOrGasGiantWithoutPresence",
             "boolean": true
@@ -244,11 +204,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetOrGasGiantWithoutPresence",
             "boolean": true
@@ -272,17 +227,12 @@
       "task_type": "OrbitalFabberMoveToPlanet"
     },
     {
-      "name": "Legion - Platinum - Move Orbital Fabber To Safe Planet",
+      "name": "Move Orbital Fabber To Safe Planet",
       "instance_count": 1,
       "priority": 800,
       "builders": ["LegionOrbitalBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "SafePlanetOrGasGiantWithoutPresence",
             "boolean": true
@@ -295,11 +245,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "SafePlanetOrGasGiantWithoutPresence",
             "boolean": true
@@ -316,11 +261,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "SafePlanetOrGasGiantWithoutPresence",
             "boolean": true
@@ -341,11 +281,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "SafePlanetOrGasGiantWithoutPresence",
             "boolean": true

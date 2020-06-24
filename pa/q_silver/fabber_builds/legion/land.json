@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Silver - Walker Foundry",
+      "name": "Walker Foundry",
       "to_build": "LegionFactoryBasicBot",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -16,11 +16,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
@@ -42,11 +37,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -73,11 +63,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": true
@@ -110,7 +95,7 @@
       }
     },
     {
-      "name": "Legion - Silver - Armor Foundry",
+      "name": "Armor Foundry",
       "to_build": "LegionFactoryBasicVehicle",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -125,11 +110,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
@@ -151,11 +131,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -182,11 +157,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": true
@@ -219,7 +189,7 @@
       }
     },
     {
-      "name": "Legion - Silver - Advanced Walker Foundry",
+      "name": "Advanced Walker Foundry",
       "to_build": "LegionFactoryAdvancedBot",
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
@@ -232,11 +202,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
@@ -263,11 +228,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -300,11 +260,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -352,7 +307,7 @@
       }
     },
     {
-      "name": "Legion - Silver - Advanced Armor Foundry",
+      "name": "Advanced Armor Foundry",
       "to_build": "LegionFactoryAdvancedVehicle",
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
@@ -361,11 +316,6 @@
       "builders": ["LegionVehicleBasicFabber", "LegionVehicleAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
@@ -392,11 +342,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -429,11 +374,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false

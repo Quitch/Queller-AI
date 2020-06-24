@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Uber - Theodor",
+      "name": "Theodor",
       "to_build": "LegionDefenseBasicArtillery",
       "instance_count": 1,
       "min_num_assisters": 1,
@@ -18,11 +18,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -81,7 +76,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Gustav",
+      "name": "Gustav",
       "to_build": "LegionDefenseAdvancedArtillery",
       "instance_count": 1,
       "shared_instance_count": "Artillery",
@@ -92,11 +87,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -146,7 +136,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Gustav - Shield",
+      "name": "Gustav - Shield",
       "to_build": "LegionDefenseAdvancedArtillery",
       "instance_count": 1,
       "shared_instance_count": "Artillery",
@@ -157,11 +147,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -206,7 +191,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Supernova",
+      "name": "Supernova",
       "to_build": "LegionDefenseAdvancedNukeSilo",
       "instance_count": 1,
       "shared_instance_count": "NukeSilo",
@@ -216,11 +201,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -256,7 +236,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Supernova - Alone",
+      "name": "Supernova - Alone",
       "to_build": "LegionDefenseAdvancedNukeSilo",
       "instance_count": 1,
       "shared_instance_count": "NukeSilo",
@@ -266,11 +246,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -300,7 +275,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Supernova - Rush",
+      "name": "Supernova - Rush",
       "to_build": "LegionDefenseAdvancedNukeSilo",
       "instance_count": 1,
       "shared_instance_count": "NukeSilo",
@@ -310,11 +285,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -369,7 +339,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Diplomat",
+      "name": "Diplomat",
       "to_build": "LegionDefenseAdvancedEngine",
       "instance_count": 1,
       "min_num_assisters": 8,
@@ -378,11 +348,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsMainEcoBase",
             "boolean": false
@@ -434,11 +399,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsMainEcoBase",
             "boolean": false
@@ -492,7 +452,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Catalyst",
+      "name": "Catalyst",
       "to_build": "LegionDefenseAdvancedModule",
       "instance_count": 1,
       "min_num_assisters": 20,
@@ -502,11 +462,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetHasUseablePlanetWeapon",
             "boolean": true

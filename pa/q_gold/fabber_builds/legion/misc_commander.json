@@ -1,17 +1,12 @@
 {
   "build_list": [
     {
-      "name": "Legion - Gold - Teleport Commander To Planet",
+      "name": "Teleport Commander To Planet",
       "instance_count": 1,
       "priority": 1001,
       "builders": ["LegionCommander"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "WantCommanderOffPlanetByTeleporter",
             "boolean": true

@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Platinum - Flyer Foundry - Commander",
+      "name": "Flyer Foundry - Commander",
       "to_build": "LegionFactoryBasicAir",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -10,11 +10,6 @@
       "builders": ["LegionCommander"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -44,11 +39,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
@@ -76,11 +66,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -112,11 +97,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -153,7 +133,7 @@
       }
     },
     {
-      "name": "Legion - Platinum - Flyer Foundry - Stuck",
+      "name": "Flyer Foundry - Stuck",
       "to_build": "LegionFactoryBasicAir",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -163,11 +143,6 @@
       "builders": ["LegionCommander", "LegionNavalBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemyPresenceOnPlanet",
             "boolean": false
@@ -188,11 +163,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -231,7 +201,7 @@
       }
     },
     {
-      "name": "Legion - Platinum - Flyer Foundry - Fabber",
+      "name": "Flyer Foundry - Fabber",
       "to_build": "LegionFactoryBasicAir",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -242,11 +212,6 @@
       "builders": ["AnyLegionFabberBasic", "AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -279,11 +244,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
@@ -305,11 +265,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
@@ -330,11 +285,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -371,7 +321,7 @@
       }
     },
     {
-      "name": "Legion - Platinum - Flyer Foundry - Early Air",
+      "name": "Flyer Foundry - Early Air",
       "to_build": "LegionFactoryBasicAir",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -381,11 +331,6 @@
       "builders": ["LegionCommander", "AnyLegionFabberBasic"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -428,7 +373,7 @@
       }
     },
     {
-      "name": "Legion - Platinum - Flyer Foundry - Arrived on a new world",
+      "name": "Flyer Foundry - Arrived on a new world",
       "to_build": "LegionFactoryBasicAir",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -442,11 +387,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PresenceOnOtherPlanet",
             "boolean": true
@@ -484,7 +424,7 @@
       }
     },
     {
-      "name": "Legion - Platinum - Advanced Air Foundry",
+      "name": "Advanced Air Foundry",
       "to_build": "LegionFactoryAdvancedAir",
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
@@ -494,11 +434,6 @@
       "builders": ["LegionAirBasicFabber", "LegionAirAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -533,11 +468,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -576,11 +506,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false

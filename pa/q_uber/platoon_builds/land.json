@@ -1,17 +1,12 @@
 {
   "build_list": [
     {
-      "name": "Uber - Boom Attack Platoon Small",
+      "name": "Boom Attack Platoon Small",
       "to_build": "Boom_Attack_Small_Queller",
       "instance_count": -1,
       "priority": 115,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -33,17 +28,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Boom Attack Platoon Medium",
+      "name": "Boom Attack Platoon Medium",
       "to_build": "Boom_Attack_Medium_Queller",
       "instance_count": -1,
       "priority": 114,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -65,17 +55,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Boom Attack Platoon Large",
+      "name": "Boom Attack Platoon Large",
       "to_build": "Boom_Attack_Large_Queller",
       "instance_count": -1,
       "priority": 113,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -97,17 +82,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Boom Attack Platoon XLarge",
+      "name": "Boom Attack Platoon XLarge",
       "to_build": "Boom_Attack_XLarge_Queller",
       "instance_count": -1,
       "priority": 112,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -129,17 +109,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Boom Attack Platoon Huge",
+      "name": "Boom Attack Platoon Huge",
       "to_build": "Boom_Attack_Huge_Queller",
       "instance_count": -1,
       "priority": 111,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -161,17 +136,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Boom Attack Platoon Max",
+      "name": "Boom Attack Platoon Max",
       "to_build": "Boom_Attack_Max_Queller",
       "instance_count": -1,
       "priority": 110,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -193,17 +163,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Land Attack Platoon Small",
+      "name": "Land Attack Platoon Small",
       "to_build": "Land_Attack_Small_Queller_Uber",
       "instance_count": -1,
       "priority": 105,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -225,17 +190,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Land Attack Platoon Medium",
+      "name": "Land Attack Platoon Medium",
       "to_build": "Land_Attack_Medium_Queller_Uber",
       "instance_count": -1,
       "priority": 104,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -257,17 +217,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Land Attack Platoon Large",
+      "name": "Land Attack Platoon Large",
       "to_build": "Land_Attack_Large_Queller_Uber",
       "instance_count": -1,
       "priority": 103,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -289,17 +244,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Land Attack Platoon XLarge",
+      "name": "Land Attack Platoon XLarge",
       "to_build": "Land_Attack_XLarge_Queller_Uber",
       "instance_count": -1,
       "priority": 102,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -321,17 +271,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Land Attack Platoon Huge",
+      "name": "Land Attack Platoon Huge",
       "to_build": "Land_Attack_Huge_Queller_Uber",
       "instance_count": -1,
       "priority": 101,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -353,17 +298,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Land Attack Platoon Max",
+      "name": "Land Attack Platoon Max",
       "to_build": "Land_Attack_Max_Queller_Uber",
       "instance_count": -1,
       "priority": 100,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true

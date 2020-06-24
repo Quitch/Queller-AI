@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Platinum - Ripple - Mex",
+      "name": "Ripple - Mex",
       "to_build": "LegionDefenseBasicNaval",
       "instance_count": 1,
       "priority": 252,
@@ -13,11 +13,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -58,11 +53,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -124,7 +114,7 @@
       }
     },
     {
-      "name": "Legion - Platinum - Ripple - Base",
+      "name": "Ripple - Base",
       "to_build": "LegionDefenseBasicNaval",
       "instance_count": 1,
       "max_num_assisters": 1,
@@ -133,11 +123,6 @@
       "builders": ["LegionCommander", "LegionNavalBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -174,11 +159,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -236,7 +216,7 @@
       }
     },
     {
-      "name": "Legion - Platinum - Tsunami - Base",
+      "name": "Tsunami - Base",
       "to_build": "LegionDefenseAdvancedNaval",
       "instance_count": 1,
       "priority": 378,
@@ -245,11 +225,6 @@
       "builders": ["LegionNavalAdvancedFabber", "LegionAirAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -286,11 +261,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true

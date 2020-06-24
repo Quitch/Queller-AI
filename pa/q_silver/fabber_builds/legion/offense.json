@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Silver - Theodor",
+      "name": "Theodor",
       "to_build": "LegionDefenseBasicArtillery",
       "instance_count": 1,
       "shared_instance_count": "Defence",
@@ -11,11 +11,6 @@
       "builders": ["AnyLegionFabberBasic"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -72,7 +67,7 @@
       }
     },
     {
-      "name": "Legion - Silver - Gustav",
+      "name": "Gustav",
       "to_build": "LegionDefenseAdvancedArtillery",
       "instance_count": 1,
       "shared_instance_count": "Artillery",
@@ -82,11 +77,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -124,7 +114,7 @@
       }
     },
     {
-      "name": "Legion - Silver - Gustav - Shield",
+      "name": "Gustav - Shield",
       "to_build": "LegionDefenseAdvancedArtillery",
       "instance_count": 1,
       "shared_instance_count": "Artillery",
@@ -134,11 +124,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -183,7 +168,7 @@
       }
     },
     {
-      "name": "Legion - Silver - Supernova",
+      "name": "Supernova",
       "to_build": "LegionDefenseAdvancedNukeSilo",
       "instance_count": 1,
       "shared_instance_count": "NukeSilo",
@@ -192,11 +177,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -222,7 +202,7 @@
       }
     },
     {
-      "name": "Legion - Silver - Diplomat",
+      "name": "Diplomat",
       "to_build": "LegionDefenseAdvancedEngine",
       "instance_count": 1,
       "max_num_assisters": 45,
@@ -230,11 +210,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsMainEcoBase",
             "boolean": false
@@ -282,11 +257,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsMainEcoBase",
             "boolean": false
@@ -340,7 +310,7 @@
       }
     },
     {
-      "name": "Legion - Silver - Catalyst",
+      "name": "Catalyst",
       "to_build": "LegionDefenseAdvancedModule",
       "instance_count": 1,
       "max_num_assisters": 45,
@@ -349,11 +319,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "PlanetHasUseablePlanetWeapon",
             "boolean": true

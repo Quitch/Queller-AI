@@ -16,11 +16,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "casual",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsGasGiant",
             "boolean": false
           },
@@ -35,11 +30,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "casual",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": false
@@ -74,11 +64,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "casual",
-            "boolean": true
-          },
-          {
             "test_type": "DesireEnergy"
           },
           {
@@ -87,11 +72,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "casual",
-            "boolean": true
-          },
           {
             "test_type": "PotentialEnergyEfficiency",
             "compare0": "<",
@@ -126,11 +106,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "casual",
-            "boolean": true
-          },
-          {
             "test_type": "PotentialMetalEfficiency",
             "compare0": "<",
             "value0": 1
@@ -141,11 +116,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "casual",
-            "boolean": true
-          },
           {
             "test_type": "DesireMetal"
           },
@@ -176,11 +146,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "casual",
-            "boolean": true
-          },
-          {
             "test_type": "PotentialEnergyEfficiency",
             "compare0": "<",
             "value0": 1
@@ -191,11 +156,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "casual",
-            "boolean": true
-          },
           {
             "test_type": "DesireEnergy"
           },
@@ -227,11 +187,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "casual",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
           },
@@ -246,11 +201,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "casual",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
@@ -267,11 +217,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "casual",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
           },
@@ -284,11 +229,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "casual",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
@@ -318,11 +258,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "casual",
-            "boolean": true
-          },
-          {
             "test_type": "CurrentEnergyEfficiency",
             "compare0": ">=",
             "value0": 1
@@ -336,11 +271,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "casual",
-            "boolean": true
-          },
           {
             "test_type": "CurrentMetalEfficiency",
             "compare0": ">=",

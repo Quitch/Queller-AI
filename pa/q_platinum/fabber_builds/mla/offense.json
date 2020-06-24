@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Platinum - Pelter",
+      "name": "Pelter",
       "to_build": "BasicArtillery",
       "instance_count": 1,
       "min_num_assisters": 1,
@@ -11,11 +11,6 @@
       "builders": ["AnyUberBasicFabber", "AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -60,7 +55,7 @@
       }
     },
     {
-      "name": "Platinum - Unit Cannon",
+      "name": "Unit Cannon",
       "to_build": "UnitCannon",
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
@@ -70,11 +65,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -98,7 +88,7 @@
       }
     },
     {
-      "name": "Platinum - Holkins",
+      "name": "Holkins",
       "to_build": "LongRangeArtillery",
       "instance_count": 1,
       "min_num_assisters": 3,
@@ -108,11 +98,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -162,7 +147,7 @@
       }
     },
     {
-      "name": "Platinum - Nuke Silo",
+      "name": "Nuke Silo",
       "to_build": "NukeSilo",
       "instance_count": 1,
       "shared_instance_count": "NukeSilo",
@@ -172,11 +157,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -219,7 +199,7 @@
       }
     },
     {
-      "name": "Platinum - Nuke Silo - Rush",
+      "name": "Nuke Silo - Rush",
       "to_build": "NukeSilo",
       "instance_count": 1,
       "shared_instance_count": "NukeSilo",
@@ -229,11 +209,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -258,11 +233,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -313,7 +283,7 @@
       }
     },
     {
-      "name": "Platinum - Halley",
+      "name": "Halley",
       "to_build": "PlanetEngine",
       "instance_count": 1,
       "min_num_assisters": 8,
@@ -322,11 +292,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -378,11 +343,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsMainEcoBase",
             "boolean": false
@@ -436,7 +396,7 @@
       }
     },
     {
-      "name": "Platinum - Catalyst",
+      "name": "Catalyst",
       "to_build": "ControlModule",
       "instance_count": 1,
       "min_num_assisters": 13,
@@ -446,11 +406,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetHasUseablePlanetWeapon",
             "boolean": true

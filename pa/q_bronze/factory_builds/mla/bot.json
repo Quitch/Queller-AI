@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Bronze - Basic Bot Fabber",
+      "name": "Basic Bot Fabber",
       "to_build": "BasicBotFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -9,11 +9,6 @@
       "builders": ["BasicBotFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -24,11 +19,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
@@ -48,18 +38,13 @@
       ]
     },
     {
-      "name": "Bronze - Stitch",
+      "name": "Stitch",
       "to_build": "BasicBotCombatFabber",
       "instance_count": 1,
       "priority": 97,
       "builders": ["BasicBotFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -77,11 +62,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -105,7 +85,7 @@
       ]
     },
     {
-      "name": "Bronze - Dox",
+      "name": "Dox",
       "to_build": "BasicAssaultBot",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -114,21 +94,11 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -145,7 +115,7 @@
       ]
     },
     {
-      "name": "Bronze - Grenadier",
+      "name": "Grenadier",
       "to_build": "BasicArtilleryBot",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -153,11 +123,6 @@
       "builders": ["BasicBotFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -169,11 +134,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
@@ -189,7 +149,7 @@
       ]
     },
     {
-      "name": "Bronze - Spark",
+      "name": "Spark",
       "to_build": "TeslaBot",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -197,11 +157,6 @@
       "builders": ["BasicBotFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -226,11 +181,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
@@ -246,7 +196,7 @@
       ]
     },
     {
-      "name": "Bronze - Colonel",
+      "name": "Colonel",
       "to_build": "UberSupportCommander",
       "instance_count": 1,
       "shared_instance_count": "AdvancedBotFabber",
@@ -255,11 +205,6 @@
       "builders": ["AdvancedBotFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -279,7 +224,7 @@
       ]
     },
     {
-      "name": "Bronze - Advanced Bot Fabber",
+      "name": "Advanced Bot Fabber",
       "to_build": "AdvancedBotFabber",
       "instance_count": 1,
       "shared_instance_count": "AdvancedBotFabber",
@@ -288,11 +233,6 @@
       "builders": ["AdvancedBotFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -303,11 +243,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -327,7 +262,7 @@
       ]
     },
     {
-      "name": "Bronze - Slammer",
+      "name": "Slammer",
       "to_build": "AdvancedAssaultBot",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -336,21 +271,11 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -367,7 +292,7 @@
       ]
     },
     {
-      "name": "Bronze - Gil-E",
+      "name": "Gil-E",
       "to_build": "AdvancedArtilleryBot",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -376,11 +301,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -390,11 +310,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -411,7 +326,7 @@
       ]
     },
     {
-      "name": "Bronze - Bluehawk",
+      "name": "Bluehawk",
       "to_build": "TMLBot",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -419,11 +334,6 @@
       "builders": ["AdvancedBotFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -434,11 +344,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true

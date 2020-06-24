@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Silver - Orbital Fabber",
+      "name": "Orbital Fabber",
       "to_build": "OrbitalFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -9,11 +9,6 @@
       "builders": ["OrbitalLauncher"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreat",
             "string0": "Orbital",
@@ -28,11 +23,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "PlanetCount",
             "compare0": ">",
@@ -59,7 +49,7 @@
       ]
     },
     {
-      "name": "Silver - ARKYD",
+      "name": "ARKYD",
       "to_build": "BasicRadarSattelite",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -68,11 +58,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
-          {
             "test_type": "ThisPlanetNeedsReconAssistance",
             "boolean": true
           },
@@ -84,11 +69,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "OtherPlanetNeedsReconAssistance",
             "boolean": true
@@ -103,7 +83,7 @@
       ]
     },
     {
-      "name": "Silver - Hermes",
+      "name": "Hermes",
       "to_build": "OrbitalProbe",
       "instance_count": 1,
       "priority": 97,
@@ -111,11 +91,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
-          {
             "test_type": "ThisPlanetNeedsReconAssistance",
             "boolean": true
           },
@@ -127,11 +102,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "OtherPlanetNeedsReconAssistance",
             "boolean": true
@@ -146,7 +116,7 @@
       ]
     },
     {
-      "name": "Silver - Avenger",
+      "name": "Avenger",
       "to_build": "OrbitalFighter",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -154,11 +124,6 @@
       "builders": ["AnyUberOrbitalFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "SystemThreat",
             "string0": "Orbital",
@@ -169,7 +134,7 @@
       ]
     },
     {
-      "name": "Silver - Astraeus",
+      "name": "Astraeus",
       "to_build": "OrbitalLander",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -177,11 +142,6 @@
       "builders": ["AnyUberOrbitalFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "PlanetWithoutPresence",
             "boolean": true
@@ -206,7 +166,7 @@
       ]
     },
     {
-      "name": "Silver - Solar Array",
+      "name": "Solar Array",
       "to_build": "SolarArray",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -214,11 +174,6 @@
       "builders": ["OrbitalFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "PotentialEnergyEfficiency",
             "compare0": "<",
@@ -233,11 +188,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
-          {
             "test_type": "DesireEnergy"
           },
           {
@@ -250,7 +200,7 @@
       ]
     },
     {
-      "name": "Silver - SXX-1304 Laser Platform",
+      "name": "SXX-1304 Laser Platform",
       "to_build": "OrbitalDeathLaser",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -258,11 +208,6 @@
       "builders": ["OrbitalFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreat",
             "string0": "Orbital",
@@ -273,7 +218,7 @@
       ]
     },
     {
-      "name": "Silver - Advanced Radar Satellite - This Planet",
+      "name": "Advanced Radar Satellite - This Planet",
       "to_build": "AdvancedRadarSattelite",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -281,11 +226,6 @@
       "builders": ["OrbitalFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "ThisPlanetNeedsReconAssistance",
             "boolean": true
@@ -298,11 +238,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "OtherPlanetNeedsReconAssistance",
             "boolean": true
@@ -317,7 +252,7 @@
       ]
     },
     {
-      "name": "Silver - Artemis",
+      "name": "Artemis",
       "to_build": "OrbitalRailgun",
       "instance_count": -1,
       "max_num_assisters": 5,
@@ -325,11 +260,6 @@
       "builders": ["OrbitalFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "SystemThreat",
             "string0": "Orbital",
@@ -340,7 +270,7 @@
       ]
     },
     {
-      "name": "Silver - Omega",
+      "name": "Omega",
       "to_build": "OrbitalBattleShip",
       "instance_count": -1,
       "max_num_assisters": 5,
@@ -348,11 +278,6 @@
       "builders": ["OrbitalFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "SystemThreat",
             "string0": "Orbital",

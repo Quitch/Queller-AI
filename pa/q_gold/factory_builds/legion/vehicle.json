@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Gold - Armor Fabricator",
+      "name": "Armor Fabricator",
       "to_build": "LegionVehicleBasicFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -9,11 +9,6 @@
       "builders": ["LegionFactoryBasicVehicle"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -24,11 +19,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -55,11 +45,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
@@ -77,7 +62,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Guardian - Minesweeper",
+      "name": "Guardian - Minesweeper",
       "to_build": "LegionVehicleBasicCFab",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -86,11 +71,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -107,11 +87,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -135,7 +110,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Shank",
+      "name": "Shank",
       "to_build": "LegionVehicleBasicLaser",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -144,11 +119,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -158,11 +128,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -179,7 +144,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Maul",
+      "name": "Maul",
       "to_build": "LegionVehicleBasicArmor",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -188,11 +153,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -209,11 +169,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -237,7 +192,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Corsair",
+      "name": "Corsair",
       "to_build": "LegionVehicleBasicArtillery",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -245,11 +200,6 @@
       "builders": ["LegionFactoryBasicVehicle"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -260,11 +210,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -287,11 +232,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
@@ -314,7 +254,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Stoke",
+      "name": "Stoke",
       "to_build": "LegionVehicleBasicHover",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -322,11 +262,6 @@
       "builders": ["LegionFactoryBasicVehicle"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -339,7 +274,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Advanced Armor Fabricator",
+      "name": "Advanced Armor Fabricator",
       "to_build": "LegionVehicleAdvancedFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -347,11 +282,6 @@
       "builders": ["LegionFactoryAdvancedVehicle"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -362,11 +292,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -389,11 +314,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
@@ -411,7 +331,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Earthshaker",
+      "name": "Earthshaker",
       "to_build": "LegionVehicleAdvancedArmor",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -420,11 +340,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -441,11 +356,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -469,7 +379,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Scorpion",
+      "name": "Scorpion",
       "to_build": "LegionVehicleAdvancedLaser",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -478,11 +388,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -492,11 +397,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -513,7 +413,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Deathmark",
+      "name": "Deathmark",
       "to_build": "LegionVehicleAdvancedSniper",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -522,11 +422,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -543,11 +438,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -571,7 +461,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Havoc",
+      "name": "Havoc",
       "to_build": "LegionVehicleAdvancedSwarm",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -580,11 +470,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -594,11 +479,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -615,7 +495,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Panzer",
+      "name": "Panzer",
       "to_build": "LegionVehicleAdvancedHover",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -624,21 +504,11 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true

@@ -11,11 +11,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "casual",
-            "boolean": true
-          },
-          {
             "test_type": "FactoryHasOpenSlot"
           }
         ]
@@ -31,11 +26,6 @@
       "builders": ["AntiNukeSilo"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "casual",
-            "boolean": true
-          },
           {
             "test_type": "FactoryHasOpenSlot"
           }

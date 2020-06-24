@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Uber - Armor Fabricator",
+      "name": "Armor Fabricator",
       "to_build": "LegionVehicleBasicFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -9,11 +9,6 @@
       "builders": ["LegionFactoryBasicVehicle", "LegionFactoryAdvancedVehicle"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -24,11 +19,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -55,11 +45,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
@@ -78,11 +63,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -128,7 +108,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Guardian - Minesweeper",
+      "name": "Guardian - Minesweeper",
       "to_build": "LegionVehicleBasicCFab",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -136,11 +116,6 @@
       "builders": ["LegionFactoryBasicVehicle", "LegionFactoryAdvancedVehicle"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -169,7 +144,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Shank",
+      "name": "Shank",
       "to_build": "LegionVehicleBasicLaser",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -177,11 +152,6 @@
       "builders": ["LegionFactoryBasicVehicle", "LegionFactoryAdvancedVehicle"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -192,11 +162,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -216,7 +181,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Maul",
+      "name": "Maul",
       "to_build": "LegionVehicleBasicArmor",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -224,11 +189,6 @@
       "builders": ["LegionFactoryBasicVehicle", "LegionFactoryAdvancedVehicle"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -253,11 +213,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
@@ -283,7 +238,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Corsair",
+      "name": "Corsair",
       "to_build": "LegionVehicleBasicArtillery",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -291,11 +246,6 @@
       "builders": ["LegionFactoryBasicVehicle", "LegionFactoryAdvancedVehicle"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -311,11 +261,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -350,11 +295,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
@@ -380,7 +320,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Stoke",
+      "name": "Stoke",
       "to_build": "LegionVehicleBasicHover",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -388,11 +328,6 @@
       "builders": ["LegionFactoryBasicVehicle", "LegionFactoryAdvancedVehicle"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -410,7 +345,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Advanced Armor Fabricator",
+      "name": "Advanced Armor Fabricator",
       "to_build": "LegionVehicleAdvancedFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -418,11 +353,6 @@
       "builders": ["LegionFactoryAdvancedVehicle"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -433,11 +363,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -464,11 +389,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
@@ -487,11 +407,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -537,7 +452,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Earthshaker",
+      "name": "Earthshaker",
       "to_build": "LegionVehicleAdvancedArmor",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -546,11 +461,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -577,11 +487,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -618,7 +523,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Scorpion",
+      "name": "Scorpion",
       "to_build": "LegionVehicleAdvancedLaser",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -627,11 +532,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -641,11 +541,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -665,7 +560,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Deathmark",
+      "name": "Deathmark",
       "to_build": "LegionVehicleAdvancedSniper",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -674,11 +569,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -699,11 +589,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -734,7 +619,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Havoc",
+      "name": "Havoc",
       "to_build": "LegionVehicleAdvancedSwarm",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -742,11 +627,6 @@
       "builders": ["LegionFactoryAdvancedVehicle"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -768,7 +648,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Panzer",
+      "name": "Panzer",
       "to_build": "LegionVehicleAdvancedHover",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -777,21 +657,11 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true

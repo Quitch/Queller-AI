@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Uber - Starship Projector - Alone",
+      "name": "Starship Projector - Alone",
       "to_build": "LegionFactoryBasicOrbital",
       "instance_count": 1,
       "shared_instance_count": "OrbitalLauncher",
@@ -12,11 +12,6 @@
       "builders": ["AnyLegionBasicFabber", "AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -49,7 +44,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Starship Projector",
+      "name": "Starship Projector",
       "to_build": "LegionFactoryBasicOrbital",
       "instance_count": 1,
       "shared_instance_count": "OrbitalLauncher",
@@ -65,11 +60,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -94,11 +84,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "HasPersonalityTag",
             "string0": "lateorbital",
@@ -139,11 +124,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "HasPersonalityTag",
             "string0": "ffa",
@@ -197,7 +177,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Starship Projector - Expansion",
+      "name": "Starship Projector - Expansion",
       "to_build": "LegionFactoryBasicOrbital",
       "instance_count": 1,
       "shared_instance_count": "OrbitalLauncher",
@@ -213,11 +193,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -265,7 +240,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Starship Foundry",
+      "name": "Starship Foundry",
       "to_build": "LegionFactoryAdvancedOrbital",
       "instance_count": 1,
       "shared_instance_count": "OrbitalFactory",
@@ -276,11 +251,6 @@
       "builders": ["LegionOrbitalBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -295,11 +265,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
@@ -328,7 +293,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Starcannon",
+      "name": "Starcannon",
       "to_build": "LegionOrbitalAdvancedCannon",
       "instance_count": 1,
       "shared_instance_count": "OrbitalFactory",
@@ -339,11 +304,6 @@
       "builders": ["LegionOrbitalBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false

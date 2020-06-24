@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Silver - Ship Foundry - Opening",
+      "name": "Ship Foundry - Opening",
       "to_build": "LegionFactoryBasicNaval",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -10,11 +10,6 @@
       "builders": ["LegionCommander"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "EnemyPresenceOnPlanet",
             "boolean": false
@@ -47,7 +42,7 @@
       }
     },
     {
-      "name": "Legion - Silver - Ship Foundry",
+      "name": "Ship Foundry",
       "to_build": "LegionFactoryBasicNaval",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -61,11 +56,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
@@ -82,11 +72,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -105,11 +90,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -142,7 +122,7 @@
       }
     },
     {
-      "name": "Legion - Silver - Advanced Naval Foundry",
+      "name": "Advanced Naval Foundry",
       "to_build": "LegionFactoryAdvancedNaval",
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
@@ -151,11 +131,6 @@
       "builders": ["LegionNavalBasicFabber", "LegionNavalAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
@@ -182,11 +157,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false

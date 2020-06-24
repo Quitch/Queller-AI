@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Uber - Basic Vehicle Fabber",
+      "name": "Basic Vehicle Fabber",
       "to_build": "BasicVehicleFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -9,11 +9,6 @@
       "builders": ["AnyUberVehicleFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -24,11 +19,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -55,11 +45,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
@@ -78,11 +63,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -128,7 +108,7 @@
       ]
     },
     {
-      "name": "Uber - Skitter - Intel/Minesweeper",
+      "name": "Skitter - Intel/Minesweeper",
       "to_build": "LandScout",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -137,11 +117,6 @@
       "builders": ["AnyUberVehicleFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -171,11 +146,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -191,11 +161,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -224,7 +189,7 @@
       ]
     },
     {
-      "name": "Uber - Skitter - Suspect Mines",
+      "name": "Skitter - Suspect Mines",
       "to_build": "LandScout",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -232,11 +197,6 @@
       "builders": ["AnyUberVehicleFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -265,7 +225,7 @@
       ]
     },
     {
-      "name": "Uber - Stryker - Intel",
+      "name": "Stryker - Intel",
       "to_build": "AttackVehicle",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -273,11 +233,6 @@
       "builders": ["BasicVehicleFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "HasPersonalityTag",
             "string0": "ffa",
@@ -309,7 +264,7 @@
       ]
     },
     {
-      "name": "Uber - Ant",
+      "name": "Ant",
       "to_build": "LightLaserTank",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -317,11 +272,6 @@
       "builders": ["AnyUberVehicleFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -332,11 +282,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -356,7 +301,7 @@
       ]
     },
     {
-      "name": "Uber - Inferno",
+      "name": "Inferno",
       "to_build": "BasicArmorTank",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -364,11 +309,6 @@
       "builders": ["AnyUberVehicleFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -393,11 +333,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
@@ -423,7 +358,7 @@
       ]
     },
     {
-      "name": "Uber - Spinner",
+      "name": "Spinner",
       "to_build": "BasicAAVehicle",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -431,11 +366,6 @@
       "builders": ["AnyUberVehicleFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
@@ -461,11 +391,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
@@ -489,11 +414,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -526,7 +446,7 @@
       ]
     },
     {
-      "name": "Uber - Drifter",
+      "name": "Drifter",
       "to_build": "HoverTank",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -534,11 +454,6 @@
       "builders": ["AnyUberVehicleFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -550,11 +465,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -574,7 +484,7 @@
       ]
     },
     {
-      "name": "Uber - Drifter - Hover",
+      "name": "Drifter - Hover",
       "to_build": "HoverTank",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -583,11 +493,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           }
@@ -595,7 +500,7 @@
       ]
     },
     {
-      "name": "Uber - Advanced Vehicle Fabber",
+      "name": "Advanced Vehicle Fabber",
       "to_build": "AdvancedVehicleFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -603,11 +508,6 @@
       "builders": ["AdvancedVehicleFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -618,11 +518,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -649,11 +544,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
@@ -672,11 +562,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -722,7 +607,7 @@
       ]
     },
     {
-      "name": "Uber - Leveler",
+      "name": "Leveler",
       "to_build": "AdvancedLaserTank",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -731,11 +616,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -745,11 +625,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -769,7 +644,7 @@
       ]
     },
     {
-      "name": "Uber - Vanguard",
+      "name": "Vanguard",
       "to_build": "AdvancedArmorTank",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -778,11 +653,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -803,11 +673,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -842,7 +707,7 @@
       ]
     },
     {
-      "name": "Uber - Sheller",
+      "name": "Sheller",
       "to_build": "AdvancedArtilleryVehicle",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -851,11 +716,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -876,11 +736,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -911,7 +766,7 @@
       ]
     },
     {
-      "name": "Uber - Storm - Need AA",
+      "name": "Storm - Need AA",
       "to_build": "FlakTank",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -919,11 +774,6 @@
       "builders": ["AdvancedVehicleFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
@@ -955,11 +805,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
@@ -989,11 +834,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true

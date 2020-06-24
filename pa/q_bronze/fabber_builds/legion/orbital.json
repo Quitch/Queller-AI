@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Bronze - Starship Projector - Multiplanet",
+      "name": "Starship Projector - Multiplanet",
       "to_build": "LegionFactoryBasicOrbital",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -11,11 +11,6 @@
       "builders": ["AnyLegionFabberBasic", "AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -40,11 +35,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -82,7 +72,7 @@
       }
     },
     {
-      "name": "Legion - Bronze - Starship Projector - Response",
+      "name": "Starship Projector - Response",
       "to_build": "LegionFactoryBasicOrbital",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -92,11 +82,6 @@
       "builders": ["AnyLegionFabberBasic", "AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -139,7 +124,7 @@
       }
     },
     {
-      "name": "Legion - Bronze - Starship Projector",
+      "name": "Starship Projector",
       "to_build": "LegionFactoryBasicOrbital",
       "instance_count": 1,
       "priority": 1,
@@ -148,11 +133,6 @@
       "builders": ["AnyLegionFabberBasic", "AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -183,7 +163,7 @@
       }
     },
     {
-      "name": "Legion - Bronze - Starship Foundry",
+      "name": "Starship Foundry",
       "to_build": "LegionFactoryAdvancedOrbital",
       "instance_count": 1,
       "shared_instance_count": "OrbitalFactory",
@@ -193,11 +173,6 @@
       "builders": ["LegionOrbitalBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -214,11 +189,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -239,7 +209,7 @@
       }
     },
     {
-      "name": "Legion - Bronze - Starcannon",
+      "name": "Starcannon",
       "to_build": "LegionOrbitalAdvancedCannon",
       "instance_count": 1,
       "shared_instance_count": "OrbitalFactory",
@@ -249,11 +219,6 @@
       "builders": ["LegionOrbitalBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false

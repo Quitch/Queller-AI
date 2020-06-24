@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Bronze - Basic Air Fabber",
+      "name": "Basic Air Fabber",
       "to_build": "BasicAirFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -9,11 +9,6 @@
       "builders": ["BasicAirFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -24,11 +19,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -48,7 +38,7 @@
       ]
     },
     {
-      "name": "Bronze - Hummingbird",
+      "name": "Hummingbird",
       "to_build": "BasicFighter",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -57,11 +47,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           }
@@ -69,7 +54,7 @@
       ]
     },
     {
-      "name": "Bronze - Bumblebee",
+      "name": "Bumblebee",
       "to_build": "BasicBomber",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -78,11 +63,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           }
@@ -90,7 +70,7 @@
       ]
     },
     {
-      "name": "Bronze - Icarus",
+      "name": "Icarus",
       "to_build": "SolarDrone",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -99,11 +79,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           }
@@ -111,7 +86,7 @@
       ]
     },
     {
-      "name": "Bronze - Advanced Air Fabber",
+      "name": "Advanced Air Fabber",
       "to_build": "AdvancedAirFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -119,11 +94,6 @@
       "builders": ["AdvancedAirFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -134,11 +104,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -158,7 +123,7 @@
       ]
     },
     {
-      "name": "Bronze - Phoenix",
+      "name": "Phoenix",
       "to_build": "AdvancedFighter",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -167,11 +132,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           }
@@ -179,7 +139,7 @@
       ]
     },
     {
-      "name": "Bronze - Hornet",
+      "name": "Hornet",
       "to_build": "AdvancedBomber",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -187,11 +147,6 @@
       "builders": ["AdvancedAirFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -206,7 +161,7 @@
       ]
     },
     {
-      "name": "Bronze - Kestrel",
+      "name": "Kestrel",
       "to_build": "AdvancedGunship",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -214,11 +169,6 @@
       "builders": ["AdvancedAirFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -233,7 +183,7 @@
       ]
     },
     {
-      "name": "Bronze - Horsefly",
+      "name": "Horsefly",
       "to_build": "Strafer",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -242,11 +192,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           }
@@ -254,7 +199,7 @@
       ]
     },
     {
-      "name": "Bronze - Wyrm",
+      "name": "Wyrm",
       "to_build": "HeavyBomber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -262,11 +207,6 @@
       "builders": ["AdvancedAirFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -281,7 +221,7 @@
       ]
     },
     {
-      "name": "Bronze - Angel",
+      "name": "Angel",
       "to_build": "SupportPlatform",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -289,11 +229,6 @@
       "builders": ["AdvancedAirFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false

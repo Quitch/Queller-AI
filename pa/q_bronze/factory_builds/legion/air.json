@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Bronze - Fabrication Flyer",
+      "name": "Fabrication Flyer",
       "to_build": "LegionAirBasicFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -9,11 +9,6 @@
       "builders": ["LegionFactoryBasicAir"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -24,11 +19,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -48,7 +38,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Marauder",
+      "name": "Marauder",
       "to_build": "LegionAirBasicGunship",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -56,11 +46,6 @@
       "builders": ["LegionFactoryBasicAir"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -75,7 +60,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Nova",
+      "name": "Nova",
       "to_build": "LegionAirBasicBomb",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -83,11 +68,6 @@
       "builders": ["LegionFactoryBasicAir"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -103,7 +83,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Scythe",
+      "name": "Scythe",
       "to_build": "LegionAirBasicFighter",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -112,11 +92,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           }
@@ -124,7 +99,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Dauntless",
+      "name": "Dauntless",
       "to_build": "LegionAirBasicBomber",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -132,11 +107,6 @@
       "builders": ["LegionFactoryBasicAir", "LegionFactoryAdvancedAir"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -151,7 +121,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Advanced Fabrication Flyer",
+      "name": "Advanced Fabrication Flyer",
       "to_build": "LegionAirAdvancedFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -159,11 +129,6 @@
       "builders": ["LegionFactoryAdvancedAir"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -174,11 +139,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -198,7 +158,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Firebird",
+      "name": "Firebird",
       "to_build": "LegionAirAdvancedFighter",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -207,11 +167,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           }
@@ -219,7 +174,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Lockheed",
+      "name": "Lockheed",
       "to_build": "LegionAirAdvancedGunship",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -227,11 +182,6 @@
       "builders": ["LegionFactoryAdvancedAir"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -246,7 +196,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Salamander",
+      "name": "Salamander",
       "to_build": "LegionAirAdvancedBomber",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -254,11 +204,6 @@
       "builders": ["LegionFactoryAdvancedAir"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -273,7 +218,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Meteor",
+      "name": "Meteor",
       "to_build": "LegionAirAdvancedCarrier",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -281,11 +226,6 @@
       "builders": ["LegionFactoryAdvancedAir"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false

@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Gold - Basic Air Factory - Commander",
+      "name": "Basic Air Factory - Commander",
       "to_build": "BasicAirFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -10,11 +10,6 @@
       "builders": ["UberCommander"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -46,11 +41,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -87,7 +77,7 @@
       }
     },
     {
-      "name": "Gold - Basic Air Factory - Stuck",
+      "name": "Basic Air Factory - Stuck",
       "to_build": "BasicAirFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -97,11 +87,6 @@
       "builders": ["UberCommander", "BasicNavalFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "EnemyPresenceOnPlanet",
             "boolean": false
@@ -122,11 +107,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -165,7 +145,7 @@
       }
     },
     {
-      "name": "Gold - Basic Air Factory - Fabber",
+      "name": "Basic Air Factory - Fabber",
       "to_build": "BasicAirFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -176,11 +156,6 @@
       "builders": ["AnyUberBasicFabber", "AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -212,11 +187,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -253,7 +223,7 @@
       }
     },
     {
-      "name": "Gold - Basic Air Factory - Arrived on a new world",
+      "name": "Basic Air Factory - Arrived on a new world",
       "to_build": "BasicAirFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -267,11 +237,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -309,7 +274,7 @@
       }
     },
     {
-      "name": "Gold - Advanced Air Factory",
+      "name": "Advanced Air Factory",
       "to_build": "AdvancedAirFactory",
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
@@ -319,11 +284,6 @@
       "builders": ["BasicAirFabber", "AdvancedAirFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -353,11 +313,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
@@ -377,11 +332,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false

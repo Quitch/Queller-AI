@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Platinum - Fabrication Flyer",
+      "name": "Fabrication Flyer",
       "to_build": "LegionAirBasicFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -9,11 +9,6 @@
       "builders": ["LegionFactoryBasicAir"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -24,11 +19,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -51,11 +41,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
@@ -73,7 +58,7 @@
       ]
     },
     {
-      "name": "Legion - Platinum - Marauder",
+      "name": "Marauder",
       "to_build": "LegionAirBasicGunship",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -81,11 +66,6 @@
       "builders": ["LegionFactoryBasicAir"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -102,11 +82,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -128,11 +103,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
@@ -146,7 +116,7 @@
       ]
     },
     {
-      "name": "Legion - Platinum - Scythe",
+      "name": "Scythe",
       "to_build": "LegionAirBasicFighter",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -155,21 +125,11 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": false
@@ -184,7 +144,7 @@
       ]
     },
     {
-      "name": "Legion - Platinum - Nova",
+      "name": "Nova",
       "to_build": "LegionAirBasicBomb",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -192,11 +152,6 @@
       "builders": ["LegionFactoryBasicAir"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
@@ -219,7 +174,7 @@
       ]
     },
     {
-      "name": "Legion - Platinum - Dauntless",
+      "name": "Dauntless",
       "to_build": "LegionAirBasicBomber",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -227,11 +182,6 @@
       "builders": ["LegionFactoryBasicAir", "LegionFactoryAdvancedAir"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -246,11 +196,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": false
           },
@@ -262,11 +207,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": false
@@ -281,7 +221,7 @@
       ]
     },
     {
-      "name": "Legion - Platinum - Advanced Fabrication Flyer",
+      "name": "Advanced Fabrication Flyer",
       "to_build": "LegionAirAdvancedFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -289,11 +229,6 @@
       "builders": ["LegionFactoryAdvancedAir"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -304,11 +239,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -331,11 +261,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "BaseThreatened",
             "boolean": false
           },
@@ -357,7 +282,7 @@
       ]
     },
     {
-      "name": "Legion - Platinum - Infiltrator",
+      "name": "Infiltrator",
       "to_build": "LegionAirAdvancedScout",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -365,11 +290,6 @@
       "builders": ["AnyLegionAirFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -387,11 +307,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -407,11 +322,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -430,7 +340,7 @@
       ]
     },
     {
-      "name": "Legion - Platinum - Firebird",
+      "name": "Firebird",
       "to_build": "LegionAirAdvancedFighter",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -439,21 +349,11 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": false
@@ -474,7 +374,7 @@
       ]
     },
     {
-      "name": "Legion - Platinum - Lockheed",
+      "name": "Lockheed",
       "to_build": "LegionAirAdvancedGunship",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -482,11 +382,6 @@
       "builders": ["LegionFactoryAdvancedAir"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -500,11 +395,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": false
@@ -519,7 +409,7 @@
       ]
     },
     {
-      "name": "Legion - Platinum - Salamander",
+      "name": "Salamander",
       "to_build": "LegionAirAdvancedBomber",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -527,11 +417,6 @@
       "builders": ["LegionFactoryAdvancedAir"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -546,11 +431,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": false
           },
@@ -562,11 +442,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": false
@@ -581,7 +456,7 @@
       ]
     },
     {
-      "name": "Legion - Platinum - Meteor",
+      "name": "Meteor",
       "to_build": "LegionAirAdvancedCarrier",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -590,21 +465,11 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true

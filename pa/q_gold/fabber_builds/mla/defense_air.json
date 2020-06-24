@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Gold - Galata Turret - Mex",
+      "name": "Galata Turret - Mex",
       "to_build": "BasicAirDefense",
       "instance_count": 1,
       "priority": 352,
@@ -9,11 +9,6 @@
       "builders": ["UberCommander", "AnyUberBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -46,11 +41,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -104,7 +94,7 @@
       }
     },
     {
-      "name": "Gold - Galata Turret - Base",
+      "name": "Galata Turret - Base",
       "to_build": "BasicAirDefense",
       "instance_count": 1,
       "max_num_assisters": 1,
@@ -113,11 +103,6 @@
       "builders": ["UberCommander", "BasicBotFabber", "BasicVehicleFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -167,7 +152,7 @@
       }
     },
     {
-      "name": "Gold - Flak Cannon - Base",
+      "name": "Flak Cannon - Base",
       "to_build": "AdvancedAirDefense",
       "instance_count": 1,
       "min_num_assisters": 1,
@@ -177,11 +162,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },

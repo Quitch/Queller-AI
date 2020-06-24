@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Bronze - Fabrication Starship",
+      "name": "Fabrication Starship",
       "to_build": "LegionOrbitalBasicFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -9,11 +9,6 @@
       "builders": ["AnyLegionFactoryOrbital"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreat",
             "string0": "Orbital",
@@ -28,11 +23,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "PlanetCount",
             "compare0": ">",
@@ -59,7 +49,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Sputnik - This Planet",
+      "name": "Sputnik - This Planet",
       "to_build": "LegionOrbitalBasicRadar",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -67,11 +57,6 @@
       "builders": ["AnyLegionFactoryOrbital"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "ThisPlanetNeedsReconAssistance",
             "boolean": true
@@ -86,7 +71,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Sputnik - Other Planet",
+      "name": "Sputnik - Other Planet",
       "to_build": "LegionOrbitalBasicRadar",
       "instance_count": 1,
       "shared_instance_count": "ReconAssistance",
@@ -95,11 +80,6 @@
       "builders": ["AnyLegionFactoryOrbital"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "OtherPlanetNeedsReconAssistance",
             "boolean": true
@@ -114,18 +94,13 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Spectre - This Planet",
+      "name": "Spectre - This Planet",
       "to_build": "LegionOrbitalBasicScout",
       "instance_count": 1,
       "priority": 97,
       "builders": ["AnyLegionFactoryOrbital"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "ThisPlanetNeedsReconAssistance",
             "boolean": true
@@ -140,7 +115,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Spectre - Other Planet",
+      "name": "Spectre - Other Planet",
       "to_build": "LegionOrbitalBasicScout",
       "instance_count": 1,
       "shared_instance_count": "ReconAssistance",
@@ -148,11 +123,6 @@
       "builders": ["AnyLegionFactoryOrbital"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "OtherPlanetNeedsReconAssistance",
             "boolean": true
@@ -167,7 +137,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Viper",
+      "name": "Viper",
       "to_build": "LegionOrbitalBasicFighter",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -184,7 +154,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Chariot",
+      "name": "Chariot",
       "to_build": "LegionOrbitalBasicTransport",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -192,11 +162,6 @@
       "builders": ["AnyLegionFactoryOrbital"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "PlanetWithoutPresence",
             "boolean": true
@@ -221,7 +186,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Black Knight",
+      "name": "Black Knight",
       "to_build": "LegionOrbitalAdvancedLaser",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -229,11 +194,6 @@
       "builders": ["LegionFactoryAdvancedOrbital"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreat",
             "string0": "Orbital",
@@ -244,7 +204,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Kosmos - This Planet",
+      "name": "Kosmos - This Planet",
       "to_build": "LegionOrbitalAdvancedRadar",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -252,11 +212,6 @@
       "builders": ["LegionFactoryAdvancedOrbital"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "ThisPlanetNeedsReconAssistance",
             "boolean": true
@@ -271,7 +226,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Kosmos - Other Planet",
+      "name": "Kosmos - Other Planet",
       "to_build": "LegionOrbitalAdvancedRadar",
       "instance_count": 1,
       "shared_instance_count": "ReconAssistance",
@@ -280,11 +235,6 @@
       "builders": ["LegionFactoryAdvancedOrbital"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "OtherPlanetNeedsReconAssistance",
             "boolean": true
@@ -299,7 +249,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Excalibur",
+      "name": "Excalibur",
       "to_build": "LegionOrbitalAdvancedSniper",
       "instance_count": -1,
       "max_num_assisters": 5,
@@ -316,7 +266,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Imperator",
+      "name": "Imperator",
       "to_build": "LegionOrbitalAdvancedBattleship",
       "instance_count": -1,
       "max_num_assisters": 5,

@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Silver - Fabber Assist",
+      "name": "Fabber Assist",
       "instance_count": -1,
       "priority": 1,
       "builders": [
@@ -13,11 +13,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           }
         ]
@@ -25,7 +20,7 @@
       "task_type": "BuilderAssist"
     },
     {
-      "name": "Silver - Teleporter",
+      "name": "Teleporter",
       "to_build": "Teleporter",
       "instance_count": 1,
       "priority": 710,
@@ -38,11 +33,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "PresenceOnOtherPlanet",
             "boolean": true
@@ -74,7 +64,7 @@
       }
     },
     {
-      "name": "Silver - Teleport Fabber To Planet",
+      "name": "Teleport Fabber To Planet",
       "instance_count": 1,
       "priority": 2,
       "builders": [
@@ -86,11 +76,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "PlanetWithoutFabberWithTeleporter",
             "boolean": true
@@ -112,7 +97,7 @@
       "task_type": "TeleportFabberToPlanet"
     },
     {
-      "name": "Silver - Move Fabber To Planet",
+      "name": "Move Fabber To Planet",
       "instance_count": 1,
       "priority": 2,
       "builders": [
@@ -126,11 +111,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "PlanetWithoutPresence",
             "boolean": true
@@ -158,17 +138,12 @@
       "task_type": "TransportToPlanet"
     },
     {
-      "name": "Silver - Move Orbital Fabber To Planet",
+      "name": "Move Orbital Fabber To Planet",
       "instance_count": 1,
       "priority": 2,
       "builders": ["OrbitalFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "PlanetOrGasGiantWithoutPresence",
             "boolean": true
@@ -190,17 +165,12 @@
       "task_type": "OrbitalFabberMoveToPlanet"
     },
     {
-      "name": "Silver - Move Orbital Fabber To Safe Planet",
+      "name": "Move Orbital Fabber To Safe Planet",
       "instance_count": 1,
       "priority": 2,
       "builders": ["OrbitalFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "SafePlanetOrGasGiantWithoutPresence",
             "boolean": true

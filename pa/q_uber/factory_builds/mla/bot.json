@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Uber - Basic Bot Fabber",
+      "name": "Basic Bot Fabber",
       "to_build": "BasicBotFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -9,11 +9,6 @@
       "builders": ["AnyUberBotFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -24,11 +19,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -55,11 +45,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
@@ -78,11 +63,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -128,7 +108,7 @@
       ]
     },
     {
-      "name": "Uber - Stitch - Minesweeper",
+      "name": "Stitch - Minesweeper",
       "to_build": "BasicBotCombatFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -136,11 +116,6 @@
       "builders": ["AnyUberBotFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -169,7 +144,7 @@
       ]
     },
     {
-      "name": "Uber - Dox",
+      "name": "Dox",
       "to_build": "BasicAssaultBot",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -178,21 +153,11 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -212,7 +177,7 @@
       ]
     },
     {
-      "name": "Uber - Spark",
+      "name": "Spark",
       "to_build": "TeslaBot",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -220,11 +185,6 @@
       "builders": ["AnyUberBotFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -242,11 +202,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
@@ -265,7 +220,7 @@
       ]
     },
     {
-      "name": "Uber - Colonel",
+      "name": "Colonel",
       "to_build": "UberSupportCommander",
       "instance_count": 1,
       "shared_instance_count": "AdvancedBotFabber",
@@ -274,11 +229,6 @@
       "builders": ["AdvancedBotFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -305,11 +255,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "BaseThreatened",
             "boolean": false
           },
@@ -334,11 +279,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -377,11 +317,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "BaseThreatened",
             "boolean": false
           },
@@ -415,7 +350,7 @@
       ]
     },
     {
-      "name": "Uber - Advanced Bot Fabber",
+      "name": "Advanced Bot Fabber",
       "to_build": "AdvancedBotFabber",
       "instance_count": 1,
       "shared_instance_count": "AdvancedBotFabber",
@@ -424,11 +359,6 @@
       "builders": ["AdvancedBotFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -439,11 +369,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -470,11 +395,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
@@ -493,11 +413,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -543,7 +458,7 @@
       ]
     },
     {
-      "name": "Uber - Slammer",
+      "name": "Slammer",
       "to_build": "AdvancedAssaultBot",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -552,21 +467,11 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -586,7 +491,7 @@
       ]
     },
     {
-      "name": "Uber - Gil-E",
+      "name": "Gil-E",
       "to_build": "AdvancedArtilleryBot",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -594,11 +499,6 @@
       "builders": ["AdvancedBotFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -626,11 +526,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
@@ -660,7 +555,7 @@
       ]
     },
     {
-      "name": "Uber - Bluehawk",
+      "name": "Bluehawk",
       "to_build": "TMLBot",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -668,11 +563,6 @@
       "builders": ["AdvancedBotFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -692,11 +582,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -729,11 +614,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -760,11 +640,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -795,7 +670,7 @@
       ]
     },
     {
-      "name": "Uber - Locusts",
+      "name": "Locusts",
       "to_build": "NanoSwarm",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -803,11 +678,6 @@
       "builders": ["AdvancedBotFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "HasPersonalityTag",
             "string0": "ffa",
@@ -826,11 +696,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true

@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Uber - Ripple - Mex",
+      "name": "Ripple - Mex",
       "to_build": "LegionDefenseBasicNaval",
       "instance_count": 1,
       "priority": 401,
@@ -13,11 +13,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -79,7 +74,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Tsunami - Mex",
+      "name": "Tsunami - Mex",
       "to_build": "LegionDefenseAdvancedNaval",
       "instance_count": 1,
       "priority": 402,
@@ -87,11 +82,6 @@
       "builders": ["LegionNavalAdvancedFabber", "LegionAirAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -153,7 +143,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Ripple - Base",
+      "name": "Ripple - Base",
       "to_build": "LegionDefenseBasicNaval",
       "instance_count": 1,
       "max_num_assisters": 1,
@@ -166,11 +156,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -207,11 +192,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -269,7 +249,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Tsunami - Base",
+      "name": "Tsunami - Base",
       "to_build": "LegionDefenseAdvancedNaval",
       "instance_count": 1,
       "priority": 278,
@@ -278,11 +258,6 @@
       "builders": ["LegionNavalAdvancedFabber", "LegionAirAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -319,11 +294,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true

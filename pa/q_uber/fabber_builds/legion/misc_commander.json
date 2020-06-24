@@ -1,27 +1,17 @@
 {
   "build_list": [
     {
-      "name": "Legion - Uber - Commander Assist",
+      "name": "Commander Assist",
       "instance_count": -1,
       "priority": 10,
       "builders": ["LegionCommander"],
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "CurrentMetalEfficiency",
             "compare0": ">",
@@ -42,17 +32,12 @@
       "task_type": "BuilderAssist"
     },
     {
-      "name": "Legion - Uber - Teleport Commander To Planet",
+      "name": "Teleport Commander To Planet",
       "instance_count": 1,
       "priority": 1001,
       "builders": ["LegionCommander"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "WantCommanderOffPlanetByTeleporter",
             "boolean": true

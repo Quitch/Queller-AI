@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Uber - Pelter",
+      "name": "Pelter",
       "to_build": "BasicArtillery",
       "instance_count": 1,
       "min_num_assisters": 1,
@@ -18,11 +18,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -81,7 +76,7 @@
       }
     },
     {
-      "name": "Uber - Unit Cannon",
+      "name": "Unit Cannon",
       "to_build": "UnitCannon",
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
@@ -91,11 +86,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -119,7 +109,7 @@
       }
     },
     {
-      "name": "Uber - Holkins",
+      "name": "Holkins",
       "to_build": "LongRangeArtillery",
       "instance_count": 1,
       "min_num_assisters": 3,
@@ -129,11 +119,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -183,7 +168,7 @@
       }
     },
     {
-      "name": "Uber - Nuke Silo",
+      "name": "Nuke Silo",
       "to_build": "NukeSilo",
       "instance_count": 1,
       "shared_instance_count": "NukeSilo",
@@ -193,11 +178,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -233,7 +213,7 @@
       }
     },
     {
-      "name": "Uber - Nuke Silo - Alone",
+      "name": "Nuke Silo - Alone",
       "to_build": "NukeSilo",
       "instance_count": 1,
       "shared_instance_count": "NukeSilo",
@@ -243,11 +223,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -277,7 +252,7 @@
       }
     },
     {
-      "name": "Uber - Nuke Silo - Rush",
+      "name": "Nuke Silo - Rush",
       "to_build": "NukeSilo",
       "instance_count": 1,
       "shared_instance_count": "NukeSilo",
@@ -287,11 +262,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -346,7 +316,7 @@
       }
     },
     {
-      "name": "Uber - Halley",
+      "name": "Halley",
       "to_build": "PlanetEngine",
       "instance_count": 1,
       "min_num_assisters": 8,
@@ -355,11 +325,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsMainEcoBase",
             "boolean": false
@@ -411,11 +376,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsMainEcoBase",
             "boolean": false
@@ -469,7 +429,7 @@
       }
     },
     {
-      "name": "Uber - Catalyst",
+      "name": "Catalyst",
       "to_build": "ControlModule",
       "instance_count": 1,
       "min_num_assisters": 20,
@@ -479,11 +439,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetHasUseablePlanetWeapon",
             "boolean": true

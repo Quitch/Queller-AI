@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Bronze - Shredder - Mex",
+      "name": "Shredder - Mex",
       "to_build": "LegionDefenseBasicAir",
       "instance_count": 1,
       "shared_instance_count": "AirDefence",
@@ -11,11 +11,6 @@
       "builders": ["AnyLegionFabberBasic"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -67,7 +62,7 @@
       }
     },
     {
-      "name": "Legion - Bronze - Jackal - Mex",
+      "name": "Jackal - Mex",
       "to_build": "LegionDefenseBasicLand",
       "instance_count": 1,
       "shared_instance_count": "LandDefence",
@@ -77,11 +72,6 @@
       "builders": ["AnyLegionFabberBasic"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -137,7 +127,7 @@
       }
     },
     {
-      "name": "Legion - Bronze - Scarab - Mex",
+      "name": "Scarab - Mex",
       "to_build": "LegionDefenseBasicLandII",
       "instance_count": 1,
       "shared_instance_count": "LandDefence",
@@ -147,11 +137,6 @@
       "builders": ["AnyLegionFabberBasic"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -207,7 +192,7 @@
       }
     },
     {
-      "name": "Legion - Bronze - Hive - Mex",
+      "name": "Hive - Mex",
       "to_build": "LegionDefenseBasicSwarm",
       "instance_count": 1,
       "shared_instance_count": "LandDefence",
@@ -217,11 +202,6 @@
       "builders": ["LegionBotBasicFabber", "LegionVehicleBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -277,7 +257,7 @@
       }
     },
     {
-      "name": "Legion - Bronze - Ripple - Mex",
+      "name": "Ripple - Mex",
       "to_build": "LegionDefenseBasicNaval",
       "instance_count": 1,
       "shared_instance_count": "NavalDefence",
@@ -287,11 +267,6 @@
       "builders": ["LegionAirBasicFabber", "LegionNavalBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -347,7 +322,7 @@
       }
     },
     {
-      "name": "Legion - Bronze - Shredder - Base",
+      "name": "Shredder - Base",
       "to_build": "LegionDefenseBasicAir",
       "instance_count": 1,
       "shared_instance_count": "AirDefence",
@@ -357,11 +332,6 @@
       "builders": ["AnyLegionFabberBasic"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -408,7 +378,7 @@
       }
     },
     {
-      "name": "Legion - Bronze - Jackal - Base",
+      "name": "Jackal - Base",
       "to_build": "LegionDefenseBasicLand",
       "instance_count": 1,
       "shared_instance_count": "LandDefence",
@@ -418,11 +388,6 @@
       "builders": ["AnyLegionFabberBasic"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -479,7 +444,7 @@
       }
     },
     {
-      "name": "Legion - Bronze - Scarab - Base",
+      "name": "Scarab - Base",
       "to_build": "LegionDefenseBasicLandII",
       "instance_count": 1,
       "shared_instance_count": "LandDefence",
@@ -489,11 +454,6 @@
       "builders": ["AnyLegionFabberBasic"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -544,7 +504,7 @@
       }
     },
     {
-      "name": "Legion - Bronze - Hive - Base",
+      "name": "Hive - Base",
       "to_build": "LegionDefenseBasicSwarm",
       "instance_count": 1,
       "shared_instance_count": "LandDefence",
@@ -554,11 +514,6 @@
       "builders": ["LegionBotBasicFabber", "LegionVehicleBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -609,7 +564,7 @@
       }
     },
     {
-      "name": "Legion - Bronze - Ripple - Base",
+      "name": "Ripple - Base",
       "to_build": "LegionDefenseBasicNaval",
       "instance_count": 1,
       "shared_instance_count": "NavalDefence",
@@ -619,11 +574,6 @@
       "builders": ["LegionAirBasicFabber", "LegionNavalBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -674,7 +624,7 @@
       }
     },
     {
-      "name": "Legion - Bronze - Archer - Base",
+      "name": "Archer - Base",
       "to_build": "LegionDefenseAdvancedAir",
       "instance_count": 1,
       "shared_instance_count": "AirDefence",
@@ -684,11 +634,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -735,7 +680,7 @@
       }
     },
     {
-      "name": "Legion - Bronze - Arsonist - Base",
+      "name": "Arsonist - Base",
       "to_build": "LegionDefenseAdvancedLand",
       "instance_count": 1,
       "shared_instance_count": "LandDefence",
@@ -745,11 +690,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -800,7 +740,7 @@
       }
     },
     {
-      "name": "Legion - Bronze - Decimator - Base",
+      "name": "Decimator - Base",
       "to_build": "LegionDefenseAdvancedTactical",
       "instance_count": 1,
       "shared_instance_count": "LandDefence",
@@ -810,11 +750,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -865,7 +800,7 @@
       }
     },
     {
-      "name": "Legion - Bronze - Rampart - Base",
+      "name": "Rampart - Base",
       "to_build": "LegionDefenseAdvancedShield",
       "instance_count": 1,
       "shared_instance_count": "LandDefence",
@@ -875,11 +810,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -926,7 +856,7 @@
       }
     },
     {
-      "name": "Legion - Bronze - Tsunami - Base",
+      "name": "Tsunami - Base",
       "to_build": "LegionDefenseAdvancedNaval",
       "instance_count": 1,
       "shared_instance_count": "NavalDefence",
@@ -936,11 +866,6 @@
       "builders": ["LegionNavalAdvancedFabber", "LegionAirAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -991,7 +916,7 @@
       }
     },
     {
-      "name": "Legion - Bronze - Centurion - Base",
+      "name": "Centurion - Base",
       "to_build": "LegionDefenseBasicOrbitalII",
       "instance_count": 1,
       "max_num_assisters": 3,
@@ -1000,11 +925,6 @@
       "builders": ["LegionOrbitalBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -1051,7 +971,7 @@
       }
     },
     {
-      "name": "Legion - Bronze - Tola - Base",
+      "name": "Tola - Base",
       "to_build": "LegionDefenseBasicOrbital",
       "instance_count": 1,
       "priority": 478,
@@ -1060,11 +980,6 @@
       "builders": ["AnyLegionFabberBasic", "AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -1092,11 +1007,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -1150,7 +1060,7 @@
       }
     },
     {
-      "name": "Legion - Bronze - Iron Dome",
+      "name": "Iron Dome",
       "to_build": "LegionDefenseAdvancedAntiNukeSilo",
       "instance_count": 1,
       "shared_instance_count": "SuperWeapon",
@@ -1160,11 +1070,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -1218,7 +1123,7 @@
       }
     },
     {
-      "name": "Legion - Bronze - Iron Dome - Rush",
+      "name": "Iron Dome - Rush",
       "to_build": "LegionDefenseAdvancedAntiNukeSilo",
       "instance_count": 1,
       "shared_instance_count": "SuperWeapon",
@@ -1228,11 +1133,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "HaveHadANukeEvent",
             "boolean": true
@@ -1256,11 +1156,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },

@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Platinum - Shredder - Mex",
+      "name": "Shredder - Mex",
       "to_build": "LegionDefenseBasicAir",
       "instance_count": 1,
       "priority": 252,
@@ -9,11 +9,6 @@
       "builders": ["LegionCommander", "AnyLegionFabberBasic"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -46,11 +41,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -104,7 +94,7 @@
       }
     },
     {
-      "name": "Legion - Platinum - Shredder - Base",
+      "name": "Shredder - Base",
       "to_build": "LegionDefenseBasicAir",
       "instance_count": 1,
       "max_num_assisters": 1,
@@ -117,11 +107,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -171,7 +156,7 @@
       }
     },
     {
-      "name": "Legion - Platinum - Archer - Base",
+      "name": "Archer - Base",
       "to_build": "LegionDefenseAdvancedAir",
       "instance_count": 1,
       "min_num_assisters": 1,
@@ -181,11 +166,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },

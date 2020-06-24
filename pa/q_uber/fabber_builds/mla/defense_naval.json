@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Uber - Torpedo Launcher - Mex",
+      "name": "Torpedo Launcher - Mex",
       "to_build": "BasicNavalDefense",
       "instance_count": 1,
       "priority": 401,
@@ -9,11 +9,6 @@
       "builders": ["UberCommander", "BasicAirFabber", "BasicNavalFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -75,7 +70,7 @@
       }
     },
     {
-      "name": "Uber - Advanced Torpedo Launcher - Mex",
+      "name": "Advanced Torpedo Launcher - Mex",
       "to_build": "AdvancedNavalDefense",
       "instance_count": 1,
       "priority": 402,
@@ -83,11 +78,6 @@
       "builders": ["AdvancedNavalFabber", "AdvancedAirFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -149,7 +139,7 @@
       }
     },
     {
-      "name": "Uber - Torpedo Launcher - Base",
+      "name": "Torpedo Launcher - Base",
       "to_build": "BasicNavalDefense",
       "instance_count": 1,
       "max_num_assisters": 1,
@@ -158,11 +148,6 @@
       "builders": ["UberCommander", "BasicAirFabber", "BasicNavalFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -205,11 +190,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -273,7 +253,7 @@
       }
     },
     {
-      "name": "Uber - Advanced Torpedo Launcher - Base",
+      "name": "Advanced Torpedo Launcher - Base",
       "to_build": "AdvancedNavalDefense",
       "instance_count": 1,
       "priority": 278,
@@ -282,11 +262,6 @@
       "builders": ["AdvancedNavalFabber", "AdvancedAirFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -329,11 +304,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true

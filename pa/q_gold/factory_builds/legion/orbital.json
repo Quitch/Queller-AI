@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Gold - Fabrication Starship",
+      "name": "Fabrication Starship",
       "to_build": "LegionOrbitalBasicFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -9,11 +9,6 @@
       "builders": ["AnyLegionFactoryOrbital"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreat",
             "string0": "Orbital",
@@ -28,11 +23,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
@@ -57,11 +47,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetOrGasGiantWithoutPresence",
             "boolean": true
           },
@@ -79,7 +64,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Sputnik - This Planet",
+      "name": "Sputnik - This Planet",
       "to_build": "LegionOrbitalBasicRadar",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -87,11 +72,6 @@
       "builders": ["AnyLegionFactoryOrbital"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "ThisPlanetNeedsReconAssistance",
             "boolean": true
@@ -110,7 +90,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Sputnik - Other Planet",
+      "name": "Sputnik - Other Planet",
       "to_build": "LegionOrbitalBasicRadar",
       "instance_count": 1,
       "shared_instance_count": "ReconAssistance",
@@ -120,11 +100,6 @@
       "builders": ["AnyLegionFactoryOrbital"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "OtherPlanetNeedsReconAssistance",
             "boolean": true
@@ -143,7 +118,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Spectre - This Planet",
+      "name": "Spectre - This Planet",
       "to_build": "LegionOrbitalBasicScout",
       "instance_count": 1,
       "priority": 98,
@@ -151,11 +126,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "ThisPlanetNeedsReconAssistance",
             "boolean": true
           },
@@ -173,7 +143,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Spectre - Other Planet",
+      "name": "Spectre - Other Planet",
       "to_build": "LegionOrbitalBasicScout",
       "instance_count": 1,
       "shared_instance_count": "ReconAssistance",
@@ -182,11 +152,6 @@
       "builders": ["AnyLegionFactoryOrbital"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "OtherPlanetNeedsReconAssistance",
             "boolean": true
@@ -205,7 +170,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Viper - Local Threat",
+      "name": "Viper - Local Threat",
       "to_build": "LegionOrbitalBasicFighter",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -213,11 +178,6 @@
       "builders": ["AnyLegionFactoryOrbital"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetThreat",
             "string0": "Orbital",
@@ -228,7 +188,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Viper - System Threat",
+      "name": "Viper - System Threat",
       "to_build": "LegionOrbitalBasicFighter",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -236,11 +196,6 @@
       "builders": ["AnyLegionFactoryOrbital"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "SystemThreat",
             "string0": "Orbital",
@@ -251,7 +206,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Chariot",
+      "name": "Chariot",
       "to_build": "LegionOrbitalBasicTransport",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -259,11 +214,6 @@
       "builders": ["LegionFactoryBasicOrbital"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetWithoutPresence",
             "boolean": true
@@ -298,7 +248,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Black Knight",
+      "name": "Black Knight",
       "to_build": "LegionOrbitalAdvancedLaser",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -306,11 +256,6 @@
       "builders": ["LegionFactoryAdvancedOrbital"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreat",
             "string0": "Orbital",
@@ -328,7 +273,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Kosmos - This Planet",
+      "name": "Kosmos - This Planet",
       "to_build": "LegionOrbitalAdvancedRadar",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -336,11 +281,6 @@
       "builders": ["LegionFactoryAdvancedOrbital"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "ThisPlanetNeedsReconAssistance",
             "boolean": true
@@ -359,7 +299,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Kosmos - Other Planet",
+      "name": "Kosmos - Other Planet",
       "to_build": "LegionOrbitalAdvancedRadar",
       "instance_count": 1,
       "shared_instance_count": "ReconAssistance",
@@ -369,11 +309,6 @@
       "builders": ["LegionFactoryAdvancedOrbital"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "OtherPlanetNeedsReconAssistance",
             "boolean": true
@@ -392,7 +327,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Excalibur",
+      "name": "Excalibur",
       "to_build": "LegionOrbitalAdvancedSniper",
       "instance_count": -1,
       "max_num_assisters": 5,
@@ -400,11 +335,6 @@
       "builders": ["LegionFactoryAdvancedOrbital"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "SystemThreat",
             "string0": "Orbital",
@@ -415,7 +345,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Imperator",
+      "name": "Imperator",
       "to_build": "LegionOrbitalAdvancedBattleship",
       "instance_count": -1,
       "max_num_assisters": 5,
@@ -423,11 +353,6 @@
       "builders": ["LegionFactoryAdvancedOrbital"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "SystemThreat",
             "string0": "Orbital",

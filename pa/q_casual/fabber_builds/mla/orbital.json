@@ -12,11 +12,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "casual",
-            "boolean": true
-          },
-          {
             "test_type": "UnitCount",
             "unit_type_string0": "Factory & Orbital & Basic",
             "compare0": "<",
@@ -28,11 +23,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "casual",
-            "boolean": true
-          },
           {
             "test_type": "PlanetCount",
             "compare0": ">",
@@ -69,11 +59,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "casual",
-            "boolean": true
-          },
-          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory & Orbital & Advanced",
             "compare0": "<",
@@ -85,11 +70,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "casual",
-            "boolean": true
-          },
           {
             "test_type": "PlanetCount",
             "compare0": ">",

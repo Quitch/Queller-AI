@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Bronze - Fabrication Walker",
+      "name": "Fabrication Walker",
       "to_build": "LegionBotBasicFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -9,11 +9,6 @@
       "builders": ["LegionFactoryBasicBot"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -24,11 +19,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -52,7 +42,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Peacekeeper",
+      "name": "Peacekeeper",
       "to_build": "LegionBotBasicAssault",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -61,21 +51,11 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -92,7 +72,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Lancer",
+      "name": "Lancer",
       "to_build": "LegionBotBasicSniper",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -101,11 +81,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -115,11 +90,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -136,7 +106,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Patriot",
+      "name": "Patriot",
       "to_build": "LegionBotBasicAA",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -145,11 +115,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -166,11 +131,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -194,7 +154,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Praetorian",
+      "name": "Praetorian",
       "to_build": "LegionBotAdvancedSupportCommander",
       "instance_count": 1,
       "shared_instance_count": "AdvancedBotFabber",
@@ -203,11 +163,6 @@
       "builders": ["LegionFactoryAdvancedBot"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -227,7 +182,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Advanced Fabrication Walker",
+      "name": "Advanced Fabrication Walker",
       "to_build": "LegionBotAdvancedFabber",
       "instance_count": 1,
       "shared_instance_count": "AdvancedBotFabber",
@@ -236,11 +191,6 @@
       "builders": ["LegionFactoryAdvancedBot"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -251,11 +201,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -275,7 +220,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Enforcer",
+      "name": "Enforcer",
       "to_build": "LegionBotAdvancedAssault",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -284,11 +229,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -298,11 +238,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -319,7 +254,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Miniman",
+      "name": "Miniman",
       "to_build": "LegionBotAdvancedArtillery",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -328,11 +263,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -342,11 +272,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -363,7 +288,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Monstrosity",
+      "name": "Monstrosity",
       "to_build": "LegionBotAdvancedTactical",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -372,11 +297,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -387,11 +307,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
@@ -407,7 +322,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Necromancer",
+      "name": "Necromancer",
       "to_build": "LegionBotAdvancedBomb",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -416,21 +331,11 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -447,7 +352,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Orbweaver",
+      "name": "Orbweaver",
       "to_build": "LegionBotAdvancedAA",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -455,11 +360,6 @@
       "builders": ["LegionFactoryAdvancedBot"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -477,11 +377,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true

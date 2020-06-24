@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Gold - Mass Extractor - Area",
+      "name": "Mass Extractor - Area",
       "to_build": "LegionEcoBasicMetalExtractor",
       "instance_count": 2,
       "max_num_assisters": 1,
@@ -15,11 +15,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": false
@@ -47,7 +42,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Legion - Gold - Mass Extractor - Desire - Area",
+      "name": "Mass Extractor - Desire - Area",
       "to_build": "LegionEcoBasicMetalExtractor",
       "instance_count": 2,
       "max_num_assisters": 1,
@@ -61,11 +56,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": false
@@ -91,7 +81,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Legion - Gold - Power Catalyst",
+      "name": "Power Catalyst",
       "to_build": "LegionEcoBasicEnergyPlant",
       "instance_count": 1,
       "max_num_assisters": 2,
@@ -101,11 +91,6 @@
       "builders": ["AnyLegionFabberBasic"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "DesireEnergy"
           },
@@ -121,11 +106,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PotentialEnergyEfficiency",
             "compare0": "<",
@@ -155,7 +135,7 @@
       }
     },
     {
-      "name": "Legion - Gold - M-48A Advanced Mass Extractor - Area",
+      "name": "M-48A Advanced Mass Extractor - Area",
       "to_build": "LegionEcoAdvancedMetalExtractor",
       "instance_count": 1,
       "min_num_assisters": 1,
@@ -167,11 +147,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "PotentialMetalEfficiency",
             "compare0": "<",
             "value0": 1
@@ -194,7 +169,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Legion - Gold - M-48A Advanced Mass Extractor - Desire - Area",
+      "name": "M-48A Advanced Mass Extractor - Desire - Area",
       "to_build": "LegionEcoAdvancedMetalExtractor",
       "instance_count": 1,
       "min_num_assisters": 1,
@@ -206,11 +181,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "DesireMetal"
           },
           {
@@ -231,7 +201,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Legion - Gold - Black Hole Generator",
+      "name": "Black Hole Generator",
       "to_build": "LegionEcoAdvancedEnergyPlant",
       "instance_count": 1,
       "min_num_assisters": 3,
@@ -242,11 +212,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PotentialEnergyEfficiency",
             "compare0": "<",
@@ -270,7 +235,7 @@
       }
     },
     {
-      "name": "Legion - Gold - Black Hole Generator - Desire",
+      "name": "Black Hole Generator - Desire",
       "to_build": "LegionEcoAdvancedEnergyPlant",
       "instance_count": 1,
       "min_num_assisters": 3,
@@ -281,11 +246,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "DesireEnergy"
           },
@@ -307,7 +267,7 @@
       }
     },
     {
-      "name": "Legion - Gold - Rig - Desire",
+      "name": "Rig - Desire",
       "to_build": "LegionEcoAdvancedMine",
       "instance_count": 1,
       "min_num_assisters": 3,
@@ -318,11 +278,6 @@
       "builders": ["LegionOrbitalBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
@@ -336,11 +291,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
@@ -359,7 +309,7 @@
       }
     },
     {
-      "name": "Legion - Gold - Rig",
+      "name": "Rig",
       "to_build": "LegionEcoAdvancedMine",
       "instance_count": 1,
       "min_num_assisters": 3,
@@ -370,11 +320,6 @@
       "builders": ["LegionOrbitalBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
@@ -390,11 +335,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
@@ -415,7 +355,7 @@
       }
     },
     {
-      "name": "Legion - Gold - Rig - Expand",
+      "name": "Rig - Expand",
       "to_build": "LegionEcoAdvancedMine",
       "instance_count": 1,
       "min_num_assisters": 3,
@@ -426,11 +366,6 @@
       "builders": ["LegionOrbitalBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
@@ -447,7 +382,7 @@
       }
     },
     {
-      "name": "Legion - Gold - Omni Silo",
+      "name": "Omni Silo",
       "to_build": "LegionEcoBasicStorage",
       "instance_count": 1,
       "priority": 140,
@@ -459,11 +394,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "CurrentEnergyEfficiency",
             "compare0": ">=",
@@ -483,11 +413,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "CurrentMetalEfficiency",
             "compare0": ">=",

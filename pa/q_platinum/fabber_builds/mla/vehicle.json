@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Platinum - Basic Vehicle Factory - Commander",
+      "name": "Basic Vehicle Factory - Commander",
       "to_build": "BasicVehicleFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -10,11 +10,6 @@
       "builders": ["UberCommander"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -43,11 +38,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -92,7 +82,7 @@
       }
     },
     {
-      "name": "Platinum - Basic Vehicle Factory - Fabber",
+      "name": "Basic Vehicle Factory - Fabber",
       "to_build": "BasicVehicleFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -104,11 +94,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
@@ -136,11 +121,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -185,7 +165,7 @@
       }
     },
     {
-      "name": "Platinum - Basic Vehicle Factory - Arrived on a new world",
+      "name": "Basic Vehicle Factory - Arrived on a new world",
       "to_build": "BasicVehicleFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -199,11 +179,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PresenceOnOtherPlanet",
             "boolean": true
@@ -237,7 +212,7 @@
       }
     },
     {
-      "name": "Platinum - Advanced Vehicle Factory",
+      "name": "Advanced Vehicle Factory",
       "to_build": "AdvancedVehicleFactory",
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
@@ -247,11 +222,6 @@
       "builders": ["BasicVehicleFabber", "AdvancedVehicleFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -284,11 +254,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -326,11 +291,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
@@ -363,11 +323,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
@@ -391,11 +346,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": true

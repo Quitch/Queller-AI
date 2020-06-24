@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Uber - Fabber Assist",
+      "name": "Fabber Assist",
       "instance_count": -1,
       "priority": 10,
       "base_sort": "FromBuilder",
@@ -14,20 +14,10 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "CurrentMetalEfficiency",
             "compare0": ">",
@@ -46,11 +36,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": true
           }
@@ -59,7 +44,7 @@
       "task_type": "BuilderAssist"
     },
     {
-      "name": "Legion - Uber - Sky Bridge",
+      "name": "Sky Bridge",
       "to_build": "LegionStructureBasicTeleporter",
       "instance_count": 1,
       "priority": 710,
@@ -73,11 +58,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PresenceOnOtherPlanet",
             "boolean": true
@@ -109,7 +89,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Teleport Fabber To Planet",
+      "name": "Teleport Fabber To Planet",
       "instance_count": 1,
       "priority": 801,
       "base_sort": "FromBuilder",
@@ -122,11 +102,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetWithoutFabberWithTeleporter",
             "boolean": true
@@ -148,7 +123,7 @@
       "task_type": "TeleportFabberToPlanet"
     },
     {
-      "name": "Legion - Uber - Move Fabber To Planet",
+      "name": "Move Fabber To Planet",
       "instance_count": 1,
       "priority": 800,
       "base_sort": "FromBuilder",
@@ -163,11 +138,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetWithoutPresence",
             "boolean": true
@@ -189,18 +159,13 @@
       "task_type": "TransportToPlanet"
     },
     {
-      "name": "Legion - Uber - Move Orbital Fabber To Planet",
+      "name": "Move Orbital Fabber To Planet",
       "instance_count": 1,
       "priority": 800,
       "base_sort": "FromBuilder",
       "builders": ["LegionOrbitalBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetOrGasGiantWithoutPresence",
             "boolean": true
@@ -213,11 +178,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetOrGasGiantWithoutPresence",
             "boolean": true
@@ -238,11 +198,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetOrGasGiantWithoutPresence",
             "boolean": true
@@ -266,18 +221,13 @@
       "task_type": "OrbitalFabberMoveToPlanet"
     },
     {
-      "name": "Legion - Uber - Move Orbital Fabber To Safe Planet",
+      "name": "Move Orbital Fabber To Safe Planet",
       "instance_count": 1,
       "priority": 810,
       "base_sort": "FromBuilder",
       "builders": ["LegionOrbitalBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "SafePlanetOrGasGiantWithoutPresence",
             "boolean": true
@@ -290,11 +240,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "SafePlanetOrGasGiantWithoutPresence",
             "boolean": true
@@ -315,11 +260,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "SafePlanetOrGasGiantWithoutPresence",
             "boolean": true

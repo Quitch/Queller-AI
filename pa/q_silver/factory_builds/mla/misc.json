@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Silver - Nuke Missile",
+      "name": "Nuke Missile",
       "to_build": "NukeMissile",
       "instance_count": -1,
       "min_num_assisters": 3,
@@ -11,18 +11,13 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
-          {
             "test_type": "FactoryHasOpenSlot"
           }
         ]
       ]
     },
     {
-      "name": "Silver - Anti Nuke Missile",
+      "name": "Anti Nuke Missile",
       "to_build": "AntiNukeMissile",
       "instance_count": -1,
       "min_num_assisters": 3,
@@ -31,11 +26,6 @@
       "builders": ["AntiNukeSilo"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "FactoryHasOpenSlot"
           }

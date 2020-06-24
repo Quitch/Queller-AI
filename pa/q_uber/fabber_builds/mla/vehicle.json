@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Uber - Basic Vehicle Factory - Commander",
+      "name": "Basic Vehicle Factory - Commander",
       "to_build": "BasicVehicleFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -10,11 +10,6 @@
       "builders": ["UberCommander"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "HasPersonalityTag",
             "string0": "ffa",
@@ -60,11 +55,6 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "bot",
             "boolean": false
           },
@@ -104,7 +94,7 @@
       }
     },
     {
-      "name": "Uber - Basic Vehicle Factory - Fabber",
+      "name": "Basic Vehicle Factory - Fabber",
       "to_build": "BasicVehicleFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -117,11 +107,6 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "ffa",
             "boolean": false
           },
@@ -165,11 +150,6 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "bot",
             "boolean": false
           },
@@ -209,7 +189,7 @@
       }
     },
     {
-      "name": "Uber - Basic Vehicle Factory - Arrived on a new world",
+      "name": "Basic Vehicle Factory - Arrived on a new world",
       "to_build": "BasicVehicleFactory",
       "instance_count": 1,
       "min_num_assisters": 3,
@@ -222,11 +202,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "HasPersonalityTag",
             "string0": "bot",
@@ -258,11 +233,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "HasPersonalityTag",
             "string0": "bot",
@@ -312,7 +282,7 @@
       }
     },
     {
-      "name": "Uber - Advanced Vehicle Factory",
+      "name": "Advanced Vehicle Factory",
       "to_build": "AdvancedVehicleFactory",
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
@@ -322,11 +292,6 @@
       "builders": ["BasicVehicleFabber", "AdvancedVehicleFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -359,11 +324,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -401,11 +361,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
@@ -429,11 +384,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -464,11 +414,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": true
@@ -511,7 +456,7 @@
       }
     },
     {
-      "name": "Uber - Advanced Vehicle Factory - Excess Eco",
+      "name": "Advanced Vehicle Factory - Excess Eco",
       "to_build": "AdvancedVehicleFactory",
       "instance_count": 2,
       "shared_instance_count": "AdvancedFactory",
@@ -522,11 +467,6 @@
       "builders": ["BasicVehicleFabber", "AdvancedVehicleFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false

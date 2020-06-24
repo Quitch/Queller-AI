@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Gold - Orbital Fabber",
+      "name": "Orbital Fabber",
       "to_build": "OrbitalFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -9,11 +9,6 @@
       "builders": ["OrbitalLauncher"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreat",
             "string0": "Orbital",
@@ -28,11 +23,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "OrbitalFabber"
@@ -53,11 +43,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetOrGasGiantWithoutPresence",
             "boolean": true
           },
@@ -75,7 +60,7 @@
       ]
     },
     {
-      "name": "Gold - ARKYD - This Planet",
+      "name": "ARKYD - This Planet",
       "to_build": "BasicRadarSattelite",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -83,11 +68,6 @@
       "builders": ["OrbitalLauncher"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "ThisPlanetNeedsReconAssistance",
             "boolean": true
@@ -106,7 +86,7 @@
       ]
     },
     {
-      "name": "Gold - ARKYD - Other Planet",
+      "name": "ARKYD - Other Planet",
       "to_build": "BasicRadarSattelite",
       "instance_count": 1,
       "shared_instance_count": "ReconAssistance",
@@ -116,11 +96,6 @@
       "builders": ["OrbitalLauncher"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "OtherPlanetNeedsReconAssistance",
             "boolean": true
@@ -139,18 +114,13 @@
       ]
     },
     {
-      "name": "Gold - Hermes - This Planet",
+      "name": "Hermes - This Planet",
       "to_build": "OrbitalProbe",
       "instance_count": 1,
       "priority": 98,
       "builders": ["OrbitalLauncher"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "ThisPlanetNeedsReconAssistance",
             "boolean": true
@@ -169,7 +139,7 @@
       ]
     },
     {
-      "name": "Gold - Hermes - Other Planet",
+      "name": "Hermes - Other Planet",
       "to_build": "OrbitalProbe",
       "instance_count": 1,
       "shared_instance_count": "ReconAssistance",
@@ -178,11 +148,6 @@
       "builders": ["OrbitalLauncher"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "OtherPlanetNeedsReconAssistance",
             "boolean": true
@@ -201,7 +166,7 @@
       ]
     },
     {
-      "name": "Gold - Avenger - Local Threat",
+      "name": "Avenger - Local Threat",
       "to_build": "OrbitalFighter",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -209,11 +174,6 @@
       "builders": ["OrbitalLauncher"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetThreat",
             "string0": "Orbital",
@@ -224,7 +184,7 @@
       ]
     },
     {
-      "name": "Gold - Avenger - System Threat",
+      "name": "Avenger - System Threat",
       "to_build": "OrbitalFighter",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -232,11 +192,6 @@
       "builders": ["AnyUberOrbitalFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "SystemThreat",
             "string0": "Orbital",
@@ -247,7 +202,7 @@
       ]
     },
     {
-      "name": "Gold - Astraeus",
+      "name": "Astraeus",
       "to_build": "OrbitalLander",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -255,11 +210,6 @@
       "builders": ["OrbitalLauncher"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetWithoutPresence",
             "boolean": true
@@ -294,7 +244,7 @@
       ]
     },
     {
-      "name": "Gold - Solar Array",
+      "name": "Solar Array",
       "to_build": "SolarArray",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -302,11 +252,6 @@
       "builders": ["OrbitalFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PotentialEnergyEfficiency",
             "compare0": "<",
@@ -328,11 +273,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "DesireEnergy"
           },
           {
@@ -352,7 +292,7 @@
       ]
     },
     {
-      "name": "Gold - SXX-1304 Laser Platform",
+      "name": "SXX-1304 Laser Platform",
       "to_build": "OrbitalDeathLaser",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -360,11 +300,6 @@
       "builders": ["OrbitalFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreat",
             "string0": "Orbital",
@@ -382,7 +317,7 @@
       ]
     },
     {
-      "name": "Gold - Advanced Radar Satellite - This Planet",
+      "name": "Advanced Radar Satellite - This Planet",
       "to_build": "AdvancedRadarSattelite",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -390,11 +325,6 @@
       "builders": ["OrbitalFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "ThisPlanetNeedsReconAssistance",
             "boolean": true
@@ -413,7 +343,7 @@
       ]
     },
     {
-      "name": "Gold - Advanced Radar Satellite - Other Planet",
+      "name": "Advanced Radar Satellite - Other Planet",
       "to_build": "AdvancedRadarSattelite",
       "instance_count": 1,
       "shared_instance_count": "ReconAssistance",
@@ -423,11 +353,6 @@
       "builders": ["OrbitalFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "OtherPlanetNeedsReconAssistance",
             "boolean": true
@@ -446,7 +371,7 @@
       ]
     },
     {
-      "name": "Gold - Artemis",
+      "name": "Artemis",
       "to_build": "OrbitalRailgun",
       "instance_count": -1,
       "max_num_assisters": 5,
@@ -454,11 +379,6 @@
       "builders": ["OrbitalFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "SystemThreat",
             "string0": "Orbital",
@@ -469,7 +389,7 @@
       ]
     },
     {
-      "name": "Gold - Omega",
+      "name": "Omega",
       "to_build": "OrbitalBattleShip",
       "instance_count": -1,
       "max_num_assisters": 5,
@@ -477,11 +397,6 @@
       "builders": ["OrbitalFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "SystemThreat",
             "string0": "Orbital",

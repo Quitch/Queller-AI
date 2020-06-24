@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Uber - Anchor - Base",
+      "name": "Anchor - Base",
       "to_build": "DefenseSatellite",
       "instance_count": 1,
       "max_num_assisters": 1,
@@ -10,11 +10,6 @@
       "builders": ["OrbitalFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
@@ -67,7 +62,7 @@
       }
     },
     {
-      "name": "Uber - Anchor - Beachead",
+      "name": "Anchor - Beachead",
       "to_build": "DefenseSatellite",
       "instance_count": 1,
       "max_num_assisters": 1,
@@ -76,11 +71,6 @@
       "builders": ["OrbitalFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsMainEcoBase",
             "boolean": false
@@ -135,7 +125,7 @@
       }
     },
     {
-      "name": "Uber - Umbrella - Rush",
+      "name": "Umbrella - Rush",
       "to_build": "Umbrella",
       "instance_count": 1,
       "priority": 456,
@@ -145,11 +135,6 @@
       "builders": ["AnyUberBasicFabber", "AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -178,11 +163,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -231,7 +211,7 @@
       }
     },
     {
-      "name": "Uber - Umbrella - Base",
+      "name": "Umbrella - Base",
       "to_build": "Umbrella",
       "instance_count": 1,
       "priority": 279,
@@ -241,11 +221,6 @@
       "builders": ["AnyUberBasicFabber", "AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -274,11 +249,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -305,11 +275,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -363,7 +328,7 @@
       }
     },
     {
-      "name": "Uber - Umbrella - Lock Down The Planet",
+      "name": "Umbrella - Lock Down The Planet",
       "to_build": "Umbrella",
       "instance_count": 1,
       "priority": 401,
@@ -373,11 +338,6 @@
       "builders": ["AnyUberBasicFabber", "AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -430,7 +390,7 @@
       }
     },
     {
-      "name": "Uber - Umbrella - Protect the Commander",
+      "name": "Umbrella - Protect the Commander",
       "to_build": "Umbrella",
       "instance_count": 1,
       "priority": 457,
@@ -440,11 +400,6 @@
       "builders": ["AnyUberBasicFabber", "AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -473,11 +428,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "SystemThreat",
             "string0": "Orbital",
             "compare0": ">",
@@ -501,11 +451,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "HaveSeenEnemyUnits",
             "unit_type_string0": "Factory & Artillery",

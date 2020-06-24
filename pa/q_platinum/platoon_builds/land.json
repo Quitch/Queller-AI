@@ -1,17 +1,12 @@
 {
   "build_list": [
     {
-      "name": "Platinum - Land Attack Platoon Small",
+      "name": "Land Attack Platoon Small",
       "to_build": "Land_Attack_Small_Queller",
       "instance_count": -1,
       "priority": 105,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -39,17 +34,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Platinum - Land Attack Platoon Medium",
+      "name": "Land Attack Platoon Medium",
       "to_build": "Land_Attack_Medium_Queller",
       "instance_count": -1,
       "priority": 104,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -77,17 +67,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Platinum - Land Attack Platoon Large",
+      "name": "Land Attack Platoon Large",
       "to_build": "Land_Attack_Large_Queller",
       "instance_count": -1,
       "priority": 103,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -115,17 +100,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Platinum - Land Attack Platoon XLarge",
+      "name": "Land Attack Platoon XLarge",
       "to_build": "Land_Attack_XLarge_Queller",
       "instance_count": -1,
       "priority": 102,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -153,17 +133,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Platinum - Land Attack Platoon Huge",
+      "name": "Land Attack Platoon Huge",
       "to_build": "Land_Attack_Huge_Queller",
       "instance_count": -1,
       "priority": 101,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -191,17 +166,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Platinum - Land Attack Platoon Max",
+      "name": "Land Attack Platoon Max",
       "to_build": "Land_Attack_Max_Queller",
       "instance_count": -1,
       "priority": 100,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true

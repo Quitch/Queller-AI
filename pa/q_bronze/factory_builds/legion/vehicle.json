@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Bronze - Armor Fabricator",
+      "name": "Armor Fabricator",
       "to_build": "LegionVehicleBasicFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -9,11 +9,6 @@
       "builders": ["LegionFactoryBasicVehicle"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -24,11 +19,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -52,18 +42,13 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Guardian",
+      "name": "Guardian",
       "to_build": "LegionVehicleBasicCFab",
       "instance_count": 1,
       "priority": 97,
       "builders": ["LegionFactoryBasicVehicle"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -81,11 +66,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -109,7 +89,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Shank",
+      "name": "Shank",
       "to_build": "LegionVehicleBasicLaser",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -118,11 +98,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -132,11 +107,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -153,7 +123,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Maul",
+      "name": "Maul",
       "to_build": "LegionVehicleBasicArmor",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -162,11 +132,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -177,11 +142,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
@@ -197,7 +157,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Corsair",
+      "name": "Corsair",
       "to_build": "LegionVehicleBasicArtillery",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -206,21 +166,11 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -237,7 +187,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Stoke",
+      "name": "Stoke",
       "to_build": "LegionVehicleBasicHover",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -246,21 +196,11 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -277,7 +217,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Advanced Armor Fabricator",
+      "name": "Advanced Armor Fabricator",
       "to_build": "LegionVehicleAdvancedFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -285,11 +225,6 @@
       "builders": ["LegionFactoryAdvancedVehicle"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -300,11 +235,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -324,7 +254,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Earthshaker",
+      "name": "Earthshaker",
       "to_build": "LegionVehicleAdvancedArmor",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -333,11 +263,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -347,11 +272,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -368,7 +288,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Scorpion",
+      "name": "Scorpion",
       "to_build": "LegionVehicleAdvancedLaser",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -377,11 +297,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -391,11 +306,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -412,7 +322,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Deathmark",
+      "name": "Deathmark",
       "to_build": "LegionVehicleAdvancedSniper",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -421,11 +331,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -435,11 +340,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -456,7 +356,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Havoc",
+      "name": "Havoc",
       "to_build": "LegionVehicleAdvancedSwarm",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -465,11 +365,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -479,11 +374,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -500,7 +390,7 @@
       ]
     },
     {
-      "name": "Legion - Bronze - Panzer",
+      "name": "Panzer",
       "to_build": "LegionVehicleAdvancedHover",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -509,21 +399,11 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true

@@ -1,17 +1,12 @@
 {
   "build_list": [
     {
-      "name": "Silver - Amphibious Attack Platoon Large",
+      "name": "Amphibious Attack Platoon Large",
       "to_build": "Amphibious_Attack_Large_Queller",
       "instance_count": -1,
       "priority": 123,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -39,17 +34,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Silver - Amphibious Attack Platoon XLarge",
+      "name": "Amphibious Attack Platoon XLarge",
       "to_build": "Amphibious_Attack_XLarge_Queller",
       "instance_count": -1,
       "priority": 122,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -77,17 +67,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Silver - Amphibious Attack Platoon Huge",
+      "name": "Amphibious Attack Platoon Huge",
       "to_build": "Amphibious_Attack_Huge_Queller",
       "instance_count": -1,
       "priority": 121,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -115,17 +100,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Silver - Amphibious Attack Platoon Max",
+      "name": "Amphibious Attack Platoon Max",
       "to_build": "Amphibious_Attack_Max_Queller",
       "instance_count": -1,
       "priority": 120,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -147,17 +127,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Silver - Hover Attack Platoon Max",
+      "name": "Hover Attack Platoon Max",
       "to_build": "Hover_Attack_Max_Queller",
       "instance_count": -1,
       "priority": 123,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -176,11 +151,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -202,17 +172,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Silver - Necromancer Attack Platoon Max",
+      "name": "Necromancer Attack Platoon Max",
       "to_build": "Necromancer_Attack_Queller",
       "instance_count": -1,
       "priority": 123,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true

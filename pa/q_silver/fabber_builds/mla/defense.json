@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Silver - Galata Turret - Mex",
+      "name": "Galata Turret - Mex",
       "to_build": "BasicAirDefense",
       "instance_count": 1,
       "shared_instance_count": "Defence",
@@ -11,11 +11,6 @@
       "builders": ["AnyUberBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -67,7 +62,7 @@
       }
     },
     {
-      "name": "Silver - Single Laser Defense Tower - Mex",
+      "name": "Single Laser Defense Tower - Mex",
       "to_build": "BasicLandDefenseSingle",
       "instance_count": 1,
       "shared_instance_count": "Defence",
@@ -77,11 +72,6 @@
       "builders": ["AnyUberBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -137,7 +127,7 @@
       }
     },
     {
-      "name": "Silver - Laser Defense Tower - Mex",
+      "name": "Laser Defense Tower - Mex",
       "to_build": "BasicLandDefense",
       "instance_count": 1,
       "shared_instance_count": "Defence",
@@ -147,11 +137,6 @@
       "builders": ["AnyUberBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -207,7 +192,7 @@
       }
     },
     {
-      "name": "Silver - Torpedo Launcher - Mex",
+      "name": "Torpedo Launcher - Mex",
       "to_build": "BasicNavalDefense",
       "instance_count": 1,
       "shared_instance_count": "Defence",
@@ -217,11 +202,6 @@
       "builders": ["BasicAirFabber", "BasicNavalFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -277,7 +257,7 @@
       }
     },
     {
-      "name": "Silver - Advanced Laser Defense Tower - Mex",
+      "name": "Advanced Laser Defense Tower - Mex",
       "to_build": "AdvancedLandDefense",
       "instance_count": 1,
       "shared_instance_count": "Defence",
@@ -287,11 +267,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -347,7 +322,7 @@
       }
     },
     {
-      "name": "Silver - Galata Turret - Base",
+      "name": "Galata Turret - Base",
       "to_build": "BasicAirDefense",
       "instance_count": 1,
       "shared_instance_count": "Defence",
@@ -357,11 +332,6 @@
       "builders": ["UberCommander", "AnyUberBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -414,7 +384,7 @@
       }
     },
     {
-      "name": "Silver - Single Laser Defense Tower - Base",
+      "name": "Single Laser Defense Tower - Base",
       "to_build": "BasicLandDefenseSingle",
       "instance_count": 1,
       "shared_instance_count": "Defence",
@@ -424,11 +394,6 @@
       "builders": ["UberCommander", "AnyUberBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -485,7 +450,7 @@
       }
     },
     {
-      "name": "Silver - Laser Defense Tower - Base",
+      "name": "Laser Defense Tower - Base",
       "to_build": "BasicLandDefense",
       "instance_count": 1,
       "shared_instance_count": "Defence",
@@ -495,11 +460,6 @@
       "builders": ["AnyUberBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -550,7 +510,7 @@
       }
     },
     {
-      "name": "Silver - Torpedo Launcher - Base",
+      "name": "Torpedo Launcher - Base",
       "to_build": "BasicNavalDefense",
       "instance_count": 1,
       "shared_instance_count": "Defence",
@@ -560,11 +520,6 @@
       "builders": ["UberCommander", "BasicAirFabber", "BasicNavalFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -606,11 +561,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -673,7 +623,7 @@
       }
     },
     {
-      "name": "Silver - Flak Cannon - Base",
+      "name": "Flak Cannon - Base",
       "to_build": "AdvancedAirDefense",
       "instance_count": 1,
       "shared_instance_count": "Defence",
@@ -683,11 +633,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -740,7 +685,7 @@
       }
     },
     {
-      "name": "Silver - Advanced Laser Defense Tower - Base",
+      "name": "Advanced Laser Defense Tower - Base",
       "to_build": "AdvancedLandDefense",
       "instance_count": 1,
       "shared_instance_count": "Defence",
@@ -750,11 +695,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -801,7 +741,7 @@
       }
     },
     {
-      "name": "Silver - Catapult - Base",
+      "name": "Catapult - Base",
       "to_build": "TML",
       "instance_count": 1,
       "shared_instance_count": "Defence",
@@ -811,11 +751,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -858,7 +793,7 @@
       }
     },
     {
-      "name": "Silver - Advanced Torpedo Launcher - Base",
+      "name": "Advanced Torpedo Launcher - Base",
       "to_build": "AdvancedNavalDefense",
       "instance_count": 1,
       "shared_instance_count": "Defence",
@@ -868,11 +803,6 @@
       "builders": ["AdvancedNavalFabber", "AdvancedAirFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -914,11 +844,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -981,7 +906,7 @@
       }
     },
     {
-      "name": "Silver - Anchor - Base",
+      "name": "Anchor - Base",
       "to_build": "DefenseSatellite",
       "instance_count": 1,
       "max_num_assisters": 2,
@@ -990,11 +915,6 @@
       "builders": ["OrbitalFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -1037,7 +957,7 @@
       }
     },
     {
-      "name": "Silver - Umbrella - Base",
+      "name": "Umbrella - Base",
       "to_build": "Umbrella",
       "instance_count": 1,
       "priority": 378,
@@ -1046,11 +966,6 @@
       "builders": ["AnyUberBasicFabber", "AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -1078,11 +993,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -1136,7 +1046,7 @@
       }
     },
     {
-      "name": "Silver - Umbrella - Lock Down The Planet",
+      "name": "Umbrella - Lock Down The Planet",
       "to_build": "Umbrella",
       "instance_count": 1,
       "max_num_assisters": 2,
@@ -1145,11 +1055,6 @@
       "builders": ["AnyUberBasicFabber", "AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -1202,7 +1107,7 @@
       }
     },
     {
-      "name": "Silver - Anti Nuke Silo",
+      "name": "Anti Nuke Silo",
       "to_build": "AntiNukeSilo",
       "instance_count": 1,
       "shared_instance_count": "AntiNuke",
@@ -1212,11 +1117,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -1270,7 +1170,7 @@
       }
     },
     {
-      "name": "Silver - Anti Nuke Silo - Rush",
+      "name": "Anti Nuke Silo - Rush",
       "to_build": "AntiNukeSilo",
       "instance_count": 1,
       "shared_instance_count": "AntiNuke",
@@ -1280,11 +1180,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "HaveHadANukeEvent",
             "boolean": true
@@ -1308,11 +1203,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },

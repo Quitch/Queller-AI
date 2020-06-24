@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Uber - Fabrication Walker",
+      "name": "Fabrication Walker",
       "to_build": "LegionBotBasicFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -9,11 +9,6 @@
       "builders": ["LegionFactoryBasicBot", "LegionFactoryAdvancedBot"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -24,11 +19,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -55,11 +45,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
@@ -78,11 +63,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -128,7 +108,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Investigator - Intel/Minesweeper",
+      "name": "Investigator - Intel/Minesweeper",
       "to_build": "LegionBotBasicScout",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -137,11 +117,6 @@
       "builders": ["LegionFactoryBasicBot", "LegionFactoryAdvancedBot"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -162,11 +137,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -196,11 +166,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -224,7 +189,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Investigator - Suspect Mines",
+      "name": "Investigator - Suspect Mines",
       "to_build": "LegionBotBasicScout",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -232,11 +197,6 @@
       "builders": ["LegionFactoryBasicBot", "LegionFactoryAdvancedBot"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -261,7 +221,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Peacekeeper",
+      "name": "Peacekeeper",
       "to_build": "LegionBotBasicAssault",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -270,21 +230,11 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -304,7 +254,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Lancer",
+      "name": "Lancer",
       "to_build": "LegionBotBasicSniper",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -312,11 +262,6 @@
       "builders": ["LegionFactoryBasicBot", "LegionFactoryAdvancedBot"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -328,11 +273,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
@@ -351,7 +291,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Patriot",
+      "name": "Patriot",
       "to_build": "LegionBotBasicAA",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -359,11 +299,6 @@
       "builders": ["LegionFactoryBasicBot", "LegionFactoryAdvancedBot"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
@@ -389,11 +324,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
@@ -417,11 +347,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -454,7 +379,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Praetorian",
+      "name": "Praetorian",
       "to_build": "LegionBotAdvancedSupportCommander",
       "instance_count": 1,
       "shared_instance_count": "AdvancedBotFabber",
@@ -464,11 +389,6 @@
       "builders": ["LegionFactoryAdvancedBot"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -495,11 +415,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "BaseThreatened",
             "boolean": false
           },
@@ -524,11 +439,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -567,11 +477,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "BaseThreatened",
             "boolean": false
           },
@@ -605,7 +510,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Advanced Fabrication Walker",
+      "name": "Advanced Fabrication Walker",
       "to_build": "LegionBotAdvancedFabber",
       "instance_count": 1,
       "shared_instance_count": "AdvancedBotFabber",
@@ -614,11 +519,6 @@
       "builders": ["LegionFactoryAdvancedBot"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -629,11 +529,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -660,11 +555,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
@@ -683,11 +573,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -733,7 +618,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Enforcer",
+      "name": "Enforcer",
       "to_build": "LegionBotAdvancedAssault",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -741,11 +626,6 @@
       "builders": ["LegionFactoryAdvancedBot"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -756,11 +636,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -780,7 +655,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Monstrosity",
+      "name": "Monstrosity",
       "to_build": "LegionBotAdvancedTactical",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -788,11 +663,6 @@
       "builders": ["LegionFactoryAdvancedBot"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -808,11 +678,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
@@ -831,7 +696,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Miniman",
+      "name": "Miniman",
       "to_build": "LegionBotAdvancedArtillery",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -839,11 +704,6 @@
       "builders": ["LegionFactoryAdvancedBot"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -873,11 +733,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -905,11 +760,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -942,7 +792,7 @@
       ]
     },
     {
-      "name": "Legion - Uber - Orbweaver",
+      "name": "Orbweaver",
       "to_build": "LegionBotAdvancedAA",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -950,11 +800,6 @@
       "builders": ["LegionFactoryAdvancedBot"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
@@ -980,11 +825,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
@@ -1008,11 +848,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true

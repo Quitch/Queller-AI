@@ -1,17 +1,12 @@
 {
   "build_list": [
     {
-      "name": "Platinum - Orbital Ground Attack Platoon",
+      "name": "Orbital Ground Attack Platoon",
       "to_build": "Orbital_Ground_Attack_Queller",
       "instance_count": -1,
       "priority": 110,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -31,17 +26,12 @@
       "task_type": "OrbitalLaserAttack"
     },
     {
-      "name": "Platinum - Orbital Fighter Attack Platoon",
+      "name": "Orbital Fighter Attack Platoon",
       "to_build": "Orbital_Fighter_Attack_Queller",
       "instance_count": -1,
       "priority": 100,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemyOrbitalPresenceOnPlanet",
             "boolean": true

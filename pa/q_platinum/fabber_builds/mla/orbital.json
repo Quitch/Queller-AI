@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Platinum - Orbital Launcher - Alone/Rush",
+      "name": "Orbital Launcher - Alone/Rush",
       "to_build": "OrbitalLauncher",
       "instance_count": 1,
       "shared_instance_count": "OrbitalLauncher",
@@ -12,11 +12,6 @@
       "builders": ["AnyUberBasicFabber", "AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -42,11 +37,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
@@ -70,11 +60,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetWithoutPresence",
             "boolean": true
@@ -105,11 +90,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -152,7 +132,7 @@
       }
     },
     {
-      "name": "Platinum - Orbital Launcher - Response",
+      "name": "Orbital Launcher - Response",
       "to_build": "OrbitalLauncher",
       "instance_count": 1,
       "shared_instance_count": "OrbitalLauncher",
@@ -163,11 +143,6 @@
       "builders": ["AnyUberBasicFabber", "AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -210,7 +185,7 @@
       }
     },
     {
-      "name": "Platinum - Orbital Launcher",
+      "name": "Orbital Launcher",
       "to_build": "OrbitalLauncher",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -221,11 +196,6 @@
       "builders": ["AnyUberBasicFabber", "AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -264,7 +234,7 @@
       }
     },
     {
-      "name": "Platinum - Orbital Factory",
+      "name": "Orbital Factory",
       "to_build": "OrbitalFactory",
       "instance_count": 1,
       "shared_instance_count": "OrbitalFactory",
@@ -274,11 +244,6 @@
       "builders": ["OrbitalFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false

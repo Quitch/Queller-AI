@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Gold - Fabrication Barge",
+      "name": "Fabrication Barge",
       "to_build": "LegionNavalBasicFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -9,11 +9,6 @@
       "builders": ["LegionFactoryBasicNaval"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -27,11 +22,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "BaseThreatened",
             "boolean": false
           },
@@ -43,11 +33,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -71,7 +56,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Catfish",
+      "name": "Catfish",
       "to_build": "LegionNavalBasicScout",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -79,11 +64,6 @@
       "builders": ["LegionFactoryBasicNaval"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -111,11 +91,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -136,11 +111,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -162,11 +132,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -185,7 +150,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Bowhead",
+      "name": "Bowhead",
       "to_build": "LegionNavalBasicDestroyer",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -193,11 +158,6 @@
       "builders": ["LegionFactoryBasicNaval"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -221,11 +181,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
@@ -237,7 +192,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Talos",
+      "name": "Talos",
       "to_build": "LegionNavalBasicAA",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -245,11 +200,6 @@
       "builders": ["LegionFactoryBasicNaval"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
@@ -276,7 +226,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Akula",
+      "name": "Akula",
       "to_build": "LegionNavalBasicSub",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -284,11 +234,6 @@
       "builders": ["LegionFactoryBasicNaval"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -308,7 +253,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Advanced Fabrication Barge",
+      "name": "Advanced Fabrication Barge",
       "to_build": "LegionNavalAdvancedFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -316,11 +261,6 @@
       "builders": ["LegionFactoryAdvancedNaval"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -333,11 +273,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -357,18 +292,13 @@
       ]
     },
     {
-      "name": "Legion - Gold - Remora",
+      "name": "Remora",
       "to_build": "LegionNavalAdvancedFabberSub",
       "instance_count": 1,
       "priority": 199,
       "builders": ["LegionFactoryAdvancedNaval"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -393,7 +323,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Epoch",
+      "name": "Epoch",
       "to_build": "LegionNavalAdvancedBattleship",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -401,11 +331,6 @@
       "builders": ["LegionFactoryAdvancedNaval"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -418,7 +343,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Manta",
+      "name": "Manta",
       "to_build": "LegionNavalAdvancedTactical",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -426,11 +351,6 @@
       "builders": ["LegionFactoryAdvancedNaval"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -456,7 +376,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Hammerhead",
+      "name": "Hammerhead",
       "to_build": "LegionNavalAdvancedDestroyer",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -464,11 +384,6 @@
       "builders": ["LegionFactoryAdvancedNaval"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -487,7 +402,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Jaeger",
+      "name": "Jaeger",
       "to_build": "LegionNavalAdvancedHover",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -495,11 +410,6 @@
       "builders": ["LegionFactoryAdvancedNaval"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -512,11 +422,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true

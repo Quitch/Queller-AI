@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Platinum - Armor Foundry - Commander",
+      "name": "Armor Foundry - Commander",
       "to_build": "LegionFactoryBasicVehicle",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -10,11 +10,6 @@
       "builders": ["LegionCommander"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -43,11 +38,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -92,7 +82,7 @@
       }
     },
     {
-      "name": "Legion - Platinum - Armor Foundry - Fabber",
+      "name": "Armor Foundry - Fabber",
       "to_build": "LegionFactoryBasicVehicle",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -104,11 +94,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
@@ -130,11 +115,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -173,7 +153,7 @@
       }
     },
     {
-      "name": "Legion - Platinum - Armor Foundry - Arrived on a new world",
+      "name": "Armor Foundry - Arrived on a new world",
       "to_build": "LegionFactoryBasicVehicle",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -187,11 +167,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PresenceOnOtherPlanet",
             "boolean": true
@@ -225,7 +200,7 @@
       }
     },
     {
-      "name": "Legion - Platinum - Advanced Armor Foundry",
+      "name": "Advanced Armor Foundry",
       "to_build": "LegionFactoryAdvancedVehicle",
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
@@ -235,11 +210,6 @@
       "builders": ["LegionVehicleBasicFabber", "LegionVehicleAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -272,11 +242,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -314,11 +279,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
@@ -351,11 +311,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
@@ -379,11 +334,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": true

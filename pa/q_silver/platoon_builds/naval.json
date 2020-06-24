@@ -1,17 +1,12 @@
 {
   "build_list": [
     {
-      "name": "Silver - Naval Attack Platoon Max",
+      "name": "Naval Attack Platoon Max",
       "to_build": "Naval_Attack_Queller",
       "instance_count": -1,
       "priority": 100,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true

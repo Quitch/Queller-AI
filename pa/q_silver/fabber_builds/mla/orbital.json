@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Silver - Orbital Launcher - Multi planet",
+      "name": "Orbital Launcher - Multi planet",
       "to_build": "OrbitalLauncher",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -11,11 +11,6 @@
       "builders": ["AnyUberBasicFabber", "AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -48,11 +43,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
@@ -79,11 +69,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetWithoutPresence",
             "boolean": true
           },
@@ -109,7 +94,7 @@
       }
     },
     {
-      "name": "Silver - Orbital Launcher - Response",
+      "name": "Orbital Launcher - Response",
       "to_build": "OrbitalLauncher",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -119,11 +104,6 @@
       "builders": ["AnyUberBasicFabber", "AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -166,7 +146,7 @@
       }
     },
     {
-      "name": "Silver - Orbital Factory",
+      "name": "Orbital Factory",
       "to_build": "OrbitalFactory",
       "instance_count": 1,
       "shared_instance_count": "OrbitalFactory",
@@ -176,11 +156,6 @@
       "builders": ["OrbitalFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -197,11 +172,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false

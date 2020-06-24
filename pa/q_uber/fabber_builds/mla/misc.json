@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Uber - Fabber Assist",
+      "name": "Fabber Assist",
       "instance_count": -1,
       "priority": 10,
       "base_sort": "FromBuilder",
@@ -13,20 +13,10 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "CurrentMetalEfficiency",
             "compare0": ">",
@@ -45,11 +35,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": true
           }
@@ -58,7 +43,7 @@
       "task_type": "BuilderAssist"
     },
     {
-      "name": "Uber - Teleporter",
+      "name": "Teleporter",
       "to_build": "Teleporter",
       "instance_count": 1,
       "priority": 710,
@@ -72,11 +57,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PresenceOnOtherPlanet",
             "boolean": true
@@ -108,7 +88,7 @@
       }
     },
     {
-      "name": "Uber - Teleport Fabber To Planet",
+      "name": "Teleport Fabber To Planet",
       "instance_count": 1,
       "priority": 801,
       "base_sort": "FromBuilder",
@@ -121,11 +101,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetWithoutFabberWithTeleporter",
             "boolean": true
@@ -147,7 +122,7 @@
       "task_type": "TeleportFabberToPlanet"
     },
     {
-      "name": "Uber - Move Fabber To Planet",
+      "name": "Move Fabber To Planet",
       "instance_count": 1,
       "priority": 800,
       "base_sort": "FromBuilder",
@@ -162,11 +137,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetWithoutPresence",
             "boolean": true
@@ -188,18 +158,13 @@
       "task_type": "TransportToPlanet"
     },
     {
-      "name": "Uber - Move Orbital Fabber To Planet",
+      "name": "Move Orbital Fabber To Planet",
       "instance_count": 1,
       "priority": 800,
       "base_sort": "FromBuilder",
       "builders": ["OrbitalFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetOrGasGiantWithoutPresence",
             "boolean": true
@@ -212,11 +177,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetOrGasGiantWithoutPresence",
             "boolean": true
@@ -237,11 +197,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetOrGasGiantWithoutPresence",
             "boolean": true
@@ -265,18 +220,13 @@
       "task_type": "OrbitalFabberMoveToPlanet"
     },
     {
-      "name": "Uber - Move Orbital Fabber To Safe Planet",
+      "name": "Move Orbital Fabber To Safe Planet",
       "instance_count": 1,
       "priority": 800,
       "base_sort": "FromBuilder",
       "builders": ["OrbitalFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "SafePlanetOrGasGiantWithoutPresence",
             "boolean": true
@@ -289,11 +239,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "SafePlanetOrGasGiantWithoutPresence",
             "boolean": true
@@ -314,11 +259,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "SafePlanetOrGasGiantWithoutPresence",
             "boolean": true

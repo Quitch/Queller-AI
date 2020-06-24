@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Gold - Walker Foundry - Commander",
+      "name": "Walker Foundry - Commander",
       "to_build": "LegionFactoryBasicBot",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -10,11 +10,6 @@
       "builders": ["LegionCommander"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -43,11 +38,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -92,7 +82,7 @@
       }
     },
     {
-      "name": "Legion - Gold - Walker Foundry - Fabbers",
+      "name": "Walker Foundry - Fabbers",
       "to_build": "LegionFactoryBasicBot",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -104,11 +94,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
@@ -136,11 +121,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -174,11 +154,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
@@ -208,7 +183,7 @@
       }
     },
     {
-      "name": "Legion - Gold - Walker Foundry - Arrived on a new world",
+      "name": "Walker Foundry - Arrived on a new world",
       "to_build": "LegionFactoryBasicBot",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -222,11 +197,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PresenceOnOtherPlanet",
             "boolean": true
@@ -260,7 +230,7 @@
       }
     },
     {
-      "name": "Legion - Gold - Advanced Walker Foundry",
+      "name": "Advanced Walker Foundry",
       "to_build": "LegionFactoryAdvancedBot",
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
@@ -274,11 +244,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -311,11 +276,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -353,11 +313,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
@@ -390,11 +345,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
@@ -418,11 +368,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": true

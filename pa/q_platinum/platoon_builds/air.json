@@ -1,17 +1,12 @@
 {
   "build_list": [
     {
-      "name": "Platinum - Bomber-Gunship Attack Platoon Small",
+      "name": "Bomber-Gunship Attack Platoon Small",
       "to_build": "BomberGunship_Attack_Queller",
       "instance_count": -1,
       "priority": 105,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -36,11 +31,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -68,17 +58,12 @@
       "task_type": "BomberAttack"
     },
     {
-      "name": "Platinum - Bomber-Gunship Attack Platoon Medium",
+      "name": "Bomber-Gunship Attack Platoon Medium",
       "to_build": "BomberGunship_Attack_Queller",
       "instance_count": -1,
       "priority": 104,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -109,11 +94,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -147,17 +127,12 @@
       "task_type": "BomberAttack"
     },
     {
-      "name": "Platinum - Bomber-Gunship Attack Platoon Large",
+      "name": "Bomber-Gunship Attack Platoon Large",
       "to_build": "BomberGunship_Attack_Queller",
       "instance_count": -1,
       "priority": 103,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -188,11 +163,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -226,17 +196,12 @@
       "task_type": "BomberAttack"
     },
     {
-      "name": "Platinum - Bomber-Gunship Attack Platoon XLarge",
+      "name": "Bomber-Gunship Attack Platoon XLarge",
       "to_build": "BomberGunship_Attack_Queller",
       "instance_count": -1,
       "priority": 102,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -267,11 +232,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -305,17 +265,12 @@
       "task_type": "BomberAttack"
     },
     {
-      "name": "Platinum - Bomber-Gunship Attack Platoon Huge",
+      "name": "Bomber-Gunship Attack Platoon Huge",
       "to_build": "BomberGunship_Attack_Queller",
       "instance_count": -1,
       "priority": 101,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -346,11 +301,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -384,17 +334,12 @@
       "task_type": "BomberAttack"
     },
     {
-      "name": "Platinum - Bomber-Gunship Attack Platoon Max",
+      "name": "Bomber-Gunship Attack Platoon Max",
       "to_build": "BomberGunship_Attack_Queller",
       "instance_count": -1,
       "priority": 100,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -422,18 +367,13 @@
       "task_type": "BomberAttack"
     },
     {
-      "name": "Platinum - Fighter Attack Platoon Small",
+      "name": "Fighter Attack Platoon Small",
       "to_build": "Fighter_Attack_Queller",
       "instance_count": -1,
       "priority": 105,
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
@@ -457,11 +397,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
@@ -487,11 +422,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
@@ -516,11 +446,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
@@ -549,18 +474,13 @@
       "task_type": "FighterAttack"
     },
     {
-      "name": "Platinum - Fighter Attack Platoon Medium",
+      "name": "Fighter Attack Platoon Medium",
       "to_build": "Fighter_Attack_Queller",
       "instance_count": -1,
       "priority": 104,
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
@@ -584,11 +504,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
@@ -614,11 +529,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
@@ -643,11 +553,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
@@ -676,18 +581,13 @@
       "task_type": "FighterAttack"
     },
     {
-      "name": "Platinum - Fighter Attack Platoon Large",
+      "name": "Fighter Attack Platoon Large",
       "to_build": "Fighter_Attack_Queller",
       "instance_count": -1,
       "priority": 103,
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
@@ -711,11 +611,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
@@ -741,11 +636,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
@@ -770,11 +660,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
@@ -803,18 +688,13 @@
       "task_type": "FighterAttack"
     },
     {
-      "name": "Platinum - Fighter Attack Platoon XLarge",
+      "name": "Fighter Attack Platoon XLarge",
       "to_build": "Fighter_Attack_Queller",
       "instance_count": -1,
       "priority": 102,
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
@@ -838,11 +718,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
@@ -868,11 +743,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
@@ -897,11 +767,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
@@ -930,18 +795,13 @@
       "task_type": "FighterAttack"
     },
     {
-      "name": "Platinum - Fighter Attack Platoon Huge",
+      "name": "Fighter Attack Platoon Huge",
       "to_build": "Fighter_Attack_Queller",
       "instance_count": -1,
       "priority": 101,
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
@@ -965,11 +825,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
@@ -995,11 +850,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
@@ -1024,11 +874,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
@@ -1057,17 +902,12 @@
       "task_type": "FighterAttack"
     },
     {
-      "name": "Platinum - Fighter Attack Platoon Max",
+      "name": "Fighter Attack Platoon Max",
       "to_build": "Fighter_Attack_Queller",
       "instance_count": -1,
       "priority": 100,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
@@ -1086,11 +926,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true

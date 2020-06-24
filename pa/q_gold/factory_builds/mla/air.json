@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Gold - Basic Air Fabber",
+      "name": "Basic Air Fabber",
       "to_build": "BasicAirFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -9,11 +9,6 @@
       "builders": ["BasicAirFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -24,11 +19,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -51,11 +41,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
@@ -73,7 +58,7 @@
       ]
     },
     {
-      "name": "Gold - Firefly",
+      "name": "Firefly",
       "to_build": "AirScout",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -81,11 +66,6 @@
       "builders": ["BasicAirFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -110,7 +90,7 @@
       ]
     },
     {
-      "name": "Gold - Hummingbird",
+      "name": "Hummingbird",
       "to_build": "BasicFighter",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -118,11 +98,6 @@
       "builders": ["BasicAirFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -145,11 +120,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
@@ -165,7 +135,7 @@
       ]
     },
     {
-      "name": "Gold - Bumblebee",
+      "name": "Bumblebee",
       "to_build": "BasicBomber",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -173,11 +143,6 @@
       "builders": ["BasicAirFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -201,11 +166,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
@@ -220,7 +180,7 @@
       ]
     },
     {
-      "name": "Gold - Advanced Air Fabber",
+      "name": "Advanced Air Fabber",
       "to_build": "AdvancedAirFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -228,11 +188,6 @@
       "builders": ["AdvancedAirFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -243,11 +198,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -270,11 +220,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "BaseThreatened",
             "boolean": false
           },
@@ -296,7 +241,7 @@
       ]
     },
     {
-      "name": "Gold - Phoenix",
+      "name": "Phoenix",
       "to_build": "AdvancedFighter",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -304,11 +249,6 @@
       "builders": ["AdvancedAirFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
@@ -324,7 +264,7 @@
       ]
     },
     {
-      "name": "Gold - Hornet",
+      "name": "Hornet",
       "to_build": "AdvancedBomber",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -332,11 +272,6 @@
       "builders": ["AdvancedAirFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -358,7 +293,7 @@
       ]
     },
     {
-      "name": "Gold - Kestrel",
+      "name": "Kestrel",
       "to_build": "AdvancedGunship",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -367,11 +302,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
@@ -386,7 +316,7 @@
       ]
     },
     {
-      "name": "Gold - Horsefly",
+      "name": "Horsefly",
       "to_build": "Strafer",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -395,11 +325,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
@@ -414,7 +339,7 @@
       ]
     },
     {
-      "name": "Gold - Wyrm",
+      "name": "Wyrm",
       "to_build": "HeavyBomber",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -423,11 +348,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           }
@@ -435,7 +355,7 @@
       ]
     },
     {
-      "name": "Gold - Angel",
+      "name": "Angel",
       "to_build": "SupportPlatform",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -443,11 +363,6 @@
       "builders": ["AdvancedAirFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false

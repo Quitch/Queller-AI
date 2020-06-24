@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Uber - Anti Nuke Silo",
+      "name": "Anti Nuke Silo",
       "to_build": "AntiNukeSilo",
       "instance_count": 1,
       "shared_instance_count": "AntiNukeSilo",
@@ -12,11 +12,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -49,11 +44,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "OtherPlanetNeedsReconAssistance",
             "boolean": true
@@ -110,7 +100,7 @@
       }
     },
     {
-      "name": "Uber - Anti Nuke Silo - Commander",
+      "name": "Anti Nuke Silo - Commander",
       "to_build": "AntiNukeSilo",
       "instance_count": 1,
       "shared_instance_count": "AntiNukeSilo",
@@ -121,11 +111,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "HaveHadANukeEvent",
             "boolean": true
@@ -148,11 +133,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "SystemToPlanetThreatRatio",
             "string0": "Nuke",
@@ -178,11 +158,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "HaveHadANukeEvent",
             "boolean": true
@@ -212,11 +187,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -270,7 +240,7 @@
       }
     },
     {
-      "name": "Uber - Anti Nuke Silo - Rush",
+      "name": "Anti Nuke Silo - Rush",
       "to_build": "AntiNukeSilo",
       "instance_count": 1,
       "shared_instance_count": "AntiNukeSilo",
@@ -281,11 +251,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -317,11 +282,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "HaveHadANukeEvent",
             "boolean": true

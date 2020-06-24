@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Bronze - Basic Naval Factory - Opening",
+      "name": "Basic Naval Factory - Opening",
       "to_build": "BasicNavalFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -10,11 +10,6 @@
       "builders": ["UberCommander"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "EnemyPresenceOnPlanet",
             "boolean": false
@@ -47,7 +42,7 @@
       }
     },
     {
-      "name": "Bronze - Basic Naval Factory",
+      "name": "Basic Naval Factory",
       "to_build": "BasicNavalFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -61,11 +56,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -87,11 +77,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -109,11 +94,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -146,7 +126,7 @@
       }
     },
     {
-      "name": "Bronze - Advanced Naval Factory",
+      "name": "Advanced Naval Factory",
       "to_build": "AdvancedNavalFactory",
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
@@ -155,11 +135,6 @@
       "builders": ["BasicNavalFabber", "AdvancedNavalFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
@@ -182,11 +157,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false

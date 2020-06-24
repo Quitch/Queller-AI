@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Uber - Mass Extractor - Alone",
+      "name": "Mass Extractor - Alone",
       "to_build": "LegionEcoBasicMetalExtractor",
       "instance_count": 3,
       "max_num_assisters": 1,
@@ -16,11 +16,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsGasGiant",
             "boolean": false
           },
@@ -46,7 +41,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Legion - Uber - Mass Extractor - Area",
+      "name": "Mass Extractor - Area",
       "to_build": "LegionEcoBasicMetalExtractor",
       "instance_count": 4,
       "max_num_assisters": 1,
@@ -61,11 +56,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsGasGiant",
             "boolean": false
           },
@@ -92,7 +82,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Legion - Uber - Mass Extractor - Desire - Area",
+      "name": "Mass Extractor - Desire - Area",
       "to_build": "LegionEcoBasicMetalExtractor",
       "instance_count": 3,
       "max_num_assisters": 1,
@@ -106,11 +96,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": false
@@ -136,7 +121,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Legion - Uber - Mass Extractor - Expand 1 - Area",
+      "name": "Mass Extractor - Expand 1 - Area",
       "to_build": "LegionEcoBasicMetalExtractor",
       "instance_count": 2,
       "max_num_assisters": 1,
@@ -151,11 +136,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsGasGiant",
             "boolean": false
           },
@@ -177,7 +157,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Legion - Uber - Mass Extractor - Expand 2 - Area",
+      "name": "Mass Extractor - Expand 2 - Area",
       "to_build": "LegionEcoBasicMetalExtractor",
       "instance_count": 3,
       "max_num_assisters": 1,
@@ -192,11 +172,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsGasGiant",
             "boolean": false
           },
@@ -218,7 +193,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Legion - Uber - Power Catalyst",
+      "name": "Power Catalyst",
       "to_build": "LegionEcoBasicEnergyPlant",
       "instance_count": 1,
       "max_num_assisters": 1,
@@ -229,11 +204,6 @@
       "builders": ["AnyLegionFabberBasic"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "CurrentEnergyEfficiency",
             "compare0": "<",
@@ -257,11 +227,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "DesireEnergy"
           },
           {
@@ -276,11 +241,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PotentialEnergyEfficiency",
             "compare0": "<",
@@ -310,7 +270,7 @@
       }
     },
     {
-      "name": "Legion - Uber - M-48A Advanced Mass Extractor - Alone",
+      "name": "M-48A Advanced Mass Extractor - Alone",
       "to_build": "LegionEcoAdvancedMetalExtractor",
       "instance_count": 2,
       "min_num_assisters": 1,
@@ -321,11 +281,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -348,7 +303,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Legion - Uber - M-48A Advanced Mass Extractor - Area",
+      "name": "M-48A Advanced Mass Extractor - Area",
       "to_build": "LegionEcoAdvancedMetalExtractor",
       "instance_count": 3,
       "min_num_assisters": 1,
@@ -359,11 +314,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PotentialMetalEfficiency",
             "compare0": "<",
@@ -387,7 +337,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Legion - Uber - M-48A Advanced Mass Extractor - Desire - Area",
+      "name": "M-48A Advanced Mass Extractor - Desire - Area",
       "to_build": "LegionEcoAdvancedMetalExtractor",
       "instance_count": 2,
       "min_num_assisters": 1,
@@ -398,11 +348,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "DesireMetal"
           },
@@ -424,7 +369,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Legion - Uber - M-48A Advanced Mass Extractor - Expand - Area",
+      "name": "M-48A Advanced Mass Extractor - Expand - Area",
       "to_build": "LegionEcoAdvancedMetalExtractor",
       "instance_count": 1,
       "min_num_assisters": 1,
@@ -435,11 +380,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "CanFindMetalSpotToBuildAdvanced",
             "boolean": true
@@ -458,7 +398,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Legion - Uber - Power Catalyst - Crash",
+      "name": "Power Catalyst - Crash",
       "to_build": "LegionEcoBasicEnergyPlant",
       "instance_count": 1,
       "max_num_assisters": 1,
@@ -469,11 +409,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "CurrentEnergyEfficiency",
             "compare0": "<",
@@ -508,7 +443,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Black Hole Generator",
+      "name": "Black Hole Generator",
       "to_build": "LegionEcoAdvancedEnergyPlant",
       "instance_count": 2,
       "min_num_assisters": 1,
@@ -520,11 +455,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PotentialEnergyEfficiency",
             "compare0": "<",
@@ -548,7 +478,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Black Hole Generator - Desire",
+      "name": "Black Hole Generator - Desire",
       "to_build": "LegionEcoAdvancedEnergyPlant",
       "instance_count": 2,
       "min_num_assisters": 1,
@@ -560,11 +490,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "DesireEnergy"
           },
@@ -586,7 +511,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Rig - Desire",
+      "name": "Rig - Desire",
       "to_build": "LegionEcoAdvancedMine",
       "instance_count": 2,
       "min_num_assisters": 3,
@@ -597,11 +522,6 @@
       "builders": ["LegionOrbitalBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
@@ -615,11 +535,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
@@ -639,7 +554,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Rig",
+      "name": "Rig",
       "to_build": "LegionEcoAdvancedMine",
       "instance_count": 2,
       "min_num_assisters": 3,
@@ -650,11 +565,6 @@
       "builders": ["LegionOrbitalBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
@@ -670,11 +580,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
@@ -696,7 +601,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Rig - Expand",
+      "name": "Rig - Expand",
       "to_build": "LegionEcoAdvancedMine",
       "instance_count": 1,
       "min_num_assisters": 3,
@@ -707,11 +612,6 @@
       "builders": ["LegionOrbitalBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
@@ -728,7 +628,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Omni Silo - Metal",
+      "name": "Omni Silo - Metal",
       "to_build": "LegionEcoBasicStorage",
       "instance_count": 1,
       "cross_planet_shared_count": true,
@@ -741,11 +641,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "MetalStorageFrac",
             "compare0": ">=",
@@ -760,11 +655,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "CurrentMetalEfficiency",
             "compare0": ">",
@@ -801,7 +691,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Omni Silo - Energy",
+      "name": "Omni Silo - Energy",
       "to_build": "LegionEcoBasicStorage",
       "instance_count": 1,
       "cross_planet_shared_count": true,
@@ -814,11 +704,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "CurrentEnergyEfficiency",
             "compare0": ">",

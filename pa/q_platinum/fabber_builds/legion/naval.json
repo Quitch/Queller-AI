@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Platinum - Ship Foundry - Commander - Opening",
+      "name": "Ship Foundry - Commander - Opening",
       "to_build": "LegionFactoryBasicNaval",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -10,11 +10,6 @@
       "builders": ["LegionCommander"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemyPresenceOnPlanet",
             "boolean": false
@@ -47,7 +42,7 @@
       }
     },
     {
-      "name": "Legion - Platinum - Ship Foundry - Commander",
+      "name": "Ship Foundry - Commander",
       "to_build": "LegionFactoryBasicNaval",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -56,11 +51,6 @@
       "builders": ["LegionCommander"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -85,11 +75,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -116,11 +101,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -145,11 +125,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -187,7 +162,7 @@
       }
     },
     {
-      "name": "Legion - Platinum - Ship Foundry - Fabber",
+      "name": "Ship Foundry - Fabber",
       "to_build": "LegionFactoryBasicNaval",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -199,11 +174,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -227,11 +197,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -258,11 +223,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -287,11 +247,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -329,7 +284,7 @@
       }
     },
     {
-      "name": "Legion - Platinum - Advanced Naval Foundry",
+      "name": "Advanced Naval Foundry",
       "to_build": "LegionFactoryAdvancedNaval",
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
@@ -339,11 +294,6 @@
       "builders": ["LegionNavalBasicFabber", "LegionNavalAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -387,11 +337,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
-          {
             "test_type": "UnableToExpand",
             "boolean": true
           },
@@ -411,11 +356,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true

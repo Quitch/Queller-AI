@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Bronze - Basic Vehicle Fabber",
+      "name": "Basic Vehicle Fabber",
       "to_build": "BasicVehicleFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -9,11 +9,6 @@
       "builders": ["BasicVehicleFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -24,11 +19,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -52,7 +42,7 @@
       ]
     },
     {
-      "name": "Bronze - Stryker",
+      "name": "Stryker",
       "to_build": "AttackVehicle",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -61,11 +51,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -75,11 +60,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -96,7 +76,7 @@
       ]
     },
     {
-      "name": "Bronze - Ant",
+      "name": "Ant",
       "to_build": "LightLaserTank",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -105,11 +85,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -119,11 +94,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -140,7 +110,7 @@
       ]
     },
     {
-      "name": "Bronze - Inferno",
+      "name": "Inferno",
       "to_build": "BasicArmorTank",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -149,11 +119,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -163,11 +128,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -184,7 +144,7 @@
       ]
     },
     {
-      "name": "Bronze - Spinner",
+      "name": "Spinner",
       "to_build": "BasicAAVehicle",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -193,11 +153,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -215,11 +170,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
@@ -242,7 +192,7 @@
       ]
     },
     {
-      "name": "Bronze - Drifter",
+      "name": "Drifter",
       "to_build": "HoverTank",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -251,21 +201,11 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -282,7 +222,7 @@
       ]
     },
     {
-      "name": "Bronze - Advanced Vehicle Fabber",
+      "name": "Advanced Vehicle Fabber",
       "to_build": "AdvancedVehicleFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -290,11 +230,6 @@
       "builders": ["AdvancedVehicleFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -305,11 +240,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -329,7 +259,7 @@
       ]
     },
     {
-      "name": "Bronze - Leveler",
+      "name": "Leveler",
       "to_build": "AdvancedLaserTank",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -338,11 +268,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -352,11 +277,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -373,7 +293,7 @@
       ]
     },
     {
-      "name": "Bronze - Vanguard",
+      "name": "Vanguard",
       "to_build": "AdvancedArmorTank",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -382,11 +302,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -396,11 +311,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -417,7 +327,7 @@
       ]
     },
     {
-      "name": "Bronze - Sheller",
+      "name": "Sheller",
       "to_build": "AdvancedArtilleryVehicle",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -426,11 +336,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -440,11 +345,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -461,7 +361,7 @@
       ]
     },
     {
-      "name": "Bronze - Storm",
+      "name": "Storm",
       "to_build": "FlakTank",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -469,11 +369,6 @@
       "builders": ["AdvancedVehicleFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -491,11 +386,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true

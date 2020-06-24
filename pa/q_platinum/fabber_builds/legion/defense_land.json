@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Platinum - Jackal - Mex",
+      "name": "Jackal - Mex",
       "to_build": "LegionDefenseBasicLand",
       "instance_count": 1,
       "shared_instance_count": "BasicLandDefenseMex",
@@ -15,11 +15,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -65,11 +60,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -136,7 +126,7 @@
       }
     },
     {
-      "name": "Legion - Platinum - Scarab - Mex",
+      "name": "Scarab - Mex",
       "to_build": "LegionDefenseBasicLandII",
       "instance_count": 1,
       "shared_instance_count": "BasicLandDefenseMex",
@@ -149,11 +139,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -199,11 +184,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -270,7 +250,7 @@
       }
     },
     {
-      "name": "Legion - Platinum - Jackal - Base",
+      "name": "Jackal - Base",
       "to_build": "LegionDefenseBasicLand",
       "instance_count": 1,
       "shared_instance_count": "BasicLandDefense",
@@ -284,11 +264,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -351,7 +326,7 @@
       }
     },
     {
-      "name": "Legion - Platinum - Scarab - Base",
+      "name": "Scarab - Base",
       "to_build": "LegionDefenseBasicLandII",
       "instance_count": 1,
       "shared_instance_count": "BasicLandDefense",
@@ -361,11 +336,6 @@
       "builders": ["LegionBotBasicFabber", "LegionVehicleBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
@@ -419,7 +389,7 @@
       }
     },
     {
-      "name": "Legion - Platinum - Hive - Base",
+      "name": "Hive - Base",
       "to_build": "LegionDefenseBasicSwarm",
       "instance_count": 1,
       "shared_instance_count": "BasicLandDefense",
@@ -429,11 +399,6 @@
       "builders": ["LegionBotBasicFabber", "LegionVehicleBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
@@ -487,7 +452,7 @@
       }
     },
     {
-      "name": "Legion - Platinum - Arsonist - Base",
+      "name": "Arsonist - Base",
       "to_build": "LegionDefenseAdvancedLand",
       "instance_count": 1,
       "shared_instance_count": "AdvancedLandDefense",
@@ -497,11 +462,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
@@ -555,7 +515,7 @@
       }
     },
     {
-      "name": "Legion - Platinum - Decimator - Base",
+      "name": "Decimator - Base",
       "to_build": "LegionDefenseAdvancedTactical",
       "instance_count": 1,
       "shared_instance_count": "AdvancedLandDefense",
@@ -565,11 +525,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
@@ -623,7 +578,7 @@
       }
     },
     {
-      "name": "Legion - Platinum - Rampart - Base",
+      "name": "Rampart - Base",
       "to_build": "LegionDefenseAdvancedShield",
       "instance_count": 1,
       "shared_instance_count": "AdvancedLandDefense",
@@ -633,11 +588,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -680,7 +630,7 @@
       }
     },
     {
-      "name": "Legion - Platinum - Rampart - Commander",
+      "name": "Rampart - Commander",
       "to_build": "LegionDefenseAdvancedShield",
       "instance_count": 1,
       "shared_instance_count": "AdvancedLandDefense",
@@ -690,11 +640,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },

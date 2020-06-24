@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Uber - Theodor - Mex",
+      "name": "Theodor - Mex",
       "to_build": "LegionDefenseBasicArtillery",
       "instance_count": 1,
       "shared_instance_count": "BasicLandDefenseMex",
@@ -19,11 +19,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -78,7 +73,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Jackal - Mex",
+      "name": "Jackal - Mex",
       "to_build": "LegionDefenseBasicLand",
       "instance_count": 1,
       "shared_instance_count": "BasicLandDefenseMex",
@@ -91,11 +86,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -161,7 +151,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Jackal - Snipe",
+      "name": "Jackal - Snipe",
       "to_build": "LegionDefenseBasicLand",
       "instance_count": 1,
       "priority": 454,
@@ -169,11 +159,6 @@
       "builders": ["LegionCommander"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -222,7 +207,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Scarab - Mex",
+      "name": "Scarab - Mex",
       "to_build": "LegionDefenseBasicLandII",
       "instance_count": 1,
       "shared_instance_count": "BasicLandDefenseMex",
@@ -238,11 +223,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -303,7 +283,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Hive - Base",
+      "name": "Hive - Base",
       "to_build": "LegionDefenseBasicSwarm",
       "instance_count": 1,
       "shared_instance_count": "BasicLandDefense",
@@ -313,11 +293,6 @@
       "builders": ["LegionBotBasicFabber", "LegionVehicleBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -375,7 +350,7 @@
       }
     },
     {
-      "name": "Uber - Jackal - Locusts",
+      "name": "Jackal - Locusts",
       "to_build": "LegionDefenseBasicLand",
       "instance_count": 1,
       "priority": 456,
@@ -388,11 +363,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -448,7 +418,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Arsonist - Base",
+      "name": "Arsonist - Base",
       "to_build": "LegionDefenseAdvancedLand",
       "instance_count": 1,
       "shared_instance_count": "AdvancedLandDefense",
@@ -458,11 +428,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -527,7 +492,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Decimator - Shielded",
+      "name": "Decimator - Shielded",
       "to_build": "LegionDefenseAdvancedTactical",
       "instance_count": 1,
       "shared_instance_count": "AdvancedLandDefense",
@@ -537,11 +502,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -604,7 +564,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Decimator - Base",
+      "name": "Decimator - Base",
       "to_build": "LegionDefenseAdvancedTactical",
       "instance_count": 1,
       "shared_instance_count": "AdvancedLandDefense",
@@ -614,11 +574,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -681,7 +636,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Rampart - Base",
+      "name": "Rampart - Base",
       "to_build": "LegionDefenseAdvancedShield",
       "instance_count": 1,
       "shared_instance_count": "AdvancedLandDefense",
@@ -691,11 +646,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -742,7 +692,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Rampart - Commander",
+      "name": "Rampart - Commander",
       "to_build": "LegionDefenseAdvancedShield",
       "instance_count": 1,
       "shared_instance_count": "AdvancedLandDefense",
@@ -752,11 +702,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -796,7 +741,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Rampart - Artillery - Base",
+      "name": "Rampart - Artillery - Base",
       "to_build": "LegionDefenseAdvancedShield",
       "instance_count": 1,
       "shared_instance_count": "AdvancedLandDefense",
@@ -807,11 +752,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -850,11 +790,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -909,7 +844,7 @@
       }
     },
     {
-      "name": "Legion - Uber - Rampart - Artillery - Commander",
+      "name": "Rampart - Artillery - Commander",
       "to_build": "LegionDefenseAdvancedShield",
       "instance_count": 1,
       "shared_instance_count": "AdvancedLandDefense",
@@ -920,11 +855,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true

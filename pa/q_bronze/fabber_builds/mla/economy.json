@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Bronze - Metal Extractor",
+      "name": "Metal Extractor",
       "to_build": "BasicMetalExtractor",
       "instance_count": 1,
       "shared_instance_count": "BasicMetal",
@@ -15,11 +15,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": false
@@ -35,11 +30,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": false
@@ -64,7 +54,7 @@
       }
     },
     {
-      "name": "Bronze - Basic Energy Generator",
+      "name": "Basic Energy Generator",
       "to_build": "BasicEnergyGenerator",
       "instance_count": 1,
       "max_num_assisters": 3,
@@ -74,11 +64,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "DesireEnergy"
           },
           {
@@ -87,11 +72,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "PotentialEnergyEfficiency",
             "compare0": "<",
@@ -115,7 +95,7 @@
       }
     },
     {
-      "name": "Bronze - Advanced Metal Extractor",
+      "name": "Advanced Metal Extractor",
       "to_build": "AdvancedMetalExtractor",
       "instance_count": 1,
       "shared_instance_count": "AdvancedMetal",
@@ -125,11 +105,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "PotentialMetalEfficiency",
             "compare0": "<",
@@ -141,11 +116,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "DesireMetal"
           },
@@ -166,7 +136,7 @@
       }
     },
     {
-      "name": "Bronze - Advanced Energy Generator",
+      "name": "Advanced Energy Generator",
       "to_build": "AdvancedEnergyGenerator",
       "instance_count": 1,
       "max_num_assisters": 3,
@@ -175,11 +145,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "PotentialEnergyEfficiency",
             "compare0": "<",
@@ -191,11 +156,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "DesireEnergy"
           },
@@ -217,7 +177,7 @@
       }
     },
     {
-      "name": "Bronze - Jig",
+      "name": "Jig",
       "to_build": "OrbitalExtractor",
       "instance_count": 1,
       "max_num_assisters": 3,
@@ -226,11 +186,6 @@
       "builders": ["OrbitalFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
@@ -247,11 +202,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
           },
@@ -267,11 +217,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
           },
@@ -284,11 +229,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
@@ -308,7 +248,7 @@
       }
     },
     {
-      "name": "Bronze - Energy Storage",
+      "name": "Energy Storage",
       "to_build": "EnergyStorage",
       "instance_count": 1,
       "shared_instance_count": "Storage",
@@ -322,11 +262,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "CurrentEnergyEfficiency",
             "compare0": ">=",
@@ -358,7 +293,7 @@
       }
     },
     {
-      "name": "Bronze - Metal Storage",
+      "name": "Metal Storage",
       "to_build": "MetalStorage",
       "instance_count": 1,
       "shared_instance_count": "Storage",
@@ -372,11 +307,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "CurrentMetalEfficiency",
             "compare0": ">=",

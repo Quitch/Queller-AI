@@ -1,18 +1,13 @@
 {
   "build_list": [
     {
-      "name": "Uber - Amphibious Attack Platoon Small",
+      "name": "Amphibious Attack Platoon Small",
       "to_build": "Amphibious_Attack_Small_Queller",
       "instance_count": -1,
       "priority": 125,
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
@@ -33,18 +28,13 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Amphibious Attack Platoon Medium",
+      "name": "Amphibious Attack Platoon Medium",
       "to_build": "Amphibious_Attack_Medium_Queller",
       "instance_count": -1,
       "priority": 124,
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
@@ -65,17 +55,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Amphibious Attack Platoon Large",
+      "name": "Amphibious Attack Platoon Large",
       "to_build": "Amphibious_Attack_Large_Queller",
       "instance_count": -1,
       "priority": 123,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -97,17 +82,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Amphibious Attack Platoon XLarge",
+      "name": "Amphibious Attack Platoon XLarge",
       "to_build": "Amphibious_Attack_XLarge_Queller",
       "instance_count": -1,
       "priority": 122,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -129,17 +109,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Amphibious Attack Platoon Huge",
+      "name": "Amphibious Attack Platoon Huge",
       "to_build": "Amphibious_Attack_Huge_Queller",
       "instance_count": -1,
       "priority": 121,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -161,17 +136,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Amphibious Attack Platoon Max",
+      "name": "Amphibious Attack Platoon Max",
       "to_build": "Amphibious_Attack_Max_Queller",
       "instance_count": -1,
       "priority": 120,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -193,17 +163,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Hover Attack Platoon Small",
+      "name": "Hover Attack Platoon Small",
       "to_build": "Hover_Attack_Small_Queller",
       "instance_count": -1,
       "priority": 125,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -225,17 +190,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Hover Attack Platoon Medium",
+      "name": "Hover Attack Platoon Medium",
       "to_build": "Hover_Attack_Medium_Queller",
       "instance_count": -1,
       "priority": 124,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -257,17 +217,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Hover Attack Platoon Large",
+      "name": "Hover Attack Platoon Large",
       "to_build": "Hover_Attack_Large_Queller",
       "instance_count": -1,
       "priority": 123,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -289,17 +244,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Hover Attack Platoon XLarge",
+      "name": "Hover Attack Platoon XLarge",
       "to_build": "Hover_Attack_XLarge_Queller",
       "instance_count": -1,
       "priority": 122,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -321,17 +271,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Hover Attack Platoon Huge",
+      "name": "Hover Attack Platoon Huge",
       "to_build": "Hover_Attack_Huge_Queller",
       "instance_count": -1,
       "priority": 121,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -353,17 +298,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Hover Attack Platoon Max",
+      "name": "Hover Attack Platoon Max",
       "to_build": "Hover_Attack_Max_Queller",
       "instance_count": -1,
       "priority": 120,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -385,7 +325,7 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Swarm Attack Platoon Small",
+      "name": "Swarm Attack Platoon Small",
       "to_build": "Swarm_Raid_Small",
       "instance_count": -1,
       "priority": 125,
@@ -393,11 +333,6 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "tank",
             "boolean": false
           },
@@ -422,17 +357,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Swarm Attack Platoon Medium",
+      "name": "Swarm Attack Platoon Medium",
       "to_build": "Swarm_Raid_Medium",
       "instance_count": -1,
       "priority": 124,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "HasPersonalityTag",
             "string0": "tank",
@@ -459,17 +389,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Swarm Attack Platoon Max",
+      "name": "Swarm Attack Platoon Max",
       "to_build": "Swarm_Raid_Max_Queller",
       "instance_count": -1,
       "priority": 123,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "HasPersonalityTag",
             "string0": "tank",
@@ -496,17 +421,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Necromancer Attack Platoon Small",
+      "name": "Necromancer Attack Platoon Small",
       "to_build": "Necromancer_Attack_Small_Queller",
       "instance_count": -1,
       "priority": 125,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -528,17 +448,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Necromancer Attack Platoon Medium",
+      "name": "Necromancer Attack Platoon Medium",
       "to_build": "Necromancer_Attack_Medium_Queller",
       "instance_count": -1,
       "priority": 124,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -560,17 +475,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Uber - Necromancer Attack Platoon Max",
+      "name": "Necromancer Attack Platoon Max",
       "to_build": "Necromancer_Attack_Max_Queller",
       "instance_count": -1,
       "priority": 123,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true

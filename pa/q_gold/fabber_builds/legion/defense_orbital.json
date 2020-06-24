@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Gold - Centurion - Mex",
+      "name": "Centurion - Mex",
       "to_build": "LegionDefenseBasicOrbitalII",
       "instance_count": 1,
       "max_num_assisters": 1,
@@ -10,11 +10,6 @@
       "builders": ["LegionOrbitalBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -68,7 +63,7 @@
       }
     },
     {
-      "name": "Legion - Gold - Centurion - Base",
+      "name": "Centurion - Base",
       "to_build": "LegionDefenseBasicOrbitalII",
       "instance_count": 1,
       "max_num_assisters": 1,
@@ -77,11 +72,6 @@
       "builders": ["LegionOrbitalBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -130,7 +120,7 @@
       }
     },
     {
-      "name": "Legion - Gold - Tola - Base",
+      "name": "Tola - Base",
       "to_build": "LegionDefenseBasicOrbital",
       "instance_count": 1,
       "priority": 456,
@@ -140,11 +130,6 @@
       "builders": ["AnyLegionFabberBasic", "AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -172,11 +157,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -230,7 +210,7 @@
       }
     },
     {
-      "name": "Legion - Gold - Tola - Lock Down The Planet",
+      "name": "Tola - Lock Down The Planet",
       "to_build": "LegionDefenseBasicOrbital",
       "instance_count": 1,
       "priority": 455,
@@ -240,11 +220,6 @@
       "builders": ["AnyLegionFabberBasic", "AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true

@@ -1,17 +1,12 @@
 {
   "build_list": [
     {
-      "name": "Bronze - Boom Attack Platoon XLarge",
+      "name": "Boom Attack Platoon XLarge",
       "to_build": "Boom_Attack_Max_Queller",
       "instance_count": -1,
       "priority": 112,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -33,17 +28,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Bronze - Land Attack Platoon XLarge",
+      "name": "Land Attack Platoon XLarge",
       "to_build": "Land_Attack_Max_Queller",
       "instance_count": -1,
       "priority": 102,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -71,17 +61,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Bronze - Land Attack Platoon Huge",
+      "name": "Land Attack Platoon Huge",
       "to_build": "Land_Attack_Max_Queller",
       "instance_count": -1,
       "priority": 101,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -109,17 +94,12 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "Bronze - Land Attack Platoon Max",
+      "name": "Land Attack Platoon Max",
       "to_build": "Land_Attack_Max_Queller",
       "instance_count": -1,
       "priority": 100,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true

@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Gold - Metal Extractor - Area",
+      "name": "Metal Extractor - Area",
       "to_build": "BasicMetalExtractor",
       "instance_count": 2,
       "max_num_assisters": 1,
@@ -15,11 +15,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": false
@@ -47,7 +42,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Gold - Metal Extractor - Desire - Area",
+      "name": "Metal Extractor - Desire - Area",
       "to_build": "BasicMetalExtractor",
       "instance_count": 2,
       "max_num_assisters": 1,
@@ -61,11 +56,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": false
@@ -91,7 +81,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Gold - Basic Energy Generator",
+      "name": "Basic Energy Generator",
       "to_build": "BasicEnergyGenerator",
       "instance_count": 1,
       "max_num_assisters": 2,
@@ -101,11 +91,6 @@
       "builders": ["AnyUberBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "DesireEnergy"
           },
@@ -121,11 +106,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PotentialEnergyEfficiency",
             "compare0": "<",
@@ -155,7 +135,7 @@
       }
     },
     {
-      "name": "Gold - Advanced Metal Extractor - Area",
+      "name": "Advanced Metal Extractor - Area",
       "to_build": "AdvancedMetalExtractor",
       "instance_count": 1,
       "min_num_assisters": 1,
@@ -167,11 +147,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "PotentialMetalEfficiency",
             "compare0": "<",
             "value0": 1
@@ -194,7 +169,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Gold - Advanced Metal Extractor - Desire - Area",
+      "name": "Advanced Metal Extractor - Desire - Area",
       "to_build": "AdvancedMetalExtractor",
       "instance_count": 1,
       "min_num_assisters": 1,
@@ -206,11 +181,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "DesireMetal"
           },
           {
@@ -231,7 +201,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Gold - Advanced Energy Generator",
+      "name": "Advanced Energy Generator",
       "to_build": "AdvancedEnergyGenerator",
       "instance_count": 1,
       "min_num_assisters": 3,
@@ -242,11 +212,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PotentialEnergyEfficiency",
             "compare0": "<",
@@ -270,7 +235,7 @@
       }
     },
     {
-      "name": "Gold - Advanced Energy Generator - Desire",
+      "name": "Advanced Energy Generator - Desire",
       "to_build": "AdvancedEnergyGenerator",
       "instance_count": 1,
       "min_num_assisters": 3,
@@ -281,11 +246,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "DesireEnergy"
           },
@@ -307,7 +267,7 @@
       }
     },
     {
-      "name": "Gold - Jig - Desire",
+      "name": "Jig - Desire",
       "to_build": "OrbitalExtractor",
       "instance_count": 1,
       "min_num_assisters": 3,
@@ -318,11 +278,6 @@
       "builders": ["OrbitalFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
@@ -336,11 +291,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
@@ -359,7 +309,7 @@
       }
     },
     {
-      "name": "Gold - Jig",
+      "name": "Jig",
       "to_build": "OrbitalExtractor",
       "instance_count": 1,
       "min_num_assisters": 3,
@@ -370,11 +320,6 @@
       "builders": ["OrbitalFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
@@ -390,11 +335,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
@@ -415,7 +355,7 @@
       }
     },
     {
-      "name": "Gold - Jig - Expand",
+      "name": "Jig - Expand",
       "to_build": "OrbitalExtractor",
       "instance_count": 1,
       "min_num_assisters": 3,
@@ -426,11 +366,6 @@
       "builders": ["OrbitalFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
@@ -447,7 +382,7 @@
       }
     },
     {
-      "name": "Gold - Energy Storage",
+      "name": "Energy Storage",
       "to_build": "EnergyStorage",
       "instance_count": 1,
       "priority": 140,
@@ -459,11 +394,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "CurrentEnergyEfficiency",
             "compare0": ">=",
@@ -495,7 +425,7 @@
       }
     },
     {
-      "name": "Gold - Metal Storage",
+      "name": "Metal Storage",
       "to_build": "MetalStorage",
       "instance_count": 1,
       "priority": 140,
@@ -507,11 +437,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "CurrentMetalEfficiency",
             "compare0": ">=",

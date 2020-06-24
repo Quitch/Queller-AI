@@ -1,17 +1,12 @@
 {
   "build_list": [
     {
-      "name": "Uber - Air Scout Platoon",
+      "name": "Air Scout Platoon",
       "to_build": "Air_Scout_Queller",
       "instance_count": -1,
       "priority": 200,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Air & Scout",
@@ -23,17 +18,12 @@
       "task_type": "Scout"
     },
     {
-      "name": "Uber - Fighter Scout Platoon",
+      "name": "Fighter Scout Platoon",
       "to_build": "Fighter_Scout_Queller",
       "instance_count": 2,
       "priority": 100,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "HasPersonalityTag",
             "string0": "ffa",
@@ -58,17 +48,12 @@
       "task_type": "Scout"
     },
     {
-      "name": "Uber - Land Scout Platoon",
+      "name": "Land Scout Platoon",
       "to_build": "Land_Scout_Queller",
       "instance_count": 5,
       "priority": 200,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemyPresenceOnPlanet",
             "boolean": false
@@ -92,11 +77,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "ThisPlanetNeedsReconAssistance",
             "boolean": true
           },
@@ -111,17 +91,12 @@
       "task_type": "Scout"
     },
     {
-      "name": "Uber - Bot Scout Platoon",
+      "name": "Bot Scout Platoon",
       "to_build": "Bot_Scout_Queller",
       "instance_count": 5,
       "priority": 200,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "HasPersonalityTag",
             "string0": "ffa",
@@ -153,17 +128,12 @@
       "task_type": "Scout"
     },
     {
-      "name": "Uber - Stryker Scout Platoon",
+      "name": "Stryker Scout Platoon",
       "to_build": "Stryker_Scout_Queller",
       "instance_count": 5,
       "priority": 200,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "HasPersonalityTag",
             "string0": "ffa",
@@ -197,17 +167,12 @@
       "task_type": "Scout"
     },
     {
-      "name": "Uber - Naval Scout Platoon",
+      "name": "Naval Scout Platoon",
       "to_build": "Naval_Scout_Queller",
       "instance_count": 5,
       "priority": 200,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "HaveFullPlanetIntel",
             "boolean": false
@@ -223,17 +188,12 @@
       "task_type": "Scout"
     },
     {
-      "name": "Uber - Orbital Recon Platoon",
+      "name": "Orbital Recon Platoon",
       "to_build": "Orbital_Scout_Queller",
       "instance_count": -1,
       "priority": 200,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": false

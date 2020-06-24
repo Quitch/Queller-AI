@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Gold - Basic Bot Factory - Commander",
+      "name": "Basic Bot Factory - Commander",
       "to_build": "BasicBotFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -10,11 +10,6 @@
       "builders": ["UberCommander"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -43,11 +38,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -92,7 +82,7 @@
       }
     },
     {
-      "name": "Gold - Basic Bot Factory - Fabbers",
+      "name": "Basic Bot Factory - Fabbers",
       "to_build": "BasicBotFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -104,11 +94,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
@@ -136,11 +121,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -185,7 +165,7 @@
       }
     },
     {
-      "name": "Gold - Basic Bot Factory - Arrived on a new world",
+      "name": "Basic Bot Factory - Arrived on a new world",
       "to_build": "BasicBotFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -199,11 +179,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PresenceOnOtherPlanet",
             "boolean": true
@@ -237,7 +212,7 @@
       }
     },
     {
-      "name": "Gold - Advanced Bot Factory",
+      "name": "Advanced Bot Factory",
       "to_build": "AdvancedBotFactory",
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
@@ -251,11 +226,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -288,11 +258,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -330,11 +295,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
@@ -367,11 +327,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
@@ -395,11 +350,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": true

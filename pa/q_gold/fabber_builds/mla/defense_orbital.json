@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Gold - Anchor - Mex",
+      "name": "Anchor - Mex",
       "to_build": "DefenseSatellite",
       "instance_count": 1,
       "max_num_assisters": 1,
@@ -10,11 +10,6 @@
       "builders": ["OrbitalFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -68,7 +63,7 @@
       }
     },
     {
-      "name": "Gold - Anchor - Base",
+      "name": "Anchor - Base",
       "to_build": "DefenseSatellite",
       "instance_count": 1,
       "max_num_assisters": 1,
@@ -77,11 +72,6 @@
       "builders": ["OrbitalFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -130,7 +120,7 @@
       }
     },
     {
-      "name": "Gold - Umbrella - Base",
+      "name": "Umbrella - Base",
       "to_build": "Umbrella",
       "instance_count": 1,
       "priority": 456,
@@ -140,11 +130,6 @@
       "builders": ["AnyUberBasicFabber", "AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -172,11 +157,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -230,7 +210,7 @@
       }
     },
     {
-      "name": "Gold - Umbrella - Lock Down The Planet",
+      "name": "Umbrella - Lock Down The Planet",
       "to_build": "Umbrella",
       "instance_count": 1,
       "priority": 455,
@@ -240,11 +220,6 @@
       "builders": ["AnyUberBasicFabber", "AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true

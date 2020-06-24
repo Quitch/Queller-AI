@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Platinum - Atlas",
+      "name": "Atlas",
       "to_build": "SeismicBot",
       "instance_count": 1,
       "min_num_assisters": 3,
@@ -16,11 +16,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -61,7 +56,7 @@
       }
     },
     {
-      "name": "Platinum - Ares",
+      "name": "Ares",
       "to_build": "FortressVehicle",
       "instance_count": 1,
       "min_num_assisters": 3,
@@ -72,11 +67,6 @@
       "builders": ["AdvancedVehicleFabber", "OrbitalFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -117,7 +107,7 @@
       }
     },
     {
-      "name": "Platinum - Zeus",
+      "name": "Zeus",
       "to_build": "TeslaGunship",
       "instance_count": 1,
       "min_num_assisters": 3,
@@ -128,11 +118,6 @@
       "builders": ["AdvancedAirFabber", "OrbitalFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "platinum",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true

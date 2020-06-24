@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Gold - Thor",
+      "name": "Thor",
       "to_build": "LegionTitanAdvancedBot",
       "instance_count": 1,
       "min_num_assisters": 3,
@@ -16,11 +16,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -61,7 +56,7 @@
       }
     },
     {
-      "name": "Legion - Gold - Odin",
+      "name": "Odin",
       "to_build": "LegionTitanAdvancedVehicle",
       "instance_count": 1,
       "min_num_assisters": 3,
@@ -72,11 +67,6 @@
       "builders": ["LegionVehicleAdvancedFabber", "LegionOrbitalBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -117,7 +107,7 @@
       }
     },
     {
-      "name": "Legion - Gold - Loki",
+      "name": "Loki",
       "to_build": "LegionTitanAdvancedAir",
       "instance_count": 1,
       "min_num_assisters": 3,
@@ -128,11 +118,6 @@
       "builders": ["LegionAirAdvancedFabber", "LegionOrbitalBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -173,7 +158,7 @@
       }
     },
     {
-      "name": "Legion - Gold - Tyr",
+      "name": "Tyr",
       "to_build": "LegionTitanAdvancedOrbital",
       "instance_count": 1,
       "min_num_assisters": 3,
@@ -184,11 +169,6 @@
       "builders": ["LegionOrbitalBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },

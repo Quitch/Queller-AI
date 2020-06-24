@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Gold - Ripple - Mex",
+      "name": "Ripple - Mex",
       "to_build": "LegionDefenseBasicNaval",
       "instance_count": 1,
       "priority": 352,
@@ -13,11 +13,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -58,11 +53,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -124,7 +114,7 @@
       }
     },
     {
-      "name": "Legion - Gold - Ripple - Base",
+      "name": "Ripple - Base",
       "to_build": "LegionDefenseBasicNaval",
       "instance_count": 1,
       "max_num_assisters": 1,
@@ -133,11 +123,6 @@
       "builders": ["LegionCommander", "LegionNavalBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -180,11 +165,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -248,7 +228,7 @@
       }
     },
     {
-      "name": "Legion - Gold - Tsunami - Base",
+      "name": "Tsunami - Base",
       "to_build": "LegionDefenseAdvancedNaval",
       "instance_count": 1,
       "priority": 479,
@@ -257,11 +237,6 @@
       "builders": ["LegionNavalAdvancedFabber", "LegionAirAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -304,11 +279,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true

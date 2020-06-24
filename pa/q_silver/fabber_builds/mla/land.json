@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Silver - Basic Bot Factory",
+      "name": "Basic Bot Factory",
       "to_build": "BasicBotFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -16,11 +16,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
@@ -42,11 +37,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -73,11 +63,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": true
@@ -110,7 +95,7 @@
       }
     },
     {
-      "name": "Silver - Basic Vehicle Factory",
+      "name": "Basic Vehicle Factory",
       "to_build": "BasicVehicleFactory",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -125,11 +110,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
@@ -151,11 +131,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -182,11 +157,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": true
@@ -219,7 +189,7 @@
       }
     },
     {
-      "name": "Silver - Advanced Bot Factory",
+      "name": "Advanced Bot Factory",
       "to_build": "AdvancedBotFactory",
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
@@ -232,11 +202,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
@@ -263,11 +228,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -300,11 +260,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -352,7 +307,7 @@
       }
     },
     {
-      "name": "Silver - Advanced Vehicle Factory",
+      "name": "Advanced Vehicle Factory",
       "to_build": "AdvancedVehicleFactory",
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
@@ -361,11 +316,6 @@
       "builders": ["BasicVehicleFabber", "AdvancedVehicleFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
@@ -386,11 +336,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -417,11 +362,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false

@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Uber - Pelter - Mex",
+      "name": "Pelter - Mex",
       "to_build": "BasicArtillery",
       "instance_count": 1,
       "shared_instance_count": "BasicLandDefenseMex",
@@ -19,11 +19,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -78,7 +73,7 @@
       }
     },
     {
-      "name": "Uber - Single Laser Defense Tower - Mex",
+      "name": "Single Laser Defense Tower - Mex",
       "to_build": "BasicLandDefenseSingle",
       "instance_count": 1,
       "shared_instance_count": "BasicLandDefenseMex",
@@ -92,11 +87,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -157,7 +147,7 @@
       }
     },
     {
-      "name": "Uber - Single Laser Defense Tower - Snipe",
+      "name": "Single Laser Defense Tower - Snipe",
       "to_build": "BasicLandDefenseSingle",
       "instance_count": 1,
       "priority": 454,
@@ -165,11 +155,6 @@
       "builders": ["UberCommander"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -218,7 +203,7 @@
       }
     },
     {
-      "name": "Uber - Laser Defense Tower - Mex",
+      "name": "Laser Defense Tower - Mex",
       "to_build": "BasicLandDefense",
       "instance_count": 1,
       "shared_instance_count": "BasicLandDefenseMex",
@@ -234,11 +219,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -294,7 +274,7 @@
       }
     },
     {
-      "name": "Uber - Laser Defense Tower - Locusts",
+      "name": "Laser Defense Tower - Locusts",
       "to_build": "BasicLandDefense",
       "instance_count": 1,
       "priority": 456,
@@ -307,11 +287,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -367,7 +342,7 @@
       }
     },
     {
-      "name": "Uber - Advanced Laser Defense Tower - Base",
+      "name": "Advanced Laser Defense Tower - Base",
       "to_build": "AdvancedLandDefense",
       "instance_count": 1,
       "priority": 278,
@@ -376,11 +351,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -443,7 +413,7 @@
       }
     },
     {
-      "name": "Uber - Catapult - Rush",
+      "name": "Catapult - Rush",
       "to_build": "TML",
       "instance_count": 1,
       "priority": 456,
@@ -453,11 +423,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -492,11 +457,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -529,11 +489,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -567,11 +522,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -598,11 +548,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -651,7 +596,7 @@
       }
     },
     {
-      "name": "Uber - Catapult - Base",
+      "name": "Catapult - Base",
       "to_build": "TML",
       "instance_count": 1,
       "priority": 279,
@@ -660,11 +605,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -701,11 +641,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -744,11 +679,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -782,11 +712,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -819,11 +744,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -866,7 +786,7 @@
       }
     },
     {
-      "name": "Uber - Catapult - Protect the Commander",
+      "name": "Catapult - Protect the Commander",
       "to_build": "TML",
       "instance_count": 1,
       "priority": 456,
@@ -876,11 +796,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },

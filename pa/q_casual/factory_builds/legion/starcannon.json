@@ -44,11 +44,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "casual",
-            "boolean": true
-          },
-          {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Land & Mobile & AirDefense",
             "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
@@ -66,11 +61,6 @@
       "builders": ["LegionOrbitalAdvancedCannon"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "casual",
-            "boolean": true
-          },
           {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Land & Mobile & (Construction | Scout) - Fabber",

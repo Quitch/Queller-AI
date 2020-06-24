@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Bronze - Flyer Foundry",
+      "name": "Flyer Foundry",
       "to_build": "LegionFactoryBasicAir",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -15,11 +15,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -38,11 +33,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": true
@@ -75,7 +65,7 @@
       }
     },
     {
-      "name": "Legion - Bronze - Flyer Foundry - Stuck",
+      "name": "Flyer Foundry - Stuck",
       "to_build": "LegionFactoryBasicAir",
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
@@ -85,11 +75,6 @@
       "builders": ["LegionCommander", "LegionNavalBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -128,7 +113,7 @@
       }
     },
     {
-      "name": "Legion - Bronze - Advanced Air Foundry",
+      "name": "Advanced Air Foundry",
       "to_build": "LegionFactoryAdvancedAir",
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
@@ -137,11 +122,6 @@
       "builders": ["LegionAirBasicFabber", "LegionAirAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
@@ -164,11 +144,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false

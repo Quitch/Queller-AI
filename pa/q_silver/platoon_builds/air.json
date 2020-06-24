@@ -1,17 +1,12 @@
 {
   "build_list": [
     {
-      "name": "Silver - Bomber-Gunship Attack Platoon",
+      "name": "Bomber-Gunship Attack Platoon",
       "to_build": "BomberGunship_Attack_Queller",
       "instance_count": -1,
       "priority": 103,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -39,17 +34,12 @@
       "task_type": "BomberAttack"
     },
     {
-      "name": "Silver - Fighter Attack Platoon",
+      "name": "Fighter Attack Platoon",
       "to_build": "Fighter_Attack_Queller",
       "instance_count": -1,
       "priority": 103,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
@@ -68,11 +58,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true

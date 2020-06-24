@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Gold - Fabrication Flyer",
+      "name": "Fabrication Flyer",
       "to_build": "LegionAirBasicFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -9,11 +9,6 @@
       "builders": ["LegionFactoryBasicAir"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -24,11 +19,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -51,11 +41,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
@@ -73,7 +58,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Marauder - Scout",
+      "name": "Marauder - Scout",
       "to_build": "LegionAirBasicGunship",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -81,11 +66,6 @@
       "builders": ["LegionFactoryBasicAir"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -110,7 +90,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Marauder - Fight",
+      "name": "Marauder - Fight",
       "to_build": "LegionAirBasicGunship",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -118,11 +98,6 @@
       "builders": ["LegionFactoryBasicAir"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -144,7 +119,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Nova",
+      "name": "Nova",
       "to_build": "LegionAirBasicBomb",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -152,11 +127,6 @@
       "builders": ["LegionFactoryBasicAir"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
@@ -179,7 +149,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Scythe",
+      "name": "Scythe",
       "to_build": "LegionAirBasicFighter",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -187,11 +157,6 @@
       "builders": ["LegionFactoryBasicAir"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -214,11 +179,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
@@ -234,7 +194,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Dauntless",
+      "name": "Dauntless",
       "to_build": "LegionAirBasicBomber",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -242,11 +202,6 @@
       "builders": ["LegionFactoryBasicAir", "LegionFactoryAdvancedAir"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -269,11 +224,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -295,7 +245,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Advanced Fabrication Flyer",
+      "name": "Advanced Fabrication Flyer",
       "to_build": "LegionAirAdvancedFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -303,11 +253,6 @@
       "builders": ["LegionFactoryAdvancedAir"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -318,11 +263,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -345,11 +285,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
-          {
             "test_type": "BaseThreatened",
             "boolean": false
           },
@@ -371,7 +306,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Infiltrator",
+      "name": "Infiltrator",
       "to_build": "LegionAirAdvancedScout",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -379,11 +314,6 @@
       "builders": ["AnyLegionAirFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -412,7 +342,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Firebird",
+      "name": "Firebird",
       "to_build": "LegionAirAdvancedFighter",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -420,11 +350,6 @@
       "builders": ["LegionFactoryAdvancedAir"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
@@ -440,7 +365,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Lockheed",
+      "name": "Lockheed",
       "to_build": "LegionAirAdvancedGunship",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -448,11 +373,6 @@
       "builders": ["LegionFactoryAdvancedAir"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -474,7 +394,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Salamander",
+      "name": "Salamander",
       "to_build": "LegionAirAdvancedBomber",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -482,11 +402,6 @@
       "builders": ["LegionFactoryAdvancedAir"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
@@ -508,7 +423,7 @@
       ]
     },
     {
-      "name": "Legion - Gold - Meteor",
+      "name": "Meteor",
       "to_build": "LegionAirAdvancedCarrier",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -516,11 +431,6 @@
       "builders": ["LegionFactoryAdvancedAir"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "gold",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false

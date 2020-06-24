@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Uber - Metal Extractor - Alone",
+      "name": "Metal Extractor - Alone",
       "to_build": "BasicMetalExtractor",
       "instance_count": 3,
       "max_num_assisters": 1,
@@ -16,11 +16,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsGasGiant",
             "boolean": false
           },
@@ -46,7 +41,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Uber - Metal Extractor - Area",
+      "name": "Metal Extractor - Area",
       "to_build": "BasicMetalExtractor",
       "instance_count": 4,
       "max_num_assisters": 1,
@@ -61,11 +56,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsGasGiant",
             "boolean": false
           },
@@ -92,7 +82,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Uber - Metal Extractor - Desire - Area",
+      "name": "Metal Extractor - Desire - Area",
       "to_build": "BasicMetalExtractor",
       "instance_count": 4,
       "max_num_assisters": 1,
@@ -106,11 +96,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": false
@@ -136,7 +121,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Uber - Metal Extractor - Expand 1 - Area",
+      "name": "Metal Extractor - Expand 1 - Area",
       "to_build": "BasicMetalExtractor",
       "instance_count": 2,
       "max_num_assisters": 1,
@@ -151,11 +136,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsGasGiant",
             "boolean": false
           },
@@ -177,7 +157,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Uber - Metal Extractor - Expand 2 - Area",
+      "name": "Metal Extractor - Expand 2 - Area",
       "to_build": "BasicMetalExtractor",
       "instance_count": 3,
       "max_num_assisters": 1,
@@ -192,11 +172,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsGasGiant",
             "boolean": false
           },
@@ -218,7 +193,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Uber - Basic Energy Generator",
+      "name": "Basic Energy Generator",
       "to_build": "BasicEnergyGenerator",
       "instance_count": 1,
       "max_num_assisters": 1,
@@ -229,11 +204,6 @@
       "builders": ["AnyUberBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "CurrentEnergyEfficiency",
             "compare0": "<",
@@ -257,11 +227,6 @@
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
-          {
             "test_type": "DesireEnergy"
           },
           {
@@ -276,11 +241,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PotentialEnergyEfficiency",
             "compare0": "<",
@@ -310,7 +270,7 @@
       }
     },
     {
-      "name": "Uber - Advanced Metal Extractor - Alone",
+      "name": "Advanced Metal Extractor - Alone",
       "to_build": "AdvancedMetalExtractor",
       "instance_count": 2,
       "min_num_assisters": 1,
@@ -321,11 +281,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -348,7 +303,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Uber - Advanced Metal Extractor - Area",
+      "name": "Advanced Metal Extractor - Area",
       "to_build": "AdvancedMetalExtractor",
       "instance_count": 3,
       "min_num_assisters": 1,
@@ -359,11 +314,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PotentialMetalEfficiency",
             "compare0": "<",
@@ -387,7 +337,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Uber - Advanced Metal Extractor - Desire - Area",
+      "name": "Advanced Metal Extractor - Desire - Area",
       "to_build": "AdvancedMetalExtractor",
       "instance_count": 2,
       "min_num_assisters": 1,
@@ -398,11 +348,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "DesireMetal"
           },
@@ -424,7 +369,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Uber - Advanced Metal Extractor - Expand - Area",
+      "name": "Advanced Metal Extractor - Expand - Area",
       "to_build": "AdvancedMetalExtractor",
       "instance_count": 1,
       "min_num_assisters": 1,
@@ -435,11 +380,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "CanFindMetalSpotToBuildAdvanced",
             "boolean": true
@@ -458,7 +398,7 @@
       "task_type": "AreaBuild"
     },
     {
-      "name": "Uber - Advanced Energy Generator",
+      "name": "Advanced Energy Generator",
       "to_build": "AdvancedEnergyGenerator",
       "instance_count": 2,
       "shared_instance_count": "AdvancedEnergy",
@@ -470,11 +410,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PotentialEnergyEfficiency",
             "compare0": "<",
@@ -498,7 +433,7 @@
       }
     },
     {
-      "name": "Uber - Basic Energy Generator - Crash",
+      "name": "Basic Energy Generator - Crash",
       "to_build": "BasicEnergyGenerator",
       "instance_count": 2,
       "shared_instance_count": "AdvancedEnergy",
@@ -510,11 +445,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "CurrentEnergyEfficiency",
             "compare0": "<",
@@ -543,7 +473,7 @@
       }
     },
     {
-      "name": "Uber - Advanced Energy Generator - Desire",
+      "name": "Advanced Energy Generator - Desire",
       "to_build": "AdvancedEnergyGenerator",
       "instance_count": 2,
       "min_num_assisters": 1,
@@ -555,11 +485,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "DesireEnergy"
           },
@@ -581,7 +506,7 @@
       }
     },
     {
-      "name": "Uber - Jig - Desire",
+      "name": "Jig - Desire",
       "to_build": "OrbitalExtractor",
       "instance_count": 2,
       "min_num_assisters": 3,
@@ -592,11 +517,6 @@
       "builders": ["OrbitalFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
@@ -610,11 +530,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
@@ -634,7 +549,7 @@
       }
     },
     {
-      "name": "Uber - Jig",
+      "name": "Jig",
       "to_build": "OrbitalExtractor",
       "instance_count": 2,
       "min_num_assisters": 3,
@@ -645,11 +560,6 @@
       "builders": ["OrbitalFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
@@ -665,11 +575,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
@@ -691,7 +596,7 @@
       }
     },
     {
-      "name": "Uber - Jig - Expand",
+      "name": "Jig - Expand",
       "to_build": "OrbitalExtractor",
       "instance_count": 1,
       "min_num_assisters": 3,
@@ -702,11 +607,6 @@
       "builders": ["OrbitalFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
@@ -723,7 +623,7 @@
       }
     },
     {
-      "name": "Uber - Energy Storage",
+      "name": "Energy Storage",
       "to_build": "EnergyStorage",
       "instance_count": 1,
       "cross_planet_shared_count": true,
@@ -736,11 +636,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "CurrentEnergyEfficiency",
             "compare0": ">",
@@ -774,7 +669,7 @@
       }
     },
     {
-      "name": "Uber - Metal Storage",
+      "name": "Metal Storage",
       "to_build": "MetalStorage",
       "instance_count": 1,
       "cross_planet_shared_count": true,
@@ -787,11 +682,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "MetalStorageFrac",
             "compare0": ">=",
@@ -806,11 +696,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "uber",
-            "boolean": true
-          },
           {
             "test_type": "CurrentMetalEfficiency",
             "compare0": ">",

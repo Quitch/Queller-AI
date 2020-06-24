@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Silver - Shredder - Mex",
+      "name": "Shredder - Mex",
       "to_build": "LegionDefenseBasicAir",
       "instance_count": 1,
       "shared_instance_count": "Defence",
@@ -11,11 +11,6 @@
       "builders": ["AnyLegionFabberBasic"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -67,7 +62,7 @@
       }
     },
     {
-      "name": "Legion - Silver - Jackal - Mex",
+      "name": "Jackal - Mex",
       "to_build": "LegionDefenseBasicLand",
       "instance_count": 1,
       "shared_instance_count": "Defence",
@@ -77,11 +72,6 @@
       "builders": ["AnyLegionFabberBasic"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -137,7 +127,7 @@
       }
     },
     {
-      "name": "Legion - Silver - Scarab - Mex",
+      "name": "Scarab - Mex",
       "to_build": "LegionDefenseBasicLandII",
       "instance_count": 1,
       "shared_instance_count": "Defence",
@@ -147,11 +137,6 @@
       "builders": ["AnyLegionFabberBasic"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -207,7 +192,7 @@
       }
     },
     {
-      "name": "Legion - Silver - Hive - Mex",
+      "name": "Hive - Mex",
       "to_build": "LegionDefenseBasicSwarm",
       "instance_count": 1,
       "shared_instance_count": "Defence",
@@ -217,11 +202,6 @@
       "builders": ["LegionBotBasicFabber", "LegionVehicleBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -277,7 +257,7 @@
       }
     },
     {
-      "name": "Legion - Silver - Ripple - Mex",
+      "name": "Ripple - Mex",
       "to_build": "LegionDefenseBasicNaval",
       "instance_count": 1,
       "shared_instance_count": "Defence",
@@ -287,11 +267,6 @@
       "builders": ["LegionAirBasicFabber", "LegionNavalBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -347,7 +322,7 @@
       }
     },
     {
-      "name": "Legion - Silver - Shredder - Base",
+      "name": "Shredder - Base",
       "to_build": "LegionDefenseBasicAir",
       "instance_count": 1,
       "shared_instance_count": "Defence",
@@ -357,11 +332,6 @@
       "builders": ["LegionCommander", "AnyLegionFabberBasic"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -414,7 +384,7 @@
       }
     },
     {
-      "name": "Legion - Silver - Jackal - Base",
+      "name": "Jackal - Base",
       "to_build": "LegionDefenseBasicLand",
       "instance_count": 1,
       "shared_instance_count": "Defence",
@@ -424,11 +394,6 @@
       "builders": ["LegionCommander", "AnyLegionFabberBasic"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -485,7 +450,7 @@
       }
     },
     {
-      "name": "Legion - Silver - Scarab - Base",
+      "name": "Scarab - Base",
       "to_build": "LegionDefenseBasicLandII",
       "instance_count": 1,
       "shared_instance_count": "Defence",
@@ -495,11 +460,6 @@
       "builders": ["AnyLegionFabberBasic"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -550,7 +510,7 @@
       }
     },
     {
-      "name": "Legion - Silver - Hive - Base",
+      "name": "Hive - Base",
       "to_build": "LegionDefenseBasicSwarm",
       "instance_count": 1,
       "shared_instance_count": "Defence",
@@ -560,11 +520,6 @@
       "builders": ["LegionBotBasicFabber", "LegionVehicleBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -615,7 +570,7 @@
       }
     },
     {
-      "name": "Legion - Silver - Ripple - Base",
+      "name": "Ripple - Base",
       "to_build": "LegionDefenseBasicNaval",
       "instance_count": 1,
       "shared_instance_count": "Defence",
@@ -629,11 +584,6 @@
       ],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -669,11 +619,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -730,7 +675,7 @@
       }
     },
     {
-      "name": "Legion - Silver - Archer - Base",
+      "name": "Archer - Base",
       "to_build": "LegionDefenseAdvancedAir",
       "instance_count": 1,
       "shared_instance_count": "Defence",
@@ -740,11 +685,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -797,7 +737,7 @@
       }
     },
     {
-      "name": "Legion - Silver - Arsonist - Base",
+      "name": "Arsonist - Base",
       "to_build": "LegionDefenseAdvancedLand",
       "instance_count": 1,
       "shared_instance_count": "Defence",
@@ -807,11 +747,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -862,7 +797,7 @@
       }
     },
     {
-      "name": "Legion - Silver - Decimator - Base",
+      "name": "Decimator - Base",
       "to_build": "LegionDefenseAdvancedTactical",
       "instance_count": 1,
       "shared_instance_count": "Defence",
@@ -872,11 +807,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -927,7 +857,7 @@
       }
     },
     {
-      "name": "Legion - Silver - Rampart - Base",
+      "name": "Rampart - Base",
       "to_build": "LegionDefenseAdvancedShield",
       "instance_count": 1,
       "shared_instance_count": "Defence",
@@ -937,11 +867,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -988,7 +913,7 @@
       }
     },
     {
-      "name": "Legion - Silver - Tsunami - Base",
+      "name": "Tsunami - Base",
       "to_build": "LegionDefenseAdvancedNaval",
       "instance_count": 1,
       "shared_instance_count": "Defence",
@@ -998,11 +923,6 @@
       "builders": ["LegionNavalAdvancedFabber", "LegionAirAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -1038,11 +958,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -1099,7 +1014,7 @@
       }
     },
     {
-      "name": "Legion - Silver - Centurion - Base",
+      "name": "Centurion - Base",
       "to_build": "LegionDefenseBasicOrbitalII",
       "instance_count": 1,
       "max_num_assisters": 2,
@@ -1108,11 +1023,6 @@
       "builders": ["LegionOrbitalBasicFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -1155,7 +1065,7 @@
       }
     },
     {
-      "name": "Legion - Silver - Tola - Base",
+      "name": "Tola - Base",
       "to_build": "LegionDefenseBasicOrbital",
       "instance_count": 1,
       "priority": 378,
@@ -1164,11 +1074,6 @@
       "builders": ["AnyLegionFabberBasic", "AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -1196,11 +1101,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -1254,7 +1154,7 @@
       }
     },
     {
-      "name": "Silver - Tola - Lock Down The Planet",
+      "name": "Tola - Lock Down The Planet",
       "to_build": "LegionDefenseBasicOrbital",
       "instance_count": 1,
       "max_num_assisters": 2,
@@ -1263,11 +1163,6 @@
       "builders": ["AnyLegionFabberBasic", "AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -1320,7 +1215,7 @@
       }
     },
     {
-      "name": "Legion - Silver - Iron Dome",
+      "name": "Iron Dome",
       "to_build": "LegionDefenseAdvancedAntiNukeSilo",
       "instance_count": 1,
       "shared_instance_count": "AntiNuke",
@@ -1330,11 +1225,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -1388,7 +1278,7 @@
       }
     },
     {
-      "name": "Legion - Silver - Iron Dome - Rush",
+      "name": "Iron Dome - Rush",
       "to_build": "LegionDefenseAdvancedAntiNukeSilo",
       "instance_count": 1,
       "shared_instance_count": "AntiNuke",
@@ -1398,11 +1288,6 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "HaveHadANukeEvent",
             "boolean": true
@@ -1426,11 +1311,6 @@
           }
         ],
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "silver",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },

@@ -1,17 +1,12 @@
 {
   "build_list": [
     {
-      "name": "Bronze - Naval Attack Platoon",
+      "name": "Naval Attack Platoon",
       "to_build": "Naval_Attack_Queller",
       "instance_count": -1,
       "priority": 100,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bronze",
-            "boolean": true
-          },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
