@@ -1,0 +1,466 @@
+{
+  "build_list": [
+    {
+      "name": "Basic Vehicle Fabber",
+      "to_build": "BasicVehicleFabber",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 100,
+      "builders": ["BasicVehicleFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "MetMinBasicFabberCount",
+            "boolean": false
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicVehicleFabber"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Basic & Land",
+            "unit_type_string1": "Factory & Basic & Land",
+            "compare0": "<",
+            "value0": 2
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicVehicleFabber"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Fabber & Basic",
+            "compare0": "<",
+            "value0": 35
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Stryker",
+      "to_build": "AttackVehicle",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["BasicVehicleFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Ant",
+      "to_build": "LightLaserTank",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["BasicVehicleFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Inferno",
+      "to_build": "BasicArmorTank",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["BasicVehicleFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & (Heavy - (Bot & Basic))",
+            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
+            "compare0": "<",
+            "value0": 0.4
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & (Heavy - (Bot & Basic))",
+            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
+            "compare0": "<",
+            "value0": 0.4
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Spinner",
+      "to_build": "BasicAAVehicle",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["BasicVehicleFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & AirDefense",
+            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
+            "compare0": "<",
+            "value0": 0.2
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & AirDefense",
+            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
+            "compare0": "<",
+            "value0": 0.2
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Drifter",
+      "to_build": "HoverTank",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 96,
+      "builders": ["BasicVehicleFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Advanced Vehicle Fabber",
+      "to_build": "AdvancedVehicleFabber",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 200,
+      "builders": ["AdvancedVehicleFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "MetMinAdvancedFabberCount",
+            "boolean": false
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedVehicleFabber"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Advanced & Land",
+            "unit_type_string1": "Factory & Advanced & Land",
+            "compare0": "<",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedVehicleFabber"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Fabber & Advanced",
+            "compare0": "<",
+            "value0": 35
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Leveler",
+      "to_build": "AdvancedLaserTank",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": ["AdvancedVehicleFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Vanguard",
+      "to_build": "AdvancedArmorTank",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": ["AdvancedVehicleFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & (Heavy - (Bot & Basic))",
+            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
+            "compare0": "<",
+            "value0": 0.4
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & (Heavy - (Bot & Basic))",
+            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
+            "compare0": "<",
+            "value0": 0.4
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Sheller",
+      "to_build": "AdvancedArtilleryVehicle",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": ["AdvancedVehicleFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Storm",
+      "to_build": "FlakTank",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": ["AdvancedVehicleFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & AirDefense",
+            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
+            "compare0": "<",
+            "value0": 0.2
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & AirDefense",
+            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
+            "compare0": "<",
+            "value0": 0.2
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": true
+          }
+        ]
+      ]
+    }
+  ]
+}

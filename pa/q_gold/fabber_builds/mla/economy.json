@@ -1,0 +1,471 @@
+{
+  "build_list": [
+    {
+      "name": "Metal Extractor - Area",
+      "to_build": "BasicMetalExtractor",
+      "instance_count": 2,
+      "max_num_assisters": 1,
+      "shared_instance_count": "BasicMetal",
+      "priority": 261,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber",
+        "OrbitalFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
+            "test_type": "PotentialMetalEfficiency",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildBasic",
+            "boolean": true
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 110,
+          "value": 50
+        }
+      },
+      "task_type": "AreaBuild"
+    },
+    {
+      "name": "Metal Extractor - Desire - Area",
+      "to_build": "BasicMetalExtractor",
+      "instance_count": 2,
+      "max_num_assisters": 1,
+      "shared_instance_count": "BasicMetal",
+      "priority": 501,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber",
+        "OrbitalFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
+            "test_type": "DesireMetal"
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildBasic",
+            "boolean": true
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 110,
+          "value": 50
+        }
+      },
+      "task_type": "AreaBuild"
+    },
+    {
+      "name": "Basic Energy Generator",
+      "to_build": "BasicEnergyGenerator",
+      "instance_count": 1,
+      "max_num_assisters": 2,
+      "shared_instance_count": "BasicEnergy",
+      "priority": 500,
+      "base_sort": "FromBuilder",
+      "builders": ["AnyUberBasicFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "DesireEnergy"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Basic - Orbital",
+            "compare0": ">",
+            "value0": 2
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicEnergyGenerator"
+          }
+        ],
+        [
+          {
+            "test_type": "PotentialEnergyEfficiency",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Basic - Orbital",
+            "compare0": ">",
+            "value0": 2
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicEnergyGenerator"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Advanced Metal Extractor - Area",
+      "to_build": "AdvancedMetalExtractor",
+      "instance_count": 1,
+      "min_num_assisters": 1,
+      "max_num_assisters": 3,
+      "shared_instance_count": "AdvancedMetal",
+      "priority": 270,
+      "base_sort": "FromBuilder",
+      "builders": ["AnyUberAdvancedFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PotentialMetalEfficiency",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildAdvanced",
+            "boolean": true
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 110,
+          "value": 50
+        }
+      },
+      "task_type": "AreaBuild"
+    },
+    {
+      "name": "Advanced Metal Extractor - Desire - Area",
+      "to_build": "AdvancedMetalExtractor",
+      "instance_count": 1,
+      "min_num_assisters": 1,
+      "max_num_assisters": 3,
+      "shared_instance_count": "AdvancedMetal",
+      "priority": 510,
+      "base_sort": "FromBuilder",
+      "builders": ["AnyUberAdvancedFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "DesireMetal"
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildAdvanced",
+            "boolean": true
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 110,
+          "value": 50
+        }
+      },
+      "task_type": "AreaBuild"
+    },
+    {
+      "name": "Advanced Energy Generator",
+      "to_build": "AdvancedEnergyGenerator",
+      "instance_count": 1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "shared_instance_count": "AdvancedEnergy",
+      "priority": 269,
+      "base_sort": "FromBuilder",
+      "builders": ["AnyUberAdvancedFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PotentialEnergyEfficiency",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedEnergyGenerator"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 10,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Advanced Energy Generator - Desire",
+      "to_build": "AdvancedEnergyGenerator",
+      "instance_count": 1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "shared_instance_count": "AdvancedEnergy",
+      "priority": 508,
+      "base_sort": "FromBuilder",
+      "builders": ["AnyUberAdvancedFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "DesireEnergy"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedEnergyGenerator"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 10,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Jig - Desire",
+      "to_build": "OrbitalExtractor",
+      "instance_count": 1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "shared_instance_count": "OrbitalEco",
+      "priority": 509,
+      "base_sort": "FromBuilder",
+      "builders": ["OrbitalFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
+          {
+            "test_type": "DesireEnergy"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "OrbitalExtractor"
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
+          {
+            "test_type": "DesireMetal"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "OrbitalExtractor"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 50
+      }
+    },
+    {
+      "name": "Jig",
+      "to_build": "OrbitalExtractor",
+      "instance_count": 1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "shared_instance_count": "OrbitalEco",
+      "priority": 260,
+      "base_sort": "FromBuilder",
+      "builders": ["OrbitalFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
+          {
+            "test_type": "PotentialMetalEfficiency",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "OrbitalExtractor"
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
+          {
+            "test_type": "PotentialEnergyEfficiency",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "OrbitalExtractor"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 50
+      }
+    },
+    {
+      "name": "Jig - Expand",
+      "to_build": "OrbitalExtractor",
+      "instance_count": 1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "shared_instance_count": "OrbitalEco",
+      "priority": 100,
+      "base_sort": "FromBuilder",
+      "builders": ["OrbitalFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "OrbitalExtractor"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 75,
+        "placement_type": "FromBaseCenter"
+      }
+    },
+    {
+      "name": "Energy Storage",
+      "to_build": "EnergyStorage",
+      "instance_count": 1,
+      "priority": 140,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "UberCommander",
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "EnergyStorageToProductionRatio",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "EnergyStorage"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 10,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 110,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Metal Storage",
+      "to_build": "MetalStorage",
+      "instance_count": 1,
+      "priority": 140,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "UberCommander",
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "MetalStorageToProductionRatio",
+            "compare0": "<",
+            "value0": 8
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "MetalStorage"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 10,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 110,
+          "value": 50
+        }
+      }
+    }
+  ]
+}

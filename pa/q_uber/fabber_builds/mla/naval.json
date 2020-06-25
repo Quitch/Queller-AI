@@ -1,0 +1,489 @@
+{
+  "build_list": [
+    {
+      "name": "Basic Naval Factory - Opening",
+      "to_build": "BasicNavalFactory",
+      "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "max_num_assisters": 2,
+      "priority": 374,
+      "base_sort": "FromMainBase",
+      "builders": ["UberCommander"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemyPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Basic Naval Factory - Commander",
+      "to_build": "BasicNavalFactory",
+      "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "priority": 376,
+      "base_sort": "FromMainBase",
+      "builders": ["UberCommander"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicNavalFactory"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Naval",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicNavalFactory"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Sub",
+            "string1": "AntiSub",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicNavalFactory"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Naval",
+            "string1": "AntiSub",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Naval | (Sub - Land)",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Naval",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 5,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Basic Naval Factory - Fabber",
+      "to_build": "BasicNavalFactory",
+      "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "priority": 376,
+      "min_num_assisters": 2,
+      "max_num_assisters": 4,
+      "base_sort": "FromBuilder",
+      "builders": ["AnyUberBasicFabber", "AnyUberAdvancedFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicNavalFactory"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Naval",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicNavalFactory"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Sub",
+            "string1": "AntiSub",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicNavalFactory"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Naval",
+            "string1": "AntiSub",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "naval",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Naval | (Sub - Land)",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Naval",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 5,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Advanced Naval Factory",
+      "to_build": "AdvancedNavalFactory",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedFactory",
+      "priority": 479,
+      "min_num_assisters": 5,
+      "max_num_assisters": 8,
+      "builders": ["BasicNavalFabber", "AdvancedNavalFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Advanced - Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Basic & Fabber) - Orbital - Land",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedNavalFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Sub",
+            "string1": "AntiSub",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedNavalFactory"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Basic & Fabber) - Orbital - Land",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedNavalFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnableToExpand",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Advanced - Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedNavalFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 5,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Advanced Naval Factory - Excess Eco",
+      "to_build": "AdvancedNavalFactory",
+      "instance_count": 2,
+      "shared_instance_count": "AdvancedFactory",
+      "priority": 475,
+      "min_num_assisters": 6,
+      "max_num_assisters": 9,
+      "base_sort": "FromBuilder",
+      "builders": ["BasicNavalFabber", "AdvancedNavalFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "MetalStorageFrac",
+            "compare0": ">",
+            "value0": 0.3
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Sub",
+            "string1": "AntiSub",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedNavalFactory"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Basic & Fabber) - Orbital - Land",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedNavalFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 5,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    }
+  ]
+}

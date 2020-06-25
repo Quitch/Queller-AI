@@ -1,0 +1,161 @@
+{
+  "build_list": [
+    {
+      "name": "Atlas",
+      "to_build": "SeismicBot",
+      "instance_count": 1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 15,
+      "shared_instance_count": "Titan",
+      "priority": 480,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AdvancedBotFabber",
+        "UberSupportCommander",
+        "OrbitalFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": ">",
+            "value0": 2800
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": ">=",
+            "value0": 10
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "SeismicBot"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBasePerimeter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Ares",
+      "to_build": "FortressVehicle",
+      "instance_count": 1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 15,
+      "shared_instance_count": "Titan",
+      "priority": 480,
+      "base_sort": "FromBuilder",
+      "builders": ["AdvancedVehicleFabber", "OrbitalFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": ">",
+            "value0": 2800
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": ">=",
+            "value0": 10
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "FortressVehicle"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBasePerimeter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Zeus",
+      "to_build": "TeslaGunship",
+      "instance_count": 1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 15,
+      "shared_instance_count": "Titan",
+      "priority": 480,
+      "base_sort": "FromMainBase",
+      "builders": ["AdvancedAirFabber", "OrbitalFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": ">",
+            "value0": 2800
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": ">=",
+            "value0": 10
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "TeslaGunship"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBasePerimeter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    }
+  ]
+}

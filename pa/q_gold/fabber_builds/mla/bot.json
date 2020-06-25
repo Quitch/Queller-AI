@@ -1,0 +1,388 @@
+{
+  "build_list": [
+    {
+      "name": "Basic Bot Factory",
+      "to_build": "BasicBotFactory",
+      "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "priority": 376,
+      "base_sort": "FromMainBase",
+      "builders": ["UberCommander"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicBotFactory"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Bot & Factory & Basic",
+            "compare0": "<=",
+            "value0": 250
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicBotFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicBotFactory"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Bot & Factory & Basic",
+            "compare0": "<=",
+            "value0": 250
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicBotFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Basic Bot Factory - Fabbers",
+      "to_build": "BasicBotFactory",
+      "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "priority": 376,
+      "min_num_assisters": 2,
+      "max_num_assisters": 4,
+      "base_sort": "FromBuilder",
+      "builders": ["AnyUberBasicFabber", "AnyUberAdvancedFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicBotFactory"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Bot & Factory & Basic",
+            "compare0": "<=",
+            "value0": 250
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicBotFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicBotFactory"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Bot & Factory & Basic",
+            "compare0": "<=",
+            "value0": 250
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicBotFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Basic Bot Factory - Arrived on a new world",
+      "to_build": "BasicBotFactory",
+      "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "priority": 701,
+      "builders": [
+        "UberCommander",
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PresenceOnOtherPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicBotFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Advanced Bot Factory",
+      "to_build": "AdvancedBotFactory",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedFactory",
+      "priority": 477,
+      "min_num_assisters": 3,
+      "max_num_assisters": 8,
+      "builders": [
+        "BasicBotFabber",
+        "AdvancedBotFabber",
+        "UberSupportCommander"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedBotFactory"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital - Naval",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedBotFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedBotFactory"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital - Naval",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedBotFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedBotFactory"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Advanced - Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedBotFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "UnableToExpand",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Advanced - Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedBotFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedBotFactory"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Advanced - Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedBotFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    }
+  ]
+}

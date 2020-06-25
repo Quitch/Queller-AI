@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v5.0.0 - 2020-06-25
+
+- Removed dependency on AI Mod Compatibility Framework
+- Uber places lower value on Catapult as an anti-orbital weapon
+
 ## v4.67.3 - 2020-06-13
 
 - Correct Uber's Spinner ratio when alone

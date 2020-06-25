@@ -1,0 +1,36 @@
+{
+  "build_list": [
+    {
+      "name": "Supernova Strategic Warhead",
+      "to_build": "LegionDefenseAdvancedNuke",
+      "instance_count": -1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 12,
+      "priority": 151,
+      "builders": ["LegionDefenseAdvancedNukeSilo"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "FactoryHasOpenSlot"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Interceptor",
+      "to_build": "LegionDefenseAdvancedAntiNuke",
+      "instance_count": -1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 12,
+      "priority": 151,
+      "builders": ["LegionDefenseAdvancedAntiNukeSilo"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "FactoryHasOpenSlot"
+          }
+        ]
+      ]
+    }
+  ]
+}

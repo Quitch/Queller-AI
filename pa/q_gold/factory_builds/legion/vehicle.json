@@ -1,0 +1,528 @@
+{
+  "build_list": [
+    {
+      "name": "Armor Fabricator",
+      "to_build": "LegionVehicleBasicFabber",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 100,
+      "builders": ["LegionFactoryBasicVehicle"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "MetMinBasicFabberCount",
+            "boolean": false
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionVehicleBasicFabber"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Basic & Land",
+            "unit_type_string1": "Factory & Basic & Land",
+            "compare0": "<",
+            "value0": 0.5
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionVehicleBasicFabber"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Fabber & Basic",
+            "compare0": "<",
+            "value0": 30
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Guardian - Minesweeper",
+      "to_build": "LegionVehicleBasicCFab",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["LegionFactoryBasicVehicle"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & (Construction | Scout) - Fabber",
+            "unit_type_string1": "Land & Mobile & Offense",
+            "compare0": "<",
+            "value0": 0.03
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & (Construction | Scout) - Fabber",
+            "unit_type_string1": "Land & Mobile & Offense",
+            "compare0": "<",
+            "value0": 0.03
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Shank",
+      "to_build": "LegionVehicleBasicLaser",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["LegionFactoryBasicVehicle"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Maul",
+      "to_build": "LegionVehicleBasicArmor",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["LegionFactoryBasicVehicle"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & (Heavy - (Bot & Basic))",
+            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
+            "compare0": "<",
+            "value0": 0.15
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & (Heavy - (Bot & Basic))",
+            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
+            "compare0": "<",
+            "value0": 0.15
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Corsair",
+      "to_build": "LegionVehicleBasicArtillery",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["LegionFactoryBasicVehicle"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": false
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & Artillery",
+            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
+            "compare0": "<",
+            "value0": 0.2
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & Artillery",
+            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
+            "compare0": "<",
+            "value0": 0.2
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Stoke",
+      "to_build": "LegionVehicleBasicHover",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["LegionFactoryBasicVehicle"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": false
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Advanced Armor Fabricator",
+      "to_build": "LegionVehicleAdvancedFabber",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 200,
+      "builders": ["LegionFactoryAdvancedVehicle"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "MetMinAdvancedFabberCount",
+            "boolean": false
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionVehicleAdvancedFabber"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Advanced & Land",
+            "unit_type_string1": "Factory & Advanced & Land",
+            "compare0": "<",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionVehicleAdvancedFabber"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Fabber & Advanced",
+            "compare0": "<",
+            "value0": 30
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Earthshaker",
+      "to_build": "LegionVehicleAdvancedArmor",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": ["LegionFactoryAdvancedVehicle"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Tank & Heavy & Advanced",
+            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
+            "compare0": "<",
+            "value0": 0.2
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Tank & Heavy & Advanced",
+            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
+            "compare0": "<",
+            "value0": 0.2
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Scorpion",
+      "to_build": "LegionVehicleAdvancedLaser",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": ["LegionFactoryAdvancedVehicle"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Deathmark",
+      "to_build": "LegionVehicleAdvancedSniper",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": ["LegionFactoryAdvancedVehicle"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Artillery & Mobile",
+            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
+            "compare0": "<",
+            "value0": 0.1
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Artillery & Mobile",
+            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
+            "compare0": "<",
+            "value0": 0.1
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Havoc",
+      "to_build": "LegionVehicleAdvancedSwarm",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": ["LegionFactoryAdvancedVehicle"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Panzer",
+      "to_build": "LegionVehicleAdvancedHover",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": ["LegionFactoryAdvancedVehicle"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": true
+          }
+        ]
+      ]
+    }
+  ]
+}

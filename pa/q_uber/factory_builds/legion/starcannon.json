@@ -1,0 +1,21 @@
+{
+  "build_list": [
+    {
+      "name": "Scorpion - Starcannon",
+      "to_build": "LegionVehicleAdvancedLaser",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": ["LegionOrbitalAdvancedCannon"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "queller",
+            "boolean": true
+          }
+        ]
+      ]
+    }
+  ]
+}

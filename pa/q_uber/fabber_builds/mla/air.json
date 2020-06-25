@@ -1,0 +1,545 @@
+{
+  "build_list": [
+    {
+      "name": "Basic Air Factory - Commander",
+      "to_build": "BasicAirFactory",
+      "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "priority": 376,
+      "base_sort": "FromMainBase",
+      "builders": ["UberCommander"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicAirFactory"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Factory & Air & Basic",
+            "unit_type_string1": "Factory & Basic - Orbital",
+            "compare0": "<=",
+            "value0": 0.2
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicAirFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicAirFactory"
+          },
+          {
+            "test_type": "FocusTargetThreatRatio",
+            "string0": "Air",
+            "string1": "Air",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Factory & Air & Basic",
+            "unit_type_string1": "Factory & Basic - Orbital",
+            "compare0": "<=",
+            "value0": 0.4
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicAirFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicAirFactory"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Factory & Basic",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicAirFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Basic Air Factory - Stuck",
+      "to_build": "BasicAirFactory",
+      "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "priority": 10,
+      "max_num_assisters": 2,
+      "base_sort": "FromMainBase",
+      "builders": ["UberCommander", "BasicNavalFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemyPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicAirFactory"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicAirFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Naval",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Air",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicAirFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Basic Air Factory - Fabber",
+      "to_build": "BasicAirFactory",
+      "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "priority": 376,
+      "min_num_assisters": 1,
+      "max_num_assisters": 3,
+      "base_sort": "FromMainBase",
+      "builders": ["BasicBotFabber", "BasicNavalFabber", "BasicVehicleFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicAirFactory"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Factory & Air & Basic",
+            "unit_type_string1": "Factory & Basic - Orbital",
+            "compare0": "<=",
+            "value0": 0.2
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicAirFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicAirFactory"
+          },
+          {
+            "test_type": "FocusTargetThreatRatio",
+            "string0": "Air",
+            "string1": "Air",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Factory & Air & Basic",
+            "unit_type_string1": "Factory & Basic - Orbital",
+            "compare0": "<=",
+            "value0": 0.4
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicAirFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicAirFactory"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Factory & Basic",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicAirFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Basic Air Factory - Second Air",
+      "to_build": "BasicAirFactory",
+      "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "min_num_assisters": 1,
+      "max_num_assisters": 3,
+      "priority": 378,
+      "base_sort": "FromMainBase",
+      "builders": [
+        "UberCommander",
+        "BasicBotFabber",
+        "BasicNavalFabber",
+        "BasicVehicleFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicAirFactory"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Air & Basic",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicAirFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Basic Air Factory - Arrived on a new world",
+      "to_build": "BasicAirFactory",
+      "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "priority": 701,
+      "builders": [
+        "UberCommander",
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "PresenceOnOtherPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicAirFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Advanced Air Factory",
+      "to_build": "AdvancedAirFactory",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedFactory",
+      "priority": 479,
+      "min_num_assisters": 5,
+      "max_num_assisters": 8,
+      "builders": ["BasicAirFabber", "AdvancedAirFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedAirFactory"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Advanced - Orbital",
+            "compare0": ">=",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Factory & Air & Advanced",
+            "unit_type_string1": "Factory & Advanced - Orbital",
+            "compare0": "<=",
+            "value0": 0.2
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedAirFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHasUseablePlanetWeapon",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedAirFactory"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Basic & Fabber - Orbital",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Air & Advanced",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedAirFactory"
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "AllMetalSpotsFull",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedAirFactory"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Basic & Fabber - Orbital",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Air & Advanced",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Factory & Air & Advanced",
+            "compare0": "<",
+            "value0": 300
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedAirFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    }
+  ]
+}

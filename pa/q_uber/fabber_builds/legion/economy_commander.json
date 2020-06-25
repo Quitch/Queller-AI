@@ -1,0 +1,97 @@
+{
+  "build_list": [
+    {
+      "name": "Mass Extractor - Commander",
+      "to_build": "LegionEcoBasicMetalExtractor",
+      "instance_count": 1,
+      "shared_instance_count": "BasicMetal",
+      "priority": 260,
+      "base_sort": "FromMainBase",
+      "builders": ["LegionCommander"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PotentialMetalEfficiency",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildBasic",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "DesireMetal"
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildBasic",
+            "boolean": true
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Power Catalyst - Commander",
+      "to_build": "LegionEcoBasicEnergyPlant",
+      "instance_count": 2,
+      "shared_instance_count": "BasicEnergy",
+      "cross_planet_shared_count": true,
+      "priority": 261,
+      "base_sort": "FromMainBase",
+      "builders": ["LegionCommander"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicEnergyGenerator"
+          }
+        ],
+        [
+          {
+            "test_type": "PotentialEnergyEfficiency",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionEcoBasicEnergyPlant"
+          }
+        ],
+        [
+          {
+            "test_type": "DesireEnergy"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionEcoBasicEnergyPlant"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,497 @@
+{
+  "build_list": [
+    {
+      "name": "Centurion - Base",
+      "to_build": "LegionDefenseBasicOrbitalII",
+      "instance_count": 1,
+      "max_num_assisters": 1,
+      "priority": 401,
+      "base_sort": "FromMainBase",
+      "builders": ["LegionOrbitalBasicFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Orbital & OrbitalDefense",
+            "compare0": "<",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure - Defense",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicOrbitalII"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure - Defense",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & OrbitalDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 100,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Centurion - Beachead",
+      "to_build": "LegionDefenseBasicOrbitalII",
+      "instance_count": 1,
+      "max_num_assisters": 1,
+      "priority": 478,
+      "base_sort": "FromMainBase",
+      "builders": ["LegionOrbitalBasicFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetIsMainEcoBase",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemyPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Teleporter - Mobile",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicOrbitalII"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Teleporter - Mobile",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 100,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & OrbitalDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 100,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tola - Rush",
+      "to_build": "LegionDefenseBasicOrbital",
+      "instance_count": 1,
+      "priority": 456,
+      "min_num_assisters": 2,
+      "max_num_assisters": 4,
+      "base_sort": "FromMainBase",
+      "builders": ["AnyLegionFabberBasic", "AnyLegionFabberAdvanced"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Orbital",
+            "string1": "AntiOrbital",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (Economy | Factory | Important)",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicOrbital"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">=",
+            "value0": 10100
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory | PlanetEngine | ControlModule)",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicOrbital"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Commander | (Structure & ((EnergyProduction & Advanced) | Factory | PlanetEngine | ControlModule))",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tola - Base",
+      "to_build": "LegionDefenseBasicOrbital",
+      "instance_count": 1,
+      "priority": 279,
+      "min_num_assisters": 1,
+      "max_num_assisters": 3,
+      "base_sort": "FromMainBase",
+      "builders": ["AnyLegionFabberBasic", "AnyLegionFabberAdvanced"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Commander",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicOrbital"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">=",
+            "value0": 1100
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory | PlanetEngine | ControlModule)",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicOrbital"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Factory & Artillery",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "Artillery",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory | PlanetEngine | ControlModule)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicOrbital"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Commander | (Structure & ((EnergyProduction & Advanced) | Factory | PlanetEngine | ControlModule))",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tola - Lock Down The Planet",
+      "to_build": "LegionDefenseBasicOrbital",
+      "instance_count": 1,
+      "priority": 401,
+      "min_num_assisters": 1,
+      "max_num_assisters": 3,
+      "base_sort": "FromBuilder",
+      "builders": ["AnyLegionFabberBasic", "AnyLegionFabberAdvanced"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicOrbital"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure - Defense",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 100,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 100,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tola - Protect the Commander",
+      "to_build": "LegionDefenseBasicOrbital",
+      "instance_count": 1,
+      "priority": 457,
+      "min_num_assisters": 1,
+      "max_num_assisters": 3,
+      "base_sort": "FromMainBase",
+      "builders": ["AnyLegionFabberBasic", "AnyLegionFabberAdvanced"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">=",
+            "value0": 1100
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Commander",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicOrbital"
+          }
+        ],
+        [
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Commander",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "Umbrella"
+          }
+        ],
+        [
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Factory & Artillery",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "Artillery",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Commander",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicOrbital"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 1
+          }
+        ]
+      }
+    }
+  ]
+}
