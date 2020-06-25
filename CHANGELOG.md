@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## DEV
+## v5.0.0 - 2020-06-25
 
 - Removed dependency on AI Mod Compatibility Framework
 - Uber places lower value on Catapult as an anti-orbital weapon
