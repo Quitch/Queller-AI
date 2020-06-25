@@ -186,10 +186,6 @@ The spawn the AI starts in and the profile used can make a big difference, even 
 
 Be sure to follow the recommended number of players for any map.
 
-## TRANSLATIONS
-
-Please help [translate Queller AI](https://poeditor.com/join/project/avPZrv6yyE) to your local language.
-
 ## KNOWN ISSUES
 
 ### CANTFIX
@@ -249,3 +245,4 @@ Please help [translate Queller AI](https://poeditor.com/join/project/avPZrv6yyE)
   - Craeox
   - sevmek
   - fera
+- PA Inc for including Queller in its professional translation project
