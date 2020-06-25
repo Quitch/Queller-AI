@@ -1,0 +1,479 @@
+{
+  "build_list": [
+    {
+      "name": "Pelter",
+      "to_build": "BasicArtillery",
+      "instance_count": 1,
+      "min_num_assisters": 1,
+      "max_num_assisters": 3,
+      "priority": 255,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "BasicBotFabber",
+        "BasicVehicleFabber",
+        "BasicAirFabber",
+        "AdvancedBotFabber",
+        "AdvancedVehicleFabber",
+        "AdvancedAirFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Artillery & Basic",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Naval | (Sub - Land)",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Structure - MetalProduction - Wall",
+            "string0": "Enemy",
+            "value0": 245,
+            "compare0": ">=",
+            "value1": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicArtillery"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Unit Cannon",
+      "to_build": "UnitCannon",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedFactory",
+      "min_num_assisters": 3,
+      "max_num_assisters": 12,
+      "priority": 507,
+      "builders": ["AnyUberAdvancedFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "UnitCannon"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "UnitCannon"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2
+      }
+    },
+    {
+      "name": "Holkins",
+      "to_build": "LongRangeArtillery",
+      "instance_count": 1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 6,
+      "priority": 280,
+      "base_sort": "FromPerimeter",
+      "builders": ["AnyUberAdvancedFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Artillery & Advanced",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Structure - MetalProduction - Wall",
+            "string0": "Enemy",
+            "value0": 550,
+            "compare0": ">=",
+            "value1": 10
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LongRangeArtillery"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Nuke Silo",
+      "to_build": "NukeSilo",
+      "instance_count": 1,
+      "shared_instance_count": "NukeSilo",
+      "min_num_assisters": 3,
+      "max_num_assisters": 45,
+      "priority": 275,
+      "builders": ["AnyUberAdvancedFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "NukeSilo"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": ">=",
+            "value0": 20
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "NukeSilo"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Nuke Silo - Alone",
+      "to_build": "NukeSilo",
+      "instance_count": 1,
+      "shared_instance_count": "NukeSilo",
+      "min_num_assisters": 8,
+      "max_num_assisters": 45,
+      "priority": 508,
+      "builders": ["AnyUberAdvancedFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "NukeSilo"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": ">=",
+            "value0": 20
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "NukeSilo"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2
+      }
+    },
+    {
+      "name": "Nuke Silo - Rush",
+      "to_build": "NukeSilo",
+      "instance_count": 1,
+      "shared_instance_count": "NukeSilo",
+      "min_num_assisters": 8,
+      "max_num_assisters": 45,
+      "priority": 380,
+      "builders": ["AnyUberAdvancedFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "NukeSilo"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "FocusTargetThreat",
+            "string0": "AntiNuke",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Nuke",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": ">=",
+            "value0": 25
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "NukeSilo"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Halley",
+      "to_build": "PlanetEngine",
+      "instance_count": 1,
+      "min_num_assisters": 8,
+      "max_num_assisters": 45,
+      "priority": 509,
+      "builders": ["AnyUberAdvancedFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetIsMainEcoBase",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetCanBeUsedAsKineticWeapon",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHasUseablePlanetWeapon",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveThrustToMovePlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetCount",
+            "compare0": ">",
+            "value0": 2
+          },
+          {
+            "test_type": "AlliedUnitCountOnPlanet",
+            "unit_type_string0": "PlanetEngine",
+            "compare0": "<",
+            "boolean": true,
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "PlanetEngine"
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetIsMainEcoBase",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetCanBeUsedAsKineticWeapon",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHasUseablePlanetWeapon",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveThrustToMovePlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetCount",
+            "compare0": ">",
+            "value0": 2
+          },
+          {
+            "test_type": "AlliedUnitCountOnPlanet",
+            "unit_type_string0": "PlanetEngine",
+            "compare0": "<",
+            "boolean": true,
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "PlanetEngine"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3
+      }
+    },
+    {
+      "name": "Catalyst",
+      "to_build": "ControlModule",
+      "instance_count": 1,
+      "min_num_assisters": 20,
+      "max_num_assisters": 100,
+      "priority": 512,
+      "base_sort": "FromBuilder",
+      "builders": ["AnyUberAdvancedFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetHasUseablePlanetWeapon",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetCount",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "AlliedUnitCountOnPlanet",
+            "unit_type_string0": "ControlModule",
+            "compare0": "<",
+            "boolean": true,
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": ">=",
+            "value0": 10
+          },
+          {
+            "test_type": "CanFindControlPointToBuild",
+            "boolean": true
+          }
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "build_list": [
+    {
+      "name": "Land Attack Titan",
+      "to_build": "Land_Titan_Attack_Queller",
+      "instance_count": -1,
+      "priority": 190,
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Land & Titan",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Air Attack Titan",
+      "to_build": "Air_Titan_Attack_Queller",
+      "instance_count": -1,
+      "priority": 190,
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Titan",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsBomber",
+            "string0": "WL_AnySurface",
+            "string1": "WL_Air",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "BomberAttack"
+    },
+    {
+      "name": "Orbital Attack Titan",
+      "to_build": "Orbital_Titan_Attack_Queller",
+      "instance_count": -1,
+      "priority": 190,
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & Titan",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface"
+          }
+        ]
+      ],
+      "task_type": "OrbitalLaserAttack"
+    }
+  ]
+}

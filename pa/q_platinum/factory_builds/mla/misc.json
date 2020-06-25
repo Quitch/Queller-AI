@@ -1,0 +1,91 @@
+{
+  "build_list": [
+    {
+      "name": "Nuke Missile",
+      "to_build": "NukeMissile",
+      "instance_count": -1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 12,
+      "priority": 151,
+      "builders": ["NukeSilo"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "FactoryHasOpenSlot"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Nuke Missile - No Antis",
+      "to_build": "NukeMissile",
+      "instance_count": 2,
+      "min_num_assisters": 8,
+      "max_num_assisters": 12,
+      "priority": 478,
+      "builders": ["NukeSilo"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "FactoryHasOpenSlot"
+          },
+          {
+            "test_type": "FocusTargetThreat",
+            "string0": "AntiNuke",
+            "compare0": "<=",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Anti Nuke Missile",
+      "to_build": "AntiNukeMissile",
+      "instance_count": -1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 12,
+      "priority": 151,
+      "builders": ["AntiNukeSilo"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "FactoryHasOpenSlot"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Anti Nuke Missile - Rush",
+      "to_build": "AntiNukeMissile",
+      "instance_count": -1,
+      "min_num_assisters": 8,
+      "max_num_assisters": 12,
+      "priority": 510,
+      "builders": ["AntiNukeSilo"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "FactorySlotsEmpty",
+            "boolean": true
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Nuke",
+            "compare0": ">",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "FactorySlotsEmpty",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveHadANukeEvent",
+            "boolean": true
+          }
+        ]
+      ]
+    }
+  ]
+}

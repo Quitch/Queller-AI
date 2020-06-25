@@ -1,0 +1,302 @@
+{
+  "build_list": [
+    {
+      "name": "Galata Turret - Mex",
+      "to_build": "BasicAirDefense",
+      "instance_count": 1,
+      "priority": 401,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber",
+        "AdvancedBotCombatFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "DistFromMainBase",
+            "compare0": ">=",
+            "value0": 350
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & AirDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & MetalProduction",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicAirDefense"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & MetalProduction",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 35,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & AirDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 50,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Galata Turret - Base",
+      "to_build": "BasicAirDefense",
+      "instance_count": 1,
+      "max_num_assisters": 1,
+      "priority": 251,
+      "base_sort": "FromMainBase",
+      "builders": [
+        "UberCommander",
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber",
+        "AdvancedBotCombatFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Air",
+            "compare0": ">=",
+            "value0": 40
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicAirDefense"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & AirDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 50,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Galata Turret - Air Snipes",
+      "to_build": "BasicAirDefense",
+      "instance_count": 1,
+      "max_num_assisters": 1,
+      "priority": 456,
+      "base_sort": "FromBuilder",
+      "builders": ["UberCommander"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Air",
+            "compare0": ">",
+            "value0": 4500
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicAirDefense"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & AirDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 50,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Flak Cannon - Base",
+      "to_build": "AdvancedAirDefense",
+      "instance_count": 1,
+      "min_num_assisters": 1,
+      "max_num_assisters": 3,
+      "priority": 279,
+      "base_sort": "FromMainBase",
+      "builders": ["AnyUberAdvancedFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & AirDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedAirDefense"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Advanced & AirDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Flak Cannon - Air Snipes",
+      "to_build": "AdvancedAirDefense",
+      "instance_count": 1,
+      "min_num_assisters": 1,
+      "max_num_assisters": 3,
+      "priority": 456,
+      "base_sort": "FromMainBase",
+      "builders": ["AnyUberAdvancedFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Air",
+            "compare0": ">",
+            "value0": 4500
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Commander",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AdvancedAirDefense"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & Advanced & AirDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 50,
+            "count": 1
+          }
+        ]
+      }
+    }
+  ]
+}

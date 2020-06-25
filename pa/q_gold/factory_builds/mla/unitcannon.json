@@ -1,0 +1,37 @@
+{
+  "build_list": [
+    {
+      "name": "Stitch - Unit Cannon",
+      "to_build": "BasicBotCombatFabber",
+      "instance_count": 1,
+      "priority": 97,
+      "builders": ["UnitCannon"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "queller",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Slammer - Unit Cannon",
+      "to_build": "AdvancedAssaultBot",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["UnitCannon"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "queller",
+            "boolean": true
+          }
+        ]
+      ]
+    }
+  ]
+}

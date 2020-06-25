@@ -1,0 +1,354 @@
+{
+  "build_list": [
+    {
+      "name": "Ripple - Mex",
+      "to_build": "LegionDefenseBasicNaval",
+      "instance_count": 1,
+      "priority": 401,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "LegionCommander",
+        "LegionAirBasicFabber",
+        "LegionNavalBasicFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Naval",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "DistFromMainBase",
+            "compare0": ">=",
+            "value0": 350
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Naval & Defense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & MetalProduction",
+            "compare0": ">=",
+            "value0": 2
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicNaval"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & MetalProduction",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 35,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Naval & Defense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 50,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tsunami - Mex",
+      "to_build": "LegionDefenseAdvancedNaval",
+      "instance_count": 1,
+      "priority": 402,
+      "base_sort": "FromPerimeter",
+      "builders": ["LegionNavalAdvancedFabber", "LegionAirAdvancedFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Naval",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "DistFromMainBase",
+            "compare0": ">=",
+            "value0": 350
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Naval & Defense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & MetalProduction",
+            "compare0": ">=",
+            "value0": 2
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedNaval"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 35,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Naval & Defense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 50,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ripple - Base",
+      "to_build": "LegionDefenseBasicNaval",
+      "instance_count": 1,
+      "max_num_assisters": 1,
+      "priority": 254,
+      "base_sort": "FromMainBase",
+      "builders": [
+        "LegionCommander",
+        "LegionAirBasicFabber",
+        "LegionNavalBasicFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Naval",
+            "string1": "Naval",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Naval & Defense & Basic",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicNaval"
+          }
+        ],
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Sub",
+            "string1": "AntiSub",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Naval & Defense & Basic",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicNaval"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Naval & Defense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tsunami - Base",
+      "to_build": "LegionDefenseAdvancedNaval",
+      "instance_count": 1,
+      "priority": 278,
+      "max_num_assisters": 3,
+      "base_sort": "FromMainBase",
+      "builders": ["LegionNavalAdvancedFabber", "LegionAirAdvancedFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Naval",
+            "string1": "Naval",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Naval & Defense & Advanced",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedNaval"
+          }
+        ],
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Sub",
+            "string1": "AntiSub",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Naval & Defense & Advanced",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedNaval"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Naval & Defense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 1
+          }
+        ]
+      }
+    }
+  ]
+}

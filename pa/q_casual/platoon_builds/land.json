@@ -1,0 +1,31 @@
+{
+  "build_list": [
+    {
+      "name": "Casual - Land Attack Platoon Max",
+      "to_build": "Land_Attack_Max_Queller",
+      "instance_count": -1,
+      "priority": 100,
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Land & Mobile) - Hover - Fabber - AirDefense - Construction - Deconstruction - SelfDestruct - Titan",
+            "compare0": ">=",
+            "value0": 40
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "(Mobile | Structure) - Wall"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    }
+  ]
+}
