@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## DEV
+
+- Removed translations for languages where PA includes an official translations. My thanks to all those who contributed up till now.
+
 ## v5.0.0 - 2020-06-25
 
 - Removed dependency on AI Mod Compatibility Framework
