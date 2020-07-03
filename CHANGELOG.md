@@ -2,7 +2,7 @@
 
 ## DEV
 
-- Removed translations for languages where PA includes an official translations. My thanks to all those who contributed up till now.
+- Removed translations for languages where PA includes an official translation. My thanks to all those who contributed up till now.
 
 ## v5.0.0 - 2020-06-25
 
