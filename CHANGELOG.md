@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## DEV
+
+- Removed translations for languages where PA includes an official translation.
+
 ## v5.0.1 - 2020-07-03
 
 - Removed translations for languages where PA includes an official translation. My thanks to all those who contributed up till now.
