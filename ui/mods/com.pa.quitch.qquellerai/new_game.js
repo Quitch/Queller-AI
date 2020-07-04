@@ -15,6 +15,7 @@ function qQuellerAI() {
     "Q-Casual": {
       ai_path: "/pa/q_casual",
       display_name: "!LOC:Q-Casual",
+      starting_location_evaluation_radius: 50,
       metal_drain_check: 0.64,
       energy_drain_check: 0.77,
       metal_demand_check: 0.95,
@@ -36,6 +37,7 @@ function qQuellerAI() {
     "Q-Bronze": {
       ai_path: "/pa/q_bronze",
       display_name: "!LOC:Q-Bronze",
+      starting_location_evaluation_radius: 100,
       metal_drain_check: 0.54,
       energy_drain_check: 0.77,
       metal_demand_check: 0.95,
@@ -56,6 +58,7 @@ function qQuellerAI() {
     "Q-Silver": {
       ai_path: "/pa/q_silver",
       display_name: "!LOC:Q-Silver",
+      starting_location_evaluation_radius: 150,
       metal_drain_check: 0.54,
       energy_drain_check: 0.77,
       metal_demand_check: 0.95,
@@ -74,6 +77,7 @@ function qQuellerAI() {
     "Q-Gold": {
       ai_path: "/pa/q_gold",
       display_name: "!LOC:Q-Gold",
+      starting_location_evaluation_radius: 200,
       metal_drain_check: 0.54,
       energy_drain_check: 0.77,
       metal_demand_check: 0.85,
@@ -92,6 +96,7 @@ function qQuellerAI() {
     "Q-Platinum": {
       ai_path: "/pa/q_platinum",
       display_name: "!LOC:Q-Platinum",
+      starting_location_evaluation_radius: 250,
       metal_drain_check: 0.54,
       energy_drain_check: 0.77,
       metal_demand_check: 0.85,
@@ -110,6 +115,7 @@ function qQuellerAI() {
     "Q-Uber": {
       ai_path: "/pa/q_uber",
       display_name: "!LOC:Q-Uber",
+      starting_location_evaluation_radius: 300,
       metal_drain_check: 0.54,
       energy_drain_check: 0.65,
       metal_demand_check: 0.85,
@@ -128,6 +134,7 @@ function qQuellerAI() {
     "Q-Uber 1v1": {
       ai_path: "/pa/q_uber",
       display_name: "!LOC:Q-Uber 1v1",
+      starting_location_evaluation_radius: 300,
       metal_drain_check: 0.54,
       energy_drain_check: 0.65,
       metal_demand_check: 0.85,
@@ -146,6 +153,7 @@ function qQuellerAI() {
     "Q-Uber Bot": {
       ai_path: "/pa/q_uber",
       display_name: "!LOC:Q-Uber Bot",
+      starting_location_evaluation_radius: 300,
       metal_drain_check: 0.54,
       energy_drain_check: 0.65,
       metal_demand_check: 0.85,
@@ -164,6 +172,7 @@ function qQuellerAI() {
     "Q-Uber Free-For-All": {
       ai_path: "/pa/q_uber",
       display_name: "!LOC:Q-Uber Free-For-All",
+      starting_location_evaluation_radius: 300,
       metal_drain_check: 0.54,
       energy_drain_check: 0.65,
       metal_demand_check: 0.85,
@@ -182,6 +191,7 @@ function qQuellerAI() {
     "Q-Uber Rush": {
       ai_path: "/pa/q_uber",
       display_name: "!LOC:Q-Uber Rush",
+      starting_location_evaluation_radius: 300,
       metal_drain_check: 0.54,
       energy_drain_check: 0.65,
       metal_demand_check: 0.99,
@@ -200,6 +210,7 @@ function qQuellerAI() {
     "Q-Uber Tank": {
       ai_path: "/pa/q_uber",
       display_name: "!LOC:Q-Uber Tank",
+      starting_location_evaluation_radius: 300,
       metal_drain_check: 0.54,
       energy_drain_check: 0.65,
       metal_demand_check: 0.85,
@@ -218,6 +229,7 @@ function qQuellerAI() {
     "Q-Uber Turtle": {
       ai_path: "/pa/q_uber",
       display_name: "!LOC:Q-Uber Turtle",
+      starting_location_evaluation_radius: 300,
       metal_drain_check: 0.54,
       energy_drain_check: 0.65,
       metal_demand_check: 0.54,
