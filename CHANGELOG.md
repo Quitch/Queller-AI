@@ -2,8 +2,7 @@
 
 ## DEV
 
-- Removed translations for languages where PA includes an official translation
-- Higher difficulties look further afield when choosing a spawn
+- Removed translations for languages where PA includes an official translation.
 
 ## v5.0.1 - 2020-07-03
 
