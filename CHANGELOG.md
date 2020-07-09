@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## DEV
+
+- Fixed issue delaying Casual's first build
+
 ## v5.0.2 - 2020-07-09
 
 - Removed translations for languages where PA includes an official translation.
