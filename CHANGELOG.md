@@ -3,6 +3,7 @@
 ## DEV
 
 - Removed translations for languages where PA includes an official translation.
+- Fixed Silver teching to T2 vehicles too early
 
 ## v5.0.1 - 2020-07-03
 
