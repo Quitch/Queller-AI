@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v5.0.3 - 2020-07-09
+
+- Fixed issue delaying Casual's first build
+- Fixed Silver trying to form a land platoon that didn't exist
+
 ## v5.0.2 - 2020-07-09
 
 - Removed translations for languages where PA includes an official translation.
