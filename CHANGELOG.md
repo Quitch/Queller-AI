@@ -4,7 +4,6 @@
 
 - Removed translations for languages where PA includes an official translation.
 - Fixed Silver teching to T2 vehicles too early
-- Further improve avoidance of teching to T2 bots/vehicles when playing naval maps
 
 ## v5.0.1 - 2020-07-03
 
