@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## DEV
+
+- Uber tries to avoid teching to T2 land first on naval maps
+
 ## v5.0.3 - 2020-07-09
 
 - Fixed issue delaying Casual's first build
