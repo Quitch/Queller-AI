@@ -11,6 +11,7 @@
 - Fix errors in Uber MLA's strategy for recovering from energy crashes
 - Uber more likely to use energy storage
 - Uber won't work on titans and nukes at the same time
+- Uber no longer builds the Horsefly
 
 ## v5.0.3 - 2020-07-09
 
