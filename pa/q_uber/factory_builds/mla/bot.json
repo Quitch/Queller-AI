@@ -194,10 +194,17 @@
             "boolean": true
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Land & Factory & Basic",
-            "compare0": ">=",
-            "value0": 4
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": ">",
+            "value0": 2800
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Bot & Heavy & Basic",
+            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
+            "compare0": "<",
+            "value0": 0.1
           }
         ],
         [
@@ -493,7 +500,7 @@
     {
       "name": "Gil-E",
       "to_build": "AdvancedArtilleryBot",
-      "instance_count": -1,
+      "instance_count": 1,
       "max_num_assisters": 10,
       "priority": 199,
       "builders": ["AdvancedBotFactory"],

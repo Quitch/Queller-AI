@@ -12,6 +12,8 @@
 - Uber more likely to use energy storage
 - Uber won't work on titans and nukes at the same time
 - Uber no longer builds the Horsefly
+- Uber delays its Spark build and uses less
+- Uber slower to grow its GIL-E presence
 
 ## v5.0.3 - 2020-07-09
 
