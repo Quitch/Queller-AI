@@ -7,6 +7,7 @@
 - Gold through Uber avoid working on T1 orbital factories on more than one planet at a time
 - Uber no longer builds Solar Arrays
 - Uber uses Drifters only for hover purposes again
+- Uber prioritises local orbital recon over remote
 
 ## v5.0.3 - 2020-07-09
 
