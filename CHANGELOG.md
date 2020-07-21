@@ -5,8 +5,8 @@
 - Uber tries to avoid teching to T2 land first on naval maps
 - Silver and Gold use less Booms and Purgers
 - Gold through Uber avoid working on T1 orbital factories on more than one planet at a time
-- Uber no longer builds Solar Arrays.
-- Uber uses less Drifters
+- Uber no longer builds Solar Arrays
+- Uber uses Drifters only for hover purpose again
 
 ## v5.0.3 - 2020-07-09
 
