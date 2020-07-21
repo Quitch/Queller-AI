@@ -8,6 +8,8 @@
 - Uber no longer builds Solar Arrays
 - Uber uses Drifters only for hover purposes again
 - Uber prioritises local orbital recon over remote
+- Fix errors in Uber MLA's strategy for recovering from energy crashes
+- Uber more likely to use energy storage
 
 ## v5.0.3 - 2020-07-09
 
