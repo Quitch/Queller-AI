@@ -14,6 +14,7 @@
 - Uber no longer builds the Horsefly
 - Uber delays its Spark build and uses less
 - Uber slower to grow its GIL-E presence
+- Uber treats getting off its starting planet when alone as its highest priority
 
 ## v5.0.3 - 2020-07-09
 
