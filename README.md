@@ -1,6 +1,6 @@
 # Queller AI
 
-> _"Your Queller AI is literally best teacher there is when it comes to pure learning how to play this game, especially \[the\] basics" - B13, Uber rank_
+> _"Your Queller AI is literally best teacher there is when it comes to pure learning how to play this game, especially \[the\] basics" - B13, Uber rank #2_
 
 Improved AI for [Planetary Annihilation: Titans](https://planetaryannihilation.com/)
 
