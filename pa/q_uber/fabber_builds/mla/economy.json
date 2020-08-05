@@ -398,6 +398,44 @@
       "task_type": "AreaBuild"
     },
     {
+      "name": "Basic Energy Generator - Crash",
+      "to_build": "BasicEnergyGenerator",
+      "instance_count": 1,
+      "shared_instance_count": "BasicEnergy",
+      "cross_planet_shared_count": true,
+      "priority": 280,
+      "base_sort": "FromBuilder",
+      "builders": ["AnyUberAdvancedFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "EnergyStorageFrac",
+            "compare0": "<",
+            "value0": 0.1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicEnergyGenerator"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
       "name": "Advanced Energy Generator",
       "to_build": "AdvancedEnergyGenerator",
       "instance_count": 2,
@@ -423,46 +461,6 @@
       ],
       "placement_rules": {
         "buffer": 10,
-        "placement_type": "FromBaseCenter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        }
-      }
-    },
-    {
-      "name": "Basic Energy Generator - Crash",
-      "to_build": "BasicEnergyGenerator",
-      "instance_count": 2,
-      "shared_instance_count": "AdvancedEnergy",
-      "min_num_assisters": 1,
-      "max_num_assisters": 3,
-      "cross_planet_shared_count": true,
-      "priority": 280,
-      "base_sort": "FromBuilder",
-      "builders": ["AnyUberAdvancedFabber"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "CurrentEnergyEfficiency",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "EnergyStorageFrac",
-            "compare0": "<",
-            "value0": 0.1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "AdvancedEnergyGenerator"
-          }
-        ]
-      ],
-      "placement_rules": {
-        "buffer": 3,
         "placement_type": "FromBaseCenter",
         "threat": {
           "influence_type": "AntiSurface",
@@ -627,7 +625,7 @@
       "to_build": "EnergyStorage",
       "instance_count": 1,
       "cross_planet_shared_count": true,
-      "priority": 10,
+      "priority": 389,
       "base_sort": "FromBuilder",
       "builders": [
         "UberCommander",

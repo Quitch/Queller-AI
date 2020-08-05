@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## v5.1.0 - 2020-08-05
+
+- Uber tries to avoid teching to T2 land first on naval maps
+- Silver and Gold use less Booms and Purgers
+- Gold through Uber avoid working on T1 orbital factories on more than one planet at a time
+- Uber no longer builds Solar Arrays
+- Uber uses Drifters only for hover purposes again
+- Uber prioritises local orbital recon over remote
+- Fix errors in Uber MLA's strategy for recovering from energy crashes
+- Uber more likely to use energy storage
+- Uber won't work on titans and nukes at the same time
+- Uber no longer builds the Horsefly
+- Uber delays its Spark build and uses less
+- Uber slower to grow its GIL-E presence
+- Uber treats getting off its starting planet when alone as its highest priority
+
 ## v5.0.3 - 2020-07-09
 
 - Fixed issue delaying Casual's first build

@@ -102,7 +102,7 @@
       "shared_instance_count": "ReconAssistance",
       "cross_planet_shared_count": true,
       "max_num_assisters": 10,
-      "priority": 99,
+      "priority": 98,
       "builders": ["AnyUberOrbitalFactory"],
       "build_conditions": [
         [
@@ -282,44 +282,6 @@
       ]
     },
     {
-      "name": "Solar Array",
-      "to_build": "SolarArray",
-      "instance_count": 1,
-      "max_num_assisters": 10,
-      "priority": 97,
-      "builders": ["OrbitalFactory"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "EnemyOrbitalPresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "PlanetIsGasGiant",
-            "boolean": false
-          },
-          {
-            "test_type": "PotentialEnergyEfficiency",
-            "compare0": "<",
-            "value0": 1
-          }
-        ],
-        [
-          {
-            "test_type": "EnemyOrbitalPresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "PlanetIsGasGiant",
-            "boolean": false
-          },
-          {
-            "test_type": "DesireEnergy"
-          }
-        ]
-      ]
-    },
-    {
       "name": "SXX-1304 Laser Platform",
       "to_build": "OrbitalDeathLaser",
       "instance_count": -1,
@@ -471,6 +433,44 @@
             "string0": "AntiOrbital",
             "compare0": ">",
             "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Solar Array",
+      "to_build": "SolarArray",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 96,
+      "builders": ["OrbitalFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemyOrbitalPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
+            "test_type": "PotentialEnergyEfficiency",
+            "compare0": "<",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "EnemyOrbitalPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
+            "test_type": "DesireEnergy"
           }
         ]
       ]
