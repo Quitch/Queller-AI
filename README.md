@@ -1,4 +1,4 @@
-# [Queller AI]
+# Queller AI
 
 > _"Your Queller AI is literally best teacher there is when it comes to pure learning how to play this game, especially \[the\] basics" - B13, Uber rank #2_
 
@@ -8,15 +8,15 @@ This mod is a total overhaul of the AI designed to smooth out the difficulty cur
 
 Please ensure that if you use this work you credit Quitch's Queller AI.
 
-## [INSTALLATION]
+## INSTALLATION
 
 You should download and install this mod via the Planetary Annihilation TITANS in-game [Community Mods](https://steamcommunity.com/sharedfiles/filedetails/?id=1417396826).
 
-## [DIFFICULTY]
+## DIFFICULTY
 
 Queller offers a range of difficulties designed to try and mimic the style of human players at particular levels of play. It does not modify the vanilla difficulties.
 
-### ![Casual badge](./images/badge_level_0_28px.png) [Casual]
+### ![Casual badge](./images/badge_level_0_28px.png) Casual
 
 - Economy first opening
 - One army
@@ -33,7 +33,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 - No micro
 - Terrible threat assessments
 
-### ![Bronze badge](./images/badge_level_1_28px.png) [Bronze]
+### ![Bronze badge](./images/badge_level_1_28px.png) Bronze
 
 - Factory first opening
 - One army
@@ -50,7 +50,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 - No micro
 - Terrible threat assessments
 
-### ![Silver badge](./images/badge_level_2_28px.png) [Silver]
+### ![Silver badge](./images/badge_level_2_28px.png) Silver
 
 - Factory first opening
 - Few armies
@@ -66,7 +66,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 - Average micro
 - Poor threat assessments
 
-### ![Gold badge](./images/badge_level_3_28px.png) [Gold]
+### ![Gold badge](./images/badge_level_3_28px.png) Gold
 
 - Smart factory first opening
 - Many armies
@@ -82,7 +82,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 - Average micro
 - OK threat assessments
 
-### ![Platinum badge](./images/badge_level_4_28px.png) [Platinum]
+### ![Platinum badge](./images/badge_level_4_28px.png) Platinum
 
 - Smartest factory first opening
 - Unlimited armies
@@ -98,7 +98,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 - Best micro
 - Great threat assessments
 
-### ![Uber badge](./images/badge_level_5_28px.png) [Uber]
+### ![Uber badge](./images/badge_level_5_28px.png) Uber
 
 - Smartest factory first opening
 - Unlimited armies
@@ -116,7 +116,7 @@ Queller offers a range of difficulties designed to try and mimic the style of hu
 - Will use eco bonuses better than other levels
 - Selectable subpersonality
 
-## [RECOMMENDED DIFFICULTY]
+## RECOMMENDED DIFFICULTY
 
 Below are recommendations for the difficulty you may wish to start on based on what you set the vanilla AI to or your ladder ranking.
 
@@ -145,20 +145,20 @@ Suggestions based on 1v1 ranked position or challenge sought:
 | Platinum | Any       | Uber       | 1.6 |
 | Uber     | Any       | Uber       | 1.8 |
 
-## [SUBPERSONALITIES]
+## SUBPERSONALITIES
 
 By default, Queller at Uber level will adapt its play to try and suit the system and the opposition it faces. You can use subpersonalities to customise Queller's game to your liking or help it play better where it's making poor strategy choices.
 
-### [1v1]
+### 1v1
 
 - Slower to enter orbital
 - Uses more T1 bots
 
-### [Bot]
+### Bot
 
 - Doesn't build vehicle factories
 
-### [Free-For-All]
+### Free-For-All
 
 - More cautious about engaging in battle
 - Techs earlier
@@ -166,29 +166,29 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 - May use a more cautious opening
 - Avoids antagonistic scouting raids
 
-### [Rush]
+### Rush
 
 - Techs late
 - Slower to enter orbital
 
-### [Tank]
+### Tank
 
 - Doesn't build bot factories
 
-### [Turtle]
+### Turtle
 
 - More likely to build defences at its expansions
 - More likely to build titans
 
-## [MAP NOTES]
+## MAP NOTES
 
 The spawn the AI starts in and the profile used can make a big difference, even for symmetrical 1v1s. If you find the AI too easy on a map, try a different spawn point for it. And don't use Bedlam, the AI's forces can't pathfind on this map.
 
 Be sure to follow the recommended number of players for any map.
 
-## [KNOWN ISSUES]
+## KNOWN ISSUES
 
-### [CANTFIX]
+### CANTFIX
 
 - Will sometimes take much longer than necessary routes to attack
 - Doesn't defend its fabbers
@@ -211,11 +211,11 @@ Be sure to follow the recommended number of players for any map.
 - Attempts to attack land targets with underwater units even if they don't have a weapon which can attack land
 - Slow to start moving troops between planets
 
-### [WONTFIX]
+### WONTFIX
 
 - Mistakes respawning planets for asteroids and won't behave properly on them
 
-## [THANKS TO]
+## THANKS TO
 
 - Sorian of Uber Entertainment for:
   - making his AI moddable
@@ -223,7 +223,7 @@ Be sure to follow the recommended number of players for any map.
   - taking on suggestions
   - fixing bugs as they come up
   - adding cool new features which make the AI increasingly smart
-- [wondible](https://github.com/JustinLove) for his creation of the [AI Showdown](https://github.com/JustinLove/ai_showdown/) tool
+- wondible for his creation of the [AI Showdown](https://github.com/JustinLove/ai_showdown/) tool
 - mikeyh for writing the JavaScript for loading Queller's personalities
 - alpha2546 for extensively playtesting Queller during Legion Expansion development
 - Everyone who has helped with translations:
@@ -245,4 +245,4 @@ Be sure to follow the recommended number of players for any map.
   - Craeox
   - sevmek
   - fera
-- [PA Inc](http://planetaryannihilation.com/) for including Queller in its professional translation project
+- PA Inc for including Queller in its professional translation project
