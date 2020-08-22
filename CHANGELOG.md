@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Support for the Deep Space Radar
+
 ## v5.1.0 - 2020-08-05
 
 - Uber tries to avoid teching to T2 land first on naval maps
