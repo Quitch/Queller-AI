@@ -28,6 +28,12 @@
             "value0": 1
           },
           {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Structure & Recon & Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "BasicRadar"
           }
@@ -63,6 +69,12 @@
           {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Recon & Structure",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Structure & Recon & Orbital",
             "compare0": "<",
             "value0": 1
           },
@@ -116,6 +128,12 @@
             "value0": 0
           },
           {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Structure & Recon & Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
             "test_type": "UnitCountAroundBase",
             "unit_type_string0": "Land & Structure & Recon & Advanced",
             "string0": "Ally",
@@ -163,8 +181,53 @@
             "value0": 1
           },
           {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Structure & Recon & Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "AdvancedRadar"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Deep Space Radar - Have none",
+      "to_build": "DeepSpaceRadar",
+      "instance_count": 1,
+      "shared_instance_count": "DeepSpaceRadar",
+      "priority": 501,
+      "base_sort": "FromMainBase",
+      "builders": ["AnyUberAdvancedFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "DeepSpaceRadar"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Structure & Recon & Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "DeepSpaceRadar"
           }
         ]
       ],
