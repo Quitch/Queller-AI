@@ -11,6 +11,7 @@
 - Uber can use more Strykers
 - Uber can open vehicles as MLA
 - Uber will use Grenadiers to counter tank all-ins
+- Uber 1v1 slower to bring out T2 fabbers
 
 ## v5.1.0 - 2020-08-05
 
