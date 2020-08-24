@@ -9,6 +9,7 @@
 ### Changed
 
 - Uber can use more Strykers
+- Uber can open vehicles as MLA
 
 ## v5.1.0 - 2020-08-05
 
