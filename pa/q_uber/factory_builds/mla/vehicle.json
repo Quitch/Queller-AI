@@ -225,7 +225,7 @@
       ]
     },
     {
-      "name": "Stryker - Intel",
+      "name": "Stryker",
       "to_build": "AttackVehicle",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -243,22 +243,14 @@
             "boolean": false
           },
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
-          },
-          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Tank & Basic & Mobile) - Hover - Fabber - AirDefense - Construction - Artillery - Heavy - Scout - SelfDestruct - Deconstruction - Titan",
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
             "compare0": "<",
-            "value0": 5
+            "value0": 2800
           }
         ]
       ]

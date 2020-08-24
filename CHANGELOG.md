@@ -2,7 +2,13 @@
 
 ## Unreleased
 
+### Added
+
 - Support for the Deep Space Radar
+
+### Changed
+
+- Uber can use more Strykers
 
 ## v5.1.0 - 2020-08-05
 
