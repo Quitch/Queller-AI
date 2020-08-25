@@ -141,7 +141,7 @@ function qQuellerAI() {
       adv_eco_mod_alone: 0,
       personality_tags: ["queller", "lateorbital"],
       min_basic_fabbers: 3,
-      min_advanced_fabbers: 0,
+      min_advanced_fabbers: 1,
     },
     "Q-Uber Bot": {
       ai_path: "/pa/q_uber",
