@@ -14,6 +14,7 @@
 - Uber will use Sparks only for the early game
 - Uber uses more Sparks but only against bots
 - Uber will produce Gil-E more aggressively
+- Uber gives higher priority to building Spinners when required
 
 ## v5.1.0 - 2020-08-05
 
