@@ -179,7 +179,7 @@
     {
       "name": "Grenadier",
       "to_build": "BasicArtilleryBot",
-      "instance_count": -1,
+      "instance_count": 1,
       "max_num_assisters": 10,
       "priority": 97,
       "builders": ["BasicBotFactory"],
@@ -198,11 +198,6 @@
             "string0": "AntiSurface",
             "compare0": ">",
             "value0": 2800
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Bot",
-            "boolean": false
           }
         ]
       ]
@@ -227,7 +222,7 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiSurface",
-            "compare0": ">",
+            "compare0": "<",
             "value0": 2800
           },
           {
