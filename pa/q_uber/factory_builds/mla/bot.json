@@ -553,7 +553,7 @@
     {
       "name": "Gil-E",
       "to_build": "AdvancedArtilleryBot",
-      "instance_count": 1,
+      "instance_count": -1,
       "max_num_assisters": 10,
       "priority": 199,
       "builders": ["AdvancedBotFactory"],
@@ -575,6 +575,13 @@
             "test_type": "HaveSeenEnemyUnits",
             "unit_type_string0": "Advanced",
             "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Bot & Advanced & Artillery - Titan",
+            "unit_type_string1": "Bot & Mobile & Advanced - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
+            "compare0": "<=",
+            "value0": 0.5
           }
         ],
         [
@@ -596,6 +603,13 @@
           {
             "test_type": "OtherPlanetNeedsLandUnitAssistance",
             "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Bot & Advanced & Artillery - Titan",
+            "unit_type_string1": "Bot & Mobile & Advanced - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
+            "compare0": "<=",
+            "value0": 0.5
           }
         ]
       ]
