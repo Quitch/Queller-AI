@@ -13,6 +13,7 @@
 - Uber will use Grenadiers as the game gets later
 - Uber will use Sparks only for the early game
 - Uber uses more Sparks but only against bots
+- Uber will produce Gil-E more aggressively
 
 ## v5.1.0 - 2020-08-05
 
