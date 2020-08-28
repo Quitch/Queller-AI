@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## v5.2.0 - 2020-08-28
+
+### Changed
+
+- Uber can use more Strykers
+- Uber can open vehicles as MLA
+- Uber will use Grenadiers as the game gets later
+- Uber will use Sparks only for the early game
+- Uber uses more Sparks but only against bots
+- Uber will produce Gil-E more aggressively
+- Uber gives higher priority to building Spinners when required
+
 ## v5.1.0 - 2020-08-05
 
 - Uber tries to avoid teching to T2 land first on naval maps

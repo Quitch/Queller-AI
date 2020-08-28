@@ -139,7 +139,7 @@ function qQuellerAI() {
       neural_data_mod: 1,
       adv_eco_mod: 1,
       adv_eco_mod_alone: 0,
-      personality_tags: ["queller", "1v1", "lateorbital"],
+      personality_tags: ["queller", "lateorbital"],
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1,
     },

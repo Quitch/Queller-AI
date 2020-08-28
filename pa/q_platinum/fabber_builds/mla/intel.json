@@ -28,6 +28,12 @@
             "value0": 1
           },
           {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Structure & Recon & Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "BasicRadar"
           }
@@ -63,6 +69,12 @@
           {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Recon & Structure",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Structure & Recon & Orbital",
             "compare0": "<",
             "value0": 1
           },
@@ -116,6 +128,12 @@
             "value0": 0
           },
           {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Structure & Recon & Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
             "test_type": "UnitCountAroundBase",
             "unit_type_string0": "Land & Structure & Recon & Advanced",
             "string0": "Ally",
@@ -159,6 +177,12 @@
           {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Recon & ((Structure - Basic) | Orbital)",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Structure & Recon & Orbital",
             "compare0": "<",
             "value0": 1
           },

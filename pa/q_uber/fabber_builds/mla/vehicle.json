@@ -17,11 +17,6 @@
           },
           {
             "test_type": "HasPersonalityTag",
-            "string0": "tank",
-            "boolean": false
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "bot",
             "boolean": false
           },
@@ -40,12 +35,6 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicVehicleFactory"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Bot | Naval) & Factory & Basic",
-            "compare0": ">=",
-            "value0": 2
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -112,11 +101,6 @@
           },
           {
             "test_type": "HasPersonalityTag",
-            "string0": "tank",
-            "boolean": false
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "bot",
             "boolean": false
           },
@@ -135,12 +119,6 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicVehicleFactory"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Bot | Naval) & Factory & Basic",
-            "compare0": ">=",
-            "value0": 2
           },
           {
             "test_type": "CanFindPlaceToBuild",

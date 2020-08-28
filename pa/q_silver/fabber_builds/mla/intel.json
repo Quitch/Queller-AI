@@ -21,6 +21,12 @@
             "value0": 1
           },
           {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Structure & Recon & Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "BasicRadar"
           }
@@ -54,6 +60,12 @@
           {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Recon & ((Structure - Basic) | Orbital)",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Structure & Recon & Orbital",
             "compare0": "<",
             "value0": 1
           },

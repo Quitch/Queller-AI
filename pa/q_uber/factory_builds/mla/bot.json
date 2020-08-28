@@ -177,6 +177,54 @@
       ]
     },
     {
+      "name": "Grenadier",
+      "to_build": "BasicArtilleryBot",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["BasicBotFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": ">",
+            "value0": 2800
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Tank",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
       "name": "Spark",
       "to_build": "TeslaBot",
       "instance_count": 1,
@@ -196,15 +244,20 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiSurface",
-            "compare0": ">",
-            "value0": 2800
+            "compare0": "<",
+            "value0": 2500
           },
           {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Bot & Heavy & Basic",
-            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
+            "unit_type_string1": "Bot & Mobile & Offense - Deconstruction - Fabber",
             "compare0": "<",
-            "value0": 0.1
+            "value0": 0.25
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Bot",
+            "boolean": true
           }
         ],
         [
@@ -500,7 +553,7 @@
     {
       "name": "Gil-E",
       "to_build": "AdvancedArtilleryBot",
-      "instance_count": 1,
+      "instance_count": -1,
       "max_num_assisters": 10,
       "priority": 199,
       "builders": ["AdvancedBotFactory"],
