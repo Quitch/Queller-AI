@@ -2,10 +2,6 @@
 
 ## Unreleased
 
-### Added
-
-- Support for the Deep Space Radar
-
 ### Changed
 
 - Uber can use more Strykers
