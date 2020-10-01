@@ -33,18 +33,10 @@
         }
       ]
     },
-    "Bot_Scout_Queller": {
+    "Offensive_Land_Scout_Queller": {
       "units": [
         {
-          "unit_types": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
-          "max_count": 1
-        }
-      ]
-    },
-    "Stryker_Scout_Queller": {
-      "units": [
-        {
-          "unit_types": "(Tank & Basic & Mobile) - Hover - Fabber - AirDefense - Construction - Artillery - Heavy - Scout - SelfDestruct - Deconstruction",
+          "unit_types": "((Bot | Vehicle) & Offense & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
           "max_count": 1
         }
       ]
