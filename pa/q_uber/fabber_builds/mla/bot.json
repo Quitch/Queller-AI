@@ -12,11 +12,6 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "1v1",
-            "boolean": false
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "tank",
             "boolean": false
           },
@@ -88,11 +83,6 @@
       "builders": ["BasicBotFabber", "BasicVehicleFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "1v1",
-            "boolean": false
-          },
           {
             "test_type": "HasPersonalityTag",
             "string0": "tank",
