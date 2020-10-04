@@ -71,33 +71,6 @@
         ]
       ],
       "task_type": "LandAttack"
-    },
-    {
-      "name": "Necromancer Attack Platoon Max",
-      "to_build": "Necromancer_Attack_Max_Queller",
-      "instance_count": -1,
-      "priority": 121,
-      "build_conditions": [
-        [
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Bot & SelfDestruct & Advanced & Custom1",
-            "compare0": ">=",
-            "value0": 8
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "LandAttack"
     }
   ]
 }
