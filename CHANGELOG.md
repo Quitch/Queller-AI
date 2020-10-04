@@ -4,7 +4,9 @@
 
 - Use new UNITYPE tags for better platoon sorting
 - Uber puts a much higher emphasis on Grenadier usage
-- Removed translations for languages where PA includes an official translation.
+- Removed translations for languages where PA includes an official translation
+- Uber uses more Orcas
+- Uber may use more early Piranhas
 
 ## v5.2.0 - 2020-08-28
 
