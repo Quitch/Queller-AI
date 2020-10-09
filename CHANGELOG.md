@@ -8,6 +8,7 @@
 - Uber uses more Orcas
 - Uber no longer builds the Catapult
 - Uber no longer builds the Arsonist
+- Uber will scout with Grenadiers
 
 ## v5.2.0 - 2020-08-28
 

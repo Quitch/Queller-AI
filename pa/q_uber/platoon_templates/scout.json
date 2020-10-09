@@ -27,7 +27,7 @@
     "Offensive_Land_Scout_Queller": {
       "units": [
         {
-          "unit_types": "((Bot | Vehicle) & Offense & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
+          "unit_types": "((Bot | Vehicle) & Offense & Mobile) - Fabber - AirDefense - Construction - ((Tank | Advanced) & Artillery) - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
           "max_count": 1
         }
       ]

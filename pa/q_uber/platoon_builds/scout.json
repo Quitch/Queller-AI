@@ -108,7 +108,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Bot | Vehicle) & Offense & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
+            "unit_type_string0": "((Bot | Vehicle) & Offense & Mobile) - Fabber - AirDefense - Construction - ((Tank | Advanced) & Artillery) - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
             "compare0": ">=",
             "value0": 1
           },
