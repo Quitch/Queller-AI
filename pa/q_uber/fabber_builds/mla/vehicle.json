@@ -12,11 +12,6 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "ffa",
-            "boolean": false
-          },
-          {
-            "test_type": "HasPersonalityTag",
             "string0": "bot",
             "boolean": false
           },
@@ -94,11 +89,6 @@
       "builders": ["BasicBotFabber", "BasicVehicleFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "ffa",
-            "boolean": false
-          },
           {
             "test_type": "HasPersonalityTag",
             "string0": "bot",

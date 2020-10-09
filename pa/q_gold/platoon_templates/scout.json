@@ -8,23 +8,6 @@
         }
       ]
     },
-    "Offensive_Air_Scout_Queller": {
-      "units": [
-        {
-          "unit_types": "Air & Mobile & (Fighter | Scout) & Basic",
-          "min_count": 1,
-          "max_count": 4
-        }
-      ]
-    },
-    "Fighter_Scout_Queller": {
-      "units": [
-        {
-          "unit_types": "Air & Mobile & Fighter & Basic",
-          "max_count": 1
-        }
-      ]
-    },
     "Land_Scout_Queller": {
       "units": [
         {
@@ -52,7 +35,7 @@
     "Naval_Scout_Queller": {
       "units": [
         {
-          "unit_types": "Naval & Scout",
+          "unit_types": "(Naval & WaterHover & Offense & Mobile) - Fabber - Construction - Titan",
           "max_count": 1
         }
       ]

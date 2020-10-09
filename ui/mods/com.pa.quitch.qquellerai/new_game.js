@@ -193,7 +193,7 @@ function qQuellerAI() {
       neural_data_mod: 1,
       adv_eco_mod: 2,
       adv_eco_mod_alone: 0,
-      personality_tags: ["queller", "1v1", "lateorbital"],
+      personality_tags: ["queller", "lateorbital"],
       min_basic_fabbers: 2,
       min_advanced_fabbers: 1,
     },
@@ -241,12 +241,12 @@ function qQuellerAI() {
     personality,
     name
   ) {
-    var result = _.extend(_.clone(baseline), personality);
+    var result = _.assign(_.clone(baseline), personality);
     result["name"] = name;
     return result;
   });
 
-  _.extend(aiPersonalities, newPersonalities);
+  _.assign(aiPersonalities, newPersonalities);
 
   model.aiPersonalities.valueHasMutated();
 

@@ -91,8 +91,8 @@
       "task_type": "Scout"
     },
     {
-      "name": "Bot Scout Platoon",
-      "to_build": "Bot_Scout_Queller",
+      "name": "Offensive Land Scout Platoon",
+      "to_build": "Offensive_Land_Scout_Queller",
       "instance_count": 5,
       "priority": 200,
       "build_conditions": [
@@ -103,17 +103,12 @@
             "boolean": false
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "tank",
-            "boolean": false
-          },
-          {
             "test_type": "HaveFullPlanetIntel",
             "boolean": false
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
+            "unit_type_string0": "((Bot | Vehicle) & Offense & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
             "compare0": ">=",
             "value0": 1
           },
@@ -121,45 +116,6 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Air & Scout",
             "compare0": "<",
-            "value0": 1
-          }
-        ]
-      ],
-      "task_type": "Scout"
-    },
-    {
-      "name": "Stryker Scout Platoon",
-      "to_build": "Stryker_Scout_Queller",
-      "instance_count": 5,
-      "priority": 200,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "ffa",
-            "boolean": false
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "bot",
-            "boolean": false
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyPresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Tank & Basic & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - Scout - Hover",
-            "compare0": ">=",
             "value0": 1
           }
         ]
@@ -179,7 +135,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Naval & Scout",
+            "unit_type_string0": "(Naval & WaterHover & Offense & Mobile) - Fabber - Construction - Titan",
             "compare0": ">=",
             "value0": 1
           }

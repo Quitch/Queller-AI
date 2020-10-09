@@ -19,7 +19,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Bot | (Tank & Sub)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Fighter - SelfDestruct - Deconstruction - Titan",
+            "unit_type_string0": "(Amphibious & Mobile) - Hover - Fabber - AirDefense - Construction - Deconstruction - SelfDestruct - Titan",
             "compare0": ">=",
             "value0": 1
           },
@@ -52,7 +52,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Bot | (Tank & Sub)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Fighter - SelfDestruct - Deconstruction - Titan",
+            "unit_type_string0": "(Amphibious & Mobile) - Hover - Fabber - AirDefense - Construction - Deconstruction - SelfDestruct - Titan",
             "compare0": ">=",
             "value0": 4
           },
@@ -85,7 +85,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Bot | (Tank & Sub)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Fighter - SelfDestruct - Deconstruction - Titan",
+            "unit_type_string0": "(Amphibious & Mobile) - Hover - Fabber - AirDefense - Construction - Deconstruction - SelfDestruct - Titan",
             "compare0": ">=",
             "value0": 10
           },
@@ -118,7 +118,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Bot | (Tank & Sub)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Fighter - SelfDestruct - Deconstruction - Titan",
+            "unit_type_string0": "(Amphibious & Mobile) - Hover - Fabber - AirDefense - Construction - Deconstruction - SelfDestruct - Titan",
             "compare0": ">=",
             "value0": 20
           },
@@ -151,7 +151,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Bot | (Tank & Sub)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Fighter - SelfDestruct - Deconstruction - Titan",
+            "unit_type_string0": "(Amphibious & Mobile) - Hover - Fabber - AirDefense - Construction - Deconstruction - SelfDestruct - Titan",
             "compare0": ">=",
             "value0": 30
           },
@@ -178,7 +178,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Bot | (Tank & Sub)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Fighter - SelfDestruct - Deconstruction - Titan",
+            "unit_type_string0": "(Amphibious & Mobile) - Hover - Fabber - AirDefense - Construction - Deconstruction - SelfDestruct - Titan",
             "compare0": ">=",
             "value0": 40
           },
@@ -244,7 +244,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Hover & Mobile & Naval) - Fabber - Construction - Deconstruction - Titan",
+            "unit_type_string0": "(Hover & Mobile & Naval) - Amphibious - Fabber - AirDefense - Construction - Deconstruction - SelfDestruct - Titan",
             "compare0": ">=",
             "value0": 2
           },
@@ -301,7 +301,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Hover & Mobile & Naval) - Fabber - Construction - Deconstruction - Titan",
+            "unit_type_string0": "(Hover & Mobile & Naval) - Amphibious - Fabber - AirDefense - Construction - Deconstruction - SelfDestruct - Titan",
             "compare0": ">=",
             "value0": 3
           },
@@ -352,7 +352,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Hover & Mobile & Naval) - Fabber - Construction - Deconstruction - Titan",
+            "unit_type_string0": "(Hover & Mobile & Naval) - Amphibious - Fabber - AirDefense - Construction - Deconstruction - SelfDestruct - Titan",
             "compare0": ">=",
             "value0": 5
           },
@@ -464,99 +464,6 @@
           {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Bot & Deconstruction",
-            "compare0": ">=",
-            "value0": 10
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "LandAttack"
-    },
-    {
-      "name": "Necromancer Attack Platoon Small",
-      "to_build": "Necromancer_Attack_Small_Queller",
-      "instance_count": -1,
-      "priority": 125,
-      "build_conditions": [
-        [
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": "<",
-            "value0": 5600
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Bot & SelfDestruct & Advanced & Custom1",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "LandAttack"
-    },
-    {
-      "name": "Necromancer Attack Platoon Medium",
-      "to_build": "Necromancer_Attack_Medium_Queller",
-      "instance_count": -1,
-      "priority": 124,
-      "build_conditions": [
-        [
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": "<",
-            "value0": 11200
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Bot & SelfDestruct & Advanced & Custom1",
-            "compare0": ">=",
-            "value0": 4
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsLand",
-            "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "(Mobile | Structure) - Wall"
-          }
-        ]
-      ],
-      "task_type": "LandAttack"
-    },
-    {
-      "name": "Necromancer Attack Platoon Max",
-      "to_build": "Necromancer_Attack_Max_Queller",
-      "instance_count": -1,
-      "priority": 123,
-      "build_conditions": [
-        [
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Bot & SelfDestruct & Advanced & Custom1",
             "compare0": ">=",
             "value0": 10
           },

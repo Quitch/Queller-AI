@@ -13,7 +13,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Orbital & (LaserPlatform | Heavy) & Mobile - Titan",
+            "unit_type_string0": "(Orbital & Offense & Mobile & (LaserPlatform | Heavy)) - Titan",
             "compare0": ">=",
             "value0": 1
           },
@@ -38,7 +38,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Orbital & Fighter & Mobile - Titan",
+            "unit_type_string0": "(Orbital & Offense & Mobile & Fighter) - Titan",
             "compare0": ">=",
             "value0": 1
           },

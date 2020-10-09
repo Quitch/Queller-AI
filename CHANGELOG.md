@@ -1,8 +1,15 @@
 # CHANGELOG
 
-## v5.2.0 - 2020-08-28
+## v5.3.0 - 2020-10-09
 
-### Changed
+- Use new UNITYPE tags for better platoon sorting
+- Uber puts a much higher emphasis on Grenadier usage
+- Removed translations for languages where PA includes an official translation
+- Uber uses more Orcas
+- Uber no longer builds the Catapult
+- Uber no longer builds the Arsonist
+
+## v5.2.0 - 2020-08-28
 
 - Uber can use more Strykers
 - Uber can open vehicles as MLA

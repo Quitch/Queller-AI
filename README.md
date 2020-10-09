@@ -2,7 +2,7 @@
 
 > _"Your Queller AI is literally best teacher there is when it comes to pure learning how to play this game, especially \[the\] basics" - B13, Uber rank #2_
 
-Improved AI for [Planetary Annihilation: Titans](https://planetaryannihilation.com/)
+Improved AI for [Planetary Annihilation: TITANS](https://planetaryannihilation.com/)
 
 This mod is a total overhaul of the AI designed to smooth out the difficulty curve, providing more humanlike challenges that are both easier and harder than the vanilla AI. It features complete support for the [Legion Expansion](https://github.com/Legion-Expansion/Legion-Expansion).
 
@@ -152,7 +152,6 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 ### 1v1
 
 - Slower to enter orbital
-- Uses more T1 bots
 
 ### Bot
 
@@ -163,7 +162,6 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 - More cautious about engaging in battle
 - Techs earlier
 - Orbital earlier
-- May use a more cautious opening
 - Avoids antagonistic scouting raids
 
 ### Rush
