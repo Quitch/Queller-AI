@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v5.3.0 - 2020-10-09
 
 - Use new UNITYPE tags for better platoon sorting
 - Uber puts a much higher emphasis on Grenadier usage
