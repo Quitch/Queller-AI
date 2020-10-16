@@ -12,7 +12,7 @@ function qQuellerAI() {
   var aiPersonalities = model.aiPersonalities();
 
   var newPersonalities = {
-    "Q-Casual": {
+    qCasual: {
       ai_path: "/pa/q_casual",
       display_name: "!LOC:Q-Casual",
       metal_drain_check: 0.64,
@@ -33,7 +33,7 @@ function qQuellerAI() {
       min_basic_fabbers: 10,
       min_advanced_fabbers: 3,
     },
-    "Q-Bronze": {
+    qBronze: {
       ai_path: "/pa/q_bronze",
       display_name: "!LOC:Q-Bronze",
       metal_drain_check: 0.54,
@@ -53,7 +53,7 @@ function qQuellerAI() {
       min_basic_fabbers: 5,
       min_advanced_fabbers: 3,
     },
-    "Q-Silver": {
+    qSilver: {
       ai_path: "/pa/q_silver",
       display_name: "!LOC:Q-Silver",
       metal_drain_check: 0.54,
@@ -71,7 +71,7 @@ function qQuellerAI() {
       min_basic_fabbers: 4,
       min_advanced_fabbers: 3,
     },
-    "Q-Gold": {
+    qGold: {
       ai_path: "/pa/q_gold",
       display_name: "!LOC:Q-Gold",
       metal_drain_check: 0.54,
@@ -89,7 +89,7 @@ function qQuellerAI() {
       min_basic_fabbers: 3,
       min_advanced_fabbers: 2,
     },
-    "Q-Platinum": {
+    qPlatinum: {
       ai_path: "/pa/q_platinum",
       display_name: "!LOC:Q-Platinum",
       metal_drain_check: 0.54,
@@ -107,7 +107,7 @@ function qQuellerAI() {
       min_basic_fabbers: 2,
       min_advanced_fabbers: 2,
     },
-    "Q-Uber": {
+    qUber: {
       ai_path: "/pa/q_uber",
       display_name: "!LOC:Q-Uber",
       metal_drain_check: 0.54,
@@ -125,7 +125,7 @@ function qQuellerAI() {
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1,
     },
-    "Q-Uber 1v1": {
+    qUber1v1: {
       ai_path: "/pa/q_uber",
       display_name: "!LOC:Q-Uber 1v1",
       metal_drain_check: 0.54,
@@ -143,7 +143,7 @@ function qQuellerAI() {
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1,
     },
-    "Q-Uber Bot": {
+    QUberBot: {
       ai_path: "/pa/q_uber",
       display_name: "!LOC:Q-Uber Bot",
       metal_drain_check: 0.54,
@@ -161,7 +161,7 @@ function qQuellerAI() {
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1,
     },
-    "Q-Uber Free-For-All": {
+    qUberFFA: {
       ai_path: "/pa/q_uber",
       display_name: "!LOC:Q-Uber Free-For-All",
       metal_drain_check: 0.54,
@@ -179,7 +179,7 @@ function qQuellerAI() {
       min_basic_fabbers: 4,
       min_advanced_fabbers: 1,
     },
-    "Q-Uber Rush": {
+    qUberRush: {
       ai_path: "/pa/q_uber",
       display_name: "!LOC:Q-Uber Rush",
       metal_drain_check: 0.54,
@@ -197,7 +197,7 @@ function qQuellerAI() {
       min_basic_fabbers: 2,
       min_advanced_fabbers: 1,
     },
-    "Q-Uber Tank": {
+    qUberTank: {
       ai_path: "/pa/q_uber",
       display_name: "!LOC:Q-Uber Tank",
       metal_drain_check: 0.54,
@@ -215,7 +215,7 @@ function qQuellerAI() {
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1,
     },
-    "Q-Uber Turtle": {
+    qUberTurtle: {
       ai_path: "/pa/q_uber",
       display_name: "!LOC:Q-Uber Turtle",
       metal_drain_check: 0.54,
