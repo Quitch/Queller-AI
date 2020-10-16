@@ -143,7 +143,7 @@ function qQuellerAI() {
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1,
     },
-    QUberBot: {
+    qUberBot: {
       ai_path: "/pa/q_uber",
       display_name: "!LOC:Q-Uber Bot",
       metal_drain_check: 0.54,
