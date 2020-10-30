@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Legion Commander no longer assists in situations where it shouldn't
+
 ## v5.3.0 - 2020-10-09
 
 - Use new UNITYPE tags for better platoon sorting
