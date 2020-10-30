@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Legion Commander no longer assists in situations where it shouldn't
+- Add missing ai_config file
 
 ## v5.3.0 - 2020-10-09
 
