@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v5.4.0 - 2020-11-08
+
+- Legion Commander no longer assists in situations where it shouldn't
+- Uber uses Strykers in the late game
+- Uber 1v1 makes greater use of Strykers
+
 ## v5.3.0 - 2020-10-09
 
 - Use new UNITYPE tags for better platoon sorting
