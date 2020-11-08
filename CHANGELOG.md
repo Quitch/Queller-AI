@@ -3,7 +3,6 @@
 ## Unreleased
 
 - Legion Commander no longer assists in situations where it shouldn't
-- Add missing ai_config file
 - Uber uses Strykers in the late game
 - Uber 1v1 makes greater use of Strykers
 
