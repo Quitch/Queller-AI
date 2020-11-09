@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Gold and above are a little more aggressive with light artillery placements
+
 ## v5.4.0 - 2020-11-08
 
 - Legion Commander no longer assists in situations where it shouldn't
