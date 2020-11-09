@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Gold and above are a little more aggressive with light artillery placements
+- Bronze and above place advanced artillery for Commander snipes
 
 ## v5.4.0 - 2020-11-08
 

@@ -166,6 +166,31 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "LongRangeArtillery"
           }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Commander",
+            "string0": "Enemy",
+            "value0": 550,
+            "compare0": ">=",
+            "value1": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LongRangeArtillery"
+          }
         ]
       ],
       "placement_rules": {

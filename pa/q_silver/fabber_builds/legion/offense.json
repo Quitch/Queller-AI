@@ -100,6 +100,31 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionDefenseAdvancedArtillery"
           }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Commander",
+            "string0": "Enemy",
+            "value0": 375,
+            "compare0": ">=",
+            "value1": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedArtillery"
+          }
         ]
       ],
       "placement_rules": {
