@@ -345,6 +345,33 @@
             "compare0": "<",
             "value0": 0.15
           }
+        ]
+      ]
+    },
+    {
+      "name": "Patriot",
+      "to_build": "LegionBotBasicAA",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 96,
+      "builders": ["LegionFactoryBasicBot", "LegionFactoryAdvancedBot"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & AirDefense",
+            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
+            "compare0": "<",
+            "value0": 0.1
+          }
         ],
         [
           {
@@ -374,33 +401,6 @@
           {
             "test_type": "OtherPlanetNeedsLandUnitAssistance",
             "boolean": true
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Patriot",
-      "to_build": "LegionBotBasicAA",
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 96,
-      "builders": ["LegionFactoryBasicBot", "LegionFactoryAdvancedBot"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Land & Mobile & AirDefense",
-            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
-            "compare0": "<",
-            "value0": 0.1
           }
         ]
       ]
