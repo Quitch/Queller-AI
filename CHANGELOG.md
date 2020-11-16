@@ -5,6 +5,7 @@
 - Gold and above are a little more aggressive with light artillery placements
 - Bronze and above place advanced artillery for Commander snipes
 - Ensure walls are not counted when looking at viability of artillery
+- Uber maintains a small mobile AA presence even when it feels it has a strong air and static AA presence
 
 ## v5.4.0 - 2020-11-08
 
