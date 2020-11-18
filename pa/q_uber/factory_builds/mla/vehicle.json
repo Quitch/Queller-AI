@@ -258,7 +258,7 @@
     {
       "name": "Stryker - Late game",
       "to_build": "AttackVehicle",
-      "instance_count": 1,
+      "instance_count": -1,
       "max_num_assisters": 10,
       "priority": 97,
       "builders": ["BasicVehicleFactory"],
@@ -503,6 +503,23 @@
             "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
             "compare0": "<",
             "value0": 0.2
+          }
+        ],
+        [
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & AirDefense - (Tank & Advanced)",
+            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
+            "compare0": "<",
+            "value0": 0.1
           }
         ],
         [
