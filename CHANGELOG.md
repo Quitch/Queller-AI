@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v5.5.0 - 2020-11-18
 
 - Gold and above are a little more aggressive with light artillery placements
 - Bronze and above place advanced artillery for Commander snipes
