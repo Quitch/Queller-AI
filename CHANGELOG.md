@@ -7,6 +7,7 @@
 - Ensure walls are not counted when looking at viability of artillery
 - Uber maintains a small mobile AA presence even when it feels it has a strong air and static AA presence
 - Uber Legion less likely to over-build Patriots when alone
+- Uber uses Sparks for slightly longer
 
 ## v5.4.0 - 2020-11-08
 
