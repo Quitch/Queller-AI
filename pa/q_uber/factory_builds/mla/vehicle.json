@@ -704,6 +704,10 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "test_type": "MetMinAdvancedFabberCount",
+            "boolean": true
+          },
+          {
             "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
             "boolean": true
           },
@@ -729,10 +733,6 @@
           },
           {
             "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "MetMinAdvancedFabberCount",
             "boolean": true
           },
           {
@@ -795,10 +795,6 @@
             "boolean": true
           },
           {
-            "test_type": "MetMinAdvancedFabberCount",
-            "boolean": true
-          },
-          {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Tank & Artillery & Advanced",
             "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
@@ -850,10 +846,6 @@
             "boolean": true
           },
           {
-            "test_type": "MetMinAdvancedFabberCount",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Air",
             "compare0": ">",
@@ -877,10 +869,6 @@
         [
           {
             "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "MetMinAdvancedFabberCount",
             "boolean": true
           },
           {

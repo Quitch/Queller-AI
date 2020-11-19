@@ -671,6 +671,10 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "test_type": "MetMinAdvancedFabberCount",
+            "boolean": true
+          },
+          {
             "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
             "boolean": true
           },
@@ -697,10 +701,6 @@
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
-          },
-          {
-            "test_type": "MetMinAdvancedFabberCount",
-            "boolean": true
           }
         ],
         [
@@ -710,6 +710,10 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "MetMinAdvancedFabberCount",
+            "boolean": true
           },
           {
             "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
@@ -736,10 +740,6 @@
             "boolean": false
           },
           {
-            "test_type": "MetMinAdvancedFabberCount",
-            "boolean": true
-          },
-          {
             "test_type": "HaveSeenEnemyUnits",
             "unit_type_string0": "Tank & Advanced - Heavy - Artillery - AirDefense",
             "boolean": true
@@ -762,10 +762,6 @@
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
-          },
-          {
-            "test_type": "MetMinAdvancedFabberCount",
-            "boolean": true
           },
           {
             "test_type": "HaveSeenEnemyUnits",
@@ -793,6 +789,10 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "MetMinAdvancedFabberCount",
+            "boolean": true
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -832,10 +832,6 @@
             "boolean": true
           },
           {
-            "test_type": "MetMinAdvancedFabberCount",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Air",
             "string1": "AntiAir",
@@ -853,10 +849,6 @@
         [
           {
             "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "MetMinAdvancedFabberCount",
             "boolean": true
           },
           {
