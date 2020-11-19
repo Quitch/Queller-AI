@@ -4,6 +4,7 @@
 
 - Uber doesn't prioritise its initial advanced fabbers as highly when fighting for planetary control
 - Uber prioritises its initial advanced fabbers more highly when alone on a planet
+- Uber no longer prioritises the Storm over other units when in need of AA
 
 ## v5.5.0 - 2020-11-18
 
