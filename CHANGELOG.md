@@ -7,6 +7,7 @@
 - Uber no longer prioritises the Storm over other units when in need of AA
 - Uber gives less priority to energy storage again
 - Uber uses less Shellers
+- Change to how Uber measures Vanguard use
 
 ## v5.5.0 - 2020-11-18
 
