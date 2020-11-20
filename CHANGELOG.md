@@ -6,6 +6,7 @@
 - Uber prioritises its initial advanced fabbers more highly when alone on a planet
 - Uber no longer prioritises the Storm over other units when in need of AA
 - Uber gives less priority to energy storage again
+- Uber uses less Shellers
 
 ## v5.5.0 - 2020-11-18
 
