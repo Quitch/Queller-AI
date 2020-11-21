@@ -13,6 +13,7 @@
 - Fixed my misunderstanding of how presence checks were working leading to Uber failing to always respond to threats
 - Uber only builds torpedo launchers in response to subs rather than general naval threats
 - Uber builds Typhoons against all naval threats
+- Uber uses a heavy Stryker presence for a little longer
 
 ## v5.5.0 - 2020-11-18
 
