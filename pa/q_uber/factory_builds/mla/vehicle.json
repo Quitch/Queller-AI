@@ -229,15 +229,10 @@
       "to_build": "AttackVehicle",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 99,
+      "priority": 98,
       "builders": ["BasicVehicleFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "ffa",
-            "boolean": false
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -249,8 +244,8 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiSurface",
-            "compare0": "<",
-            "value0": 2500
+            "compare0": "<=",
+            "value0": 2800
           }
         ]
       ]
@@ -264,11 +259,6 @@
       "builders": ["BasicVehicleFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "ffa",
-            "boolean": false
-          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
@@ -307,6 +297,11 @@
       "build_conditions": [
         [
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "1v1",
+            "boolean": false
+          },
+          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -316,6 +311,11 @@
           }
         ],
         [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "1v1",
+            "boolean": false
+          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -344,6 +344,11 @@
       "build_conditions": [
         [
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "1v1",
+            "boolean": false
+          },
+          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -366,6 +371,11 @@
           }
         ],
         [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "1v1",
+            "boolean": false
+          },
           {
             "test_type": "AloneOnPlanet",
             "boolean": true
@@ -704,6 +714,10 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "test_type": "MetMinAdvancedFabberCount",
+            "boolean": true
+          },
+          {
             "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
             "boolean": true
           },
@@ -732,13 +746,9 @@
             "boolean": true
           },
           {
-            "test_type": "MetMinAdvancedFabberCount",
-            "boolean": true
-          },
-          {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Tank & Heavy & Advanced",
-            "unit_type_string1": "Land & Artillery & Advanced & Mobile",
+            "unit_type_string0": "Tank & Artillery & Advanced",
+            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
             "compare0": "<",
             "value0": 0.01
           }
@@ -757,8 +767,8 @@
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Tank & Heavy & Advanced",
-            "unit_type_string1": "Land & Artillery & Advanced & Mobile",
+            "unit_type_string0": "Tank & Artillery & Advanced",
+            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
             "compare0": "<",
             "value0": 0.01
           },
@@ -795,15 +805,11 @@
             "boolean": true
           },
           {
-            "test_type": "MetMinAdvancedFabberCount",
-            "boolean": true
-          },
-          {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Tank & Artillery & Advanced",
             "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
             "compare0": "<",
-            "value0": 0.05
+            "value0": 0.02
           }
         ],
         [
@@ -823,7 +829,7 @@
             "unit_type_string0": "Tank & Artillery & Advanced",
             "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
             "compare0": "<",
-            "value0": 0.05
+            "value0": 0.02
           },
           {
             "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
@@ -837,20 +843,16 @@
       ]
     },
     {
-      "name": "Storm - Need AA",
+      "name": "Storm",
       "to_build": "FlakTank",
       "instance_count": 1,
       "max_num_assisters": 10,
-      "priority": 200,
+      "priority": 199,
       "builders": ["AdvancedVehicleFactory"],
       "build_conditions": [
         [
           {
             "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "MetMinAdvancedFabberCount",
             "boolean": true
           },
           {
@@ -877,10 +879,6 @@
         [
           {
             "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "MetMinAdvancedFabberCount",
             "boolean": true
           },
           {

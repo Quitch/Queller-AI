@@ -469,10 +469,6 @@
             "boolean": true
           },
           {
-            "test_type": "MetMinAdvancedFabberCount",
-            "boolean": true
-          },
-          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Land & Mobile & Offense - Deconstruction - Fabber",
             "compare0": ">",
@@ -577,10 +573,6 @@
             "boolean": true
           },
           {
-            "test_type": "MetMinAdvancedFabberCount",
-            "boolean": true
-          },
-          {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Land & Artillery & Advanced & Mobile",
             "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
@@ -668,6 +660,10 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "MetMinAdvancedFabberCount",
+            "boolean": true
           },
           {
             "test_type": "OtherPlanetCanReceiveLandUnitAssistance",

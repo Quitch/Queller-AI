@@ -204,6 +204,12 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetThreat",
+            "string0": "Land",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiSurface",
             "compare0": ">",
@@ -547,6 +553,10 @@
             "boolean": true
           },
           {
+            "test_type": "MetMinAdvancedFabberCount",
+            "boolean": true
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -575,10 +585,6 @@
           },
           {
             "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "MetMinAdvancedFabberCount",
             "boolean": true
           },
           {
@@ -642,10 +648,6 @@
             "boolean": true
           },
           {
-            "test_type": "MetMinAdvancedFabberCount",
-            "boolean": true
-          },
-          {
             "test_type": "HaveSeenEnemyUnits",
             "unit_type_string0": "Advanced & Bot - Custom1",
             "boolean": false
@@ -658,10 +660,6 @@
           },
           {
             "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "MetMinAdvancedFabberCount",
             "boolean": true
           },
           {
@@ -689,10 +687,6 @@
           },
           {
             "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "MetMinAdvancedFabberCount",
             "boolean": true
           },
           {
@@ -772,6 +766,10 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "MetMinAdvancedFabberCount",
+            "boolean": true
           },
           {
             "test_type": "UnitRatioOnPlanet",

@@ -1,5 +1,25 @@
 # CHANGELOG
 
+## v5.6.0 - 2020-11-21
+
+- Uber doesn't prioritise its initial advanced fabbers as highly when fighting for planetary control
+- Uber prioritises its initial advanced fabbers more highly when alone on a planet
+- Uber no longer prioritises the Storm over other units when in need of AA
+- Uber gives less priority to energy storage again
+- Uber uses less Shellers
+- Change to how Uber measures Vanguard use
+- Uber FFA builds Strykers
+- Uber only builds perimeter torpedo launchers in response to subs rather than general naval threats
+- Uber builds Typhoons against all naval threats
+- Uber uses a heavy Stryker presence for a little longer
+- Uber won't use as many factories to make Patriots when in need of AA
+- Uber's Grenadier build will only happen in response to a land threat
+- Ensure Uber will use Spinners in the early game
+- Fixed Uber 1v1 not building Spinners
+- Uber maintains a small anti-air presence in its naval force if air is present
+- Uber Rush now shares the preferences of Uber 1v1 (use this if you want 1v1 to tech later)
+- Reduce ratio of air factories Uber builds when losing the air war
+
 ## v5.5.0 - 2020-11-18
 
 - Gold and above are a little more aggressive with light artillery placements

@@ -112,7 +112,7 @@ function qQuellerAI() {
       display_name: "!LOC:Q-Uber",
       metal_drain_check: 0.54,
       energy_drain_check: 0.65,
-      metal_demand_check: 0.85,
+      metal_demand_check: 0.8,
       energy_demand_check: 0.8,
       micro_type: 2,
       go_for_the_kill: true,
@@ -130,7 +130,7 @@ function qQuellerAI() {
       display_name: "!LOC:Q-Uber 1v1",
       metal_drain_check: 0.54,
       energy_drain_check: 0.65,
-      metal_demand_check: 0.85,
+      metal_demand_check: 0.8,
       energy_demand_check: 0.8,
       micro_type: 2,
       go_for_the_kill: true,
@@ -148,7 +148,7 @@ function qQuellerAI() {
       display_name: "!LOC:Q-Uber Bot",
       metal_drain_check: 0.54,
       energy_drain_check: 0.65,
-      metal_demand_check: 0.85,
+      metal_demand_check: 0.8,
       energy_demand_check: 0.8,
       micro_type: 2,
       go_for_the_kill: true,
@@ -166,7 +166,7 @@ function qQuellerAI() {
       display_name: "!LOC:Q-Uber Free-For-All",
       metal_drain_check: 0.54,
       energy_drain_check: 0.65,
-      metal_demand_check: 0.85,
+      metal_demand_check: 0.8,
       energy_demand_check: 0.8,
       micro_type: 2,
       go_for_the_kill: true,
@@ -193,7 +193,7 @@ function qQuellerAI() {
       neural_data_mod: 1,
       adv_eco_mod: 2,
       adv_eco_mod_alone: 0,
-      personality_tags: ["queller", "lateorbital"],
+      personality_tags: ["queller", "1v1", "lateorbital"],
       min_basic_fabbers: 2,
       min_advanced_fabbers: 1,
     },
@@ -202,7 +202,7 @@ function qQuellerAI() {
       display_name: "!LOC:Q-Uber Tank",
       metal_drain_check: 0.54,
       energy_drain_check: 0.65,
-      metal_demand_check: 0.85,
+      metal_demand_check: 0.8,
       energy_demand_check: 0.8,
       micro_type: 2,
       go_for_the_kill: true,
@@ -237,14 +237,14 @@ function qQuellerAI() {
 
   var baseline = aiPersonalities.Absurd;
 
-  newPersonalities = _.mapValues(newPersonalities, function (
-    personality,
-    name
-  ) {
-    var result = _.assign(_.clone(baseline), personality);
-    result["name"] = name;
-    return result;
-  });
+  newPersonalities = _.mapValues(
+    newPersonalities,
+    function (personality, name) {
+      var result = _.assign(_.clone(baseline), personality);
+      result["name"] = name;
+      return result;
+    }
+  );
 
   _.assign(aiPersonalities, newPersonalities);
 
