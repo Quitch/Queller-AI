@@ -497,6 +497,18 @@
           },
           {
             "test_type": "PlanetThreat",
+            "string0": "Naval",
+            "compare0": ">",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetThreat",
             "string0": "Sub",
             "compare0": ">",
             "value0": 0
