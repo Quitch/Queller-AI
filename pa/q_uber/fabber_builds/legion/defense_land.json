@@ -20,17 +20,15 @@
       "build_conditions": [
         [
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetThreat",
-            "string0": "Land",
-            "compare0": ">",
-            "value0": 0
           },
           {
             "test_type": "DistFromMainBase",
@@ -89,6 +87,10 @@
       "build_conditions": [
         [
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
@@ -104,12 +106,6 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetThreat",
-            "string0": "Land",
-            "compare0": ">",
-            "value0": 0
           },
           {
             "test_type": "DistFromMainBase",
@@ -164,6 +160,10 @@
       "build_conditions": [
         [
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
@@ -174,12 +174,6 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetThreat",
-            "string0": "Land",
-            "compare0": ">",
-            "value0": 0
           },
           {
             "test_type": "UnitCountInBase",
@@ -230,6 +224,10 @@
       "build_conditions": [
         [
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
@@ -240,12 +238,6 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetThreat",
-            "string0": "Land",
-            "compare0": ">",
-            "value0": 0
           },
           {
             "test_type": "DistFromMainBase",
@@ -301,6 +293,10 @@
       "builders": ["LegionBotBasicFabber", "LegionVehicleBasicFabber"],
       "build_conditions": [
         [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
@@ -368,6 +364,10 @@
       "build_conditions": [
         [
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
@@ -378,12 +378,6 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetThreat",
-            "string0": "Land",
-            "compare0": ">",
-            "value0": 0
           },
           {
             "test_type": "UnitCountInBase",
@@ -434,6 +428,10 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
@@ -502,6 +500,10 @@
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
@@ -677,13 +679,11 @@
       "build_conditions": [
         [
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
-            "test_type": "PlanetThreat",
-            "string0": "Land",
-            "compare0": ">",
-            "value0": 0
+            "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "UnitCountInBase",
@@ -717,13 +717,11 @@
         ],
         [
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
-            "test_type": "PlanetThreat",
-            "string0": "Land",
-            "compare0": ">",
-            "value0": 0
+            "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "UnitCountInBase",
@@ -784,13 +782,11 @@
       "build_conditions": [
         [
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
-            "test_type": "PlanetThreat",
-            "string0": "Land",
-            "compare0": ">",
-            "value0": 0
+            "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "UnitCountInBase",

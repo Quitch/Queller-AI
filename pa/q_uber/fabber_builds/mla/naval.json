@@ -16,10 +16,6 @@
             "boolean": false
           },
           {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
-          },
-          {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
           },
@@ -330,18 +326,16 @@
       "build_conditions": [
         [
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
           },
           {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
-          },
-          {
-            "test_type": "PlanetThreat",
-            "string0": "Economy",
-            "compare0": ">",
-            "value0": 0
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -362,14 +356,12 @@
         ],
         [
           {
-            "test_type": "HaveEcoForAdvanced",
+            "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
           {
-            "test_type": "PlanetThreat",
-            "string0": "Economy",
-            "compare0": ">",
-            "value0": 0
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
@@ -395,14 +387,12 @@
         ],
         [
           {
-            "test_type": "UnableToExpand",
+            "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
           {
-            "test_type": "PlanetThreat",
-            "string0": "Economy",
-            "compare0": ">",
-            "value0": 0
+            "test_type": "UnableToExpand",
+            "boolean": true
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -439,14 +429,12 @@
       "build_conditions": [
         [
           {
-            "test_type": "HaveEcoForAdvanced",
+            "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
           {
-            "test_type": "PlanetThreat",
-            "string0": "Economy",
-            "compare0": ">",
-            "value0": 0
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
           },
           {
             "test_type": "CurrentMetalEfficiency",

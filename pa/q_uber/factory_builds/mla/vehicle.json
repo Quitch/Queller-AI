@@ -146,11 +146,11 @@
         ],
         [
           {
-            "test_type": "EnemyPresenceOnPlanet",
+            "test_type": "AloneOnPlanet",
             "boolean": false
           },
           {
-            "test_type": "HaveFullPlanetIntel",
+            "test_type": "EnemyPresenceOnPlanet",
             "boolean": false
           },
           {
@@ -411,6 +411,10 @@
       "build_conditions": [
         [
           {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
@@ -430,6 +434,10 @@
           }
         ],
         [
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
@@ -461,6 +469,10 @@
       "build_conditions": [
         [
           {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
@@ -480,6 +492,10 @@
           }
         ],
         [
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
@@ -501,14 +517,12 @@
         ],
         [
           {
-            "test_type": "CanDeployLandFromBase",
+            "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
           {
-            "test_type": "PlanetThreat",
-            "string0": "Air",
-            "compare0": ">",
-            "value0": 0
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
           },
           {
             "test_type": "UnitRatioOnPlanet",
@@ -838,6 +852,10 @@
       "build_conditions": [
         [
           {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Air",
             "compare0": ">",
@@ -859,6 +877,10 @@
           }
         ],
         [
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Air",

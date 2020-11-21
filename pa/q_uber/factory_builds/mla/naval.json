@@ -141,6 +141,10 @@
           {
             "test_type": "EnemyPresenceOnPlanet",
             "boolean": false
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
           }
         ],
         [
@@ -179,14 +183,12 @@
       "build_conditions": [
         [
           {
-            "test_type": "CanDeployNavalFromBase",
+            "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
           {
-            "test_type": "PlanetThreat",
-            "string0": "Economy",
-            "compare0": ">",
-            "value0": 0
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
           }
         ]
       ]
@@ -200,6 +202,10 @@
       "builders": ["AnyUberNavalFactory"],
       "build_conditions": [
         [
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
           {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
@@ -231,11 +237,15 @@
       "build_conditions": [
         [
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
           },
           {
-            "test_type": "PlanetThreat",
+            "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Naval",
             "compare0": ">",
             "value0": 0
@@ -243,11 +253,15 @@
         ],
         [
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
           },
           {
-            "test_type": "PlanetThreat",
+            "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Sub",
             "compare0": ">",
             "value0": 0
@@ -359,6 +373,10 @@
       "build_conditions": [
         [
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
           },
@@ -376,6 +394,22 @@
             "compare0": "<",
             "value0": 0.6
           }
+        ],
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Naval & Mobile & Advanced & Artillery",
+            "compare0": "<",
+            "value0": 1
+          }
         ]
       ]
     },
@@ -389,18 +423,16 @@
       "build_conditions": [
         [
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "EnemyOrbitalPresenceOnPlanet",
             "boolean": true
           },
           {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
-          },
-          {
-            "test_type": "PlanetThreat",
-            "string0": "Economy",
-            "compare0": ">",
-            "value0": 0
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
@@ -418,6 +450,10 @@
           }
         ],
         [
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
           {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
@@ -449,6 +485,22 @@
             "compare0": "<",
             "value0": 0.1
           }
+        ],
+        [
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Naval & Mobile & Advanced & Tactical",
+            "compare0": "<",
+            "value0": 1
+          }
         ]
       ]
     },
@@ -461,6 +513,10 @@
       "builders": ["AdvancedNavalFactory"],
       "build_conditions": [
         [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
           {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
@@ -492,11 +548,15 @@
       "build_conditions": [
         [
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
           },
           {
-            "test_type": "PlanetThreat",
+            "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Naval",
             "compare0": ">",
             "value0": 0
@@ -504,11 +564,15 @@
         ],
         [
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
           },
           {
-            "test_type": "PlanetThreat",
+            "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "Sub",
             "compare0": ">",
             "value0": 0
@@ -526,10 +590,8 @@
       "build_conditions": [
         [
           {
-            "test_type": "PlanetThreat",
-            "string0": "Economy",
-            "compare0": ">",
-            "value0": 0
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           }
         ]
       ]

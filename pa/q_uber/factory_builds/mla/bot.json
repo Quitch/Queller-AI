@@ -260,7 +260,7 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiSurface",
-            "compare0": "<=",
+            "compare0": "<",
             "value0": 2800
           },
           {
@@ -360,6 +360,10 @@
             "boolean": false
           },
           {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "MetMinAdvancedFabberCount",
             "boolean": true
           },
@@ -391,6 +395,10 @@
           {
             "test_type": "BaseThreatened",
             "boolean": false
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "MetMinAdvancedFabberCount",
@@ -740,10 +748,8 @@
             "boolean": false
           },
           {
-            "test_type": "PlanetThreat",
-            "string0": "Economy",
-            "compare0": ">",
-            "value0": 0
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "UnitRatioOnPlanet",

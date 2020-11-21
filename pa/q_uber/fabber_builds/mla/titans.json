@@ -17,17 +17,15 @@
       "build_conditions": [
         [
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetThreat",
-            "string0": "Land",
-            "compare0": ">",
-            "value0": 0
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
@@ -70,17 +68,15 @@
       "build_conditions": [
         [
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetThreat",
-            "string0": "Land",
-            "compare0": ">",
-            "value0": 0
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
@@ -123,17 +119,15 @@
       "build_conditions": [
         [
           {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetThreat",
-            "string0": "Land",
-            "compare0": ">",
-            "value0": 0
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
