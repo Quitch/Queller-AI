@@ -8,6 +8,7 @@
 - Uber gives less priority to energy storage again
 - Uber uses less Shellers
 - Change to how Uber measures Vanguard use
+- Uber FFA builds Strykers
 
 ## v5.5.0 - 2020-11-18
 
