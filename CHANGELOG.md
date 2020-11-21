@@ -14,6 +14,7 @@
 - Uber only builds torpedo launchers in response to subs rather than general naval threats
 - Uber builds Typhoons against all naval threats
 - Uber uses a heavy Stryker presence for a little longer
+- Uber won't use as many factories to make Patriots when in need of AA
 
 ## v5.5.0 - 2020-11-18
 
