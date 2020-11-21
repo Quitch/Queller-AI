@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v5.6.0 - 2020-11-21
 
 - Uber doesn't prioritise its initial advanced fabbers as highly when fighting for planetary control
 - Uber prioritises its initial advanced fabbers more highly when alone on a planet
