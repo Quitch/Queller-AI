@@ -14,11 +14,13 @@
       "build_conditions": [
         [
           {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
+            "test_type": "CanAffordBuildDemand"
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "PlanetThreat",
+            "string0": "Air",
+            "compare0": ">",
+            "value0": 0
           },
           {
             "test_type": "DistFromMainBase",
@@ -79,17 +81,7 @@
       "build_conditions": [
         [
           {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Air",
-            "compare0": ">=",
-            "value0": 40
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
@@ -141,10 +133,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -190,10 +178,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -253,10 +237,6 @@
       "builders": ["AnyUberAdvancedFabber"],
       "build_conditions": [
         [
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },

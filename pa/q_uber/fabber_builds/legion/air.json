@@ -60,8 +60,10 @@
             "boolean": false
           },
           {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
+            "test_type": "PlanetThreat",
+            "string0": "Air",
+            "compare0": ">",
+            "value0": 0
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -142,6 +144,10 @@
         [
           {
             "test_type": "EnemyPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
             "boolean": false
           },
           {
@@ -263,8 +269,10 @@
             "boolean": false
           },
           {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
+            "test_type": "PlanetThreat",
+            "string0": "Air",
+            "compare0": ">",
+            "value0": 0
           },
           {
             "test_type": "CanAffordPotentialDrain",

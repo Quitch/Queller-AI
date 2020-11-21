@@ -300,10 +300,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
@@ -323,10 +319,6 @@
           }
         ],
         [
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
@@ -358,12 +350,14 @@
       "build_conditions": [
         [
           {
-            "test_type": "EnemyAirPresenceOnPlanet",
+            "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
+            "test_type": "PlanetThreat",
+            "string0": "Air",
+            "compare0": ">",
+            "value0": 0
           },
           {
             "test_type": "UnitRatioOnPlanet",
@@ -471,10 +465,6 @@
             "boolean": false
           },
           {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
             "test_type": "MetMinAdvancedFabberCount",
             "boolean": true
           },
@@ -506,10 +496,6 @@
           {
             "test_type": "BaseThreatened",
             "boolean": false
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
           },
           {
             "test_type": "MetMinAdvancedFabberCount",
@@ -828,10 +814,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Air",
             "string1": "AntiAir",
@@ -847,10 +829,6 @@
           }
         ],
         [
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Air",

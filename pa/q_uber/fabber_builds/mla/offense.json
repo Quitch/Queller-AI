@@ -19,10 +19,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
             "test_type": "CanDeployNavalFromBase",
             "boolean": false
           },
@@ -32,6 +28,12 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "Land",
+            "compare0": ">",
+            "value0": 0
           },
           {
             "test_type": "UnitCountInBase",
@@ -120,15 +122,17 @@
       "build_conditions": [
         [
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "Land",
+            "compare0": ">",
+            "value0": 0
           },
           {
             "test_type": "UnitCountInBase",
@@ -157,15 +161,17 @@
         ],
         [
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "Land",
+            "compare0": ">",
+            "value0": 0
           },
           {
             "test_type": "UnitCountInBase",
