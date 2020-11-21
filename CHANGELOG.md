@@ -19,6 +19,7 @@
 - Fixed Uber 1v1 not building Spinners
 - Uber maintains a small anti-air presence in its naval force if air is present
 - Uber Rush now shares the preferences of Uber 1v1
+- Reduce ratio of air factories Uber builds when losing the air war
 
 ## v5.5.0 - 2020-11-18
 
