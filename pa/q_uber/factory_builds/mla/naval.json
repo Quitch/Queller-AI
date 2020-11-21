@@ -224,6 +224,23 @@
             "compare0": "<",
             "value0": 0.2
           }
+        ],
+        [
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Naval & Mobile & (AirDefense | Tactical)",
+            "unit_type_string1": "(Naval & Mobile) - Fabber - Hover",
+            "compare0": "<",
+            "value0": 0.05
+          }
         ]
       ]
     },
