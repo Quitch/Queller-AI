@@ -9,7 +9,6 @@
 - Uber uses less Shellers
 - Change to how Uber measures Vanguard use
 - Uber FFA builds Strykers
-- Uber 1v1 techs later
 - Uber only builds perimeter torpedo launchers in response to subs rather than general naval threats
 - Uber builds Typhoons against all naval threats
 - Uber uses a heavy Stryker presence for a little longer
