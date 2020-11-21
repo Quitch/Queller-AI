@@ -16,6 +16,7 @@
 - Uber uses a heavy Stryker presence for a little longer
 - Uber won't use as many factories to make Patriots when in need of AA
 - Uber's Grenadier build will only happen in response to a land threat
+- Ensure Uber will use Spinners in the early game
 
 ## v5.5.0 - 2020-11-18
 
