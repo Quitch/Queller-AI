@@ -9,6 +9,7 @@
 - Uber uses less Shellers
 - Change to how Uber measures Vanguard use
 - Uber FFA builds Strykers
+- Uber 1v1 techs later
 
 ## v5.5.0 - 2020-11-18
 
