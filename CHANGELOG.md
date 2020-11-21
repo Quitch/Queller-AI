@@ -10,7 +10,7 @@
 - Change to how Uber measures Vanguard use
 - Uber FFA builds Strykers
 - Uber 1v1 techs later
-- Fixed my misunderstanding of how presence checks were working leading to Uber failing to always respond to threats
+- Fixed my misunderstanding of how presence checks were working leading to Uber only reacting to threats within its current sight
 - Uber only builds torpedo launchers in response to subs rather than general naval threats
 - Uber builds Typhoons against all naval threats
 - Uber uses a heavy Stryker presence for a little longer
