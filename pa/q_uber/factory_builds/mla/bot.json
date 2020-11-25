@@ -144,7 +144,7 @@
       ]
     },
     {
-      "name": "Dox - Early Game",
+      "name": "Dox",
       "to_build": "BasicAssaultBot",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -162,26 +162,19 @@
             "compare0": "<=",
             "value0": 2800
           }
-        ]
-      ]
-    },
-    {
-      "name": "Dox",
-      "to_build": "BasicAssaultBot",
-      "instance_count": 1,
-      "max_num_assisters": 10,
-      "priority": 97,
-      "builders": ["AnyUberBotFactory"],
-      "build_conditions": [
+        ],
         [
           {
-            "test_type": "AloneOnPlanet",
+            "test_type": "CanDeployLandFromBase",
             "boolean": false
-          },
+          }
+        ],
+        [
           {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & SelfDestruct & Basic",
-            "boolean": true
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Factory & Tank",
+            "compare0": "==",
+            "value0": 0
           }
         ]
       ]
@@ -214,11 +207,6 @@
             "string0": "AntiSurface",
             "compare0": ">",
             "value0": 2800
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Tank",
-            "boolean": true
           }
         ],
         [
