@@ -4,6 +4,7 @@
 
 - Fix Uber not responding properly to all bot builds
 - Fix Uber's bot factories on islands not producing units
+- Uber will continue to use Dox if it doesn't have access to Strykers
 
 ## v5.6.0 - 2020-11-21
 
