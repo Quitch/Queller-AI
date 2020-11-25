@@ -144,7 +144,7 @@
       ]
     },
     {
-      "name": "Dox - Early Game",
+      "name": "Dox - Early Game/Amphibious",
       "to_build": "BasicAssaultBot",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -161,6 +161,12 @@
             "string0": "AntiSurface",
             "compare0": "<=",
             "value0": 2800
+          }
+        ],
+        [
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": false
           }
         ]
       ]

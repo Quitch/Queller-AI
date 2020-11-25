@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Fix Uber not responding properly to all bot builds
+- Fix Uber's bot factories on islands not producing units
 
 ## v5.6.0 - 2020-11-21
 
