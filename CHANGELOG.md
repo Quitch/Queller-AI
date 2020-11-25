@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v5.6.1 - 2020-11-25
 
 - Fix Uber not responding properly to all bot builds
 - Fix Uber's bot factories on islands not producing units
