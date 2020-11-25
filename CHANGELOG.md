@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Fix Uber not responding properly to all bot builds
+
 ## v5.6.0 - 2020-11-21
 
 - Uber doesn't prioritise its initial advanced fabbers as highly when fighting for planetary control
