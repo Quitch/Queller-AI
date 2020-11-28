@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v5.7.0 - 2020-11-28
 
 - Removed Uber 1v1 factory builds
 - Uber only builds Ants after the early game
