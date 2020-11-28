@@ -4,6 +4,7 @@
 
 - Removed Uber 1v1 factory builds
 - Uber only builds Ants after the early game
+- Uber 1v1 will tech later
 
 ## v5.6.1 - 2020-11-25
 
