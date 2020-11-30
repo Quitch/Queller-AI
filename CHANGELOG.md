@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v5.7.1 - 2020-11-30
+
+- Fixed Bronze through Platinum not building orbital fabbers from Orbital Factories
+
 ## v5.7.0 - 2020-11-28
 
 - Removed Uber 1v1 factory builds
