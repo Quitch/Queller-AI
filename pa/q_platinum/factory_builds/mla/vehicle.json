@@ -163,7 +163,7 @@
       ]
     },
     {
-      "name": "Stryker",
+      "name": "Stryker - Intel",
       "to_build": "AttackVehicle",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -192,6 +192,43 @@
             "unit_type_string0": "(Tank & Basic & Mobile) - Hover - Fabber - AirDefense - Construction - Artillery - Heavy - Scout - SelfDestruct - Deconstruction - Titan",
             "compare0": "<",
             "value0": 5
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Stryker",
+      "to_build": "AttackVehicle",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["BasicVehicleFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": true
           }
         ]
       ]
