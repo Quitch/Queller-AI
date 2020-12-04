@@ -4,6 +4,7 @@
 
 - Gold and Platinum build Strykers
 - Platinum builds Grenadiers
+- Gold will use Grenadiers immediately
 
 ## v5.7.1 - 2020-11-30
 
