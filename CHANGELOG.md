@@ -5,6 +5,7 @@
 - Gold and Platinum build Strykers
 - Platinum builds Grenadiers
 - Gold will use Grenadiers immediately
+- Uber is much more considerate of its eco when looking to move to T2
 
 ## v5.7.1 - 2020-11-30
 
