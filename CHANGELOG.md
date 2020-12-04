@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Gold and Platinum build Strykers
+- Platinum builds Grenadiers
 
 ## v5.7.1 - 2020-11-30
 
