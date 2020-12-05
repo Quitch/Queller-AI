@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Uber uses more Sparks
+
 ## v5.8.0 - 2020-12-05
 
 - Gold and Platinum build Strykers

@@ -225,7 +225,7 @@
     {
       "name": "Spark",
       "to_build": "TeslaBot",
-      "instance_count": 1,
+      "instance_count": -1,
       "max_num_assisters": 10,
       "priority": 97,
       "builders": ["AnyUberBotFactory"],
@@ -237,24 +237,6 @@
           },
           {
             "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": "<",
-            "value0": 2800
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Bot & Heavy & Basic",
-            "unit_type_string1": "Bot & Mobile & Offense - Deconstruction - Fabber",
-            "compare0": "<",
-            "value0": 0.25
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Bot",
             "boolean": true
           }
         ],
