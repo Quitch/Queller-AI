@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## v5.8.0 - 2020-12-05
+
+- Gold and Platinum build Strykers
+- Platinum builds Grenadiers
+- Gold will use Grenadiers immediately
+- Uber is much more considerate of its eco when looking to move to T2
+- Uber is better at avoiding early game energy stalls
+- Gold and Platinum build Sparks earlier
+
 ## v5.7.1 - 2020-11-30
 
 - Fixed Bronze through Platinum not building orbital fabbers from Orbital Factories
