@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## v5.80 - 2020-12-05
+## v5.8.0 - 2020-12-05
 
 - Gold and Platinum build Strykers
 - Platinum builds Grenadiers
