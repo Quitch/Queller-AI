@@ -4,6 +4,7 @@
 
 - Uber uses more Sparks
 - Uber 1v1 delays T2 further
+- Uber only builds Bluehawks when the enemy has T2
 
 ## v5.8.0 - 2020-12-05
 
