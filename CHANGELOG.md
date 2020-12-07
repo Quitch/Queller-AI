@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Uber uses more Sparks
+- Uber 1v1 delays T2 further
 
 ## v5.8.0 - 2020-12-05
 
