@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## v5.9.0 - 2020-12-10
+
+- Uber uses more Sparks
+- Uber 1v1 delays T2 further
+- Uber only builds Bluehawks when the enemy has T2
+- Added Uber Platoon which focuses on a smaller number of larger armies
+- Uber switches from Dox to Grenadiers earlier
+- Uber makes greater use of Drifters
+
 ## v5.8.0 - 2020-12-05
 
 - Gold and Platinum build Strykers
