@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v5.9.0 - 2020-12-10
 
 - Uber uses more Sparks
 - Uber 1v1 delays T2 further
