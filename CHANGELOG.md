@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v5.9.1 - 2020-12-12
 
 - Fix Uber not building Drifters on islands immediately
 
