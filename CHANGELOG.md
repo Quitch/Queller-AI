@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v5.9.1 - 2020-12-12
+
+- Fix Uber not building Drifters on islands immediately
+
 ## v5.9.0 - 2020-12-10
 
 - Uber uses more Sparks
