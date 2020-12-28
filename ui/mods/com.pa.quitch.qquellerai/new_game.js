@@ -4,7 +4,7 @@ if (!quellerAILoaded) {
   quellerAILoaded = true;
 
   try {
-    api.debug.log("Loading Queller AI Personalities");
+    api.debug.log("Queller AI new_game");
 
     var aiPersonalities = model.aiPersonalities();
 
