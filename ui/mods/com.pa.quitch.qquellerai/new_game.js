@@ -4,8 +4,6 @@ if (!quellerAILoaded) {
   quellerAILoaded = true;
 
   try {
-    api.debug.log("Queller AI new_game");
-
     var aiPersonalities = model.aiPersonalities();
 
     var newPersonalities = {
