@@ -1,11 +1,11 @@
-var qQuellerAILoaded;
+var quellerAILoaded;
 
-function qQuellerAI() {
-  if (qQuellerAILoaded) {
+function quellerAI() {
+  if (quellerAILoaded) {
     return;
   }
 
-  qQuellerAILoaded = true;
+  quellerAILoaded = true;
 
   api.debug.log("Loading Queller AI Personalities");
 
@@ -279,7 +279,7 @@ function qQuellerAI() {
 }
 
 try {
-  qQuellerAI();
+  quellerAI();
 } catch (e) {
   console.error(e);
 }
