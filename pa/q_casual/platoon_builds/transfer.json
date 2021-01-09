@@ -112,6 +112,38 @@
             "compare0": ">=",
             "value0": 1
           }
+        ],
+        [
+          {
+            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "ThisPlanetNeedsOrbitalUnitAssistance",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & Titan & Mobile",
+            "compare0": ">=",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & Titan & Mobile",
+            "compare0": ">=",
+            "value0": 1
+          }
         ]
       ],
       "task_type": "TransferOrbitalToPlanet"
