@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v5.9.2 - 2020-01-09
+
+- Fix the Tyr not moving between planets and potentially stopping other orbital units from transferring
+
 ## v5.9.1 - 2020-12-12
 
 - Fix Uber not building Drifters on islands immediately
