@@ -10,7 +10,11 @@
       "min_num_assisters": 3,
       "max_num_assisters": 5,
       "base_sort": "FromMainBase",
-      "builders": ["AnyLegionFabberBasic", "AnyLegionFabberAdvanced"],
+      "builders": [
+        "LegionCommander",
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced"
+      ],
       "build_conditions": [
         [
           {
@@ -106,7 +110,11 @@
       "min_num_assisters": 3,
       "max_num_assisters": 5,
       "base_sort": "FromMainBase",
-      "builders": ["AnyLegionFabberBasic", "AnyLegionFabberAdvanced"],
+      "builders": [
+        "LegionCommander",
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced"
+      ],
       "build_conditions": [
         [
           {

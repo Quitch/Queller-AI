@@ -8,7 +8,11 @@
       "priority": 479,
       "max_num_assisters": 10,
       "base_sort": "FromMainBase",
-      "builders": ["AnyLegionFabberBasic", "AnyLegionFabberAdvanced"],
+      "builders": [
+        "LegionCommander",
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced"
+      ],
       "build_conditions": [
         [
           {
@@ -79,7 +83,11 @@
       "priority": 377,
       "max_num_assisters": 10,
       "base_sort": "FromMainBase",
-      "builders": ["AnyLegionFabberBasic", "AnyLegionFabberAdvanced"],
+      "builders": [
+        "LegionCommander",
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced"
+      ],
       "build_conditions": [
         [
           {
@@ -130,7 +138,11 @@
       "priority": 1,
       "max_num_assisters": 10,
       "base_sort": "FromMainBase",
-      "builders": ["AnyLegionFabberBasic", "AnyLegionFabberAdvanced"],
+      "builders": [
+        "LegionCommander",
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced"
+      ],
       "build_conditions": [
         [
           {
