@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## v5.9.2 - 2020-01-09
+## v5.9.2 - 2021-01-09
 
 - Fix the Tyr not moving between planets and potentially stopping other orbital units from transferring
 
