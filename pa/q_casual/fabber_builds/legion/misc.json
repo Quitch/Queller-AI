@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Legion - Fabber Assist",
+      "name": "Fabber Assist",
       "instance_count": -1,
       "priority": 1,
       "builders": [
@@ -20,7 +20,7 @@
       "task_type": "BuilderAssist"
     },
     {
-      "name": "Legion - Sky Bridge",
+      "name": "Sky Bridge",
       "to_build": "LegionStructureBasicTeleporter",
       "instance_count": 1,
       "priority": 1,
@@ -64,7 +64,7 @@
       }
     },
     {
-      "name": "Legion - Teleport Fabber To Planet",
+      "name": "Teleport Fabber To Planet",
       "instance_count": 1,
       "priority": 1,
       "builders": [
@@ -97,7 +97,7 @@
       "task_type": "TeleportFabberToPlanet"
     },
     {
-      "name": "Legion - Move Fabber To Planet",
+      "name": "Move Fabber To Planet",
       "instance_count": 1,
       "priority": 1,
       "builders": [
@@ -138,7 +138,7 @@
       "task_type": "TransportToPlanet"
     },
     {
-      "name": "Legion - Move Orbital Fabber To Planet",
+      "name": "Move Orbital Fabber To Planet",
       "instance_count": 1,
       "priority": 1,
       "builders": ["LegionOrbitalBasicFabber"],
@@ -165,7 +165,7 @@
       "task_type": "OrbitalFabberMoveToPlanet"
     },
     {
-      "name": "Legion - Move Orbital Fabber To Safe Planet",
+      "name": "Move Orbital Fabber To Safe Planet",
       "instance_count": 1,
       "priority": 1,
       "builders": ["LegionOrbitalBasicFabber"],

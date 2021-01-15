@@ -1,14 +1,18 @@
 {
   "build_list": [
     {
-      "name": "Legion - Starship Projector",
+      "name": "Starship Projector",
       "to_build": "LegionFactoryBasicOrbital",
       "instance_count": 1,
       "shared_instance_count": "Factory",
       "priority": 477,
       "max_num_assisters": 10,
       "base_sort": "FromBuilder",
-      "builders": ["AnyLegionFabberBasic", "AnyLegionFabberAdvanced"],
+      "builders": [
+        "LegionCommander",
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced"
+      ],
       "build_conditions": [
         [
           {
@@ -48,7 +52,7 @@
       }
     },
     {
-      "name": "Legion - Starship Foundry",
+      "name": "Starship Foundry",
       "to_build": "LegionFactoryAdvancedOrbital",
       "instance_count": 1,
       "shared_instance_count": "Factory",
@@ -91,7 +95,7 @@
       }
     },
     {
-      "name": "Legion - Starcannon",
+      "name": "Starcannon",
       "to_build": "LegionOrbitalAdvancedCannon",
       "instance_count": 1,
       "shared_instance_count": "Factory",

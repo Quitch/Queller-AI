@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v5.10.0 - 2021-01-15
+
+- The Commander will build Umbrellas, Tolas, Orbital Launchers, and Starship Projectors
+
 ## v5.9.2 - 2021-01-09
 
 - Fix the Tyr not moving between planets and potentially stopping other orbital units from transferring
