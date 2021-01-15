@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v5.10.0 - 2021-01-15
 
 - The Commander will build Umbrellas, Tolas, Orbital Launchers, and Starship Projectors
 
