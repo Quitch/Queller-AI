@@ -127,7 +127,11 @@
       "min_num_assisters": 1,
       "max_num_assisters": 3,
       "base_sort": "FromMainBase",
-      "builders": ["AnyUberBasicFabber", "AnyUberAdvancedFabber"],
+      "builders": [
+        "UberCommander",
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber"
+      ],
       "build_conditions": [
         [
           {

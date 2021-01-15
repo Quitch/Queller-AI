@@ -963,7 +963,11 @@
       "priority": 378,
       "max_num_assisters": 2,
       "base_sort": "FromMainBase",
-      "builders": ["AnyUberBasicFabber", "AnyUberAdvancedFabber"],
+      "builders": [
+        "UberCommander",
+        "AnyUberBasicFabber",
+        "AnyUberAdvancedFabber"
+      ],
       "build_conditions": [
         [
           {
