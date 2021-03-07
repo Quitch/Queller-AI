@@ -1,6 +1,63 @@
 {
   "build_list": [
     {
+      "name": "Orbital Launcher - Commander",
+      "to_build": "OrbitalLauncher",
+      "instance_count": 1,
+      "shared_instance_count": "Factory",
+      "priority": 376,
+      "max_num_assisters": 10,
+      "base_sort": "FromBuilder",
+      "builders": ["UberCommander"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Factory & Orbital & Basic",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "OrbitalLauncher"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "OrbitalLauncher"
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetCount",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "OrbitalLauncher"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "OrbitalLauncher"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
       "name": "Orbital Launcher",
       "to_build": "OrbitalLauncher",
       "instance_count": 1,
@@ -8,11 +65,7 @@
       "priority": 477,
       "max_num_assisters": 10,
       "base_sort": "FromBuilder",
-      "builders": [
-        "UberCommander",
-        "AnyUberBasicFabber",
-        "AnyUberAdvancedFabber"
-      ],
+      "builders": ["AnyUberBasicFabber", "AnyUberAdvancedFabber"],
       "build_conditions": [
         [
           {
@@ -48,7 +101,13 @@
       ],
       "placement_rules": {
         "buffer": 3,
-        "placement_type": "FromBaseCenter"
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
       }
     },
     {
