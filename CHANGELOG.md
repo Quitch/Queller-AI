@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 5.10.1 - 2021-03-08
+
+- Corrected Casual always starting with an orbital build
+- Improve redundant orbital launcher build protection for Casual
+
 ## v5.10.0 - 2021-01-15
 
 - The Commander will build Umbrellas, Tolas, Orbital Launchers, and Starship Projectors

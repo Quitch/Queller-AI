@@ -5,19 +5,72 @@
       "to_build": "LegionFactoryBasicOrbital",
       "instance_count": 1,
       "shared_instance_count": "Factory",
-      "priority": 477,
+      "priority": 376,
       "max_num_assisters": 10,
       "base_sort": "FromBuilder",
-      "builders": [
-        "LegionCommander",
-        "AnyLegionFabberBasic",
-        "AnyLegionFabberAdvanced"
-      ],
+      "builders": ["LegionCommander"],
       "build_conditions": [
         [
           {
             "test_type": "UnitCount",
-            "unit_type_string0": "Factory & Orbital & Basic",
+            "unit_type_string0": "Factory & Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicOrbital"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicOrbital"
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetCount",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicOrbital"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicOrbital"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Starship Projector",
+      "to_build": "LegionFactoryBasicOrbital",
+      "instance_count": 1,
+      "shared_instance_count": "Factory",
+      "priority": 477,
+      "max_num_assisters": 10,
+      "base_sort": "FromBuilder",
+      "builders": ["AnyLegionFabberBasic", "AnyLegionFabberAdvanced"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Factory & Orbital",
             "compare0": "<",
             "value0": 1
           },
@@ -48,7 +101,13 @@
       ],
       "placement_rules": {
         "buffer": 3,
-        "placement_type": "FromBaseCenter"
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
       }
     },
     {
