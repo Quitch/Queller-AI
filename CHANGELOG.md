@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## 5.10.1 - 2021-03-08
 
 - Corrected Casual always starting with an orbital build
 - Improve redundant orbital launcher build protection for Casual
