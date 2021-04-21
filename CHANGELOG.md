@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Uber no longer builds Ants
+- Uber focuses on building Orcas at T1
 
 ## 5.10.1 - 2021-03-08
 
