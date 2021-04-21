@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Uber no longer builds Ants
+
 ## 5.10.1 - 2021-03-08
 
 - Corrected Casual always starting with an orbital build
