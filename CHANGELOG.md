@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v5.11.0 - 2021-04-22
 
 - Uber no longer builds Ants
 - Uber focuses on building Orcas over Barracudas at T1
@@ -11,7 +11,7 @@
 - Remove Uber's priority mobile AA builds
 - Removed Uber Platoon
 
-## 5.10.1 - 2021-03-08
+## v5.10.1 - 2021-03-08
 
 - Corrected Casual always starting with an orbital build
 - Improve redundant orbital launcher build protection for Casual
