@@ -8,6 +8,7 @@
 - Uber is more conservative in ramping up air production in response to an air threat
 - Uber 1v1 techs later
 - Uber (excluding Uber Tank) stops using Strykers after the early game
+- Remove Uber's priority mobile AA builds
 
 ## 5.10.1 - 2021-03-08
 
