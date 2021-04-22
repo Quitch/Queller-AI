@@ -9,7 +9,7 @@
     "jquery": true,
     "amd": true
   },
-  "extends": ["eslint:recommended", "plugin:lodash/recommended", "prettier"],
+  "extends": ["eslint:recommended", "plugin:lodash/v3", "prettier"],
   "globals": {
     "api": "readonly",
     "model": "readonly",
@@ -18,6 +18,7 @@
   },
   "plugins": ["lodash"],
   "rules": {
-    "lodash/prefer-lodash-method": 0
+    "lodash/prefer-lodash-method": 0,
+    "no-inner-declarations": 0
   }
 }
