@@ -3,7 +3,7 @@
 ## Unreleased
 
 - Uber no longer builds Ants
-- Uber focuses on building Orcas at T1
+- Uber focuses on building Orcas over Barracudas at T1
 - Uber ties starting Inferno production to threat levels rather than army size
 - Uber is more conservative in ramping up air production in response to an air threat
 - Uber 1v1 techs later
