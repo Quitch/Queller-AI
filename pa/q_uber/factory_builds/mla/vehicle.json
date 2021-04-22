@@ -245,44 +245,7 @@
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiSurface",
             "compare0": "<=",
-            "value0": 2800
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Stryker - Late game",
-      "to_build": "AttackVehicle",
-      "instance_count": 1,
-      "max_num_assisters": 10,
-      "priority": 97,
-      "builders": ["BasicVehicleFactory"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          }
-        ],
-        [
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
-            "boolean": true
-          },
-          {
-            "test_type": "OtherPlanetNeedsLandUnitAssistance",
-            "boolean": true
+            "value0": 840
           }
         ]
       ]
@@ -534,7 +497,7 @@
             "test_type": "PlanetHighestEnemyArmyThreat",
             "string0": "AntiSurface",
             "compare0": ">",
-            "value0": 2800
+            "value0": 840
           }
         ],
         [

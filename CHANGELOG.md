@@ -6,8 +6,8 @@
 - Uber focuses on building Orcas at T1
 - Uber ties starting Inferno production to threat levels rather than army size
 - Uber is more conservative in ramping up air production in response to an air threat
-- Uber has a reduced Stryker presence in the late game
 - Uber 1v1 techs later
+- Uber (excluding Uber Tank) stops using Strykers after the early game
 
 ## 5.10.1 - 2021-03-08
 
