@@ -151,8 +151,7 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 
 ### 1v1
 
-- Slower to enter orbital
-- Ever changing optimisations for 1v1 play
+- Optimised for 1v1 play
 
 ### Bot
 
