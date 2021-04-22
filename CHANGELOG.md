@@ -4,6 +4,7 @@
 
 - Uber no longer builds Ants
 - Uber focuses on building Orcas at T1
+- Uber ties starting Inferno production to threat levels rather than army size
 
 ## 5.10.1 - 2021-03-08
 

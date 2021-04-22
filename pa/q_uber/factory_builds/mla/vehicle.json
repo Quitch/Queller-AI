@@ -305,10 +305,10 @@
             "boolean": true
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Land & Mobile & Offense - Deconstruction - Fabber",
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
             "compare0": ">",
-            "value0": 20
+            "value0": 2800
           },
           {
             "test_type": "UnitRatioOnPlanet",
