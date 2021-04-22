@@ -255,7 +255,7 @@ if (!quellerAILoaded) {
         newPersonalities,
         function (personality, name) {
           var result = _.assign(_.clone(baseline), personality);
-          result["name"] = name;
+          result.name = name;
           return result;
         }
       );
