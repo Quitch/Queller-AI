@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Fixed Uber's Commander's anti-orbital snipe protection behaviour
+
 ## v5.12.0 - 2021-04-24
 
 - Uber Tank doesn't use Strykers past the early game
