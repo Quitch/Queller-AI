@@ -5,7 +5,7 @@
 - Uber Tank doesn't use Strykers past the early game
 - Removed Uber's Colonel response to air titans
 - Attempted to make Uber's orbital response less exploitable
-- Fix Tola placement check error by Uber
+- Fix numerous errors in placement checks for Legion
 
 ## v5.11.0 - 2021-04-22
 
