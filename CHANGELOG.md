@@ -6,6 +6,7 @@
 - Removed Uber's Colonel response to air titans
 - Attempted to make Uber's orbital response less exploitable
 - Fix numerous errors in placement checks for Legion
+- Uber may build additional mobile AA in bases being attacked by air
 
 ## v5.11.0 - 2021-04-22
 
