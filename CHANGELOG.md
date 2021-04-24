@@ -7,6 +7,7 @@
 - Attempted to make Uber's orbital response less exploitable
 - Fix numerous errors in placement checks for Legion
 - Uber may build additional mobile AA in bases being attacked by air
+- Uber may build additional mobile anti-orbital in bases being attacked by orbital
 
 ## v5.11.0 - 2021-04-22
 
