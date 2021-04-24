@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Uber Tank doesn't use Strykers past the early game
+
 ## v5.11.0 - 2021-04-22
 
 - Uber no longer builds Ants
