@@ -409,6 +409,15 @@
             "test_type": "OtherPlanetNeedsLandUnitAssistance",
             "boolean": true
           }
+        ],
+        [
+          {
+            "test_type": "BaseThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1
+          }
         ]
       ]
     },

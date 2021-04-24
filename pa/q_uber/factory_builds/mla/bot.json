@@ -332,43 +332,6 @@
             "boolean": true
           },
           {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Air & Titan",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Air",
-            "string1": "AntiAir",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "UberSupportCommander"
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Fabber & Advanced & Bot",
-            "unit_type_string1": "Factory & Advanced & Bot",
-            "compare0": "<",
-            "value0": 2
-          }
-        ],
-        [
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "MetMinAdvancedFabberCount",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Air",
             "string1": "AntiAir",
@@ -678,6 +641,15 @@
             "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
             "compare0": "<",
             "value0": 0.1
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatRatio",
+            "string0": "Orbital",
+            "string1": "AntiOrbital",
+            "compare0": ">",
+            "value0": 1
           }
         ]
       ]
