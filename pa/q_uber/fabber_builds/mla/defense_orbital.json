@@ -192,6 +192,33 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "Umbrella"
           }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">=",
+            "value0": 10100
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Commander",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "Umbrella"
+          }
         ]
       ],
       "placement_rules": {
@@ -398,52 +425,22 @@
       }
     },
     {
-      "name": "Umbrella - Protect the Commander",
+      "name": "Umbrella - Orbital snipes",
       "to_build": "Umbrella",
       "instance_count": 1,
       "priority": 457,
       "min_num_assisters": 1,
       "max_num_assisters": 3,
       "base_sort": "FromMainBase",
-      "builders": [
-        "UberCommander",
-        "AnyUberBasicFabber",
-        "AnyUberAdvancedFabber"
-      ],
+      "builders": ["UberCommander"],
       "build_conditions": [
         [
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "SystemThreat",
+            "test_type": "BaseThreatRatio",
             "string0": "Orbital",
-            "compare0": ">=",
-            "value0": 1100
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Commander",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
+            "string1": "AntiOrbital",
             "compare0": "<",
-            "value0": 3
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "Umbrella"
-          }
-        ],
-        [
-          {
-            "test_type": "SystemThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 0
+            "value0": 1
           },
           {
             "test_type": "UnitCountInBase",

@@ -3,6 +3,8 @@
 ## Unreleased
 
 - Uber Tank doesn't use Strykers past the early game
+- Removed Uber's Colonel response to air titans
+- Attempted to make Uber's orbital response less exploitable
 
 ## v5.11.0 - 2021-04-22
 
