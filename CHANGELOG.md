@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v5.12.0 - 2021-04-24
 
 - Uber Tank doesn't use Strykers past the early game
 - Removed Uber's Colonel response to air titans
