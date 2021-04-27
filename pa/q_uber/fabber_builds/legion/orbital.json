@@ -265,11 +265,25 @@
             "boolean": false
           },
           {
-            "test_type": "AloneOnPlanet",
+            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
             "boolean": true
           },
           {
-            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryAdvancedOrbital"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryAdvancedOrbital"
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "ThisPlanetNeedsOrbitalUnitAssistance",
             "boolean": true
           },
           {
