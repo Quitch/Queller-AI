@@ -8,6 +8,7 @@
 - Uber builds less advanced fabbers unless floating resources
 - Uber FFA techs up slightly earlier
 - Uber FFA is slightly more aggressive
+- Uber no longer builds Advanced Laser Towers
 
 ## v5.12.1 - 2021-04-24
 
