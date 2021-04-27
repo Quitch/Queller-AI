@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## Unreleased
+
+- Uber no longer builds Omegas
+- Uber no longer builds Solar Arrays
+
 ## v5.12.1 - 2021-04-24
 
 - Fixed Uber's Commander's anti-orbital snipe protection behaviour
