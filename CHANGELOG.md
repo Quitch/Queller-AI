@@ -4,6 +4,7 @@
 
 - Uber no longer builds Omegas
 - Uber no longer builds Solar Arrays
+- Only expand orbital presence if somewhere wants more orbital (excluding Uber on gas giants)
 
 ## v5.12.1 - 2021-04-24
 

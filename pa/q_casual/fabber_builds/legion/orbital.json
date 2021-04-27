@@ -134,9 +134,30 @@
         ],
         [
           {
-            "test_type": "PlanetCount",
-            "compare0": ">",
-            "value0": 1
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryAdvancedOrbital"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryAdvancedOrbital"
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "ThisPlanetNeedsOrbitalUnitAssistance",
+            "boolean": true
           },
           {
             "test_type": "CanAffordPotentialDrain",
