@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v5.13.0 - 2021-04-27
 
 - Uber no longer builds Omegas
 - Uber no longer builds Solar Arrays
