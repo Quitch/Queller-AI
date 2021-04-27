@@ -5,6 +5,7 @@
 - Uber no longer builds Omegas
 - Uber no longer builds Solar Arrays
 - Only expand orbital presence if somewhere wants more orbital (excluding Uber on gas giants)
+- Uber builds less advanced fabbers unless floating resources
 
 ## v5.12.1 - 2021-04-24
 
