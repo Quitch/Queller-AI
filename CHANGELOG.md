@@ -6,6 +6,7 @@
 - Uber no longer builds Solar Arrays
 - Only expand orbital presence if somewhere wants more orbital (Uber always grows on gas giants)
 - Uber builds less advanced fabbers unless floating resources
+- Uber FFA techs up slightly earlier
 
 ## v5.12.1 - 2021-04-24
 
