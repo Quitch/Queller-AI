@@ -240,7 +240,6 @@ if (!quellerAILoaded) {
       );
 
       _.assign(model.aiPersonalities(), newPersonalities);
-
       model.aiPersonalities.valueHasMutated();
 
       _.defer(function () {
