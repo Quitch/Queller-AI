@@ -76,6 +76,18 @@
       "build_conditions": [
         [
           {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicAir"
+          }
+        ],
+        [
+          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },

@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Added some unit fallbacks in case the units Queller wants are disabled
+- Queller will always attempt to avoid getting stuck no matter how low its eco modifier
 
 ## v5.13.0 - 2021-04-27
 
