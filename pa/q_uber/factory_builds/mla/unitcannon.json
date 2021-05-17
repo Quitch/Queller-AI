@@ -50,6 +50,23 @@
           }
         ]
       ]
+    },
+    {
+      "name": "Dox - Unit Cannon",
+      "to_build": "BasicAssaultBot",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 90,
+      "builders": ["UnitCannon"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "queller",
+            "boolean": true
+          }
+        ]
+      ]
     }
   ]
 }
