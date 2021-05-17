@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Added some unit fallbacks in case the units Queller wants are disabled
+
 ## v5.13.0 - 2021-04-27
 
 - Uber no longer builds Omegas
