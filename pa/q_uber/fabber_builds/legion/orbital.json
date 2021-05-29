@@ -195,6 +195,11 @@
       "build_conditions": [
         [
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "lateorbital",
+            "boolean": false
+          },
+          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },

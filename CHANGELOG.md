@@ -10,6 +10,7 @@
 - Correctly exclude scouts from minimum platoon size count
 - Reduced minimum platoon size required for teleportation
 - Gold through Uber may go for orbital earlier
+- Uber 1v1 and Uber Rush limit their T1 orbital expansion
 
 ## v5.13.0 - 2021-04-27
 
