@@ -7,6 +7,7 @@
 - Uber builds Catapults for base defence again
 - Corrected Uber slightly overbuilding advanced fabbers when floating
 - Uber builds more nukes when floating resources
+- Removed potentially extraneous check from teleporter transfers
 
 ## v5.13.0 - 2021-04-27
 
