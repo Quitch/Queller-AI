@@ -6,6 +6,7 @@
 - Queller will always attempt to avoid getting stuck no matter how low its eco modifier
 - Uber builds Catapults for base defence again
 - Corrected Uber slightly overbuilding advanced fabbers when floating
+- Uber builds more nukes when floating resources
 
 ## v5.13.0 - 2021-04-27
 
