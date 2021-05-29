@@ -8,6 +8,7 @@
 - Corrected Uber slightly overbuilding advanced fabbers when floating
 - Uber builds more nukes when floating resources
 - Removed potentially extraneous check from teleporter transfers
+- Correctly exclude scouts from minimum platoon size count
 
 ## v5.13.0 - 2021-04-27
 
