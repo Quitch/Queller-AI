@@ -9,6 +9,7 @@
 - Uber builds more nukes when floating resources
 - Correctly exclude scouts from minimum platoon size count
 - Reduced minimum platoon size required for teleportation
+- Gold through Uber may go for orbital earlier
 
 ## v5.13.0 - 2021-04-27
 
