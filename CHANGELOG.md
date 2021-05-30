@@ -12,6 +12,7 @@
 - Gold through Uber may go for orbital earlier
 - Uber 1v1 and Uber Rush limit their T1 orbital expansion
 - Much more willing to move troops off world when it is already winning its current battle
+- Uber correctly cost checks its orbital snipe defence build
 
 ## v5.13.0 - 2021-04-27
 
