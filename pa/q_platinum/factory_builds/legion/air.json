@@ -67,6 +67,26 @@
       "build_conditions": [
         [
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Scout",
+            "compare0": "<",
+            "value0": 1
+          }
+        ],
+        [
+          {
             "test_type": "BaseThreatened",
             "boolean": false
           },
