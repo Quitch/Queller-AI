@@ -15,6 +15,7 @@
 - Uber correctly cost checks its orbital snipe defence build
 - Resolved some inconsistencies in how Gold and Platinum assess T1 orbital factory builds which could impact their timings
 - Gold and Platinum will always use an air scout if they have the option
+- Gold will scout with bots
 
 ## v5.13.0 - 2021-04-27
 
