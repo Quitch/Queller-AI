@@ -4,7 +4,7 @@
       "name": "Orbital Launcher",
       "to_build": "OrbitalLauncher",
       "instance_count": 1,
-      "shared_instance_count": "BasicFactory",
+      "shared_instance_count": "OrbitalLauncher",
       "cross_planet_shared_count": true,
       "priority": 479,
       "min_num_assisters": 3,
@@ -70,10 +70,6 @@
             "boolean": true
           },
           {
-            "test_type": "HaveEcoForAdvanced",
-            "boolean": true
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "OrbitalLauncher"
           },
@@ -120,10 +116,6 @@
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
-          },
-          {
-            "test_type": "HaveEcoForAdvanced",
-            "boolean": true
           },
           {
             "test_type": "PlanetThreat",

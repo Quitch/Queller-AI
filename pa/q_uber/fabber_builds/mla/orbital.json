@@ -101,10 +101,6 @@
             "boolean": true
           },
           {
-            "test_type": "HaveEcoForAdvanced",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetCount",
             "compare0": ">",
             "value0": 1
@@ -139,10 +135,6 @@
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
-          },
-          {
-            "test_type": "HaveEcoForAdvanced",
-            "boolean": true
           },
           {
             "test_type": "SystemThreat",
@@ -202,6 +194,11 @@
       ],
       "build_conditions": [
         [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "lateorbital",
+            "boolean": false
+          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false

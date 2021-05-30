@@ -4,7 +4,7 @@
       "name": "Orbital Launcher - Alone/Rush",
       "to_build": "OrbitalLauncher",
       "instance_count": 1,
-      "shared_instance_count": "BasicFactory",
+      "shared_instance_count": "OrbitalLauncher",
       "cross_planet_shared_count": true,
       "priority": 479,
       "min_num_assisters": 3,
@@ -67,10 +67,6 @@
         [
           {
             "test_type": "PlanetWithoutPresence",
-            "boolean": true
-          },
-          {
-            "test_type": "HaveEcoForAdvanced",
             "boolean": true
           },
           {
@@ -158,10 +154,6 @@
             "boolean": false
           },
           {
-            "test_type": "HaveEcoForAdvanced",
-            "boolean": true
-          },
-          {
             "test_type": "PlanetThreat",
             "string0": "Orbital",
             "compare0": ">",
@@ -198,7 +190,7 @@
       "name": "Orbital Launcher",
       "to_build": "OrbitalLauncher",
       "instance_count": 1,
-      "shared_instance_count": "BasicFactory",
+      "shared_instance_count": "OrbitalLauncher",
       "priority": 260,
       "min_num_assisters": 3,
       "max_num_assisters": 5,

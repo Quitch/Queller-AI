@@ -17,7 +17,7 @@
             "boolean": true
           },
           {
-            "test_type": "ThisPlanetNeedsLandUnitAssistance",
+            "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": false
           },
           {
@@ -26,9 +26,37 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Land & Mobile) - Fabber - AirDefense - Construction - Titan",
+            "unit_type_string0": "(Land & Mobile) - Fabber - AirDefense - Construction - Titan - Scout",
             "compare0": ">=",
-            "value0": 20
+            "value0": 5
+          }
+        ],
+        [
+          {
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanProvideLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "ThisPlanetNeedsLandUnitAssistance",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Land & Mobile) - Fabber - AirDefense - Construction - Titan - Scout",
+            "compare0": ">=",
+            "value0": 1
           }
         ]
       ],

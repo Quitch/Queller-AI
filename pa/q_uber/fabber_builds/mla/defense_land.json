@@ -4,7 +4,7 @@
       "name": "Pelter - Mex",
       "to_build": "BasicArtillery",
       "instance_count": 1,
-      "shared_instance_count": "BasicLandDefenseMex",
+      "shared_instance_count": "ArtilleryDefenseMex",
       "min_num_assisters": 1,
       "max_num_assisters": 3,
       "priority": 401,
@@ -336,6 +336,158 @@
             "alliance": "Ally",
             "compare_type": "<",
             "range": 110,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Catapult - Mex",
+      "to_build": "TML",
+      "instance_count": 1,
+      "shared_instance_count": "ArtilleryDefenseMex",
+      "min_num_assisters": 1,
+      "max_num_assisters": 3,
+      "priority": 401,
+      "base_sort": "FromPerimeter",
+      "builders": ["AnyUberAdvancedFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "DistFromMainBase",
+            "compare0": ">=",
+            "value0": 350
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (Artillery | Tactical)",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & SurfaceDefense - Shield",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & MetalProduction",
+            "compare0": ">=",
+            "value0": 4
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "TML"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & SurfaceDefense",
+            "alliance": "Ally",
+            "compare_type": ">",
+            "range": 35,
+            "count": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Catapult - Base",
+      "to_build": "TML",
+      "instance_count": 1,
+      "priority": 279,
+      "max_num_assisters": 3,
+      "base_sort": "FromMainBase",
+      "builders": ["AnyUberAdvancedFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & (SurfaceDefense | Tactical) - (CombatFabAdvBuild & Custom1)",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Factory",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "TML"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Naval",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "TML"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & (SurfaceDefense | Tactical) - Shield",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
             "count": 1
           }
         ]

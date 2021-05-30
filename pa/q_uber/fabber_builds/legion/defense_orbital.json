@@ -436,6 +436,13 @@
       "build_conditions": [
         [
           {
+            "test_type": "EnemyOrbitalPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
             "test_type": "BaseThreatRatio",
             "string0": "Orbital",
             "string1": "AntiOrbital",
@@ -460,6 +467,9 @@
           }
         ],
         [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
           {
             "test_type": "HaveSeenEnemyUnits",
             "unit_type_string0": "Factory & Artillery",

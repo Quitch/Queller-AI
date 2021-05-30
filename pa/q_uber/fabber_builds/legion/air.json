@@ -134,14 +134,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "EnemyPresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionFactoryBasicAir"
-          },
-          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory",
             "compare0": "<",

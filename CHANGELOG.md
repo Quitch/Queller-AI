@@ -1,5 +1,23 @@
 # CHANGELOG
 
+## v5.14.0 - 2021-05-30
+
+- Added some unit fallbacks in case the units Queller wants are disabled
+- Queller will always attempt to avoid getting stuck no matter how low its eco modifier
+- Uber builds Catapults for defence again
+- Corrected Uber slightly overbuilding advanced fabbers when floating
+- Uber builds more nukes when floating resources
+- Correctly exclude scouts from minimum platoon size count
+- Reduced minimum platoon size required for teleportation
+- Gold through Uber may go for orbital earlier
+- Uber 1v1 and Uber Rush limit their T1 orbital expansion
+- Much more willing to move troops off world when it is already winning its current battle
+- Uber correctly cost checks its orbital snipe defence build
+- Resolved some inconsistencies in how Gold and Platinum assess T1 orbital factory builds which could impact their timings
+- Gold and Platinum will always use an air scout if they have the option
+- Gold will scout with bots
+- Uber uses Dox for slightly longer
+
 ## v5.13.0 - 2021-04-27
 
 - Uber no longer builds Omegas

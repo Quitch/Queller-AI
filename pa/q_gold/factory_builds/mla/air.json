@@ -67,18 +67,16 @@
       "build_conditions": [
         [
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
             "test_type": "BaseThreatened",
             "boolean": false
           },
           {
             "test_type": "HaveFullPlanetIntel",
             "boolean": false
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Scout - Naval",
-            "compare0": "<",
-            "value0": 400
           },
           {
             "test_type": "UnitCountOnPlanet",
