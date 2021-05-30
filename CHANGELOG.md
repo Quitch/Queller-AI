@@ -16,6 +16,7 @@
 - Resolved some inconsistencies in how Gold and Platinum assess T1 orbital factory builds which could impact their timings
 - Gold and Platinum will always use an air scout if they have the option
 - Gold will scout with bots
+- Uber uses Dox for slightly longer
 
 ## v5.13.0 - 2021-04-27
 
