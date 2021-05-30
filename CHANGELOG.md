@@ -4,7 +4,7 @@
 
 - Added some unit fallbacks in case the units Queller wants are disabled
 - Queller will always attempt to avoid getting stuck no matter how low its eco modifier
-- Uber builds Catapults for base defence again
+- Uber builds Catapults for defence again
 - Corrected Uber slightly overbuilding advanced fabbers when floating
 - Uber builds more nukes when floating resources
 - Correctly exclude scouts from minimum platoon size count
