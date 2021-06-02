@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Uber can build T2 air earlier
+
 ## v5.14.0 - 2021-05-30
 
 - Added some unit fallbacks in case the units Queller wants are disabled
