@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Added support for the Stinger
+
 ## v5.15.0 - 2021-06-23
 
 - Uber can build T2 air earlier
