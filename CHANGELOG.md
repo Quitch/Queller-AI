@@ -5,6 +5,7 @@
 - Uber can build T2 air earlier
 - Uber builds less Grenadiers
 - Uber builds Grenadiers later
+- Uber maintains a limited Stryker presence into the late game
 
 ## v5.14.0 - 2021-05-30
 
