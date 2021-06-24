@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v5.16.0 - 2021-06-24
+
+- Added support for the Stinger
+- Uber Bot won't spam Dox when alone on a planet
+
 ## v5.15.0 - 2021-06-23
 
 - Uber can build T2 air earlier
