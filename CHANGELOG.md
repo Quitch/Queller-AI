@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Added support for the Stinger
+- Uber Bot won't spam Dox when alone on a planet
 
 ## v5.15.0 - 2021-06-23
 
