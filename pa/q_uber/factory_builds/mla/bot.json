@@ -325,6 +325,12 @@
             "value0": 0.9
           },
           {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Factory & Tank",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Land & Mobile & AirDefense - (Tank & Advanced)",
             "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
@@ -349,6 +355,12 @@
             "value0": 0.9
           },
           {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Factory & Tank",
+            "compare0": "==",
+            "value0": 0
+          },
+          {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Land & Mobile & AirDefense - (Tank & Advanced)",
             "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
@@ -364,6 +376,12 @@
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Factory & Tank",
+            "compare0": "==",
+            "value0": 0
           },
           {
             "test_type": "UnitRatioOnPlanet",
@@ -385,6 +403,12 @@
             "test_type": "SystemThreat",
             "string0": "Air",
             "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Factory & Tank",
+            "compare0": "==",
             "value0": 0
           },
           {
@@ -410,6 +434,12 @@
             "string1": "AntiAir",
             "compare0": ">",
             "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Factory & Tank",
+            "compare0": "==",
+            "value0": 0
           }
         ]
       ]
