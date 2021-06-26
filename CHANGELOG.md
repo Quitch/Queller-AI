@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Uber avoids over-investing in air fabbers early on
+
 ## v5.16.0 - 2021-06-24
 
 - Added support for the Stinger
