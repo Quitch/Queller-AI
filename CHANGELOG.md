@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Uber avoids over-investing in air fabbers early on
+- Gold will build Skitter and Investigator scouts on small planets
 
 ## v5.16.0 - 2021-06-24
 
