@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v5.17.0 - 2021-09-23
 
 - Uber avoids over-investing in air fabbers early on
 - Gold will build Skitter and Investigator scouts on small planets
