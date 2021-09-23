@@ -285,40 +285,6 @@
       ]
     },
     {
-      "name": "Ant",
-      "to_build": "LightLaserTank",
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 90,
-      "builders": ["BasicVehicleFactory"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          }
-        ],
-        [
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
-            "boolean": true
-          },
-          {
-            "test_type": "OtherPlanetNeedsLandUnitAssistance",
-            "boolean": true
-          }
-        ]
-      ]
-    },
-    {
       "name": "Inferno",
       "to_build": "BasicArmorTank",
       "instance_count": -1,

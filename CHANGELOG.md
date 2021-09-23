@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v5.17.0 - 2021-09-23
+
+- Uber avoids over-investing in air fabbers early on
+- Gold will build Skitter and Investigator scouts on small planets
+
 ## v5.16.0 - 2021-06-24
 
 - Added support for the Stinger
