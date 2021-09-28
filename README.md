@@ -172,6 +172,7 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 
 - Techs late
 - Slower to enter orbital
+- Less likely to build defences
 
 ### Tank
 
