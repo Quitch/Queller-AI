@@ -5,10 +5,17 @@ if (!quellerAILoaded) {
 
   function quellerAIPersonalities() {
     try {
+      var aiPathCasual = "/pa/q_casual";
+      var aiPathBronze = "/pa/q_bronze";
+      var aiPathSilver = "/pa/q_silver";
+      var aiPathGold = "/pa/q_gold";
+      var aiPathPlatinum = "/pa/q_platinum";
+      var aiPathUber = "/pa/q_uber";
+
       var newPersonalities = _.mapValues(
         {
           qCasual: {
-            ai_path: "/pa/q_casual",
+            ai_path: aiPathCasual,
             display_name: "!LOC:Q-Casual",
             metal_drain_check: 0.64,
             energy_drain_check: 0.77,
@@ -29,7 +36,7 @@ if (!quellerAILoaded) {
             min_advanced_fabbers: 3,
           },
           qBronze: {
-            ai_path: "/pa/q_bronze",
+            ai_path: aiPathBronze,
             display_name: "!LOC:Q-Bronze",
             metal_drain_check: 0.54,
             energy_drain_check: 0.77,
@@ -49,7 +56,7 @@ if (!quellerAILoaded) {
             min_advanced_fabbers: 3,
           },
           qSilver: {
-            ai_path: "/pa/q_silver",
+            ai_path: aiPathSilver,
             display_name: "!LOC:Q-Silver",
             metal_drain_check: 0.54,
             energy_drain_check: 0.77,
@@ -67,7 +74,7 @@ if (!quellerAILoaded) {
             min_advanced_fabbers: 3,
           },
           qGold: {
-            ai_path: "/pa/q_gold",
+            ai_path: aiPathGold,
             display_name: "!LOC:Q-Gold",
             metal_drain_check: 0.54,
             energy_drain_check: 0.77,
@@ -85,7 +92,7 @@ if (!quellerAILoaded) {
             min_advanced_fabbers: 2,
           },
           qPlatinum: {
-            ai_path: "/pa/q_platinum",
+            ai_path: aiPathPlatinum,
             display_name: "!LOC:Q-Platinum",
             metal_drain_check: 0.54,
             energy_drain_check: 0.77,
@@ -103,7 +110,7 @@ if (!quellerAILoaded) {
             min_advanced_fabbers: 2,
           },
           qUber: {
-            ai_path: "/pa/q_uber",
+            ai_path: aiPathUber,
             display_name: "!LOC:Q-Uber",
             metal_drain_check: 0.54,
             energy_drain_check: 0.72,
@@ -121,7 +128,7 @@ if (!quellerAILoaded) {
             min_advanced_fabbers: 1,
           },
           qUber1v1: {
-            ai_path: "/pa/q_uber",
+            ai_path: aiPathUber,
             display_name: "!LOC:Q-Uber 1v1",
             metal_drain_check: 0.54,
             energy_drain_check: 0.72,
@@ -139,7 +146,7 @@ if (!quellerAILoaded) {
             min_advanced_fabbers: 1,
           },
           qUberBot: {
-            ai_path: "/pa/q_uber",
+            ai_path: aiPathUber,
             display_name: "!LOC:Q-Uber Bot",
             metal_drain_check: 0.54,
             energy_drain_check: 0.72,
@@ -157,7 +164,7 @@ if (!quellerAILoaded) {
             min_advanced_fabbers: 1,
           },
           qUberFFA: {
-            ai_path: "/pa/q_uber",
+            ai_path: aiPathUber,
             display_name: "!LOC:Q-Uber Free-For-All",
             metal_drain_check: 0.54,
             energy_drain_check: 0.72,
@@ -175,7 +182,7 @@ if (!quellerAILoaded) {
             min_advanced_fabbers: 1,
           },
           qUberRush: {
-            ai_path: "/pa/q_uber",
+            ai_path: aiPathUber,
             display_name: "!LOC:Q-Uber Rush",
             metal_drain_check: 0.54,
             energy_drain_check: 0.72,
@@ -193,7 +200,7 @@ if (!quellerAILoaded) {
             min_advanced_fabbers: 1,
           },
           qUberTank: {
-            ai_path: "/pa/q_uber",
+            ai_path: aiPathUber,
             display_name: "!LOC:Q-Uber Tank",
             metal_drain_check: 0.54,
             energy_drain_check: 0.72,
@@ -211,7 +218,7 @@ if (!quellerAILoaded) {
             min_advanced_fabbers: 1,
           },
           qUberTurtle: {
-            ai_path: "/pa/q_uber",
+            ai_path: aiPathUber,
             display_name: "!LOC:Q-Uber Turtle",
             metal_drain_check: 0.54,
             energy_drain_check: 0.72,
