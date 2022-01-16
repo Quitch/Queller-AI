@@ -142,12 +142,12 @@ Suggestions based on 1v1 ranked position or challenge sought:
 | Bronze   | Low       | Bronze     | 1.0 |
 | Bronze   | Mid       | Silver     | 1.0 |
 | Bronze   | High      | Gold       | 1.0 |
-| Silver   | Low       | Platinum   | 1.0 |
-| Silver   | Mid       | Uber       | 1.0 |
-| Silver   | High      | Uber       | 1.2 |
-| Gold     | Any       | Uber       | 1.4 |
-| Platinum | Any       | Uber       | 1.6 |
-| Uber     | Any       | Uber       | 1.8 |
+| Silver   | Low       | Gold       | 1.0 |
+| Silver   | Mid       | Platinum   | 1.0 |
+| Silver   | High      | Uber       | 1.0 |
+| Gold     | Any       | Uber       | 1.2 |
+| Platinum | Any       | Uber       | 1.4 |
+| Uber     | Any       | Uber       | 1.6 |
 
 ## SUBPERSONALITIES
 
