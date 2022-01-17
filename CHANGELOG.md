@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Difficulties above Bronze no longer use land titans due to pathing issues
+- Uber uses more Dox
 
 ## v5.17.0 - 2021-09-23
 
