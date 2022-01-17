@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-- Difficulties above Bronze no longer use land titans due to pathing issues
+- Difficulties above Casual no longer use land titans due to pathing issues
 - Uber uses more Dox
 - Uber uses more Ants
 - Uber uses less Drifters when it doesn't need hover units
