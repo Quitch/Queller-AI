@@ -140,28 +140,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyOrbitalPresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
-          }
-        ],
-        [
-          {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
@@ -209,6 +187,28 @@
       "build_conditions": [
         [
           {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemyOrbitalPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          }
+        ],
+        [
+          {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
@@ -220,6 +220,23 @@
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Air",
             "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Sub",
+            "string1": "AntiSub",
             "compare0": ">",
             "value0": 1
           }
@@ -249,6 +266,22 @@
             "compare0": ">",
             "value0": 0
           }
+        ],
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Sub",
+            "compare0": ">",
+            "value0": 0
+          }
         ]
       ]
     },
@@ -260,6 +293,28 @@
       "priority": 97,
       "builders": ["BasicNavalFactory"],
       "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemyOrbitalPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          }
+        ],
         [
           {
             "test_type": "EnemySurfacePresenceOnPlanet",

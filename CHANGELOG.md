@@ -7,7 +7,7 @@
 - Uber uses more Ants
 - Uber uses less Drifters when it doesn't need hover units
 - Uber more likely to use Energy Storage
-- Uber naval builds updated to account for Orca and Narwhal weapon changes
+- Gold through Uber have had their naval builds updated to account for Orca and Narwhal weapon changes
 
 ## v5.17.0 - 2021-09-23
 

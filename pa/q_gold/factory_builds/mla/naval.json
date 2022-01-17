@@ -246,6 +246,23 @@
             "compare0": ">",
             "value0": 1
           }
+        ],
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Sub",
+            "string1": "AntiSub",
+            "compare0": ">",
+            "value0": 1
+          }
         ]
       ]
     },
