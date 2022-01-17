@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Difficulties above Bronze no longer use land titans due to pathing issues
+
 ## v5.17.0 - 2021-09-23
 
 - Uber avoids over-investing in air fabbers early on
