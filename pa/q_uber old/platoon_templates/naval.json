@@ -1,0 +1,23 @@
+{
+  "platoon_templates": {
+    "Naval_Attack_Queller": {
+      "units": [
+        {
+          "unit_types": "Naval & Mobile & Offense - (AirDefense & Custom1) - Fabber - Construction",
+          "min_count": 1,
+          "max_count": -1
+        },
+        {
+          "unit_types": "Naval & Mobile & AirDefense & Custom1",
+          "percent": 0.1,
+          "squad": "Defense"
+        },
+        {
+          "unit_types": "Naval & Mobile & Construction - Fabber",
+          "percent": 0.01,
+          "squad": "Defense"
+        }
+      ]
+    }
+  }
+}

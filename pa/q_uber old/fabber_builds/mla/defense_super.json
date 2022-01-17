@@ -1,0 +1,335 @@
+{
+  "build_list": [
+    {
+      "name": "Anti Nuke Silo",
+      "to_build": "AntiNukeSilo",
+      "instance_count": 1,
+      "shared_instance_count": "AntiNukeSilo",
+      "priority": 380,
+      "min_num_assisters": 3,
+      "max_num_assisters": 12,
+      "base_sort": "FromMainBase",
+      "builders": ["AnyUberAdvancedFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AntiNukeSilo"
+          },
+          {
+            "test_type": "SystemToPlanetThreatRatio",
+            "string0": "Nuke",
+            "string1": "AntiNuke",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & NukeDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AntiNukeSilo"
+          }
+        ],
+        [
+          {
+            "test_type": "OtherPlanetNeedsReconAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AntiNukeSilo"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & NukeDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AntiNukeSilo"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Commander | (Structure & ((EnergyProduction & Advanced) | Factory))",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 200,
+            "count": 3
+          },
+          {
+            "unit_type_string": "Structure & NukeDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 200,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Anti Nuke Silo - Commander",
+      "to_build": "AntiNukeSilo",
+      "instance_count": 1,
+      "shared_instance_count": "AntiNukeSilo",
+      "priority": 510,
+      "min_num_assisters": 5,
+      "max_num_assisters": 12,
+      "base_sort": "FromMainBase",
+      "builders": ["AnyUberAdvancedFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HaveHadANukeEvent",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Commander",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & NukeDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AntiNukeSilo"
+          }
+        ],
+        [
+          {
+            "test_type": "SystemToPlanetThreatRatio",
+            "string0": "Nuke",
+            "string1": "AntiNuke",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Commander",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & NukeDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AntiNukeSilo"
+          }
+        ],
+        [
+          {
+            "test_type": "HaveHadANukeEvent",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AntiNukeSilo"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Commander",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & NukeDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AntiNukeSilo"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AntiNukeSilo"
+          },
+          {
+            "test_type": "SystemToPlanetThreatRatio",
+            "string0": "Nuke",
+            "string1": "AntiNuke",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Commander",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & NukeDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AntiNukeSilo"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Commander",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 200,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & NukeDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 200,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Anti Nuke Silo - Rush",
+      "to_build": "AntiNukeSilo",
+      "instance_count": 1,
+      "shared_instance_count": "AntiNukeSilo",
+      "priority": 510,
+      "min_num_assisters": 5,
+      "max_num_assisters": 12,
+      "base_sort": "FromMainBase",
+      "builders": ["AnyUberAdvancedFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AntiNukeSilo"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Nuke",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & NukeDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AntiNukeSilo"
+          }
+        ],
+        [
+          {
+            "test_type": "HaveHadANukeEvent",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AntiNukeSilo"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & NukeDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "AntiNukeSilo"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Commander | (Structure & ((EnergyProduction & Advanced) | Factory))",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 200,
+            "count": 3
+          },
+          {
+            "unit_type_string": "Structure & NukeDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 200,
+            "count": 1
+          }
+        ]
+      }
+    }
+  ]
+}
