@@ -6,6 +6,7 @@
 - Uber uses more Dox
 - Uber uses more Ants
 - Uber uses less Drifters when it doesn't need hover units
+- Uber more likely to use Energy Storage
 
 ## v5.17.0 - 2021-09-23
 
