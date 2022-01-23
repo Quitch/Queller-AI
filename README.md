@@ -8,7 +8,7 @@ Improved AI for [Planetary Annihilation: TITANS](https://planetaryannihilation.c
 
 This mod is a total overhaul of the AI designed to smooth out the difficulty curve, providing more humanlike challenges that are both easier and harder than the vanilla AI. It features complete support for the [Legion Expansion](https://github.com/Legion-Expansion/Legion-Expansion).
 
-You must install [Galactic War Overhaul](https://forums.planetaryannihilation.com/threads/client-galactic-war-overhaul.72360/) if you want Queller AI in your Galactic War.
+You must install [Galactic War Overhaul](https://steamcommunity.com/app/386070/discussions/0/133259956005401439/) if you want Queller AI in your Galactic War.
 
 Please ensure that if you use this work you credit Quitch's Queller AI.
 
