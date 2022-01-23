@@ -14,7 +14,7 @@ Please ensure that if you use this work you credit Quitch's Queller AI.
 
 ## INSTALLATION
 
-You should download and install this mod via the Planetary Annihilation TITANS in-game [Community Mods](https://steamcommunity.com/sharedfiles/filedetails/?id=1417396826).
+You should download and install this mod via the Planetary Annihilation: TITANS in-game [Community Mods](https://steamcommunity.com/sharedfiles/filedetails/?id=1417396826).
 
 ## DIFFICULTY
 
