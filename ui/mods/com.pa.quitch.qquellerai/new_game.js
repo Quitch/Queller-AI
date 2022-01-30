@@ -259,24 +259,24 @@ if (!quellerAILoaded) {
         var cachedFunction = model.startGame;
 
         return function () {
-          var uberPersonalityNames = function () {
-            var newPersonalityNames = _.keys(newPersonalities);
+          var uberPersonalityNames = function (personalities) {
+            var newPersonalityNames = _.keys(personalities);
             return _.filter(newPersonalityNames, function (name) {
               return _.startsWith(name, "qUber") && !_.endsWith(name, "Random");
             });
           };
 
-          var selectUberPersonality = function () {
-            return _.sample(uberPersonalityNames());
+          var selectUberPersonality = function (personalities) {
+            return _.sample(uberPersonalityNames(personalities));
           };
 
-          var selectPersonality = function () {
-            var newPersonalityNames = _.keys(newPersonalities);
+          var selectPersonality = function (personalities) {
+            var newPersonalityNames = _.keys(personalities);
             var randomPersonalityNames = ["qRandom", "qUberRandom"];
             var nonUberPersonalities = _.xor(
               newPersonalityNames,
               randomPersonalityNames,
-              uberPersonalityNames()
+              uberPersonalityNames(personalities)
             );
             // avoid oversampling Uber difficulties
             var oneOfEachDifficulty = nonUberPersonalities.concat(
@@ -285,10 +285,10 @@ if (!quellerAILoaded) {
             return _.sample(oneOfEachDifficulty);
           };
 
-          var assignPersonality = function (personality) {
+          var assignPersonality = function (personality, personalities) {
             return personality === "qRandom"
-              ? selectPersonality()
-              : selectUberPersonality();
+              ? selectPersonality(personalities)
+              : selectUberPersonality(personalities);
           };
 
           _.forEach(model.armies(), function (army) {
@@ -298,7 +298,10 @@ if (!quellerAILoaded) {
                 slot.ai() === true &&
                 _.includes(randomPersonalityNames, slot.aiPersonality())
               ) {
-                var personality = assignPersonality(slot.aiPersonality());
+                var personality = assignPersonality(
+                  slot.aiPersonality(),
+                  newPersonalities
+                );
                 slot.aiPersonality(personality);
               }
             });
