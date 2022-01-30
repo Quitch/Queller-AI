@@ -3,6 +3,8 @@
 ## Unreleased
 
 - Difficulties above Bronze no longer use land titans due to pathing issues
+- Added Q-Random which selects a difficulty level at random to fully recreate that public lobby experience
+- Added Q-Uber Random which selects a Q-Uber personality at random
 
 ## v5.17.0 - 2021-09-23
 

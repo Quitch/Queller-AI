@@ -235,6 +235,12 @@ if (!quellerAILoaded) {
             min_basic_fabbers: 4,
             min_advanced_fabbers: 1,
           },
+          qRandom: {
+            display_name: "!LOC:Q-Random",
+          },
+          qUberRandom: {
+            display_name: "!LOC:Q-Uber Random",
+          },
         },
         function (personality, name) {
           var result = _.assign(
@@ -248,6 +254,48 @@ if (!quellerAILoaded) {
 
       _.assign(model.aiPersonalities(), newPersonalities);
       model.aiPersonalities.valueHasMutated();
+
+      model.startGame = (function () {
+        var cachedFunction = model.startGame;
+
+        return function () {
+          var nonUberPersonalities = [
+            "qCasual",
+            "qBronze",
+            "qSilver",
+            "qGold",
+            "qPlatinum",
+          ];
+          var randomPersonalities = ["qRandom", "qUberRandom"];
+          var quellerPersonalities = _.omit(
+            newPersonalities,
+            randomPersonalities
+          );
+          var uberPersonalities = _.omit(
+            newPersonalities,
+            randomPersonalities,
+            nonUberPersonalities
+          );
+
+          var assignPersonality = function (slot, personalities) {
+            slot.aiPersonality(_(personalities).keys().sample());
+          };
+
+          _.forEach(model.armies(), function (army) {
+            _.forEach(army.slots(), function (slot) {
+              if (slot.ai() === true) {
+                if (slot.aiPersonality() === "qRandom") {
+                  assignPersonality(slot, quellerPersonalities);
+                } else if (slot.aiPersonality() === "qUberRandom") {
+                  assignPersonality(slot, uberPersonalities);
+                }
+              }
+            });
+          });
+
+          return cachedFunction.apply(this, arguments);
+        };
+      })();
 
       _.defer(function () {
         model.localChatMessage(
