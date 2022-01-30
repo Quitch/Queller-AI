@@ -281,7 +281,7 @@ if (!quellerAILoaded) {
             );
             // avoid oversampling Uber difficulties
             var oneOfEachDifficulty = nonUberPersonalities.concat(
-              selectUberPersonality()
+              selectUberPersonality(personalities)
             );
             return _.sample(oneOfEachDifficulty);
           };
