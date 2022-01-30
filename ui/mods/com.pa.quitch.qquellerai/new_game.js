@@ -259,36 +259,47 @@ if (!quellerAILoaded) {
         var cachedFunction = model.startGame;
 
         return function () {
-          var nonUberPersonalities = [
-            "qCasual",
-            "qBronze",
-            "qSilver",
-            "qGold",
-            "qPlatinum",
-          ];
-          var randomPersonalities = ["qRandom", "qUberRandom"];
-          var quellerPersonalities = _.omit(
-            newPersonalities,
-            randomPersonalities
-          );
-          var uberPersonalities = _.omit(
-            newPersonalities,
-            randomPersonalities,
-            nonUberPersonalities
-          );
+          var uberPersonalityNames = function () {
+            var newPersonalityNames = _.keys(newPersonalities);
+            return _.filter(newPersonalityNames, function (name) {
+              return _.startsWith(name, "qUber") && !_.endsWith(name, "Random");
+            });
+          };
 
-          var assignPersonality = function (slot, personalities) {
-            slot.aiPersonality(_(personalities).keys().sample());
+          var selectUberPersonality = function () {
+            return _.sample(uberPersonalityNames());
+          };
+
+          var selectPersonality = function () {
+            var newPersonalityNames = _.keys(newPersonalities);
+            var randomPersonalityNames = ["qRandom", "qUberRandom"];
+            var nonUberPersonalities = _.xor(
+              newPersonalityNames,
+              randomPersonalityNames,
+              uberPersonalityNames()
+            );
+            // avoid oversampling Uber difficulties
+            var oneOfEachDifficulty = nonUberPersonalities.concat(
+              selectUberPersonality()
+            );
+            return _.sample(oneOfEachDifficulty);
+          };
+
+          var assignPersonality = function (personality) {
+            return personality === "qRandom"
+              ? selectPersonality()
+              : selectUberPersonality();
           };
 
           _.forEach(model.armies(), function (army) {
             _.forEach(army.slots(), function (slot) {
-              if (slot.ai() === true) {
-                if (slot.aiPersonality() === "qRandom") {
-                  assignPersonality(slot, quellerPersonalities);
-                } else if (slot.aiPersonality() === "qUberRandom") {
-                  assignPersonality(slot, uberPersonalities);
-                }
+              var randomPersonalityNames = ["qRandom", "qUberRandom"];
+              if (
+                slot.ai() === true &&
+                _.includes(randomPersonalityNames, slot.aiPersonality())
+              ) {
+                var personality = assignPersonality(slot.aiPersonality());
+                slot.aiPersonality(personality);
               }
             });
           });
