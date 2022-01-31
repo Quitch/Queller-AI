@@ -273,7 +273,12 @@ if (!quellerAILoaded) {
 
           var selectPersonality = function (personalities) {
             var newPersonalityNames = _.keys(personalities);
-            var randomPersonalityNames = ["qRandom", "qUberRandom"];
+            var randomPersonalityNames = _.filter(
+              newPersonalityNames,
+              function (name) {
+                return _.endsWith(name, "Random");
+              }
+            );
             var nonUberPersonalities = _.xor(
               newPersonalityNames,
               randomPersonalityNames,
