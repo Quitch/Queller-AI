@@ -260,9 +260,18 @@ if (!quellerAILoaded) {
         var cachedFunction = model.startGame;
 
         return function () {
+          var personalityNames = function (personalities) {
+            return _.keys(personalities);
+          };
+
+          var randomPersonalityNames = function (personalities) {
+            return _.filter(personalityNames(personalities), function (name) {
+              return _.endsWith(name, "Random");
+            });
+          };
+
           var uberPersonalityNames = function (personalities) {
-            var newPersonalityNames = _.keys(personalities);
-            return _.filter(newPersonalityNames, function (name) {
+            return _.filter(personalityNames(personalities), function (name) {
               return _.startsWith(name, "qUber") && !_.endsWith(name, "Random");
             });
           };
@@ -272,16 +281,9 @@ if (!quellerAILoaded) {
           };
 
           var selectPersonality = function (personalities) {
-            var newPersonalityNames = _.keys(personalities);
-            var randomPersonalityNames = _.filter(
-              newPersonalityNames,
-              function (name) {
-                return _.endsWith(name, "Random");
-              }
-            );
             var nonUberPersonalities = _.xor(
-              newPersonalityNames,
-              randomPersonalityNames,
+              personalityNames(personalities),
+              randomPersonalityNames(personalities),
               uberPersonalityNames(personalities)
             );
             // avoid oversampling Uber
@@ -299,10 +301,12 @@ if (!quellerAILoaded) {
 
           _.forEach(model.armies(), function (army) {
             _.forEach(army.slots(), function (slot) {
-              var randomPersonalityNames = ["qRandom", "qUberRandom"];
               if (
                 slot.ai() === true &&
-                _.includes(randomPersonalityNames, slot.aiPersonality())
+                _.includes(
+                  randomPersonalityNames(newPersonalities),
+                  slot.aiPersonality()
+                )
               ) {
                 var personality = assignPersonality(
                   slot.aiPersonality(),
