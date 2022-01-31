@@ -284,7 +284,7 @@ if (!quellerAILoaded) {
               randomPersonalityNames,
               uberPersonalityNames(personalities)
             );
-            // avoid oversampling Uber difficulties
+            // avoid oversampling Uber
             var oneOfEachDifficulty = nonUberPersonalities.concat(
               selectUberPersonality(personalities)
             );
