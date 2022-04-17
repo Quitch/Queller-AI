@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v5.18.0 - 2022-04-17
 
 - Difficulties above Bronze no longer use land titans due to pathing issues
 - Added Q-Random which selects a difficulty level at random to fully recreate that public lobby experience
