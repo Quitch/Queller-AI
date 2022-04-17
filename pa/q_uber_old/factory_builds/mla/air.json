@@ -471,29 +471,6 @@
             "compare0": "<",
             "value0": 0.6
           }
-        ]
-      ]
-    },
-    {
-      "name": "Wyrm",
-      "to_build": "HeavyBomber",
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 199,
-      "builders": ["AdvancedAirFactory"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Air",
-            "string1": "Air",
-            "compare0": "<",
-            "value0": 0.6
-          }
         ],
         [
           {

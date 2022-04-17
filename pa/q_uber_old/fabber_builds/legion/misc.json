@@ -1,0 +1,285 @@
+{
+  "build_list": [
+    {
+      "name": "Fabber Assist",
+      "instance_count": -1,
+      "priority": 10,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced",
+        "LegionOrbitalBasicFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ],
+        [
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "MetalStorageFrac",
+            "compare0": ">",
+            "value0": 0.1
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": true
+          }
+        ]
+      ],
+      "task_type": "BuilderAssist"
+    },
+    {
+      "name": "Sky Bridge",
+      "to_build": "LegionStructureBasicTeleporter",
+      "instance_count": 1,
+      "priority": 710,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "builders": [
+        "LegionCommander",
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced",
+        "LegionOrbitalBasicFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PresenceOnOtherPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionStructureBasicTeleporter"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Teleport Fabber To Planet",
+      "instance_count": 1,
+      "priority": 801,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "LegionBotBasicFabber",
+        "LegionVehicleBasicFabber",
+        "LegionBotAdvancedFabber",
+        "LegionVehicleAdvancedFabber",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetWithoutFabberWithTeleporter",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Air - Orbital",
+            "compare0": ">=",
+            "value0": 2
+          }
+        ]
+      ],
+      "task_type": "TeleportFabberToPlanet"
+    },
+    {
+      "name": "Move Fabber To Planet",
+      "instance_count": 1,
+      "priority": 800,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "LegionBotBasicFabber",
+        "LegionVehicleBasicFabber",
+        "LegionAirBasicFabber",
+        "LegionBotAdvancedFabber",
+        "LegionVehicleAdvancedFabber",
+        "LegionAirAdvancedFabber",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetWithoutPresence",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & Transport",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": ">=",
+            "value0": 2
+          }
+        ]
+      ],
+      "task_type": "TransportToPlanet"
+    },
+    {
+      "name": "Move Orbital Fabber To Planet",
+      "instance_count": 1,
+      "priority": 800,
+      "base_sort": "FromBuilder",
+      "builders": ["LegionOrbitalBasicFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetOrGasGiantWithoutPresence",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Orbital",
+            "compare0": ">=",
+            "value0": 2
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetOrGasGiantWithoutPresence",
+            "boolean": true
+          },
+          {
+            "test_type": "PresenceOnOtherPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsMainEcoBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountInCelestialTransit",
+            "unit_type_string0": "Fabber & Orbital",
+            "compare0": "<",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetOrGasGiantWithoutPresence",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsMainEcoBase",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">=",
+            "value0": 1
+          }
+        ]
+      ],
+      "task_type": "OrbitalFabberMoveToPlanet"
+    },
+    {
+      "name": "Move Orbital Fabber To Safe Planet",
+      "instance_count": 1,
+      "priority": 810,
+      "base_sort": "FromBuilder",
+      "builders": ["LegionOrbitalBasicFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "SafePlanetOrGasGiantWithoutPresence",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Orbital",
+            "compare0": ">=",
+            "value0": 2
+          }
+        ],
+        [
+          {
+            "test_type": "SafePlanetOrGasGiantWithoutPresence",
+            "boolean": true
+          },
+          {
+            "test_type": "PresenceOnOtherPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsMainEcoBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountInCelestialTransit",
+            "unit_type_string0": "Fabber & Orbital",
+            "compare0": "<",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "SafePlanetOrGasGiantWithoutPresence",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsMainEcoBase",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">=",
+            "value0": 1
+          }
+        ]
+      ],
+      "task_type": "OrbitalFabberMoveToSafePlanet"
+    }
+  ]
+}

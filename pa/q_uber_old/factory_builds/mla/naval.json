@@ -17,12 +17,16 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Fabber & Basic",
             "compare0": "<",
-            "value0": 1
+            "value0": 2
           }
         ],
         [
           {
             "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
             "boolean": false
           },
           {
@@ -39,6 +43,49 @@
             "unit_type_string1": "Factory & Basic & Naval",
             "compare0": "<",
             "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "MetalStorageFrac",
+            "compare0": ">",
+            "value0": 0.8
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicNavalFabber"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Fabber & Basic",
+            "compare0": "<",
+            "value0": 20
           }
         ]
       ]
@@ -88,27 +135,23 @@
       "build_conditions": [
         [
           {
-            "test_type": "BaseThreatened",
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemyPresenceOnPlanet",
             "boolean": false
           },
           {
             "test_type": "HaveFullPlanetIntel",
             "boolean": false
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Air & Scout",
-            "compare0": "<",
-            "value0": 300
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "(Naval & WaterHover & Offense & Mobile) - Fabber - Construction - Titan",
-            "compare0": "<",
-            "value0": 300
           }
         ],
         [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
           {
             "test_type": "BaseThreatened",
             "boolean": false
@@ -146,33 +189,6 @@
           {
             "test_type": "CanDeployNavalFromBase",
             "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Sub",
-            "string1": "AntiSub",
-            "compare0": "<",
-            "value0": 0.6
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Orca - Support",
-      "to_build": "Destroyer",
-      "instance_count": 1,
-      "max_num_assisters": 10,
-      "priority": 97,
-      "builders": ["BasicNavalFactory"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
           }
         ]
       ]
@@ -187,20 +203,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyPresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
-          }
-        ],
-        [
-          {
             "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
@@ -213,36 +215,16 @@
             "string0": "Air",
             "string1": "AntiAir",
             "compare0": ">",
-            "value0": 1
+            "value0": 0.9
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Naval & Mobile & (AirDefense | Tactical)",
+            "unit_type_string1": "(Naval & Mobile) - Fabber - Hover",
+            "compare0": "<",
+            "value0": 0.2
           }
         ],
-        [
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Sub",
-            "string1": "AntiSub",
-            "compare0": ">",
-            "value0": 1
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Narwhal - Support",
-      "to_build": "Frigate",
-      "instance_count": 1,
-      "max_num_assisters": 10,
-      "priority": 97,
-      "builders": ["BasicNavalFactory"],
-      "build_conditions": [
         [
           {
             "test_type": "EnemyAirPresenceOnPlanet",
@@ -253,26 +235,11 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Air",
-            "compare0": ">",
-            "value0": 0
-          }
-        ],
-        [
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Sub",
-            "compare0": ">",
-            "value0": 0
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Naval & Mobile & (AirDefense | Tactical)",
+            "unit_type_string1": "(Naval & Mobile) - Fabber - Hover",
+            "compare0": "<",
+            "value0": 0.05
           }
         ]
       ]
@@ -287,20 +254,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyPresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
-          }
-        ],
-        [
-          {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
           },
@@ -313,6 +266,11 @@
             "string0": "Naval",
             "compare0": ">",
             "value0": 0
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Naval & Advanced",
+            "boolean": true
           }
         ],
         [
@@ -329,12 +287,17 @@
             "string0": "Sub",
             "compare0": ">",
             "value0": 0
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Naval & Advanced",
+            "boolean": true
           }
         ]
       ]
     },
     {
-      "name": "Advanced Naval Fabber",
+      "name": "Advanced Naval Fabber - Initial",
       "to_build": "AdvancedNavalFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -347,16 +310,28 @@
             "boolean": false
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber & Advanced",
-            "compare0": "<",
-            "value0": 2
+            "test_type": "MetMinAdvancedFabberCount",
+            "boolean": false
           }
-        ],
+        ]
+      ]
+    },
+    {
+      "name": "Advanced Naval Fabber",
+      "to_build": "AdvancedNavalFabber",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": ["AdvancedNavalFactory"],
+      "build_conditions": [
         [
           {
             "test_type": "BaseThreatened",
             "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -367,7 +342,50 @@
             "unit_type_string0": "Fabber & Advanced & Naval",
             "unit_type_string1": "Factory & Advanced & Naval",
             "compare0": "<",
-            "value0": 3
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "MetalStorageFrac",
+            "compare0": ">",
+            "value0": 0.8
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedNavalFabber"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Fabber & Advanced",
+            "compare0": "<",
+            "value0": 30
           }
         ]
       ]
@@ -375,7 +393,7 @@
     {
       "name": "Leviathan",
       "to_build": "Battleship",
-      "instance_count": -1,
+      "instance_count": 1,
       "max_num_assisters": 10,
       "priority": 199,
       "builders": ["AdvancedNavalFactory"],
@@ -390,10 +408,34 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Naval",
+            "string1": "Naval",
             "compare0": ">",
-            "value0": 0
+            "value0": 0.8
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Sub",
+            "string1": "AntiSub",
+            "compare0": "<",
+            "value0": 0.6
+          }
+        ],
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Naval & Mobile & Advanced & Artillery",
+            "compare0": "<",
+            "value0": 1
           }
         ]
       ]
@@ -401,7 +443,7 @@
     {
       "name": "Stingray",
       "to_build": "MissleShip",
-      "instance_count": -1,
+      "instance_count": 1,
       "max_num_assisters": 10,
       "priority": 199,
       "builders": ["AdvancedNavalFactory"],
@@ -420,10 +462,35 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Orbital",
+            "string1": "AntiOrbital",
             "compare0": ">",
-            "value0": 0
+            "value0": 1
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Naval & Mobile & Tactical",
+            "unit_type_string1": "(Naval & Mobile) - Fabber - Hover",
+            "compare0": "<",
+            "value0": 0.1
+          }
+        ],
+        [
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1
           },
           {
             "test_type": "UnitRatioOnPlanet",
@@ -440,10 +507,35 @@
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Naval & Mobile & (AirDefense | Tactical)",
-            "unit_type_string1": "(Naval & Mobile) - Fabber - Hover",
+            "unit_type_string0": "Naval & Mobile & Tactical",
+            "unit_type_string1": "Naval & Mobile & Advanced & Artillery",
             "compare0": "<",
-            "value0": 0.05
+            "value0": 0.1
+          }
+        ],
+        [
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Naval & Mobile & Advanced & Tactical",
+            "compare0": "<",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatRatio",
+            "string0": "Orbital",
+            "string1": "AntiOrbital",
+            "compare0": ">",
+            "value0": 1
           }
         ]
       ]
@@ -466,16 +558,18 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreat",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Naval",
+            "string1": "Naval",
             "compare0": ">",
-            "value0": 0
+            "value0": 0.8
           },
           {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Naval & Advanced & Sub",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Sub",
+            "string1": "AntiSub",
             "compare0": "<",
-            "value0": 300
+            "value0": 0.6
           }
         ]
       ]
@@ -483,11 +577,27 @@
     {
       "name": "Typhoon",
       "to_build": "DroneCarrier",
-      "instance_count": 1,
+      "instance_count": -1,
       "max_num_assisters": 10,
       "priority": 199,
       "builders": ["AdvancedNavalFactory"],
       "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Naval",
+            "compare0": ">",
+            "value0": 0
+          }
+        ],
         [
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
@@ -511,29 +621,13 @@
       "to_build": "HoverShip",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 199,
+      "priority": 198,
       "builders": ["AdvancedNavalFactory"],
       "build_conditions": [
         [
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "Naval",
-            "compare0": "==",
-            "value0": 0
-          }
-        ],
-        [
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": false
           }
         ]
       ]

@@ -5,6 +5,12 @@
 - Difficulties above Bronze no longer use land titans due to pathing issues
 - Added Q-Random which selects a difficulty level at random to fully recreate that public lobby experience
 - Added Q-Uber Random which selects a Q-Uber personality at random
+- Difficulties above Casual no longer use land titans due to pathing issues
+- Uber uses more Dox
+- Uber uses more Ants
+- Uber more likely to use Energy Storage
+- Gold through Uber have had their naval builds updated to account for Orca and Narwhal weapon changes
+- Uber now builds Wyrms
 
 ## v5.17.0 - 2021-09-23
 

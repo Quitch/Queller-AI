@@ -1,12 +1,12 @@
 {
   "build_list": [
     {
-      "name": "Basic Air Fabber",
-      "to_build": "BasicAirFabber",
+      "name": "Fabrication Flyer",
+      "to_build": "LegionAirBasicFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
       "priority": 100,
-      "builders": ["BasicAirFactory"],
+      "builders": ["LegionFactoryBasicAir", "LegionFactoryAdvancedAir"],
       "build_conditions": [
         [
           {
@@ -35,7 +35,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicAirFabber"
+            "string0": "LegionAirBasicFabber"
           },
           {
             "test_type": "UnitRatioOnPlanet",
@@ -55,7 +55,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicAirFabber"
+            "string0": "LegionAirBasicFabber"
           },
           {
             "test_type": "UnitCountPerPlanetRadius",
@@ -94,7 +94,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "BasicAirFabber"
+            "string0": "LegionAirBasicFabber"
           },
           {
             "test_type": "UnitCountPerPlanetRadius",
@@ -106,12 +106,12 @@
       ]
     },
     {
-      "name": "Firefly - First Scout",
-      "to_build": "AirScout",
+      "name": "Marauder - First Scout",
+      "to_build": "LegionAirBasicGunship",
       "instance_count": 1,
       "max_num_assisters": 10,
       "priority": 102,
-      "builders": ["BasicAirFactory"],
+      "builders": ["LegionFactoryBasicAir", "LegionFactoryAdvancedAir"],
       "build_conditions": [
         [
           {
@@ -132,12 +132,12 @@
       ]
     },
     {
-      "name": "Firefly",
-      "to_build": "AirScout",
+      "name": "Marauder",
+      "to_build": "LegionAirBasicGunship",
       "instance_count": 1,
       "max_num_assisters": 10,
       "priority": 98,
-      "builders": ["BasicAirFactory"],
+      "builders": ["LegionFactoryBasicAir", "LegionFactoryAdvancedAir"],
       "build_conditions": [
         [
           {
@@ -193,12 +193,12 @@
       ]
     },
     {
-      "name": "Hummingbird - First Fighter",
-      "to_build": "BasicFighter",
+      "name": "Scythe - First Fighter",
+      "to_build": "LegionAirBasicFighter",
       "instance_count": -1,
       "max_num_assisters": 10,
       "priority": 101,
-      "builders": ["BasicAirFactory"],
+      "builders": ["LegionFactoryBasicAir"],
       "build_conditions": [
         [
           {
@@ -219,12 +219,12 @@
       ]
     },
     {
-      "name": "Hummingbird",
-      "to_build": "BasicFighter",
+      "name": "Scythe",
+      "to_build": "LegionAirBasicFighter",
       "instance_count": -1,
       "max_num_assisters": 10,
       "priority": 97,
-      "builders": ["BasicAirFactory"],
+      "builders": ["LegionFactoryBasicAir", "LegionFactoryAdvancedAir"],
       "build_conditions": [
         [
           {
@@ -235,12 +235,54 @@
       ]
     },
     {
-      "name": "Bumblebee",
-      "to_build": "BasicBomber",
+      "name": "Nova",
+      "to_build": "LegionAirBasicBomb",
       "instance_count": -1,
       "max_num_assisters": 10,
       "priority": 97,
-      "builders": ["BasicAirFactory"],
+      "builders": ["LegionFactoryBasicAir"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Air",
+            "compare0": ">",
+            "value0": 1500
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "Air",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Mobile - Scout - Fabber - Deconstruction - Construction",
+            "compare0": ">",
+            "value0": 10
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Air & Mobile & SelfDestruct",
+            "unit_type_string1": "Air & Mobile - Scout - Fabber - Deconstruction - Construction",
+            "compare0": "<",
+            "value0": 0.1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Dauntless",
+      "to_build": "LegionAirBasicBomber",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["LegionFactoryBasicAir", "LegionFactoryAdvancedAir"],
       "build_conditions": [
         [
           {
@@ -270,79 +312,12 @@
       ]
     },
     {
-      "name": "Icarus - Eco",
-      "to_build": "SolarDrone",
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 99,
-      "builders": ["BasicAirFactory"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "PotentialEnergyEfficiency",
-            "compare0": "<",
-            "value0": 1
-          }
-        ],
-        [
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CurrentEnergyEfficiency",
-            "compare0": "<",
-            "value0": 1
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Icarus",
-      "to_build": "SolarDrone",
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 97,
-      "builders": ["BasicAirFactory"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveEcoForAdvanced",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "(Tank - Custom1) | (Bot & Custom1) | Naval | Air",
-            "boolean": false
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Advanced Air Fabber",
-      "to_build": "AdvancedAirFabber",
+      "name": "Advanced Fabrication Flyer",
+      "to_build": "LegionAirAdvancedFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
       "priority": 200,
-      "builders": ["AdvancedAirFactory"],
+      "builders": ["LegionFactoryAdvancedAir"],
       "build_conditions": [
         [
           {
@@ -365,7 +340,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedAirFabber"
+            "string0": "LegionAirAdvancedFabber"
           },
           {
             "test_type": "UnitRatioOnPlanet",
@@ -385,7 +360,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedAirFabber"
+            "string0": "LegionAirAdvancedFabber"
           },
           {
             "test_type": "UnitCountPerPlanetRadius",
@@ -424,7 +399,7 @@
           },
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "AdvancedAirFabber"
+            "string0": "LegionAirAdvancedFabber"
           },
           {
             "test_type": "UnitCountPerPlanetRadius",
@@ -436,12 +411,81 @@
       ]
     },
     {
-      "name": "Phoenix",
-      "to_build": "AdvancedFighter",
-      "instance_count": -1,
+      "name": "Infiltrator",
+      "to_build": "LegionAirAdvancedScout",
+      "instance_count": 1,
       "max_num_assisters": 10,
       "priority": 199,
-      "builders": ["AdvancedAirFactory"],
+      "builders": ["AnyLegionAirFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Scout",
+            "compare0": "<",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemyPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Air & Scout",
+            "compare0": "<",
+            "value0": 150
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Air & Scout",
+            "compare0": "<",
+            "value0": 150
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Firebird",
+      "to_build": "LegionAirAdvancedFighter",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 198,
+      "builders": ["LegionFactoryAdvancedAir"],
       "build_conditions": [
         [
           {
@@ -452,12 +496,12 @@
       ]
     },
     {
-      "name": "Kestrel",
-      "to_build": "AdvancedGunship",
+      "name": "Lockheed",
+      "to_build": "LegionAirAdvancedGunship",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 199,
-      "builders": ["AdvancedAirFactory"],
+      "priority": 198,
+      "builders": ["LegionFactoryAdvancedAir"],
       "build_conditions": [
         [
           {
@@ -465,22 +509,32 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Air",
-            "string1": "Air",
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "(Advanced & AirDefense & Structure) | (Advanced & AirDefense & Mobile - Custom1)",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Air & (Bomber | Gunship)",
             "compare0": "<",
-            "value0": 0.6
+            "value0": 20
           }
         ]
       ]
     },
     {
-      "name": "Wyrm",
-      "to_build": "HeavyBomber",
+      "name": "Salamander",
+      "to_build": "LegionAirAdvancedBomber",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 199,
-      "builders": ["AdvancedAirFactory"],
+      "priority": 198,
+      "builders": ["LegionFactoryAdvancedAir"],
       "build_conditions": [
         [
           {
@@ -488,11 +542,9 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Air",
-            "string1": "Air",
-            "compare0": "<",
-            "value0": 0.6
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "(Advanced & AirDefense & Structure) | (Advanced & AirDefense & Mobile - Custom1)",
+            "boolean": false
           }
         ],
         [
