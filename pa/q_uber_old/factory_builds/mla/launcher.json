@@ -1,0 +1,80 @@
+{
+  "build_list": [
+    {
+      "name": "Nuke Missile",
+      "to_build": "NukeMissile",
+      "instance_count": -1,
+      "min_num_assisters": 8,
+      "max_num_assisters": 45,
+      "priority": 152,
+      "builders": ["NukeSilo"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "FactoryHasOpenSlot"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Anti Nuke Missile",
+      "to_build": "AntiNukeMissile",
+      "instance_count": -1,
+      "max_num_assisters": 12,
+      "priority": 152,
+      "builders": ["AntiNukeSilo"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "FactoryHasOpenSlot"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Anti Nuke Missile - Rush",
+      "to_build": "AntiNukeMissile",
+      "instance_count": -1,
+      "min_num_assisters": 8,
+      "max_num_assisters": 12,
+      "priority": 510,
+      "builders": ["AntiNukeSilo"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "FactorySlotsEmpty",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveHadANukeEvent",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "FactorySlotsEmpty",
+            "boolean": true
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Nuke",
+            "compare0": ">",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "FactoryHasOpenSlot"
+          },
+          {
+            "test_type": "SystemToPlanetThreatRatio",
+            "string0": "Nuke",
+            "string1": "AntiNuke",
+            "compare0": ">",
+            "value0": 1
+          }
+        ]
+      ]
+    }
+  ]
+}

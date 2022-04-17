@@ -1,0 +1,632 @@
+{
+  "build_list": [
+    {
+      "name": "Fabrication Barge",
+      "to_build": "LegionNavalBasicFabber",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 100,
+      "builders": ["LegionFactoryBasicNaval", "LegionFactoryAdvancedNaval"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Basic",
+            "compare0": "<",
+            "value0": 2
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionNavalBasicFabber"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Basic & Naval",
+            "unit_type_string1": "Factory & Basic & Naval",
+            "compare0": "<",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "MetalStorageFrac",
+            "compare0": ">",
+            "value0": 0.8
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionNavalBasicFabber"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Fabber & Basic",
+            "compare0": "<",
+            "value0": 20
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Catfish",
+      "to_build": "LegionNavalBasicScout",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["LegionFactoryBasicNaval", "LegionFactoryAdvancedNaval"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Sub",
+            "compare0": ">",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Naval & WaterHover & Offense & Mobile) - Fabber - Construction - Titan",
+            "compare0": "<",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemyPresenceOnPlanet",
+            "boolean": false
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Bowhead",
+      "to_build": "LegionNavalBasicDestroyer",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["LegionFactoryBasicNaval", "LegionFactoryAdvancedNaval"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Sub",
+            "string1": "AntiSub",
+            "compare0": "<",
+            "value0": 0.6
+          }
+        ],
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Naval",
+            "string1": "Naval",
+            "compare0": ">",
+            "value0": 1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Talos",
+      "to_build": "LegionNavalBasicAA",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["LegionFactoryBasicNaval", "LegionFactoryAdvancedNaval"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Naval & Mobile & AirDefense",
+            "unit_type_string1": "Naval & Mobile - Fabber - Hover",
+            "compare0": "<",
+            "value0": 0.1
+          }
+        ],
+        [
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Naval & Mobile & (AirDefense | Tactical)",
+            "unit_type_string1": "(Naval & Mobile) - Fabber - Hover",
+            "compare0": "<",
+            "value0": 0.025
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Akula",
+      "to_build": "LegionNavalBasicSub",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["LegionFactoryBasicNaval", "LegionFactoryAdvancedNaval"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Naval",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Sub",
+            "string1": "AntiSub",
+            "compare0": "<",
+            "value0": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Advanced Fabrication Barge - Initial",
+      "to_build": "LegionNavalAdvancedFabber",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 200,
+      "builders": ["LegionFactoryAdvancedNaval"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "MetMinAdvancedFabberCount",
+            "boolean": false
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Advanced Fabrication Barge",
+      "to_build": "LegionNavalAdvancedFabber",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": ["LegionFactoryAdvancedNaval"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionNavalAdvancedFabber"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Advanced & Naval",
+            "unit_type_string1": "Factory & Advanced & Naval",
+            "compare0": "<",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "MetalStorageFrac",
+            "compare0": ">",
+            "value0": 0.8
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionNavalAdvancedFabber"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Fabber & Advanced",
+            "compare0": "<",
+            "value0": 30
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Remora",
+      "to_build": "LegionNavalAdvancedFabberSub",
+      "instance_count": 1,
+      "priority": 199,
+      "builders": ["LegionFactoryAdvancedNaval"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Naval",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "(Naval & Mobile & Construction) - Fabber",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Naval & Mobile & Construction) - Fabber",
+            "unit_type_string1": "Naval & Mobile & Offense",
+            "compare0": "<",
+            "value0": 0.05
+          }
+        ],
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Sub",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "(Naval & Mobile & Construction) - Fabber",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Naval & Mobile & Construction) - Fabber",
+            "unit_type_string1": "Naval & Mobile & Offense",
+            "compare0": "<",
+            "value0": 0.05
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Epoch",
+      "to_build": "LegionNavalAdvancedBattleship",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": ["LegionFactoryAdvancedNaval"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Naval",
+            "string1": "Naval",
+            "compare0": ">",
+            "value0": 0.8
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Sub",
+            "string1": "AntiSub",
+            "compare0": "<",
+            "value0": 0.6
+          }
+        ],
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Naval & Mobile & Advanced & Artillery",
+            "compare0": "<",
+            "value0": 1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Manta",
+      "to_build": "LegionNavalAdvancedTactical",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": ["LegionFactoryAdvancedNaval"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Orbital",
+            "string1": "AntiOrbital",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Naval & Mobile & Tactical",
+            "unit_type_string1": "(Naval & Mobile) - Fabber - Hover",
+            "compare0": "<",
+            "value0": 0.1
+          }
+        ],
+        [
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Naval & Mobile & Tactical",
+            "unit_type_string1": "(Naval & Mobile) - Fabber - Hover",
+            "compare0": "<",
+            "value0": 0.1
+          }
+        ],
+        [
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Naval & Mobile & Advanced & AirDefense",
+            "compare0": "<",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatRatio",
+            "string0": "Orbital",
+            "string1": "AntiOrbital",
+            "compare0": ">",
+            "value0": 1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Hammerhead",
+      "to_build": "LegionNavalAdvancedDestroyer",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": ["LegionFactoryAdvancedNaval"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Naval",
+            "string1": "Naval",
+            "compare0": ">",
+            "value0": 0.8
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Sub",
+            "string1": "AntiSub",
+            "compare0": "<=",
+            "value0": 0.6
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Jaeger",
+      "to_build": "LegionNavalAdvancedHover",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 198,
+      "builders": ["LegionFactoryAdvancedNaval"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          }
+        ]
+      ]
+    }
+  ]
+}

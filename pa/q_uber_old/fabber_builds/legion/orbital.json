@@ -1,0 +1,392 @@
+{
+  "build_list": [
+    {
+      "name": "Starship Projector - Alone",
+      "to_build": "LegionFactoryBasicOrbital",
+      "instance_count": 1,
+      "shared_instance_count": "OrbitalLauncher",
+      "cross_planet_shared_count": true,
+      "priority": 999,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "base_sort": "FromBuilder",
+      "builders": [
+        "LegionCommander",
+        "AnyLegionBasicFabber",
+        "AnyLegionFabberAdvanced"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PresenceOnOtherPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Factory & Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicOrbital"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Starship Projector",
+      "to_build": "LegionFactoryBasicOrbital",
+      "instance_count": 1,
+      "shared_instance_count": "OrbitalLauncher",
+      "cross_planet_shared_count": true,
+      "priority": 480,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "base_sort": "FromMainBase",
+      "builders": [
+        "LegionCommander",
+        "LegionBotBasicFabber",
+        "LegionNavalBasicFabber",
+        "LegionVehicleBasicFabber",
+        "AnyLegionFabberAdvanced"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "UnableToExpand",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetWithoutPresence",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Factory & Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicOrbital"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "lateorbital",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetWithoutPresence",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetCount",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicOrbital"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital - Naval",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Factory & Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicOrbital"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "ffa",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicOrbital"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital - Naval",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Factory & Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicOrbital"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Starship Projector - Expansion",
+      "to_build": "LegionFactoryBasicOrbital",
+      "instance_count": 1,
+      "shared_instance_count": "OrbitalLauncher",
+      "cross_planet_shared_count": true,
+      "priority": 376,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
+      "base_sort": "FromMainBase",
+      "builders": [
+        "LegionCommander",
+        "LegionBotBasicFabber",
+        "LegionNavalBasicFabber",
+        "LegionVehicleBasicFabber",
+        "AnyLegionFabberAdvanced"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "lateorbital",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "PresenceOnOtherPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetCount",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicOrbital"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital - Naval",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicOrbital"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Starship Foundry",
+      "to_build": "LegionFactoryAdvancedOrbital",
+      "instance_count": 1,
+      "shared_instance_count": "OrbitalFactory",
+      "priority": 477,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "base_sort": "FromBuilder",
+      "builders": ["LegionOrbitalBasicFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "OtherPlanetNeedsOrbitalUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryAdvancedOrbital"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryAdvancedOrbital"
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "ThisPlanetNeedsOrbitalUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryAdvancedOrbital"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryAdvancedOrbital"
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryAdvancedOrbital"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryAdvancedOrbital"
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryAdvancedOrbital"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiOrbital",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Starcannon",
+      "to_build": "LegionOrbitalAdvancedCannon",
+      "instance_count": 1,
+      "shared_instance_count": "OrbitalFactory",
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "priority": 0,
+      "base_sort": "FromPerimeter",
+      "builders": ["LegionOrbitalBasicFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionOrbitalAdvancedCannon"
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "Economy",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Orbital",
+            "string1": "Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionOrbitalAdvancedCannon"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiOrbital",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    }
+  ]
+}

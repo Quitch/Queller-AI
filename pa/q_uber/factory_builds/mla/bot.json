@@ -155,34 +155,23 @@
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
-            "compare0": "<=",
-            "value0": 1000
           }
         ],
         [
           {
             "test_type": "AloneOnPlanet",
-            "boolean": false
+            "boolean": true
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": false
-          }
-        ],
-        [
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "CanAffordBuildDemand"
           },
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Factory & Tank",
-            "compare0": "==",
-            "value0": 0
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": true
           }
         ]
       ]

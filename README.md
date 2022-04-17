@@ -8,13 +8,13 @@ Improved AI for [Planetary Annihilation: TITANS](https://planetaryannihilation.c
 
 This mod is a total overhaul of the AI designed to smooth out the difficulty curve, providing more humanlike challenges that are both easier and harder than the vanilla AI. It features complete support for the [Legion Expansion](https://github.com/Legion-Expansion/Legion-Expansion).
 
-You must install [Galactic War Overhaul](https://forums.planetaryannihilation.com/threads/client-galactic-war-overhaul.72360/) if you want Queller AI in your Galactic War.
+You must install [Galactic War Overhaul](https://steamcommunity.com/app/386070/discussions/0/133259956005401439/) if you want Queller AI in your Galactic War.
 
 Please ensure that if you use this work you credit Quitch's Queller AI.
 
 ## INSTALLATION
 
-You should download and install this mod via the Planetary Annihilation TITANS in-game [Community Mods](https://steamcommunity.com/sharedfiles/filedetails/?id=1417396826).
+You should download and install this mod via the Planetary Annihilation: TITANS in-game [Community Mods](https://steamcommunity.com/sharedfiles/filedetails/?id=1417396826).
 
 ## DIFFICULTY
 
@@ -142,12 +142,12 @@ Suggestions based on 1v1 ranked position or challenge sought:
 | Bronze   | Low       | Bronze     | 1.0 |
 | Bronze   | Mid       | Silver     | 1.0 |
 | Bronze   | High      | Gold       | 1.0 |
-| Silver   | Low       | Platinum   | 1.0 |
-| Silver   | Mid       | Uber       | 1.0 |
-| Silver   | High      | Uber       | 1.2 |
-| Gold     | Any       | Uber       | 1.4 |
-| Platinum | Any       | Uber       | 1.6 |
-| Uber     | Any       | Uber       | 1.8 |
+| Silver   | Low       | Gold       | 1.0 |
+| Silver   | Mid       | Platinum   | 1.0 |
+| Silver   | High      | Uber       | 1.0 |
+| Gold     | Any       | Uber       | 1.2 |
+| Platinum | Any       | Uber       | 1.4 |
+| Uber     | Any       | Uber       | 1.6 |
 
 ## SUBPERSONALITIES
 
@@ -172,6 +172,7 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 
 - Techs late
 - Slower to enter orbital
+- Less likely to build defences
 
 ### Tank
 
