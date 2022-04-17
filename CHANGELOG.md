@@ -5,7 +5,6 @@
 - Difficulties above Casual no longer use land titans due to pathing issues
 - Uber uses more Dox
 - Uber uses more Ants
-- Uber uses less Drifters when it doesn't need hover units
 - Uber more likely to use Energy Storage
 - Gold through Uber have had their naval builds updated to account for Orca and Narwhal weapon changes
 - Uber now builds Wyrms
