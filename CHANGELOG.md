@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Uber brings out Sparks later
+
 ## v5.18.0 - 2022-04-17
 
 - Difficulties above Bronze no longer use land titans due to pathing issues
