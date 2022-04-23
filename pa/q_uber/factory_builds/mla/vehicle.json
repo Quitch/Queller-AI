@@ -490,9 +490,9 @@
       ]
     },
     {
-      "name": "Drifter",
+      "name": "Drifter - Not Hover",
       "to_build": "HoverTank",
-      "instance_count": -1,
+      "instance_count": 1,
       "max_num_assisters": 10,
       "priority": 97,
       "builders": ["BasicVehicleFactory"],
@@ -501,6 +501,16 @@
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": ">",
+            "value0": 1000
           }
         ],
         [
@@ -518,6 +528,26 @@
           {
             "test_type": "OtherPlanetNeedsLandUnitAssistance",
             "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Drifter - Hover",
+      "to_build": "HoverTank",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["BasicVehicleFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": false
           }
         ]
       ]
