@@ -5,6 +5,8 @@
 - Uber brings out Sparks later
 - Won't form platoons for naval targets (though may still use platoons formed for other purposes to attack naval)
 - Uber uses less Drifters when a land route is available
+- Uber 1v1 techs earlier
+- Uber stops using Strykers after the early game
 
 ## v5.18.0 - 2022-04-17
 
