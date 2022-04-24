@@ -8,6 +8,7 @@
 - Uber 1v1 techs earlier
 - Uber stops using Strykers after the early game
 - Uber brings out Grenadiers later
+- Uber gives higher priority to getting out its T2 fabbers
 
 ## v5.18.0 - 2022-04-17
 

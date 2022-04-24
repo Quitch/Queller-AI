@@ -337,7 +337,7 @@
       ]
     },
     {
-      "name": "Advanced Air Fabber",
+      "name": "Advanced Air Fabber - Initial",
       "to_build": "AdvancedAirFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -353,7 +353,17 @@
             "test_type": "MetMinAdvancedFabberCount",
             "boolean": false
           }
-        ],
+        ]
+      ]
+    },
+    {
+      "name": "Advanced Air Fabber",
+      "to_build": "AdvancedAirFabber",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 200,
+      "builders": ["AdvancedAirFactory"],
+      "build_conditions": [
         [
           {
             "test_type": "BaseThreatened",

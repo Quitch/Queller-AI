@@ -519,11 +519,11 @@
       ]
     },
     {
-      "name": "Advanced Vehicle Fabber",
+      "name": "Advanced Vehicle Fabber - Initial",
       "to_build": "AdvancedVehicleFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
-      "priority": 199,
+      "priority": 200,
       "builders": ["AdvancedVehicleFactory"],
       "build_conditions": [
         [
@@ -535,7 +535,17 @@
             "test_type": "MetMinAdvancedFabberCount",
             "boolean": false
           }
-        ],
+        ]
+      ]
+    },
+    {
+      "name": "Advanced Vehicle Fabber",
+      "to_build": "AdvancedVehicleFabber",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": ["AdvancedVehicleFactory"],
+      "build_conditions": [
         [
           {
             "test_type": "BaseThreatened",

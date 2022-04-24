@@ -500,12 +500,12 @@
       ]
     },
     {
-      "name": "Advanced Bot Fabber",
+      "name": "Advanced Bot Fabber - Initial",
       "to_build": "AdvancedBotFabber",
       "instance_count": 1,
       "shared_instance_count": "AdvancedBotFabber",
       "max_num_assisters": 10,
-      "priority": 199,
+      "priority": 200,
       "builders": ["AdvancedBotFactory"],
       "build_conditions": [
         [
@@ -517,7 +517,18 @@
             "test_type": "MetMinAdvancedFabberCount",
             "boolean": false
           }
-        ],
+        ]
+      ]
+    },
+    {
+      "name": "Advanced Bot Fabber",
+      "to_build": "AdvancedBotFabber",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedBotFabber",
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": ["AdvancedBotFactory"],
+      "build_conditions": [
         [
           {
             "test_type": "BaseThreatened",
