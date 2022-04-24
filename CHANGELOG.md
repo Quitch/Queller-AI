@@ -9,6 +9,7 @@
 - Uber stops using Strykers after the early game
 - Uber brings out Grenadiers later
 - Uber gives higher priority to getting out its T2 fabbers
+- Only consider surface threats when looking to build superweapons
 
 ## v5.18.0 - 2022-04-17
 
