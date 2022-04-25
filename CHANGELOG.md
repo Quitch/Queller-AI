@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v5.19.0 - 2022-04-25
 
 - Uber brings out Sparks later
 - Won't form platoons for naval targets (though may still use platoons formed for other purposes to attack naval)
