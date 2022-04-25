@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Correctly form land platoons for hover naval targets
+
 ## v5.19.0 - 2022-04-25
 
 - Uber brings out Sparks later
