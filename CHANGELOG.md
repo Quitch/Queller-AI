@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## v5.19.0 - 2022-04-25
+
+- Uber brings out Sparks later
+- Won't form platoons for naval targets (though may still use platoons formed for other purposes to attack naval)
+- Uber uses less Drifters when a land route is available
+- Uber 1v1 techs earlier
+- Uber stops using Strykers after the early game
+- Uber brings out Grenadiers later
+- Uber gives higher priority to getting out a T2 fabber
+- Only consider surface threats when looking to build superweapons
+- Uber gets off planet faster when alone
+
 ## v5.18.0 - 2022-04-17
 
 - Difficulties above Bronze no longer use land titans due to pathing issues
