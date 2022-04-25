@@ -251,40 +251,6 @@
       ]
     },
     {
-      "name": "Stryker",
-      "to_build": "AttackVehicle",
-      "instance_count": 1,
-      "max_num_assisters": 10,
-      "priority": 97,
-      "builders": ["BasicVehicleFactory"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          }
-        ],
-        [
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
-            "boolean": true
-          },
-          {
-            "test_type": "OtherPlanetNeedsLandUnitAssistance",
-            "boolean": true
-          }
-        ]
-      ]
-    },
-    {
       "name": "Ant",
       "to_build": "LightLaserTank",
       "instance_count": -1,
@@ -490,9 +456,9 @@
       ]
     },
     {
-      "name": "Drifter",
+      "name": "Drifter - Not Hover",
       "to_build": "HoverTank",
-      "instance_count": -1,
+      "instance_count": 1,
       "max_num_assisters": 10,
       "priority": 97,
       "builders": ["BasicVehicleFactory"],
@@ -501,6 +467,16 @@
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "AntiSurface",
+            "compare0": ">",
+            "value0": 2800
           }
         ],
         [
@@ -523,11 +499,31 @@
       ]
     },
     {
-      "name": "Advanced Vehicle Fabber",
+      "name": "Drifter - Hover",
+      "to_build": "HoverTank",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["BasicVehicleFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": false
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Advanced Vehicle Fabber - Initial",
       "to_build": "AdvancedVehicleFabber",
       "instance_count": 1,
       "max_num_assisters": 10,
-      "priority": 199,
+      "priority": 200,
       "builders": ["AdvancedVehicleFactory"],
       "build_conditions": [
         [
@@ -539,7 +535,17 @@
             "test_type": "MetMinAdvancedFabberCount",
             "boolean": false
           }
-        ],
+        ]
+      ]
+    },
+    {
+      "name": "Advanced Vehicle Fabber",
+      "to_build": "AdvancedVehicleFabber",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": ["AdvancedVehicleFactory"],
+      "build_conditions": [
         [
           {
             "test_type": "BaseThreatened",

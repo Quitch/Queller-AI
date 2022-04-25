@@ -35,6 +35,30 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "OrbitalLauncher"
           }
+        ],
+        [
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PresenceOnOtherPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Factory & Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "OrbitalLauncher"
+          }
         ]
       ],
       "placement_rules": {
