@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Silver and Gold avoid overbuilding Stitches in Unit Cannons
+
 ## v5.19.0 - 2022-04-25
 
 - Uber brings out Sparks later
