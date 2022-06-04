@@ -410,8 +410,8 @@
             "boolean": false
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
           },
           {
             "test_type": "HaveEcoForAdvanced",
@@ -435,6 +435,13 @@
             "test_type": "CurrentEnergyEfficiency",
             "compare0": ">",
             "value0": 1
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "compare0": ">",
+            "value0": 0.8
           },
           {
             "test_type": "CanAffordPotentialDrain",
