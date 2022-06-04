@@ -8,6 +8,7 @@
 - Avoid blocking factories and teleporters with defences and titans
 - Increase space around teleporters
 - Reduce unnecessary excess eco expenditure on factories by Uber
+- Uber requires less fabbers to start considering nuke builds
 
 ## v5.19.0 - 2022-04-25
 
