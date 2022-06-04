@@ -5,7 +5,7 @@
 - Silver and Gold avoid overbuilding Stitches in Unit Cannons
 - Possible fix for issue with land units not joining transfer platoons
 - Uber avoids overproducing Strykers on multi-planet maps
-- Avoid blocking factories and teleporters with defences
+- Avoid blocking factories and teleporters with defences and titans
 
 ## v5.19.0 - 2022-04-25
 
