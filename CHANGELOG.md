@@ -6,6 +6,7 @@
 - Possible improvement for land units not joining transfer platoons
 - Uber avoids overproducing Strykers on multi-planet maps
 - Avoid blocking factories and teleporters with defences and titans
+- Increase space around teleporters
 
 ## v5.19.0 - 2022-04-25
 
