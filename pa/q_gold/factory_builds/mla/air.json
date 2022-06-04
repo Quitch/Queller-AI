@@ -54,6 +54,22 @@
             "compare0": "<",
             "value0": 30
           }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicAirFabber"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": "<",
+            "value0": 15
+          }
         ]
       ]
     },
@@ -218,10 +234,6 @@
         ],
         [
           {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
             "test_type": "AloneOnPlanet",
             "boolean": true
           },
@@ -234,6 +246,22 @@
             "unit_type_string0": "Fabber & Advanced",
             "compare0": "<",
             "value0": 30
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedAirFabber"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": "<",
+            "value0": 15
           }
         ]
       ]

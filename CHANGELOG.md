@@ -9,6 +9,7 @@
 - Reduce unnecessary excess eco expenditure on factories by Uber
 - Uber requires less fabbers to start considering nuke builds
 - Correct the number of fabbers Platinum builds when alone
+- Ensure enough fabbers for super weapons no matter the planet size
 
 ## v5.19.0 - 2022-04-25
 

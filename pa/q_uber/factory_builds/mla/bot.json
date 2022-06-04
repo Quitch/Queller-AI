@@ -49,15 +49,28 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicBotFabber"
           },
           {
             "test_type": "UnitCountPerPlanetRadius",
             "unit_type_string0": "Fabber & Basic",
+            "compare0": "<",
+            "value0": 20
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicBotFabber"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
             "compare0": "<",
             "value0": 20
           }
@@ -560,9 +573,6 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "AdvancedBotFabber"
           },
@@ -571,6 +581,22 @@
             "unit_type_string0": "Fabber & Advanced",
             "compare0": "<",
             "value0": 30
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedBotFabber"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": "<",
+            "value0": 20
           }
         ],
         [
