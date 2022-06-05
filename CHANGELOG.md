@@ -11,6 +11,7 @@
 - Correct the number of fabbers Platinum builds when alone
 - Ensure enough fabbers for super weapons no matter the planet size
 - Tweak Bronze and Silver requirements for superweapon builds
+- Prevent Casual prematurely building planetary engines
 
 ## v5.19.0 - 2022-04-25
 
