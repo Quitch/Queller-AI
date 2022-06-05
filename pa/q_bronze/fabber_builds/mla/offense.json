@@ -274,47 +274,10 @@
           },
           {
             "test_type": "AlliedUnitCountOnPlanet",
-            "unit_type_string0": "PlanetEngine",
+            "unit_type_string0": "ControlModule",
             "compare0": "<",
             "boolean": true,
             "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber - Orbital",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "PlanetEngine"
-          }
-        ],
-        [
-          {
-            "test_type": "PlanetIsMainEcoBase",
-            "boolean": false
-          },
-          {
-            "test_type": "PlanetIsRespawnable",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetCanBeUsedAsKineticWeapon",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetHasUseablePlanetWeapon",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveThrustToMovePlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "PlanetCount",
-            "compare0": ">",
-            "value0": 2
           },
           {
             "test_type": "AlliedUnitCountOnPlanet",
@@ -325,8 +288,8 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber - Orbital",
-            "compare0": ">",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">=",
             "value0": 1
           },
           {
@@ -374,10 +337,17 @@
             "value0": 1
           },
           {
+            "test_type": "AlliedUnitCountOnPlanet",
+            "unit_type_string0": "PlanetEngine",
+            "compare0": "<",
+            "boolean": true,
+            "value0": 1
+          },
+          {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber - Orbital",
-            "compare0": ">",
-            "value0": 2
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">=",
+            "value0": 1
           },
           {
             "test_type": "CanFindControlPointToBuild",

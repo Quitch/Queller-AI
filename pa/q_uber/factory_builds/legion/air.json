@@ -51,15 +51,28 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "LegionAirBasicFabber"
           },
           {
             "test_type": "UnitCountPerPlanetRadius",
             "unit_type_string0": "Fabber & Basic",
+            "compare0": "<",
+            "value0": 20
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionAirBasicFabber"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
             "compare0": "<",
             "value0": 20
           }
@@ -356,9 +369,6 @@
             "boolean": true
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "LegionAirAdvancedFabber"
           },
@@ -367,6 +377,22 @@
             "unit_type_string0": "Fabber & Advanced",
             "compare0": "<",
             "value0": 30
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionAirAdvancedFabber"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": "<",
+            "value0": 20
           }
         ],
         [

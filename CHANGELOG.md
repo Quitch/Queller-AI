@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## v5.20.0 - 2022-06-05
+
+- Silver and Gold avoid overbuilding Stitches in Unit Cannons
+- Uber avoids overproducing Strykers on multi-planet maps
+- Avoid blocking factories and teleporters with defences and titans
+- Increase space around teleporters
+- Reduce unnecessary excess eco expenditure on factories by Uber
+- Uber requires less fabbers to start considering nuke builds
+- Correct the number of fabbers Platinum builds when alone
+- Ensure enough fabbers for super weapons no matter the planet size
+- Tweak Bronze and Silver requirements for superweapon builds
+- Prevent Casual prematurely building planetary engines
+- Don't build Catalysts on a planet where an ally is building engines
+- Don't build engines on a planet where an ally is building Catalysts
+
 ## v5.19.0 - 2022-04-25
 
 - Uber brings out Sparks later
