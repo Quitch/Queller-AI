@@ -12,6 +12,8 @@
 - Ensure enough fabbers for super weapons no matter the planet size
 - Tweak Bronze and Silver requirements for superweapon builds
 - Prevent Casual prematurely building planetary engines
+- Don't build Catalysts on a planet where an ally is building engines
+- Don't build engines on a planet where an ally is building Catalysts
 
 ## v5.19.0 - 2022-04-25
 
