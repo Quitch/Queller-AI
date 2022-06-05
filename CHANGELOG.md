@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v5.20.0 - 2022-06-05
 
 - Silver and Gold avoid overbuilding Stitches in Unit Cannons
 - Uber avoids overproducing Strykers on multi-planet maps
