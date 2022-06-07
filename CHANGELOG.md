@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Uber builds Omegas again
+
 ## v5.20.0 - 2022-06-05
 
 - Silver and Gold avoid overbuilding Stitches in Unit Cannons

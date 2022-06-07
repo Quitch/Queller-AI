@@ -405,6 +405,37 @@
           }
         ]
       ]
+    },
+    {
+      "name": "Omega",
+      "to_build": "OrbitalBattleShip",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["OrbitalFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Orbital",
+            "string1": "AntiOrbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "AntiOrbital",
+            "compare0": ">",
+            "value0": 3000
+          }
+        ]
+      ]
     }
   ]
 }
