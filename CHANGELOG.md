@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Uber builds Omegas again
+- Changed how orbital threat is assessed when determining what orbital units to build
 
 ## v5.20.0 - 2022-06-05
 
