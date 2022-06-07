@@ -7,6 +7,7 @@
 - Reduce chance of Uber's asteroid fabber assist check triggering due to a false positive
 - Uber requires slightly more metal in storage to trigger its excess eco fabber assistance protocol
 - Uber will use Advanced Laser Towers to defend Metal Extractors
+- Uber will only build Catapults when advanced land units have been seen
 
 ## v5.20.0 - 2022-06-05
 
