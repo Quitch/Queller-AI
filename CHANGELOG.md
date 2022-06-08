@@ -9,6 +9,8 @@
 - Uber will use Advanced Laser Towers to defend Metal Extractors
 - Uber will only build Catapults when advanced land units have been seen
 - Fixed Uber Legion not building enough Tolas within its base when orbital threat grows
+- Uber MLA builds less Umbrellas per base
+- Increased orbital threat required for Uber MLA to scale up Umbrella response
 
 ## v5.20.0 - 2022-06-05
 
