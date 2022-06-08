@@ -12,7 +12,7 @@
 - Adjusted how Uber considers its ground based anti-orbital defences
 - Don't check for land defence locations with naval fabbers
 - Uber builds basic radar to support basic artillery
-- When alone on a planet only expand the factory count if this is the main eco planet and it gauges the system land threat big enough
+- When alone on a planet only expand the factory count if this is the main eco planet and the system land threat big enough
 
 ## v5.20.0 - 2022-06-05
 
