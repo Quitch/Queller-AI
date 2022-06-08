@@ -11,6 +11,7 @@
 - Fixed Uber Legion not building enough Tolas within its base when orbital threat grows
 - Uber MLA builds less Umbrellas per base
 - Increased orbital threat required for Uber MLA to scale up Umbrella response
+- Slightly decrease threat required for Uber Legion to scale up Tola response
 
 ## v5.20.0 - 2022-06-05
 
