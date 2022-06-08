@@ -8,6 +8,7 @@
 - Uber requires slightly more metal in storage to trigger its excess eco fabber assistance protocol
 - Uber will use Advanced Laser Towers to defend Metal Extractors
 - Uber will only build Catapults when advanced land units have been seen
+- Fixed Uber Legion not building enough Umbrellas within its base when orbital threat grows
 
 ## v5.20.0 - 2022-06-05
 
