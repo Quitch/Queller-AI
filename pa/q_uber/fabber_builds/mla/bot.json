@@ -287,6 +287,13 @@
             "boolean": true
           },
           {
+            "test_type": "SystemToPlanetThreatRatio",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "AdvancedBotFactory"
           },

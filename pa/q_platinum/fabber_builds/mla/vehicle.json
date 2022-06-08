@@ -59,6 +59,13 @@
             "boolean": true
           },
           {
+            "test_type": "SystemToPlanetThreatRatio",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
             "test_type": "UnitCountPerPlanetRadius",
             "unit_type_string0": "(Bot | Naval) & Factory & Basic",
             "compare0": ">=",
@@ -144,6 +151,13 @@
           {
             "test_type": "OtherPlanetNeedsLandUnitAssistance",
             "boolean": true
+          },
+          {
+            "test_type": "SystemToPlanetThreatRatio",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "compare0": ">",
+            "value0": 1
           },
           {
             "test_type": "UnitCountPerPlanetRadius",
@@ -285,6 +299,13 @@
           {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
+          },
+          {
+            "test_type": "SystemToPlanetThreatRatio",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "compare0": ">",
+            "value0": 1
           },
           {
             "test_type": "CanAffordPotentialDrain",
