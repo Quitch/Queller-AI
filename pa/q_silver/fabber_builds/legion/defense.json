@@ -69,7 +69,11 @@
       "max_num_assisters": 2,
       "priority": 277,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyLegionFabberBasic"],
+      "builders": [
+        "LegionBotBasicFabber",
+        "LegionVehicleBasicFabber",
+        "LegionAirBasicFabber"
+      ],
       "build_conditions": [
         [
           {
@@ -134,7 +138,11 @@
       "max_num_assisters": 2,
       "priority": 278,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyLegionFabberBasic"],
+      "builders": [
+        "LegionBotBasicFabber",
+        "LegionVehicleBasicFabber",
+        "LegionAirBasicFabber"
+      ],
       "build_conditions": [
         [
           {
@@ -391,7 +399,12 @@
       "max_num_assisters": 2,
       "priority": 249,
       "base_sort": "FromMainBase",
-      "builders": ["LegionCommander", "AnyLegionFabberBasic"],
+      "builders": [
+        "LegionCommander",
+        "LegionBotBasicFabber",
+        "LegionVehicleBasicFabber",
+        "LegionAirBasicFabber"
+      ],
       "build_conditions": [
         [
           {
@@ -457,7 +470,11 @@
       "max_num_assisters": 2,
       "priority": 250,
       "base_sort": "FromMainBase",
-      "builders": ["AnyLegionFabberBasic"],
+      "builders": [
+        "LegionBotBasicFabber",
+        "LegionVehicleBasicFabber",
+        "LegionAirBasicFabber"
+      ],
       "build_conditions": [
         [
           {
@@ -744,7 +761,11 @@
       "priority": 379,
       "max_num_assisters": 2,
       "base_sort": "FromMainBase",
-      "builders": ["AnyLegionFabberAdvanced"],
+      "builders": [
+        "LegionBotAdvancedFabber",
+        "LegionVehicleAdvancedFabber",
+        "LegionAirAdvancedFabber"
+      ],
       "build_conditions": [
         [
           {
@@ -804,7 +825,11 @@
       "priority": 379,
       "max_num_assisters": 2,
       "base_sort": "FromMainBase",
-      "builders": ["AnyLegionFabberAdvanced"],
+      "builders": [
+        "LegionBotAdvancedFabber",
+        "LegionVehicleAdvancedFabber",
+        "LegionAirAdvancedFabber"
+      ],
       "build_conditions": [
         [
           {

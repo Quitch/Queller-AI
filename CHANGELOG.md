@@ -10,6 +10,7 @@
 - Uber will only build Catapults when advanced land units have been seen
 - Uber won't consider Catapults when choosing where not to place other surface defences
 - Adjusted how Uber considers its ground based anti-orbital defences
+- Don't check for land defence locations with naval fabbers
 
 ## v5.20.0 - 2022-06-05
 

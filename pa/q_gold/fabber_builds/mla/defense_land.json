@@ -328,7 +328,11 @@
       "priority": 479,
       "max_num_assisters": 3,
       "base_sort": "FromMainBase",
-      "builders": ["AnyUberAdvancedFabber"],
+      "builders": [
+        "AdvancedBotFabber",
+        "AdvancedVehicleFabber",
+        "AdvancedAirFabber"
+      ],
       "build_conditions": [
         [
           {

@@ -364,7 +364,9 @@
       "builders": [
         "LegionBotBasicFabber",
         "LegionVehicleBasicFabber",
-        "AnyLegionFabberAdvanced"
+        "LegionBotAdvancedFabber",
+        "LegionVehicleAdvancedFabber",
+        "LegionAirAdvancedFabber"
       ],
       "build_conditions": [
         [
@@ -431,7 +433,11 @@
       "priority": 379,
       "max_num_assisters": 3,
       "base_sort": "FromMainBase",
-      "builders": ["AnyLegionFabberAdvanced"],
+      "builders": [
+        "LegionBotAdvancedFabber",
+        "LegionVehicleAdvancedFabber",
+        "LegionAirAdvancedFabber"
+      ],
       "build_conditions": [
         [
           {
@@ -504,7 +510,11 @@
       "priority": 279,
       "max_num_assisters": 3,
       "base_sort": "FromMainBase",
-      "builders": ["AnyLegionFabberAdvanced"],
+      "builders": [
+        "LegionBotAdvancedFabber",
+        "LegionVehicleAdvancedFabber",
+        "LegionAirAdvancedFabber"
+      ],
       "build_conditions": [
         [
           {

@@ -342,7 +342,11 @@
       "priority": 401,
       "max_num_assisters": 3,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyUberAdvancedFabber"],
+      "builders": [
+        "AdvancedBotFabber",
+        "AdvancedVehicleFabber",
+        "AdvancedAirFabber"
+      ],
       "build_conditions": [
         [
           {
@@ -409,7 +413,11 @@
       "max_num_assisters": 3,
       "priority": 401,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyUberAdvancedFabber"],
+      "builders": [
+        "AdvancedBotFabber",
+        "AdvancedVehicleFabber",
+        "AdvancedAirFabber"
+      ],
       "build_conditions": [
         [
           {
@@ -478,7 +486,11 @@
       "priority": 279,
       "max_num_assisters": 3,
       "base_sort": "FromMainBase",
-      "builders": ["AnyUberAdvancedFabber"],
+      "builders": [
+        "AdvancedBotFabber",
+        "AdvancedVehicleFabber",
+        "AdvancedAirFabber"
+      ],
       "build_conditions": [
         [
           {
