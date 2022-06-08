@@ -153,41 +153,14 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (Economy | Factory | Important)",
             "compare0": ">=",
             "value0": 1
           },
           {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionDefenseBasicOrbital"
-          }
-        ],
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "SystemThreat",
-            "string0": "Orbital",
-            "compare0": ">=",
-            "value0": 9100
-          },
-          {
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
             "compare0": "<",
-            "value0": 3
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory | PlanetEngine | ControlModule)",
-            "compare0": ">=",
             "value0": 1
           },
           {
@@ -200,10 +173,11 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "test_type": "SystemThreat",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Orbital",
-            "compare0": ">=",
-            "value0": 10100
+            "string1": "AntiOrbital",
+            "compare0": ">",
+            "value0": 1
           },
           {
             "test_type": "UnitCountInBase",
@@ -215,7 +189,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
             "compare0": "<",
-            "value0": 3
+            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -266,34 +240,14 @@
             "test_type": "SystemThreat",
             "string0": "Orbital",
             "compare0": ">",
-            "value0": 0
+            "value0": 9000
           },
           {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Commander",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionDefenseBasicOrbital"
-          }
-        ],
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "SystemThreat",
+            "test_type": "SystemToPlanetThreatRatio",
             "string0": "Orbital",
-            "compare0": ">=",
-            "value0": 1100
+            "string1": "AntiOrbital",
+            "compare0": ">",
+            "value0": 1
           },
           {
             "test_type": "UnitCountInBase",
@@ -337,7 +291,34 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory | PlanetEngine | ControlModule)",
             "compare0": ">=",
-            "value0": 3
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicOrbital"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Commander",
+            "compare0": ">=",
+            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -378,8 +359,8 @@
       "build_conditions": [
         [
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
