@@ -12,6 +12,7 @@
 - Uber MLA builds less Umbrellas per base
 - Increased orbital threat required for Uber MLA to scale up Umbrella response
 - Slightly decrease threat required for Uber Legion to scale up Tola response
+- Uber won't consider Catapults when choosing where not to place other surface defences
 
 ## v5.20.0 - 2022-06-05
 
