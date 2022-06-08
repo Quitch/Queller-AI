@@ -11,6 +11,7 @@
 - Uber won't consider Catapults when choosing where not to place other surface defences
 - Adjusted how Uber considers its ground based anti-orbital defences
 - Don't check for land defence locations with naval fabbers
+- Uber builds basic radar to support basic artillery
 
 ## v5.20.0 - 2022-06-05
 
