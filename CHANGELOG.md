@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v5.21.0 - 2022-06-09
 
 - Uber builds Omegas again
 - Changed how orbital threat is assessed when determining what orbital units to build
