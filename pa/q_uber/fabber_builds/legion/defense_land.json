@@ -115,7 +115,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (SurfaceDefense | Tactical) - Shield",
+            "unit_type_string0": "Structure & SurfaceDefense - Shield",
             "compare0": "<",
             "value0": 1
           },
@@ -143,7 +143,7 @@
             "count": 1
           },
           {
-            "unit_type_string": "Structure & (SurfaceDefense | Tactical) - Shield",
+            "unit_type_string": "Structure & SurfaceDefense - Shield",
             "alliance": "Ally",
             "compare_type": "<",
             "range": 50,
@@ -185,7 +185,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & SurfaceDefense - Tactical - (CombatFabAdvBuild & Advanced & Custom1)",
+            "unit_type_string0": "Structure & SurfaceDefense - Tactical - Shield",
             "compare0": "<",
             "value0": 1
           },
@@ -200,7 +200,7 @@
         "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "Structure & SurfaceDefense - Tactical - (CombatFabAdvBuild & Advanced & Custom1)",
+            "unit_type_string": "Structure & SurfaceDefense - Tactical - Shield",
             "alliance": "Ally",
             "compare_type": "<",
             "range": 75,
@@ -249,7 +249,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (SurfaceDefense | Tactical) - Shield",
+            "unit_type_string0": "Structure & SurfaceDefense - Shield",
             "compare0": "<",
             "value0": 1
           },
@@ -277,7 +277,7 @@
             "count": 1
           },
           {
-            "unit_type_string": "Structure & (SurfaceDefense | Tactical) - Shield",
+            "unit_type_string": "Structure & SurfaceDefense - Shield",
             "alliance": "Ally",
             "compare_type": "<",
             "range": 75,
@@ -317,7 +317,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (SurfaceDefense | Tactical) - Shield",
+            "unit_type_string0": "Structure & SurfaceDefense - Shield",
             "compare0": "<",
             "value0": 1
           },
@@ -345,7 +345,7 @@
             "count": 1
           },
           {
-            "unit_type_string": "Structure & (SurfaceDefense | Tactical) - Shield",
+            "unit_type_string": "Structure & SurfaceDefense - Shield",
             "alliance": "Ally",
             "compare_type": "<",
             "range": 75,
@@ -364,7 +364,9 @@
       "builders": [
         "LegionBotBasicFabber",
         "LegionVehicleBasicFabber",
-        "AnyLegionFabberAdvanced"
+        "LegionBotAdvancedFabber",
+        "LegionVehicleAdvancedFabber",
+        "LegionAirAdvancedFabber"
       ],
       "build_conditions": [
         [
@@ -414,7 +416,7 @@
             "count": 1
           },
           {
-            "unit_type_string": "Structure & (SurfaceDefense | Tactical) - Shield",
+            "unit_type_string": "Structure & SurfaceDefense - Shield",
             "alliance": "Ally",
             "compare_type": "<",
             "range": 105,
@@ -431,7 +433,11 @@
       "priority": 379,
       "max_num_assisters": 3,
       "base_sort": "FromMainBase",
-      "builders": ["AnyLegionFabberAdvanced"],
+      "builders": [
+        "LegionBotAdvancedFabber",
+        "LegionVehicleAdvancedFabber",
+        "LegionAirAdvancedFabber"
+      ],
       "build_conditions": [
         [
           {
@@ -459,7 +465,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild & Custom1",
+            "unit_type_string0": "Structure & Shield",
             "compare0": ">=",
             "value0": 1
           },
@@ -480,14 +486,14 @@
         "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "Structure & (SurfaceDefense | Tactical) - Shield",
+            "unit_type_string": "Structure & SurfaceDefense - Shield",
             "alliance": "Ally",
             "compare_type": "<",
             "range": 75,
             "count": 1
           },
           {
-            "unit_type_string": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild & Custom1",
+            "unit_type_string": "Structure & Shield",
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 200,
@@ -504,7 +510,11 @@
       "priority": 279,
       "max_num_assisters": 3,
       "base_sort": "FromMainBase",
-      "builders": ["AnyLegionFabberAdvanced"],
+      "builders": [
+        "LegionBotAdvancedFabber",
+        "LegionVehicleAdvancedFabber",
+        "LegionAirAdvancedFabber"
+      ],
       "build_conditions": [
         [
           {
@@ -560,7 +570,7 @@
             "count": 1
           },
           {
-            "unit_type_string": "Structure & (SurfaceDefense | Tactical) - Shield",
+            "unit_type_string": "Structure & SurfaceDefense - Shield",
             "alliance": "Ally",
             "compare_type": "<",
             "range": 75,
@@ -589,7 +599,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild & Custom1",
+            "unit_type_string0": "Structure & Shield",
             "compare0": "<",
             "value0": 1
           },
@@ -617,7 +627,7 @@
             "count": 3
           },
           {
-            "unit_type_string": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild & Custom1",
+            "unit_type_string": "Structure & Shield",
             "alliance": "Ally",
             "compare_type": "<",
             "range": 200,
@@ -652,7 +662,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild & Custom1",
+            "unit_type_string0": "Structure & Shield",
             "compare0": "<",
             "value0": 1
           },
@@ -667,7 +677,7 @@
         "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild & Custom1",
+            "unit_type_string": "Structure & Shield",
             "alliance": "Ally",
             "compare_type": "<",
             "range": 200,
@@ -697,7 +707,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild & Custom1",
+            "unit_type_string0": "Structure & Shield",
             "compare0": "<",
             "value0": 1
           },
@@ -735,7 +745,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild & Custom1",
+            "unit_type_string0": "Structure & Shield",
             "compare0": "<",
             "value0": 1
           },
@@ -771,7 +781,7 @@
             "count": 5
           },
           {
-            "unit_type_string": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild & Custom1",
+            "unit_type_string": "Structure & Shield",
             "alliance": "Ally",
             "compare_type": "<",
             "range": 200,
@@ -807,7 +817,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild & Custom1",
+            "unit_type_string0": "Structure & Shield",
             "compare0": "<",
             "value0": 1
           },
@@ -835,7 +845,7 @@
         "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild & Custom1",
+            "unit_type_string": "Structure & Shield",
             "alliance": "Ally",
             "compare_type": "<",
             "range": 200,

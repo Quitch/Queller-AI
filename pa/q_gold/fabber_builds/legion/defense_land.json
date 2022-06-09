@@ -401,7 +401,11 @@
       "priority": 479,
       "max_num_assisters": 3,
       "base_sort": "FromMainBase",
-      "builders": ["AnyLegionFabberAdvanced"],
+      "builders": [
+        "LegionBotAdvancedFabber",
+        "LegionVehicleAdvancedFabber",
+        "LegionAirAdvancedFabber"
+      ],
       "build_conditions": [
         [
           {
@@ -465,7 +469,11 @@
       "priority": 479,
       "max_num_assisters": 3,
       "base_sort": "FromMainBase",
-      "builders": ["AnyLegionFabberAdvanced"],
+      "builders": [
+        "LegionBotAdvancedFabber",
+        "LegionVehicleAdvancedFabber",
+        "LegionAirAdvancedFabber"
+      ],
       "build_conditions": [
         [
           {
@@ -537,7 +545,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild & Custom1",
+            "unit_type_string0": "Structure & Shield",
             "compare0": "<",
             "value0": 1
           },
@@ -565,7 +573,7 @@
             "count": 5
           },
           {
-            "unit_type_string": "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild & Custom1",
+            "unit_type_string": "Structure & Shield",
             "alliance": "Ally",
             "compare_type": "<",
             "range": 150,

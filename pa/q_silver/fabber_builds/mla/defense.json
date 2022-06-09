@@ -69,7 +69,7 @@
       "max_num_assisters": 2,
       "priority": 277,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyUberBasicFabber"],
+      "builders": ["BasicBotFabber", "BasicVehicleFabber", "BasicAirFabber"],
       "build_conditions": [
         [
           {
@@ -134,7 +134,7 @@
       "max_num_assisters": 2,
       "priority": 278,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyUberBasicFabber"],
+      "builders": ["BasicBotFabber", "BasicVehicleFabber", "BasicAirFabber"],
       "build_conditions": [
         [
           {
@@ -214,6 +214,52 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Naval",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "DistFromMainBase",
+            "compare0": ">=",
+            "value0": 200
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Naval & Defense",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & MetalProduction",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "BasicNavalDefense"
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Sub",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
             "test_type": "DistFromMainBase",
             "compare0": ">=",
             "value0": 200
@@ -264,7 +310,11 @@
       "priority": 380,
       "max_num_assisters": 2,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyUberAdvancedFabber"],
+      "builders": [
+        "AdvancedBotFabber",
+        "AdvancedVehicleFabber",
+        "AdvancedAirFabber"
+      ],
       "build_conditions": [
         [
           {
@@ -391,7 +441,12 @@
       "max_num_assisters": 2,
       "priority": 249,
       "base_sort": "FromMainBase",
-      "builders": ["UberCommander", "AnyUberBasicFabber"],
+      "builders": [
+        "UberCommander",
+        "BasicBotFabber",
+        "BasicVehicleFabber",
+        "BasicAirFabber"
+      ],
       "build_conditions": [
         [
           {
@@ -457,7 +512,7 @@
       "max_num_assisters": 2,
       "priority": 250,
       "base_sort": "FromMainBase",
-      "builders": ["AnyUberBasicFabber"],
+      "builders": ["BasicBotFabber", "BasicVehicleFabber", "BasicAirFabber"],
       "build_conditions": [
         [
           {
@@ -692,12 +747,20 @@
       "priority": 379,
       "max_num_assisters": 2,
       "base_sort": "FromMainBase",
-      "builders": ["AnyUberAdvancedFabber"],
+      "builders": [
+        "AdvancedBotFabber",
+        "AdvancedVehicleFabber",
+        "AdvancedAirFabber"
+      ],
       "build_conditions": [
         [
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"

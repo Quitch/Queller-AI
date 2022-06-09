@@ -429,7 +429,19 @@
         ],
         [
           {
-            "test_type": "AloneOnPlanet",
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "ThisPlanetNeedsLandUnitAssistance",
+            "boolean": false
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
             "boolean": true
           },
           {
@@ -447,14 +459,6 @@
             "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
             "compare0": "<",
             "value0": 0.2
-          },
-          {
-            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
-            "boolean": true
-          },
-          {
-            "test_type": "OtherPlanetNeedsLandUnitAssistance",
-            "boolean": true
           }
         ],
         [
@@ -878,7 +882,19 @@
         ],
         [
           {
-            "test_type": "AloneOnPlanet",
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "ThisPlanetNeedsLandUnitAssistance",
+            "boolean": false
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
             "boolean": true
           },
           {
@@ -900,14 +916,6 @@
             "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
             "compare0": "<",
             "value0": 0.05
-          },
-          {
-            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
-            "boolean": true
-          },
-          {
-            "test_type": "OtherPlanetNeedsLandUnitAssistance",
-            "boolean": true
           }
         ]
       ]

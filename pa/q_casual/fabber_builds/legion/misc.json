@@ -23,6 +23,7 @@
       "name": "Sky Bridge",
       "to_build": "LegionStructureBasicTeleporter",
       "instance_count": 1,
+      "base_sort": "FromPerimeter",
       "priority": 1,
       "max_num_assisters": 10,
       "builders": [
@@ -54,7 +55,8 @@
         ]
       ],
       "placement_rules": {
-        "buffer": 6,
+        "buffer": 12,
+        "placement_type": "FromBasePerimeter",
         "threat": {
           "influence_type": "AntiSurface",
           "compare_type": "<",

@@ -1,5 +1,24 @@
 # CHANGELOG
 
+## v5.21.0 - 2022-06-09
+
+- Uber builds Omegas again
+- Changed how orbital threat is assessed when determining what orbital units to build
+- Reduce chance of Uber's asteroid fabber assist check triggering due to a false positive
+- Uber requires slightly more metal in storage to trigger its excess eco fabber assistance protocol
+- Uber will use Advanced Laser Towers to defend Metal Extractors
+- Uber will only build Catapults when advanced land units have been seen
+- Uber won't consider Catapults when choosing where not to place other surface defences
+- Adjusted how Uber considers its ground based anti-orbital defences
+- Don't check for land defence locations with naval fabbers
+- Uber builds basic radar to support basic artillery
+- When alone on a planet only expand the factory count if this is the main eco planet and the system land threat big enough
+- Possible fix for orbital anti-ground units sometimes not engaging enemies
+- Ensure Gold and above maintain proper mobile AA ratios on multi-planet maps
+- Uber makes Stingers to protect base from air even when it can make Spinners
+- Attempt to place teleporters in locations which maximise their accessibility
+- Better protection at low levels against silly torpedo launcher placements
+
 ## v5.20.0 - 2022-06-05
 
 - Silver and Gold avoid overbuilding Stitches in Unit Cannons

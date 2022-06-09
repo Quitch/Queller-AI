@@ -47,12 +47,23 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetIsMainEcoBase",
+            "boolean": true
+          },
+          {
             "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
             "boolean": true
           },
           {
             "test_type": "OtherPlanetNeedsLandUnitAssistance",
             "boolean": true
+          },
+          {
+            "test_type": "SystemToPlanetThreatRatio",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "compare0": ">",
+            "value0": 1
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -124,12 +135,23 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetIsMainEcoBase",
+            "boolean": true
+          },
+          {
             "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
             "boolean": true
           },
           {
             "test_type": "OtherPlanetNeedsLandUnitAssistance",
             "boolean": true
+          },
+          {
+            "test_type": "SystemToPlanetThreatRatio",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "compare0": ">",
+            "value0": 1
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -251,6 +273,10 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetIsMainEcoBase",
+            "boolean": true
+          },
+          {
             "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
             "boolean": true
           },
@@ -261,6 +287,13 @@
           {
             "test_type": "HaveEcoForAdvanced",
             "boolean": true
+          },
+          {
+            "test_type": "SystemToPlanetThreatRatio",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "compare0": ">",
+            "value0": 1
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -284,6 +317,10 @@
           },
           {
             "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsMainEcoBase",
             "boolean": true
           },
           {
