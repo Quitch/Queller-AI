@@ -14,6 +14,7 @@
 - Uber builds basic radar to support basic artillery
 - When alone on a planet only expand the factory count if this is the main eco planet and the system land threat big enough
 - Possible fix for orbital anti-ground units sometimes not engaging enemies
+- Ensure Gold and above maintain proper mobile AA ratios on multi-planet maps
 
 ## v5.20.0 - 2022-06-05
 
