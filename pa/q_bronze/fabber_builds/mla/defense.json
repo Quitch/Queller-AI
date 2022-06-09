@@ -214,6 +214,12 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "test_type": "PlanetThreat",
+            "string0": "Sub",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
             "test_type": "DistFromMainBase",
             "compare0": ">=",
             "value0": 200
@@ -408,6 +414,12 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "Sub",
+            "compare0": ">",
+            "value0": 0
           },
           {
             "test_type": "DistFromMainBase",
@@ -663,6 +675,12 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "test_type": "PlanetThreat",
+            "string0": "Sub",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Naval & Defense",
             "compare0": "<",
@@ -900,6 +918,12 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "Sub",
+            "compare0": ">",
+            "value0": 0
           },
           {
             "test_type": "UnitCountInBase",
