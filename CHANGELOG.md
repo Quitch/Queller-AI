@@ -16,6 +16,7 @@
 - Possible fix for orbital anti-ground units sometimes not engaging enemies
 - Ensure Gold and above maintain proper mobile AA ratios on multi-planet maps
 - Uber makes Stingers to protect base from air even when it can make Spinners
+- Attempt to place teleporters in locations which maximise their accessibility
 
 ## v5.20.0 - 2022-06-05
 
