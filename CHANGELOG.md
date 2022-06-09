@@ -15,6 +15,7 @@
 - When alone on a planet only expand the factory count if this is the main eco planet and the system land threat big enough
 - Possible fix for orbital anti-ground units sometimes not engaging enemies
 - Ensure Gold and above maintain proper mobile AA ratios on multi-planet maps
+- Uber makes Stingers to protect base from air even when it can make Spinners
 
 ## v5.20.0 - 2022-06-05
 
