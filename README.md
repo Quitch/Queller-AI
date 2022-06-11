@@ -174,7 +174,7 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 
 ### Land
 
-- Doesn't build air factories
+- Uses minimal air factories
 
 ### Rush
 
