@@ -11,6 +11,11 @@
       "build_conditions": [
         [
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "air",
+            "boolean": false
+          },
+          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
@@ -184,6 +189,11 @@
       "builders": ["BasicBotFabber", "BasicNavalFabber", "BasicVehicleFabber"],
       "build_conditions": [
         [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "air",
+            "boolean": false
+          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
@@ -406,6 +416,11 @@
       "builders": ["BasicAirFabber", "AdvancedAirFabber"],
       "build_conditions": [
         [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "air",
+            "boolean": false
+          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false

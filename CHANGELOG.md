@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Added Uber Air again
+
 ## v5.21.0 - 2022-06-09
 
 - Uber builds Omegas again
