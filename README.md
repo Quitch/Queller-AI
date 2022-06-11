@@ -157,6 +157,10 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 
 - Optimised for 1v1 play
 
+### Air
+
+- Builds more air factories
+
 ### Bot
 
 - Doesn't build vehicle factories
