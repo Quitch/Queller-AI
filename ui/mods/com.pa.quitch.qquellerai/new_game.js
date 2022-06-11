@@ -217,7 +217,7 @@ if (!quellerAILoaded) {
         },
         qUberLand: {
           ai_path: aiPathUber,
-          display_name: "!LOC:Q-Uber Air",
+          display_name: "!LOC:Q-Uber Land",
           metal_drain_check: 0.54,
           energy_drain_check: 0.72,
           metal_demand_check: 0.8,
