@@ -12,7 +12,12 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "bot",
+            "string0": "air",
+            "boolean": false
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "land",
             "boolean": false
           },
           {
@@ -48,7 +53,12 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "bot",
+            "string0": "air",
+            "boolean": false
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "land",
             "boolean": false
           },
           {
@@ -200,7 +210,12 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "bot",
+            "string0": "air",
+            "boolean": false
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "land",
             "boolean": false
           },
           {
@@ -236,7 +251,12 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "bot",
+            "string0": "air",
+            "boolean": false
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "land",
             "boolean": false
           },
           {
@@ -380,11 +400,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "bot",
-            "boolean": false
-          },
-          {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
           },
@@ -425,7 +440,7 @@
       }
     },
     {
-      "name": "Advanced Air Foundry",
+      "name": "Advanced Flyer Foundry",
       "to_build": "LegionFactoryAdvancedAir",
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
@@ -435,6 +450,16 @@
       "builders": ["LegionAirBasicFabber", "LegionAirAdvancedFabber"],
       "build_conditions": [
         [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "air",
+            "boolean": false
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "land",
+            "boolean": false
+          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
