@@ -7,7 +7,12 @@
       "shared_instance_count": "BasicFactory",
       "priority": 376,
       "base_sort": "FromMainBase",
-      "builders": ["UberCommander", "AnyUberBasicFabber"],
+      "builders": [
+        "UberCommander",
+        "BasicBotFabber",
+        "BasicNavalFabber",
+        "BasicVehicleFabber"
+      ],
       "build_conditions": [
         [
           {
@@ -24,12 +29,14 @@
             "boolean": false
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicAirFactory"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">=",
+            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -77,10 +84,6 @@
             "boolean": true
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "AdvancedAirFactory"
           },
@@ -113,7 +116,12 @@
       "shared_instance_count": "BasicFactory",
       "priority": 376,
       "base_sort": "FromMainBase",
-      "builders": ["LegionCommander", "AnyLegionFabberBasic"],
+      "builders": [
+        "LegionCommander",
+        "LegionBotBasicFabber",
+        "LegionNavalBasicFabber",
+        "LegionVehicleBasicFabber"
+      ],
       "build_conditions": [
         [
           {
@@ -130,12 +138,14 @@
             "boolean": false
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "LegionFactoryBasicAir"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">=",
+            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -180,10 +190,6 @@
           },
           {
             "test_type": "HaveEcoForAdvanced",
-            "boolean": true
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
             "boolean": true
           },
           {
