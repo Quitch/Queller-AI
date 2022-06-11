@@ -168,6 +168,10 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 - Orbital earlier
 - Avoids antagonistic scouting raids
 
+### Land
+
+- Doesn't build air factories
+
 ### Rush
 
 - Techs late

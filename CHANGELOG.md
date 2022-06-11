@@ -4,6 +4,7 @@
 
 - Added Uber Air again
 - Uber Bot will build air when playing as Legion
+- Added Uber Land again
 
 ## v5.21.0 - 2022-06-09
 
