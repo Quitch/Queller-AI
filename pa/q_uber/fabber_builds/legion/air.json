@@ -12,6 +12,11 @@
         [
           {
             "test_type": "HasPersonalityTag",
+            "string0": "air",
+            "boolean": false
+          },
+          {
+            "test_type": "HasPersonalityTag",
             "string0": "bot",
             "boolean": false
           },
@@ -46,6 +51,11 @@
           }
         ],
         [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "air",
+            "boolean": false
+          },
           {
             "test_type": "HasPersonalityTag",
             "string0": "bot",
@@ -200,6 +210,11 @@
         [
           {
             "test_type": "HasPersonalityTag",
+            "string0": "air",
+            "boolean": false
+          },
+          {
+            "test_type": "HasPersonalityTag",
             "string0": "bot",
             "boolean": false
           },
@@ -234,6 +249,11 @@
           }
         ],
         [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "air",
+            "boolean": false
+          },
           {
             "test_type": "HasPersonalityTag",
             "string0": "bot",
@@ -435,6 +455,11 @@
       "builders": ["LegionAirBasicFabber", "LegionAirAdvancedFabber"],
       "build_conditions": [
         [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "air",
+            "boolean": false
+          },
           {
             "test_type": "PlanetIsRespawnable",
             "boolean": false
