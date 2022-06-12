@@ -177,12 +177,30 @@
       ]
     },
     {
-      "name": "Avenger - System Threat",
+      "name": "Avenger - System Threat - Launcher",
       "to_build": "OrbitalFighter",
       "instance_count": -1,
       "max_num_assisters": 10,
       "priority": 97,
-      "builders": ["AnyUberOrbitalFactory"],
+      "builders": ["OrbitalLauncher"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Avenger - System Threat - Factory",
+      "to_build": "OrbitalFighter",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["OrbitalFactory"],
       "build_conditions": [
         [
           {
@@ -346,7 +364,7 @@
     {
       "name": "Artemis",
       "to_build": "OrbitalRailgun",
-      "instance_count": -1,
+      "instance_count": 1,
       "max_num_assisters": 5,
       "priority": 97,
       "builders": ["OrbitalFactory"],

@@ -177,12 +177,30 @@
       ]
     },
     {
-      "name": "Viper - System Threat",
+      "name": "Viper - System Threat - Launcher",
       "to_build": "LegionOrbitalBasicFighter",
       "instance_count": -1,
       "max_num_assisters": 10,
       "priority": 97,
-      "builders": ["AnyLegionFactoryOrbital"],
+      "builders": ["LegionFactoryBasicOrbital"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Viper - System Threat - Factory",
+      "to_build": "LegionOrbitalBasicFighter",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["LegionFactoryAdvancedOrbital"],
       "build_conditions": [
         [
           {

@@ -10,6 +10,7 @@
 - Avoid overproducing for a local orbital threat response
 - Uber uses less orbital fabbers
 - Add Uber Orbital - which retains the previous Uber fabber behaviour
+- Uber doesn't produce dedicated anti-orbital as heavily from orbital factories
 
 ## v5.22.0 - 2022-06-11
 
