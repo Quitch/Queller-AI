@@ -62,6 +62,12 @@
             "boolean": true
           },
           {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "AntiOrbital",
             "string1": "AntiOrbital",
@@ -83,6 +89,12 @@
           {
             "test_type": "EnemyOrbitalPresenceOnPlanet",
             "boolean": true
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",

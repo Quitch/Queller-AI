@@ -7,6 +7,7 @@
 - Don't allow orbital fighters to block all factories when responding to local threats
 - Uber tries to avoid throwing away its orbital fighters
 - Uber gives higher priority to its first gas giant factory
+- Avoid overproducing for a local orbital threat response
 
 ## v5.22.0 - 2022-06-11
 
