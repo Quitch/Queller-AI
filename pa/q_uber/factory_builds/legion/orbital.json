@@ -365,24 +365,6 @@
       ]
     },
     {
-      "name": "Viper",
-      "to_build": "LegionOrbitalBasicFighter",
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 97,
-      "builders": ["LegionFactoryAdvancedOrbital"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "SystemThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 0
-          }
-        ]
-      ]
-    },
-    {
       "name": "Excalibur",
       "to_build": "LegionOrbitalAdvancedSniper",
       "instance_count": -1,
