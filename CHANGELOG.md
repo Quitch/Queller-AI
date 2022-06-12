@@ -4,6 +4,7 @@
 
 - Respond to local orbital threats from orbital factories
 - Switch all orbital ratio threat checks to use anti-orbital
+- Don't allow orbital fighters to block all factories when responding to local threats
 
 ## v5.22.0 - 2022-06-11
 
