@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Respond to local orbital threats from orbital factories
+
 ## v5.22.0 - 2022-06-11
 
 - Added Uber Air again
