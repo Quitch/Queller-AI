@@ -365,24 +365,6 @@
       ]
     },
     {
-      "name": "Avenger",
-      "to_build": "OrbitalFighter",
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 97,
-      "builders": ["OrbitalFactory"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "SystemThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 0
-          }
-        ]
-      ]
-    },
-    {
       "name": "Artemis",
       "to_build": "OrbitalRailgun",
       "instance_count": -1,
