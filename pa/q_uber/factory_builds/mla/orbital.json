@@ -30,33 +30,6 @@
         [
           {
             "test_type": "PlanetIsGasGiant",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "OrbitalFabber"
-          },
-          {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
-          },
-          {
-            "test_type": "PlanetCount",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Orbital & Fabber",
-            "compare0": "<",
-            "value0": 2
-          }
-        ],
-        [
-          {
-            "test_type": "PlanetIsGasGiant",
             "boolean": true
           },
           {
@@ -74,7 +47,7 @@
             "unit_type_string0": "Fabber & Orbital",
             "unit_type_string1": "Factory & Orbital",
             "compare0": "<",
-            "value0": 2
+            "value0": 1
           }
         ],
         [
