@@ -9,6 +9,7 @@
 - Uber gives higher priority to its first gas giant factory
 - Avoid overproducing for a local orbital threat response
 - Uber uses less orbital fabbers
+- Add Uber Orbital - which retains the previous Uber fabber behaviour
 
 ## v5.22.0 - 2022-06-11
 

@@ -176,6 +176,10 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 
 - Uses minimal air factories
 
+### Orbital
+
+- Grows its orbital presence faster
+
 ### Rush
 
 - Techs late
