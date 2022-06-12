@@ -270,6 +270,51 @@
       }
     },
     {
+      "name": "Orbital Factory - Initial Gas Giant",
+      "to_build": "OrbitalFactory",
+      "instance_count": 1,
+      "shared_instance_count": "OrbitalFactory",
+      "priority": 600,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "base_sort": "FromBuilder",
+      "builders": ["OrbitalFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "OrbitalFactory"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiOrbital",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
       "name": "Orbital Factory",
       "to_build": "OrbitalFactory",
       "instance_count": 1,
@@ -324,22 +369,6 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "OrbitalFactory"
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "OrbitalFactory"
-          }
-        ],
-        [
-          {
-            "test_type": "PlanetIsGasGiant",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory & Orbital",
-            "compare0": "<",
-            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",

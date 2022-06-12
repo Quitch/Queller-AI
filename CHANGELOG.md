@@ -6,6 +6,7 @@
 - Switch all orbital ratio threat checks to use anti-orbital
 - Don't allow orbital fighters to block all factories when responding to local threats
 - Uber tries to avoid throwing away its orbital fighters
+- Uber gives higher priority to its first gas giant factory
 
 ## v5.22.0 - 2022-06-11
 
