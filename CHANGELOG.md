@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Respond to local orbital threats from orbital factories
+- Switch all orbital ratio threat checks to use anti-orbital
 
 ## v5.22.0 - 2022-06-11
 
