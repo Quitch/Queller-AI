@@ -62,10 +62,56 @@
             "boolean": true
           },
           {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "AntiOrbital",
+            "string1": "AntiOrbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Orbital & (Fighter - Heavy) & Mobile - Titan",
             "compare0": ">=",
             "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_Orbital"
+          }
+        ],
+        [
+          {
+            "test_type": "EnemyOrbitalPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Orbital",
+            "string1": "AntiOrbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & (Fighter - Heavy) & Mobile - Titan",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_Orbital"
+          }
+        ],
+        [
+          {
+            "test_type": "EnemyOrbitalPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & (Fighter - Heavy) & Mobile - Titan",
+            "compare0": ">=",
+            "value0": 40
           },
           {
             "test_type": "CanAttackWithPoolUnits",
