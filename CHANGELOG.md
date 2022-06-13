@@ -13,6 +13,7 @@
 - Uber doesn't produce dedicated anti-orbital as heavily from orbital factories
 - Uber uses more Bluehawks to defend against orbital
 - Fixed placement checks for Uber's ground anti-orbital defences
+- Uber uses Catapults for anti-orbital defence again
 
 ## v5.22.0 - 2022-06-11
 

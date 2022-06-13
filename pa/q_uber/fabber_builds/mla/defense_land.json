@@ -553,6 +553,67 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "TML"
           }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 9000
+          },
+          {
+            "test_type": "SystemToPlanetThreatRatio",
+            "string0": "Orbital",
+            "string1": "AntiOrbital",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Tactical",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory | PlanetEngine | ControlModule)",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "TML"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Tactical",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Commander",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "TML"
+          }
         ]
       ],
       "placement_rules": {
@@ -560,7 +621,7 @@
         "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "Structure & (EnergyProduction | Factory)",
+            "unit_type_string": "Commander | (Structure & ((EnergyProduction & Advanced) | Factory | PlanetEngine | ControlModule))",
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 50,
