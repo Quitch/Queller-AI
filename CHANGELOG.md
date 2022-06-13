@@ -11,6 +11,7 @@
 - Uber uses less orbital fabbers
 - Add Uber Orbital - which retains the previous Uber fabber behaviour
 - Uber doesn't produce dedicated anti-orbital as heavily from orbital factories
+- Uber uses more Bluehawks to defend against orbital
 
 ## v5.22.0 - 2022-06-11
 
