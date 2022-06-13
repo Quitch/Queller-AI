@@ -9,14 +9,7 @@
       "max_num_assisters": 3,
       "priority": 401,
       "base_sort": "FromPerimeter",
-      "builders": [
-        "BasicBotFabber",
-        "BasicVehicleFabber",
-        "BasicAirFabber",
-        "AdvancedBotFabber",
-        "AdvancedVehicleFabber",
-        "AdvancedAirFabber"
-      ],
+      "builders": ["BasicBotFabber", "BasicVehicleFabber", "BasicAirFabber"],
       "build_conditions": [
         [
           {

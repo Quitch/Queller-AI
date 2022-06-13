@@ -14,6 +14,7 @@
 - Uber uses more Bluehawks to defend against orbital
 - Fixed placement checks for Uber's ground anti-orbital defences
 - Uber uses Catapults for anti-orbital defence again
+- Uber Advanced Fabbers favour Catapults over Pelters
 
 ## v5.22.0 - 2022-06-11
 
