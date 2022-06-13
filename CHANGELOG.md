@@ -16,6 +16,7 @@
 - Uber uses Catapults for anti-orbital defence again
 - Uber Advanced Fabbers favour Catapults over Pelters
 - Gold and above will conduct anti-orbital operations with orbital battleships if there are no ground targets
+- Allow Catapults to be placed closer to other defences
 
 ## v5.22.0 - 2022-06-11
 
