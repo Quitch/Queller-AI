@@ -134,7 +134,11 @@
       "min_num_assisters": 2,
       "max_num_assisters": 4,
       "base_sort": "FromMainBase",
-      "builders": ["AnyLegionFabberBasic", "AnyLegionFabberAdvanced"],
+      "builders": [
+        "LegionCommander",
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced"
+      ],
       "build_conditions": [
         [
           {
@@ -156,6 +160,40 @@
           {
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (Economy | Factory | Important)",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicOrbital"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "GravWellThreat",
+            "string0": "Orbital",
+            "compare0": ">=",
+            "value0": 9000
+          },
+          {
+            "test_type": "GravWellToPlanetThreatRatio",
+            "string0": "Orbital",
+            "string1": "AntiOrbital",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Commander",
             "compare0": ">=",
             "value0": 1
           },
@@ -396,20 +434,23 @@
       "build_conditions": [
         [
           {
+            "test_type": "EnemyOrbitalPresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
             "test_type": "GravWellThreat",
             "string0": "Orbital",
             "compare0": ">=",
-            "value0": 9000
+            "value0": 1100
           },
           {
-            "test_type": "GravWellToPlanetThreatRatio",
-            "string0": "Orbital",
-            "string1": "AntiOrbital",
-            "compare0": ">",
-            "value0": 1
+            "test_type": "GravWellThreat",
+            "string0": "AntiSurface",
+            "compare0": ">=",
+            "value0": 0
           },
           {
             "test_type": "UnitCountInBase",
