@@ -21,6 +21,7 @@
 - Uber uses advanced orbital fighters to respond to local threats where orbital defences may be involved
 - Uber assess the gravwell when considering more immediate orbital threats
 - Uber's Commander is responsible for its own anti-orbital protection
+- User rushes orbital defences to deal with orbital units over a base
 
 ## v5.22.0 - 2022-06-11
 
