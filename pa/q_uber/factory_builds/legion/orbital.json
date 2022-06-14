@@ -386,6 +386,41 @@
       ]
     },
     {
+      "name": "Excalibur - Local Threat",
+      "to_build": "LegionOrbitalAdvancedSniper",
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "priority": 98,
+      "builders": ["OrbitalFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "Orbital",
+            "compare0": ">=",
+            "value0": 2000
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Structure & Orbital & OrbitalDefense",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Fighter & Advanced - Heavy",
+            "compare0": "<",
+            "value0": 4
+          }
+        ]
+      ]
+    },
+    {
       "name": "Imperator",
       "to_build": "LegionOrbitalAdvancedBattleship",
       "instance_count": -1,
