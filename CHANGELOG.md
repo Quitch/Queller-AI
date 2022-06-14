@@ -19,6 +19,7 @@
 - Allow Catapults to be placed closer to other defences
 - Fix Gold Legion not placing Sky Bridge correctly
 - Uber uses advanced orbital fighters to respond to local threats where orbital defences may be involved
+- Uber assess the gravwell when considering more immediate orbital threats
 
 ## v5.22.0 - 2022-06-11
 
