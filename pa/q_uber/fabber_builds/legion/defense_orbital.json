@@ -145,13 +145,7 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "test_type": "GravWellThreat",
-            "string0": "Orbital",
-            "compare0": ">=",
-            "value0": 9000
-          },
-          {
-            "test_type": "GravWellToPlanetThreatRatio",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Orbital",
             "string1": "AntiOrbital",
             "compare0": ">",
@@ -179,13 +173,7 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "test_type": "GravWellThreat",
-            "string0": "Orbital",
-            "compare0": ">=",
-            "value0": 9000
-          },
-          {
-            "test_type": "GravWellToPlanetThreatRatio",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Orbital",
             "string1": "AntiOrbital",
             "compare0": ">",
@@ -441,16 +429,11 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "test_type": "GravWellThreat",
+            "test_type": "BaseThreatRatio",
             "string0": "Orbital",
-            "compare0": ">=",
-            "value0": 1100
-          },
-          {
-            "test_type": "GravWellThreat",
-            "string0": "AntiSurface",
-            "compare0": ">=",
-            "value0": 0
+            "string1": "AntiOrbital",
+            "compare0": ">",
+            "value0": 1
           },
           {
             "test_type": "UnitCountInBase",
