@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v5.23.0 - 2022-06-15
 
 - Respond to local orbital threats from orbital factories - defend your gas giant, Queller!
 - Switch all orbital ratio threat checks to use anti-orbital
