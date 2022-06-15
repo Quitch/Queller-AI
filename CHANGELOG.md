@@ -9,7 +9,7 @@
 - Uber gives higher priority to its first gas giant factory
 - Avoid overproducing for a local orbital threat response
 - Uber uses less orbital fabbers
-- Add Uber Orbital - which retains the previous Uber fabber behaviour
+- Add Uber Orbital which retains the previous Uber fabber behaviour
 - Uber doesn't produce dedicated anti-orbital as heavily from orbital factories
 - Uber uses more Bluehawks to defend against orbital
 - Fixed placement checks for Uber's ground anti-orbital defences
