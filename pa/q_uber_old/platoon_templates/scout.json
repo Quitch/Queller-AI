@@ -1,0 +1,60 @@
+{
+  "platoon_templates": {
+    "Air_Scout_Queller": {
+      "units": [
+        {
+          "unit_types": "Air & Scout",
+          "max_count": 1
+        }
+      ]
+    },
+    "Fighter_Scout_Queller": {
+      "units": [
+        {
+          "unit_types": "Air & Mobile & Fighter & Basic",
+          "max_count": 1
+        }
+      ]
+    },
+    "Land_Scout_Queller": {
+      "units": [
+        {
+          "unit_types": "Land & Scout",
+          "max_count": 1
+        }
+      ]
+    },
+    "Offensive_Land_Scout_Queller": {
+      "units": [
+        {
+          "unit_types": "((Bot | Vehicle) & Offense & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
+          "max_count": 1
+        }
+      ]
+    },
+    "Stryker_Scout_Queller": {
+      "units": [
+        {
+          "unit_types": "(Tank & Basic & Mobile) - Hover - Fabber - AirDefense - Construction - Artillery - Heavy - Scout - SelfDestruct - Deconstruction",
+          "max_count": 1
+        }
+      ]
+    },
+    "Naval_Scout_Queller": {
+      "units": [
+        {
+          "unit_types": "(Naval & WaterHover & Offense & Mobile) - Fabber - Construction - Titan",
+          "max_count": 1
+        }
+      ]
+    },
+    "Orbital_Scout_Queller": {
+      "units": [
+        {
+          "unit_types": "Orbital & (Recon | Scout) & Mobile",
+          "max_count": 1
+        }
+      ]
+    }
+  }
+}

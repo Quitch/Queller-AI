@@ -1,0 +1,30 @@
+{
+  "build_list": [
+    {
+      "name": "Naval Attack Platoon",
+      "to_build": "Naval_Attack_Queller",
+      "instance_count": -1,
+      "priority": 100,
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Naval & Mobile & Offense) - Hover - Fabber - (AirDefense & Custom1) - Construction",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnits",
+            "string0": "WL_AnySurface",
+            "boolean": true
+          }
+        ]
+      ],
+      "task_type": "NavalAttack"
+    }
+  ]
+}
