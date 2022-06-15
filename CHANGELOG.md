@@ -1,5 +1,25 @@
 # CHANGELOG
 
+## v5.23.0 - 2022-06-15
+
+- Respond to local orbital threats from orbital factories - defend your gas giant, Queller!
+- Switch all orbital ratio threat checks to use anti-orbital
+- Don't allow orbital fighters to block all factories when responding to local threats
+- Uber tries to avoid throwing away its orbital fighters
+- Uber gives higher priority to its first gas giant factory
+- Avoid overproducing for a local orbital threat response
+- Uber uses less orbital fabbers
+- Add Uber Orbital which retains the previous Uber fabber behaviour
+- Uber doesn't produce dedicated anti-orbital as heavily from orbital factories
+- Uber uses more Bluehawks to defend against orbital
+- Fixed placement checks for Uber's ground anti-orbital defences
+- Uber uses Catapults for anti-orbital defence again
+- Uber Advanced Fabbers favour Catapults over Pelters
+- Gold and above will conduct anti-orbital operations with orbital battleships if there are no ground targets
+- Allow Catapults to be placed closer to other defences
+- Fix Gold Legion not placing Sky Bridge correctly
+- Uber uses advanced orbital fighters to respond to local threats where orbital defences may be involved
+
 ## v5.22.0 - 2022-06-11
 
 - Added Uber Air again

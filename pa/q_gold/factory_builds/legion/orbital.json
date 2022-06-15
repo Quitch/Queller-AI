@@ -172,17 +172,18 @@
     {
       "name": "Viper - Local Threat",
       "to_build": "LegionOrbitalBasicFighter",
-      "instance_count": -1,
+      "instance_count": 1,
       "max_num_assisters": 10,
       "priority": 98,
       "builders": ["AnyLegionFactoryOrbital"],
       "build_conditions": [
         [
           {
-            "test_type": "PlanetThreat",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Orbital",
+            "string1": "AntiOrbital",
             "compare0": ">",
-            "value0": 0
+            "value0": 1
           }
         ]
       ]
@@ -265,7 +266,7 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Orbital",
-            "string1": "Orbital",
+            "string1": "AntiOrbital",
             "compare0": "<",
             "value0": 1
           }

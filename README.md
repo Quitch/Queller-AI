@@ -1,7 +1,5 @@
 # Queller AI
 
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/Quitch/Queller-AI)
-
 > _"Your Queller AI is literally best teacher there is when it comes to pure learning how to play this game, especially \[the\] basics" - B13, Uber rank #2_
 
 Improved AI for [Planetary Annihilation: TITANS](https://planetaryannihilation.com/)
@@ -175,6 +173,10 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 ### Land
 
 - Uses minimal air factories
+
+### Orbital
+
+- Grows its orbital presence faster
 
 ### Rush
 
