@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Fixed Queller trying to form platoons without the necessary units to form them with
+
 ## v5.23.0 - 2022-06-15
 
 - Respond to local orbital threats from orbital factories - defend your gas giant, Queller!
