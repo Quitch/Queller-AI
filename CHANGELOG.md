@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Fixed Queller trying to form platoons without the necessary units to form them with
+- Fixed always opening air with Legion
 
 ## v5.23.0 - 2022-06-15
 
