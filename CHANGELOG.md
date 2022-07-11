@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v5.23.1 - 2022-07-11
+
+- Fixed Queller trying to form platoons without the necessary units to form them with
+- Fixed always opening air with Legion
+
 ## v5.23.0 - 2022-06-15
 
 - Respond to local orbital threats from orbital factories - defend your gas giant, Queller!
