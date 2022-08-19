@@ -5,12 +5,12 @@ if (!quellerAILoaded) {
 
   function quellerAIPersonalities() {
     try {
-      var aiPathCasual = "/pa/q_casual";
-      var aiPathBronze = "/pa/q_bronze";
-      var aiPathSilver = "/pa/q_silver";
-      var aiPathGold = "/pa/q_gold";
-      var aiPathPlatinum = "/pa/q_platinum";
-      var aiPathUber = "/pa/q_uber";
+      var aiPathCasual = "/pa/ai_queller/q_casual";
+      var aiPathBronze = "/pa/ai_queller/q_bronze";
+      var aiPathSilver = "/pa/ai_queller/q_silver";
+      var aiPathGold = "/pa/ai_queller/q_gold";
+      var aiPathPlatinum = "/pa/ai_queller/q_platinum";
+      var aiPathUber = "/pa/ai_queller/q_uber";
       var quellerPersonalities = {
         qCasual: {
           ai_path: aiPathCasual,
