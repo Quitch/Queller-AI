@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Enable Starcannon usage again following a crash fix in the base game
+
 ## v5.23.1 - 2022-07-11
 
 - Fixed Queller trying to form platoons without the necessary units to form them with
