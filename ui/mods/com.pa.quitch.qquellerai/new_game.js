@@ -126,7 +126,7 @@ if (!quellerAILoaded) {
           min_advanced_fabbers: 1,
         },
         qUberOld: {
-          ai_path: "/pa/q_uber_old",
+          ai_path: aiPathUber + "_old",
           display_name: "!LOC:Q-Uber Old",
           metal_drain_check: 0.54,
           energy_drain_check: 0.72,
