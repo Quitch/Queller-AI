@@ -134,11 +134,7 @@
       "min_num_assisters": 2,
       "max_num_assisters": 4,
       "base_sort": "FromMainBase",
-      "builders": [
-        "UberCommander",
-        "AnyUberBasicFabber",
-        "AnyUberAdvancedFabber"
-      ],
+      "builders": ["UberCommander", "AnyUberBasicFabber"],
       "build_conditions": [
         [
           {
@@ -202,7 +198,7 @@
         "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "Commander | (Structure & ((EnergyProduction & Advanced) | Factory | PlanetEngine | ControlModule))",
+            "unit_type_string": "Commander | (Structure & (Economy | Factory | Important))",
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 50,

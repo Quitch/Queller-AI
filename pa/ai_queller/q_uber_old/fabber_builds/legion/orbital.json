@@ -275,6 +275,51 @@
       }
     },
     {
+      "name": "Starship Foundry - Initial Gas Giant",
+      "to_build": "LegionFactoryAdvancedOrbital",
+      "instance_count": 1,
+      "shared_instance_count": "OrbitalFactory",
+      "priority": 600,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "base_sort": "FromBuilder",
+      "builders": ["LegionOrbitalBasicFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryAdvancedOrbital"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiOrbital",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
       "name": "Starship Foundry",
       "to_build": "LegionFactoryAdvancedOrbital",
       "instance_count": 1,
@@ -334,22 +379,6 @@
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionFactoryAdvancedOrbital"
           }
-        ],
-        [
-          {
-            "test_type": "PlanetIsGasGiant",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory & Orbital",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionFactoryAdvancedOrbital"
-          }
         ]
       ],
       "placement_rules": {
@@ -370,7 +399,7 @@
       "shared_instance_count": "OrbitalFactory",
       "min_num_assisters": 2,
       "max_num_assisters": 5,
-      "priority": 0,
+      "priority": 477,
       "base_sort": "FromPerimeter",
       "builders": ["LegionOrbitalBasicFabber"],
       "build_conditions": [
@@ -396,7 +425,7 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Orbital",
-            "string1": "Orbital",
+            "string1": "AntiOrbital",
             "compare0": "<",
             "value0": 1
           },

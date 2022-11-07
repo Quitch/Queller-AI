@@ -29,32 +29,10 @@
         ],
         [
           {
-            "test_type": "PlanetIsGasGiant",
+            "test_type": "HasPersonalityTag",
+            "string0": "orbital",
             "boolean": false
           },
-          {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "LegionOrbitalBasicFabber"
-          },
-          {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
-          },
-          {
-            "test_type": "PlanetCount",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Orbital & Fabber",
-            "compare0": "<",
-            "value0": 2
-          }
-        ],
-        [
           {
             "test_type": "PlanetIsGasGiant",
             "boolean": true
@@ -74,7 +52,7 @@
             "unit_type_string0": "Fabber & Orbital",
             "unit_type_string1": "Factory & Orbital",
             "compare0": "<",
-            "value0": 2
+            "value0": 1
           }
         ],
         [
@@ -182,23 +160,24 @@
     {
       "name": "Viper - Local Threat",
       "to_build": "LegionOrbitalBasicFighter",
-      "instance_count": -1,
+      "instance_count": 1,
       "max_num_assisters": 10,
       "priority": 98,
-      "builders": ["LegionFactoryBasicOrbital"],
+      "builders": ["AnyLegionFactoryOrbital"],
       "build_conditions": [
         [
           {
-            "test_type": "PlanetThreat",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Orbital",
+            "string1": "AntiOrbital",
             "compare0": ">",
-            "value0": 0
+            "value0": 1
           }
         ]
       ]
     },
     {
-      "name": "Viper - System Threat",
+      "name": "Viper - System Threat - Launcher",
       "to_build": "LegionOrbitalBasicFighter",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -216,11 +195,29 @@
       ]
     },
     {
+      "name": "Viper - System Threat - Factory",
+      "to_build": "LegionOrbitalBasicFighter",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["LegionFactoryAdvancedOrbital"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
       "name": "Chariot - Initial Expansion/Naval multi-planet",
       "to_build": "LegionOrbitalBasicTransport",
       "instance_count": 1,
       "max_num_assisters": 10,
-      "priority": 0,
+      "priority": 200,
       "builders": ["LegionFactoryBasicOrbital"],
       "build_conditions": [
         [
@@ -254,7 +251,7 @@
       "to_build": "LegionOrbitalBasicTransport",
       "instance_count": 1,
       "max_num_assisters": 10,
-      "priority": 0,
+      "priority": 99,
       "builders": ["AnyLegionFactoryOrbital"],
       "build_conditions": [
         [
@@ -299,7 +296,7 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Orbital",
-            "string1": "Orbital",
+            "string1": "AntiOrbital",
             "compare0": "<",
             "value0": 1
           }
@@ -365,27 +362,9 @@
       ]
     },
     {
-      "name": "Viper",
-      "to_build": "LegionOrbitalBasicFighter",
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 97,
-      "builders": ["LegionFactoryAdvancedOrbital"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "SystemThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 0
-          }
-        ]
-      ]
-    },
-    {
       "name": "Excalibur",
       "to_build": "LegionOrbitalAdvancedSniper",
-      "instance_count": -1,
+      "instance_count": 1,
       "max_num_assisters": 5,
       "priority": 97,
       "builders": ["LegionFactoryAdvancedOrbital"],
@@ -402,6 +381,47 @@
             "string0": "Orbital",
             "compare0": ">=",
             "value0": 2000
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Excalibur - Local Threat",
+      "to_build": "LegionOrbitalAdvancedSniper",
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "priority": 98,
+      "builders": ["OrbitalFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "Orbital",
+            "compare0": ">=",
+            "value0": 2000
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "AntiSurface",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Structure & Orbital & OrbitalDefense",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Fighter & Advanced - Heavy",
+            "compare0": "<",
+            "value0": 3
           }
         ]
       ]
@@ -424,7 +444,7 @@
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Orbital",
-            "string1": "Orbital",
+            "string1": "AntiOrbital",
             "compare0": "<",
             "value0": 1
           },
