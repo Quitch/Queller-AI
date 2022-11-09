@@ -119,8 +119,8 @@
       ]
     },
     {
-      "name": "Marauder - First Scout",
-      "to_build": "LegionAirBasicGunship",
+      "name": "Nova - First Scout",
+      "to_build": "LegionAirBasicBomb",
       "instance_count": 1,
       "max_num_assisters": 10,
       "priority": 102,
@@ -137,7 +137,7 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & Scout",
+            "unit_type_string0": "Air & (Scout | (SelfDestruct & Custom1)",
             "compare0": "<",
             "value0": 1
           }
@@ -145,8 +145,8 @@
       ]
     },
     {
-      "name": "Marauder",
-      "to_build": "LegionAirBasicGunship",
+      "name": "Nova - Scout",
+      "to_build": "LegionAirBasicBomb",
       "instance_count": 1,
       "max_num_assisters": 10,
       "priority": 98,
@@ -167,7 +167,7 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & Scout",
+            "unit_type_string0": "Air & (Scout | (SelfDestruct & Custom1)",
             "compare0": "<",
             "value0": 1
           }
@@ -183,7 +183,7 @@
           },
           {
             "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Air & Scout",
+            "unit_type_string0": "Air & (Scout | (SelfDestruct & Custom1)",
             "compare0": "<",
             "value0": 150
           }
@@ -198,7 +198,7 @@
           },
           {
             "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Air & Scout",
+            "unit_type_string0": "Air & (Scout | (SelfDestruct & Custom1)",
             "compare0": "<",
             "value0": 150
           }

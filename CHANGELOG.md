@@ -4,6 +4,7 @@
 
 - Enable Starcannon usage again following a crash fix in the base game
 - Enable Chariot usage following a fix in the base game
+- Legion Uber uses Novas to scout
 
 ## v5.23.1 - 2022-07-11
 
