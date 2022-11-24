@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v5.24.0 - 2022-11-24
 
 - Enable Starcannon usage again following a crash fix in the base game
 - Enable Chariot usage following a fix in the base game
