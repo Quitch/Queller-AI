@@ -1,0 +1,264 @@
+{
+  "build_list": [
+    {
+      "name": "Fabrication Starship",
+      "to_build": "LegionOrbitalBasicFabber",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": ["AnyLegionFactoryOrbital"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Fabber",
+            "compare0": "<",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetCount",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionOrbitalBasicFabber"
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Orbital",
+            "unit_type_string1": "Factory & Orbital",
+            "compare0": "<",
+            "value0": 2
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Sputnik - This Planet",
+      "to_build": "LegionOrbitalBasicRadar",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["AnyLegionFactoryOrbital"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "ThisPlanetNeedsReconAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "OtherPlanetNeedsReconAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Spectre - This Planet",
+      "to_build": "LegionOrbitalBasicScout",
+      "instance_count": 1,
+      "priority": 97,
+      "builders": ["AnyLegionFactoryOrbital"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "ThisPlanetNeedsReconAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "OtherPlanetNeedsReconAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Viper",
+      "to_build": "LegionOrbitalBasicFighter",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["AnyLegionFactoryOrbital"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Chariot",
+      "to_build": "LegionOrbitalBasicTransport",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 200,
+      "builders": ["AnyLegionFactoryOrbital"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetWithoutPresence",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Transport",
+            "compare0": "<",
+            "value0": 1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Black Knight",
+      "to_build": "LegionOrbitalAdvancedLaser",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["LegionFactoryAdvancedOrbital"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Kosmos - This Planet",
+      "to_build": "LegionOrbitalAdvancedRadar",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["LegionFactoryAdvancedOrbital"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "ThisPlanetNeedsReconAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "OtherPlanetNeedsReconAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Excalibur",
+      "to_build": "LegionOrbitalAdvancedSniper",
+      "instance_count": -1,
+      "max_num_assisters": 5,
+      "priority": 97,
+      "builders": ["LegionFactoryAdvancedOrbital"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Imperator",
+      "to_build": "LegionOrbitalAdvancedBattleship",
+      "instance_count": -1,
+      "max_num_assisters": 5,
+      "priority": 97,
+      "builders": ["LegionFactoryAdvancedOrbital"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Orbital & Fighter & Heavy",
+            "unit_type_string1": "(Orbital & Offense & Mobile & Fighter) - Titan",
+            "compare0": "<",
+            "value0": 0.2
+          }
+        ]
+      ]
+    }
+  ]
+}
