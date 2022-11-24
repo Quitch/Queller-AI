@@ -187,6 +187,35 @@
             "compare0": "<",
             "value0": 150
           }
+        ]
+      ]
+    },
+    {
+      "name": "Marauder",
+      "to_build": "LegionAirBasicGunship",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 98,
+      "builders": ["LegionFactoryBasicAir", "LegionFactoryAdvancedAir"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Air & (Scout | (SelfDestruct & Custom1)",
+            "compare0": "<",
+            "value0": 150
+          }
         ],
         [
           {
