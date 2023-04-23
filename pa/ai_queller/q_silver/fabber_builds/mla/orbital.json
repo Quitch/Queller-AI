@@ -8,11 +8,7 @@
       "priority": 479,
       "max_num_assisters": 10,
       "base_sort": "FromMainBase",
-      "builders": [
-        "UberCommander",
-        "AnyUberBasicFabber",
-        "AnyUberAdvancedFabber"
-      ],
+      "builders": ["Commander", "AnyBasicFabber", "AnyAdvancedFabber"],
       "build_conditions": [
         [
           {
@@ -105,11 +101,7 @@
       "priority": 377,
       "max_num_assisters": 10,
       "base_sort": "FromMainBase",
-      "builders": [
-        "UberCommander",
-        "AnyUberBasicFabber",
-        "AnyUberAdvancedFabber"
-      ],
+      "builders": ["Commander", "AnyBasicFabber", "AnyAdvancedFabber"],
       "build_conditions": [
         [
           {

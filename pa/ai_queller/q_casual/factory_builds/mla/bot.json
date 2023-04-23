@@ -228,7 +228,7 @@
     },
     {
       "name": "Colonel",
-      "to_build": "UberSupportCommander",
+      "to_build": "SupportCommander",
       "instance_count": 1,
       "shared_instance_count": "AdvancedBotFabber",
       "max_num_assisters": 10,
@@ -238,7 +238,7 @@
         [
           {
             "test_type": "CanAffordPotentialDrain",
-            "string0": "UberSupportCommander"
+            "string0": "SupportCommander"
           },
           {
             "test_type": "UnitRatioOnPlanet",
