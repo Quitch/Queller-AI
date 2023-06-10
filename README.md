@@ -147,6 +147,8 @@ Suggestions based on 1v1 ranked position or challenge sought:
 | Platinum | Any       | Uber       | 1.4 |
 | Uber     | Any       | Uber       | 1.6 |
 
+Alternatively, trying increasing the local sim speed.
+
 ## SUBPERSONALITIES
 
 By default, Queller at Uber level will adapt its play to try and suit the system and the opposition it faces. You can use subpersonalities to customise Queller's game to your liking or help it play better where it's making poor strategy choices.
