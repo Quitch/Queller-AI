@@ -9,11 +9,7 @@
       "shared_instance_count": "Titan",
       "priority": 480,
       "base_sort": "FromBuilder",
-      "builders": [
-        "AdvancedBotFabber",
-        "UberSupportCommander",
-        "OrbitalFabber"
-      ],
+      "builders": ["AdvancedBotFabber", "SupportCommander", "OrbitalFabber"],
       "build_conditions": [
         [
           {

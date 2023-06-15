@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v5.24.1 - 2023-06-15
+
+- Updated for PA 116946
+
 ## v5.24.0 - 2022-11-24
 
 - Enable Starcannon usage again following a crash fix in the base game

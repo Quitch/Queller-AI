@@ -8,7 +8,7 @@
       "max_num_assisters": 3,
       "priority": 478,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyUberBasicFabber"],
+      "builders": ["AnyBasicFabber"],
       "build_conditions": [
         [
           {
@@ -340,7 +340,7 @@
       "max_num_assisters": 5,
       "priority": 480,
       "base_sort": "FromPerimeter",
-      "builders": ["AnyUberAdvancedFabber"],
+      "builders": ["AnyAdvancedFabber"],
       "build_conditions": [
         [
           {
@@ -471,7 +471,7 @@
       "max_num_assisters": 3,
       "priority": 477,
       "base_sort": "FromMainBase",
-      "builders": ["AnyUberBasicFabber"],
+      "builders": ["AnyBasicFabber"],
       "build_conditions": [
         [
           {
@@ -725,7 +725,7 @@
       "max_num_assisters": 3,
       "priority": 479,
       "base_sort": "FromMainBase",
-      "builders": ["AnyUberAdvancedFabber"],
+      "builders": ["AnyAdvancedFabber"],
       "build_conditions": [
         [
           {
@@ -846,7 +846,7 @@
       "max_num_assisters": 5,
       "priority": 479,
       "base_sort": "FromMainBase",
-      "builders": ["AnyUberAdvancedFabber"],
+      "builders": ["AnyAdvancedFabber"],
       "build_conditions": [
         [
           {
@@ -1013,11 +1013,7 @@
       "priority": 478,
       "max_num_assisters": 3,
       "base_sort": "FromMainBase",
-      "builders": [
-        "UberCommander",
-        "AnyUberBasicFabber",
-        "AnyUberAdvancedFabber"
-      ],
+      "builders": ["Commander", "AnyBasicFabber", "AnyAdvancedFabber"],
       "build_conditions": [
         [
           {
@@ -1107,7 +1103,7 @@
       "priority": 481,
       "max_num_assisters": 10,
       "base_sort": "FromMainBase",
-      "builders": ["AnyUberAdvancedFabber"],
+      "builders": ["AnyAdvancedFabber"],
       "build_conditions": [
         [
           {
@@ -1170,7 +1166,7 @@
       "priority": 510,
       "min_num_assisters": 5,
       "max_num_assisters": 12,
-      "builders": ["AnyUberAdvancedFabber"],
+      "builders": ["AnyAdvancedFabber"],
       "build_conditions": [
         [
           {

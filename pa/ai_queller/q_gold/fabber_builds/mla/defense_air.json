@@ -6,7 +6,7 @@
       "instance_count": 1,
       "priority": 352,
       "base_sort": "FromPerimeter",
-      "builders": ["UberCommander", "AnyUberBasicFabber"],
+      "builders": ["Commander", "AnyBasicFabber"],
       "build_conditions": [
         [
           {
@@ -101,7 +101,7 @@
       "max_num_assisters": 1,
       "priority": 351,
       "base_sort": "FromMainBase",
-      "builders": ["UberCommander", "BasicBotFabber", "BasicVehicleFabber"],
+      "builders": ["Commander", "BasicBotFabber", "BasicVehicleFabber"],
       "build_conditions": [
         [
           {
@@ -161,7 +161,7 @@
       "max_num_assisters": 3,
       "priority": 479,
       "base_sort": "FromMainBase",
-      "builders": ["AnyUberAdvancedFabber"],
+      "builders": ["AnyAdvancedFabber"],
       "build_conditions": [
         [
           {

@@ -5,9 +5,9 @@
       "instance_count": -1,
       "priority": 1,
       "builders": [
-        "UberCommander",
-        "AnyUberBasicFabber",
-        "AnyUberAdvancedFabber",
+        "Commander",
+        "AnyBasicFabber",
+        "AnyAdvancedFabber",
         "OrbitalFabber"
       ],
       "build_conditions": [
@@ -40,9 +40,9 @@
       "min_num_assisters": 3,
       "max_num_assisters": 5,
       "builders": [
-        "UberCommander",
-        "AnyUberBasicFabber",
-        "AnyUberAdvancedFabber",
+        "Commander",
+        "AnyBasicFabber",
+        "AnyAdvancedFabber",
         "OrbitalFabber"
       ],
       "build_conditions": [
@@ -87,7 +87,7 @@
         "BasicVehicleFabber",
         "AdvancedBotFabber",
         "AdvancedVehicleFabber",
-        "UberSupportCommander"
+        "SupportCommander"
       ],
       "build_conditions": [
         [
@@ -122,7 +122,7 @@
         "AdvancedBotFabber",
         "AdvancedVehicleFabber",
         "AdvancedAirFabber",
-        "UberSupportCommander"
+        "SupportCommander"
       ],
       "build_conditions": [
         [

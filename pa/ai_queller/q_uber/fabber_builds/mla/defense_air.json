@@ -7,8 +7,8 @@
       "priority": 401,
       "base_sort": "FromPerimeter",
       "builders": [
-        "AnyUberBasicFabber",
-        "AnyUberAdvancedFabber",
+        "AnyBasicFabber",
+        "AnyAdvancedFabber",
         "AdvancedBotCombatFabber"
       ],
       "build_conditions": [
@@ -72,9 +72,9 @@
       "priority": 251,
       "base_sort": "FromMainBase",
       "builders": [
-        "UberCommander",
-        "AnyUberBasicFabber",
-        "AnyUberAdvancedFabber",
+        "Commander",
+        "AnyBasicFabber",
+        "AnyAdvancedFabber",
         "AdvancedBotCombatFabber"
       ],
       "build_conditions": [
@@ -139,7 +139,7 @@
       "max_num_assisters": 1,
       "priority": 456,
       "base_sort": "FromBuilder",
-      "builders": ["UberCommander"],
+      "builders": ["Commander"],
       "build_conditions": [
         [
           {
@@ -190,7 +190,7 @@
       "max_num_assisters": 3,
       "priority": 279,
       "base_sort": "FromMainBase",
-      "builders": ["AnyUberAdvancedFabber"],
+      "builders": ["AnyAdvancedFabber"],
       "build_conditions": [
         [
           {
@@ -254,7 +254,7 @@
       "max_num_assisters": 3,
       "priority": 456,
       "base_sort": "FromMainBase",
-      "builders": ["AnyUberAdvancedFabber"],
+      "builders": ["AnyAdvancedFabber"],
       "build_conditions": [
         [
           {

@@ -7,7 +7,7 @@
       "shared_instance_count": "BasicRadar",
       "priority": 246,
       "base_sort": "FromBuilder",
-      "builders": ["AnyUberBasicFabber"],
+      "builders": ["AnyBasicFabber"],
       "build_conditions": [
         [
           {
@@ -77,7 +77,7 @@
       "shared_instance_count": "AdvancedRadar",
       "priority": 247,
       "base_sort": "FromBuilder",
-      "builders": ["AnyUberAdvancedFabber"],
+      "builders": ["AnyAdvancedFabber"],
       "build_conditions": [
         [
           {
@@ -140,7 +140,7 @@
       "instance_count": 1,
       "shared_instance_count": "AdvancedRadar",
       "priority": 90,
-      "builders": ["AnyUberAdvancedFabber"],
+      "builders": ["AnyAdvancedFabber"],
       "build_conditions": [
         [
           {

@@ -8,11 +8,7 @@
       "max_num_assisters": 3,
       "priority": 2,
       "base_sort": "FromBuilder",
-      "builders": [
-        "AnyUberBasicFabber",
-        "AnyUberAdvancedFabber",
-        "OrbitalFabber"
-      ],
+      "builders": ["AnyBasicFabber", "AnyAdvancedFabber", "OrbitalFabber"],
       "build_conditions": [
         [
           {
@@ -60,7 +56,7 @@
       "max_num_assisters": 3,
       "priority": 261,
       "base_sort": "FromBuilder",
-      "builders": ["AnyUberBasicFabber"],
+      "builders": ["AnyBasicFabber"],
       "build_conditions": [
         [
           {
@@ -102,7 +98,7 @@
       "max_num_assisters": 3,
       "priority": 2,
       "base_sort": "FromBuilder",
-      "builders": ["AnyUberAdvancedFabber"],
+      "builders": ["AnyAdvancedFabber"],
       "build_conditions": [
         [
           {
@@ -142,7 +138,7 @@
       "max_num_assisters": 3,
       "priority": 270,
       "base_sort": "FromBuilder",
-      "builders": ["AnyUberAdvancedFabber"],
+      "builders": ["AnyAdvancedFabber"],
       "build_conditions": [
         [
           {
@@ -254,7 +250,7 @@
       "max_num_assisters": 3,
       "priority": 1,
       "base_sort": "FromBuilder",
-      "builders": ["AnyUberBasicFabber", "AnyUberAdvancedFabber"],
+      "builders": ["AnyBasicFabber", "AnyAdvancedFabber"],
       "build_conditions": [
         [
           {
@@ -290,7 +286,7 @@
       "max_num_assisters": 3,
       "priority": 1,
       "base_sort": "FromBuilder",
-      "builders": ["AnyUberBasicFabber", "AnyUberAdvancedFabber"],
+      "builders": ["AnyBasicFabber", "AnyAdvancedFabber"],
       "build_conditions": [
         [
           {

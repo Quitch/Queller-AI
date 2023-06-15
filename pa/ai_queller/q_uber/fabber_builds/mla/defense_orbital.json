@@ -134,7 +134,7 @@
       "min_num_assisters": 2,
       "max_num_assisters": 4,
       "base_sort": "FromMainBase",
-      "builders": ["UberCommander", "AnyUberBasicFabber"],
+      "builders": ["Commander", "AnyBasicFabber"],
       "build_conditions": [
         [
           {
@@ -222,11 +222,7 @@
       "min_num_assisters": 1,
       "max_num_assisters": 3,
       "base_sort": "FromMainBase",
-      "builders": [
-        "UberCommander",
-        "AnyUberBasicFabber",
-        "AnyUberAdvancedFabber"
-      ],
+      "builders": ["Commander", "AnyBasicFabber", "AnyAdvancedFabber"],
       "build_conditions": [
         [
           {
@@ -351,7 +347,7 @@
       "min_num_assisters": 1,
       "max_num_assisters": 3,
       "base_sort": "FromBuilder",
-      "builders": ["AnyUberBasicFabber", "AnyUberAdvancedFabber"],
+      "builders": ["AnyBasicFabber", "AnyAdvancedFabber"],
       "build_conditions": [
         [
           {
@@ -414,7 +410,7 @@
       "min_num_assisters": 1,
       "max_num_assisters": 3,
       "base_sort": "FromBuilder",
-      "builders": ["UberCommander"],
+      "builders": ["Commander"],
       "build_conditions": [
         [
           {
