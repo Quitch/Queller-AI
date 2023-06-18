@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v5.24.2 - 2023-06-18
 
 - Fixed Queller not building Stingers
 
