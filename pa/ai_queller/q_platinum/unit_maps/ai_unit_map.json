@@ -1,8 +1,14 @@
 {
   "unit_map": {
-    "Commander": { "unit_types": "Commander & Custom58" },
-    "AnyBasicFactory": { "unit_types": "Factory & Basic & Custom58" },
-    "AnyAdvancedFactory": { "unit_types": "Factory & Advanced & Custom58" },
+    "Commander": {
+      "unit_types": "Commander & Custom58"
+    },
+    "AnyBasicFactory": {
+      "unit_types": "Factory & Basic & Custom58"
+    },
+    "AnyAdvancedFactory": {
+      "unit_types": "Factory & Advanced & Custom58"
+    },
     "AnyBasicFabber": {
       "unit_types": "(Fabber & (Basic | Debug)) & Custom58 - Orbital"
     },
@@ -60,14 +66,18 @@
     "MetalStorage": {
       "spec_id": "/pa/units/land/metal_storage/metal_storage.json"
     },
-    "LandScout": { "spec_id": "/pa/units/land/land_scout/land_scout.json" },
+    "LandScout": {
+      "spec_id": "/pa/units/land/land_scout/land_scout.json"
+    },
     "BasicAssaultBot": {
       "spec_id": "/pa/units/land/assault_bot/assault_bot.json"
     },
     "BasicArtilleryBot": {
       "spec_id": "/pa/units/land/bot_grenadier/bot_grenadier.json"
     },
-    "BoomBot": { "spec_id": "/pa/units/land/bot_bomb/bot_bomb.json" },
+    "BoomBot": {
+      "spec_id": "/pa/units/land/bot_bomb/bot_bomb.json"
+    },
     "AdvancedAssaultBot": {
       "spec_id": "/pa/units/land/assault_bot_adv/assault_bot_adv.json"
     },
@@ -95,22 +105,48 @@
     "AdvancedArtilleryVehicle": {
       "spec_id": "/pa/units/land/tank_heavy_mortar/tank_heavy_mortar.json"
     },
-    "AirScout": { "spec_id": "/pa/units/air/air_scout/air_scout.json" },
-    "BasicFighter": { "spec_id": "/pa/units/air/fighter/fighter.json" },
-    "BasicBomber": { "spec_id": "/pa/units/air/bomber/bomber.json" },
+    "AirScout": {
+      "spec_id": "/pa/units/air/air_scout/air_scout.json"
+    },
+    "BasicFighter": {
+      "spec_id": "/pa/units/air/fighter/fighter.json"
+    },
+    "BasicBomber": {
+      "spec_id": "/pa/units/air/bomber/bomber.json"
+    },
     "AdvancedFighter": {
       "spec_id": "/pa/units/air/fighter_adv/fighter_adv.json"
     },
-    "AdvancedBomber": { "spec_id": "/pa/units/air/bomber_adv/bomber_adv.json" },
-    "AdvancedGunship": { "spec_id": "/pa/units/air/gunship/gunship.json" },
-    "SeaScout": { "spec_id": "/pa/units/sea/sea_scout/sea_scout.json" },
-    "Gunboat": { "spec_id": "/pa/units/sea/sea_scout/sea_scout.json" },
-    "Sub": { "spec_id": "/pa/units/sea/attack_sub/attack_sub.json" },
-    "Frigate": { "spec_id": "/pa/units/sea/frigate/frigate.json" },
-    "Destroyer": { "spec_id": "/pa/units/sea/destroyer/destroyer.json" },
-    "Battleship": { "spec_id": "/pa/units/sea/battleship/battleship.json" },
-    "MissleShip": { "spec_id": "/pa/units/sea/missile_ship/missile_ship.json" },
-    "MissileSub": { "spec_id": "/pa/units/sea/nuclear_sub/nuclear_sub.json" },
+    "AdvancedBomber": {
+      "spec_id": "/pa/units/air/bomber_adv/bomber_adv.json"
+    },
+    "AdvancedGunship": {
+      "spec_id": "/pa/units/air/gunship/gunship.json"
+    },
+    "SeaScout": {
+      "spec_id": "/pa/units/sea/sea_scout/sea_scout.json"
+    },
+    "Gunboat": {
+      "spec_id": "/pa/units/sea/sea_scout/sea_scout.json"
+    },
+    "Sub": {
+      "spec_id": "/pa/units/sea/attack_sub/attack_sub.json"
+    },
+    "Frigate": {
+      "spec_id": "/pa/units/sea/frigate/frigate.json"
+    },
+    "Destroyer": {
+      "spec_id": "/pa/units/sea/destroyer/destroyer.json"
+    },
+    "Battleship": {
+      "spec_id": "/pa/units/sea/battleship/battleship.json"
+    },
+    "MissleShip": {
+      "spec_id": "/pa/units/sea/missile_ship/missile_ship.json"
+    },
+    "MissileSub": {
+      "spec_id": "/pa/units/sea/nuclear_sub/nuclear_sub.json"
+    },
     "OrbitalFighter": {
       "spec_id": "/pa/units/orbital/orbital_fighter/orbital_fighter.json"
     },
@@ -165,7 +201,9 @@
     "BasicNavalDefense": {
       "spec_id": "/pa/units/sea/torpedo_launcher/torpedo_launcher.json"
     },
-    "Umbrella": { "spec_id": "/pa/units/orbital/ion_defense/ion_defense.json" },
+    "Umbrella": {
+      "spec_id": "/pa/units/orbital/ion_defense/ion_defense.json"
+    },
     "BasicArtillery": {
       "spec_id": "/pa/units/land/artillery_short/artillery_short.json"
     },
@@ -190,17 +228,27 @@
     "AntiNukeSilo": {
       "spec_id": "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher.json"
     },
-    "UnitCannon": { "spec_id": "/pa/units/land/unit_cannon/unit_cannon.json" },
+    "UnitCannon": {
+      "spec_id": "/pa/units/land/unit_cannon/unit_cannon.json"
+    },
     "PlanetEngine": {
       "spec_id": "/pa/units/orbital/delta_v_engine/delta_v_engine.json"
     },
     "ControlModule": {
       "spec_id": "/pa/units/land/control_module/control_module.json"
     },
-    "Teleporter": { "spec_id": "/pa/units/land/teleporter/teleporter.json" },
-    "Wall": { "spec_id": "/pa/units/land/land_barrier/land_barrier.json" },
-    "BasicRadar": { "spec_id": "/pa/units/land/radar/radar.json" },
-    "AdvancedRadar": { "spec_id": "/pa/units/land/radar_adv/radar_adv.json" },
+    "Teleporter": {
+      "spec_id": "/pa/units/land/teleporter/teleporter.json"
+    },
+    "Wall": {
+      "spec_id": "/pa/units/land/land_barrier/land_barrier.json"
+    },
+    "BasicRadar": {
+      "spec_id": "/pa/units/land/radar/radar.json"
+    },
+    "AdvancedRadar": {
+      "spec_id": "/pa/units/land/radar_adv/radar_adv.json"
+    },
     "DeepSpaceRadar": {
       "spec_id": "/pa/units/orbital/deep_space_radar/deep_space_radar.json"
     },
