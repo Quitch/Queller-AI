@@ -144,6 +144,12 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 9000
+          },
+          {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Orbital",
             "string1": "AntiOrbital",
@@ -154,7 +160,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (Economy | Factory | Important)",
             "compare0": ">=",
-            "value0": 1
+            "value0": 3
           },
           {
             "test_type": "UnitCountInBase",
@@ -172,7 +178,7 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "test_type": "BaseThreatRatio",
             "string0": "Orbital",
             "string1": "AntiOrbital",
             "compare0": ">",
@@ -180,9 +186,9 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Commander",
+            "unit_type_string0": "Structure & (Economy | Factory | Important)",
             "compare0": ">=",
-            "value0": 1
+            "value0": 3
           },
           {
             "test_type": "UnitCountInBase",
@@ -286,33 +292,6 @@
           {
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory | PlanetEngine | ControlModule)",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "Umbrella"
-          }
-        ],
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "SystemThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Commander",
             "compare0": ">=",
             "value0": 1
           },

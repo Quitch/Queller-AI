@@ -5,6 +5,7 @@
 - Uber 1v1 starts with a bot factory
 - Remove files that ship with the game
 - Reduce the amount of orbital defence Uber will produce at one time
+- Uber avoids over-investing in anti-orbital defence
 
 ## v5.24.2 - 2023-06-18
 
