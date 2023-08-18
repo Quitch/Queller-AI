@@ -139,7 +139,7 @@ if (!quellerAILoaded) {
           neural_data_mod: 1,
           adv_eco_mod: 1.35,
           adv_eco_mod_alone: 0,
-          personality_tags: ["queller", "lateorbital"],
+          personality_tags: ["queller", "lateorbital", "1v1"],
           min_basic_fabbers: 3,
           min_advanced_fabbers: 1,
         },

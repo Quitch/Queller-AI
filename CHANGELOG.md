@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Uber 1v1 starts with a bot factory
+
 ## v5.24.2 - 2023-06-18
 
 - Fixed Queller not building Stingers
