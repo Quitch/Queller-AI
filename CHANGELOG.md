@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Uber 1v1 starts with a bot factory
+- Remove files that ship with the game
 
 ## v5.24.2 - 2023-06-18
 
