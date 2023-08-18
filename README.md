@@ -180,6 +180,11 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 
 - Grows its orbital presence faster
 
+### Platoon
+
+- Less armies
+- More units in armies
+
 ### Rush
 
 - Techs late

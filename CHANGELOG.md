@@ -6,6 +6,7 @@
 - Reduce the amount of orbital defence Uber will produce at one time
 - Uber avoids over-investing in anti-orbital defence
 - Uber's Commander more willing to contribute towards economy
+- Added Uber Platoon which uses less armies but more units in each army
 
 ## v5.24.2 - 2023-06-18
 
