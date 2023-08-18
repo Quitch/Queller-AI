@@ -1,0 +1,31 @@
+{
+  "platoon_templates": {
+    "Orbital_Ground_Attack_Queller": {
+      "units": [
+        {
+          "unit_types": "(Orbital & Offense & Mobile & (LaserPlatform | Heavy)) - Titan",
+          "min_count": 1,
+          "max_count": -1
+        }
+      ]
+    },
+    "Orbital_Fighter_Ground_Attack_Queller": {
+      "units": [
+        {
+          "unit_types": "(Orbital & Offense & Mobile & Heavy) - Titan",
+          "min_count": 1,
+          "max_count": -1
+        }
+      ]
+    },
+    "Orbital_Fighter_Attack_Queller": {
+      "units": [
+        {
+          "unit_types": "(Orbital & Offense & Mobile & Fighter) - Titan",
+          "min_count": 1,
+          "max_count": -1
+        }
+      ]
+    }
+  }
+}

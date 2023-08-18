@@ -1,0 +1,143 @@
+{
+  "build_list": [
+    {
+      "name": "Peacekeeper - Starcannon",
+      "to_build": "LegionBotBasicAssault",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["LegionOrbitalAdvancedCannon"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "queller",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Lancer - Starcannon",
+      "to_build": "LegionBotBasicSniper",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["LegionFactoryBasicBot", "LegionOrbitalAdvancedCannon"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "queller",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Orbweaver - Starcannon",
+      "to_build": "LegionBotAdvancedAA",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["LegionOrbitalAdvancedCannon"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & AirDefense",
+            "unit_type_string1": "Land & Mobile & Offense - Deconstruction - Fabber",
+            "compare0": "<",
+            "value0": 0.2
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Guardian - Starcannon",
+      "to_build": "LegionVehicleBasicCFab",
+      "instance_count": 1,
+      "priority": 97,
+      "builders": ["LegionOrbitalAdvancedCannon"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Mobile & (Construction | Scout) - Fabber",
+            "unit_type_string1": "Land & Mobile & Offense",
+            "compare0": "<",
+            "value0": 0.05
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Shank - Starcannon",
+      "to_build": "LegionVehicleBasicLaser",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["LegionOrbitalAdvancedCannon"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "queller",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Corsair - Starcannon",
+      "to_build": "LegionVehicleBasicArtillery",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["LegionFactoryBasicVehicle", "LegionOrbitalAdvancedCannon"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "queller",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Stoke",
+      "to_build": "LegionVehicleBasicHover",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["LegionOrbitalAdvancedCannon"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "queller",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Scorpion - Starcannon",
+      "to_build": "LegionVehicleAdvancedLaser",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["LegionOrbitalAdvancedCannon"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "queller",
+            "boolean": true
+          }
+        ]
+      ]
+    }
+  ]
+}

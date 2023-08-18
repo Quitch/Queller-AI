@@ -1,0 +1,36 @@
+{
+  "build_list": [
+    {
+      "name": "Nuke Missile",
+      "to_build": "NukeMissile",
+      "instance_count": -1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 12,
+      "priority": 151,
+      "builders": ["NukeSilo"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "FactoryHasOpenSlot"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Anti Nuke Missile",
+      "to_build": "AntiNukeMissile",
+      "instance_count": -1,
+      "min_num_assisters": 3,
+      "max_num_assisters": 12,
+      "priority": 151,
+      "builders": ["AntiNukeSilo"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "FactoryHasOpenSlot"
+          }
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "platoon_templates": {
+    "Icarus_Attack_Queller": {
+      "units": [
+        {
+          "unit_types": "Air & Mobile & EnergyProduction - Titan",
+          "min_count": 1,
+          "max_count": -1
+        }
+      ]
+    },
+    "BomberGunship_Attack_Queller": {
+      "units": [
+        {
+          "unit_types": "(Air & Offense & Mobile) - MissileDefense - Fighter - SelfDestruct - Titan",
+          "min_count": 1,
+          "max_count": -1
+        },
+        {
+          "unit_types": "(Air & Offense & Mobile & (Fighter | SelfDestruct)) - Titan",
+          "min_count": 0,
+          "max_count": -1,
+          "squad": "Escort"
+        },
+        {
+          "unit_types": "(Air & Mobile & MissileDefense) - Titan",
+          "min_count": 0,
+          "max_count": -1,
+          "squad": "Defense"
+        }
+      ]
+    },
+    "Fighter_Attack_Queller": {
+      "units": [
+        {
+          "unit_types": "(Air & Offense & Mobile & (Fighter | SelfDestruct)) - Titan",
+          "min_count": 1,
+          "max_count": -1
+        },
+        {
+          "unit_types": "(Air & Mobile & MissileDefense) - Titan",
+          "min_count": 0,
+          "max_count": -1,
+          "squad": "Defense"
+        }
+      ]
+    }
+  }
+}

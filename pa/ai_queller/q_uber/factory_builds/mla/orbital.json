@@ -1,0 +1,461 @@
+{
+  "build_list": [
+    {
+      "name": "Orbital Fabber",
+      "to_build": "OrbitalFabber",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 199,
+      "builders": ["AnyMLAOrbitalFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "PlanetCount",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Fabber",
+            "compare0": "<",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "orbital",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "OrbitalFabber"
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Fabber & Orbital",
+            "unit_type_string1": "Factory & Orbital",
+            "compare0": "<",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetOrGasGiantWithoutPresence",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "OrbitalFabber"
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "ARKYD",
+      "to_build": "BasicRadarSattelite",
+      "instance_count": 1,
+      "shared_instance_count": "ReconAssistance",
+      "cross_planet_shared_count": true,
+      "max_num_assisters": 10,
+      "priority": 98,
+      "builders": ["AnyMLAOrbitalFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
+            "test_type": "OtherPlanetNeedsReconAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "BasicRadarSattelite"
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Hermes - This Planet",
+      "to_build": "OrbitalProbe",
+      "instance_count": 1,
+      "priority": 99,
+      "builders": ["AnyMLAOrbitalFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "ThisPlanetNeedsReconAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "OrbitalProbe"
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Hermes - Other Planet",
+      "to_build": "OrbitalProbe",
+      "instance_count": 1,
+      "shared_instance_count": "ReconAssistance",
+      "cross_planet_shared_count": true,
+      "priority": 98,
+      "builders": ["AnyMLAOrbitalFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "OtherPlanetNeedsReconAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "OrbitalProbe"
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Avenger - Local Threat",
+      "to_build": "OrbitalFighter",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 98,
+      "builders": ["AnyMLAOrbitalFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Orbital",
+            "string1": "AntiOrbital",
+            "compare0": ">",
+            "value0": 1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Avenger - System Threat - Launcher",
+      "to_build": "OrbitalFighter",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["OrbitalLauncher"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Avenger - System Threat - Factory",
+      "to_build": "OrbitalFighter",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["OrbitalFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Astraeus - Initial Expansion/Naval multi-planet",
+      "to_build": "OrbitalLander",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 200,
+      "builders": ["OrbitalLauncher"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetWithoutPresence",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Transport",
+            "compare0": "<",
+            "value0": 1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Astraeus",
+      "to_build": "OrbitalLander",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 99,
+      "builders": ["AnyMLAOrbitalFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetWithoutPresence",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Transport",
+            "compare0": "<",
+            "value0": 1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "SXX-1304 Laser Platform",
+      "to_build": "OrbitalDeathLaser",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["OrbitalFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Orbital",
+            "string1": "AntiOrbital",
+            "compare0": "<",
+            "value0": 1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Advanced Radar Satellite - This Planet",
+      "to_build": "AdvancedRadarSattelite",
+      "instance_count": 1,
+      "max_num_assisters": 10,
+      "priority": 100,
+      "builders": ["OrbitalFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "ThisPlanetNeedsReconAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedRadarSattelite"
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Advanced Radar Satellite - Other Planet",
+      "to_build": "AdvancedRadarSattelite",
+      "instance_count": 1,
+      "shared_instance_count": "ReconAssistance",
+      "cross_planet_shared_count": true,
+      "max_num_assisters": 10,
+      "priority": 100,
+      "builders": ["OrbitalFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "OtherPlanetNeedsReconAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "AdvancedRadarSattelite"
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Artemis - Local Threat",
+      "to_build": "OrbitalRailgun",
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "priority": 98,
+      "builders": ["OrbitalFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "Orbital",
+            "compare0": ">=",
+            "value0": 2000
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "AntiSurface",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Structure & Orbital & OrbitalDefense",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Fighter & Advanced - Heavy",
+            "compare0": "<",
+            "value0": 3
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Artemis",
+      "to_build": "OrbitalRailgun",
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "priority": 97,
+      "builders": ["OrbitalFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">=",
+            "value0": 2000
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Omega",
+      "to_build": "OrbitalBattleShip",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 97,
+      "builders": ["OrbitalFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Orbital",
+            "string1": "AntiOrbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "AntiOrbital",
+            "compare0": ">",
+            "value0": 3000
+          }
+        ]
+      ]
+    }
+  ]
+}
