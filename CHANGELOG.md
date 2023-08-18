@@ -7,7 +7,7 @@
 - Uber avoids over-investing in anti-orbital defence
 - Uber's Commander more willing to contribute towards economy
 - Added Uber Platoon which uses less armies but more units in each army
-- Uber changes how it counts fabbers for teching
+- Changed how Uber counts fabbers for teching
 
 ## v5.24.2 - 2023-06-18
 
