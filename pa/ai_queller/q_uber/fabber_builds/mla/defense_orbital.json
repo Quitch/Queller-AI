@@ -158,7 +158,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (Economy | Factory | Important)",
+            "unit_type_string0": "Structure & ((MetalProduction | EnergyProduction & Advanced) | Factory | Important)",
             "compare0": ">=",
             "value0": 3
           },
@@ -186,7 +186,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (Economy | Factory | Important)",
+            "unit_type_string0": "Structure & ((MetalProduction | EnergyProduction & Advanced) | Factory | Important)",
             "compare0": ">=",
             "value0": 3
           },
@@ -207,7 +207,7 @@
         "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "Commander | (Structure & (Economy | Factory | Important))",
+            "unit_type_string": "Structure & ((MetalProduction | EnergyProduction & Advanced) | Factory | Important)",
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 50,
@@ -306,7 +306,7 @@
         "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "Commander | (Structure & ((EnergyProduction & Advanced) | Factory | PlanetEngine | ControlModule))",
+            "unit_type_string": "Structure & ((EnergyProduction & Advanced) | Factory | PlanetEngine | ControlModule)",
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 50,
