@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v5.25.0 - 2023-08-19
 
 - Uber 1v1 starts with a bot factory
 - Reduce the amount of orbital defence Uber will produce at one time
