@@ -16,6 +16,7 @@
 - Uber will produce Panzers to protect bases under orbital attack
 - Fix issue where Uber might never go advanced on planets it owned
 - Loosen restriction on owned planet factory builds when troops are desired elsewhere
+- Slow down rate of Uber's light artillery builds
 
 ## v5.24.2 - 2023-06-18
 
