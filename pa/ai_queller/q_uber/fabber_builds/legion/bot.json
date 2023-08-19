@@ -369,12 +369,24 @@
             "boolean": false
           },
           {
-            "test_type": "UnableToExpand",
+            "test_type": "AloneOnPlanet",
             "boolean": true
           },
           {
-            "test_type": "CanDeployLandFromBase",
+            "test_type": "PlanetIsMainEcoBase",
             "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": false
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryAdvancedBot"
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -393,7 +405,7 @@
             "boolean": false
           },
           {
-            "test_type": "HaveEcoForAdvanced",
+            "test_type": "UnableToExpand",
             "boolean": true
           },
           {
@@ -405,12 +417,6 @@
             "unit_type_string0": "Factory & Advanced - Orbital",
             "compare0": "<",
             "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber - Orbital - Naval",
-            "compare0": ">=",
-            "value0": 5
           },
           {
             "test_type": "CanFindPlaceToBuild",
