@@ -11,6 +11,7 @@
 - All difficulties build land titans
 - Fixed Uber producing Imperators in low threat systems
 - Fixed Uber orbital factories sometimes sitting idle
+- Uber FFA uses Uber Platoon's approach to armies
 
 ## v5.24.2 - 2023-06-18
 

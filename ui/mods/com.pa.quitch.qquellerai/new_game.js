@@ -193,7 +193,7 @@ if (!quellerAILoaded) {
           neural_data_mod: 0.85,
           adv_eco_mod: 0.75,
           adv_eco_mod_alone: 0,
-          personality_tags: ["queller", "ffa"],
+          personality_tags: ["queller", "ffa", "platoon"],
           min_basic_fabbers: 4,
           min_advanced_fabbers: 1,
         },
