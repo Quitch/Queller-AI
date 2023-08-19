@@ -53,13 +53,6 @@
             "boolean": true
           },
           {
-            "test_type": "SystemToPlanetThreatRatio",
-            "string0": "Land",
-            "string1": "AntiSurface",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicBotFactory"
           },
@@ -139,13 +132,6 @@
           {
             "test_type": "OtherPlanetNeedsLandUnitAssistance",
             "boolean": true
-          },
-          {
-            "test_type": "SystemToPlanetThreatRatio",
-            "string0": "Land",
-            "string1": "AntiSurface",
-            "compare0": ">",
-            "value0": 1
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -287,13 +273,6 @@
           {
             "test_type": "CanDeployLandFromBase",
             "boolean": true
-          },
-          {
-            "test_type": "SystemToPlanetThreatRatio",
-            "string0": "Land",
-            "string1": "AntiSurface",
-            "compare0": ">",
-            "value0": 1
           },
           {
             "test_type": "CanAffordPotentialDrain",
