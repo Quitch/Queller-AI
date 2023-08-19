@@ -14,6 +14,7 @@
 - Uber FFA uses Uber Platoon's approach to armies
 - Uber will produce Storms to protect bases under air attack
 - Uber will produce Panzers to protect bases under orbital attack
+- Fix issue where Uber might never go advanced on planets it owned
 
 ## v5.24.2 - 2023-06-18
 
