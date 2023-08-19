@@ -10,12 +10,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
-          },
-          {
             "test_type": "PlanetCount",
             "compare0": ">",
             "value0": 1
@@ -42,12 +36,6 @@
             "string0": "OrbitalFabber"
           },
           {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
-          },
-          {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Fabber & Orbital",
             "unit_type_string1": "Factory & Orbital",
@@ -63,12 +51,6 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "OrbitalFabber"
-          },
-          {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
           }
         ]
       ]
@@ -95,12 +77,6 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicRadarSattelite"
-          },
-          {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
           }
         ]
       ]
@@ -120,12 +96,6 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "OrbitalProbe"
-          },
-          {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
           }
         ]
       ]
@@ -147,12 +117,6 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "OrbitalProbe"
-          },
-          {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
           }
         ]
       ]
@@ -213,6 +177,24 @@
       ]
     },
     {
+      "name": "Avenger - Base Threat",
+      "to_build": "OrbitalFighter",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 300,
+      "builders": ["AnyMLAOrbitalFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
       "name": "Astraeus - Initial Expansion/Naval multi-planet",
       "to_build": "OrbitalLander",
       "instance_count": 1,
@@ -224,12 +206,6 @@
           {
             "test_type": "PlanetWithoutPresence",
             "boolean": true
-          },
-          {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -264,12 +240,6 @@
             "boolean": false
           },
           {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
-          },
-          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Orbital & Transport",
             "compare0": "<",
@@ -287,12 +257,6 @@
       "builders": ["OrbitalFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
-          },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Orbital",
@@ -319,12 +283,6 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "AdvancedRadarSattelite"
-          },
-          {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
           }
         ]
       ]
@@ -351,12 +309,6 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "AdvancedRadarSattelite"
-          },
-          {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
           }
         ]
       ]
@@ -370,12 +322,6 @@
       "builders": ["OrbitalFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
-          },
           {
             "test_type": "PlanetThreat",
             "string0": "Orbital",
@@ -412,12 +358,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
-          },
-          {
             "test_type": "SystemThreat",
             "string0": "Orbital",
             "compare0": ">=",
@@ -436,23 +376,19 @@
       "build_conditions": [
         [
           {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Orbital",
-            "string1": "AntiOrbital",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
             "test_type": "SystemThreat",
             "string0": "AntiOrbital",
             "compare0": ">",
             "value0": 3000
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Orbital",
+            "string1": "AntiOrbital",
+            "compare0": ">=",
+            "value0": 1
           }
         ]
       ]

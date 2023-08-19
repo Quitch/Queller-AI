@@ -8,7 +8,9 @@
 - Uber's Commander more willing to contribute towards economy
 - Added Uber Platoon which uses less armies but more units in each army
 - Changed how Uber counts fabbers for teching
-- All difficulties build land titans again
+- All difficulties build land titans
+- Fixed Uber producing Imperators in low threat systems
+- Fixed Uber orbital factories sometimes sitting idle
 
 ## v5.24.2 - 2023-06-18
 

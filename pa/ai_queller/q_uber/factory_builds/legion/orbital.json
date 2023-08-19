@@ -10,12 +10,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
-          },
-          {
             "test_type": "PlanetCount",
             "compare0": ">",
             "value0": 1
@@ -40,12 +34,6 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "LegionOrbitalBasicFabber"
-          },
-          {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
           },
           {
             "test_type": "UnitRatioOnPlanet",
@@ -213,6 +201,24 @@
       ]
     },
     {
+      "name": "Viper - Base Threat",
+      "to_build": "LegionOrbitalBasicFighter",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 300,
+      "builders": ["AnyLegionFactoryOrbital"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
       "name": "Chariot - Initial Expansion/Naval multi-planet",
       "to_build": "LegionOrbitalBasicTransport",
       "instance_count": 1,
@@ -224,12 +230,6 @@
           {
             "test_type": "PlanetWithoutPresence",
             "boolean": true
-          },
-          {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
           },
           {
             "test_type": "UnitCountOnPlanet",
@@ -264,12 +264,6 @@
             "boolean": false
           },
           {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
-          },
-          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Orbital & Transport",
             "compare0": "<",
@@ -287,12 +281,6 @@
       "builders": ["LegionFactoryAdvancedOrbital"],
       "build_conditions": [
         [
-          {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
-          },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Orbital",
@@ -371,12 +359,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
-          },
-          {
             "test_type": "SystemThreat",
             "string0": "Orbital",
             "compare0": ">=",
@@ -394,12 +376,6 @@
       "builders": ["OrbitalFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
-          },
           {
             "test_type": "PlanetThreat",
             "string0": "Orbital",
@@ -436,23 +412,19 @@
       "build_conditions": [
         [
           {
-            "test_type": "BaseThreat",
-            "string0": "Orbital",
-            "compare0": "<=",
-            "value0": 0
-          },
-          {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "string0": "Orbital",
-            "string1": "AntiOrbital",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
             "test_type": "SystemThreat",
             "string0": "AntiOrbital",
             "compare0": ">",
             "value0": 3000
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Orbital",
+            "string1": "AntiOrbital",
+            "compare0": ">=",
+            "value0": 1
           }
         ]
       ]
