@@ -4,6 +4,7 @@
       "name": "Centurion - Base",
       "to_build": "LegionDefenseBasicOrbitalII",
       "instance_count": 1,
+      "shared_instance_count": "OrbitalDefense",
       "max_num_assisters": 1,
       "priority": 401,
       "base_sort": "FromMainBase",
@@ -31,7 +32,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure - Defense",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory | Important)",
             "compare0": ">=",
             "value0": 1
           },
@@ -46,7 +47,7 @@
         "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "Structure - Defense",
+            "unit_type_string": "Structure & ((EnergyProduction & Advanced) | Factory | Important)",
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 50,
@@ -66,6 +67,7 @@
       "name": "Centurion - Beachhead",
       "to_build": "LegionDefenseBasicOrbitalII",
       "instance_count": 1,
+      "shared_instance_count": "OrbitalDefense",
       "max_num_assisters": 1,
       "priority": 478,
       "base_sort": "FromMainBase",
@@ -130,6 +132,7 @@
       "name": "Tola - Rush",
       "to_build": "LegionDefenseBasicOrbital",
       "instance_count": 1,
+      "shared_instance_count": "OrbitalDefense",
       "priority": 456,
       "min_num_assisters": 2,
       "max_num_assisters": 4,
@@ -145,6 +148,12 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 9000
+          },
+          {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Orbital",
             "string1": "AntiOrbital",
@@ -153,9 +162,9 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (Economy | Factory | Important)",
+            "unit_type_string0": "Structure & (((MetalProduction | EnergyProduction) & Advanced) | Factory | Important)",
             "compare0": ">=",
-            "value0": 1
+            "value0": 3
           },
           {
             "test_type": "UnitCountInBase",
@@ -173,7 +182,7 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "test_type": "BaseThreatRatio",
             "string0": "Orbital",
             "string1": "AntiOrbital",
             "compare0": ">",
@@ -181,9 +190,9 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Commander",
+            "unit_type_string0": "Structure & (((MetalProduction | EnergyProduction) & Advanced) | Factory | Important)",
             "compare0": ">=",
-            "value0": 1
+            "value0": 3
           },
           {
             "test_type": "UnitCountInBase",
@@ -202,7 +211,7 @@
         "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "Commander | (Structure & (Economy | Factory | Important))",
+            "unit_type_string": "Structure & (((MetalProduction | EnergyProduction) & Advanced) | Factory | Important)",
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 50,
@@ -222,6 +231,7 @@
       "name": "Tola - Base",
       "to_build": "LegionDefenseBasicOrbital",
       "instance_count": 1,
+      "shared_instance_count": "OrbitalDefense",
       "priority": 279,
       "min_num_assisters": 1,
       "max_num_assisters": 3,
@@ -257,7 +267,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory | PlanetEngine | ControlModule)",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory | Important)",
             "compare0": ">=",
             "value0": 1
           },
@@ -289,34 +299,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory | PlanetEngine | ControlModule)",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionDefenseBasicOrbital"
-          }
-        ],
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "SystemThreat",
-            "string0": "Orbital",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Defense - Artillery - SurfaceDefense - AirDefense - Naval",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Commander",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory | Important)",
             "compare0": ">=",
             "value0": 1
           },
@@ -331,7 +314,7 @@
         "placement_type": "FromBaseCenter",
         "unit_count_rules": [
           {
-            "unit_type_string": "Commander | (Structure & ((EnergyProduction & Advanced) | Factory | PlanetEngine | ControlModule))",
+            "unit_type_string": "Structure & ((EnergyProduction & Advanced) | Factory | Important)",
             "alliance": "Ally",
             "compare_type": ">=",
             "range": 50,
@@ -351,6 +334,7 @@
       "name": "Tola - Lock Down The Planet",
       "to_build": "LegionDefenseBasicOrbital",
       "instance_count": 1,
+      "shared_instance_count": "OrbitalDefense",
       "priority": 401,
       "min_num_assisters": 1,
       "max_num_assisters": 3,
@@ -414,6 +398,7 @@
       "name": "Tola - Orbital snipes",
       "to_build": "LegionDefenseBasicOrbital",
       "instance_count": 1,
+      "shared_instance_count": "OrbitalDefense",
       "priority": 457,
       "min_num_assisters": 1,
       "max_num_assisters": 3,

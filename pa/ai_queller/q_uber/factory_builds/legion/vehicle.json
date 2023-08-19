@@ -699,6 +699,15 @@
             "test_type": "OtherPlanetNeedsLandUnitAssistance",
             "boolean": true
           }
+        ],
+        [
+          {
+            "test_type": "BaseThreatRatio",
+            "string0": "Orbital",
+            "string1": "AntiOrbital",
+            "compare0": ">",
+            "value0": 1
+          }
         ]
       ]
     }

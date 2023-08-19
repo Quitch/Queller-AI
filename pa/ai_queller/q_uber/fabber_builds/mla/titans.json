@@ -1,15 +1,15 @@
 {
   "build_list": [
     {
-      "name": "Zeus",
-      "to_build": "TeslaGunship",
+      "name": "Atlas",
+      "to_build": "SeismicBot",
       "instance_count": 1,
       "min_num_assisters": 5,
       "max_num_assisters": 15,
       "shared_instance_count": "NukeSilo",
-      "priority": 381,
-      "base_sort": "FromMainBase",
-      "builders": ["AdvancedAirFabber", "OrbitalFabber"],
+      "priority": 277,
+      "base_sort": "FromBuilder",
+      "builders": ["AdvancedBotFabber", "SupportCommander"],
       "build_conditions": [
         [
           {
@@ -25,9 +25,111 @@
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreat",
-            "string0": "AntiSurface",
+            "string0": "Economy",
             "compare0": ">",
-            "value0": 8400
+            "value0": 5000
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": ">=",
+            "value0": 15
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "SeismicBot"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBasePerimeter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Ares",
+      "to_build": "FortressVehicle",
+      "instance_count": 1,
+      "min_num_assisters": 5,
+      "max_num_assisters": 15,
+      "shared_instance_count": "NukeSilo",
+      "priority": 381,
+      "base_sort": "FromBuilder",
+      "builders": ["AdvancedVehicleFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Economy",
+            "compare0": ">",
+            "value0": 5000
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": ">=",
+            "value0": 15
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "FortressVehicle"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromBasePerimeter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Zeus",
+      "to_build": "TeslaGunship",
+      "instance_count": 1,
+      "min_num_assisters": 5,
+      "max_num_assisters": 15,
+      "shared_instance_count": "NukeSilo",
+      "priority": 381,
+      "base_sort": "FromMainBase",
+      "builders": ["AdvancedAirFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreat",
+            "string0": "Economy",
+            "compare0": ">",
+            "value0": 5000
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",

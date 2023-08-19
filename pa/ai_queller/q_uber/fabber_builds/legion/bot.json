@@ -104,13 +104,6 @@
             "boolean": true
           },
           {
-            "test_type": "SystemToPlanetThreatRatio",
-            "string0": "Land",
-            "string1": "AntiSurface",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "LegionFactoryBasicBot"
           },
@@ -200,13 +193,6 @@
           {
             "test_type": "OtherPlanetNeedsLandUnitAssistance",
             "boolean": true
-          },
-          {
-            "test_type": "SystemToPlanetThreatRatio",
-            "string0": "Land",
-            "string1": "AntiSurface",
-            "compare0": ">",
-            "value0": 1
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -328,7 +314,7 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber & Land",
+            "unit_type_string0": "Fabber - Orbital - Naval",
             "compare0": ">=",
             "value0": 5
           },
@@ -363,19 +349,12 @@
             "boolean": true
           },
           {
-            "test_type": "SystemToPlanetThreatRatio",
-            "string0": "Land",
-            "string1": "AntiSurface",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "LegionFactoryAdvancedBot"
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber & Land",
+            "unit_type_string0": "Fabber - Orbital - Naval",
             "compare0": ">=",
             "value0": 5
           },
@@ -429,9 +408,43 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber & Land",
+            "unit_type_string0": "Fabber - Orbital - Naval",
             "compare0": ">=",
             "value0": 5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryAdvancedBot"
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryAdvancedBot"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital - Naval",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Advanced - Orbital",
+            "compare0": "<",
+            "value0": 1
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -509,7 +522,7 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber & Land",
+            "unit_type_string0": "Fabber - Orbital - Naval",
             "compare0": ">=",
             "value0": 5
           },
