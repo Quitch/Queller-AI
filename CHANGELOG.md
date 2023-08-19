@@ -5,7 +5,7 @@
 - Uber 1v1 starts with a bot factory
 - Reduce the amount of orbital defence Uber will produce at one time
 - Uber avoids over-investing in anti-orbital defence
-- Uber's Commander more willing to contribute towards economy
+- Uber's Commander more willing to contribute towards energy production
 - Added Uber Platoon which uses less armies but more units in each army
 - Changed how Uber counts fabbers for teching
 - All difficulties build land titans
@@ -14,7 +14,7 @@
 - Uber FFA uses Uber Platoon's approach to armies
 - Uber will produce Storms to protect bases under air attack
 - Uber will produce Panzers to protect bases under orbital attack
-- Fix issue where Uber might never go advanced on planets it owned
+- Fixed issue where Uber might never go advanced on planets it owned
 - Loosen restriction on owned planet factory builds when troops are desired elsewhere
 - Slow down rate of Uber's light artillery builds
 
