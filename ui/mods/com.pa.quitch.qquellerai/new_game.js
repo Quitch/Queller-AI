@@ -335,46 +335,46 @@ function quellerAIPersonalities() {
     model.startGame = (function () {
       var cachedFunction = model.startGame;
 
+      var personalityNames = function (personalities) {
+        return _.keys(personalities);
+      };
+
+      var randomPersonalityNames = function (personalities) {
+        return _.filter(personalityNames(personalities), function (name) {
+          return _.endsWith(name, "Random");
+        });
+      };
+
+      var uberPersonalityNames = function (personalities) {
+        return _.filter(personalityNames(personalities), function (name) {
+          return _.startsWith(name, "qUber") && !_.endsWith(name, "Random");
+        });
+      };
+
+      var selectUberPersonality = function (personalities) {
+        return _.sample(uberPersonalityNames(personalities));
+      };
+
+      var selectPersonality = function (personalities) {
+        var nonUberPersonalities = _.xor(
+          personalityNames(personalities),
+          randomPersonalityNames(personalities),
+          uberPersonalityNames(personalities)
+        );
+        // avoid oversampling Uber
+        var oneOfEachDifficulty = nonUberPersonalities.concat(
+          selectUberPersonality(personalities)
+        );
+        return _.sample(oneOfEachDifficulty);
+      };
+
+      var assignPersonality = function (personality, personalities) {
+        return personality === "qRandom"
+          ? selectPersonality(personalities)
+          : selectUberPersonality(personalities);
+      };
+
       return function () {
-        var personalityNames = function (personalities) {
-          return _.keys(personalities);
-        };
-
-        var randomPersonalityNames = function (personalities) {
-          return _.filter(personalityNames(personalities), function (name) {
-            return _.endsWith(name, "Random");
-          });
-        };
-
-        var uberPersonalityNames = function (personalities) {
-          return _.filter(personalityNames(personalities), function (name) {
-            return _.startsWith(name, "qUber") && !_.endsWith(name, "Random");
-          });
-        };
-
-        var selectUberPersonality = function (personalities) {
-          return _.sample(uberPersonalityNames(personalities));
-        };
-
-        var selectPersonality = function (personalities) {
-          var nonUberPersonalities = _.xor(
-            personalityNames(personalities),
-            randomPersonalityNames(personalities),
-            uberPersonalityNames(personalities)
-          );
-          // avoid oversampling Uber
-          var oneOfEachDifficulty = nonUberPersonalities.concat(
-            selectUberPersonality(personalities)
-          );
-          return _.sample(oneOfEachDifficulty);
-        };
-
-        var assignPersonality = function (personality, personalities) {
-          return personality === "qRandom"
-            ? selectPersonality(personalities)
-            : selectUberPersonality(personalities);
-        };
-
         _.forEach(model.armies(), function (army) {
           _.forEach(army.slots(), function (slot) {
             if (
