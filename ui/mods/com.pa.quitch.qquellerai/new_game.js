@@ -8,13 +8,13 @@ function quellerAIPersonalities() {
   quellerAILoaded = true;
 
   try {
-    var aiPathCasual = "/pa/ai_queller/q_casual";
-    var aiPathBronze = "/pa/ai_queller/q_bronze";
-    var aiPathSilver = "/pa/ai_queller/q_silver";
-    var aiPathGold = "/pa/ai_queller/q_gold";
-    var aiPathPlatinum = "/pa/ai_queller/q_platinum";
-    var aiPathUber = "/pa/ai_queller/q_uber";
-    var quellerPersonalities = {
+    const aiPathCasual = "/pa/ai_queller/q_casual";
+    const aiPathBronze = "/pa/ai_queller/q_bronze";
+    const aiPathSilver = "/pa/ai_queller/q_silver";
+    const aiPathGold = "/pa/ai_queller/q_gold";
+    const aiPathPlatinum = "/pa/ai_queller/q_platinum";
+    const aiPathUber = "/pa/ai_queller/q_uber";
+    const quellerPersonalities = {
       qCasual: {
         ai_path: aiPathCasual,
         display_name: "!LOC:Q-Casual",
@@ -316,10 +316,10 @@ function quellerAIPersonalities() {
       },
     };
 
-    var newPersonalities = _.mapValues(
+    const newPersonalities = _.mapValues(
       quellerPersonalities,
       function (personality, name) {
-        var result = _.assign(
+        const result = _.assign(
           _.clone(model.aiPersonalities().Absurd),
           personality
         );
@@ -333,42 +333,42 @@ function quellerAIPersonalities() {
 
     // assign personalities to Randoms when start game clicked
     model.startGame = (function () {
-      var cachedFunction = model.startGame;
+      const cachedFunction = model.startGame;
 
-      var personalityNames = function (personalities) {
+      const personalityNames = function (personalities) {
         return _.keys(personalities);
       };
 
-      var randomPersonalityNames = function (personalities) {
+      const randomPersonalityNames = function (personalities) {
         return _.filter(personalityNames(personalities), function (name) {
           return _.endsWith(name, "Random");
         });
       };
 
-      var uberPersonalityNames = function (personalities) {
+      const uberPersonalityNames = function (personalities) {
         return _.filter(personalityNames(personalities), function (name) {
           return _.startsWith(name, "qUber") && !_.endsWith(name, "Random");
         });
       };
 
-      var selectUberPersonality = function (personalities) {
+      const selectUberPersonality = function (personalities) {
         return _.sample(uberPersonalityNames(personalities));
       };
 
-      var selectPersonality = function (personalities) {
-        var nonUberPersonalities = _.xor(
+      const selectPersonality = function (personalities) {
+        const nonUberPersonalities = _.xor(
           personalityNames(personalities),
           randomPersonalityNames(personalities),
           uberPersonalityNames(personalities)
         );
         // avoid oversampling Uber
-        var oneOfEachDifficulty = nonUberPersonalities.concat(
+        const oneOfEachDifficulty = nonUberPersonalities.concat(
           selectUberPersonality(personalities)
         );
         return _.sample(oneOfEachDifficulty);
       };
 
-      var assignPersonality = function (personality, personalities) {
+      const assignPersonality = function (personality, personalities) {
         return personality === "qRandom"
           ? selectPersonality(personalities)
           : selectUberPersonality(personalities);
@@ -384,7 +384,7 @@ function quellerAIPersonalities() {
                 slot.aiPersonality()
               )
             ) {
-              var personality = assignPersonality(
+              const personality = assignPersonality(
                 slot.aiPersonality(),
                 newPersonalities
               );
