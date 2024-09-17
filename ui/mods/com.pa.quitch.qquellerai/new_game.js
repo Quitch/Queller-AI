@@ -331,67 +331,70 @@ function quellerAIPersonalities() {
     _.assign(model.aiPersonalities(), newPersonalities);
     model.aiPersonalities.valueHasMutated();
 
-    // assign personalities to Randoms when start game clicked
+    const personalityNames = function (personalities) {
+      return _.keys(personalities);
+    };
+
+    const randomPersonalityNames = function (personalities) {
+      return _.filter(personalityNames(personalities), function (name) {
+        return _.endsWith(name, "Random");
+      });
+    };
+
+    const uberPersonalityNames = function (personalities) {
+      return _.filter(personalityNames(personalities), function (name) {
+        return _.startsWith(name, "qUber") && !_.endsWith(name, "Random");
+      });
+    };
+
+    const selectUberPersonality = function (personalities) {
+      return _.sample(uberPersonalityNames(personalities));
+    };
+
+    const selectPersonality = function (personalities) {
+      const nonUberPersonalities = _.xor(
+        personalityNames(personalities),
+        randomPersonalityNames(personalities),
+        uberPersonalityNames(personalities)
+      );
+      // avoid oversampling Uber
+      const oneOfEachDifficulty = nonUberPersonalities.concat(
+        selectUberPersonality(personalities)
+      );
+      return _.sample(oneOfEachDifficulty);
+    };
+
+    const assignPersonality = function (personality, personalities) {
+      return personality === "qRandom"
+        ? selectPersonality(personalities)
+        : selectUberPersonality(personalities);
+    };
+
+    const assignRandomPersonalities = function () {
+      _.forEach(model.armies(), function (army) {
+        _.forEach(army.slots(), function (slot) {
+          if (
+            slot.ai() === true &&
+            _.includes(
+              randomPersonalityNames(newPersonalities),
+              slot.aiPersonality()
+            )
+          ) {
+            const personality = assignPersonality(
+              slot.aiPersonality(),
+              newPersonalities
+            );
+            slot.aiPersonality(personality);
+          }
+        });
+      });
+    };
+
     model.startGame = (function () {
       const cachedFunction = model.startGame;
 
-      const personalityNames = function (personalities) {
-        return _.keys(personalities);
-      };
-
-      const randomPersonalityNames = function (personalities) {
-        return _.filter(personalityNames(personalities), function (name) {
-          return _.endsWith(name, "Random");
-        });
-      };
-
-      const uberPersonalityNames = function (personalities) {
-        return _.filter(personalityNames(personalities), function (name) {
-          return _.startsWith(name, "qUber") && !_.endsWith(name, "Random");
-        });
-      };
-
-      const selectUberPersonality = function (personalities) {
-        return _.sample(uberPersonalityNames(personalities));
-      };
-
-      const selectPersonality = function (personalities) {
-        const nonUberPersonalities = _.xor(
-          personalityNames(personalities),
-          randomPersonalityNames(personalities),
-          uberPersonalityNames(personalities)
-        );
-        // avoid oversampling Uber
-        const oneOfEachDifficulty = nonUberPersonalities.concat(
-          selectUberPersonality(personalities)
-        );
-        return _.sample(oneOfEachDifficulty);
-      };
-
-      const assignPersonality = function (personality, personalities) {
-        return personality === "qRandom"
-          ? selectPersonality(personalities)
-          : selectUberPersonality(personalities);
-      };
-
       return function () {
-        _.forEach(model.armies(), function (army) {
-          _.forEach(army.slots(), function (slot) {
-            if (
-              slot.ai() === true &&
-              _.includes(
-                randomPersonalityNames(newPersonalities),
-                slot.aiPersonality()
-              )
-            ) {
-              const personality = assignPersonality(
-                slot.aiPersonality(),
-                newPersonalities
-              );
-              slot.aiPersonality(personality);
-            }
-          });
-        });
+        assignRandomPersonalities();
 
         return cachedFunction.apply(this, arguments);
       };
