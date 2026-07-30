@@ -6,6 +6,7 @@
 - Fixed Legion builds failing due to an invalid fabber name
 - Gold and above would never build the Legion Infiltrator due to an invalid factory name
 - The large suicide platoon called on a platoon that didn't exist
+- Queller couldn't form small swarm platoons because the template didn't exist
 
 ## v5.25.0 - 2023-08-19
 
