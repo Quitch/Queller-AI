@@ -85,10 +85,28 @@ what Chrome 40 genuinely has, each annotated with the Chrome release. That list 
 answer to "may I use X?" — no entry means no. `ecmaVersion` is pinned at 6 as a
 parse-time backstop.
 
-There are no tests. Validate data changes by reading them and by playing the AI. That is
-also why lodash is **not** an npm dependency (removed in `a35eeefe`): `_` is a PA runtime
-global, declared in `eslint.config.mjs`'s `globals` block, and with no Node harness there
-is nothing local that needs the real package.
+There are no tests. That is also why lodash is **not** an npm dependency (removed in
+`a35eeefe`): `_` is a PA runtime global, declared in `eslint.config.mjs`'s `globals`
+block, and with no Node harness there is nothing local that needs the real package.
+
+### Diagnostics
+
+Lint and format say nothing about whether the AI data is _correct_ — no tooling here
+resolves a `to_build` against a unit map or a platoon template. The engine does, and it
+will tell you, but only if asked. Launch PA (or a dedicated server) with:
+
+| flag         | effect                                                                                                             |
+| ------------ | ------------------------------------------------------------------------------------------------------------------ |
+| `--ai-log`   | "Enables AI logging." Writes AI diagnostics to the server log, including files the AI tried to load and could not. |
+| `--ai-debug` | "Enables AI debugging."                                                                                            |
+| `--no-ai`    | "Prevents ticking of AI armies."                                                                                   |
+
+(Descriptions are the engine's own, from `bin_x64/server.exe` and `bin_x64/PA.exe`.)
+
+`--ai-log` is the tool that found the missing `ai_config.json`, and it is the right first
+step for anything in "Known data inconsistencies" — those are unresolved names found by
+reading the data, and the log is what turns a suspicion into a fact. Reach for it before
+concluding that a build entry "works" because the AI did not visibly break.
 
 ## Relationship to the base install
 
@@ -395,9 +413,10 @@ shipped — checked against both this repo and the whole base install:
 - Platoon template `target_priorities` — supported per the docs, used by neither Queller
   nor the base game's AI data.
 - The `ai_config.json` fallback to `/pa/ai/` for an AI tree that does not ship one. It
-  was intended, never implemented, and the omission is silent — the tier just runs
-  uncapped. Fixed here by giving every tier its own copy; see "How the engine consumes a
-  tier".
+  was intended but never implemented, so a tier without one just runs uncapped. The
+  engine does report it — the missing file shows up in the server log under `--ai-log`
+  (see "Diagnostics"), which is how it was found. Fixed here by giving every tier its own
+  copy; see "How the engine consumes a tier".
 
 Conversely, `cross_planet_shared_count` is used 48 times here and 25 times in the base
 game's AI data but appears in no published documentation.
@@ -410,10 +429,11 @@ than the documented `Custom1`–`Custom4`.
 ## Known data inconsistencies
 
 These are all present in the base install's copy too, so they are long-standing rather
-than regressions. None of them has been confirmed against a running game — the engine
-may silently drop an unresolvable reference rather than fail — but each is a name that
-does not resolve against anything this repo ships. Treat the list as a checklist when
-touching the surrounding files, not as a work queue.
+than regressions. Each is a name that does not resolve against anything this repo ships;
+what the engine does about it — drop the entry, fall back, or complain — has not been
+checked. Running with `--ai-log` (see "Diagnostics") is the way to settle that, exactly
+as it settled the `ai_config.json` case. Treat the list as a checklist when touching the
+surrounding files, not as a work queue.
 
 - **Unresolved platoon template references** (`platoon_builds` → `platoon_templates`):
   - `Boom_Attack_Large_Queller` is referenced by `q_{silver,gold,uber}/platoon_builds/land.json`,
