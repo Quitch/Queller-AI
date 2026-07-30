@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v5.25.1 - 2026-07-30
 
 - Add an AI config to limit unit numbers as the intended fallback to the TITANS AI's settings was apparently never added to the game
 - Fixed Legion builds failing due to an invalid fabber name
