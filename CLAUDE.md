@@ -15,12 +15,12 @@ build step and no compiled code; the only tooling is lint/format.
 Queller has been **upstreamed into the base game**: a snapshot of this tree ships in
 the install at `media/pa_ex1/ai_queller/`, and the personalities are hard-coded in
 `media/ui/main/game/new_game/js/ai.js`. This repo is the live upstream and can ship
-ahead of the game. As of the current `develop` the base install carries 399 of these
-files and 394 of them are JSON-equal with this repo's copy; the five
-`*/platoon_templates/scout.json` differ (the mod dropped `Stryker_Scout_Queller`) and
-the six `*/ai_config.json` are new here (`4fe4946b`). That near-identity is the normal
-steady state, not a coincidence — see "Relationship to the base install" below for why
-it matters.
+ahead of the game, and currently does: the base install's 399 files are a **frozen
+snapshot**, and as of `develop` only 359 of them are still JSON-equal with this repo — 40
+differ and 6 are new here. Expect that gap to widen, not close. It matters because a
+stock install without this mod runs the old snapshot, bugs and all: the July 2026
+integrity fixes (see "Data integrity") are live only for players who have the mod
+installed. See "Relationship to the base install" for how the shadowing actually works.
 
 The base game install (a `media` folder under Steam's `.../Planetary Annihilation
 Titans/`) is not part of this repo and lives at a different path on every
@@ -104,8 +104,7 @@ will tell you, but only if asked. Launch PA (or a dedicated server) with:
 (Descriptions are the engine's own, from `bin_x64/server.exe` and `bin_x64/PA.exe`.)
 
 `--ai-log` is the tool that found the missing `ai_config.json`, and it is the right first
-step for anything in "Known data inconsistencies" — those are unresolved names found by
-reading the data, and the log is what turns a suspicion into a fact. Reach for it before
+step whenever a name might not resolve (see "Data integrity"). Reach for it before
 concluding that a build entry "works" because the AI did not visibly break.
 
 ## Relationship to the base install
@@ -294,7 +293,7 @@ data. Squad types in use: `General` (120), `Artillery` (114), `Defense` (102), `
 
 Template names are the contract between `platoon_templates/` and `platoon_builds/`;
 they are plain strings with no validation, so a rename in one place and not the other
-fails silently (see "Known data inconsistencies").
+fails silently (see "Data integrity").
 
 ### Personalities and subpersonality tags
 
@@ -426,39 +425,42 @@ The wiki's unit-type list is also incomplete. Base TITANS specs additionally use
 `Vehicle` and `WaterHover`, and the `Custom*` range goes at least to `Custom58` rather
 than the documented `Custom1`–`Custom4`.
 
-## Known data inconsistencies
+## Data integrity
 
-These are all present in the base install's copy too, so they are long-standing rather
-than regressions. Each is a name that does not resolve against anything this repo ships;
-what the engine does about it — drop the entry, fall back, or complain — has not been
-checked. Running with `--ai-log` (see "Diagnostics") is the way to settle that, exactly
-as it settled the `ai_config.json` case. Treat the list as a checklist when touching the
-surrounding files, not as a work queue.
+Nothing in the tooling resolves a name. `to_build`, `builders`, `test_type` and template
+names are plain strings the engine looks up at load, so a rename in one file and not
+another is invisible to `eslint`, to `prettier`, and to a casual read. A sweep in
+July 2026 found seven such breaks, all of them years old and all still present in the
+base install's snapshot. They are fixed here:
 
-- **Unresolved platoon template references** (`platoon_builds` → `platoon_templates`):
-  - `Boom_Attack_Large_Queller` is referenced by `q_{silver,gold,uber}/platoon_builds/land.json`,
-    but the template in `platoon_templates/land.json` is named `Boom_Attack_Large` — the
-    `_Queller` suffix is missing on the template in **all six** tiers.
-  - `Swarm_Raid_Small` / `Swarm_Raid_Medium` are referenced by
-    `q_{gold,platinum,uber}/platoon_builds/hover.json` (and
-    `q_uber/platoon_builds/subpersonalities/platoon_hover.json`); only
-    `Swarm_Raid_Max_Queller` exists.
-  - `Teleporter_Attack_Alone_Queller` is referenced by
-    `q_casual/platoon_builds/transfer.json`; only `Teleporter_Attack_Queller` exists.
-- **Unresolved unit map references** (`builders` → `unit_maps`), transposed names:
-  - `AnyLegionBasicFabber` (all six tiers) — the map defines `AnyLegionFabberBasic`.
-  - `AnyLegionAirFactory` (gold, platinum, uber) — the map defines `AnyLegionFactoryAir`.
-- **`UnitCountonPlanet`** (lowercase `o`) in
-  `q_casual/factory_builds/{mla,legion}/orbital.json`, twice each.
-- **`q_silver/platoon_templates/transfer.json`** has `Teleporter_Attack_Queller.units` as
-  a JSON _object_ where every other template in the repo uses an _array_ of squad objects.
-- **Vestigial tag**: `naval` is tested by 12 conditions in
-  `q_uber/fabber_builds/{mla,legion}/naval.json`, but no personality declares it. All 12
-  are negative (`"boolean": false`), so they currently evaluate unconditionally true and
-  the builds they guard always run — removing them would be behaviour-neutral, whereas
-  introducing a `qUberNaval` would suddenly switch them off. One existed once — the
-  now-removed locale files still carried its display name — and GW-AI-Overhaul carries a
-  matching comment (see "Galactic War integration"). (Galactic War is a separate story; see below.)
+| break                                                                                                                                        | fixed in               |
+| -------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
+| `Boom_Attack_Large` template missing its `_Queller` suffix in all six tiers, while three tiers' builds asked for `Boom_Attack_Large_Queller` | `52f5eefd`             |
+| `Swarm_Raid_Small` / `Swarm_Raid_Medium` templates absent                                                                                    | `26623b00`, `d845bb09` |
+| `Teleporter_Attack_Alone_Queller` referenced by `q_casual` but never defined                                                                 | `d40cd03d`             |
+| `AnyLegionBasicFabber` / `AnyLegionAirFactory` — transpositions of `AnyLegionFabberBasic` / `AnyLegionFactoryAir`                            | `9333c932`, `2a65efd9` |
+| `UnitCountonPlanet` (lowercase `o`) in `q_casual/factory_builds/*/orbital.json`                                                              | `c800d3cd`             |
+| `q_silver` `Teleporter_Attack_Queller.units` a JSON object where every other template uses an array                                          | `235596f8`             |
+| `naval` — a `HasPersonalityTag` no personality declared, left over from a deleted `qUberNaval`                                               | `918d70ba`             |
+
+The current tree resolves cleanly: **0** unresolved `to_build`, **0** unresolved
+`builders`, no `test_type` casing typos, every template's `units` an array, and all ten
+surviving personality tags declared by some personality.
+
+Re-run that sweep after any rename. It is a two-way check — every `to_build` and
+`builders` value must resolve against the tier's own `unit_maps/` or
+`platoon_templates/`, and the tags used in `HasPersonalityTag` must exist in
+`new_game.js`. `--ai-log` (see "Diagnostics") is the authoritative version of the same
+question, and worth running when the answer matters.
+
+Two things that look like breaks and are not:
+
+- **Templates defined but never built.** Normal, and heaviest in the lower tiers — Casual
+  ships the full `Land_Attack_*` set but its `platoon_builds/land.json` only ever forms
+  `Land_Attack_Max_Queller`, because Casual runs one army. The templates file is a
+  superset each tier draws from.
+- **`q_gold` has a `Swarm_Raid_Medium_Queller` build but no Small**, unlike Platinum and
+  Uber. Deliberate. Do not "complete the set".
 
 ## Conventions
 
