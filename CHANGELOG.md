@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## v5.25.1 - 2026-07-30
+
+- Add an AI config to limit unit numbers as the intended fallback to the TITANS AI's settings was apparently never added to the game
+- Fixed Legion builds failing due to an invalid fabber name
+- Gold and above would never build the Legion Infiltrator due to an invalid factory name
+- The large suicide platoon called on a platoon that didn't exist
+- Queller couldn't form small swarm platoons because the template didn't exist
+- Casual would never send troops through teleporters because it was trying to form a platoon that didn't exist
+- Fixing a casing error that might have prevented Casual from building orbital scouts and recon
+- Fixed a bug that could stop Silver from sending troops between planets
+
 ## v5.25.0 - 2023-08-19
 
 - Uber 1v1 starts with a bot factory
