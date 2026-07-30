@@ -8,13 +8,13 @@ function quellerAIPersonalities() {
   quellerAILoaded = true;
 
   try {
-    const aiPathCasual = "/pa/ai_queller/q_casual";
-    const aiPathBronze = "/pa/ai_queller/q_bronze";
-    const aiPathSilver = "/pa/ai_queller/q_silver";
-    const aiPathGold = "/pa/ai_queller/q_gold";
-    const aiPathPlatinum = "/pa/ai_queller/q_platinum";
-    const aiPathUber = "/pa/ai_queller/q_uber";
-    const quellerPersonalities = {
+    var aiPathCasual = "/pa/ai_queller/q_casual";
+    var aiPathBronze = "/pa/ai_queller/q_bronze";
+    var aiPathSilver = "/pa/ai_queller/q_silver";
+    var aiPathGold = "/pa/ai_queller/q_gold";
+    var aiPathPlatinum = "/pa/ai_queller/q_platinum";
+    var aiPathUber = "/pa/ai_queller/q_uber";
+    var quellerPersonalities = {
       qCasual: {
         ai_path: aiPathCasual,
         display_name: "!LOC:Q-Casual",
@@ -316,10 +316,10 @@ function quellerAIPersonalities() {
       },
     };
 
-    const newPersonalities = _.mapValues(
+    var newPersonalities = _.mapValues(
       quellerPersonalities,
       function (personality, name) {
-        const result = _.assign(
+        var result = _.assign(
           _.clone(model.aiPersonalities().Absurd),
           personality
         );
@@ -331,46 +331,46 @@ function quellerAIPersonalities() {
     _.assign(model.aiPersonalities(), newPersonalities);
     model.aiPersonalities.valueHasMutated();
 
-    const personalityNames = function (personalities) {
+    var personalityNames = function (personalities) {
       return _.keys(personalities);
     };
 
-    const randomPersonalityNames = function (personalities) {
+    var randomPersonalityNames = function (personalities) {
       return _.filter(personalityNames(personalities), function (name) {
         return _.endsWith(name, "Random");
       });
     };
 
-    const uberPersonalityNames = function (personalities) {
+    var uberPersonalityNames = function (personalities) {
       return _.filter(personalityNames(personalities), function (name) {
         return _.startsWith(name, "qUber") && !_.endsWith(name, "Random");
       });
     };
 
-    const selectUberPersonality = function (personalities) {
+    var selectUberPersonality = function (personalities) {
       return _.sample(uberPersonalityNames(personalities));
     };
 
-    const selectPersonality = function (personalities) {
-      const nonUberPersonalities = _.xor(
+    var selectPersonality = function (personalities) {
+      var nonUberPersonalities = _.xor(
         personalityNames(personalities),
         randomPersonalityNames(personalities),
         uberPersonalityNames(personalities)
       );
       // avoid oversampling Uber
-      const oneOfEachDifficulty = nonUberPersonalities.concat(
+      var oneOfEachDifficulty = nonUberPersonalities.concat(
         selectUberPersonality(personalities)
       );
       return _.sample(oneOfEachDifficulty);
     };
 
-    const assignPersonality = function (personality, personalities) {
+    var assignPersonality = function (personality, personalities) {
       return personality === "qRandom"
         ? selectPersonality(personalities)
         : selectUberPersonality(personalities);
     };
 
-    const assignRandomPersonalities = function () {
+    var assignRandomPersonalities = function () {
       _.forEach(model.armies(), function (army) {
         _.forEach(army.slots(), function (slot) {
           if (
@@ -380,7 +380,7 @@ function quellerAIPersonalities() {
               slot.aiPersonality()
             )
           ) {
-            const personality = assignPersonality(
+            var personality = assignPersonality(
               slot.aiPersonality(),
               newPersonalities
             );
@@ -391,7 +391,7 @@ function quellerAIPersonalities() {
     };
 
     model.startGame = (function () {
-      const cachedFunction = model.startGame;
+      var cachedFunction = model.startGame;
 
       return function () {
         assignRandomPersonalities();
