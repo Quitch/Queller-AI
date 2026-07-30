@@ -9,6 +9,7 @@
 - Queller couldn't form small swarm platoons because the template didn't exist
 - Casual would never send troops through teleporters because it was trying to form a platoon that didn't exist
 - Fixing a casing error that might have prevented Casual from building orbital scouts and recon
+- Fixed a bug that could stop Silver from sending troops between planets
 
 ## v5.25.0 - 2023-08-19
 
