@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx eslint *)",
+      "Bash(npx prettier --check *)",
+      "Bash(npx prettier --list-different *)",
+      "Bash(npx prettier --write *)",
+      "Bash(npm ci)",
+      "Bash(git status *)",
+      "Bash(git log *)",
+      "Bash(git diff *)",
+      "Bash(git show *)",
+      "Bash(git ls-files *)",
+      "Bash(git branch *)",
+      "Bash(git remote -v)"
+    ]
+  }
+}

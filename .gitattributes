@@ -2,6 +2,7 @@
 * text=auto
 
 # Keep development junk out of our ZIP files
+.claude/settings.json export-ignore
 images/ export-ignore
 .gitattributes export-ignore
 .gitignore export-ignore
