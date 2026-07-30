@@ -4,6 +4,7 @@
 
 - Add an AI config to limit unit numbers as the intended fallback to the TITANS AI's settings was apparently never added to the game
 - Fixed Legion builds failing due to an invalid fabber name
+- Gold and above would never build the Legion Infiltrator due to an invalid factory name
 
 ## v5.25.0 - 2023-08-19
 
