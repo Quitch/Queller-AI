@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Uber would incorrectly stop building Vanguards when it had Shellers
+- Capped how many fighters Platinum and Uber will produce in response to an air threat
 
 ## v5.25.1 - 2026-07-30
 
