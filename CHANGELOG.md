@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## v5.25.2 - 2026-07-31
+
+- Uber would incorrectly stop building Vanguards when it had Shellers
+- Capped how many fighters Platinum and Uber will produce in response to an air threat
+- Uber will use slightly more Deathmarks and Shellers
+- Fixed bug in Uber's choice of unit for an air scout platoon
+- Reduced the number of fabbers Gold, Platinum, and Uber need before they'll build nukes
+- Uber can build super weapons and titans at the same time
+- Stop Silver building a basic naval factory when alone
+- Casual's fallback factory behaviour now correctly tied to its factory build limit
+- Properly cap the amount of advanced land defence Gold and above build at one time when playing as MLA
+- Gold and Platinum weren't building Walker Foundries with fabbers
+- Removed redundant checks where the AI did extra work or had branches it could never hit
+
 ## v5.25.1 - 2026-07-30
 
 - Add an AI config to limit unit numbers as the intended fallback to the TITANS AI's settings was apparently never added to the game

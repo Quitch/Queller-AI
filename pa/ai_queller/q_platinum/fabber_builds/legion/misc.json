@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Fabber Assist",
+      "name": "Fabber Assist - Legion",
       "instance_count": -1,
       "priority": 1,
       "builders": [
@@ -84,7 +84,7 @@
       }
     },
     {
-      "name": "Teleport Fabber To Planet",
+      "name": "Teleport Fabber To Planet - Legion",
       "instance_count": 1,
       "priority": 801,
       "builders": [
@@ -117,7 +117,7 @@
       "task_type": "TeleportFabberToPlanet"
     },
     {
-      "name": "Move Fabber To Planet",
+      "name": "Move Fabber To Planet - Legion",
       "instance_count": 1,
       "priority": 800,
       "builders": [
@@ -152,7 +152,7 @@
       "task_type": "TransportToPlanet"
     },
     {
-      "name": "Move Orbital Fabber To Planet",
+      "name": "Move Orbital Fabber To Planet - Legion",
       "instance_count": 1,
       "priority": 800,
       "builders": ["LegionOrbitalBasicFabber"],
@@ -229,7 +229,7 @@
       "task_type": "OrbitalFabberMoveToPlanet"
     },
     {
-      "name": "Move Orbital Fabber To Safe Planet",
+      "name": "Move Orbital Fabber To Safe Planet - Legion",
       "instance_count": 1,
       "priority": 800,
       "builders": ["LegionOrbitalBasicFabber"],

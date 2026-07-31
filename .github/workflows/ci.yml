@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches: [develop, master]
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Lint
+        run: npm run lint:js
+
+      - name: Format
+        run: npm run format:check
+
+      # The base game is not available here, so validate:base-install skips its
+      # spec_id, unit-type and shadow-coverage checks and says so in its output.
+      # Everything else - schema, vocabulary, cross-references, condition
+      # redundancy - runs against the repo alone and is a hard gate.
+      - name: Validate AI data
+        run: npm run validate
+
+      - name: Test
+        run: npm test

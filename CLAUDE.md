@@ -10,7 +10,8 @@ Platinum / Uber, all displayed with a `Q-` prefix) plus Uber subpersonalities, w
 full Legion Expansion support. It is almost entirely **declarative JSON data** —
 `pa/ai_queller/**` is 405 files of build orders, platoon templates and unit maps —
 plus one small UI script that registers the personalities in the lobby. There is no
-build step and no compiled code; the only tooling is lint/format.
+build step and no compiled code; the tooling is lint, format, and a set of validators
+that resolve the data's cross-references and enum values (see "Validating the AI data").
 
 Queller has been **upstreamed into the base game**: a snapshot of this tree ships in
 the install at `media/pa_ex1/ai_queller/`, and the personalities are hard-coded in
@@ -35,18 +36,84 @@ package for local testing.
 
 ## Commands
 
-`package.json` declares **no scripts** and there is **no CI** (`.github/` does not
-exist; `.sonarcloud.properties` was deliberately removed in `bca4f420`). Everything is
-run ad hoc:
-
 ```bash
-npm ci                  # install pinned tooling (once / after deps change)
-npx eslint .            # lint
-npx prettier --check .  # format check
-npx prettier --write .  # format fix
+npm ci                        # install pinned tooling (once / after deps change)
+npm run verify                # everything CI checks: lint:js + format:check + validate + test
+npm run lint:js               # eslint .
+npm run format:check          # prettier --check .
+npm run format:write          # prettier --write .
+npm run validate              # all four validate:* checks below, in sequence
+npm run validate:schema       # pa/ai_queller/**: shapes, key whitelists, enum values, duplicate JSON keys
+npm run validate:refs         # cross-references: to_build/builders/condition targets, tags, unit_map parity
+npm run validate:conditions   # build_conditions branches that cannot affect the outcome
+npm run validate:base-install # spec_ids, unit types, shadow coverage - needs the base game, skips without it
+npm test                      # node --test (runs every validator, plus unit tests for the scanner)
+npm run refresh:vocabulary    # regenerate the engine enum snapshot after a PA patch
 ```
 
-Both pass clean on `develop`. Treat any failure as a regression from your own change.
+All of it passes clean on `develop`. Treat any failure as a regression from your own
+change. `.github/workflows/ci.yml` runs `npm run verify` on every push to `develop` and
+`master` and on every PR. (`.sonarcloud.properties` was deliberately removed in
+`bca4f420` and is not coming back; that is about SonarCloud specifically, not about CI.)
+
+Run a single test by name:
+`node --test --test-name-pattern="findDuplicateKeys" test/ai_data.test.js`.
+
+### Validating the AI data
+
+This is the part worth understanding before editing `pa/**`. See "Data integrity" below
+for what it is guarding against.
+
+`scripts/validate/*` reads the whole tier tree and checks the things the engine will not
+tell you about: every `to_build`, `builders` and unit-map-naming condition resolves
+within its own tier; every `test_type`, `task_type`, `squad`, `base_sort`,
+`placement_type`, world layer, influence type and comparison operator is one the engine
+recognises; every object key is one the engine reads; no JSON object has a duplicate key;
+no build entry sits at `priority` 0; every `HasPersonalityTag` string is declared in
+`new_game.js`; and the `unit_maps/` files stay identical across tiers.
+
+`priority: 0` means the build is never selected — GW-AI-Overhaul's
+`gwaio_upgrade_singlelaserdefensetower.js` uses exactly that to switch a Queller entry
+off at runtime. In a shipped file it is dead data: either the number is wrong or the
+entry should go. `Walker Foundry - Fabbers` sat at 0 in Gold and Platinum until
+`f5a55850`, and the base install's frozen snapshot still ships it that way, so a stock
+install is running that dead build today.
+
+The enum whitelists are not hand-written. `scripts/lib/engine-vocabulary.json` is
+extracted from `bin_x64/server.exe` by `npm run refresh:vocabulary`, which walks the
+engine's own enum string tables, then unions in whatever the base game's `pa/ai` data
+uses — needed because the linker de-duplicates strings, so an enum member spelled the
+same as a member of another enum has no separate copy to find. `task_type: "Nuke"`,
+`task_type: "Artillery"` and squad `"Artillery"` are all missing from their tables for
+that reason and are all valid. The generated file records which values came from where.
+Re-run it after a PA patch; the extraction asserts its own anchors and fails loudly
+rather than emitting a truncated whitelist.
+
+The same command also writes **`docs/engine-vocabulary.md`** — the human-readable half.
+Every whitelist, the JSON keys it governs, how often each value is used here versus in
+the base game's own AI data, the parameters each build condition is actually written
+with, and what the value means where a cited source says so. Read it when you need to
+know whether the engine has a condition for something before writing one; the "Used
+here" column doubles as a map of which engine features Queller has never reached for.
+
+Both generated files are written through Prettier by the generator, so regenerating
+never breaks `format:check`. Meanings live in `scripts/lib/vocabulary-reference.js`,
+which is curated by hand and follows one rule: a note exists only where a cited source
+says it, never inferred from a value's name — a blank means nobody has documented it,
+not that the value does nothing. Primary source is the palobby wiki's AI Build
+Conditions page; its AI Build Specs sibling was down when the notes were compiled, which
+is why the build-spec-side categories carry structural notes rather than per-value prose.
+
+`validate:conditions` reports **warnings**, not errors. Nothing it finds is wrong today —
+a duplicated OR-branch changes no behaviour — but it is the fingerprint of an edit
+applied to one copy of a branch and not the other, so the eight it currently reports are
+worth reading rather than clearing.
+
+`validate:base-install` needs a PA install and skips without one, saying so in its
+output. Point it somewhere specific with an argument or `$PA_MEDIA_PATH`.
+
+None of this evaluates whether a condition is _sensible_ — a threshold set too high is
+still only findable with `--ai-log` and play testing (see "Diagnostics").
 
 `.prettierrc` is two settings and **both are load-bearing** — do not "simplify" it back
 to Prettier's defaults:
@@ -85,9 +152,10 @@ what Chrome 40 genuinely has, each annotated with the Chrome release. That list 
 answer to "may I use X?" — no entry means no. `ecmaVersion` is pinned at 6 as a
 parse-time backstop.
 
-There are no tests. That is also why lodash is **not** an npm dependency (removed in
+`test/` runs the AI-data validators and unit-tests the duplicate-key scanner; there is
+no harness for `ui/**`, which is why lodash is **not** an npm dependency (removed in
 `a35eeefe`): `_` is a PA runtime global, declared in `eslint.config.mjs`'s `globals`
-block, and with no Node harness there is nothing local that needs the real package.
+block, and nothing local loads a file that uses it.
 
 ### Diagnostics
 
@@ -427,11 +495,10 @@ than the documented `Custom1`–`Custom4`.
 
 ## Data integrity
 
-Nothing in the tooling resolves a name. `to_build`, `builders`, `test_type` and template
-names are plain strings the engine looks up at load, so a rename in one file and not
-another is invisible to `eslint`, to `prettier`, and to a casual read. A sweep in
-July 2026 found seven such breaks, all of them years old and all still present in the
-base install's snapshot. They are fixed here:
+`to_build`, `builders`, `test_type` and template names are plain strings the engine looks
+up at load, so a rename in one file and not another is invisible to `eslint`, to
+`prettier`, and to a casual read. A sweep in July 2026 found seven such breaks, all of
+them years old and all still present in the base install's snapshot. They are fixed here:
 
 | break                                                                                                                                        | fixed in               |
 | -------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
@@ -447,11 +514,13 @@ The current tree resolves cleanly: **0** unresolved `to_build`, **0** unresolved
 `builders`, no `test_type` casing typos, every template's `units` an array, and all ten
 surviving personality tags declared by some personality.
 
-Re-run that sweep after any rename. It is a two-way check — every `to_build` and
-`builders` value must resolve against the tier's own `unit_maps/` or
-`platoon_templates/`, and the tags used in `HasPersonalityTag` must exist in
-`new_game.js`. `--ai-log` (see "Diagnostics") is the authoritative version of the same
-question, and worth running when the answer matters.
+That sweep is now `npm run validate` (see "Validating the AI data"), so it runs on every
+push rather than when someone thinks to do it. All seven breaks above are in the class it
+catches — including the `UnitCountonPlanet` casing typo, which is the one that most
+looks like working data. Run it after any rename. `--ai-log` (see "Diagnostics") remains
+the authoritative version of the same question and is worth reaching for when the answer
+matters, since it sees the engine's actual resolution rather than a reimplementation of
+it.
 
 Two things that look like breaks and are not:
 
