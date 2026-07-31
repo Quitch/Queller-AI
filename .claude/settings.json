@@ -1,18 +1,36 @@
 {
   "permissions": {
     "allow": [
+      "Bash(npm ci)",
       "Bash(npx eslint *)",
       "Bash(npx prettier --check *)",
       "Bash(npx prettier --list-different *)",
       "Bash(npx prettier --write *)",
-      "Bash(npm ci)",
       "Bash(git status *)",
       "Bash(git log *)",
       "Bash(git diff *)",
       "Bash(git show *)",
+      "Bash(git blame *)",
+      "Bash(git branch --list *)",
+      "Bash(git branch -a)",
+      "Bash(git branch -v)",
+      "Bash(git tag -l *)",
+      "Bash(git remote -v)",
+      "Bash(git remote show *)",
+      "Bash(git rev-parse *)",
+      "Bash(git rev-list *)",
+      "Bash(git describe *)",
       "Bash(git ls-files *)",
-      "Bash(git branch *)",
-      "Bash(git remote -v)"
+      "Bash(git ls-tree *)",
+      "Bash(git cat-file *)",
+      "Bash(git diff-tree *)",
+      "Bash(git for-each-ref *)",
+      "Bash(git merge-base *)",
+      "Bash(git name-rev *)",
+      "Bash(git shortlog *)",
+      "Bash(git stash list *)",
+      "Bash(git config --get *)",
+      "Bash(git config --list *)"
     ]
   }
 }
