@@ -7,6 +7,7 @@
 - Uber will use slightly more Deathmarks and Shellers
 - Fixed bug in Uber's choice of unit for an air scout platoon
 - Reduced the number of fabbers Gold, Platinum, and Uber need before they'll build nukes
+- Uber can build super weapons and titans at the same time
 
 ## v5.25.1 - 2026-07-30
 
