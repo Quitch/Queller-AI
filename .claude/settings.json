@@ -1,6 +1,18 @@
 {
   "permissions": {
     "allow": [
+      "Bash(npm run verify)",
+      "Bash(npm test)",
+      "Bash(node --test *)",
+      "Bash(npm run format:check)",
+      "Bash(npm run format:write)",
+      "Bash(npm run validate)",
+      "Bash(npm run validate:schema)",
+      "Bash(npm run validate:refs)",
+      "Bash(npm run validate:conditions)",
+      "Bash(npm run validate:base-install)",
+      "Bash(npm run refresh:vocabulary)",
+      "Bash(npm run lint:js)",
       "Bash(npm ci)",
       "Bash(npx eslint *)",
       "Bash(npx prettier --check *)",

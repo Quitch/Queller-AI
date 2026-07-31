@@ -1,6 +1,19 @@
 {
   "name": "Queller-AI",
   "private": true,
+  "scripts": {
+    "lint:js": "eslint .",
+    "format:check": "prettier --check .",
+    "format:write": "prettier --write .",
+    "validate:schema": "node scripts/validate/ai-schema.js",
+    "validate:refs": "node scripts/validate/ai-refs.js",
+    "validate:conditions": "node scripts/validate/ai-conditions.js",
+    "validate:base-install": "node scripts/validate/ai-base-install.js",
+    "validate": "npm run validate:schema && npm run validate:refs && npm run validate:conditions && npm run validate:base-install",
+    "test": "node --test",
+    "verify": "npm run lint:js && npm run format:check && npm run validate && npm test",
+    "refresh:vocabulary": "node scripts/refresh-engine-vocabulary.js"
+  },
   "dependencies": {
     "@eslint/js": "^10.0.1",
     "eslint": "^10.8.0",

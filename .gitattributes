@@ -3,7 +3,10 @@
 
 # Keep development junk out of our ZIP files
 .claude/settings.json export-ignore
+.github/ export-ignore
 images/ export-ignore
+scripts/ export-ignore
+test/ export-ignore
 .gitattributes export-ignore
 .gitignore export-ignore
 .prettierignore export-ignore
