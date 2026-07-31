@@ -248,6 +248,30 @@ function checkBuildScalars(at, name, entry, findings) {
         `${typeof entry.shared_instance_count}, expected a group name string`
     );
   }
+  // priority 0 is "off". GW-AI-Overhaul's gwaio_upgrade_singlelaserdefensetower.js
+  // relies on exactly that, replacing a Queller entry's priority with 0 under the
+  // comment "Turn off for Queller" - but it does so at runtime, from outside the data.
+  // A 0 sitting in a shipped file has no such intent behind it: the entry is either a
+  // build that was meant to be live and silently is not, or a leftover that reads as
+  // live to every future editor. Both want the same treatment - fix the number or
+  // delete the entry.
+  //
+  // This is not hypothetical. `Walker Foundry - Fabbers` carried priority 0 in q_gold
+  // and q_platinum until f5a55850 ("Gold/Plat should build Walker Foundries with
+  // fabs") set it to 376; the base install's frozen snapshot still ships the 0, so a
+  // stock install without this mod is still running that dead build today. It is the
+  // same class as the seven breaks in CLAUDE.md's "Data integrity" table.
+  //
+  // The base game does ship one itself - `Wall` in pa/ai/fabber_builds/
+  // fabber_defense_builds.json - which is why the stock AI never builds walls. That is
+  // a precedent for the engine accepting it, not for it being intended.
+  if (entry.priority === 0) {
+    findings.error(
+      at,
+      `"${name}" has priority 0, so it will never be built - either it wants a real ` +
+        `priority or the entry is dead and should be deleted`
+    );
+  }
 }
 
 function checkBuildKeys(at, name, entry, findings) {
@@ -341,7 +365,10 @@ function run(findings) {
   return `${tiers.length} tiers, ${files} files, ${builds} build entries`;
 }
 
-module.exports = { run };
+// checkBuildScalars is exported for test/ai_data.test.js, which exercises it against
+// synthetic entries. The tree is clean, so "run() reports nothing" cannot tell a
+// working check from one that never fires.
+module.exports = { run, checkBuildScalars };
 
 if (require.main === module) {
   runAsScript("ai-schema", run);

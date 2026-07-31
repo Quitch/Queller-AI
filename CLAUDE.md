@@ -69,8 +69,15 @@ tell you about: every `to_build`, `builders` and unit-map-naming condition resol
 within its own tier; every `test_type`, `task_type`, `squad`, `base_sort`,
 `placement_type`, world layer, influence type and comparison operator is one the engine
 recognises; every object key is one the engine reads; no JSON object has a duplicate key;
-every `HasPersonalityTag` string is declared in `new_game.js`; and the `unit_maps/` files
-stay identical across tiers.
+no build entry sits at `priority` 0; every `HasPersonalityTag` string is declared in
+`new_game.js`; and the `unit_maps/` files stay identical across tiers.
+
+`priority: 0` means the build is never selected — GW-AI-Overhaul's
+`gwaio_upgrade_singlelaserdefensetower.js` uses exactly that to switch a Queller entry
+off at runtime. In a shipped file it is dead data: either the number is wrong or the
+entry should go. `Walker Foundry - Fabbers` sat at 0 in Gold and Platinum until
+`f5a55850`, and the base install's frozen snapshot still ships it that way, so a stock
+install is running that dead build today.
 
 The enum whitelists are not hand-written. `scripts/lib/engine-vocabulary.json` is
 extracted from `bin_x64/server.exe` by `npm run refresh:vocabulary`, which walks the

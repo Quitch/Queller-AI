@@ -12,6 +12,7 @@
 const test = require("node:test");
 const assert = require("node:assert");
 const { Findings, findDuplicateKeys } = require("../scripts/lib/ai-data.js");
+const { checkBuildScalars } = require("../scripts/validate/ai-schema.js");
 
 const VALIDATORS = [
   ["ai-schema", require("../scripts/validate/ai-schema.js")],
@@ -31,6 +32,56 @@ for (const [name, validator] of VALIDATORS) {
     );
   });
 }
+
+// The tree currently has no priority 0, so the "run() reports nothing" tests above
+// cannot distinguish a working check from one that never fires. These drive the check
+// directly. See f5a55850 for the real case: q_gold and q_platinum shipped
+// `Walker Foundry - Fabbers` at priority 0, and the base install still does.
+const scalars = (entry) => {
+  const findings = new Findings("test");
+  checkBuildScalars("tier/file.json", entry.name, entry, findings);
+  return findings.errors.map((e) => e.message);
+};
+
+test("priority 0 is flagged as a build that can never fire", () => {
+  const errors = scalars({ name: "Walker Foundry - Fabbers", priority: 0 });
+  assert.strictEqual(errors.length, 1);
+  assert.match(errors[0], /priority 0, so it will never be built/);
+});
+
+test("a real priority is not flagged", () => {
+  assert.deepStrictEqual(
+    scalars({ name: "Walker Foundry - Fabbers", priority: 376 }),
+    []
+  );
+});
+
+test("priority 0 is distinguished from an absent priority", () => {
+  // A missing priority is checkBuildKeys' business (required key), not this check's -
+  // reporting it here too would double-report every malformed entry.
+  assert.deepStrictEqual(scalars({ name: "No priority at all" }), []);
+});
+
+test("min_num_assisters above max_num_assisters is flagged", () => {
+  const errors = scalars({
+    name: "Backwards",
+    priority: 1,
+    min_num_assisters: 4,
+    max_num_assisters: 2,
+  });
+  assert.strictEqual(errors.length, 1);
+  assert.match(errors[0], /min_num_assisters 4 above max_num_assisters 2/);
+});
+
+test("shared_instance_count is a group name, not a count", () => {
+  const errors = scalars({
+    name: "Miscounted",
+    priority: 1,
+    shared_instance_count: 3,
+  });
+  assert.strictEqual(errors.length, 1);
+  assert.match(errors[0], /expected a group name string/);
+});
 
 test("findDuplicateKeys finds a repeated key in the same object", () => {
   const found = findDuplicateKeys('{\n  "a": 1,\n  "b": 2,\n  "a": 3\n}');
