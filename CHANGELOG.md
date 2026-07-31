@@ -12,6 +12,7 @@
 - Casual's fallback factory behaviour now correctly tied to its factory build limit
 - Properly cap the amount of advanced land defence Gold and above build at one time when playing as MLA
 - Gold and Platinum weren't building Walker Foundries with fabbers
+- Removed redundant checks where the AI did extra work or had branches it could never hit
 
 ## v5.25.1 - 2026-07-30
 
