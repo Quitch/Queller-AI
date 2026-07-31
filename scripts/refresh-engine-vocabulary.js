@@ -36,8 +36,13 @@
 const fs = require("node:fs");
 const path = require("node:path");
 const { findBaseInstall, walk } = require("./lib/base-install.js");
+const prettier = require("prettier");
+const { renderMarkdown } = require("./lib/vocabulary-reference.js");
 
+const REPO_ROOT = path.join(__dirname, "..");
+const AI_ROOT = path.join(REPO_ROOT, "pa", "ai_queller");
 const OUTPUT = path.join(__dirname, "lib", "engine-vocabulary.json");
+const MARKDOWN_OUTPUT = path.join(REPO_ROOT, "docs", "engine-vocabulary.md");
 
 // Values that are genuinely valid but appear in neither the binary runs nor the base
 // game's own AI data. Each needs a reason - this list is where a wrong entry would hide.
@@ -165,36 +170,50 @@ function extractRun(strings, name, spec) {
   return spec.prefix ? values.map((v) => spec.prefix + v) : values;
 }
 
-// What the base game's own AI data uses. Everything here is valid by construction.
-function observeBaseData(mediaPath) {
-  const observed = {
-    test_type: new Set(),
-    task_type: new Set(),
-    squad: new Set(),
-    base_sort: new Set(),
-    placement_type: new Set(),
-    influence_type: new Set(),
-    world_layer: new Set(),
-    alliance: new Set(),
-    compare: new Set(),
-    build_spec_key: new Set(),
-    condition_key: new Set(),
-    placement_key: new Set(),
-    template_unit_key: new Set(),
-  };
+const CATEGORY_KEYS = [
+  "test_type",
+  "task_type",
+  "squad",
+  "base_sort",
+  "placement_type",
+  "influence_type",
+  "world_layer",
+  "alliance",
+  "compare",
+  "build_spec_key",
+  "condition_key",
+  "placement_key",
+  "template_unit_key",
+];
+
+// Tallies every vocabulary value an AI tree uses, and - for build conditions - which
+// parameter keys each test_type is actually written with.
+//
+// Run over the base game's data it serves two purposes: the value set recovers enum
+// members the binary scan missed (everything the shipped game does is valid by
+// construction), and the counts go into the reference document. Run over this repo it
+// is purely descriptive: which of the engine's vocabulary Queller actually reaches for.
+function tallyTree(roots) {
+  const counts = {};
+  CATEGORY_KEYS.forEach((key) => {
+    counts[key] = new Map();
+  });
+  const parameters = new Map();
+
+  const bump = (map, value) => map.set(value, (map.get(value) || 0) + 1);
   const add = (category, value) => {
     if (value !== undefined && value !== null) {
-      observed[category].add(value);
+      bump(counts[category], value);
     }
   };
   const addKeys = (category, object) => {
     if (object && typeof object === "object") {
-      Object.keys(object).forEach((k) => observed[category].add(k));
+      Object.keys(object).forEach((k) => bump(counts[category], k));
     }
   };
   const addLayer = (value) => {
     if (typeof value === "string" && value.startsWith("WL_")) {
-      observed.world_layer.add(value);
+      bump(counts.world_layer, value);
     }
   };
 
@@ -224,6 +243,20 @@ function observeBaseData(mediaPath) {
     addLayer(condition.string0);
     addLayer(condition.string1);
     addLayer(condition.string2);
+    // Which parameters this test_type is written with in practice. The engine's key
+    // table says what a condition object *may* contain; this says what each condition
+    // type actually does contain, which is the more useful thing to document.
+    if (condition.test_type) {
+      if (!parameters.has(condition.test_type)) {
+        parameters.set(condition.test_type, new Set());
+      }
+      const seen = parameters.get(condition.test_type);
+      Object.keys(condition).forEach((k) => {
+        if (k !== "test_type") {
+          seen.add(k);
+        }
+      });
+    }
   };
 
   const observeBuild = (entry) => {
@@ -248,8 +281,8 @@ function observeBaseData(mediaPath) {
     }
   };
 
-  for (const root of ["pa/ai", "pa_ex1/ai"]) {
-    for (const file of walk(path.join(mediaPath, root))) {
+  for (const root of roots) {
+    for (const file of walk(root)) {
       let json;
       try {
         json = JSON.parse(fs.readFileSync(file, "utf8"));
@@ -260,7 +293,26 @@ function observeBaseData(mediaPath) {
       Object.values(json.platoon_templates || {}).forEach(observeTemplate);
     }
   }
-  return observed;
+  return { counts, parameters };
+}
+
+// Applies the repo's own Prettier settings to generated output, so a regenerated file
+// never lands the repo in a state where `npm run format:check` fails. Prettier is
+// already a dev dependency and this script is dev-only tooling, so the coupling costs
+// nothing that is not already paid.
+function format(text, file, parser) {
+  return prettier
+    .resolveConfig(file)
+    .then((config) => prettier.format(text, { ...config, parser }));
+}
+
+// The merge step wants sets, not counts.
+function valueSets(tally) {
+  const sets = {};
+  CATEGORY_KEYS.forEach((key) => {
+    sets[key] = new Set(tally.counts[key].keys());
+  });
+  return sets;
 }
 
 // Plain codepoint order. Not localeCompare: the output is committed and diffed, so it
@@ -292,7 +344,7 @@ function merge(binaryValues, observedSet, documented) {
   };
 }
 
-function main() {
+async function main() {
   const mediaPath = findBaseInstall(process.argv[2]);
   if (!mediaPath) {
     console.error(
@@ -318,7 +370,12 @@ function main() {
   // each field, and let anything else in the run be legal for either - the run as a
   // whole is the engine's vocabulary for "where does this go", and being stricter than
   // that would be guessing.
-  const observed = observeBaseData(mediaPath);
+  const baseTally = tallyTree([
+    path.join(mediaPath, "pa", "ai"),
+    path.join(mediaPath, "pa_ex1", "ai"),
+  ]);
+  const modTally = tallyTree([AI_ROOT]);
+  const observed = valueSets(baseTally);
   const placementRun = runs.placement_and_sort;
 
   const vocabulary = {
@@ -360,9 +417,45 @@ function main() {
     vocabulary,
   };
 
-  fs.writeFileSync(OUTPUT, JSON.stringify(output, null, 2) + "\n");
+  // Both outputs go through Prettier before being written. JSON.stringify puts every
+  // array element on its own line; Prettier keeps short arrays inline. Writing the
+  // stringify form would leave two generated files that fail `npm run format:check`
+  // the moment anyone regenerated them.
+  fs.writeFileSync(
+    OUTPUT,
+    await format(JSON.stringify(output), OUTPUT, "json")
+  );
+
+  // The same whitelists as prose, for people rather than for the validator: what each
+  // one governs, how heavily this repo uses each value, and what it means where that is
+  // documented. See scripts/lib/vocabulary-reference.js for the curated half.
+  const usage = {};
+  for (const key of CATEGORY_KEYS) {
+    usage[key] = {
+      here: Object.fromEntries(modTally.counts[key]),
+      base: Object.fromEntries(baseTally.counts[key]),
+    };
+  }
+  const parameters = Object.fromEntries(
+    [...modTally.parameters].map(([test, keys]) => [
+      test,
+      [...keys].sort(byText),
+    ])
+  );
+  const markdown = renderMarkdown({
+    vocabulary,
+    usage,
+    parameters,
+    generatedFrom: output.generatedFrom,
+  });
+  fs.mkdirSync(path.dirname(MARKDOWN_OUTPUT), { recursive: true });
+  fs.writeFileSync(
+    MARKDOWN_OUTPUT,
+    await format(markdown, MARKDOWN_OUTPUT, "markdown")
+  );
 
   console.log(`Wrote ${path.relative(process.cwd(), OUTPUT)}`);
+  console.log(`Wrote ${path.relative(process.cwd(), MARKDOWN_OUTPUT)}`);
   for (const [name, entry] of Object.entries(vocabulary)) {
     const extras = [];
     if (entry.fromBaseDataOnly.length) {
@@ -378,4 +471,7 @@ function main() {
   }
 }
 
-main();
+main().catch((error) => {
+  console.error(error.message);
+  process.exit(1);
+});

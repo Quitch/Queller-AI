@@ -89,6 +89,21 @@ that reason and are all valid. The generated file records which values came from
 Re-run it after a PA patch; the extraction asserts its own anchors and fails loudly
 rather than emitting a truncated whitelist.
 
+The same command also writes **`docs/engine-vocabulary.md`** — the human-readable half.
+Every whitelist, the JSON keys it governs, how often each value is used here versus in
+the base game's own AI data, the parameters each build condition is actually written
+with, and what the value means where a cited source says so. Read it when you need to
+know whether the engine has a condition for something before writing one; the "Used
+here" column doubles as a map of which engine features Queller has never reached for.
+
+Both generated files are written through Prettier by the generator, so regenerating
+never breaks `format:check`. Meanings live in `scripts/lib/vocabulary-reference.js`,
+which is curated by hand and follows one rule: a note exists only where a cited source
+says it, never inferred from a value's name — a blank means nobody has documented it,
+not that the value does nothing. Primary source is the palobby wiki's AI Build
+Conditions page; its AI Build Specs sibling was down when the notes were compiled, which
+is why the build-spec-side categories carry structural notes rather than per-value prose.
+
 `validate:conditions` reports **warnings**, not errors. Nothing it finds is wrong today —
 a duplicated OR-branch changes no behaviour — but it is the fingerprint of an edit
 applied to one copy of a branch and not the other, so the eight it currently reports are
