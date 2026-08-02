@@ -293,7 +293,6 @@
       "shared_instance_count": "BasicLandDefense",
       "max_num_assisters": 1,
       "priority": 251,
-      "base_sort": "FromMainBase",
       "builders": ["LegionBotBasicFabber", "LegionVehicleBasicFabber"],
       "build_conditions": [
         [
@@ -359,7 +358,6 @@
       "to_build": "LegionDefenseBasicLand",
       "instance_count": 1,
       "priority": 456,
-      "base_sort": "FromMainBase",
       "max_num_assisters": 3,
       "builders": [
         "LegionBotBasicFabber",
@@ -432,7 +430,6 @@
       "shared_instance_count": "AdvancedLandDefense",
       "priority": 379,
       "max_num_assisters": 3,
-      "base_sort": "FromMainBase",
       "builders": [
         "LegionBotAdvancedFabber",
         "LegionVehicleAdvancedFabber",
@@ -509,7 +506,6 @@
       "shared_instance_count": "AdvancedLandDefense",
       "priority": 279,
       "max_num_assisters": 3,
-      "base_sort": "FromMainBase",
       "builders": [
         "LegionBotAdvancedFabber",
         "LegionVehicleAdvancedFabber",
@@ -586,7 +582,6 @@
       "shared_instance_count": "AdvancedLandDefense",
       "priority": 280,
       "max_num_assisters": 3,
-      "base_sort": "FromMainBase",
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
@@ -643,7 +638,6 @@
       "shared_instance_count": "AdvancedLandDefense",
       "priority": 380,
       "max_num_assisters": 3,
-      "base_sort": "FromMainBase",
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
@@ -694,7 +688,6 @@
       "priority": 408,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
-      "base_sort": "FromMainBase",
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
@@ -798,7 +791,6 @@
       "priority": 409,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
-      "base_sort": "FromMainBase",
       "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
