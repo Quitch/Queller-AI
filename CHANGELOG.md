@@ -4,6 +4,7 @@
 
 - Properly exclude Unit Cannons and superweapons from advanced factory counts
 - An advanced factory being built no longer prohibits a Unit Cannon also being built
+- Silver didn't ensure it had enough fabbers before building T2 vehicles when alone
 
 ## v5.25.2 - 2026-07-31
 
