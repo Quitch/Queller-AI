@@ -173,15 +173,15 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "LegionTitanAdvancedOrbital"
-          },
-          {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Orbital",
             "string1": "AntiOrbital",
             "compare0": "<",
             "value0": 0.6
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionTitanAdvancedOrbital"
           }
         ]
       ],
