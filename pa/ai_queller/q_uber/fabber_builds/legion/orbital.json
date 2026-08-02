@@ -50,11 +50,6 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetCount",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
             "test_type": "UnitCount",
             "unit_type_string0": "Factory & Orbital",
             "compare0": "<",
@@ -128,11 +123,6 @@
           {
             "test_type": "PlanetWithoutPresence",
             "boolean": true
-          },
-          {
-            "test_type": "PlanetCount",
-            "compare0": ">",
-            "value0": 1
           },
           {
             "test_type": "CanAffordPotentialDrain",
@@ -235,11 +225,6 @@
           {
             "test_type": "PresenceOnOtherPlanet",
             "boolean": true
-          },
-          {
-            "test_type": "PlanetCount",
-            "compare0": ">",
-            "value0": 1
           },
           {
             "test_type": "CanAffordPotentialDrain",
