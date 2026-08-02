@@ -50,11 +50,6 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetCount",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
             "test_type": "UnitCount",
             "unit_type_string0": "Factory & Orbital",
             "compare0": "<",
@@ -130,19 +125,8 @@
             "boolean": true
           },
           {
-            "test_type": "PlanetCount",
-            "compare0": ">",
-            "value0": 1
-          },
-          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "LegionFactoryBasicOrbital"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber - Orbital - Naval",
-            "compare0": ">=",
-            "value0": 5
           },
           {
             "test_type": "UnitCount",
@@ -174,12 +158,6 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "LegionFactoryBasicOrbital"
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber - Orbital - Naval",
-            "compare0": ">=",
-            "value0": 5
           },
           {
             "test_type": "UnitCount",
@@ -235,11 +213,6 @@
           {
             "test_type": "PresenceOnOtherPlanet",
             "boolean": true
-          },
-          {
-            "test_type": "PlanetCount",
-            "compare0": ">",
-            "value0": 1
           },
           {
             "test_type": "CanAffordPotentialDrain",

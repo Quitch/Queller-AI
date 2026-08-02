@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v5.26.0 - 2026-08-02
+
+- Properly exclude Unit Cannons and superweapons from advanced factory counts
+- An advanced factory being built no longer prohibits a Unit Cannon also being built
+- Silver didn't ensure it had enough fabbers before building T2 vehicles when alone
+- Implement a cap on how many land factories will be built when the AI is alone on the planet
+- Uber goes orbital faster
+
 ## v5.25.2 - 2026-07-31
 
 - Uber would incorrectly stop building Vanguards when it had Shellers
