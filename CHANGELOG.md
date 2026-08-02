@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Properly exclude Unit Cannons and superweapons from advanced factory counts
+
 ## v5.25.2 - 2026-07-31
 
 - Uber would incorrectly stop building Vanguards when it had Shellers
