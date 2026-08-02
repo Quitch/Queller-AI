@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v5.26.0 - 2026-08-02
 
 - Properly exclude Unit Cannons and superweapons from advanced factory counts
 - An advanced factory being built no longer prohibits a Unit Cannon also being built
