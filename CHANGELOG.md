@@ -6,6 +6,7 @@
 - An advanced factory being built no longer prohibits a Unit Cannon also being built
 - Silver didn't ensure it had enough fabbers before building T2 vehicles when alone
 - Implement a cap on how many land factories will be built when the AI is alone on the planet
+- Uber goes orbital faster
 
 ## v5.25.2 - 2026-07-31
 
