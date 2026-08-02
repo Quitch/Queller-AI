@@ -293,6 +293,12 @@
             "value0": 5
           },
           {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Factory & Advanced - Orbital - Artillery - Nuke - NukeDefense - Air",
+            "compare0": "<=",
+            "value0": 250
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "AdvancedBotFactory"
           }

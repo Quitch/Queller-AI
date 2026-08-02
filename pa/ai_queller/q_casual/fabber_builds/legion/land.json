@@ -54,6 +54,12 @@
             "string0": "LegionFactoryBasicBot"
           },
           {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Factory & Basic - Orbital - Air",
+            "compare0": "<=",
+            "value0": 250
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionFactoryBasicBot"
           }
@@ -122,6 +128,12 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "LegionFactoryBasicVehicle"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Factory & Basic - Orbital - Air",
+            "compare0": "<=",
+            "value0": 250
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -218,6 +230,12 @@
             "string0": "LegionFactoryAdvancedBot"
           },
           {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Factory & Advanced - Orbital - Artillery - Nuke - NukeDefense - Air",
+            "compare0": "<=",
+            "value0": 250
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "LegionFactoryAdvancedBot"
           }
@@ -306,6 +324,12 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "LegionFactoryAdvancedVehicle"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Factory & Advanced - Orbital - Artillery - Nuke - NukeDefense - Air",
+            "compare0": "<=",
+            "value0": 250
           },
           {
             "test_type": "CanFindPlaceToBuild",

@@ -57,6 +57,12 @@
             "string0": "BasicVehicleFactory"
           },
           {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Factory & Basic - Orbital - Air",
+            "compare0": "<=",
+            "value0": 250
+          },
+          {
             "test_type": "CanFindPlaceToBuild",
             "string0": "BasicVehicleFactory"
           }
@@ -130,6 +136,12 @@
           {
             "test_type": "CanAffordPotentialDrain",
             "string0": "BasicVehicleFactory"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Factory & Basic - Orbital - Air",
+            "compare0": "<=",
+            "value0": 250
           },
           {
             "test_type": "CanFindPlaceToBuild",
@@ -267,6 +279,12 @@
             "unit_type_string0": "Fabber - Orbital - Naval",
             "compare0": ">=",
             "value0": 5
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Factory & Advanced - Orbital - Artillery - Nuke - NukeDefense - Air",
+            "compare0": "<=",
+            "value0": 250
           },
           {
             "test_type": "CanFindPlaceToBuild",
