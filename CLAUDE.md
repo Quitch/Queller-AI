@@ -482,14 +482,18 @@ the authoritative version of the same question and is worth reaching for when th
 matters, since it sees the engine's actual resolution rather than a reimplementation of
 it.
 
-Two things that look like breaks and are not:
+**Templates defined but never built used to be normal here** and no longer are. Each
+tier's `platoon_templates/` was a superset it drew from, heaviest in the lower tiers —
+Casual shipped the full `Land_Attack_*` set while its `platoon_builds/land.json` only
+ever formed `Land_Attack_Max_Queller`. Every unreferenced template has now been removed,
+so the inventory's "Templates defined but never built" table reads zero for all six
+tiers. Treat a non-zero entry there as a regression: a build entry deleted without its
+template, or a rename applied to one side only. Adding a template is fine — add the
+`platoon_builds` entry that forms it in the same change.
 
-- **Templates defined but never built.** Normal, and heaviest in the lower tiers — Casual
-  ships the full `Land_Attack_*` set but its `platoon_builds/land.json` only ever forms
-  `Land_Attack_Max_Queller`, because Casual runs one army. The templates file is a
-  superset each tier draws from.
-- **`q_gold` has a `Swarm_Raid_Medium_Queller` build but no Small**, unlike Platinum and
-  Uber. Deliberate. Do not "complete the set".
+One thing that looks like a break and is not: **`q_gold` has a
+`Swarm_Raid_Medium_Queller` build but no Small**, unlike Platinum and Uber. Deliberate.
+Do not "complete the set".
 
 ## Conventions
 

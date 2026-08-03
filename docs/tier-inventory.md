@@ -14,11 +14,11 @@ One row per tier. `Build entries` counts every item across `fabber_builds/`, `fa
 
 | Tier         | Files | Build entries | Templates | Unit map keys | Config            |
 | ------------ | ----- | ------------- | --------- | ------------- | ----------------- |
-| `q_casual`   | 61    | 274           | 44        | 234           | {"unit_cap":3000} |
-| `q_bronze`   | 61    | 285           | 45        | 234           | {"unit_cap":3000} |
-| `q_silver`   | 61    | 271           | 44        | 234           | {"unit_cap":3000} |
-| `q_gold`     | 71    | 334           | 46        | 234           | {"unit_cap":3000} |
-| `q_platinum` | 71    | 346           | 47        | 234           | {"unit_cap":3000} |
+| `q_casual`   | 61    | 274           | 19        | 234           | {"unit_cap":3000} |
+| `q_bronze`   | 61    | 285           | 22        | 234           | {"unit_cap":3000} |
+| `q_silver`   | 61    | 271           | 30        | 234           | {"unit_cap":3000} |
+| `q_gold`     | 71    | 334           | 39        | 234           | {"unit_cap":3000} |
+| `q_platinum` | 71    | 346           | 39        | 234           | {"unit_cap":3000} |
 | `q_uber`     | 80    | 437           | 48        | 234           | {"unit_cap":3000} |
 
 ## Files by directory
@@ -92,7 +92,6 @@ Same relative path, byte-identical JSON, in all tiers. Nothing keeps these in st
 - `ai_config.json`
 - `platoon_builds/structure.json`
 - `platoon_builds/titans.json`
-- `platoon_templates/hover.json`
 - `platoon_templates/structure.json`
 - `platoon_templates/titans.json`
 - `platoon_templates/transfer.json`
@@ -134,12 +133,12 @@ The role a slot's units take inside a platoon. See [engine vocabulary](engine-vo
 
 | Squad       | q_casual | q_bronze | q_silver | q_gold | q_platinum | q_uber |
 | ----------- | -------- | -------- | -------- | ------ | ---------- | ------ |
-| `General`   | 20       | 20       | 20       | 20     | 20         | 20     |
-| `Artillery` | 19       | 19       | 19       | 19     | 19         | 19     |
-| `Defense`   | 17       | 17       | 17       | 17     | 17         | 17     |
-| `Fast`      | 15       | 15       | 15       | 15     | 15         | 15     |
-| `Close`     | 7        | 7        | 7        | 7      | 7          | 13     |
-| `Suicide`   | 7        | 7        | 7        | 7      | 7          | 7      |
+| `Defense`   | 7        | 9        | 15       | 15     | 17         | 17     |
+| `General`   | 5        | 6        | 12       | 15     | 18         | 20     |
+| `Artillery` | 3        | 5        | 11       | 14     | 11         | 19     |
+| `Fast`      | 2        | 3        | 9        | 12     | 15         | 15     |
+| `Close`     | 2        | 3        | 6        | 6      | 7          | 13     |
+| `Suicide`   | 1        | 2        | 5        | 6      | 1          | 7      |
 | `Escort`    | 2        | 2        | 2        | 2      | 2          | 2      |
 
 ## Personality tags
@@ -163,20 +162,20 @@ The subpersonality mechanism: one `ai_path` serves many personalities, and `HasP
 
 ## Templates defined but never built
 
-A platoon template that no `platoon_builds` entry names. Normal, not a defect: the templates file is a superset each tier draws from, and the lower tiers draw less from it because they field fewer distinct armies. Listed so that a template which stopped being referenced by accident is visible rather than invisible.
+A platoon template that no `platoon_builds` entry names. Every tier should read zero: the templates files used to be a superset each tier drew from, and the unreferenced remainder was removed. A name appearing here now is a template that stopped being referenced - either the build entry that formed it was deleted or a rename landed on one side only.
 
 | Tier         | Defined | Never built |
 | ------------ | ------- | ----------- |
-| `q_casual`   | 44      | 25          |
-| `q_bronze`   | 45      | 23          |
-| `q_silver`   | 44      | 14          |
-| `q_gold`     | 46      | 7           |
-| `q_platinum` | 47      | 8           |
+| `q_casual`   | 19      | 0           |
+| `q_bronze`   | 22      | 0           |
+| `q_silver`   | 30      | 0           |
+| `q_gold`     | 39      | 0           |
+| `q_platinum` | 39      | 0           |
 | `q_uber`     | 48      | 0           |
 
-- `q_casual` - `Amphibious_Attack_Huge_Queller`, `Amphibious_Attack_Large_Queller`, `Amphibious_Attack_Medium_Queller`, `Amphibious_Attack_Small_Queller`, `Amphibious_Attack_XLarge_Queller`, `Boom_Attack_Huge_Queller`, `Boom_Attack_Large_Queller`, `Boom_Attack_Max_Queller`, `Boom_Attack_Medium_Queller`, `Boom_Attack_Small_Queller`, `Boom_Attack_XLarge_Queller`, `Bot_Scout_Queller`, `Hover_Attack_Huge_Queller`, `Hover_Attack_Large_Queller`, `Hover_Attack_Medium_Queller`, `Hover_Attack_Small_Queller`, `Hover_Attack_XLarge_Queller`, `Land_Attack_Huge_Queller`, `Land_Attack_Large_Queller`, `Land_Attack_Medium_Queller`, `Land_Attack_Small_Queller`, `Land_Attack_XLarge_Queller`, `Swarm_Raid_Max_Queller`, `Swarm_Raid_Medium_Queller`, `Swarm_Raid_Small_Queller`
-- `q_bronze` - `Amphibious_Attack_Huge_Queller`, `Amphibious_Attack_Large_Queller`, `Amphibious_Attack_Medium_Queller`, `Amphibious_Attack_Small_Queller`, `Amphibious_Attack_XLarge_Queller`, `Boom_Attack_Huge_Queller`, `Boom_Attack_Large_Queller`, `Boom_Attack_Medium_Queller`, `Boom_Attack_Small_Queller`, `Boom_Attack_XLarge_Queller`, `Bot_Scout_Queller`, `Hover_Attack_Huge_Queller`, `Hover_Attack_Large_Queller`, `Hover_Attack_Medium_Queller`, `Hover_Attack_Small_Queller`, `Hover_Attack_XLarge_Queller`, `Land_Attack_Huge_Queller`, `Land_Attack_Medium_Queller`, `Land_Attack_Small_Queller`, `Land_Attack_XLarge_Queller`, `Swarm_Raid_Max_Queller`, `Swarm_Raid_Medium_Queller`, `Swarm_Raid_Small_Queller`
-- `q_silver` - `Amphibious_Attack_Medium_Queller`, `Amphibious_Attack_Small_Queller`, `Boom_Attack_Medium_Queller`, `Boom_Attack_Small_Queller`, `Bot_Scout_Queller`, `Hover_Attack_Huge_Queller`, `Hover_Attack_Large_Queller`, `Hover_Attack_Medium_Queller`, `Hover_Attack_Small_Queller`, `Hover_Attack_XLarge_Queller`, `Land_Attack_Small_Queller`, `Swarm_Raid_Max_Queller`, `Swarm_Raid_Medium_Queller`, `Swarm_Raid_Small_Queller`
-- `q_gold` - `Amphibious_Attack_Small_Queller`, `Boom_Attack_Small_Queller`, `Hover_Attack_Huge_Queller`, `Hover_Attack_Small_Queller`, `Hover_Attack_XLarge_Queller`, `Land_Attack_Small_Queller`, `Swarm_Raid_Small_Queller`
-- `q_platinum` - `Boom_Attack_Huge_Queller`, `Boom_Attack_Large_Queller`, `Boom_Attack_Max_Queller`, `Boom_Attack_Medium_Queller`, `Boom_Attack_Small_Queller`, `Boom_Attack_XLarge_Queller`, `Hover_Attack_Huge_Queller`, `Hover_Attack_XLarge_Queller`
+- `q_casual` - none
+- `q_bronze` - none
+- `q_silver` - none
+- `q_gold` - none
+- `q_platinum` - none
 - `q_uber` - none

@@ -161,10 +161,11 @@ const SECTIONS = {
   orphanTemplates: [
     "## Templates defined but never built",
     "",
-    "A platoon template that no `platoon_builds` entry names. Normal, not a defect: " +
-      "the templates file is a superset each tier draws from, and the lower tiers draw " +
-      "less from it because they field fewer distinct armies. Listed so that a template " +
-      "which stopped being referenced by accident is visible rather than invisible.",
+    "A platoon template that no `platoon_builds` entry names. Every tier should read " +
+      "zero: the templates files used to be a superset each tier drew from, and the " +
+      "unreferenced remainder was removed. A name appearing here now is a template that " +
+      "stopped being referenced - either the build entry that formed it was deleted or " +
+      "a rename landed on one side only.",
     "",
   ],
 };

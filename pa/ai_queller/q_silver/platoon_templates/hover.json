@@ -1,37 +1,5 @@
 {
   "platoon_templates": {
-    "Amphibious_Attack_Small_Queller": {
-      "units": [
-        {
-          "unit_types": "(Amphibious & Bot & Mobile) - Fabber - Construction - Titan",
-          "min_count": 0,
-          "max_count": 3,
-          "squad": "Fast"
-        },
-        {
-          "unit_types": "(Amphibious & Tank & Mobile) - Fabber - Construction - Titan",
-          "min_count": 0,
-          "max_count": 3,
-          "squad": "General"
-        }
-      ]
-    },
-    "Amphibious_Attack_Medium_Queller": {
-      "units": [
-        {
-          "unit_types": "(Amphibious & Bot & Mobile) - Fabber - Construction - Titan",
-          "min_count": 0,
-          "max_count": 10,
-          "squad": "Fast"
-        },
-        {
-          "unit_types": "(Amphibious & Tank & Mobile) - Fabber - Construction - Titan",
-          "min_count": 0,
-          "max_count": 10,
-          "squad": "General"
-        }
-      ]
-    },
     "Amphibious_Attack_Large_Queller": {
       "units": [
         {
@@ -96,86 +64,6 @@
         }
       ]
     },
-    "Hover_Attack_Small_Queller": {
-      "units": [
-        {
-          "unit_types": "(Hover & Tank & Mobile) - Fabber - Construction - Titan",
-          "min_count": 0,
-          "max_count": 3,
-          "squad": "General"
-        },
-        {
-          "unit_types": "(Hover & Artillery & Mobile) - Fabber - Construction - Titan",
-          "min_count": 0,
-          "max_count": 3,
-          "squad": "Artillery"
-        }
-      ]
-    },
-    "Hover_Attack_Medium_Queller": {
-      "units": [
-        {
-          "unit_types": "(Hover & Tank & Mobile) - Fabber - Construction - Titan",
-          "min_count": 0,
-          "max_count": 10,
-          "squad": "General"
-        },
-        {
-          "unit_types": "(Hover & Artillery & Mobile) - Fabber - Construction - Titan",
-          "min_count": 0,
-          "max_count": 10,
-          "squad": "Artillery"
-        }
-      ]
-    },
-    "Hover_Attack_Large_Queller": {
-      "units": [
-        {
-          "unit_types": "(Hover & Tank & Mobile) - Fabber - Construction - Titan",
-          "min_count": 0,
-          "max_count": 20,
-          "squad": "General"
-        },
-        {
-          "unit_types": "(Hover & Artillery & Mobile) - Fabber - Construction - Titan",
-          "min_count": 0,
-          "max_count": 20,
-          "squad": "Artillery"
-        }
-      ]
-    },
-    "Hover_Attack_XLarge_Queller": {
-      "units": [
-        {
-          "unit_types": "(Hover & Tank & Mobile) - Fabber - Construction - Titan",
-          "min_count": 0,
-          "max_count": 30,
-          "squad": "General"
-        },
-        {
-          "unit_types": "(Hover & Artillery & Mobile) - Fabber - Construction - Titan",
-          "min_count": 0,
-          "max_count": 30,
-          "squad": "Artillery"
-        }
-      ]
-    },
-    "Hover_Attack_Huge_Queller": {
-      "units": [
-        {
-          "unit_types": "(Hover & Tank & Mobile) - Fabber - Construction - Titan",
-          "min_count": 0,
-          "max_count": 40,
-          "squad": "General"
-        },
-        {
-          "unit_types": "(Hover & Artillery & Mobile) - Fabber - Construction - Titan",
-          "min_count": 0,
-          "max_count": 40,
-          "squad": "Artillery"
-        }
-      ]
-    },
     "Hover_Attack_Max_Queller": {
       "units": [
         {
@@ -189,36 +77,6 @@
           "min_count": 0,
           "max_count": -1,
           "squad": "Artillery"
-        }
-      ]
-    },
-    "Swarm_Raid_Small_Queller": {
-      "units": [
-        {
-          "unit_types": "Bot & Deconstruction",
-          "min_count": 1,
-          "max_count": 3,
-          "squad": "Fast"
-        }
-      ]
-    },
-    "Swarm_Raid_Medium_Queller": {
-      "units": [
-        {
-          "unit_types": "Bot & Deconstruction",
-          "min_count": 4,
-          "max_count": 9,
-          "squad": "Fast"
-        }
-      ]
-    },
-    "Swarm_Raid_Max_Queller": {
-      "units": [
-        {
-          "unit_types": "Bot & Deconstruction",
-          "min_count": 10,
-          "max_count": -1,
-          "squad": "Fast"
         }
       ]
     }
