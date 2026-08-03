@@ -51,9 +51,9 @@ Evaluation cadence, per the wiki: every 2 seconds for every base by default. Som
 | `UnitRatioOnPlanet`           | binary | 395       | 72      | `compare0`, `unit_type_string0`, `unit_type_string1`, `value0` | Ratio of `unit_type_string0` to `unit_type_string1`. Includes partially built units.                                            |
 | `UnitPoolRatio`               | binary | -         | -       | -                                                              | -                                                                                                                               |
 | `UnitCount`                   | binary | 45        | 19      | `compare0`, `unit_type_string0`, `value0`                      | `boolean` restricts the count to fully built units.                                                                             |
-| `UnitCountOnPlanet`           | binary | 879       | 318     | `compare0`, `unit_type_string0`, `value0`                      | `boolean` restricts the count to fully built units.                                                                             |
+| `UnitCountOnPlanet`           | binary | 876       | 318     | `compare0`, `unit_type_string0`, `value0`                      | `boolean` restricts the count to fully built units.                                                                             |
 | `UnitPoolCount`               | binary | 439       | 114     | `compare0`, `unit_type_string0`, `value0`                      | `boolean` restricts the count to fully built units.                                                                             |
-| `UnitCountPerPlanetRadius`    | binary | 143       | 18      | `compare0`, `unit_type_string0`, `value0`                      | -                                                                                                                               |
+| `UnitCountPerPlanetRadius`    | binary | 186       | 18      | `compare0`, `unit_type_string0`, `value0`                      | -                                                                                                                               |
 | `AlliedUnitCountOnPlanet`     | binary | 60        | 5       | `boolean`, `compare0`, `unit_type_string0`, `value0`           | `boolean` restricts the count to fully built units.                                                                             |
 | `UnitCountInCelestialTransit` | binary | 32        | 2       | `compare0`, `unit_type_string0`, `value0`                      | -                                                                                                                               |
 | `UnitCountInBase`             | binary | 698       | 190     | `compare0`, `unit_type_string0`, `value0`                      | `value1` is an optional alliance and defaults to allies.                                                                        |
@@ -91,7 +91,7 @@ Evaluation cadence, per the wiki: every 2 seconds for every base by default. Som
 | `PlanetHasUseablePlanetWeapon`   | binary | 31        | 5       | `boolean`            | -     |
 | `PlanetCanBeUsedAsKineticWeapon` | binary | 20        | 2       | `boolean`            | -     |
 | `HaveThrustToMovePlanet`         | binary | 18        | 2       | `boolean`            | -     |
-| `PlanetCount`                    | binary | 55        | 6       | `compare0`, `value0` | -     |
+| `PlanetCount`                    | binary | 50        | 6       | `compare0`, `value0` | -     |
 | `SpawnablePlanetCount`           | binary | -         | -       | -                    | -     |
 | `PlanetIsGasGiant`               | binary | 162       | 24      | `boolean`            | -     |
 | `PlanetIsMainEcoBase`            | binary | 116       | 3       | `boolean`            | -     |
@@ -240,15 +240,15 @@ Every key the engine reads from a condition object. Which of them a given condit
 | Value               | Source | Used here | Base AI | Notes |
 | ------------------- | ------ | --------- | ------- | ----- |
 | `boolean`           | binary | 5598      | 977     | -     |
-| `compare0`          | binary | 3982      | 965     | -     |
+| `compare0`          | binary | 4017      | 965     | -     |
 | `compare1`          | binary | -         | -       | -     |
 | `string0`           | binary | 3333      | 779     | -     |
 | `string1`           | binary | 541       | 124     | -     |
 | `string2`           | binary | 44        | 10      | -     |
-| `test_type`         | binary | 12376     | 2800    | -     |
-| `unit_type_string0` | binary | 3087      | 859     | -     |
+| `test_type`         | binary | 12411     | 2800    | -     |
+| `unit_type_string0` | binary | 3127      | 859     | -     |
 | `unit_type_string1` | binary | 395       | 72      | -     |
-| `value0`            | binary | 3982      | 965     | -     |
+| `value0`            | binary | 4017      | 965     | -     |
 | `value1`            | binary | 41        | 15      | -     |
 
 <sub>Meanings: engine string table.</sub>
@@ -261,7 +261,7 @@ Every key the engine reads from a build list entry.
 
 | Value                       | Source    | Used here | Base AI | Notes |
 | --------------------------- | --------- | --------- | ------- | ----- |
-| `base_sort`                 | binary    | 699       | 65      | -     |
+| `base_sort`                 | binary    | 412       | 65      | -     |
 | `build_conditions`          | binary    | 1947      | 405     | -     |
 | `builders`                  | binary    | 1684      | 303     | -     |
 | `cross_planet_shared_count` | binary    | 48        | 11      | -     |
@@ -272,7 +272,7 @@ Every key the engine reads from a build list entry.
 | `name`                      | base data | 1947      | 405     | -     |
 | `placement_rules`           | binary    | 792       | 177     | -     |
 | `priority`                  | base data | 1947      | 405     | -     |
-| `shared_instance_count`     | binary    | 718       | 160     | -     |
+| `shared_instance_count`     | binary    | 714       | 160     | -     |
 | `task_type`                 | binary    | 383       | 131     | -     |
 | `to_build`                  | binary    | 1871      | 394     | -     |
 
@@ -328,7 +328,7 @@ Which point build locations are ordered from. `FromMainBase` is the default.
 | `FromBaseCenter`        | binary | -         | -       | -     |
 | `FromBasePerimeter`     | binary | -         | -       | -     |
 | `FromBuilder`           | binary | 301       | 34      | -     |
-| `FromMainBase`          | binary | 287       | -       | -     |
+| `FromMainBase`          | binary | -         | -       | -     |
 | `FromMainBaseCenter`    | binary | -         | -       | -     |
 | `FromMainBasePerimeter` | binary | -         | -       | -     |
 | `FromPerimeter`         | binary | 111       | 31      | -     |
@@ -460,10 +460,10 @@ These are one or two characters, below the minimum length the binary string scan
 | ----- | ---------- | --------- | ------- | ------------------------- |
 | `!=`  | documented | -         | -       | Not equal to.             |
 | `<`   | base data  | 2408      | 506     | Less than.                |
-| `<=`  | base data  | 255       | 34      | Less than or equal to.    |
+| `<=`  | base data  | 298       | 34      | Less than or equal to.    |
 | `==`  | documented | 35        | -       | Equal to.                 |
-| `>`   | base data  | 730       | 316     | Greater than.             |
-| `>=`  | base data  | 1465      | 306     | Greater than or equal to. |
+| `>`   | base data  | 725       | 316     | Greater than.             |
+| `>=`  | base data  | 1462      | 306     | Greater than or equal to. |
 
 <sub>Meanings: base game AI data; `==`/`!=` documented in the generator.</sub>
 

@@ -46,9 +46,11 @@ npm run validate              # all four validate:* checks below, in sequence
 npm run validate:schema       # pa/ai_queller/**: shapes, key whitelists, enum values, duplicate JSON keys
 npm run validate:refs         # cross-references: to_build/builders/condition targets, tags, unit_map parity
 npm run validate:conditions   # build_conditions branches that cannot affect the outcome
+npm run validate:docs         # docs/ freshness and cross-references
 npm run validate:base-install # spec_ids, unit types, shadow coverage - needs the base game, skips without it
 npm test                      # node --test (runs every validator, plus unit tests for the scanner)
 npm run refresh:vocabulary    # regenerate the engine enum snapshot after a PA patch
+npm run refresh:inventory     # regenerate docs/tier-inventory.md after a pa/** change
 ```
 
 All of it passes clean on `develop`. Treat any failure as a regression from your own
@@ -111,6 +113,18 @@ worth reading rather than clearing.
 
 `validate:base-install` needs a PA install and skips without one, saying so in its
 output. Point it somewhere specific with an argument or `$PA_MEDIA_PATH`.
+
+`validate:docs` regenerates `docs/tier-inventory.md` in memory and fails if the committed
+copy differs, then checks that every relative link and heading anchor in `docs/`,
+`README.md` and this file resolves. It cannot check `docs/engine-vocabulary.md` for
+freshness — that one is generated from `bin_x64/server.exe`, which CI does not have — and
+it prints that it skipped rather than passing quietly. Refresh that one after a PA patch.
+
+`npm run refresh:vocabulary` does one more thing besides emitting whitelists: it asserts
+the `server.exe` string-layout claims that `docs/ai-engine.md` cites as evidence but that
+produce no whitelist, listed in that script's `ADJACENCY` table. If a patch moves them
+the refresh fails and names the documentation section that has become unsourced. Add an
+entry there whenever the docs come to rest on a new layout observation.
 
 None of this evaluates whether a condition is _sensible_ — a threshold set too high is
 still only findable with `--ai-log` and play testing (see "Diagnostics").
@@ -178,32 +192,29 @@ concluding that a build entry "works" because the AI did not visibly break.
 ## Relationship to the base install
 
 This is the single most important thing to understand before touching `pa/**`.
+`docs/architecture.md` explains the mechanism; these are the rules that follow from it.
 
-The mod ships its tree at `pa/ai_queller/...`. On disk in the install the same tree
-lives at `media/pa_ex1/ai_queller/...`, but the TITANS expansion overlay is addressed
-through `/pa/...` at runtime, so `/pa/ai_queller/q_uber/...` is the path both the base
-game and this mod use. Shipping a file at that path shadows the base game's copy of it.
-
-PA's VFS **unions directory listings across mounts**. A file the mod ships wins over
-the base copy of the same name, but a file the mod _deletes_ does not disappear — the
-base install's copy is still listed and still loaded. Practical consequences:
+The mod's tree at `pa/ai_queller/...` and the install's at `media/pa_ex1/ai_queller/...`
+are **the same runtime path** — `/pa/ai_queller/...` — so shipping a file there shadows
+the base game's copy. But PA's VFS **unions directory listings across mounts**, so a
+file the mod _deletes_ does not disappear; the base install's copy is still listed and
+still loaded.
 
 - Removing a build entry: edit the file, do not delete it.
 - Deleting a whole file is not a way to remove behaviour from a stock install; it just
   reverts that file to whatever the base game shipped.
 - Adding a _new_ file is safe and behaves as expected.
 
-The personalities are in the same position. `media/ui/main/game/new_game/js/ai.js`
-already defines `qCasual` … `qUberTurtle` (gated behind `api.content.usingTitans()`,
-which is why `modinfo.json` sets `titansOnly: true`).
-`ui/mods/com.pa.quitch.qquellerai/new_game.js` re-registers all of them with
-`_.assign(model.aiPersonalities(), …)`, wholesale replacing the base game's version of
-each key, and adds the two the base game does not have: `qRandom` and `qUberRandom`.
-So the mod's job for personalities is to _supersede_ the upstreamed copy, and any field
-you drop from a personality here reverts to the `Absurd` clone the mod builds from —
-not to the base game's Queller definition.
+The personalities are in the same position: the base game already defines
+`qCasual` … `qUberTurtle` (gated behind `api.content.usingTitans()`, which is why
+`modinfo.json` sets `titansOnly: true`), and `new_game.js` supersedes all of them. Any
+field you drop from a personality here reverts to the `Absurd` clone the mod builds
+from — **not** to the base game's Queller definition.
 
 ## Architecture
+
+`docs/ai-engine.md` covers the engine; `docs/architecture.md` covers this mod's data and
+walks two real build entries end to end. What follows is only what bites while editing.
 
 ### Repository layout
 
@@ -215,43 +226,21 @@ ui/mods/com.pa.quitch.qquellerai/new_game.js
 pa/ai_queller/q_{casual,bronze,silver,gold,platinum,uber}/
                                 one complete AI tree per difficulty
 images/                         badges used by README.md, plus the mod icon
+docs/                           see "Documentation"
 ```
-
-Per-tier size, for orientation:
-
-Every tier additionally carries one `ai_config.json` at its root, so file counts are one
-higher than the columns below sum to.
-
-| tier        | files | fabber | factory | platoon | templates        | unit\_maps      | build entries |
-| ----------- | ----- | ------ | ------- | ------- | ---------------- | --------------- | ------------- |
-| q\_casual   | 61    | 24     | 14      | 9       | 9 (42 templates) | 4 (234 entries) | 274           |
-| q\_bronze   | 61    | 24     | 14      | 9       | 9 (43)           | 4               | 285           |
-| q\_silver   | 61    | 24     | 14      | 9       | 9 (42)           | 4               | 271           |
-| q\_gold     | 71    | 34     | 14      | 9       | 9 (44)           | 4               | 334           |
-| q\_platinum | 71    | 34     | 14      | 9       | 9 (45)           | 4               | 346           |
-| q\_uber     | 80    | 39     | 15      | 12      | 9 (46)           | 4               | 437           |
 
 The tiers are **independent copies**, not a base plus overrides. A fix that applies to
 more than one tier has to be applied to each of them separately, and the tiers have
 genuinely diverged: Casual/Bronze/Silver keep a single `fabber_builds/*/defense.json`
 and a `land.json`, while Gold/Platinum/Uber split those into
 `defense_{air,land,naval,orbital,super}.json` plus `bot.json`/`vehicle.json`.
-Only `q_uber` has `subpersonalities/` directories.
+Only `q_uber` has `subpersonalities/` directories. `docs/tier-inventory.md` has the
+presence matrix and every count; do not restate a count here.
 
 ### How the engine consumes a tier
 
-A personality's `ai_path` (e.g. `/pa/ai_queller/q_uber`) is the root the engine reads
-these directories from, **recursively** — the `mla/`, `legion/` and `subpersonalities/`
-subdirectories are a Queller organisational convention, not an engine concept, and are
-flattened at load:
-
-| directory                  | contents                                           | keyed by                                                 |
-| -------------------------- | -------------------------------------------------- | -------------------------------------------------------- |
-| `unit_maps/*.json`         | `{"unit_map": {Name: {spec_id \| unit_types}}}`    | friendly name → unit spec path or a unit-type expression |
-| `fabber_builds/**/*.json`  | `{"build_list": [...]}`                            | what fabbers and the Commander construct                 |
-| `factory_builds/**/*.json` | `{"build_list": [...]}`                            | what factories produce                                   |
-| `platoon_builds/**/*.json` | `{"build_list": [...]}` with `task_type`           | what platoons form and what task they take               |
-| `platoon_templates/*.json` | `{"platoon_templates": {Name: {units: [squads]}}}` | platoon composition                                      |
+`docs/ai-engine.md` explains the load pipeline. The parts that bite when editing this
+repo:
 
 `ai_config.json` sits at the root of an AI tree and is read **per `ai_path`, with no
 fallback**. A fallback to the base game's `/pa/ai/ai_config.json` was intended but never
@@ -260,67 +249,52 @@ ships its own copy (`4fe4946b`), currently `{"unit_cap":3000}` — the same valu
 game uses. Treat this as the model for anything else that lives at the tree root: assume
 it does not inherit until proven otherwise.
 
-`neural_networks/` is the open case. Queller ships none, and the three attack networks
-exist only at the base game's `/pa/ai/neural_networks/`. The 219 `CanAttackWithPoolUnits`
-`Land`/`Bomber`/`Fighter` conditions across this repo behave in play, which suggests the
-engine loads those from a fixed path rather than from `ai_path` — but that is inference,
-not a verified fact, and the `ai_config.json` case above is exactly why it is worth
-checking rather than assuming. Queller otherwise influences the networks only through the
-per-personality `neural_data_mod` scalar.
+The `mla/`, `legion/` and `subpersonalities/` subdirectories are a Queller organisational
+convention, not an engine concept — the engine scans an `ai_path` recursively and merges
+every `.json` it finds. So a new filename **adds**, and a filename matching a base-game
+file **replaces**.
+
+`neural_networks/` was the open case here. Queller ships none, and the three attack
+networks exist only at the base game's `/pa/ai/neural_networks/`. The evidence now points
+to an `ai_path`-relative lookup with a fallback to that fixed path — see
+`docs/ai-engine.md`, "Where the networks load from", which states the evidence, marks it
+as layout inference rather than fact, and names the experiment that would settle it.
+`npm run refresh:vocabulary` asserts that evidence still holds. Queller otherwise
+influences the networks only through the per-personality `neural_data_mod` scalar. **`1.0`
+is neutral, not the bottom of a difficulty ramp** — above it handicaps, below it makes the
+AI more conservative with its forces, and every tier from Uber up sits at exactly `1.0`.
+The lone exception, qUberFFA's `0.85`, is a deliberate FFA behaviour choice rather than a
+strength increase. The underlying mechanism is undocumented, so do not tune this on a
+theory of what it does; see `docs/ai-engine.md`, "`neural_data_mod`".
 
 ### The unit map is the indirection layer
 
-Nothing in a build list names a `.json` unit spec directly. `to_build` and `builders`
-name **unit map keys**, which each tier's `unit_maps/` resolves to either a concrete
-`spec_id` or a `unit_types` expression:
+Nothing in a build list names a `.json` unit spec directly — `to_build` and `builders`
+name **unit map keys**, resolved by each tier's `unit_maps/` to a `spec_id` or a
+`unit_types` expression. That indirection is what makes the faction split work, and the
+four maps are identical across tiers (`validate:refs` asserts it).
 
-```json
-"BasicBotFabber":  { "spec_id": "/pa/units/land/fabrication_bot/fabrication_bot.json" }
-"AnyBasicFabber":  { "unit_types": "(Fabber & (Basic | Debug)) & Custom58 - Orbital" }
-```
-
-Each tier ships four maps: `ai_unit_map.json` (base units), `ai_unit_map_x1.json`
-(TITANS units), `mla.json` and `legion.json` (faction-scoped "any factory of type X"
-aggregates). 234 entries per tier, identical across tiers.
-
-This is what makes the faction split work. `UNITTYPE_Custom58` is the MLA/base-game
-faction tag (131 base unit specs carry it); `UNITTYPE_Custom1` is Legion's, supplied by
-the Legion Expansion mod. When Legion is not installed its `spec_id`s do not resolve and
-its `Custom1` aggregates match nothing, so the whole `legion/` half of every build tree
-is inert. That is why `fabber_builds/legion/` and `fabber_builds/mla/` can sit side by
-side under one `ai_path` with no gating condition between them. Legion unit-type
-expressions also reference a `Shield` unit type (87 uses) that only Legion defines —
-that is expected, not a typo.
+The consequence to hold on to: `UNITTYPE_Custom58` is the MLA/base-game faction tag and
+`UNITTYPE_Custom1` is Legion's, so with Legion absent its `spec_id`s do not resolve, its
+`Custom1` aggregates match nothing, and the whole `legion/` half of every tree is inert.
+That is why `fabber_builds/legion/` and `fabber_builds/mla/` sit side by side under one
+`ai_path` with **no gating condition between them** — do not add one. Legion expressions
+also reference a `Shield` unit type only Legion defines; expected, not a typo.
 
 ### Build specs
 
-Every entry in a `build_list` uses this shape (key frequencies are across all 1,947
-entries in the repo):
+The item schema is in `docs/ai-engine.md`; the legal values of every enum-valued field
+are in `docs/engine-vocabulary.md`, generated from the engine's own tables. Three things
+specific to this repo:
 
-- **Always**: `name`, `instance_count`, `priority`, `build_conditions`.
-- **Usually**: `to_build` (1871), `builders` (1684), `max_num_assisters` (1430).
-- **Often**: `placement_rules` (792), `shared_instance_count` (712), `base_sort` (699),
-  `task_type` (383), `min_num_assisters` (324).
-- **Rarely**: `cross_planet_shared_count` (48) — live and load-bearing, but absent from
-  every published doc.
-
-`base_sort` is one of `FromMainBase` (default), `FromPerimeter`, `FromBuilder`.
-`placement_rules` carries `placement_type` (`FromBaseCenter` / `FromBasePerimeter` are
-the only two used here), `buffer`, and optionally a `threat` block
-(`influence_type` / `compare_type` / `radius` / `value`) or `unit_count_rules`
-(an array of `unit_type_string` / `alliance` / `compare_type` / `range` / `count`).
-
-`task_type` is documented as a platoon-build field, but Queller also puts it on **fabber**
-build specs — `AreaBuild` on the metal-extractor entries in
-`q_uber/fabber_builds/{mla,legion}/economy.json`. Task types in use: `LandAttack` (111),
-`AreaBuild` (44), `BomberAttack`, `FighterAttack`, `TeleportFabberToPlanet`, `Scout`,
-`OrbitalLaserAttack`, `BuilderAssist`, `TransportToPlanet`,
-`OrbitalFabberMoveTo{Safe,}Planet`, `NavalAttack`, `OrbitalFighterAttack`, `OrbitalRecon`,
-`Nuke`, `UnitCannon`, `Artillery`, `TeleportLandToPlanet`, `TransferReconToPlanet`,
-`TransferOrbitalToPlanet`.
-
-For a `task_type` that forms a platoon, `to_build` names a **platoon template**; for
-`AreaBuild` it names a **unit map key**. Both namespaces are in play on the same field.
+- `cross_planet_shared_count` is live and load-bearing here, and absent from every
+  published doc.
+- `task_type` is documented as a platoon-build field, but Queller also puts it on
+  **fabber** build specs — `AreaBuild` on the metal-extractor entries in
+  `q_uber/fabber_builds/{mla,legion}/economy.json`.
+- For a `task_type` that forms a platoon, `to_build` names a **platoon template**; for
+  `AreaBuild` it names a **unit map key**. Both namespaces are in play on the same field,
+  which is why `validate:refs` accepts a hit in either.
 
 ### Build conditions
 
@@ -330,12 +304,6 @@ any one group is fully satisfied. This is the mechanism behind most of Queller's
 "one opening when alone on the planet, another when contested" structure — almost every
 entry leads with an `AloneOnPlanet` test in each branch.
 
-Queller uses 82 distinct `test_type`s across 12,376 conditions. The ten heaviest:
-`CanFindPlaceToBuild` (1185), `AloneOnPlanet` (1119), `UnitCountOnPlanet` (877),
-`CanAffordPotentialDrain` (721), `UnitCountInBase` (698), `EnemySurfacePresenceOnPlanet`
-(591), `CanAffordBuildDemand` (540), `PlanetIsRespawnable` (443), `UnitPoolCount` (439),
-`CanDeployLandFromBase` (408).
-
 Note what is **not** used: none of the `Need*Factory` / `Need*Fabber` conditions appear
 anywhere in this repo. Those are driven by the personality's `percent_vehicle` /
 `percent_bot` / `percent_air` / `percent_naval` / `percent_orbital` and
@@ -343,21 +311,18 @@ anywhere in this repo. Those are driven by the personality's `percent_vehicle` /
 then bypasses — it drives factory and fabber mix with explicit `UnitRatioOnPlanet` /
 `UnitCountOnPlanet` / `UnitCountPerPlanetRadius` conditions instead. Changing a
 `percent_*` on a Queller personality will therefore do almost nothing. `min_basic_fabbers`
-and `min_advanced_fabbers` _are_ live, via `MetMinBasicFabberCount` (36) and
-`MetMinAdvancedFabberCount` (57).
+and `min_advanced_fabbers` _are_ live, via `MetMinBasicFabberCount` and
+`MetMinAdvancedFabberCount`.
 
-Influence types referenced by the threat conditions, in order of use: `Orbital`, `Air`,
-`AntiSurface`, `Sub`, `Naval`, `AntiAir`, `Land`, `Nuke`, `Economy`, `Artillery`,
-`AntiNuke`, `AntiOrbital`, `AntiSub`. World layers: `WL_AnySurface` (315), `WL_Air` (229),
-`WL_Orbital` (14).
+Per-value usage counts, for this repo and for the base game's own AI data, are in
+`docs/engine-vocabulary.md`.
 
 ### Platoon templates
 
 `{"platoon_templates": {Name: {"units": [ {unit_types, min_count, max_count | percent,
 squad} ]}}}`. `units` is the only key any template uses; `target_priorities` is documented
 and supported by the engine but appears nowhere in this repo or in the base game's AI
-data. Squad types in use: `General` (120), `Artillery` (114), `Defense` (102), `Fast` (78),
-`Close` (48), `Suicide` (42), `Escort` (12) — `Transport` is documented but unused here.
+data.
 
 Template names are the contract between `platoon_templates/` and `platoon_builds/`;
 they are plain strings with no validation, so a rename in one place and not the other
@@ -365,57 +330,28 @@ fails silently (see "Data integrity").
 
 ### Personalities and subpersonality tags
 
-`ui/mods/com.pa.quitch.qquellerai/new_game.js` builds each personality as
-`_.assign(_.clone(model.aiPersonalities().Absurd), overrides)`. Everything not listed in
-the overrides comes from `Absurd`. The overrides Queller actually sets are:
-`ai_path`, `display_name`, `metal_drain_check`, `energy_drain_check`,
-`metal_demand_check`, `energy_demand_check`, `micro_type`, `go_for_the_kill`,
-`priority_scout_metal_spots`, `enable_commander_danger_responses`, `neural_data_mod`,
-`adv_eco_mod`, `adv_eco_mod_alone`, `personality_tags`, `min_basic_fabbers`,
-`min_advanced_fabbers`, plus `factory_build_delay_{min,max}` on Casual and Bronze and
-`per_expansion_delay` on Casual alone.
+`docs/architecture.md` has the mechanism. The traps:
 
-`personality_tags` is an **array replacement**, not a merge, so Queller personalities
-drop `Absurd`'s `"Default"` and `"PreventsWaste"` tags. That is intentional: the base
-game's own AI data gates on `Tutorial` / `SlowerExpansion` / `PreventsWaste` /
-`GalacticWar` / `GWAlly`, none of which Queller's tree uses, and Queller supplies a
-complete tree of its own.
-
-The tags Queller's data gates on (via `HasPersonalityTag`, 250 uses) are the real
-subpersonality mechanism. Every tier gets `"queller"`; the Uber variants add one or two
-more:
-
-| tag           | uses in data | declared by                |
-| ------------- | ------------ | -------------------------- |
-| `queller`     | 62           | every tier                 |
-| `platoon`     | 101          | `qUberPlatoon`, `qUberFFA` |
-| `tank`        | 17           | `qUberTank`                |
-| `air`         | 14           | `qUberAir`                 |
-| `bot`         | 14           | `qUberBot`                 |
-| `land`        | 10           | `qUberLand`                |
-| `ffa`         | 9            | `qUberFFA`                 |
-| `orbital`     | 6            | `qUberOrbital`             |
-| `lateorbital` | 4            | `qUber1v1`, `qUberRush`    |
-| `1v1`         | 1            | `qUber1v1`                 |
-| `naval`       | 12           | **nothing** — see below    |
+Each personality is `_.assign(_.clone(model.aiPersonalities().Absurd), overrides)`, so
+**anything not overridden comes from `Absurd`** — including `percent_*` and
+`fabber_to_factory_ratio_*`, which Queller then bypasses entirely (see "Build
+conditions"). `personality_tags` is an **array replacement, not a merge**, so Queller
+personalities deliberately drop `Absurd`'s `Default` and `PreventsWaste`.
 
 Polarity matters as much as presence: most tags are tested **negatively**, to exclude a
-subpersonality from a build rather than to enable one. `platoon` is 54 negative / 47
-positive, `tank` 15/2, `bot` 12/2, `air` 10/4; `land` (10), `lateorbital` (4) and `naval`
-(12) are tested negatively and never positively, while `queller` (62) and `1v1` (1) are
-only ever positive. A tag no personality declares therefore makes its negative tests
-unconditionally **true**, not false.
+subpersonality from a build rather than to enable one. A tag no personality declares
+therefore makes its negative tests unconditionally **true**, not false — which is why
+`validate:refs` treats an undeclared tag as an error rather than dead weight. The
+per-tag table is generated into `docs/tier-inventory.md`.
 
 `qUberTurtle` declares only `"queller"`; its "turtle" behaviour comes entirely from its
 lowered `metal_demand_check` / `energy_demand_check`. The README's list of
 subpersonalities is written from the player's point of view and does not map one-to-one
 onto tags.
 
-`qRandom` and `qUberRandom` are mod-only sentinels with no `ai_path`. `new_game.js`
-wraps `model.startGame` and rewrites any slot holding one of them to a concrete
-personality just before the game starts — `qUberRandom` picks among the `qUber*`
-variants, `qRandom` picks among all non-Uber difficulties plus _one_ sampled Uber
-variant, deliberately, so Uber is not oversampled.
+`qRandom` and `qUberRandom` are mod-only sentinels with no `ai_path`, resolved by a
+wrapper around `model.startGame`. `qRandom` samples all non-Uber difficulties plus
+_one_ sampled Uber variant, deliberately, so Uber is not oversampled.
 
 ### Localisation — never ship `ui/main/_i18n/locales/`
 
@@ -445,7 +381,31 @@ were missing `Q-Uber Land`, `Q-Uber Platoon`, `Q-Uber Turtle`, `Q-Random` and
 `Q-Uber Random` — which is the drift to expect from any translation the mod cannot
 itself carry.
 
-## Documentation sources
+## Documentation
+
+`docs/` holds the reference material, and is `export-ignore`d so none of it ships. Read
+the one that matches the question rather than loading all of it:
+
+| File                        | Answers                                                  | Generated |
+| --------------------------- | -------------------------------------------------------- | --------- |
+| `docs/README.md`            | Which document holds which fact; the confidence markers. | no        |
+| `docs/ai-engine.md`         | How PA's AI engine works, independent of this mod.       | no        |
+| `docs/architecture.md`      | How this mod is built; two end-to-end worked examples.   | no        |
+| `docs/engine-vocabulary.md` | Every legal enum value and its meaning.                  | yes       |
+| `docs/tier-inventory.md`    | What is in each tier; **every count**.                   | yes       |
+
+**Counts live only in `docs/tier-inventory.md`.** A number written into this file or any
+other hand-written document is a bug: the per-tier table that used to sit in
+"Repository layout" had already drifted from the data before anyone noticed, and
+`docs/engine-vocabulary.md` was separately found to be recording hundreds of uses of a
+`base_sort` value that `f6ce9466` had removed entirely. `npm run validate:docs` now
+checks the inventory against the data and checks every cross-reference in `docs/`,
+`README.md` and this file still resolves.
+
+`docs/architecture.md` is the fastest way into the data for a new contributor; the two
+worked examples trace a real build entry from the lobby pick to the placed unit.
+
+### Documentation sources
 
 Three sources, in decreasing order of currency. Where they disagree, the game files win.
 

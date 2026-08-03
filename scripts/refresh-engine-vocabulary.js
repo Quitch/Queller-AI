@@ -123,6 +123,56 @@ const RUNS = {
   },
 };
 
+// Layout claims that `docs/ai-engine.md` states as evidence but that produce no
+// whitelist. They are asserted here, and only here, because this script already reads
+// server.exe and already fails loudly when the layout moves - so the documentation's
+// evidence is re-checked by the same command that refreshes the vocabulary, rather than
+// being a screenshot of a binary somebody looked at once.
+//
+// `sequence` is a run of strings that must appear in this order, each immediately
+// following the last. `contains` is a string that must exist somewhere. Every entry
+// names the documentation section whose claim it protects, so a failure says what is now
+// unsourced rather than just what moved.
+const ADJACENCY = {
+  // docs/ai-engine.md "The load pipeline" - the order the engine reads an AI tree in.
+  // This is the whole basis for saying ai_config comes first and the neural nets load
+  // before the five data directories.
+  ai_tree_load_order: {
+    protects: "The load pipeline",
+    sequence: [
+      "/ai_config.json",
+      "Failed to load AI Config file!",
+      "land_attack",
+      "bomber_attack",
+      "fighter_attack",
+      "/unit_maps",
+      "Loading unit map %s",
+      "/platoon_templates",
+      "/fabber_builds",
+      "/factory_builds",
+      "/platoon_builds",
+    ],
+  },
+  // docs/ai-engine.md "Where the networks load from" - the open question. `ai_path`
+  // immediately followed by a *relative* "/neural_networks/" is the evidence that the
+  // lookup is ai_path-relative; the absolute default is asserted separately below. If
+  // either stops holding, the doc's inference is no longer supported and must be
+  // re-marked before anyone trusts it.
+  neural_path_relative: {
+    protects: "Where the networks load from",
+    sequence: ["ai_path", "/neural_networks/"],
+  },
+  neural_path_default: {
+    protects: "Where the networks load from",
+    contains: "/pa/ai/neural_networks/",
+  },
+  // docs/ai-engine.md "ai_config.json" - unit_cap is the only key the engine reads.
+  ai_config_key: {
+    protects: "ai_config.json",
+    contains: "unit_cap",
+  },
+};
+
 // Minimum run of printable ASCII treated as a string. 3 is low enough to catch short
 // enum members ("Air", "Sub", "Nuke") and high enough to keep the noise manageable.
 const MIN_STRING = 3;
@@ -168,6 +218,44 @@ function extractRun(strings, name, spec) {
   }
   const values = strings.slice(from, to + 1);
   return spec.prefix ? values.map((v) => spec.prefix + v) : values;
+}
+
+// Checks every ADJACENCY claim. Emits nothing; throws on the first one that no longer
+// holds, with the documentation section named so the failure is actionable.
+function checkAdjacency(strings) {
+  for (const [name, spec] of Object.entries(ADJACENCY)) {
+    if (spec.contains) {
+      if (!strings.includes(spec.contains)) {
+        throw new Error(
+          `${name}: "${spec.contains}" is no longer in server.exe - ` +
+            `docs/ai-engine.md "${spec.protects}" cites it as evidence and is now ` +
+            `unsourced`
+        );
+      }
+      continue;
+    }
+    // Find a start position where the whole sequence holds. The first string can occur
+    // many times over (`ai_path` and `land_attack` both do), so a single indexOf is not
+    // enough - only one of those occurrences is the one the claim is about.
+    const [first, ...rest] = spec.sequence;
+    let from = strings.indexOf(first);
+    let found = false;
+    while (from >= 0 && !found) {
+      found = rest.every((value, i) => strings[from + 1 + i] === value);
+      if (!found) {
+        from = strings.indexOf(first, from + 1);
+      }
+    }
+    if (!found) {
+      const run = spec.sequence.map((s) => '"' + s + '"').join(" -> ");
+      throw new Error(
+        `${name}: the string run ${run} is no longer contiguous in server.exe - ` +
+          `docs/ai-engine.md "${spec.protects}" cites this layout as evidence and is ` +
+          `now unsourced`
+      );
+    }
+  }
+  return Object.keys(ADJACENCY).length;
 }
 
 const CATEGORY_KEYS = [
@@ -360,6 +448,10 @@ async function main() {
   }
 
   const strings = extractStrings(fs.readFileSync(exe));
+  // Before extracting anything: re-check the layout claims the documentation cites but
+  // that yield no whitelist. Throws rather than warns - a patch that moved these has
+  // invalidated prose somebody will otherwise keep trusting.
+  const adjacencyChecked = checkAdjacency(strings);
   const runs = {};
   for (const [name, spec] of Object.entries(RUNS)) {
     runs[name] = extractRun(strings, name, spec);
@@ -456,6 +548,11 @@ async function main() {
 
   console.log(`Wrote ${path.relative(process.cwd(), OUTPUT)}`);
   console.log(`Wrote ${path.relative(process.cwd(), MARKDOWN_OUTPUT)}`);
+  // Printed rather than silent: a check that passed and a check that never ran look the
+  // same otherwise, which is the same reasoning as Findings.note in the validators.
+  console.log(
+    `  ${adjacencyChecked} documentation layout claim(s) still hold in server.exe`
+  );
   for (const [name, entry] of Object.entries(vocabulary)) {
     const extras = [];
     if (entry.fromBaseDataOnly.length) {

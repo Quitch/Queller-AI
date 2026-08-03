@@ -25,9 +25,11 @@ jobs:
         run: npm run format:check
 
       # The base game is not available here, so validate:base-install skips its
-      # spec_id, unit-type and shadow-coverage checks and says so in its output.
-      # Everything else - schema, vocabulary, cross-references, condition
-      # redundancy - runs against the repo alone and is a hard gate.
+      # spec_id, unit-type and shadow-coverage checks and says so in its output,
+      # and validate:docs skips the freshness check for docs/engine-vocabulary.md
+      # for the same reason. Everything else - schema, vocabulary,
+      # cross-references, condition redundancy, docs/tier-inventory.md freshness
+      # and documentation links - runs against the repo alone and is a hard gate.
       - name: Validate AI data
         run: npm run validate
 
