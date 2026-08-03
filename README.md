@@ -129,6 +129,7 @@ Comparison between vanilla difficulty and Queller difficulty:
 | Vanilla    | Queller | Eco |
 | ---------- | ------- | --- |
 | Normal     | Casual  | 1.0 |
+| Normal+    | Bronze  | 1.0 |
 | Hard       | Silver  | 1.0 |
 | Relentless | Gold    | 0.8 |
 | Absurd     | Gold    | 1.0 |
