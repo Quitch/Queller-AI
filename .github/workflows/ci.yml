@@ -16,7 +16,11 @@ jobs:
           node-version: 22
           cache: npm
 
-      - run: npm ci
+      # --ignore-scripts: nothing in the dependency tree has a lifecycle script that
+      # does real work - it is eslint, prettier and their transitive deps, none of
+      # which build a native module - so running them buys nothing and hands arbitrary
+      # code execution to any compromised package in the tree.
+      - run: npm ci --ignore-scripts
 
       - name: Lint
         run: npm run lint:js
