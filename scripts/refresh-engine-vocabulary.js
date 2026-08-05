@@ -437,7 +437,7 @@ async function main() {
   if (!mediaPath) {
     console.error(
       "Could not find the base game. Pass its media folder as an argument:\n" +
-        '    node scripts/refresh-engine-vocabulary.js "C:\\...\\Planetary Annihilation Titans\\media"'
+        String.raw`    node scripts/refresh-engine-vocabulary.js "C:\...\Planetary Annihilation Titans\media"`
     );
     process.exit(1);
   }

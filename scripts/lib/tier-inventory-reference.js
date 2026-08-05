@@ -39,7 +39,7 @@ function byTier(a, b) {
 const code = (text) => "`" + text + "`";
 
 // Prettier reflows markdown tables anyway, so cells only need to be pipe-safe.
-const escape = (text) => String(text).replace(/\|/g, "\\|");
+const escape = (text) => String(text).replace(/\|/g, String.raw`\|`);
 
 function table(header, rows) {
   return [

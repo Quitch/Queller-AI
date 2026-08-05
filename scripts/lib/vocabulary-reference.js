@@ -387,7 +387,7 @@ const CATEGORIES = [
   },
 ];
 
-const escape = (text) => String(text).replace(/\|/g, "\\|");
+const escape = (text) => String(text).replace(/\|/g, String.raw`\|`);
 const code = (text) => "`" + String(text).replace(/`/g, "") + "`";
 
 function provenance(entry, value) {
