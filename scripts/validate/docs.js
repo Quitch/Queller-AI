@@ -92,6 +92,33 @@ function documentationFiles() {
   return files.filter((f) => fs.existsSync(f));
 }
 
+// One link: the file it names has to exist, and if it carries a fragment and lands on a
+// markdown file, that file has to have a heading with the matching anchor.
+function checkLink(from, at, label, target, anchorsFor, findings) {
+  const [rawPath, anchor] = target.split("#");
+  const resolved = rawPath
+    ? path.resolve(path.dirname(from), decodeURIComponent(rawPath))
+    : from;
+
+  if (!fs.existsSync(resolved)) {
+    findings.error(
+      at,
+      `link "${label}" points at "${target}", which does not exist`
+    );
+    return;
+  }
+  if (!anchor || !resolved.endsWith(".md")) {
+    return;
+  }
+  if (!anchorsFor(resolved).has(anchor)) {
+    findings.error(
+      at,
+      `link "${label}" points at "${target}", but "${path.basename(resolved)}" ` +
+        `has no heading matching "#${anchor}"`
+    );
+  }
+}
+
 function checkLinks(findings) {
   const files = documentationFiles();
   const anchorCache = new Map();
@@ -118,28 +145,7 @@ function checkLinks(findings) {
         continue;
       }
       checked++;
-      const [rawPath, anchor] = target.split("#");
-      const resolved = rawPath
-        ? path.resolve(path.dirname(file), decodeURIComponent(rawPath))
-        : file;
-
-      if (!fs.existsSync(resolved)) {
-        findings.error(
-          at,
-          `link "${label}" points at "${target}", which does not exist`
-        );
-        continue;
-      }
-      if (!anchor || !resolved.endsWith(".md")) {
-        continue;
-      }
-      if (!anchorsFor(resolved).has(anchor)) {
-        findings.error(
-          at,
-          `link "${label}" points at "${target}", but "${path.basename(resolved)}" ` +
-            `has no heading matching "#${anchor}"`
-        );
-      }
+      checkLink(file, at, label, target, anchorsFor, findings);
     }
   }
   return { files: files.length, links: checked };

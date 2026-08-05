@@ -24,6 +24,7 @@ const prettier = require("prettier");
 const {
   REPO_ROOT,
   byName,
+  conditionsOf,
   declaredPersonalityTags,
   loadTiers,
 } = require("./lib/ai-data.js");
@@ -81,9 +82,7 @@ function describeDeclarers(declarers) {
   return declarers.map((d) => "`" + d + "`").join(", ");
 }
 
-function collect(tiers) {
-  const names = tiers.map((t) => t.name);
-
+function summarise(tiers) {
   const summary = {};
   for (const tier of tiers) {
     summary[tier.name] = {
@@ -96,24 +95,12 @@ function collect(tiers) {
       config: tier.config ? JSON.stringify(tier.config) : "absent",
     };
   }
+  return summary;
+}
 
-  const directories = tally(tiers, (tier, bump) => {
-    for (const file of tier.files) {
-      bump(directoryOf(file.file));
-    }
-  });
-
-  const consumers = tally(tiers, (tier, bump) => {
-    for (const build of tier.builds) {
-      const consumer = consumerOf(build.file);
-      if (consumer) {
-        bump(consumer);
-      }
-    }
-  });
-
-  // Presence matrix, restricted to files that are not in every tier. A file every tier
-  // ships is not evidence of divergence and would bury the rows that are.
+// Which tiers ship each relative path. Both the divergence and the identical-files
+// tables read it, from opposite ends.
+function presenceMatrix(tiers) {
   const presence = new Map();
   for (const tier of tiers) {
     for (const file of tier.files) {
@@ -123,16 +110,24 @@ function collect(tiers) {
       presence.get(file.file)[tier.name] = true;
     }
   }
-  const divergence = [...presence.entries()]
-    .filter(([, present]) => Object.keys(present).length !== tiers.length)
-    .map(([label, present]) => ({ label, present }))
-    .sort((a, b) => (a.label < b.label ? -1 : 1));
+  return presence;
+}
 
-  // Byte-identical is too strong a claim to make from the parsed JSON alone, and too
-  // weak from the raw text - trailing-newline or CRLF differences would show as drift
-  // that git never sees. Compare canonicalised JSON: same data, formatting-independent.
+// Files that are not in every tier. A file every tier ships is not evidence of
+// divergence and would bury the rows that are.
+function divergentFiles(presence, tierCount) {
+  return [...presence.entries()]
+    .filter(([, present]) => Object.keys(present).length !== tierCount)
+    .map(([label, present]) => ({ label, present }))
+    .sort((a, b) => byName(a.label, b.label));
+}
+
+// Byte-identical is too strong a claim to make from the parsed JSON alone, and too
+// weak from the raw text - trailing-newline or CRLF differences would show as drift
+// that git never sees. Compare canonicalised JSON: same data, formatting-independent.
+function identicalFiles(tiers, presence) {
   const canonical = (json) => JSON.stringify(json);
-  const identical = [...presence.entries()]
+  return [...presence.entries()]
     .filter(([, present]) => Object.keys(present).length === tiers.length)
     .map(([file]) => file)
     .filter((file) => {
@@ -142,51 +137,26 @@ function collect(tiers) {
       return values.every((v) => v === values[0]);
     })
     .sort(byName);
+}
 
-  const taskTypes = tally(tiers, (tier, bump) => {
-    for (const build of tier.builds) {
-      if (build.entry.task_type) {
-        bump(build.entry.task_type);
-      }
-    }
-  });
-
-  const squads = tally(tiers, (tier, bump) => {
-    for (const [, { definition }] of tier.templates) {
-      for (const slot of Array.isArray(definition.units)
-        ? definition.units
-        : []) {
-        if (slot.squad) {
-          bump(slot.squad);
-        }
-      }
-    }
-  });
-
-  // Tag uses, split by polarity. `boolean` omitted means true - the engine's default for
-  // a predicate test - so only an explicit `false` counts as a negative test.
+// Tag uses, split by polarity and annotated with who declares each one. `boolean`
+// omitted means true - the engine's default for a predicate test - so only an explicit
+// `false` counts as a negative test.
+function tallyTags(tiers) {
   const polarity = new Map();
-  const tags = tally(tiers, (tier, bump) => {
+  const rows = tally(tiers, (tier, bump) => {
     for (const build of tier.builds) {
-      for (const group of build.entry.build_conditions || []) {
-        if (!Array.isArray(group)) {
+      for (const condition of conditionsOf(build.entry)) {
+        if (condition.test_type !== "HasPersonalityTag" || !condition.string0) {
           continue;
         }
-        for (const condition of group) {
-          if (
-            condition.test_type !== "HasPersonalityTag" ||
-            !condition.string0
-          ) {
-            continue;
-          }
-          bump(condition.string0);
-          if (!polarity.has(condition.string0)) {
-            polarity.set(condition.string0, { positive: 0, negative: 0 });
-          }
-          polarity.get(condition.string0)[
-            condition.boolean === false ? "negative" : "positive"
-          ]++;
+        bump(condition.string0);
+        if (!polarity.has(condition.string0)) {
+          polarity.set(condition.string0, { positive: 0, negative: 0 });
         }
+        polarity.get(condition.string0)[
+          condition.boolean === false ? "negative" : "positive"
+        ]++;
       }
     }
   });
@@ -200,15 +170,18 @@ function collect(tiers) {
       declaredBy.get(tag).push(personality);
     }
   }
-  for (const row of tags) {
+  for (const row of rows) {
     row.declaredBy = describeDeclarers(declaredBy.get(row.label) || []);
     row.positive = polarity.get(row.label).positive;
     row.negative = polarity.get(row.label).negative;
   }
+  return rows;
+}
 
-  // A template nothing names. `to_build` spans two namespaces - a platoon template for a
-  // platoon-forming task, a unit map key for AreaBuild - so matching against the tier's
-  // own template names is what decides it, not the field's presence.
+// A template nothing names. `to_build` spans two namespaces - a platoon template for a
+// platoon-forming task, a unit map key for AreaBuild - so matching against the tier's
+// own template names is what decides it, not the field's presence.
+function orphanTemplates(tiers) {
   const orphans = {};
   for (const tier of tiers) {
     const referenced = new Set(
@@ -223,18 +196,51 @@ function collect(tiers) {
         .sort(byName),
     };
   }
+  return orphans;
+}
+
+// Every number the inventory states, one property per table.
+function collect(tiers) {
+  const presence = presenceMatrix(tiers);
 
   return {
-    tiers: names,
-    summary,
-    directories,
-    consumers,
-    divergence,
-    identical,
-    taskTypes,
-    squads,
-    tags,
-    orphans,
+    tiers: tiers.map((t) => t.name),
+    summary: summarise(tiers),
+    directories: tally(tiers, (tier, bump) => {
+      for (const file of tier.files) {
+        bump(directoryOf(file.file));
+      }
+    }),
+    consumers: tally(tiers, (tier, bump) => {
+      for (const build of tier.builds) {
+        const consumer = consumerOf(build.file);
+        if (consumer) {
+          bump(consumer);
+        }
+      }
+    }),
+    divergence: divergentFiles(presence, tiers.length),
+    identical: identicalFiles(tiers, presence),
+    taskTypes: tally(tiers, (tier, bump) => {
+      for (const build of tier.builds) {
+        if (build.entry.task_type) {
+          bump(build.entry.task_type);
+        }
+      }
+    }),
+    squads: tally(tiers, (tier, bump) => {
+      for (const [, { definition }] of tier.templates) {
+        for (const slot of Array.isArray(definition.units)
+          ? definition.units
+          : []) {
+          if (slot.squad) {
+            bump(slot.squad);
+          }
+        }
+      }
+    }),
+    tags: tallyTags(tiers),
+    orphans: orphanTemplates(tiers),
   };
 }
 

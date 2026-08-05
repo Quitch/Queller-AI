@@ -49,6 +49,16 @@ function byName(a, b) {
 //
 // A character scanner rather than a line scanner, because a line scanner cannot tell a
 // key from a `"..."` string value that happens to contain a colon.
+//
+// SonarCloud reports this function as too complex (S3776, 20 against a limit of 15) and
+// the finding is being left as it stands. It is a state machine over four mutable
+// variables - the read position, the line counter, the pending key and the frame stack -
+// that every branch reads and writes. Splitting the dispatch into per-character handlers
+// would hand each one that state to mutate through a shared object, which is the same
+// machine with the sequence hidden; rewriting the if/else chain as a switch would halve
+// the score without changing a line of logic, because the metric discounts switches.
+// Neither makes it easier to read, so neither is worth the churn on a function that has
+// one job and six tests.
 function findDuplicateKeys(text) {
   const duplicates = [];
   // One frame per open object; arrays push a frame too so depth stays aligned, but
@@ -127,6 +137,25 @@ function findDuplicateKeys(text) {
     }
   }
   return duplicates;
+}
+
+// Every condition in a build entry, flattened. `build_conditions` is an array of groups
+// and a group is an array of conditions - groups are OR'd, conditions inside one are
+// AND'd - so the two loops and the shape guards below are the same three lines at every
+// call site that does not care which group a condition came from, which is all of them
+// except ai-conditions.js. Nested three deep at four call sites, they were most of what
+// made those functions unreadable.
+function* conditionsOf(entry) {
+  for (const group of entry.build_conditions || []) {
+    if (!Array.isArray(group)) {
+      continue;
+    }
+    for (const condition of group) {
+      if (condition && typeof condition === "object") {
+        yield condition;
+      }
+    }
+  }
 }
 
 // One tier: every unit-map key, template and build entry it contributes, flattened the
@@ -305,6 +334,7 @@ module.exports = {
   REPO_ROOT,
   Findings,
   byName,
+  conditionsOf,
   declaredPersonalityTags,
   declaredTags,
   findDuplicateKeys,
