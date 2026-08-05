@@ -68,6 +68,19 @@ function tally(tiers, visit) {
   return byCountThenName([...rows.values()]);
 }
 
+// Who declares a tag, for the inventory's `Declared by` column. Every personality
+// declaring it is the case worth compressing; anything else is short enough to list, and
+// "nothing" is the case validate:refs fails on.
+function describeDeclarers(declarers) {
+  if (!declarers.length) {
+    return "**nothing**";
+  }
+  if (declarers.length > 3) {
+    return `${declarers.length} personalities`;
+  }
+  return declarers.map((d) => "`" + d + "`").join(", ");
+}
+
 function collect(tiers) {
   const names = tiers.map((t) => t.name);
 
@@ -188,15 +201,7 @@ function collect(tiers) {
     }
   }
   for (const row of tags) {
-    const declarers = declaredBy.get(row.label) || [];
-    // Every tier declaring it is the interesting case to compress; anything else is
-    // short enough to list, and "nothing" is the case validate:refs fails on.
-    row.declaredBy =
-      declarers.length === 0
-        ? "**nothing**"
-        : declarers.length > 3
-          ? `${declarers.length} personalities`
-          : declarers.map((d) => "`" + d + "`").join(", ");
+    row.declaredBy = describeDeclarers(declaredBy.get(row.label) || []);
     row.positive = polarity.get(row.label).positive;
     row.negative = polarity.get(row.label).negative;
   }
