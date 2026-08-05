@@ -29,6 +29,19 @@ function walk(dir, out = []) {
 
 const toPosix = (p) => p.split(path.sep).join("/");
 
+// Codepoint order for a list of names. Sorting anything here without a comparator is a
+// bug waiting to happen - the default sort compares stringified elements, which is only
+// the right answer for strings by accident - and `localeCompare` is the wrong fix: it
+// weights `_` and `.` differently, so `ai_unit_map_x1.json` sorts before
+// `ai_unit_map.json` and generated documents reorder for no reason. This is what the
+// default sort already does for strings, said out loud.
+function byName(a, b) {
+  if (a < b) {
+    return -1;
+  }
+  return a > b ? 1 : 0;
+}
+
 // Finds keys that appear twice in the same JSON object. JSON.parse keeps the last one
 // and says nothing, so the earlier value is silently discarded - the kind of edit that
 // looks applied in the diff and is not applied in the game. Needs the raw text: by the
@@ -291,6 +304,7 @@ module.exports = {
   NEW_GAME_JS,
   REPO_ROOT,
   Findings,
+  byName,
   declaredPersonalityTags,
   declaredTags,
   findDuplicateKeys,

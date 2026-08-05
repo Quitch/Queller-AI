@@ -27,13 +27,13 @@
 // over it would be noise. Contradictions are the exception and fail the run - a group
 // that can never fire is dead weight with no benign reading.
 
-const { loadTiers, runAsScript } = require("../lib/ai-data.js");
+const { byName, loadTiers, runAsScript } = require("../lib/ai-data.js");
 
 // Stable key for a condition: same test, same parameters, same order-independent shape.
 function conditionKey(condition) {
   return JSON.stringify(
     Object.keys(condition)
-      .sort()
+      .sort(byName)
       .map((k) => [k, condition[k]])
   );
 }
@@ -44,7 +44,7 @@ function conditionKeyWithoutBoolean(condition) {
   return JSON.stringify(
     Object.keys(condition)
       .filter((k) => k !== "boolean")
-      .sort()
+      .sort(byName)
       .map((k) => [k, condition[k]])
   );
 }

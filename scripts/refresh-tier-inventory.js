@@ -23,6 +23,7 @@ const path = require("node:path");
 const prettier = require("prettier");
 const {
   REPO_ROOT,
+  byName,
   declaredPersonalityTags,
   loadTiers,
 } = require("./lib/ai-data.js");
@@ -127,7 +128,7 @@ function collect(tiers) {
       );
       return values.every((v) => v === values[0]);
     })
-    .sort();
+    .sort(byName);
 
   const taskTypes = tally(tiers, (tier, bump) => {
     for (const build of tier.builds) {
@@ -214,7 +215,7 @@ function collect(tiers) {
       defined: tier.templates.size,
       orphans: [...tier.templates.keys()]
         .filter((n) => !referenced.has(n))
-        .sort(),
+        .sort(byName),
     };
   }
 
