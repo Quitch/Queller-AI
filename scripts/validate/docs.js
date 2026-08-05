@@ -66,7 +66,12 @@ function slug(heading) {
 function headingsOf(text) {
   const anchors = new Set();
   for (const line of normalise(text).split("\n")) {
-    const heading = /^#{1,6}\s+(.*?)\s*$/.exec(line);
+    // One whitespace char, not `\s+`, and a greedy tail rather than a lazy one: `.`
+    // matches whitespace too, so either overlap gives the engine a choice of split
+    // points and a line that turns out not to match costs it every one of them. Any
+    // further leading or trailing space ends up inside the capture, where slug()
+    // trims it.
+    const heading = /^#{1,6}\s(.*)$/.exec(line);
     if (heading) {
       anchors.add(slug(heading[1]));
     }
@@ -101,8 +106,11 @@ function checkLinks(findings) {
   for (const file of files) {
     const at = toPosix(path.relative(REPO_ROOT, file));
     const text = fs.readFileSync(file, "utf8");
+    // Both character classes exclude their own opening delimiter as well as the
+    // closing one. Without that, a stray `[` or `(` sends the match back to scan the
+    // rest of the document from the next character, once per `[` in the file.
     for (const [, label, target] of text.matchAll(
-      /\[([^\]]*)]\(([^)\s]+)\)/g
+      /\[([^[\]]*)]\(([^()\s]+)\)/g
     )) {
       // External links and mailto: are somebody else's problem; a bare fragment is a
       // link within the same file.
