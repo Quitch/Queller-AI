@@ -170,12 +170,14 @@ const SECTIONS = {
   ],
 };
 
+// The document is a fixed sequence of sections, so it reads as one - prose, then the
+// table that prose introduces, in document order.
 function renderMarkdown(data) {
   const tiers = data.tiers;
-  const lines = [...SECTIONS.intro];
+  const lines = [
+    ...SECTIONS.intro,
 
-  lines.push(...SECTIONS.summary);
-  lines.push(
+    ...SECTIONS.summary,
     ...table(
       [
         "Tier",
@@ -193,62 +195,53 @@ function renderMarkdown(data) {
         data.summary[tier].unitMap,
         data.summary[tier].config,
       ])
-    )
-  );
+    ),
 
-  lines.push(...SECTIONS.filesByDirectory);
-  lines.push(
+    ...SECTIONS.filesByDirectory,
     ...table(
       ["Directory", ...tiers],
       data.directories.map((row) => [
         code(row.label),
         ...tiers.map((tier) => row.counts[tier] || "-"),
       ])
-    )
-  );
+    ),
 
-  lines.push(...SECTIONS.entriesByConsumer);
-  lines.push(
+    ...SECTIONS.entriesByConsumer,
     ...table(
       ["Consumer", ...tiers],
       data.consumers.map((row) => [
         code(row.label),
         ...tiers.map((tier) => row.counts[tier] || "-"),
       ])
-    )
-  );
+    ),
 
-  lines.push(...SECTIONS.divergence);
-  lines.push(
+    ...SECTIONS.divergence,
     ...table(
       ["File", ...tiers],
       data.divergence.map((row) => [
         code(row.label),
         ...tiers.map((tier) => (row.present[tier] ? "yes" : "-")),
       ])
-    )
-  );
+    ),
 
-  lines.push(...SECTIONS.identical);
-  lines.push(...data.identical.map((file) => `- ${code(file)}`), "");
+    ...SECTIONS.identical,
+    ...data.identical.map((file) => `- ${code(file)}`),
+    "",
 
-  lines.push(...SECTIONS.taskTypes);
-  lines.push(...perTierTable("Task type", tiers, data.taskTypes));
+    ...SECTIONS.taskTypes,
+    ...perTierTable("Task type", tiers, data.taskTypes),
 
-  lines.push(...SECTIONS.squads);
-  lines.push(...perTierTable("Squad", tiers, data.squads));
+    ...SECTIONS.squads,
+    ...perTierTable("Squad", tiers, data.squads),
 
-  lines.push(...SECTIONS.tags);
-  lines.push(
+    ...SECTIONS.tags,
     ...perTierTable("Tag", tiers, data.tags, [
       { heading: "Declared by", value: (row) => row.declaredBy },
       { heading: "Positive", value: (row) => row.positive || "-" },
       { heading: "Negative", value: (row) => row.negative || "-" },
-    ])
-  );
+    ]),
 
-  lines.push(...SECTIONS.orphanTemplates);
-  lines.push(
+    ...SECTIONS.orphanTemplates,
     ...table(
       ["Tier", "Defined", "Never built"],
       tiers.map((tier) => [
@@ -256,19 +249,19 @@ function renderMarkdown(data) {
         data.orphans[tier].defined,
         data.orphans[tier].orphans.length,
       ])
-    )
-  );
-  // The names go in a list rather than a fourth column: Prettier pads a table column to
-  // its widest cell, and one tier with 25 template names would set the width of every
-  // row in the table.
-  for (const tier of tiers) {
-    const orphans = data.orphans[tier].orphans;
-    lines.push(
-      `- ${code(tier)} - ` +
+    ),
+    // The names go in a list rather than a fourth column: Prettier pads a table column
+    // to its widest cell, and one tier with 25 template names would set the width of
+    // every row in the table.
+    ...tiers.map((tier) => {
+      const orphans = data.orphans[tier].orphans;
+      return (
+        `- ${code(tier)} - ` +
         (orphans.length ? orphans.map(code).join(", ") : "none")
-    );
-  }
-  lines.push("");
+      );
+    }),
+    "",
+  ];
 
   return lines.join("\n").replace(/\n{3,}/g, "\n\n") + "\n";
 }

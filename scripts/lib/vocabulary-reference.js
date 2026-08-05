@@ -436,9 +436,14 @@ function renderCategory(category, entry, usage, parameters) {
     ? "| --- | --- | --- | --- | --- | --- |"
     : "| --- | --- | --- | --- | --- |";
 
-  const out = [`## ${category.title}`, ""];
-  out.push(`**Governs:** ${category.fields.join(", ")}`, "");
-  out.push(category.summary, "");
+  const out = [
+    `## ${category.title}`,
+    "",
+    `**Governs:** ${category.fields.join(", ")}`,
+    "",
+    category.summary,
+    "",
+  ];
   if (category.shareNote) {
     out.push(`**Note:** ${category.shareNote}`, "");
   }
