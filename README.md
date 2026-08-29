@@ -129,6 +129,7 @@ Comparison between vanilla difficulty and Queller difficulty:
 | Vanilla    | Queller | Eco |
 | ---------- | ------- | --- |
 | Normal     | Casual  | 1.0 |
+| Normal+    | Bronze  | 1.0 |
 | Hard       | Silver  | 1.0 |
 | Relentless | Gold    | 0.8 |
 | Absurd     | Gold    | 1.0 |
@@ -236,6 +237,11 @@ Be sure to follow the recommended number of players for any map.
 ### WONTFIX
 
 - Mistakes respawning planets for asteroids and won't behave properly on them
+
+## MODIFYING QUELLER
+
+Documentation for contributors — how PA's AI engine works, and how this mod is built —
+is in [docs/](https://github.com/Quitch/Queller-AI/blob/develop/docs/README.md).
 
 ## THANKS TO
 

@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v5.26.1 - 2026-08-29
+
+- Fix broken Uber Nova scout conditions
+- Fix Uber's broken anti-Locust tower placements
+- Fix Casual and Bronze's broken Legion Radar check
+
 ## v5.26.0 - 2026-08-02
 
 - Properly exclude Unit Cannons and superweapons from advanced factory counts

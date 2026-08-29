@@ -29,6 +29,19 @@ function walk(dir, out = []) {
 
 const toPosix = (p) => p.split(path.sep).join("/");
 
+// Codepoint order for a list of names. Sorting anything here without a comparator is a
+// bug waiting to happen - the default sort compares stringified elements, which is only
+// the right answer for strings by accident - and `localeCompare` is the wrong fix: it
+// weights `_` and `.` differently, so `ai_unit_map_x1.json` sorts before
+// `ai_unit_map.json` and generated documents reorder for no reason. This is what the
+// default sort already does for strings, said out loud.
+function byName(a, b) {
+  if (a < b) {
+    return -1;
+  }
+  return a > b ? 1 : 0;
+}
+
 // Finds keys that appear twice in the same JSON object. JSON.parse keeps the last one
 // and says nothing, so the earlier value is silently discarded - the kind of edit that
 // looks applied in the diff and is not applied in the game. Needs the raw text: by the
@@ -36,6 +49,16 @@ const toPosix = (p) => p.split(path.sep).join("/");
 //
 // A character scanner rather than a line scanner, because a line scanner cannot tell a
 // key from a `"..."` string value that happens to contain a colon.
+//
+// SonarCloud reports this function as too complex (S3776, 20 against a limit of 15) and
+// the finding is being left as it stands. It is a state machine over four mutable
+// variables - the read position, the line counter, the pending key and the frame stack -
+// that every branch reads and writes. Splitting the dispatch into per-character handlers
+// would hand each one that state to mutate through a shared object, which is the same
+// machine with the sequence hidden; rewriting the if/else chain as a switch would halve
+// the score without changing a line of logic, because the metric discounts switches.
+// Neither makes it easier to read, so neither is worth the churn on a function that has
+// one job and six tests.
 function findDuplicateKeys(text) {
   const duplicates = [];
   // One frame per open object; arrays push a frame too so depth stays aligned, but
@@ -116,6 +139,25 @@ function findDuplicateKeys(text) {
   return duplicates;
 }
 
+// Every condition in a build entry, flattened. `build_conditions` is an array of groups
+// and a group is an array of conditions - groups are OR'd, conditions inside one are
+// AND'd - so the two loops and the shape guards below are the same three lines at every
+// call site that does not care which group a condition came from, which is all of them
+// except ai-conditions.js. Nested three deep at four call sites, they were most of what
+// made those functions unreadable.
+function* conditionsOf(entry) {
+  for (const group of entry.build_conditions || []) {
+    if (!Array.isArray(group)) {
+      continue;
+    }
+    for (const condition of group) {
+      if (condition && typeof condition === "object") {
+        yield condition;
+      }
+    }
+  }
+}
+
 // One tier: every unit-map key, template and build entry it contributes, flattened the
 // way the engine flattens them, each tagged with the file it came from so a finding can
 // point at a real line of a real file.
@@ -170,6 +212,56 @@ function loadTiers() {
     .map((e) => loadTier(e.name));
 }
 
+const NEW_GAME_JS = path.join(
+  REPO_ROOT,
+  "ui",
+  "mods",
+  "com.pa.quitch.qquellerai",
+  "new_game.js"
+);
+
+// Which personality declares which tags, read out of new_game.js by pattern rather than
+// by executing it - the file is written against PA's runtime globals (`model`, `_`) and
+// cannot be required from Node.
+//
+// Scanned line by line against line-anchored patterns rather than with one regex over
+// the whole file: `prettier --check` is a CI gate here, so `qName: {` and
+// `personality_tags: [...]` are each reliably on their own line, and anchoring keeps the
+// match linear instead of backtracking across the file.
+//
+// A personality whose tag array ever grew long enough for Prettier to wrap it would be
+// missed. `ai-refs` is the backstop - it errors on any tag the data gates on that no
+// personality declares, so a miss surfaces there rather than silently.
+//
+// Two consumers: `validate:refs` asserts every tag the data gates on is declared
+// somewhere, and the inventory generator reports which personality declares each one.
+function declaredPersonalityTags() {
+  const source = fs.readFileSync(NEW_GAME_JS, "utf8");
+  const personalities = new Map();
+  let current = null;
+  for (const line of source.split("\n")) {
+    const opener = /^\s*([A-Za-z_$][\w$]*):\s*\{\s*$/.exec(line);
+    if (opener) {
+      current = opener[1];
+      continue;
+    }
+    const tags = /^\s*personality_tags:\s*\[(.*)],?\s*$/.exec(line);
+    if (tags && current) {
+      personalities.set(
+        current,
+        (tags[1].match(/"([^"]*)"/g) || []).map((q) => q.slice(1, -1))
+      );
+      current = null;
+    }
+  }
+  return personalities;
+}
+
+// The flat set of every declared tag, for callers that only need membership.
+function declaredTags() {
+  return new Set([...declaredPersonalityTags().values()].flat());
+}
+
 // Findings collector. `error` fails the run; `warn` is reported and does not. The split
 // exists because some checks describe data that is redundant rather than wrong - a
 // duplicated OR-branch changes no behaviour, so failing a build over it would be
@@ -218,17 +310,33 @@ class Findings {
 }
 
 // Standard entry point for a validator run directly from npm rather than from a test.
+//
+// `run` may return its summary directly or as a promise - the docs check has to
+// regenerate a document before it can compare, and that goes through Prettier, which is
+// async. Awaiting a non-promise is harmless, so the synchronous validators are unchanged.
 function runAsScript(checkName, run) {
   const findings = new Findings(checkName);
-  const summary = run(findings);
-  findings.print(summary);
-  process.exit(findings.ok ? 0 : 1);
+  Promise.resolve()
+    .then(() => run(findings))
+    .then((summary) => {
+      findings.print(summary);
+      process.exit(findings.ok ? 0 : 1);
+    })
+    .catch((error) => {
+      console.error(`FAIL ${checkName}: ${error.message}`);
+      process.exit(1);
+    });
 }
 
 module.exports = {
   AI_ROOT,
+  NEW_GAME_JS,
   REPO_ROOT,
   Findings,
+  byName,
+  conditionsOf,
+  declaredPersonalityTags,
+  declaredTags,
   findDuplicateKeys,
   loadTier,
   loadTiers,

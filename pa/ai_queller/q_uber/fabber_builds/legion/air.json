@@ -6,7 +6,6 @@
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
       "priority": 376,
-      "base_sort": "FromMainBase",
       "builders": ["LegionCommander"],
       "build_conditions": [
         [
@@ -139,7 +138,6 @@
       "shared_instance_count": "BasicFactory",
       "priority": 10,
       "max_num_assisters": 2,
-      "base_sort": "FromMainBase",
       "builders": ["LegionCommander", "LegionNavalBasicFabber"],
       "build_conditions": [
         [
@@ -200,7 +198,6 @@
       "priority": 376,
       "min_num_assisters": 1,
       "max_num_assisters": 3,
-      "base_sort": "FromMainBase",
       "builders": [
         "LegionBotBasicFabber",
         "LegionNavalBasicFabber",
@@ -338,7 +335,6 @@
       "min_num_assisters": 1,
       "max_num_assisters": 3,
       "priority": 378,
-      "base_sort": "FromMainBase",
       "builders": [
         "LegionCommander",
         "LegionBotBasicFabber",

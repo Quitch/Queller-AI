@@ -12,7 +12,12 @@
 
 const fs = require("node:fs");
 const path = require("node:path");
-const { loadTiers, runAsScript, toPosix } = require("../lib/ai-data.js");
+const {
+  conditionsOf,
+  loadTiers,
+  runAsScript,
+  toPosix,
+} = require("../lib/ai-data.js");
 const {
   findBaseInstall,
   resolveSpecPath,
@@ -83,39 +88,41 @@ function checkSpecIds(tiers, mediaPath, findings) {
   );
 }
 
+// Every place a unit-type expression can appear in a tier, paired with the location a
+// finding about it should point at. Four unrelated shapes - unit map entries, platoon
+// template squads, placement rules and build conditions - and the caller cares about
+// none of that, only that it has seen all of them.
+function* unitTypeExpressions(tier) {
+  for (const [key, { file, entry }] of tier.unitMap) {
+    yield [entry.unit_types, `${tier.name}/${file} ("${key}")`];
+  }
+  for (const [name, { file, definition }] of tier.templates) {
+    for (const squad of definition.units || []) {
+      yield [squad.unit_types, `${tier.name}/${file} ("${name}")`];
+    }
+  }
+  for (const { file, entry } of tier.builds) {
+    const at = `${tier.name}/${file} ("${entry.name}")`;
+    for (const rule of entry.placement_rules?.unit_count_rules || []) {
+      yield [rule.unit_type_string, at];
+    }
+    for (const condition of conditionsOf(entry)) {
+      yield [condition.unit_type_string0, at];
+      yield [condition.unit_type_string1, at];
+    }
+  }
+}
+
 function collectUnitTypeTokens(tiers) {
   const tokens = new Map(); // token -> first place it was used
-  const note = (expression, at) => {
-    if (typeof expression !== "string") {
-      return;
-    }
-    for (const token of expression.split(/[()&|\-+!\s,]+/)) {
-      if (token && !tokens.has(token)) {
-        tokens.set(token, at);
-      }
-    }
-  };
   for (const tier of tiers) {
-    for (const [key, { file, entry }] of tier.unitMap) {
-      note(entry.unit_types, `${tier.name}/${file} ("${key}")`);
-    }
-    for (const [name, { file, definition }] of tier.templates) {
-      for (const squad of definition.units || []) {
-        note(squad.unit_types, `${tier.name}/${file} ("${name}")`);
+    for (const [expression, at] of unitTypeExpressions(tier)) {
+      if (typeof expression !== "string") {
+        continue;
       }
-    }
-    for (const { file, entry } of tier.builds) {
-      const at = `${tier.name}/${file} ("${entry.name}")`;
-      for (const rule of entry.placement_rules?.unit_count_rules || []) {
-        note(rule.unit_type_string, at);
-      }
-      for (const group of entry.build_conditions || []) {
-        if (!Array.isArray(group)) {
-          continue;
-        }
-        for (const condition of group) {
-          note(condition.unit_type_string0, at);
-          note(condition.unit_type_string1, at);
+      for (const token of expression.split(/[()&|\-+!\s,]+/)) {
+        if (token && !tokens.has(token)) {
+          tokens.set(token, at);
         }
       }
     }

@@ -1,45 +1,5 @@
 {
   "platoon_templates": {
-    "Land_Attack_Small_Queller": {
-      "units": [
-        {
-          "unit_types": "(Bot & Offense & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Scout - SelfDestruct - Deconstruction - Titan",
-          "min_count": 0,
-          "max_count": 3,
-          "squad": "Fast"
-        },
-        {
-          "unit_types": "(Tank & Offense & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout - SelfDestruct - Titan",
-          "min_count": 0,
-          "max_count": 3,
-          "squad": "General"
-        },
-        {
-          "unit_types": "(Tank & Offense & Mobile & Heavy) - Fabber - Construction - Titan",
-          "min_count": 0,
-          "max_count": 3,
-          "squad": "Close"
-        },
-        {
-          "unit_types": "(Land & Offense & Mobile & (Artillery | Tactical)) - Fabber - Construction - Titan",
-          "min_count": 0,
-          "max_count": 3,
-          "squad": "Artillery"
-        },
-        {
-          "unit_types": "(Land & Mobile & AirDefense) - Fabber - Construction - Titan",
-          "min_count": 0,
-          "percent": 0.2,
-          "squad": "Defense"
-        },
-        {
-          "unit_types": "(Land & Mobile & (Scout | Construction)) - Fabber - Titan",
-          "min_count": 0,
-          "percent": 0.1,
-          "squad": "Defense"
-        }
-      ]
-    },
     "Land_Attack_Medium_Queller": {
       "units": [
         {
@@ -237,22 +197,6 @@
           "min_count": 0,
           "percent": 0.1,
           "squad": "Defense"
-        }
-      ]
-    },
-    "Boom_Attack_Small_Queller": {
-      "units": [
-        {
-          "unit_types": "(Bot & SelfDestruct) - Advanced",
-          "min_count": 0,
-          "max_count": 3,
-          "squad": "Suicide"
-        },
-        {
-          "unit_types": "Bot & SelfDestruct & Advanced & Custom1",
-          "min_count": 0,
-          "max_count": 3,
-          "squad": "Artillery"
         }
       ]
     },
