@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v5.26.1 - 2026-08-29
 
 - Fix broken Uber Nova scout conditions
 - Fix Uber's broken anti-Locust tower placements
