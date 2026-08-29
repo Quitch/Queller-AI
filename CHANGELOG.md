@@ -3,6 +3,8 @@
 ## Unreleased
 
 - Fix broken Uber Nova scout conditions
+- Fix Uber's broken anti-Locust tower placements
+- Fix Casual and Bronze's broken Legion Radar check
 
 ## v5.26.0 - 2026-08-02
 
