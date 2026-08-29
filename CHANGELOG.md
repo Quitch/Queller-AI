@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Fix broken Uber Nova scout conditions
+
 ## v5.26.0 - 2026-08-02
 
 - Properly exclude Unit Cannons and superweapons from advanced factory counts
