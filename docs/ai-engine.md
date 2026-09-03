@@ -51,24 +51,64 @@ and it is why every other section of this document is about a JSON format.
 ### Engine components
 
 These class names appear in `server.exe`'s symbol strings, so the components exist and
-are named as below. **Inferred (behaviour).** The ownership relationships in the
-"Scope" column are read from the names and from which data each consumes; the engine
-exposes no structure that confirms them.
+are named as below. The binary says nothing about which owns which. The hierarchy here
+follows the one published source that does: the palobby wiki's "AI Implementation"
+outline, which nests the components exactly as drawn below. **Inferred (behaviour).**
+Every "Scope" cell rests on that outline plus the method names the binary carries for
+each class; nothing in the binary contradicts it, and nothing in the binary states it.
 
-| Component                          | Scope        | Consumes                                |
-| ---------------------------------- | ------------ | --------------------------------------- |
-| `AIBrain`                          | One per army | `ai_path`, everything below             |
-| `AIPersonality::adjustPersonality` | One per army | the personality object                  |
-| `StrategicManager`                 | One per army | system-wide targeting and expansion     |
-| `PlanetManager`                    | Per planet   | recon and land-unit need, base creation |
-| `BaseManager`                      | Per base     | `placement_rules`, build locations      |
-| `FabberManager`                    | Per base     | `fabber_builds/`                        |
-| `FactoryManager`                   | Per base     | `factory_builds/`                       |
-| `PlatoonManager` / `Platoon`       | Per army     | `platoon_builds/`, `platoon_templates/` |
-| `EconomyManager`                   | Per army     | backs the economy conditions            |
-| `InfluenceMap`                     | Per planet   | backs every threat condition            |
-| `ReconDatabase`                    | Per army     | backs the intel conditions              |
-| `NeuralNetwork::feedForward`       | Per army     | `neural_networks/*.json`                |
+```text
+Game Server --createAIBrain--> AIBrain (one per AI army) <.. signals .. Army
+                               |-- EconomyManager
+                               |-- interplanetary request manager
+                               `-- PlanetManager (one per planet)
+                                   |-- FabberManager
+                                   |-- StrategicManager
+                                   |   |-- InfluenceMap
+                                   |   `-- recon manager (ReconDatabase / IntelManager)
+                                   |-- PlatoonManager
+                                   |   `-- Platoon (one per platoon)
+                                   `-- BaseManager (one per base)
+                                       `-- FactoryManager
+```
+
+The solid edges are ownership. The dashed edge is not: the brain is created by the server
+(section 2) and then observes its army, and the outline draws that as signals flowing from
+the army into the brain rather than as the brain owning the army.
+
+| Component                          | Scope                                | Consumes                                                 |
+| ---------------------------------- | ------------------------------------ | -------------------------------------------------------- |
+| `AIBrain`                          | One per army                         | `ai_path`, everything below                              |
+| `AIPersonality::adjustPersonality` | One per army                         | the personality object                                   |
+| `EconomyManager`                   | Per army                             | backs the economy conditions                             |
+| interplanetary request manager     | Per army                             | cross-planet unit and recon requests - see below         |
+| `PlanetManager`                    | Per planet                           | recon and land-unit need, base creation, main-base moves |
+| `FabberManager`                    | Per planet                           | `fabber_builds/`                                         |
+| `StrategicManager`                 | Per planet                           | attack targets, threat, expansion sites, planet weapons  |
+| `InfluenceMap`                     | Per planet, under `StrategicManager` | backs every threat condition                             |
+| `ReconDatabase` / `IntelManager`   | Per planet, under `StrategicManager` | backs the intel conditions                               |
+| `PlatoonManager` / `Platoon`       | Per planet / per platoon             | `platoon_builds/`, `platoon_templates/`                  |
+| `BaseManager`                      | Per base                             | `placement_rules`, build locations, metal spots, rally   |
+| `FactoryManager`                   | Per base                             | `factory_builds/`                                        |
+| `NeuralNetwork::feedForward`       | Per army                             | `neural_networks/*.json`                                 |
+
+Read scope from the outline, not from method names. `StrategicManager::chooseFocusTarget`
+and `StrategicManager::evaluatePlanetAsKineticWeapon` read as system-wide decisions, and
+an earlier version of this table put the manager at army scope on that basis; the outline
+puts it under the planet manager, with the per-planet `InfluenceMap` beneath it, which is
+the simpler reading. Likewise `FabberManager` sits beside the base managers, not inside
+one: a planet's fabbers are one pool, and `FabberManager::findUnitToAssist` picks across
+the planet's bases.
+
+Two boxes in the outline have no class string of their own. The **interplanetary request
+manager** is visible only through what it would carry: `AVInterplanetaryRequest`,
+`AVLandUnitRequest`, `AVOrbitalUnitRequest`, `AVOrbitalReconRequest` and
+`AVAirSupportRequest` are all present, as are the recon-assistance signals
+`ThisPlanetNeedsReconAssistance` and `OtherPlanetNeedsReconAssistance`. **Inferred
+(layout).** The **recon manager** has no `ReconManager` string either; `ReconDatabase` and
+`IntelManager::tick` are the nearest, and `InfluenceMap::onReconChange` is the point where
+recon feeds threat. Whether those are one class or two is an **open question**; an
+`--ai-log` run grepped for either name would settle it.
 
 The JSON parsers are separate and named too: `AIBuildSpecList`, `AIPlacementSpec`,
 `UnitMapSpec`, `PlatoonTemplateSpecList`, and `BuildCondition::checkCondition`. Their
@@ -679,6 +719,7 @@ In decreasing order of currency. Where they disagree, the game files win.
 2. `media/server-script/**` and `media/ui/main/game/new_game/js/ai.js` - the personality
    schema and the whole UI-to-sim path, readable as source.
 3. <https://planetaryannihilation.com/ai/> - the current official page.
-4. The palobby wiki (`wiki.palobby.com/wiki/Planetary_Annihilation_AI_*`), archived
+4. The palobby wiki (`wiki.palobby.com/wiki/Planetary_Annihilation_AI_*`; the
+   `_Implementation` page is the component hierarchy in section 1), archived
    2021-09-05 - still the only published source for some full enumerations. Fetch with
    `curl` and strip the HTML; `action=raw` 404s there.
