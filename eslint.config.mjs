@@ -1,5 +1,8 @@
 import js from "@eslint/js";
 import esX from "eslint-plugin-es-x";
+// Holds eslint and eslint-plugin-es-x on 9.x: the plugin calls context.getSourceCode,
+// which ESLint 10 removed (es-x 10.x in turn needs ESLint >= 10.6).
+import lodash from "eslint-plugin-lodash";
 import prettier from "eslint-config-prettier/flat";
 import globals from "globals";
 import { defineConfig } from "eslint/config";
@@ -138,10 +141,37 @@ export default defineConfig([
       // That the polyfill installed at all is itself the proof the natives are absent,
       // since it only runs when typeof is not 'function'. A wrong answer is worse than
       // a missing method - nothing throws, the logic just takes the wrong branch - so
-      // they stay forbidden. Use indexOf/slice. String.prototype.includes and .repeat
+      // they stay forbidden. Use _.startsWith / _.endsWith. String.prototype.includes and .repeat
       // are genuinely absent here, as is the legacy .contains spelling.
       "es-x/no-string-prototype-startswith": "error",
       "es-x/no-string-prototype-endswith": "error",
+    },
+  },
+  {
+    // lodash rules for shipped code only: `_` is a PA runtime global that the
+    // Node tooling under scripts/ and test/ does not have.
+    files: ["ui/**/*.js"],
+    plugins: { lodash },
+    extends: ["lodash/v3"],
+    rules: {
+      // Kept: the lodash method stands in for a post-ES5 feature Chrome 40 lacks.
+      // prefer-get (optional chaining, ES2020), prefer-includes (includes, ES2015/16),
+      // prefer-startswith (startsWith, ES2015; PA's polyfill drops the position arg).
+      // Off: the lodash form is only a style preference over an ES5 equivalent.
+      "lodash/prefer-compact": "off",
+      "lodash/prefer-constant": "off",
+      "lodash/prefer-filter": "off",
+      "lodash/prefer-lodash-chain": "off",
+      "lodash/prefer-lodash-method": "off",
+      "lodash/prefer-lodash-typecheck": "off",
+      "lodash/prefer-map": "off",
+      "lodash/prefer-matches": "off",
+      "lodash/prefer-noop": "off",
+      "lodash/prefer-reject": "off",
+      "lodash/prefer-some": "off",
+      "lodash/prefer-thru": "off",
+      "lodash/prefer-times": "off",
+      "lodash/prefer-wrapper-method": "off",
     },
   },
   {

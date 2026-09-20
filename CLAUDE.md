@@ -166,6 +166,8 @@ what Chrome 40 genuinely has, each annotated with the Chrome release. That list 
 answer to "may I use X?" — no entry means no. `ecmaVersion` is pinned at 6 as a
 parse-time backstop.
 
+The `eslint-plugin-lodash` `v3` rules apply to shipped code only, because `_` is a PA runtime global the Node tooling does not have. Every non-`prefer-*` rule is on. Of the `prefer-*` rules only `prefer-get`, `prefer-includes`, and `prefer-startswith` are kept, since there the lodash method stands in for a post-ES5 feature Chrome 40 lacks; the other fourteen are off as style preferences over ES5 equivalents. ESLint is held at **9.x**: `eslint-plugin-lodash` calls `context.getSourceCode`, which ESLint 10 removed. `eslint-plugin-es-x` is held at 9.x for the same reason (its 10.x needs ESLint >= 10.6).
+
 `test/` runs the AI-data validators and unit-tests the duplicate-key scanner; there is
 no harness for `ui/**`, which is why lodash is **not** an npm dependency (removed in
 `a35eeefe`): `_` is a PA runtime global, declared in `eslint.config.mjs`'s `globals`
