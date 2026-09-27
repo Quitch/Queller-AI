@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Fix Uber trying to build Excalibur's from the wrong factory when under threat
+
 ## v5.26.1 - 2026-08-29
 
 - Fix broken Uber Nova scout conditions
