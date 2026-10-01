@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v5.26.2 - 2026-10-01
 
 - Fix Uber trying to build Excalibur's from the wrong factory when under threat
 - Fix Gold through Uber trying to build Infiltrators from the Air Foundry
