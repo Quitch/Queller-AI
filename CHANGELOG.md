@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v5.26.3 - 2026-10-17
 
 - Q-Random and Q-Uber Random slots no longer lock in a personality when Start is clicked before the game can start
 
