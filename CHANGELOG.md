@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v5.26.3 - 2026-10-17
+
+- Q-Random and Q-Uber Random slots no longer lock in a personality when Start is clicked before the game can start
+
 ## v5.26.2 - 2026-10-01
 
 - Fix Uber trying to build Excalibur's from the wrong factory when under threat
