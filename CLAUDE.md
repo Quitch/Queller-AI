@@ -351,9 +351,11 @@ lowered `metal_demand_check` / `energy_demand_check`. The README's list of
 subpersonalities is written from the player's point of view and does not map one-to-one
 onto tags.
 
-`qRandom` and `qUberRandom` are mod-only sentinels with no `ai_path`, resolved by a
-wrapper around `model.startGame`. `qRandom` samples all non-Uber difficulties plus
-_one_ sampled Uber variant, deliberately, so Uber is not oversampled.
+`qRandom` and `qUberRandom` are sentinels with no `ai_path` of their own. The mod does
+not resolve them: the stock `model.startGame` calls `assignRandomAI()` once its start
+checks pass, and that picks from every personality whose `ai_path` starts with
+`/pa/ai_queller/`, so it finds every one registered here. `qRandom` samples all non-Uber
+difficulties plus _one_ sampled Uber variant, deliberately, so Uber is not oversampled.
 
 ### Localisation — never ship `ui/main/_i18n/locales/`
 

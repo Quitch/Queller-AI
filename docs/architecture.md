@@ -175,8 +175,10 @@ the data gates on that nothing declares - a real break it was written to catch.
 comes entirely from lowered `metal_demand_check` and `energy_demand_check`. The README's
 subpersonality list is written for players and does **not** map one-to-one onto tags.
 
-`qRandom` and `qUberRandom` are resolved by a wrapper around `model.startGame` that
-rewrites any slot holding one into a concrete personality just before the game starts.
+`qRandom` and `qUberRandom` are resolved by the base game, not by this mod: the stock
+`model.startGame` calls `assignRandomAI()` once its start checks pass, and that rewrites
+any slot holding one into a concrete personality whose `ai_path` starts with
+`/pa/ai_queller/`.
 `qUberRandom` samples the `qUber*` variants; `qRandom` samples all non-Uber difficulties
 plus _one_ sampled Uber variant, deliberately, so Uber is not oversampled.
 
