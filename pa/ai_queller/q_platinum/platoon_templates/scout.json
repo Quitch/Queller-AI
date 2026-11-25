@@ -32,10 +32,18 @@
         }
       ]
     },
+    "Tank_Scout_Queller": {
+      "units": [
+        {
+          "unit_types": "(Tank & Offense & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout - SelfDestruct - Titan",
+          "max_count": 1
+        }
+      ]
+    },
     "Naval_Scout_Queller": {
       "units": [
         {
-          "unit_types": "(Naval & WaterHover & Offense & Mobile) - Fabber - Construction - Titan",
+          "unit_types": "(Naval & (WaterHover | Custom1) & Offense & Mobile) - Fabber - Construction - Titan",
           "max_count": 1
         }
       ]

@@ -17,9 +17,9 @@ One row per tier. `Build entries` counts every item across `fabber_builds/`, `fa
 | `q_casual`   | 61    | 274           | 19        | 234           | {"unit_cap":3000} |
 | `q_bronze`   | 61    | 285           | 22        | 234           | {"unit_cap":3000} |
 | `q_silver`   | 61    | 271           | 30        | 234           | {"unit_cap":3000} |
-| `q_gold`     | 71    | 334           | 39        | 234           | {"unit_cap":3000} |
-| `q_platinum` | 71    | 346           | 39        | 234           | {"unit_cap":3000} |
-| `q_uber`     | 80    | 437           | 48        | 234           | {"unit_cap":3000} |
+| `q_gold`     | 71    | 335           | 40        | 234           | {"unit_cap":3000} |
+| `q_platinum` | 71    | 347           | 40        | 234           | {"unit_cap":3000} |
+| `q_uber`     | 80    | 439           | 49        | 234           | {"unit_cap":3000} |
 
 ## Files by directory
 
@@ -47,7 +47,7 @@ Which of the three build-list consumers each tier's entries belong to. All three
 | ---------------- | -------- | -------- | -------- | ------ | ---------- | ------ |
 | `fabber_builds`  | 118      | 124      | 121      | 151    | 161        | 205    |
 | `factory_builds` | 135      | 133      | 118      | 135    | 135        | 148    |
-| `platoon_builds` | 21       | 28       | 32       | 48     | 50         | 84     |
+| `platoon_builds` | 21       | 28       | 32       | 49     | 51         | 86     |
 
 ## Where the tiers diverge
 
@@ -110,8 +110,8 @@ Set on a build item to say what the resulting platoon does, or - on a fabber ite
 | `AreaBuild`                     | -        | -        | 4        | 8      | 14         | 18     |
 | `BomberAttack`                  | 3        | 3        | 2        | 6      | 7          | 13     |
 | `FighterAttack`                 | 1        | 1        | 1        | 5      | 6          | 11     |
+| `Scout`                         | 1        | 3        | 3        | 5      | 6          | 7      |
 | `TeleportFabberToPlanet`        | 4        | 4        | 4        | 4      | 4          | 4      |
-| `Scout`                         | 1        | 3        | 3        | 4      | 5          | 5      |
 | `OrbitalLaserAttack`            | 3        | 3        | 3        | 3      | 3          | 3      |
 | `BuilderAssist`                 | 2        | 2        | 2        | 2      | 2          | 4      |
 | `TransportToPlanet`             | 4        | 2        | 2        | 2      | 2          | 2      |
@@ -154,8 +154,8 @@ The subpersonality mechanism: one `ai_path` serves many personalities, and `HasP
 | `tank`        | `qUberTank`                | 2        | 15       | -        | -        | -        | -      | -          | 17     |
 | `air`         | `qUberAir`                 | 4        | 10       | -        | -        | -        | -      | -          | 14     |
 | `bot`         | `qUberBot`                 | 2        | 12       | -        | -        | -        | -      | -          | 14     |
+| `ffa`         | `qUberFFA`                 | 3        | 7        | -        | -        | -        | -      | -          | 10     |
 | `land`        | `qUberLand`                | -        | 10       | -        | -        | -        | -      | -          | 10     |
-| `ffa`         | `qUberFFA`                 | 2        | 7        | -        | -        | -        | -      | -          | 9      |
 | `orbital`     | `qUberOrbital`             | 4        | 2        | -        | -        | -        | -      | -          | 6      |
 | `lateorbital` | `qUber1v1`, `qUberRush`    | -        | 4        | -        | -        | -        | -      | -          | 4      |
 | `1v1`         | `qUber1v1`                 | 1        | -        | -        | -        | -        | -      | -          | 1      |
@@ -169,9 +169,9 @@ A platoon template that no `platoon_builds` entry names. Every tier should read 
 | `q_casual`   | 19      | 0           |
 | `q_bronze`   | 22      | 0           |
 | `q_silver`   | 30      | 0           |
-| `q_gold`     | 39      | 0           |
-| `q_platinum` | 39      | 0           |
-| `q_uber`     | 48      | 0           |
+| `q_gold`     | 40      | 0           |
+| `q_platinum` | 40      | 0           |
+| `q_uber`     | 49      | 0           |
 
 - `q_casual` - none
 - `q_bronze` - none

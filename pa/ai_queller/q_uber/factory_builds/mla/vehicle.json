@@ -159,16 +159,40 @@
         ],
         [
           {
-            "test_type": "AloneOnPlanet",
+            "test_type": "BaseThreatened",
             "boolean": false
           },
           {
-            "test_type": "EnemyPresenceOnPlanet",
+            "test_type": "HaveFullPlanetIntel",
             "boolean": false
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Air | Land) & Scout",
+            "unit_type_string0": "Air & Factory & Basic",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Scout - Naval",
+            "compare0": "<",
+            "value0": 150
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Factory & Basic",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Scout - Naval",
             "compare0": "<",
             "value0": 1
           }

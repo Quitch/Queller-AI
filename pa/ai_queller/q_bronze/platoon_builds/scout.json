@@ -4,7 +4,7 @@
       "name": "Offensive Air Scout Platoon",
       "to_build": "Offensive_Air_Scout_Queller",
       "instance_count": 1,
-      "priority": 200,
+      "priority": 90,
       "build_conditions": [
         [
           {
@@ -17,6 +17,20 @@
             "compare0": ">=",
             "value0": 4
           }
+        ],
+        [
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & (Fighter | Scout)",
+            "compare0": ">=",
+            "value0": 4
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Air | Land) & Scout",
+            "compare0": "<",
+            "value0": 1
+          }
         ]
       ],
       "task_type": "Scout"
@@ -25,7 +39,7 @@
       "name": "Land Scout Platoon",
       "to_build": "Land_Attack_Large_Queller",
       "instance_count": 1,
-      "priority": 200,
+      "priority": 90,
       "build_conditions": [
         [
           {
@@ -37,6 +51,20 @@
             "unit_type_string0": "(Land & Mobile) - Fabber - AirDefense - Construction",
             "compare0": ">=",
             "value0": 10
+          }
+        ],
+        [
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Land & Mobile) - Fabber - AirDefense - Construction",
+            "compare0": ">=",
+            "value0": 10
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Air | Land) & Scout",
+            "compare0": "<",
+            "value0": 1
           }
         ]
       ],
@@ -58,6 +86,20 @@
             "unit_type_string0": "(Naval & Mobile & Offense) - Hover - Fabber - (AirDefense & Custom1) - Construction",
             "compare0": ">=",
             "value0": 5
+          }
+        ],
+        [
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Naval & Mobile & Offense) - Hover - Fabber - (AirDefense & Custom1) - Construction",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Scout",
+            "compare0": "<",
+            "value0": 1
           }
         ]
       ],

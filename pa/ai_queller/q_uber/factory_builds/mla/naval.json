@@ -135,24 +135,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyPresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
-          }
-        ],
-        [
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
             "test_type": "BaseThreatened",
             "boolean": false
           },
@@ -161,8 +143,26 @@
             "boolean": false
           },
           {
-            "test_type": "CanDeployNavalFromBase",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Factory & Basic",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "(Naval & WaterHover & Offense & Mobile) - Fabber - Construction - Titan",
+            "compare0": "<",
+            "value0": 150
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatened",
             "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
           },
           {
             "test_type": "UnitCountOnPlanet",

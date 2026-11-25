@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## Unreleased
+
+- Bronze and above will continue to build scouts and form scout platoons even when they have full intel
+- Ensure scouting works no matter the T1 factory restrictions in place for Bronze and above
+
 ## v5.26.3 - 2026-10-17
 
 - Q-Random and Q-Uber Random slots no longer lock in a personality when Start is clicked before the game can start
