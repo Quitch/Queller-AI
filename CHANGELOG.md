@@ -4,6 +4,7 @@
 
 - Bronze and above will continue to build scouts and form scout platoons even when they have full intel
 - Ensure scouting works no matter the T1 factory restrictions in place for Bronze and above
+- Prevent a situation where Uber won't build factories when it arrives first on a planet
 
 ## v5.26.3 - 2026-10-17
 
