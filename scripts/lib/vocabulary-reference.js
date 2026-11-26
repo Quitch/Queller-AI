@@ -221,8 +221,12 @@ const NOTES = {
     CanAttackWithPoolUnitsBomber: NEURAL_ATTACK_NOTE,
     CanAttackWithPoolUnitsFighter: NEURAL_ATTACK_NOTE,
     CanAttackWithPoolUnits:
-      "`string0` attack world layer, `boolean` use naval rally point. Bypasses the " +
-      "neural network the `...Land`/`...Bomber`/`...Fighter` variants go through.",
+      "`string0` filters targets, not the pool units: a spot counts only where a " +
+      "known enemy unit on that layer is present and not reported clear, so " +
+      "`WL_Orbital` waits for a known enemy orbital unit of any kind. The pool units " +
+      "come from the platoon template. `boolean` use naval rally point. Bypasses the " +
+      "neural network the `...Land`/`...Bomber`/`...Fighter` variants go through, and " +
+      "only those variants also use the layer for the pool units' weapons.",
   },
   alliance: {
     Ally: "Also accepted as `Allied`.",
@@ -254,7 +258,12 @@ const CATEGORIES = [
       "Evaluation cadence, per the wiki: every 2 seconds for every base by default. " +
       "Some conditions are real time (every tick), some planet wide (once per planet) " +
       "and some system fixed (evaluated once at start).",
-    source: "palobby wiki, AI Build Conditions (oldid 3483)",
+    source:
+      "palobby wiki, AI Build Conditions (oldid 3483); the `CanAttackWithPoolUnits` " +
+      'layer per the PA dev team after testing: "The layer is only a target filter" ' +
+      'and "WL_Orbital waits for a known enemy orbital unit of any kind" ' +
+      "([first statement](https://discord.com/channels/467998465004273674/1493674807902994463/1575582393476059207); " +
+      "[follow-up](https://discord.com/channels/467998465004273674/1493674807902994463/1575620930254676122))",
   },
   {
     key: "condition_key",
