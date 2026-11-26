@@ -1,6 +1,6 @@
 # Queller AI documentation
 
-Five documents. Three are written by hand, two are generated.
+The generated documents are marked; the rest are written by hand.
 
 | Document                                  | Answers                                                      |
 | ----------------------------------------- | ------------------------------------------------------------ |

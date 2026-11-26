@@ -10,7 +10,7 @@ checks `modinfo.json` on `master` once a day, at around 22:30 UTC, and publishes
 version after the first check that finds it changed. The zip it publishes leaves out the
 paths `.gitattributes` marks `export-ignore`.
 
-`master` is `develop`'s tree with three differences:
+`master` is `develop`'s tree with these differences, and no others:
 
 | On `master`                                                    | Why                                                                                                   |
 | -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
@@ -48,6 +48,10 @@ tested against). The game and the Community Mods manager read it.
 
 The repo has immutable releases. Once a tag has been released, its name can never be
 used again, even after the release is deleted, so fix a bad release with a new version.
+The scripts cannot see a name that a deleted release used, because deleting the release
+also deletes its tag; `release:master` catches it only while `master` is still at that
+version. Push `master` before you create the release, so the release is never made at
+the old `master`.
 
 Publishing the release runs `.github/workflows/release.yml`. It runs `npm run verify` at
 the tag, and checks that the tag matches `modinfo.json`'s version, that the identifier
@@ -57,8 +61,9 @@ gate: the two scripts make the same checks before the push.
 
 ## `npm run release`
 
-It needs the PA install, which it finds the same way `validate:base-install` does. It
-stops at the first step that fails, and it commits nothing. In order, it:
+It needs the PA install: `PA_MEDIA_PATH`, else the usual Steam location. It takes no
+argument, so the build it stamps comes from the install it checks. It stops at the
+first step that fails, and it commits nothing. In order, it:
 
 1. Reads the version from the first `##` heading in `CHANGELOG.md`. It stops if that
    heading is not `## v<version> - <date>`, or if the version is already tagged.
@@ -101,7 +106,13 @@ moves `master` only when every check passes. In order, it:
 
 `master` is rebuilt from `develop`, so a hotfix committed straight to `master` would
 disappear at the next release. Cherry-pick it to `develop` instead. Step 2 compares
-patches, so a cherry-picked commit passes. Any other commit on `master` since its last
-release tag stops the run, and the error lists it. If its change reached `develop`
-another way, run `npm run release:master -- --drop-master-commits`. Do not merge
-`master` into `develop` to bring a change across.
+patches, so a commit that cherry-picks cleanly passes. Any other commit on `master` since
+its last release tag stops the run, and the error lists it.
+
+A hotfix to `pa/` data or to `modinfo.json` never passes that way, because `master`'s
+copies of those files differ from `develop`'s and the ported patch cannot match. Make
+such a fix on `develop` and release it. If one is on `master` already, port it to
+`develop`, then name its commit:
+`npm run release:master -- --drop-master-commits=<sha>[,<sha>]`. The run still stops on
+any listed commit you did not name. Do not merge `master` into `develop` to bring a
+change across.

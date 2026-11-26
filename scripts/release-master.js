@@ -40,9 +40,38 @@ const DROP_FLAG = "--drop-master-commits";
 
 const show = (commit, file) => git(["cat-file", "blob", commit + ":" + file]);
 const short = (commit) => commit.slice(0, 8);
+const oneline = (shas) => git(["log", "--no-walk", "--oneline", ...shas]);
+
+// The commits a `--drop-master-commits=<sha>[,<sha>]` argument names, in full. Each one
+// is named on purpose, so dropping one ported hotfix cannot drop another that was not.
+function droppedCommits(argv) {
+  const dropped = [];
+  for (const arg of argv) {
+    if (!arg.startsWith(DROP_FLAG + "=")) {
+      throw new Error(
+        "unknown argument " +
+          JSON.stringify(arg) +
+          "; the only option is " +
+          DROP_FLAG +
+          "=<sha>[,<sha>]"
+      );
+    }
+    for (const ref of arg.slice(DROP_FLAG.length + 1).split(",")) {
+      const sha = ref && revParse(ref);
+      if (!sha) {
+        throw new Error(
+          DROP_FLAG + ": " + JSON.stringify(ref) + " is not a commit"
+        );
+      }
+      dropped.push(sha);
+    }
+  }
+  return dropped;
+}
 
 function preflight(argv) {
   git(["fetch", "--tags", "origin"]);
+  const dropped = droppedCommits(argv);
 
   const develop = revParse(DEVELOP);
   if (!develop) {
@@ -104,8 +133,9 @@ function preflight(argv) {
 
   // master is rebuilt from develop alone, so a hotfix committed straight to master is
   // dropped unless develop has it too. --cherry-pick passes a commit whose patch develop
-  // already has. The last release tag bounds the search, since master's history before
-  // then holds old commits develop never had.
+  // already has; a data or modinfo.json hotfix never matches, because master's copies of
+  // those files differ from develop's. The last release tag bounds the search, since
+  // master's history before then holds old commits develop never had.
   const lastTag = gitRaw(
     ["describe", "--tags", "--abbrev=0", "--match", "v[0-9]*", originMaster],
     { allowFailure: true }
@@ -120,24 +150,33 @@ function preflight(argv) {
     develop + "..." + originMaster,
     ...since,
   ]);
-  if (masterOnly) {
-    const list = git([
-      "log",
-      "--no-walk",
-      "--oneline",
-      ...masterOnly.split("\n"),
-    ]);
-    if (!argv.includes(DROP_FLAG)) {
-      throw new Error(
-        "master has commits develop does not, which this release would drop:\n" +
-          list +
-          "\nCherry-pick each one to develop and push it, then run this again. If a" +
-          " change reached develop another way, run again with " +
-          DROP_FLAG +
-          ". Do not merge master into develop: it would bring the minified data with it."
-      );
-    }
-    console.warn("\nrelease:master: dropping master-only commits:\n" + list);
+  const shas = masterOnly ? masterOnly.split("\n") : [];
+  const stray = dropped.filter((sha) => !shas.includes(sha));
+  if (stray.length) {
+    throw new Error(
+      DROP_FLAG +
+        " names " +
+        stray.map(short).join(", ") +
+        ", which master does not have since its last release, or which develop" +
+        " already has"
+    );
+  }
+  const kept = shas.filter((sha) => !dropped.includes(sha));
+  if (kept.length) {
+    throw new Error(
+      "master has commits develop does not, which this release would drop:\n" +
+        oneline(kept) +
+        "\nCherry-pick each one to develop and push it, then run this again. Once a" +
+        " change has reached develop another way, name its commit: " +
+        DROP_FLAG +
+        "=<sha>[,<sha>]. Do not merge master into develop: it would bring the" +
+        " minified data with it."
+    );
+  }
+  if (dropped.length) {
+    console.warn(
+      "\nrelease:master: dropping master-only commits:\n" + oneline(dropped)
+    );
   }
 
   return {

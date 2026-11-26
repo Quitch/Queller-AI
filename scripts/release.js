@@ -27,7 +27,9 @@ const write = (file, text) =>
   fs.writeFileSync(path.join(REPO_ROOT, file), text);
 
 function installBuild() {
-  const media = findBaseInstall(process.argv[2]);
+  // No argument: the refreshes and validate:base-install find the install the same way,
+  // so the stamped build is the build that was checked.
+  const media = findBaseInstall();
   if (!media) {
     throw new Error("no PA install found; set PA_MEDIA_PATH");
   }

@@ -525,7 +525,7 @@ Do not "complete the set".
 
 `docs/releasing.md` has the steps. Work happens on `develop`; `master` is the published
 state, and `npm run release:master` builds every `master` commit from `develop`'s tree
-with three changes: `pa/**/*.json` minified, the release identity
+with these changes only: `pa/**/*.json` minified, the release identity
 `com.pa.quitch.qQuellerAI` / `Queller AI` in `modinfo.json` in place of `develop`'s
 `com.pa.quitch.qQuellerAI-dev` / `Queller AI DEV` (so a dev build installs alongside the
 published mod), and `pa/**` in `.prettierignore`.
@@ -533,8 +533,9 @@ published mod), and `pa/**` in `.prettierignore`.
 - **Never merge between `develop` and `master` by hand.** `develop` into `master`
   conflicts on every data file `develop` changed. `master` into `develop` brings the
   minified data and the release identity with it.
-- A hotfix committed straight to `master` is lost at the next release unless it is
-  cherry-picked to `develop`. `release:master` refuses to run until it is.
+- A hotfix committed straight to `master` is lost at the next release unless `develop`
+  has it too. `release:master` refuses to run until it does. A data or `modinfo.json`
+  hotfix cannot be matched by patch, so make it on `develop` instead.
 
 `.gitattributes` marks the tooling files `export-ignore`, so `git archive` produces a
 ZIP containing only what the game needs — `modinfo.json`, `pa/`, `ui/`, `README.md`,
