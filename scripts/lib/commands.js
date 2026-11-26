@@ -1,7 +1,8 @@
 "use strict";
 
 // Process runners for the release scripts. Every argument list is built from constants
-// and git's own output, never from user text.
+// and git's own output. The one exception is a ref named on the command line, which
+// reaches git only through revParse, where `--verify <ref>^{commit}` reads it as a ref.
 
 const { spawnSync } = require("node:child_process");
 const { REPO_ROOT } = require("./ai-data.js");

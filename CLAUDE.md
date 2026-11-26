@@ -534,8 +534,8 @@ published mod), and `pa/**` in `.prettierignore`.
   conflicts on every data file `develop` changed. `master` into `develop` brings the
   minified data and the release identity with it.
 - A hotfix committed straight to `master` is lost at the next release unless `develop`
-  has it too. `release:master` refuses to run until it does. A data or `modinfo.json`
-  hotfix cannot be matched by patch, so make it on `develop` instead.
+  has it too. `release:master` refuses to run until it does. A ported data fix never
+  matches by patch, so make data fixes on `develop`.
 
 `.gitattributes` marks the tooling files `export-ignore`, so `git archive` produces a
 ZIP containing only what the game needs — `modinfo.json`, `pa/`, `ui/`, `README.md`,

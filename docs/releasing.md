@@ -106,13 +106,14 @@ moves `master` only when every check passes. In order, it:
 
 `master` is rebuilt from `develop`, so a hotfix committed straight to `master` would
 disappear at the next release. Cherry-pick it to `develop` instead. Step 2 compares
-patches, so a commit that cherry-picks cleanly passes. Any other commit on `master` since
-its last release tag stops the run, and the error lists it.
+patches, context lines included, so a ported commit passes only when `develop`'s copy
+around the change matches `master`'s. Any other commit on `master` since its last
+release tag stops the run, and the error lists it.
 
-A hotfix to `pa/` data or to `modinfo.json` never passes that way, because `master`'s
-copies of those files differ from `develop`'s and the ported patch cannot match. Make
-such a fix on `develop` and release it. If one is on `master` already, port it to
-`develop`, then name its commit:
+A ported commit does not match when it changes `pa/` data (minified on `master`), when
+it is near `modinfo.json`'s identifier or display name, or when `develop` has changed
+lines near it. Make a data fix on `develop` and release it. Once a listed commit's
+change is on `develop`, name it:
 `npm run release:master -- --drop-master-commits=<sha>[,<sha>]`. The run still stops on
 any listed commit you did not name. Do not merge `master` into `develop` to bring a
 change across.

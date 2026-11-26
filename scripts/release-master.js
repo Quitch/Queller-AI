@@ -133,9 +133,9 @@ function preflight(argv) {
 
   // master is rebuilt from develop alone, so a hotfix committed straight to master is
   // dropped unless develop has it too. --cherry-pick passes a commit whose patch develop
-  // already has; a data or modinfo.json hotfix never matches, because master's copies of
-  // those files differ from develop's. The last release tag bounds the search, since
-  // master's history before then holds old commits develop never had.
+  // already has, context lines included, so a ported data fix never matches. The last
+  // release tag bounds the search, since master's history before then holds old commits
+  // develop never had.
   const lastTag = gitRaw(
     ["describe", "--tags", "--abbrev=0", "--match", "v[0-9]*", originMaster],
     { allowFailure: true }

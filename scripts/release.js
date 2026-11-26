@@ -41,6 +41,11 @@ function installBuild() {
 }
 
 function main() {
+  if (process.argv.length > 2) {
+    throw new Error(
+      "takes no arguments; set PA_MEDIA_PATH to choose the PA install"
+    );
+  }
   const heading = releaseHeading(read("CHANGELOG.md"));
   const tag = "v" + heading.version;
   const tagged = tagExists(tag);
