@@ -229,7 +229,7 @@ Evaluation cadence, per the wiki: every 2 seconds for every base by default. Som
 | `CanProvideAirSupportWithPoolUnits` | binary | 34        | 10      | `string0`, `string1`, `string2`, `unit_type_string0` | -     |
 | `OnTaskType`                        | binary | -         | -       | -                                                    | -     |
 
-<sub>Meanings: palobby wiki, AI Build Conditions (oldid 3483); the `CanAttackWithPoolUnits` layer per the PA dev team after testing: "The layer is only a target filter" and "WL_Orbital waits for a known enemy orbital unit of any kind" ([first statement](https://discord.com/channels/467998465004273674/1493674807902994463/1575582393476059207); follow-up 2026-11-26).</sub>
+<sub>Meanings: palobby wiki, AI Build Conditions (oldid 3483); the `CanAttackWithPoolUnits` layer per the PA dev team after testing: "The layer is only a target filter" and "WL_Orbital waits for a known enemy orbital unit of any kind" ([first statement](https://discord.com/channels/467998465004273674/1493674807902994463/1575582393476059207); [follow-up](https://discord.com/channels/467998465004273674/1493674807902994463/1575620930254676122)).</sub>
 
 ## Build condition keys
 

@@ -263,7 +263,7 @@ const CATEGORIES = [
       'layer per the PA dev team after testing: "The layer is only a target filter" ' +
       'and "WL_Orbital waits for a known enemy orbital unit of any kind" ' +
       "([first statement](https://discord.com/channels/467998465004273674/1493674807902994463/1575582393476059207); " +
-      "follow-up 2026-11-26)",
+      "[follow-up](https://discord.com/channels/467998465004273674/1493674807902994463/1575620930254676122))",
   },
   {
     key: "condition_key",
