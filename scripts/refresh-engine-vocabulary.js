@@ -177,6 +177,10 @@ const ADJACENCY = {
 // enum members ("Air", "Sub", "Nuke") and high enough to keep the noise manageable.
 const MIN_STRING = 3;
 
+// Only NUL-terminated runs count. Every string the engine's tables hold is a C string
+// literal, so it ends in 0x00; a printable run ending in anything else is a fragment of
+// non-string data. Build 124739 put a pointer, 0x1405b2640, between "percent" and
+// "canSupportUnit", and its little-endian bytes begin with the printable "@&[@".
 function extractStrings(buffer) {
   const strings = [];
   let start = -1;
@@ -188,7 +192,7 @@ function extractStrings(buffer) {
       }
       continue;
     }
-    if (start >= 0 && i - start >= MIN_STRING) {
+    if (start >= 0 && c === 0 && i - start >= MIN_STRING) {
       strings.push(buffer.toString("latin1", start, i));
     }
     start = -1;
