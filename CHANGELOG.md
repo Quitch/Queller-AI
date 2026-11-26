@@ -14,6 +14,7 @@
 - Casual attacks with the Purgers its Necromancers raise
 - Uber no longer keeps building Legion Mantas while its navy is landlocked and enemy air is present
 - Fix Gold and Uber checking the cost or space of the wrong building before some factory and Supernova builds
+- Platinum builds an advanced factory when it can't expand, even if it already owns a nuke, anti-nuke, Unit Cannon or orbital factory
 
 ## v5.26.3 - 2026-10-17
 
