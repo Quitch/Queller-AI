@@ -153,11 +153,14 @@ function checkUnitTypes(tiers, mediaPath, findings) {
   );
 }
 
+const SHIPPED_ROOT = path.join(__dirname, "..", "..", "pa", "ai_queller");
+
 // PA's VFS unions directory listings across mounts. A file this mod ships wins over the
 // base copy of the same name - but a file it stops shipping does not disappear, it
-// reverts to whatever the base install froze. So every path in the snapshot has to keep
-// an override here, or that path silently starts running the old data again.
-function checkShadowCoverage(mediaPath, findings) {
+// reverts to whatever the base install froze. That is a warning, not an error: a file
+// removed here stays in the snapshot until the base game takes the next copy of this
+// repo, and the base copy is often inert or duplicated by another file.
+function checkShadowCoverage(mediaPath, findings, shippedRoot = SHIPPED_ROOT) {
   const snapshot = path.join(mediaPath, "pa_ex1", "ai_queller");
   if (!fs.existsSync(snapshot)) {
     findings.note(
@@ -166,11 +169,7 @@ function checkShadowCoverage(mediaPath, findings) {
     return;
   }
   const shipped = new Set(
-    walk(path.join(__dirname, "..", "..", "pa", "ai_queller")).map((f) =>
-      toPosix(
-        path.relative(path.join(__dirname, "..", "..", "pa", "ai_queller"), f)
-      )
-    )
+    walk(shippedRoot).map((f) => toPosix(path.relative(shippedRoot, f)))
   );
   let covered = 0;
   for (const file of walk(snapshot)) {
@@ -178,10 +177,11 @@ function checkShadowCoverage(mediaPath, findings) {
     if (shipped.has(relative)) {
       covered++;
     } else {
-      findings.error(
+      findings.warn(
         `pa/ai_queller/${relative}`,
         `is in the base install's snapshot but not shipped here, so the base ` +
-          `install's frozen copy loads in its place`
+          `install's frozen copy loads in its place until the base game drops it - ` +
+          `check that copy is harmless`
       );
     }
   }
@@ -207,7 +207,7 @@ function run(findings) {
   return `against ${mediaPath}`;
 }
 
-module.exports = { run };
+module.exports = { checkShadowCoverage, run };
 
 if (require.main === module) {
   runAsScript("ai-base-install", run);

@@ -122,3 +122,34 @@ test("findDuplicateKeys reports a duplicate nested inside an array element", () 
   assert.strictEqual(found[0].key, "name");
   assert.strictEqual(found[0].line, 6);
 });
+
+// A file removed here stays in the base install's snapshot until the base game takes the
+// next copy of this repo, so the gap is reported but does not fail the run.
+test("a snapshot path not shipped here is a warning, not an error", () => {
+  const fs = require("node:fs");
+  const os = require("node:os");
+  const path = require("node:path");
+  const {
+    checkShadowCoverage,
+  } = require("../scripts/validate/ai-base-install.js");
+  const tmp = fs.mkdtempSync(path.join(os.tmpdir(), "queller-shadow-"));
+  try {
+    const snapshot = path.join(tmp, "media", "pa_ex1", "ai_queller", "q_uber");
+    const shipped = path.join(tmp, "shipped");
+    fs.mkdirSync(snapshot, { recursive: true });
+    fs.mkdirSync(path.join(shipped, "q_uber"), { recursive: true });
+    for (const name of ["kept.json", "removed.json"]) {
+      fs.writeFileSync(path.join(snapshot, name), "{}");
+    }
+    fs.writeFileSync(path.join(shipped, "q_uber", "kept.json"), "{}");
+    const findings = new Findings("test");
+    checkShadowCoverage(path.join(tmp, "media"), findings, shipped);
+    assert.deepStrictEqual(findings.errors, []);
+    assert.deepStrictEqual(
+      findings.warnings.map((w) => w.location),
+      ["pa/ai_queller/q_uber/removed.json"]
+    );
+  } finally {
+    fs.rmSync(tmp, { recursive: true, force: true });
+  }
+});

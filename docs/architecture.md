@@ -61,8 +61,10 @@ install's copy is still listed and still loaded. Therefore:
 - Deleting a whole file reverts that path to whatever the base game shipped.
 - Adding a new file is safe and behaves as expected.
 
-`npm run validate:base-install` enforces the consequence: every path present in the
-install's snapshot must also be shipped here, or that path silently reverts.
+`npm run validate:base-install` reports the consequence: it warns about every path in the
+install's snapshot that is not shipped here, because that path runs the base copy. A
+warning rather than an error, because a file removed here stays in the snapshot until the
+base game takes the next copy of this repo, and the base copy is often harmless.
 
 The personalities are in the same position. `new_game.js` re-registers all of them with
 `_.assign(model.aiPersonalities(), ...)`, wholesale replacing the base game's version of
@@ -354,13 +356,13 @@ because none of this data is typed: `to_build`, `builders`, template names and
 miss. A rename applied to one file and not another produces no error and no visible
 symptom beyond a build never firing.
 
-| Check                   | Catches                                                                                      |
-| ----------------------- | -------------------------------------------------------------------------------------------- |
-| `validate:schema`       | shapes, unknown keys, bad enum values, duplicate JSON keys, `priority: 0`                    |
-| `validate:refs`         | unresolvable `to_build` / `builders` / condition targets, undeclared tags, unit-map drift    |
-| `validate:conditions`   | condition groups that cannot affect the outcome                                              |
-| `validate:docs`         | a generated document gone stale, a broken cross-reference                                    |
-| `validate:base-install` | unresolvable `spec_id`s, unknown unit types, shadow-coverage gaps (needs the game installed) |
+| Check                   | Catches                                                                                     |
+| ----------------------- | ------------------------------------------------------------------------------------------- |
+| `validate:schema`       | shapes, unknown keys, bad enum values, duplicate JSON keys, `priority: 0`                   |
+| `validate:refs`         | unresolvable `to_build` / `builders` / condition targets, undeclared tags, unit-map drift   |
+| `validate:conditions`   | condition groups that cannot affect the outcome                                             |
+| `validate:docs`         | a generated document gone stale, a broken cross-reference                                   |
+| `validate:base-install` | unresolvable `spec_id`s, unknown unit types; warns on shadow-coverage gaps (needs the game) |
 
 A July 2026 sweep found seven such breaks, all years old and all still present in the
 base game's snapshot. That sweep is now these checks. `CLAUDE.md` has the detail.
