@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v5.26.4 - 2026-11-26
 
 - Bronze and above will continue to build scouts and form scout platoons even when they have full intel
 - Ensure scouting works no matter the T1 factory restrictions in place for Bronze and above
