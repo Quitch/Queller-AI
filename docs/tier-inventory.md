@@ -19,7 +19,7 @@ One row per tier. `Build entries` counts every item across `fabber_builds/`, `fa
 | `q_silver`   | 61    | 271           | 30        | 234           | {"unit_cap":3000} |
 | `q_gold`     | 71    | 335           | 40        | 234           | {"unit_cap":3000} |
 | `q_platinum` | 71    | 347           | 40        | 234           | {"unit_cap":3000} |
-| `q_uber`     | 78    | 418           | 42        | 234           | {"unit_cap":3000} |
+| `q_uber`     | 78    | 419           | 42        | 234           | {"unit_cap":3000} |
 
 ## Files by directory
 
@@ -45,7 +45,7 @@ Which of the three build-list consumers each tier's entries belong to. All three
 
 | Consumer         | q_casual | q_bronze | q_silver | q_gold | q_platinum | q_uber |
 | ---------------- | -------- | -------- | -------- | ------ | ---------- | ------ |
-| `fabber_builds`  | 118      | 124      | 121      | 151    | 161        | 202    |
+| `fabber_builds`  | 118      | 124      | 121      | 151    | 161        | 203    |
 | `factory_builds` | 135      | 133      | 118      | 135    | 135        | 147    |
 | `platoon_builds` | 21       | 27       | 32       | 49     | 51         | 69     |
 
@@ -152,7 +152,7 @@ The subpersonality mechanism: one `ai_path` serves many personalities, and `HasP
 | ------------- | -------------------------- | -------- | -------- | -------- | -------- | -------- | ------ | ---------- | ------ |
 | `queller`     | 16 personalities           | 61       | -        | 23       | 20       | 5        | 5      | 5          | 3      |
 | `platoon`     | `qUberFFA`, `qUberPlatoon` | 17       | 17       | -        | -        | -        | -      | -          | 34     |
-| `tank`        | `qUberTank`                | 3        | 15       | -        | -        | -        | -      | -          | 18     |
+| `tank`        | `qUberTank`                | 4        | 16       | -        | -        | -        | -      | -          | 20     |
 | `air`         | `qUberAir`                 | 4        | 10       | -        | -        | -        | -      | -          | 14     |
 | `bot`         | `qUberBot`                 | 2        | 12       | -        | -        | -        | -      | -          | 14     |
 | `ffa`         | `qUberFFA`                 | 3        | 7        | -        | -        | -        | -      | -          | 10     |
