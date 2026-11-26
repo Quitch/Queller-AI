@@ -25,7 +25,7 @@ Evaluation cadence, per the wiki: every 2 seconds for every base by default. Som
 
 | Value               | Source | Used here | Base AI | Parameters used here | Notes                                                                                                                                                                         |
 | ------------------- | ------ | --------- | ------- | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `HasPersonalityTag` | binary | 172       | 189     | `boolean`, `string0` | True when the personality declares the tag in `string0`. The wiki names the parameter `string8`, which is a typo - the engine, the base game and this repo all use `string0`. |
+| `HasPersonalityTag` | binary | 174       | 189     | `boolean`, `string0` | True when the personality declares the tag in `string0`. The wiki names the parameter `string8`, which is a typo - the engine, the base game and this repo all use `string0`. |
 
 ### Economy
 
@@ -51,7 +51,7 @@ Evaluation cadence, per the wiki: every 2 seconds for every base by default. Som
 | `UnitRatioOnPlanet`           | binary | 395       | 72      | `compare0`, `unit_type_string0`, `unit_type_string1`, `value0` | Ratio of `unit_type_string0` to `unit_type_string1`. Includes partially built units.                                            |
 | `UnitPoolRatio`               | binary | -         | -       | -                                                              | -                                                                                                                               |
 | `UnitCount`                   | binary | 27        | 19      | `compare0`, `unit_type_string0`, `value0`                      | `boolean` restricts the count to fully built units.                                                                             |
-| `UnitCountOnPlanet`           | binary | 888       | 318     | `compare0`, `unit_type_string0`, `value0`                      | `boolean` restricts the count to fully built units.                                                                             |
+| `UnitCountOnPlanet`           | binary | 889       | 318     | `compare0`, `unit_type_string0`, `value0`                      | `boolean` restricts the count to fully built units.                                                                             |
 | `UnitPoolCount`               | binary | 404       | 114     | `compare0`, `unit_type_string0`, `value0`                      | `boolean` restricts the count to fully built units.                                                                             |
 | `UnitCountPerPlanetRadius`    | binary | 182       | 18      | `compare0`, `unit_type_string0`, `value0`                      | -                                                                                                                               |
 | `AlliedUnitCountOnPlanet`     | binary | 60        | 5       | `boolean`, `compare0`, `unit_type_string0`, `value0`           | `boolean` restricts the count to fully built units.                                                                             |
@@ -63,7 +63,7 @@ Evaluation cadence, per the wiki: every 2 seconds for every base by default. Som
 
 | Value                                 | Source | Used here | Base AI | Parameters used here | Notes                                                                                                                                               |
 | ------------------------------------- | ------ | --------- | ------- | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `AloneOnPlanet`                       | binary | 1062      | 154     | `boolean`            | Checks armies on the planet using land, naval and air only - subs, orbital, economy, nuke, anti-nuke and anti-planet units do not count towards it. |
+| `AloneOnPlanet`                       | binary | 1063      | 154     | `boolean`            | Checks armies on the planet using land, naval and air only - subs, orbital, economy, nuke, anti-nuke and anti-planet units do not count towards it. |
 | `EnemyPresenceOnPlanet`               | binary | 25        | 9       | `boolean`            | -                                                                                                                                                   |
 | `EnemySurfacePresenceOnPlanet`        | binary | 569       | 70      | `boolean`            | -                                                                                                                                                   |
 | `EnemyAirPresenceOnPlanet`            | binary | 204       | 23      | `boolean`            | -                                                                                                                                                   |
@@ -129,8 +129,8 @@ Evaluation cadence, per the wiki: every 2 seconds for every base by default. Som
 | ------------------------- | ------ | --------- | ------- | -------------------- | ------------------------------------------------------------------------ |
 | `CanAffordPotentialDrain` | binary | 720       | 138     | `string0`            | `string0` names the unit whose drain is being tested, as a unit map key. |
 | `CanAffordBuildDemand`    | binary | 537       | 340     | -                    | Based on the build arm with tool type `TOOL_BuildArm`.                   |
-| `CanFindPlaceToBuild`     | binary | 1179      | 239     | `string0`            | -                                                                        |
-| `CanDeployLandFromBase`   | binary | 406       | 65      | `boolean`            | -                                                                        |
+| `CanFindPlaceToBuild`     | binary | 1180      | 239     | `string0`            | -                                                                        |
+| `CanDeployLandFromBase`   | binary | 407       | 65      | `boolean`            | -                                                                        |
 | `CanDeployNavalFromBase`  | binary | 290       | 33      | `boolean`            | -                                                                        |
 
 ### Factories
@@ -218,9 +218,9 @@ Evaluation cadence, per the wiki: every 2 seconds for every base by default. Som
 
 ### Attacks (direct)
 
-| Value                    | Source | Used here | Base AI | Parameters used here | Notes                                                                                                                                                  |
-| ------------------------ | ------ | --------- | ------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `CanAttackWithPoolUnits` | binary | 32        | 8       | `boolean`, `string0` | `string0` attack world layer, `boolean` use naval rally point. Bypasses the neural network the `...Land`/`...Bomber`/`...Fighter` variants go through. |
+| Value                    | Source | Used here | Base AI | Parameters used here | Notes                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| ------------------------ | ------ | --------- | ------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `CanAttackWithPoolUnits` | binary | 32        | 8       | `boolean`, `string0` | `string0` filters targets, not the pool units: a spot counts only where a known enemy unit on that layer is present and not reported clear, so `WL_Orbital` waits for a known enemy orbital unit of any kind. The pool units come from the platoon template. `boolean` use naval rally point. Bypasses the neural network the `...Land`/`...Bomber`/`...Fighter` variants go through, and only those variants also use the layer for the pool units' weapons. |
 
 ### Assistance
 
@@ -229,7 +229,7 @@ Evaluation cadence, per the wiki: every 2 seconds for every base by default. Som
 | `CanProvideAirSupportWithPoolUnits` | binary | 34        | 10      | `string0`, `string1`, `string2`, `unit_type_string0` | -     |
 | `OnTaskType`                        | binary | -         | -       | -                                                    | -     |
 
-<sub>Meanings: palobby wiki, AI Build Conditions (oldid 3483).</sub>
+<sub>Meanings: palobby wiki, AI Build Conditions (oldid 3483); the `CanAttackWithPoolUnits` layer per the PA dev team after testing: "The layer is only a target filter" and "WL_Orbital waits for a known enemy orbital unit of any kind" ([first statement](https://discord.com/channels/467998465004273674/1493674807902994463/1575582393476059207); [follow-up](https://discord.com/channels/467998465004273674/1493674807902994463/1575620930254676122)).</sub>
 
 ## Build condition keys
 
@@ -239,16 +239,16 @@ Every key the engine reads from a condition object. Which of them a given condit
 
 | Value               | Source | Used here | Base AI | Notes |
 | ------------------- | ------ | --------- | ------- | ----- |
-| `boolean`           | binary | 5372      | 977     | -     |
-| `compare0`          | binary | 3942      | 965     | -     |
+| `boolean`           | binary | 5376      | 977     | -     |
+| `compare0`          | binary | 3943      | 965     | -     |
 | `compare1`          | binary | -         | -       | -     |
-| `string0`           | binary | 3200      | 779     | -     |
+| `string0`           | binary | 3203      | 779     | -     |
 | `string1`           | binary | 503       | 124     | -     |
 | `string2`           | binary | 34        | 10      | -     |
-| `test_type`         | binary | 12070     | 2800    | -     |
-| `unit_type_string0` | binary | 3043      | 859     | -     |
+| `test_type`         | binary | 12076     | 2800    | -     |
+| `unit_type_string0` | binary | 3044      | 859     | -     |
 | `unit_type_string1` | binary | 395       | 72      | -     |
-| `value0`            | binary | 3942      | 965     | -     |
+| `value0`            | binary | 3943      | 965     | -     |
 | `value1`            | binary | 41        | 15      | -     |
 
 <sub>Meanings: engine string table.</sub>
@@ -262,19 +262,19 @@ Every key the engine reads from a build list entry.
 | Value                       | Source    | Used here | Base AI | Notes |
 | --------------------------- | --------- | --------- | ------- | ----- |
 | `base_sort`                 | binary    | 408       | 65      | -     |
-| `build_conditions`          | binary    | 1929      | 405     | -     |
-| `builders`                  | binary    | 1680      | 303     | -     |
+| `build_conditions`          | binary    | 1930      | 405     | -     |
+| `builders`                  | binary    | 1681      | 303     | -     |
 | `cross_planet_shared_count` | binary    | 45        | 11      | -     |
 | `enabled`                   | binary    | -         | -       | -     |
-| `instance_count`            | binary    | 1929      | 405     | -     |
+| `instance_count`            | binary    | 1930      | 405     | -     |
 | `max_num_assisters`         | binary    | 1426      | 164     | -     |
 | `min_num_assisters`         | binary    | 323       | 77      | -     |
-| `name`                      | base data | 1929      | 405     | -     |
-| `placement_rules`           | binary    | 789       | 177     | -     |
-| `priority`                  | base data | 1929      | 405     | -     |
-| `shared_instance_count`     | binary    | 710       | 160     | -     |
+| `name`                      | base data | 1930      | 405     | -     |
+| `placement_rules`           | binary    | 790       | 177     | -     |
+| `priority`                  | base data | 1930      | 405     | -     |
+| `shared_instance_count`     | binary    | 711       | 160     | -     |
 | `task_type`                 | binary    | 365       | 131     | -     |
-| `to_build`                  | binary    | 1853      | 394     | -     |
+| `to_build`                  | binary    | 1854      | 394     | -     |
 
 <sub>Meanings: engine string table, plus the base game's own AI data.</sub>
 
@@ -345,7 +345,7 @@ What the `buffer` distance in a placement rule is measured from.
 
 | Value                   | Source | Used here | Base AI | Notes |
 | ----------------------- | ------ | --------- | ------- | ----- |
-| `FromBaseCenter`        | binary | 608       | 20      | -     |
+| `FromBaseCenter`        | binary | 609       | 20      | -     |
 | `FromBasePerimeter`     | binary | 53        | -       | -     |
 | `FromBuilder`           | binary | -         | -       | -     |
 | `FromMainBase`          | binary | -         | -       | -     |
@@ -364,17 +364,17 @@ Every key the engine reads anywhere under `placement_rules`. The engine keeps th
 | Value              | Source    | Used here | Base AI | Notes |
 | ------------------ | --------- | --------- | ------- | ----- |
 | `alliance`         | binary    | 443       | 79      | -     |
-| `buffer`           | binary    | 587       | 139     | -     |
-| `compare_type`     | binary    | 908       | 197     | -     |
+| `buffer`           | binary    | 588       | 139     | -     |
+| `compare_type`     | binary    | 909       | 197     | -     |
 | `count`            | base data | 443       | 79      | -     |
-| `influence_type`   | binary    | 465       | 118     | -     |
-| `placement_type`   | binary    | 661       | 107     | -     |
-| `radius`           | base data | 465       | 118     | -     |
+| `influence_type`   | binary    | 466       | 118     | -     |
+| `placement_type`   | binary    | 662       | 107     | -     |
+| `radius`           | base data | 466       | 118     | -     |
 | `range`            | binary    | 443       | 79      | -     |
-| `threat`           | binary    | 465       | 118     | -     |
+| `threat`           | binary    | 466       | 118     | -     |
 | `unit_count_rules` | binary    | 250       | 44      | -     |
 | `unit_type_string` | binary    | 443       | 79      | -     |
-| `value`            | binary    | 465       | 118     | -     |
+| `value`            | binary    | 466       | 118     | -     |
 
 <sub>Meanings: engine string table, plus the base game's own AI data.</sub>
 
@@ -392,7 +392,7 @@ Which threat map a threat test or placement rule reads. The engine diagnoses an 
 | `AntiOrbital` | binary     | 10        | 1       | -     |
 | `AntiPlanet`  | binary     | -         | -       | -     |
 | `AntiSub`     | binary     | -         | -       | -     |
-| `AntiSurface` | binary     | 455       | 117     | -     |
+| `AntiSurface` | binary     | 456       | 117     | -     |
 | `Artillery`   | binary     | -         | -       | -     |
 | `Commander`   | binary     | -         | -       | -     |
 | `Economy`     | documented | -         | -       | -     |
@@ -419,14 +419,14 @@ Which layer of the world an attack condition looks at. The engine stores these w
 | `WL_AnyHorizontalGround`               | binary    | -         | -       | -     |
 | `WL_AnyHorizontalGroundOrWaterSurface` | binary    | -         | -       | -     |
 | `WL_AnyLayer`                          | binary    | -         | -       | -     |
-| `WL_AnySurface`                        | binary    | 292       | 115     | -     |
+| `WL_AnySurface`                        | binary    | 298       | 115     | -     |
 | `WL_AnyUnderWater`                     | binary    | -         | -       | -     |
 | `WL_AnyWater`                          | binary    | -         | -       | -     |
 | `WL_AnyWaterOrSeaFloor`                | binary    | -         | -       | -     |
 | `WL_LandHorizontal`                    | binary    | -         | -       | -     |
 | `WL_LandVertical`                      | binary    | -         | -       | -     |
 | `WL_Lava`                              | binary    | -         | -       | -     |
-| `WL_Orbital`                           | base data | 14        | 4       | -     |
+| `WL_Orbital`                           | base data | 8         | 4       | -     |
 | `WL_Seafloor`                          | binary    | -         | -       | -     |
 | `WL_Unpathable`                        | binary    | -         | -       | -     |
 | `WL_WaterSurface`                      | binary    | -         | -       | -     |
@@ -459,7 +459,7 @@ These are one or two characters, below the minimum length the binary string scan
 | Value | Source     | Used here | Base AI | Notes                     |
 | ----- | ---------- | --------- | ------- | ------------------------- |
 | `!=`  | documented | -         | -       | Not equal to.             |
-| `<`   | base data  | 2391      | 506     | Less than.                |
+| `<`   | base data  | 2393      | 506     | Less than.                |
 | `<=`  | base data  | 271       | 34      | Less than or equal to.    |
 | `==`  | documented | 35        | -       | Equal to.                 |
 | `>`   | base data  | 726       | 316     | Greater than.             |

@@ -48,15 +48,18 @@ npm run validate:refs         # cross-references: to_build/builders/condition ta
 npm run validate:conditions   # build_conditions branches that cannot affect the outcome
 npm run validate:docs         # docs/ freshness and cross-references
 npm run validate:base-install # spec_ids, unit types, shadow coverage - needs the base game, skips without it
-npm test                      # node --test (runs every validator, plus unit tests for the scanner)
+npm test                      # node --test (every validator, plus unit tests for the scanner and release edits)
 npm run refresh:vocabulary    # regenerate the engine enum snapshot after a PA patch
 npm run refresh:inventory     # regenerate docs/tier-inventory.md after a pa/** change
+npm run release               # on develop: refresh generated docs, stamp modinfo.json, verify
+npm run release:master        # build the next master commit from develop; pushes nothing
 ```
 
 All of it passes clean on `develop`. Treat any failure as a regression from your own
 change. `.github/workflows/ci.yml` runs `npm run verify` on every push to `develop` and
-`master` and on every PR. (`.sonarcloud.properties` was deliberately removed in
-`bca4f420` and is not coming back; that is about SonarCloud specifically, not about CI.)
+`master` and on every PR, and `release.yml` runs it again at each published release tag.
+(`.sonarcloud.properties` was deliberately removed in `bca4f420` and is not coming back;
+that is about SonarCloud specifically, not about CI.)
 
 Run a single test by name:
 `node --test --test-name-pattern="findDuplicateKeys" test/ai_data.test.js`.
@@ -112,7 +115,10 @@ applied to one copy of a branch and not the other, so the eight it currently rep
 worth reading rather than clearing.
 
 `validate:base-install` needs a PA install and skips without one, saying so in its
-output. Point it somewhere specific with an argument or `$PA_MEDIA_PATH`.
+output. Point it somewhere specific with an argument or `$PA_MEDIA_PATH`. A path in the
+base install's snapshot that this repo no longer ships is a **warning**, not an error:
+it is the normal state after a file is removed here, until the base game takes the next
+copy of this repo. Read each one; see "Relationship to the base install".
 
 `validate:docs` regenerates `docs/tier-inventory.md` in memory and fails if the committed
 copy differs, then checks that every relative link and heading anchor in `docs/`,
@@ -150,9 +156,11 @@ to Prettier's defaults:
   mtimes. Never "fix" the warning by rewriting the repo's line endings.
 
 `.prettierignore` covers only `node_modules` and `package-lock.json`. Unlike the sibling
-GW-AI-Overhaul repo, `pa/**` here is **not** excluded and the JSON is pretty-printed
-(2-space, multi-line), not minified. Keep it that way; the AI data is hand-edited
-constantly and readable diffs are the point.
+GW-AI-Overhaul repo, `pa/**` on `develop` is **not** excluded and the JSON is
+pretty-printed (2-space, multi-line), not minified. Keep it that way; the AI data is
+hand-edited constantly and readable diffs are the point. `master` is the exception:
+`npm run release:master` minifies `pa/**` there and adds the ignore entry for it (see
+"Release process").
 
 `ui/**` is `var`-only. `2de79d07` converted the last `const` back to `var` because
 Chrome 40's handling is not to spec — it accepts sloppy-mode `const` as a legacy
@@ -168,10 +176,10 @@ parse-time backstop.
 
 The `eslint-plugin-lodash` `v3` rules apply to shipped code only, because `_` is a PA runtime global the Node tooling does not have. Every non-`prefer-*` rule is on. Of the `prefer-*` rules only `prefer-get`, `prefer-includes`, and `prefer-startswith` are kept, since there the lodash method stands in for a post-ES5 feature Chrome 40 lacks; the other fourteen are off as style preferences over ES5 equivalents. ESLint is held at **9.x**: `eslint-plugin-lodash` calls `context.getSourceCode`, which ESLint 10 removed. `eslint-plugin-es-x` is held at 9.x for the same reason (its 10.x needs ESLint >= 10.6).
 
-`test/` runs the AI-data validators and unit-tests the duplicate-key scanner; there is
-no harness for `ui/**`, which is why lodash is **not** an npm dependency (removed in
-`a35eeefe`): `_` is a PA runtime global, declared in `eslint.config.mjs`'s `globals`
-block, and nothing local loads a file that uses it.
+`test/` runs the AI-data validators and unit-tests the duplicate-key scanner and the
+release scripts' text edits; there is no harness for `ui/**`, which is why lodash is
+**not** an npm dependency (removed in `a35eeefe`): `_` is a PA runtime global, declared
+in `eslint.config.mjs`'s `globals` block, and nothing local loads a file that uses it.
 
 ### Diagnostics
 
@@ -204,7 +212,9 @@ still loaded.
 
 - Removing a build entry: edit the file, do not delete it.
 - Deleting a whole file is not a way to remove behaviour from a stock install; it just
-  reverts that file to whatever the base game shipped.
+  reverts that file to whatever the base game shipped. `validate:base-install` warns
+  about each such path. Before deleting, check that the base copy is harmless: inert,
+  or duplicated by another file. If it is not, edit the file instead.
 - Adding a _new_ file is safe and behaves as expected.
 
 The personalities are in the same position: the base game already defines
@@ -396,6 +406,7 @@ the one that matches the question rather than loading all of it:
 | `docs/ai-engine.md`         | How PA's AI engine works, independent of this mod.       | no        |
 | `docs/architecture.md`      | How this mod is built; two end-to-end worked examples.   | no        |
 | `docs/engine-vocabulary.md` | Every legal enum value and its meaning.                  | yes       |
+| `docs/releasing.md`         | How to cut a release; how `master` is built.             | no        |
 | `docs/tier-inventory.md`    | What is in each tier; **every count**.                   | yes       |
 
 **Counts live only in `docs/tier-inventory.md`.** A number written into this file or any
@@ -503,8 +514,9 @@ Do not "complete the set".
 
 - Shipped UI code must stay Chrome 40 compatible; the `eslint.config.mjs` whitelist is
   the reference (see "Commands").
-- `pa/**` JSON stays pretty-printed and Prettier-formatted. Do not minify it, and do not
-  add a `.prettierignore` entry for it.
+- `pa/**` JSON stays pretty-printed and Prettier-formatted on `develop`. Do not minify
+  it there, and do not add a `.prettierignore` entry for it. Only
+  `npm run release:master` minifies it, and only on `master`.
 - Two-space indent throughout, camelCase for JS.
 - Changes touch only what the request needs — no drive-by reformatting.
 - A behaviour change usually has to be replicated across the tiers it applies to; there
@@ -516,14 +528,19 @@ Do not "complete the set".
 
 ## Release process
 
-Work happens on `develop`; `master` is the published state. `modinfo.json` is the only
-file that differs structurally between them: `develop` carries
-`"identifier": "com.pa.quitch.qQuellerAI-dev"` / `"display_name": "Queller AI DEV"` so a
-dev build can be installed alongside the published mod, and `master` carries the real
-`com.pa.quitch.qQuellerAI` / `Queller AI`. Releasing is a "Prep for release" commit
-(bump `version`, `build` to the PA build tested against, and `date`; write the
-`CHANGELOG.md` section) followed by a merge into `master` — **without** taking the
-`-dev` identifier with it.
+`docs/releasing.md` has the steps. Work happens on `develop`; `master` is the published
+state, and `npm run release:master` builds every `master` commit from `develop`'s tree
+with these changes only: `pa/**/*.json` minified, the release identity
+`com.pa.quitch.qQuellerAI` / `Queller AI` in `modinfo.json` in place of `develop`'s
+`com.pa.quitch.qQuellerAI-dev` / `Queller AI DEV` (so a dev build installs alongside the
+published mod), and `pa/**` in `.prettierignore`.
+
+- **Never merge between `develop` and `master` by hand.** `develop` into `master`
+  conflicts on every data file `develop` changed. `master` into `develop` brings the
+  minified data and the release identity with it.
+- A hotfix committed straight to `master` is lost at the next release unless `develop`
+  has it too. `release:master` refuses to run until it does. A ported data fix never
+  matches by patch, so make data fixes on `develop`.
 
 `.gitattributes` marks the tooling files `export-ignore`, so `git archive` produces a
 ZIP containing only what the game needs — `modinfo.json`, `pa/`, `ui/`, `README.md`,

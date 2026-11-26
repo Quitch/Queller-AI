@@ -1,0 +1,75 @@
+name: Release
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+
+# Runs after the GitHub release exists, and players already have the version from the
+# push to master, so this is an alarm rather than a gate. `npm run release` and
+# `npm run release:master` make the same checks before the push. See docs/releasing.md.
+
+jobs:
+  verify:
+    name: Lint, validate, and test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.release.tag_name }}
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci --ignore-scripts
+      - run: npm run verify
+
+  release-consistency:
+    name: Version, identity, and changelog consistency
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.release.tag_name }}
+
+      - name: modinfo.json version matches the release tag
+        shell: bash
+        # Through env, not interpolated into the script, so the tag is data.
+        env:
+          TAG: ${{ github.event.release.tag_name }}
+        run: |
+          set -euo pipefail
+          EXPECTED="${TAG#v}"
+          ACTUAL="$(node -p "require('./modinfo.json').version")"
+          if [ "$EXPECTED" != "$ACTUAL" ]; then
+            echo "::error::modinfo.json version is \"$ACTUAL\" but the release tag is \"$TAG\" (expected \"$EXPECTED\")."
+            exit 1
+          fi
+          echo "OK: modinfo.json version $ACTUAL matches tag $TAG"
+
+      - name: modinfo.json carries the release identifier
+        shell: bash
+        run: |
+          set -euo pipefail
+          IDENTIFIER="$(node -p "require('./modinfo.json').identifier")"
+          if [[ "$IDENTIFIER" == *-dev ]]; then
+            echo "::error::modinfo.json identifier is \"$IDENTIFIER\". The release was likely tagged on develop instead of master."
+            exit 1
+          fi
+          echo "OK: identifier $IDENTIFIER"
+
+      - name: CHANGELOG.md has an entry for this release
+        shell: bash
+        env:
+          TAG: ${{ github.event.release.tag_name }}
+        run: |
+          set -euo pipefail
+          if ! grep -qE "^## ${TAG//./\\.} " CHANGELOG.md; then
+            echo "::error::CHANGELOG.md has no \"## $TAG\" heading."
+            exit 1
+          fi
+          echo "OK: CHANGELOG.md has a heading for $TAG"
