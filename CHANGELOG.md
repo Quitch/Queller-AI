@@ -10,15 +10,15 @@
 - Icarus are used as anti-air not anti-surface
 - Uber is more likely to use Single Laser Defense Towers
 - Kaiju and Jaeger join hover platoons again
-- Advanced suicide bots from faction mods, such as the Bugs Alpha Boomer, join suicide attacks
+- Advanced suicide bots from faction mods join suicide attacks
 - Platinum no longer sends an attack bot to scout when it has an Investigator
 - Casual attacks with the Purgers its Necromancers raise
-- Uber no longer keeps building Legion Mantas while its navy is landlocked and enemy air is present
-- Fix Gold and Uber checking the cost or space of the wrong building before some factory and Supernova builds
-- Platinum builds an advanced factory when it can't expand, even if it already owns a nuke, anti-nuke, Unit Cannon or orbital factory
-- Casual's Legion naval fabbers can build its fallback Flyer Foundry, as MLA's already do
-- Gold and Platinum Legion commanders no longer hold off building power while power is being built on another planet
-- Platinum builds one orbital launcher at a time across all its planets, as its other launcher builds do
+- Uber no longer overbuilds Legion Mantas
+- Gold and Uber check the right building before some builds
+- Platinum correctly assesses whether it should build an advanced factory when it can't expand
+- Casual's Legion naval fabbers can build its fallback Flyer Foundry
+- Gold and Platinum Legion commanders build power more readily on multi-planet maps
+- Platinum builds one orbital launcher at a time across all its planets
 
 ## v5.26.3 - 2026-10-17
 
