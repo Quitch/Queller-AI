@@ -7,6 +7,7 @@
 - Prevent a situation where Uber won't build factories when it arrives first on a planet
 - Uber Tank no longer sometimes fails to build a factory on a new world
 - Silver properly prioritises building a Sky Bridge when playing as Legion
+- Icarus are used as anti-air not anti-surface
 
 ## v5.26.3 - 2026-10-17
 
