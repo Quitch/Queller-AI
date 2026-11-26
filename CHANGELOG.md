@@ -17,6 +17,7 @@
 - Platinum builds an advanced factory when it can't expand, even if it already owns a nuke, anti-nuke, Unit Cannon or orbital factory
 - Casual's Legion naval fabbers can build its fallback Flyer Foundry, as MLA's already do
 - Gold and Platinum Legion commanders no longer hold off building power while power is being built on another planet
+- Platinum builds one orbital launcher at a time across all its planets, as its other launcher builds do
 
 ## v5.26.3 - 2026-10-17
 
