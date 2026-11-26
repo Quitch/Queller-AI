@@ -19,7 +19,7 @@ One row per tier. `Build entries` counts every item across `fabber_builds/`, `fa
 | `q_silver`   | 61    | 271           | 30        | 234           | {"unit_cap":3000} |
 | `q_gold`     | 71    | 335           | 40        | 234           | {"unit_cap":3000} |
 | `q_platinum` | 71    | 347           | 40        | 234           | {"unit_cap":3000} |
-| `q_uber`     | 80    | 439           | 49        | 234           | {"unit_cap":3000} |
+| `q_uber`     | 78    | 419           | 43        | 234           | {"unit_cap":3000} |
 
 ## Files by directory
 
@@ -31,12 +31,12 @@ The engine scans an `ai_path` recursively and merges every `.json` it finds, so 
 | `fabber_builds/mla`               | 12       | 12       | 12       | 17     | 17         | 17     |
 | `platoon_builds`                  | 9        | 9        | 9        | 9      | 9          | 9      |
 | `platoon_templates`               | 9        | 9        | 9        | 9      | 9          | 9      |
-| `factory_builds/legion`           | 7        | 7        | 7        | 7      | 7          | 7      |
 | `factory_builds/mla`              | 7        | 7        | 7        | 7      | 7          | 7      |
+| `factory_builds/legion`           | 7        | 7        | 7        | 7      | 7          | 6      |
 | `unit_maps`                       | 4        | 4        | 4        | 4      | 4          | 4      |
 | `(tier root)`                     | 1        | 1        | 1        | 1      | 1          | 1      |
 | `fabber_builds/subpersonalities`  | -        | -        | -        | -      | -          | 5      |
-| `platoon_builds/subpersonalities` | -        | -        | -        | -      | -          | 3      |
+| `platoon_builds/subpersonalities` | -        | -        | -        | -      | -          | 2      |
 | `factory_builds/subpersonalities` | -        | -        | -        | -      | -          | 1      |
 
 ## Build entries by consumer
@@ -45,9 +45,9 @@ Which of the three build-list consumers each tier's entries belong to. All three
 
 | Consumer         | q_casual | q_bronze | q_silver | q_gold | q_platinum | q_uber |
 | ---------------- | -------- | -------- | -------- | ------ | ---------- | ------ |
-| `fabber_builds`  | 118      | 124      | 121      | 151    | 161        | 205    |
-| `factory_builds` | 135      | 133      | 118      | 135    | 135        | 148    |
-| `platoon_builds` | 21       | 28       | 32       | 49     | 51         | 86     |
+| `fabber_builds`  | 118      | 124      | 121      | 151    | 161        | 202    |
+| `factory_builds` | 135      | 133      | 118      | 135    | 135        | 147    |
+| `platoon_builds` | 21       | 28       | 32       | 49     | 51         | 70     |
 
 ## Where the tiers diverge
 
@@ -80,8 +80,8 @@ A behaviour change usually has to be applied to each tier separately. This table
 | `fabber_builds/subpersonalities/bot.json`            | -        | -        | -        | -      | -          | yes    |
 | `fabber_builds/subpersonalities/ffa.json`            | -        | -        | -        | -      | -          | yes    |
 | `fabber_builds/subpersonalities/tank.json`           | -        | -        | -        | -      | -          | yes    |
+| `factory_builds/legion/starcannon.json`              | yes      | yes      | yes      | yes    | yes        | -      |
 | `factory_builds/subpersonalities/orbital.json`       | -        | -        | -        | -      | -          | yes    |
-| `platoon_builds/subpersonalities/platoon_air.json`   | -        | -        | -        | -      | -          | yes    |
 | `platoon_builds/subpersonalities/platoon_hover.json` | -        | -        | -        | -      | -          | yes    |
 | `platoon_builds/subpersonalities/platoon_land.json`  | -        | -        | -        | -      | -          | yes    |
 
@@ -106,12 +106,12 @@ Set on a build item to say what the resulting platoon does, or - on a fabber ite
 
 | Task type                       | q_casual | q_bronze | q_silver | q_gold | q_platinum | q_uber |
 | ------------------------------- | -------- | -------- | -------- | ------ | ---------- | ------ |
-| `LandAttack`                    | 4        | 9        | 14       | 21     | 20         | 43     |
-| `AreaBuild`                     | -        | -        | 4        | 8      | 14         | 18     |
-| `BomberAttack`                  | 3        | 3        | 2        | 6      | 7          | 13     |
-| `FighterAttack`                 | 1        | 1        | 1        | 5      | 6          | 11     |
+| `LandAttack`                    | 4        | 9        | 14       | 21     | 20         | 37     |
+| `AreaBuild`                     | -        | -        | 4        | 8      | 14         | 14     |
+| `BomberAttack`                  | 3        | 3        | 2        | 6      | 7          | 8      |
 | `Scout`                         | 1        | 3        | 3        | 5      | 6          | 7      |
 | `TeleportFabberToPlanet`        | 4        | 4        | 4        | 4      | 4          | 4      |
+| `FighterAttack`                 | 1        | 1        | 1        | 5      | 6          | 6      |
 | `OrbitalLaserAttack`            | 3        | 3        | 3        | 3      | 3          | 3      |
 | `BuilderAssist`                 | 2        | 2        | 2        | 2      | 2          | 4      |
 | `TransportToPlanet`             | 4        | 2        | 2        | 2      | 2          | 2      |
@@ -135,10 +135,10 @@ The role a slot's units take inside a platoon. See [engine vocabulary](engine-vo
 | ----------- | -------- | -------- | -------- | ------ | ---------- | ------ |
 | `Defense`   | 7        | 9        | 15       | 15     | 17         | 17     |
 | `General`   | 5        | 6        | 12       | 15     | 18         | 20     |
-| `Artillery` | 3        | 5        | 11       | 14     | 11         | 19     |
+| `Artillery` | 3        | 5        | 11       | 14     | 11         | 13     |
 | `Fast`      | 2        | 3        | 9        | 12     | 15         | 15     |
 | `Close`     | 2        | 3        | 6        | 6      | 7          | 13     |
-| `Suicide`   | 1        | 2        | 5        | 6      | 1          | 7      |
+| `Suicide`   | 1        | 2        | 5        | 6      | 1          | 1      |
 | `Escort`    | 2        | 2        | 2        | 2      | 2          | 2      |
 
 ## Personality tags
@@ -149,9 +149,9 @@ The subpersonality mechanism: one `ai_path` serves many personalities, and `HasP
 
 | Tag           | Declared by                | Positive | Negative | q_casual | q_bronze | q_silver | q_gold | q_platinum | q_uber |
 | ------------- | -------------------------- | -------- | -------- | -------- | -------- | -------- | ------ | ---------- | ------ |
-| `platoon`     | `qUberFFA`, `qUberPlatoon` | 47       | 54       | -        | -        | -        | -      | -          | 101    |
-| `queller`     | 16 personalities           | 62       | -        | 23       | 20       | 5        | 5      | 5          | 4      |
-| `tank`        | `qUberTank`                | 2        | 15       | -        | -        | -        | -      | -          | 17     |
+| `queller`     | 16 personalities           | 61       | -        | 23       | 20       | 5        | 5      | 5          | 3      |
+| `platoon`     | `qUberFFA`, `qUberPlatoon` | 17       | 17       | -        | -        | -        | -      | -          | 34     |
+| `tank`        | `qUberTank`                | 3        | 15       | -        | -        | -        | -      | -          | 18     |
 | `air`         | `qUberAir`                 | 4        | 10       | -        | -        | -        | -      | -          | 14     |
 | `bot`         | `qUberBot`                 | 2        | 12       | -        | -        | -        | -      | -          | 14     |
 | `ffa`         | `qUberFFA`                 | 3        | 7        | -        | -        | -        | -      | -          | 10     |
@@ -171,7 +171,7 @@ A platoon template that no `platoon_builds` entry names. Every tier should read 
 | `q_silver`   | 30      | 0           |
 | `q_gold`     | 40      | 0           |
 | `q_platinum` | 40      | 0           |
-| `q_uber`     | 49      | 0           |
+| `q_uber`     | 43      | 0           |
 
 - `q_casual` - none
 - `q_bronze` - none
