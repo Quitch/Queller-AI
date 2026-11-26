@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Omegas attack the surface even when the enemy has no orbital units
+- Uber Tank behaves correctly when playing as Legion
 
 ## v5.26.5 - 2026-11-26
 

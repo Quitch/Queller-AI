@@ -10,6 +10,11 @@
       "build_conditions": [
         [
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "tank",
+            "boolean": false
+          },
+          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
