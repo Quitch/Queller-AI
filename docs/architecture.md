@@ -272,27 +272,28 @@ what actually paces early expansion.
 
 ## 8. Worked example: a suicide-bomber platoon
 
-The combat path, from `pa/ai_queller/q_uber/platoon_builds/land.json`:
+The combat path, from `pa/ai_queller/q_gold/platoon_builds/land.json`:
 
 ```json
 {
-  "name": "Boom Attack Platoon Small",
-  "to_build": "Boom_Attack_Small_Queller",
+  "name": "Boom Attack Platoon Medium",
+  "to_build": "Boom_Attack_Medium_Queller",
   "instance_count": -1,
-  "priority": 115,
+  "priority": 114,
   "build_conditions": [
     [
-      {
-        "test_type": "HasPersonalityTag",
-        "string0": "platoon",
-        "boolean": false
-      },
       { "test_type": "EnemySurfacePresenceOnPlanet", "boolean": true },
+      {
+        "test_type": "PlanetHighestEnemyArmyThreat",
+        "string0": "AntiSurface",
+        "compare0": "<",
+        "value0": 2800
+      },
       {
         "test_type": "UnitPoolCount",
         "unit_type_string0": "Bot & SelfDestruct",
         "compare0": ">=",
-        "value0": 1
+        "value0": 4
       },
       {
         "test_type": "CanAttackWithPoolUnitsLand",
@@ -306,10 +307,10 @@ The combat path, from `pa/ai_queller/q_uber/platoon_builds/land.json`:
 }
 ```
 
-**The first condition is negative polarity in the wild.** `platoon` tested `false` means
-this entry is _disabled_ for `qUberPlatoon` and `qUberFFA`, the two personalities that
-declare that tag. They get their own platoon behaviour from
-`platoon_builds/subpersonalities/`; everyone else gets this.
+**The size tiers are separate entries.** Gold also has Large, XLarge, Huge and Max Boom
+entries, each with a higher `UnitPoolCount` threshold, a higher threat ceiling (Max has
+none) and a lower priority. The highest-priority entry whose conditions pass forms its
+platoon.
 
 **The fourth condition consults a neural network.** `CanAttackWithPoolUnitsLand` asks the
 `land_attack` network whether the units available in the pool can meaningfully attack the
@@ -320,27 +321,22 @@ inference.
 `platoon_templates/land.json`:
 
 ```json
-"Boom_Attack_Small_Queller": {
+"Boom_Attack_Medium_Queller": {
   "units": [
     {
-      "unit_types": "(Bot & SelfDestruct) - Advanced",
+      "unit_types": "Bot & SelfDestruct",
       "min_count": 0,
-      "max_count": 3,
+      "max_count": 10,
       "squad": "Suicide"
-    },
-    {
-      "unit_types": "Bot & SelfDestruct & Advanced & Custom1",
-      "min_count": 0,
-      "max_count": 3,
-      "squad": "Artillery"
     }
   ]
 }
 ```
 
-Both slots are optional (`min_count: 0`), so the platoon forms with whatever exists. The
-second slot is Legion-only - `& Custom1` - so on an MLA game this template is effectively
-the first slot alone. That is the faction split reaching all the way into a template.
+**The gate and the slot use the same expression.** `UnitPoolCount` counts exactly the units
+the template can hold, so a passing gate always has something to fill the platoon with. When
+the two drift apart, the gate can pass on units the platoon cannot take. The slot is
+optional (`min_count: 0`), so the platoon forms with whatever matches, up to `max_count`.
 
 `PlatoonManager` pulls matching units from the unassigned pool, assigns each slot's
 `squad` role, and hands the platoon its `LandAttack` task. From there the `land_attack`
