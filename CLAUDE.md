@@ -115,7 +115,10 @@ applied to one copy of a branch and not the other, so the eight it currently rep
 worth reading rather than clearing.
 
 `validate:base-install` needs a PA install and skips without one, saying so in its
-output. Point it somewhere specific with an argument or `$PA_MEDIA_PATH`.
+output. Point it somewhere specific with an argument or `$PA_MEDIA_PATH`. A path in the
+base install's snapshot that this repo no longer ships is a **warning**, not an error:
+it is the normal state after a file is removed here, until the base game takes the next
+copy of this repo. Read each one; see "Relationship to the base install".
 
 `validate:docs` regenerates `docs/tier-inventory.md` in memory and fails if the committed
 copy differs, then checks that every relative link and heading anchor in `docs/`,
@@ -209,7 +212,9 @@ still loaded.
 
 - Removing a build entry: edit the file, do not delete it.
 - Deleting a whole file is not a way to remove behaviour from a stock install; it just
-  reverts that file to whatever the base game shipped.
+  reverts that file to whatever the base game shipped. `validate:base-install` warns
+  about each such path. Before deleting, check that the base copy is harmless: inert,
+  or duplicated by another file. If it is not, edit the file instead.
 - Adding a _new_ file is safe and behaves as expected.
 
 The personalities are in the same position: the base game already defines
