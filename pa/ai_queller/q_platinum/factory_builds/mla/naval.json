@@ -96,16 +96,16 @@
             "boolean": false
           },
           {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Air & Scout",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Factory & Basic",
             "compare0": "<",
-            "value0": 300
+            "value0": 1
           },
           {
             "test_type": "UnitCountPerPlanetRadius",
             "unit_type_string0": "(Naval & WaterHover & Offense & Mobile) - Fabber - Construction - Titan",
             "compare0": "<",
-            "value0": 300
+            "value0": 250
           }
         ],
         [
@@ -114,12 +114,10 @@
             "boolean": false
           },
           {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": false
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Factory & Basic",
+            "compare0": "<",
+            "value0": 1
           },
           {
             "test_type": "UnitCountOnPlanet",

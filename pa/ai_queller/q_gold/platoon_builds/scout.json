@@ -25,10 +25,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
-          },
-          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Land & Scout",
             "compare0": ">=",
@@ -64,10 +60,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
-          },
-          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
             "compare0": ">=",
@@ -96,6 +88,29 @@
       "task_type": "Scout"
     },
     {
+      "name": "Tank Scout Platoon",
+      "to_build": "Tank_Scout_Queller",
+      "instance_count": 1,
+      "priority": 200,
+      "build_conditions": [
+        [
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Tank & Offense & Mobile) - Fabber - AirDefense - Construction - Artillery - Tactical - Heavy - Scout - SelfDestruct - Titan",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Air | Land) & Scout",
+            "compare0": "<",
+            "value0": 1
+          }
+        ]
+      ],
+      "task_type": "Scout"
+    },
+    {
       "name": "Naval Scout Platoon",
       "to_build": "Naval_Scout_Queller",
       "instance_count": 2,
@@ -108,8 +123,22 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Naval & WaterHover & Offense & Mobile) - Fabber - Construction - Titan",
+            "unit_type_string0": "(Naval & (WaterHover | Custom1) & Offense & Mobile) - Fabber - Construction - Titan",
             "compare0": ">=",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Naval & (WaterHover | Custom1) & Offense & Mobile) - Fabber - Construction - Titan",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Scout",
+            "compare0": "<",
             "value0": 1
           }
         ]

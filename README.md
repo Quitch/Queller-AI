@@ -170,7 +170,6 @@ By default, Queller at Uber level will adapt its play to try and suit the system
 
 - More cautious about engaging in battle
 - Techs earlier
-- Orbital earlier
 - Avoids antagonistic scouting raids
 - Less armies
 - More units in armies

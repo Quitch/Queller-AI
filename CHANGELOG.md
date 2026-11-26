@@ -1,5 +1,25 @@
 # CHANGELOG
 
+## v5.26.4 - 2026-11-26
+
+- Bronze and above will continue to build scouts and form scout platoons even when they have full intel
+- Ensure scouting works no matter the T1 factory restrictions in place for Bronze and above
+- Prevent a situation where Uber won't build factories when it arrives first on a planet
+- Uber Tank no longer sometimes fails to build a factory on a new world
+- Silver properly prioritises building a Sky Bridge when playing as Legion
+- Icarus are used as anti-air not anti-surface
+- Uber is more likely to use Single Laser Defense Towers
+- Kaiju and Jaeger join hover platoons again
+- Advanced suicide bots from faction mods join suicide attacks
+- Platinum no longer sends an attack bot to scout when it has an Investigator
+- Casual attacks with the Purgers its Necromancers raise
+- Uber no longer overbuilds Legion Mantas
+- Gold and Uber check the right building before some builds
+- Platinum correctly assesses whether it should build an advanced factory when it can't expand
+- Casual's Legion naval fabbers can build its fallback Flyer Foundry
+- Gold and Platinum Legion commanders build power more readily on multi-planet maps
+- Platinum builds one orbital launcher at a time across all its planets
+
 ## v5.26.3 - 2026-10-17
 
 - Q-Random and Q-Uber Random slots no longer lock in a personality when Start is clicked before the game can start

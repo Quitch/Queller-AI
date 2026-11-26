@@ -154,10 +154,6 @@
       "build_conditions": [
         [
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
             "test_type": "BaseThreatened",
             "boolean": false
           },
@@ -166,41 +162,22 @@
             "boolean": false
           },
           {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Air & Scout",
+            "compare0": "<",
+            "value0": 150
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Air & Scout",
             "compare0": "<",
             "value0": 1
-          }
-        ],
-        [
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "EnemyPresenceOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Air & Scout",
-            "compare0": "<",
-            "value0": 150
-          }
-        ],
-        [
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Air & Scout",
-            "compare0": "<",
-            "value0": 150
           }
         ]
       ]
@@ -362,20 +339,11 @@
       "build_conditions": [
         [
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
+            "test_type": "EnemyAirPresenceOnPlanet",
             "boolean": true
           },
           {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": false
-          },
-          {
             "test_type": "HaveEcoForAdvanced",
-            "boolean": false
-          },
-          {
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "(Tank - Custom1) | (Bot & Custom1) | Naval | Air",
             "boolean": false
           }
         ]
