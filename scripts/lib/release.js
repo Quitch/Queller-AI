@@ -128,7 +128,7 @@ function releasePrettierIgnore(developText) {
   if (/^pa\/\*\*$/m.test(developText)) {
     return developText;
   }
-  return developText.replace(/\n*$/, "\n") + MASTER_PRETTIER_IGNORE;
+  return developText.trimEnd() + "\n" + MASTER_PRETTIER_IGNORE;
 }
 
 module.exports = {
