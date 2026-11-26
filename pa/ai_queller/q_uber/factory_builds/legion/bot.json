@@ -208,7 +208,7 @@
           },
           {
             "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "CombatFabBuild & Defense",
+            "unit_type_string0": "Defense & (CombatFabBuild | (Land & Naval)) - NoBuild",
             "boolean": true
           },
           {
@@ -248,7 +248,7 @@
             "unit_type_string0": "Land & Mobile & (Construction | Scout) - Fabber",
             "unit_type_string1": "Land & Mobile & Offense",
             "compare0": "<",
-            "value0": 0.03
+            "value0": 0.05
           }
         ]
       ]

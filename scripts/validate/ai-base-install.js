@@ -31,9 +31,10 @@ const {
 // legion/ half of every build tree is inert - the documented design.
 const isLegionSpec = (specId) => path.basename(specId).startsWith("l_");
 
-// Unit-type tokens Legion supplies. Custom1 is Legion's faction tag, the counterpart of
-// the base game's Custom58; Shield has no base-game equivalent at all.
-const LEGION_UNIT_TYPES = new Set(["Custom1", "Shield"]);
+// Unit-type tokens faction mods supply. Custom1 is Legion's faction tag, the counterpart
+// of the base game's Custom58, and Shield has no base-game equivalent at all. Custom2 is
+// Bug Faction's tag and Custom6 is Exiles'.
+const FACTION_UNIT_TYPES = new Set(["Custom1", "Shield", "Custom2", "Custom6"]);
 
 function baseUnitTypes(mediaPath) {
   const types = new Set();
@@ -135,14 +136,14 @@ function checkUnitTypes(tiers, mediaPath, findings) {
   const tokens = collectUnitTypeTokens(tiers);
   let unknown = 0;
   for (const [token, at] of tokens) {
-    if (known.has(token) || LEGION_UNIT_TYPES.has(token)) {
+    if (known.has(token) || FACTION_UNIT_TYPES.has(token)) {
       continue;
     }
     unknown++;
     findings.error(
       at,
       `unit type "${token}" is carried by no unit spec in the base install and is ` +
-        `not one of Legion's (${[...LEGION_UNIT_TYPES].join(", ")}) - an ` +
+        `not one a faction mod supplies (${[...FACTION_UNIT_TYPES].join(", ")}) - an ` +
         `expression naming it matches nothing`
     );
   }
