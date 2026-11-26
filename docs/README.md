@@ -1,11 +1,12 @@
 # Queller AI documentation
 
-Four documents. Two are written by hand, two are generated.
+Five documents. Three are written by hand, two are generated.
 
 | Document                                  | Answers                                                      |
 | ----------------------------------------- | ------------------------------------------------------------ |
 | [The AI engine](ai-engine.md)             | How PA runs an AI army, from lobby pick to target selection. |
 | [Queller architecture](architecture.md)   | How this mod is built, and how to change it.                 |
+| [Releasing](releasing.md)                 | How to cut a release, and how `master` is built.             |
 | [Engine vocabulary](engine-vocabulary.md) | Every legal enum value and what it means. _Generated._       |
 | [Tier inventory](tier-inventory.md)       | What is in each tier and how the tiers differ. _Generated._  |
 
@@ -27,6 +28,7 @@ One home per fact, so nothing is maintained twice.
 | Why Queller's data is shaped the way it is         | `architecture.md`      |
 | **Any count** of files, entries, templates or tags | `tier-inventory.md`    |
 | A hazard that changes what an editor should do     | `CLAUDE.md`            |
+| How a release is cut; how `master` differs         | `releasing.md`         |
 | Player-visible behaviour                           | `README.md`            |
 | What changed and when                              | `CHANGELOG.md`         |
 
