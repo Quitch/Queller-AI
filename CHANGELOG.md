@@ -13,6 +13,7 @@
 - Platinum no longer sends an attack bot to scout when it has an Investigator
 - Casual attacks with the Purgers its Necromancers raise
 - Uber no longer keeps building Legion Mantas while its navy is landlocked and enemy air is present
+- Fix Gold and Uber checking the cost or space of the wrong building before some factory and Supernova builds
 
 ## v5.26.3 - 2026-10-17
 
