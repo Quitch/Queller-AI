@@ -9,6 +9,10 @@
 - Silver properly prioritises building a Sky Bridge when playing as Legion
 - Icarus are used as anti-air not anti-surface
 - Uber is more likely to use Single Laser Defense Towers
+- Kaiju and Jaeger join hover platoons again
+- Advanced suicide bots from faction mods, such as the Bugs Alpha Boomer, join suicide attacks
+- Platinum no longer sends an attack bot to scout when it has an Investigator
+- Casual attacks with the Purgers its Necromancers raise
 
 ## v5.26.3 - 2026-10-17
 

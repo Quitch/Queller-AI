@@ -15,11 +15,11 @@ One row per tier. `Build entries` counts every item across `fabber_builds/`, `fa
 | Tier         | Files | Build entries | Templates | Unit map keys | Config            |
 | ------------ | ----- | ------------- | --------- | ------------- | ----------------- |
 | `q_casual`   | 61    | 274           | 19        | 234           | {"unit_cap":3000} |
-| `q_bronze`   | 61    | 285           | 22        | 234           | {"unit_cap":3000} |
+| `q_bronze`   | 61    | 284           | 21        | 234           | {"unit_cap":3000} |
 | `q_silver`   | 61    | 271           | 30        | 234           | {"unit_cap":3000} |
 | `q_gold`     | 71    | 335           | 40        | 234           | {"unit_cap":3000} |
 | `q_platinum` | 71    | 347           | 40        | 234           | {"unit_cap":3000} |
-| `q_uber`     | 78    | 419           | 43        | 234           | {"unit_cap":3000} |
+| `q_uber`     | 78    | 418           | 42        | 234           | {"unit_cap":3000} |
 
 ## Files by directory
 
@@ -47,7 +47,7 @@ Which of the three build-list consumers each tier's entries belong to. All three
 | ---------------- | -------- | -------- | -------- | ------ | ---------- | ------ |
 | `fabber_builds`  | 118      | 124      | 121      | 151    | 161        | 202    |
 | `factory_builds` | 135      | 133      | 118      | 135    | 135        | 147    |
-| `platoon_builds` | 21       | 28       | 32       | 49     | 51         | 70     |
+| `platoon_builds` | 21       | 27       | 32       | 49     | 51         | 69     |
 
 ## Where the tiers diverge
 
@@ -92,6 +92,7 @@ Same relative path, byte-identical JSON, in all tiers. Nothing keeps these in st
 - `ai_config.json`
 - `platoon_builds/structure.json`
 - `platoon_builds/titans.json`
+- `platoon_templates/air.json`
 - `platoon_templates/structure.json`
 - `platoon_templates/titans.json`
 - `platoon_templates/transfer.json`
@@ -106,9 +107,9 @@ Set on a build item to say what the resulting platoon does, or - on a fabber ite
 
 | Task type                       | q_casual | q_bronze | q_silver | q_gold | q_platinum | q_uber |
 | ------------------------------- | -------- | -------- | -------- | ------ | ---------- | ------ |
-| `LandAttack`                    | 4        | 9        | 14       | 21     | 20         | 37     |
+| `LandAttack`                    | 5        | 9        | 14       | 21     | 20         | 37     |
 | `AreaBuild`                     | -        | -        | 4        | 8      | 14         | 14     |
-| `BomberAttack`                  | 3        | 3        | 2        | 6      | 7          | 8      |
+| `BomberAttack`                  | 2        | 2        | 2        | 6      | 7          | 7      |
 | `Scout`                         | 1        | 3        | 3        | 5      | 6          | 7      |
 | `TeleportFabberToPlanet`        | 4        | 4        | 4        | 4      | 4          | 4      |
 | `FighterAttack`                 | 1        | 1        | 1        | 5      | 6          | 6      |
@@ -133,12 +134,12 @@ The role a slot's units take inside a platoon. See [engine vocabulary](engine-vo
 
 | Squad       | q_casual | q_bronze | q_silver | q_gold | q_platinum | q_uber |
 | ----------- | -------- | -------- | -------- | ------ | ---------- | ------ |
+| `General`   | 6        | 7        | 13       | 18     | 22         | 26     |
 | `Defense`   | 7        | 9        | 15       | 15     | 17         | 17     |
-| `General`   | 5        | 6        | 12       | 15     | 18         | 20     |
-| `Artillery` | 3        | 5        | 11       | 14     | 11         | 13     |
 | `Fast`      | 2        | 3        | 9        | 12     | 15         | 15     |
+| `Artillery` | 3        | 4        | 7        | 9      | 11         | 13     |
 | `Close`     | 2        | 3        | 6        | 6      | 7          | 13     |
-| `Suicide`   | 1        | 2        | 5        | 6      | 1          | 1      |
+| `Suicide`   | 2        | 2        | 5        | 6      | 1          | 1      |
 | `Escort`    | 2        | 2        | 2        | 2      | 2          | 2      |
 
 ## Personality tags
@@ -167,11 +168,11 @@ A platoon template that no `platoon_builds` entry names. Every tier should read 
 | Tier         | Defined | Never built |
 | ------------ | ------- | ----------- |
 | `q_casual`   | 19      | 0           |
-| `q_bronze`   | 22      | 0           |
+| `q_bronze`   | 21      | 0           |
 | `q_silver`   | 30      | 0           |
 | `q_gold`     | 40      | 0           |
 | `q_platinum` | 40      | 0           |
-| `q_uber`     | 43      | 0           |
+| `q_uber`     | 42      | 0           |
 
 - `q_casual` - none
 - `q_bronze` - none
