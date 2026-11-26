@@ -218,9 +218,9 @@ Evaluation cadence, per the wiki: every 2 seconds for every base by default. Som
 
 ### Attacks (direct)
 
-| Value                    | Source | Used here | Base AI | Parameters used here | Notes                                                                                                                                                  |
-| ------------------------ | ------ | --------- | ------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `CanAttackWithPoolUnits` | binary | 32        | 8       | `boolean`, `string0` | `string0` attack world layer, `boolean` use naval rally point. Bypasses the neural network the `...Land`/`...Bomber`/`...Fighter` variants go through. |
+| Value                    | Source | Used here | Base AI | Parameters used here | Notes                                                                                                                                                                                                                  |
+| ------------------------ | ------ | --------- | ------- | -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `CanAttackWithPoolUnits` | binary | 32        | 8       | `boolean`, `string0` | `string0` attack world layer, `boolean` use naval rally point. Bypasses the neural network the `...Land`/`...Bomber`/`...Fighter` variants go through. With `WL_Orbital` it also waits for a known enemy orbital unit. |
 
 ### Assistance
 
@@ -229,7 +229,7 @@ Evaluation cadence, per the wiki: every 2 seconds for every base by default. Som
 | `CanProvideAirSupportWithPoolUnits` | binary | 34        | 10      | `string0`, `string1`, `string2`, `unit_type_string0` | -     |
 | `OnTaskType`                        | binary | -         | -       | -                                                    | -     |
 
-<sub>Meanings: palobby wiki, AI Build Conditions (oldid 3483).</sub>
+<sub>Meanings: palobby wiki, AI Build Conditions (oldid 3483); `CanAttackWithPoolUnits` with `WL_Orbital` per the PA dev team ([Discord](https://discord.com/channels/467998465004273674/1493674807902994463/1575582393476059207)).</sub>
 
 ## Build condition keys
 

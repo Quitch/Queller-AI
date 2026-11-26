@@ -222,7 +222,8 @@ const NOTES = {
     CanAttackWithPoolUnitsFighter: NEURAL_ATTACK_NOTE,
     CanAttackWithPoolUnits:
       "`string0` attack world layer, `boolean` use naval rally point. Bypasses the " +
-      "neural network the `...Land`/`...Bomber`/`...Fighter` variants go through.",
+      "neural network the `...Land`/`...Bomber`/`...Fighter` variants go through. " +
+      "With `WL_Orbital` it also waits for a known enemy orbital unit.",
   },
   alliance: {
     Ally: "Also accepted as `Allied`.",
@@ -254,7 +255,10 @@ const CATEGORIES = [
       "Evaluation cadence, per the wiki: every 2 seconds for every base by default. " +
       "Some conditions are real time (every tick), some planet wide (once per planet) " +
       "and some system fixed (evaluated once at start).",
-    source: "palobby wiki, AI Build Conditions (oldid 3483)",
+    source:
+      "palobby wiki, AI Build Conditions (oldid 3483); `CanAttackWithPoolUnits` with " +
+      "`WL_Orbital` per the PA dev team " +
+      "([Discord](https://discord.com/channels/467998465004273674/1493674807902994463/1575582393476059207))",
   },
   {
     key: "condition_key",
