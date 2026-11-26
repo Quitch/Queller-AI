@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Omegas attack the surface even when the enemy has no orbital units
+
 ## v5.26.5 - 2026-11-26
 
 - Bronze and above will continue to build scouts and form scout platoons even when they have full intel

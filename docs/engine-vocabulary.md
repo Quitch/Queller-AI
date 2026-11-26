@@ -419,14 +419,14 @@ Which layer of the world an attack condition looks at. The engine stores these w
 | `WL_AnyHorizontalGround`               | binary    | -         | -       | -     |
 | `WL_AnyHorizontalGroundOrWaterSurface` | binary    | -         | -       | -     |
 | `WL_AnyLayer`                          | binary    | -         | -       | -     |
-| `WL_AnySurface`                        | binary    | 292       | 115     | -     |
+| `WL_AnySurface`                        | binary    | 298       | 115     | -     |
 | `WL_AnyUnderWater`                     | binary    | -         | -       | -     |
 | `WL_AnyWater`                          | binary    | -         | -       | -     |
 | `WL_AnyWaterOrSeaFloor`                | binary    | -         | -       | -     |
 | `WL_LandHorizontal`                    | binary    | -         | -       | -     |
 | `WL_LandVertical`                      | binary    | -         | -       | -     |
 | `WL_Lava`                              | binary    | -         | -       | -     |
-| `WL_Orbital`                           | base data | 14        | 4       | -     |
+| `WL_Orbital`                           | base data | 8         | 4       | -     |
 | `WL_Seafloor`                          | binary    | -         | -       | -     |
 | `WL_Unpathable`                        | binary    | -         | -       | -     |
 | `WL_WaterSurface`                      | binary    | -         | -       | -     |
