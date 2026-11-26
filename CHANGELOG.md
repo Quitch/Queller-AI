@@ -16,6 +16,7 @@
 - Fix Gold and Uber checking the cost or space of the wrong building before some factory and Supernova builds
 - Platinum builds an advanced factory when it can't expand, even if it already owns a nuke, anti-nuke, Unit Cannon or orbital factory
 - Casual's Legion naval fabbers can build its fallback Flyer Foundry, as MLA's already do
+- Gold and Platinum Legion commanders no longer hold off building power while power is being built on another planet
 
 ## v5.26.3 - 2026-10-17
 
