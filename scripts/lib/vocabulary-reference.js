@@ -257,7 +257,8 @@ const CATEGORIES = [
       "and some system fixed (evaluated once at start).",
     source:
       "palobby wiki, AI Build Conditions (oldid 3483); `CanAttackWithPoolUnits` with " +
-      "`WL_Orbital` per the PA dev team " +
+      '`WL_Orbital` per the PA dev team: "in the code that means it also waits for a ' +
+      'known enemy orbital unit" ' +
       "([Discord](https://discord.com/channels/467998465004273674/1493674807902994463/1575582393476059207))",
   },
   {
