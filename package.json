@@ -14,7 +14,9 @@
     "test": "node --test",
     "verify": "npm run lint:js && npm run format:check && npm run validate && npm test",
     "refresh:vocabulary": "node scripts/refresh-engine-vocabulary.js",
-    "refresh:inventory": "node scripts/refresh-tier-inventory.js"
+    "refresh:inventory": "node scripts/refresh-tier-inventory.js",
+    "release": "node scripts/release.js",
+    "release:master": "node scripts/release-master.js"
   },
   "dependencies": {
     "@eslint/js": "^9.39.5",
