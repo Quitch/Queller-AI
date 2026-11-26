@@ -449,8 +449,8 @@ shipped — checked against both this repo and the whole base install:
   (see "Diagnostics"), which is how it was found. Fixed here by giving every tier its own
   copy; see "How the engine consumes a tier".
 
-Conversely, `cross_planet_shared_count` is used 48 times here and 25 times in the base
-game's AI data but appears in no published documentation.
+Conversely, `cross_planet_shared_count` is used both here and in the base game's AI data
+(counts in `docs/engine-vocabulary.md`) but appears in no published documentation.
 
 The wiki's unit-type list is also incomplete. Base TITANS specs additionally use
 `UNITTYPE_Amphibious`, `Interplanetary`, `Radar`, `RadarJammer`, `TacticalDefense`,
