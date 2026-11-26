@@ -19,6 +19,8 @@
 - Casual's Legion naval fabbers can build its fallback Flyer Foundry
 - Gold and Platinum Legion commanders build power more readily on multi-planet maps
 - Platinum builds one orbital launcher at a time across all its planets
+- Uber sweeps for Legion and faction mod mines
+- Uber scouts for suspected mines more readily
 
 ## v5.26.3 - 2026-10-17
 
