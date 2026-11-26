@@ -104,32 +104,6 @@
             "compare0": ">=",
             "value0": 1
           }
-        ],
-        [
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Bot & Scout",
-            "compare0": ">=",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & Scout",
-            "compare0": "<",
-            "value0": 1
-          }
-        ],
-        [
-          {
-            "test_type": "ThisPlanetNeedsReconAssistance",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Bot & Scout",
-            "compare0": ">=",
-            "value0": 1
-          }
         ]
       ],
       "task_type": "Scout"

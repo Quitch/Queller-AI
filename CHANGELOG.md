@@ -10,6 +10,7 @@
 - Icarus are used as anti-air not anti-surface
 - Uber is more likely to use Single Laser Defense Towers
 - Kaiju and Jaeger join hover platoons again
+- Platinum no longer sends an attack bot to scout when it has an Investigator
 
 ## v5.26.3 - 2026-10-17
 
