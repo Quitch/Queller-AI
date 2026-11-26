@@ -9,6 +9,7 @@
 - Silver properly prioritises building a Sky Bridge when playing as Legion
 - Icarus are used as anti-air not anti-surface
 - Uber is more likely to use Single Laser Defense Towers
+- Kaiju and Jaeger join hover platoons again
 
 ## v5.26.3 - 2026-10-17
 
