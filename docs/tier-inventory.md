@@ -153,10 +153,10 @@ The subpersonality mechanism: one `ai_path` serves many personalities, and `HasP
 | `queller`     | 16 personalities           | 61       | -        | 23       | 20       | 5        | 5      | 5          | 3      |
 | `platoon`     | `qUberFFA`, `qUberPlatoon` | 17       | 17       | -        | -        | -        | -      | -          | 34     |
 | `tank`        | `qUberTank`                | 4        | 16       | -        | -        | -        | -      | -          | 20     |
-| `air`         | `qUberAir`                 | 4        | 10       | -        | -        | -        | -      | -          | 14     |
+| `air`         | `qUberAir`                 | 4        | 14       | -        | -        | -        | -      | -          | 18     |
 | `bot`         | `qUberBot`                 | 2        | 12       | -        | -        | -        | -      | -          | 14     |
+| `land`        | `qUberLand`                | -        | 14       | -        | -        | -        | -      | -          | 14     |
 | `ffa`         | `qUberFFA`                 | 3        | 7        | -        | -        | -        | -      | -          | 10     |
-| `land`        | `qUberLand`                | -        | 10       | -        | -        | -        | -      | -          | 10     |
 | `orbital`     | `qUberOrbital`             | 4        | 2        | -        | -        | -        | -      | -          | 6      |
 | `lateorbital` | `qUber1v1`, `qUberRush`    | -        | 4        | -        | -        | -        | -      | -          | 4      |
 | `1v1`         | `qUber1v1`                 | 1        | -        | -        | -        | -        | -      | -          | 1      |
