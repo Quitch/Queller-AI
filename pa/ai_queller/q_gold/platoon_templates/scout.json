@@ -35,7 +35,7 @@
     "Naval_Scout_Queller": {
       "units": [
         {
-          "unit_types": "(Naval & (WaterHover | Custom1) & Offense & Mobile) - Fabber - Construction - Titan",
+          "unit_types": "((Naval & WaterHover & Offense & Mobile) | (Naval & Custom1 & Basic & Offense & Mobile - AirDefense - Sub)) - Fabber - Construction - Titan",
           "max_count": 1
         }
       ]

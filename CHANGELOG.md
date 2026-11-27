@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Unreleased
+
+- Gold and above no longer send Legion's bigger warships off to scout
+- Uber counts Legion Nova scouts before sending other units to scout
+- Gold and Platinum Legion build a Marauder scout even when they have anti-air Novas
+
 ## v5.26.6 - 2026-11-26
 
 - Omegas attack the surface even when the enemy has no orbital units
