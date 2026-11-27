@@ -223,7 +223,6 @@ Be sure to follow the recommended number of players for any map.
 - Cannot reclaim
 - Combat Fabbers can only be used to build mines or repair troops, not both, even across entirely different AI personalities
 - Legion won't build a different tier of mass extractor on a metal spot that already has a mass extractor
-- Legion can't use orbital transports
 - Doesn't use the Helios teleporter
 - Naval factories sometimes stop producing units
 - All AI Commanders on a team spawn and act together using shared army mode

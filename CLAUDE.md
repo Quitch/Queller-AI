@@ -8,7 +8,7 @@ Queller AI is a **server mod** for Planetary Annihilation: TITANS that replaces 
 stock skirmish AI with six difficulty tiers (Casual / Bronze / Silver / Gold /
 Platinum / Uber, all displayed with a `Q-` prefix) plus Uber subpersonalities, with
 full Legion Expansion support. It is almost entirely **declarative JSON data** —
-`pa/ai_queller/**` is 405 files of build orders, platoon templates and unit maps —
+`pa/ai_queller/**` holds the build orders, platoon templates and unit maps —
 plus one small UI script that registers the personalities in the lobby. There is no
 build step and no compiled code; the tooling is lint, format, and a set of validators
 that resolve the data's cross-references and enum values (see "Validating the AI data").
@@ -16,12 +16,12 @@ that resolve the data's cross-references and enum values (see "Validating the AI
 Queller has been **upstreamed into the base game**: a snapshot of this tree ships in
 the install at `media/pa_ex1/ai_queller/`, and the personalities are hard-coded in
 `media/ui/main/game/new_game/js/ai.js`. This repo is the live upstream and can ship
-ahead of the game, and currently does: the base install's 399 files are a **frozen
-snapshot**, and as of `develop` only 359 of them are still JSON-equal with this repo — 40
-differ and 6 are new here. Expect that gap to widen, not close. It matters because a
-stock install without this mod runs the old snapshot, bugs and all: the July 2026
-integrity fixes (see "Data integrity") are live only for players who have the mod
-installed. See "Relationship to the base install" for how the shadowing actually works.
+ahead of the game, and currently does: the base install's copy is a **frozen
+snapshot**, and `develop` has moved on from it. Expect that gap to widen, not close.
+It matters because a stock install without this mod runs the old snapshot, bugs and
+all: the July 2026 integrity fixes (see "Data integrity") are live only for players
+who have the mod installed. See "Relationship to the base install" for how the
+shadowing actually works.
 
 The base game install (a `media` folder under Steam's `.../Planetary Annihilation
 Titans/`) is not part of this repo and lives at a different path on every
@@ -111,8 +111,8 @@ is why the build-spec-side categories carry structural notes rather than per-val
 
 `validate:conditions` reports **warnings**, not errors. Nothing it finds is wrong today —
 a duplicated OR-branch changes no behaviour — but it is the fingerprint of an edit
-applied to one copy of a branch and not the other, so the eight it currently reports are
-worth reading rather than clearing.
+applied to one copy of a branch and not the other, so any it reports are worth reading
+rather than clearing.
 
 `validate:base-install` needs a PA install and skips without one, saying so in its
 output. Point it somewhere specific with an argument or `$PA_MEDIA_PATH`. A path in the
