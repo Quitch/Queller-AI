@@ -19,9 +19,9 @@ the install at `media/pa_ex1/ai_queller/`, and the personalities are hard-coded 
 ahead of the game, and currently does: the base install's copy is a **frozen
 snapshot**, and `develop` has moved on from it. Expect that gap to widen, not close.
 It matters because a stock install without this mod runs the old snapshot, bugs and
-all: the July 2026
-integrity fixes (see "Data integrity") are live only for players who have the mod
-installed. See "Relationship to the base install" for how the shadowing actually works.
+all: the July 2026 integrity fixes (see "Data integrity") are live only for players
+who have the mod installed. See "Relationship to the base install" for how the
+shadowing actually works.
 
 The base game install (a `media` folder under Steam's `.../Planetary Annihilation
 Titans/`) is not part of this repo and lives at a different path on every
