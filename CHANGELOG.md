@@ -5,6 +5,13 @@
 - Gold and above no longer send Legion's bigger warships off to scout
 - Uber counts Legion Nova scouts before sending other units to scout
 - Gold and Platinum Legion build a Marauder scout even when they have anti-air Novas
+- Gold no longer builds MLA torpedo launchers on land
+- Platinum Legion stops adding Flyer Foundries once a fifth of its factories are air
+- Uber and Casual Legion only build Advanced Armor Foundries where vehicles can leave the base
+- Uber builds air factories against the same enemy air threats from its commander and fabbers
+- Bronze uses Halleys and Diplomats on the same planets
+- Platinum Legion fabbers wait for a bot or naval factory before building an Armor Foundry
+- Gold and Platinum never build a planet engine where an ally has a Catalyst
 
 ## v5.26.6 - 2026-11-26
 
